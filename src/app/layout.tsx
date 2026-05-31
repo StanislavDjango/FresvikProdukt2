@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { SiteShell } from "@/components/layout/SiteShell";
 import { siteName, siteUrl } from "@/config/site";
 import "./globals.css";
 
@@ -34,7 +35,9 @@ export default function RootLayout({
       lang="nn"
       className={`${geistSans.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        <SiteShell>{children}</SiteShell>
+      </body>
     </html>
   );
 }

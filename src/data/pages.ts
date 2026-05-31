@@ -23,6 +23,12 @@ export type ContentCard = {
   imageAlt?: string;
 };
 
+type Section = {
+  title: string;
+  intro?: string;
+  items: ContentCard[];
+};
+
 export type ContentPage = {
   slug: string;
   title: string;
@@ -33,11 +39,7 @@ export type ContentPage = {
   priority: "high" | "medium" | "low";
   sourceUrl?: string;
   cards: ContentCard[];
-  sections: {
-    title: string;
-    intro?: string;
-    items: ContentCard[];
-  }[];
+  sections: Section[];
   todo?: string[];
 };
 
@@ -224,10 +226,92 @@ const oldDocumentCards = inventoryCards(
   "Dokumentasjonsside registrert frå gammal sitemap. PDF-ar og eksterne dokument skal importerast.",
 );
 
-const oldAccessoryCards = inventoryCards(
-  oldSiteAccessories,
-  "Tilleggsutstyr registrert frå gammal sitemap. Produkttekst og bilete skal importerast til Sanity.",
-);
+const accessoryTextByHref: Record<string, string> = {
+  "/andre-produkter/standard-handtak":
+    "Standard håndtak blir levert på utsida av døra, og kan også monterast på innsida.",
+  "/andre-produkter/elebar-ventil":
+    "Elebar ventil passar til mindre fryserom og blir brukt for å hindre vakuum i fryserom.",
+  "/andre-produkter/maxielebar-ventil":
+    "MaxiElebar ventil passar til større fryserom og blir brukt for å hindre vakuum.",
+  "/andre-produkter/pego-innestengningsalarm":
+    "PEGO innestengningsalarm har nødalarmknapp for naudstilfelle inne i fryserom. Fresvik tek automatisk med alarm i tilbod ved førespurnad på fryserom, med mindre noko anna er spesifisert.",
+  "/andre-produkter/pvc-gardiner":
+    "PVC-gardiner reduserer kuldetap når porten står open ved hyppig trafikk. Dei kan også nyttast til inndeling av mindre rom og innkleding av maskiner og utstyr.",
+  "/andre-produkter/diktator-dortiltrekker":
+    "Dørtiltrekker kan vere nødvendig å montere i nokre tilfelle, og kan også ettermonterast.",
+  "/andre-produkter/kjlerampe":
+    "Fresvik Produkt produserer køyreramper i aluminium både til kjøl og fryserom.",
+  "/andre-produkter/beslag":
+    "Fresvik sender nødvendige beslag saman med panela. Beslaga blir produserte av same stål som panela, og blir tilpassa for tett og pen montasje.",
+  "/andre-produkter/2014/7/9/standard-drer":
+    "Standard kjøle- og fryseromsdør for mindre og mellomstore rom. Blir også brukt til inspeksjonsluker og nødutgangsluker i større anlegg.",
+};
+
+const accessoryDetailCards = oldSiteAccessories.map((item) => ({
+  title: item.title,
+  text:
+    accessoryTextByHref[item.href] ||
+    "Denne tilbehørssida er funnen i gammal sitemap. Brødtekst må hentast i ein seinare migreringspass.",
+  href: item.href,
+  meta: item.lastmod,
+  imageUrl: item.imageUrl,
+  imageAlt: item.imageAlt || item.title,
+}));
+
+const accessoryOrderCards: ContentCard[] = [
+  {
+    title: "Dørtiltrekker / Diktator",
+    text: "Artikkelnr 23001",
+  },
+  {
+    title: "Innestengningsalarm",
+    text: "Artikkelnr 3069",
+  },
+  {
+    title: "Selvlukkende hengsel",
+    text: "Artikkelnr 24600",
+  },
+  {
+    title: "Trykkavlastarventil Elbar",
+    text: "Artikkelnr 30651",
+  },
+  {
+    title: "Trykkavlastarventil Maxi Elbar",
+    text: "Artikkelnr 30652",
+  },
+  {
+    title: "Automatisk kompositt-lås rustfri",
+    text: "Artikkelnr 24083",
+  },
+  {
+    title: "Brannklassifisert fugemasse Sikasil-670",
+    text: "Artikkelnr 3004",
+  },
+  {
+    title: "Nøytralherdende sanitær byggsilikon fugemasse",
+    text: "Artikkelnr 3000",
+  },
+  {
+    title: "Soudal fugeskum all season premium",
+    text: "Artikkelnr 3021",
+  },
+  {
+    title: "PU-skum Sika Boom-420 Fire",
+    text: "Artikkelnr 3006",
+  },
+  {
+    title: "Flexibelt glasfiber overflate",
+    text: "Artikkelnr 10261",
+  },
+  {
+    title: "Plywood dørkplate med belegg",
+    text: "Artikkelnr 1103",
+  },
+  {
+    title: "Intertecnica hengsel 2640",
+    text: "Artikkelnr 10409",
+  },
+];
 
 const oldSupportCards = inventoryCards(
   oldSiteSupportPages,
@@ -682,22 +766,31 @@ export const contentPages: ContentPage[] = [
     title: "Tilleggsutstyr",
     eyebrow: "Produkt",
     intro:
-      "Tilbehør og kompletterande utstyr for panel-, port- og dørløysingar.",
+      "Tilbehøyr og reservedelar til kjøle- og fryserom, med hjelp frå Fresvik til å finne rett løysing.",
     description:
       "Tilleggsutstyr og relaterte produkt for Fresvik-produkt.",
     pageType: "product",
     priority: "medium",
     sourceUrl: "https://www.fresvik.no/tilleggsutstyr",
-    cards: oldAccessoryCards.slice(0, 6),
+    cards: accessoryDetailCards.slice(0, 6),
     sections: [
       {
-        title: "Tilleggsutstyr frå gammal sitemap",
+        title: "Tilbehøyr og reservedelar",
         intro:
-          "Dette er konkrete utstyrs- og butikk-URL-ar funne i gammal sitemap. Dei skal flyttast til produkt eller dokumentasjon i Sanity.",
-        items: oldAccessoryCards,
+          "Den gamle sida seier at Fresvik har det meste ein treng av tilbehøyr og reservedelar, og hjelper kundar å finne rett del.",
+        items: accessoryDetailCards,
+      },
+      {
+        title: "Artikkelnummer frå gammal side",
+        intro:
+          "Dette er varelinjer funne på gammal tilleggsutstyrside. Dei bør kvalitetssikrast og flyttast til Sanity som strukturerte reservedelar før endeleg lansering.",
+        items: accessoryOrderCards,
       },
     ],
-    todo: ["Avgjer om tilleggsutstyr skal vere eigne produkt eller sideblokker."],
+    todo: [
+      "Avgjer om tilleggsutstyr skal vere eigne produkt, reservedelar eller sideblokker i Sanity.",
+      "Kvalitetssikre artikkelnummer og sortiment før endeleg lansering.",
+    ],
   },
   {
     slug: "/tenester",
@@ -1144,6 +1237,10 @@ export function createLegacyContentPage(slug: string): ContentPage {
   const isReference = slug.startsWith("/referansar/");
   const isAccessory = slug.startsWith("/andre-produkter/");
   const inventoryItem = getOldSiteInventoryItem(slug);
+  const migratedText =
+    isAccessory && inventoryItem
+      ? accessoryTextByHref[inventoryItem.href]
+      : undefined;
 
   return {
     slug,
@@ -1172,7 +1269,9 @@ export function createLegacyContentPage(slug: string): ContentPage {
       ? [
           {
             title: inventoryItem.title,
-            text: "Registrert frå gammal sitemap. Brødtekst skal importerast frå kjeldesida til Sanity.",
+            text:
+              migratedText ||
+              "Registrert frå gammal sitemap. Brødtekst skal importerast frå kjeldesida til Sanity.",
             href: inventoryItem.href,
             meta: inventoryItem.lastmod,
             imageUrl: inventoryItem.imageUrl,
@@ -1192,7 +1291,9 @@ export function createLegacyContentPage(slug: string): ContentPage {
           },
           {
             title: "Neste steg",
-            text: "TODO: hent tittel, brødtekst, bilete, PDF-ar og metadata frå gammal side og flytt til rett Sanity-type.",
+            text: migratedText
+              ? "Kort brødtekst er henta frå gammal side. Neste steg er å flytte innhaldet til rett Sanity-type og kvalitetssikre bilete, metadata og eventuelle dokument."
+              : "TODO: hent tittel, brødtekst, bilete, PDF-ar og metadata frå gammal side og flytt til rett Sanity-type.",
           },
         ],
       },

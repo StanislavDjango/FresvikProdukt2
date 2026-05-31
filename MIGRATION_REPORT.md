@@ -117,6 +117,10 @@ content migration.
 - Added document download links found on the old documentation and mounting
   instruction pages, including SINTEF, leveringsbetingelser, sentral
   godkjenning, ytelseserklæring and mounting PDFs.
+- Updated `/tilleggsutstyr` with old-site accessory intro text, extracted
+  accessory descriptions and article numbers for common reserved parts.
+- Old `/andre-produkter/...` accessory URLs now reuse extracted accessory copy
+  in their migration cards when the old page text was safely available.
 
 ## Verification
 
@@ -139,6 +143,8 @@ content migration.
   inventory.
 - `npm run lint` and `npm run build` passed after adding product, service and
   documentation content. Build still generates 116 app pages.
+- `npm run lint` passed after adding accessory descriptions and article
+  numbers.
 
 ## Still TODO
 
@@ -162,6 +168,10 @@ content migration.
   file URLs.
 - Finish accessory pages and remaining long-form product/service body copy in
   Sanity.
+- Continue extracting customer-segment pages such as butikk, offshore,
+  storkjøkken and transportskade. The old site started returning HTTP 429 while
+  this pass was extracting those URLs, so they remain represented from sitemap
+  inventory until the next safe fetch window.
 - Replace news/reference placeholder body text with full article/project body
   content from old pages.
 - Add final redirects in `next.config.ts` if old URLs are renamed, especially

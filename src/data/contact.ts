@@ -15,7 +15,27 @@ export type ContactPerson = {
   email: string;
 };
 
-export const offices: Office[] = [
+export type ContactPageContent = {
+  heroEyebrow: string;
+  title: string;
+  intro: string;
+  mainEmail: string;
+  primaryPhone: string;
+  responseNote: string;
+  officeHours: string;
+  locationsLabel: string;
+  salesEyebrow: string;
+  salesTitle: string;
+  salesIntro: string;
+  formEyebrow: string;
+  formTitle: string;
+  formIntro: string;
+  footerText: string;
+  offices: Office[];
+  salesContacts: ContactPerson[];
+};
+
+const offices: Office[] = [
   {
     name: "Fresvik",
     label: "Hovudkontor",
@@ -36,7 +56,7 @@ export const offices: Office[] = [
   },
 ];
 
-export const salesContacts: ContactPerson[] = [
+const salesContacts: ContactPerson[] = [
   {
     name: "Arne-Olav Lien Bardølsgård",
     role: "Salsavdeling",
@@ -67,3 +87,27 @@ export const navigation = [
   "Referansar",
   "Om oss",
 ];
+
+export const fallbackContactPage: ContactPageContent = {
+  heroEyebrow: "Prosjekt, sal og teknisk avklaring",
+  title: "Kontakt Fresvik Produkt",
+  intro:
+    "Har du eit prosjekt du vil diskutere? Vi hjelper med isolerte panel, kjøle- og fryseløysingar, levering, montasje og service.",
+  mainEmail: "post@fresvik.no",
+  primaryPhone: "+47 57 69 83 00",
+  responseNote:
+    "Eller finn rett salskontakt under. Vi svarar normalt innan ein arbeidsdag.",
+  officeHours: "Man-fre 08-16",
+  locationsLabel: "Fresvik og Drammen",
+  salesEyebrow: "Salsavdeling",
+  salesTitle: "Kom direkte i kontakt med ein av oss",
+  salesIntro:
+    "Vel personen som passar best for prosjektet ditt, eller send førespørselen til felles innboks.",
+  formEyebrow: "Send førespørsel",
+  formTitle: "Fortel kort om behovet, så tek vi kontakt",
+  formIntro:
+    "Skjemaet opnar ein ferdig e-post til Fresvik. Neste steg blir å koble dette til Sanity og ein server action/API for direkte sending.",
+  footerText: "Fresvik Produkt AS, Fresvikvegen 995, 6896 Fresvik",
+  offices,
+  salesContacts,
+};

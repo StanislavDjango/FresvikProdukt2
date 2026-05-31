@@ -16,7 +16,11 @@ const contactSchema = z.object({
 
 type ContactFormValues = z.infer<typeof contactSchema>;
 
-export function ContactForm() {
+type ContactFormProps = {
+  recipientEmail: string;
+};
+
+export function ContactForm({ recipientEmail }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const {
     register,
@@ -43,7 +47,7 @@ export function ContactForm() {
     );
 
     window.location.assign(
-      `mailto:post@fresvik.no?subject=${subject}&body=${body}`,
+      `mailto:${recipientEmail}?subject=${subject}&body=${body}`,
     );
     setSubmitted(true);
     reset();

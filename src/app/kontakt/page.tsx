@@ -10,7 +10,8 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
-import { navigation, offices, salesContacts } from "@/data/contact";
+import { navigation } from "@/data/contact";
+import { getContactPage } from "@/sanity/lib/contactPage";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -30,27 +31,31 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Fresvik Produkt AS",
-  url: "https://www.fresvik.no",
-  email: "post@fresvik.no",
-  telephone: "+47 57 69 83 00",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Fresvikvegen 995",
-    postalCode: "6896",
-    addressLocality: "Fresvik",
-    addressCountry: "NO",
-  },
-};
-
 function telHref(phone: string) {
   return `tel:${phone.replace(/\s/g, "")}`;
 }
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const page = await getContactPage();
+  const primaryOffice = page.offices[0];
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Fresvik Produkt AS",
+    url: "https://www.fresvik.no",
+    email: page.mainEmail,
+    telephone: page.primaryPhone,
+    address: primaryOffice
+      ? {
+          "@type": "PostalAddress",
+          streetAddress: primaryOffice.address[0],
+          postalCode: primaryOffice.address[1]?.split(" ")[0],
+          addressLocality: primaryOffice.name,
+          addressCountry: "NO",
+        }
+      : undefined,
+  };
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-950">
       <script
@@ -84,14 +89,14 @@ export default function ContactPage() {
 
           <div className="hidden items-center gap-3 lg:flex">
             <a
-              href="mailto:post@fresvik.no"
+              href={`mailto:${page.mainEmail}`}
               className="inline-flex h-11 items-center gap-2 rounded-[6px] border border-slate-300 px-4 text-sm font-semibold text-slate-900 transition hover:border-cyan-800 hover:text-cyan-800"
             >
               <Mail aria-hidden="true" size={17} />
-              post@fresvik.no
+              {page.mainEmail}
             </a>
             <a
-              href={telHref("+47 57 69 83 00")}
+              href={telHref(page.primaryPhone)}
               className="inline-flex h-11 items-center gap-2 rounded-[6px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800"
             >
               <Phone aria-hidden="true" size={17} />
@@ -117,10 +122,10 @@ export default function ContactPage() {
                 </a>
               ))}
               <a
-                href="mailto:post@fresvik.no"
+                href={`mailto:${page.mainEmail}`}
                 className="rounded-[6px] px-3 py-2 transition hover:bg-slate-100 hover:text-cyan-800"
               >
-                post@fresvik.no
+                {page.mainEmail}
               </a>
             </nav>
           </details>
@@ -134,14 +139,13 @@ export default function ContactPage() {
           <div className="max-w-3xl">
             <p className="mb-5 inline-flex items-center gap-2 rounded-[6px] border border-white/15 bg-white/10 px-3 py-2 text-sm font-medium text-cyan-50">
               <ShieldCheck aria-hidden="true" size={17} />
-              Prosjekt, sal og teknisk avklaring
+              {page.heroEyebrow}
             </p>
             <h1 className="text-4xl font-semibold leading-tight tracking-normal text-white sm:text-5xl lg:text-6xl">
-              Kontakt Fresvik Produkt
+              {page.title}
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-              Har du eit prosjekt du vil diskutere? Vi hjelper med isolerte
-              panel, kjøle- og fryseløysingar, levering, montasje og service.
+              {page.intro}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
@@ -151,11 +155,11 @@ export default function ContactPage() {
                 Send førespørsel <ArrowRight aria-hidden="true" size={18} />
               </a>
               <a
-                href={telHref("+47 57 69 83 00")}
+                href={telHref(page.primaryPhone)}
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] border border-white/25 px-5 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
               >
                 <Phone aria-hidden="true" size={18} />
-                +47 57 69 83 00
+                {page.primaryPhone}
               </a>
             </div>
           </div>
@@ -164,26 +168,29 @@ export default function ContactPage() {
             <div className="rounded-[8px] border border-white/15 bg-white/10 p-5 backdrop-blur">
               <p className="text-sm font-medium text-cyan-100">Direkte kontakt</p>
               <a
-                href="mailto:post@fresvik.no"
+                href={`mailto:${page.mainEmail}`}
                 className="mt-2 block text-2xl font-semibold text-white transition hover:text-cyan-100"
               >
-                post@fresvik.no
+                {page.mainEmail}
               </a>
               <p className="mt-3 text-sm leading-6 text-slate-200">
-                Eller finn rett salskontakt under. Vi svarar normalt innan ein
-                arbeidsdag.
+                {page.responseNote}
               </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="rounded-[8px] border border-white/15 bg-white/10 p-4 backdrop-blur">
                 <Clock3 aria-hidden="true" className="text-cyan-200" size={20} />
                 <p className="mt-3 text-sm text-slate-200">Kontortid</p>
-                <p className="mt-1 font-semibold text-white">Man-fre 08-16</p>
+                <p className="mt-1 font-semibold text-white">
+                  {page.officeHours}
+                </p>
               </div>
               <div className="rounded-[8px] border border-white/15 bg-white/10 p-4 backdrop-blur">
                 <Building2 aria-hidden="true" className="text-cyan-200" size={20} />
                 <p className="mt-3 text-sm text-slate-200">Lokasjonar</p>
-                <p className="mt-1 font-semibold text-white">Fresvik og Drammen</p>
+                <p className="mt-1 font-semibold text-white">
+                  {page.locationsLabel}
+                </p>
               </div>
             </div>
           </aside>
@@ -191,7 +198,7 @@ export default function ContactPage() {
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-5 px-5 py-12 lg:grid-cols-2 lg:px-8">
-        {offices.map((office) => (
+        {page.offices.map((office) => (
           <article
             key={office.name}
             className="grid overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm"
@@ -238,18 +245,17 @@ export default function ContactPage() {
         <div className="mx-auto grid max-w-7xl gap-8 px-5 py-14 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-cyan-800">
-              Salsavdeling
+              {page.salesEyebrow}
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950">
-              Kom direkte i kontakt med ein av oss
+              {page.salesTitle}
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-600">
-              Vel personen som passar best for prosjektet ditt, eller send
-              førespørselen til felles innboks.
+              {page.salesIntro}
             </p>
           </div>
           <div className="grid gap-4 md:grid-cols-3">
-            {salesContacts.map((person) => (
+            {page.salesContacts.map((person) => (
               <article
                 key={person.email}
                 className="rounded-[8px] border border-slate-200 bg-slate-50 p-5"
@@ -283,22 +289,21 @@ export default function ContactPage() {
       >
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.14em] text-cyan-800">
-            Send førespørsel
+            {page.formEyebrow}
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950">
-            Fortel kort om behovet, så tek vi kontakt
+            {page.formTitle}
           </h2>
           <p className="mt-4 text-base leading-7 text-slate-600">
-            Skjemaet opnar ein ferdig e-post til Fresvik. Neste steg blir å
-            koble dette til Sanity og ein server action/API for direkte sending.
+            {page.formIntro}
           </p>
         </div>
-        <ContactForm />
+        <ContactForm recipientEmail={page.mainEmail} />
       </section>
 
       <footer className="bg-slate-950 text-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 text-sm text-slate-300 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <p>Fresvik Produkt AS, Fresvikvegen 995, 6896 Fresvik</p>
+          <p>{page.footerText}</p>
           <div className="flex gap-5">
             <a href="#" className="hover:text-white">
               Personvernerklæring

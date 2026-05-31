@@ -33,6 +33,17 @@ NEXT_PUBLIC_SANITY_API_VERSION=2026-05-30
 
 The Studio route is available at `/studio`.
 
+The contact page is already wired to Sanity. If Sanity is not configured, the
+site uses the local fallback content from `src/data/contact.ts`.
+
+After creating the Sanity project, import the starter contact page document:
+
+```bash
+npx sanity dataset import sanity/seed/contactPage.ndjson production --replace
+```
+
+Then add the same Sanity environment variables in Vercel and redeploy.
+
 ## Verification
 
 ```bash

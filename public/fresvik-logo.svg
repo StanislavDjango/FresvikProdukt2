@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" role="img" aria-labelledby="title desc">
+  <title id="title">Fresvik Produkt</title>
+  <desc id="desc">Fresvik Produkt wordmark</desc>
+  <rect width="64" height="64" rx="8" fill="#155e75"/>
+  <path fill="#fff" d="M14 17h25v8H23v8h14v8H23v14h-9V17Zm33 0h3v38h-9V17h6Z"/>
+  <path fill="#22d3ee" d="M42 17h8v16h-8z"/>
+  <path fill="#0f172a" d="M82 23h34v7H91v8h21v7H91v14h-9V23Zm42 0h28v7h-19v7h16v7h-16v8h20v7h-29V23Zm39 0h10l15 22V23h8v36h-9l-16-23v23h-8V23Z"/>
+  <path fill="#155e75" d="M82 12h56v6H82z"/>
+</svg>

@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "engines": {
+    "node": "22.x",
+    "npm": ">=10"
+  },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
     "lucide-react": "^1.17.0",

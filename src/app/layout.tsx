@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { siteName, siteUrl } from "@/config/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -8,13 +9,19 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.fresvik.no"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Fresvik Produkt",
-    template: "%s | Fresvik Produkt",
+    default: siteName,
+    template: `%s | ${siteName}`,
   },
   description:
     "Fresvik Produkt leverer isolerte panel, portar, dorer, montasje og service til norske prosjekt.",
+  applicationName: siteName,
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/apple-icon.svg",
+  },
 };
 
 export default function RootLayout({

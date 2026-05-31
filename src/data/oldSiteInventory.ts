@@ -351,13 +351,244 @@ export const oldSiteReferences: MigratedListItem[] = [
   },
 ];
 
+export const oldSiteProducts: MigratedListItem[] = [
+  {
+    title: "Fresvik PIR Panel",
+    href: "/produkt/fresvik-pir-panel",
+    lastmod: "2026-05-11",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
+  },
+  {
+    title: "Fresvik Panel",
+    href: "/produkt/fresvik-panel",
+    lastmod: "2026-03-10",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
+  },
+  {
+    title: "Kjøle- og fryseportar",
+    href: "/produkt/kjole-fryseportar",
+    lastmod: "2026-03-10",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
+  },
+  {
+    title: "Kjøle- og frysedører",
+    href: "/produkt/kjole-frysedorer",
+    lastmod: "2026-03-10",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
+  },
+  {
+    title: "Fasadepanel",
+    href: "/produkt/fasadepanel",
+    lastmod: "2026-03-10",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
+  },
+  {
+    title: "Frysetunnel",
+    href: "/produkt/frysetunnel",
+    lastmod: "2026-05-07",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/506e6a44-7853-4159-83ac-0bfffd486b1c/New+Logo+Design+2024+-+Made+with+PosterMyWall+%2815%29.png",
+  },
+];
+
+export const oldSiteServices: MigratedListItem[] = [
+  {
+    title: "Montasje",
+    href: "/tenester/montasje",
+    lastmod: "2026-03-10",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228769500-4TTIXKAO1JNS9J2G51MG/_K6R3776_07032013.jpg",
+  },
+  {
+    title: "Leveranse",
+    href: "/tenester/leveranse",
+    lastmod: "2026-03-10",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3c01276b-1589-49c6-9503-8cd8519959d9/port1web.jpg",
+  },
+  {
+    title: "Service og reservedeler",
+    href: "/tenester/service-reservedeler",
+    lastmod: "2026-03-10",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
+  },
+];
+
+export const oldSiteDocuments: MigratedListItem[] = [
+  {
+    title: "Dokumentasjon",
+    href: "/dokumentasjon",
+    lastmod: "2026-03-10",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
+  },
+  {
+    title: "Monteringsanvisning",
+    href: "/monteringsanvisning",
+    lastmod: "2026-03-10",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
+  },
+  {
+    title: "Monteringsanvisningar Fresvik skyveport",
+    href: "/monteringsanvisningar-fresvik-skyveport",
+    lastmod: "2026-02-04",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
+  },
+];
+
+export const oldSiteAccessories: MigratedListItem[] = [
+  {
+    title: "Tilleggsutstyr",
+    href: "/tilleggsutstyr",
+    lastmod: "2026-03-10",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5416085d-ec3b-4270-bef9-0b20706ad193/1463-fr-plata-instal.webp",
+  },
+  {
+    title: "Standard håndtak",
+    href: "/andre-produkter/standard-handtak",
+    lastmod: "2023-08-28",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228902945-AQM2H33O29539I7FSA3I/Ha%CC%8Andtak+standard_web.jpg",
+  },
+  {
+    title: "Elebar ventil",
+    href: "/andre-produkter/elebar-ventil",
+    lastmod: "2023-08-28",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228906304-EALH1BMIZQ4OMLY1L00P/Elebar+ventil+inne_web.jpg",
+  },
+  {
+    title: "MaxiElebar ventil",
+    href: "/andre-produkter/maxielebar-ventil",
+    lastmod: "2023-08-28",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228910970-GA9J3XJZ7A746P0MBQJ4/MaxiElebar+ventil+inne_web.jpg",
+  },
+  {
+    title: "PEGO innestengningsalarm",
+    href: "/andre-produkter/pego-innestengningsalarm",
+    lastmod: "2023-08-28",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228916130-S0DQVN00OYIZASC3CQKV/PEGO+innestengningsalarm_web.jpg",
+    imageAlt: "PEGO innestengningsalarm.",
+  },
+  {
+    title: "PVC-gardiner",
+    href: "/andre-produkter/pvc-gardiner",
+    lastmod: "2024-06-25",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228921336-E5VWZTJBSCS1W0PVW8TB/PVC-gardin_web.jpg",
+    imageAlt: "PVC-gardin.",
+  },
+  {
+    title: "Diktator dørtiltrekker",
+    href: "/andre-produkter/diktator-dortiltrekker",
+    lastmod: "2023-08-28",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228926673-R5XLINLC97ZQFF7EP91Y/Diktator_web.jpg",
+  },
+  {
+    title: "Køyrerampe",
+    href: "/andre-produkter/kjlerampe",
+    lastmod: "2023-08-28",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228933067-LHLZ30AMNKXNVOYEUTGA/rampe1+copy.jpg",
+  },
+  {
+    title: "Beslag",
+    href: "/andre-produkter/beslag",
+    lastmod: "2023-08-28",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228943559-L0SXG2I29YLNU5JDWJP5/profil1+copy.jpg",
+  },
+  {
+    title: "Standard dører",
+    href: "/andre-produkter/2014/7/9/standard-drer",
+    lastmod: "2024-01-05",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228959146-O18ZOPO4ZJZA3KCU13SL/dor_ny.jpg",
+  },
+  {
+    title: "Skipsdører",
+    href: "/andre-produkter/2014/7/9/skipsdrer",
+    lastmod: "2024-10-02",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429912105-GUXVAQLQO6L6XRSJ0NYV/Skipsd%C3%B8r+Fresvik+Produkt.jpg",
+  },
+  {
+    title: "Industri slagdør",
+    href: "/andre-produkter/2014/7/9/industri-slagdor",
+    lastmod: "2025-01-20",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429948521-DGRCHMLC0A18PBW3X2E0/Industri+slagd%C3%B8r+Fresvik+Produkt.jpg",
+  },
+];
+
+export const oldSiteSupportPages: MigratedListItem[] = [
+  {
+    title: "Kjølerom og fryserom butikk",
+    href: "/kjolerom-fryserom-butikk",
+    lastmod: "2026-02-04",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e6cfec2d-4a38-4f29-be2c-653e5ba2d797/Coop+Extra+Sogndal.jpeg",
+  },
+  {
+    title: "Kjølerom og fryserom offshore",
+    href: "/kjolerom-fryserom-offshore",
+    lastmod: "2026-02-24",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429051200-R0UVYZO6J6WM4KZN512O/image-asset.jpeg",
+  },
+  {
+    title: "Kjølerom og fryserom storkjøkken",
+    href: "/kjolerom-fryserom-storkjokken",
+    lastmod: "2026-02-04",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694500125082-6JC19LMQZ08K1B9WF07S/image-asset.jpeg",
+  },
+  {
+    title: "Transportskade",
+    href: "/transportskade",
+    lastmod: "2026-02-04",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/028353e9-eb2c-4f44-9fab-f6f895bb2476/Transportskade+Fresvik+Produkt.jpg",
+  },
+  {
+    title: "Send førespørsel",
+    href: "/send-foresporsel",
+    lastmod: "2026-02-04",
+  },
+];
+
 export const oldSiteAssetStats = {
   sitemapUrl: "https://www.fresvik.no/sitemap.xml",
   newsCount: oldSiteNews.length,
   referenceCount: oldSiteReferences.length,
+  productCount: oldSiteProducts.length,
+  serviceCount: oldSiteServices.length,
+  documentCount: oldSiteDocuments.length,
+  accessoryCount: oldSiteAccessories.length,
+  supportPageCount: oldSiteSupportPages.length,
   imageCountInSitemap: 325,
 };
 
 export function getOldSiteInventoryItem(href: string) {
-  return [...oldSiteNews, ...oldSiteReferences].find((item) => item.href === href);
+  return [
+    ...oldSiteNews,
+    ...oldSiteReferences,
+    ...oldSiteProducts,
+    ...oldSiteServices,
+    ...oldSiteDocuments,
+    ...oldSiteAccessories,
+    ...oldSiteSupportPages,
+  ].find((item) => item.href === href);
 }

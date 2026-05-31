@@ -1,7 +1,12 @@
 import {
   getOldSiteInventoryItem,
+  oldSiteAccessories,
+  oldSiteDocuments,
   oldSiteNews,
+  oldSiteProducts,
   oldSiteReferences,
+  oldSiteServices,
+  oldSiteSupportPages,
 } from "@/data/oldSiteInventory";
 
 export type ContentCard = {
@@ -147,6 +152,31 @@ const referenceCards = inventoryCards(
   "Referanse registrert frå gammal sitemap. Prosjekttekst, kategori og bilete skal importerast til Sanity.",
 );
 
+const oldProductCards = inventoryCards(
+  oldSiteProducts,
+  "Produkt registrert frå gammal sitemap. Brødtekst, tekniske data og dokument skal importerast til Sanity.",
+);
+
+const oldServiceCards = inventoryCards(
+  oldSiteServices,
+  "Teneste registrert frå gammal sitemap. Brødtekst, prosess og CTA skal importerast til Sanity.",
+);
+
+const oldDocumentCards = inventoryCards(
+  oldSiteDocuments,
+  "Dokumentasjonsside registrert frå gammal sitemap. PDF-ar og eksterne dokument skal importerast.",
+);
+
+const oldAccessoryCards = inventoryCards(
+  oldSiteAccessories,
+  "Tilleggsutstyr registrert frå gammal sitemap. Produkttekst og bilete skal importerast til Sanity.",
+);
+
+const oldSupportCards = inventoryCards(
+  oldSiteSupportPages,
+  "Kundesegment eller supportsida registrert frå gammal sitemap. Innhald skal vurderast for ny struktur.",
+);
+
 const productSections = [
   {
     title: "Dette skal migrerast frå gammal side",
@@ -215,8 +245,24 @@ export const contentPages: ContentPage[] = [
       "Oversikt over produkt frå Fresvik Produkt: PIR/PUR-panel, kjøle- og fryseportar, dører, fasadepanel og tilleggsutstyr.",
     pageType: "index",
     priority: "high",
-    cards: productCards,
-    sections: [{ title: "Produktområde", items: productCards }],
+    cards: oldProductCards.slice(0, 6),
+    sections: [
+      { title: "Produktområde i ny struktur", items: productCards },
+      {
+        title: "Produkt-URL-ar frå gammal sitemap",
+        intro:
+          "Desse produkt- og produktfoto-sidene er funne i gammal sitemap og skal migrerast eller redirectast.",
+        items: oldProductCards,
+      },
+      {
+        title: "Kundesegment frå gammal nettstad",
+        intro:
+          "Segment-sidene skal vurderast som landingssider, bruksområde eller redirects i ny struktur.",
+        items: oldSupportCards.filter((item) =>
+          item.href?.startsWith("/kjolerom-fryserom"),
+        ),
+      },
+    ],
     todo: ["Importer produktbilete og PDF-dokument frå gammal nettstad."],
   },
   {
@@ -304,20 +350,13 @@ export const contentPages: ContentPage[] = [
     pageType: "product",
     priority: "medium",
     sourceUrl: "https://www.fresvik.no/tilleggsutstyr",
-    cards: productCards.slice(0, 4),
+    cards: oldAccessoryCards.slice(0, 6),
     sections: [
       {
-        title: "Utstyr som skal kartleggast",
-        items: [
-          {
-            title: "Produktlister",
-            text: "TODO: hent komplett liste frå gammal side.",
-          },
-          {
-            title: "Relasjonar",
-            text: "TODO: knyt til aktuelle panel, portar og dører i Sanity.",
-          },
-        ],
+        title: "Tilleggsutstyr frå gammal sitemap",
+        intro:
+          "Dette er konkrete utstyrs- og butikk-URL-ar funne i gammal sitemap. Dei skal flyttast til produkt eller dokumentasjon i Sanity.",
+        items: oldAccessoryCards,
       },
     ],
     todo: ["Avgjer om tilleggsutstyr skal vere eigne produkt eller sideblokker."],
@@ -332,8 +371,14 @@ export const contentPages: ContentPage[] = [
       "Oversikt over tenester frå Fresvik Produkt: montasje, leveranse, service og reservedeler.",
     pageType: "index",
     priority: "high",
-    cards: serviceCards,
-    sections: [{ title: "Tenesteområde", items: serviceCards }],
+    cards: oldServiceCards,
+    sections: [
+      { title: "Tenesteområde", items: serviceCards },
+      {
+        title: "Teneste-URL-ar frå gammal sitemap",
+        items: oldServiceCards,
+      },
+    ],
     todo: ["Migrer endelege servicetekstar frå gammal nettstad."],
   },
   {
@@ -431,20 +476,19 @@ export const contentPages: ContentPage[] = [
     pageType: "support",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/dokumentasjon",
-    cards: supportCards,
+    cards: oldDocumentCards,
     sections: [
       {
-        title: "Dokumentkategoriar",
-        items: [
-          {
-            title: "Produktdokumentasjon",
-            text: "TODO: importer PDF-filer og knyt dei til produkt.",
-          },
-          {
-            title: "Sertifikat og eksterne dokument",
-            text: "TODO: kartlegg SINTEF, Miljøfyrtårn og andre eksterne lenker.",
-          },
-        ],
+        title: "Dokumentasjon frå gammal sitemap",
+        intro:
+          "Desse dokumentasjons- og monteringssidene er funne i gammal sitemap. Neste steg er å hente PDF-ar og koble dei til `documentFile`.",
+        items: oldDocumentCards,
+      },
+      {
+        title: "Support- og prosjektsider som må vurderast",
+        intro:
+          "Desse sidene kan bli eigne landingssider, dokumentasjon eller redirects.",
+        items: oldSupportCards,
       },
     ],
     todo: ["Bygg filter/søk når dokumentlista er komplett."],
@@ -459,7 +503,9 @@ export const contentPages: ContentPage[] = [
     pageType: "support",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/monteringsanvisning",
-    cards: [],
+    cards: oldDocumentCards.filter((item) =>
+      item.href?.includes("monterings"),
+    ),
     sections: [
       {
         title: "Filer som skal inn",

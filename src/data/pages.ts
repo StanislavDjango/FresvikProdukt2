@@ -659,3 +659,66 @@ export function getContentPage(slug: string) {
 export function getAllContentPages() {
   return contentPages;
 }
+
+function titleFromSlug(slug: string) {
+  const lastSegment = slug.split("/").filter(Boolean).at(-1) || "side";
+
+  return lastSegment
+    .replace(/-/g, " ")
+    .replace(/nbps|nbsp/g, "")
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+export function createLegacyContentPage(slug: string): ContentPage {
+  const isArticle = slug.startsWith("/aktuelt/");
+  const isReference = slug.startsWith("/referansar/");
+  const isAccessory = slug.startsWith("/andre-produkter/");
+
+  return {
+    slug,
+    title: titleFromSlug(slug),
+    eyebrow: isArticle
+      ? "Aktuelt frå gammal nettstad"
+      : isReference
+        ? "Referanse frå gammal nettstad"
+        : isAccessory
+          ? "Tilleggsutstyr frå gammal nettstad"
+          : "Gammal URL under migrering",
+    intro:
+      "Denne gamle Fresvik-sida er registrert i sitemap og blir halde levande medan innhaldet blir flytta til ny struktur.",
+    description:
+      "Migreringsside for gammal Fresvik Produkt URL. Endeleg tekst, bilete og dokument skal hentast frå gammal nettstad.",
+    pageType: isArticle
+      ? "company"
+      : isReference
+        ? "company"
+        : isAccessory
+          ? "product"
+          : "index",
+    priority: "low",
+    sourceUrl: `https://www.fresvik.no${slug}`,
+    cards: [],
+    sections: [
+      {
+        title: "Migreringsstatus",
+        intro:
+          "URL-en er dekt i ny Next.js-struktur slik at gamle interne lenker ikkje endar som 404 under migreringa.",
+        items: [
+          {
+            title: "Kjelde",
+            text: `Gammal side: https://www.fresvik.no${slug}`,
+          },
+          {
+            title: "Neste steg",
+            text: "TODO: hent tittel, brødtekst, bilete, PDF-ar og metadata frå gammal side og flytt til rett Sanity-type.",
+          },
+        ],
+      },
+    ],
+    todo: [
+      "Migrer nøyaktig tekst frå gammal side.",
+      "Importer og kvalitetssikre bilete, dokument og alt-tekst.",
+      "Avgjer om sida skal bli eiga side, nyheitsartikkel, referanse, produkt eller redirect.",
+    ],
+  };
+}

@@ -1,11 +1,13 @@
 import type { MetadataRoute } from "next";
 import { siteUrl } from "@/config/site";
+import { legacyRoutes } from "@/data/legacyRoutes";
 import { publicRoutes } from "@/data/navigation";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-05-31T00:00:00.000Z");
+  const routes = Array.from(new Set([...publicRoutes, ...legacyRoutes]));
 
-  return publicRoutes.map((route) => ({
+  return routes.map((route) => ({
     url: route === "/" ? siteUrl : `${siteUrl}${route}`,
     lastModified,
     changeFrequency: route === "/" ? "weekly" : "monthly",

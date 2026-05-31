@@ -47,14 +47,35 @@ content migration.
 - Updated `sitemap.ts` so the main public routes are included.
 - Added page-level metadata for generated public pages.
 - Added Product JSON-LD scaffolding for product routes.
+- Audited the old Squarespace sitemap:
+  - 105 public URLs found.
+  - 325 image entries found.
+  - Source: `https://www.fresvik.no/sitemap.xml`.
+- Added known legacy routes from the old sitemap so old article, reference,
+  accessory, product, support and store URLs can render an under-migration page
+  instead of falling into a 404 while exact content is being moved.
+- Added Sanity schemas for the migration model:
+  - `siteSettings`
+  - `page`
+  - `product`
+  - `service`
+  - `documentFile`
+  - `employee`
+  - `referenceProject`
+  - `newsArticle`
+  - `faqItem`
 
 ## Verification
 
 - `npm run lint` passed.
 - `npm run build` passed.
-- Build generated 30 app pages, including the new static content routes.
+- Build generated 116 app pages, including the new static content routes and
+  known legacy routes from the old sitemap.
 - Local dev server HTTP check returned `200` for all main public routes listed
   in the migration plan.
+- Local dev server HTTP spot-check returned `200` for legacy routes including
+  old news, reference, accessory, store, transport damage and mounting
+  instruction URLs.
 - Quick link scan found no menu placeholder links. The remaining `#foresporsel`
   link is an intentional same-page contact anchor.
 
@@ -62,9 +83,7 @@ content migration.
 
 - Pull exact body copy, images, PDFs, document titles, alt text and legal text
   from the old website.
-- Create Sanity schemas beyond the existing `contactPage` schema:
-  `siteSettings`, `page`, `product`, `service`, `documentFile`, `employee`,
-  `referenceProject`, `newsArticle`, and `faqItem`.
+- Import or seed real Sanity documents for the new schemas.
 - Import real assets into `public/assets/fresvik/...` or Sanity assets.
 - Replace TODO migration placeholders on product, service, documentation, FAQ,
   employee, news, reference and legal pages.

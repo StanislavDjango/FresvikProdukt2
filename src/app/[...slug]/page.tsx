@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { ContentPageView } from "@/components/content/ContentPageView";
-import { getAllContentPages, getContentPage } from "@/data/pages";
+import { isLegacyRoute, legacyRoutes } from "@/data/legacyRoutes";
+import {
+  createLegacyContentPage,
+  getAllContentPages,
+  getContentPage,
+} from "@/data/pages";
 
 type RouteProps = {
   params: Promise<{ slug: string[] }>;
@@ -12,11 +17,16 @@ function toPath(slug: string[]) {
 }
 
 export function generateStaticParams() {
-  return getAllContentPages()
-    .filter((page) => page.slug !== "/")
-    .map((page) => ({
-      slug: page.slug.split("/").filter(Boolean),
-    }));
+  const routes = new Set([
+    ...getAllContentPages()
+      .filter((page) => page.slug !== "/")
+      .map((page) => page.slug),
+    ...legacyRoutes,
+  ]);
+
+  return Array.from(routes).map((route) => ({
+    slug: route.split("/").filter(Boolean),
+  }));
 }
 
 export async function generateMetadata({
@@ -24,9 +34,9 @@ export async function generateMetadata({
 }: RouteProps): Promise<Metadata> {
   const { slug } = await params;
   const path = toPath(slug);
-  const page = getContentPage(path);
+  const page = getContentPage(path) || createLegacyContentPage(path);
 
-  if (!page) {
+  if (!getContentPage(path) && !isLegacyRoute(path)) {
     return {};
   }
 
@@ -57,9 +67,15 @@ export default async function DynamicContentPage({ params }: RouteProps) {
 
   const page = getContentPage(path);
 
+  if (page) {
+    return <ContentPageView page={page} />;
+  }
+
+  if (isLegacyRoute(path)) {
+    return <ContentPageView page={createLegacyContentPage(path)} />;
+  }
+
   if (!page) {
     notFound();
   }
-
-  return <ContentPageView page={page} />;
 }

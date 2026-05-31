@@ -54,6 +54,16 @@ content migration.
 - Added known legacy routes from the old sitemap so old article, reference,
   accessory, product, support and store URLs can render an under-migration page
   instead of falling into a 404 while exact content is being moved.
+- Added a structured old-site inventory for:
+  - 26 news/article URLs under `/aktuelt`.
+  - 23 reference project URLs under `/referansar`.
+  - image URLs and alt/caption text where the old sitemap exposed them.
+- Updated `/aktuelt` and `/referansar` to show real migrated sitemap cards
+  instead of empty TODO-only sections.
+- Individual old news/reference URLs now reuse the inventory title, date and
+  image when the old sitemap exposed them.
+- Connected old Squarespace image URLs through `next/image` with an explicit
+  remote image allowlist for `images.squarespace-cdn.com`.
 - Added Sanity schemas for the migration model:
   - `siteSettings`
   - `page`
@@ -76,6 +86,8 @@ content migration.
 - Local dev server HTTP spot-check returned `200` for legacy routes including
   old news, reference, accessory, store, transport damage and mounting
   instruction URLs.
+- Local `/aktuelt` and `/referansar` responses include old Squarespace image
+  URLs rendered through Next Image.
 - Quick link scan found no menu placeholder links. The remaining `#foresporsel`
   link is an intentional same-page contact anchor.
 
@@ -84,9 +96,13 @@ content migration.
 - Pull exact body copy, images, PDFs, document titles, alt text and legal text
   from the old website.
 - Import or seed real Sanity documents for the new schemas.
-- Import real assets into `public/assets/fresvik/...` or Sanity assets.
+- Download or import real assets into `public/assets/fresvik/...` or Sanity
+  assets. Current news/reference images are linked from the old Squarespace CDN
+  and rendered through Next Image.
 - Replace TODO migration placeholders on product, service, documentation, FAQ,
-  employee, news, reference and legal pages.
+  employee and legal pages.
+- Replace news/reference placeholder body text with full article/project body
+  content from old pages.
 - Add final redirects in `next.config.ts` if old URLs are renamed, especially
   after confirming `/produkt/fresvik-panel` to `/produkt/fresvik-pur-panel`.
 - Run visual browser checks on desktop and mobile. The in-app browser connection

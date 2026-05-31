@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle2, ExternalLink } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { CTASection } from "@/components/CTASection";
 import { Card } from "@/components/ui/Card";
@@ -77,6 +78,15 @@ export function ContentPageView({ page }: ContentPageViewProps) {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {page.cards.map((card) => (
                 <Card key={card.title} className="flex flex-col">
+                  {card.imageUrl ? (
+                    <Image
+                      src={card.imageUrl}
+                      alt={card.imageAlt || card.title}
+                      width={720}
+                      height={420}
+                      className="-mx-5 -mt-5 mb-5 h-48 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover"
+                    />
+                  ) : null}
                   {card.meta ? (
                     <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
                       {card.meta}
@@ -110,6 +120,20 @@ export function ContentPageView({ page }: ContentPageViewProps) {
             <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {section.items.map((item) => (
                 <Card key={item.title}>
+                  {item.imageUrl ? (
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.imageAlt || item.title}
+                      width={720}
+                      height={420}
+                      className="-mx-5 -mt-5 mb-5 h-48 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover"
+                    />
+                  ) : null}
+                  {item.meta ? (
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
+                      {item.meta}
+                    </p>
+                  ) : null}
                   <h3 className="text-lg font-semibold text-slate-950">
                     {item.title}
                   </h3>

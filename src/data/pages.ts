@@ -1,8 +1,16 @@
+import {
+  getOldSiteInventoryItem,
+  oldSiteNews,
+  oldSiteReferences,
+} from "@/data/oldSiteInventory";
+
 export type ContentCard = {
   title: string;
   text: string;
   href?: string;
   meta?: string;
+  imageUrl?: string;
+  imageAlt?: string;
 };
 
 export type ContentPage = {
@@ -114,6 +122,30 @@ const companyCards: ContentCard[] = [
     href: "/stillingledig",
   },
 ];
+
+function inventoryCards(
+  items: typeof oldSiteNews,
+  fallbackText: string,
+): ContentCard[] {
+  return items.map((item) => ({
+    title: item.title,
+    text: fallbackText,
+    href: item.href,
+    meta: item.lastmod,
+    imageUrl: item.imageUrl,
+    imageAlt: item.imageAlt || item.title,
+  }));
+}
+
+const newsCards = inventoryCards(
+  oldSiteNews,
+  "Nyheit registrert frå gammal sitemap. Brødtekst skal importerast frå kjeldesida til Sanity.",
+);
+
+const referenceCards = inventoryCards(
+  oldSiteReferences,
+  "Referanse registrert frå gammal sitemap. Prosjekttekst, kategori og bilete skal importerast til Sanity.",
+);
 
 const productSections = [
   {
@@ -475,19 +507,16 @@ export const contentPages: ContentPage[] = [
     pageType: "company",
     priority: "medium",
     sourceUrl: "https://www.fresvik.no/referansar",
-    cards: [],
+    cards: referenceCards.slice(0, 9),
     sections: [
       {
-        title: "Referanseprosjekt",
-        items: [
-          {
-            title: "TODO",
-            text: "Migrer prosjektliste, bilete, år, stad og kundetype frå gammal side.",
-          },
-        ],
+        title: "Registrerte referanseprosjekt frå gammal sitemap",
+        intro:
+          "Dette er faktiske referanse-URL-ar og bilete frå den gamle nettstaden. Neste steg er å flytte brødtekst, kategori og metadata til Sanity.",
+        items: referenceCards,
       },
     ],
-    todo: ["Bygg `referenceProject` schema og filter."],
+    todo: ["Importer referanseprosjekta som `referenceProject`-dokument i Sanity."],
   },
   {
     slug: "/om-oss",
@@ -564,19 +593,16 @@ export const contentPages: ContentPage[] = [
     pageType: "company",
     priority: "medium",
     sourceUrl: "https://www.fresvik.no/aktuelt",
-    cards: [],
+    cards: newsCards.slice(0, 9),
     sections: [
       {
-        title: "Artiklar",
-        items: [
-          {
-            title: "TODO",
-            text: "Migrer nyheitsliste, datoar, ingressar, bilete og eventuelle artikkelsider.",
-          },
-        ],
+        title: "Registrerte nyheiter frå gammal sitemap",
+        intro:
+          "Dette er faktiske nyheits-URL-ar, datoar og bilete frå den gamle nettstaden. Brødtekst og SEO-tekst skal importerast vidare til Sanity.",
+        items: newsCards,
       },
     ],
-    todo: ["Bygg `newsArticle` schema og kortvisning."],
+    todo: ["Importer nyheitene som `newsArticle`-dokument i Sanity."],
   },
   {
     slug: "/stillingledig",
@@ -673,10 +699,11 @@ export function createLegacyContentPage(slug: string): ContentPage {
   const isArticle = slug.startsWith("/aktuelt/");
   const isReference = slug.startsWith("/referansar/");
   const isAccessory = slug.startsWith("/andre-produkter/");
+  const inventoryItem = getOldSiteInventoryItem(slug);
 
   return {
     slug,
-    title: titleFromSlug(slug),
+    title: inventoryItem?.title || titleFromSlug(slug),
     eyebrow: isArticle
       ? "Aktuelt frå gammal nettstad"
       : isReference
@@ -697,7 +724,18 @@ export function createLegacyContentPage(slug: string): ContentPage {
           : "index",
     priority: "low",
     sourceUrl: `https://www.fresvik.no${slug}`,
-    cards: [],
+    cards: inventoryItem
+      ? [
+          {
+            title: inventoryItem.title,
+            text: "Registrert frå gammal sitemap. Brødtekst skal importerast frå kjeldesida til Sanity.",
+            href: inventoryItem.href,
+            meta: inventoryItem.lastmod,
+            imageUrl: inventoryItem.imageUrl,
+            imageAlt: inventoryItem.imageAlt || inventoryItem.title,
+          },
+        ]
+      : [],
     sections: [
       {
         title: "Migreringsstatus",

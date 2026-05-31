@@ -313,10 +313,140 @@ const accessoryOrderCards: ContentCard[] = [
   },
 ];
 
-const oldSupportCards = inventoryCards(
-  oldSiteSupportPages,
-  "Kundesegment eller supportsida registrert frå gammal sitemap. Innhald skal vurderast for ny struktur.",
+const supportTextByHref: Record<string, string> = {
+  "/kjolerom-fryserom-butikk":
+    "Fresvik Produkt er marknadsleiar på kjøle- og fryserom til daglegvarehandel, bensinstasjonar og storkioskar, og leverer gjerne totalpakke med panel, portar, glassfrontar, hylleinnreiing, beslag, ventilar, festemateriell og montasje gjennom samarbeidande montasjeselskap.",
+  "/kjolerom-fryserom-offshore":
+    "Fresvik har lang erfaring med proviantrom til skip og offshore. Romma blir tilpassa frå modular, og Fresvik PIR-panel er godkjende for maritim bruk med klasse B-s1,d0 etter EN ISO 11925-2:2020 og EN 13823+A1:2022.",
+  "/kjolerom-fryserom-storkjokken":
+    "Fresvik leverer tilpassa kjøle- og fryserom til storkjøkken, restaurant og institusjon. Modulbaserte rom kan tilpassast ulike lokale, med slette overflater og tette fuger for enkel reingjering.",
+  "/transportskade":
+    "Ved transportskade anbefaler Fresvik at folk er til stades ved mottak og sjekkar leveransen. Eventuelle skadar må førast på fraktbrev før signering og rapporterast til Fresvik omgåande med bilete.",
+  "/send-foresporsel":
+    "Gammal førespørsels-URL er registrert i sitemap og bør før lansering vurderast som redirect til `/kontakt` eller eit Sanity-styrt skjema.",
+};
+
+const supportDetailCards = oldSiteSupportPages.map((item) => ({
+  title: item.title,
+  text:
+    supportTextByHref[item.href] ||
+    "Support- eller kundesegment-side funnen i gammal sitemap. Brødtekst skal kvalitetssikrast før endeleg lansering.",
+  href: item.href,
+  meta: item.lastmod,
+  imageUrl: item.imageUrl,
+  imageAlt: item.imageAlt || item.title,
+}));
+
+const customerSegmentCards = supportDetailCards.filter((item) =>
+  item.href?.startsWith("/kjolerom-fryserom"),
 );
+
+const transportDamageCards: ContentCard[] = [
+  {
+    title: "Kontroller leveransen ved mottak",
+    text:
+      "Fresvik anbefaler å ha folk til stades ved mottak som sjekkar leveransen.",
+  },
+  {
+    title: "Før skade på fraktbrev",
+    text:
+      "Eventuelle skadar må førast på fraktbrev før signering.",
+  },
+  {
+    title: "Rapporter omgåande",
+    text:
+      "Skaden skal rapporterast til post@fresvik.no omgåande, med bilete.",
+  },
+  {
+    title: "Frist på 6 dagar",
+    text:
+      "Skaderapportering må Fresvik ha innan 6 dagar fordi transportør har kort innrapporteringsfrist.",
+  },
+];
+
+const butikkSections: Section[] = [
+  {
+    title: "Daglegvare, drivstoffstasjon og storkiosk",
+    intro:
+      "Frosne og nedkjølte varer utgjer ein stadig større del av dagleg handel. Den gamle sida løftar fram behovet for tilstrekkelege installasjonar for presentasjon, lagring og behandling av denne varegruppa.",
+    items: [
+      {
+        title: "Totalpakke",
+        text:
+          "Fresvik leverer gjerne totalpakke med kjøle- og frysepanel, portar, glassfrontar, hylleinnreiing, beslag, ventilar og festemateriell.",
+      },
+      {
+        title: "Montasje",
+        text:
+          "Montasje kan leverast gjennom samarbeidande montasjeselskap.",
+      },
+      {
+        title: "Tilberedning og delikatesse",
+        text:
+          "Fresvik-panel blir også brukt til veggar og himlingar i tilberedningsrom og delikatesseavdelingar.",
+      },
+    ],
+  },
+];
+
+const offshoreSections: Section[] = [
+  {
+    title: "Skip og offshore",
+    intro:
+      "Fresvik har lang erfaring med leveransar av proviantrom til skip og offshore, der tilpassa rom og modular er ein nøkkelfaktor.",
+    items: [
+      {
+        title: "Tilpassa rom basert på modular",
+        text:
+          "Produktspekteret er basert på modular, med eit fleksibelt system for å gi gode løysingar for kunden.",
+      },
+      {
+        title: "Maritim godkjenning",
+        text:
+          "Fresvik oppgir å vere den einaste norske produsenten som leverer PIR-panel godkjende for maritim bruk.",
+      },
+      {
+        title: "Brannklasse",
+        text:
+          "Fresvik PIR-panel tilfredsstiller krava til klasse B-s1,d0 etter EN ISO 11925-2:2020 og EN 13823+A1:2022, samt øvrige spesifikasjonar etter NS-EN 14509:2013.",
+      },
+    ],
+  },
+];
+
+const storkjokkenSections: Section[] = [
+  {
+    title: "Storkjøkken, restaurant og institusjon",
+    intro:
+      "Fresvik har lang erfaring med kjøle- og fryserom til storkjøkken og institusjon, der tilpassa rom ofte er avgjerande.",
+    items: [
+      {
+        title: "Modulbaserte rom",
+        text:
+          "Kjøle- og fryseromma er basert på modular og kan tilpassast ulike lokale.",
+      },
+      {
+        title: "Overflater",
+        text:
+          "Overflatene kan vere FoodSafe polyesterlakk, syrefast, rustfritt eller glassfiber.",
+      },
+      {
+        title: "Reingjering",
+        text:
+          "Slette flater og tette fuger gir enkel reingjering av element.",
+      },
+    ],
+  },
+];
+
+const transportDamageSections: Section[] = [
+  {
+    title: "Slik gjer du ved transportskade",
+    intro:
+      "Dette er prosedyretekst frå gammal transportskade-side. Den bør kvalitetssikrast juridisk mot leveringsvilkår før endeleg lansering.",
+    items: transportDamageCards,
+  },
+];
 
 const commonPanelBenefits: ContentCard[] = [
   {
@@ -664,10 +794,8 @@ export const contentPages: ContentPage[] = [
       {
         title: "Kundesegment frå gammal nettstad",
         intro:
-          "Segment-sidene skal vurderast som landingssider, bruksområde eller redirects i ny struktur.",
-        items: oldSupportCards.filter((item) =>
-          item.href?.startsWith("/kjolerom-fryserom"),
-        ),
+          "Segment-sidene frå gammal nettstad viser korleis produkt og tenester blir brukt i butikk, offshore og storkjøkken/institusjon.",
+        items: customerSegmentCards,
       },
     ],
     todo: ["Importer produktbilete og PDF-dokument frå gammal nettstad."],
@@ -813,6 +941,84 @@ export const contentPages: ContentPage[] = [
     todo: ["Migrer endelege servicetekstar frå gammal nettstad."],
   },
   {
+    slug: "/kjolerom-fryserom-butikk",
+    title: "Kjøle- og fryserom til butikk",
+    eyebrow: "Kundesegment",
+    intro:
+      "Marknadsleiar på kjøle- og fryserom til daglegvarehandel, drivstoffstasjon og storkiosk.",
+    description:
+      "Kjøle- og fryserom til butikk, daglegvarehandel, drivstoffstasjon og storkiosk.",
+    pageType: "support",
+    priority: "medium",
+    sourceUrl: "https://www.fresvik.no/kjolerom-fryserom-butikk",
+    cards: supportDetailCards.filter(
+      (item) => item.href === "/kjolerom-fryserom-butikk",
+    ),
+    sections: butikkSections,
+    todo: [
+      "Importer relevante butikkbilete og referansar til Sanity.",
+      "Kvalitetssikre marknadsleiar-formulering før endeleg lansering.",
+    ],
+  },
+  {
+    slug: "/kjolerom-fryserom-offshore",
+    title: "Kjøle- og fryserom til skip og offshore",
+    eyebrow: "Kundesegment",
+    intro:
+      "Tilpassa proviantrom basert på modular, med PIR-panel godkjende for maritim bruk.",
+    description:
+      "Kjøle- og fryserom til skip og offshore frå Fresvik Produkt.",
+    pageType: "support",
+    priority: "medium",
+    sourceUrl: "https://www.fresvik.no/kjolerom-fryserom-offshore",
+    cards: supportDetailCards.filter(
+      (item) => item.href === "/kjolerom-fryserom-offshore",
+    ),
+    sections: offshoreSections,
+    todo: [
+      "Importer maritime referansar, bilete og eventuell dokumentasjon.",
+      "Kvalitetssikre brannklasse og standardreferansar mot gjeldande dokument.",
+    ],
+  },
+  {
+    slug: "/kjolerom-fryserom-storkjokken",
+    title: "Kjøle- og fryserom til storkjøkken",
+    eyebrow: "Kundesegment",
+    intro:
+      "Tilpassa kjøle- og fryserom til storkjøkken, restaurant og institusjon.",
+    description:
+      "Kjøle- og fryserom til storkjøkken, restaurant og institusjon.",
+    pageType: "support",
+    priority: "medium",
+    sourceUrl: "https://www.fresvik.no/kjolerom-fryserom-storkjokken",
+    cards: supportDetailCards.filter(
+      (item) => item.href === "/kjolerom-fryserom-storkjokken",
+    ),
+    sections: storkjokkenSections,
+    todo: [
+      "Importer relevante storkjøkkenbilete og referansar.",
+      "Kvalitetssikre material- og overflatebeskrivingar.",
+    ],
+  },
+  {
+    slug: "/transportskade",
+    title: "Transportskade",
+    eyebrow: "Kundeservice",
+    intro:
+      "Slik rapporterer du transportskade raskt og med nødvendig dokumentasjon.",
+    description:
+      "Informasjon om kontroll og rapportering ved transportskade på Fresvik-leveransar.",
+    pageType: "support",
+    priority: "medium",
+    sourceUrl: "https://www.fresvik.no/transportskade",
+    cards: supportDetailCards.filter((item) => item.href === "/transportskade"),
+    sections: transportDamageSections,
+    todo: [
+      "Kvalitetssikre DAP-/leveringsvilkår-referanse mot gjeldande leveringsbetingelser.",
+      "Vurder om sida skal lenkje direkte til leveringsvilkår-PDF.",
+    ],
+  },
+  {
     slug: "/tenester/montasje",
     title: "Montasje",
     eyebrow: "Teneste",
@@ -949,7 +1155,7 @@ export const contentPages: ContentPage[] = [
         title: "Support- og prosjektsider som må vurderast",
         intro:
           "Desse sidene kan bli eigne landingssider, dokumentasjon eller redirects.",
-        items: oldSupportCards,
+        items: supportDetailCards,
       },
     ],
     todo: [
@@ -1236,10 +1442,14 @@ export function createLegacyContentPage(slug: string): ContentPage {
   const isArticle = slug.startsWith("/aktuelt/");
   const isReference = slug.startsWith("/referansar/");
   const isAccessory = slug.startsWith("/andre-produkter/");
+  const isSupportPage =
+    slug.startsWith("/kjolerom-fryserom") || slug === "/transportskade";
   const inventoryItem = getOldSiteInventoryItem(slug);
   const migratedText =
     isAccessory && inventoryItem
       ? accessoryTextByHref[inventoryItem.href]
+      : isSupportPage && inventoryItem
+        ? supportTextByHref[inventoryItem.href]
       : undefined;
 
   return {
@@ -1251,6 +1461,8 @@ export function createLegacyContentPage(slug: string): ContentPage {
         ? "Referanse frå gammal nettstad"
         : isAccessory
           ? "Tilleggsutstyr frå gammal nettstad"
+          : isSupportPage
+            ? "Kundesegment frå gammal nettstad"
           : "Gammal URL under migrering",
     intro:
       "Denne gamle Fresvik-sida er registrert i sitemap og blir halde levande medan innhaldet blir flytta til ny struktur.",
@@ -1262,7 +1474,9 @@ export function createLegacyContentPage(slug: string): ContentPage {
         ? "company"
         : isAccessory
           ? "product"
-          : "index",
+          : isSupportPage
+            ? "support"
+            : "index",
     priority: "low",
     sourceUrl: `https://www.fresvik.no${slug}`,
     cards: inventoryItem

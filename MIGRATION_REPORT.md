@@ -101,6 +101,22 @@ content migration.
   - Lovdata Openheitslova page
 - Added external-link handling for content cards so PDF/Lovdata links open as
   normal external links instead of internal Next routes.
+- Replaced placeholder product sections with verified old-site content for:
+  - `/produkt/fresvik-pir-panel`
+  - `/produkt/fresvik-pur-panel`
+  - `/produkt/kjole-fryseportar`
+  - `/produkt/kjole-frysedorer`
+  - `/produkt/fasadepanel`
+- Added technical data found on the old product pages for PIR/PUR panels,
+  including thickness, density, weight, U-values, temperature range and flexible
+  module dimensions.
+- Added old-site service content for:
+  - `/tenester/montasje`
+  - `/tenester/leveranse`
+  - `/tenester/service-reservedeler`
+- Added document download links found on the old documentation and mounting
+  instruction pages, including SINTEF, leveringsbetingelser, sentral
+  godkjenning, ytelseserklæring and mounting PDFs.
 
 ## Verification
 
@@ -121,11 +137,13 @@ content migration.
   link is an intentional same-page contact anchor.
 - `npm run lint` passed after adding FAQ, employee, firmainfo and legal
   inventory.
+- `npm run lint` and `npm run build` passed after adding product, service and
+  documentation content. Build still generates 116 app pages.
 
 ## Still TODO
 
-- Pull exact body copy, images, PDFs, document titles, alt text and legal text
-  from the old website.
+- Continue pulling exact long-form body copy, images, PDFs, document titles,
+  alt text and legal text from the old website where pages still contain TODOs.
 - Import or seed real Sanity documents for the new schemas.
 - Download or import real assets into `public/assets/fresvik/...` or Sanity
   assets. Current news/reference images are linked from the old Squarespace CDN
@@ -139,8 +157,11 @@ content migration.
 - Provide approved full privacy policy text for `/personvernerklering`; the
   automated old-site extraction only confirmed the page/title, not reliable
   body text.
-- Replace product, service, documentation and accessory placeholder body text
-  with full body content from old pages.
+- Import product, service and documentation PDFs/images into Sanity assets or
+  `public/assets/fresvik/...`; they are currently linked to the old Squarespace
+  file URLs.
+- Finish accessory pages and remaining long-form product/service body copy in
+  Sanity.
 - Replace news/reference placeholder body text with full article/project body
   content from old pages.
 - Add final redirects in `next.config.ts` if old URLs are renamed, especially

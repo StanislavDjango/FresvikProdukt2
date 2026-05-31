@@ -234,23 +234,289 @@ const oldSupportCards = inventoryCards(
   "Kundesegment eller supportsida registrert frå gammal sitemap. Innhald skal vurderast for ny struktur.",
 );
 
-const productSections = [
+const commonPanelBenefits: ContentCard[] = [
   {
-    title: "Dette skal migrerast frå gammal side",
+    title: "Utvikla og produsert i Norge",
+    text:
+      "Panelinnhaldet er henta frå gamle produktsider. Fresvik legg vekt på norsk utvikling, produksjon og kort leveranseveg.",
+  },
+  {
+    title: "Enkel montasje med eksenterlås",
+    text:
+      "Fresvik-panel er basert på eit fleksibelt modulsystem med eksenterlås i overgangane.",
+  },
+  {
+    title: "Modulmål gir mindre svinn",
+    text:
+      "Fleksible modulmål og kundetilpassing skal bidra til mindre svinn og avfall på byggeplassen.",
+  },
+  {
+    title: "Hygienisk overflate",
+    text:
+      "Panela har hygienisk overflate. Standard overflate er 0,55 mm galvanisert stålplate med 25 µm polyester, type FoodSafe.",
+  },
+];
+
+const pirTechnicalCards: ContentCard[] = [
+  {
+    title: "Kjerne og tykkelse",
+    text:
+      "Sandwichelement med oppskumma PIR-skum som kjerne. Tykkelse: 75, 100, 125, 150 og 175 mm.",
+  },
+  {
+    title: "Densitet og vekt",
+    text: "Densitet: 43 (+/-3) kg/m3. Vekt ca. 14 - 18.5 kg/m2.",
+  },
+  {
+    title: "U-verdi og temperatur",
+    text:
+      "U-verdi/termisk transmittans: 0.14 - 0.29 W/(m²K). Temperatur: -40°C til +70°C.",
+  },
+  {
+    title: "Fleksible mål",
+    text:
+      "Fleksibel romhøgde i trinn på 50 mm opptil 8000 mm, og fleksibel modulbredde i trinn på 300 mm.",
+  },
+];
+
+const purTechnicalCards: ContentCard[] = [
+  {
+    title: "Kjerne og tykkelse",
+    text:
+      "Sandwichelement med oppskumma polyuretan som kjerne. Tykkelse: 75, 100, 125, 150 og 175 mm.",
+  },
+  {
+    title: "Densitet og vekt",
+    text: "Densitet: 40 (+/-3) kg/m3. Vekt ca. 13 - 17 kg/m2.",
+  },
+  {
+    title: "U-verdi og temperatur",
+    text:
+      "U-verdi/termisk transmittans: 0.13 - 0.29 W/(m²K). Temperatur: -40°C til +120°C.",
+  },
+  {
+    title: "Fleksible mål",
+    text:
+      "Fleksibel romhøgde i trinn på 50 mm opptil 8000 mm, og fleksibel modulbredde i trinn på 300 mm.",
+  },
+];
+
+const pirDocuments: ContentCard[] = [
+  {
+    title: "PIR-Paneler produktblad",
+    text: "Produktblad funne på gammal Fresvik PIR-Panel-side.",
+    href: "https://www.fresvik.no/s/PIR.pdf",
+  },
+  {
+    title: "PIR-Paneler montasjeanvisning",
+    text: "Montasjeanvisning funne på gammal Fresvik PIR-Panel-side.",
+    href: "https://www.fresvik.no/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf",
+  },
+];
+
+const portDocuments: ContentCard[] = [
+  {
+    title: "Produktblad Fresvik Skyveport",
+    text: "Produktblad for skyveport frå gammal portside.",
+    href: "https://www.fresvik.no/s/Produktblad-Fresvik-Skyveport.pdf",
+  },
+  {
+    title: "Monteringsanvisning manuell port",
+    text: "PDF for manuell portmontasje frå gammal portside.",
+    href: "https://www.fresvik.no/s/Fresvik-Port-Montasjeanvisning.pdf",
+  },
+  {
+    title: "Monteringsanvisning elektrisk port",
+    text: "Gammal underside for elektrisk portmontasje.",
+    href: "/monteringsanvisningar-fresvik-skyveport",
+  },
+];
+
+const documentationDownloads: ContentCard[] = [
+  {
+    title: "Miljødokument",
+    text: "Miljødokument for Fresvik Produkt.",
+    href: "https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf",
+  },
+  {
+    title: "Fresvik PIR-Panel CPR",
+    text: "CPR-dokument for Fresvik PIR-Panel.",
+    href: "https://www.fresvik.no/s/7060s-fnfz.pdf",
+  },
+  {
+    title: "Teknisk godkjenning",
+    text: "Teknisk godkjenning frå gammal dokumentasjonsside.",
+    href: "https://www.fresvik.no/s/2135g-5.pdf",
+  },
+  {
+    title: "Godkjenningsdokument hjå SINTEF",
+    text: "Ekstern SINTEF Certification-side.",
+    href: "https://sintefcertification.no/Product/Index/129",
+  },
+  {
+    title: "Leveringsbetingelser",
+    text: "Leveringsvilkår for Fresvik Produkt.",
+    href: "https://www.fresvik.no/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf",
+  },
+  {
+    title: "Sentral godkjenning",
+    text: "Sentral godkjenning frå gammal dokumentasjonsside.",
+    href: "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+  },
+  {
+    title: "Ytelseserklæring",
+    text: "Ytelseserklæring for Fresvik Produkt.",
+    href: "https://www.fresvik.no/s/Ytelseserklring-Fresvik-Produkt.pdf",
+  },
+];
+
+const mountingDownloads: ContentCard[] = [
+  {
+    title: "Fryserom, Norsk/English",
+    text: "Monteringsanvisning for fryserom.",
+    href: "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
+  },
+  {
+    title: "Manuell port",
+    text: "Monteringsanvisning for manuell port.",
+    href: "https://www.fresvik.no/s/Fresvik-Port-Montasjeanvisning.pdf",
+  },
+  {
+    title: "Kjølerom, Norsk/English",
+    text: "Monteringsanvisning for kjølerom.",
+    href: "https://www.fresvik.no/s/Fresvik-Kjlerom-Montasjeanvisning.pdf",
+  },
+  {
+    title: "Dør",
+    text: "Monteringsanvisning for dør.",
+    href: "https://www.fresvik.no/s/Fresvik-Dr-Montasjeanvisning.pdf",
+  },
+];
+
+const pirSections = [
+  {
+    title: "Produktfordelar frå gammal side",
     intro:
-      "Produkttekst, tekniske data, bruksområde, bilete og dokument skal hentast frå gammal side og kvalitetssikrast før endelig publisering.",
+      "Fresvik PIR-Panel er eit sandwichelement med oppskumma PIR-skum som kjerne, innkapsla mellom to stålplater.",
+    items: commonPanelBenefits,
+  },
+  {
+    title: "Tekniske data",
+    items: pirTechnicalCards,
+  },
+  {
+    title: "Dokument",
+    items: pirDocuments,
+  },
+];
+
+const purSections = [
+  {
+    title: "Produktfordelar frå gammal side",
+    intro:
+      "Fresvik PUR-Panel er eit sandwichelement med oppskumma polyuretan som kjerne, innkapsla mellom to stålplater.",
+    items: commonPanelBenefits,
+  },
+  {
+    title: "Tekniske data",
+    items: purTechnicalCards,
+  },
+];
+
+const portSections = [
+  {
+    title: "Skyveport til kjøle- og fryserom",
+    intro:
+      "Fresvik Produkt produserer kjøle- og fryseportar til næringsmiddelbransjen, engroslager og lagerbygg.",
     items: [
       {
-        title: "Produktfordelar",
-        text: "TODO: verifiser alle punkt mot kjeldesida før dei blir gjort redigerbare i Sanity.",
+        title: "Skreddarsydd etter mål",
+        text:
+          "Portane blir skreddarsydde ved fabrikken etter spesifikasjon frå kunde, og kan vere manuelle eller elektrisk drivne.",
       },
       {
-        title: "Tekniske data",
-        text: "TODO: legg inn tabellar og spesifikasjonar som strukturerte felt, ikkje som lause skjermbilete.",
+        title: "Kvalitet og isolering",
+        text:
+          "Skyveportane er kjende for kvalitet og god isoleringsevne, og er laga for slitasje og tøff behandling.",
       },
       {
-        title: "Dokument",
-        text: "TODO: knyt relevante PDF-ar og monteringsdokument til produktet.",
+        title: "Tetting og varmekabel",
+        text:
+          "Beslagets løftemekanisme og gummipakningar i EPDM-kvalitet sørger for god tetting. Fryseport har doble pakningar og sjølvregulerande varmekabel.",
+      },
+    ],
+  },
+  {
+    title: "Tekniske punkt",
+    items: [
+      {
+        title: "Dørblad",
+        text:
+          "Galvanisert stålplate med polyesterlakkert FoodSafe-overflate. Dørblad og beslag kan leverast i rustfritt stål.",
+      },
+      {
+        title: "Kjøl og frys",
+        text:
+          "Frys: 100 og 125 mm skumma polyurethane. Kjøl: 75 og 100 mm skumma polyurethane.",
+      },
+      {
+        title: "Automatikk",
+        text:
+          "Automatisk elektrisk opning/stenging kan leverast med trykknapp- eller snortrekkbrytar som standard.",
+      },
+    ],
+  },
+  {
+    title: "Dokument",
+    items: portDocuments,
+  },
+];
+
+const doorSections = [
+  {
+    title: "Dører til kjøle- og fryserom",
+    intro:
+      "Fresvik Produkt tilbyr tre modellar til ulike bruksområde, med galvanisert stålplate og FoodSafe-overflate.",
+    items: [
+      {
+        title: "Konstruksjon",
+        text:
+          "Dørblad med pakningar er montert på utanpåliggande karm i 2 mm pulverlakkert galvanisert stål.",
+      },
+      {
+        title: "Fryseromsdørar",
+        text:
+          "Fryseromsdørar har sjølvregulerande varmekabel, 230V og 16W/m.",
+      },
+      {
+        title: "Rask levering",
+        text:
+          "Fresvik har lager av standard kjøleromsdører med slepelist i breidde-lysmål 800, 900, 1000 og 1100 mm, og standard høgde 2055 mm inkludert slepelista.",
+      },
+    ],
+  },
+];
+
+const facadeSections = [
+  {
+    title: "Fasadepanel til lager- og industribygg",
+    intro:
+      "Fresvik har lang erfaring med bygg for næringsmiddelindustrien og leverer utvendige fasadepanel til lager og industribygg.",
+    items: [
+      {
+        title: "Kundtilpassa løysingar",
+        text:
+          "Styrken ligg i kompetanse på kundetilpasningar der det er behov for fasadepanel, kjøle/fryserom og innerveggar.",
+      },
+      {
+        title: "Panelkjerner",
+        text:
+          "Fasadepanel kan leverast med både polyuretan-skum og mineralull som kjerne.",
+      },
+      {
+        title: "Byggetid og energi",
+        text:
+          "Isolasjonspanel skal gi god energiøkonomisering og kort byggjetid.",
       },
     ],
   },
@@ -327,74 +593,89 @@ export const contentPages: ContentPage[] = [
     title: "Fresvik PIR Panel",
     eyebrow: "Produkt",
     intro:
-      "Isolerte PIR-panel for prosjekt der effektiv isolasjon, låg vekt og ryddig montasje er viktig.",
+      "Sandwichelement med oppskumma PIR-skum som kjerne, utvikla og produsert i Norge for kjøle- og fryserom.",
     description:
-      "Fresvik PIR Panel, med migreringsplass for tekniske data, bruksområde og dokumentasjon.",
+      "Fresvik PIR Panel med tekniske data, produktfordelar og dokumentasjon frå gammal Fresvik-side.",
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/fresvik-pir-panel",
-    cards: [],
-    sections: productSections,
-    todo: ["Verifiser komplett produkttekst, tekniske data og dokument."],
+    cards: oldProductCards.filter((item) => item.href === "/produkt/fresvik-pir-panel"),
+    sections: pirSections,
+    todo: [
+      "Importer produktbilete til Sanity assets eller lokal assets-mappe.",
+      "Kvalitetssikre tekniske data mot original PDF før endeleg lansering.",
+    ],
   },
   {
     slug: "/produkt/fresvik-pur-panel",
     title: "Fresvik PUR Panel",
     eyebrow: "Produkt",
     intro:
-      "PUR-panel for temperaturstyrte bygg og tekniske prosjekt. Innhaldet skal kontrollerast mot gammal `fresvik-panel`-side.",
+      "Sandwichelement med oppskumma polyuretan som kjerne, innkapsla mellom to stålplater.",
     description:
-      "Fresvik PUR Panel med planlagt redirect frå gammal Fresvik Panel URL når mapping er stadfesta.",
+      "Fresvik PUR Panel med tekniske data og produktfordelar frå gammal Fresvik Panel-side.",
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/fresvik-panel",
-    cards: [],
-    sections: productSections,
-    todo: ["Bekreft at `/produkt/fresvik-panel` skal mappe hit."],
+    cards: oldProductCards.filter((item) => item.href === "/produkt/fresvik-panel"),
+    sections: purSections,
+    todo: [
+      "Redirect frå `/produkt/fresvik-panel` til `/produkt/fresvik-pur-panel` er lagt til i app-logikk, men bør også vurderast som permanent redirect før lansering.",
+      "Importer produktbilete og eventuelle PDF-ar til Sanity assets.",
+    ],
   },
   {
     slug: "/produkt/kjole-fryseportar",
     title: "Kjøle- og fryseportar",
     eyebrow: "Produkt",
     intro:
-      "Portar for kjøle- og frysemiljø med krav til drift, isolasjon og tett funksjon.",
+      "Skyveportar for kjøle- og frysemiljø med krav til drift, isoleringsevne og tett funksjon.",
     description:
       "Produktområde for kjøle- og fryseportar frå Fresvik Produkt.",
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/kjole-fryseportar",
-    cards: [],
-    sections: productSections,
-    todo: ["Migrer portvariantar, bilete, dokument og tekniske data."],
+    cards: oldProductCards.filter((item) => item.href === "/produkt/kjole-fryseportar"),
+    sections: portSections,
+    todo: [
+      "Importer portbilete og dokument til Sanity assets.",
+      "Kvalitetssikre tekniske detaljar og variantar mot produktblad.",
+    ],
   },
   {
     slug: "/produkt/kjole-frysedorer",
     title: "Kjøle- og frysedører",
     eyebrow: "Produkt",
     intro:
-      "Dørløysingar for kjøle- og fryserom, lager og næringsmiddelprosjekt.",
+      "Kjøle- og fryseromsdører med FoodSafe-overflate, polyuretanisolasjon og modellar for ulike bruksområde.",
     description:
       "Produktområde for kjøle- og frysedører frå Fresvik Produkt.",
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/kjole-frysedorer",
-    cards: [],
-    sections: productSections,
-    todo: ["Migrer dørvariantar, bilete, dokument og tekniske data."],
+    cards: oldProductCards.filter((item) => item.href === "/produkt/kjole-frysedorer"),
+    sections: doorSections,
+    todo: [
+      "Migrer dørvariantar, bilete og eventuelle produktblad.",
+      "Kvalitetssikre lagerførte standardmål og leveringstid med Fresvik.",
+    ],
   },
   {
     slug: "/produkt/fasadepanel",
     title: "Fasadepanel",
     eyebrow: "Produkt",
     intro:
-      "Fasadepanel for prosjekt der bygget treng teknisk funksjon og eit ryddig eksteriør.",
+      "Utvendige fasadepanel til lager- og industribygg, med kompetanse frå næringsmiddelbygg.",
     description: "Produktområde for fasadepanel frå Fresvik Produkt.",
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/fasadepanel",
-    cards: [],
-    sections: productSections,
-    todo: ["Migrer fasadepanel-tekst, bilete, bruksområde og dokument."],
+    cards: oldProductCards.filter((item) => item.href === "/produkt/fasadepanel"),
+    sections: facadeSections,
+    todo: [
+      "Importer fasadepanel-bilete og referanselenker.",
+      "Kvalitetssikre beskriving av panelkjerner, godkjenningar og ansvarsrett.",
+    ],
   },
   {
     slug: "/tilleggsutstyr",
@@ -443,98 +724,128 @@ export const contentPages: ContentPage[] = [
     title: "Montasje",
     eyebrow: "Teneste",
     intro:
-      "Montasje av panel, portar og relaterte løysingar med planlegging for effektiv gjennomføring på byggeplass.",
+      "Fresvik Produkt tilbyr montasje av Fresvik-panel til kjølerom og fryserom, og sandwich-panel for fasade.",
     description: "Montasjetenester frå Fresvik Produkt.",
     pageType: "service",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/tenester/montasje",
-    cards: [],
+    cards: oldServiceCards.filter((item) => item.href === "/tenester/montasje"),
     sections: [
       {
-        title: "Montasjeprosess",
+        title: "Montasje frå gammal side",
         items: [
           {
-            title: "Avklaring",
-            text: "TODO: hent arbeidsflyt og detaljar frå gammal side.",
+            title: "Erfarne montørar",
+            text:
+              "Montasje blir gjort i samarbeid med erfarne montørar.",
           },
           {
-            title: "Gjennomføring",
-            text: "TODO: migrer montasjeinformasjon, krav og kontaktpunkt.",
+            title: "Sentral godkjenning",
+            text:
+              "Fresvik Produkt er sentralt godkjent og oppgir at dette dokumenterer kompetanse, erfaring og system tilpassa byggenæringa.",
+          },
+          {
+            title: "Kontakt sal",
+            text:
+              "Den gamle sida ber kundar ta kontakt med salsavdelinga for meir informasjon om montørane.",
           },
         ],
       },
     ],
-    todo: ["Importer servicebilete og eventuelle dokument."],
+    todo: [
+      "Importer servicebilete og dokumentasjon for sentral godkjenning.",
+      "Kvalitetssikre formulering rundt skatter/avgifter og godkjenningar.",
+    ],
   },
   {
     slug: "/tenester/leveranse",
     title: "Leveranse",
     eyebrow: "Teneste",
     intro:
-      "Leveranse og koordinering av produkt til prosjekt der timing, logistikk og oppfølging er viktig.",
+      "Leveransesikkerheit for fasadeelement, standard og spesialtilpassa kjølerom/fryserom.",
     description: "Leveransetenester frå Fresvik Produkt.",
     pageType: "service",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/tenester/leveranse",
-    cards: [],
+    cards: oldServiceCards.filter((item) => item.href === "/tenester/leveranse"),
     sections: [
       {
-        title: "Leveranseoppfølging",
+        title: "Leveranse frå gammal side",
         items: [
           {
-            title: "Koordinering",
-            text: "TODO: migrer leveranseprosess og praktisk informasjon.",
+            title: "Fokus på leveransesikkerheit",
+            text:
+              "Fresvik legg vekt på at kunden skal vite at leveransen kjem til riktig tid.",
           },
           {
-            title: "Prosjektkontakt",
-            text: "Kontakt Fresvik tidleg for avklaring av produkt, mengder og levering.",
+            title: "Alle nødvendige delar i pakken",
+            text:
+              "Leveransane blir pakka med nødvendige delar som er godt og synleg merka.",
+          },
+          {
+            title: "Monteringsanvisningar på nett",
+            text:
+              "Gode monteringsanvisningar skal vere lette å laste ned frå heimesida.",
           },
         ],
       },
     ],
-    todo: ["Verifiser tekst og eventuelle leveransevilkår frå gammal side."],
+    todo: ["Kvalitetssikre leveransevilkår og eventuelle juridiske betingelsar."],
   },
   {
     slug: "/tenester/service-reservedeler",
     title: "Service og reservedeler",
     eyebrow: "Teneste",
     intro:
-      "Oppfølging etter levering med service, reservedeler og praktisk hjelp ved behov.",
+      "Service og reservedeler for dører og portar når noko går gale og leveringstid betyr mykje.",
     description: "Service og reservedeler frå Fresvik Produkt.",
     pageType: "service",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/tenester/service-reservedeler",
-    cards: [],
+    cards: oldServiceCards.filter((item) => item.href === "/tenester/service-reservedeler"),
     sections: [
       {
-        title: "Ettermarknad",
+        title: "Service frå gammal side",
         items: [
           {
-            title: "Service",
-            text: "TODO: migrer serviceinformasjon og kontaktflyt.",
+            title: "Viss noko går gale, stiller vi opp",
+            text:
+              "Den gamle sida legg vekt på at Fresvik stiller opp når kundane treng service eller delar.",
           },
           {
-            title: "Reservedeler",
-            text: "TODO: kartlegg kva reservedeler og dokument som skal synleggjerast.",
+            title: "Lager av reservedeler",
+            text:
+              "Fresvik oppgir å ha eit godt lager av reservedeler til dører og portar, slik at dei kan levere spesifikke delar ved behov.",
+          },
+          {
+            title: "Kort leveringstid",
+            text:
+              "Reservelager kombinert med samarbeidspartnarar skal gi kort leveringstid når det trengst.",
           },
         ],
       },
     ],
-    todo: ["Legg inn dokument eller skjema dersom gammal side har dette."],
+    todo: ["Legg inn servicekontakt, skjema eller reservedelsflyt i Sanity."],
   },
   {
     slug: "/dokumentasjon",
     title: "Dokumentasjon",
     eyebrow: "Kundeservice",
     intro:
-      "Samla inngang til dokument, datablad, monteringsanvisningar og andre filer.",
+      "Teknisk godkjenning, miljødokument, leveringsbetingelser, sentral godkjenning og monteringsanvisningar.",
     description:
       "Dokumentasjon, datablad og PDF-filer frå Fresvik Produkt.",
     pageType: "support",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/dokumentasjon",
-    cards: oldDocumentCards,
+    cards: documentationDownloads.slice(0, 6),
     sections: [
+      {
+        title: "Nedlastingar frå gammal dokumentasjonsside",
+        intro:
+          "Desse dokumentlenkene er funne på gammal side og bør importerast til Sanity assets eller lokal dokumentmappe før endeleg lansering.",
+        items: documentationDownloads,
+      },
       {
         title: "Dokumentasjon frå gammal sitemap",
         intro:
@@ -548,30 +859,34 @@ export const contentPages: ContentPage[] = [
         items: oldSupportCards,
       },
     ],
-    todo: ["Bygg filter/søk når dokumentlista er komplett."],
+    todo: [
+      "Importer PDF-ar til Sanity `documentFile` eller `public/assets/fresvik/documents/`.",
+      "Bygg filter/søk når dokumentlista er komplett.",
+    ],
   },
   {
     slug: "/monteringsanvisning",
     title: "Monteringsanvisning",
     eyebrow: "Dokumentasjon",
     intro:
-      "Monteringsrettleiingar og praktiske dokument for utførande og prosjekt.",
+      "Monteringsanvisningar for fryserom, kjølerom, portar og dører.",
     description: "Monteringsanvisningar frå Fresvik Produkt.",
     pageType: "support",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/monteringsanvisning",
-    cards: oldDocumentCards.filter((item) =>
-      item.href?.includes("monterings"),
-    ),
+    cards: mountingDownloads,
     sections: [
       {
-        title: "Filer som skal inn",
-        items: [
-          {
-            title: "Monterings-PDF",
-            text: "TODO: last ned, importer og kvalitetssikre alle monteringsanvisningar.",
-          },
-        ],
+        title: "Monteringsfiler frå gammal side",
+        intro:
+          "Lenkene går førebels til gammal Squarespace-filplassering. Neste steg er å flytte dokumenta til Sanity assets eller lokal dokumentmappe.",
+        items: mountingDownloads,
+      },
+      {
+        title: "Relaterte dokumentasjonssider",
+        items: oldDocumentCards.filter((item) =>
+          item.href?.includes("monterings"),
+        ),
       },
     ],
     todo: ["Legg dokumenta inn som `documentFile` i Sanity."],

@@ -1,12 +1,17 @@
 import {
+  oldSiteCompanyFacts,
   getOldSiteInventoryItem,
   oldSiteAccessories,
   oldSiteDocuments,
+  oldSiteEmployees,
+  oldSiteFaqItems,
+  oldSiteLegalDocuments,
   oldSiteNews,
   oldSiteProducts,
   oldSiteReferences,
   oldSiteServices,
   oldSiteSupportPages,
+  type MigratedListItem,
 } from "@/data/oldSiteInventory";
 
 export type ContentCard = {
@@ -128,10 +133,7 @@ const companyCards: ContentCard[] = [
   },
 ];
 
-function inventoryCards(
-  items: typeof oldSiteNews,
-  fallbackText: string,
-): ContentCard[] {
+function inventoryCards(items: MigratedListItem[], fallbackText: string): ContentCard[] {
   return items.map((item) => ({
     title: item.title,
     text: fallbackText,
@@ -141,6 +143,61 @@ function inventoryCards(
     imageAlt: item.imageAlt || item.title,
   }));
 }
+
+const faqCards = oldSiteFaqItems.map((item) => ({
+  title: item.title,
+  text:
+    "Spørsmål henta frå gammal FAQ-side. Svarteksten må importerast eller kvalitetssikrast før endeleg publisering.",
+  href: item.href,
+}));
+
+const employeeCards = oldSiteEmployees.map((employee) => ({
+  title: employee.title,
+  text: [
+    employee.role,
+    employee.location ? `Avdeling: ${employee.location}` : null,
+    employee.phone ? `Telefon: ${employee.phone}` : null,
+    employee.mobile ? `Mobil: ${employee.mobile}` : null,
+    employee.email ? `E-post: ${employee.email}` : null,
+  ]
+    .filter(Boolean)
+    .join(" | "),
+  href: employee.href,
+  imageUrl: employee.imageUrl,
+  imageAlt: employee.imageAlt || employee.title,
+}));
+
+const legalDocumentCards = inventoryCards(
+  oldSiteLegalDocuments,
+  "Dokument eller ekstern kjelde funne på gammal Openheitslova-side. PDF-ar skal seinare importerast til Sanity assets.",
+);
+
+const companyFactCards = [
+  {
+    title: oldSiteCompanyFacts[0].title,
+    text:
+      "Fresvik Produkt er den einaste norske produsenten av isolasjonspanel, dører og portar til kjøle- og fryserom.",
+    href: "/firmainfo",
+  },
+  {
+    title: oldSiteCompanyFacts[1].title,
+    text:
+      "Selskapet oppgir marknadsleiande posisjon for kjøle- og fryserom til daglegvarehandel, energistasjonar og storkioskar.",
+    href: "/firmainfo",
+  },
+  {
+    title: oldSiteCompanyFacts[2].title,
+    text:
+      "Produksjon i Fresvik i Sogn skal gi kortreiste produkt og god leveransesikkerheit.",
+    href: "/firmainfo",
+  },
+  {
+    title: oldSiteCompanyFacts[3].title,
+    text:
+      "Hovudkontor og produksjonsanlegg ligg i Fresvik i Sogn, med salskontor i Drammen.",
+    href: "/firmainfo",
+  },
+];
 
 const newsCards = inventoryCards(
   oldSiteNews,
@@ -524,24 +581,24 @@ export const contentPages: ContentPage[] = [
     title: "FAQ",
     eyebrow: "Kundeservice",
     intro:
-      "Ofte stilte spørsmål skal samlast i ein enkel, søkbar og mobilvennleg struktur.",
+      "Ofte stilte spørsmål frå gammal Fresvik-side er samla her som grunnlag for ein enkel, søkbar og mobilvennleg struktur.",
     description: "Ofte stilte spørsmål for kundar av Fresvik Produkt.",
     pageType: "support",
     priority: "medium",
     sourceUrl: "https://www.fresvik.no/kundeservice/faq",
-    cards: [],
+    cards: faqCards.slice(0, 6),
     sections: [
       {
-        title: "Spørsmål som skal migrerast",
-        items: [
-          {
-            title: "TODO",
-            text: "Hent spørsmål, svar og kategoriar frå gammal FAQ-side.",
-          },
-        ],
+        title: "Spørsmål frå gammal FAQ",
+        intro:
+          "Automatisk uttrekk fann desse spørsmåla. Svara vart ikkje trygt henta frå gammal side og er difor merka for kvalitetssikring.",
+        items: faqCards,
       },
     ],
-    todo: ["Bygg `faqItem` schema og accordion-visning."],
+    todo: [
+      "Importer eller skriv inn verifiserte svar i Sanity før endeleg lansering.",
+      "Bygg accordion-visning når FAQ-data kjem frå `faqItem`.",
+    ],
   },
   {
     slug: "/referansar",
@@ -582,52 +639,64 @@ export const contentPages: ContentPage[] = [
     title: "Firmainfo",
     eyebrow: "Selskapet",
     intro:
-      "Selskapsinformasjon, kontaktdata og relevante sertifikat skal samlast her.",
+      "Fresvik Produkt er ein norsk produsent av isolasjonspanel, dører og portar til kjøle- og fryserom, med produksjon i Fresvik i Sogn.",
     description: "Firmainfo for Fresvik Produkt AS.",
     pageType: "company",
     priority: "medium",
     sourceUrl: "https://www.fresvik.no/firmainfo",
-    cards: [],
+    cards: companyFactCards,
     sections: [
       {
-        title: "Informasjon som skal verifiserast",
+        title: "Om Fresvik Produkt",
+        intro:
+          "Teksten er henta frå gammal firmainfo-side og skal seinare inn i Sanity som redigerbart innhald.",
         items: [
           {
-            title: "Selskapsdata",
-            text: "TODO: migrer organisasjonsnummer, adresser og nøkkeldata frå gammal side.",
+            title: "Fagkunnskap og samarbeid",
+            text:
+              "Fresvik Produkt oppgir at dei er den einaste norske produsenten av isolasjonspanel, dører og portar til kjøle- og fryserom. Visjonen er å vere den beste samarbeidspartnaren for kjøleentreprenørar.",
           },
           {
-            title: "Sertifikat",
-            text: "TODO: migrer relevante PDF-ar og eksterne lenker.",
+            title: "Fleksible produksjonsløysingar",
+            text:
+              "Storleik og fleksible produksjonsløysingar skal gjere selskapet i stand til å levere kundetilpassa løysingar med lite svinn og avfall på byggjeplassen.",
+          },
+          {
+            title: "Eksenterlås og montasje",
+            text:
+              "Alle isolasjonspanel blir levert med eksenterlås, som skal gi rask og enkel montasje.",
           },
         ],
       },
     ],
-    todo: ["Kontroller juridiske og formelle opplysningar før publisering."],
+    todo: [
+      "Kontroller organisasjonsnummer, formelle selskapsdata og eventuelle sertifikat før publisering.",
+      "Flytt firmateksten til Sanity `page` når innhaldsmodellen blir fylt.",
+    ],
   },
   {
     slug: "/tilsette",
     title: "Tilsette",
     eyebrow: "Kontaktpersonar",
     intro:
-      "Oversikt over personar og avdelingar skal publiserast etter at persondata er verifisert.",
+      "Kontaktpersonar frå gammal tilsette-side er samla her med rolle, telefon, e-post og bilete der kjelda hadde dette.",
     description: "Tilsette og kontaktpersonar hos Fresvik Produkt.",
     pageType: "company",
     priority: "medium",
     sourceUrl: "https://www.fresvik.no/tilsette",
-    cards: [],
+    cards: employeeCards.slice(0, 6),
     sections: [
       {
-        title: "Persondata",
-        items: [
-          {
-            title: "TODO",
-            text: "Hent namn, roller, telefon, e-post, bilete og rekkefølgje frå gammal side.",
-          },
-        ],
+        title: "Kontaktpersonar",
+        intro:
+          "Dette er persondata frå gammal offentleg side. Før endeleg lansering bør rekkefølgje og samtykke/personvern rutine sjekkast.",
+        items: employeeCards,
       },
     ],
-    todo: ["Verifiser GDPR/personvern før import av tilsette."],
+    todo: [
+      "Verifiser GDPR/personvern og om alle personar framleis skal publiserast.",
+      "Importer dei som `employee`-dokument i Sanity.",
+    ],
   },
   {
     slug: "/aktuelt",
@@ -679,7 +748,7 @@ export const contentPages: ContentPage[] = [
     title: "Personvernerklæring",
     eyebrow: "Juridisk",
     intro:
-      "Personvernteksten skal migrerast nøyaktig frå gammal nettstad før lansering.",
+      "Personvernteksten må migrerast nøyaktig frå godkjend kjelde før lansering.",
     description: "Personvernerklæring for Fresvik Produkt.",
     pageType: "legal",
     priority: "high",
@@ -690,8 +759,9 @@ export const contentPages: ContentPage[] = [
         title: "Juridisk tekst",
         items: [
           {
-            title: "TODO",
-            text: "Importer full tekst frå gammal personvernerklæring utan omskriving.",
+            title: "TODO: full juridisk tekst",
+            text:
+              "Automatisk uttrekk frå gammal side fann ikkje trygg brødtekst utover tittelen. Bruk godkjend juridisk kjelde eller manuell kontroll før publisering.",
           },
         ],
       },
@@ -703,24 +773,37 @@ export const contentPages: ContentPage[] = [
     title: "Openheitslova",
     eyebrow: "Juridisk",
     intro:
-      "Informasjon knytt til Openheitslova skal migrerast nøyaktig frå gammal nettstad.",
+      "Openheitslova skal fremme verksemder sin respekt for menneskerettar og anstendige arbeidsforhold, og sikre tilgang på informasjon.",
     description: "Openheitslova-informasjon for Fresvik Produkt.",
     pageType: "legal",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/openheitslova",
-    cards: [],
+    cards: legalDocumentCards,
     sections: [
       {
-        title: "Juridisk tekst og dokument",
+        title: "Tekst frå gammal Openheitslova-side",
         items: [
           {
-            title: "TODO",
-            text: "Importer full tekst og eventuelle PDF-ar frå gammal side.",
+            title: "Arbeid med krava i lova",
+            text:
+              "Fresvik Produkt oppgir at dei er opptekne av problemstillinga og gjennomfører kontinuerleg tiltak for å tilfredsstille krava i lova.",
+          },
+          {
+            title: "Utgreiing og dokument",
+            text:
+              "På bakgrunn av §5 i openheitslova skal verksemda offentleggjere ei utgreiing. Dokumentlenkene frå gammal side er lagt inn som eksterne kjelder og bør importerast til Sanity assets.",
           },
         ],
       },
+      {
+        title: "Dokument og eksterne kjelder",
+        items: legalDocumentCards,
+      },
     ],
-    todo: ["Må kvalitetssikrast før domene flyttast."],
+    todo: [
+      "Kvalitetssikre juridisk tekst og PDF-versjonar før domene flyttast.",
+      "Importer PDF-ar til Sanity `documentFile` eller `public/assets/fresvik/documents/`.",
+    ],
   },
 ];
 

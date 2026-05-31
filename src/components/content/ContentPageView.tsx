@@ -11,6 +11,29 @@ type ContentPageViewProps = {
   page: ContentPage;
 };
 
+function isExternalHref(href: string) {
+  return /^https?:\/\//.test(href);
+}
+
+function CardLink({ href, label }: { href: string; label: string }) {
+  const className =
+    "mt-5 inline-flex items-center gap-2 text-sm font-semibold text-cyan-800 transition hover:text-slate-950";
+
+  if (isExternalHref(href)) {
+    return (
+      <a href={href} className={className} target="_blank" rel="noreferrer">
+        {label} <ExternalLink aria-hidden="true" size={17} />
+      </a>
+    );
+  }
+
+  return (
+    <Link href={href} className={className}>
+      {label} <ArrowRight aria-hidden="true" size={17} />
+    </Link>
+  );
+}
+
 export function ContentPageView({ page }: ContentPageViewProps) {
   const jsonLd =
     page.pageType === "product"
@@ -98,14 +121,7 @@ export function ContentPageView({ page }: ContentPageViewProps) {
                   <p className="mt-3 grow text-sm leading-6 text-slate-600">
                     {card.text}
                   </p>
-                  {card.href ? (
-                    <Link
-                      href={card.href}
-                      className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-cyan-800 transition hover:text-slate-950"
-                    >
-                      Les meir <ArrowRight aria-hidden="true" size={17} />
-                    </Link>
-                  ) : null}
+                  {card.href ? <CardLink href={card.href} label="Les meir" /> : null}
                 </Card>
               ))}
             </div>
@@ -140,14 +156,7 @@ export function ContentPageView({ page }: ContentPageViewProps) {
                   <p className="mt-3 text-sm leading-6 text-slate-600">
                     {item.text}
                   </p>
-                  {item.href ? (
-                    <Link
-                      href={item.href}
-                      className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-cyan-800 transition hover:text-slate-950"
-                    >
-                      Opne <ArrowRight aria-hidden="true" size={17} />
-                    </Link>
-                  ) : null}
+                  {item.href ? <CardLink href={item.href} label="Opne" /> : null}
                 </Card>
               ))}
             </div>

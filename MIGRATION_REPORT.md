@@ -62,6 +62,9 @@ content migration.
   - 3 documentation/mounting URLs.
   - 12 accessory/store/other-product URLs.
   - 5 support/customer-segment URLs.
+  - 12 FAQ questions from `/kundeservice/faq`.
+  - 14 employee/contact entries from `/tilsette`.
+  - 4 Openheitslova document/external links.
   - image URLs and alt/caption text where the old sitemap exposed them.
 - Updated `/aktuelt` and `/referansar` to show real migrated sitemap cards
   instead of empty TODO-only sections.
@@ -83,6 +86,21 @@ content migration.
   - `referenceProject`
   - `newsArticle`
   - `faqItem`
+- Updated `/kundeservice/faq` with the extracted old FAQ questions. The old
+  answers were not safely extracted, so they remain marked for verification
+  instead of being invented.
+- Updated `/tilsette` with employee names, roles, phone/mobile, email and
+  portrait image URLs found on the old public page.
+- Updated `/firmainfo` with verified company text from the old firmainfo page:
+  Norwegian producer positioning, Fresvik production, market positioning,
+  flexible production, excenter locks and Fresvik/Drammen locations.
+- Updated `/openheitslova` with the old page text and links to:
+  - `2024-Aktsemdvurderingar-Fresvik-Produkt.pdf`
+  - `Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf`
+  - `2024-Utgreiing-signert.pdf`
+  - Lovdata Openheitslova page
+- Added external-link handling for content cards so PDF/Lovdata links open as
+  normal external links instead of internal Next routes.
 
 ## Verification
 
@@ -101,6 +119,8 @@ content migration.
   service, document and accessory inventory.
 - Quick link scan found no menu placeholder links. The remaining `#foresporsel`
   link is an intentional same-page contact anchor.
+- `npm run lint` passed after adding FAQ, employee, firmainfo and legal
+  inventory.
 
 ## Still TODO
 
@@ -111,6 +131,14 @@ content migration.
   assets. Current news/reference images are linked from the old Squarespace CDN
   and rendered through Next Image.
 - Replace TODO migration placeholders on FAQ, employee and legal pages.
+- Replace FAQ answer placeholders with verified answers from Sanity/manual
+  source.
+- Verify current employee consent/persondata before production domain switch.
+- Import Openheitslova PDFs into Sanity assets or `public/assets` instead of
+  linking to old Squarespace file URLs.
+- Provide approved full privacy policy text for `/personvernerklering`; the
+  automated old-site extraction only confirmed the page/title, not reliable
+  body text.
 - Replace product, service, documentation and accessory placeholder body text
   with full body content from old pages.
 - Replace news/reference placeholder body text with full article/project body

@@ -6,6 +6,14 @@ export type MigratedListItem = {
   imageAlt?: string;
 };
 
+export type MigratedEmployee = MigratedListItem & {
+  role: string;
+  phone?: string;
+  mobile?: string;
+  email?: string;
+  location?: string;
+};
+
 export const oldSiteNews: MigratedListItem[] = [
   {
     title: "Møt vår nye tekniske sjef",
@@ -569,6 +577,246 @@ export const oldSiteSupportPages: MigratedListItem[] = [
   },
 ];
 
+export const oldSiteFaqItems: MigratedListItem[] = [
+  {
+    title: "Kva er hovudforskjellen mellom PIR og PUR i kjøle- og fryserom?",
+    href: "/kundeservice/faq",
+  },
+  {
+    title: "I kva prosjekt bør PIR føretrekkjast framfor PUR?",
+    href: "/kundeservice/faq",
+  },
+  {
+    title:
+      "Kvifor har PIR-panel nesten same U-verdi som PUR-panel, men betre branneigenskapar?",
+    href: "/kundeservice/faq",
+  },
+  {
+    title:
+      "Har PIR-panela låsemekanisme i skøytane og hjørna, slik som PUR-panela?",
+    href: "/kundeservice/faq",
+  },
+  {
+    title:
+      "Kva er PVC-gardin, og når bør ein bruke PVC-gardiner i kjølerom eller fryserom?",
+    href: "/kundeservice/faq",
+  },
+  {
+    title: "Kva er forskjellen på ein kjøleromsdør og ein fryseromsdør?",
+    href: "/kundeservice/faq",
+  },
+  {
+    title: "Korleis er vekta/densiteten på PIR-panel samanlikna med PUR-panel?",
+    href: "/kundeservice/faq",
+  },
+  {
+    title: "Kan PIR-panel brukast ved same temperaturar som PUR-panel?",
+    href: "/kundeservice/faq",
+  },
+  {
+    title: "Kan PIR-panela produserast i same storleik som PUR-panela?",
+    href: "/kundeservice/faq",
+  },
+  {
+    title: "Kan de produsere dører og portar med PIR-skum?",
+    href: "/kundeservice/faq",
+  },
+  {
+    title:
+      "Kva er kjøleromspanel, og kva tjukkleik bør ein velje til kjøl og fryserom?",
+    href: "/kundeservice/faq",
+  },
+  {
+    title:
+      "Kan Fresvik Produkt levere kjøle- og fryserom på spesialmål eller for skreddarsydde prosjekt?",
+    href: "/kundeservice/faq",
+  },
+];
+
+export const oldSiteEmployees: MigratedEmployee[] = [
+  {
+    title: "Lars Erling Livrud",
+    role: "Sals- og marknadssjef",
+    href: "/tilsette",
+    phone: "32 20 82 00",
+    mobile: "404 77 912",
+    email: "larliv@fresvik.no",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6462fe9f-f6d3-4ea6-ba4c-7e1e22feaaa6/Lars-Erling-Livrud.jpeg",
+    imageAlt: "Lars Erling Livrud, sals- og marknadssjef.",
+  },
+  {
+    title: "Frode Winther",
+    role: "Sal, avdeling Drammen",
+    href: "/tilsette",
+    phone: "32 20 82 00",
+    mobile: "913 83 949",
+    email: "frowin@fresvik.no",
+    location: "Drammen",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3b7cf69c-95a8-4c92-bc6a-e8e78147c29b/Frode-Winther.jpg",
+    imageAlt: "Frode Winther, sal avdeling Drammen.",
+  },
+  {
+    title: "Arne-Olav Lien Bardølsgård",
+    role: "Sal, avdeling Fresvik",
+    href: "/tilsette",
+    mobile: "995 52 549",
+    email: "arnbar@fresvik.no",
+    location: "Fresvik",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/93b9ca60-337d-4e73-b309-95730a7b81fa/Arne-Olav-Lien-Bard%C3%B8lsga%CC%8Ard.jpg",
+    imageAlt: "Arne-Olav Lien Bardølsgård, sal avdeling Fresvik.",
+  },
+  {
+    title: "Ove Fedje",
+    role: "Teknisk teikning og sal skip/offshore",
+    href: "/tilsette",
+    mobile: "911 76 599",
+    email: "ovefed@fresvik.no",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/8cb3117f-86e2-4a0a-b333-5722d9c1946a/Ove+Fedje.jpeg",
+    imageAlt: "Ove Fedje, teknisk teikning og sal skip/offshore.",
+  },
+  {
+    title: "Tomas Kruvelis",
+    role: "Delesal/innkjøp",
+    href: "/tilsette",
+    mobile: "465 81 422",
+    email: "tomkru@fresvik.no",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dbba98a8-e809-46c8-b875-ce3ef3aee28a/Tomas-Kruvelis.jpg",
+    imageAlt: "Tomas Kruvelis, delesal og innkjøp.",
+  },
+  {
+    title: "Gyda Bøtun",
+    role: "Adm dir",
+    href: "/tilsette",
+    mobile: "992 27 516",
+    email: "gydbot@fresvik.no",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/61ebde5c-0774-4dc1-92c8-4ed21efb4114/Gyda+B%C3%B8thun.jpeg",
+    imageAlt: "Gyda Bøtun, administrerande direktør.",
+  },
+  {
+    title: "Sigmund Hauglum",
+    role: "Lager og logistikk",
+    href: "/tilsette",
+    mobile: "954 68 212",
+    email: "sighau@fresvik.no",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b8b854bc-2ce5-4194-beff-1f375dec6407/Sigmund+Hauglum.jpg",
+    imageAlt: "Sigmund Hauglum, lager og logistikk.",
+  },
+  {
+    title: "Siv Settevik",
+    role: "Produksjonsleiar",
+    href: "/tilsette",
+    mobile: "416 60 685",
+    email: "sivset@fresvik.no",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/573f8aab-6b3e-4c90-86e0-797986364f58/Siv+Settevik.jpeg",
+    imageAlt: "Siv Settevik, produksjonsleiar.",
+  },
+  {
+    title: "Håvard Berdal",
+    role: "Teknisk teikning",
+    href: "/tilsette",
+    mobile: "909 12 476",
+    email: "havber@fresvik.no",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc41dc96-71bb-4347-b2f8-bf0658a7d73e/Ha%CC%8Avard+Berdal.jpg",
+    imageAlt: "Håvard Berdal, teknisk teikning.",
+  },
+  {
+    title: "Oddrun Time",
+    role: "Administrasjonskoordinator",
+    href: "/tilsette",
+    mobile: "907 46 651",
+    email: "oddtim@fresvik.no",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dff2816f-bc5c-43f7-a06b-91c0427e1f50/Oddrun+Time.jpeg",
+    imageAlt: "Oddrun Time, administrasjonskoordinator.",
+  },
+  {
+    title: "Siri Otterhjell",
+    role: "Transportansvarleg",
+    href: "/tilsette",
+    mobile: "977 72 856",
+    email: "sirott@fresvik.no",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/a7e012d5-b583-472d-85c0-a3d3eb0d24aa/Siri+Otterhjell.jpeg",
+    imageAlt: "Siri Otterhjell, transportansvarleg.",
+  },
+  {
+    title: "Ragnvald Grov Sørdal",
+    role: "Lønnsansvarleg",
+    href: "/tilsette",
+    mobile: "909 77 331",
+    email: "ragsor@fresvik.no",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/425b8a7b-7d36-4709-b058-61a730bd2e74/Ragnvald+Grov+S%C3%B8rdal.jpeg",
+    imageAlt: "Ragnvald Grov Sørdal, lønnsansvarleg.",
+  },
+  {
+    title: "Nils Gunnar Finne",
+    role: "Produktutvikling",
+    href: "/tilsette",
+    mobile: "915 13 117",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/cf2c17a5-1e90-4ab0-96e9-0d4052afeb4a/Nils+Gunnar+Finne.jpeg",
+    imageAlt: "Nils Gunnar Finne, produktutvikling.",
+  },
+  {
+    title: "Samaneh Shakeri",
+    role: "Teknisk sjef",
+    href: "/tilsette",
+    mobile: "480 98 928",
+    email: "samsha@fresvik.no",
+    imageUrl:
+      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e6a1706c-a13b-41d3-8e62-479cbae3fa46/Samaneh+Shakeri.jpg",
+    imageAlt: "Samaneh Shakeri, teknisk sjef.",
+  },
+];
+
+export const oldSiteLegalDocuments: MigratedListItem[] = [
+  {
+    title: "Aktsemdvurdering 2024",
+    href: "https://www.fresvik.no/s/2024-Aktsemdvurderingar-Fresvik-Produkt.pdf",
+  },
+  {
+    title: "Rutine for oppfylling av plikter etter Openheitslova",
+    href: "https://www.fresvik.no/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf",
+  },
+  {
+    title: "Utgreiing 2024",
+    href: "https://www.fresvik.no/s/2024-Utgreiing-signert.pdf",
+  },
+  {
+    title: "Openheitslova på Lovdata",
+    href: "https://lovdata.no/dokument/NL/lov/2021-06-18-99",
+  },
+];
+
+export const oldSiteCompanyFacts: MigratedListItem[] = [
+  {
+    title: "Norsk produsent",
+    href: "/firmainfo",
+  },
+  {
+    title: "Marknadsleiar i daglegvare, energistasjonar og storkioskar",
+    href: "/firmainfo",
+  },
+  {
+    title: "Produksjon i Fresvik i Sogn",
+    href: "/firmainfo",
+  },
+  {
+    title: "Hovudkontor i Fresvik og salskontor i Drammen",
+    href: "/firmainfo",
+  },
+];
+
 export const oldSiteAssetStats = {
   sitemapUrl: "https://www.fresvik.no/sitemap.xml",
   newsCount: oldSiteNews.length,
@@ -578,6 +826,9 @@ export const oldSiteAssetStats = {
   documentCount: oldSiteDocuments.length,
   accessoryCount: oldSiteAccessories.length,
   supportPageCount: oldSiteSupportPages.length,
+  faqCount: oldSiteFaqItems.length,
+  employeeCount: oldSiteEmployees.length,
+  legalDocumentCount: oldSiteLegalDocuments.length,
   imageCountInSitemap: 325,
 };
 
@@ -590,5 +841,9 @@ export function getOldSiteInventoryItem(href: string) {
     ...oldSiteDocuments,
     ...oldSiteAccessories,
     ...oldSiteSupportPages,
+    ...oldSiteFaqItems,
+    ...oldSiteEmployees,
+    ...oldSiteLegalDocuments,
+    ...oldSiteCompanyFacts,
   ].find((item) => item.href === href);
 }

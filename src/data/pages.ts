@@ -38,6 +38,7 @@ export type ContentPage = {
   pageType: "home" | "index" | "product" | "service" | "support" | "company" | "legal";
   priority: "high" | "medium" | "low";
   sourceUrl?: string;
+  showMigrationDetails?: boolean;
   cards: ContentCard[];
   sections: Section[];
   todo?: string[];
@@ -1648,6 +1649,7 @@ export function createLegacyContentPage(slug: string): ContentPage {
             : "index",
     priority: "low",
     sourceUrl: `https://www.fresvik.no${slug}`,
+    showMigrationDetails: true,
     cards: inventoryItem
       ? [
           {

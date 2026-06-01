@@ -205,6 +205,9 @@ content migration.
   placeholder content.
 - Root and contact metadata now include OpenGraph/Twitter images and richer
   site-level publisher/application metadata.
+- Hid migration-only controls from primary public pages so normal visitors no
+  longer see `Gammal kjelde`, `Migreringsstatus` or TODO quality-assurance
+  panels. These details remain available on legacy migration-only routes.
 
 ## Verification
 
@@ -262,6 +265,10 @@ content migration.
   description, OpenGraph title and OpenGraph image metadata, a legacy migration
   URL has `noindex`, and 86 sampled internal URLs return an expected HTTP
   status.
+- `npm run lint` and `npm run build` passed after hiding public migration
+  details. Local HTTP checks confirmed main public pages no longer render
+  migration labels while a legacy migration page still shows migration status
+  and keeps `noindex`.
 
 ## Still TODO
 

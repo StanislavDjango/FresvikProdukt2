@@ -35,6 +35,7 @@ function CardLink({ href, label }: { href: string; label: string }) {
 }
 
 export function ContentPageView({ page }: ContentPageViewProps) {
+  const showMigrationDetails = page.showMigrationDetails === true;
   const jsonLd =
     page.pageType === "product"
       ? {
@@ -80,7 +81,7 @@ export function ContentPageView({ page }: ContentPageViewProps) {
               >
                 Kontakt oss <ArrowRight aria-hidden="true" size={18} />
               </Link>
-              {page.sourceUrl ? (
+              {showMigrationDetails && page.sourceUrl ? (
                 <a
                   href={page.sourceUrl}
                   className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] border border-white/25 px-5 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
@@ -164,7 +165,7 @@ export function ContentPageView({ page }: ContentPageViewProps) {
         </section>
       ))}
 
-      {page.todo && page.todo.length > 0 ? (
+      {showMigrationDetails && page.todo && page.todo.length > 0 ? (
         <section className="border-y border-slate-200 bg-white">
           <Container className="py-12">
             <SectionHeader

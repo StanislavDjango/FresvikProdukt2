@@ -212,6 +212,10 @@ const newsTextByHref: Record<string, string> = {
     "Håvard Berdal er ny teknisk teiknar etter at John Bøthun pensjonerer seg. Han har arbeidd på kontoret sidan nyttår, kjenner bedrifta frå produksjonen og er alt komen godt inn i funksjonen.",
   "/aktuelt/john-bothun-blir-pensjonist":
     "John Bøthun blir pensjonist etter 42 år i Fresvik Produkt. Artikkelen fortel om starten i produksjonen i 1982, monteringsoppdrag rundt i landet, overgangen til teknisk teikning og mange år med produksjonsplanlegging.",
+  "/aktuelt/ein-investering-for-henga-med-i-tidanbsp":
+    "Fresvik starta sommaren 2022 arbeidet med å automatisere pakkinga i produksjonen. Roboten og kaos-lageret skal gi betre og tryggare arbeidsplassar, betre produkt for kundane og meir effektiv handtering av element.",
+  "/aktuelt/agnar-er-snart-pensjonistnbsp":
+    "Agnar Bøtun har 44 år bak seg i Fresvik Produkt og har vore med på utviklinga sidan 1980. Artikkelen fortel om lager, pakking, sending, transport, arbeidsformannrolla og kvifor han held fram litt til før full pensjon.",
 };
 
 const referenceTextByHref: Record<string, string> = {
@@ -225,6 +229,16 @@ const referenceTextByHref: Record<string, string> = {
     "Bunnpris Hammerfest fekk fryserom og kjølerom til meierivarer. Fresvik leverte også innestengningsalarm, frysedør og PVC-gardin til fryserommet.",
   "/referansar/kjolerom-kjoledor-bunnpris-volda":
     "Fresvik Produkt leverte nytt kjølerom med kjøledør til Bunnpris Volda. Produkta er levert med standard FoodSafe Polyester-overflater for enkelt reinhald og redusert bakterievekst.",
+  "/referansar/fryserom-coop-obs-alnabru":
+    "Fresvik Produkt leverte eit nytt stort fryserom til Coop Obs Alnabru. Leveransen inkluderte også fryseport, PVC-gardin og innestengningsalarm, i samarbeid med Coolteam.",
+  "/referansar/vik-helse-og-omsorgssenter":
+    "Til nye Vik helse- og omsorgssenter har Fresvik hittil levert fem kjølerom og eitt fryserom med tilhøyrande dørar, gjennom Sogn Kjøleservice.",
+  "/referansar/fryse-og-kjolerom-kiwi-otta":
+    "Fresvik Produkt leverte fryserom med frysedør, innestengningsalarm og PVC-gardin, samt fire kjølerom med eigne dører og pendeldører frå Kvanne Industrier til Kiwi Otta.",
+  "/referansar/nye-leveransar-til-rema-1000-ya-i-larvik":
+    "Rema 1000 Øya i Larvik fekk nye kjøle- og fryserom frå Fresvik Produkt. Leveransen inkluderte fryserom, kjølerom, dører, innestengingsalarm, PVC-gardin og køyrerampe.",
+  "/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark":
+    "Fresvik Produkt leverte fryserom, fem kjølerom, innestengingsalarm, PVC-gardin og sju dører til Dyreparken Safaricamp i Kristiansand Dyrepark. Dørene vart levert med sjølvlukkande Fresvik Hengsler.",
 };
 
 const newsCards = inventoryCards(

@@ -143,6 +143,17 @@ content migration.
 - `/aktuelt`, `/referansar` and the corresponding legacy detail pages now use
   these extracted summaries instead of generic migration placeholder text where
   available.
+- Added a second verified summary batch for:
+  - `/aktuelt/ein-investering-for-henga-med-i-tidanbsp`
+  - `/aktuelt/agnar-er-snart-pensjonistnbsp`
+  - `/referansar/fryserom-coop-obs-alnabru`
+  - `/referansar/vik-helse-og-omsorgssenter`
+  - `/referansar/fryse-og-kjolerom-kiwi-otta`
+  - `/referansar/nye-leveransar-til-rema-1000-ya-i-larvik`
+  - `/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark`
+- `/aktuelt/to-ledige-stillingar-i-haust` was checked, but the automatic text
+  extraction only returned minimal author/link noise, so it remains marked for
+  later verification instead of being invented.
 
 ## Verification
 
@@ -170,6 +181,8 @@ content migration.
 - `npm run lint` and `npm run build` passed after adding customer segment and
   transport damage pages.
 - `npm run lint` and `npm run build` passed after adding the first news and
+  reference summary batch.
+- `npm run lint` and `npm run build` passed after adding the second news and
   reference summary batch.
 
 ## Still TODO

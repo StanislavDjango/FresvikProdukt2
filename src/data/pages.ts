@@ -135,10 +135,14 @@ const companyCards: ContentCard[] = [
   },
 ];
 
-function inventoryCards(items: MigratedListItem[], fallbackText: string): ContentCard[] {
+function inventoryCards(
+  items: MigratedListItem[],
+  fallbackText: string,
+  textByHref: Record<string, string> = {},
+): ContentCard[] {
   return items.map((item) => ({
     title: item.title,
-    text: fallbackText,
+    text: textByHref[item.href] || fallbackText,
     href: item.href,
     meta: item.lastmod,
     imageUrl: item.imageUrl,
@@ -201,14 +205,38 @@ const companyFactCards = [
   },
 ];
 
+const newsTextByHref: Record<string, string> = {
+  "/aktuelt/samaneh-shakeri-ny-teknisk-sjef":
+    "Samaneh Shakeri tok til som teknisk sjef 1. oktober 2024. Ho er ingeniør med master i industriell teknologi, har utdanning frå UiT og Texas A&M, og har 15 års erfaring frå ingeniørrollar og industriell design.",
+  "/aktuelt/ny-teknisk-teiknar-havard-berdal":
+    "Håvard Berdal er ny teknisk teiknar etter at John Bøthun pensjonerer seg. Han har arbeidd på kontoret sidan nyttår, kjenner bedrifta frå produksjonen og er alt komen godt inn i funksjonen.",
+  "/aktuelt/john-bothun-blir-pensjonist":
+    "John Bøthun blir pensjonist etter 42 år i Fresvik Produkt. Artikkelen fortel om starten i produksjonen i 1982, monteringsoppdrag rundt i landet, overgangen til teknisk teikning og mange år med produksjonsplanlegging.",
+};
+
+const referenceTextByHref: Record<string, string> = {
+  "/referansar/fryserom-baza-fredrikstad":
+    "Fresvik Produkt leverte eit skreddarsydd fryserom til Baza Nordic i Fredrikstad, utvikla for effektiv og driftssikker lagring av frosne varer. Løysinga gir auka kapasitet, betre logistikkflyt og stabile lagringsforhold året rundt.",
+  "/referansar/historisk-leveranse-pir-panel-spar-lund-torv":
+    "Spar Lund Torv fekk nytt fryserom, tre nye kjølerom og deleveggar i det første PIR-prosjektet produsert i Norge. Leveransen inkluderte også innestengingsalarm, PVC-gardin og pendeldører frå Kvanne Industrier.",
+  "/referansar/bjerkreim-legekontor-vikesaa":
+    "Fresvik Produkt leverte fryselager, kjølerom og dører til Bjerkreim Legekontor i Vikeså. Prosjektet var knytt til omsorgsbustadar med 46 leilegheiter, ferdigstilt i juni 2025.",
+  "/referansar/bunnpris-hammerfest":
+    "Bunnpris Hammerfest fekk fryserom og kjølerom til meierivarer. Fresvik leverte også innestengningsalarm, frysedør og PVC-gardin til fryserommet.",
+  "/referansar/kjolerom-kjoledor-bunnpris-volda":
+    "Fresvik Produkt leverte nytt kjølerom med kjøledør til Bunnpris Volda. Produkta er levert med standard FoodSafe Polyester-overflater for enkelt reinhald og redusert bakterievekst.",
+};
+
 const newsCards = inventoryCards(
   oldSiteNews,
   "Nyheit registrert frå gammal sitemap. Brødtekst skal importerast frå kjeldesida til Sanity.",
+  newsTextByHref,
 );
 
 const referenceCards = inventoryCards(
   oldSiteReferences,
   "Referanse registrert frå gammal sitemap. Prosjekttekst, kategori og bilete skal importerast til Sanity.",
+  referenceTextByHref,
 );
 
 const oldProductCards = inventoryCards(
@@ -1450,7 +1478,11 @@ export function createLegacyContentPage(slug: string): ContentPage {
       ? accessoryTextByHref[inventoryItem.href]
       : isSupportPage && inventoryItem
         ? supportTextByHref[inventoryItem.href]
-      : undefined;
+        : isArticle && inventoryItem
+          ? newsTextByHref[inventoryItem.href]
+          : isReference && inventoryItem
+            ? referenceTextByHref[inventoryItem.href]
+            : undefined;
 
   return {
     slug,

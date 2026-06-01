@@ -130,6 +130,19 @@ content migration.
   procedure, including total-package delivery for stores, maritime/offshore
   approval notes, storkjøkken material/cleaning notes, and transport damage
   reporting steps.
+- Added verified summary copy for the first batch of detailed news and
+  reference pages:
+  - `/aktuelt/samaneh-shakeri-ny-teknisk-sjef`
+  - `/aktuelt/ny-teknisk-teiknar-havard-berdal`
+  - `/aktuelt/john-bothun-blir-pensjonist`
+  - `/referansar/fryserom-baza-fredrikstad`
+  - `/referansar/historisk-leveranse-pir-panel-spar-lund-torv`
+  - `/referansar/bjerkreim-legekontor-vikesaa`
+  - `/referansar/bunnpris-hammerfest`
+  - `/referansar/kjolerom-kjoledor-bunnpris-volda`
+- `/aktuelt`, `/referansar` and the corresponding legacy detail pages now use
+  these extracted summaries instead of generic migration placeholder text where
+  available.
 
 ## Verification
 
@@ -156,6 +169,8 @@ content migration.
   numbers.
 - `npm run lint` and `npm run build` passed after adding customer segment and
   transport damage pages.
+- `npm run lint` and `npm run build` passed after adding the first news and
+  reference summary batch.
 
 ## Still TODO
 
@@ -181,8 +196,8 @@ content migration.
   Sanity.
 - Import customer segment images/references and verify marketing claims,
   maritime standards, and transport damage terms against final source documents.
-- Replace news/reference placeholder body text with full article/project body
-  content from old pages.
+- Continue replacing remaining news/reference placeholder body text with
+  verified article/project summaries or full Sanity documents.
 - Add final redirects in `next.config.ts` if old URLs are renamed, especially
   after confirming `/produkt/fresvik-panel` to `/produkt/fresvik-pur-panel`.
 - Run visual browser checks on desktop and mobile. The in-app browser connection

@@ -216,6 +216,8 @@ const newsTextByHref: Record<string, string> = {
     "Fresvik starta sommaren 2022 arbeidet med å automatisere pakkinga i produksjonen. Roboten og kaos-lageret skal gi betre og tryggare arbeidsplassar, betre produkt for kundane og meir effektiv handtering av element.",
   "/aktuelt/agnar-er-snart-pensjonistnbsp":
     "Agnar Bøtun har 44 år bak seg i Fresvik Produkt og har vore med på utviklinga sidan 1980. Artikkelen fortel om lager, pakking, sending, transport, arbeidsformannrolla og kvifor han held fram litt til før full pensjon.",
+  "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn":
+    "Fresvik Produkt er sertifisert som Miljøfyrtårn. Artikkelen løftar berekraft, grøne verdiar, trygg arbeidsplass, lågt sjukefråvær, redusert energibruk og mindre bruk av papp og plast.",
 };
 
 const referenceTextByHref: Record<string, string> = {
@@ -239,6 +241,16 @@ const referenceTextByHref: Record<string, string> = {
     "Rema 1000 Øya i Larvik fekk nye kjøle- og fryserom frå Fresvik Produkt. Leveransen inkluderte fryserom, kjølerom, dører, innestengingsalarm, PVC-gardin og køyrerampe.",
   "/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark":
     "Fresvik Produkt leverte fryserom, fem kjølerom, innestengingsalarm, PVC-gardin og sju dører til Dyreparken Safaricamp i Kristiansand Dyrepark. Dørene vart levert med sjølvlukkande Fresvik Hengsler.",
+  "/referansar/spesialloysing-torkerom-drageboden-kaupanger":
+    "Drageboden på Kaupanger fekk skreddarsydde panel frå Fresvik Produkt til to tørkerom for trevirke. Romma fekk rustfri overflate på innsida på grunn av høg varme, og laus vegg slik at pallar kan køyrast inn.",
+  "/referansar/omfattande-leveranse-til-bakehuset-trondheim":
+    "Bakehuset Trondheim fekk ei omfattande leveranse via Carrier Refrigeration Norway. Fresvik produserte over 1250 m2 panel, fryserom, kjølerom, tre fryseportar med PVC-gardiner og fem pendeldører frå Kvanne Industrier.",
+  "/referansar/fryseromsportar-til-rema-1000-i-narvik":
+    "Rema 1000 i Narvik fekk tre store fryseromsportar og fem fryseromsdører levert via Relog AS. Portane er skreddarsydde ved Fresvik-fabrikken og valt på grunnlag av anbefaling og pris.",
+  "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront":
+    "Fresvik leverte 3 700 m2 panel i tjukkelsar frå 75 til 175 mm til Fellespakkeriet på Håbakken i Lærdal, Sogn Frukt og Grønt. Leveransen gjekk til 3 fryserom og 10 kjølerom, med 11 spesialportar frå Salco.",
+  "/referansar/fryserom-fryseport-rentokil":
+    "Fresvik leverte og monterte fryserom for Kelvin AS til Rentokil på Lahaugmoen i Skjetten. Rommet blir brukt til nedfrysing av møblar og tekstilar infisert av skadedyr, og leveransen inkluderte fryseport og spesialbygd rampe.",
 };
 
 const newsCards = inventoryCards(

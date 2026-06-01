@@ -154,6 +154,16 @@ content migration.
 - `/aktuelt/to-ledige-stillingar-i-haust` was checked, but the automatic text
   extraction only returned minimal author/link noise, so it remains marked for
   later verification instead of being invented.
+- Added a third verified summary batch for:
+  - `/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn`
+  - `/referansar/spesialloysing-torkerom-drageboden-kaupanger`
+  - `/referansar/omfattande-leveranse-til-bakehuset-trondheim`
+  - `/referansar/fryseromsportar-til-rema-1000-i-narvik`
+  - `/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront`
+  - `/referansar/fryserom-fryseport-rentokil`
+- `/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv` and
+  `/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt` were checked, but the
+  automatic extraction did not return reliable body text in this pass.
 
 ## Verification
 
@@ -183,6 +193,8 @@ content migration.
 - `npm run lint` and `npm run build` passed after adding the first news and
   reference summary batch.
 - `npm run lint` and `npm run build` passed after adding the second news and
+  reference summary batch.
+- `npm run lint` and `npm run build` passed after adding the third news and
   reference summary batch.
 
 ## Still TODO

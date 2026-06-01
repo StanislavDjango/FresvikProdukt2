@@ -1,4 +1,9 @@
-import { ArrowRight, CheckCircle2, ExternalLink } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  ChevronDown,
+  ExternalLink,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { CTASection } from "@/components/CTASection";
@@ -34,8 +39,42 @@ function CardLink({ href, label }: { href: string; label: string }) {
   );
 }
 
+function FAQAccordion({ page }: ContentPageViewProps) {
+  const questions = page.sections.flatMap((section) => section.items);
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12">
+        <SectionHeader
+          eyebrow="FAQ"
+          title="Ofte stilte spørsmål"
+          intro={page.sections[0]?.intro || page.description}
+        />
+        <div className="mt-8 divide-y divide-slate-200 rounded-[8px] border border-slate-200 bg-white">
+          {questions.map((item, index) => (
+            <details key={`${item.title}-${index}`} className="group">
+              <summary className="flex cursor-pointer list-none items-start justify-between gap-4 p-5 text-left font-semibold text-slate-950 transition hover:bg-slate-50 [&::-webkit-details-marker]:hidden">
+                <span>{item.title}</span>
+                <ChevronDown
+                  aria-hidden="true"
+                  className="mt-0.5 shrink-0 text-cyan-800 transition group-open:rotate-180"
+                  size={20}
+                />
+              </summary>
+              <div className="px-5 pb-5 text-sm leading-7 text-slate-600">
+                {item.text}
+              </div>
+            </details>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 export function ContentPageView({ page }: ContentPageViewProps) {
   const showMigrationDetails = page.showMigrationDetails === true;
+  const isFaqPage = page.slug === "/kundeservice/faq";
   const jsonLd =
     page.pageType === "product"
       ? {
@@ -96,7 +135,7 @@ export function ContentPageView({ page }: ContentPageViewProps) {
         </Container>
       </section>
 
-      {page.cards.length > 0 ? (
+      {!isFaqPage && page.cards.length > 0 ? (
         <section className="border-b border-slate-200 bg-white">
           <Container className="py-12">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -130,40 +169,44 @@ export function ContentPageView({ page }: ContentPageViewProps) {
         </section>
       ) : null}
 
-      {page.sections.map((section) => (
-        <section key={section.title} className="py-14">
-          <Container>
-            <SectionHeader title={section.title} intro={section.intro} />
-            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {section.items.map((item) => (
-                <Card key={item.title}>
-                  {item.imageUrl ? (
-                    <Image
-                      src={item.imageUrl}
-                      alt={item.imageAlt || item.title}
-                      width={720}
-                      height={420}
-                      className="-mx-5 -mt-5 mb-5 h-48 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover"
-                    />
-                  ) : null}
-                  {item.meta ? (
-                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
-                      {item.meta}
+      {isFaqPage ? (
+        <FAQAccordion page={page} />
+      ) : (
+        page.sections.map((section) => (
+          <section key={section.title} className="py-14">
+            <Container>
+              <SectionHeader title={section.title} intro={section.intro} />
+              <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {section.items.map((item) => (
+                  <Card key={item.title}>
+                    {item.imageUrl ? (
+                      <Image
+                        src={item.imageUrl}
+                        alt={item.imageAlt || item.title}
+                        width={720}
+                        height={420}
+                        className="-mx-5 -mt-5 mb-5 h-48 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover"
+                      />
+                    ) : null}
+                    {item.meta ? (
+                      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
+                        {item.meta}
+                      </p>
+                    ) : null}
+                    <h3 className="text-lg font-semibold text-slate-950">
+                      {item.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-6 text-slate-600">
+                      {item.text}
                     </p>
-                  ) : null}
-                  <h3 className="text-lg font-semibold text-slate-950">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-6 text-slate-600">
-                    {item.text}
-                  </p>
-                  {item.href ? <CardLink href={item.href} label="Opne" /> : null}
-                </Card>
-              ))}
-            </div>
-          </Container>
-        </section>
-      ))}
+                    {item.href ? <CardLink href={item.href} label="Opne" /> : null}
+                  </Card>
+                ))}
+              </div>
+            </Container>
+          </section>
+        ))
+      )}
 
       {showMigrationDetails && page.todo && page.todo.length > 0 ? (
         <section className="border-y border-slate-200 bg-white">

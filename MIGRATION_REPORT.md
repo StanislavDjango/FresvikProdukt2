@@ -211,6 +211,8 @@ content migration.
 - Expanded the mobile header menu to include nested navigation links for
   product, service, documentation and company subsections, with a constrained
   scrollable dropdown so the menu remains usable on small screens.
+- Replaced the public FAQ card/grid rendering with an accessible accordion on
+  `/kundeservice/faq`, using the verified migrated question and answer data.
 - Added `scripts/generate-sanity-seed.mjs` and
   `sanity/seed/migratedContent.ndjson` so the migrated public content can be
   imported into Sanity as editable documents instead of living only in static
@@ -299,6 +301,11 @@ content migration.
 - `node scripts/generate-sanity-seed.mjs`, `npm run lint` and `npm run build`
   passed after adding the older news/reference summary batch. Build still
   generates 116 app pages.
+- `npm run lint` and `npm run build` passed after replacing the public FAQ
+  card layout with an accordion.
+- Production HTTP smoke check for `/kundeservice/faq` on local port `3024`
+  confirmed the built page renders `<details>/<summary>` FAQ items, includes
+  migrated FAQ text, and does not expose migration-only labels.
 
 ## Still TODO
 

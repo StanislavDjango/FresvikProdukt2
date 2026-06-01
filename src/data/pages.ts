@@ -1335,8 +1335,7 @@ export const contentPages: ContentPage[] = [
       },
     ],
     todo: [
-      "Importer spørsmåla og svara som `faqItem`-dokument i Sanity.",
-      "Bygg accordion-visning når FAQ-data kjem frå `faqItem`.",
+      "Importer og vedlikehald spørsmåla og svara som `faqItem`-dokument i Sanity.",
     ],
   },
   {

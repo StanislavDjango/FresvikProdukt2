@@ -56,15 +56,29 @@ export function Header() {
           >
             <Menu aria-hidden="true" size={20} />
           </summary>
-          <nav className="absolute right-0 top-13 z-20 grid w-72 gap-1 rounded-[8px] border border-slate-200 bg-white p-2 text-sm font-medium text-slate-700 shadow-xl">
+          <nav className="absolute right-0 top-13 z-20 grid max-h-[calc(100vh-6rem)] w-[min(20rem,calc(100vw-2.5rem))] gap-1 overflow-y-auto rounded-[8px] border border-slate-200 bg-white p-2 text-sm font-medium text-slate-700 shadow-xl">
             {mainNavigation.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-[6px] px-3 py-2 transition hover:bg-slate-100 hover:text-cyan-800"
-              >
-                {item.label}
-              </Link>
+              <div key={item.href}>
+                <Link
+                  href={item.href}
+                  className="block rounded-[6px] px-3 py-2 font-semibold text-slate-950 transition hover:bg-slate-100 hover:text-cyan-800"
+                >
+                  {item.label}
+                </Link>
+                {item.children ? (
+                  <div className="mb-1 ml-3 grid border-l border-slate-200 pl-2">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="rounded-[6px] px-3 py-2 text-slate-600 transition hover:bg-slate-100 hover:text-cyan-800"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
             ))}
             <a
               href="mailto:post@fresvik.no"

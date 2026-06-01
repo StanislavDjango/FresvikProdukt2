@@ -208,6 +208,9 @@ content migration.
 - Hid migration-only controls from primary public pages so normal visitors no
   longer see `Gammal kjelde`, `Migreringsstatus` or TODO quality-assurance
   panels. These details remain available on legacy migration-only routes.
+- Expanded the mobile header menu to include nested navigation links for
+  product, service, documentation and company subsections, with a constrained
+  scrollable dropdown so the menu remains usable on small screens.
 
 ## Verification
 
@@ -269,6 +272,10 @@ content migration.
   details. Local HTTP checks confirmed main public pages no longer render
   migration labels while a legacy migration page still shows migration status
   and keeps `noindex`.
+- `npm run build` and `npm run lint` passed after the mobile navigation update.
+  A local DOM/internal-link smoke check confirmed nested mobile menu links are
+  present, public migration labels remain hidden and 87 sampled internal URLs
+  return an expected HTTP status.
 
 ## Still TODO
 

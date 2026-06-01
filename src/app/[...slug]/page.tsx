@@ -7,6 +7,7 @@ import {
   getAllContentPages,
   getContentPage,
 } from "@/data/pages";
+import { pageMetadata } from "@/lib/seo";
 
 type RouteProps = {
   params: Promise<{ slug: string[] }>;
@@ -34,27 +35,17 @@ export async function generateMetadata({
 }: RouteProps): Promise<Metadata> {
   const { slug } = await params;
   const path = toPath(slug);
-  const page = getContentPage(path) || createLegacyContentPage(path);
+  const page = getContentPage(path);
 
-  if (!getContentPage(path) && !isLegacyRoute(path)) {
-    return {};
+  if (page) {
+    return pageMetadata(page);
   }
 
-  return {
-    title: page.title,
-    description: page.description,
-    alternates: {
-      canonical: page.slug,
-    },
-    openGraph: {
-      title: page.title,
-      description: page.description,
-      url: page.slug,
-      siteName: "Fresvik Produkt",
-      locale: "nn_NO",
-      type: "website",
-    },
-  };
+  if (isLegacyRoute(path)) {
+    return pageMetadata(createLegacyContentPage(path), { noIndex: true });
+  }
+
+  return {};
 }
 
 export default async function DynamicContentPage({ params }: RouteProps) {

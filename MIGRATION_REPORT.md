@@ -197,6 +197,14 @@ content migration.
   inventory from `images.squarespace-cdn.com` URLs to local image paths.
 - Localized image coverage now includes news, references, product/service
   cards, documentation/support cards, accessories and employee portraits.
+- Added shared SEO metadata generation for content pages, including canonical
+  URLs, OpenGraph metadata, Twitter card metadata and page-specific image
+  selection from migrated local assets.
+- Legacy migration-only pages now get `noindex, follow` metadata so old URLs
+  stay reachable during migration without encouraging search indexing of
+  placeholder content.
+- Root and contact metadata now include OpenGraph/Twitter images and richer
+  site-level publisher/application metadata.
 
 ## Verification
 
@@ -248,6 +256,12 @@ content migration.
 - Local HTTP checks confirmed `/aktuelt`, `/referansar`, `/tilsette`,
   `/tilleggsutstyr`, `/produkt` and `/tenester` render local migrated image
   paths and no longer include `images.squarespace-cdn.com` in the HTML.
+- `npm run lint` and `npm run build` passed after adding shared SEO metadata.
+  Build still generates 116 app pages.
+- Local metadata and internal-link scan confirmed key public pages have
+  description, OpenGraph title and OpenGraph image metadata, a legacy migration
+  URL has `noindex`, and 86 sampled internal URLs return an expected HTTP
+  status.
 
 ## Still TODO
 

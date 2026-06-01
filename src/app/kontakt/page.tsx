@@ -27,6 +27,19 @@ export const metadata: Metadata = {
     siteName: "Fresvik Produkt",
     locale: "nn_NO",
     type: "website",
+    images: [
+      {
+        url: "/fresvik-logo.svg",
+        alt: "Fresvik Produkt",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kontakt Fresvik Produkt",
+    description:
+      "Snakk med Fresvik Produkt om prosjekt, sal, service og leveranse.",
+    images: ["/fresvik-logo.svg"],
   },
 };
 

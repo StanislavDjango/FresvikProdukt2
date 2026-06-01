@@ -229,6 +229,12 @@ content migration.
   anniversary, Fresvik hengsel, mounting projects, Ruukki facade/takplater,
   port production, Kiwi Skollenborg, Karlsøybruket, Fiskehallen, Celsa Steel,
   Buskerud Storcash, Bjerke, Restauranthuset Malin and Coop Extra Naustdal.
+- Promoted the old `/produkt/frysetunnel` route from legacy inventory to a
+  full product page, added it to product navigation/public routes/sitemap, and
+  migrated verified old-site copy about controlled freezing, PIR-panel
+  construction, FoodSafe surfaces, tailored doors and food-industry use cases.
+- Regenerated the Sanity seed after adding Frysetunnel; it now contains 120
+  documents.
 
 ## Verification
 
@@ -306,6 +312,11 @@ content migration.
 - Production HTTP smoke check for `/kundeservice/faq` on local port `3024`
   confirmed the built page renders `<details>/<summary>` FAQ items, includes
   migrated FAQ text, and does not expose migration-only labels.
+- `node scripts/generate-sanity-seed.mjs`, `npm run lint` and `npm run build`
+  passed after adding `/produkt/frysetunnel`.
+- Production HTTP smoke check for `/produkt/frysetunnel` on local port `3025`
+  confirmed the title, migrated source text, navigation link, metadata and
+  sitemap entry are present, with migration-only labels hidden.
 
 ## Still TODO
 

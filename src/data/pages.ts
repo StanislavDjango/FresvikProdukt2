@@ -71,6 +71,11 @@ const productCards: ContentCard[] = [
     href: "/produkt/fasadepanel",
   },
   {
+    title: "Frysetunnel",
+    text: "Frysetunnelar for rask, jamn og kontrollert innfrysing i krevjande produksjonsmiljø.",
+    href: "/produkt/frysetunnel",
+  },
+  {
     title: "Tilleggsutstyr",
     text: "Tilbehør og kompletterande delar for panel-, port- og dørløysingar.",
     href: "/tilleggsutstyr",
@@ -861,6 +866,73 @@ const facadeSections = [
   },
 ];
 
+const frysetunnelSections = [
+  {
+    title: "Kontrollert innfrysing",
+    intro:
+      "Gamle Fresvik-tekstar legg vekt på at innfrysing i næringsmiddelproduksjon handlar om meir enn temperatur aleine.",
+    items: [
+      {
+        title: "Rask og jamn prosess",
+        text:
+          "Frysetunnelar frå Fresvik Produkt er utvikla for rask, jamn og kontrollert innfrysing i krevjande produksjonsmiljø.",
+      },
+      {
+        title: "Kvalitet gjennom verdikjeda",
+        text:
+          "Når råvarer og ferdigvarer blir frosne raskt og kontrollert, blir kvaliteten betre teken vare på gjennom heile verdikjeda.",
+      },
+      {
+        title: "Mindre krystalldanning",
+        text:
+          "Ein effektiv frysetunnel bidreg til å avgrense krystalldanning, bevare struktur og redusere tap av smak, tekstur og haldbarheit.",
+      },
+    ],
+  },
+  {
+    title: "Konstruksjon og bruksområde",
+    intro:
+      "Fresvik Produkt sine frysetunnelar er konstruerte med skreddarsydde PIR-panel og robuste detaljar.",
+    items: [
+      {
+        title: "PIR-panel frå Fresvik",
+        text:
+          "Frysetunnelen blir bygd opp av prefabrikkerte PIR-panel produsert i Fresvik i Sogn, med brannklasse B-s1,d0 og hygienisk FoodSafe-overflate som standard.",
+      },
+      {
+        title: "Maritimt og landbasert",
+        text:
+          "Løysingane er tilpassa både maritime og landbaserte applikasjonar, inkludert skip, offshoreinstallasjonar og industrielle næringsmiddelanlegg.",
+      },
+      {
+        title: "Tilpassa dimensjonar",
+        text:
+          "Frysetunnelane kan leverast i ulike dimensjonar og konfigurasjonar basert på kapasitet og bruksområde.",
+      },
+    ],
+  },
+  {
+    title: "Detaljar frå gammal produktside",
+    items: [
+      {
+        title: "Overflater og tjukkleikar",
+        text:
+          "Standard FoodSafe-overflate blir oppgitt saman med tjukkleikar frå 75 til 175 mm. Rustfritt eller syrefast stål kan leverast på førespurnad.",
+      },
+      {
+        title: "Dører etter mål",
+        text:
+          "Kvar frysetunnel blir levert med dører produsert etter mål og tilpassa lysmål, drift og bruksområde.",
+      },
+      {
+        title: "Referansebruk",
+        text:
+          "Frysetunnelar blir brukt i næringsmiddelindustrien til rask innfrysing av fisk, kjøt, bakerivarer og meieriprodukt.",
+      },
+    ],
+  },
+];
+
 export const contentPages: ContentPage[] = [
   {
     slug: "/",
@@ -1012,6 +1084,24 @@ export const contentPages: ContentPage[] = [
     todo: [
       "Importer fasadepanel-bilete og referanselenker.",
       "Kvalitetssikre beskriving av panelkjerner, godkjenningar og ansvarsrett.",
+    ],
+  },
+  {
+    slug: "/produkt/frysetunnel",
+    title: "Fresvik Frysetunnel",
+    eyebrow: "Produkt",
+    intro:
+      "Frysetunnelar frå Fresvik Produkt er utvikla for rask, jamn og kontrollert innfrysing i krevjande produksjonsmiljø.",
+    description:
+      "Fresvik Frysetunnel for kontrollert innfrysing i næringsmiddelproduksjon, maritime miljø og landbaserte industrianlegg.",
+    pageType: "product",
+    priority: "high",
+    sourceUrl: "https://www.fresvik.no/produkt/frysetunnel",
+    cards: oldProductCards.filter((item) => item.href === "/produkt/frysetunnel"),
+    sections: frysetunnelSections,
+    todo: [
+      "Kvalitetssikre kapasitetsdata og eventuelle tekniske mål mot Fresvik før endeleg lansering.",
+      "Importer frysetunnel-bilete til Sanity assets når mediaforvaltninga er klar.",
     ],
   },
   {

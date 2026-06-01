@@ -164,6 +164,17 @@ content migration.
 - `/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv` and
   `/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt` were checked, but the
   automatic extraction did not return reliable body text in this pass.
+- Added explicit Next.js redirects for renamed and utility routes:
+  - `/produkt/fresvik-panel` -> `/produkt/fresvik-pur-panel`
+  - `/startside` -> `/`
+  - `/send-foresporsel` -> `/kontakt`
+  - `/store` and `/store/p/dr-tiltrekker-diktator` -> `/tilleggsutstyr`
+  - `/andre-produkter` and `/andre-produkter/category/:slug*` -> `/tilleggsutstyr`
+  - `/referansar/category/:slug*` -> `/referansar`
+  - `/produktfoto` -> `/produkt`
+  - `/kjolerom-fryserom-offshore-1` -> `/kjolerom-fryserom-offshore`
+- Updated sitemap generation so redirected legacy sources, including category
+  wildcard routes, are excluded from `/sitemap.xml`.
 
 ## Verification
 
@@ -196,6 +207,10 @@ content migration.
   reference summary batch.
 - `npm run lint` and `npm run build` passed after adding the third news and
   reference summary batch.
+- `npm run lint` and `npm run build` passed after adding legacy redirects and
+  sitemap filtering. Build still generates 116 app pages.
+- Local redirect check returned `308` for the explicit legacy redirect set and
+  confirmed those redirected sources are no longer present in `/sitemap.xml`.
 
 ## Still TODO
 
@@ -223,7 +238,6 @@ content migration.
   maritime standards, and transport damage terms against final source documents.
 - Continue replacing remaining news/reference placeholder body text with
   verified article/project summaries or full Sanity documents.
-- Add final redirects in `next.config.ts` if old URLs are renamed, especially
-  after confirming `/produkt/fresvik-panel` to `/produkt/fresvik-pur-panel`.
+- Keep reviewing redirects as more legacy routes are consolidated or deleted.
 - Run visual browser checks on desktop and mobile. The in-app browser connection
   failed during this pass because the local Node browser bridge could not start.

@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { redirectRules } from "./src/data/redirects";
 
 const nextConfig: NextConfig = {
   images: {
@@ -8,6 +9,9 @@ const nextConfig: NextConfig = {
         hostname: "images.squarespace-cdn.com",
       },
     ],
+  },
+  async redirects() {
+    return redirectRules;
   },
 };
 

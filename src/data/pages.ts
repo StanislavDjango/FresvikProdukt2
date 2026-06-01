@@ -135,6 +135,33 @@ const companyCards: ContentCard[] = [
   },
 ];
 
+const faqTextByTitle: Record<string, string> = {
+  "Kva er hovudforskjellen mellom PIR og PUR i kjøle- og fryserom?":
+    "Den største forskjellen ligg i branneigenskapane. PIR har generelt betre brannmotstand og lågare røykutvikling enn PUR, samtidig som begge materiala har svært gode isolasjonseigenskapar.",
+  "I kva prosjekt bør PIR føretrekkjast framfor PUR?":
+    "PIR bør føretrekkjast i prosjekt der brannsikkerheit og risikoreduksjon er særleg viktig, til dømes store kjøle- og fryselager, bygg med strenge brannkrav, industri- og næringsbygg, prosjekt med særlege forsikringskrav og anlegg med høg verdi på lagra varer.",
+  "Kvifor har PIR-panel nesten same U-verdi som PUR-panel, men betre branneigenskapar?":
+    "PIR og PUR har nesten lik U-verdi, men PIR-skummet har betre branneigenskapar fordi det reagerer med å verne overflata ved brann og har høgare termisk stabilitet. PIR får brannklasse B, medan PUR har klasse C.",
+  "Har PIR-panela låsemekanisme i skøytane og hjørna, slik som PUR-panela?":
+    "Ja. Fresvik oppgir at PIR- og PUR-panel har same design og same låsemekanisme i skøytane og hjørna.",
+  "Kva er PVC-gardin, og når bør ein bruke PVC-gardiner i kjølerom eller fryserom?":
+    "PVC-gardiner er fleksible PVC-strimlar i døropningar som reduserer varmetap og trekk når døra blir opna. Dei blir ofte brukt i rom med mykje trafikk for å halde stabil temperatur, redusere energitap og betre arbeidskomfort. Fresvik produserer både faste og skyvbare PVC-gardiner.",
+  "Kva er forskjellen på ein kjøleromsdør og ein fryseromsdør?":
+    "For vanlege kjøle- og fryseromsdører ligg forskjellen i at fryseromsdøra har varmekabel i karmen. Industridører skil seg også på isolasjon, konstruksjon, tetting og løysingar for låge minusgrader.",
+  "Korleis er vekta/densiteten på PIR-panel samanlikna med PUR-panel?":
+    "PUR-panel har densitet 40 +/- 2 kg/m3 og vekt om lag 13-17 kg/m2. PIR-panel har densitet 42 +/- 2 kg/m3 og vekt om lag 14-18,5 kg/m2.",
+  "Kan PIR-panel brukast ved same temperaturar som PUR-panel?":
+    "PIR har temperaturområde frå -40 °C til +70 °C, medan PUR toler -40 °C til +120 °C.",
+  "Kan PIR-panela produserast i same storleik som PUR-panela?":
+    "Ja. Fresvik tilbyr fleksibel romhøgd i trinn på 50 mm, opptil 8000 mm, og tjukkleikar på 75, 100, 125, 150 og 175 mm.",
+  "Kan de produsere dører og portar med PIR-skum?":
+    "Ja. Fresvik leverer både dører og portar med PIR-skum, med same design som PUR-produkta.",
+  "Kva er kjøleromspanel, og kva tjukkleik bør ein velje til kjøl og fryserom?":
+    "Kjøleromspanel er isolerte sandwichpanel til veggar, tak og eventuelt golv i kjøle- og fryserom. For kjølerom på 2-6 °C er 75-100 mm vanleg, medan fryserom frå 0 til -40 °C vanlegvis brukar 100-175 mm avhengig av U-verdi og energikrav.",
+  "Kan Fresvik Produkt levere kjøle- og fryserom på spesialmål eller for skreddarsydde prosjekt?":
+    "Ja. Fresvik Produkt leverer kjøle- og fryserom tilpassa prosjektet sine behov, med panel og løysingar på spesialmål for eksisterande bygg, produksjonslokale og større eller meir komplekse anlegg.",
+};
+
 function inventoryCards(
   items: MigratedListItem[],
   fallbackText: string,
@@ -152,8 +179,7 @@ function inventoryCards(
 
 const faqCards = oldSiteFaqItems.map((item) => ({
   title: item.title,
-  text:
-    "Spørsmål henta frå gammal FAQ-side. Svarteksten må importerast eller kvalitetssikrast før endeleg publisering.",
+  text: faqTextByTitle[item.title],
   href: item.href,
 }));
 
@@ -1257,14 +1283,14 @@ export const contentPages: ContentPage[] = [
     cards: faqCards.slice(0, 6),
     sections: [
       {
-        title: "Spørsmål frå gammal FAQ",
+        title: "Spørsmål og svar frå gammal FAQ",
         intro:
-          "Automatisk uttrekk fann desse spørsmåla. Svara vart ikkje trygt henta frå gammal side og er difor merka for kvalitetssikring.",
+          "Spørsmåla og svara er henta frå den gamle FAQ-sida og er samla her som grunnlag for vidare Sanity-import.",
         items: faqCards,
       },
     ],
     todo: [
-      "Importer eller skriv inn verifiserte svar i Sanity før endeleg lansering.",
+      "Importer spørsmåla og svara som `faqItem`-dokument i Sanity.",
       "Bygg accordion-visning når FAQ-data kjem frå `faqItem`.",
     ],
   },
@@ -1397,26 +1423,68 @@ export const contentPages: ContentPage[] = [
     pageType: "company",
     priority: "low",
     sourceUrl: "https://www.fresvik.no/stillingledig",
-    cards: [],
+    cards: [
+      {
+        title: "Seljar",
+        text:
+          "Fresvik Produkt søkjer ein offensiv og relasjonsbyggjande seljar med teknisk innsikt og interesse for gode løysingar.",
+        href: "mailto:ts@personalhuset.no",
+      },
+      {
+        title: "Arbeidsstad",
+        text:
+          "Stillinga kan ha base i Drammen eller Fresvik, etter kandidaten sitt val.",
+      },
+      {
+        title: "Kontakt",
+        text:
+          "Søknad skal sendast til ts@personalhuset.no og merkast med Seljar stilling. Spørsmål kan rettast til Thomas Skogheim på telefon 95 76 12 19.",
+        href: "mailto:ts@personalhuset.no",
+      },
+    ],
     sections: [
       {
-        title: "Status",
+        title: "Ledig stilling frå gammal side",
         items: [
           {
-            title: "TODO",
-            text: "Verifiser om det finst aktive stillingar på gammal side.",
+            title: "Vil du vere med på å halde Noreg kaldt?",
+            text:
+              "Fresvik Produkt AS søkjer ein offensiv og relasjonsbyggjande seljar. Kandidaten bør like kundekontakt, ha teknisk forståing og vere motivert for å finne gode løysingar for kundane.",
+          },
+          {
+            title: "Kvifor velje Fresvik Produkt?",
+            text:
+              "Den gamle stillingssida framhevar ei solid hjørnesteinsbedrift med hovudkontor i Fresvik og salskontor i Drammen, sunn økonomi, uformelt og inkluderande arbeidsmiljø og gode forsikrings- og pensjonsordningar.",
+          },
+          {
+            title: "Arbeidsoppgåver",
+            text:
+              "Rolla skal vere proaktiv mot nye og eksisterande kundar, vise fram løysingar på messer, utforske nye marknader, vere rådgivar i tilbods- og prosjektfasar og samarbeide internt om framtidige produkt.",
+          },
+          {
+            title: "Profil",
+            text:
+              "Fresvik ser etter ein relasjonsbyggjar med teknisk forståing, struktur, økonomisk forståing, gode haldningar, lærevilligheit og flytande norsk.",
+          },
+          {
+            title: "Bu og jobbe i Fresvik",
+            text:
+              "Sida løftar Fresvik som ei aktiv jordbruksbygd ved fjorden, med trygg oppvekst, lag og organisasjonar, musikkfestival, industri og rikt friluftsliv.",
           },
         ],
       },
     ],
-    todo: ["Publiser kjeldetekst eller tydeleg tomtilstand."],
+    todo: [
+      "Verifiser om stillinga framleis er open før produksjonsdomene blir flytta.",
+      "Flytt stillinga til Sanity som redigerbart innhald eller `newsArticle`/jobbmodell.",
+    ],
   },
   {
     slug: "/personvernerklering",
     title: "Personvernerklæring",
     eyebrow: "Juridisk",
     intro:
-      "Personvernteksten må migrerast nøyaktig frå godkjend kjelde før lansering.",
+      "Personvernerklæringa frå gammal Fresvik-side er flytta inn som strukturert innhald for vidare kvalitetssikring.",
     description: "Personvernerklæring for Fresvik Produkt.",
     pageType: "legal",
     priority: "high",
@@ -1424,17 +1492,60 @@ export const contentPages: ContentPage[] = [
     cards: [],
     sections: [
       {
-        title: "Juridisk tekst",
+        title: "Personverntekst frå gammal side",
         items: [
           {
-            title: "TODO: full juridisk tekst",
+            title: "1. Om Fresvik Produkt AS",
             text:
-              "Automatisk uttrekk frå gammal side fann ikkje trygg brødtekst utover tittelen. Bruk godkjend juridisk kjelde eller manuell kontroll før publisering.",
+              "Eigar av nettsida er Fresvik Produkt AS, Fresvikvegen 995, 6896 Fresvik. E-post: post@fresvik.no. Organisasjonsnummer: NO 922 582 270.",
+          },
+          {
+            title: "2. Føremålet med handsaming av personopplysningar",
+            text:
+              "I samband med kundeforhold kan Fresvik innhente namn, adresse, e-post, telefonnummer, organisasjonsnummer og anna nødvendig informasjon. Opplysningane blir brukte til å handtere kundeforholdet, og kunden har rett til innsyn, retting og sletting av lagra data.",
+          },
+          {
+            title: "3. Utlevering til tredjepart",
+            text:
+              "Personopplysningar blir ikkje utleverte til tredjepart med mindre det ligg føre lovbestemt opplysningsplikt ovanfor offentlege myndigheiter.",
+          },
+          {
+            title: "4. Kunderegister",
+            text:
+              "Kunderegisteret inneheld opplysningar som namn, adresse, telefon, eventuelt selskapsnamn, kontaktpersonar og informasjon om kjøpte tenester og produkt. Opplysningane blir lagra så lenge det er tenleg for Fresvik.",
+          },
+          {
+            title: "5-6. Informasjonskapslar",
+            text:
+              "Sida opplyser at Squarespace og Google Analytics blir brukt til å samle anonymisert informasjon om korleis besøkande brukar nettsida, mellom anna tal besøkande, kvar dei kjem frå og kva sider dei besøker. Informasjonen blir brukt til rapportar og for å betre nettsida.",
+          },
+          {
+            title: "Nyheitsbrev",
+            text:
+              "Ved påmelding til nyheitsbrev samtykker brukaren til lagring av namn og e-postadresse. Fresvik brukar Mailchimp til utsendingar og opplyser at informasjonen blir lagra til brukaren melder seg av.",
+          },
+          {
+            title: "8. Kontaktskjema",
+            text:
+              "Når ein fyller ut kontaktskjema på nettsida, blir informasjonen lagra i Fresvik sitt CRM-system for å kunne yte betre kundeservice. Fresvik opplyser at dei ikkje ønskjer å ta vare på detaljar lenger enn nødvendig.",
+          },
+          {
+            title: "10. Innsyn, retting og sletting",
+            text:
+              "Etter personopplysningsloven § 18 kan privatpersonar krevje innsyn i registrerte opplysningar ved å kontakte Fresvik Produkt AS på post@fresvik.no. Uriktige, ufullstendige eller uønskte opplysningar kan krevjast retta eller sletta.",
+          },
+          {
+            title: "11. Ansvarleg databehandlar",
+            text:
+              "Dagleg leiar i Fresvik Produkt AS er ansvarleg for handsaming av personopplysningar, internkontroll og at eventuelle avvik frå gjeldande lovverk blir meldt inn og retta. Spørsmål kan sendast til post@fresvik.no.",
           },
         ],
       },
     ],
-    todo: ["Må kvalitetssikrast før domene flyttast."],
+    todo: [
+      "Juridisk tekst er henta frå gammal side, men bør lesast av ansvarleg person før domene flyttast.",
+      "Oppdater omtale av cookies/analytics etter ny teknisk løysing på Vercel/Sanity.",
+    ],
   },
   {
     slug: "/openheitslova",

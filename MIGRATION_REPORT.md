@@ -175,6 +175,16 @@ content migration.
   - `/kjolerom-fryserom-offshore-1` -> `/kjolerom-fryserom-offshore`
 - Updated sitemap generation so redirected legacy sources, including category
   wildcard routes, are excluded from `/sitemap.xml`.
+- Replaced the FAQ placeholder answers with verified answers extracted from
+  the old `/kundeservice/faq` page, including PIR/PUR, PVC-gardiner, doors,
+  temperature ranges, dimensions and custom-room questions.
+- Replaced the `/stillingledig` TODO card with the current old-site seller
+  vacancy content, including profile, tasks, location choice, application
+  email and contact phone.
+- Replaced the `/personvernerklering` placeholder with structured text
+  extracted from the old privacy policy page, covering controller details,
+  customer data, disclosure, customer register, cookies, newsletter,
+  contact form, access/correction/deletion and responsible data processor.
 
 ## Verification
 
@@ -211,24 +221,27 @@ content migration.
   sitemap filtering. Build still generates 116 app pages.
 - Local redirect check returned `308` for the explicit legacy redirect set and
   confirmed those redirected sources are no longer present in `/sitemap.xml`.
+- `npm run lint` and `npm run build` passed after replacing FAQ, jobs and
+  privacy placeholders. Build still generates 116 app pages.
+- Local HTTP checks confirmed `/kundeservice/faq`, `/stillingledig` and
+  `/personvernerklering` render the newly migrated source content.
 
 ## Still TODO
 
-- Continue pulling exact long-form body copy, images, PDFs, document titles,
-  alt text and legal text from the old website where pages still contain TODOs.
+- Continue pulling exact long-form body copy, images, PDFs, document titles
+  and alt text from the old website where pages still contain TODOs.
 - Import or seed real Sanity documents for the new schemas.
 - Download or import real assets into `public/assets/fresvik/...` or Sanity
   assets. Current news/reference images are linked from the old Squarespace CDN
   and rendered through Next Image.
-- Replace TODO migration placeholders on FAQ, employee and legal pages.
-- Replace FAQ answer placeholders with verified answers from Sanity/manual
-  source.
+- Replace remaining TODO migration placeholders on employee and legacy detail
+  pages.
 - Verify current employee consent/persondata before production domain switch.
 - Import Openheitslova PDFs into Sanity assets or `public/assets` instead of
   linking to old Squarespace file URLs.
-- Provide approved full privacy policy text for `/personvernerklering`; the
-  automated old-site extraction only confirmed the page/title, not reliable
-  body text.
+- Have a responsible person review `/personvernerklering` before production
+  domain switch, especially cookie/analytics wording for the new Vercel/Sanity
+  stack.
 - Import product, service and documentation PDFs/images into Sanity assets or
   `public/assets/fresvik/...`; they are currently linked to the old Squarespace
   file URLs.

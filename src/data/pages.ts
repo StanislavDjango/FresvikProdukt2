@@ -1818,23 +1818,33 @@ export function createLegacyContentPage(slug: string): ContentPage {
           : isReference && inventoryItem
             ? referenceTextByHref[inventoryItem.href]
             : undefined;
+  const isPublicMigratedDetail =
+    Boolean(migratedText) && (isArticle || isReference);
+  const legacyEyebrow = isArticle
+    ? "Aktuelt frå gammal nettstad"
+    : isReference
+      ? "Referanse frå gammal nettstad"
+      : isAccessory
+        ? "Tilleggsutstyr frå gammal nettstad"
+        : isSupportPage
+          ? "Kundesegment frå gammal nettstad"
+          : "Gammal URL under migrering";
 
   return {
     slug,
     title: inventoryItem?.title || titleFromSlug(slug),
-    eyebrow: isArticle
-      ? "Aktuelt frå gammal nettstad"
-      : isReference
-        ? "Referanse frå gammal nettstad"
-        : isAccessory
-          ? "Tilleggsutstyr frå gammal nettstad"
-          : isSupportPage
-            ? "Kundesegment frå gammal nettstad"
-          : "Gammal URL under migrering",
-    intro:
-      "Denne gamle Fresvik-sida er registrert i sitemap og blir halde levande medan innhaldet blir flytta til ny struktur.",
+    eyebrow: isPublicMigratedDetail
+      ? isArticle
+        ? "Aktuelt"
+        : "Referanse"
+      : legacyEyebrow,
+    intro: isPublicMigratedDetail
+      ? migratedText || ""
+      : "Denne gamle Fresvik-sida er registrert i sitemap og blir halde levande medan innhaldet blir flytta til ny struktur.",
     description:
-      "Migreringsside for gammal Fresvik Produkt URL. Endeleg tekst, bilete og dokument skal hentast frå gammal nettstad.",
+      isPublicMigratedDetail && migratedText
+        ? migratedText
+        : "Migreringsside for gammal Fresvik Produkt URL. Endeleg tekst, bilete og dokument skal hentast frå gammal nettstad.",
     pageType: isArticle
       ? "company"
       : isReference
@@ -1846,7 +1856,7 @@ export function createLegacyContentPage(slug: string): ContentPage {
             : "index",
     priority: "low",
     sourceUrl: `https://www.fresvik.no${slug}`,
-    showMigrationDetails: true,
+    showMigrationDetails: !isPublicMigratedDetail,
     cards: inventoryItem
       ? [
           {
@@ -1854,36 +1864,55 @@ export function createLegacyContentPage(slug: string): ContentPage {
             text:
               migratedText ||
               "Registrert frå gammal sitemap. Brødtekst skal importerast frå kjeldesida til Sanity.",
-            href: inventoryItem.href,
+            href: isPublicMigratedDetail ? undefined : inventoryItem.href,
             meta: inventoryItem.lastmod,
             imageUrl: inventoryItem.imageUrl,
             imageAlt: inventoryItem.imageAlt || inventoryItem.title,
           },
         ]
       : [],
-    sections: [
-      {
-        title: "Migreringsstatus",
-        intro:
-          "URL-en er dekt i ny Next.js-struktur slik at gamle interne lenker ikkje endar som 404 under migreringa.",
-        items: [
+    sections: isPublicMigratedDetail
+      ? [
           {
-            title: "Kjelde",
-            text: `Gammal side: https://www.fresvik.no${slug}`,
+            title: isArticle ? "Artikkel frå gammal side" : "Referanse frå gammal side",
+            intro:
+              "Innhaldet er henta frå den gamle Fresvik-nettstaden og halde tilgjengeleg på same URL.",
+            items: [
+              {
+                title: inventoryItem?.title || titleFromSlug(slug),
+                text: migratedText || "",
+                meta: inventoryItem?.lastmod,
+                imageUrl: inventoryItem?.imageUrl,
+                imageAlt: inventoryItem?.imageAlt || inventoryItem?.title,
+              },
+            ],
           },
+        ]
+      : [
           {
-            title: "Neste steg",
-            text: migratedText
-              ? "Kort brødtekst er henta frå gammal side. Neste steg er å flytte innhaldet til rett Sanity-type og kvalitetssikre bilete, metadata og eventuelle dokument."
-              : "TODO: hent tittel, brødtekst, bilete, PDF-ar og metadata frå gammal side og flytt til rett Sanity-type.",
+            title: "Migreringsstatus",
+            intro:
+              "URL-en er dekt i ny Next.js-struktur slik at gamle interne lenker ikkje endar som 404 under migreringa.",
+            items: [
+              {
+                title: "Kjelde",
+                text: `Gammal side: https://www.fresvik.no${slug}`,
+              },
+              {
+                title: "Neste steg",
+                text: migratedText
+                  ? "Kort brødtekst er henta frå gammal side. Neste steg er å flytte innhaldet til rett Sanity-type og kvalitetssikre bilete, metadata og eventuelle dokument."
+                  : "TODO: hent tittel, brødtekst, bilete, PDF-ar og metadata frå gammal side og flytt til rett Sanity-type.",
+              },
+            ],
           },
         ],
-      },
-    ],
-    todo: [
-      "Migrer nøyaktig tekst frå gammal side.",
-      "Importer og kvalitetssikre bilete, dokument og alt-tekst.",
-      "Avgjer om sida skal bli eiga side, nyheitsartikkel, referanse, produkt eller redirect.",
-    ],
+    todo: isPublicMigratedDetail
+      ? undefined
+      : [
+          "Migrer nøyaktig tekst frå gammal side.",
+          "Importer og kvalitetssikre bilete, dokument og alt-tekst.",
+          "Avgjer om sida skal bli eiga side, nyheitsartikkel, referanse, produkt eller redirect.",
+        ],
   };
 }

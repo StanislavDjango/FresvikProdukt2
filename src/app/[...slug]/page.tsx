@@ -42,7 +42,11 @@ export async function generateMetadata({
   }
 
   if (isLegacyRoute(path)) {
-    return pageMetadata(createLegacyContentPage(path), { noIndex: true });
+    const legacyPage = createLegacyContentPage(path);
+
+    return pageMetadata(legacyPage, {
+      noIndex: legacyPage.showMigrationDetails === true,
+    });
   }
 
   return {};

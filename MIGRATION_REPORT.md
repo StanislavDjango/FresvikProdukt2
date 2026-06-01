@@ -244,6 +244,10 @@ content migration.
   links.
 - Regenerated the Sanity seed after adding the electric skyveport documents;
   it now contains 127 documents.
+- Updated legacy news/reference detail rendering so old URLs with verified
+  migrated summaries now appear as normal public article/reference pages
+  without `Gammal kjelde`, `Migreringsstatus` or TODO panels. Legacy URLs
+  without reliable migrated text still keep migration status and `noindex`.
 
 ## Verification
 
@@ -333,6 +337,11 @@ content migration.
   on local port `3026` confirmed the page title, migrated PDF links, sitemap
   entry and hidden migration labels. A sampled local PDF returned `200` with a
   `%PDF` header.
+- `npm run lint` and `npm run build` passed after updating legacy
+  news/reference detail rendering.
+- Production HTTP smoke check on local port `3027` confirmed a migrated old
+  news URL renders public content without migration labels, while an
+  unverified old news URL still keeps migration TODO labels and `noindex`.
 
 ## Still TODO
 

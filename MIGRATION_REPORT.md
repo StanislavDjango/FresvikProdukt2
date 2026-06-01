@@ -235,6 +235,15 @@ content migration.
   construction, FoodSafe surfaces, tailored doors and food-industry use cases.
 - Regenerated the Sanity seed after adding Frysetunnel; it now contains 120
   documents.
+- Promoted `/monteringsanvisningar-fresvik-skyveport` from a legacy route to a
+  normal documentation page, added it to documentation navigation/public
+  routes/sitemap, and localized six old PDF files for electric Fresvik
+  Skyveport/Fermod 5010 documentation.
+- Updated the `/monteringsanvisning` copy so it correctly states that mounting
+  PDFs are now local files awaiting Sanity asset import, not old Squarespace
+  links.
+- Regenerated the Sanity seed after adding the electric skyveport documents;
+  it now contains 127 documents.
 
 ## Verification
 
@@ -317,6 +326,13 @@ content migration.
 - Production HTTP smoke check for `/produkt/frysetunnel` on local port `3025`
   confirmed the title, migrated source text, navigation link, metadata and
   sitemap entry are present, with migration-only labels hidden.
+- `node scripts/generate-sanity-seed.mjs`, `npm run lint` and `npm run build`
+  passed after adding `/monteringsanvisningar-fresvik-skyveport` and its local
+  PDFs.
+- Production HTTP smoke check for `/monteringsanvisningar-fresvik-skyveport`
+  on local port `3026` confirmed the page title, migrated PDF links, sitemap
+  entry and hidden migration labels. A sampled local PDF returned `200` with a
+  `%PDF` header.
 
 ## Still TODO
 

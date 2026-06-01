@@ -737,6 +737,39 @@ const mountingDownloads: ContentCard[] = [
   },
 ];
 
+const electricSkyveportDownloads: ContentCard[] = [
+  {
+    title: "Koblingskjema Fermod 5010",
+    text: "Koblingsskjema for elektrisk styring av Fresvik Skyveport.",
+    href: "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
+  },
+  {
+    title: "Montasjeanvisning 5010 for 2150",
+    text: "Montasjeanvisning for Fermod 5010 på manuelt beslag 2150.",
+    href: "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
+  },
+  {
+    title: "Montasjeanvisning 5010 for 3530 og 7530",
+    text: "Montasjeanvisning for Fermod 5010 på manuelt beslag 3530 og 7530.",
+    href: "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
+  },
+  {
+    title: "Quick Start 5010Exp",
+    text: "Quick Start-dokument for 5010Exp.",
+    href: "/assets/fresvik/documents/quick-start-5010exp.pdf",
+  },
+  {
+    title: "Endre skyveretning",
+    text: "Rettleiing for å endre skyveretning.",
+    href: "/assets/fresvik/documents/endre-skyveretning.pdf",
+  },
+  {
+    title: "Tilleggsutstyr NMOptions kits 5010Exp",
+    text: "Tilleggsutstyrsdokument for 5010Exp.",
+    href: "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
+  },
+];
+
 const pirSections = [
   {
     title: "Produktfordelar frå gammal side",
@@ -1393,7 +1426,7 @@ export const contentPages: ContentPage[] = [
       {
         title: "Monteringsfiler frå gammal side",
         intro:
-          "Lenkene går førebels til gammal Squarespace-filplassering. Neste steg er å flytte dokumenta til Sanity assets eller lokal dokumentmappe.",
+          "Dokumenta er henta frå gammal Fresvik-side og ligg mellombels som lokale filer fram til dei blir flytta til Sanity assets.",
         items: mountingDownloads,
       },
       {
@@ -1404,6 +1437,37 @@ export const contentPages: ContentPage[] = [
       },
     ],
     todo: ["Legg dokumenta inn som `documentFile` i Sanity."],
+  },
+  {
+    slug: "/monteringsanvisningar-fresvik-skyveport",
+    title: "Monteringsanvisningar for elektrisk styring av Fresvik Skyveport",
+    eyebrow: "Dokumentasjon",
+    intro:
+      "Teknisk dokumentasjon og monteringsfiler for elektrisk styring av Fresvik Skyveport.",
+    description:
+      "Monteringsanvisningar og teknisk dokumentasjon for elektrisk styring av Fresvik Skyveport.",
+    pageType: "support",
+    priority: "medium",
+    sourceUrl: "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+    cards: electricSkyveportDownloads.slice(0, 3),
+    sections: [
+      {
+        title: "Filer frå gammal skyveportside",
+        intro:
+          "Dokumenta er lasta ned frå gammal Fresvik-side og kopla som lokale PDF-filer for trygg gjennomgang i ny nettstad.",
+        items: electricSkyveportDownloads,
+      },
+      {
+        title: "Relatert dokumentasjon",
+        items: portDocuments.filter((item) =>
+          item.href?.includes("assets/fresvik/documents"),
+        ),
+      },
+    ],
+    todo: [
+      "Kvalitetssikre at alle elektriske styringsdokument framleis er gjeldande før endeleg lansering.",
+      "Flytt PDF-ane til Sanity assets når dokumentmodellen er i bruk.",
+    ],
   },
   {
     slug: "/kundeservice/faq",

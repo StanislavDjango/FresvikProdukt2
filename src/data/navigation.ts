@@ -35,6 +35,10 @@ export const mainNavigation: NavigationItem[] = [
     href: "/dokumentasjon",
     children: [
       { label: "Monteringsanvisning", href: "/monteringsanvisning" },
+      {
+        label: "Elektrisk skyveport",
+        href: "/monteringsanvisningar-fresvik-skyveport",
+      },
       { label: "FAQ", href: "/kundeservice/faq" },
     ],
   },
@@ -75,6 +79,7 @@ export const publicRoutes = [
   "/tenester/service-reservedeler",
   "/dokumentasjon",
   "/monteringsanvisning",
+  "/monteringsanvisningar-fresvik-skyveport",
   "/kundeservice/faq",
   "/referansar",
   "/om-oss",

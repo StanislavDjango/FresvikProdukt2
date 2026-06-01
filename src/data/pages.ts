@@ -599,12 +599,12 @@ const pirDocuments: ContentCard[] = [
   {
     title: "PIR-Paneler produktblad",
     text: "Produktblad funne på gammal Fresvik PIR-Panel-side.",
-    href: "https://www.fresvik.no/s/PIR.pdf",
+    href: "/assets/fresvik/documents/pir-panel.pdf",
   },
   {
     title: "PIR-Paneler montasjeanvisning",
     text: "Montasjeanvisning funne på gammal Fresvik PIR-Panel-side.",
-    href: "https://www.fresvik.no/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf",
+    href: "/assets/fresvik/documents/pir-panel-montasjeanvisning.pdf",
   },
 ];
 
@@ -612,12 +612,12 @@ const portDocuments: ContentCard[] = [
   {
     title: "Produktblad Fresvik Skyveport",
     text: "Produktblad for skyveport frå gammal portside.",
-    href: "https://www.fresvik.no/s/Produktblad-Fresvik-Skyveport.pdf",
+    href: "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
   },
   {
     title: "Monteringsanvisning manuell port",
     text: "PDF for manuell portmontasje frå gammal portside.",
-    href: "https://www.fresvik.no/s/Fresvik-Port-Montasjeanvisning.pdf",
+    href: "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
   },
   {
     title: "Monteringsanvisning elektrisk port",
@@ -630,17 +630,17 @@ const documentationDownloads: ContentCard[] = [
   {
     title: "Miljødokument",
     text: "Miljødokument for Fresvik Produkt.",
-    href: "https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf",
+    href: "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
   },
   {
     title: "Fresvik PIR-Panel CPR",
     text: "CPR-dokument for Fresvik PIR-Panel.",
-    href: "https://www.fresvik.no/s/7060s-fnfz.pdf",
+    href: "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
   },
   {
     title: "Teknisk godkjenning",
     text: "Teknisk godkjenning frå gammal dokumentasjonsside.",
-    href: "https://www.fresvik.no/s/2135g-5.pdf",
+    href: "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
   },
   {
     title: "Godkjenningsdokument hjå SINTEF",
@@ -650,17 +650,17 @@ const documentationDownloads: ContentCard[] = [
   {
     title: "Leveringsbetingelser",
     text: "Leveringsvilkår for Fresvik Produkt.",
-    href: "https://www.fresvik.no/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf",
+    href: "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
   },
   {
     title: "Sentral godkjenning",
     text: "Sentral godkjenning frå gammal dokumentasjonsside.",
-    href: "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+    href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
   },
   {
     title: "Ytelseserklæring",
     text: "Ytelseserklæring for Fresvik Produkt.",
-    href: "https://www.fresvik.no/s/Ytelseserklring-Fresvik-Produkt.pdf",
+    href: "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
   },
 ];
 
@@ -668,22 +668,22 @@ const mountingDownloads: ContentCard[] = [
   {
     title: "Fryserom, Norsk/English",
     text: "Monteringsanvisning for fryserom.",
-    href: "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
+    href: "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
   },
   {
     title: "Manuell port",
     text: "Monteringsanvisning for manuell port.",
-    href: "https://www.fresvik.no/s/Fresvik-Port-Montasjeanvisning.pdf",
+    href: "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
   },
   {
     title: "Kjølerom, Norsk/English",
     text: "Monteringsanvisning for kjølerom.",
-    href: "https://www.fresvik.no/s/Fresvik-Kjlerom-Montasjeanvisning.pdf",
+    href: "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
   },
   {
     title: "Dør",
     text: "Monteringsanvisning for dør.",
-    href: "https://www.fresvik.no/s/Fresvik-Dr-Montasjeanvisning.pdf",
+    href: "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
   },
 ];
 

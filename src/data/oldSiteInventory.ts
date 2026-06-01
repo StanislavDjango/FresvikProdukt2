@@ -782,15 +782,15 @@ export const oldSiteEmployees: MigratedEmployee[] = [
 export const oldSiteLegalDocuments: MigratedListItem[] = [
   {
     title: "Aktsemdvurdering 2024",
-    href: "https://www.fresvik.no/s/2024-Aktsemdvurderingar-Fresvik-Produkt.pdf",
+    href: "/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf",
   },
   {
     title: "Rutine for oppfylling av plikter etter Openheitslova",
-    href: "https://www.fresvik.no/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf",
+    href: "/assets/fresvik/documents/openheitslova-rutine-plikter.pdf",
   },
   {
     title: "Utgreiing 2024",
-    href: "https://www.fresvik.no/s/2024-Utgreiing-signert.pdf",
+    href: "/assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf",
   },
   {
     title: "Openheitslova på Lovdata",

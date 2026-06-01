@@ -185,6 +185,13 @@ content migration.
   extracted from the old privacy policy page, covering controller details,
   customer data, disclosure, customer register, cookies, newsletter,
   contact form, access/correction/deletion and responsible data processor.
+- Downloaded 16 old-site PDF documents into
+  `public/assets/fresvik/documents/` and switched product, documentation,
+  mounting and Openheitslova document cards from old `www.fresvik.no/s/...`
+  links to local `/assets/fresvik/documents/...` links.
+- Localized documents now include PIR product/mounting PDFs, port product and
+  mounting PDFs, miljø/SINTEF/levering/sentral godkjenning/ytelseserklæring
+  PDFs, fryserom/kjølerom/dør mounting PDFs and the Openheitslova documents.
 
 ## Verification
 
@@ -225,26 +232,31 @@ content migration.
   privacy placeholders. Build still generates 116 app pages.
 - Local HTTP checks confirmed `/kundeservice/faq`, `/stillingledig` and
   `/personvernerklering` render the newly migrated source content.
+- `npm run lint` and `npm run build` passed after localizing PDF documents.
+  Build still generates 116 app pages.
+- Local HTTP checks confirmed `/dokumentasjon`, `/monteringsanvisning`,
+  `/openheitslova`, `/produkt/fresvik-pir-panel` and
+  `/produkt/kjole-fryseportar` link to local document URLs, and sampled PDFs
+  return `200` with a `%PDF` header.
 
 ## Still TODO
 
 - Continue pulling exact long-form body copy, images, PDFs, document titles
   and alt text from the old website where pages still contain TODOs.
 - Import or seed real Sanity documents for the new schemas.
-- Download or import real assets into `public/assets/fresvik/...` or Sanity
-  assets. Current news/reference images are linked from the old Squarespace CDN
-  and rendered through Next Image.
+- Download or import remaining real images into `public/assets/fresvik/...` or
+  Sanity assets. Current news/reference/employee images are linked from the old
+  Squarespace CDN and rendered through Next Image.
 - Replace remaining TODO migration placeholders on employee and legacy detail
   pages.
 - Verify current employee consent/persondata before production domain switch.
-- Import Openheitslova PDFs into Sanity assets or `public/assets` instead of
-  linking to old Squarespace file URLs.
+- Later import localized Openheitslova PDFs into Sanity assets if documents
+  should be managed from Studio instead of `public/assets`.
 - Have a responsible person review `/personvernerklering` before production
   domain switch, especially cookie/analytics wording for the new Vercel/Sanity
   stack.
-- Import product, service and documentation PDFs/images into Sanity assets or
-  `public/assets/fresvik/...`; they are currently linked to the old Squarespace
-  file URLs.
+- Later import localized product, service and documentation PDFs into Sanity
+  assets if documents should be managed from Studio instead of `public/assets`.
 - Finish accessory pages and remaining long-form product/service body copy in
   Sanity.
 - Import customer segment images/references and verify marketing claims,

@@ -192,6 +192,11 @@ content migration.
 - Localized documents now include PIR product/mounting PDFs, port product and
   mounting PDFs, miljø/SINTEF/levering/sentral godkjenning/ytelseserklæring
   PDFs, fryserom/kjølerom/dør mounting PDFs and the Openheitslova documents.
+- Downloaded 75 old-site images into
+  `public/assets/fresvik/images/migrated/` and switched the migrated old-site
+  inventory from `images.squarespace-cdn.com` URLs to local image paths.
+- Localized image coverage now includes news, references, product/service
+  cards, documentation/support cards, accessories and employee portraits.
 
 ## Verification
 
@@ -238,15 +243,19 @@ content migration.
   `/openheitslova`, `/produkt/fresvik-pir-panel` and
   `/produkt/kjole-fryseportar` link to local document URLs, and sampled PDFs
   return `200` with a `%PDF` header.
+- `npm run lint` and `npm run build` passed after localizing old-site images.
+  Build still generates 116 app pages.
+- Local HTTP checks confirmed `/aktuelt`, `/referansar`, `/tilsette`,
+  `/tilleggsutstyr`, `/produkt` and `/tenester` render local migrated image
+  paths and no longer include `images.squarespace-cdn.com` in the HTML.
 
 ## Still TODO
 
-- Continue pulling exact long-form body copy, images, PDFs, document titles
-  and alt text from the old website where pages still contain TODOs.
+- Continue pulling exact long-form body copy, document titles and alt text from
+  the old website where pages still contain TODOs.
 - Import or seed real Sanity documents for the new schemas.
-- Download or import remaining real images into `public/assets/fresvik/...` or
-  Sanity assets. Current news/reference/employee images are linked from the old
-  Squarespace CDN and rendered through Next Image.
+- Later import localized images into Sanity assets if editors should manage
+  them from Studio instead of `public/assets`.
 - Replace remaining TODO migration placeholders on employee and legacy detail
   pages.
 - Verify current employee consent/persondata before production domain switch.

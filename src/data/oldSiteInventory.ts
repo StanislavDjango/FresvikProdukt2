@@ -20,7 +20,7 @@ export const oldSiteNews: MigratedListItem[] = [
     href: "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
     lastmod: "2024-12-17",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e6a1706c-a13b-41d3-8e62-479cbae3fa46/Samaneh+Shakeri.jpg",
+      "/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
     imageAlt: "Samaneh Shakeri, ny teknisk sjef i Fresvik Produkt.",
   },
   {
@@ -28,7 +28,7 @@ export const oldSiteNews: MigratedListItem[] = [
     href: "/aktuelt/ny-teknisk-teiknar-havard-berdal",
     lastmod: "2024-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9765834-5b4b-45a2-a9fc-819876dc6672/Ha%CC%8Avard+Berdal.jpg",
+      "/assets/fresvik/images/migrated/havard-berdal.jpg",
     imageAlt: "Håvard Berdal er ny teknisk teiknar.",
   },
   {
@@ -36,7 +36,7 @@ export const oldSiteNews: MigratedListItem[] = [
     href: "/aktuelt/john-bothun-blir-pensjonist",
     lastmod: "2024-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc7a35a3-51fe-4a8a-aac6-32c13c72b7ad/John+B%C3%B8thun_Fresvik+Produkt.jpg",
+      "/assets/fresvik/images/migrated/john-bthun-fresvik-produkt.jpg",
     imageAlt:
       "John Bøthun har jobba 42 år i Fresvik Produkt men blir no pensjonist.",
   },
@@ -45,14 +45,14 @@ export const oldSiteNews: MigratedListItem[] = [
     href: "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
     lastmod: "2023-12-20",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/18003c2c-f3da-4a01-a9fa-f0d7d2ebcadb/Fresvik+Produkt+NY-4.jpeg",
+      "/assets/fresvik/images/migrated/fresvik-produkt-ny-4.jpeg",
   },
   {
     title: "Agnar er snart pensjonist",
     href: "/aktuelt/agnar-er-snart-pensjonistnbsp",
     lastmod: "2024-08-26",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1702900160938-N8DQTB537FIXPAT24N89/Agnar3.jpeg",
+      "/assets/fresvik/images/migrated/agnar3.jpeg",
     imageAlt: "Agnar",
   },
   {
@@ -70,7 +70,7 @@ export const oldSiteNews: MigratedListItem[] = [
     href: "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn",
     lastmod: "2023-08-30",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228635452-TD8HXP8YZNIQPVPFCRI7/Milj%C3%B8fyrta%CC%8Arn_Fresvik+Produkt.jpg",
+      "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
   },
   {
     title: "Fryse- og kjølerom til Sogn Frukt og Grønt",
@@ -87,14 +87,14 @@ export const oldSiteNews: MigratedListItem[] = [
     href: "/aktuelt/jul-2020",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228641721-HC1VC12XNP8F4MWVOMZY/Fresvik+produkt+julehjarte+dekorasjon.jpg",
+      "/assets/fresvik/images/migrated/fresvik-produkt-julehjarte-dekorasjon.jpg",
   },
   {
     title: "Møt Arne-Olav, vår nye salskonsulent",
     href: "/aktuelt/arne-olav-ny-salskonsulent",
     lastmod: "2023-08-30",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228646223-GCFAL7J1Z7CDSTH66PBD/Fresvik+produikt+seljar+Arne-Olav.jpg",
+      "/assets/fresvik/images/migrated/fresvik-produikt-seljar-arne-olav.jpg",
     imageAlt: "Arne-Olav Lien Bardølsgård",
   },
   {
@@ -102,7 +102,7 @@ export const oldSiteNews: MigratedListItem[] = [
     href: "/aktuelt/fresvik-kjolerom-til-fruktbonde",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228649404-20IRVX8C4AZ399L0LMWC/Fresvik%2Bkj%25C3%25B8lerom%2BIvar%2BSlinde.jpg",
+      "/assets/fresvik/images/migrated/fresvik-kj-c3-b8lerom-ivar-slinde.jpg",
     imageAlt: "Montasjelag med fruktbonde Ivar Slinde.",
   },
   {
@@ -110,21 +110,21 @@ export const oldSiteNews: MigratedListItem[] = [
     href: "/aktuelt/40-aars-jubileum",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228658301-7HXO4YTJZXT4SGA9VFEE/Fresvik+Produkt+40+aar.jpg",
+      "/assets/fresvik/images/migrated/fresvik-produkt-40-aar.jpg",
   },
   {
     title: "Innfesting mot golv",
     href: "/aktuelt/innfesting-mot-golv",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228667833-NZJ6X5474K8R1NHEWNHD/Fresvik+ionnfesting+mot+golv.jpg",
+      "/assets/fresvik/images/migrated/fresvik-ionnfesting-mot-golv.jpg",
   },
   {
     title: "Ei gladhistorie frå Fresvik Produkt",
     href: "/aktuelt/gladhistorie-fresvik-kjole-fryserom",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228671867-44XDBXP74FZLKTE9Y39G/Fresvik_illustrasjon-1.jpg",
+      "/assets/fresvik/images/migrated/fresvik-illustrasjon-1.jpg",
     imageAlt: "Illustrasjon: Emma Kenny",
   },
   {
@@ -132,7 +132,7 @@ export const oldSiteNews: MigratedListItem[] = [
     href: "/aktuelt/tomas-kruvellis-vaar-nye-mann",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228676756-0Q8RRY50I1SGJ18G8H55/tomas+kruvelis+20180315_121307.jpg",
+      "/assets/fresvik/images/migrated/tomas-kruvelis-20180315-121307.jpg",
   },
   {
     title: "Fasadeprosjekt for Celsa Steel Service Sotra",
@@ -154,42 +154,42 @@ export const oldSiteNews: MigratedListItem[] = [
     href: "/aktuelt/montasje-prosjekt",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228694667-LDWF0LUE9BEO9MWMQX43/DSC_0608.JPG",
+      "/assets/fresvik/images/migrated/dsc-0608.jpg",
   },
   {
     title: "Skjererom for eit betre arbeidsmiljø",
     href: "/aktuelt/skjererom",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228721557-MJMS3CUPRLWRIEQBF6GC/image-asset.jpeg",
+      "/assets/fresvik/images/migrated/image-asset.jpeg",
   },
   {
     title: "Deleveggar, dører og portar til nytt lefsebakeri på Stranda",
     href: "/aktuelt/orklafoods-stranda",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228737620-U24419ZEMK9CIOTL4PAW/image-asset.jpeg",
+      "/assets/fresvik/images/migrated/image-asset-13.jpeg",
   },
   {
     title: "Nye monteringsanvisningar",
     href: "/aktuelt/nye-monteringsanvisningar",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228769500-4TTIXKAO1JNS9J2G51MG/_K6R3776_07032013.jpg",
+      "/assets/fresvik/images/migrated/k6r3776-07032013.jpg",
   },
   {
     title: "Fasade-element og takplater frå Ruukki",
     href: "/aktuelt/fasade-element-og-takplater-ruukki",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228773263-FLXJ27Z301QXVPYB3V5H/image-asset.jpeg",
+      "/assets/fresvik/images/migrated/image-asset-15.jpeg",
   },
   {
     title: "Fresvik skyveport",
     href: "/aktuelt/portproduksjon",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228806054-QGL0LMRK543ILT2T3XK3/Port1_fresvik.jpg",
+      "/assets/fresvik/images/migrated/port1-fresvik.jpg",
   },
 ];
 
@@ -199,105 +199,105 @@ export const oldSiteReferences: MigratedListItem[] = [
     href: "/referansar/fryserom-baza-fredrikstad",
     lastmod: "2026-02-16",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241166920-U2FPLWGLYNB9M3NT7Z1J/Baza+fryserom+-+1.jpeg",
+      "/assets/fresvik/images/migrated/baza-fryserom-1.jpeg",
   },
   {
     title: "Historisk leveranse til Spar Lund Torv",
     href: "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
     lastmod: "2025-09-30",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222151377-Y2600X4366PYP2EVYBJ9/Spar+Lund+Torv+-+Fresvik+Produkt+1+.jpeg",
+      "/assets/fresvik/images/migrated/spar-lund-torv-fresvik-produkt-1.jpeg",
   },
   {
     title: "Bjerkreim Legekontor: fryselager og kjølerom",
     href: "/referansar/bjerkreim-legekontor-vikesaa",
     lastmod: "2025-09-30",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502389661-0NT1K8HKOIMI3JAQC92D/Bjerkreim+Legekontor+1.jpeg",
+      "/assets/fresvik/images/migrated/bjerkreim-legekontor-1.jpeg",
   },
   {
     title: "Kjøle- og fryserom til Bunnpris Hammerfest",
     href: "/referansar/bunnpris-hammerfest",
     lastmod: "2025-05-19",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1747635709094-QZ1DMKF9F7N73IKHN7JA/1000024746.jpg",
+      "/assets/fresvik/images/migrated/1000024746.jpg",
   },
   {
     title: "Bunnpris Volda: nytt kjølerom med isolert kjøledør",
     href: "/referansar/kjolerom-kjoledor-bunnpris-volda",
     lastmod: "2025-05-19",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1742460548045-IK0PV2OD0TE4E6PHMPW0/Kj%C3%B8lerom+Bunnpris+Volda+3.jpg",
+      "/assets/fresvik/images/migrated/kjlerom-bunnpris-volda-3.jpg",
   },
   {
     title: "Nytt stort fryserom til Coop Obs Alnabru",
     href: "/referansar/fryserom-coop-obs-alnabru",
     lastmod: "2025-03-20",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1734082729594-BHFB3R5YE0O1JKAXEDM9/Fryserom+OBS+Alna+3_red.jpg",
+      "/assets/fresvik/images/migrated/fryserom-obs-alna-3-red.jpg",
   },
   {
     title: "Kjøle- og fryserom til nye Vik helse- og omsorgssenter",
     href: "/referansar/vik-helse-og-omsorgssenter",
     lastmod: "2024-12-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749159320-QFVQ5BDRGRH74139ILFZ/Vik+helse-+og+sjukeheim+1.jpg",
+      "/assets/fresvik/images/migrated/vik-helse-og-sjukeheim-1.jpg",
   },
   {
     title: "Nok ein Kiwi-butikk får nye fryse- og kjølerom",
     href: "/referansar/fryse-og-kjolerom-kiwi-otta",
     lastmod: "2024-12-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820354075-093JAT4O9XRFJQLFQLUX/Kiwi+Otta+1.jpeg",
+      "/assets/fresvik/images/migrated/kiwi-otta-1.jpeg",
   },
   {
     title: "Nye leveransar til Rema 1000 Øya i Larvik",
     href: "/referansar/nye-leveransar-til-rema-1000-ya-i-larvik",
     lastmod: "2024-12-09",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719842659307-NIRBLOIHY5ZWCFKW4BE2/1715599204491_upscale.jpeg",
+      "/assets/fresvik/images/migrated/1715599204491-upscale.jpeg",
   },
   {
     title: "Ny leveranse til Dyreparken Safaricamp i Kristiansand Dyrepark",
     href: "/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark",
     lastmod: "2024-12-09",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719344562160-Z9D12R6FJ09COTBFIC4B/FP+Dyreparken.jpg",
+      "/assets/fresvik/images/migrated/fp-dyreparken.jpg",
   },
   {
     title: "Spesialløysing til tørkerom hjå Drageboden Kaupanger",
     href: "/referansar/spesialloysing-torkerom-drageboden-kaupanger",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428886618-XIC3VIN5W5LENA25WU9H/DSC03066.jpg",
+      "/assets/fresvik/images/migrated/dsc03066.jpg",
   },
   {
     title: "Omfattande leveranse til Bakehuset Trondheim",
     href: "/referansar/omfattande-leveranse-til-bakehuset-trondheim",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428910621-3R8YJSUP8CFWMUKDYQGP/20220616_152720_1.jpg",
+      "/assets/fresvik/images/migrated/20220616-152720-1.jpg",
   },
   {
     title: "Fryseromsportar til Rema 1000 i Narvik",
     href: "/referansar/fryseromsportar-til-rema-1000-i-narvik",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428921988-GSQLH7E9ACJ9DPWSSGRW/IMG_6262.jpg",
+      "/assets/fresvik/images/migrated/img-6262.jpg",
   },
   {
     title: "Fryse- og kjølerom til Sogn Frukt og Grønt",
     href: "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428934426-54STKYSMZXBLZUQT1Y69/IMG_2589.jpg",
+      "/assets/fresvik/images/migrated/img-2589.jpg",
   },
   {
     title: "Fryserom og fryseport til Rentokil, Skjetten",
     href: "/referansar/fryserom-fryseport-rentokil",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428945151-2DYHLD6R7EHJRUKRCWUI/Resvik-fryserom-Innvendig%2B2.jpg",
+      "/assets/fresvik/images/migrated/resvik-fryserom-innvendig-2.jpg",
     imageAlt: "Fryserom innvendig",
   },
   {
@@ -305,7 +305,7 @@ export const oldSiteReferences: MigratedListItem[] = [
     href: "/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428963306-KUA0I3B9YO1LP7PZUI11/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
+      "/assets/fresvik/images/migrated/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
     imageAlt: "Kiwi Skollenborg, Kongsberg",
   },
   {
@@ -313,49 +313,49 @@ export const oldSiteReferences: MigratedListItem[] = [
     href: "/referansar/karlsoybruket",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428967167-613IZJTMJEAGG6Q80CY9/IMG_7324.JPG",
+      "/assets/fresvik/images/migrated/img-7324.jpg",
   },
   {
     title: "Fiskehallen",
     href: "/referansar/fiskehallen",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428975164-E7SJ2PMIFU8D45RMVPPO/fiskehallen1.jpg",
+      "/assets/fresvik/images/migrated/fiskehallen1.jpg",
   },
   {
     title: "Celsa Steel Service, Sotra",
     href: "/referansar/celsa-steel-sotra",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428982293-NKH2SU6F4RGFUQLJJGCN/DSC_2579.JPG",
+      "/assets/fresvik/images/migrated/dsc-2579.jpg",
   },
   {
     title: "Buskerud Storcash",
     href: "/referansar/buskerud-storcash",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428993712-UDHHY88O8YUFDULR9G1L/image-asset.jpeg",
+      "/assets/fresvik/images/migrated/image-asset-35.jpeg",
   },
   {
     title: "Bjerke spekemat og delikatesse",
     href: "/referansar/bjerke-spekemat",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429005299-7QZOS5OLK4T6ST48KDUX/Fresvik+aks+montering1.jpg",
+      "/assets/fresvik/images/migrated/fresvik-aks-montering1.jpg",
   },
   {
     title: "Restauranthuset Malin",
     href: "/referansar/restauranthuset-malin",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429019721-ZC32AVBAD55JGSWMPAE0/image2.JPG",
+      "/assets/fresvik/images/migrated/image2.jpg",
   },
   {
     title: "Coop Extra Naustdal",
     href: "/referansar/fryserom-med-fryseport-til-coop-extra-naustdal",
     lastmod: "2023-09-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429028144-41EYQYWQAK95BAZNN3Y4/20151021_174754.jpg",
+      "/assets/fresvik/images/migrated/20151021-174754.jpg",
   },
 ];
 
@@ -365,42 +365,42 @@ export const oldSiteProducts: MigratedListItem[] = [
     href: "/produkt/fresvik-pir-panel",
     lastmod: "2026-05-11",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
+      "/assets/fresvik/images/migrated/flake-black.png",
   },
   {
     title: "Fresvik Panel",
     href: "/produkt/fresvik-panel",
     lastmod: "2026-03-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
+      "/assets/fresvik/images/migrated/flake-black.png",
   },
   {
     title: "Kjøle- og fryseportar",
     href: "/produkt/kjole-fryseportar",
     lastmod: "2026-03-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
+      "/assets/fresvik/images/migrated/flake-black.png",
   },
   {
     title: "Kjøle- og frysedører",
     href: "/produkt/kjole-frysedorer",
     lastmod: "2026-03-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
+      "/assets/fresvik/images/migrated/flake-black.png",
   },
   {
     title: "Fasadepanel",
     href: "/produkt/fasadepanel",
     lastmod: "2026-03-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
+      "/assets/fresvik/images/migrated/flake-black.png",
   },
   {
     title: "Frysetunnel",
     href: "/produkt/frysetunnel",
     lastmod: "2026-05-07",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/506e6a44-7853-4159-83ac-0bfffd486b1c/New+Logo+Design+2024+-+Made+with+PosterMyWall+%2815%29.png",
+      "/assets/fresvik/images/migrated/new-logo-design-2024-made-with-postermywall-15.png",
   },
 ];
 
@@ -410,21 +410,21 @@ export const oldSiteServices: MigratedListItem[] = [
     href: "/tenester/montasje",
     lastmod: "2026-03-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228769500-4TTIXKAO1JNS9J2G51MG/_K6R3776_07032013.jpg",
+      "/assets/fresvik/images/migrated/k6r3776-07032013.jpg",
   },
   {
     title: "Leveranse",
     href: "/tenester/leveranse",
     lastmod: "2026-03-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3c01276b-1589-49c6-9503-8cd8519959d9/port1web.jpg",
+      "/assets/fresvik/images/migrated/port1web.jpg",
   },
   {
     title: "Service og reservedeler",
     href: "/tenester/service-reservedeler",
     lastmod: "2026-03-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
+      "/assets/fresvik/images/migrated/flake-left.png",
   },
 ];
 
@@ -434,21 +434,21 @@ export const oldSiteDocuments: MigratedListItem[] = [
     href: "/dokumentasjon",
     lastmod: "2026-03-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
+      "/assets/fresvik/images/migrated/flake-left.png",
   },
   {
     title: "Monteringsanvisning",
     href: "/monteringsanvisning",
     lastmod: "2026-03-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
+      "/assets/fresvik/images/migrated/flake-left.png",
   },
   {
     title: "Monteringsanvisningar Fresvik skyveport",
     href: "/monteringsanvisningar-fresvik-skyveport",
     lastmod: "2026-02-04",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
+      "/assets/fresvik/images/migrated/flake-left.png",
   },
 ];
 
@@ -458,35 +458,35 @@ export const oldSiteAccessories: MigratedListItem[] = [
     href: "/tilleggsutstyr",
     lastmod: "2026-03-10",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5416085d-ec3b-4270-bef9-0b20706ad193/1463-fr-plata-instal.webp",
+      "/assets/fresvik/images/migrated/1463-fr-plata-instal.png",
   },
   {
     title: "Standard håndtak",
     href: "/andre-produkter/standard-handtak",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228902945-AQM2H33O29539I7FSA3I/Ha%CC%8Andtak+standard_web.jpg",
+      "/assets/fresvik/images/migrated/handtak-standard-web.jpg",
   },
   {
     title: "Elebar ventil",
     href: "/andre-produkter/elebar-ventil",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228906304-EALH1BMIZQ4OMLY1L00P/Elebar+ventil+inne_web.jpg",
+      "/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg",
   },
   {
     title: "MaxiElebar ventil",
     href: "/andre-produkter/maxielebar-ventil",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228910970-GA9J3XJZ7A746P0MBQJ4/MaxiElebar+ventil+inne_web.jpg",
+      "/assets/fresvik/images/migrated/maxielebar-ventil-inne-web.jpg",
   },
   {
     title: "PEGO innestengningsalarm",
     href: "/andre-produkter/pego-innestengningsalarm",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228916130-S0DQVN00OYIZASC3CQKV/PEGO+innestengningsalarm_web.jpg",
+      "/assets/fresvik/images/migrated/pego-innestengningsalarm-web.jpg",
     imageAlt: "PEGO innestengningsalarm.",
   },
   {
@@ -494,7 +494,7 @@ export const oldSiteAccessories: MigratedListItem[] = [
     href: "/andre-produkter/pvc-gardiner",
     lastmod: "2024-06-25",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228921336-E5VWZTJBSCS1W0PVW8TB/PVC-gardin_web.jpg",
+      "/assets/fresvik/images/migrated/pvc-gardin-web.jpg",
     imageAlt: "PVC-gardin.",
   },
   {
@@ -502,42 +502,42 @@ export const oldSiteAccessories: MigratedListItem[] = [
     href: "/andre-produkter/diktator-dortiltrekker",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228926673-R5XLINLC97ZQFF7EP91Y/Diktator_web.jpg",
+      "/assets/fresvik/images/migrated/diktator-web.jpg",
   },
   {
     title: "Køyrerampe",
     href: "/andre-produkter/kjlerampe",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228933067-LHLZ30AMNKXNVOYEUTGA/rampe1+copy.jpg",
+      "/assets/fresvik/images/migrated/rampe1-copy.jpg",
   },
   {
     title: "Beslag",
     href: "/andre-produkter/beslag",
     lastmod: "2023-08-28",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228943559-L0SXG2I29YLNU5JDWJP5/profil1+copy.jpg",
+      "/assets/fresvik/images/migrated/profil1-copy.jpg",
   },
   {
     title: "Standard dører",
     href: "/andre-produkter/2014/7/9/standard-drer",
     lastmod: "2024-01-05",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228959146-O18ZOPO4ZJZA3KCU13SL/dor_ny.jpg",
+      "/assets/fresvik/images/migrated/dor-ny.jpg",
   },
   {
     title: "Skipsdører",
     href: "/andre-produkter/2014/7/9/skipsdrer",
     lastmod: "2024-10-02",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429912105-GUXVAQLQO6L6XRSJ0NYV/Skipsd%C3%B8r+Fresvik+Produkt.jpg",
+      "/assets/fresvik/images/migrated/skipsdr-fresvik-produkt.jpg",
   },
   {
     title: "Industri slagdør",
     href: "/andre-produkter/2014/7/9/industri-slagdor",
     lastmod: "2025-01-20",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429948521-DGRCHMLC0A18PBW3X2E0/Industri+slagd%C3%B8r+Fresvik+Produkt.jpg",
+      "/assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg",
   },
 ];
 
@@ -547,28 +547,28 @@ export const oldSiteSupportPages: MigratedListItem[] = [
     href: "/kjolerom-fryserom-butikk",
     lastmod: "2026-02-04",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e6cfec2d-4a38-4f29-be2c-653e5ba2d797/Coop+Extra+Sogndal.jpeg",
+      "/assets/fresvik/images/migrated/coop-extra-sogndal.jpeg",
   },
   {
     title: "Kjølerom og fryserom offshore",
     href: "/kjolerom-fryserom-offshore",
     lastmod: "2026-02-24",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429051200-R0UVYZO6J6WM4KZN512O/image-asset.jpeg",
+      "/assets/fresvik/images/migrated/image-asset-39.jpeg",
   },
   {
     title: "Kjølerom og fryserom storkjøkken",
     href: "/kjolerom-fryserom-storkjokken",
     lastmod: "2026-02-04",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694500125082-6JC19LMQZ08K1B9WF07S/image-asset.jpeg",
+      "/assets/fresvik/images/migrated/image-asset-42.jpeg",
   },
   {
     title: "Transportskade",
     href: "/transportskade",
     lastmod: "2026-02-04",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/028353e9-eb2c-4f44-9fab-f6f895bb2476/Transportskade+Fresvik+Produkt.jpg",
+      "/assets/fresvik/images/migrated/transportskade-fresvik-produkt.jpg",
   },
   {
     title: "Send førespørsel",
@@ -642,7 +642,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     mobile: "404 77 912",
     email: "larliv@fresvik.no",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6462fe9f-f6d3-4ea6-ba4c-7e1e22feaaa6/Lars-Erling-Livrud.jpeg",
+      "/assets/fresvik/images/migrated/lars-erling-livrud.jpeg",
     imageAlt: "Lars Erling Livrud, sals- og marknadssjef.",
   },
   {
@@ -654,7 +654,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     email: "frowin@fresvik.no",
     location: "Drammen",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3b7cf69c-95a8-4c92-bc6a-e8e78147c29b/Frode-Winther.jpg",
+      "/assets/fresvik/images/migrated/frode-winther.jpg",
     imageAlt: "Frode Winther, sal avdeling Drammen.",
   },
   {
@@ -665,7 +665,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     email: "arnbar@fresvik.no",
     location: "Fresvik",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/93b9ca60-337d-4e73-b309-95730a7b81fa/Arne-Olav-Lien-Bard%C3%B8lsga%CC%8Ard.jpg",
+      "/assets/fresvik/images/migrated/arne-olav-lien-bardlsgard.jpg",
     imageAlt: "Arne-Olav Lien Bardølsgård, sal avdeling Fresvik.",
   },
   {
@@ -675,7 +675,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     mobile: "911 76 599",
     email: "ovefed@fresvik.no",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/8cb3117f-86e2-4a0a-b333-5722d9c1946a/Ove+Fedje.jpeg",
+      "/assets/fresvik/images/migrated/ove-fedje.jpeg",
     imageAlt: "Ove Fedje, teknisk teikning og sal skip/offshore.",
   },
   {
@@ -685,7 +685,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     mobile: "465 81 422",
     email: "tomkru@fresvik.no",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dbba98a8-e809-46c8-b875-ce3ef3aee28a/Tomas-Kruvelis.jpg",
+      "/assets/fresvik/images/migrated/tomas-kruvelis.jpg",
     imageAlt: "Tomas Kruvelis, delesal og innkjøp.",
   },
   {
@@ -695,7 +695,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     mobile: "992 27 516",
     email: "gydbot@fresvik.no",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/61ebde5c-0774-4dc1-92c8-4ed21efb4114/Gyda+B%C3%B8thun.jpeg",
+      "/assets/fresvik/images/migrated/gyda-bthun.jpeg",
     imageAlt: "Gyda Bøtun, administrerande direktør.",
   },
   {
@@ -705,7 +705,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     mobile: "954 68 212",
     email: "sighau@fresvik.no",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b8b854bc-2ce5-4194-beff-1f375dec6407/Sigmund+Hauglum.jpg",
+      "/assets/fresvik/images/migrated/sigmund-hauglum.jpg",
     imageAlt: "Sigmund Hauglum, lager og logistikk.",
   },
   {
@@ -715,7 +715,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     mobile: "416 60 685",
     email: "sivset@fresvik.no",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/573f8aab-6b3e-4c90-86e0-797986364f58/Siv+Settevik.jpeg",
+      "/assets/fresvik/images/migrated/siv-settevik.jpeg",
     imageAlt: "Siv Settevik, produksjonsleiar.",
   },
   {
@@ -725,7 +725,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     mobile: "909 12 476",
     email: "havber@fresvik.no",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc41dc96-71bb-4347-b2f8-bf0658a7d73e/Ha%CC%8Avard+Berdal.jpg",
+      "/assets/fresvik/images/migrated/havard-berdal-71.jpg",
     imageAlt: "Håvard Berdal, teknisk teikning.",
   },
   {
@@ -735,7 +735,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     mobile: "907 46 651",
     email: "oddtim@fresvik.no",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dff2816f-bc5c-43f7-a06b-91c0427e1f50/Oddrun+Time.jpeg",
+      "/assets/fresvik/images/migrated/oddrun-time.jpeg",
     imageAlt: "Oddrun Time, administrasjonskoordinator.",
   },
   {
@@ -745,7 +745,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     mobile: "977 72 856",
     email: "sirott@fresvik.no",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/a7e012d5-b583-472d-85c0-a3d3eb0d24aa/Siri+Otterhjell.jpeg",
+      "/assets/fresvik/images/migrated/siri-otterhjell.jpeg",
     imageAlt: "Siri Otterhjell, transportansvarleg.",
   },
   {
@@ -755,7 +755,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     mobile: "909 77 331",
     email: "ragsor@fresvik.no",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/425b8a7b-7d36-4709-b058-61a730bd2e74/Ragnvald+Grov+S%C3%B8rdal.jpeg",
+      "/assets/fresvik/images/migrated/ragnvald-grov-srdal.jpeg",
     imageAlt: "Ragnvald Grov Sørdal, lønnsansvarleg.",
   },
   {
@@ -764,7 +764,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     href: "/tilsette",
     mobile: "915 13 117",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/cf2c17a5-1e90-4ab0-96e9-0d4052afeb4a/Nils+Gunnar+Finne.jpeg",
+      "/assets/fresvik/images/migrated/nils-gunnar-finne.jpeg",
     imageAlt: "Nils Gunnar Finne, produktutvikling.",
   },
   {
@@ -774,7 +774,7 @@ export const oldSiteEmployees: MigratedEmployee[] = [
     mobile: "480 98 928",
     email: "samsha@fresvik.no",
     imageUrl:
-      "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e6a1706c-a13b-41d3-8e62-479cbae3fa46/Samaneh+Shakeri.jpg",
+      "/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
     imageAlt: "Samaneh Shakeri, teknisk sjef.",
   },
 ];

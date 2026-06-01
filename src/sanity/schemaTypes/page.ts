@@ -26,6 +26,13 @@ export const page = defineType({
       of: [{ type: "block" }],
     }),
     defineField({ name: "heroImage", title: "Hero image", type: "image" }),
+    defineField({
+      name: "migratedImagePath",
+      title: "Migrated local image path",
+      type: "string",
+      description:
+        "Temporary public/assets path used before the image is imported as a Sanity asset.",
+    }),
     defineField({ name: "seoTitle", title: "SEO title", type: "string" }),
     defineField({
       name: "seoDescription",

@@ -211,6 +211,16 @@ content migration.
 - Expanded the mobile header menu to include nested navigation links for
   product, service, documentation and company subsections, with a constrained
   scrollable dropdown so the menu remains usable on small screens.
+- Added `scripts/generate-sanity-seed.mjs` and
+  `sanity/seed/migratedContent.ndjson` so the migrated public content can be
+  imported into Sanity as editable documents instead of living only in static
+  TypeScript inventory.
+- The migrated Sanity seed currently contains 119 documents: site settings,
+  pages, products, services, document files, employees, FAQ items, news
+  articles and reference projects.
+- Added temporary `migratedImagePath` and `localPath` schema fields to keep
+  local `public/assets` references visible in Studio until images/documents are
+  uploaded as managed Sanity assets.
 
 ## Verification
 
@@ -276,12 +286,17 @@ content migration.
   A local DOM/internal-link smoke check confirmed nested mobile menu links are
   present, public migration labels remain hidden and 87 sampled internal URLs
   return an expected HTTP status.
+- `node scripts/generate-sanity-seed.mjs` writes 119 documents to
+  `sanity/seed/migratedContent.ndjson`.
+- `npm run lint` and `npm run build` passed after adding the migrated Sanity
+  seed generator, seed file, asset-path schema bridge fields and seed README.
 
 ## Still TODO
 
 - Continue pulling exact long-form body copy, document titles and alt text from
   the old website where pages still contain TODOs.
-- Import or seed real Sanity documents for the new schemas.
+- Import `sanity/seed/migratedContent.ndjson` into the live Sanity dataset when
+  ready, then move local asset references into real Sanity image/file assets.
 - Later import localized images into Sanity assets if editors should manage
   them from Studio instead of `public/assets`.
 - Replace remaining TODO migration placeholders on employee and legacy detail

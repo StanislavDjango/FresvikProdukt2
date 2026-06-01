@@ -26,6 +26,13 @@ export const referenceProject = defineType({
       rows: 4,
     }),
     defineField({ name: "image", title: "Image", type: "image" }),
+    defineField({
+      name: "migratedImagePath",
+      title: "Migrated local image path",
+      type: "string",
+      description:
+        "Temporary public/assets path used before the image is imported as a Sanity asset.",
+    }),
     defineField({ name: "location", title: "Location", type: "string" }),
     defineField({ name: "year", title: "Year", type: "number" }),
     defineField({

@@ -21,6 +21,13 @@ export const product = defineType({
     defineField({ name: "intro", title: "Intro", type: "text", rows: 3 }),
     defineField({ name: "heroImage", title: "Hero image", type: "image" }),
     defineField({
+      name: "migratedImagePath",
+      title: "Migrated local image path",
+      type: "string",
+      description:
+        "Temporary public/assets path used before the image is imported as a Sanity asset.",
+    }),
+    defineField({
       name: "shortDescription",
       title: "Short description",
       type: "text",

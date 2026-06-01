@@ -28,6 +28,13 @@ export const documentFile = defineType({
     defineField({ name: "file", title: "File", type: "file" }),
     defineField({ name: "externalUrl", title: "External URL", type: "url" }),
     defineField({
+      name: "localPath",
+      title: "Migrated local file path",
+      type: "string",
+      description:
+        "Temporary public/assets path used before the file is imported as a Sanity asset.",
+    }),
+    defineField({
       name: "relatedProduct",
       title: "Related product",
       type: "reference",

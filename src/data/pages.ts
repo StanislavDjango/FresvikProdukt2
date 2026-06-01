@@ -245,6 +245,34 @@ const newsTextByHref: Record<string, string> = {
     "Agnar Bøtun har 44 år bak seg i Fresvik Produkt og har vore med på utviklinga sidan 1980. Artikkelen fortel om lager, pakking, sending, transport, arbeidsformannrolla og kvifor han held fram litt til før full pensjon.",
   "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn":
     "Fresvik Produkt er sertifisert som Miljøfyrtårn. Artikkelen løftar berekraft, grøne verdiar, trygg arbeidsplass, lågt sjukefråvær, redusert energibruk og mindre bruk av papp og plast.",
+  "/aktuelt/jul-2020":
+    "Fresvik Produkt ønskte kundar og samarbeidspartnarar god jul og godt nytt år, informerte om stengd fabrikk i romjula og opne salskontordagar 28.-30. desember, med direkte mobilnummer til Lars, Dag og Arne-Olav.",
+  "/aktuelt/arne-olav-ny-salskonsulent":
+    "Arne-Olav Lien Bardølsgård starta som ny salskonsulent 1. mai. Han kjem frå Saksumdal, har bakgrunn som tømrar og bonde, og flytta til Fresvik med familien.",
+  "/aktuelt/fresvik-kjolerom-til-fruktbonde":
+    "Fresvik Produkt leverte og monterte kjølerom til bær- og fruktprodusent Ivar Slinde på Indre Slinde i Sogndal. Prosjektet inkluderte panel, kjøledør og spesialtilpassa køyrerampe.",
+  "/aktuelt/40-aars-jubileum":
+    "Fresvik Produkt markerte 40 år sidan første produksjon av sandwich-panel med ope hus, omvising i fabrikken, kaffi og jubileumskake. Artikkelen omtalar jubileumsdagen og historia frå oppstarten.",
+  "/aktuelt/innfesting-mot-golv":
+    "Artikkelen forklarer Fresvik si skjulte innfesting mot golv og sokkel med firkantrøyr. Løysinga gir færre kantar der smuss kan feste seg og er særleg relevant for næringsmiddelindustrien.",
+  "/aktuelt/gladhistorie-fresvik-kjole-fryserom":
+    "Ein person vart stengd inne i eit kjølerom, men fekk hjelp då han fann telefonnummeret til Fresvik Produkt på døra. Fresvik fekk tak i folk på senteret og hjelpte til med å løyse situasjonen.",
+  "/aktuelt/tomas-kruvellis-vaar-nye-mann":
+    "Tomas Kruvelis tok over fleire innkjøps- og delesalsoppgåver då Ronny Bjørneklett skulle trekkje seg tilbake. Tomas hadde vore tilsett sidan 2012 og hadde allereie kontakt med mange kundar.",
+  "/aktuelt/fresvik-hengsel":
+    "Fresvik Produkt lanserte eigenutvikla sjølvlukkande Fresvik hengsel for kjøle- og frysedører. Hengsla skal redusere kuldetap, vere slitesterke, krevje mindre vedlikehald og halde døra open ved stor vinkel.",
+  "/aktuelt/montasje-prosjekt":
+    "Fresvik kan ta ansvar for heile pakken med produksjon, levering og montasje. Artikkelen nemner montasjeprosjekt hos Fatland slakteri, Helgesen Tekniske Bygg og Gjeraldstveit Mekaniske.",
+  "/aktuelt/skjererom":
+    "Fresvik Produkt bygde eit nytt skjererom for å isolere støyande panelskjering frå produksjonslokala. Rommet skulle gi betre arbeidsmiljø, mindre støy og betre ergonomi med løftebord og vakuumløftar.",
+  "/aktuelt/orklafoods-stranda":
+    "Fresvik Produkt leverte deleveggar, dører, portar, 1150 m2 mineralullspanel og 60 m2 EI60-brannvegg til nytt lefsebakeri for Orkla Foods på Stranda, som underleverandør i eit hektisk prosjekt.",
+  "/aktuelt/nye-monteringsanvisningar":
+    "Fresvik forklarte at panel og rom er enkle å montere og at mange kundar monterer sjølve. Nye monteringsanvisningar på norsk og engelsk for kjølerom og fryserom vart lagde ut for nedlasting.",
+  "/aktuelt/fasade-element-og-takplater-ruukki":
+    "Fresvik Produkt leverte og monterte 930 m2 fasadeelement med mineralullisolasjon og 1390 m2 Ruukki takplater til ny Spar-butikk på Forland i Sund kommune.",
+  "/aktuelt/portproduksjon":
+    "Artikkelen omtalar vekst i Fresvik si produksjon av skreddarsydde skyveportar, inkludert portblad i Foodsafe-overflate, rustfritt eller syrefast stål, fryseport med terskel og varmekabel, gangdører og autoportar.",
 };
 
 const referenceTextByHref: Record<string, string> = {
@@ -278,6 +306,22 @@ const referenceTextByHref: Record<string, string> = {
     "Fresvik leverte 3 700 m2 panel i tjukkelsar frå 75 til 175 mm til Fellespakkeriet på Håbakken i Lærdal, Sogn Frukt og Grønt. Leveransen gjekk til 3 fryserom og 10 kjølerom, med 11 spesialportar frå Salco.",
   "/referansar/fryserom-fryseport-rentokil":
     "Fresvik leverte og monterte fryserom for Kelvin AS til Rentokil på Lahaugmoen i Skjetten. Rommet blir brukt til nedfrysing av møblar og tekstilar infisert av skadedyr, og leveransen inkluderte fryseport og spesialbygd rampe.",
+  "/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar":
+    "Fresvik leverte fire kjølerom og eitt fryserom, om lag 300 m2, til Kiwi Skollenborg ved Kongsberg gjennom Carrier Refrigeration Norway. Prosjektet var del av ein meir miljøvennleg butikk med redusert CO2-fotavtrykk.",
+  "/referansar/karlsoybruket":
+    "Fresvik Produkt leverte og monterte delar av eit større anlegg til Karlsøybruket, med veggar til sluser, kjølerom og produksjonskontor, kjøleport og glassfiberdører. Vidare arbeid omfatta fasadepanel til nytt bygg.",
+  "/referansar/fiskehallen":
+    "Fresvik Produkt har levert mykje til Fiskehallen over tid. I denne leveransen til Sjømat AS inngjekk takflate, veggar og portar, montert med AKS Montering som føretrekt montør.",
+  "/referansar/celsa-steel-sotra":
+    "Fresvik leverte og monterte 2600 m2 fasadepanel med mineralull-kjerne, beslag og 16 vindauge til Celsa Steel Service sitt nye produksjonsanlegg på Straume/Sotra, med Brødrene Ulveseth som hovudentreprenør.",
+  "/referansar/buskerud-storcash":
+    "Buskerud Storcash i Kobbervikdalen i Drammen fekk 1650 m2 Fresvik-panel, sju kjøle- og frysedører og ein fryseport til eit nytt og energieffektivt stormarknadsbygg.",
+  "/referansar/bjerke-spekemat":
+    "Bjerke Spekemat og Delikatesser AS investerte i nytt produksjonslokale, der Fresvik installerte typiske næringsmiddelløysingar. Monteringa vart gjennomført av AKS Montering.",
+  "/referansar/restauranthuset-malin":
+    "Fresvik Produkt leverte kjøle- og fryserom, veggar til grovkjøkken og oppvask til Restauranthuset Malin i Sogndal Kulturhus. Prosjektet vart levert ferdig montert på få veker.",
+  "/referansar/fryserom-med-fryseport-til-coop-extra-naustdal":
+    "Coop Extra Naustdal fekk kjøle- og fryserom, fryseport og fleire kjølerom frå Fresvik Produkt gjennom samarbeidspartnar. Leveransen var skreddartilpassa mål og skråtak, og montert av AKS Montering.",
 };
 
 const newsCards = inventoryCards(

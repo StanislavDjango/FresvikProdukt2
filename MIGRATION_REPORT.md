@@ -221,6 +221,12 @@ content migration.
 - Added temporary `migratedImagePath` and `localPath` schema fields to keep
   local `public/assets` references visible in Studio until images/documents are
   uploaded as managed Sanity assets.
+- Added another verified old-site content batch for 15 news pages and 8
+  reference pages, replacing generic migration text with source-based summaries
+  for older articles/projects such as Arne-Olav, fruit-farmer kjølerom, 40-year
+  anniversary, Fresvik hengsel, mounting projects, Ruukki facade/takplater,
+  port production, Kiwi Skollenborg, Karlsøybruket, Fiskehallen, Celsa Steel,
+  Buskerud Storcash, Bjerke, Restauranthuset Malin and Coop Extra Naustdal.
 
 ## Verification
 
@@ -290,6 +296,9 @@ content migration.
   `sanity/seed/migratedContent.ndjson`.
 - `npm run lint` and `npm run build` passed after adding the migrated Sanity
   seed generator, seed file, asset-path schema bridge fields and seed README.
+- `node scripts/generate-sanity-seed.mjs`, `npm run lint` and `npm run build`
+  passed after adding the older news/reference summary batch. Build still
+  generates 116 app pages.
 
 ## Still TODO
 
@@ -313,8 +322,8 @@ content migration.
   Sanity.
 - Import customer segment images/references and verify marketing claims,
   maritime standards, and transport damage terms against final source documents.
-- Continue replacing remaining news/reference placeholder body text with
-  verified article/project summaries or full Sanity documents.
+- Continue replacing the few remaining news/reference placeholder body texts
+  where the old page still does not expose reliable body text.
 - Keep reviewing redirects as more legacy routes are consolidated or deleted.
 - Run visual browser checks on desktop and mobile. The in-app browser connection
   failed during this pass because the local Node browser bridge could not start.

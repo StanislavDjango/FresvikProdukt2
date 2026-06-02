@@ -383,6 +383,17 @@ content migration.
 - `LINK_CHECK_BASE_URL=http://127.0.0.1:3032 npm run check:links` passed
   against a production local server, checking 81 pages and 117 internal URLs
   from the generated sitemap and rendered HTML.
+- Added `npm run check:visual`, a reusable headless browser smoke check that
+  captures desktop and mobile screenshots for the main public pages and fails
+  if primary pages expose migration/TODO labels or miss core header, footer,
+  main and H1 landmarks.
+- `npm run lint`, `npm run build`,
+  `LINK_CHECK_BASE_URL=http://127.0.0.1:3037 npm run check:links`, and
+  `VISUAL_CHECK_BASE_URL=http://127.0.0.1:3037 VISUAL_CHECK_BROWSER_BASE_URL=http://172.25.109.121:3037 npm run check:visual`
+  passed after adding the visual smoke checker and mobile overflow hardening.
+  The Windows headless Edge CLI screenshots are useful smoke artifacts, but a
+  final mobile design approval should still be done in an interactive browser
+  or a DevTools-based viewport check.
 
 ## Still TODO
 
@@ -409,5 +420,5 @@ content migration.
 - Continue replacing the few remaining news/reference placeholder body texts
   where the old page still does not expose reliable body text.
 - Keep reviewing redirects as more legacy routes are consolidated or deleted.
-- Run visual browser checks on desktop and mobile. The in-app browser connection
-  failed during this pass because the local Node browser bridge could not start.
+- Keep running desktop/mobile visual checks after each major design/content
+  batch and inspect saved screenshots for polish, spacing and image framing.

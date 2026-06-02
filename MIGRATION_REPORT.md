@@ -256,6 +256,15 @@ content migration.
   `/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt`.
 - Migrated verified source summaries and localized one main image for each of
   those reference projects. The Sanity seed now contains 129 documents.
+- Added verified old-site metadata summaries for five remaining news URLs:
+  `/aktuelt/to-ledige-stillingar-i-haust`,
+  `/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv`,
+  `/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt`,
+  `/aktuelt/ledig-stilling-som-produksjonsmedarbeidar`, and
+  `/aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra`.
+- `/aktuelt/stor-leveranse-til-buskerud-storcash` was checked again, but the
+  old page still exposed no reliable body or description text, so it remains a
+  noindex migration TODO instead of invented content.
 
 ## Verification
 
@@ -360,6 +369,12 @@ content migration.
 - Production HTTP smoke check on local port `3030` confirmed `/referansar`
   lists Coop Extra Sogndal and Interfrukt, both old detail URLs render migrated
   text and local images, and neither exposes migration labels.
+- `node scripts/generate-sanity-seed.mjs`, `npm run lint` and `npm run build`
+  passed after adding the remaining verified news metadata summaries.
+- Production HTTP smoke check on local port `3031` confirmed sampled newly
+  migrated news URLs render public summary text without migration labels, while
+  the still-unverified Buskerud Storcash news URL keeps TODO labels and
+  `noindex`.
 
 ## Still TODO
 

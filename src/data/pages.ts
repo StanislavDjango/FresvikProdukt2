@@ -248,8 +248,16 @@ const newsTextByHref: Record<string, string> = {
     "Fresvik starta sommaren 2022 arbeidet med å automatisere pakkinga i produksjonen. Roboten og kaos-lageret skal gi betre og tryggare arbeidsplassar, betre produkt for kundane og meir effektiv handtering av element.",
   "/aktuelt/agnar-er-snart-pensjonistnbsp":
     "Agnar Bøtun har 44 år bak seg i Fresvik Produkt og har vore med på utviklinga sidan 1980. Artikkelen fortel om lager, pakking, sending, transport, arbeidsformannrolla og kvifor han held fram litt til før full pensjon.",
+  "/aktuelt/to-ledige-stillingar-i-haust":
+    "Den gamle artikkelen annonserte ledige stillingar som reinhaldar og produksjonsmedarbeidar hos Fresvik Produkt.",
+  "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv":
+    "Artikkelen løfta Fresvik som ei idyllisk fjordbygd med moglegheiter for arbeid på skule, i barnehage, butikk og hos Fresvik Produkt, med lenke vidare til full artikkel på sogn.no.",
   "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn":
     "Fresvik Produkt er sertifisert som Miljøfyrtårn. Artikkelen løftar berekraft, grøne verdiar, trygg arbeidsplass, lågt sjukefråvær, redusert energibruk og mindre bruk av papp og plast.",
+  "/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt":
+    "Fresvik Produkt hadde gleda av å levere fryse- og kjølerom til Fellespakkeriet på Håbakken i Lærdal, Sogn Frukt og Grønt.",
+  "/aktuelt/ledig-stilling-som-produksjonsmedarbeidar":
+    "Den gamle artikkelen annonserte ledig stilling som produksjonsmedarbeidar hos Fresvik Produkt, med opplæring oppgitt som del av stillinga.",
   "/aktuelt/jul-2020":
     "Fresvik Produkt ønskte kundar og samarbeidspartnarar god jul og godt nytt år, informerte om stengd fabrikk i romjula og opne salskontordagar 28.-30. desember, med direkte mobilnummer til Lars, Dag og Arne-Olav.",
   "/aktuelt/arne-olav-ny-salskonsulent":
@@ -264,6 +272,8 @@ const newsTextByHref: Record<string, string> = {
     "Ein person vart stengd inne i eit kjølerom, men fekk hjelp då han fann telefonnummeret til Fresvik Produkt på døra. Fresvik fekk tak i folk på senteret og hjelpte til med å løyse situasjonen.",
   "/aktuelt/tomas-kruvellis-vaar-nye-mann":
     "Tomas Kruvelis tok over fleire innkjøps- og delesalsoppgåver då Ronny Bjørneklett skulle trekkje seg tilbake. Tomas hadde vore tilsett sidan 2012 og hadde allereie kontakt med mange kundar.",
+  "/aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra":
+    "Fresvik Produkt omtala ein leveranse av 1600 m2 fasadepanel til Brødrene Ulveseth sitt prosjekt for Celsa Steel Service på Sotra.",
   "/aktuelt/fresvik-hengsel":
     "Fresvik Produkt lanserte eigenutvikla sjølvlukkande Fresvik hengsel for kjøle- og frysedører. Hengsla skal redusere kuldetap, vere slitesterke, krevje mindre vedlikehald og halde døra open ved stor vinkel.",
   "/aktuelt/montasje-prosjekt":

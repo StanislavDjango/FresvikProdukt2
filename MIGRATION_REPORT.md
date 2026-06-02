@@ -394,6 +394,15 @@ content migration.
   The Windows headless Edge CLI screenshots are useful smoke artifacts, but a
   final mobile design approval should still be done in an interactive browser
   or a DevTools-based viewport check.
+- Strengthened `npm run check:visual` with a Chrome DevTools Protocol path
+  that can enforce real desktop/mobile viewport metrics, including
+  `scrollWidth <= innerWidth`, when the browser DevTools endpoint is reachable.
+  On the current WSL + Windows Edge setup, the script safely falls back to
+  browser CLI screenshot/DOM smoke checks and prints that CDP overflow checks
+  were skipped.
+- `npm run lint` and
+  `VISUAL_CHECK_BASE_URL=http://127.0.0.1:3038 VISUAL_CHECK_BROWSER_BASE_URL=http://172.25.109.121:3038 VISUAL_CHECK_CDP_PORT=9238 npm run check:visual`
+  passed after adding the CDP/fallback visual check flow.
 
 ## Still TODO
 

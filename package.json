@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "check:links": "node scripts/check-internal-links.mjs",
-    "check:visual": "node scripts/check-visual-smoke.mjs"
+    "check:visual": "node scripts/check-visual-smoke.mjs",
+    "check:migration": "node scripts/check-migration-assets.mjs"
   },
   "engines": {
     "node": "22.x",

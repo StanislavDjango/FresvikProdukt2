@@ -414,6 +414,16 @@ content migration.
   confirmed `/tilleggsutstyr` renders the new `Skipsdører` and
   `Industri slagdør` text and no longer exposes the generic accessory fallback
   copy.
+- Added `npm run check:migration`, a local migration audit that verifies
+  `/assets/fresvik/...` references in source data and the Sanity seed exist in
+  `public/`, checks local PDFs start with `%PDF`, rejects old Squarespace asset
+  hosts, and fails on placeholder `href="#"` links. The first run passed for 98
+  local Fresvik asset references.
+- `node scripts/generate-sanity-seed.mjs`, `npm run check:migration`,
+  `npm run lint`, `npm run build`,
+  `LINK_CHECK_BASE_URL=http://127.0.0.1:3041 npm run check:links`, and
+  `VISUAL_CHECK_BASE_URL=http://127.0.0.1:3041 VISUAL_CHECK_BROWSER_BASE_URL=http://172.25.109.121:3041 VISUAL_CHECK_CDP_PORT=9241 npm run check:visual`
+  passed after adding the migration asset audit.
 
 ## Still TODO
 

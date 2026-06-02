@@ -403,6 +403,17 @@ content migration.
 - `npm run lint` and
   `VISUAL_CHECK_BASE_URL=http://127.0.0.1:3038 VISUAL_CHECK_BROWSER_BASE_URL=http://172.25.109.121:3038 VISUAL_CHECK_CDP_PORT=9238 npm run check:visual`
   passed after adding the CDP/fallback visual check flow.
+- Added verified old-site accessory summaries for `Skipsdører` and
+  `Industri slagdør`, replacing the remaining generic accessory card copy on
+  `/tilleggsutstyr` with source-based descriptions while keeping the old
+  `/andre-produkter/...` URLs consolidated into the new accessories page.
+- `node scripts/generate-sanity-seed.mjs`, `npm run lint`, `npm run build`,
+  `LINK_CHECK_BASE_URL=http://127.0.0.1:3040 npm run check:links`, and
+  `VISUAL_CHECK_BASE_URL=http://127.0.0.1:3040 VISUAL_CHECK_BROWSER_BASE_URL=http://172.25.109.121:3040 VISUAL_CHECK_CDP_PORT=9240 npm run check:visual`
+  passed after the accessory copy update. A production HTML smoke check
+  confirmed `/tilleggsutstyr` renders the new `Skipsdører` and
+  `Industri slagdør` text and no longer exposes the generic accessory fallback
+  copy.
 
 ## Still TODO
 

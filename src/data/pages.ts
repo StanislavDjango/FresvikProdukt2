@@ -371,6 +371,8 @@ const oldDocumentCards = inventoryCards(
 );
 
 const accessoryTextByHref: Record<string, string> = {
+  "/tilleggsutstyr":
+    "Oversikt over tilleggsutstyr og reservedelar som kan følgje kjøle- og fryserom frå Fresvik, inkludert handtak, ventilar, alarmar, PVC-gardiner, ramper, beslag og ulike dørtypar.",
   "/andre-produkter/standard-handtak":
     "Standard håndtak blir levert på utsida av døra, og kan også monterast på innsida.",
   "/andre-produkter/elebar-ventil":
@@ -389,6 +391,10 @@ const accessoryTextByHref: Record<string, string> = {
     "Fresvik sender nødvendige beslag saman med panela. Beslaga blir produserte av same stål som panela, og blir tilpassa for tett og pen montasje.",
   "/andre-produkter/2014/7/9/standard-drer":
     "Standard kjøle- og fryseromsdør for mindre og mellomstore rom. Blir også brukt til inspeksjonsluker og nødutgangsluker i større anlegg.",
+  "/andre-produkter/2014/7/9/skipsdrer":
+    "Slagdør spesielt utvikla for kjøle- og fryserom om bord i skip. Døra blir produsert etter kundemål, med kraftige hengsler, nødåpner, utskiftbar pakning og karm som kan monterast på stålskott, trevegg eller isolasjonspanel.",
+  "/andre-produkter/2014/7/9/industri-slagdor":
+    "Større slagdør for kjøle- eller fryserom i industrimiljø som slakteri, meieri og engroslager. Løysinga kan leverast for kjøl eller frys, med solide hengsler, dobbel pakning og måltilpassa dørblad.",
 };
 
 const accessoryDetailCards = oldSiteAccessories.map((item) => ({

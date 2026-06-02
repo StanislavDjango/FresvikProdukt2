@@ -265,6 +265,9 @@ content migration.
 - `/aktuelt/stor-leveranse-til-buskerud-storcash` was checked again, but the
   old page still exposed no reliable body or description text, so it remains a
   noindex migration TODO instead of invented content.
+- Added `npm run check:links`, a reusable internal link checker that reads the
+  generated sitemap, crawls internal page links/assets from a running local
+  deployment, and fails on 4xx/5xx internal URLs.
 
 ## Verification
 
@@ -375,6 +378,11 @@ content migration.
   migrated news URLs render public summary text without migration labels, while
   the still-unverified Buskerud Storcash news URL keeps TODO labels and
   `noindex`.
+- `npm run lint` and `npm run build` passed after adding the reusable internal
+  link checker.
+- `LINK_CHECK_BASE_URL=http://127.0.0.1:3032 npm run check:links` passed
+  against a production local server, checking 81 pages and 117 internal URLs
+  from the generated sitemap and rendered HTML.
 
 ## Still TODO
 

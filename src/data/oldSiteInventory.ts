@@ -195,6 +195,22 @@ export const oldSiteNews: MigratedListItem[] = [
 
 export const oldSiteReferences: MigratedListItem[] = [
   {
+    title: "Coop Extra Sogndal",
+    href: "/referansar/2014/7/8/coop-extra-sogndal",
+    lastmod: "2023-09-11",
+    imageUrl:
+      "/assets/fresvik/images/migrated/coop-extra-sogndal.jpeg",
+    imageAlt: "Coop Extra Sogndal",
+  },
+  {
+    title: "Interfrukt, vårt største prosjekt",
+    href: "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
+    lastmod: "2023-09-11",
+    imageUrl:
+      "/assets/fresvik/images/migrated/interfrukt-langhus.webp",
+    imageAlt: "Interfrukt Langhus",
+  },
+  {
     title: "Skreddarsydd fryserom til Baza i Fredrikstad",
     href: "/referansar/fryserom-baza-fredrikstad",
     lastmod: "2026-02-16",

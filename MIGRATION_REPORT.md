@@ -251,6 +251,11 @@ content migration.
 - Consolidated all old `/andre-produkter/...` accessory/detail/category URLs
   into the new `/tilleggsutstyr` structure with a permanent wildcard redirect,
   so old links stay valid without exposing redundant legacy accessory pages.
+- Added two old 2014 reference projects that were still only legacy URLs:
+  `/referansar/2014/7/8/coop-extra-sogndal` and
+  `/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt`.
+- Migrated verified source summaries and localized one main image for each of
+  those reference projects. The Sanity seed now contains 129 documents.
 
 ## Verification
 
@@ -350,6 +355,11 @@ content migration.
 - Production HTTP smoke check on local port `3028` confirmed sampled old
   accessory detail/category URLs return `308 -> /tilleggsutstyr`, `/tilleggsutstyr`
   returns `200`, and those old accessory URLs are absent from `/sitemap.xml`.
+- `node scripts/generate-sanity-seed.mjs`, `npm run lint` and `npm run build`
+  passed after adding the two old 2014 reference projects.
+- Production HTTP smoke check on local port `3030` confirmed `/referansar`
+  lists Coop Extra Sogndal and Interfrukt, both old detail URLs render migrated
+  text and local images, and neither exposes migration labels.
 
 ## Still TODO
 

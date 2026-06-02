@@ -281,6 +281,10 @@ const newsTextByHref: Record<string, string> = {
 };
 
 const referenceTextByHref: Record<string, string> = {
+  "/referansar/2014/7/8/coop-extra-sogndal":
+    "Fresvik Produkt leverte og monterte kjøle- og fryserom til heile Coop Extra Sogndal-butikken, totalt om lag 800 m2 panel.",
+  "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt":
+    "På Langhus i Ski kommune bygde Anthon B. Nilsen nytt grossistlager for Interfrukt SA. Fresvik Produkt vart valt som leverandør av frys- og kjøleveggar, med ei leveranse på heile 16 500 m2 kjøle- og frysepanelar.",
   "/referansar/fryserom-baza-fredrikstad":
     "Fresvik Produkt leverte eit skreddarsydd fryserom til Baza Nordic i Fredrikstad, utvikla for effektiv og driftssikker lagring av frosne varer. Løysinga gir auka kapasitet, betre logistikkflyt og stabile lagringsforhold året rundt.",
   "/referansar/historisk-leveranse-pir-panel-spar-lund-torv":

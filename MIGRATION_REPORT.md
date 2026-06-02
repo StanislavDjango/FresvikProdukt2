@@ -248,6 +248,9 @@ content migration.
   migrated summaries now appear as normal public article/reference pages
   without `Gammal kjelde`, `Migreringsstatus` or TODO panels. Legacy URLs
   without reliable migrated text still keep migration status and `noindex`.
+- Consolidated all old `/andre-produkter/...` accessory/detail/category URLs
+  into the new `/tilleggsutstyr` structure with a permanent wildcard redirect,
+  so old links stay valid without exposing redundant legacy accessory pages.
 
 ## Verification
 
@@ -342,6 +345,11 @@ content migration.
 - Production HTTP smoke check on local port `3027` confirmed a migrated old
   news URL renders public content without migration labels, while an
   unverified old news URL still keeps migration TODO labels and `noindex`.
+- `npm run lint` and `npm run build` passed after consolidating old
+  `/andre-produkter/...` URLs.
+- Production HTTP smoke check on local port `3028` confirmed sampled old
+  accessory detail/category URLs return `308 -> /tilleggsutstyr`, `/tilleggsutstyr`
+  returns `200`, and those old accessory URLs are absent from `/sitemap.xml`.
 
 ## Still TODO
 

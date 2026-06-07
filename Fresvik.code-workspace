@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "name": "Fresvik Next",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.cwd": "${workspaceFolder}"
+  }
+}

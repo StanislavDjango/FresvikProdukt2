@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Fresvik: dev server",
+      "type": "shell",
+      "command": "source ~/.nvm/nvm.sh && nvm use && npm run dev -- --hostname 0.0.0.0",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Fresvik: lint",
+      "type": "shell",
+      "command": "source ~/.nvm/nvm.sh && nvm use && npm run lint",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Fresvik: build",
+      "type": "shell",
+      "command": "source ~/.nvm/nvm.sh && nvm use && npm run build",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Fresvik: check migration assets",
+      "type": "shell",
+      "command": "source ~/.nvm/nvm.sh && nvm use && npm run check:migration",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

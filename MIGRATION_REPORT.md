@@ -419,18 +419,61 @@ content migration.
   `public/`, checks local PDFs start with `%PDF`, rejects old Squarespace asset
   hosts, and fails on placeholder `href="#"` links. The first run passed for 98
   local Fresvik asset references.
+- Added `scripts/generate-asset-manifest.mjs`, `npm run assets:manifest` and
+  `npm run check:assets`.
+- Generated `sanity/seed/assetManifest.json` and
+  `ASSET_MIGRATION_STATUS.md` from the current local migration cache.
+- The asset manifest currently tracks 98 used local assets:
+  - 76 images.
+  - 22 PDFs/documents.
+  - 0 missing assets.
+  - 0 unused assets.
+  - 0 duplicate assets.
+  - 98 ready-for-sanity assets.
+  - 0 uploaded-to-sanity assets.
+- The exact old remote `originalUrl` values are not retained in current local
+  data, so manifest entries explicitly mark `originalUrl` as
+  `TODO: unknown original URL` while preserving known source pages and local
+  paths.
+- Added `scripts/upload-sanity-assets.mjs`, with dry-run default,
+  `--apply`-only real uploads, duplicate reuse by `sha256`, resumable manifest
+  updates and `SANITY_AUTH_TOKEN` validation for real uploads.
+- Added `scripts/generate-sanity-seed-with-assets.mjs` and `npm run assets:seed`
+  to generate `sanity/seed/migratedContent.withAssets.ndjson` from uploaded
+  Sanity references without overwriting `migratedContent.ndjson`.
 - `node scripts/generate-sanity-seed.mjs`, `npm run check:migration`,
   `npm run lint`, `npm run build`,
   `LINK_CHECK_BASE_URL=http://127.0.0.1:3041 npm run check:links`, and
   `VISUAL_CHECK_BASE_URL=http://127.0.0.1:3041 VISUAL_CHECK_BROWSER_BASE_URL=http://172.25.109.121:3041 VISUAL_CHECK_CDP_PORT=9241 npm run check:visual`
   passed after adding the migration asset audit.
+- `npm run assets:manifest` wrote 98 entries to
+  `sanity/seed/assetManifest.json` and refreshed
+  `ASSET_MIGRATION_STATUS.md`.
+- `npm run check:assets`, `npm run check:migration`, `npm run lint`,
+  `npm run build`, and
+  `LINK_CHECK_BASE_URL=http://127.0.0.1:3042 npm run check:links` passed after
+  adding the asset manifest generator. The link checker checked 81 pages and
+  117 internal URLs.
+- `npm run assets:upload` passed as a dry run without requiring
+  `SANITY_AUTH_TOKEN`, reporting 76 images and 22 documents ready for upload.
+- `npm run assets:upload:apply` was checked without `SANITY_AUTH_TOKEN` and
+  failed clearly before any upload attempt, as intended.
+- `npm run assets:seed` was checked before Sanity upload and failed clearly
+  without writing `migratedContent.withAssets.ndjson`, as intended.
+- `npm run check:assets`, `npm run check:migration`, `npm run lint`,
+  `npm run build`, and
+  `LINK_CHECK_BASE_URL=http://127.0.0.1:3000 npm run check:links` passed after
+  adding the Sanity upload and asset-backed seed scripts. The link checker used
+  an already-running local dev server and checked 81 pages and 117 internal
+  URLs.
 
 ## Still TODO
 
 - Continue pulling exact long-form body copy, document titles and alt text from
   the old website where pages still contain TODOs.
-- Import `sanity/seed/migratedContent.ndjson` into the live Sanity dataset when
-  ready, then move local asset references into real Sanity image/file assets.
+- Run `npm run assets:upload:apply` with a valid `SANITY_AUTH_TOKEN`, then
+  generate and review `sanity/seed/migratedContent.withAssets.ndjson` before
+  importing the asset-backed migrated seed into the live Sanity dataset.
 - Later import localized images into Sanity assets if editors should manage
   them from Studio instead of `public/assets`.
 - Replace remaining TODO migration placeholders on employee and legacy detail

@@ -9,7 +9,12 @@
     "lint": "eslint",
     "check:links": "node scripts/check-internal-links.mjs",
     "check:visual": "node scripts/check-visual-smoke.mjs",
-    "check:migration": "node scripts/check-migration-assets.mjs"
+    "check:migration": "node scripts/check-migration-assets.mjs",
+    "assets:manifest": "node scripts/generate-asset-manifest.mjs",
+    "assets:upload": "node scripts/upload-sanity-assets.mjs --dry-run",
+    "assets:upload:apply": "node scripts/upload-sanity-assets.mjs --apply",
+    "assets:seed": "node scripts/generate-sanity-seed-with-assets.mjs",
+    "check:assets": "node scripts/generate-asset-manifest.mjs --check"
   },
   "engines": {
     "node": "22.x",

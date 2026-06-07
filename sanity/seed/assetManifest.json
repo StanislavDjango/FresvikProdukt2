@@ -446,7 +446,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1747635709094-QZ1DMKF9F7N73IKHN7JA/1000024746.jpg",
     "localPath": "/assets/fresvik/images/migrated/1000024746.jpg",
     "filePath": "public/assets/fresvik/images/migrated/1000024746.jpg",
     "assetType": "image",
@@ -464,10 +464,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3f138065-2b53-47ae-b9d3-6e708064f245/1463-fr-plata-instal.webp",
     "localPath": "/assets/fresvik/images/migrated/1463-fr-plata-instal.png",
     "filePath": "public/assets/fresvik/images/migrated/1463-fr-plata-instal.png",
     "assetType": "image",
@@ -483,10 +483,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719842659307-NIRBLOIHY5ZWCFKW4BE2/1715599204491_upscale.jpeg",
     "localPath": "/assets/fresvik/images/migrated/1715599204491-upscale.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/1715599204491-upscale.jpeg",
     "assetType": "image",
@@ -504,10 +504,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429028144-41EYQYWQAK95BAZNN3Y4/20151021_174754.jpg",
     "localPath": "/assets/fresvik/images/migrated/20151021-174754.jpg",
     "filePath": "public/assets/fresvik/images/migrated/20151021-174754.jpg",
     "assetType": "image",
@@ -525,10 +525,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428910621-3R8YJSUP8CFWMUKDYQGP/20220616_152720_1.jpg",
     "localPath": "/assets/fresvik/images/migrated/20220616-152720-1.jpg",
     "filePath": "public/assets/fresvik/images/migrated/20220616-152720-1.jpg",
     "assetType": "image",
@@ -546,10 +546,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1702900160938-N8DQTB537FIXPAT24N89/Agnar3.jpeg",
     "localPath": "/assets/fresvik/images/migrated/agnar3.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/agnar3.jpeg",
     "assetType": "image",
@@ -567,7 +567,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -590,7 +590,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241166920-U2FPLWGLYNB9M3NT7Z1J/Baza+fryserom+-+1.jpeg",
     "localPath": "/assets/fresvik/images/migrated/baza-fryserom-1.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/baza-fryserom-1.jpeg",
     "assetType": "image",
@@ -608,10 +608,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502389661-0NT1K8HKOIMI3JAQC92D/Bjerkreim+Legekontor+1.jpeg",
     "localPath": "/assets/fresvik/images/migrated/bjerkreim-legekontor-1.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/bjerkreim-legekontor-1.jpeg",
     "assetType": "image",
@@ -629,10 +629,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e6cfec2d-4a38-4f29-be2c-653e5ba2d797/Coop+Extra+Sogndal.jpeg",
     "localPath": "/assets/fresvik/images/migrated/coop-extra-sogndal.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/coop-extra-sogndal.jpeg",
     "assetType": "image",
@@ -655,10 +655,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228926673-R5XLINLC97ZQFF7EP91Y/Diktator_web.jpg",
     "localPath": "/assets/fresvik/images/migrated/diktator-web.jpg",
     "filePath": "public/assets/fresvik/images/migrated/diktator-web.jpg",
     "assetType": "image",
@@ -676,10 +676,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228959146-O18ZOPO4ZJZA3KCU13SL/dor_ny.jpg",
     "localPath": "/assets/fresvik/images/migrated/dor-ny.jpg",
     "filePath": "public/assets/fresvik/images/migrated/dor-ny.jpg",
     "assetType": "image",
@@ -697,10 +697,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228694667-LDWF0LUE9BEO9MWMQX43/DSC_0608.JPG",
     "localPath": "/assets/fresvik/images/migrated/dsc-0608.jpg",
     "filePath": "public/assets/fresvik/images/migrated/dsc-0608.jpg",
     "assetType": "image",
@@ -718,10 +718,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428982293-NKH2SU6F4RGFUQLJJGCN/DSC_2579.JPG",
     "localPath": "/assets/fresvik/images/migrated/dsc-2579.jpg",
     "filePath": "public/assets/fresvik/images/migrated/dsc-2579.jpg",
     "assetType": "image",
@@ -739,10 +739,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428886618-XIC3VIN5W5LENA25WU9H/DSC03066.jpg",
     "localPath": "/assets/fresvik/images/migrated/dsc03066.jpg",
     "filePath": "public/assets/fresvik/images/migrated/dsc03066.jpg",
     "assetType": "image",
@@ -760,10 +760,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228906304-EALH1BMIZQ4OMLY1L00P/Elebar+ventil+inne_web.jpg",
     "localPath": "/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg",
     "filePath": "public/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg",
     "assetType": "image",
@@ -781,10 +781,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428975164-E7SJ2PMIFU8D45RMVPPO/fiskehallen1.jpg",
     "localPath": "/assets/fresvik/images/migrated/fiskehallen1.jpg",
     "filePath": "public/assets/fresvik/images/migrated/fiskehallen1.jpg",
     "assetType": "image",
@@ -802,10 +802,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
     "localPath": "/assets/fresvik/images/migrated/flake-black.png",
     "filePath": "public/assets/fresvik/images/migrated/flake-black.png",
     "assetType": "image",
@@ -831,10 +831,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
     "localPath": "/assets/fresvik/images/migrated/flake-left.png",
     "filePath": "public/assets/fresvik/images/migrated/flake-left.png",
     "assetType": "image",
@@ -857,10 +857,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719344562160-Z9D12R6FJ09COTBFIC4B/FP+Dyreparken.jpg",
     "localPath": "/assets/fresvik/images/migrated/fp-dyreparken.jpg",
     "filePath": "public/assets/fresvik/images/migrated/fp-dyreparken.jpg",
     "assetType": "image",
@@ -878,10 +878,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429005299-7QZOS5OLK4T6ST48KDUX/Fresvik+aks+montering1.jpg",
     "localPath": "/assets/fresvik/images/migrated/fresvik-aks-montering1.jpg",
     "filePath": "public/assets/fresvik/images/migrated/fresvik-aks-montering1.jpg",
     "assetType": "image",
@@ -899,10 +899,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228671867-44XDBXP74FZLKTE9Y39G/Fresvik_illustrasjon-1.jpg",
     "localPath": "/assets/fresvik/images/migrated/fresvik-illustrasjon-1.jpg",
     "filePath": "public/assets/fresvik/images/migrated/fresvik-illustrasjon-1.jpg",
     "assetType": "image",
@@ -920,10 +920,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228667833-NZJ6X5474K8R1NHEWNHD/Fresvik+ionnfesting+mot+golv.jpg",
     "localPath": "/assets/fresvik/images/migrated/fresvik-ionnfesting-mot-golv.jpg",
     "filePath": "public/assets/fresvik/images/migrated/fresvik-ionnfesting-mot-golv.jpg",
     "assetType": "image",
@@ -941,7 +941,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -965,7 +965,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228646223-GCFAL7J1Z7CDSTH66PBD/Fresvik+produikt+seljar+Arne-Olav.jpg",
     "localPath": "/assets/fresvik/images/migrated/fresvik-produikt-seljar-arne-olav.jpg",
     "filePath": "public/assets/fresvik/images/migrated/fresvik-produikt-seljar-arne-olav.jpg",
     "assetType": "image",
@@ -983,10 +983,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228658301-7HXO4YTJZXT4SGA9VFEE/Fresvik+Produkt+40+aar.jpg",
     "localPath": "/assets/fresvik/images/migrated/fresvik-produkt-40-aar.jpg",
     "filePath": "public/assets/fresvik/images/migrated/fresvik-produkt-40-aar.jpg",
     "assetType": "image",
@@ -1004,10 +1004,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228641721-HC1VC12XNP8F4MWVOMZY/Fresvik+produkt+julehjarte+dekorasjon.jpg",
     "localPath": "/assets/fresvik/images/migrated/fresvik-produkt-julehjarte-dekorasjon.jpg",
     "filePath": "public/assets/fresvik/images/migrated/fresvik-produkt-julehjarte-dekorasjon.jpg",
     "assetType": "image",
@@ -1025,10 +1025,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/18003c2c-f3da-4a01-a9fa-f0d7d2ebcadb/Fresvik+Produkt+NY-4.jpeg",
     "localPath": "/assets/fresvik/images/migrated/fresvik-produkt-ny-4.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/fresvik-produkt-ny-4.jpeg",
     "assetType": "image",
@@ -1046,10 +1046,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3b7cf69c-95a8-4c92-bc6a-e8e78147c29b/Frode-Winther.jpg",
     "localPath": "/assets/fresvik/images/migrated/frode-winther.jpg",
     "filePath": "public/assets/fresvik/images/migrated/frode-winther.jpg",
     "assetType": "image",
@@ -1066,10 +1066,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1734082729594-BHFB3R5YE0O1JKAXEDM9/Fryserom+OBS+Alna+3_red.jpg",
     "localPath": "/assets/fresvik/images/migrated/fryserom-obs-alna-3-red.jpg",
     "filePath": "public/assets/fresvik/images/migrated/fryserom-obs-alna-3-red.jpg",
     "assetType": "image",
@@ -1087,7 +1087,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -1110,7 +1110,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228902945-AQM2H33O29539I7FSA3I/Ha%CC%8Andtak+standard_web.jpg",
     "localPath": "/assets/fresvik/images/migrated/handtak-standard-web.jpg",
     "filePath": "public/assets/fresvik/images/migrated/handtak-standard-web.jpg",
     "assetType": "image",
@@ -1128,7 +1128,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -1151,7 +1151,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc41dc96-71bb-4347-b2f8-bf0658a7d73e/Ha%CC%8Avard+Berdal.jpg",
     "localPath": "/assets/fresvik/images/migrated/havard-berdal.jpg",
     "filePath": "public/assets/fresvik/images/migrated/havard-berdal.jpg",
     "assetType": "image",
@@ -1169,7 +1169,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -1279,7 +1279,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0e918a1c-81aa-42be-ac6c-a76670486056/image-asset.jpg",
     "localPath": "/assets/fresvik/images/migrated/image-asset.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/image-asset.jpeg",
     "assetType": "image",
@@ -1297,10 +1297,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429019721-ZC32AVBAD55JGSWMPAE0/image2.JPG",
     "localPath": "/assets/fresvik/images/migrated/image2.jpg",
     "filePath": "public/assets/fresvik/images/migrated/image2.jpg",
     "assetType": "image",
@@ -1318,10 +1318,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428934426-54STKYSMZXBLZUQT1Y69/IMG_2589.jpg",
     "localPath": "/assets/fresvik/images/migrated/img-2589.jpg",
     "filePath": "public/assets/fresvik/images/migrated/img-2589.jpg",
     "assetType": "image",
@@ -1339,10 +1339,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428928604-PO4V3C5W42U9QQ70YG1T/IMG_6262.jpg",
     "localPath": "/assets/fresvik/images/migrated/img-6262.jpg",
     "filePath": "public/assets/fresvik/images/migrated/img-6262.jpg",
     "assetType": "image",
@@ -1360,10 +1360,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428967167-613IZJTMJEAGG6Q80CY9/IMG_7324.JPG",
     "localPath": "/assets/fresvik/images/migrated/img-7324.jpg",
     "filePath": "public/assets/fresvik/images/migrated/img-7324.jpg",
     "assetType": "image",
@@ -1381,7 +1381,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -1447,7 +1447,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228769500-4TTIXKAO1JNS9J2G51MG/_K6R3776_07032013.jpg",
     "localPath": "/assets/fresvik/images/migrated/k6r3776-07032013.jpg",
     "filePath": "public/assets/fresvik/images/migrated/k6r3776-07032013.jpg",
     "assetType": "image",
@@ -1468,10 +1468,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820354075-093JAT4O9XRFJQLFQLUX/Kiwi+Otta+1.jpeg",
     "localPath": "/assets/fresvik/images/migrated/kiwi-otta-1.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/kiwi-otta-1.jpeg",
     "assetType": "image",
@@ -1489,10 +1489,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428963306-KUA0I3B9YO1LP7PZUI11/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
     "localPath": "/assets/fresvik/images/migrated/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
     "filePath": "public/assets/fresvik/images/migrated/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
     "assetType": "image",
@@ -1510,7 +1510,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -1534,7 +1534,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6462fe9f-f6d3-4ea6-ba4c-7e1e22feaaa6/Lars-Erling-Livrud.jpeg",
     "localPath": "/assets/fresvik/images/migrated/lars-erling-livrud.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/lars-erling-livrud.jpeg",
     "assetType": "image",
@@ -1551,10 +1551,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228910970-GA9J3XJZ7A746P0MBQJ4/MaxiElebar+ventil+inne_web.jpg",
     "localPath": "/assets/fresvik/images/migrated/maxielebar-ventil-inne-web.jpg",
     "filePath": "public/assets/fresvik/images/migrated/maxielebar-ventil-inne-web.jpg",
     "assetType": "image",
@@ -1572,7 +1572,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -1596,7 +1596,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/023d763a-056e-4d63-9125-90225b9624fd/New+Logo+Design+2024+-+Made+with+PosterMyWall+%2815%29.png",
     "localPath": "/assets/fresvik/images/migrated/new-logo-design-2024-made-with-postermywall-15.png",
     "filePath": "public/assets/fresvik/images/migrated/new-logo-design-2024-made-with-postermywall-15.png",
     "assetType": "image",
@@ -1613,10 +1613,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/cf2c17a5-1e90-4ab0-96e9-0d4052afeb4a/Nils+Gunnar+Finne.jpeg",
     "localPath": "/assets/fresvik/images/migrated/nils-gunnar-finne.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/nils-gunnar-finne.jpeg",
     "assetType": "image",
@@ -1633,10 +1633,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dff2816f-bc5c-43f7-a06b-91c0427e1f50/Oddrun+Time.jpeg",
     "localPath": "/assets/fresvik/images/migrated/oddrun-time.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/oddrun-time.jpeg",
     "assetType": "image",
@@ -1653,10 +1653,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/8cb3117f-86e2-4a0a-b333-5722d9c1946a/Ove+Fedje.jpeg",
     "localPath": "/assets/fresvik/images/migrated/ove-fedje.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/ove-fedje.jpeg",
     "assetType": "image",
@@ -1673,10 +1673,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228916130-S0DQVN00OYIZASC3CQKV/PEGO+innestengningsalarm_web.jpg",
     "localPath": "/assets/fresvik/images/migrated/pego-innestengningsalarm-web.jpg",
     "filePath": "public/assets/fresvik/images/migrated/pego-innestengningsalarm-web.jpg",
     "assetType": "image",
@@ -1694,10 +1694,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228806054-QGL0LMRK543ILT2T3XK3/Port1_fresvik.jpg",
     "localPath": "/assets/fresvik/images/migrated/port1-fresvik.jpg",
     "filePath": "public/assets/fresvik/images/migrated/port1-fresvik.jpg",
     "assetType": "image",
@@ -1715,10 +1715,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3c01276b-1589-49c6-9503-8cd8519959d9/port1web.jpg",
     "localPath": "/assets/fresvik/images/migrated/port1web.jpg",
     "filePath": "public/assets/fresvik/images/migrated/port1web.jpg",
     "assetType": "image",
@@ -1735,10 +1735,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228943559-L0SXG2I29YLNU5JDWJP5/profil1+copy.jpg",
     "localPath": "/assets/fresvik/images/migrated/profil1-copy.jpg",
     "filePath": "public/assets/fresvik/images/migrated/profil1-copy.jpg",
     "assetType": "image",
@@ -1756,10 +1756,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228921336-E5VWZTJBSCS1W0PVW8TB/PVC-gardin_web.jpg",
     "localPath": "/assets/fresvik/images/migrated/pvc-gardin-web.jpg",
     "filePath": "public/assets/fresvik/images/migrated/pvc-gardin-web.jpg",
     "assetType": "image",
@@ -1777,7 +1777,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -1800,7 +1800,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228933067-LHLZ30AMNKXNVOYEUTGA/rampe1+copy.jpg",
     "localPath": "/assets/fresvik/images/migrated/rampe1-copy.jpg",
     "filePath": "public/assets/fresvik/images/migrated/rampe1-copy.jpg",
     "assetType": "image",
@@ -1818,10 +1818,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428945151-2DYHLD6R7EHJRUKRCWUI/Resvik-fryserom-Innvendig%2B2.jpg",
     "localPath": "/assets/fresvik/images/migrated/resvik-fryserom-innvendig-2.jpg",
     "filePath": "public/assets/fresvik/images/migrated/resvik-fryserom-innvendig-2.jpg",
     "assetType": "image",
@@ -1839,10 +1839,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e6a1706c-a13b-41d3-8e62-479cbae3fa46/Samaneh+Shakeri.jpg",
     "localPath": "/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
     "filePath": "public/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
     "assetType": "image",
@@ -1863,10 +1863,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b8b854bc-2ce5-4194-beff-1f375dec6407/Sigmund+Hauglum.jpg",
     "localPath": "/assets/fresvik/images/migrated/sigmund-hauglum.jpg",
     "filePath": "public/assets/fresvik/images/migrated/sigmund-hauglum.jpg",
     "assetType": "image",
@@ -1883,10 +1883,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/a7e012d5-b583-472d-85c0-a3d3eb0d24aa/Siri+Otterhjell.jpeg",
     "localPath": "/assets/fresvik/images/migrated/siri-otterhjell.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/siri-otterhjell.jpeg",
     "assetType": "image",
@@ -1903,10 +1903,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/573f8aab-6b3e-4c90-86e0-797986364f58/Siv+Settevik.jpeg",
     "localPath": "/assets/fresvik/images/migrated/siv-settevik.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/siv-settevik.jpeg",
     "assetType": "image",
@@ -1923,7 +1923,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -1947,7 +1947,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222151377-Y2600X4366PYP2EVYBJ9/Spar+Lund+Torv+-+Fresvik+Produkt+1+.jpeg",
     "localPath": "/assets/fresvik/images/migrated/spar-lund-torv-fresvik-produkt-1.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/spar-lund-torv-fresvik-produkt-1.jpeg",
     "assetType": "image",
@@ -1965,10 +1965,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228676756-0Q8RRY50I1SGJ18G8H55/tomas+kruvelis+20180315_121307.jpg",
     "localPath": "/assets/fresvik/images/migrated/tomas-kruvelis-20180315-121307.jpg",
     "filePath": "public/assets/fresvik/images/migrated/tomas-kruvelis-20180315-121307.jpg",
     "assetType": "image",
@@ -1986,10 +1986,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dbba98a8-e809-46c8-b875-ce3ef3aee28a/Tomas-Kruvelis.jpg",
     "localPath": "/assets/fresvik/images/migrated/tomas-kruvelis.jpg",
     "filePath": "public/assets/fresvik/images/migrated/tomas-kruvelis.jpg",
     "assetType": "image",
@@ -2006,10 +2006,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/028353e9-eb2c-4f44-9fab-f6f895bb2476/Transportskade+Fresvik+Produkt.jpg",
     "localPath": "/assets/fresvik/images/migrated/transportskade-fresvik-produkt.jpg",
     "filePath": "public/assets/fresvik/images/migrated/transportskade-fresvik-produkt.jpg",
     "assetType": "image",
@@ -2027,10 +2027,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749159320-QFVQ5BDRGRH74139ILFZ/Vik+helse-+og+sjukeheim+1.jpg",
     "localPath": "/assets/fresvik/images/migrated/vik-helse-og-sjukeheim-1.jpg",
     "filePath": "public/assets/fresvik/images/migrated/vik-helse-og-sjukeheim-1.jpg",
     "assetType": "image",
@@ -2048,6 +2048,6 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   }
 ]

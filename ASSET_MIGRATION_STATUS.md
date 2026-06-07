@@ -17,7 +17,7 @@ Generated from local migration cache and source data.
 | Ready for Sanity | 98 |
 | Uploaded to Sanity | 0 |
 | Failed or needs review | 0 |
-| TODO original URLs | 98 |
+| TODO original URLs | 38 |
 
 ## Status Counts
 
@@ -106,6 +106,24 @@ Generated from local migration cache and source data.
 - `/tilleggsutstyr`
 - `/tilsette`
 - `/transportskade`
+
+
+## Old Sitemap Image Coverage
+
+| Metric | Count |
+| --- | ---: |
+| Baseline old sitemap image count | 325 |
+| Live sitemap image entries | 322 |
+| Live sitemap unique image URLs | 275 |
+| Local migrated image assets | 76 |
+| Sitemap images classified migrated | 219 |
+| Sitemap duplicate image entries | 36 |
+| Sitemap thumbnail/variant unresolved | 11 |
+| Sitemap images missing local match | 56 |
+| Local-only images without recovered originalUrl | 16 |
+
+Source drift note: `src/data/legacyRoutes.ts` stores the earlier baseline, while `MACHINE_READABLE_MIGRATION_AUDIT.json` stores the latest live sitemap audit.
+
 
 ## Notes
 

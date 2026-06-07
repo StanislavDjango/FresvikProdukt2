@@ -12,6 +12,7 @@ const assetRoot = path.join(publicRoot, "assets", "fresvik");
 const tempDir = path.join(root, ".generated", "asset-manifest-cjs");
 const manifestPath = path.join(root, "sanity", "seed", "assetManifest.json");
 const statusPath = path.join(root, "ASSET_MIGRATION_STATUS.md");
+const auditJsonPath = path.join(root, "MACHINE_READABLE_MIGRATION_AUDIT.json");
 const checkOnly = process.argv.includes("--check");
 
 const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"]);
@@ -297,6 +298,30 @@ function statusMarkdown(entries) {
     ...new Set(entries.flatMap((entry) => entry.usedBy).filter((value) => value.startsWith("/"))),
   ].sort();
   const unknownOriginals = count(entries, (entry) => entry.originalUrl.startsWith("TODO"));
+  const audit = existsSync(auditJsonPath)
+    ? JSON.parse(readFileSync(auditJsonPath, "utf8"))
+    : null;
+  const assetStatusCounts = audit?.summary?.assetStatusCounts || {};
+  const auditSummary = audit?.summary;
+  const sitemapComparison = auditSummary
+    ? `
+## Old Sitemap Image Coverage
+
+| Metric | Count |
+| --- | ---: |
+| Baseline old sitemap image count | ${auditSummary.localBaselineImageCount} |
+| Live sitemap image entries | ${auditSummary.liveSitemapImageEntries} |
+| Live sitemap unique image URLs | ${auditSummary.liveSitemapUniqueImageUrls} |
+| Local migrated image assets | ${auditSummary.localImageAssets} |
+| Sitemap images classified migrated | ${assetStatusCounts.migrated || 0} |
+| Sitemap duplicate image entries | ${assetStatusCounts.duplicate || 0} |
+| Sitemap thumbnail/variant unresolved | ${assetStatusCounts["thumbnail-or-variant"] || 0} |
+| Sitemap images missing local match | ${assetStatusCounts.missing || 0} |
+| Local-only images without recovered originalUrl | ${assetStatusCounts["local-only"] || 0} |
+
+Source drift note: \`src/data/legacyRoutes.ts\` stores the earlier baseline, while \`MACHINE_READABLE_MIGRATION_AUDIT.json\` stores the latest live sitemap audit.
+`
+    : "";
 
   return `# Asset Migration Status
 
@@ -331,6 +356,8 @@ ${[...byStatus.entries()]
 ${localPathUsers.length} routes/documents still use local \`/assets/fresvik\` paths while assets wait for Sanity import.
 
 ${localPathUsers.map((route) => `- \`${route}\``).join("\n")}
+
+${sitemapComparison}
 
 ## Notes
 

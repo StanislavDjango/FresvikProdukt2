@@ -39,6 +39,10 @@ function loadDataModules() {
     path.join(tempDir, "node_modules", "@", "data", "oldSiteInventory.js"),
   );
   compileTs(
+    path.join(root, "src", "data", "oldSiteContentExtract.ts"),
+    path.join(tempDir, "node_modules", "@", "data", "oldSiteContentExtract.js"),
+  );
+  compileTs(
     path.join(root, "src", "data", "pages.ts"),
     path.join(tempDir, "pages.js"),
   );
@@ -96,7 +100,14 @@ function normalizeRoute(value) {
 }
 
 function normalizeText(value = "") {
-  return decodeURIComponent(value)
+  let decoded = value;
+  try {
+    decoded = decodeURIComponent(value);
+  } catch {
+    decoded = value;
+  }
+
+  return decoded
     .toLowerCase()
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -278,11 +289,13 @@ function routeStatus({ pathname, page, seedDoc, redirect, sitemapImages, localIm
   if (hasTodoMarkers(text)) return "needs-review";
   if (
     (pathname.startsWith("/aktuelt/") || pathname.startsWith("/referansar/")) &&
-    words(text).length < 180
+    words(text).length < 180 &&
+    !bodyComplete(pathname, page, seedDoc, "page")
   ) {
     return "partial";
   }
-  if (sitemapImages.length > localImages.length && isDetailPath(pathname)) return "partial";
+  const uniqueSitemapImageCount = new Set(sitemapImages.map((image) => image.originalUrl)).size;
+  if (uniqueSitemapImageCount > localImages.length && isDetailPath(pathname)) return "partial";
   if (!bodyComplete(pathname, page, seedDoc, "page")) return "partial";
   return "page";
 }
@@ -304,49 +317,58 @@ function collectExternalAndInternalLinks(files) {
   const internal = new Map();
   const external = new Map();
   const urlPattern = /["'`](https?:\/\/[^"'`\s<>]+|\/[^"'`\s<>]*)["'`]/g;
+  const internalFieldPattern =
+    /\b(?:href|source|destination|imageUrl|localPath|migratedImagePath)\s*:\s*["'`](\/[^"'`\s<>]*)["'`]/g;
+  const externalFieldPattern =
+    /\b(?:href|sourceUrl|originalUrl|url)\s*:\s*["'`](https?:\/\/[^"'`\s<>]+)["'`]/g;
 
   for (const file of files) {
     const text = readFileSync(path.join(root, file), "utf8");
     const lines = text.split(/\r?\n/);
     for (let lineIndex = 0; lineIndex < lines.length; lineIndex += 1) {
       const line = lines[lineIndex];
-      for (const match of line.matchAll(urlPattern)) {
+      const internalMatches = file.endsWith(".ndjson")
+        ? line.matchAll(urlPattern)
+        : line.matchAll(internalFieldPattern);
+      for (const match of internalMatches) {
         const raw = match[1].replace(/[),.;]+$/, "");
-        if (raw.startsWith("/")) {
-          const normalized = normalizeRoute(raw);
-          if (!normalized) continue;
-          const key = `${normalized}|${file}`;
-          if (!internal.has(key)) {
-            internal.set(key, {
-              href: raw,
-              normalized,
-              sourceFile: file,
-              line: lineIndex + 1,
-              status: "unchecked",
-              notes: "",
-            });
-          }
-        } else {
-          const key = `${raw}|${file}`;
-          if (!external.has(key)) {
-            external.set(key, {
-              url: raw,
-              sourceFile: file,
-              line: lineIndex + 1,
-              purpose: raw.includes("fresvik.no")
-                ? "source-url"
-                : raw.includes("sintef")
-                  ? "certification/documentation"
-                  : raw.includes("lovdata")
-                    ? "legal-reference"
-                    : "external-reference",
-              status: raw.includes("images.squarespace-cdn.com")
-                ? "replace"
-                : raw.includes("fresvik.no")
-                  ? "keep"
-                  : "keep",
-            });
-          }
+        if (!raw.startsWith("/")) continue;
+        const normalized = normalizeRoute(raw);
+        if (!normalized) continue;
+        const key = `${normalized}|${file}`;
+        if (!internal.has(key)) {
+          internal.set(key, {
+            href: raw,
+            normalized,
+            sourceFile: file,
+            line: lineIndex + 1,
+            status: "unchecked",
+            notes: "",
+          });
+        }
+      }
+
+      for (const match of line.matchAll(externalFieldPattern)) {
+        const raw = match[1].replace(/[),.;]+$/, "");
+        const key = `${raw}|${file}`;
+        if (!external.has(key)) {
+          external.set(key, {
+            url: raw,
+            sourceFile: file,
+            line: lineIndex + 1,
+            purpose: raw.includes("fresvik.no")
+              ? "source-url"
+              : raw.includes("sintef")
+                ? "certification/documentation"
+                : raw.includes("lovdata")
+                  ? "legal-reference"
+                  : "external-reference",
+            status: raw.includes("images.squarespace-cdn.com")
+              ? "replace"
+              : raw.includes("fresvik.no")
+                ? "keep"
+                : "keep",
+          });
         }
       }
     }
@@ -401,6 +423,10 @@ function bestImageMatch(sitemapImage, localImages, sourcePath) {
   let best = null;
 
   for (const local of localImages) {
+    if (local.originalUrl === sitemapImage.originalUrl) {
+      return { local, score: 1.5, exactStem: true };
+    }
+
     const sourceMatch = local.sourcePages.some((page) => normalizePathname(page) === sourcePath);
     const localText = [
       filenameStem(local.localPath),
@@ -424,12 +450,13 @@ function bestImageMatch(sitemapImage, localImages, sourcePath) {
   };
 }
 
-function classifySitemapImages(sitemapEntries, localImageAssets) {
+function classifySitemapImages(sitemapEntries, localImageAssets, redirectRules) {
   const imageRows = [];
   const matchedLocals = new Map();
   const seenOriginals = new Set();
 
   for (const entry of sitemapEntries) {
+    const redirect = redirectFor(entry.oldPath, redirectRules);
     for (const image of entry.images) {
       const duplicateOriginal = seenOriginals.has(image.originalUrl);
       seenOriginals.add(image.originalUrl);
@@ -449,6 +476,9 @@ function classifySitemapImages(sitemapEntries, localImageAssets) {
           matchedLocals.set(localPath, image.originalUrl);
         }
         notes = `Matched by filename/source similarity (${confidence.toFixed(2)}).`;
+      } else if (redirect) {
+        status = "ignored-with-reason";
+        notes = `Old URL redirects to ${redirect.destination}; sitemap image is not required on a redirect-only route.`;
       } else if (likelyThumbnail) {
         status = "thumbnail-or-variant";
         notes = "Looks like a duplicate thumbnail/variant, but no confident local match.";
@@ -479,10 +509,12 @@ function classifySitemapImages(sitemapEntries, localImageAssets) {
       title: "",
       caption: "",
       localPath: local.localPath,
-      status: "local-only",
+      status: local.originalUrl?.startsWith("TODO") ? "unrecoverable" : "ignored-with-reason",
       confidence: 0,
       notes:
-        "Local image is used by migrated data, but no exact sitemap originalUrl was recovered.",
+        local.originalUrl?.startsWith("TODO")
+          ? "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+          : "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache.",
     });
   }
 
@@ -508,6 +540,7 @@ function collectRemotePdfUrls(sitemapEntries) {
   const textFiles = [
     "src/data/pages.ts",
     "src/data/oldSiteInventory.ts",
+    "src/data/oldSiteContentExtract.ts",
     "sanity/seed/migratedContent.ndjson",
   ];
   for (const file of textFiles) {
@@ -642,7 +675,7 @@ function summarizeStatuses(rows) {
 }
 
 const modules = loadDataModules();
-const { getAllContentPages } = modules.pages;
+const { createLegacyContentPage, getAllContentPages, getContentPage } = modules.pages;
 const {
   legacyRoutes,
   oldSiteSitemapStats,
@@ -676,10 +709,22 @@ const routeSet = new Set([
   ...seedDocs.map(routeFromSeedDoc).filter(Boolean),
 ]);
 
+function pageForOldPath(oldPath) {
+  return (
+    contentPageBySlug.get(oldPath) ||
+    getContentPage(oldPath) ||
+    createLegacyContentPage(oldPath)
+  );
+}
+
 const sitemapByPath = new Map(sitemapEntries.map((entry) => [entry.oldPath, entry]));
 const localImageAssets = manifest.filter((entry) => entry.assetType === "image");
 const documentAssets = manifest.filter((entry) => entry.assetType === "document");
-const { imageRows, matchedLocals } = classifySitemapImages(sitemapEntries, localImageAssets);
+const { imageRows, matchedLocals } = classifySitemapImages(
+  sitemapEntries,
+  localImageAssets,
+  redirectRules,
+);
 const documentRows = documentRowsFromAssets(documentAssets, seedDocs, sitemapEntries);
 const { manifest: updatedManifest } = updateManifestOriginalUrls(
   manifest,
@@ -693,9 +738,11 @@ const originalUrlsRecovered = updatedManifest.filter(
 
 const routeRows = sitemapEntries.map((entry) => {
   const redirect = redirectFor(entry.oldPath, redirectRules);
-  const page = contentPageBySlug.get(entry.oldPath) || appRoutePages.get(entry.oldPath);
+  const page = pageForOldPath(entry.oldPath) || appRoutePages.get(entry.oldPath);
   const seedDoc = seedByRoute.get(entry.oldPath);
-  const localImages = pageImages(page);
+  const localImages = [
+    ...new Set([...pageImages(page), seedDoc?.migratedImagePath].filter(Boolean)),
+  ];
   const docs = pageDocuments(page);
   const status = routeStatus({
     pathname: entry.oldPath,
@@ -720,7 +767,7 @@ const routeRows = sitemapEntries.map((entry) => {
     hasInternalLinks: pageText(page).includes("href") || docs.length > 0,
     hasExternalLinks: /https?:\/\//.test(pageText(page)),
     oldImageCount: entry.images.length,
-    localImageCount: localImages.length + (seedDoc?.migratedImagePath ? 1 : 0),
+    localImageCount: localImages.length,
     notes:
       status === "redirect"
         ? `Redirects to ${redirect.destination}.`
@@ -739,7 +786,7 @@ const legacyOnlyRows = legacyRoutes
   .filter((route) => !sitemapByPath.has(route))
   .map((oldPath) => {
     const redirect = redirectFor(oldPath, redirectRules);
-    const page = contentPageBySlug.get(oldPath) || appRoutePages.get(oldPath);
+    const page = pageForOldPath(oldPath) || appRoutePages.get(oldPath);
     const seedDoc = seedByRoute.get(oldPath);
     const status = redirect ? "redirect" : page || seedDoc ? "inventory-only" : "missing";
     return {
@@ -756,7 +803,9 @@ const legacyOnlyRows = legacyRoutes
       hasInternalLinks: pageDocuments(page).length > 0,
       hasExternalLinks: /https?:\/\//.test(pageText(page)),
       oldImageCount: 0,
-      localImageCount: pageImages(page).length + (seedDoc?.migratedImagePath ? 1 : 0),
+      localImageCount: [
+        ...new Set([...pageImages(page), seedDoc?.migratedImagePath].filter(Boolean)),
+      ].length,
       notes: "Present in local legacyRoutes baseline but not present in current live sitemap.",
     };
   });

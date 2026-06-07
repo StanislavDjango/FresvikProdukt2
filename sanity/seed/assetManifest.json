@@ -1,6 +1,6 @@
 [
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Endre-Skyveretning.pdf",
     "localPath": "/assets/fresvik/documents/endre-skyveretning.pdf",
     "filePath": "public/assets/fresvik/documents/endre-skyveretning.pdf",
     "assetType": "document",
@@ -17,10 +17,30 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf",
+    "localPath": "/assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf",
+    "filePath": "public/assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf",
+    "assetType": "document",
+    "usedBy": [
+      "/produkt/fresvik-pir-panel",
+      "documentFile-assets-fresvik-documents-fp-pir-paneler-montasjeanvisning-nov-2025-pdf"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-pir-panel"
+    ],
+    "sha256": "60d17bf1ddce35d249117bb998be04b8b38781077e0e1d343af1ebed10afcaa6",
+    "fileSize": 1031884,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "file asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
     "localPath": "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
     "filePath": "public/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
     "assetType": "document",
@@ -37,10 +57,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
     "localPath": "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
     "filePath": "public/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
     "assetType": "document",
@@ -57,10 +77,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
     "localPath": "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
     "filePath": "public/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
     "assetType": "document",
@@ -77,10 +97,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Fresvik-Port-Montasjeanvisning.pdf",
     "localPath": "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
     "filePath": "public/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
     "assetType": "document",
@@ -101,10 +121,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Koblingsskjema-Fermod-5010.pdf",
     "localPath": "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
     "filePath": "public/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
     "assetType": "document",
@@ -121,10 +141,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf",
     "localPath": "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
     "filePath": "public/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
     "assetType": "document",
@@ -141,10 +161,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf",
     "localPath": "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
     "filePath": "public/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
     "assetType": "document",
@@ -161,10 +181,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Montasjeanvisning-5010-for-2150.pdf",
     "localPath": "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
     "filePath": "public/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
     "assetType": "document",
@@ -181,10 +201,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Montasjeanvisning-5010-for-3530-og-7530.pdf",
     "localPath": "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
     "filePath": "public/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
     "assetType": "document",
@@ -201,7 +221,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -264,7 +284,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
     "localPath": "/assets/fresvik/documents/pir-panel-montasjeanvisning.pdf",
     "filePath": "public/assets/fresvik/documents/pir-panel-montasjeanvisning.pdf",
     "assetType": "document",
@@ -279,12 +299,12 @@
     "fileSize": 1031884,
     "sanityAssetId": null,
     "sanityReference": null,
-    "status": "ready-for-sanity",
+    "status": "duplicate",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "Duplicate file content of /assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/PIR.pdf",
     "localPath": "/assets/fresvik/documents/pir-panel.pdf",
     "filePath": "public/assets/fresvik/documents/pir-panel.pdf",
     "assetType": "document",
@@ -301,10 +321,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Produktblad-Fresvik-Skyveport.pdf",
     "localPath": "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
     "filePath": "public/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
     "assetType": "document",
@@ -323,10 +343,75 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/PUR-ce-merke.pdf",
+    "localPath": "/assets/fresvik/documents/pur-ce-merke.pdf",
+    "filePath": "public/assets/fresvik/documents/pur-ce-merke.pdf",
+    "assetType": "document",
+    "usedBy": [
+      "/aktuelt",
+      "/dokumentasjon",
+      "/firmainfo",
+      "/kjolerom-fryserom-butikk",
+      "/kjolerom-fryserom-offshore",
+      "/kjolerom-fryserom-storkjokken",
+      "/kundeservice/faq",
+      "/monteringsanvisning",
+      "/monteringsanvisningar-fresvik-skyveport",
+      "/personvernerklering",
+      "/produkt",
+      "/produkt/fasadepanel",
+      "/produkt/fresvik-pir-panel",
+      "/produkt/frysetunnel",
+      "/produkt/kjole-frysedorer",
+      "/produkt/kjole-fryseportar",
+      "/referansar",
+      "/stillingledig",
+      "/tenester/leveranse",
+      "/tenester/montasje",
+      "/tenester/service-reservedeler",
+      "/tilleggsutstyr",
+      "/tilsette",
+      "/transportskade",
+      "documentFile-assets-fresvik-documents-pur-ce-merke-pdf"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt",
+      "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/firmainfo",
+      "https://www.fresvik.no/kjolerom-fryserom-butikk",
+      "https://www.fresvik.no/kjolerom-fryserom-offshore",
+      "https://www.fresvik.no/kjolerom-fryserom-storkjokken",
+      "https://www.fresvik.no/kundeservice/faq",
+      "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/personvernerklering",
+      "https://www.fresvik.no/produkt/fasadepanel",
+      "https://www.fresvik.no/produkt/fresvik-pir-panel",
+      "https://www.fresvik.no/produkt/frysetunnel",
+      "https://www.fresvik.no/produkt/kjole-frysedorer",
+      "https://www.fresvik.no/produkt/kjole-fryseportar",
+      "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/stillingledig",
+      "https://www.fresvik.no/tenester/leveranse",
+      "https://www.fresvik.no/tenester/montasje",
+      "https://www.fresvik.no/tenester/service-reservedeler",
+      "https://www.fresvik.no/tilleggsutstyr",
+      "https://www.fresvik.no/tilsette",
+      "https://www.fresvik.no/transportskade"
+    ],
+    "sha256": "596ac549d312966cacb69673491b8988ede60f20a297d6ba84fd85702e4e0c45",
+    "fileSize": 150364,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "file asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://www.fresvik.no/s/Quick-Start-5010Exp-indB.pdf",
     "localPath": "/assets/fresvik/documents/quick-start-5010exp.pdf",
     "filePath": "public/assets/fresvik/documents/quick-start-5010exp.pdf",
     "assetType": "document",
@@ -343,19 +428,64 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
     "localPath": "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
     "filePath": "public/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
     "assetType": "document",
     "usedBy": [
+      "/aktuelt",
       "/dokumentasjon",
+      "/firmainfo",
+      "/kjolerom-fryserom-butikk",
+      "/kjolerom-fryserom-offshore",
+      "/kjolerom-fryserom-storkjokken",
+      "/kundeservice/faq",
+      "/monteringsanvisning",
+      "/monteringsanvisningar-fresvik-skyveport",
+      "/personvernerklering",
+      "/produkt",
+      "/produkt/fasadepanel",
+      "/produkt/fresvik-pir-panel",
+      "/produkt/frysetunnel",
+      "/produkt/kjole-frysedorer",
+      "/produkt/kjole-fryseportar",
+      "/referansar",
+      "/stillingledig",
+      "/tenester/leveranse",
+      "/tenester/montasje",
+      "/tenester/service-reservedeler",
+      "/tilleggsutstyr",
+      "/tilsette",
+      "/transportskade",
       "documentFile-assets-fresvik-documents-sentral-godkjenning-fresvik-produkt-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon"
+      "https://www.fresvik.no/aktuelt",
+      "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/firmainfo",
+      "https://www.fresvik.no/kjolerom-fryserom-butikk",
+      "https://www.fresvik.no/kjolerom-fryserom-offshore",
+      "https://www.fresvik.no/kjolerom-fryserom-storkjokken",
+      "https://www.fresvik.no/kundeservice/faq",
+      "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/personvernerklering",
+      "https://www.fresvik.no/produkt/fasadepanel",
+      "https://www.fresvik.no/produkt/fresvik-pir-panel",
+      "https://www.fresvik.no/produkt/frysetunnel",
+      "https://www.fresvik.no/produkt/kjole-frysedorer",
+      "https://www.fresvik.no/produkt/kjole-fryseportar",
+      "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/stillingledig",
+      "https://www.fresvik.no/tenester/leveranse",
+      "https://www.fresvik.no/tenester/montasje",
+      "https://www.fresvik.no/tenester/service-reservedeler",
+      "https://www.fresvik.no/tilleggsutstyr",
+      "https://www.fresvik.no/tilsette",
+      "https://www.fresvik.no/transportskade"
     ],
     "sha256": "c20f54560e598cce7d8622cd55eb8619a533a10e5c0cf3087987b75326cccc9f",
     "fileSize": 58526,
@@ -363,7 +493,27 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://www.fresvik.no/s/7060s-fnfz.pdf",
+    "localPath": "/assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf",
+    "filePath": "public/assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf",
+    "assetType": "document",
+    "usedBy": [
+      "/dokumentasjon",
+      "documentFile-assets-fresvik-documents-sintef-produktsertifikat-7060s-pdf"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/dokumentasjon"
+    ],
+    "sha256": "9bd598c9a508ad9c6b8f5840eba4841b6e07f8a846ab204c18f1dd23d6eac266",
+    "fileSize": 253758,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "file asset",
+    "notes": ""
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -387,6 +537,26 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf",
+    "filePath": "public/assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf",
+    "assetType": "document",
+    "usedBy": [
+      "/dokumentasjon",
+      "documentFile-assets-fresvik-documents-sintef-teknisk-godkjenning-2135g-pdf"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/dokumentasjon"
+    ],
+    "sha256": "0f8659caba8780d251cde2d4f971b254cfa7055f71a74d8ec889f70d4d9d7559",
+    "fileSize": 439904,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "duplicate",
+    "targetSanityType": "file asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/documents/sintef-produktsertifikat.pdf."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
     "filePath": "public/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
     "assetType": "document",
@@ -401,12 +571,12 @@
     "fileSize": 253758,
     "sanityAssetId": null,
     "sanityReference": null,
-    "status": "ready-for-sanity",
+    "status": "duplicate",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf",
     "localPath": "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
     "filePath": "public/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
     "assetType": "document",
@@ -423,10 +593,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf",
     "localPath": "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
     "filePath": "public/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
     "assetType": "document",
@@ -443,7 +613,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1747635709094-QZ1DMKF9F7N73IKHN7JA/1000024746.jpg",
@@ -570,7 +740,7 @@
     "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/93b9ca60-337d-4e73-b309-95730a7b81fa/Arne-Olav-Lien-Bard%C3%B8lsga%CC%8Ard.jpg",
     "localPath": "/assets/fresvik/images/migrated/arne-olav-lien-bardlsgard.jpg",
     "filePath": "public/assets/fresvik/images/migrated/arne-olav-lien-bardlsgard.jpg",
     "assetType": "image",
@@ -587,7 +757,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241166920-U2FPLWGLYNB9M3NT7Z1J/Baza+fryserom+-+1.jpeg",
@@ -810,20 +980,36 @@
     "filePath": "public/assets/fresvik/images/migrated/flake-black.png",
     "assetType": "image",
     "usedBy": [
+      "/kjolerom-fryserom-butikk",
+      "/kjolerom-fryserom-offshore",
+      "/kjolerom-fryserom-storkjokken",
       "/produkt",
       "/produkt/fasadepanel",
       "/produkt/fresvik-panel",
       "/produkt/fresvik-pir-panel",
       "/produkt/fresvik-pur-panel",
+      "/produkt/frysetunnel",
       "/produkt/kjole-frysedorer",
-      "/produkt/kjole-fryseportar"
+      "/produkt/kjole-fryseportar",
+      "/stillingledig",
+      "/tenester/leveranse",
+      "/tenester/montasje",
+      "/transportskade"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-butikk",
+      "https://www.fresvik.no/kjolerom-fryserom-offshore",
+      "https://www.fresvik.no/kjolerom-fryserom-storkjokken",
       "https://www.fresvik.no/produkt/fasadepanel",
       "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel",
+      "https://www.fresvik.no/produkt/frysetunnel",
       "https://www.fresvik.no/produkt/kjole-frysedorer",
-      "https://www.fresvik.no/produkt/kjole-fryseportar"
+      "https://www.fresvik.no/produkt/kjole-fryseportar",
+      "https://www.fresvik.no/stillingledig",
+      "https://www.fresvik.no/tenester/leveranse",
+      "https://www.fresvik.no/tenester/montasje",
+      "https://www.fresvik.no/transportskade"
     ],
     "sha256": "b2fbab26d90e1fb0171d5da17c3da86a07952b18b555ee590c51c30a5f013563",
     "fileSize": 19539,
@@ -840,15 +1026,26 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/kjolerom-fryserom-storkjokken",
+      "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
+      "/produkt",
+      "/produkt/fasadepanel",
+      "/produkt/kjole-frysedorer",
+      "/produkt/kjole-fryseportar",
       "/tenester",
       "/tenester/service-reservedeler"
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/kjolerom-fryserom-storkjokken",
+      "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/produkt/fasadepanel",
+      "https://www.fresvik.no/produkt/kjole-frysedorer",
+      "https://www.fresvik.no/produkt/kjole-fryseportar",
       "https://www.fresvik.no/tenester/service-reservedeler"
     ],
     "sha256": "7e8207b17477b59b7341d1b23e9b0a97d06be555891f2a8a7f7e71bf5e3133b9",
@@ -944,7 +1141,7 @@
     "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228649404-20IRVX8C4AZ399L0LMWC/Fresvik%2Bkj%25C3%25B8lerom%2BIvar%2BSlinde.jpg",
     "localPath": "/assets/fresvik/images/migrated/fresvik-kj-c3-b8lerom-ivar-slinde.jpg",
     "filePath": "public/assets/fresvik/images/migrated/fresvik-kj-c3-b8lerom-ivar-slinde.jpg",
     "assetType": "image",
@@ -962,7 +1159,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228646223-GCFAL7J1Z7CDSTH66PBD/Fresvik+produikt+seljar+Arne-Olav.jpg",
@@ -1157,11 +1354,13 @@
     "assetType": "image",
     "usedBy": [
       "/aktuelt",
-      "/aktuelt/ny-teknisk-teiknar-havard-berdal"
+      "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+      "/tilsette"
     ],
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
-      "https://www.fresvik.no/aktuelt/ny-teknisk-teiknar-havard-berdal"
+      "https://www.fresvik.no/aktuelt/ny-teknisk-teiknar-havard-berdal",
+      "https://www.fresvik.no/tilsette"
     ],
     "sha256": "43d3b10e69825153f9a517362acb4f546ac741e8a238124a1ebd7ac99c8728d2",
     "fileSize": 314906,
@@ -1172,7 +1371,7 @@
     "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228737620-U24419ZEMK9CIOTL4PAW/image-asset.jpeg",
     "localPath": "/assets/fresvik/images/migrated/image-asset-13.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/image-asset-13.jpeg",
     "assetType": "image",
@@ -1190,10 +1389,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228773263-FLXJ27Z301QXVPYB3V5H/image-asset.jpeg",
     "localPath": "/assets/fresvik/images/migrated/image-asset-15.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/image-asset-15.jpeg",
     "assetType": "image",
@@ -1211,10 +1410,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428993712-UDHHY88O8YUFDULR9G1L/image-asset.jpeg",
     "localPath": "/assets/fresvik/images/migrated/image-asset-35.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/image-asset-35.jpeg",
     "assetType": "image",
@@ -1232,10 +1431,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429051200-R0UVYZO6J6WM4KZN512O/image-asset.jpeg",
     "localPath": "/assets/fresvik/images/migrated/image-asset-39.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/image-asset-39.jpeg",
     "assetType": "image",
@@ -1254,10 +1453,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694500125082-6JC19LMQZ08K1B9WF07S/image-asset.jpeg",
     "localPath": "/assets/fresvik/images/migrated/image-asset-42.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/image-asset-42.jpeg",
     "assetType": "image",
@@ -1276,7 +1475,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0e918a1c-81aa-42be-ac6c-a76670486056/image-asset.jpg",
@@ -1285,7 +1484,9 @@
     "assetType": "image",
     "usedBy": [
       "/aktuelt",
-      "/aktuelt/skjererom"
+      "/aktuelt/skjererom",
+      "/produkt",
+      "/referansar/2014/7/8/coop-extra-sogndal"
     ],
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
@@ -1342,7 +1543,7 @@
     "notes": ""
   },
   {
-    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428928604-PO4V3C5W42U9QQ70YG1T/IMG_6262.jpg",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428921988-GSQLH7E9ACJ9DPWSSGRW/IMG_6262.jpg",
     "localPath": "/assets/fresvik/images/migrated/img-6262.jpg",
     "filePath": "public/assets/fresvik/images/migrated/img-6262.jpg",
     "assetType": "image",
@@ -1405,7 +1606,7 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429054718-WXG74WTBHLGX9QBE7NTA/image-asset.jpeg",
     "localPath": "/assets/fresvik/images/migrated/interfrukt-langhus.webp",
     "filePath": "public/assets/fresvik/images/migrated/interfrukt-langhus.webp",
     "assetType": "image",
@@ -1423,10 +1624,10 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc7a35a3-51fe-4a8a-aac6-32c13c72b7ad/John+B%C3%B8thun_Fresvik+Produkt.jpg",
     "localPath": "/assets/fresvik/images/migrated/john-bthun-fresvik-produkt.jpg",
     "filePath": "public/assets/fresvik/images/migrated/john-bthun-fresvik-produkt.jpg",
     "assetType": "image",
@@ -1444,7 +1645,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228769500-4TTIXKAO1JNS9J2G51MG/_K6R3776_07032013.jpg",
@@ -1513,7 +1714,7 @@
     "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1742460548045-IK0PV2OD0TE4E6PHMPW0/Kj%C3%B8lerom+Bunnpris+Volda+3.jpg",
     "localPath": "/assets/fresvik/images/migrated/kjlerom-bunnpris-volda-3.jpg",
     "filePath": "public/assets/fresvik/images/migrated/kjlerom-bunnpris-volda-3.jpg",
     "assetType": "image",
@@ -1531,7 +1732,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6462fe9f-f6d3-4ea6-ba4c-7e1e22feaaa6/Lars-Erling-Livrud.jpeg",
@@ -1575,7 +1776,7 @@
     "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228635452-TD8HXP8YZNIQPVPFCRI7/Milj%C3%B8fyrta%CC%8Arn_Fresvik+Produkt.jpg",
     "localPath": "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
     "filePath": "public/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
     "assetType": "image",
@@ -1593,7 +1794,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/023d763a-056e-4d63-9125-90225b9624fd/New+Logo+Design+2024+-+Made+with+PosterMyWall+%2815%29.png",
@@ -1780,7 +1981,7 @@
     "notes": ""
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/425b8a7b-7d36-4709-b058-61a730bd2e74/Ragnvald+Grov+S%C3%B8rdal.jpeg",
     "localPath": "/assets/fresvik/images/migrated/ragnvald-grov-srdal.jpeg",
     "filePath": "public/assets/fresvik/images/migrated/ragnvald-grov-srdal.jpeg",
     "assetType": "image",
@@ -1797,7 +1998,7 @@
     "sanityReference": null,
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": ""
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228933067-LHLZ30AMNKXNVOYEUTGA/rampe1+copy.jpg",
@@ -2049,5 +2250,2826 @@
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
     "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428894060-0GTKTAY8QN20XFVDOADY/012EA3A01A484D6F8FB98E3FFB7F11BF.jpg",
+    "localPath": "/assets/fresvik/images/old-site/012ea3a01a484d6f8fb98e3ffb7f11bf-89343347bc.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/012ea3a01a484d6f8fb98e3ffb7f11bf-89343347bc.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "8254bb0f09b82317b9406563e0b11dc42643b852adf66a0a955fea551c474251",
+    "fileSize": 113104,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1747635721884-2CQFJA3H876XLWE60ZIO/1000024748.jpg",
+    "localPath": "/assets/fresvik/images/old-site/1000024748-b7ff43e043.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/1000024748-b7ff43e043.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "375fe4947c37d7a0bd7530b6dbc03b2060b85f6b4463056d8e106b33adf31b89",
+    "fileSize": 512198,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1747635709368-5D5OK0XZCHUMXD0KRLE2/1000024750.jpg",
+    "localPath": "/assets/fresvik/images/old-site/1000024750-95c1c49ec6.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/1000024750-95c1c49ec6.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "22fef7f62cb139328a4c4bbf188d80a3b556e61beb984f94b7c4fc5e059eae6f",
+    "fileSize": 559432,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b806d454-5edc-4d8a-a9d1-67dfb6b34618/1715599204491.jpg",
+    "localPath": "/assets/fresvik/images/old-site/1715599204491-06f69a318b.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/1715599204491-06f69a318b.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/kundeservice/faq"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kundeservice/faq"
+    ],
+    "sha256": "fb331a992fcbd4e8769434ef072e0f17ddb515a358799b3deac8939f7510f2ae",
+    "fileSize": 137059,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719842658617-JWM3CCE08BXLOYQPYV8C/1715599204829_upscale+2.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/1715599204829-upscale-2-346667b36f.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/1715599204829-upscale-2-346667b36f.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "b38ac8c1ccf52a42d1b95d1dec49f1865d625dbf74223b4586333a24c83111fc",
+    "fileSize": 142334,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719842660255-NLEIYO7M3SIMG7YTE0CE/1715599206722_upscale.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/1715599206722-upscale-2137d27afe.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/1715599206722-upscale-2137d27afe.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "69b47eded79438aab0a808b394b14b67c5bfa16002c91dd6334673adf5be6464",
+    "fileSize": 110874,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6d63789a-8276-4fa7-ac6e-3767cc054fae/1733820776326.jpg",
+    "localPath": "/assets/fresvik/images/old-site/1733820776326-534d12e99d.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/1733820776326-534d12e99d.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/kundeservice/faq"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kundeservice/faq"
+    ],
+    "sha256": "7576859da61ce484df9cf007badbf910b064680d36db843f96f4ad65f55c54d5",
+    "fileSize": 151764,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429031003-XGGG9MZ489LJVUEFG4ZF/20151021_174814.jpg",
+    "localPath": "/assets/fresvik/images/old-site/20151021-174814-2f8bb506dd.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/20151021-174814-2f8bb506dd.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "bde4c6e14f2711255aa85500df63e2b635b4293a090b43d659e851fd3621e74c",
+    "fileSize": 131602,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429033547-74PHTI297FVCW5BOQDQT/20151021_174855.jpg",
+    "localPath": "/assets/fresvik/images/old-site/20151021-174855-88e3f9957e.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/20151021-174855-88e3f9957e.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "dca7eb29a33b126b2d60c5f27eaf863f2b3b5e54e8f32783c2b776521251a8df",
+    "fileSize": 133166,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429036383-3L7FGARDK8VNH2F8FF78/20151021_174921.jpg",
+    "localPath": "/assets/fresvik/images/old-site/20151021-174921-3beb6a6c3d.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/20151021-174921-3beb6a6c3d.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "8fcc9df314dc2cbbe3e6c044964465ec61b91cf3f9c02161d5a5fc2fd288c8fe",
+    "fileSize": 133112,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428917647-9FCAF96MYRPUYUWGEYC6/20220616_152821_1.jpg",
+    "localPath": "/assets/fresvik/images/old-site/20220616-152821-1-44fd99581b.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/20220616-152821-1-44fd99581b.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "d2d7615cae6700660a9857aad5881a686d2e6fbd031ce08e1066e6ec4e6960d1",
+    "fileSize": 327260,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428912640-66XSOJ3HPG4Z8FWH4KB9/20220616_153035_1.jpg",
+    "localPath": "/assets/fresvik/images/old-site/20220616-153035-1-ca797d1273.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/20220616-153035-1-ca797d1273.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "7203fe519ff541cf2412d52689817e1d63f21899a8c57c8a423173ff7e45773f",
+    "fileSize": 138116,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428915136-BP8S6BJYKGO7KOCTWYP5/20220616_175155_1.jpg",
+    "localPath": "/assets/fresvik/images/old-site/20220616-175155-1-67567f4fc5.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/20220616-175155-1-67567f4fc5.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "01432173c63fa64f659f14f6ad7d82b63dee8c58346edbc713476c874cd6af5d",
+    "fileSize": 230460,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/ce3eb664-c398-48ec-bcab-3acefac67026/aaa.jpg",
+    "localPath": "/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/fresvik-pir-panel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-pir-panel"
+    ],
+    "sha256": "6140421f2b6b3818b2fdf2a800c450e0c5533113309efb87da0b52c8d26970bd",
+    "fileSize": 8578,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d1e8ab46-e86a-4e94-a140-75a4bf64054d/aaa.jpg",
+    "localPath": "/assets/fresvik/images/old-site/aaa-e88b7adba4.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/aaa-e88b7adba4.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore",
+      "/produkt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "18587fa08fdc921459e7e263c6ce9260f02b5fad7d4b255f2901f4a710138691",
+    "fileSize": 156258,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1eebf1d8-e081-49b6-b35d-51ca6400c18c/Agnar+i+Truck-resized.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/agnar-i-truck-resized-cf74378d40.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/agnar-i-truck-resized-cf74378d40.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "052257ae65fae42d4df9e4567a25a80064361d184dba3fc7e7a8346b8082409f",
+    "fileSize": 947499,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/97325d4f-52eb-4793-b596-69bbe7d3070e/alarm.png",
+    "localPath": "/assets/fresvik/images/old-site/alarm-805612f3d8.png",
+    "filePath": "public/assets/fresvik/images/old-site/alarm-805612f3d8.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tilleggsutstyr"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilleggsutstyr"
+    ],
+    "sha256": "23522ab6df02c64dba551b68c60a74d7f32dc31139ac5a64529c90dfba80928c",
+    "fileSize": 177592,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d04658e0-dce8-4c18-ba78-e00e6440b419/b12b5d19-2424-48de-bdea-c83b503c880c+%281%29.png",
+    "localPath": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1-0c402f4dae.png",
+    "filePath": "public/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1-0c402f4dae.png",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/frysetunnel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/frysetunnel"
+    ],
+    "sha256": "145af1898a33c29df6e4303fe31a4940a1b9d1432c11b6f729c9ab60ef91f11b",
+    "fileSize": 2698491,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241166915-Q47EXNO6K811P4RRIQL1/Baza+fryserom+-+2.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/baza-fryserom-2-0c918f6111.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/baza-fryserom-2-0c918f6111.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "d6ee82bc1fb908ffba1cf3fe18620448e64e8fefa17986278ec1090083fb5d10",
+    "fileSize": 83628,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241168185-ZJHDJOC716ZL092UK658/Baza+fryserom+-+3.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/baza-fryserom-3-07c5687883.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/baza-fryserom-3-07c5687883.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "cd669b08a13f97adb312439d12ee48c644441142f08172388ad99368e454e378",
+    "fileSize": 84072,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241168352-9XAEM8D0U1DJA7JIBNLP/Baza+fryserom+-+4.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/baza-fryserom-4-cb6ffaddb9.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/baza-fryserom-4-cb6ffaddb9.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/frysetunnel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/frysetunnel"
+    ],
+    "sha256": "5497d075705668345dab4d5e7732e7d26e1c1b61c07f98a93e214215faae3a87",
+    "fileSize": 171134,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502389209-3UTCBQ1FIN5OF22IYGKJ/Bjerkreim+Legekontor+2.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/bjerkreim-legekontor-2-15392c46d2.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/bjerkreim-legekontor-2-15392c46d2.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "9f71060117311fc24351ebd6ce1e28ec592a4b8989c7f678983ebcea862d2601",
+    "fileSize": 74780,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502390326-4VBRJ3Z96PQGL1361BHP/Bjerkreim+Legekontor+3.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/bjerkreim-legekontor-3-49a0ccc7a5.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/bjerkreim-legekontor-3-49a0ccc7a5.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "662ec977b4f86ee76f49d0eb240df4ce6d79dfb034feb940ca1940d146676f7d",
+    "fileSize": 50978,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502390704-UH15UGGZ9W6OZCPWPV7W/Bjerkreim+Legekontor+4.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/bjerkreim-legekontor-4-a2734bc915.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/bjerkreim-legekontor-4-a2734bc915.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "f548f2e11b5108a77a0100fdfe84410e0b7acfae0c3cfe60b927541f0f6bd61d",
+    "fileSize": 38724,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502391645-OIXSCC6IU0N5L8TQF94B/Bjerkreim+Legekontor+5.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/bjerkreim-legekontor-5-670f56525d.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/bjerkreim-legekontor-5-670f56525d.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "a3cd310f435fd78da979c464bf57f742b762074c00de085926baa0432e6d96c6",
+    "fileSize": 59800,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228660492-WD5GO7MOKHKGA07TMN91/Botolv+Hov+og+Knut+Hovland+i+samtale.jpg",
+    "localPath": "/assets/fresvik/images/old-site/botolv-hov-og-knut-hovland-i-samtale-278bace806.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/botolv-hov-og-knut-hovland-i-samtale-278bace806.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "5a54c9df815a13826dbeda790320b2a44d68e267ddd2f5a97bd6eb0f3308afd6",
+    "fileSize": 225160,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/cc88d57a-c424-4510-90be-ec193d188937/Box.png",
+    "localPath": "/assets/fresvik/images/old-site/box-a6bb1a9bd8.png",
+    "filePath": "public/assets/fresvik/images/old-site/box-a6bb1a9bd8.png",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "ebe4bcc426db31b50406ae93ab38079464f14664ba285c5714728334f1c67a1a",
+    "fileSize": 28270,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1700040185087-O7K1UNJLYM01IO9TVQT5/ce-logo-png-transparent.png",
+    "localPath": "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+    "filePath": "public/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "5b1170a00cc0cbef5a95003c900c70d453ec000d40e744a15f5e7e27c351fba1",
+    "fileSize": 24072,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/33cd3f9d-cf72-4271-8f61-52108209b9b9/D%C3%B8r.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/d-r-5b9c2c6401.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/d-r-5b9c2c6401.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/monteringsanvisning"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/monteringsanvisning"
+    ],
+    "sha256": "91319021684ff807c94afa06938aae94211a5c7e7f3365c543c1fc93fdf48619",
+    "fileSize": 10115,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6a3c9da6-49a6-479e-a5bd-efda8fe4cb86/Door.png",
+    "localPath": "/assets/fresvik/images/old-site/door-88f8c9af16.png",
+    "filePath": "public/assets/fresvik/images/old-site/door-88f8c9af16.png",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "a311dfae360a3ec0333f26b3de92feb9e0f92e991311a05153013e7077fac9cd",
+    "fileSize": 12070,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428995765-ME1PI8W9HRL6MCAU66ZH/dorer2_web.jpg",
+    "localPath": "/assets/fresvik/images/old-site/dorer2-web-23779e7371.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dorer2-web-23779e7371.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "7d00e85d92e0d18600ea7a00446b669e6017675b7df13060d79fae5fad9f381f",
+    "fileSize": 172110,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428997457-TEHF7FR3WDDJZ7W6RK2P/dorer4_web.jpg",
+    "localPath": "/assets/fresvik/images/old-site/dorer4-web-67d1d45a02.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dorer4-web-67d1d45a02.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "d1460cc213192380d362afed801f869ca67a284b0d65b125dbd83d02cbd734a6",
+    "fileSize": 144694,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428999154-2BWBQI0ECOGXQIWK0RYS/dorer5_web.jpg",
+    "localPath": "/assets/fresvik/images/old-site/dorer5-web-fa6b64e0ea.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dorer5-web-fa6b64e0ea.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "9c72e98f723607259937c9792e3907d813e2e0bfa707ab64351160dd08a80be3",
+    "fileSize": 152704,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228709048-YJA8KL8OWCDOM39IQUKG/DSC_0017.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0017-00d9b573ca.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0017-00d9b573ca.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "22b013356406244da1f8d0e2a7b4f3dde92e46cd57fb636ae75739175c6c8d16",
+    "fileSize": 63400,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228706844-JE0C0GGGO9KY141PXGG1/DSC_0023.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0023-fadbfdca9f.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0023-fadbfdca9f.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "c86be584e6e45f7b6d01e3d27cc7ea65f6036e0fb007eb22501265fc916da03f",
+    "fileSize": 95978,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228704296-8NF5VZ6PITJPXA8CD4MN/DSC_0031.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0031-0b16638933.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0031-0b16638933.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "142cb48e169f8ccfb9fd34fc4105949a8ec329c49dece0291f207aad744798e1",
+    "fileSize": 87802,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228741320-FW52W2TE3MYLWE0XBR2J/DSC_0380.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0380-3840998320.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0380-3840998320.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "90dfa45adddd43452993b074d600d44a55c6203c4bf3cf8f4e62d1129980b35c",
+    "fileSize": 242530,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228746440-GM6P845S3F8QS653OLJR/DSC_0395.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0395-c70ee8133a.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0395-c70ee8133a.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "4e8b8ef5afeaa029aa9a4f1d8d71277b79222f3549e568d88b96efcef14886d0",
+    "fileSize": 539746,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228749751-S0RH5MR24FDT2QD0OMZZ/DSC_0397.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0397-74b7033df9.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0397-74b7033df9.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "221bc48ce0cc587805f8659ad0f8d232370eb17eb459199fd96b97391066aa65",
+    "fileSize": 214130,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228752695-X1C5725R4SX1213OGEGT/DSC_0401.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0401-0c7ef36ef7.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0401-0c7ef36ef7.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "b51a8a86d3c5a5727c8bc5466faa4b19075b05fdbe6463358ec927be8b6719cb",
+    "fileSize": 148232,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228755560-SQHVVYA2H66SMWSX27A1/DSC_0406.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0406-9457a9907a.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0406-9457a9907a.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "ea4d9a55d6d1a1b26acb3ad9a7deb9f1e7a54c1d22831ee265335badc9e3a9a1",
+    "fileSize": 170034,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228758366-2UDEHPZWUD8CEDHH2HPP/DSC_0449.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0449-6347cfcb2d.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0449-6347cfcb2d.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "7ba0bb9f70fbdeccc30a42d1af3d0f2c741002c50c5ee3f1ab20d14703732bce",
+    "fileSize": 99098,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228761754-YPUMU2FXOAG1GQTVIVZV/DSC_0458.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0458-a3593b942b.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0458-a3593b942b.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "7a830830a12e81a4036123656f98a59ac378935bd5dd780b6d748ed6c5177418",
+    "fileSize": 207232,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228764774-FU142KT3I4N5H0DZEJVJ/DSC_0459.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0459-4318cf2efe.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0459-4318cf2efe.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "df4fbdb7a6cf301aee6534b9c8732dbafe4dabaa0cdde05f6b8e31e4846fb021",
+    "fileSize": 225388,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228697078-V871P2HU0WCAMCJG2FAP/DSC_0611.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0611-e139cd303b.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0611-e139cd303b.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "e77ad1a14b967d4332b6353c123ca748ebad504afb539891155eb40cd882ca49",
+    "fileSize": 47954,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228699377-Q71BFKWC708PF7ZVKXT6/DSC_0613.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0613-fb0f818f60.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0613-fb0f818f60.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "ce3893fe554f3303c22a51e218f19fb1d7a873ce0dfadab353342d1bf5d9350f",
+    "fileSize": 34372,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228701386-LRBB83OKO8BDBSXVK1G2/DSC_0615.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0615-fc2b77c764.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0615-fc2b77c764.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "e5dce85bdaf1ebdb216d90187e1229347d8fb9a4fdd30f614f18146a121c16ec",
+    "fileSize": 33310,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228712034-DIMXPHBVICZNC92SN2P8/DSC_0637.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0637-2bde136376.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0637-2bde136376.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "78e0d66360f4f938f0e22f6c582b490bfda9e6083edbcbc7dbd266cc87f98e3a",
+    "fileSize": 92566,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228714255-W5NFYDA81J1I2KZCVSHN/DSC_0644.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0644-a3599f072e.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0644-a3599f072e.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "07a72d7cd4e225bdf422c84470a0b0ee9d14b4c6382535619675ebb196a53ae2",
+    "fileSize": 113624,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228716958-KJLXBJ7H16ZNEIS6DJG7/DSC_0648.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-0648-593bf6ffb3.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-0648-593bf6ffb3.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "9f8dba81f42ceac4516240ccf56ae0523288ebdd2256fbd06e50b6f15d2c24a2",
+    "fileSize": 131276,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428985050-AIFF7GJ0HDZV62ICT58R/DSC_2482.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-2482-6376a08a05.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-2482-6376a08a05.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "84bf45e5e58a01dab69a931baed1717f7f2537623fe4839609af946d8c39594e",
+    "fileSize": 172388,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428987630-CK5V4ACMWFCH15BVAF3M/DSC_2671.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-2671-bd36a37fac.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-2671-bd36a37fac.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "04938398224783634066072861896c000857f1c177fbf318d0d3d8ec469e129a",
+    "fileSize": 137332,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428990248-VDVDQOHHA0Q06N40YCEY/DSC_2677.JPG",
+    "localPath": "/assets/fresvik/images/old-site/dsc-2677-27266e77f0.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc-2677-27266e77f0.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "8b3163627bcd147eddf09a3766cd1a795aaea023a5e08c0164b38097dda539ea",
+    "fileSize": 157498,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428892083-5EKMCHELNT4XCV5DSQ0D/DSC03067.jpg",
+    "localPath": "/assets/fresvik/images/old-site/dsc03067-556655ed95.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc03067-556655ed95.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "f7132d23554d90447e41fe87f2cdeedde3d48295c18bc12c37327d1d580a984a",
+    "fileSize": 386872,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428896334-EAKV7RWRNAEU1XH4JOKO/DSC03068.jpg",
+    "localPath": "/assets/fresvik/images/old-site/dsc03068-6b5d38613b.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc03068-6b5d38613b.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "544ac89d13c9ad2c004cce5bf59ef185b9246abcb4751ae236180dd438012361",
+    "fileSize": 350132,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428898634-GM2EFO1MC9JYBL5MNJEU/DSC03069.jpg",
+    "localPath": "/assets/fresvik/images/old-site/dsc03069-3979d8cacb.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc03069-3979d8cacb.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "aff2898fa6757021bc45300be75aa70074c9e2e0a511ca438b4790ba3aae4c87",
+    "fileSize": 353764,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428901082-ZUJFDNPKO2OAIMB34T3O/DSC03070.jpg",
+    "localPath": "/assets/fresvik/images/old-site/dsc03070-9fdfd3fbdd.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc03070-9fdfd3fbdd.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "b99f47082f7577ba81b39f060f8cb6d07c440950bf3fabee8eca75d4730606ce",
+    "fileSize": 400972,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428903320-42FUUB7JS00A72SXHZZC/DSC03071.jpg",
+    "localPath": "/assets/fresvik/images/old-site/dsc03071-873cd2675b.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/dsc03071-873cd2675b.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "b43bd05921e4cfa3e45b099154dfb7ec598c3ad785978efc1843754c67e79768",
+    "fileSize": 329182,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/17f574d6-7d71-483d-ba5b-14108ce48d91/Elektrisk+port.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/elektrisk-port-ba22e68a48.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/elektrisk-port-ba22e68a48.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/monteringsanvisning"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/monteringsanvisning"
+    ],
+    "sha256": "fc372f9371dd41af2fb63d23602402915a5ced653e2405f1170e2393e5ccd38e",
+    "fileSize": 288990,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/eff3414a-e8af-4c05-b9d8-6d2d1aaf6c11/element-small.png",
+    "localPath": "/assets/fresvik/images/old-site/element-small-db88e32311.png",
+    "filePath": "public/assets/fresvik/images/old-site/element-small-db88e32311.png",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "255df2cda80060b719f747f7573f94f44c67e8a6711fd756d5827e7115766679",
+    "fileSize": 3738,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5a6e06c4-282a-434c-8ba5-3d15e713ab30/Fasadepanel+Nortura+Herland.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/fasadepanel-nortura-herland-cb4ce4b3a3.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/fasadepanel-nortura-herland-cb4ce4b3a3.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/fasadepanel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fasadepanel"
+    ],
+    "sha256": "ada5a9240a1c412fc0bf25f90e53e411411cb97999285b6e71617a63b9b30b90",
+    "fileSize": 63666,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/08771da3-ee6f-416a-9369-ff384ef62aba/fermod.png",
+    "localPath": "/assets/fresvik/images/old-site/fermod-0fb1d76852.png",
+    "filePath": "public/assets/fresvik/images/old-site/fermod-0fb1d76852.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tilleggsutstyr"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilleggsutstyr"
+    ],
+    "sha256": "960c8141308f551f800f5629e76cec23df95debef916ef9e09a037e9aa46dd09",
+    "fileSize": 128814,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/95302e49-96ee-4a63-b4b8-71c8b5fde81d/file.png",
+    "localPath": "/assets/fresvik/images/old-site/file-f5f844b125.png",
+    "filePath": "public/assets/fresvik/images/old-site/file-f5f844b125.png",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/fresvik-pir-panel",
+      "/produkt/kjole-fryseportar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-pir-panel",
+      "https://www.fresvik.no/produkt/kjole-fryseportar"
+    ],
+    "sha256": "d8ee1b50c9f3cd9a1a7d268c33a7dcf54513e75e5c0fc6aa282f53927790ccdf",
+    "fileSize": 15802,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428976512-W88QQCEDX0AI76ZA7E9F/fiskehallen2.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fiskehallen2-14ed360ecf.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fiskehallen2-14ed360ecf.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "8e2f1120c20b66776d3fcbda8e8aeb7a3fd10dcc812ea14d388aba13d80c3355",
+    "fileSize": 8534,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428977824-1SLJQKUEMWQWZV9TYSR2/fiskehallen3.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fiskehallen3-97fbee8985.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fiskehallen3-97fbee8985.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "a7a2527b3deb2097cd7eae634ddfe2e24b09c32e2d0c4ac426201c91b020a68b",
+    "fileSize": 9328,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/13922f08-1a26-4996-98ca-874c87c1d3cb/flake.png",
+    "localPath": "/assets/fresvik/images/old-site/flake-bbf00cfde8.png",
+    "filePath": "public/assets/fresvik/images/old-site/flake-bbf00cfde8.png",
+    "assetType": "image",
+    "usedBy": [
+      "/firmainfo",
+      "/kundeservice/faq",
+      "/produkt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/firmainfo",
+      "https://www.fresvik.no/kundeservice/faq"
+    ],
+    "sha256": "27e20960aaad940d294ba861e9d5783457caed68982d13fb67abcc9b1c42c54b",
+    "fileSize": 18171,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/flake-black-3b186da893.png",
+    "filePath": "public/assets/fresvik/images/old-site/flake-black-3b186da893.png",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore",
+      "/produkt/frysetunnel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore",
+      "https://www.fresvik.no/produkt/frysetunnel"
+    ],
+    "sha256": "ce537f1b1c47bc74a4493b0a0040dc2ad4b29ca9a026e379ce0bc2e5941f995a",
+    "fileSize": 11828,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719344561991-BLTT0NHSX83F2YSZFCCB/FP+Dyreparken+1.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fp-dyreparken-1-d75e447c80.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fp-dyreparken-1-d75e447c80.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "6d69af5f1c3b0aa20688aeb9f3bcb5f48b94ca42e3df7a172f84f6a22d8230bb",
+    "fileSize": 330678,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228662503-DBOWOMM4YXZSZ5VTAZYF/fr%C3%A5+produksjonen++Kopi+%28002%29.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fra-produksjonen-kopi-002-6d4bcc22a2.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fra-produksjonen-kopi-002-6d4bcc22a2.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "9ca10d9b615866f14b0e09a34f79b0ab43051d3c791f34c6ccc874907d8fba14",
+    "fileSize": 280606,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429007482-38GYZFLR0B7XSP7M2MV0/Fresvik+aks+montering2.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-aks-montering2-1b72163da7.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-aks-montering2-1b72163da7.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "a7eff2d06e7f03b9cb7a2593b5b8eb0df4d370309b76b06c172f2382a6bf6ae3",
+    "fileSize": 299076,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5aab7eed-051d-445b-b821-a6d81571f361/Fresvik%2Baks%2Bmontering2.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-aks-montering2-4f3973c999.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-aks-montering2-4f3973c999.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt"
+    ],
+    "sourcePages": [],
+    "sha256": "5d4402b40af38bb9ce06d0cf288ff4fadbeff133fcf2fd2686b46b2d85af4acd",
+    "fileSize": 138633,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429009885-M28TI1L6MX1GR54W2QXI/Fresvik+aks+montering4.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-aks-montering4-969d79d1cf.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-aks-montering4-969d79d1cf.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "3e26fe890f31ac08b00750cf011c1e821ca2d7adb6f8f137fc96d3635e2c8375",
+    "fileSize": 356418,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429012125-I6FUPFIY7HBPT712HTP8/Fresvik+aks+montering5.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-aks-montering5-55466bac4e.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-aks-montering5-55466bac4e.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "267f46d8da2b886b6454e49b81c4abb0132db1f1007c00c0f5f9b33a860b9e10",
+    "fileSize": 242518,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/45de53c6-9a74-44c2-9a4d-c8e9563832aa/Fresvik+fra%CC%8A+BJ%C3%98NNSTIGEN+2017+SS.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-fra-bj-nnstigen-2017-ss-1cbf932fbe.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-fra-bj-nnstigen-2017-ss-1cbf932fbe.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/stillingledig"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/stillingledig"
+    ],
+    "sha256": "77249020a93f47b77ec4dc274823b3ac12eb9579eab0c06f4260c42488558eea",
+    "fileSize": 413180,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b405b8f4-c0fa-4090-a6a3-3af3f5ded4e7/fresvik-fryse-dor_ny.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-fryse-dor-ny-7ae5f37a18.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-fryse-dor-ny-7ae5f37a18.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt"
+    ],
+    "sourcePages": [],
+    "sha256": "bec578d4f0650390e4793e07ef44573fd9f2bdd46903b1db7eab0941be715ca4",
+    "fileSize": 110182,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e0a96aed-bc93-4a20-95d0-cd042af1bb3b/Fresvik+Hengsle.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-hengsle-57d53fdba8.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-hengsle-57d53fdba8.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/frysetunnel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/frysetunnel"
+    ],
+    "sha256": "eb77800e45d226ea9a462f25e25b303483c0e923a2a8311395513ca1a5d7d8dd",
+    "fileSize": 342086,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228654830-VB9M9WLG831YMGR2GCZ4/Fresvik%2Bkj%25C3%25B8lerom%2BIvar%2BSlinde%2B3.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-kj-c3-b8lerom-ivar-slinde-3-b950981755.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-kj-c3-b8lerom-ivar-slinde-3-b950981755.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "7bfe3688ae9e05344cdc1f521099fda7b9e4d6b4511633a5fd5f955c28fd879f",
+    "fileSize": 106112,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228651427-NP3T0654CEOJJ09UWGRY/Fresvik%2Bkj%25C3%25B8lerom%2BIvar%2BSlinde%2B4.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-kj-c3-b8lerom-ivar-slinde-4-35f5fd765d.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-kj-c3-b8lerom-ivar-slinde-4-35f5fd765d.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "60a6f350a856b366cea43dfa345dcd6f55e70837b10ec0b74c2c6976356c1c90",
+    "fileSize": 141478,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228653068-NUVVKGK1INWFMVOLGOFD/Fresvik%2Bkj%25C3%25B8lerom%2BIvar%2BSlinde%2B5.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-kj-c3-b8lerom-ivar-slinde-5-67ce3390fe.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-kj-c3-b8lerom-ivar-slinde-5-67ce3390fe.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "f32c0c784a291c80dc9a067b6be06effd884a496907196ed6a34599cb5da3b87",
+    "fileSize": 75424,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1702899798848-WIS58GFWM5ICYNBVFAWS/Fresvik+Produkt-5.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-produkt-5-0db0e30bd6.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-produkt-5-0db0e30bd6.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "b9a6f53a2fe42b291a03b41e0d544e1b226efb29f9580671cebb25def61ec6d7",
+    "fileSize": 673524,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/fc80740a-a426-451d-ac44-f30862c90003/Fresvik+Produkt-6.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-produkt-6-b5c511d49c.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-produkt-6-b5c511d49c.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "234e84b86cdf91511b5b8aca5fd2775248437f8fdf6369d428c009deefbd7d0f",
+    "fileSize": 532132,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1f77dd84-a862-4507-8ed4-f6c0e6c8e2e5/Fresvik+skyveport.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-skyveport-cedbd2620d.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-skyveport-cedbd2620d.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/kjole-fryseportar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/kjole-fryseportar"
+    ],
+    "sha256": "58ba8ce3fb23f72b0e76a7065314a11a8ef6aaac2b88d56d11f21278987ff6c3",
+    "fileSize": 97268,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1698216874163-KLN7EVX53DHNZV3JNUXG/Fresvik+Toppledere+sogn.no.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-toppledere-sogn-no-af42ffcb02.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-toppledere-sogn-no-af42ffcb02.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/stillingledig"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/stillingledig"
+    ],
+    "sha256": "4870eb803af09131b9d368c7e482040492d8131c30fa2c468f53eac5279729ee",
+    "fileSize": 665940,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/edb3073f-4d52-4f2b-bcc8-eccccb3d364b/Fryserom.png",
+    "localPath": "/assets/fresvik/images/old-site/fryserom-ae1ec6822f.png",
+    "filePath": "public/assets/fresvik/images/old-site/fryserom-ae1ec6822f.png",
+    "assetType": "image",
+    "usedBy": [
+      "/monteringsanvisning"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/monteringsanvisning"
+    ],
+    "sha256": "3dc2dd1210515cc889aca1e1e2b362462a8667d825f7625fdd3755c7690c9f81",
+    "fileSize": 215816,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1734082729594-KTDB3CX6KXLCG0K5DW13/Fryserom+OBS+Alna+4_red.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fryserom-obs-alna-4-red-2d87e8b63a.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fryserom-obs-alna-4-red-2d87e8b63a.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "3c6801fc8b4713271fa80a83ff06576187ad91412c1dbc941ba38dcd55839256",
+    "fileSize": 276360,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1734082731057-SXEDBLFD5I91ZVZ449GU/Fryserom+OBS+Alna+5_red.jpg",
+    "localPath": "/assets/fresvik/images/old-site/fryserom-obs-alna-5-red-f01c79a8c6.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fryserom-obs-alna-5-red-f01c79a8c6.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "1a130c871235bb82f9568fe7601ae9cf067b57dd5958e35d0ad6d1e62113446b",
+    "fileSize": 101976,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d7b7a341-353c-4260-afe7-8858187c72fd/Fryst+Laks.png",
+    "localPath": "/assets/fresvik/images/old-site/fryst-laks-0ce60abbff.png",
+    "filePath": "public/assets/fresvik/images/old-site/fryst-laks-0ce60abbff.png",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/frysetunnel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/frysetunnel"
+    ],
+    "sha256": "fa08b1dd80c8a831ea7f7b462da65140863b3490445104b9427924fc3129cf1c",
+    "fileSize": 3834375,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/c1a5b7bc-5c62-421d-931a-65dcb0cc86fd/glassplate.png",
+    "localPath": "/assets/fresvik/images/old-site/glassplate-49d3b39833.png",
+    "filePath": "public/assets/fresvik/images/old-site/glassplate-49d3b39833.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tilleggsutstyr"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilleggsutstyr"
+    ],
+    "sha256": "adf6144a61c9e8a79de70115b645ea50a6d1cba41ffd8328c223fea6cd45b30a",
+    "fileSize": 67074,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/61ebde5c-0774-4dc1-92c8-4ed21efb4114/Gyda+B%C3%B8thun.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/gyda-b-thun-3ffab6f574.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/gyda-b-thun-3ffab6f574.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "db6983ca6e9b17d03741bd120379c130d3582fceacde720b88c4ef0657d701a5",
+    "fileSize": 318592,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429000751-UHD6UZU92HWPNAEYQB9F/haandtak_web.jpg",
+    "localPath": "/assets/fresvik/images/old-site/haandtak-web-7f81b0c34f.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/haandtak-web-7f81b0c34f.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "5816b316da0275c9ed3096e8124b8a7b1fffd0a6f36510b6339c84b6cfe6b098",
+    "fileSize": 91954,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/90003639-b348-4c7a-a713-286ffa59c3e3/IK.png",
+    "localPath": "/assets/fresvik/images/old-site/ik-2e5033431e.png",
+    "filePath": "public/assets/fresvik/images/old-site/ik-2e5033431e.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tilleggsutstyr"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilleggsutstyr"
+    ],
+    "sha256": "5d18c125707f4c0197d7964fb15939ab4f0f2d8ea47452ca0860915989973644",
+    "fileSize": 82506,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429060062-EZP0IEJNN4BIRSLEWVOG/image-asset.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/image-asset-1d4ca4e9fd.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/image-asset-1d4ca4e9fd.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "cb1653a1ccf6d35c23638241102e3c8c0a3af366f2abbde205ffd8de25ef69e8",
+    "fileSize": 10300,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5736240f-7b74-4bca-a556-1c4cf313614e/image-asset+%282%29.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/image-asset-2-59c753eb14.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/image-asset-2-59c753eb14.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/kundeservice/faq"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kundeservice/faq"
+    ],
+    "sha256": "fa3c0d104817aa49ee58f68dddda00faf4861d02624712db16c4d67dc931f3e8",
+    "fileSize": 52518,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3ab6632b-c2d4-46ea-9f59-3674e266916e/image-asset+%284%29.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/fresvik-pir-panel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-pir-panel"
+    ],
+    "sha256": "91476c0417c3a69b658ceb50de2bfa3672679883cc68a737295431778fbda740",
+    "fileSize": 19754,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/image-asset-4090603816.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/image-asset-4090603816.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "048a44a1e3b83990583df85771402a4c70d55c5ecd2cede951791b2c7af793e1",
+    "fileSize": 144888,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429071870-L0WHJTM68H0TEWUY1THW/image-asset.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/image-asset-4ee32b3e77.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/image-asset-4ee32b3e77.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "e3a3589dcac0e7e97018b6f2403190816e6f15b04f26f6757db170f159b5a122",
+    "fileSize": 33190,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429073960-NR2S2B7L2KR7DVFWMXLP/image-asset.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/image-asset-5bcf6cf645.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/image-asset-5bcf6cf645.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "3a505fe7eb3e5921d68d5b0090c348d62a8b57d31d10a9caa0411f4655f5423e",
+    "fileSize": 12224,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429056640-ZMCZ31HV3SFGVQ9T0U99/image-asset.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/image-asset-72273e78e1.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/image-asset-72273e78e1.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "b26013943d837a43ed194274cbd88e2f53e2dccd99e17f04d534bbc7648108a0",
+    "fileSize": 18008,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429058256-K0RSTJ6L6L3XCP9WMN29/image-asset.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/image-asset-fb046a8b70.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/image-asset-fb046a8b70.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "7e416754ab4d25a11d0ff72e498c7a727bfed0d2e605281544853324ade76b1d",
+    "fileSize": 17080,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428924464-DCQYSEE365PEUI0VLR5W/image002.jpg",
+    "localPath": "/assets/fresvik/images/old-site/image002-0cccfb9d1c.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/image002-0cccfb9d1c.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "1b64e8483c8fcdb30d5a2229e733023833606f09f15e4cbe9428ad0c54b788fa",
+    "fileSize": 119568,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428926428-PU6L6AB78V48NR3GPHGS/image003.jpg",
+    "localPath": "/assets/fresvik/images/old-site/image003-ae909e6bb8.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/image003-ae909e6bb8.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "de2c2e6bcf59f4fd9dc445ca5bb908c8f1c8e75a2715c9e943dbe5c37239e720",
+    "fileSize": 220934,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429021146-K1P64FHGBQD105579TXJ/image3.JPG",
+    "localPath": "/assets/fresvik/images/old-site/image3-1dcfcdfc38.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/image3-1dcfcdfc38.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "1870eef383c816c798689fc64f0e3954177f0f3e3d1aa92d7e3cb8a048d11259",
+    "fileSize": 19958,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429022576-B013O3TGMD1E1EBAO211/image4.JPG",
+    "localPath": "/assets/fresvik/images/old-site/image4-ed22cf6c20.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/image4-ed22cf6c20.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "25cd91c003bb7217770315f7c44ffdb2f00afbc639625b8c20f42b38552901c0",
+    "fileSize": 11588,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429023872-3WOT3ZJ3AS3XDD2FXJWR/image7.JPG",
+    "localPath": "/assets/fresvik/images/old-site/image7-9d70827c73.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/image7-9d70827c73.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "f08e4e70f540adae7ba1b17fb1336a6c854be46a17e46ee4b5ae2f1960232572",
+    "fileSize": 12354,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428937244-T85VI6K03CHGZ7QX22W7/IMG_0650.JPEG",
+    "localPath": "/assets/fresvik/images/old-site/img-0650-b498a58520.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/img-0650-b498a58520.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "7476e3f019a9350833ef96ab6998ed9607928c6b452adf2098d93a7ff4e46c9a",
+    "fileSize": 222814,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428939486-621BV560KS8AVNOXEKH2/IMG_1340.JPEG",
+    "localPath": "/assets/fresvik/images/old-site/img-1340-a8752cb661.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/img-1340-a8752cb661.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "90634a3419000fcca26f3099e3aa300c4b4cf730eb476c88387d3c31651c93bd",
+    "fileSize": 249158,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428941554-6U1B7ONO2I0O9EEWVBCX/IMG_1679.JPEG",
+    "localPath": "/assets/fresvik/images/old-site/img-1679-ee1a28ad1e.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/img-1679-ee1a28ad1e.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "75534f45daaef38c3b9ae9afe6c16d5ef283cc98956a535e7de49007ddc04344",
+    "fileSize": 298672,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228777025-GH0LQ8SA6E9RR4W6ZLAG/IMG_2472.JPG",
+    "localPath": "/assets/fresvik/images/old-site/img-2472-5dfc842bb7.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/img-2472-5dfc842bb7.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "66c457927bbd4ec0bcc5f19891711eeb183bf91396926b449e0fab0fca415b95",
+    "fileSize": 664926,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228779523-1S9X43I5LBTWUIYMTIYT/IMG_2473.JPG",
+    "localPath": "/assets/fresvik/images/old-site/img-2473-693aad957d.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/img-2473-693aad957d.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "884105f25f3d44a86b0658881f68ca368710f3541785a2dbe4673cd022d1476f",
+    "fileSize": 461648,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228781849-7PGSWCYLI5TC5VG91FKM/IMG_2474.JPG",
+    "localPath": "/assets/fresvik/images/old-site/img-2474-bc5b1ca8ce.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/img-2474-bc5b1ca8ce.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "5672c58acf6c48e5d4782be57c74e0b9fb4c7368a1d67b3c6e969fa4b88a8424",
+    "fileSize": 230778,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228784794-E7CZJCAA0OO4Q70T27VS/IMG_2477.JPG",
+    "localPath": "/assets/fresvik/images/old-site/img-2477-32462c1c90.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/img-2477-32462c1c90.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "ffcdcb515c01bdbdb46eaa68f2842f2ccd98d3178965c855684a745081aa471a",
+    "fileSize": 510362,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228787022-EF1CUO4P72Y6ZGKDS4UD/IMG_2481.JPG",
+    "localPath": "/assets/fresvik/images/old-site/img-2481-a7cc043e3b.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/img-2481-a7cc043e3b.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "91b3e969854d6f3ce7cbe4f78274874796ce044dbb8a90136fa3a974f4bf48b1",
+    "fileSize": 211338,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428889785-3XY9GD19TMWZZX22VU8Z/IMG_4862.JPEG",
+    "localPath": "/assets/fresvik/images/old-site/img-4862-2f840ea519.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/img-4862-2f840ea519.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "b5dcba74bd84d7565b1631bfc7a60838cf042dfb4d2d103bf7d9c10ddf6b7fb3",
+    "fileSize": 737508,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428906446-P9NAWX9RWAGJ1N90OAZ5/IMG_4867.JPEG",
+    "localPath": "/assets/fresvik/images/old-site/img-4867-bf46ca70a7.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/img-4867-bf46ca70a7.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "b97a85241c68f35969e28e9cdd90cab0ddaa247858707eaf1412da651910712b",
+    "fileSize": 583882,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428928604-PO4V3C5W42U9QQ70YG1T/IMG_6262.jpg",
+    "localPath": "/assets/fresvik/images/old-site/img-6262-7fe02e1c0b.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/img-6262-7fe02e1c0b.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "dfab5f78d6facfba82add73bd773c8d813f7b4dd7af6db8cb3c94950f2b947db",
+    "fileSize": 387148,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428930606-RKWOL8R4GP65HOZ6SCEW/IMG_6263.jpg",
+    "localPath": "/assets/fresvik/images/old-site/img-6263-356dfec01d.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/img-6263-356dfec01d.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "39f0860aa8439fb3a92e328f2654d57e280f951c6f203752da498e1d70cf939e",
+    "fileSize": 239018,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428969676-PWB8O8WFTC7ZUNCH8QKM/IMG_7326.JPG",
+    "localPath": "/assets/fresvik/images/old-site/img-7326-a7f540f769.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/img-7326-a7f540f769.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "70ae85c2100c50202b9144eb896a6629cf8f326ed2b569bfd25b0d6f5b0a5694",
+    "fileSize": 121498,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428947506-E2RZ7M6AJLX1T5O1BSIU/Innvendig+_m%C3%B8bler_kl%C3%A6r.JPG",
+    "localPath": "/assets/fresvik/images/old-site/innvendig-m-bler-kl-r-7ee2829374.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/innvendig-m-bler-kl-r-7ee2829374.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "912e1192fcd13f8e0ea8279b4fb2e1693cbf726fb356ccd51610b0b64f2b7281",
+    "fileSize": 98170,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428949201-V72TX1IVU3JZ0578SZEP/Innvendig+port.JPG",
+    "localPath": "/assets/fresvik/images/old-site/innvendig-port-f20899ab4a.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/innvendig-port-f20899ab4a.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "0f562d679bd152664d36c7669345ad4f1722241c7a905501e3ce033bbc47195c",
+    "fileSize": 75366,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0ca2b5b0-b1dd-43b2-ad60-2e41bc82682f/John+og+Ha%CC%8Avard-2-1.jpg",
+    "localPath": "/assets/fresvik/images/old-site/john-og-havard-2-1-ab95ada79b.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/john-og-havard-2-1-ab95ada79b.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "5535be3eb59c03213c6f6f03bfbfc187039120b8bc9364a505f58a5ab3401e4a",
+    "fileSize": 224624,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820353677-2DLGZW39WPXSI4WPV61F/Kiwi+Otta+2.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/kiwi-otta-2-bcce8cf47d.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-2-bcce8cf47d.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "237eea9f7855a6a826242765b2452ff75fe91f6d3402baa1c10259701cfc31d4",
+    "fileSize": 513578,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820355642-WX24TQEMCJ8SN6VMORAB/Kiwi+Otta+3.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/kiwi-otta-3-91dee182be.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-3-91dee182be.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "d9cb52fb13a4777b7822c3b59134d0dfbbab62b1ee5465c3706801bc56b5cee1",
+    "fileSize": 370524,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820355371-QE3LDA1RLTM2JFU3AAQD/Kiwi+Otta+4.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/kiwi-otta-4-dea768e669.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-4-dea768e669.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "053ca17075cdb220709ba9e1835c92072622d4e4f2a42273452dd543509a0e7f",
+    "fileSize": 63380,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820356759-43HHQ1M3U6ER2DH14XSP/Kiwi+Otta+5.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/kiwi-otta-5-9a1569c04c.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-5-9a1569c04c.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "3941c6550c2176103f02eb5e46d4a9b75ced6784275312a0c9e0bb8bd2c10ebe",
+    "fileSize": 381860,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820357273-ESYVYOU6F88HBC6GCB91/Kiwi+Otta+6.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/kiwi-otta-6-374399c9c5.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-6-374399c9c5.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "66e86ffe5afa208fd0a4ee5e54ea30171d8adec4dfaf4c7f6dc95c8def3b8736",
+    "fileSize": 514390,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820358481-PTPPIHUT8L0UKJM41DUH/Kiwi+Otta+7.jpg",
+    "localPath": "/assets/fresvik/images/old-site/kiwi-otta-7-09c22d5667.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-7-09c22d5667.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "459d461c7a9da0bf38761f6f2c3a0868175c985aec07675b2499415041f5b5d9",
+    "fileSize": 707748,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1742460549482-HKLIKAJBX1RFGR000CFX/Kj%C3%B8lerom+Bunnpris+Volda+1.jpg",
+    "localPath": "/assets/fresvik/images/old-site/kj-lerom-bunnpris-volda-1-29c0ec8f7e.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/kj-lerom-bunnpris-volda-1-29c0ec8f7e.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "775b586ea62bba08e9b2c3089e741fc5d449381d6e7540de0237e89425b18900",
+    "fileSize": 375992,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1742460541335-2LVVCJP7J74G1E653QTT/Kj%C3%B8lerom+Bunnpris+Volda+2.jpg",
+    "localPath": "/assets/fresvik/images/old-site/kj-lerom-bunnpris-volda-2-d21d3cb590.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/kj-lerom-bunnpris-volda-2-d21d3cb590.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "a208561f64d09edbb94c02bb8c563043a65c50fd309fe3ad64df58bd225935a8",
+    "fileSize": 245534,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/ad4e5e8c-1d47-4b54-aef7-ed7c423a5755/Kj%C3%B8lerom.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/kj-lerom-c7897dab06.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/kj-lerom-c7897dab06.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/monteringsanvisning"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/monteringsanvisning"
+    ],
+    "sha256": "e42f513f5d98661284a4f637c62ee7fc858fcff5d7998e62dfc21c186bf6fc40",
+    "fileSize": 45169,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/9ad0d3fc-c1d2-4e24-b22d-5fa4ff11ae87/Laas+Fresvik+Skyveport.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/laas-fresvik-skyveport-217ddc424b.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/laas-fresvik-skyveport-217ddc424b.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/kjole-fryseportar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/kjole-fryseportar"
+    ],
+    "sha256": "bb87d547e57b806e174648fb6ec99fa483807ec904791ae5aa5e76891c3fab01",
+    "fileSize": 322250,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/c59a56fc-ef6d-4b0d-b533-66f9837645cc/Logo_Orginal.png",
+    "localPath": "/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
+    "filePath": "public/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/fresvik-pir-panel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-pir-panel"
+    ],
+    "sha256": "1fb8c9fbc9b08f42939890e8f29fa678480769b18d6a6f01d13ee4e1cb78f23d",
+    "fileSize": 20212,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/77b0a4a1-facb-46df-8cca-95a14e4374c7/Maintenance.png",
+    "localPath": "/assets/fresvik/images/old-site/maintenance-03fcde6a79.png",
+    "filePath": "public/assets/fresvik/images/old-site/maintenance-03fcde6a79.png",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "cc6d28e4a255251ecc6e941e36521e2021b41fe490b4b3c2c9d194eee8b9bbc3",
+    "fileSize": 57232,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/79e9cda4-51eb-49c5-8908-8daea562e4a3/Motor+Fresvik+Elektrisk+Skyveport.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/motor-fresvik-elektrisk-skyveport-4124d9ef0b.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/motor-fresvik-elektrisk-skyveport-4124d9ef0b.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/kjole-fryseportar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/kjole-fryseportar"
+    ],
+    "sha256": "29f0515e22e7a667a961d9bb1ba6444cc92fbd5775e0ce7c19b41779671f8c72",
+    "fileSize": 154766,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/339870db-e604-492a-a688-fbc917a03d26/notfjaer1.jpg",
+    "localPath": "/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/fresvik-pir-panel",
+      "/produkt/frysetunnel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-pir-panel",
+      "https://www.fresvik.no/produkt/frysetunnel"
+    ],
+    "sha256": "681e2d4e6d50bbb65818dff2fa5339629a812b8e70c29d5dde4e362af0c4f29c",
+    "fileSize": 64817,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e53cecee-8801-4e47-b5a7-977d58f58e7a/OlympicBoreas.webp",
+    "localPath": "/assets/fresvik/images/old-site/olympicboreas-f3931f70ab.webp",
+    "filePath": "public/assets/fresvik/images/old-site/olympicboreas-f3931f70ab.webp",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "5200218df1d3d837144ba4aef6ae0377201f112ddbe2a7078fb465da5ecc5a6a",
+    "fileSize": 230208,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228729943-6MM69ZZK0984XFA2N9B7/P1011299.jpg",
+    "localPath": "/assets/fresvik/images/old-site/p1011299-52ba438048.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/p1011299-52ba438048.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "95c507eabad4b54444f715a4e15a524c52039ac7be27db4bb41f8a118a325305",
+    "fileSize": 95689,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228726844-Z25NTILFGAGC706B0A2L/P1011301.jpg",
+    "localPath": "/assets/fresvik/images/old-site/p1011301-40225e3a04.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/p1011301-40225e3a04.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "1762d8ed60eb2792938d310b0b647778965c22052469a73d64be44745384e8eb",
+    "fileSize": 129399,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228728430-V5ILE0UJOLHUPYHC4P8D/P1011303.jpg",
+    "localPath": "/assets/fresvik/images/old-site/p1011303-f26230ad94.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/p1011303-f26230ad94.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "634eaf2cf5a7c0c5daf227a7dd8a18cbc1eeddfa39b26a799b507884ca6cb172",
+    "fileSize": 120350,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228725039-5ORZ1B872SJ3WA6PT58G/P1011304.jpg",
+    "localPath": "/assets/fresvik/images/old-site/p1011304-c35767011a.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/p1011304-c35767011a.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "cc0ffeb55731d69c4d4835b6130ad1d766481c17491c7828147b416cc4ca0a7c",
+    "fileSize": 136148,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228723604-E7710XDI3PJENLQGF6M5/P1011308.jpg",
+    "localPath": "/assets/fresvik/images/old-site/p1011308-cd91f75664.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/p1011308-cd91f75664.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "40e93276edfbc10c69a4eba8feaa580eaae3d3364455b3e0f3454701e8ca8356",
+    "fileSize": 85033,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/34a43d9f-90b0-4bd3-af63-a116052ad983/Port.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/port-3ee7689036.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/port-3ee7689036.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/monteringsanvisning"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/monteringsanvisning"
+    ],
+    "sha256": "cd6a991be3bda1e990eece4c24b4e5bbb4d358a6831670f5dd8f1f686b6b0ac4",
+    "fileSize": 36124,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428971823-YEHNKJ0MQMYS6AVGRWHZ/Port+Karls%C3%B8ybruket+2017.jpg",
+    "localPath": "/assets/fresvik/images/old-site/port-karls-ybruket-2017-a668d7c80d.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/port-karls-ybruket-2017-a668d7c80d.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "b0330c0af90b40cfbec613c7499d94611609ccfa9710e7fc5d6460dc30acb921",
+    "fileSize": 71892,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/01c192a0-dbab-49e5-b8fd-629244295ab4/prod8.jpg",
+    "localPath": "/assets/fresvik/images/old-site/prod8-651c53b842.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/prod8-651c53b842.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/stillingledig"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/stillingledig"
+    ],
+    "sha256": "30d29bdd421665ad48fb71ad1c17518393ba64527ccae496567b720b778bb7c1",
+    "fileSize": 356734,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429110160-6F1ROKOETGXSA6EXEYHF/Queen-Elisabeth-II.png",
+    "localPath": "/assets/fresvik/images/old-site/queen-elisabeth-ii-22d598d8cd.png",
+    "filePath": "public/assets/fresvik/images/old-site/queen-elisabeth-ii-22d598d8cd.png",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "69040177c044be723cf11adcae5c7f7e00662ebb84d7023273645c18cf2ee8cc",
+    "fileSize": 190280,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228664767-7V25J9TG9ZDMDQCQBJCF/Samling+i+kantina+til+kaffi+%28002%29.jpg",
+    "localPath": "/assets/fresvik/images/old-site/samling-i-kantina-til-kaffi-002-d35c2cd213.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/samling-i-kantina-til-kaffi-002-d35c2cd213.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "66d71a67c4f4b50b348f1ad8165a022821436bf354555528907be5ec54234d47",
+    "fileSize": 187990,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/7a1a8242-c0df-47f4-add0-9f4026d99529/Sheet.png",
+    "localPath": "/assets/fresvik/images/old-site/sheet-ebcdf19577.png",
+    "filePath": "public/assets/fresvik/images/old-site/sheet-ebcdf19577.png",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "0952c65d0c43c8640bd6a78ce27725f42d0a3775ecaf2b07f23b6a5b039c553c",
+    "fileSize": 37914,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3e67dc93-31ab-4ea9-9e88-2277be7198bb/sika.png",
+    "localPath": "/assets/fresvik/images/old-site/sika-7eb68126e6.png",
+    "filePath": "public/assets/fresvik/images/old-site/sika-7eb68126e6.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tilleggsutstyr"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilleggsutstyr"
+    ],
+    "sha256": "0a2bc6f18c7b593c891a13330f3d7b88967949866e72ea2b7520fb1d1584be24",
+    "fileSize": 39994,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/01d5327d-ae87-45d4-9431-4787da924aa4/sika+II.png",
+    "localPath": "/assets/fresvik/images/old-site/sika-ii-abca664136.png",
+    "filePath": "public/assets/fresvik/images/old-site/sika-ii-abca664136.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tilleggsutstyr"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilleggsutstyr"
+    ],
+    "sha256": "76d3ac0e24e0f8f72ed6b37adbd4513084b794541f300b59bb8c6a85aaf9fba1",
+    "fileSize": 38466,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0713c565-3e7b-4509-aae2-38835efc02ef/ska%CC%8Arsenior.jpg",
+    "localPath": "/assets/fresvik/images/old-site/skarsenior-4d2f1c7a53.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/skarsenior-4d2f1c7a53.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "15f6b334f5f9669be6763a9c062cf1be3703b2e9b3af2e018082b902b4878344",
+    "fileSize": 712468,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/f152d606-3742-407e-99fc-8e412f82cab6/Skjermbilde+2026-02-27+110131.png",
+    "localPath": "/assets/fresvik/images/old-site/skjermbilde-2026-02-27-110131-ed5d3c67cc.png",
+    "filePath": "public/assets/fresvik/images/old-site/skjermbilde-2026-02-27-110131-ed5d3c67cc.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tilleggsutstyr"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilleggsutstyr"
+    ],
+    "sha256": "a1ddd0d64b518ae3be8a0df3004175c2e5849d98570af0552e723aa8a6cf5b6b",
+    "fileSize": 76936,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/4a4c209a-5fec-496f-80da-a49a9d68e75b/Skjermbilde+2026-02-27+114255.png",
+    "localPath": "/assets/fresvik/images/old-site/skjermbilde-2026-02-27-114255-0c8781cd9a.png",
+    "filePath": "public/assets/fresvik/images/old-site/skjermbilde-2026-02-27-114255-0c8781cd9a.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tilleggsutstyr"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilleggsutstyr"
+    ],
+    "sha256": "862a9a90b787fa395d46bba5bf59ec3ffa2710e3c1d2cd386b6022e8739ee32a",
+    "fileSize": 242330,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/531d13a6-be3a-43a4-9c6a-94e547cca758/Snowflake.png",
+    "localPath": "/assets/fresvik/images/old-site/snowflake-4463c04e31.png",
+    "filePath": "public/assets/fresvik/images/old-site/snowflake-4463c04e31.png",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "fbe7c07754e62d31fbadebdb5894e42b3310569e706a72576cc60ff5c9660e8c",
+    "fileSize": 47098,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/33b9b91b-e0d9-4d5f-b1e3-72e6932ea2f6/soudal.png",
+    "localPath": "/assets/fresvik/images/old-site/soudal-718e2641e1.png",
+    "filePath": "public/assets/fresvik/images/old-site/soudal-718e2641e1.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tilleggsutstyr"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilleggsutstyr"
+    ],
+    "sha256": "4ca12ebfdc12d0be3814f450ee4d1b6a61233f31cae75cd18123840eeca609e2",
+    "fileSize": 43696,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e4cbf21e-a956-4d47-9fb5-3a7a2924b91e/soudal+II.png",
+    "localPath": "/assets/fresvik/images/old-site/soudal-ii-81251aba54.png",
+    "filePath": "public/assets/fresvik/images/old-site/soudal-ii-81251aba54.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tilleggsutstyr"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilleggsutstyr"
+    ],
+    "sha256": "5d8aeaaf1ce837d2ea786cd6a5c5e51181b12e3aea9c4da0612a0cf1c45cb490",
+    "fileSize": 63344,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/70099be8-6751-41f7-aea3-d4501ff3c09a/Spar+Lund+Torv+FP+1.png",
+    "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fp-1-25b36f0371.png",
+    "filePath": "public/assets/fresvik/images/old-site/spar-lund-torv-fp-1-25b36f0371.png",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/frysetunnel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/frysetunnel"
+    ],
+    "sha256": "a441717e3c16054738d8f6833fa5d992f45acbc8cc0f8ca4fe5e838a99fffd59",
+    "fileSize": 3078540,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222151278-QXDTWKYCR89SQ0CPEPXE/Spar+Lund+Torv+-+Fresvik+Produkt+2.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-2-c2c17be8ad.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-2-c2c17be8ad.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "168d72d0eb3e95a14a691dab501f25debf22f2a139c02ab1d24b8210c7c076cb",
+    "fileSize": 99716,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222152378-KBAPNESE5W55KL8SNS8O/Spar+Lund+Torv+-+Fresvik+Produkt+3.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-3-f164cf8622.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-3-f164cf8622.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "fdb3a56bf9590911d3ef400d9c84c8f21801ba360e99f651aaac1734fd34f5f8",
+    "fileSize": 61000,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222152679-LYILDOX68CL4UT74DHQ2/Spar+Lund+Torv+-+Fresvik+Produkt+4.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-4-f3d73040e5.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-4-f3d73040e5.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "7c6ef2e59a44322175dbe3ca6691b7a548f376cd738faf89fdee2e63bc91775a",
+    "fileSize": 84254,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222153506-0WON6Y280B6K74BXED8X/Spar+Lund+Torv+-+Fresvik+Produkt+5.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-5-e03cc26d6f.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-5-e03cc26d6f.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "4af1ea6f2d58174bd5537b8ae2725c7faf34917064e3ff07e2085c2b7afcfd69",
+    "fileSize": 99382,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222153812-BQAAWI4R2VF0K1FWH2HT/Spar+Lund+Torv+-+Fresvik+Produkt+6.jpeg",
+    "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-6-3754b65db4.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-6-3754b65db4.jpeg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "f0f7370603220c4e9dc49755d40ca16f3f87485badf9ca4102b2ff7fad4ec0bd",
+    "fileSize": 125624,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d7336c08-84f5-48ed-afdf-aeec8f8d139b/Temperature.png",
+    "localPath": "/assets/fresvik/images/old-site/temperature-b74d87e4fb.png",
+    "filePath": "public/assets/fresvik/images/old-site/temperature-b74d87e4fb.png",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "bf8a43bd43735cd924acb8804af0d1573b45652334f18dc4762fb4f19768891e",
+    "fileSize": 29700,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385867638-53S21SMAIEM6JIMC4IZ7/TG-2135.jpg",
+    "localPath": "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/kjolerom-fryserom-offshore"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+    ],
+    "sha256": "96c63f297fad91792ddddbe61e416a8af20962a3c03d41afb0a41e52bceae6f1",
+    "fileSize": 82194,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428950967-OR3SD8N14UBWZ0Q068KC/Utvendig+liggende.JPG",
+    "localPath": "/assets/fresvik/images/old-site/utvendig-liggende-efe87a655e.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/utvendig-liggende-efe87a655e.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "d9e157fcc7c2ab581605a8cb1bfc0cc00592189a3068f2e387a2fdace58387e3",
+    "fileSize": 59560,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428952926-ZEF6H63I2YDXIWB2TONF/Utvendig+port+med+rampe.JPG",
+    "localPath": "/assets/fresvik/images/old-site/utvendig-port-med-rampe-1810c8dd34.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/utvendig-port-med-rampe-1810c8dd34.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "6b8e2ebfb4ba08d039de5977bf5297ada1dfc2bfe66b985c0af2a906fd9a049d",
+    "fileSize": 138220,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428955039-RJ8A0S93ZSA2HURBRZ2X/Utvendig+portdetalj.JPG",
+    "localPath": "/assets/fresvik/images/old-site/utvendig-portdetalj-709e934be3.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/utvendig-portdetalj-709e934be3.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "1ad1064e77495ec01895cae611aa4524bbb76a195c38310de8b58e6b6de1cacd",
+    "fileSize": 59260,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428956875-EUJGYSII10J2UYF4BRHS/Utvendig+rampe.JPG",
+    "localPath": "/assets/fresvik/images/old-site/utvendig-rampe-a594c8609a.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/utvendig-rampe-a594c8609a.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "ccbd565c8db3fb19273ca50ac9f0bc8c0ef5c2204622e06b8e7f92ea26d250f7",
+    "fileSize": 178204,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428958638-I4GJYCNI21DXF61M7WWU/Utvendig+st%C3%A5ende.JPG",
+    "localPath": "/assets/fresvik/images/old-site/utvendig-staende-7e43a93c88.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/utvendig-staende-7e43a93c88.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "f4298038f99fb648e395cc6a216b6bdb98dc2fb0f69334f2e2de57955368c26e",
+    "fileSize": 44164,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428960334-6L0PNR60IMRZMDJ0POOP/Utvendig+ventiler.JPG",
+    "localPath": "/assets/fresvik/images/old-site/utvendig-ventiler-ec0949f672.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/utvendig-ventiler-ec0949f672.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "95ea2404a064b0fa00618e52e8be4d855625f7d04773f9fdb4ec9b7705b4a063",
+    "fileSize": 66548,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/bb85c1ec-830f-451e-afb1-a7d1eef82bd9/valve.png",
+    "localPath": "/assets/fresvik/images/old-site/valve-698d456332.png",
+    "filePath": "public/assets/fresvik/images/old-site/valve-698d456332.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tilleggsutstyr"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilleggsutstyr"
+    ],
+    "sha256": "1b66557274ae31c38f8297e01056fc7154d7b75de7e08b21bb076c3f90b3ff02",
+    "fileSize": 31716,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": ""
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749159465-SS294U1F0FIJY7RY5LDL/Vik+helse-+og+sjukeheim+2.jpg",
+    "localPath": "/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-2-9d84f6c72a.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-2-9d84f6c72a.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "64e2667b4715281c2b61dabff67abed6f4f5229a19d9d6a50c645063b6bb523a",
+    "fileSize": 80148,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749160310-4H05SN1MA15WN41W39O0/Vik+helse-+og+sjukeheim+3.jpg",
+    "localPath": "/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-3-741bbf0fef.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-3-741bbf0fef.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "0a4a1c18012d126e169b42cf731d317cdd61f49c72c5ffff0e47193bcd477c0c",
+    "fileSize": 34078,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749160574-VBDN3DZROT33TD5VRFB7/Vik+helse-+og+sjukeheim+4.jpg",
+    "localPath": "/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-4-f1a14468b8.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-4-f1a14468b8.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "213dd6871ff515c620153ebee73f31ba29aa4b30ede388e2ce99e15e80b7b4cc",
+    "fileSize": 36200,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749161328-7V2KKMF03TL0DCE6HXCM/Vik+helse-+og+sjukeheim+5.jpg",
+    "localPath": "/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-5-549411dc5b.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-5-549411dc5b.jpg",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "f0339750f87cf284fd8154cfdb35ad013cc63b9e8fbdd325505cdb7f55cd715b",
+    "fileSize": 27078,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "Unused local migration cache file; keep until asset review is complete."
   }
 ]

@@ -6,26 +6,28 @@ Generated from local migration cache and source data.
 
 | Metric | Count |
 | --- | ---: |
-| Total assets found | 98 |
-| Images | 76 |
-| PDFs/documents | 22 |
+| Total assets found | 275 |
+| Images | 249 |
+| PDFs/documents | 26 |
 | Other assets | 0 |
-| Used assets | 98 |
-| Unused assets | 0 |
+| Used assets | 157 |
+| Unused assets | 118 |
 | Missing assets | 0 |
-| Duplicate assets | 0 |
-| Ready for Sanity | 98 |
+| Duplicate assets | 3 |
+| Ready for Sanity | 154 |
 | Uploaded to Sanity | 0 |
 | Failed or needs review | 0 |
-| TODO original URLs | 38 |
+| TODO original URLs | 12 |
 
 ## Status Counts
 
-- `ready-for-sanity`: 98
+- `duplicate`: 3
+- `ready-for-sanity`: 154
+- `unused`: 118
 
 ## Local Path Usage
 
-79 routes/documents still use local `/assets/fresvik` paths while assets wait for Sanity import.
+83 routes/documents still use local `/assets/fresvik` paths while assets wait for Sanity import.
 
 - `/aktuelt`
 - `/aktuelt/40-aars-jubileum`
@@ -59,12 +61,15 @@ Generated from local migration cache and source data.
 - `/andre-produkter/pvc-gardiner`
 - `/andre-produkter/standard-handtak`
 - `/dokumentasjon`
+- `/firmainfo`
 - `/kjolerom-fryserom-butikk`
 - `/kjolerom-fryserom-offshore`
 - `/kjolerom-fryserom-storkjokken`
+- `/kundeservice/faq`
 - `/monteringsanvisning`
 - `/monteringsanvisningar-fresvik-skyveport`
 - `/openheitslova`
+- `/personvernerklering`
 - `/produkt`
 - `/produkt/fasadepanel`
 - `/produkt/fresvik-panel`
@@ -99,6 +104,7 @@ Generated from local migration cache and source data.
 - `/referansar/restauranthuset-malin`
 - `/referansar/spesialloysing-torkerom-drageboden-kaupanger`
 - `/referansar/vik-helse-og-omsorgssenter`
+- `/stillingledig`
 - `/tenester`
 - `/tenester/leveranse`
 - `/tenester/montasje`
@@ -115,12 +121,12 @@ Generated from local migration cache and source data.
 | Baseline old sitemap image count | 325 |
 | Live sitemap image entries | 322 |
 | Live sitemap unique image URLs | 275 |
-| Local migrated image assets | 76 |
-| Sitemap images classified migrated | 219 |
-| Sitemap duplicate image entries | 36 |
-| Sitemap thumbnail/variant unresolved | 11 |
-| Sitemap images missing local match | 56 |
-| Local-only images without recovered originalUrl | 16 |
+| Local migrated image assets | 249 |
+| Sitemap images classified migrated | 262 |
+| Sitemap duplicate image entries | 47 |
+| Sitemap thumbnail/variant unresolved | 0 |
+| Sitemap images missing local match | 0 |
+| Local-only images without recovered originalUrl | 0 |
 
 Source drift note: `src/data/legacyRoutes.ts` stores the earlier baseline, while `MACHINE_READABLE_MIGRATION_AUDIT.json` stores the latest live sitemap audit.
 

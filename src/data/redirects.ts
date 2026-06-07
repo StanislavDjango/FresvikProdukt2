@@ -55,6 +55,136 @@ export const redirectRules: RedirectRule[] = [
     destination: "/kjolerom-fryserom-offshore",
     permanent: true,
   },
+  {
+    source: "/kjleport-fryseport-1",
+    destination: "/produkt/kjole-fryseportar",
+    permanent: true,
+  },
+  {
+    source: "/kjlerom-fryserom-butikk",
+    destination: "/kjolerom-fryserom-butikk",
+    permanent: true,
+  },
+  {
+    source: "/kjole-fryseromsdorer",
+    destination: "/produkt/kjole-frysedorer",
+    permanent: true,
+  },
+  {
+    source: "/om-oss/fresvik-produkt",
+    destination: "/firmainfo",
+    permanent: true,
+  },
+  {
+    source: "/s/7060s-fnfz.pdf",
+    destination: "/assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/2135g-5.pdf",
+    destination: "/assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Endre-Skyveretning.pdf",
+    destination: "/assets/fresvik/documents/endre-skyveretning.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf",
+    destination: "/assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Fresvik-Dr-Montasjeanvisning.pdf",
+    destination: "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
+    destination: "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Fresvik-Kjlerom-Montasjeanvisning.pdf",
+    destination: "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Fresvik-Port-Montasjeanvisning.pdf",
+    destination: "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Koblingsskjema-Fermod-5010.pdf",
+    destination: "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf",
+    destination: "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Miljdokument-Fresvik-Produkt.pdf",
+    destination: "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Montasjeanvisning-5010-for-2150.pdf",
+    destination: "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Montasjeanvisning-5010-for-3530-og-7530.pdf",
+    destination: "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/PIR-ProduktbladFP.pdf",
+    destination: "/assets/fresvik/documents/pir-panel.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/PIR.pdf",
+    destination: "/assets/fresvik/documents/pir-panel.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/PUR-ce-merke.pdf",
+    destination: "/assets/fresvik/documents/pur-ce-merke.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Produktblad-Fresvik-Skyveport.pdf",
+    destination: "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Quick-Start-5010Exp-indB.pdf",
+    destination: "/assets/fresvik/documents/quick-start-5010exp.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+    destination: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf",
+    destination: "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/Ytelseserklring-Fresvik-Produkt.pdf",
+    destination: "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/lsning-med-firkantrr.pdf",
+    destination: "/aktuelt/innfesting-mot-golv",
+    permanent: true,
+  },
 ];
 
 export const redirectedSources = redirectRules.map((rule) => rule.source);

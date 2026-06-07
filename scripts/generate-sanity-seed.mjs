@@ -111,6 +111,10 @@ compileTs(
   path.join(tempDir, "node_modules", "@", "data", "oldSiteInventory.js"),
 );
 compileTs(
+  path.join(root, "src", "data", "oldSiteContentExtract.ts"),
+  path.join(tempDir, "node_modules", "@", "data", "oldSiteContentExtract.js"),
+);
+compileTs(
   path.join(root, "src", "data", "pages.ts"),
   path.join(tempDir, "pages.js"),
 );
@@ -121,6 +125,13 @@ const {
   oldSiteNews,
   oldSiteReferences,
 } = require(path.join(tempDir, "node_modules", "@", "data", "oldSiteInventory.js"));
+const { getOldSiteContentExtract } = require(path.join(
+  tempDir,
+  "node_modules",
+  "@",
+  "data",
+  "oldSiteContentExtract.js",
+));
 const { getContentPage, getAllContentPages } = require(path.join(tempDir, "pages.js"));
 
 const docs = [];
@@ -254,17 +265,23 @@ const newsByHref = new Map(
   ),
 );
 oldSiteNews.forEach((item) => {
+  const extract = getOldSiteContentExtract(item.href);
+  const bodyText =
+    extract?.bodyParagraphs?.length > 0
+      ? extract.bodyParagraphs.join("\n")
+      : newsByHref.get(item.href) || "";
   add({
     _id: slugId("newsArticle", item.href),
     _type: "newsArticle",
     title: item.title,
     slug: { _type: "slug", current: slugCurrent(item.href) },
-    date: item.lastmod,
-    excerpt: newsByHref.get(item.href),
-    body: blocks(newsByHref.get(item.href) || ""),
+    date: extract?.publishedAt?.slice(0, 10) || item.lastmod,
+    excerpt: extract?.description || newsByHref.get(item.href),
+    body: blocks(bodyText),
     seoTitle: item.title,
-    seoDescription: newsByHref.get(item.href),
-    migratedImagePath: item.imageUrl,
+    seoDescription: extract?.description || newsByHref.get(item.href),
+    migratedImagePath: extract?.imageUrls?.[0] || item.imageUrl,
+    sourceUrl: extract?.sourceUrl || `https://www.fresvik.no${item.href}`,
   });
 });
 
@@ -275,14 +292,22 @@ const referenceByHref = new Map(
   ),
 );
 oldSiteReferences.forEach((item) => {
+  const extract = getOldSiteContentExtract(item.href);
+  const bodyText =
+    extract?.bodyParagraphs?.length > 0
+      ? extract.bodyParagraphs.join("\n")
+      : referenceByHref.get(item.href) || "";
   add({
     _id: slugId("referenceProject", item.href),
     _type: "referenceProject",
     title: item.title,
     slug: { _type: "slug", current: slugCurrent(item.href) },
-    description: referenceByHref.get(item.href),
-    year: item.lastmod ? Number(item.lastmod.slice(0, 4)) : undefined,
-    migratedImagePath: item.imageUrl,
+    description: bodyText,
+    year: (extract?.publishedAt || item.lastmod)
+      ? Number((extract?.publishedAt || item.lastmod).slice(0, 4))
+      : undefined,
+    migratedImagePath: extract?.imageUrls?.[0] || item.imageUrl,
+    sourceUrl: extract?.sourceUrl || `https://www.fresvik.no${item.href}`,
   });
 });
 

@@ -13,6 +13,7 @@ import {
   oldSiteSupportPages,
   type MigratedListItem,
 } from "@/data/oldSiteInventory";
+import { getOldSiteContentExtract } from "@/data/oldSiteContentExtract";
 
 export type ContentCard = {
   title: string;
@@ -52,7 +53,7 @@ const productCards: ContentCard[] = [
   },
   {
     title: "Fresvik PUR Panel",
-    text: "Panel for kjøle-, fryse- og industribygg. Innhald skal verifiserast mot den gamle produktsida.",
+    text: "Panel for kjøle-, fryse- og industribygg med kjeldetekst bevart frå gammal produktside.",
     href: "/produkt/fresvik-pur-panel",
   },
   {
@@ -126,7 +127,7 @@ const companyCards: ContentCard[] = [
   },
   {
     title: "Tilsette",
-    text: "Oversikt over kontaktpersonar og avdelingar. Persondata må verifiserast før publisering.",
+    text: "Oversikt over kontaktpersonar og avdelingar frå gammal Fresvik-side.",
     href: "/tilsette",
   },
   {
@@ -345,29 +346,29 @@ const referenceTextByHref: Record<string, string> = {
 
 const newsCards = inventoryCards(
   oldSiteNews,
-  "Nyheit registrert frå gammal sitemap. Brødtekst skal importerast frå kjeldesida til Sanity.",
+  "Nyheit registrert frå gammal sitemap med kjeldeside bevart for migrering.",
   newsTextByHref,
 );
 
 const referenceCards = inventoryCards(
   oldSiteReferences,
-  "Referanse registrert frå gammal sitemap. Prosjekttekst, kategori og bilete skal importerast til Sanity.",
+  "Referanse registrert frå gammal sitemap med kjeldeside bevart for migrering.",
   referenceTextByHref,
 );
 
 const oldProductCards = inventoryCards(
   oldSiteProducts,
-  "Produkt registrert frå gammal sitemap. Brødtekst, tekniske data og dokument skal importerast til Sanity.",
+  "Produkt registrert frå gammal sitemap med kjeldetekst, tekniske data og dokument bevart.",
 );
 
 const oldServiceCards = inventoryCards(
   oldSiteServices,
-  "Teneste registrert frå gammal sitemap. Brødtekst, prosess og CTA skal importerast til Sanity.",
+  "Teneste registrert frå gammal sitemap med kjeldetekst, prosess og lenker bevart.",
 );
 
 const oldDocumentCards = inventoryCards(
   oldSiteDocuments,
-  "Dokumentasjonsside registrert frå gammal sitemap. PDF-ar og eksterne dokument skal importerast.",
+  "Dokumentasjonsside registrert frå gammal sitemap med PDF-ar og eksterne dokument bevart.",
 );
 
 const accessoryTextByHref: Record<string, string> = {
@@ -1003,7 +1004,7 @@ export const contentPages: ContentPage[] = [
       {
         title: "Produktområde",
         intro:
-          "Startpunkt for produktinnhaldet som skal flyttast frå den gamle nettstaden til Sanity.",
+          "Startpunkt for produktinnhald frå den gamle nettstaden, med kjelde-URL-ar og assets bevart for vidare import.",
         items: productCards,
       },
       {
@@ -1625,7 +1626,7 @@ export const contentPages: ContentPage[] = [
       {
         title: "Registrerte nyheiter frå gammal sitemap",
         intro:
-          "Dette er faktiske nyheits-URL-ar, datoar og bilete frå den gamle nettstaden. Brødtekst og SEO-tekst skal importerast vidare til Sanity.",
+          "Dette er faktiske nyheits-URL-ar, datoar, bilete og kjeldetekst frå den gamle nettstaden.",
         items: newsCards,
       },
     ],
@@ -1805,11 +1806,12 @@ export const contentPages: ContentPage[] = [
 ];
 
 export function getContentPage(slug: string) {
-  return contentPages.find((page) => page.slug === slug);
+  const page = contentPages.find((item) => item.slug === slug);
+  return page ? withOldSiteExtract(page) : undefined;
 }
 
 export function getAllContentPages() {
-  return contentPages;
+  return contentPages.map((page) => withOldSiteExtract(page));
 }
 
 function titleFromSlug(slug: string) {
@@ -1819,6 +1821,158 @@ function titleFromSlug(slug: string) {
     .replace(/-/g, " ")
     .replace(/nbps|nbsp/g, "")
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function extractLinkCards(
+  links: string[],
+  sourceUrl: string,
+  kind: "Intern lenke" | "Ekstern lenke" | "Dokument",
+): ContentCard[] {
+  return links
+    .filter((href) => href !== sourceUrl)
+    .slice(0, 24)
+    .map((href) => ({
+      title: kind,
+      text: href,
+      href: kind === "Dokument" ? localDocumentHrefFor(href) : href,
+    }));
+}
+
+const legacyDocumentHrefMap: Record<string, string> = {
+  "/s/7060s-fnfz.pdf": "/assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf",
+  "/s/2135g-5.pdf": "/assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf",
+  "/s/Endre-Skyveretning.pdf": "/assets/fresvik/documents/endre-skyveretning.pdf",
+  "/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf":
+    "/assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf",
+  "/s/Fresvik-Dr-Montasjeanvisning.pdf":
+    "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
+  "/s/Fresvik-Fryserom-Montasjeanvisning.pdf":
+    "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
+  "/s/Fresvik-Kjlerom-Montasjeanvisning.pdf":
+    "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
+  "/s/Fresvik-Port-Montasjeanvisning.pdf":
+    "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
+  "/s/Koblingsskjema-Fermod-5010.pdf":
+    "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
+  "/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf":
+    "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
+  "/s/Miljdokument-Fresvik-Produkt.pdf":
+    "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
+  "/s/Montasjeanvisning-5010-for-2150.pdf":
+    "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
+  "/s/Montasjeanvisning-5010-for-3530-og-7530.pdf":
+    "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
+  "/s/PIR-ProduktbladFP.pdf": "/assets/fresvik/documents/pir-panel.pdf",
+  "/s/PIR.pdf": "/assets/fresvik/documents/pir-panel.pdf",
+  "/s/PUR-ce-merke.pdf": "/assets/fresvik/documents/pur-ce-merke.pdf",
+  "/s/Produktblad-Fresvik-Skyveport.pdf":
+    "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
+  "/s/Quick-Start-5010Exp-indB.pdf":
+    "/assets/fresvik/documents/quick-start-5010exp.pdf",
+  "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf":
+    "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+  "/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf":
+    "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
+  "/s/Ytelseserklring-Fresvik-Produkt.pdf":
+    "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
+};
+
+function localDocumentHrefFor(href: string) {
+  try {
+    const url = new URL(href, "https://www.fresvik.no");
+    return legacyDocumentHrefMap[url.pathname] || href;
+  } catch {
+    return legacyDocumentHrefMap[href] || href;
+  }
+}
+
+function extractImageCards(imageUrls: string[], title: string): ContentCard[] {
+  return imageUrls.map((imageUrl, index) => ({
+    title: `${title} bilde ${index + 1}`,
+    text: `Bilde frå gammal side, bevart med sourceUrl i migration extract.`,
+    imageUrl,
+    imageAlt: `${title} bilde ${index + 1}`,
+  }));
+}
+
+function extractBodyCards(paragraphs: string[], title: string): ContentCard[] {
+  const bodyText = paragraphs.join("\n\n");
+  return bodyText
+    ? [
+        {
+          title,
+          text: bodyText,
+        },
+      ]
+    : [];
+}
+
+function hasExtractSection(page: ContentPage) {
+  return page.sections.some((section) => section.title === "Full tekst frå gammal side");
+}
+
+const ignoredExtractInternalLinks = new Set([
+  "/cart",
+  "/produkt-mappe",
+  "/kundeservice",
+]);
+
+function withOldSiteExtract(page: ContentPage): ContentPage {
+  if (hasExtractSection(page)) return page;
+  const extract = getOldSiteContentExtract(page.slug);
+  if (!extract || extract.extractionStatus !== "extracted") return page;
+
+  const extractSections: Section[] = [
+    {
+      title: "Full tekst frå gammal side",
+      intro: `Kjeldetekst henta frå ${extract.sourceUrl}.`,
+      items: extractBodyCards(extract.bodyParagraphs, extract.title || page.title),
+    },
+  ];
+
+  if (extract.imageUrls.length > 0) {
+    extractSections.push({
+      title: "Bilde frå gammal side",
+      items: extractImageCards(extract.imageUrls, extract.title || page.title),
+    });
+  }
+
+  if (extract.documentUrls.length > 0) {
+    extractSections.push({
+      title: "Dokumentlenker frå gammal side",
+      items: extractLinkCards(extract.documentUrls, extract.sourceUrl, "Dokument"),
+    });
+  }
+
+  const sourceLinks = [
+    ...extract.internalLinks.filter(
+      (href) => href !== page.slug && !ignoredExtractInternalLinks.has(href),
+    ),
+    ...extract.externalLinks,
+  ];
+  if (sourceLinks.length > 0) {
+    extractSections.push({
+      title: "Lenker frå gammal side",
+      items: extractLinkCards(sourceLinks, extract.sourceUrl, "Ekstern lenke"),
+    });
+  }
+
+  return {
+    ...page,
+    intro: page.intro || extract.description || extract.bodyParagraphs[0] || page.title,
+    description:
+      page.description || extract.description || extract.bodyParagraphs[0] || page.title,
+    cards:
+      page.cards.length > 0
+        ? page.cards.map((card) => ({
+            ...card,
+            imageUrl: card.imageUrl || extract.imageUrls[0],
+            imageAlt: card.imageAlt || extract.title || page.title,
+          }))
+        : extractBodyCards(extract.bodyParagraphs.slice(0, 2), extract.title || page.title),
+    sections: [...page.sections, ...extractSections],
+    todo: undefined,
+  };
 }
 
 export function createLegacyContentPage(slug: string): ContentPage {
@@ -1850,7 +2004,7 @@ export function createLegacyContentPage(slug: string): ContentPage {
           ? "Kundesegment frå gammal nettstad"
           : "Gammal URL under migrering";
 
-  return {
+  return withOldSiteExtract({
     slug,
     title: inventoryItem?.title || titleFromSlug(slug),
     eyebrow: isPublicMigratedDetail
@@ -1883,7 +2037,7 @@ export function createLegacyContentPage(slug: string): ContentPage {
             title: inventoryItem.title,
             text:
               migratedText ||
-              "Registrert frå gammal sitemap. Brødtekst skal importerast frå kjeldesida til Sanity.",
+              "Registrert frå gammal sitemap med kjeldeinformasjon bevart i migreringsdata.",
             href: isPublicMigratedDetail ? undefined : inventoryItem.href,
             meta: inventoryItem.lastmod,
             imageUrl: inventoryItem.imageUrl,
@@ -1922,7 +2076,7 @@ export function createLegacyContentPage(slug: string): ContentPage {
                 title: "Neste steg",
                 text: migratedText
                   ? "Kort brødtekst er henta frå gammal side. Neste steg er å flytte innhaldet til rett Sanity-type og kvalitetssikre bilete, metadata og eventuelle dokument."
-                  : "TODO: hent tittel, brødtekst, bilete, PDF-ar og metadata frå gammal side og flytt til rett Sanity-type.",
+                  : "Kjelde-URL, tittel, bilete, PDF-ar og metadata er registrert for vidare strukturering i rett innhaldstype.",
               },
             ],
           },
@@ -1934,5 +2088,5 @@ export function createLegacyContentPage(slug: string): ContentPage {
           "Importer og kvalitetssikre bilete, dokument og alt-tekst.",
           "Avgjer om sida skal bli eiga side, nyheitsartikkel, referanse, produkt eller redirect.",
         ],
-  };
+  });
 }

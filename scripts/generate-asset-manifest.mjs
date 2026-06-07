@@ -210,6 +210,10 @@ async function buildManifest() {
     path.join(root, "src", "data", "oldSiteInventory.ts"),
     path.join(tempDir, "node_modules", "@", "data", "oldSiteInventory.js"),
   );
+  compileTs(
+    path.join(root, "src", "data", "oldSiteContentExtract.ts"),
+    path.join(tempDir, "node_modules", "@", "data", "oldSiteContentExtract.js"),
+  );
   compileTs(path.join(root, "src", "data", "pages.ts"), path.join(tempDir, "pages.js"));
 
   const inventory = require(path.join(

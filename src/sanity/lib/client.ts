@@ -5,5 +5,6 @@ export const client = createClient({
   projectId,
   dataset,
   apiVersion,
+  token: process.env.SANITY_AUTH_TOKEN,
   useCdn: true,
 });

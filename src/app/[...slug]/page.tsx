@@ -8,6 +8,10 @@ import {
   getContentPage,
 } from "@/data/pages";
 import { pageMetadata } from "@/lib/seo";
+import {
+  getSanityContentPage,
+  getSanityContentSlugs,
+} from "@/sanity/lib/contentPages";
 
 type RouteProps = {
   params: Promise<{ slug: string[] }>;
@@ -17,8 +21,9 @@ function toPath(slug: string[]) {
   return `/${slug.join("/")}`;
 }
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   const routes = new Set([
+    ...(await getSanityContentSlugs()),
     ...getAllContentPages()
       .filter((page) => page.slug !== "/")
       .map((page) => page.slug),
@@ -35,7 +40,7 @@ export async function generateMetadata({
 }: RouteProps): Promise<Metadata> {
   const { slug } = await params;
   const path = toPath(slug);
-  const page = getContentPage(path);
+  const page = await getSanityContentPage(path);
 
   if (page) {
     return pageMetadata(page);
@@ -61,16 +66,15 @@ export default async function DynamicContentPage({ params }: RouteProps) {
   }
 
   const page = getContentPage(path);
+  const sanityPage = await getSanityContentPage(path);
 
-  if (page) {
-    return <ContentPageView page={page} />;
+  if (sanityPage) {
+    return <ContentPageView page={sanityPage} />;
   }
 
   if (isLegacyRoute(path)) {
     return <ContentPageView page={createLegacyContentPage(path)} />;
   }
 
-  if (!page) {
-    notFound();
-  }
+  if (!page) notFound();
 }

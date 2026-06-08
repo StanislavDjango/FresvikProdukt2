@@ -63,6 +63,7 @@ function pageBody(page) {
   return blocks(
     [
       page.intro,
+      ...page.cards.map(cardToText),
       ...page.sections.flatMap((section) => [
         section.title,
         section.intro,
@@ -186,6 +187,7 @@ for (const page of pages) {
       applications: page.cards.map((card) => card.title),
       seoTitle: page.title,
       seoDescription: page.description,
+      sourceUrl: page.sourceUrl,
       migratedImagePath: image,
     });
     continue;
@@ -209,6 +211,7 @@ for (const page of pages) {
       ctaText: "Kontakt Fresvik Produkt for meir informasjon.",
       seoTitle: page.title,
       seoDescription: page.description,
+      sourceUrl: page.sourceUrl,
       migratedImagePath: image,
     });
     continue;
@@ -223,6 +226,7 @@ for (const page of pages) {
     body: pageBody(page),
     seoTitle: page.title,
     seoDescription: page.description,
+    sourceUrl: page.sourceUrl,
     migratedImagePath: image,
   });
 }

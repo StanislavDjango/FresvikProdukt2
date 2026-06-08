@@ -405,18 +405,27 @@ function mergeContentPage(
 ): ContentPage {
   const path = pathForSlug(doc.slug);
   const ownSections = sanitySections(doc);
-  const sections =
-    indexSections.length > 0
-      ? indexSections
-      : ownSections.length > 0
-        ? ownSections
-        : fallback?.sections || [];
+  const keepLocalMigrationStructure = path === "/" && Boolean(fallback);
   const sanityCards = imageCard(doc);
-  const cards =
-    indexSections[0]?.items.slice(0, 9) ||
-    (sanityCards.length > 0
-      ? sanityCards
-      : withoutLocalAssetRefs(fallback?.cards || []));
+  let sections: ContentPage["sections"];
+  let cards: ContentPage["cards"];
+
+  if (keepLocalMigrationStructure) {
+    sections = fallback?.sections || [];
+    cards = fallback?.cards || [];
+  } else {
+    sections =
+      indexSections.length > 0
+        ? indexSections
+        : ownSections.length > 0
+          ? ownSections
+          : fallback?.sections || [];
+    cards =
+      indexSections[0]?.items.slice(0, 9) ||
+      (sanityCards.length > 0
+        ? sanityCards
+        : withoutLocalAssetRefs(fallback?.cards || []));
+  }
 
   return {
     slug: path,

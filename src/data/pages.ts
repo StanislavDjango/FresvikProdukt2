@@ -101,21 +101,96 @@ const serviceCards: ContentCard[] = [
   },
 ];
 
-const supportCards: ContentCard[] = [
+const homeProductCards: ContentCard[] = [
   {
-    title: "Dokumentasjon",
-    text: "Samla område for datablad, dokumentasjon og relevante PDF-filer.",
-    href: "/dokumentasjon",
+    title: "Fresvik PIR Panel",
+    text:
+      "Brannsikre panel med PIR skum. Med smart design og eksenterslås, tilbyr Fresvik Produkt sine nye PIR-Panel. Ein komplett og skreddarsydd løysing for kjøle- og fryserom. Panela kombinerer framifrå branneigenskapar og godkjenning i klasse B-s1, d0 med enkel og rask montering. Desse SINTEF-godkjente PIR-panela gir ei trygg, effektiv og moderne løysing tilpassa dagens krav.",
+    href: "/produkt/fresvik-pir-panel",
+    imageUrl: "/assets/fresvik/images/old-site/home-pir-fire-illustration.png",
+    imageAlt: "Illustrasjon av forskjellen i brannsikkerhet mellom PIR og PUR paneler.",
   },
   {
-    title: "Monteringsanvisning",
-    text: "Monteringsrettleiingar og praktisk dokumentasjon for utførande.",
-    href: "/monteringsanvisning",
+    title: "Fresvik-panel",
+    text:
+      "Utvikla og produsert i Norge. SINTEF-godkjent. Fleksibelt på byggeplass. Enkel montasje med eksenterlås. Modulmål gir mindre svinn. Kort design-, produksjons- og leveringstid.",
+    href: "/produkt/fresvik-pur-panel",
+    imageUrl: "/assets/fresvik/images/old-site/home-fresvik-panel-room.jpg",
+    imageAlt: "Et industrilokale med hvite vegger, rada med dører, og takbelysning.",
   },
   {
-    title: "FAQ",
-    text: "Ofte stilte spørsmål frå kundar, prosjekt og samarbeidspartnarar.",
-    href: "/kundeservice/faq",
+    title: "Kjøle- og fryseportar",
+    text: "Produktteaser frå den gamle framsida for kjøle- og fryseportar.",
+    href: "/produkt/kjole-fryseportar",
+    imageUrl: "/assets/fresvik/images/old-site/home-kjole-fryseportar.jpg",
+    imageAlt: "Bilde av en fryseport produsert av Fresvik Produkt.",
+  },
+  {
+    title: "Kjøle- og frysedører",
+    text: "Produktteaser frå den gamle framsida for kjøle- og frysedører.",
+    href: "/produkt/kjole-frysedorer",
+    imageUrl: "/assets/fresvik/images/old-site/home-kjole-frysedorer.jpg",
+    imageAlt: "Bildet viser en åpen fryseport med metallfeste på bunnen.",
+  },
+  {
+    title: "Fasadepanel",
+    text: "Produktteaser frå den gamle framsida for fasadepanel.",
+    href: "/produkt/fasadepanel",
+    imageUrl: "/assets/fresvik/images/old-site/home-fasadepanel.webp",
+    imageAlt: "En stor, moderne lagerbygning med flere lastebildeporter utenfor og en klar blå himmel.",
+  },
+];
+
+const homeCustomerCards: ContentCard[] = [
+  {
+    title: "Butikk",
+    text:
+      "Vi er marknadsleiar på kjøle- og fryserom til daglegvarehandel, energistasjonar og storkioskar.",
+    href: "/kjolerom-fryserom-butikk",
+    imageUrl: "/assets/fresvik/images/old-site/1715599204491-06f69a318b.jpg",
+    imageAlt: "Meieriavdelingen i en dagligvarebutikk.",
+  },
+  {
+    title: "Skip/offshore",
+    text:
+      "Vi er einaste norske produsent av polyuretan sandwich-panel godkjend for maritimt bruk - DIN 4102-B2.",
+    href: "/kjolerom-fryserom-offshore",
+    imageUrl: "/assets/fresvik/images/old-site/image-asset-2-59c753eb14.jpeg",
+    imageAlt: "En stor rød og hvit offshore supply skip seiler i vannet.",
+  },
+  {
+    title: "Storkjøkken/institusjon",
+    text:
+      "Vi leverer kjøle- fryserom og tilleggsprodukt til storkjøken og institusjonar over heile landet.",
+    href: "/kjolerom-fryserom-storkjokken",
+    imageUrl: "/assets/fresvik/images/old-site/1733820776326-534d12e99d.jpg",
+    imageAlt: "Et tomt rom med hvite vegger, grå gulv og taklys.",
+  },
+];
+
+const homeNewsCards: ContentCard[] = [
+  {
+    title: "Møt vår nye tekniske sjef",
+    text: "Aktuelt-sak vist på den gamle framsida.",
+    href: "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+    imageUrl: "/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
+    imageAlt: "Møt vår nye tekniske sjef",
+  },
+  {
+    title: "Ny teknisk teiknar på plass",
+    text:
+      "Den nye teiknaren vår har arbeidd på kontoret sidan nyttår og er alt komen godt inn i funksjonen.",
+    href: "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+    imageUrl: "/assets/fresvik/images/migrated/havard-berdal.jpg",
+    imageAlt: "Ny teknisk teiknar på plass",
+  },
+  {
+    title: "John Bøthun blir pensjonist",
+    text:
+      "Den som i dag har vore lengst tilsett i Fresvik Produkt vil pensjonere seg frå 1. september.",
+    href: "/aktuelt/john-bothun-blir-pensjonist",
+    imageUrl: "/assets/fresvik/images/migrated/john-bthun-fresvik-produkt.jpg",
+    imageAlt: "John Bøthun blir pensjonist",
   },
 ];
 
@@ -990,37 +1065,160 @@ const frysetunnelSections = [
 export const contentPages: ContentPage[] = [
   {
     slug: "/",
-    title: "Fresvik Produkt",
-    eyebrow: "Isolerte løysingar for norske prosjekt",
+    title: "Leiande fagfolk på kjøle- og fryserom i Norge",
+    eyebrow: "Fresvik Produkt",
     intro:
-      "Fresvik Produkt leverer isolerte panel, portar, dører, montasje og service til kjøle-, fryse- og industriprosjekt.",
+      "Den einaste norske produsenten av isolasjonspanel, med over 45 års erfaring, som tilbyr kvalitet og kunnskap til deg som kjøleentreprenør.",
     description:
-      "Modernisert for rask oversikt over produkt, tenester, dokumentasjon og kontaktpunkt.",
+      "Vi har produsert isolasjonspanel, dører og portar til kjøle- og fryserom i Fresvik sidan 1980. Våre fagfolk gir kvalitet og kunnskap.",
     pageType: "home",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/",
-    cards: [...productCards.slice(0, 3), ...serviceCards],
+    cards: [
+      {
+        title: "Norsk produsent",
+        text:
+          "Norges flagg vart vist i hero-området på den gamle framsida saman med bodskapen om norsk produksjon og over 45 års erfaring.",
+        imageUrl: "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
+        imageAlt: "Norges flagg, rød med blått kors omgitt av hvit kant.",
+      },
+      ...homeProductCards.slice(0, 2),
+    ],
     sections: [
       {
-        title: "Produktområde",
+        title: "Produktteaserar frå gammal framside",
         intro:
-          "Startpunkt for produktinnhald frå den gamle nettstaden, med kjelde-URL-ar og assets bevart for vidare import.",
-        items: productCards,
+          "Desse produktlenkene og tekstane låg på den gamle framsida og skal bevarast før vidare designarbeid.",
+        items: homeProductCards,
       },
       {
-        title: "Tenester og oppfølging",
+        title: "Våre kundar",
         intro:
-          "Prosjekt kan trenge meir enn produkt. Fresvik skal også synleggjere leveranse, montasje og service.",
-        items: serviceCards,
+          "Basert på modular, skreddarsyr vi kjøle- og fryserom for butikk, næringsmiddelindustri, institusjonar, storkjøken, skip og offshoreinstallasjonar.",
+        items: [
+          {
+            title: "Våre kundar dekor",
+            text:
+              "Snøkrystallgrafikk frå kundeseksjonen på den gamle framsida.",
+            imageUrl: "/assets/fresvik/images/migrated/flake-left.png",
+            imageAlt: "En snøkrystall med komplekse mønstre.",
+          },
+          ...homeCustomerCards,
+        ],
       },
       {
-        title: "Dokumentasjon og kundestøtte",
-        items: supportCards,
+        title: "Aktuelt",
+        items: homeNewsCards,
       },
-    ],
-    todo: [
-      "Migrer endeleg hero-tekst og bilete frå gammal framside.",
-      "Koble produkt, dokument og nyheiter til Sanity når skjema er på plass.",
+      {
+        title: "Vil du jobbe hjå oss?",
+        items: [
+          {
+            title: "Vil du jobbe hjå oss?",
+            text:
+              "Fresvik Produkt sine 45 tilsette utgjer det fremste miljøet i landet på produksjon av kjøle- og fryserom. Vi er stadig på jakt etter flinke kollegaer.",
+            href: "/stillingledig",
+            imageUrl: "/assets/fresvik/images/old-site/home-job-factory.jpg",
+            imageAlt:
+              "En mann står ved en kontrollpult på fabrikken vår i Fresvik, omgitt av maskiner og produksjonsutstyr.",
+          },
+        ],
+      },
+      {
+        title: "Kontakt",
+        items: [
+          {
+            title: "Fresvik Produkt AS",
+            text:
+              "Fresvikvegen 995, 6896 Fresvik. Tel: 57 69 83 00. E-post: post@fresvik.no.",
+            href: "mailto:post@fresvik.no",
+          },
+          {
+            title: "Salsavdeling Fresvik:",
+            text: "Arne-Olav Lien Bardølsgård. Mob: 99 55 25 49. arnbar@fresvik.no.",
+            href: "mailto:arnbar@fresvik.no",
+          },
+          {
+            title: "Salsavdeling Drammen:",
+            text: "Lars Erling Livrud. Mob: 40 47 79 12. larliv@fresvik.no.",
+            href: "mailto:larliv@fresvik.no",
+          },
+          {
+            title: ":",
+            text: "Frode Winther. Mob: 91 38 39 49. frowin@fresvik.no.",
+            href: "mailto:frowin@fresvik.no",
+          },
+        ],
+      },
+      {
+        title: "Motta nyheitsbrev",
+        intro:
+          "Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen. Sjå vår personvernerklæring.",
+        items: [
+          {
+            title: "Email Address",
+            text: "Sign Up",
+          },
+          {
+            title: "Personvernerklæring",
+            text: "Footer-lenke frå gammal framside.",
+            href: "/personvernerklering",
+          },
+          {
+            title: "Openheitslova",
+            text: "Footer-lenke frå gammal framside.",
+            href: "/openheitslova",
+          },
+          {
+            title: "Nettside levert av GASTA",
+            text: "GASTA",
+            href: "https://www.gasta.no",
+          },
+        ],
+      },
+      {
+        title: "Footer sertifikat og merker",
+        intro:
+          "Bileta låg i footer-området på den gamle framsida og blir bevart som migrerte assets.",
+        items: [
+          {
+            title: "Sentral godkjent",
+            text: "Sertifikatmerke frå gammal framside.",
+            imageUrl: "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+            imageAlt: "sentral+godkjent.png",
+          },
+          {
+            title: "TG-2135",
+            text: "Sertifikatmerke frå gammal framside.",
+            imageUrl: "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+            imageAlt: "TG-2135.jpg",
+          },
+          {
+            title: "Poly",
+            text: "Merke frå gammal framside.",
+            imageUrl: "/assets/fresvik/images/old-site/home-poly.png",
+            imageAlt: "Poly.png",
+          },
+          {
+            title: "Startbank",
+            text: "Merke frå gammal framside.",
+            imageUrl: "/assets/fresvik/images/old-site/home-startbank.png",
+            imageAlt: "Startbarnk.png",
+          },
+          {
+            title: "Miljøfyrtårn",
+            text: "Merke frå gammal framside.",
+            imageUrl: "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
+            imageAlt: "Miljøfyrtårn",
+          },
+          {
+            title: "CE",
+            text: "CE-logo frå gammal framside.",
+            imageUrl: "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+            imageAlt: "ce-logo-png-transparent.png",
+          },
+        ],
+      },
     ],
   },
   {

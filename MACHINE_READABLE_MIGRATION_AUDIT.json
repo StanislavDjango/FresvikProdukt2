@@ -1,28 +1,28 @@
 {
   "summary": {
-    "generatedAt": "2026-06-08T06:54:38.913Z",
+    "generatedAt": "2026-06-08T23:09:19.025Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
     "liveSitemapUrlCount": 104,
     "liveSitemapImageEntries": 322,
     "liveSitemapUniqueImageUrls": 275,
-    "migratedPageCount": 76,
+    "migratedPageCount": 77,
     "redirectCount": 29,
     "partialCount": 0,
     "missingCount": 0,
     "needsReviewCount": 0,
     "inventoryOnlyCount": 0,
-    "localImageAssets": 249,
+    "localImageAssets": 259,
     "localDocumentAssets": 26,
-    "originalUrlsRecovered": 263,
+    "originalUrlsRecovered": 273,
     "routeStatusCounts": {
-      "page": 76,
+      "page": 77,
       "redirect": 29
     },
     "assetStatusCounts": {
-      "migrated": 262,
-      "ignored-with-reason": 13,
+      "migrated": 269,
+      "ignored-with-reason": 9,
       "duplicate": 47,
       "unrecoverable": 6
     },
@@ -30,7 +30,180 @@
       "migrated": 26
     }
   },
+  "homepage": [
+    {
+      "section": "hero",
+      "existsOnOld": "yes",
+      "existsOnNew": "yes",
+      "exactTextMigrated": "yes",
+      "imagesMigrated": "yes",
+      "linksMigrated": "yes",
+      "status": "migrated",
+      "oldText": "Leiande fagfolk på kjøle- og fryserom i Norge. Den einaste norske produsenten av isolasjonspanel, med over 45 års erfaring, som tilbyr kvalitet og kunnskap til deg som kjøleentreprenør.",
+      "missingTexts": [],
+      "missingImages": [],
+      "missingLinks": [],
+      "notes": "Required old homepage section content is present in local migration data."
+    },
+    {
+      "section": "PIR-panel promo block",
+      "existsOnOld": "yes",
+      "existsOnNew": "yes",
+      "exactTextMigrated": "yes",
+      "imagesMigrated": "yes",
+      "linksMigrated": "yes",
+      "status": "migrated",
+      "oldText": "Fresvik PIR Panel. Brannsikre panel med PIR skum. Med smart design og eksenterslås, tilbyr Fresvik Produkt sine nye PIR-Panel.",
+      "missingTexts": [],
+      "missingImages": [],
+      "missingLinks": [],
+      "notes": "Required old homepage section content is present in local migration data."
+    },
+    {
+      "section": "Fresvik-panel benefits",
+      "existsOnOld": "yes",
+      "existsOnNew": "yes",
+      "exactTextMigrated": "yes",
+      "imagesMigrated": "yes",
+      "linksMigrated": "yes",
+      "status": "migrated",
+      "oldText": "Fresvik-panel. Utvikla og produsert i Norge. SINTEF-godkjent. Fleksibelt på byggeplass. Enkel montasje med eksenterlås. Modulmål gir mindre svinn. Kort design-, produksjons- og leveringstid.",
+      "missingTexts": [],
+      "missingImages": [],
+      "missingLinks": [],
+      "notes": "Required old homepage section content is present in local migration data."
+    },
+    {
+      "section": "product teaser links",
+      "existsOnOld": "yes",
+      "existsOnNew": "yes",
+      "exactTextMigrated": "yes",
+      "imagesMigrated": "yes",
+      "linksMigrated": "yes",
+      "status": "migrated",
+      "oldText": "Kjøle- og fryseportar. Kjøle- og frysedører. Fasadepanel.",
+      "missingTexts": [],
+      "missingImages": [],
+      "missingLinks": [],
+      "notes": "Required old homepage section content is present in local migration data."
+    },
+    {
+      "section": "Våre kundar",
+      "existsOnOld": "yes",
+      "existsOnNew": "yes",
+      "exactTextMigrated": "yes",
+      "imagesMigrated": "yes",
+      "linksMigrated": "yes",
+      "status": "migrated",
+      "oldText": "Basert på modular, skreddarsyr vi kjøle- og fryserom for butikk, næringsmiddelindustri, institusjonar, storkjøken, skip og offshoreinstallasjonar.",
+      "missingTexts": [],
+      "missingImages": [],
+      "missingLinks": [],
+      "notes": "Required old homepage section content is present in local migration data."
+    },
+    {
+      "section": "Aktuelt",
+      "existsOnOld": "yes",
+      "existsOnNew": "yes",
+      "exactTextMigrated": "yes",
+      "imagesMigrated": "yes",
+      "linksMigrated": "yes",
+      "status": "migrated",
+      "oldText": "Aktuelt. Møt vår nye tekniske sjef. Ny teknisk teiknar på plass. John Bøthun blir pensjonist.",
+      "missingTexts": [],
+      "missingImages": [],
+      "missingLinks": [],
+      "notes": "Required old homepage section content is present in local migration data."
+    },
+    {
+      "section": "job CTA",
+      "existsOnOld": "yes",
+      "existsOnNew": "yes",
+      "exactTextMigrated": "yes",
+      "imagesMigrated": "yes",
+      "linksMigrated": "yes",
+      "status": "migrated",
+      "oldText": "Vil du jobbe hjå oss? Fresvik Produkt sine 45 tilsette utgjer det fremste miljøet i landet på produksjon av kjøle- og fryserom. Vi er stadig på jakt etter flinke kollegaer.",
+      "missingTexts": [],
+      "missingImages": [],
+      "missingLinks": [],
+      "notes": "Required old homepage section content is present in local migration data."
+    },
+    {
+      "section": "contact section",
+      "existsOnOld": "yes",
+      "existsOnNew": "yes",
+      "exactTextMigrated": "yes",
+      "imagesMigrated": "yes",
+      "linksMigrated": "yes",
+      "status": "migrated",
+      "oldText": "Fresvik Produkt AS. Fresvikvegen 995, 6896 Fresvik. Tel: 57 69 83 00. E-post: post@fresvik.no.",
+      "missingTexts": [],
+      "missingImages": [],
+      "missingLinks": [],
+      "notes": "Required old homepage section content is present in local migration data."
+    },
+    {
+      "section": "sales departments",
+      "existsOnOld": "yes",
+      "existsOnNew": "yes",
+      "exactTextMigrated": "yes",
+      "imagesMigrated": "yes",
+      "linksMigrated": "yes",
+      "status": "migrated",
+      "oldText": "Salsavdeling Fresvik: Arne-Olav Lien Bardølsgård. Salsavdeling Drammen: Lars Erling Livrud. Frode Winther.",
+      "missingTexts": [],
+      "missingImages": [],
+      "missingLinks": [],
+      "notes": "Required old homepage section content is present in local migration data."
+    },
+    {
+      "section": "newsletter",
+      "existsOnOld": "yes",
+      "existsOnNew": "yes",
+      "exactTextMigrated": "yes",
+      "imagesMigrated": "yes",
+      "linksMigrated": "yes",
+      "status": "migrated",
+      "oldText": "Motta nyheitsbrev. Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen. Sjå vår personvernerklæring.",
+      "missingTexts": [],
+      "missingImages": [],
+      "missingLinks": [],
+      "notes": "Required old homepage section content is present in local migration data."
+    },
+    {
+      "section": "footer links",
+      "existsOnOld": "yes",
+      "existsOnNew": "yes",
+      "exactTextMigrated": "yes",
+      "imagesMigrated": "yes",
+      "linksMigrated": "yes",
+      "status": "migrated",
+      "oldText": "Personvernerklæring. Openheitslova. Nettside levert av GASTA.",
+      "missingTexts": [],
+      "missingImages": [],
+      "missingLinks": [],
+      "notes": "Required old homepage section content is present in local migration data."
+    }
+  ],
   "routes": [
+    {
+      "oldUrl": "https://www.fresvik.no/",
+      "oldPath": "/",
+      "newRoute": "/",
+      "status": "page",
+      "contentType": "page",
+      "hasTitle": true,
+      "hasIntro": true,
+      "hasFullBody": true,
+      "hasImages": true,
+      "hasDocuments": false,
+      "hasInternalLinks": true,
+      "hasExternalLinks": true,
+      "oldImageCount": 13,
+      "localImageCount": 20,
+      "notes": "Covered as migrated page in local data."
+    },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt",
       "oldPath": "/aktuelt",
@@ -43,7 +216,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 19,
       "notes": "Covered as migrated page in local data."
@@ -60,7 +233,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
       "notes": "Covered as migrated page in local data."
@@ -77,7 +250,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
       "notes": "Covered as migrated page in local data."
@@ -94,7 +267,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -111,7 +284,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
       "notes": "Covered as migrated page in local data."
@@ -128,7 +301,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 6,
       "notes": "Covered as migrated page in local data."
@@ -145,7 +318,7 @@
       "hasImages": false,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Covered as migrated page in local data."
@@ -162,7 +335,7 @@
       "hasImages": false,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Covered as migrated page in local data."
@@ -179,7 +352,7 @@
       "hasImages": false,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Covered as migrated page in local data."
@@ -196,7 +369,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
       "notes": "Covered as migrated page in local data."
@@ -213,7 +386,7 @@
       "hasImages": false,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Covered as migrated page in local data."
@@ -230,7 +403,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -264,7 +437,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
       "notes": "Covered as migrated page in local data."
@@ -281,7 +454,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -298,7 +471,7 @@
       "hasImages": false,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Covered as migrated page in local data."
@@ -315,7 +488,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 10,
       "localImageCount": 10,
       "notes": "Covered as migrated page in local data."
@@ -332,7 +505,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -349,7 +522,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -366,7 +539,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 9,
       "localImageCount": 9,
       "notes": "Covered as migrated page in local data."
@@ -383,7 +556,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
       "notes": "Covered as migrated page in local data."
@@ -400,7 +573,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -417,7 +590,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 6,
       "notes": "Covered as migrated page in local data."
@@ -434,7 +607,7 @@
       "hasImages": false,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Covered as migrated page in local data."
@@ -451,7 +624,7 @@
       "hasImages": false,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Covered as migrated page in local data."
@@ -468,7 +641,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -485,7 +658,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -502,7 +675,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /tilleggsutstyr."
@@ -518,8 +691,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Redirects to /tilleggsutstyr."
@@ -535,8 +708,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Redirects to /tilleggsutstyr."
@@ -552,8 +725,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Redirects to /tilleggsutstyr."
@@ -569,8 +742,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 1,
       "notes": "Redirects to /tilleggsutstyr."
@@ -587,7 +760,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /tilleggsutstyr."
@@ -604,7 +777,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /tilleggsutstyr."
@@ -621,7 +794,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /tilleggsutstyr."
@@ -638,7 +811,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /tilleggsutstyr."
@@ -655,7 +828,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /tilleggsutstyr."
@@ -672,7 +845,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /tilleggsutstyr."
@@ -688,8 +861,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Redirects to /tilleggsutstyr."
@@ -705,8 +878,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 1,
       "notes": "Redirects to /tilleggsutstyr."
@@ -722,8 +895,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 1,
       "notes": "Redirects to /tilleggsutstyr."
@@ -739,8 +912,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 1,
       "notes": "Redirects to /tilleggsutstyr."
@@ -756,8 +929,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 1,
       "notes": "Redirects to /tilleggsutstyr."
@@ -773,8 +946,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 1,
       "notes": "Redirects to /tilleggsutstyr."
@@ -790,8 +963,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Redirects to /tilleggsutstyr."
@@ -825,7 +998,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -842,7 +1015,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
       "notes": "Covered as migrated page in local data."
@@ -859,7 +1032,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 18,
       "localImageCount": 17,
       "notes": "Covered as migrated page in local data."
@@ -893,7 +1066,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
       "notes": "Covered as migrated page in local data."
@@ -910,7 +1083,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -927,7 +1100,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
       "notes": "Covered as migrated page in local data."
@@ -944,7 +1117,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 6,
       "notes": "Covered as migrated page in local data."
@@ -961,7 +1134,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -978,7 +1151,7 @@
       "hasImages": false,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Covered as migrated page in local data."
@@ -995,7 +1168,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 11,
       "notes": "Covered as migrated page in local data."
@@ -1012,7 +1185,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
       "notes": "Covered as migrated page in local data."
@@ -1028,8 +1201,8 @@
       "hasFullBody": false,
       "hasImages": true,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 1,
       "notes": "Redirects to /produkt/fresvik-pur-panel."
@@ -1046,7 +1219,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 7,
       "localImageCount": 6,
       "notes": "Covered as migrated page in local data."
@@ -1063,7 +1236,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 8,
       "localImageCount": 9,
       "notes": "Covered as migrated page in local data."
@@ -1080,7 +1253,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
       "notes": "Covered as migrated page in local data."
@@ -1097,7 +1270,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 8,
       "localImageCount": 6,
       "notes": "Covered as migrated page in local data."
@@ -1114,7 +1287,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 0,
       "notes": "Redirects to /produkt."
@@ -1131,7 +1304,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 25,
       "notes": "Covered as migrated page in local data."
@@ -1148,7 +1321,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 4,
       "notes": "Covered as migrated page in local data."
@@ -1165,7 +1338,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
       "notes": "Covered as migrated page in local data."
@@ -1182,7 +1355,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
       "notes": "Covered as migrated page in local data."
@@ -1199,7 +1372,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
       "notes": "Covered as migrated page in local data."
@@ -1216,7 +1389,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
       "notes": "Covered as migrated page in local data."
@@ -1233,7 +1406,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
       "notes": "Covered as migrated page in local data."
@@ -1250,7 +1423,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /referansar."
@@ -1267,7 +1440,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /referansar."
@@ -1284,7 +1457,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /referansar."
@@ -1301,7 +1474,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /referansar."
@@ -1318,7 +1491,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
       "notes": "Covered as migrated page in local data."
@@ -1335,7 +1508,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
       "notes": "Covered as migrated page in local data."
@@ -1352,7 +1525,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -1369,7 +1542,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 7,
       "localImageCount": 7,
       "notes": "Covered as migrated page in local data."
@@ -1386,7 +1559,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
       "notes": "Covered as migrated page in local data."
@@ -1403,7 +1576,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
       "notes": "Covered as migrated page in local data."
@@ -1420,7 +1593,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
       "notes": "Covered as migrated page in local data."
@@ -1437,7 +1610,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 9,
       "localImageCount": 9,
       "notes": "Covered as migrated page in local data."
@@ -1454,7 +1627,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
       "notes": "Covered as migrated page in local data."
@@ -1471,7 +1644,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
       "notes": "Covered as migrated page in local data."
@@ -1488,7 +1661,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 6,
       "notes": "Covered as migrated page in local data."
@@ -1505,7 +1678,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
       "notes": "Covered as migrated page in local data."
@@ -1522,7 +1695,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
       "notes": "Covered as migrated page in local data."
@@ -1539,7 +1712,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
       "notes": "Covered as migrated page in local data."
@@ -1556,7 +1729,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
       "notes": "Covered as migrated page in local data."
@@ -1573,7 +1746,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
       "notes": "Covered as migrated page in local data."
@@ -1590,7 +1763,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
       "notes": "Covered as migrated page in local data."
@@ -1607,7 +1780,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 9,
       "localImageCount": 9,
       "notes": "Covered as migrated page in local data."
@@ -1624,7 +1797,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
       "notes": "Covered as migrated page in local data."
@@ -1640,8 +1813,8 @@
       "hasFullBody": false,
       "hasImages": false,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasInternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /kontakt."
@@ -1658,7 +1831,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 13,
       "localImageCount": 0,
       "notes": "Redirects to /."
@@ -1692,7 +1865,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Redirects to /tilleggsutstyr."
@@ -1709,7 +1882,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 0,
       "notes": "Redirects to /tilleggsutstyr."
@@ -1726,7 +1899,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
       "notes": "Covered as migrated page in local data."
@@ -1743,7 +1916,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
       "notes": "Covered as migrated page in local data."
@@ -1760,7 +1933,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
       "notes": "Covered as migrated page in local data."
@@ -1777,7 +1950,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 12,
       "localImageCount": 23,
       "notes": "Covered as migrated page in local data."
@@ -1794,7 +1967,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 14,
       "localImageCount": 16,
       "notes": "Covered as migrated page in local data."
@@ -1811,7 +1984,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
       "notes": "Covered as migrated page in local data."
@@ -3693,30 +3866,30 @@
       "oldPath": "/startside",
       "title": "",
       "caption": "",
-      "localPath": null,
-      "status": "ignored-with-reason",
-      "confidence": 0.063,
-      "notes": "Old URL redirects to /; sitemap image is not required on a redirect-only route."
+      "localPath": "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
+      "status": "migrated",
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/de58b233-c5b5-4348-8494-72c6df72a6dd/Blue+3D+Cube+Icon+Logo+Template+Square+-+Made+with+PosterMyWall+%285%29.png",
       "oldPath": "/startside",
       "title": "",
       "caption": "",
-      "localPath": null,
-      "status": "ignored-with-reason",
-      "confidence": 0.25,
-      "notes": "Old URL redirects to /; sitemap image is not required on a redirect-only route."
+      "localPath": "/assets/fresvik/images/old-site/home-pir-fire-illustration.png",
+      "status": "migrated",
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/2f0fa235-c925-4a25-954e-eddda22388b1/aaa.jpg",
       "oldPath": "/startside",
       "title": "",
       "caption": "",
-      "localPath": null,
-      "status": "ignored-with-reason",
-      "confidence": 0.077,
-      "notes": "Old URL redirects to /; sitemap image is not required on a redirect-only route."
+      "localPath": "/assets/fresvik/images/old-site/home-fresvik-panel-room.jpg",
+      "status": "migrated",
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/023d763a-056e-4d63-9125-90225b9624fd/New+Logo+Design+2024+-+Made+with+PosterMyWall+%2815%29.png",
@@ -3743,30 +3916,30 @@
       "oldPath": "/startside",
       "title": "",
       "caption": "",
-      "localPath": null,
-      "status": "ignored-with-reason",
-      "confidence": 0.154,
-      "notes": "Old URL redirects to /; sitemap image is not required on a redirect-only route."
+      "localPath": "/assets/fresvik/images/old-site/home-kjole-fryseportar.jpg",
+      "status": "migrated",
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/67e1460b-fd80-4be3-98d1-1fa26118af4c/FP+Produkt+23.jpg",
       "oldPath": "/startside",
       "title": "",
       "caption": "",
-      "localPath": null,
-      "status": "ignored-with-reason",
-      "confidence": 0.125,
-      "notes": "Old URL redirects to /; sitemap image is not required on a redirect-only route."
+      "localPath": "/assets/fresvik/images/old-site/home-kjole-frysedorer.jpg",
+      "status": "migrated",
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1c0b8495-5976-420a-b7a9-eb2f88e17b74/image-asset+%281%29.jpg",
       "oldPath": "/startside",
       "title": "",
       "caption": "",
-      "localPath": null,
-      "status": "ignored-with-reason",
-      "confidence": 0.222,
-      "notes": "Old URL redirects to /; sitemap image is not required on a redirect-only route."
+      "localPath": "/assets/fresvik/images/old-site/home-fasadepanel.webp",
+      "status": "migrated",
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
@@ -3813,10 +3986,10 @@
       "oldPath": "/startside",
       "title": "",
       "caption": "",
-      "localPath": null,
-      "status": "ignored-with-reason",
-      "confidence": 0.25,
-      "notes": "Old URL redirects to /; sitemap image is not required on a redirect-only route."
+      "localPath": "/assets/fresvik/images/old-site/home-job-factory.jpg",
+      "status": "migrated",
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
@@ -5089,6 +5262,36 @@
       "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
     },
     {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
+      "oldPath": "/",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/home-poly.png",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385862366-SQTJIQF8X2Y8LT02Z2UT/sentral%2Bgodkjent.png",
+      "oldPath": "/",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385876430-SF9NN179JLHLSGSAMMMQ/Startbarnk.png",
+      "oldPath": "/",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/home-startbank.png",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
       "originalUrl": "TODO: unknown original URL",
       "oldPath": "/kjolerom-fryserom-offshore",
       "title": "",
@@ -5695,34 +5898,146 @@
       "notes": "Internal route exists."
     },
     {
-      "href": "/dokumentasjon",
-      "normalized": "/dokumentasjon",
+      "href": "/assets/fresvik/images/old-site/home-pir-fire-illustration.png",
+      "normalized": "/assets/fresvik/images/old-site/home-pir-fire-illustration.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 108,
-      "status": "ok",
-      "notes": "Internal route exists."
+      "line": 110,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
     },
     {
-      "href": "/monteringsanvisning",
-      "normalized": "/monteringsanvisning",
-      "sourceFile": "src/data/pages.ts",
-      "line": 113,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/kundeservice/faq",
-      "normalized": "/kundeservice/faq",
+      "href": "/assets/fresvik/images/old-site/home-fresvik-panel-room.jpg",
+      "normalized": "/assets/fresvik/images/old-site/home-fresvik-panel-room.jpg",
       "sourceFile": "src/data/pages.ts",
       "line": 118,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/home-kjole-fryseportar.jpg",
+      "normalized": "/assets/fresvik/images/old-site/home-kjole-fryseportar.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 125,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/home-kjole-frysedorer.jpg",
+      "normalized": "/assets/fresvik/images/old-site/home-kjole-frysedorer.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 132,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/home-fasadepanel.webp",
+      "normalized": "/assets/fresvik/images/old-site/home-fasadepanel.webp",
+      "sourceFile": "src/data/pages.ts",
+      "line": 139,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/kjolerom-fryserom-butikk",
+      "normalized": "/kjolerom-fryserom-butikk",
+      "sourceFile": "src/data/pages.ts",
+      "line": 149,
       "status": "ok",
       "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/1715599204491-06f69a318b.jpg",
+      "normalized": "/assets/fresvik/images/old-site/1715599204491-06f69a318b.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 150,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/kjolerom-fryserom-offshore",
+      "normalized": "/kjolerom-fryserom-offshore",
+      "sourceFile": "src/data/pages.ts",
+      "line": 157,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/image-asset-2-59c753eb14.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/image-asset-2-59c753eb14.jpeg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 158,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/kjolerom-fryserom-storkjokken",
+      "normalized": "/kjolerom-fryserom-storkjokken",
+      "sourceFile": "src/data/pages.ts",
+      "line": 165,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/1733820776326-534d12e99d.jpg",
+      "normalized": "/assets/fresvik/images/old-site/1733820776326-534d12e99d.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 166,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+      "normalized": "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+      "sourceFile": "src/data/pages.ts",
+      "line": 175,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
+      "normalized": "/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 176,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+      "normalized": "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+      "sourceFile": "src/data/pages.ts",
+      "line": 183,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/migrated/havard-berdal.jpg",
+      "normalized": "/assets/fresvik/images/migrated/havard-berdal.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 184,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/aktuelt/john-bothun-blir-pensjonist",
+      "normalized": "/aktuelt/john-bothun-blir-pensjonist",
+      "sourceFile": "src/data/pages.ts",
+      "line": 191,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/migrated/john-bthun-fresvik-produkt.jpg",
+      "normalized": "/assets/fresvik/images/migrated/john-bthun-fresvik-produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 192,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
     },
     {
       "href": "/firmainfo",
       "normalized": "/firmainfo",
       "sourceFile": "src/data/pages.ts",
-      "line": 126,
+      "line": 201,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -5730,7 +6045,7 @@
       "href": "/tilsette",
       "normalized": "/tilsette",
       "sourceFile": "src/data/pages.ts",
-      "line": 131,
+      "line": 206,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -5738,7 +6053,7 @@
       "href": "/aktuelt",
       "normalized": "/aktuelt",
       "sourceFile": "src/data/pages.ts",
-      "line": 136,
+      "line": 211,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -5746,7 +6061,7 @@
       "href": "/stillingledig",
       "normalized": "/stillingledig",
       "sourceFile": "src/data/pages.ts",
-      "line": 141,
+      "line": 216,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -5754,7 +6069,7 @@
       "href": "/assets/fresvik/documents/pir-panel.pdf",
       "normalized": "/assets/fresvik/documents/pir-panel.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 673,
+      "line": 748,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5762,7 +6077,7 @@
       "href": "/assets/fresvik/documents/pir-panel-montasjeanvisning.pdf",
       "normalized": "/assets/fresvik/documents/pir-panel-montasjeanvisning.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 678,
+      "line": 753,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5770,7 +6085,7 @@
       "href": "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
       "normalized": "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 686,
+      "line": 761,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5778,7 +6093,7 @@
       "href": "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
       "normalized": "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 691,
+      "line": 766,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5786,7 +6101,7 @@
       "href": "/monteringsanvisningar-fresvik-skyveport",
       "normalized": "/monteringsanvisningar-fresvik-skyveport",
       "sourceFile": "src/data/pages.ts",
-      "line": 696,
+      "line": 771,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -5794,7 +6109,7 @@
       "href": "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
       "normalized": "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 704,
+      "line": 779,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5802,7 +6117,7 @@
       "href": "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
       "normalized": "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 709,
+      "line": 784,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5810,7 +6125,7 @@
       "href": "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
       "normalized": "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 714,
+      "line": 789,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5818,7 +6133,7 @@
       "href": "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
       "normalized": "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 724,
+      "line": 799,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5826,7 +6141,7 @@
       "href": "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
       "normalized": "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 729,
+      "line": 804,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5834,7 +6149,7 @@
       "href": "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
       "normalized": "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 734,
+      "line": 809,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5842,7 +6157,7 @@
       "href": "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
       "normalized": "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 742,
+      "line": 817,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5850,7 +6165,7 @@
       "href": "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
       "normalized": "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 752,
+      "line": 827,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5858,7 +6173,7 @@
       "href": "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
       "normalized": "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 757,
+      "line": 832,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5866,7 +6181,7 @@
       "href": "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
       "normalized": "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 765,
+      "line": 840,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5874,7 +6189,7 @@
       "href": "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
       "normalized": "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 770,
+      "line": 845,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5882,7 +6197,7 @@
       "href": "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
       "normalized": "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 775,
+      "line": 850,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5890,7 +6205,7 @@
       "href": "/assets/fresvik/documents/quick-start-5010exp.pdf",
       "normalized": "/assets/fresvik/documents/quick-start-5010exp.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 780,
+      "line": 855,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5898,7 +6213,7 @@
       "href": "/assets/fresvik/documents/endre-skyveretning.pdf",
       "normalized": "/assets/fresvik/documents/endre-skyveretning.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 785,
+      "line": 860,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -5906,7 +6221,95 @@
       "href": "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
       "normalized": "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 790,
+      "line": 865,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
+      "normalized": "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1082,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/migrated/flake-left.png",
+      "normalized": "/assets/fresvik/images/migrated/flake-left.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1103,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/home-job-factory.jpg",
+      "normalized": "/assets/fresvik/images/old-site/home-job-factory.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1121,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/personvernerklering",
+      "normalized": "/personvernerklering",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1165,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/openheitslova",
+      "normalized": "/openheitslova",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1170,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+      "normalized": "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1187,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+      "normalized": "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1193,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/home-poly.png",
+      "normalized": "/assets/fresvik/images/old-site/home-poly.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1199,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/home-startbank.png",
+      "normalized": "/assets/fresvik/images/old-site/home-startbank.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1205,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
+      "normalized": "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1211,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+      "normalized": "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1217,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7287,6 +7690,14 @@
       "notes": "Local migration asset exists."
     },
     {
+      "href": "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
+      "normalized": "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 82,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
       "href": "/assets/fresvik/images/migrated/coop-extra-sogndal.jpeg",
       "normalized": "/assets/fresvik/images/migrated/coop-extra-sogndal.jpeg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
@@ -7754,6 +8165,12 @@
       "sourcePage": "src/data/pages.ts",
       "url": "https://www.fresvik.no/",
       "purpose": "source-url",
+      "status": "keep"
+    },
+    {
+      "sourcePage": "src/data/pages.ts",
+      "url": "https://www.gasta.no",
+      "purpose": "external-reference",
       "status": "keep"
     },
     {

@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-08T06:54:38.913Z
+Generated: 2026-06-08T23:09:19.025Z
 
 ## Summary
 
@@ -11,17 +11,35 @@ Generated: 2026-06-08T06:54:38.913Z
 | Local baseline old image count | 325 |
 | Live sitemap image entries | 322 |
 | Live sitemap unique image URLs | 275 |
-| Migrated page count | 76 |
+| Migrated page count | 77 |
 | Redirect count | 29 |
 | Partial count | 0 |
 | Missing count | 0 |
 | Needs-review count | 0 |
 | Inventory-only count | 0 |
-| Local image assets | 249 |
+| Local image assets | 259 |
 | Local document/PDF assets | 26 |
-| Asset originalUrls recovered in manifest | 263 |
+| Asset originalUrls recovered in manifest | 273 |
 
 Do not treat the migration as complete while any route, asset, document or link remains `partial`, `missing`, `needs-review`, `inventory-only`, `thumbnail-or-variant` or `local-only`.
+
+The root homepage `https://www.fresvik.no/` is audited as its own route even though the live sitemap exposes the same homepage inventory as `/startside`. Detailed homepage section coverage is written to `HOMEPAGE_MIGRATION_AUDIT.md`.
+
+## Homepage strict audit
+
+| section | existsOnOld | existsOnNew | exactTextMigrated | imagesMigrated | linksMigrated | status | notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| hero | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| PIR-panel promo block | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| Fresvik-panel benefits | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| product teaser links | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| Våre kundar | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| Aktuelt | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| job CTA | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| contact section | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| sales departments | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| newsletter | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| footer links | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
 
 ## Old sitemap coverage
 
@@ -31,6 +49,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 
 | oldPath | newRoute | status | type | title | intro | body | images | docs | notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| / | / | page | page | yes | yes | yes | 20/13 | no | Covered as migrated page in local data. |
 | /aktuelt | /aktuelt | page | news | yes | yes | yes | 19/0 | yes | Covered as migrated page in local data. |
 | /aktuelt/40-aars-jubileum | /aktuelt/40-aars-jubileum | page | news | yes | yes | yes | 4/4 | yes | Covered as migrated page in local data. |
 | /aktuelt/agnar-er-snart-pensjonistnbsp | /aktuelt/agnar-er-snart-pensjonistnbsp | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
@@ -143,7 +162,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 - Reference pages: 30
 - Product pages/routes: 28
 - Service pages/routes: 3
-- Legal/support/company pages/routes: 14
+- Legal/support/company pages/routes: 15
 
 Any old news/reference detail with only a short migrated summary is marked `partial` or `needs-review`.
 
@@ -153,8 +172,8 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 322 |
 | Live sitemap unique image URLs | 275 |
-| Local migrated image assets | 249 |
-| Sitemap images classified migrated | 262 |
+| Local migrated image assets | 259 |
+| Sitemap images classified migrated | 269 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
 | Sitemap images missing local match | 0 |
@@ -195,10 +214,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 266 |
-| OK routes | 151 |
+| Internal link references | 292 |
+| OK routes | 156 |
 | Redirect links | 0 |
-| Asset links OK | 115 |
+| Asset links OK | 136 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -210,6 +229,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | --- | --- | --- |
 | https://sintefcertification.no/Product/Index/129 | src/data/pages.ts: | certification/documentation | keep |
 | https://www.fresvik.no/ | src/data/pages.ts: | source-url | keep |
+| https://www.gasta.no | src/data/pages.ts: | external-reference | keep |
 | https://www.fresvik.no/produkt/fresvik-pir-panel | src/data/pages.ts: | source-url | keep |
 | https://www.fresvik.no/produkt/fresvik-panel | src/data/pages.ts: | source-url | keep |
 | https://www.fresvik.no/produkt/kjole-fryseportar | src/data/pages.ts: | source-url | keep |

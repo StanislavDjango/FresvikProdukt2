@@ -12,6 +12,7 @@ const sitemapUrl = `${oldBaseUrl}/sitemap.xml`;
 const markdownPath = path.join(root, "MIGRATION_AUDIT.md");
 const jsonPath = path.join(root, "MACHINE_READABLE_MIGRATION_AUDIT.json");
 const statusPath = path.join(root, "ASSET_MIGRATION_STATUS.md");
+const homepageAuditPath = path.join(root, "HOMEPAGE_MIGRATION_AUDIT.md");
 const sourceFilesForLinks = [
   "src/data/pages.ts",
   "src/data/oldSiteInventory.ts",
@@ -62,6 +63,13 @@ function loadDataModules() {
       "@",
       "data",
       "oldSiteInventory.js",
+    )),
+    contentExtract: require(path.join(
+      tempDir,
+      "node_modules",
+      "@",
+      "data",
+      "oldSiteContentExtract.js",
     )),
     pages: require(path.join(tempDir, "pages.js")),
     legacy: require(path.join(tempDir, "legacyRoutes.js")),
@@ -183,6 +191,253 @@ function pageDocuments(page) {
   ].filter((href) => href?.startsWith("/assets/fresvik/documents/"));
 }
 
+function pageLinks(page) {
+  if (!page) return [];
+  return [
+    ...(page.cards || []).map((card) => card.href),
+    ...(page.sections || []).flatMap((section) =>
+      (section.items || []).map((item) => item.href),
+    ),
+  ].filter(Boolean);
+}
+
+const homepageSectionRequirements = [
+  {
+    section: "hero",
+    oldText:
+      "Leiande fagfolk på kjøle- og fryserom i Norge. Den einaste norske produsenten av isolasjonspanel, med over 45 års erfaring, som tilbyr kvalitet og kunnskap til deg som kjøleentreprenør.",
+    requiredTexts: [
+      "Leiande fagfolk på kjøle- og fryserom i Norge",
+      "Den einaste norske produsenten av isolasjonspanel",
+      "over 45 års erfaring",
+    ],
+    requiredImages: ["/assets/fresvik/images/old-site/home-flag-of-norway.jpg"],
+    requiredLinks: [],
+  },
+  {
+    section: "PIR-panel promo block",
+    oldText:
+      "Fresvik PIR Panel. Brannsikre panel med PIR skum. Med smart design og eksenterslås, tilbyr Fresvik Produkt sine nye PIR-Panel.",
+    requiredTexts: [
+      "Fresvik PIR Panel",
+      "Brannsikre panel med PIR skum",
+      "Med smart design og eksenterslås",
+      "B-s1, d0",
+    ],
+    requiredImages: ["/assets/fresvik/images/old-site/home-pir-fire-illustration.png"],
+    requiredLinks: ["/produkt/fresvik-pir-panel"],
+  },
+  {
+    section: "Fresvik-panel benefits",
+    oldText:
+      "Fresvik-panel. Utvikla og produsert i Norge. SINTEF-godkjent. Fleksibelt på byggeplass. Enkel montasje med eksenterlås. Modulmål gir mindre svinn. Kort design-, produksjons- og leveringstid.",
+    requiredTexts: [
+      "Fresvik-panel",
+      "Utvikla og produsert i Norge",
+      "SINTEF-godkjent",
+      "Fleksibelt på byggeplass",
+      "Enkel montasje med eksenterlås",
+      "Modulmål gir mindre svinn",
+      "Kort design-, produksjons- og leveringstid",
+    ],
+    requiredImages: ["/assets/fresvik/images/old-site/home-fresvik-panel-room.jpg"],
+    requiredLinks: ["/produkt/fresvik-pur-panel"],
+  },
+  {
+    section: "product teaser links",
+    oldText: "Kjøle- og fryseportar. Kjøle- og frysedører. Fasadepanel.",
+    requiredTexts: ["Kjøle- og fryseportar", "Kjøle- og frysedører", "Fasadepanel"],
+    requiredImages: [
+      "/assets/fresvik/images/old-site/home-kjole-fryseportar.jpg",
+      "/assets/fresvik/images/old-site/home-kjole-frysedorer.jpg",
+      "/assets/fresvik/images/old-site/home-fasadepanel.webp",
+    ],
+    requiredLinks: [
+      "/produkt/kjole-fryseportar",
+      "/produkt/kjole-frysedorer",
+      "/produkt/fasadepanel",
+    ],
+  },
+  {
+    section: "Våre kundar",
+    oldText:
+      "Basert på modular, skreddarsyr vi kjøle- og fryserom for butikk, næringsmiddelindustri, institusjonar, storkjøken, skip og offshoreinstallasjonar.",
+    requiredTexts: [
+      "Våre kundar",
+      "Basert på modular",
+      "butikk, næringsmiddelindustri, institusjonar, storkjøken, skip og offshoreinstallasjonar",
+      "Vi er marknadsleiar på kjøle- og fryserom til daglegvarehandel",
+      "Vi er einaste norske produsent av polyuretan sandwich-panel godkjend for maritimt bruk",
+      "Vi leverer kjøle- fryserom og tilleggsprodukt til storkjøken",
+    ],
+    requiredImages: [
+      "/assets/fresvik/images/migrated/flake-left.png",
+      "/assets/fresvik/images/old-site/1715599204491-06f69a318b.jpg",
+      "/assets/fresvik/images/old-site/image-asset-2-59c753eb14.jpeg",
+      "/assets/fresvik/images/old-site/1733820776326-534d12e99d.jpg",
+    ],
+    requiredLinks: [
+      "/kjolerom-fryserom-butikk",
+      "/kjolerom-fryserom-offshore",
+      "/kjolerom-fryserom-storkjokken",
+    ],
+  },
+  {
+    section: "Aktuelt",
+    oldText:
+      "Aktuelt. Møt vår nye tekniske sjef. Ny teknisk teiknar på plass. John Bøthun blir pensjonist.",
+    requiredTexts: [
+      "Aktuelt",
+      "Møt vår nye tekniske sjef",
+      "Ny teknisk teiknar på plass",
+      "Den nye teiknaren vår har arbeidd på kontoret sidan nyttår",
+      "John Bøthun blir pensjonist",
+      "Den som i dag har vore lengst tilsett",
+    ],
+    requiredImages: [
+      "/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
+      "/assets/fresvik/images/migrated/havard-berdal.jpg",
+      "/assets/fresvik/images/migrated/john-bthun-fresvik-produkt.jpg",
+    ],
+    requiredLinks: [
+      "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+      "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+      "/aktuelt/john-bothun-blir-pensjonist",
+    ],
+  },
+  {
+    section: "job CTA",
+    oldText:
+      "Vil du jobbe hjå oss? Fresvik Produkt sine 45 tilsette utgjer det fremste miljøet i landet på produksjon av kjøle- og fryserom. Vi er stadig på jakt etter flinke kollegaer.",
+    requiredTexts: [
+      "Vil du jobbe hjå oss?",
+      "Fresvik Produkt sine 45 tilsette",
+      "Vi er stadig på jakt etter flinke kollegaer",
+    ],
+    requiredImages: ["/assets/fresvik/images/old-site/home-job-factory.jpg"],
+    requiredLinks: ["/stillingledig"],
+  },
+  {
+    section: "contact section",
+    oldText:
+      "Fresvik Produkt AS. Fresvikvegen 995, 6896 Fresvik. Tel: 57 69 83 00. E-post: post@fresvik.no.",
+    requiredTexts: [
+      "Fresvik Produkt AS",
+      "Fresvikvegen 995",
+      "6896 Fresvik",
+      "57 69 83 00",
+      "post@fresvik.no",
+    ],
+    requiredImages: [],
+    requiredLinks: ["mailto:post@fresvik.no"],
+  },
+  {
+    section: "sales departments",
+    oldText:
+      "Salsavdeling Fresvik: Arne-Olav Lien Bardølsgård. Salsavdeling Drammen: Lars Erling Livrud. Frode Winther.",
+    requiredTexts: [
+      "Salsavdeling Fresvik:",
+      "Arne-Olav Lien Bardølsgård",
+      "Salsavdeling Drammen:",
+      "Lars Erling Livrud",
+      "Frode Winther",
+    ],
+    requiredImages: [],
+    requiredLinks: [
+      "mailto:arnbar@fresvik.no",
+      "mailto:larliv@fresvik.no",
+      "mailto:frowin@fresvik.no",
+    ],
+  },
+  {
+    section: "newsletter",
+    oldText:
+      "Motta nyheitsbrev. Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen. Sjå vår personvernerklæring.",
+    requiredTexts: [
+      "Motta nyheitsbrev",
+      "Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen",
+      "Sjå vår personvernerklæring",
+      "Email Address",
+      "Sign Up",
+    ],
+    requiredImages: [],
+    requiredLinks: ["/personvernerklering"],
+  },
+  {
+    section: "footer links",
+    oldText: "Personvernerklæring. Openheitslova. Nettside levert av GASTA.",
+    requiredTexts: ["Personvernerklæring", "Openheitslova", "GASTA"],
+    requiredImages: [
+      "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+      "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+      "/assets/fresvik/images/old-site/home-poly.png",
+      "/assets/fresvik/images/old-site/home-startbank.png",
+      "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
+      "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+    ],
+    requiredLinks: ["/personvernerklering", "/openheitslova", "https://www.gasta.no"],
+  },
+];
+
+function hrefMatches(actual, expected) {
+  if (actual === expected) return true;
+  if (expected === "/produkt/fresvik-pur-panel") {
+    return actual === "/produkt/fresvik-panel" || actual === "/produkt/fresvik-pur-panel";
+  }
+  return false;
+}
+
+function homepageSectionAudit(page, seedDoc) {
+  const text = [pageText(page), JSON.stringify(seedDoc || {})].join("\n");
+  const normalizedText = normalizeText(text);
+  const imageSet = new Set([...pageImages(page), seedDoc?.migratedImagePath].filter(Boolean));
+  const links = pageLinks(page);
+
+  return homepageSectionRequirements.map((requirement) => {
+    const missingTexts = requirement.requiredTexts.filter(
+      (required) => !normalizedText.includes(normalizeText(required)),
+    );
+    const missingImages = requirement.requiredImages.filter((image) => !imageSet.has(image));
+    const missingLinks = requirement.requiredLinks.filter(
+      (href) => !links.some((actual) => hrefMatches(actual, href)),
+    );
+    const existsOnNew =
+      missingTexts.length < requirement.requiredTexts.length ||
+      missingImages.length < requirement.requiredImages.length ||
+      missingLinks.length < requirement.requiredLinks.length;
+    const status =
+      missingTexts.length === 0 && missingImages.length === 0 && missingLinks.length === 0
+        ? "migrated"
+        : existsOnNew
+          ? "partial"
+          : "missing";
+
+    return {
+      section: requirement.section,
+      existsOnOld: "yes",
+      existsOnNew: existsOnNew ? "yes" : "no",
+      exactTextMigrated: missingTexts.length === 0 ? "yes" : "no",
+      imagesMigrated: missingImages.length === 0 ? "yes" : "no",
+      linksMigrated: missingLinks.length === 0 ? "yes" : "no",
+      status,
+      oldText: requirement.oldText,
+      missingTexts,
+      missingImages,
+      missingLinks,
+      notes:
+        status === "migrated"
+          ? "Required old homepage section content is present in local migration data."
+          : [
+              missingTexts.length ? `Missing text: ${missingTexts.join("; ")}` : "",
+              missingImages.length ? `Missing images: ${missingImages.join("; ")}` : "",
+              missingLinks.length ? `Missing links: ${missingLinks.join("; ")}` : "",
+            ]
+              .filter(Boolean)
+              .join(" "),
+    };
+  });
+}
+
 function parseSitemap(xml) {
   return [...xml.matchAll(/<url>[\s\S]*?<\/url>/g)].map((match) => {
     const block = match[0];
@@ -227,6 +482,7 @@ function readJson(filePath, fallback) {
 }
 
 function contentTypeFor(pathname) {
+  if (pathname === "/") return "page";
   if (pathname.startsWith("/aktuelt/")) return "news";
   if (pathname === "/aktuelt") return "news";
   if (pathname.startsWith("/referansar/")) return "reference";
@@ -282,11 +538,29 @@ function bodyComplete(pathname, page, seedDoc, status) {
   return wordCount >= 80 || !isDetailPath(pathname);
 }
 
-function routeStatus({ pathname, page, seedDoc, redirect, sitemapImages, localImages }) {
+function routeStatus({
+  pathname,
+  page,
+  seedDoc,
+  redirect,
+  sitemapImages,
+  localImages,
+  localDocuments,
+  extract,
+}) {
   if (redirect) return "redirect";
   if (!page && !seedDoc) return "missing";
   const text = [pageText(page), JSON.stringify(seedDoc || {})].join("\n");
   if (hasTodoMarkers(text)) return "needs-review";
+  if (pathname === "/") {
+    return homepageSectionAudit(page, seedDoc).every((section) => section.status === "migrated")
+      ? "page"
+      : "partial";
+  }
+  if (extract?.extractionStatus === "unrecoverable") return "needs-review";
+  if ((pathname.startsWith("/aktuelt/") || pathname.startsWith("/referansar/")) && !extract) {
+    return "partial";
+  }
   if (
     (pathname.startsWith("/aktuelt/") || pathname.startsWith("/referansar/")) &&
     words(text).length < 180 &&
@@ -296,6 +570,7 @@ function routeStatus({ pathname, page, seedDoc, redirect, sitemapImages, localIm
   }
   const uniqueSitemapImageCount = new Set(sitemapImages.map((image) => image.originalUrl)).size;
   if (uniqueSitemapImageCount > localImages.length && isDetailPath(pathname)) return "partial";
+  if ((extract?.documentUrls || []).length > 0 && localDocuments.length === 0) return "partial";
   if (!bodyComplete(pathname, page, seedDoc, "page")) return "partial";
   return "page";
 }
@@ -613,15 +888,6 @@ function updateManifestOriginalUrls(manifest, matchedImages, documentRows) {
           ),
         };
       }
-      if (String(entry.originalUrl || "").includes("images.squarespace-cdn.com")) {
-        updated += 1;
-        return {
-          ...entry,
-          originalUrl: "TODO: unknown original URL",
-          notes:
-            "TODO: exact original remote asset URL was not retained in local data; approximate sitemap matches are tracked in MACHINE_READABLE_MIGRATION_AUDIT.json.",
-        };
-      }
     }
     if (entry.assetType === "document") {
       const matched = docsByLocalPath.get(entry.localPath);
@@ -676,6 +942,7 @@ function summarizeStatuses(rows) {
 
 const modules = loadDataModules();
 const { createLegacyContentPage, getAllContentPages, getContentPage } = modules.pages;
+const { getOldSiteContentExtract } = modules.contentExtract;
 const {
   legacyRoutes,
   oldSiteSitemapStats,
@@ -718,6 +985,18 @@ function pageForOldPath(oldPath) {
 }
 
 const sitemapByPath = new Map(sitemapEntries.map((entry) => [entry.oldPath, entry]));
+const homeSourceEntry = sitemapByPath.get("/") || sitemapByPath.get("/startside");
+const routeSitemapEntries = sitemapByPath.has("/")
+  ? sitemapEntries
+  : [
+      {
+        oldUrl: `${oldBaseUrl}/`,
+        oldPath: "/",
+        lastmod: homeSourceEntry?.lastmod,
+        images: homeSourceEntry?.images || [],
+      },
+      ...sitemapEntries,
+    ];
 const localImageAssets = manifest.filter((entry) => entry.assetType === "image");
 const documentAssets = manifest.filter((entry) => entry.assetType === "document");
 const { imageRows, matchedLocals } = classifySitemapImages(
@@ -736,7 +1015,7 @@ const originalUrlsRecovered = updatedManifest.filter(
   (entry) => !String(entry.originalUrl || "").startsWith("TODO"),
 ).length;
 
-const routeRows = sitemapEntries.map((entry) => {
+const routeRows = routeSitemapEntries.map((entry) => {
   const redirect = redirectFor(entry.oldPath, redirectRules);
   const page = pageForOldPath(entry.oldPath) || appRoutePages.get(entry.oldPath);
   const seedDoc = seedByRoute.get(entry.oldPath);
@@ -744,6 +1023,7 @@ const routeRows = sitemapEntries.map((entry) => {
     ...new Set([...pageImages(page), seedDoc?.migratedImagePath].filter(Boolean)),
   ];
   const docs = pageDocuments(page);
+  const extract = getOldSiteContentExtract(entry.oldPath);
   const status = routeStatus({
     pathname: entry.oldPath,
     page,
@@ -751,6 +1031,8 @@ const routeRows = sitemapEntries.map((entry) => {
     redirect,
     sitemapImages: entry.images,
     localImages,
+    localDocuments: docs,
+    extract,
   });
   const fullBody = bodyComplete(entry.oldPath, page, seedDoc, status);
   return {
@@ -764,15 +1046,17 @@ const routeRows = sitemapEntries.map((entry) => {
     hasFullBody: fullBody,
     hasImages: localImages.length > 0 || Boolean(seedDoc?.migratedImagePath),
     hasDocuments: docs.length > 0 || Boolean(seedDoc?.localPath),
-    hasInternalLinks: pageText(page).includes("href") || docs.length > 0,
-    hasExternalLinks: /https?:\/\//.test(pageText(page)),
+    hasInternalLinks: pageLinks(page).some((href) => href.startsWith("/")) || docs.length > 0,
+    hasExternalLinks: pageLinks(page).some((href) => /^(https?:\/\/|mailto:|tel:)/.test(href)),
     oldImageCount: entry.images.length,
     localImageCount: localImages.length,
     notes:
       status === "redirect"
         ? `Redirects to ${redirect.destination}.`
         : status === "partial"
-          ? "Local content appears shorter than a full old detail page and/or not all sitemap images are represented."
+          ? entry.oldPath === "/"
+            ? "Homepage is checked section-by-section in HOMEPAGE_MIGRATION_AUDIT.md; one or more old sections are incomplete."
+            : "Strict audit: local content appears shorter than a full old detail page, lacks reliable extracted body evidence, documents, or not all sitemap images are represented."
           : status === "needs-review"
             ? "Contains TODO/verification markers or unresolved migration text."
             : status === "missing"
@@ -823,6 +1107,9 @@ const externalLinks = links.external.map((link) => ({
   status: link.status,
 }));
 
+const homepagePage = pageForOldPath("/");
+const homepageSeedDoc = seedByRoute.get("/");
+const homepageAuditRows = homepageSectionAudit(homepagePage, homepageSeedDoc);
 const routeStatusCounts = summarizeStatuses(routes);
 const assetStatusCounts = summarizeStatuses(imageRows);
 const documentStatusCounts = summarizeStatuses(documentRows);
@@ -886,6 +1173,7 @@ const audit = {
     assetStatusCounts,
     documentStatusCounts,
   },
+  homepage: homepageAuditRows,
   routes,
   assets: imageRows,
   documents: documentRows,
@@ -895,6 +1183,49 @@ const audit = {
 };
 
 writeFileSync(jsonPath, `${JSON.stringify(audit, null, 2)}\n`);
+
+const homepageMarkdown = `# Homepage Migration Audit
+
+Generated: ${audit.summary.generatedAt}
+
+Source old URL: https://www.fresvik.no/
+
+Sitemap source row used for images: https://www.fresvik.no/startside
+
+## Summary
+
+The homepage is considered migrated only when every old section below has exact text, image and link coverage. A generic hero, summary text or TODO marker is not enough.
+
+${markdownTable(
+  [
+    "section",
+    "existsOnOld",
+    "existsOnNew",
+    "exactTextMigrated",
+    "imagesMigrated",
+    "linksMigrated",
+    "status",
+    "notes",
+  ],
+  homepageAuditRows,
+)}
+
+## Old Section Text Evidence
+
+${homepageAuditRows
+  .map((row) => `### ${row.section}\n\n${row.oldText}\n`)
+  .join("\n")}
+
+## Final TODO
+
+${listItems(
+  homepageAuditRows
+    .filter((row) => row.status !== "migrated")
+    .map((row) => `${row.section}: ${row.notes}`),
+)}
+`;
+
+writeFileSync(homepageAuditPath, homepageMarkdown);
 
 const routeTableRows = routes.map((route) => ({
   oldPath: route.oldPath,
@@ -947,6 +1278,24 @@ Generated: ${audit.summary.generatedAt}
 | Asset originalUrls recovered in manifest | ${audit.summary.originalUrlsRecovered} |
 
 Do not treat the migration as complete while any route, asset, document or link remains \`partial\`, \`missing\`, \`needs-review\`, \`inventory-only\`, \`thumbnail-or-variant\` or \`local-only\`.
+
+The root homepage \`https://www.fresvik.no/\` is audited as its own route even though the live sitemap exposes the same homepage inventory as \`/startside\`. Detailed homepage section coverage is written to \`HOMEPAGE_MIGRATION_AUDIT.md\`.
+
+## Homepage strict audit
+
+${markdownTable(
+  [
+    "section",
+    "existsOnOld",
+    "existsOnNew",
+    "exactTextMigrated",
+    "imagesMigrated",
+    "linksMigrated",
+    "status",
+    "notes",
+  ],
+  homepageAuditRows,
+)}
 
 ## Old sitemap coverage
 

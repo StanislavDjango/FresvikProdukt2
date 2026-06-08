@@ -6,16 +6,16 @@ Generated from local migration cache and source data.
 
 | Metric | Count |
 | --- | ---: |
-| Total assets found | 275 |
-| Images | 249 |
+| Total assets found | 285 |
+| Images | 259 |
 | PDFs/documents | 26 |
 | Other assets | 0 |
-| Used assets | 157 |
+| Used assets | 167 |
 | Unused assets | 118 |
 | Missing assets | 0 |
 | Duplicate assets | 3 |
 | Ready for Sanity | 0 |
-| Uploaded to Sanity | 154 |
+| Uploaded to Sanity | 164 |
 | Failed or needs review | 0 |
 | TODO original URLs | 12 |
 
@@ -23,12 +23,13 @@ Generated from local migration cache and source data.
 
 - `duplicate`: 3
 - `unused`: 118
-- `uploaded-to-sanity`: 154
+- `uploaded-to-sanity`: 164
 
 ## Local Path Usage
 
-83 routes/documents still use local `/assets/fresvik` paths while assets wait for Sanity import.
+85 routes/documents still use local `/assets/fresvik` paths while assets wait for Sanity import.
 
+- `/`
 - `/aktuelt`
 - `/aktuelt/40-aars-jubileum`
 - `/aktuelt/agnar-er-snart-pensjonistnbsp`
@@ -62,6 +63,7 @@ Generated from local migration cache and source data.
 - `/andre-produkter/standard-handtak`
 - `/dokumentasjon`
 - `/firmainfo`
+- `/home`
 - `/kjolerom-fryserom-butikk`
 - `/kjolerom-fryserom-offshore`
 - `/kjolerom-fryserom-storkjokken`
@@ -121,8 +123,8 @@ Generated from local migration cache and source data.
 | Baseline old sitemap image count | 325 |
 | Live sitemap image entries | 322 |
 | Live sitemap unique image URLs | 275 |
-| Local migrated image assets | 249 |
-| Sitemap images classified migrated | 262 |
+| Local migrated image assets | 259 |
+| Sitemap images classified migrated | 269 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
 | Sitemap images missing local match | 0 |

@@ -17,7 +17,7 @@ type ContentPageViewProps = {
 };
 
 function isExternalHref(href: string) {
-  return /^https?:\/\//.test(href);
+  return /^(https?:\/\/|mailto:|tel:)/.test(href);
 }
 
 function CardLink({ href, label }: { href: string; label: string }) {
@@ -25,8 +25,14 @@ function CardLink({ href, label }: { href: string; label: string }) {
     "mt-5 inline-flex items-center gap-2 text-sm font-semibold text-cyan-800 transition hover:text-slate-950";
 
   if (isExternalHref(href)) {
+    const isWebUrl = /^https?:\/\//.test(href);
     return (
-      <a href={href} className={className} target="_blank" rel="noreferrer">
+      <a
+        href={href}
+        className={className}
+        target={isWebUrl ? "_blank" : undefined}
+        rel={isWebUrl ? "noreferrer" : undefined}
+      >
         {label} <ExternalLink aria-hidden="true" size={17} />
       </a>
     );

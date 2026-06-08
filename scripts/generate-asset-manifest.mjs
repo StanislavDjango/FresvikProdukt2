@@ -17,6 +17,48 @@ const checkOnly = process.argv.includes("--check");
 
 const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"]);
 const documentExtensions = new Set([".pdf", ".doc", ".docx", ".xls", ".xlsx"]);
+const knownOriginalUrls = new Map([
+  [
+    "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/c9b5403a-bfc1-4fde-9c6b-c448d7c8e9e0/Flag_of_Norway_with_proportions.svg.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/home-pir-fire-illustration.png",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/de58b233-c5b5-4348-8494-72c6df72a6dd/Blue+3D+Cube+Icon+Logo+Template+Square+-+Made+with+PosterMyWall+%285%29.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/home-fresvik-panel-room.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/2f0fa235-c925-4a25-954e-eddda22388b1/aaa.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/home-kjole-fryseportar.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/c8dc8a03-e4f0-4407-bbdd-7844fac31bdc/Fresvik%2Bskyveport.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/home-kjole-frysedorer.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/67e1460b-fd80-4be3-98d1-1fa26118af4c/FP+Produkt+23.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/home-fasadepanel.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1c0b8495-5976-420a-b7a9-eb2f88e17b74/image-asset+%281%29.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/home-job-factory.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5fc55087-b42c-48d7-9587-0811aa56c942/Fresvik+Produkt+-+Fabrikk-27.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385862366-SQTJIQF8X2Y8LT02Z2UT/sentral%2Bgodkjent.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/home-poly.png",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/home-startbank.png",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385876430-SF9NN179JLHLSGSAMMMQ/Startbarnk.png",
+  ],
+]);
 
 function compileTs(sourceFile, outputFile) {
   const source = readFileSync(sourceFile, "utf8");
@@ -256,9 +298,19 @@ async function buildManifest() {
     const previous = existing.get(localPath);
     const usedBy = [...(usage.get(localPath)?.usedBy || [])].sort();
     const sourcePages = [...(usage.get(localPath)?.sourcePages || [])].sort();
+    const knownOriginalUrl = knownOriginalUrls.get(localPath);
+    const originalUrl =
+      previous?.originalUrl && !previous.originalUrl.startsWith("TODO")
+        ? previous.originalUrl
+        : knownOriginalUrl || previous?.originalUrl || "TODO: unknown original URL";
+    const notes =
+      knownOriginalUrl &&
+      String(previous?.notes || "").includes("TODO: exact original remote asset URL")
+        ? "Recovered originalUrl from live old /startside sitemap."
+        : previous?.notes || "";
 
     baseEntries.push({
-      originalUrl: previous?.originalUrl || "TODO: unknown original URL",
+      originalUrl,
       localPath,
       filePath: relativeFilePath,
       assetType,
@@ -270,7 +322,7 @@ async function buildManifest() {
       sanityReference: previous?.sanityReference || null,
       status: previous?.status || "local-only",
       targetSanityType: targetSanityTypeFor(assetType),
-      notes: previous?.notes || "",
+      notes,
     });
   }
 

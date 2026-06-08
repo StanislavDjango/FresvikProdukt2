@@ -111,6 +111,12 @@ function appendNote(entry, note) {
   return [current, note].filter(Boolean).join(" ");
 }
 
+function removeUploadFailureNotes(notes) {
+  return String(notes || "")
+    .replace(/\s*Sanity upload failed:.*?(?=\s+(?:Uploaded to Sanity|Reuses Sanity asset|Local file missing|TODO:|Duplicate file content|Unused local migration cache file)|$)/g, "")
+    .trim();
+}
+
 function readyForUpload(entry) {
   return (
     entry.status === "ready-for-sanity" ||
@@ -254,6 +260,7 @@ for (const entry of manifest) {
     entry.sanityAssetId = document._id;
     entry.sanityReference = sanityReferenceFor(entry, document._id);
     entry.status = "uploaded-to-sanity";
+    entry.notes = removeUploadFailureNotes(entry.notes);
     entry.notes = appendNote(
       entry,
       `Uploaded to Sanity as ${document._id}.`,
@@ -262,10 +269,12 @@ for (const entry of manifest) {
     results.uploaded += 1;
     writeManifest(manifest);
   } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(`Sanity upload failed for ${entry.localPath}: ${message}`);
     entry.status = "needs-review";
     entry.notes = appendNote(
       entry,
-      `Sanity upload failed: ${error instanceof Error ? error.message : String(error)}.`,
+      `Sanity upload failed: ${message}.`,
     );
     results.failed += 1;
     writeManifest(manifest);

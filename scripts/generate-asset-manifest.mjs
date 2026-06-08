@@ -187,18 +187,26 @@ function statusFor(entry, canonicalByHash) {
   return "ready-for-sanity";
 }
 
+function appendNote(notes, note) {
+  if (!note) return;
+  if (notes.some((existing) => existing.includes(note) || note.includes(existing))) return;
+  notes.push(note);
+}
+
 function notesFor(entry, duplicateOf) {
   const notes = [];
+  appendNote(notes, String(entry.notes || "").trim());
   if (entry.originalUrl.startsWith("TODO")) {
-    notes.push(
+    appendNote(
+      notes,
       "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages.",
     );
   }
   if (duplicateOf) {
-    notes.push(`Duplicate file content of ${duplicateOf}.`);
+    appendNote(notes, `Duplicate file content of ${duplicateOf}.`);
   }
   if (entry.usedBy.length === 0) {
-    notes.push("Unused local migration cache file; keep until asset review is complete.");
+    appendNote(notes, "Unused local migration cache file; keep until asset review is complete.");
   }
   return notes.join(" ");
 }
@@ -262,7 +270,7 @@ async function buildManifest() {
       sanityReference: previous?.sanityReference || null,
       status: previous?.status || "local-only",
       targetSanityType: targetSanityTypeFor(assetType),
-      notes: "",
+      notes: previous?.notes || "",
     });
   }
 

@@ -13,11 +13,17 @@
     ],
     "sha256": "8fa892ff3bfd0c0ae363c22e4d9dbb15d0068dfa97fe10c511f2e16671926a83",
     "fileSize": 174280,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-b40a23b93f165fa27569aa5f765fa8160639885d-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-b40a23b93f165fa27569aa5f765fa8160639885d-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-b40a23b93f165fa27569aa5f765fa8160639885d-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf",
@@ -33,11 +39,17 @@
     ],
     "sha256": "60d17bf1ddce35d249117bb998be04b8b38781077e0e1d343af1ebed10afcaa6",
     "fileSize": 1031884,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-8590a72595648269dd09412fb1980e5d098a66f4-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-8590a72595648269dd09412fb1980e5d098a66f4-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-8590a72595648269dd09412fb1980e5d098a66f4-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
@@ -53,11 +65,17 @@
     ],
     "sha256": "fd02d6fb2d2374321141f3cac0ec43254b4c063f25b1afd618ec1f81ff739081",
     "fileSize": 4217580,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-b09ef88e992455c70f87389116b3ec270df7d5ca-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-b09ef88e992455c70f87389116b3ec270df7d5ca-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-b09ef88e992455c70f87389116b3ec270df7d5ca-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
@@ -73,11 +91,17 @@
     ],
     "sha256": "45d995ef8ccdf4579e866ce73629fab0abc47aba1c9684514b703a0d3474e818",
     "fileSize": 1929048,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-6d98bcfc830b0623acdc7fc38e32122dcc3209a5-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-6d98bcfc830b0623acdc7fc38e32122dcc3209a5-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-6d98bcfc830b0623acdc7fc38e32122dcc3209a5-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
@@ -93,11 +117,17 @@
     ],
     "sha256": "0a7cc9d9b8eeca2d9fc4eaadd84fef0e68ea06523ec8300f5cd44fa9c8405a45",
     "fileSize": 1596484,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-26f825d7f617d9050b9d24080dbe58cd0e260e7f-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-26f825d7f617d9050b9d24080dbe58cd0e260e7f-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-26f825d7f617d9050b9d24080dbe58cd0e260e7f-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Fresvik-Port-Montasjeanvisning.pdf",
@@ -117,11 +147,17 @@
     ],
     "sha256": "678fc58b2f04714fd3b340525546be35c5cae7db9f27b90dacde9657f436eb08",
     "fileSize": 6789859,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-463492734d96fdd584d7f78972266e72f745ec1b-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-463492734d96fdd584d7f78972266e72f745ec1b-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-463492734d96fdd584d7f78972266e72f745ec1b-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Koblingsskjema-Fermod-5010.pdf",
@@ -137,11 +173,17 @@
     ],
     "sha256": "75aed3e0f94fbccd3ded2b3b359f0e5e40c5af91ec3513f6ef405df74b1180c3",
     "fileSize": 2166231,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-7950ab0a39d250f46497f1f9f3b87fcf669f2d50-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-7950ab0a39d250f46497f1f9f3b87fcf669f2d50-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-7950ab0a39d250f46497f1f9f3b87fcf669f2d50-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf",
@@ -157,11 +199,17 @@
     ],
     "sha256": "89635550d26e97c1b8157c89536bb3e4d824998bc13476483f973a57d717fb8c",
     "fileSize": 350922,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-6702bac171b115fb522a32ddcfbc254ec5f7df1c-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-6702bac171b115fb522a32ddcfbc254ec5f7df1c-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-6702bac171b115fb522a32ddcfbc254ec5f7df1c-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf",
@@ -177,11 +225,17 @@
     ],
     "sha256": "663b18bd9fa6040376dd2b2207af3bae913fa5f39c7456a935585eacc35170aa",
     "fileSize": 38764,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-666fd941946a1733e2e966471f62969fc09c0d30-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-666fd941946a1733e2e966471f62969fc09c0d30-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-666fd941946a1733e2e966471f62969fc09c0d30-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Montasjeanvisning-5010-for-2150.pdf",
@@ -197,11 +251,17 @@
     ],
     "sha256": "046b1c2f26cee834ff07b0d4809ce0ec9d2b4021c83eb4e32425b5e317cd1eb9",
     "fileSize": 3418684,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-0adf00d72be63a7b78b5b602a28e2eebd313b265-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-0adf00d72be63a7b78b5b602a28e2eebd313b265-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-0adf00d72be63a7b78b5b602a28e2eebd313b265-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Montasjeanvisning-5010-for-3530-og-7530.pdf",
@@ -217,11 +277,17 @@
     ],
     "sha256": "f9acf43035a3d3f6e5b97571fffae9a3d9a387244a59f0bb056fa0c2e6c62088",
     "fileSize": 3531249,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-edfe0ce8625d2350bbd778ef91fd016a64cf23ca-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-edfe0ce8625d2350bbd778ef91fd016a64cf23ca-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-edfe0ce8625d2350bbd778ef91fd016a64cf23ca-pdf."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -237,11 +303,17 @@
     ],
     "sha256": "130a9f106eac1c91d60e62d82a40a1c7a93263abd45e92f218a1b59564aaf19b",
     "fileSize": 201642,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-6309dd9c873c80855975441bdf3f67016b389eca-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-6309dd9c873c80855975441bdf3f67016b389eca-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-6309dd9c873c80855975441bdf3f67016b389eca-pdf."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -257,11 +329,17 @@
     ],
     "sha256": "2cc48c3ee1e51b50b66632bc8d211836017088ae41ee912616e2aa35408aca34",
     "fileSize": 276631,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-73d76ff3f4036bd901d31ea3b57fc2a473dff192-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-73d76ff3f4036bd901d31ea3b57fc2a473dff192-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-73d76ff3f4036bd901d31ea3b57fc2a473dff192-pdf."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -277,11 +355,17 @@
     ],
     "sha256": "9c0dc19d532ccba0092b9e267f24b64d70d53a08ddac99b19cd81bbcfabc545a",
     "fileSize": 268546,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-9d76a9e981639a76bbf7742be404a05ba46688ed-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-9d76a9e981639a76bbf7742be404a05ba46688ed-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-9d76a9e981639a76bbf7742be404a05ba46688ed-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
@@ -297,8 +381,14 @@
     ],
     "sha256": "60d17bf1ddce35d249117bb998be04b8b38781077e0e1d343af1ebed10afcaa6",
     "fileSize": 1031884,
-    "sanityAssetId": null,
-    "sanityReference": null,
+    "sanityAssetId": "file-8590a72595648269dd09412fb1980e5d098a66f4-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-8590a72595648269dd09412fb1980e5d098a66f4-pdf"
+      }
+    },
     "status": "duplicate",
     "targetSanityType": "file asset",
     "notes": "Duplicate file content of /assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf."
@@ -317,11 +407,17 @@
     ],
     "sha256": "eeaae14f9c804c28431b0a4704b5d9d389cecbe2217475746d33a71e86baeb4f",
     "fileSize": 302439,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-9c4bbd8217a5fa7b0613498af90a3e84c9bd37f5-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-9c4bbd8217a5fa7b0613498af90a3e84c9bd37f5-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-9c4bbd8217a5fa7b0613498af90a3e84c9bd37f5-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Produktblad-Fresvik-Skyveport.pdf",
@@ -339,11 +435,17 @@
     ],
     "sha256": "1550154bc7a37fd187eecda74607cfc736efe1e58d82d02703bccc9a377be7ea",
     "fileSize": 1648458,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-8ce02f135866930eef8a4616f4b920e4a493362b-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-8ce02f135866930eef8a4616f4b920e4a493362b-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-8ce02f135866930eef8a4616f4b920e4a493362b-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/PUR-ce-merke.pdf",
@@ -404,11 +506,17 @@
     ],
     "sha256": "596ac549d312966cacb69673491b8988ede60f20a297d6ba84fd85702e4e0c45",
     "fileSize": 150364,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-9d7fe2cee10add3c304f9a47a0a25b2301674447-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-9d7fe2cee10add3c304f9a47a0a25b2301674447-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-9d7fe2cee10add3c304f9a47a0a25b2301674447-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Quick-Start-5010Exp-indB.pdf",
@@ -424,11 +532,17 @@
     ],
     "sha256": "295631217447a645cdf846959df12e3fdff743c15e0ceeabfa1b70abda0266bf",
     "fileSize": 1001335,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-571e3ff219523374529f1ed0e1ff23bbf7ae1768-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-571e3ff219523374529f1ed0e1ff23bbf7ae1768-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-571e3ff219523374529f1ed0e1ff23bbf7ae1768-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
@@ -489,11 +603,17 @@
     ],
     "sha256": "c20f54560e598cce7d8622cd55eb8619a533a10e5c0cf3087987b75326cccc9f",
     "fileSize": 58526,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-da13ed667ff9b8931313a9749ceb1a8818f80c3b-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-da13ed667ff9b8931313a9749ceb1a8818f80c3b-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-da13ed667ff9b8931313a9749ceb1a8818f80c3b-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/7060s-fnfz.pdf",
@@ -509,11 +629,17 @@
     ],
     "sha256": "9bd598c9a508ad9c6b8f5840eba4841b6e07f8a846ab204c18f1dd23d6eac266",
     "fileSize": 253758,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-a69fb1480b6c346e39c50c622d0ac1d9d87925fd-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-a69fb1480b6c346e39c50c622d0ac1d9d87925fd-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-a69fb1480b6c346e39c50c622d0ac1d9d87925fd-pdf."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -529,11 +655,17 @@
     ],
     "sha256": "0f8659caba8780d251cde2d4f971b254cfa7055f71a74d8ec889f70d4d9d7559",
     "fileSize": 439904,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-f4d1fc0155bce9a3c39d992ddf3e2310174c3e7a-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-f4d1fc0155bce9a3c39d992ddf3e2310174c3e7a-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-f4d1fc0155bce9a3c39d992ddf3e2310174c3e7a-pdf."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -549,8 +681,14 @@
     ],
     "sha256": "0f8659caba8780d251cde2d4f971b254cfa7055f71a74d8ec889f70d4d9d7559",
     "fileSize": 439904,
-    "sanityAssetId": null,
-    "sanityReference": null,
+    "sanityAssetId": "file-f4d1fc0155bce9a3c39d992ddf3e2310174c3e7a-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-f4d1fc0155bce9a3c39d992ddf3e2310174c3e7a-pdf"
+      }
+    },
     "status": "duplicate",
     "targetSanityType": "file asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/documents/sintef-produktsertifikat.pdf."
@@ -569,8 +707,14 @@
     ],
     "sha256": "9bd598c9a508ad9c6b8f5840eba4841b6e07f8a846ab204c18f1dd23d6eac266",
     "fileSize": 253758,
-    "sanityAssetId": null,
-    "sanityReference": null,
+    "sanityAssetId": "file-a69fb1480b6c346e39c50c622d0ac1d9d87925fd-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-a69fb1480b6c346e39c50c622d0ac1d9d87925fd-pdf"
+      }
+    },
     "status": "duplicate",
     "targetSanityType": "file asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf."
@@ -589,11 +733,17 @@
     ],
     "sha256": "b5cf8efa42125f7a0484b30b4db1ecdf0422ef5e5b50ad8e6464506bf044f1e9",
     "fileSize": 2177053,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-f96fcd6c3e86d0502faeac55e85221bf4b086eba-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-f96fcd6c3e86d0502faeac55e85221bf4b086eba-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-f96fcd6c3e86d0502faeac55e85221bf4b086eba-pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf",
@@ -609,11 +759,17 @@
     ],
     "sha256": "db518af5c6055af8c2a5af6c03423595d5a9c491f8a62166ddb428ff8b4932a3",
     "fileSize": 882067,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "file-b08a03d177b936f760de90b946cecad9089cf10a-pdf",
+    "sanityReference": {
+      "_type": "file",
+      "asset": {
+        "_type": "reference",
+        "_ref": "file-b08a03d177b936f760de90b946cecad9089cf10a-pdf"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as file-b08a03d177b936f760de90b946cecad9089cf10a-pdf."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1747635709094-QZ1DMKF9F7N73IKHN7JA/1000024746.jpg",
@@ -630,11 +786,17 @@
     ],
     "sha256": "bdedfc08527416bae9b502ea37e3a5439b2922dae016ff22b142a92d0c475d5c",
     "fileSize": 501564,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-aae9fcac770f4ec25338e6ed39003cb003e40bab-1920x1440-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-aae9fcac770f4ec25338e6ed39003cb003e40bab-1920x1440-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-aae9fcac770f4ec25338e6ed39003cb003e40bab-1920x1440-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3f138065-2b53-47ae-b9d3-6e708064f245/1463-fr-plata-instal.webp",
@@ -649,11 +811,17 @@
     ],
     "sha256": "c5f0d822305c9f32b84a88c1dd49336c961d2852f653176bc9b3e71c860b1907",
     "fileSize": 160449,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-1ca4fc2cf422ced70efe59c9acb084fb9802c316-750x900-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-1ca4fc2cf422ced70efe59c9acb084fb9802c316-750x900-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-1ca4fc2cf422ced70efe59c9acb084fb9802c316-750x900-png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719842659307-NIRBLOIHY5ZWCFKW4BE2/1715599204491_upscale.jpeg",
@@ -670,11 +838,17 @@
     ],
     "sha256": "1a8048a57a5d7817302fe6fb42845bcc43b6133c263784b71a4a39897a13a26f",
     "fileSize": 542882,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-973d38d17b2ba602568927e77f73ab86b90c9e04-2290x1636-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-973d38d17b2ba602568927e77f73ab86b90c9e04-2290x1636-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-973d38d17b2ba602568927e77f73ab86b90c9e04-2290x1636-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429028144-41EYQYWQAK95BAZNN3Y4/20151021_174754.jpg",
@@ -691,11 +865,17 @@
     ],
     "sha256": "5d108ccdd304bc7fa156a0f8b5f27066d57977e241ba169e4878281b7d4f87be",
     "fileSize": 329817,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-8be1ee2c7433f0845ba28881941b6ec119979ca3-2500x1500-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8be1ee2c7433f0845ba28881941b6ec119979ca3-2500x1500-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-8be1ee2c7433f0845ba28881941b6ec119979ca3-2500x1500-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428910621-3R8YJSUP8CFWMUKDYQGP/20220616_152720_1.jpg",
@@ -712,11 +892,17 @@
     ],
     "sha256": "c8439907e80a4c22b8976c86c883d7c5f56b66a25a73c53bb12cfef718af38ee",
     "fileSize": 374006,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-5b9ded94bf25be1ffe965cfe0a6ba3d659d70424-2096x2796-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5b9ded94bf25be1ffe965cfe0a6ba3d659d70424-2096x2796-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-5b9ded94bf25be1ffe965cfe0a6ba3d659d70424-2096x2796-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1702900160938-N8DQTB537FIXPAT24N89/Agnar3.jpeg",
@@ -733,11 +919,17 @@
     ],
     "sha256": "b72feeab1dd9353800a259dfd90ce9dc6179737aff5b090467a03e9f7881f47b",
     "fileSize": 1750868,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-fe7cad4fa092199f341bbb13b15db8a8c2f3436b-2500x3500-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-fe7cad4fa092199f341bbb13b15db8a8c2f3436b-2500x3500-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-fe7cad4fa092199f341bbb13b15db8a8c2f3436b-2500x3500-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/93b9ca60-337d-4e73-b309-95730a7b81fa/Arne-Olav-Lien-Bard%C3%B8lsga%CC%8Ard.jpg",
@@ -753,11 +945,17 @@
     ],
     "sha256": "1d9ba4753b0bb250a46b0cb51dfcfb73aa330452f5a97bba0c6f5c9429d483c9",
     "fileSize": 1586993,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-dd8d025d21e69ac0bda0a5a7e17d5c2eaa50eac5-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-dd8d025d21e69ac0bda0a5a7e17d5c2eaa50eac5-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-dd8d025d21e69ac0bda0a5a7e17d5c2eaa50eac5-2500x3009-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241166920-U2FPLWGLYNB9M3NT7Z1J/Baza+fryserom+-+1.jpeg",
@@ -774,11 +972,17 @@
     ],
     "sha256": "83ca6baada28eb64c8aa9a6c02b53953ea843083c9ff80271035f37cea5bcbbd",
     "fileSize": 158816,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-71594b7774f468e6659aa955a28da892570559d1-1280x960-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-71594b7774f468e6659aa955a28da892570559d1-1280x960-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-71594b7774f468e6659aa955a28da892570559d1-1280x960-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502389661-0NT1K8HKOIMI3JAQC92D/Bjerkreim+Legekontor+1.jpeg",
@@ -795,11 +999,17 @@
     ],
     "sha256": "4184edeba569e290c0d6b0f56d0cf71280e4969817c800be7fbf66b016019b04",
     "fileSize": 234364,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-660b45792b8fcef9b7fe8f083cbd7784f2414d4f-1280x960-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-660b45792b8fcef9b7fe8f083cbd7784f2414d4f-1280x960-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-660b45792b8fcef9b7fe8f083cbd7784f2414d4f-1280x960-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e6cfec2d-4a38-4f29-be2c-653e5ba2d797/Coop+Extra+Sogndal.jpeg",
@@ -821,11 +1031,17 @@
     ],
     "sha256": "3a663abe6d2f3e9070141c67e0833d1cf1f96501a0573fe1c2d8aa5a976807a5",
     "fileSize": 151209,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-477cf7f8cc70f7d5d556a9f2b10cda2edeb8782b-1000x667-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-477cf7f8cc70f7d5d556a9f2b10cda2edeb8782b-1000x667-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-477cf7f8cc70f7d5d556a9f2b10cda2edeb8782b-1000x667-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228926673-R5XLINLC97ZQFF7EP91Y/Diktator_web.jpg",
@@ -842,11 +1058,17 @@
     ],
     "sha256": "948085607562741405b5809a9240862b282f5f35b000a307b2ed5a35ab2ccc43",
     "fileSize": 130246,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-7b18a65a49dcb6a7fbe00ae38c862e2cb616d7ba-1280x1920-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-7b18a65a49dcb6a7fbe00ae38c862e2cb616d7ba-1280x1920-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-7b18a65a49dcb6a7fbe00ae38c862e2cb616d7ba-1280x1920-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228959146-O18ZOPO4ZJZA3KCU13SL/dor_ny.jpg",
@@ -863,11 +1085,17 @@
     ],
     "sha256": "e9fe89c2c397f0c2a94c30c5e48c3b0419df8c8b29c357b0537f8fee7390f2ba",
     "fileSize": 972692,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-d6cdfbcfc34571a8de25b6207f6cdc93ee975a86-2500x3687-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-d6cdfbcfc34571a8de25b6207f6cdc93ee975a86-2500x3687-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-d6cdfbcfc34571a8de25b6207f6cdc93ee975a86-2500x3687-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228694667-LDWF0LUE9BEO9MWMQX43/DSC_0608.JPG",
@@ -884,11 +1112,17 @@
     ],
     "sha256": "878367f77c9f460c2e27219d21747140f44eb65bd25859e7b75e22d5fa69b816",
     "fileSize": 87137,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-73cc9549f2edeb5db6a6df44064da9abed27cc99-1500x843-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-73cc9549f2edeb5db6a6df44064da9abed27cc99-1500x843-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-73cc9549f2edeb5db6a6df44064da9abed27cc99-1500x843-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428982293-NKH2SU6F4RGFUQLJJGCN/DSC_2579.JPG",
@@ -905,11 +1139,17 @@
     ],
     "sha256": "7ec1f7453c7c74b5217016806ab428c02f474333842f674d9452a528919e5692",
     "fileSize": 179585,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-c7d2482c71d4cca073e17e1263beb9c7a91e14a3-1500x843-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c7d2482c71d4cca073e17e1263beb9c7a91e14a3-1500x843-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-c7d2482c71d4cca073e17e1263beb9c7a91e14a3-1500x843-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428886618-XIC3VIN5W5LENA25WU9H/DSC03066.jpg",
@@ -926,11 +1166,17 @@
     ],
     "sha256": "9596c0b2df6ebe53db7d8a4616a7345de98f334ee050873c0fe05e3c924229ad",
     "fileSize": 588972,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-8b815db6192592effdc7538f46b92da56353fddd-2500x1875-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8b815db6192592effdc7538f46b92da56353fddd-2500x1875-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-8b815db6192592effdc7538f46b92da56353fddd-2500x1875-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228906304-EALH1BMIZQ4OMLY1L00P/Elebar+ventil+inne_web.jpg",
@@ -947,11 +1193,17 @@
     ],
     "sha256": "2108946c8b8845302cd0f8a5f3d1cc0b7978bbb30094afa76a299c051743d45f",
     "fileSize": 120075,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-0293c5080ffa133925ae0a1bf7e1ae3facc4ff89-1920x1280-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-0293c5080ffa133925ae0a1bf7e1ae3facc4ff89-1920x1280-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-0293c5080ffa133925ae0a1bf7e1ae3facc4ff89-1920x1280-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428975164-E7SJ2PMIFU8D45RMVPPO/fiskehallen1.jpg",
@@ -968,11 +1220,17 @@
     ],
     "sha256": "7b59dffbd042098c8a03663c871962b9d53ed81999424757ba79a40af5cab2d6",
     "fileSize": 16595,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-7454f1f8e0f55af558d87d681f3e7e68f480857e-320x240-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-7454f1f8e0f55af558d87d681f3e7e68f480857e-320x240-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-7454f1f8e0f55af558d87d681f3e7e68f480857e-320x240-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
@@ -1013,11 +1271,17 @@
     ],
     "sha256": "b2fbab26d90e1fb0171d5da17c3da86a07952b18b555ee590c51c30a5f013563",
     "fileSize": 19539,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-a39d29d41b5adcc697e2659db7637a2cddbef6a4-205x140-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a39d29d41b5adcc697e2659db7637a2cddbef6a4-205x140-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-a39d29d41b5adcc697e2659db7637a2cddbef6a4-205x140-png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
@@ -1050,11 +1314,17 @@
     ],
     "sha256": "7e8207b17477b59b7341d1b23e9b0a97d06be555891f2a8a7f7e71bf5e3133b9",
     "fileSize": 17963,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-6a872334728a4254f2ace4fb8895f9550d0d2823-205x140-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-6a872334728a4254f2ace4fb8895f9550d0d2823-205x140-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-6a872334728a4254f2ace4fb8895f9550d0d2823-205x140-png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719344562160-Z9D12R6FJ09COTBFIC4B/FP+Dyreparken.jpg",
@@ -1071,11 +1341,17 @@
     ],
     "sha256": "290f153a706c96fb6a5b34468a0bc7c66ff4ffbbd3f43092d3cb966a87c38f81",
     "fileSize": 486553,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-62110a9c09ba5d178d265fc71d070a46fa602dd4-2500x1875-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-62110a9c09ba5d178d265fc71d070a46fa602dd4-2500x1875-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-62110a9c09ba5d178d265fc71d070a46fa602dd4-2500x1875-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429005299-7QZOS5OLK4T6ST48KDUX/Fresvik+aks+montering1.jpg",
@@ -1092,11 +1368,17 @@
     ],
     "sha256": "bf4fec79b97e9a8f0de36ee6bc6b5cc801dcd15840e473075bb2b4635b76031f",
     "fileSize": 526184,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-fa4543d64a00fd29435f0277f6d1217e3845ca8b-2500x1867-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-fa4543d64a00fd29435f0277f6d1217e3845ca8b-2500x1867-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-fa4543d64a00fd29435f0277f6d1217e3845ca8b-2500x1867-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228671867-44XDBXP74FZLKTE9Y39G/Fresvik_illustrasjon-1.jpg",
@@ -1113,11 +1395,17 @@
     ],
     "sha256": "c6e74d70f3cb6c71cdcb3cf5de4f7b68057c75c5720171c1843440deb7bb7254",
     "fileSize": 281673,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-591dffd230f9ab93d941c762d4905a0d735f76b8-1880x1576-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-591dffd230f9ab93d941c762d4905a0d735f76b8-1880x1576-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-591dffd230f9ab93d941c762d4905a0d735f76b8-1880x1576-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228667833-NZJ6X5474K8R1NHEWNHD/Fresvik+ionnfesting+mot+golv.jpg",
@@ -1134,11 +1422,17 @@
     ],
     "sha256": "dc0c4b94d1a50d8d7b7a00f4736ae8b5c5cbcfd291fffb0f332276db7aba6beb",
     "fileSize": 39309,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-84745493e5dd088567da99209f6be776b014575d-1552x725-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-84745493e5dd088567da99209f6be776b014575d-1552x725-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-84745493e5dd088567da99209f6be776b014575d-1552x725-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228649404-20IRVX8C4AZ399L0LMWC/Fresvik%2Bkj%25C3%25B8lerom%2BIvar%2BSlinde.jpg",
@@ -1155,11 +1449,17 @@
     ],
     "sha256": "c7ca20744a92097c2e58216ac0b46dd890ac4e01faf615d6b53456dd165640b9",
     "fileSize": 141674,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-003b37787b137dd10a08eb0587c654e252af6783-873x998-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-003b37787b137dd10a08eb0587c654e252af6783-873x998-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-003b37787b137dd10a08eb0587c654e252af6783-873x998-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228646223-GCFAL7J1Z7CDSTH66PBD/Fresvik+produikt+seljar+Arne-Olav.jpg",
@@ -1176,11 +1476,17 @@
     ],
     "sha256": "0c8ae47138837a34ea46e15e5cab3a4207709e3eb7004adfedfedb4230e145e3",
     "fileSize": 718484,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-608e8ba38f6924ec770552c1423420024191b095-2500x2640-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-608e8ba38f6924ec770552c1423420024191b095-2500x2640-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-608e8ba38f6924ec770552c1423420024191b095-2500x2640-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228658301-7HXO4YTJZXT4SGA9VFEE/Fresvik+Produkt+40+aar.jpg",
@@ -1197,11 +1503,17 @@
     ],
     "sha256": "14c681318723675d965bcb93f600bc85678b74a131d58381006a46dcd6545382",
     "fileSize": 85948,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-8eb2a888b64c1b2220f9bb1b104a09eb8c685710-1773x581-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8eb2a888b64c1b2220f9bb1b104a09eb8c685710-1773x581-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-8eb2a888b64c1b2220f9bb1b104a09eb8c685710-1773x581-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228641721-HC1VC12XNP8F4MWVOMZY/Fresvik+produkt+julehjarte+dekorasjon.jpg",
@@ -1218,11 +1530,17 @@
     ],
     "sha256": "75d7b752b9b8504e2ca78abd4f9a204aef728db0236011a7fb090b305aaa141f",
     "fileSize": 209457,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-ac0c6eec9a260eb73cc629c9594ea504c674d959-1827x1717-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ac0c6eec9a260eb73cc629c9594ea504c674d959-1827x1717-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-ac0c6eec9a260eb73cc629c9594ea504c674d959-1827x1717-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/18003c2c-f3da-4a01-a9fa-f0d7d2ebcadb/Fresvik+Produkt+NY-4.jpeg",
@@ -1239,11 +1557,17 @@
     ],
     "sha256": "caa9f7786752c4509968cb33753a7a32691b7a166dc2dcc449569255bb1d03d0",
     "fileSize": 957993,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-59b761cc51b1c2d62f0311ec1c68eb8290f03fc7-2500x1666-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-59b761cc51b1c2d62f0311ec1c68eb8290f03fc7-2500x1666-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-59b761cc51b1c2d62f0311ec1c68eb8290f03fc7-2500x1666-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3b7cf69c-95a8-4c92-bc6a-e8e78147c29b/Frode-Winther.jpg",
@@ -1259,11 +1583,17 @@
     ],
     "sha256": "45fb273004a6e6b917ba103792b7288b33d6f423d883413ed7f28d517b321ce1",
     "fileSize": 1344508,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-5d8c15ba58e835ef436a305e34189a6e3d794bd1-2388x2876-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5d8c15ba58e835ef436a305e34189a6e3d794bd1-2388x2876-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-5d8c15ba58e835ef436a305e34189a6e3d794bd1-2388x2876-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1734082729594-BHFB3R5YE0O1JKAXEDM9/Fryserom+OBS+Alna+3_red.jpg",
@@ -1280,11 +1610,17 @@
     ],
     "sha256": "6b2208990175c5360ef57f8502c3849368d4f3c267c2aba049993e706b1a39ba",
     "fileSize": 410396,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-d164b76f3c45999ad3b47ccc7642cda7138be95f-1280x1706-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-d164b76f3c45999ad3b47ccc7642cda7138be95f-1280x1706-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-d164b76f3c45999ad3b47ccc7642cda7138be95f-1280x1706-jpg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -1300,11 +1636,17 @@
     ],
     "sha256": "d9e923e2b422376fc710c981d1c04c04850acdc8168c4debece3501159dd7ab0",
     "fileSize": 604294,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-678591e5df161059ff8f26f3401e73572277185f-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-678591e5df161059ff8f26f3401e73572277185f-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as image-678591e5df161059ff8f26f3401e73572277185f-2500x3009-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228902945-AQM2H33O29539I7FSA3I/Ha%CC%8Andtak+standard_web.jpg",
@@ -1321,11 +1663,17 @@
     ],
     "sha256": "6a05b6ae1a8d056676272694e647b52d8e9fc9c440ac4bf25e84a9e557c16d85",
     "fileSize": 230207,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-cbfca83dcbd9f732b2e11cf5de77e836807d12aa-1920x1280-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-cbfca83dcbd9f732b2e11cf5de77e836807d12aa-1920x1280-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-cbfca83dcbd9f732b2e11cf5de77e836807d12aa-1920x1280-jpg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -1341,11 +1689,17 @@
     ],
     "sha256": "24fede5e38db319b3f880a8bd6a888567f0873762da64453dae2ba5ab8355256",
     "fileSize": 142452,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-69fb258019b547fbdd80be41b7ad78e1cbc3bbeb-1000x1204-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-69fb258019b547fbdd80be41b7ad78e1cbc3bbeb-1000x1204-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as image-69fb258019b547fbdd80be41b7ad78e1cbc3bbeb-1000x1204-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc41dc96-71bb-4347-b2f8-bf0658a7d73e/Ha%CC%8Avard+Berdal.jpg",
@@ -1364,11 +1718,17 @@
     ],
     "sha256": "43d3b10e69825153f9a517362acb4f546ac741e8a238124a1ebd7ac99c8728d2",
     "fileSize": 314906,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-900520169b3effaa569cb8c86d9f9f15b32e8680-1667x1667-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-900520169b3effaa569cb8c86d9f9f15b32e8680-1667x1667-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-900520169b3effaa569cb8c86d9f9f15b32e8680-1667x1667-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228737620-U24419ZEMK9CIOTL4PAW/image-asset.jpeg",
@@ -1385,11 +1745,17 @@
     ],
     "sha256": "5888b885d284984830421464c009345b5c56b7d23bdea143b78cd4404f22325e",
     "fileSize": 88935,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-acd6a85fe983872f7b16d03ff1e6f6bebc29edb1-1500x545-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-acd6a85fe983872f7b16d03ff1e6f6bebc29edb1-1500x545-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-acd6a85fe983872f7b16d03ff1e6f6bebc29edb1-1500x545-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228773263-FLXJ27Z301QXVPYB3V5H/image-asset.jpeg",
@@ -1406,11 +1772,17 @@
     ],
     "sha256": "61c2f48e921d02aabc2b2277d3478844c8b79e9661b0a82f51349be685c15219",
     "fileSize": 162599,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-242be5dc1b29c3d4a4d9ac9d4335bbf6d33d4a1f-1500x610-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-242be5dc1b29c3d4a4d9ac9d4335bbf6d33d4a1f-1500x610-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-242be5dc1b29c3d4a4d9ac9d4335bbf6d33d4a1f-1500x610-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428993712-UDHHY88O8YUFDULR9G1L/image-asset.jpeg",
@@ -1427,11 +1799,17 @@
     ],
     "sha256": "a453ec216a7444750f016000f87c453f76740ae423c55620050c97a4aa5de5ed",
     "fileSize": 210855,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-441a925a460b47375bea7198df110c7fea2997b4-1500x1000-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-441a925a460b47375bea7198df110c7fea2997b4-1500x1000-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-441a925a460b47375bea7198df110c7fea2997b4-1500x1000-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429051200-R0UVYZO6J6WM4KZN512O/image-asset.jpeg",
@@ -1449,11 +1827,17 @@
     ],
     "sha256": "9ac7a9ad5541c60c361de4e93653f0c5ee6d2e91dfcd924967d66d9ab3c26fb4",
     "fileSize": 180043,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-9aa3966b982cb6bb318d064197c41b2aee17dd54-990x648-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-9aa3966b982cb6bb318d064197c41b2aee17dd54-990x648-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-9aa3966b982cb6bb318d064197c41b2aee17dd54-990x648-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694500125082-6JC19LMQZ08K1B9WF07S/image-asset.jpeg",
@@ -1471,11 +1855,17 @@
     ],
     "sha256": "cbcb42e78d918a7538ec1649ca320dffafb18f96a13c0050e7becc624b710d98",
     "fileSize": 275570,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-1fb341bcb71ee7be3291679aaf89925fa8d646f0-2500x1467-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-1fb341bcb71ee7be3291679aaf89925fa8d646f0-2500x1467-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-1fb341bcb71ee7be3291679aaf89925fa8d646f0-2500x1467-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0e918a1c-81aa-42be-ac6c-a76670486056/image-asset.jpg",
@@ -1494,11 +1884,17 @@
     ],
     "sha256": "3461d6b2aea78b3ca227248a5014bdbe42171e51fe65ee70b6a173ec9793b274",
     "fileSize": 184575,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-93c2687c8be3782ee1a99290c6c502c85b692c6f-1496x830-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-93c2687c8be3782ee1a99290c6c502c85b692c6f-1496x830-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-93c2687c8be3782ee1a99290c6c502c85b692c6f-1496x830-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429019721-ZC32AVBAD55JGSWMPAE0/image2.JPG",
@@ -1515,11 +1911,17 @@
     ],
     "sha256": "f81a53dbdc1c0d99bd7a4ed14b22bbf3cdf5604dd9f8feb5ef22fe6412a2df07",
     "fileSize": 26439,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-50a66d6078ef00aa410b862964f117eae22d523e-480x640-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-50a66d6078ef00aa410b862964f117eae22d523e-480x640-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-50a66d6078ef00aa410b862964f117eae22d523e-480x640-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428934426-54STKYSMZXBLZUQT1Y69/IMG_2589.jpg",
@@ -1536,11 +1938,17 @@
     ],
     "sha256": "66f476fe0dcdd78103b07763ef039cd264cd83e321739c15c55303fa062bf833",
     "fileSize": 317606,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-d04792ce4f6360ebb55cb7d3b746d87cf9ca1ab6-2048x1152-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-d04792ce4f6360ebb55cb7d3b746d87cf9ca1ab6-2048x1152-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-d04792ce4f6360ebb55cb7d3b746d87cf9ca1ab6-2048x1152-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428921988-GSQLH7E9ACJ9DPWSSGRW/IMG_6262.jpg",
@@ -1557,11 +1965,17 @@
     ],
     "sha256": "ae80394b84e25557f342afb88532e904d2a7c1859c9f0d6de3fb9e83e8729c64",
     "fileSize": 365285,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-8b23d86c3b247e2685e7d452e656a5d13a8a8058-2016x1134-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8b23d86c3b247e2685e7d452e656a5d13a8a8058-2016x1134-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-8b23d86c3b247e2685e7d452e656a5d13a8a8058-2016x1134-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428967167-613IZJTMJEAGG6Q80CY9/IMG_7324.JPG",
@@ -1578,11 +1992,17 @@
     ],
     "sha256": "430565e491a0c735b14257f0c33b1e3734b90063243665224d03aed14d6f4d1c",
     "fileSize": 274094,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-f1d4f8c714b25cdaad7e271020721c585561c75c-1224x1632-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-f1d4f8c714b25cdaad7e271020721c585561c75c-1224x1632-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-f1d4f8c714b25cdaad7e271020721c585561c75c-1224x1632-jpg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -1599,11 +2019,17 @@
     ],
     "sha256": "d5aeae51b5a69c2a28ae00a8d6902d3710d882ee2500c75fce78e5d94a04adf0",
     "fileSize": 7955,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-480e7915d182556d0edf1dd85697f756a4d121c5-188x250-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-480e7915d182556d0edf1dd85697f756a4d121c5-188x250-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as image-480e7915d182556d0edf1dd85697f756a4d121c5-188x250-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429054718-WXG74WTBHLGX9QBE7NTA/image-asset.jpeg",
@@ -1620,11 +2046,17 @@
     ],
     "sha256": "2c9ce369f6d9554c7c1f0fb43ed94d237ff63b8aa8d193f4f6c9f3f5857e5fd5",
     "fileSize": 75460,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-5e56e50d678e525ecb8468d6ef89e62f4294dc78-1160x460-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5e56e50d678e525ecb8468d6ef89e62f4294dc78-1160x460-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-5e56e50d678e525ecb8468d6ef89e62f4294dc78-1160x460-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc7a35a3-51fe-4a8a-aac6-32c13c72b7ad/John+B%C3%B8thun_Fresvik+Produkt.jpg",
@@ -1641,11 +2073,17 @@
     ],
     "sha256": "9cb9c64f7f949b90718c36b52c9e53af8fa98bf2715b5aef371562db5c8a1024",
     "fileSize": 491826,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-3fab2fa12ba0817c623efc654cc441e81734efa1-1920x1280-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-3fab2fa12ba0817c623efc654cc441e81734efa1-1920x1280-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-3fab2fa12ba0817c623efc654cc441e81734efa1-1920x1280-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228769500-4TTIXKAO1JNS9J2G51MG/_K6R3776_07032013.jpg",
@@ -1665,11 +2103,17 @@
     ],
     "sha256": "ba7bf3ee5e3b13d555a19d3b4208b887a741d81da1a21c0e6db4026e031c23a6",
     "fileSize": 425644,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-14a149133495e7c3a90f2566ea91dd1c497e0ea9-2500x1762-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-14a149133495e7c3a90f2566ea91dd1c497e0ea9-2500x1762-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-14a149133495e7c3a90f2566ea91dd1c497e0ea9-2500x1762-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820354075-093JAT4O9XRFJQLFQLUX/Kiwi+Otta+1.jpeg",
@@ -1686,11 +2130,17 @@
     ],
     "sha256": "d1aceef75504a7643232f77b1d928f79f4a5e593cb4358c074090575a76997e7",
     "fileSize": 787920,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-ef84ff4a1886e6279cd9e98e9e8cc83accf823f2-1707x2276-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ef84ff4a1886e6279cd9e98e9e8cc83accf823f2-1707x2276-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-ef84ff4a1886e6279cd9e98e9e8cc83accf823f2-1707x2276-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428963306-KUA0I3B9YO1LP7PZUI11/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
@@ -1707,11 +2157,17 @@
     ],
     "sha256": "b8d0bc13cdada15e670d3343183ab6fc608f7be2a35e2a52d5328c2acc82860e",
     "fileSize": 110154,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-53b15cd83588261645addb3a6c8c0fcb3b4aeb71-1200x450-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-53b15cd83588261645addb3a6c8c0fcb3b4aeb71-1200x450-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-53b15cd83588261645addb3a6c8c0fcb3b4aeb71-1200x450-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1742460548045-IK0PV2OD0TE4E6PHMPW0/Kj%C3%B8lerom+Bunnpris+Volda+3.jpg",
@@ -1728,11 +2184,17 @@
     ],
     "sha256": "a404a5e613a71839ad6332731dce086c5cbfb51fbf3d1d54c7e629f05e0df5ef",
     "fileSize": 1248901,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-56dc11321f7727d0e1ce98808c80bfec6b562283-2500x3084-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-56dc11321f7727d0e1ce98808c80bfec6b562283-2500x3084-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-56dc11321f7727d0e1ce98808c80bfec6b562283-2500x3084-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6462fe9f-f6d3-4ea6-ba4c-7e1e22feaaa6/Lars-Erling-Livrud.jpeg",
@@ -1748,11 +2210,17 @@
     ],
     "sha256": "3bc3215c94bf0e841894093a03d74b5cee5764affa34d770c6a65f94a44b01cd",
     "fileSize": 1663027,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-bbe033863e221db9ce6190ab8236a3101e6a0e3e-2318x2791-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-bbe033863e221db9ce6190ab8236a3101e6a0e3e-2318x2791-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-bbe033863e221db9ce6190ab8236a3101e6a0e3e-2318x2791-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228910970-GA9J3XJZ7A746P0MBQJ4/MaxiElebar+ventil+inne_web.jpg",
@@ -1769,11 +2237,17 @@
     ],
     "sha256": "b6bc673ded991ac133b20647136e8363c9abe4a4efcb11151d77bda7982a2af1",
     "fileSize": 92493,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-77acb7751c99e42d63f66fbdc059d02b5146a80b-1920x1280-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-77acb7751c99e42d63f66fbdc059d02b5146a80b-1920x1280-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-77acb7751c99e42d63f66fbdc059d02b5146a80b-1920x1280-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228635452-TD8HXP8YZNIQPVPFCRI7/Milj%C3%B8fyrta%CC%8Arn_Fresvik+Produkt.jpg",
@@ -1790,11 +2264,17 @@
     ],
     "sha256": "35963d67a5a5041e814bbd71a2457b8e5f5656ec6fa795870a5c122d3e1c25af",
     "fileSize": 338293,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-c1b66edc25b63d2881de28823d1d00c605b4b187-1920x1080-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c1b66edc25b63d2881de28823d1d00c605b4b187-1920x1080-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-c1b66edc25b63d2881de28823d1d00c605b4b187-1920x1080-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/023d763a-056e-4d63-9125-90225b9624fd/New+Logo+Design+2024+-+Made+with+PosterMyWall+%2815%29.png",
@@ -1810,11 +2290,17 @@
     ],
     "sha256": "0390f519e1e6b6a9496d2d9cdcdd2327b40d8ce25316be60c68d3ffacd1fdf1c",
     "fileSize": 19953,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-d8ac8d2c6a8d7eae31d02cf8094d600f5de3c4fc-600x600-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-d8ac8d2c6a8d7eae31d02cf8094d600f5de3c4fc-600x600-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-d8ac8d2c6a8d7eae31d02cf8094d600f5de3c4fc-600x600-png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/cf2c17a5-1e90-4ab0-96e9-0d4052afeb4a/Nils+Gunnar+Finne.jpeg",
@@ -1830,11 +2316,17 @@
     ],
     "sha256": "b14d6511a63daa75349e5321342d9fcd12373f1dd0a017694ef07d5d2a0960f4",
     "fileSize": 766027,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-2cdedbfd33888d6e8c8147b784251f46e5f0e62c-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-2cdedbfd33888d6e8c8147b784251f46e5f0e62c-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-2cdedbfd33888d6e8c8147b784251f46e5f0e62c-2500x3009-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dff2816f-bc5c-43f7-a06b-91c0427e1f50/Oddrun+Time.jpeg",
@@ -1850,11 +2342,17 @@
     ],
     "sha256": "8d9693e3f2d7473cac3b229c4802af51a30a1c348b370d6bd612d3575bef3f7e",
     "fileSize": 964609,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-b9e5ebe157ba1242fefb476a5789efd5303d8ea9-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-b9e5ebe157ba1242fefb476a5789efd5303d8ea9-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-b9e5ebe157ba1242fefb476a5789efd5303d8ea9-2500x3009-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/8cb3117f-86e2-4a0a-b333-5722d9c1946a/Ove+Fedje.jpeg",
@@ -1870,11 +2368,17 @@
     ],
     "sha256": "42ee5bdeccadd82ef70788b91aa46fce7edf169614f86b3aa7064b8122a42484",
     "fileSize": 700338,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-e2af6a4268eebcd7b8d3fc8630d5da3edbbc5e96-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-e2af6a4268eebcd7b8d3fc8630d5da3edbbc5e96-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-e2af6a4268eebcd7b8d3fc8630d5da3edbbc5e96-2500x3009-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228916130-S0DQVN00OYIZASC3CQKV/PEGO+innestengningsalarm_web.jpg",
@@ -1891,11 +2395,17 @@
     ],
     "sha256": "d41c5a71df1f00436bb719d6b2ba0bb6b3c1f4e7111a3bff4279aef247f80bff",
     "fileSize": 235796,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-305e20bf224ea1a7a3e4754400a64f39876e4002-1920x1280-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-305e20bf224ea1a7a3e4754400a64f39876e4002-1920x1280-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-305e20bf224ea1a7a3e4754400a64f39876e4002-1920x1280-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228806054-QGL0LMRK543ILT2T3XK3/Port1_fresvik.jpg",
@@ -1912,11 +2422,17 @@
     ],
     "sha256": "1a180df1510184f89d2cc11eff72c178fce0c2a7cc46bb67d789065ea7e0040a",
     "fileSize": 124257,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-c5cd2052cfab2477b9aaeac931cdd1694436b4f8-1500x913-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c5cd2052cfab2477b9aaeac931cdd1694436b4f8-1500x913-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-c5cd2052cfab2477b9aaeac931cdd1694436b4f8-1500x913-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3c01276b-1589-49c6-9503-8cd8519959d9/port1web.jpg",
@@ -1932,11 +2448,17 @@
     ],
     "sha256": "ee054f044a9a598615cda5754410992bce54b4e2d1d5f58e05807642170a34fd",
     "fileSize": 292798,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-c01473110649fad9c7daea3edc6787c1927d11d4-2126x800-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c01473110649fad9c7daea3edc6787c1927d11d4-2126x800-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-c01473110649fad9c7daea3edc6787c1927d11d4-2126x800-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228943559-L0SXG2I29YLNU5JDWJP5/profil1+copy.jpg",
@@ -1953,11 +2475,17 @@
     ],
     "sha256": "c83c487da3375a51384d2669b10b1601b0ddb2f9478384f1829543c56cbfe6b4",
     "fileSize": 101146,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-839b8a2fe3ce28e819b42dbebed320a9582da518-1772x1017-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-839b8a2fe3ce28e819b42dbebed320a9582da518-1772x1017-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-839b8a2fe3ce28e819b42dbebed320a9582da518-1772x1017-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228921336-E5VWZTJBSCS1W0PVW8TB/PVC-gardin_web.jpg",
@@ -1974,11 +2502,17 @@
     ],
     "sha256": "3fe084e5bafbef8b6c27330d73c858e64f55bc739fe2f5adccd27b734fcaa3d8",
     "fileSize": 245402,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-f6e615c5ee6b1a107e1de2b54099ba532cd99e42-1920x1279-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-f6e615c5ee6b1a107e1de2b54099ba532cd99e42-1920x1279-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-f6e615c5ee6b1a107e1de2b54099ba532cd99e42-1920x1279-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/425b8a7b-7d36-4709-b058-61a730bd2e74/Ragnvald+Grov+S%C3%B8rdal.jpeg",
@@ -1994,11 +2528,17 @@
     ],
     "sha256": "25bad208394ba60fdf6317b003e4333cdb395d296297477353ba3af8d92facf4",
     "fileSize": 637482,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-13199457bda12f14f626b8b4da827db60117fb58-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-13199457bda12f14f626b8b4da827db60117fb58-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-13199457bda12f14f626b8b4da827db60117fb58-2500x3009-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228933067-LHLZ30AMNKXNVOYEUTGA/rampe1+copy.jpg",
@@ -2015,11 +2555,17 @@
     ],
     "sha256": "99826b26c9ed0189de7e53db6ea5dd1e7ff493618b6e8346ff53055a647698d1",
     "fileSize": 307760,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-0fbae452471ea41472ece5282408ebc4aef436b8-1890x799-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-0fbae452471ea41472ece5282408ebc4aef436b8-1890x799-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-0fbae452471ea41472ece5282408ebc4aef436b8-1890x799-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428945151-2DYHLD6R7EHJRUKRCWUI/Resvik-fryserom-Innvendig%2B2.jpg",
@@ -2036,11 +2582,17 @@
     ],
     "sha256": "854c49c2f805e5697e75ead65fa2edd8753131f5192393fe272ae1f83a70ae51",
     "fileSize": 176219,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-29db69b6613f633a653315d6e7ae275b33de95c6-2500x1118-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-29db69b6613f633a653315d6e7ae275b33de95c6-2500x1118-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-29db69b6613f633a653315d6e7ae275b33de95c6-2500x1118-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e6a1706c-a13b-41d3-8e62-479cbae3fa46/Samaneh+Shakeri.jpg",
@@ -2060,11 +2612,17 @@
     ],
     "sha256": "fcc71e370704f0132e37f592b38a60398b55f8ab4935d811f869219bf713c1bd",
     "fileSize": 649025,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-dd58a0dd9a10b12f205ddb6bceb7103badea491f-2500x3214-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-dd58a0dd9a10b12f205ddb6bceb7103badea491f-2500x3214-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-dd58a0dd9a10b12f205ddb6bceb7103badea491f-2500x3214-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b8b854bc-2ce5-4194-beff-1f375dec6407/Sigmund+Hauglum.jpg",
@@ -2080,11 +2638,17 @@
     ],
     "sha256": "72d735e1bd218c2a83bce3d6004727533681a268d7fd58d0520288a5a6162685",
     "fileSize": 278681,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-5725688aaf0e819908d6176c4ae8d5f007149fb3-1000x1204-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5725688aaf0e819908d6176c4ae8d5f007149fb3-1000x1204-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-5725688aaf0e819908d6176c4ae8d5f007149fb3-1000x1204-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/a7e012d5-b583-472d-85c0-a3d3eb0d24aa/Siri+Otterhjell.jpeg",
@@ -2100,11 +2664,17 @@
     ],
     "sha256": "692b1ce96d49a85ae20c043af4c7f2dc1b611fd8a32326fc967bc75e2dd2ec8e",
     "fileSize": 593871,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-16defaa6b4ad1e18fd153c7defb072b128145ebc-2500x3008-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-16defaa6b4ad1e18fd153c7defb072b128145ebc-2500x3008-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-16defaa6b4ad1e18fd153c7defb072b128145ebc-2500x3008-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/573f8aab-6b3e-4c90-86e0-797986364f58/Siv+Settevik.jpeg",
@@ -2120,11 +2690,17 @@
     ],
     "sha256": "9e40f6600b46c4e135f4c6fda0fa2e4903e07b1617e0fa84fb0d7038b3a8e1c9",
     "fileSize": 594197,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-8f7899d6a0045cf45f0a8611833f8b3e1ba53f97-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8f7899d6a0045cf45f0a8611833f8b3e1ba53f97-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-8f7899d6a0045cf45f0a8611833f8b3e1ba53f97-2500x3009-jpg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -2141,11 +2717,17 @@
     ],
     "sha256": "4df6b6650ec7296734dcfabef0eff2022da3391d72ddf63aab642eeaf4e335bc",
     "fileSize": 18754,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-175c727b44bd3ab2d56e04a514704ceee9fbac74-508x678-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-175c727b44bd3ab2d56e04a514704ceee9fbac74-508x678-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as image-175c727b44bd3ab2d56e04a514704ceee9fbac74-508x678-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222151377-Y2600X4366PYP2EVYBJ9/Spar+Lund+Torv+-+Fresvik+Produkt+1+.jpeg",
@@ -2162,11 +2744,17 @@
     ],
     "sha256": "8049504ca87ef511ab45d4ee36297aa65fce7deb0ea635b8842a28d94a498f3c",
     "fileSize": 220724,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-fbefe0b1d94d8deb49100b18d665ad86a187d17b-960x1280-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-fbefe0b1d94d8deb49100b18d665ad86a187d17b-960x1280-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-fbefe0b1d94d8deb49100b18d665ad86a187d17b-960x1280-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228676756-0Q8RRY50I1SGJ18G8H55/tomas+kruvelis+20180315_121307.jpg",
@@ -2183,11 +2771,17 @@
     ],
     "sha256": "9550bc355ee31f4b864e585e4ff51b22ddbec107b587f299a2eaac0095ddf697",
     "fileSize": 92228,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-dde2d644c3ffef2de23bd8d5705d3e2216cae59b-955x1006-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-dde2d644c3ffef2de23bd8d5705d3e2216cae59b-955x1006-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-dde2d644c3ffef2de23bd8d5705d3e2216cae59b-955x1006-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dbba98a8-e809-46c8-b875-ce3ef3aee28a/Tomas-Kruvelis.jpg",
@@ -2203,11 +2797,17 @@
     ],
     "sha256": "b0baffa10506d98d0db4af384f14bdc6192ea75c7a6ae6f75c09564f1c439148",
     "fileSize": 1572394,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-a8520828472778a51f49adcb45427f245a3839cf-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a8520828472778a51f49adcb45427f245a3839cf-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-a8520828472778a51f49adcb45427f245a3839cf-2500x3009-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/028353e9-eb2c-4f44-9fab-f6f895bb2476/Transportskade+Fresvik+Produkt.jpg",
@@ -2224,11 +2824,17 @@
     ],
     "sha256": "65663a64cc77e63a1ef60d5d42981f02f70dc4739912511166c8b26caf2746fc",
     "fileSize": 149494,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-2da6fc14562617fd1bbcf5f497b93777af5601f8-905x960-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-2da6fc14562617fd1bbcf5f497b93777af5601f8-905x960-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-2da6fc14562617fd1bbcf5f497b93777af5601f8-905x960-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749159320-QFVQ5BDRGRH74139ILFZ/Vik+helse-+og+sjukeheim+1.jpg",
@@ -2245,11 +2851,17 @@
     ],
     "sha256": "857bb650fca99e7006644299638274905ccac7b862eca18678cd6383f9a7d639",
     "fileSize": 79523,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-89521047913acc09957fdce9407330398ce70a29-1280x960-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-89521047913acc09957fdce9407330398ce70a29-1280x960-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-89521047913acc09957fdce9407330398ce70a29-1280x960-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428894060-0GTKTAY8QN20XFVDOADY/012EA3A01A484D6F8FB98E3FFB7F11BF.jpg",
@@ -2309,11 +2921,17 @@
     ],
     "sha256": "fb331a992fcbd4e8769434ef072e0f17ddb515a358799b3deac8939f7510f2ae",
     "fileSize": 137059,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-4e7dd83a023bf9c7d818af357d310a181ffa8dbc-997x712-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-4e7dd83a023bf9c7d818af357d310a181ffa8dbc-997x712-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-4e7dd83a023bf9c7d818af357d310a181ffa8dbc-997x712-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719842658617-JWM3CCE08BXLOYQPYV8C/1715599204829_upscale+2.jpeg",
@@ -2358,11 +2976,17 @@
     ],
     "sha256": "7576859da61ce484df9cf007badbf910b064680d36db843f96f4ad65f55c54d5",
     "fileSize": 151764,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-fc39642257086e0f52e466e755a4d5843137c5a9-1242x1536-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-fc39642257086e0f52e466e755a4d5843137c5a9-1242x1536-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-fc39642257086e0f52e466e755a4d5843137c5a9-1242x1536-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429031003-XGGG9MZ489LJVUEFG4ZF/20151021_174814.jpg",
@@ -2467,11 +3091,17 @@
     ],
     "sha256": "6140421f2b6b3818b2fdf2a800c450e0c5533113309efb87da0b52c8d26970bd",
     "fileSize": 8578,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-6662fe24a6a65820e955efb56edf4c5ec14d8352-544x672-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-6662fe24a6a65820e955efb56edf4c5ec14d8352-544x672-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-6662fe24a6a65820e955efb56edf4c5ec14d8352-544x672-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d1e8ab46-e86a-4e94-a140-75a4bf64054d/aaa.jpg",
@@ -2487,11 +3117,17 @@
     ],
     "sha256": "18587fa08fdc921459e7e263c6ce9260f02b5fad7d4b255f2901f4a710138691",
     "fileSize": 156258,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-0b25c8644e2c6bcd8d5e53402fb4803201a1218d-1920x1280-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-0b25c8644e2c6bcd8d5e53402fb4803201a1218d-1920x1280-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-0b25c8644e2c6bcd8d5e53402fb4803201a1218d-1920x1280-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1eebf1d8-e081-49b6-b35d-51ca6400c18c/Agnar+i+Truck-resized.jpeg",
@@ -2521,11 +3157,17 @@
     ],
     "sha256": "23522ab6df02c64dba551b68c60a74d7f32dc31139ac5a64529c90dfba80928c",
     "fileSize": 177592,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-583afc6b702396dd0ed961b992f1e0bd85a92920-542x597-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-583afc6b702396dd0ed961b992f1e0bd85a92920-542x597-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-583afc6b702396dd0ed961b992f1e0bd85a92920-542x597-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d04658e0-dce8-4c18-ba78-e00e6440b419/b12b5d19-2424-48de-bdea-c83b503c880c+%281%29.png",
@@ -2540,11 +3182,17 @@
     ],
     "sha256": "145af1898a33c29df6e4303fe31a4940a1b9d1432c11b6f729c9ab60ef91f11b",
     "fileSize": 2698491,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-95fb7e753957013d870e5af5bc851798e1491b11-1448x1086-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-95fb7e753957013d870e5af5bc851798e1491b11-1448x1086-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-95fb7e753957013d870e5af5bc851798e1491b11-1448x1086-png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241166915-Q47EXNO6K811P4RRIQL1/Baza+fryserom+-+2.jpeg",
@@ -2589,11 +3237,17 @@
     ],
     "sha256": "5497d075705668345dab4d5e7732e7d26e1c1b61c07f98a93e214215faae3a87",
     "fileSize": 171134,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-89b1d210dd989070e21cd4f50b7ae18d7eb10678-1280x960-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-89b1d210dd989070e21cd4f50b7ae18d7eb10678-1280x960-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-89b1d210dd989070e21cd4f50b7ae18d7eb10678-1280x960-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502389209-3UTCBQ1FIN5OF22IYGKJ/Bjerkreim+Legekontor+2.jpeg",
@@ -2683,11 +3337,17 @@
     ],
     "sha256": "ebe4bcc426db31b50406ae93ab38079464f14664ba285c5714728334f1c67a1a",
     "fileSize": 28270,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-c55485109ece176e782e352423bdc2656dcbe145-2000x2000-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c55485109ece176e782e352423bdc2656dcbe145-2000x2000-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-c55485109ece176e782e352423bdc2656dcbe145-2000x2000-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1700040185087-O7K1UNJLYM01IO9TVQT5/ce-logo-png-transparent.png",
@@ -2702,11 +3362,17 @@
     ],
     "sha256": "5b1170a00cc0cbef5a95003c900c70d453ec000d40e744a15f5e7e27c351fba1",
     "fileSize": 24072,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-d7c5cc92c65128745e10275dc4e4836dce1fb46a-2400x1706-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-d7c5cc92c65128745e10275dc4e4836dce1fb46a-2400x1706-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-d7c5cc92c65128745e10275dc4e4836dce1fb46a-2400x1706-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/33cd3f9d-cf72-4271-8f61-52108209b9b9/D%C3%B8r.jpeg",
@@ -2721,11 +3387,17 @@
     ],
     "sha256": "91319021684ff807c94afa06938aae94211a5c7e7f3365c543c1fc93fdf48619",
     "fileSize": 10115,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-16b3256026dbdb92c377ab127de2e184e8fe727e-500x344-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-16b3256026dbdb92c377ab127de2e184e8fe727e-500x344-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-16b3256026dbdb92c377ab127de2e184e8fe727e-500x344-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6a3c9da6-49a6-479e-a5bd-efda8fe4cb86/Door.png",
@@ -2740,11 +3412,17 @@
     ],
     "sha256": "a311dfae360a3ec0333f26b3de92feb9e0f92e991311a05153013e7077fac9cd",
     "fileSize": 12070,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-7764371faf71bd0b6c7526c316bfecbcdc266650-2000x2000-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-7764371faf71bd0b6c7526c316bfecbcdc266650-2000x2000-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-7764371faf71bd0b6c7526c316bfecbcdc266650-2000x2000-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428995765-ME1PI8W9HRL6MCAU66ZH/dorer2_web.jpg",
@@ -3179,11 +3857,17 @@
     ],
     "sha256": "fc372f9371dd41af2fb63d23602402915a5ced653e2405f1170e2393e5ccd38e",
     "fileSize": 288990,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-d7774ed05188aae6bded38ea8c62df56062be6dc-2500x1667-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-d7774ed05188aae6bded38ea8c62df56062be6dc-2500x1667-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-d7774ed05188aae6bded38ea8c62df56062be6dc-2500x1667-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/eff3414a-e8af-4c05-b9d8-6d2d1aaf6c11/element-small.png",
@@ -3198,11 +3882,17 @@
     ],
     "sha256": "255df2cda80060b719f747f7573f94f44c67e8a6711fd756d5827e7115766679",
     "fileSize": 3738,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-ef678547ed43258c5bc745a2a55fcd48a2a56106-205x140-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ef678547ed43258c5bc745a2a55fcd48a2a56106-205x140-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-ef678547ed43258c5bc745a2a55fcd48a2a56106-205x140-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5a6e06c4-282a-434c-8ba5-3d15e713ab30/Fasadepanel+Nortura+Herland.jpeg",
@@ -3217,11 +3907,17 @@
     ],
     "sha256": "ada5a9240a1c412fc0bf25f90e53e411411cb97999285b6e71617a63b9b30b90",
     "fileSize": 63666,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-5388e74c75763104129a3515e45ee3492777549f-909x463-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5388e74c75763104129a3515e45ee3492777549f-909x463-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-5388e74c75763104129a3515e45ee3492777549f-909x463-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/08771da3-ee6f-416a-9369-ff384ef62aba/fermod.png",
@@ -3236,11 +3932,17 @@
     ],
     "sha256": "960c8141308f551f800f5629e76cec23df95debef916ef9e09a037e9aa46dd09",
     "fileSize": 128814,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-63c8c45a568177bc2cc133ee2e046c908e4813e3-732x512-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-63c8c45a568177bc2cc133ee2e046c908e4813e3-732x512-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-63c8c45a568177bc2cc133ee2e046c908e4813e3-732x512-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/95302e49-96ee-4a63-b4b8-71c8b5fde81d/file.png",
@@ -3257,11 +3959,17 @@
     ],
     "sha256": "d8ee1b50c9f3cd9a1a7d268c33a7dcf54513e75e5c0fc6aa282f53927790ccdf",
     "fileSize": 15802,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-080f26f151d72bd5b8023da6673589262ce2e0ab-512x512-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-080f26f151d72bd5b8023da6673589262ce2e0ab-512x512-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-080f26f151d72bd5b8023da6673589262ce2e0ab-512x512-png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428976512-W88QQCEDX0AI76ZA7E9F/fiskehallen2.jpg",
@@ -3309,11 +4017,17 @@
     ],
     "sha256": "27e20960aaad940d294ba861e9d5783457caed68982d13fb67abcc9b1c42c54b",
     "fileSize": 18171,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-9998c94b0e1e955cc009f4d46e5547e9f4451454-205x140-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-9998c94b0e1e955cc009f4d46e5547e9f4451454-205x140-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-9998c94b0e1e955cc009f4d46e5547e9f4451454-205x140-png."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -3330,11 +4044,17 @@
     ],
     "sha256": "ce537f1b1c47bc74a4493b0a0040dc2ad4b29ca9a026e379ce0bc2e5941f995a",
     "fileSize": 11828,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-abadeeffe965e2059c7a3693134368acab508fca-205x140-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-abadeeffe965e2059c7a3693134368acab508fca-205x140-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as image-abadeeffe965e2059c7a3693134368acab508fca-205x140-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719344561991-BLTT0NHSX83F2YSZFCCB/FP+Dyreparken+1.jpg",
@@ -3392,11 +4112,17 @@
     "sourcePages": [],
     "sha256": "5d4402b40af38bb9ce06d0cf288ff4fadbeff133fcf2fd2686b46b2d85af4acd",
     "fileSize": 138633,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-332f734294499336366f9659ee1af908e71fb1c0-1500x843-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-332f734294499336366f9659ee1af908e71fb1c0-1500x843-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-332f734294499336366f9659ee1af908e71fb1c0-1500x843-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429009885-M28TI1L6MX1GR54W2QXI/Fresvik+aks+montering4.jpg",
@@ -3441,11 +4167,17 @@
     ],
     "sha256": "77249020a93f47b77ec4dc274823b3ac12eb9579eab0c06f4260c42488558eea",
     "fileSize": 413180,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-e3cd3e2fa30483ae683cb382a4e4d25cac98213e-1897x1406-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-e3cd3e2fa30483ae683cb382a4e4d25cac98213e-1897x1406-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-e3cd3e2fa30483ae683cb382a4e4d25cac98213e-1897x1406-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b405b8f4-c0fa-4090-a6a3-3af3f5ded4e7/fresvik-fryse-dor_ny.jpg",
@@ -3458,11 +4190,17 @@
     "sourcePages": [],
     "sha256": "bec578d4f0650390e4793e07ef44573fd9f2bdd46903b1db7eab0941be715ca4",
     "fileSize": 110182,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-c5559e73c2e58d10a4fdf965d291e50f2cc080fa-1757x988-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c5559e73c2e58d10a4fdf965d291e50f2cc080fa-1757x988-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-c5559e73c2e58d10a4fdf965d291e50f2cc080fa-1757x988-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e0a96aed-bc93-4a20-95d0-cd042af1bb3b/Fresvik+Hengsle.jpeg",
@@ -3477,11 +4215,17 @@
     ],
     "sha256": "eb77800e45d226ea9a462f25e25b303483c0e923a2a8311395513ca1a5d7d8dd",
     "fileSize": 342086,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-d48f60c5dcfbee31f5499de173da3f86e1fafdc3-2500x1675-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-d48f60c5dcfbee31f5499de173da3f86e1fafdc3-2500x1675-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-d48f60c5dcfbee31f5499de173da3f86e1fafdc3-2500x1675-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228654830-VB9M9WLG831YMGR2GCZ4/Fresvik%2Bkj%25C3%25B8lerom%2BIvar%2BSlinde%2B3.jpg",
@@ -3571,11 +4315,17 @@
     ],
     "sha256": "58ba8ce3fb23f72b0e76a7065314a11a8ef6aaac2b88d56d11f21278987ff6c3",
     "fileSize": 97268,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-66c9e8a8d0b3670f2969b0069ebba9cdb79a9ca3-2500x1667-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-66c9e8a8d0b3670f2969b0069ebba9cdb79a9ca3-2500x1667-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-66c9e8a8d0b3670f2969b0069ebba9cdb79a9ca3-2500x1667-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1698216874163-KLN7EVX53DHNZV3JNUXG/Fresvik+Toppledere+sogn.no.jpeg",
@@ -3590,11 +4340,17 @@
     ],
     "sha256": "4870eb803af09131b9d368c7e482040492d8131c30fa2c468f53eac5279729ee",
     "fileSize": 665940,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-b7af9f0e801a2476048f47be152604dd1dee6cd6-2500x1647-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-b7af9f0e801a2476048f47be152604dd1dee6cd6-2500x1647-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-b7af9f0e801a2476048f47be152604dd1dee6cd6-2500x1647-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/edb3073f-4d52-4f2b-bcc8-eccccb3d364b/Fryserom.png",
@@ -3609,11 +4365,17 @@
     ],
     "sha256": "3dc2dd1210515cc889aca1e1e2b362462a8667d825f7625fdd3755c7690c9f81",
     "fileSize": 215816,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-ad1168efbc5d467a087c73489a9cbca84f68c71e-500x334-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ad1168efbc5d467a087c73489a9cbca84f68c71e-500x334-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-ad1168efbc5d467a087c73489a9cbca84f68c71e-500x334-png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1734082729594-KTDB3CX6KXLCG0K5DW13/Fryserom+OBS+Alna+4_red.jpg",
@@ -3658,11 +4420,17 @@
     ],
     "sha256": "fa08b1dd80c8a831ea7f7b462da65140863b3490445104b9427924fc3129cf1c",
     "fileSize": 3834375,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-5484a23aed5c4d3a885b5ed73e38e9cd90ac3417-1448x1086-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5484a23aed5c4d3a885b5ed73e38e9cd90ac3417-1448x1086-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-5484a23aed5c4d3a885b5ed73e38e9cd90ac3417-1448x1086-png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/c1a5b7bc-5c62-421d-931a-65dcb0cc86fd/glassplate.png",
@@ -3677,11 +4445,17 @@
     ],
     "sha256": "adf6144a61c9e8a79de70115b645ea50a6d1cba41ffd8328c223fea6cd45b30a",
     "fileSize": 67074,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-a0d38b87d8a8496c5edb733353488a16c6f5d93a-507x377-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a0d38b87d8a8496c5edb733353488a16c6f5d93a-507x377-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-a0d38b87d8a8496c5edb733353488a16c6f5d93a-507x377-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/61ebde5c-0774-4dc1-92c8-4ed21efb4114/Gyda+B%C3%B8thun.jpeg",
@@ -3696,11 +4470,17 @@
     ],
     "sha256": "db6983ca6e9b17d03741bd120379c130d3582fceacde720b88c4ef0657d701a5",
     "fileSize": 318592,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-ac9506b807e039de127a594ffea9481ab3ab721e-2500x3009-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ac9506b807e039de127a594ffea9481ab3ab721e-2500x3009-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-ac9506b807e039de127a594ffea9481ab3ab721e-2500x3009-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429000751-UHD6UZU92HWPNAEYQB9F/haandtak_web.jpg",
@@ -3730,11 +4510,17 @@
     ],
     "sha256": "5d18c125707f4c0197d7964fb15939ab4f0f2d8ea47452ca0860915989973644",
     "fileSize": 82506,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-aa6d44f63059220b01ebe3bb9cf9a13a17510866-420x730-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-aa6d44f63059220b01ebe3bb9cf9a13a17510866-420x730-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-aa6d44f63059220b01ebe3bb9cf9a13a17510866-420x730-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429060062-EZP0IEJNN4BIRSLEWVOG/image-asset.jpeg",
@@ -3764,11 +4550,17 @@
     ],
     "sha256": "fa3c0d104817aa49ee58f68dddda00faf4861d02624712db16c4d67dc931f3e8",
     "fileSize": 52518,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-bc9fd9e29aa118878460953d453c1222c086b6d6-500x273-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-bc9fd9e29aa118878460953d453c1222c086b6d6-500x273-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-bc9fd9e29aa118878460953d453c1222c086b6d6-500x273-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3ab6632b-c2d4-46ea-9f59-3674e266916e/image-asset+%284%29.jpeg",
@@ -3783,11 +4575,17 @@
     ],
     "sha256": "91476c0417c3a69b658ceb50de2bfa3672679883cc68a737295431778fbda740",
     "fileSize": 19754,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-6384f2ddfde712f2f1e4abbd065539cb03c60e5d-400x267-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-6384f2ddfde712f2f1e4abbd065539cb03c60e5d-400x267-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-6384f2ddfde712f2f1e4abbd065539cb03c60e5d-400x267-webp."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -3802,11 +4600,17 @@
     ],
     "sha256": "048a44a1e3b83990583df85771402a4c70d55c5ecd2cede951791b2c7af793e1",
     "fileSize": 144888,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-aa0f26e18b41dba41bc3080d897763341a1e3b97-990x648-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-aa0f26e18b41dba41bc3080d897763341a1e3b97-990x648-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as image-aa0f26e18b41dba41bc3080d897763341a1e3b97-990x648-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429071870-L0WHJTM68H0TEWUY1THW/image-asset.jpeg",
@@ -4316,11 +5120,17 @@
     ],
     "sha256": "e42f513f5d98661284a4f637c62ee7fc858fcff5d7998e62dfc21c186bf6fc40",
     "fileSize": 45169,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-0c0053727901dffd2235af306658b95071336e86-500x334-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-0c0053727901dffd2235af306658b95071336e86-500x334-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-0c0053727901dffd2235af306658b95071336e86-500x334-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/9ad0d3fc-c1d2-4e24-b22d-5fa4ff11ae87/Laas+Fresvik+Skyveport.jpeg",
@@ -4335,11 +5145,17 @@
     ],
     "sha256": "bb87d547e57b806e174648fb6ec99fa483807ec904791ae5aa5e76891c3fab01",
     "fileSize": 322250,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-ae3743747455e5007c21781a318865ae60a6301a-2500x3750-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ae3743747455e5007c21781a318865ae60a6301a-2500x3750-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-ae3743747455e5007c21781a318865ae60a6301a-2500x3750-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/c59a56fc-ef6d-4b0d-b533-66f9837645cc/Logo_Orginal.png",
@@ -4354,11 +5170,17 @@
     ],
     "sha256": "1fb8c9fbc9b08f42939890e8f29fa678480769b18d6a6f01d13ee4e1cb78f23d",
     "fileSize": 20212,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-98430dd0ff862231f37304216bd18608bc3a1601-2121x1501-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-98430dd0ff862231f37304216bd18608bc3a1601-2121x1501-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-98430dd0ff862231f37304216bd18608bc3a1601-2121x1501-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/77b0a4a1-facb-46df-8cca-95a14e4374c7/Maintenance.png",
@@ -4373,11 +5195,17 @@
     ],
     "sha256": "cc6d28e4a255251ecc6e941e36521e2021b41fe490b4b3c2c9d194eee8b9bbc3",
     "fileSize": 57232,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-62782886144adcaacdf38e406c7faac198aad839-2000x2000-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-62782886144adcaacdf38e406c7faac198aad839-2000x2000-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-62782886144adcaacdf38e406c7faac198aad839-2000x2000-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/79e9cda4-51eb-49c5-8908-8daea562e4a3/Motor+Fresvik+Elektrisk+Skyveport.jpeg",
@@ -4392,11 +5220,17 @@
     ],
     "sha256": "29f0515e22e7a667a961d9bb1ba6444cc92fbd5775e0ce7c19b41779671f8c72",
     "fileSize": 154766,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-31d4be7b1ce6477b5b57a84ea1afac744c5636f9-2500x1667-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-31d4be7b1ce6477b5b57a84ea1afac744c5636f9-2500x1667-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-31d4be7b1ce6477b5b57a84ea1afac744c5636f9-2500x1667-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/339870db-e604-492a-a688-fbc917a03d26/notfjaer1.jpg",
@@ -4413,11 +5247,17 @@
     ],
     "sha256": "681e2d4e6d50bbb65818dff2fa5339629a812b8e70c29d5dde4e362af0c4f29c",
     "fileSize": 64817,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-88575454bb599b76b2a8deb73b202ed05009ae7e-1000x667-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-88575454bb599b76b2a8deb73b202ed05009ae7e-1000x667-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-88575454bb599b76b2a8deb73b202ed05009ae7e-1000x667-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e53cecee-8801-4e47-b5a7-977d58f58e7a/OlympicBoreas.webp",
@@ -4432,11 +5272,17 @@
     ],
     "sha256": "5200218df1d3d837144ba4aef6ae0377201f112ddbe2a7078fb465da5ecc5a6a",
     "fileSize": 230208,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-c0cc5c549a269ceed4ddc0f2f3d1d3ae4384cf8f-1940x1294-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c0cc5c549a269ceed4ddc0f2f3d1d3ae4384cf8f-1940x1294-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-c0cc5c549a269ceed4ddc0f2f3d1d3ae4384cf8f-1940x1294-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228729943-6MM69ZZK0984XFA2N9B7/P1011299.jpg",
@@ -4526,11 +5372,17 @@
     ],
     "sha256": "cd6a991be3bda1e990eece4c24b4e5bbb4d358a6831670f5dd8f1f686b6b0ac4",
     "fileSize": 36124,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-16a9beb0bc3eab4aef199f2fbc7934177d0b1a20-500x334-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-16a9beb0bc3eab4aef199f2fbc7934177d0b1a20-500x334-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-16a9beb0bc3eab4aef199f2fbc7934177d0b1a20-500x334-jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428971823-YEHNKJ0MQMYS6AVGRWHZ/Port+Karls%C3%B8ybruket+2017.jpg",
@@ -4560,11 +5412,17 @@
     ],
     "sha256": "30d29bdd421665ad48fb71ad1c17518393ba64527ccae496567b720b778bb7c1",
     "fileSize": 356734,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-441a9d027917311646628415b8146e23f8d409b0-2500x1625-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-441a9d027917311646628415b8146e23f8d409b0-2500x1625-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-441a9d027917311646628415b8146e23f8d409b0-2500x1625-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429110160-6F1ROKOETGXSA6EXEYHF/Queen-Elisabeth-II.png",
@@ -4579,11 +5437,17 @@
     ],
     "sha256": "69040177c044be723cf11adcae5c7f7e00662ebb84d7023273645c18cf2ee8cc",
     "fileSize": 190280,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-3cb32719df53f0afcf7975732ecd1c93a03a697a-720x408-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-3cb32719df53f0afcf7975732ecd1c93a03a697a-720x408-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-3cb32719df53f0afcf7975732ecd1c93a03a697a-720x408-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228664767-7V25J9TG9ZDMDQCQBJCF/Samling+i+kantina+til+kaffi+%28002%29.jpg",
@@ -4613,11 +5477,17 @@
     ],
     "sha256": "0952c65d0c43c8640bd6a78ce27725f42d0a3775ecaf2b07f23b6a5b039c553c",
     "fileSize": 37914,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-8efc604c1964ee3315b8098543f53b2736a250b4-2000x2000-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8efc604c1964ee3315b8098543f53b2736a250b4-2000x2000-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-8efc604c1964ee3315b8098543f53b2736a250b4-2000x2000-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3e67dc93-31ab-4ea9-9e88-2277be7198bb/sika.png",
@@ -4632,11 +5502,17 @@
     ],
     "sha256": "0a2bc6f18c7b593c891a13330f3d7b88967949866e72ea2b7520fb1d1584be24",
     "fileSize": 39994,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-fe9397f510633587b15ddcf8b28f4c52f08118a3-246x505-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-fe9397f510633587b15ddcf8b28f4c52f08118a3-246x505-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-fe9397f510633587b15ddcf8b28f4c52f08118a3-246x505-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/01d5327d-ae87-45d4-9431-4787da924aa4/sika+II.png",
@@ -4651,11 +5527,17 @@
     ],
     "sha256": "76d3ac0e24e0f8f72ed6b37adbd4513084b794541f300b59bb8c6a85aaf9fba1",
     "fileSize": 38466,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-f68e4154828c3c95ca5499b1f83e3fbde10cedc3-242x482-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-f68e4154828c3c95ca5499b1f83e3fbde10cedc3-242x482-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-f68e4154828c3c95ca5499b1f83e3fbde10cedc3-242x482-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0713c565-3e7b-4509-aae2-38835efc02ef/ska%CC%8Arsenior.jpg",
@@ -4670,11 +5552,17 @@
     ],
     "sha256": "15f6b334f5f9669be6763a9c062cf1be3703b2e9b3af2e018082b902b4878344",
     "fileSize": 712468,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-51e305609ed90e223859ad573d573f9a5fe4f1e5-2400x1350-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-51e305609ed90e223859ad573d573f9a5fe4f1e5-2400x1350-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-51e305609ed90e223859ad573d573f9a5fe4f1e5-2400x1350-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/f152d606-3742-407e-99fc-8e412f82cab6/Skjermbilde+2026-02-27+110131.png",
@@ -4689,11 +5577,17 @@
     ],
     "sha256": "a1ddd0d64b518ae3be8a0df3004175c2e5849d98570af0552e723aa8a6cf5b6b",
     "fileSize": 76936,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-147522e2ed2e1dec0dccdfd6c8df7387e38ef66e-756x627-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-147522e2ed2e1dec0dccdfd6c8df7387e38ef66e-756x627-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-147522e2ed2e1dec0dccdfd6c8df7387e38ef66e-756x627-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/4a4c209a-5fec-496f-80da-a49a9d68e75b/Skjermbilde+2026-02-27+114255.png",
@@ -4708,11 +5602,17 @@
     ],
     "sha256": "862a9a90b787fa395d46bba5bf59ec3ffa2710e3c1d2cd386b6022e8739ee32a",
     "fileSize": 242330,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-8ea518f758427f1c2993d77dfe46253af918af5e-485x472-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8ea518f758427f1c2993d77dfe46253af918af5e-485x472-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-8ea518f758427f1c2993d77dfe46253af918af5e-485x472-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/531d13a6-be3a-43a4-9c6a-94e547cca758/Snowflake.png",
@@ -4727,11 +5627,17 @@
     ],
     "sha256": "fbe7c07754e62d31fbadebdb5894e42b3310569e706a72576cc60ff5c9660e8c",
     "fileSize": 47098,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-cee44f694c1741683facdb90e6cbbaee17afd5e4-2000x2000-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-cee44f694c1741683facdb90e6cbbaee17afd5e4-2000x2000-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-cee44f694c1741683facdb90e6cbbaee17afd5e4-2000x2000-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/33b9b91b-e0d9-4d5f-b1e3-72e6932ea2f6/soudal.png",
@@ -4746,11 +5652,17 @@
     ],
     "sha256": "4ca12ebfdc12d0be3814f450ee4d1b6a61233f31cae75cd18123840eeca609e2",
     "fileSize": 43696,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-949b3de44c4f04dd7995f4eb549441c49b903c5e-275x567-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-949b3de44c4f04dd7995f4eb549441c49b903c5e-275x567-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-949b3de44c4f04dd7995f4eb549441c49b903c5e-275x567-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e4cbf21e-a956-4d47-9fb5-3a7a2924b91e/soudal+II.png",
@@ -4765,11 +5677,17 @@
     ],
     "sha256": "5d8aeaaf1ce837d2ea786cd6a5c5e51181b12e3aea9c4da0612a0cf1c45cb490",
     "fileSize": 63344,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-9e33a7b9bf2e6a4f81133598743381bba83d924a-248x572-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-9e33a7b9bf2e6a4f81133598743381bba83d924a-248x572-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-9e33a7b9bf2e6a4f81133598743381bba83d924a-248x572-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/70099be8-6751-41f7-aea3-d4501ff3c09a/Spar+Lund+Torv+FP+1.png",
@@ -4784,11 +5702,17 @@
     ],
     "sha256": "a441717e3c16054738d8f6833fa5d992f45acbc8cc0f8ca4fe5e838a99fffd59",
     "fileSize": 3078540,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-cc152b7a0fdf7178d9590c4fb6011790c6205196-1570x1180-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-cc152b7a0fdf7178d9590c4fb6011790c6205196-1570x1180-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-cc152b7a0fdf7178d9590c4fb6011790c6205196-1570x1180-png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222151278-QXDTWKYCR89SQ0CPEPXE/Spar+Lund+Torv+-+Fresvik+Produkt+2.jpeg",
@@ -4878,11 +5802,17 @@
     ],
     "sha256": "bf8a43bd43735cd924acb8804af0d1573b45652334f18dc4762fb4f19768891e",
     "fileSize": 29700,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-a7df5fcd2d7de714a41e8ac4af75a1b2e18d36da-2000x2000-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a7df5fcd2d7de714a41e8ac4af75a1b2e18d36da-2000x2000-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-a7df5fcd2d7de714a41e8ac4af75a1b2e18d36da-2000x2000-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385867638-53S21SMAIEM6JIMC4IZ7/TG-2135.jpg",
@@ -4897,11 +5827,17 @@
     ],
     "sha256": "96c63f297fad91792ddddbe61e416a8af20962a3c03d41afb0a41e52bceae6f1",
     "fileSize": 82194,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-8659ff72e465ac301ffc651771527f908daba4b4-636x636-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8659ff72e465ac301ffc651771527f908daba4b4-636x636-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-8659ff72e465ac301ffc651771527f908daba4b4-636x636-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428950967-OR3SD8N14UBWZ0Q068KC/Utvendig+liggende.JPG",
@@ -5006,11 +5942,17 @@
     ],
     "sha256": "1b66557274ae31c38f8297e01056fc7154d7b75de7e08b21bb076c3f90b3ff02",
     "fileSize": 31716,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-e13c8a8a13bfdfa6e113cc5c9da3bf9b47d7045d-438x501-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-e13c8a8a13bfdfa6e113cc5c9da3bf9b47d7045d-438x501-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": ""
+    "notes": "Uploaded to Sanity as image-e13c8a8a13bfdfa6e113cc5c9da3bf9b47d7045d-438x501-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749159465-SS294U1F0FIJY7RY5LDL/Vik+helse-+og+sjukeheim+2.jpg",

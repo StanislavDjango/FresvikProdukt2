@@ -14,16 +14,16 @@ Generated from local migration cache and source data.
 | Unused assets | 118 |
 | Missing assets | 0 |
 | Duplicate assets | 3 |
-| Ready for Sanity | 154 |
-| Uploaded to Sanity | 0 |
+| Ready for Sanity | 0 |
+| Uploaded to Sanity | 154 |
 | Failed or needs review | 0 |
 | TODO original URLs | 12 |
 
 ## Status Counts
 
 - `duplicate`: 3
-- `ready-for-sanity`: 154
 - `unused`: 118
+- `uploaded-to-sanity`: 154
 
 ## Local Path Usage
 

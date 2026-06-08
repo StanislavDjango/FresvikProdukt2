@@ -281,17 +281,24 @@ async function buildManifest() {
       canonicalByHash.set(entry.sha256, entry.localPath);
     }
   }
+  const entryByLocalPath = new Map(baseEntries.map((entry) => [entry.localPath, entry]));
 
   return baseEntries.map((entry) => {
     const duplicateOf =
       entry.sha256 && canonicalByHash.get(entry.sha256) !== entry.localPath
         ? canonicalByHash.get(entry.sha256)
         : null;
+    const canonicalEntry = duplicateOf ? entryByLocalPath.get(duplicateOf) : null;
+    const resolvedEntry = {
+      ...entry,
+      sanityAssetId: entry.sanityAssetId || canonicalEntry?.sanityAssetId || null,
+      sanityReference: entry.sanityReference || canonicalEntry?.sanityReference || null,
+    };
 
     return {
-      ...entry,
-      status: statusFor(entry, canonicalByHash),
-      notes: notesFor(entry, duplicateOf),
+      ...resolvedEntry,
+      status: statusFor(resolvedEntry, canonicalByHash),
+      notes: notesFor(resolvedEntry, duplicateOf),
     };
   });
 }

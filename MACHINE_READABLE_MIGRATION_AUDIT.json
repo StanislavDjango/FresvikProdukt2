@@ -1,30 +1,31 @@
 {
   "summary": {
-    "generatedAt": "2026-06-08T23:09:19.025Z",
+    "generatedAt": "2026-06-08T23:31:10.810Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
     "liveSitemapUrlCount": 104,
     "liveSitemapImageEntries": 322,
     "liveSitemapUniqueImageUrls": 275,
-    "migratedPageCount": 77,
+    "migratedPageCount": 69,
     "redirectCount": 29,
     "partialCount": 0,
     "missingCount": 0,
-    "needsReviewCount": 0,
+    "needsReviewCount": 8,
     "inventoryOnlyCount": 0,
     "localImageAssets": 259,
     "localDocumentAssets": 26,
-    "originalUrlsRecovered": 273,
+    "originalUrlsRecovered": 275,
     "routeStatusCounts": {
-      "page": 77,
+      "page": 69,
+      "needs-review": 8,
       "redirect": 29
     },
     "assetStatusCounts": {
       "migrated": 269,
-      "ignored-with-reason": 9,
+      "ignored-with-reason": 11,
       "duplicate": 47,
-      "unrecoverable": 6
+      "unrecoverable": 4
     },
     "documentStatusCounts": {
       "migrated": 26
@@ -197,7 +198,7 @@
       "hasIntro": true,
       "hasFullBody": true,
       "hasImages": true,
-      "hasDocuments": false,
+      "hasDocuments": true,
       "hasInternalLinks": true,
       "hasExternalLinks": true,
       "oldImageCount": 13,
@@ -208,18 +209,18 @@
       "oldUrl": "https://www.fresvik.no/aktuelt",
       "oldPath": "/aktuelt",
       "newRoute": "/aktuelt",
-      "status": "page",
+      "status": "needs-review",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
       "hasFullBody": true,
       "hasImages": true,
-      "hasDocuments": true,
+      "hasDocuments": false,
       "hasInternalLinks": true,
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 19,
-      "notes": "Covered as migrated page in local data."
+      "notes": "Contains TODO/verification markers or unresolved migration text."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/40-aars-jubileum",
@@ -310,35 +311,35 @@
       "oldUrl": "https://www.fresvik.no/aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra",
       "oldPath": "/aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra",
       "newRoute": "/aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra",
-      "status": "page",
+      "status": "needs-review",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
       "hasFullBody": true,
       "hasImages": false,
-      "hasDocuments": true,
-      "hasInternalLinks": true,
+      "hasDocuments": false,
+      "hasInternalLinks": false,
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Covered as migrated page in local data."
+      "notes": "Contains TODO/verification markers or unresolved migration text."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
       "oldPath": "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
       "newRoute": "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
-      "status": "page",
+      "status": "needs-review",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
       "hasFullBody": true,
       "hasImages": false,
-      "hasDocuments": true,
-      "hasInternalLinks": true,
+      "hasDocuments": false,
+      "hasInternalLinks": false,
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Covered as migrated page in local data."
+      "notes": "Contains TODO/verification markers or unresolved migration text."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/fresvik-hengsel",
@@ -378,18 +379,18 @@
       "oldUrl": "https://www.fresvik.no/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt",
       "oldPath": "/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt",
       "newRoute": "/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt",
-      "status": "page",
+      "status": "needs-review",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
       "hasFullBody": true,
       "hasImages": false,
-      "hasDocuments": true,
-      "hasInternalLinks": true,
+      "hasDocuments": false,
+      "hasInternalLinks": false,
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Covered as migrated page in local data."
+      "notes": "Contains TODO/verification markers or unresolved migration text."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/gladhistorie-fresvik-kjole-fryserom",
@@ -463,18 +464,18 @@
       "oldUrl": "https://www.fresvik.no/aktuelt/ledig-stilling-som-produksjonsmedarbeidar",
       "oldPath": "/aktuelt/ledig-stilling-som-produksjonsmedarbeidar",
       "newRoute": "/aktuelt/ledig-stilling-som-produksjonsmedarbeidar",
-      "status": "page",
+      "status": "needs-review",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
       "hasFullBody": true,
       "hasImages": false,
-      "hasDocuments": true,
-      "hasInternalLinks": true,
+      "hasDocuments": false,
+      "hasInternalLinks": false,
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Covered as migrated page in local data."
+      "notes": "Contains TODO/verification markers or unresolved migration text."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/montasje-prosjekt",
@@ -599,35 +600,35 @@
       "oldUrl": "https://www.fresvik.no/aktuelt/stor-leveranse-til-buskerud-storcash",
       "oldPath": "/aktuelt/stor-leveranse-til-buskerud-storcash",
       "newRoute": "/aktuelt/stor-leveranse-til-buskerud-storcash",
-      "status": "page",
+      "status": "needs-review",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
       "hasFullBody": true,
       "hasImages": false,
-      "hasDocuments": true,
+      "hasDocuments": false,
       "hasInternalLinks": true,
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Covered as migrated page in local data."
+      "notes": "Contains TODO/verification markers or unresolved migration text."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/to-ledige-stillingar-i-haust",
       "oldPath": "/aktuelt/to-ledige-stillingar-i-haust",
       "newRoute": "/aktuelt/to-ledige-stillingar-i-haust",
-      "status": "page",
+      "status": "needs-review",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
-      "hasFullBody": true,
+      "hasFullBody": false,
       "hasImages": false,
-      "hasDocuments": true,
-      "hasInternalLinks": true,
+      "hasDocuments": false,
+      "hasInternalLinks": false,
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Covered as migrated page in local data."
+      "notes": "Contains TODO/verification markers or unresolved migration text."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/tomas-kruvellis-vaar-nye-mann",
@@ -1959,18 +1960,18 @@
       "oldUrl": "https://www.fresvik.no/tilsette",
       "oldPath": "/tilsette",
       "newRoute": "/tilsette",
-      "status": "page",
+      "status": "needs-review",
       "contentType": "employee",
       "hasTitle": true,
       "hasIntro": true,
       "hasFullBody": true,
       "hasImages": true,
-      "hasDocuments": true,
+      "hasDocuments": false,
       "hasInternalLinks": true,
       "hasExternalLinks": false,
       "oldImageCount": 14,
-      "localImageCount": 16,
-      "notes": "Covered as migrated page in local data."
+      "localImageCount": 14,
+      "notes": "Contains TODO/verification markers or unresolved migration text."
     },
     {
       "oldUrl": "https://www.fresvik.no/transportskade",
@@ -2008,8 +2009,8 @@
       "caption": "Håvard Berdal er ny teknisk teiknar.",
       "localPath": "/assets/fresvik/images/migrated/havard-berdal.jpg",
       "status": "migrated",
-      "confidence": 1.235,
-      "notes": "Matched by filename/source similarity (1.23)."
+      "confidence": 1.267,
+      "notes": "Matched by filename/source similarity (1.27)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc7a35a3-51fe-4a8a-aac6-32c13c72b7ad/John+B%C3%B8thun_Fresvik+Produkt.jpg",
@@ -5252,14 +5253,14 @@
       "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
       "oldPath": "/kjolerom-fryserom-offshore, /produkt/frysetunnel",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/flake-black-3b186da893.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
@@ -5292,14 +5293,14 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429051200-R0UVYZO6J6WM4KZN512O/image-asset.jpeg",
       "oldPath": "/kjolerom-fryserom-offshore",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/image-asset-4090603816.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     }
   ],
   "documents": [
@@ -5586,7 +5587,7 @@
       "localPath": "/assets/fresvik/documents/pur-ce-merke.pdf",
       "title": "Dokument",
       "sourcePages": [
-        "https://www.fresvik.no/aktuelt",
+        "https://www.fresvik.no/",
         "https://www.fresvik.no/dokumentasjon",
         "https://www.fresvik.no/firmainfo",
         "https://www.fresvik.no/kjolerom-fryserom-butikk",
@@ -5607,12 +5608,11 @@
         "https://www.fresvik.no/tenester/montasje",
         "https://www.fresvik.no/tenester/service-reservedeler",
         "https://www.fresvik.no/tilleggsutstyr",
-        "https://www.fresvik.no/tilsette",
         "https://www.fresvik.no/transportskade"
       ],
       "fileSize": 150364,
       "usedBy": [
-        "/aktuelt",
+        "/",
         "/dokumentasjon",
         "/firmainfo",
         "/kjolerom-fryserom-butikk",
@@ -5634,7 +5634,6 @@
         "/tenester/montasje",
         "/tenester/service-reservedeler",
         "/tilleggsutstyr",
-        "/tilsette",
         "/transportskade",
         "documentFile-assets-fresvik-documents-pur-ce-merke-pdf"
       ],
@@ -5663,7 +5662,7 @@
       "localPath": "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
       "title": "Dokument",
       "sourcePages": [
-        "https://www.fresvik.no/aktuelt",
+        "https://www.fresvik.no/",
         "https://www.fresvik.no/dokumentasjon",
         "https://www.fresvik.no/firmainfo",
         "https://www.fresvik.no/kjolerom-fryserom-butikk",
@@ -5684,12 +5683,11 @@
         "https://www.fresvik.no/tenester/montasje",
         "https://www.fresvik.no/tenester/service-reservedeler",
         "https://www.fresvik.no/tilleggsutstyr",
-        "https://www.fresvik.no/tilsette",
         "https://www.fresvik.no/transportskade"
       ],
       "fileSize": 58526,
       "usedBy": [
-        "/aktuelt",
+        "/",
         "/dokumentasjon",
         "/firmainfo",
         "/kjolerom-fryserom-butikk",
@@ -5711,7 +5709,6 @@
         "/tenester/montasje",
         "/tenester/service-reservedeler",
         "/tilleggsutstyr",
-        "/tilsette",
         "/transportskade",
         "documentFile-assets-fresvik-documents-sentral-godkjenning-fresvik-produkt-pdf"
       ],
@@ -8336,5 +8333,54 @@
       "status": "keep"
     }
   ],
-  "todos": []
+  "todos": [
+    {
+      "type": "route",
+      "target": "/aktuelt",
+      "status": "needs-review",
+      "task": "Contains TODO/verification markers or unresolved migration text."
+    },
+    {
+      "type": "route",
+      "target": "/aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra",
+      "status": "needs-review",
+      "task": "Contains TODO/verification markers or unresolved migration text."
+    },
+    {
+      "type": "route",
+      "target": "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
+      "status": "needs-review",
+      "task": "Contains TODO/verification markers or unresolved migration text."
+    },
+    {
+      "type": "route",
+      "target": "/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt",
+      "status": "needs-review",
+      "task": "Contains TODO/verification markers or unresolved migration text."
+    },
+    {
+      "type": "route",
+      "target": "/aktuelt/ledig-stilling-som-produksjonsmedarbeidar",
+      "status": "needs-review",
+      "task": "Contains TODO/verification markers or unresolved migration text."
+    },
+    {
+      "type": "route",
+      "target": "/aktuelt/stor-leveranse-til-buskerud-storcash",
+      "status": "needs-review",
+      "task": "Contains TODO/verification markers or unresolved migration text."
+    },
+    {
+      "type": "route",
+      "target": "/aktuelt/to-ledige-stillingar-i-haust",
+      "status": "needs-review",
+      "task": "Contains TODO/verification markers or unresolved migration text."
+    },
+    {
+      "type": "route",
+      "target": "/tilsette",
+      "status": "needs-review",
+      "task": "Contains TODO/verification markers or unresolved migration text."
+    }
+  ]
 }

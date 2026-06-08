@@ -92,8 +92,11 @@ function textBlocksFromHtml(html) {
     ),
   ];
   const blocks = blockMatches.map((match) => stripTags(match[1])).filter(Boolean);
+  const accordionBlocks = accordionBlocksFromHtml(html);
 
-  if (blocks.length > 0) return blocks;
+  if (blocks.length > 0 || accordionBlocks.length > 0) {
+    return [...blocks, ...accordionBlocks];
+  }
 
   const contentStart =
     html.indexOf("blog-item-content e-content") >= 0
@@ -108,6 +111,26 @@ function textBlocksFromHtml(html) {
   return stripTags(slice)
     .split(/\n{2,}/)
     .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+}
+
+function accordionBlocksFromHtml(html) {
+  return [
+    ...html.matchAll(/<li class="accordion-item">([\s\S]*?)(?=<li class="accordion-item">|<\/ul>)/gi),
+  ]
+    .map((match) => {
+      const itemHtml = match[1];
+      const title = stripTags(
+        itemHtml.match(/<span[^>]+class="accordion-item__title"[^>]*>([\s\S]*?)<\/span>/i)?.[1] ||
+          "",
+      );
+      const description = stripTags(
+        itemHtml.match(
+          /<div[^>]+class="[^"]*accordion-item__description[^"]*"[\s\S]*?>([\s\S]*?)<\/div>\s*<\/div>/i,
+        )?.[1] || "",
+      );
+      return [title, description].filter(Boolean).join("\n");
+    })
     .filter(Boolean);
 }
 
@@ -129,6 +152,9 @@ function cleanParagraphs(blocks) {
     /^registrer deg/i,
     /^send inn$/i,
     /^godta alle$/i,
+    /^arne-olav lien bardølsgård$/i,
+    /^gasta design$/i,
+    /^vi skaper lønnsame nettsider/i,
   ];
   const seen = new Set();
   const paragraphs = [];
@@ -382,9 +408,12 @@ for (const route of targetRoutes) {
     }
   }
 
-  if (bodyParagraphs.length === 0 && description) {
-    bodyParagraphs.push(description);
-    notes.push("Only meta description could be extracted from old HTML.");
+  if (bodyParagraphs.length === 0) {
+    notes.push(
+      description
+        ? "No reliable body content was found in live old HTML; title/meta description only."
+        : "No reliable body content was found in live old HTML.",
+    );
   }
 
   extracts.push({

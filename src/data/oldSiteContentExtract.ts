@@ -18,6 +18,88 @@ export type OldSiteContentExtract = {
 };
 
 export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
+  "/": {
+    "href": "/",
+    "sourceUrl": "https://www.fresvik.no/",
+    "title": "Fresvik Produkt - isolasjonspanel til kjølerom, fryserom og næringsmiddelbygg.",
+    "description": "Vi har produsert isolasjonspanel, dører og portar til kjøle- og fryserom i Fresvik sidan 1980. Våre fagfolk gir kvalitet og kunnskap.",
+    "publishedAt": "",
+    "modifiedAt": "",
+    "bodyParagraphs": [
+      "Leiande fagfolk på kjøle- og fryserom i Norge",
+      "Den einaste norske produsenten av isolasjonspanel, med over 45 års erfaring, som tilbyr kvalitet og kunnskap til deg som kjøleentreprenør.",
+      "Brannsikre panel med PIR skum",
+      "Med smart design og eksenterslås, tilbyr Fresvik Produkt sine nye PIR-Panel. Ein komplett og skreddarsydd løysing for kjøle- og fryserom. Panela kombinerer framifrå branneigenskapar og godkjenning i klasse B-s1, d0 med enkel og rask montering. Desse SINTEF-godkjente PIR-panela gir ei trygg, effektiv og moderne løysing tilpassa dagens krav.",
+      "Utvikla og produsert i Norge",
+      "Fleksibelt på byggeplass",
+      "Enkel montasje med eksenterlås",
+      "Modulmål gir mindre svinn",
+      "Kort design-, produksjons- og leveringstid",
+      "Basert på modular, skreddarsyr vi kjøle- og fryserom for",
+      "butikk, næringsmiddelindustri, institusjonar, storkjøken, skip og offshoreinstallasjonar.",
+      "Vi er marknadsleiar på kjøle- og fryserom til daglegvarehandel, energistasjonar og storkioskar.",
+      "Vi er einaste norske produsent av polyuretan sandwich-panel godkjend for maritimt bruk - DIN 4102-B2.",
+      "Vi leverer kjøle- fryserom og tilleggsprodukt til storkjøken og institusjonar over heile landet.",
+      "Fresvik Produkt sine 45 tilsette utgjer det fremste miljøet i landet på produksjon av kjøle- og fryserom.",
+      "Vi er stadig på jakt etter flinke kollegaer."
+    ],
+    "imageUrls": [
+      "/assets/fresvik/images/old-site/home-poly.png",
+      "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+      "/assets/fresvik/images/old-site/home-startbank.png"
+    ],
+    "documentUrls": [
+      "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+      "https://www.fresvik.no/s/PUR-ce-merke.pdf"
+    ],
+    "internalLinks": [
+      "/cart",
+      "/",
+      "/produkt/fresvik-pir-panel",
+      "/produkt/fresvik-panel",
+      "/produkt/kjole-fryseportar",
+      "/produkt/kjole-frysedorer",
+      "/produkt/fasadepanel",
+      "/produkt/frysetunnel",
+      "/tilleggsutstyr",
+      "/referansar",
+      "/tenester/montasje",
+      "/tenester/leveranse",
+      "/tenester/service-reservedeler",
+      "/dokumentasjon",
+      "/monteringsanvisning",
+      "/kundeservice/faq",
+      "/firmainfo",
+      "/tilsette",
+      "/aktuelt",
+      "/stillingledig",
+      "/kontakt",
+      "/send-foresporsel",
+      "/produkt-mappe",
+      "/tenester",
+      "/kundeservice",
+      "/om-oss",
+      "/kjolerom-fryserom-butikk",
+      "/kjolerom-fryserom-offshore",
+      "/kjolerom-fryserom-storkjokken",
+      "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+      "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+      "/aktuelt/john-bothun-blir-pensjonist",
+      "/personvernerklering",
+      "/openheitslova",
+      "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+      "/s/PUR-ce-merke.pdf"
+    ],
+    "externalLinks": [
+      "https://www.facebook.com/profile.php?id=100057316063120",
+      "https://www.linkedin.com/company/fresvik-produkt-as/",
+      "https://www.gasta.no/",
+      "https://www.sintefcertification.no/Product/Index/129",
+      "https://rapportering.miljofyrtarn.no/stats/176324"
+    ],
+    "extractionStatus": "extracted",
+    "notes": []
+  },
   "/aktuelt": {
     "href": "/aktuelt",
     "sourceUrl": "https://www.fresvik.no/aktuelt",
@@ -25,9 +107,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "description": "Utforsk oppdaterte nyheter og relevante tjenester fra Fresvik Produkt, inkludert produktnyheter, teamoppdateringer og miljøsertifiseringer.",
     "publishedAt": "",
     "modifiedAt": "",
-    "bodyParagraphs": [
-      "Arne-Olav Lien Bardølsgård"
-    ],
+    "bodyParagraphs": [],
     "imageUrls": [],
     "documentUrls": [
       "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
@@ -93,8 +173,10 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "https://www.sintefcertification.no/Product/Index/129",
       "https://rapportering.miljofyrtarn.no/stats/176324"
     ],
-    "extractionStatus": "extracted",
-    "notes": []
+    "extractionStatus": "unrecoverable",
+    "notes": [
+      "No reliable body content was found in live old HTML; title/meta description only."
+    ]
   },
   "/aktuelt/40-aars-jubileum": {
     "href": "/aktuelt/40-aars-jubileum",
@@ -106,8 +188,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "bodyParagraphs": [
       "22. februar i år var det 40 år sidan Fresvik Produkt starta opp sin førte produksjon av sandwich-panel, og sidan har produksjonen gått uavbrote.",
       "Fredag 21. februar hadde bedrifta «ope hus» om ettermiddagen, der alle som kom fekk omvisning i fabrikken, kaffi og jubileumskake.",
-      "Trass i dårleg ver denne ettermiddagen og usikker veg inn til Fresvik, så møtte mange fram. Vi trur det var mykje både nytt og overraskande å sjå for dei frammøtte. Det var i alle fall det inntrykket vi sat att med etter ein hyggeleg ettermiddag på bedrifta.",
-      "Arne-Olav Lien Bardølsgård"
+      "Trass i dårleg ver denne ettermiddagen og usikker veg inn til Fresvik, så møtte mange fram. Vi trur det var mykje både nytt og overraskande å sjå for dei frammøtte. Det var i alle fall det inntrykket vi sat att med etter ein hyggeleg ettermiddag på bedrifta."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/fresvik-produkt-40-aar.jpg",
@@ -187,8 +268,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "– Det er eg glad for, elles hadde eg berre hatt nokre dagar att på jobb før jul. Det hadde vore vemodig!",
       "Agnar vert ikkje arbeidsledig som pensjonist.",
       "– Det er alltid ting som skal gjerast. Vi har ei hytte på Os, som eg har planar om å bytte tak på og litt anna forskjellig. Vi har ein bubil, og vi treng ikkje lenger vera heimaattkommen til sundagskvelden! Så føler eg at eg har forsømt sjøen. Eg har ein båt, så det blir moro å bruka meir tid på sjøen for å fiske!",
-      "Vi er veldig glade for at vi får ha Agnar ei stund til og ønskjer han lukke til som 50% pensjonist!",
-      "Arne-Olav Lien Bardølsgård"
+      "Vi er veldig glade for at vi får ha Agnar ei stund til og ønskjer han lukke til som 50% pensjonist!"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/agnar3.jpeg",
@@ -254,8 +334,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Arne-Olav er 32 år og kjem frå Saksumdal, ei lita bygd rett ved Lillehammer. Han har bakgrunn som både tømrar og bonde, og elles er han interessert i både fotball og musikk.",
       "Arne-Olav har flytta til Fresvik med heile familien: kona Marte og tvillingane Sebastian og Oliver, som blir 5 år i sommar.",
       "Fresvik Produkt er svært nøgd med å ha fått Arne-Olav i seljarstaben vår, og vi håpar heile familien vil trivast i Fresvik og at det blir mange spanande salsoppdrag framover.",
-      "Vi kjem tilbake med litt meir informasjon om Arne-Olav etter sommarferien.",
-      "Arne-Olav Lien Bardølsgård"
+      "Vi kjem tilbake med litt meir informasjon om Arne-Olav etter sommarferien."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/fresvik-produikt-seljar-arne-olav.jpg"
@@ -322,8 +401,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Når elementa er ferdig produserte, tek roboten dei inn på lageret. Alle elementa har ein unik strekkode som roboten registrerer. Når noko skal sendast, hentar roboten først ein palle, så plukkar den ut dei rette elementa. Deretter plasserer roboten elementa på pallen. Når alle elementa er på plass, blir dei i dag manuelt dekka til med plast og klargjort for sending. Dette gjer at dei som pakkar sparar seg for tunge løft. Heile prosessen vert òg meir effektiv.",
       "Automatiseringa gjer arbeidsdagen enklare.",
       "Vi jobbar heile tida med å forbetre roboten og prosessane rundt, slik at den skal verte mest muleg effektiv. Det er ei avansert maskin, og vi testar framleis ut korleis vi kan tilpasse roboten best muleg for vår produksjon.",
-      "Det blir spennande å sjå vegen vidare med automatisering!",
-      "Arne-Olav Lien Bardølsgård"
+      "Det blir spennande å sjå vegen vidare med automatisering!"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/fresvik-produkt-ny-4.jpeg",
@@ -390,8 +468,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Fresvik Produkt as har vore underleverandør på fasade-element og takplater. 930 m2 fasadelement frå Ruukki med mineralullisolasjon, i tillegg til 1390 m2 Ruukki takplater er blitt levert og montert i ein hektisk periode.",
       "Fresvik har hatt ansvar for montasje av fasade og tak, og vi har også montert utlekting på fasadepanela. Det skal monterast trekledning utanpå delar av fasaden.",
       "Vi har levert vår del etter tidsplanen etter godt samarbeid med både oppdragsgjevar og Ruukki.",
-      "Bygget skal stå ferdig hausten 2015, og som marknadsleiar på kjølerom til butikk , håper vi at også skal få levere kjøleromspanela til butikken.",
-      "Arne-Olav Lien Bardølsgård"
+      "Bygget skal stå ferdig hausten 2015, og som marknadsleiar på kjølerom til butikk , håper vi at også skal få levere kjøleromspanela til butikken."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/image-asset-15.jpeg",
@@ -464,9 +541,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "description": "Leveranse av 1600 kvadratmeter fasadepanel for Brødrene Ulveseth-prosjekt.",
     "publishedAt": "2017-06-26T10:12:47+0200",
     "modifiedAt": "2023-08-28T15:18:02+0200",
-    "bodyParagraphs": [
-      "Arne-Olav Lien Bardølsgård"
-    ],
+    "bodyParagraphs": [],
     "imageUrls": [],
     "documentUrls": [
       "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
@@ -513,8 +588,10 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "https://www.sintefcertification.no/Product/Index/129",
       "https://rapportering.miljofyrtarn.no/stats/176324"
     ],
-    "extractionStatus": "extracted",
-    "notes": []
+    "extractionStatus": "unrecoverable",
+    "notes": [
+      "No reliable body content was found in live old HTML; title/meta description only."
+    ]
   },
   "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv": {
     "href": "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
@@ -523,9 +600,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "description": "Vil du jobba på skulen, i barnehagen, på butikken eller hjå Fresvik Produkt? No har du sjansen til å få leva ut draumen om eit liv i den idylliske fjordbygda Fresvik. Les heile artikkelen på sogn.no",
     "publishedAt": "2023-09-27T08:55:00+0200",
     "modifiedAt": "2023-10-25T09:03:30+0200",
-    "bodyParagraphs": [
-      "Arne-Olav Lien Bardølsgård"
-    ],
+    "bodyParagraphs": [],
     "imageUrls": [],
     "documentUrls": [
       "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
@@ -572,8 +647,10 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "https://www.sintefcertification.no/Product/Index/129",
       "https://rapportering.miljofyrtarn.no/stats/176324"
     ],
-    "extractionStatus": "extracted",
-    "notes": []
+    "extractionStatus": "unrecoverable",
+    "notes": [
+      "No reliable body content was found in live old HTML; title/meta description only."
+    ]
   },
   "/aktuelt/fresvik-hengsel": {
     "href": "/aktuelt/fresvik-hengsel",
@@ -593,8 +670,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "blir ståande i open stilling ved vinkel 100 grader eller meir",
       "Tilgjengeleg på alle dører",
       "Fresvik hengsel vil bli tilgjengeleg på alle dører levert av Fresvik Produkt, bortsett frå industrislagdørar.",
-      "Sjå oversikt over våre kjøle- og frysedørar",
-      "Arne-Olav Lien Bardølsgård"
+      "Sjå oversikt over våre kjøle- og frysedørar"
     ],
     "imageUrls": [],
     "documentUrls": [
@@ -660,8 +736,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Strenge krav til bær- og fruktprodusentar gjer at behovet for kjøling er stort.",
       "Dette prosjektet viser at Fresvik Produkt kan levere slike små, spesialtilpassa rom på dei fleste stader, sjølv om arealet er lite.",
       "Har du spørsmål om Fresvik kjølerom - ta kontakt med vår salsavdeling",
-      "Fresvik kjølerom - enkelt & greitt:",
-      "Arne-Olav Lien Bardølsgård"
+      "Fresvik kjølerom - enkelt & greitt:"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/fresvik-kj-c3-b8lerom-ivar-slinde.jpg",
@@ -727,9 +802,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "description": "I starten av året har vi hatt gleda av å levere fryse- og kjølerom til Fellespakkeriet på Håbakken i Lærdal.",
     "publishedAt": "2022-07-04T15:47:00+0200",
     "modifiedAt": "2023-08-28T15:17:22+0200",
-    "bodyParagraphs": [
-      "Arne-Olav Lien Bardølsgård"
-    ],
+    "bodyParagraphs": [],
     "imageUrls": [],
     "documentUrls": [
       "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
@@ -776,8 +849,10 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "https://www.sintefcertification.no/Product/Index/129",
       "https://rapportering.miljofyrtarn.no/stats/176324"
     ],
-    "extractionStatus": "extracted",
-    "notes": []
+    "extractionStatus": "unrecoverable",
+    "notes": [
+      "No reliable body content was found in live old HTML; title/meta description only."
+    ]
   },
   "/aktuelt/gladhistorie-fresvik-kjole-fryserom": {
     "href": "/aktuelt/gladhistorie-fresvik-kjole-fryserom",
@@ -796,8 +871,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Døra til rommet var heldigvis levert av Fresvik Produkt, og der sto telefonnummeret til fabrikken i Fresvik. Han ringte hit, traff vår hyggelege dame i resepsjonen, og då blei det fart på sakene.",
       "Sjølv om Fresvik Produkt ligg på den andre kanten av landet, så ordna vi opp. Fekk tak i folk på senteret som lokaliserte kjølerommet og han som var innesperra.",
       "Og alt fekk ein lukkeleg slutt – og Fresvik Produkt utførte dagens gode gjerning!!",
-      "Endå ein god grunn til å kjøpe produkt frå Fresvik Produkt!!?",
-      "Arne-Olav Lien Bardølsgård"
+      "Endå ein god grunn til å kjøpe produkt frå Fresvik Produkt!!?"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/fresvik-illustrasjon-1.jpg"
@@ -863,8 +937,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Det blir støypt spor i panelet til innfestinga, og løysinga kan brukast både mot golv og på sokkel.",
       "Dette er ei skjult innfesting med firkantrøyr, som har vore svært godt motteke der",
       "Løysinga gir ingen kantar der smuss kan feste seg, så løysinga er særleg god for næringsmiddelindustrien med strenge krav til hygiene.",
-      "Det er viktig at golv/sokkel må vere 100 % avretta der denne løysinga skal nyttast ved montering av panel.",
-      "Arne-Olav Lien Bardølsgård"
+      "Det er viktig at golv/sokkel må vere 100 % avretta der denne løysinga skal nyttast ved montering av panel."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/fresvik-ionnfesting-mot-golv.jpg"
@@ -940,8 +1013,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "I tillegg var John i mange år dei tilsette sin styremedlem i Fresvik Produkt. Dette medførde mange interessante saker og innspel. Sidan John hadde gode kunnskapar om heile bedrifta og produksjonen, så var han også med på vedtak om større investeringar i bedrifta, bl.a var han med til Italia då vi skulle kjøpe inn den andre produksjonslinja vår.",
       "Kjærleik til arbeidsplassen og bygda",
       "Det har vore store endringar i Fresvik Produkt gjennom desse 45 åra. Bedrifta har vakse frå ei oppstartbedrift med få tilsette til å bli ei mellomstor bedrift med rundt 40 tilsette, og med salskontor i Drammen. Det gode arbeidsmiljøet har vi likevel klart å halde på. Utan stor trivsel på arbeid og kjærleik til både arbeidsplassen og bygda hadde ikkje John halde ut så lenge i arbeid. John trekker fram at han har etablert seg i Fresvik og trivst i bygda han vaks opp i, sjølv om det kan vere både pluss og minus med ein så liten stad, men plussen er nok størst når ein har valgt å etablere seg her.",
-      "Fresvik Produkt vil takke for den store innsatsen som John har lagt ned for bedrifta, og ønskjer han mange gode år som pensjonist!",
-      "Arne-Olav Lien Bardølsgård"
+      "Fresvik Produkt vil takke for den store innsatsen som John har lagt ned for bedrifta, og ønskjer han mange gode år som pensjonist!"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/john-bthun-fresvik-produkt.jpg",
@@ -1009,8 +1081,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "28.12. Lars mobil 40 47 79 12",
       "29.12. Dag mobil 91 13 35 58",
       "30.12. Arne-Olav mobil 99 55 25 49",
-      "VI TAKKAR FOR SAMARBEIDET I ÅRET SOM HAR GÅTT OG SER FRAM TIL NYE PROSJEKT SAMAN!",
-      "Arne-Olav Lien Bardølsgård"
+      "VI TAKKAR FOR SAMARBEIDET I ÅRET SOM HAR GÅTT OG SER FRAM TIL NYE PROSJEKT SAMAN!"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/fresvik-produkt-julehjarte-dekorasjon.jpg"
@@ -1070,9 +1141,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "description": "Me har ledig stilling som produksjonsmedarbeidar. Opplæring blir gitt.",
     "publishedAt": "2021-06-25T12:21:14+0200",
     "modifiedAt": "2023-08-28T15:17:23+0200",
-    "bodyParagraphs": [
-      "Arne-Olav Lien Bardølsgård"
-    ],
+    "bodyParagraphs": [],
     "imageUrls": [],
     "documentUrls": [
       "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
@@ -1119,8 +1188,10 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "https://www.sintefcertification.no/Product/Index/129",
       "https://rapportering.miljofyrtarn.no/stats/176324"
     ],
-    "extractionStatus": "extracted",
-    "notes": []
+    "extractionStatus": "unrecoverable",
+    "notes": [
+      "No reliable body content was found in live old HTML; title/meta description only."
+    ]
   },
   "/aktuelt/montasje-prosjekt": {
     "href": "/aktuelt/montasje-prosjekt",
@@ -1137,8 +1208,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "30. november avslutta vi prosjektet til Helgesen Tekniske Bygg på Storbotn 110 i Bergen. Der leverte vi panel til himling og veggar. Det vart montert 730m2 på ei veke, og montasjen gjekk kontinuerleg utan problem!",
       "Gjeraldstveit Mekaniske AS, Voss",
       "Den 4. november starta vi på prosjektet til Gjeraldstveit Mekaniske AS på Voss Fram til i dag har vi montert 1240 m2 panel, i tillegg til alle beslag. Det står att montasje av kontordel og garasje.",
-      "Vil du vite meir om Fresvik og montasje? Snakk gjerne med vår salsavdeling",
-      "Arne-Olav Lien Bardølsgård"
+      "Vil du vite meir om Fresvik og montasje? Snakk gjerne med vår salsavdeling"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/dsc-0608.jpg",
@@ -1221,8 +1291,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Håvard Berdal er ny teknisk teiknar i Fresvik Produkt.",
       "Vi har vore så heldige å få Håvard i stillinga som teknisk teiknar etter at John Bøthun pensjonerer seg frå 1. september 2024.",
       "Håvard Berdal har arbeidd på kontoret sidan nyttår og er alt komen godt inn i funksjonen. Før dette var han tilsett i produksjonen vår, og han kjenner difor bedrifta godt frå før.",
-      "Vi er sikre på at han vil gjere ein utmerka jobb som teiknar. Velkomen i staben vår!",
-      "Arne-Olav Lien Bardølsgård"
+      "Vi er sikre på at han vil gjere ein utmerka jobb som teiknar. Velkomen i staben vår!"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/havard-berdal.jpg"
@@ -1287,8 +1356,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Fresvik Produkt leverar mange prosjekt ferdig montert. Montasjen blir utført av våre eigne dyktige montørar, eller av innleigde montasjefirma som har arbeidd for oss over lang tid, slik at vi kan gå god for kvaliteten på utført montasjearbeid.",
       "Produkta frå Fresvik Produkt er enkle å montere, difor utfører mange av kundane våre denne jobben sjølve. Dei kjenner godt til monteringa av våre panel, og den enkle montasjen er nok medverkande til at våre produkt blir føretrekt.",
       "For å spare miljøet, så sender vi ikkje monteringsanvisning med produkta våre, i staden ligg denne på heimesida vår, der alle kan laste den ned.",
-      "Vi har no laga nye monteringsanvisning (på norsk og engelsk) for kjølerom og fryserom. Desse finn du her:",
-      "Arne-Olav Lien Bardølsgård"
+      "Vi har no laga nye monteringsanvisning (på norsk og engelsk) for kjølerom og fryserom. Desse finn du her:"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/k6r3776-07032013.jpg"
@@ -1354,8 +1422,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "1150 m2 mineralullspanel frå Ruukki",
       "60 m2 brannvegg, klassifisert som EI60",
       "Vi var underleverandør til vår samarbeidspartnar Isowest , og vi stod for både leveranse og montasje i nokre hektiske dagar i starten av juni månad. Før prosjektet starta vart Sikker Jobb Analyse-metoden gjennomført.",
-      "Vite meir om prosjektet? Kontakt vår salsavdeling",
-      "Arne-Olav Lien Bardølsgård"
+      "Vite meir om prosjektet? Kontakt vår salsavdeling"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/image-asset-13.jpeg",
@@ -1440,8 +1507,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Dørbladet er ei galvanisert stålplate i polyesterlakkert overflate (Foodsafe). Portblad kan også leverast i rustfritt eller syrefast stål. Dersom det er skyveport til eit fryserom (fryseport) vert denne levert med terskel og innlagt sjølvregulerande 220 V varmekabel.",
       "Det aller meste av denne produksjonen går til næringsmiddelindustrien, men vi produserar også ein del skreddarsydde skyveportar til lager, båtar og offshore.",
       "Her er ein ny skyveport på veg til Isowest as på Eidsnes ved Ålesund.",
-      "Vli du ha meir informasjon om våre skyveportar , industri-slagdørar eller våre standard dørar til kjølerom, fryserom eller skip - ta kontakt med vår salsavdeling.",
-      "Arne-Olav Lien Bardølsgård"
+      "Vli du ha meir informasjon om våre skyveportar , industri-slagdørar eller våre standard dørar til kjølerom, fryserom eller skip - ta kontakt med vår salsavdeling."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/port1-fresvik.jpg",
@@ -1510,8 +1576,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Ho er fødd i Iran, men har utdanninga si frå UiT- The Arctic University of Norway og Texas A&M universitet i USA.",
       "Sam har 15 års erfaring i ulike ingeniørrollar og har ekspertise innan industriell design.",
       "Berre etter denne korte tida Sam har vore i Fresvik Produkt har vi hatt stor nytte av kunnskapane og effektiviteten til Sam i mange av dei utviklingsprosjekta som vi driv.",
-      "Vi ser med store glede fram til samarbeidet i åra framover.",
-      "Arne-Olav Lien Bardølsgård"
+      "Vi ser med store glede fram til samarbeidet i åra framover."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/samaneh-shakeri.jpg"
@@ -1572,8 +1637,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "modifiedAt": "2023-08-28T15:18:54+0200",
     "bodyParagraphs": [
       "Fresvik Produkt er opptekne av arbeidsmiljø, og vi har difor gjort ferdig eit nytt skjererom, der vi isolerer arbeidsprosessen med skjering av panel. Dette har vore ein arbeidsprosess som skapte støy i produksjon, og saman med Bedriftshelse1 har vi utforma eit eige skjererom, som gir redusert støy i produksjonslokala, samtidig som vi med løftebord og vakuumløftar får tilpassa arbeidsstillinga til dei tilsette for å unngå belastningskader.",
-      "Fresvik Produkt er stor produsent av portar , og vi har sjølvsagt eigenprodusert porten til rommet. Styring, motor og beslag på denne porten er heilt nytt og levert av vår faste leverandør. Ta kontakt med vår salsavdeling for meir informasjon om våre Fresvik-portar",
-      "Arne-Olav Lien Bardølsgård"
+      "Fresvik Produkt er stor produsent av portar , og vi har sjølvsagt eigenprodusert porten til rommet. Styring, motor og beslag på denne porten er heilt nytt og levert av vår faste leverandør. Ta kontakt med vår salsavdeling for meir informasjon om våre Fresvik-portar"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/image-asset.jpeg",
@@ -1645,9 +1709,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "description": "",
     "publishedAt": "2016-12-19T13:02:00+0100",
     "modifiedAt": "2023-08-28T15:18:09+0200",
-    "bodyParagraphs": [
-      "Arne-Olav Lien Bardølsgård"
-    ],
+    "bodyParagraphs": [],
     "imageUrls": [],
     "documentUrls": [
       "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
@@ -1694,8 +1756,10 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "https://www.sintefcertification.no/Product/Index/129",
       "https://rapportering.miljofyrtarn.no/stats/176324"
     ],
-    "extractionStatus": "extracted",
-    "notes": []
+    "extractionStatus": "unrecoverable",
+    "notes": [
+      "No reliable body content was found in live old HTML."
+    ]
   },
   "/aktuelt/to-ledige-stillingar-i-haust": {
     "href": "/aktuelt/to-ledige-stillingar-i-haust",
@@ -1704,9 +1768,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "description": "Me ser etter reinhaldar og produksjonsmedarbeidar.",
     "publishedAt": "2023-10-25T09:04:38+0200",
     "modifiedAt": "2023-12-20T08:32:32+0100",
-    "bodyParagraphs": [
-      "Arne-Olav Lien Bardølsgård"
-    ],
+    "bodyParagraphs": [],
     "imageUrls": [],
     "documentUrls": [
       "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
@@ -1753,8 +1815,10 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "https://www.sintefcertification.no/Product/Index/129",
       "https://rapportering.miljofyrtarn.no/stats/176324"
     ],
-    "extractionStatus": "extracted",
-    "notes": []
+    "extractionStatus": "unrecoverable",
+    "notes": [
+      "No reliable body content was found in live old HTML; title/meta description only."
+    ]
   },
   "/aktuelt/tomas-kruvellis-vaar-nye-mann": {
     "href": "/aktuelt/tomas-kruvellis-vaar-nye-mann",
@@ -1771,8 +1835,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Siste halvåret har Tomas kombinert foreldrepermisjon i 50 % stilling med opplæring på innkjøp, delesal og mykje meir. Mange av kundane våre har nok alt hatt kontakt med han.",
       "Tomas tek til att i 100 % stilling i løpet av sommaren, og ser fram til god kontakt både med kundar og leverandørar.",
       "Er du som kunde på jakt etter deler, er det Tomas som vil vere mannen framover.",
-      "Vi ønskjer Tomas velkomen blant funksjonærane våre.",
-      "Arne-Olav Lien Bardølsgård"
+      "Vi ønskjer Tomas velkomen blant funksjonærane våre."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/tomas-kruvelis-20180315-121307.jpg"
@@ -1839,8 +1902,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Men gjennom arbeidet vårt med å bli sertifisert Miljøfyrtårn, så har vi sett ytterlegare fokus på dette, og sett vårt arbeid i eit litt vidare perspektiv.",
       "Vi er og vil vere ein trygg arbeidsplass i nærmiljøet, og fokuserar på å skape arbeidsplassar der alle trivst og med lågt sjukefråvær. Vi vil prøve å redusere energibruken vår, og nytte den energien vi treng på ein best mogelg måte. Vi har også fokus på å redusere bruk av papp og plast, og gjenbruke dette der det er mogeleg.",
       "For å vere med å skape eit bærekraftig samfunn så vil vi også etterspørje hjå leverandørane våre mest mogeleg miljøvennlege produkt.",
-      "Saman med mange andre kan Fresvik Produkt vere med å skape eit betre bærekraftig miljø i åra framover.",
-      "Arne-Olav Lien Bardølsgård"
+      "Saman med mange andre kan Fresvik Produkt vere med å skape eit betre bærekraftig miljø i åra framover."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg"
@@ -1909,8 +1971,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Godkjenningsdokument hjå SINTEF",
       "Last ned leveringsbetingelser",
       "Last ned sentral godkjenning",
-      "Last ned ytelseserklæring",
-      "Arne-Olav Lien Bardølsgård"
+      "Last ned ytelseserklæring"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/flake-left.png"
@@ -1987,8 +2048,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Vår storleik kombinert med ei bevisst satsing på fleksible produksjonsløysingar gjer oss i stand til å levere kundetilpassa løysingar. Vi legg sterk vekt på skreddarsaum tilpassa våre modulmål, noko som gir lite svinn og avfall på byggjeplassen.",
       "Alle våre isolasjonspanel bir levert med eksenterlås, som gir rask og enkel montasje.",
       "Hovudkontor og produksjonsanlegg ligg i Fresvik i Sogn, i tillegg har vi salgskontor i Drammen. Selskapet har ca. 45 tilsette. Sjå oversikt over tilsette",
-      "Har du eit prosjekt du vil diskutere med oss?",
-      "Arne-Olav Lien Bardølsgård"
+      "Har du eit prosjekt du vil diskutere med oss?"
     ],
     "imageUrls": [
       "/assets/fresvik/images/old-site/flake-bbf00cfde8.png"
@@ -2055,8 +2115,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Frosne og nedkjølte varer utgjer ein stadig større del av vår daglege handel. Kontroll med lagring og behandling av slike varer er streng og krev at daglegvarehandelen har tilstrekkeleg med installasjonar for å presentere denne varegruppa.",
       "Vi leverer gjerne ein totalpakke som inneheld kjøle- og frysepanel med tilhøyrande dørar , portar , glassfrontar, hylleinnreiing, beslag, ventilar og festemateriell. Våre panel blir også brukt til veggar og himlingar i tilberedningsrom og delikatesseavdelingar.",
       "Vi står også for montasje gjennom samarbeidande montasjeselskap.",
-      "Har du eit prosjekt du vil diskutere med oss?",
-      "Arne-Olav Lien Bardølsgård"
+      "Har du eit prosjekt du vil diskutere med oss?"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/coop-extra-sogndal.jpeg",
@@ -2146,8 +2205,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Vi leverer til ulike maritime prosjekt. Mellom dei største kundane våre finn du leiande aktørar innan skipsinteriør og maritim montasje.",
       "PIR-baserte isolasjonspanel til fryse- og proviantrom på offshorefartøyet Siem Stingray, bygd ved VARD. Panela vart integrerte i temperaturkontrollerte område i maritimt miljø.",
       "Isolasjonspanel til skipinteriør og tekniske installasjonar. Panela vart integrerte i modulbaserte romløysingar for maritime miljø.",
-      "PIR-baserte isolasjonspanel til fryse- og proviantrom på fiskefartøy bygd ved Karstensen Shipyard, i samarbeid med Maritime Montering. Panela vart integrerte i temperaturkontrollerte område i maritimt miljø.",
-      "Arne-Olav Lien Bardølsgård"
+      "PIR-baserte isolasjonspanel til fryse- og proviantrom på fiskefartøy bygd ved Karstensen Shipyard, i samarbeid med Maritime Montering. Panela vart integrerte i temperaturkontrollerte område i maritimt miljø."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/image-asset-39.jpeg",
@@ -2229,8 +2287,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Fresvik har lang erfaring med leveransar av rom til storkjøkken og institusjon. Her har vår evne til å levera tilpassa rom, vist seg å vere ein nøkkelfaktor.",
       "Våre kjøle- fryserom er basert på modular og kan tilpassast alle typar lokale. Fresvik isolasjonspanel består av ei kjerne av polyurethan dekka med stålplater på begge sidene.",
       "Overflatene kan vera foodsafe polyesterlakk, syrefast, rustfritt eller glassfiber. Slette flater og tette fuger gir enkel reingjering av element.",
-      "Har du eit prosjekt du vil diskutere med oss?",
-      "Arne-Olav Lien Bardølsgård"
+      "Har du eit prosjekt du vil diskutere med oss?"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/image-asset-42.jpeg",
@@ -2295,8 +2352,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "modifiedAt": "",
     "bodyParagraphs": [
       "Har du eit prosjekt du vil diskutere? Ta gjerne kontakt på post@fresvik.no",
-      "Kom direkte i kontakt med ein av oss: Sjå tilsette",
-      "Arne-Olav Lien Bardølsgård"
+      "Kom direkte i kontakt med ein av oss: Sjå tilsette"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/flake-left.png"
@@ -2360,7 +2416,29 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Vi er marknadsleiar på kjøle- og fryserom til daglegvarehandel, energistasjonar og storkioskar.",
       "Vi er einaste norske produsent av polyuretan sandwich-panel godkjend for maritimt bruk - DIN 4102-B2.",
       "Vi leverer kjøle- fryserom og tilleggsprodukt til storkjøken og institusjonar over heile landet.",
-      "Arne-Olav Lien Bardølsgård"
+      "Kva er hovudforskjellen mellom PIR og PUR i kjøle- og fryserom?",
+      "Den største forskjellen ligg i branneigenskapane. PIR har generelt betre brannmotstand og lågare røykutvikling enn PUR, samtidig som begge materiala har svært gode isolasjonseigenskapar.",
+      "I kva prosjekt bør PIR føretrekkjast framfor PUR?",
+      "Kvifor har PIR-panel nesten same U-verdi som PUR-panel, men betre branneigenskapar?",
+      "Sjølv om PIR- og PUR-panel har nesten lik U-verdi (isolasjonsevne), har PIR betre branneigenskapar fordi skummet reagerer med å verne overflata ved brann og har høgare termisk stabilitet. PIR isolerer like godt, men toler varme og brann betydeleg betre enn PUR. Difor får PIR brannklasse B, medan PUR har klasse C.",
+      "Har PIR-panela låsemekanisme i skøytane og hjørna, slik som PUR-panela?",
+      "Våre PIR- og PUR-panel har same design og same låsemekanisme i skøytane og hjørna.",
+      "Kva er PVC-gardin, og når bør ein bruke PVC-gardiner i kjølerom eller fryserom?",
+      "Kva er forskjellen på ein kjøleromsdør og ein fryseromsdør?",
+      "For vanlege kjøle- og fryseromsdører ligg forskjellen i at fryseromsdøra har varmekabel i karmen, elles er dørene like.",
+      "For dører av industritypen ligg forskjellen i isolasjon og konstruksjon:",
+      "Ei kjøleromsdør er berekna for kjølerom med moderate temperaturar, og har isolasjon og tetting tilpassa normal kjøledrift.",
+      "Ei fryseromsdør er konstruert for djupfrysing ved låge minusgrader og har tjukkare isolasjon, dobbel pakning og varmekabel i karmen for å hindre at pakningane frys fast.",
+      "Korleis er vekta/densiteten på PIR-panel samanlikna med PUR-panel?",
+      "PUR-panel har ein densitet på 40 ±2 kg/m³ (vekt ca. 13 - 17 kg/m2), medan PIR-panel har ein densitet på 42 ±2 kg/m³ (vekt ca. 14 – 18.5 kg/m2).",
+      "Kan PIR-panel brukast ved same temperaturar som PUR-panel?",
+      "PIR har temperaturområde frå -40 °C til +70 °C, medan PUR toler -40 °C til +120 °C.",
+      "Kan PIR-panela produserast i same storleik som PUR-panela?",
+      "Ja. Vi tilbyr fleksibel romhøgd med trinn på 50 mm, opptil 8000 mm, og ulike tjukkleikar: 75 mm, 100 mm, 125 mm, 150 mm og 175 mm.",
+      "Kan de produsere dører og portar med PIR-skum?",
+      "Ja, vi leverer både dører og portar med PIR-skum, med same design som våre PUR-produkt.",
+      "Kva er kjøleromspanel, og kva tjukkleik bør ein velje til kjøl og fryserom?",
+      "Kjøleromspanel er isolerte sandwichpanel som blir brukte til veggar, tak og eventuelt golv i kjøle- og fryserom."
     ],
     "imageUrls": [
       "/assets/fresvik/images/old-site/flake-bbf00cfde8.png",
@@ -2433,8 +2511,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Monteringsanvisning for elektrisk port.",
       "Last ned monteringsanvisning for dør",
       "Ute etter dokumentasjon?",
-      "Teknisk godkjenning, miljødokumentasjon, leveringsbetingelser og sentral godkjenning finn du på sida om dokumentasjon.",
-      "Arne-Olav Lien Bardølsgård"
+      "Teknisk godkjenning, miljødokumentasjon, leveringsbetingelser og sentral godkjenning finn du på sida om dokumentasjon."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/flake-left.png",
@@ -2510,8 +2587,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Monteringsanvisningar for elektrisk styring av Fresvik Skyveport",
       "Koblingskjema Fermod 5010",
       "Montasjeanvisning for Fermod 5010 på manuelt beslag 2150",
-      "Montasjeanvisning for Fermod 5010 på manuelt beslag 3530 og 7530",
-      "Arne-Olav Lien Bardølsgård"
+      "Montasjeanvisning for Fermod 5010 på manuelt beslag 3530 og 7530"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/flake-left.png"
@@ -2582,7 +2658,25 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "publishedAt": "",
     "modifiedAt": "",
     "bodyParagraphs": [
-      "Arne-Olav Lien Bardølsgård"
+      "1. Om Fresvik Produkt AS",
+      "Eigar av denne nettsida er: Fresvik Produkt AS, Fresvikvegen 995, 6896 Fresvik. Epost: post@fresvik.no. Vårt org. nr er: NO 922 582 270.",
+      "2. Føremålet med vår handsaming av personopplysningar",
+      "I samband med kundeforhold må vi innhente opplysningar som namn, adresse, epost, telefonnr, organisasjonsnummer og anna nødvendig informasjon. Dette er opplysningar vi utelukkande nyttar for å handtere ditt kundeforhold. Vi tek vare på opplysningane så lenge vi har eit kundeforhold. Du har rett til innsyn, retting og sletting av data vi har lagra om deg. Etter endt kundeforhold vil vi ta vare på data så lenge vi ser det hensiktsmessig for å hjelpe deg med eventuell historikk om du skulle ha behov for det.",
+      "3. Utlevering av personopplysningar til tredjepart",
+      "Utlevering av personopplysningar vil ikkje skje, med mindre det føreligg lovbestemt opplysningsplikt ovanfor offentlege myndigheiter.",
+      "Vårt kunderegister inneheld opplysningar om kunden som namn, adresse, telefon, evt selskapsnamn og informasjon om kontaktpersonar hjå kunden, i tillegg til opplysningar om kva tenester og produkt kunden har kjøpt. Desse blir lagra i vårt system så lenge det er tenleg for oss. Ønskjer du å få oversikt over kva vi har lagra og evt. bli sletta frå vårt system, sjå kapittel om sletting.",
+      "Fresvik.no nyttar informasjonskapslar, også kalt cookies, på nettsidene. Ved å bruke nettsida vår samtykker du i at vi kan setje desse i din nettlesar. Cookies er standard Internett-teknologi som dei aller fleste nettstader nyttar. Vi nyttar denne kunnskapen for å tilby deg ei betre kundeoppleving neste gang du kjem til nettsida vår. Dei fleste nettlesarar, som Opera, Internet Explorer, Firefox, Safari etc, er innstilt slik at cookies blir akseptert automatisk. Om du ikkje ønskjer å akseptere cookies må du sjølv endre innstillingane i din nettlesar. Merk at denne innstillinga kan føre til at mange nettstader ikkje vil fungere optimalt.",
+      "6. Bruk av informasjonskapslar på denne nettsida",
+      "Føremål: Samle informasjon om korleis besøkande nyttar nettsida. Vi brukar denne informasjonen for å lage rapportar for å betre nettsida. Informasjonskapslane anonymiserer all informasjon. Dei seier noko om tal besøkande på nettsida, kvar dei kjem frå og kva sider dei besøker.",
+      "Føremål: Lagar statistikk på visningar og visningsdata på videoar på sida.",
+      "Ved å melde deg på Fresvik Produkt AS sitt nyheitsbrev, samtykker du til at vi lagrar ditt namn og din e-postadresse. Dette brukar vi til å sende ut relevant informasjon om oss og våre tenester. Vi nyttar Mailchimp for å handtere utsendingar av e-postar. Fresvik Produkt AS forpliktar seg til å ikkje dele informasjonen din med andre partar. Informasjonen vil ligge lagra hjå oss inntil til du eventuelt melder deg av nyheitsbrevet. Alle våre utsendingar har funksjonalitet for at du kan melde deg av med eit klikk.",
+      "Når du fyller ut kontaktskjema på nettsida lagrar vi denne informasjonen i vårt CRM-system. Denne informasjonen vil vi lagre for å kunne yte betre kundeservice. Vi etterstrebar å ikkje ta vare på dine detaljar lenger enn nødvendig. Ønskjer du å bli sletta, sjå kapittel om Innsyn, retting og sletting av personinformasjon under.",
+      "Det er muleg å dele artiklar på nettsida i sosiale medium (Facebook, Twitter). Vidare handtering av data som blir delt i sosiale medium, vert regulert av din avtale med det aktuelle nettsamfunnet.",
+      "10. Innsyn, retting og sletting av personinformasjon",
+      "Etter personopplysningsloven § 18 har du som privatperson krav på innsyn i dei opplysningar som er registrert om deg. Innsyn kan ein få ved å hendvende seg til Fresvik Produkt AS på epost: post@fresvik.no. Dersom registrerte opplysningar er uriktige, ufullstendige eller du ønskjer å slette dine opplysningar, kan ein krevje dette i henhold til personopplysningsloven § 27.",
+      "11. Ansvarleg databehandlar",
+      "Dagleg leiar i Fresvik Produkt AS er ansvarleg for handsaming av personopplysningar. Vedkommande er ansvarleg for at det vert gjennomført internkontrollar med omsyn til behandling av personopplysningar, og at evt. avvik frå gjeldande lovverk blir meldt inn og retta. Vi etterstrebar til einkvar tid å følgje gjeldande regelverk for personvern.",
+      "Har du spørsmål, ta kontakt på post@fresvik.no."
     ],
     "imageUrls": [],
     "documentUrls": [
@@ -2642,8 +2736,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Utvikla og produsert i Norge",
       "Fleksibelt på byggeplass",
       "Enkel montasje med eksenterlås",
-      "Modulmål gir mindre svinn",
-      "Arne-Olav Lien Bardølsgård"
+      "Modulmål gir mindre svinn"
     ],
     "imageUrls": [
       "/assets/fresvik/images/old-site/aaa-e88b7adba4.jpg",
@@ -2729,8 +2822,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Fasadepanel med polyuretan-kjerne",
       "Vi kan levere panel med både polyuretan skum og mineralull som kjerne. Polyuretanskum-panel er å føretrekke på grunn av låg pris og dei overlegne isolasjonseigenskapane skummet har.",
       "Her kan du sjå nokre av våre referansar på fasadeprosjekt:",
-      "Har du eit prosjekt du vil diskutere med oss?",
-      "Arne-Olav Lien Bardølsgård"
+      "Har du eit prosjekt du vil diskutere med oss?"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/flake-black.png",
@@ -2818,8 +2910,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Standard overflate i 0,55 mm galvanisert stålplate med 25 µm polyester, type FoodSafe.",
       "Overflate kan leverast i rustfritt stål, syrefast stål, glassfiber-armert polyester eller andre platetypar.",
       "Vår visjon er å vere den beste samarbeidspartnaren for deg som kjøleentreprenør. Ønskjer du meir informasjon om produkta våre, ta gjerne kontakt med oss.",
-      "Har du eit prosjekt du vil diskutere med oss?",
-      "Arne-Olav Lien Bardølsgård"
+      "Har du eit prosjekt du vil diskutere med oss?"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/flake-black.png",
@@ -2908,8 +2999,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Frysetunnelar blir brukt i næringsmiddelindustrien til rask innfrysing av fisk, kjøt, bakerivarer og meieriprodukt. Fresvik Produkt har levert kjøle- og fryseløysingar til norsk næringsmiddelindustri i over 45 år.",
       "Spar Lund Torv fekk levert nytt fryserom, tre nye kjølerom og deleveggar med norskproduserte PIR-panel frå Fresvik Produkt. Leveransen omfatta òg innestengingsalarm, PVC-gardin og pendeldører frå Kvanne Industrier.",
       "Fresvik Produkt leverte eit skreddarsydd fryserom til Baza Nordic i Fredrikstad, tilpassa effektiv og driftssikker lagring av frosne varer. Løysinga gir auka kapasitet, betre logistikkflyt og stabile lagringsforhold gjennom heile året.",
-      "Har du eit prosjekt du vil diskutere med oss?",
-      "Arne-Olav Lien Bardølsgård"
+      "Har du eit prosjekt du vil diskutere med oss?"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/flake-black.png",
@@ -2989,8 +3079,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Utvikla og produsert i Norge",
       "Høg kvalitet og rask leveranse",
       "Tilleggsutstyr til kjøle- og fryseromsdører",
-      "Har du eit prosjekt du vil diskutere med oss?",
-      "Arne-Olav Lien Bardølsgård"
+      "Har du eit prosjekt du vil diskutere med oss?"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/flake-black.png",
@@ -3075,8 +3164,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Automatisk (elektrisk) åpning/stenging med trykknapp-/snortrekkbrytar som standard.",
       "Dørblad og beslag i rustfritt stål.",
       "Vår visjon er å vere den beste samarbeidspartnaren for deg som kjøleentreprenør. Ønskjer du meir informasjon om produkta våre, ta gjerne kontakt med oss.",
-      "Har du eit prosjekt du vil diskutere med oss?",
-      "Arne-Olav Lien Bardølsgård"
+      "Har du eit prosjekt du vil diskutere med oss?"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/flake-black.png",
@@ -3148,8 +3236,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "modifiedAt": "",
     "bodyParagraphs": [
       "Ein leiande leverandør av kjølerom og fryserom",
-      "Vi leverer til næringsmiddelindustrien og til næringsbygg, institusjonar, storkjøkken, butikkar, laboratorium,skip og offshoreinstallasjonar. Vårt produktspekter er basert på modular, og vi legg sterk vekt på skreddarsaum, leveransesikkerheit og kvalitet . Her er nokre av våre referansar:",
-      "Arne-Olav Lien Bardølsgård"
+      "Vi leverer til næringsmiddelindustrien og til næringsbygg, institusjonar, storkjøkken, butikkar, laboratorium,skip og offshoreinstallasjonar. Vårt produktspekter er basert på modular, og vi legg sterk vekt på skreddarsaum, leveransesikkerheit og kvalitet . Her er nokre av våre referansar:"
     ],
     "imageUrls": [],
     "documentUrls": [
@@ -3230,8 +3317,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "publishedAt": "2014-07-07T13:02:00+0200",
     "modifiedAt": "2023-09-11T13:27:25+0200",
     "bodyParagraphs": [
-      "Fresvik Produkt har levert og montert kjøle- og fryserom til heile butikken. Totalt ca. 800 m² panel.",
-      "Arne-Olav Lien Bardølsgård"
+      "Fresvik Produkt har levert og montert kjøle- og fryserom til heile butikken. Totalt ca. 800 m² panel."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/image-asset.jpeg",
@@ -3299,8 +3385,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Interfrukt framleiger til ni ulike frukt-aktørar og det nye grossistlageret inneheld tørrlager, kjølelager, fryselager samt kontordel.",
       "Vi i Fresvik Produkt vart valt som leverandør av frys- og kjøleveggar i prosjektet, der Norske Stålbygg var totalentreprenør. Det er store dimensjonar på bygget, vår leveranse bestod av heile 16.500 kvm kjøle- og frysepanelar.",
       "- Den største utfordringa var høgda på 10,5 meter. Vi produserer panel på 8 meter, så panela måtte skøytast, men med not og fjør i panel-endane oppnår vi god styrke.",
-      "Montasjen pågjekk i perioden august til desember 2013, og gjekk smertefritt seier vår prosjektleiar Arek Lekki.",
-      "Arne-Olav Lien Bardølsgård"
+      "Montasjen pågjekk i perioden august til desember 2013, og gjekk smertefritt seier vår prosjektleiar Arek Lekki."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/interfrukt-langhus.webp",
@@ -3372,8 +3457,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Eit ganske så typisk Fresvik Produkt-prosjekt i vår største bransje - næringsmiddelbransjen.",
       "Monteringa er blitt gjennomført av våre gode partner, AKS Montering v/Anders Sætre, som også har teke foto.",
       "Om Bjerke spekemat og delikatesse",
-      "Bjerke Spekemat og Delikatesse AS i Helgeroa i Vestfold er ei kombinert produksjons- og handelsbedrift med historie tilbake til 1975. Dei har 35 tilsette og ei årleg omsetning rundt 100 mill. kroner. Med eit veldig sterkt fokus på norske råvarer og høg kvalitet, er kvalitet på kjølerom og produksjonslokale ein viktig faktor for selskapet, og vi i Fresvik er glade for å vere ein samarbeidspartnar.",
-      "Arne-Olav Lien Bardølsgård"
+      "Bjerke Spekemat og Delikatesse AS i Helgeroa i Vestfold er ei kombinert produksjons- og handelsbedrift med historie tilbake til 1975. Dei har 35 tilsette og ei årleg omsetning rundt 100 mill. kroner. Med eit veldig sterkt fokus på norske råvarer og høg kvalitet, er kvalitet på kjølerom og produksjonslokale ein viktig faktor for selskapet, og vi i Fresvik er glade for å vere ein samarbeidspartnar."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/fresvik-aks-montering1.jpg",
@@ -3448,8 +3532,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Bygginga starta i september 2023 og prosjektet stod ferdig i juni 2025, klart til bruk. Det ble bygt omsorgsbustadar med 46 leilegheiter fordelt på tre etasjar.",
       "Fresvik Produkt leverte fryselager og kjølerom samt dører til dette prosjektet.",
       "Takk til RK Tekniske for nok eit godt samarbeid!",
-      "(Klikk for stor visning)",
-      "Arne-Olav Lien Bardølsgård"
+      "(Klikk for stor visning)"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/bjerkreim-legekontor-1.jpeg",
@@ -3524,8 +3607,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Langt nord i vårt vakre land har vi levert eit fryserom og eit kjølerom til meierivarer.",
       "I tillegg til romleveranse, har vi levert innestengningsalarm, frysedør og PVC-gardin til fryserommet.",
       "Takk til Plug-in Norge AS for eit godt samarbeid!",
-      "(Klikk for stor visning)",
-      "Arne-Olav Lien Bardølsgård"
+      "(Klikk for stor visning)"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/1000024746.jpg",
@@ -3595,8 +3677,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Storcash er ein del av ASKO og NorgesGruppen og det nye bygget på 2300 kvadratmeter blir eit av dei mest miljøvennlege stormarknadane i landet.",
       "Vår samarbeidspartnar, Kelvin AS , har hatt ansvar for at varme fra kuldeanlegget på Storcash i Kobber blir gjenvunne og utnytta til oppvarming av bygget. Og på sommartid sørgjer kuldeanlegget for nedkjøling av ventilasjonslufta.",
       "Vi i Fresvik Produkt leverte 1650 kvm med Fresvik isolasjonspanel , sju kjøle- og frysedørar og ein fryseport, alle produsert ved vår fabrikk i Fresvik.",
-      "Inne i butikken leverte Schott Termofrost heile 42 glassdørar til fryserommet, som vist på foto.",
-      "Arne-Olav Lien Bardølsgård"
+      "Inne i butikken leverte Schott Termofrost heile 42 glassdørar til fryserommet, som vist på foto."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/image-asset-35.jpeg",
@@ -3671,8 +3752,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Den 18. april begynte vi fasadeprosjektet på Celsa Steel Service AS sitt nye bygg på Sotra. Celsa Steel Service er ein av dei store aktørane på armeringsstål i Norge, og har åtte avdelingar i landet.",
       "Hovudentreprenøren er Brødrene Ulveseth AS.",
       "Det nye produksjonsanlegget på Straume er 3250 kvadratmeter, og vi sto for levering og montering av 2600 kvadratmeter fasadepanel med mineralull-kjerne, beslag og 16 stk. vinduer.",
-      "Vårt prosjekt vart avslutta den 19.mai, og i oktober skal stålbedrifta flytte inn i sitt nye produksjonsanlegg.",
-      "Arne-Olav Lien Bardølsgård"
+      "Vårt prosjekt vart avslutta den 19.mai, og i oktober skal stålbedrifta flytte inn i sitt nye produksjonsanlegg."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/dsc-2579.jpg",
@@ -3744,8 +3824,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Fresvik Produkt har gjennom åra levert mykje til Fiskehallen, og til mange ulike kundar der.",
       "Siste del av året har vi hatt leveransar til Sjømat AS, som også held til her. Bileta viser litt av dette anlegget.",
       "Dette prosjektet har bestått av både takflate, vegger og portar.",
-      "Også på Fiskehallen er det AKS Montering som er den føretrekte montøren.",
-      "Arne-Olav Lien Bardølsgård"
+      "Også på Fiskehallen er det AKS Montering som er den føretrekte montøren."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/fiskehallen1.jpg",
@@ -3813,8 +3892,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "På Kiwi Skollenborg ved Kongsberg har dei med dette bygget redusert CO2-fotavtrykket med over 50 %, samanlikna med ein vanleg Kiwi-butikk.",
       "Les meir om dette prosjektet i Dagbladet",
       "Vi har levert fire kjølerom og eit fryserom til vår kunde Carrier Refrigation Norway , ein leveranse på ca 300 m2. Monteringa er gjort av AKS Montering.",
-      "Les meir om Kiwi Skollenborg i Bygg.no",
-      "Arne-Olav Lien Bardølsgård"
+      "Les meir om Kiwi Skollenborg i Bygg.no"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg"
@@ -3882,8 +3960,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Fresvik Produkt har levert fryse- og kjølerom til nok ein Kiwi-butikk, denne gongen i flotte Otta, nord i Gudbrandsdalen.",
       "Her har vi levert eitt fryserom med frysedør, innestengningsalarm og PVC-gardin, samt 4 kjølerom med både våre eigne dører og pendeldører frå Kvanne Industrier.",
       "Vi takkar Carrier for eit godt samarbeid!",
-      "Sjå fleire bilde frå prosjektet:",
-      "Arne-Olav Lien Bardølsgård"
+      "Sjå fleire bilde frå prosjektet:"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/kiwi-otta-1.jpeg",
@@ -3954,8 +4031,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Vår leveranse bestod av 3 700 m2 panel i tjukkelsar frå 75 mm til 175 mm, produsert til 3 fryserom og 10 kjølerom.",
       "11 spesialportar blei levert av nederlandske Salco.",
       "Montasje blei utført av AKS Montering.",
-      "Har du spørsmål om Fresvik kjølerom - ta kontakt med vår salsavdeling",
-      "Arne-Olav Lien Bardølsgård"
+      "Har du spørsmål om Fresvik kjølerom - ta kontakt med vår salsavdeling"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/img-2589.jpg",
@@ -4024,8 +4100,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Installasjonen blei gjennomført i tett dialog med kunden for å sikre ein saumlaus prosess frå planlegging til ferdigstilling.",
       "Resultatet er eit moderne fryserom som gir Baza auka kapasitet, betre logistikkflyt og stabile lagringsforhold året rundt.",
       "Vi set stor pris på tilliten og samarbeidet med Baza, og er stolte av å bidra til deira vidare vekst.",
-      "(Klikk på bilda for stor visning)",
-      "Arne-Olav Lien Bardølsgård"
+      "(Klikk på bilda for stor visning)"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/baza-fryserom-1.jpeg",
@@ -4092,8 +4167,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Fresvik Produkt fekk jobben med å levere eit nytt stort fryserom til Coop Obs Alnabru tidlegare i 2024.",
       "I tillegg til fryserommet leverte vi fryseport, PVC-gardin og innestengningsalarm.",
       "Vi takkar for oppdraget og godt samarbeid med Coolteam .",
-      "(Klikk for stor visning)",
-      "Arne-Olav Lien Bardølsgård"
+      "(Klikk for stor visning)"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/fryserom-obs-alna-3-red.jpg",
@@ -4166,8 +4240,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Fryseport: 2700 x 2700 mm.",
       "Som vanleg med alle Fresvik fryserom, blir alle rom levert ferdig tilpassa med eksenterlås i alle overganger. Dette forkortar monteringstida og gir minimalt med avfall på byggeplass.",
       "I tillegg til rom og fryseport, har vi i dette prosjektet levert ei spesialbygd rampe.",
-      "Vite meir om våre produkt? Ta kontakt med vår salsavdeling",
-      "Arne-Olav Lien Bardølsgård"
+      "Vite meir om våre produkt? Ta kontakt med vår salsavdeling"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/resvik-fryserom-innvendig-2.jpg",
@@ -4252,8 +4325,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Leveransen frå Fresvik var ferdig tilpassa til dei måla som kunden ønska, også tilpassa mot skrå tak. Dette er «skreddarsaum» slik Fresvik Produkt er kjend for. At leveransen er ferdig tilpassa frå fabrikk gjer monteringsarbeidet enkelt. AKS Montering utførde som alltid arbeidet på byggeplassen både hurtig og nøyaktig.",
       "Butikken opnar 19. november, og dette vil bli ein moderne butikk med kjølerom for meieri/kjøtt, frukt og grønt, mineralvatn i tillegg til frukt/grønt-torg.",
       "Fresvik produkt er marknadsleiar på kjøle- og fryserom til butikk. Les meir om kjøle- og fryserom til butikk her.",
-      "Vi takkar for oppdraget og ynskjer lukke til med butikkdrifta!",
-      "Arne-Olav Lien Bardølsgård"
+      "Vi takkar for oppdraget og ynskjer lukke til med butikkdrifta!"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/20151021-174754.jpg",
@@ -4330,8 +4402,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Vi valgte Fresvik Produkt på grunnlag av anbefaling og pris. Vi kommer nok til å bruke dem igjen ved en senere anledning også!",
       "- Lars Skjetne, prosjektleder i Relog AS",
       "Fleire bilde frå leveransen:",
-      "Klikk på bilda for stor visning.",
-      "Arne-Olav Lien Bardølsgård"
+      "Klikk på bilda for stor visning."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/img-6262.jpg",
@@ -4405,8 +4476,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Me er den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås. PIR-Panel er eit sandwichelement med oppskumma PIR-skum (Polyisocyanurat-skum) som kjerne, innkapsla mellom to stålplater. Produktet er SINTEF-godkjent og utvikla i Norge.",
       "Me vil takke Kelvin og Kvanne for et godt samarbeid!",
       "Interessert i å vite mer om våre PIR-produkt ? Ta kontakt med salsavdelinga vår .",
-      "(Klikk for stor visning)",
-      "Arne-Olav Lien Bardølsgård"
+      "(Klikk for stor visning)"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/spar-lund-torv-fresvik-produkt-1.jpeg",
@@ -4482,8 +4552,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "På førjulsvinteren 2017 har Fresvik Produkt levert og montert deler av eit større anlegg til Isowest AS.",
       "Karlsøybruket bygger nye produksjonslokaler for kvitfisk, og vi har levert vegger til sluser, kjølerom og produksjonskontor, samt kjøleport og glassfiberdører i inner- og yttervegger.",
       "Over nyttår skal vi til same anlegget levere og montere fasadepanel til nytt bygg for renseanlegg mm.",
-      "Prosjektet har gått som planlagt, og vi ser fram til fortsettelsen på nyåret.",
-      "Arne-Olav Lien Bardølsgård"
+      "Prosjektet har gått som planlagt, og vi ser fram til fortsettelsen på nyåret."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/img-7324.jpg",
@@ -4553,8 +4622,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Fresvik Produkt har levert produkt til nok ein fornøgd kunde.",
       "Vi leverte eit nytt kjølerom med kjøledør til nok ein Bunnpris-butikk, no i vakre Volda i Møre og Romsdal. Produkta er levert med standard FoodSafe Polyester-overflater, som gir enkelt reinhald og hindrar bakterievekst.",
       "Takk til Fryst AS for eit godt samarbeid.",
-      "(Klikk for stor visning)",
-      "Arne-Olav Lien Bardølsgård"
+      "(Klikk for stor visning)"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/kjlerom-bunnpris-volda-3.jpg",
@@ -4622,8 +4690,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "modifiedAt": "2024-12-09T14:17:37+0100",
     "bodyParagraphs": [
       "Fresvik Produkt har levert eit fryserom, fem kjølerom, innestengingsalarm, PVC-gardin og sju dører til Dyreparken Safaricamp i Kristiansand Dyrepark. Dørene er levert med sjølvlukkande hengsler – Fresvik Hengsler, som garanterer at døra aldri blir ståande åpen meir enn den trenger.",
-      "Som einaste norske produsent av isolasjonspanel, dører og portar til kjøle- og fryserom, tilbyr me skreddarsydde løysingar som sikrar funksjonalitet og tryggleik. Produkta er kortreiste og av høg kvalitet, med enkel montering takka vere eksenterlås og med smarte løysingar som Fresvik Hengsle. Med hovudkontor og produksjonsanlegg i Fresvik i Sogn og salgsavdeling i Drammen, leverer me påliteleg og effektivt over heile Noreg.",
-      "Arne-Olav Lien Bardølsgård"
+      "Som einaste norske produsent av isolasjonspanel, dører og portar til kjøle- og fryserom, tilbyr me skreddarsydde løysingar som sikrar funksjonalitet og tryggleik. Produkta er kortreiste og av høg kvalitet, med enkel montering takka vere eksenterlås og med smarte løysingar som Fresvik Hengsle. Med hovudkontor og produksjonsanlegg i Fresvik i Sogn og salgsavdeling i Drammen, leverer me påliteleg og effektivt over heile Noreg."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/fp-dyreparken.jpg",
@@ -4685,8 +4752,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "publishedAt": "2024-07-01T21:21:47+0200",
     "modifiedAt": "2024-12-09T14:17:25+0100",
     "bodyParagraphs": [
-      "Tidlegare i år leverte Fresvik Produkt nye kjøle- og fryserom til Rema 1000 Øya i Gamle Kongevei 47 i Larvik. Leveransen inkluderte eit fryserom og eit kjølerom, komplett med dører, innestengingsalarm, PVC-gardin og kjørerampe.",
-      "Arne-Olav Lien Bardølsgård"
+      "Tidlegare i år leverte Fresvik Produkt nye kjøle- og fryserom til Rema 1000 Øya i Gamle Kongevei 47 i Larvik. Leveransen inkluderte eit fryserom og eit kjølerom, komplett med dører, innestengingsalarm, PVC-gardin og kjørerampe."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/1715599204491-upscale.jpeg",
@@ -4755,8 +4821,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "3 stk fryseporter med PVC-gardiner",
       "5 stk pendeldører frå Kvanne Industrier",
       "Takk for eit kjekt oppdrag!",
-      "Klikk på bilda for stor visning.",
-      "Arne-Olav Lien Bardølsgård"
+      "Klikk på bilda for stor visning."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/20220616-152720-1.jpg",
@@ -4828,8 +4893,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Restauranten har blitt ein stor suksess, og Fresvik Produkt har levert både kjøle- og fryserom. I tillegg har vi levert vegger til grovkjøkken og oppvask, alt i tråd med ynskje frå oppdragsgivar.",
       "Fresvik Produkt har tilsvarande leveransar rundt i heile landet, men tykkjer det er ekstra kjekt at våre produkt i høve kvalitet og hygiene vert verdsatt lokalt.",
       "Prosjektet vart levert ferdig montert i løpet av nokre få veker. Dette var avgjerande for kunden, og Fresvik Produkt fekk det til i samarbeid med byggherre og ikkje minst ved hjelp av dyktige montørar som viste stor fleksibilitet.",
-      "Fresvik Produkt ynskjer Resturanthuset Malin lukke til med drifta!",
-      "Arne-Olav Lien Bardølsgård"
+      "Fresvik Produkt ynskjer Resturanthuset Malin lukke til med drifta!"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/image2.jpg",
@@ -4903,8 +4967,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Fresvik Produkt leverer så mangt! Drageboden på Kaupanger har no fått skreddarsydde panel som blir nytta som to tørkerom til trevirke.",
       "Dageboden har mellom anna stått for prefabrikering og utsmykking av hytta Hugin/Ramnereiret på Kaupanger. Dei jobbar med treverk, og fekk behov for tørkerom til materialane. Panel frå Fresvik Produkt blei ei god løysing.",
       "Her gjekk vi for ei rustfri overflate på innsida, på grunn av den høge varmen (opp til 60-70 gradar!). Vi leverte ein laus vegg på begge rom, slik at dei kan opne heile veggen og køyre inn pallar med treverk. Kunde har sjølv montert lås.",
-      "Takk for eit kjekt prosjekt litt utanom det vanlege!",
-      "Arne-Olav Lien Bardølsgård"
+      "Takk for eit kjekt prosjekt litt utanom det vanlege!"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/dsc03066.jpg",
@@ -4978,8 +5041,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Fresvik Produkt er stolt leverandør av kjøle- og fryserom til dette anlegget. Hittil har vi levert 5 kjølerom og 1 fryserom med tilhøyrande dørar.",
       "Dette har vi levert gjennom Sogn Kjøleservice , takk for godt samarbeid.",
       "Fresvik Produkt er stolte over å kunne produsere og levere dette i eigen kommune.",
-      "Sjå fleire bilde frå prosjektet:",
-      "Arne-Olav Lien Bardølsgård"
+      "Sjå fleire bilde frå prosjektet:"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/vik-helse-og-sjukeheim-1.jpg",
@@ -5141,8 +5203,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Gode monteringsansvisningar på nett",
       "Om leveransen er fasadeelement, standard eller spesialtilpassa kjølerom/fryserom, legg vi vekt på leveransesikkerheit. Du skal vite at du får leveransen til riktig tid.",
       "Vi leverer \"pakkar\" med alle nødvendige deler som er godt og synleg merka, og våre gode monteringsanvisningar lastar du lett ned frå heimesida vår.",
-      "Har du eit prosjekt du vil diskutere med oss?",
-      "Arne-Olav Lien Bardølsgård"
+      "Har du eit prosjekt du vil diskutere med oss?"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/port1web.jpg",
@@ -5211,8 +5272,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Kvalitetssikringsrutiner",
       "Betaler skatter og avgifter",
       "Meir informasjon om montasje?",
-      "Ta kontakt med vår salsavdeling for meir informasjon om montørane våre.",
-      "Arne-Olav Lien Bardølsgård"
+      "Ta kontakt med vår salsavdeling for meir informasjon om montørane våre."
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/k6r3776-07032013.jpg",
@@ -5275,8 +5335,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Viss noko går gale, stiller vi opp.",
       "Vi har til ein kvar tid eit godt lager av reservedeler til dører og portar. Det gjer at vi kan levere dei spesifikke delane du treng!",
       "Kundane våre har store krav til leveringstid på reservedeler om noko går gale. Reservelager i kombinasjon med mange samarbeidspartnarar, gjer at vi kan ha kort leveringstid når det trengst.",
-      "Treng du service eller deler?",
-      "Arne-Olav Lien Bardølsgård"
+      "Treng du service eller deler?"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/flake-left.png"
@@ -5337,8 +5396,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "bodyParagraphs": [
       "Treng du tilbehøyr til kjøle- eller fryserommet ditt, eller ein reservedel? Hos oss finn du det meste du treng.",
       "Er du usikker på kva reservedel som passar, tek vi gjerne ein prat og hjelper deg å finne rett løysing.",
-      "For bestilling av tilbehøyr og reservedelar, send oss ein e-post eller ring innkjøparen vår:",
-      "Arne-Olav Lien Bardølsgård"
+      "For bestilling av tilbehøyr og reservedelar, send oss ein e-post eller ring innkjøparen vår:"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/1463-fr-plata-instal.png",
@@ -5407,9 +5465,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "description": "Møt det dyktige teamet bak Fresvik Produkt. Se hvordan vi kan gi deg svaret på det du lurer på, og hvordan vi sammen kan finne skreddersydde løsninger for deg.",
     "publishedAt": "",
     "modifiedAt": "",
-    "bodyParagraphs": [
-      "Arne-Olav Lien Bardølsgård"
-    ],
+    "bodyParagraphs": [],
     "imageUrls": [
       "/assets/fresvik/images/migrated/lars-erling-livrud.jpeg",
       "/assets/fresvik/images/migrated/frode-winther.jpg",
@@ -5469,8 +5525,10 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "https://www.sintefcertification.no/Product/Index/129",
       "https://rapportering.miljofyrtarn.no/stats/176324"
     ],
-    "extractionStatus": "extracted",
-    "notes": []
+    "extractionStatus": "unrecoverable",
+    "notes": [
+      "No reliable body content was found in live old HTML; title/meta description only."
+    ]
   },
   "/transportskade": {
     "href": "/transportskade",
@@ -5485,8 +5543,7 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "Eventuelle skadar må førast på fraktbrev før signering",
       "Rapporter inn skaden til oss på post@fresvik.no omgåande, hugs bilete.",
       "Skaderapportering må me ha innan 6 dagar då transportør har kort innrapporteringsfrist for oss til å rapportera vidare.",
-      "Fresvik Produkt er ansvarlege for varene fram til lossing hos kunde (DAP), jfr punkt 9 i våre Leveringsbetingelser",
-      "Arne-Olav Lien Bardølsgård"
+      "Fresvik Produkt er ansvarlege for varene fram til lossing hos kunde (DAP), jfr punkt 9 i våre Leveringsbetingelser"
     ],
     "imageUrls": [
       "/assets/fresvik/images/migrated/transportskade-fresvik-produkt.jpg",

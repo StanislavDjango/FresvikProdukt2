@@ -11,6 +11,7 @@
     "check:visual": "node scripts/check-visual-smoke.mjs",
     "check:migration": "node scripts/check-migration-assets.mjs",
     "audit:migration": "node scripts/audit-migration.mjs",
+    "audit:content": "node scripts/audit-page-content.mjs",
     "content:sync-old": "node scripts/sync-old-site-content.mjs",
     "assets:manifest": "node scripts/generate-asset-manifest.mjs",
     "assets:upload": "node scripts/upload-sanity-assets.mjs --dry-run",

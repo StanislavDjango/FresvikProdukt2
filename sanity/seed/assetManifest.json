@@ -453,7 +453,7 @@
     "filePath": "public/assets/fresvik/documents/pur-ce-merke.pdf",
     "assetType": "document",
     "usedBy": [
-      "/aktuelt",
+      "/",
       "/dokumentasjon",
       "/firmainfo",
       "/kjolerom-fryserom-butikk",
@@ -475,12 +475,11 @@
       "/tenester/montasje",
       "/tenester/service-reservedeler",
       "/tilleggsutstyr",
-      "/tilsette",
       "/transportskade",
       "documentFile-assets-fresvik-documents-pur-ce-merke-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt",
+      "https://www.fresvik.no/",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/firmainfo",
       "https://www.fresvik.no/kjolerom-fryserom-butikk",
@@ -501,7 +500,6 @@
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilleggsutstyr",
-      "https://www.fresvik.no/tilsette",
       "https://www.fresvik.no/transportskade"
     ],
     "sha256": "596ac549d312966cacb69673491b8988ede60f20a297d6ba84fd85702e4e0c45",
@@ -550,7 +548,7 @@
     "filePath": "public/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
     "assetType": "document",
     "usedBy": [
-      "/aktuelt",
+      "/",
       "/dokumentasjon",
       "/firmainfo",
       "/kjolerom-fryserom-butikk",
@@ -572,12 +570,11 @@
       "/tenester/montasje",
       "/tenester/service-reservedeler",
       "/tilleggsutstyr",
-      "/tilsette",
       "/transportskade",
       "documentFile-assets-fresvik-documents-sentral-godkjenning-fresvik-produkt-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt",
+      "https://www.fresvik.no/",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/firmainfo",
       "https://www.fresvik.no/kjolerom-fryserom-butikk",
@@ -598,7 +595,6 @@
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilleggsutstyr",
-      "https://www.fresvik.no/tilsette",
       "https://www.fresvik.no/transportskade"
     ],
     "sha256": "c20f54560e598cce7d8622cd55eb8619a533a10e5c0cf3087987b75326cccc9f",
@@ -821,7 +817,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-1ca4fc2cf422ced70efe59c9acb084fb9802c316-750x900-png."
+    "notes": "Recovered original image URL from live sitemap during migration completion."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719842659307-NIRBLOIHY5ZWCFKW4BE2/1715599204491_upscale.jpeg",
@@ -1711,14 +1707,12 @@
     "usedBy": [
       "/",
       "/aktuelt",
-      "/aktuelt/ny-teknisk-teiknar-havard-berdal",
-      "/tilsette"
+      "/aktuelt/ny-teknisk-teiknar-havard-berdal"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
       "https://www.fresvik.no/aktuelt",
-      "https://www.fresvik.no/aktuelt/ny-teknisk-teiknar-havard-berdal",
-      "https://www.fresvik.no/tilsette"
+      "https://www.fresvik.no/aktuelt/ny-teknisk-teiknar-havard-berdal"
     ],
     "sha256": "43d3b10e69825153f9a517362acb4f546ac741e8a238124a1ebd7ac99c8728d2",
     "fileSize": 314906,
@@ -1898,7 +1892,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-93c2687c8be3782ee1a99290c6c502c85b692c6f-1496x830-jpg."
+    "notes": "Recovered original image URL from live sitemap during migration completion."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429019721-ZC32AVBAD55JGSWMPAE0/image2.JPG",
@@ -4046,7 +4040,7 @@
     "notes": "Uploaded to Sanity as image-9998c94b0e1e955cc009f4d46e5547e9f4451454-205x140-png."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
     "localPath": "/assets/fresvik/images/old-site/flake-black-3b186da893.png",
     "filePath": "public/assets/fresvik/images/old-site/flake-black-3b186da893.png",
     "assetType": "image",
@@ -4070,7 +4064,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as image-abadeeffe965e2059c7a3693134368acab508fca-205x140-webp."
+    "notes": "Recovered original image URL from live sitemap during migration completion."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719344561991-BLTT0NHSX83F2YSZFCCB/FP+Dyreparken+1.jpg",
@@ -4478,12 +4472,8 @@
     "localPath": "/assets/fresvik/images/old-site/gyda-b-thun-3ffab6f574.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/gyda-b-thun-3ffab6f574.jpeg",
     "assetType": "image",
-    "usedBy": [
-      "/tilsette"
-    ],
-    "sourcePages": [
-      "https://www.fresvik.no/tilsette"
-    ],
+    "usedBy": [],
+    "sourcePages": [],
     "sha256": "db6983ca6e9b17d03741bd120379c130d3582fceacde720b88c4ef0657d701a5",
     "fileSize": 318592,
     "sanityAssetId": "image-ac9506b807e039de127a594ffea9481ab3ab721e-2500x3009-webp",
@@ -4496,7 +4486,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-ac9506b807e039de127a594ffea9481ab3ab721e-2500x3009-webp."
+    "notes": "Uploaded to Sanity as image-ac9506b807e039de127a594ffea9481ab3ab721e-2500x3009-webp. Unused local migration cache file; keep until asset review is complete."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429000751-UHD6UZU92HWPNAEYQB9F/haandtak_web.jpg",
@@ -4857,7 +4847,7 @@
     "notes": "Uploaded to Sanity as image-6384f2ddfde712f2f1e4abbd065539cb03c60e5d-400x267-webp."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429051200-R0UVYZO6J6WM4KZN512O/image-asset.jpeg",
     "localPath": "/assets/fresvik/images/old-site/image-asset-4090603816.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/image-asset-4090603816.jpeg",
     "assetType": "image",
@@ -4879,7 +4869,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as image-aa0f26e18b41dba41bc3080d897763341a1e3b97-990x648-webp."
+    "notes": "Recovered original image URL from live sitemap during migration completion."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429071870-L0WHJTM68H0TEWUY1THW/image-asset.jpeg",

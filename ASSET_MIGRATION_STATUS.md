@@ -10,14 +10,14 @@ Generated from local migration cache and source data.
 | Images | 259 |
 | PDFs/documents | 26 |
 | Other assets | 0 |
-| Used assets | 167 |
+| Used assets | 166 |
 | Unused assets | 118 |
 | Missing assets | 0 |
 | Duplicate assets | 3 |
 | Ready for Sanity | 0 |
 | Uploaded to Sanity | 164 |
 | Failed or needs review | 0 |
-| TODO original URLs | 12 |
+| TODO original URLs | 10 |
 
 ## Status Counts
 

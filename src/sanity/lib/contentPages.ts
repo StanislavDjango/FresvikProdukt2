@@ -350,6 +350,16 @@ function indexCards(items: SanityIndexItem[]) {
     .filter((item) => item.title && item.text);
 }
 
+function withoutLocalAssetRefs(cards: ContentCard[]) {
+  return cards.map((card) => ({
+    ...card,
+    href: card.href?.startsWith("/assets/fresvik/") ? undefined : card.href,
+    imageUrl: card.imageUrl?.startsWith("/assets/fresvik/")
+      ? undefined
+      : card.imageUrl,
+  }));
+}
+
 async function getIndexSections(path: string) {
   if (path === "/aktuelt") {
     const items = await client.fetch<SanityIndexItem[]>(NEWS_INDEX_QUERY, {}, { next: { revalidate: 60 } });
@@ -401,10 +411,12 @@ function mergeContentPage(
       : ownSections.length > 0
         ? ownSections
         : fallback?.sections || [];
+  const sanityCards = imageCard(doc);
   const cards =
     indexSections[0]?.items.slice(0, 9) ||
-    fallback?.cards ||
-    imageCard(doc);
+    (sanityCards.length > 0
+      ? sanityCards
+      : withoutLocalAssetRefs(fallback?.cards || []));
 
   return {
     slug: path,

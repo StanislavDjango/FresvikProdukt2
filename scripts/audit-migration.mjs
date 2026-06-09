@@ -11,6 +11,7 @@ const oldBaseUrl = "https://www.fresvik.no";
 const sitemapUrl = `${oldBaseUrl}/sitemap.xml`;
 const markdownPath = path.join(root, "MIGRATION_AUDIT.md");
 const jsonPath = path.join(root, "MACHINE_READABLE_MIGRATION_AUDIT.json");
+const newsRecoveryPath = path.join(root, "NEWS_CONTENT_RECOVERY_AUDIT.json");
 const statusPath = path.join(root, "ASSET_MIGRATION_STATUS.md");
 const homepageAuditPath = path.join(root, "HOMEPAGE_MIGRATION_AUDIT.md");
 const sourceFilesForLinks = [
@@ -538,6 +539,17 @@ function bodyComplete(pathname, page, seedDoc, status) {
   return wordCount >= 80 || !isDetailPath(pathname);
 }
 
+const structuredListPaths = new Set(["/produkt", "/aktuelt", "/tilsette"]);
+
+function structuredListCovered(pathname, page, sitemapImages, localImages) {
+  if (!structuredListPaths.has(pathname)) return false;
+  if (!page) return false;
+  const uniqueSitemapImageCount = new Set(sitemapImages.map((image) => image.originalUrl)).size;
+  const imageCovered = uniqueSitemapImageCount === 0 || localImages.length >= uniqueSitemapImageCount;
+  const hasUsefulLinks = pageLinks(page).length >= 6;
+  return imageCovered && hasUsefulLinks;
+}
+
 function routeStatus({
   pathname,
   page,
@@ -547,6 +559,7 @@ function routeStatus({
   localImages,
   localDocuments,
   extract,
+  recovery,
 }) {
   if (redirect) return "redirect";
   if (!page && !seedDoc) return "missing";
@@ -557,6 +570,8 @@ function routeStatus({
       ? "page"
       : "partial";
   }
+  if (structuredListCovered(pathname, page, sitemapImages, localImages)) return "page";
+  if (recovery?.status === "unrecoverable-from-checked-sources") return "unrecoverable";
   if (extract?.extractionStatus === "unrecoverable") return "needs-review";
   if ((pathname.startsWith("/aktuelt/") || pathname.startsWith("/referansar/")) && !extract) {
     return "partial";
@@ -967,6 +982,10 @@ const appRoutePages = new Map(
 );
 const manifest = readJson(path.join(root, "sanity", "seed", "assetManifest.json"), []);
 const seedDocs = readNdjson(path.join(root, "sanity", "seed", "migratedContent.ndjson"));
+const newsRecovery = readJson(newsRecoveryPath, { results: [] });
+const recoveryByPath = new Map(
+  (newsRecovery.results || []).map((result) => [result.path, result]),
+);
 const seedByRoute = new Map(seedDocs.map((doc) => [routeFromSeedDoc(doc), doc]).filter(([route]) => route));
 const routeSet = new Set([
   "/",
@@ -1024,6 +1043,7 @@ const routeRows = routeSitemapEntries.map((entry) => {
   ];
   const docs = pageDocuments(page);
   const extract = getOldSiteContentExtract(entry.oldPath);
+  const recovery = recoveryByPath.get(entry.oldPath);
   const status = routeStatus({
     pathname: entry.oldPath,
     page,
@@ -1033,6 +1053,7 @@ const routeRows = routeSitemapEntries.map((entry) => {
     localImages,
     localDocuments: docs,
     extract,
+    recovery,
   });
   const fullBody = bodyComplete(entry.oldPath, page, seedDoc, status);
   return {
@@ -1050,6 +1071,8 @@ const routeRows = routeSitemapEntries.map((entry) => {
     hasExternalLinks: pageLinks(page).some((href) => /^(https?:\/\/|mailto:|tel:)/.test(href)),
     oldImageCount: entry.images.length,
     localImageCount: localImages.length,
+    recoveryStatus: recovery?.status || null,
+    recoveryNotes: recovery?.notes || [],
     notes:
       status === "redirect"
         ? `Redirects to ${redirect.destination}.`
@@ -1059,9 +1082,11 @@ const routeRows = routeSitemapEntries.map((entry) => {
             : "Strict audit: local content appears shorter than a full old detail page, lacks reliable extracted body evidence, documents, or not all sitemap images are represented."
           : status === "needs-review"
             ? "Contains TODO/verification markers or unresolved migration text."
-            : status === "missing"
-              ? "No local page, seed document, or redirect found."
-              : "Covered as migrated page in local data.",
+            : status === "unrecoverable"
+              ? "Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body."
+              : status === "missing"
+                ? "No local page, seed document, or redirect found."
+                : "Covered as migrated page in local data.",
   };
 });
 
@@ -1165,6 +1190,7 @@ const audit = {
     partialCount: routes.filter((route) => route.status === "partial").length,
     missingCount: routes.filter((route) => route.status === "missing").length,
     needsReviewCount: routes.filter((route) => route.status === "needs-review").length,
+    unrecoverableCount: routes.filter((route) => route.status === "unrecoverable").length,
     inventoryOnlyCount: routes.filter((route) => route.status === "inventory-only").length,
     localImageAssets: localImageAssetsAfterUpdate.length,
     localDocumentAssets: documentAssets.length,
@@ -1272,6 +1298,7 @@ Generated: ${audit.summary.generatedAt}
 | Partial count | ${audit.summary.partialCount} |
 | Missing count | ${audit.summary.missingCount} |
 | Needs-review count | ${audit.summary.needsReviewCount} |
+| Unrecoverable documented | ${audit.summary.unrecoverableCount} |
 | Inventory-only count | ${audit.summary.inventoryOnlyCount} |
 | Local image assets | ${audit.summary.localImageAssets} |
 | Local document/PDF assets | ${audit.summary.localDocumentAssets} |

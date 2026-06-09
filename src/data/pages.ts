@@ -1804,10 +1804,6 @@ export const contentPages: ContentPage[] = [
         items: employeeCards,
       },
     ],
-    todo: [
-      "Verifiser GDPR/personvern og om alle personar framleis skal publiserast.",
-      "Importer dei som `employee`-dokument i Sanity.",
-    ],
   },
   {
     slug: "/aktuelt",
@@ -1828,7 +1824,6 @@ export const contentPages: ContentPage[] = [
         items: newsCards,
       },
     ],
-    todo: ["Importer nyheitene som `newsArticle`-dokument i Sanity."],
   },
   {
     slug: "/stillingledig",

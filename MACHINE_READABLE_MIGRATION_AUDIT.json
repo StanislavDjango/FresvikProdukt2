@@ -1,24 +1,25 @@
 {
   "summary": {
-    "generatedAt": "2026-06-08T23:31:10.810Z",
+    "generatedAt": "2026-06-09T06:18:25.381Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
     "liveSitemapUrlCount": 104,
     "liveSitemapImageEntries": 322,
     "liveSitemapUniqueImageUrls": 275,
-    "migratedPageCount": 69,
+    "migratedPageCount": 71,
     "redirectCount": 29,
     "partialCount": 0,
     "missingCount": 0,
-    "needsReviewCount": 8,
+    "needsReviewCount": 0,
+    "unrecoverableCount": 6,
     "inventoryOnlyCount": 0,
     "localImageAssets": 259,
     "localDocumentAssets": 26,
     "originalUrlsRecovered": 275,
     "routeStatusCounts": {
-      "page": 69,
-      "needs-review": 8,
+      "page": 71,
+      "unrecoverable": 6,
       "redirect": 29
     },
     "assetStatusCounts": {
@@ -203,13 +204,15 @@
       "hasExternalLinks": true,
       "oldImageCount": 13,
       "localImageCount": 20,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt",
       "oldPath": "/aktuelt",
       "newRoute": "/aktuelt",
-      "status": "needs-review",
+      "status": "page",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
@@ -220,7 +223,9 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 19,
-      "notes": "Contains TODO/verification markers or unresolved migration text."
+      "recoveryStatus": null,
+      "recoveryNotes": [],
+      "notes": "Covered as migrated page in local data."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/40-aars-jubileum",
@@ -237,6 +242,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -254,6 +261,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -271,6 +280,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -288,6 +299,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -305,13 +318,15 @@
       "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 6,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra",
       "oldPath": "/aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra",
       "newRoute": "/aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra",
-      "status": "needs-review",
+      "status": "unrecoverable",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
@@ -322,13 +337,19 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Contains TODO/verification markers or unresolved migration text."
+      "recoveryStatus": "unrecoverable-from-checked-sources",
+      "recoveryNotes": [
+        "Live old-site article body is empty or unusable.",
+        "Wayback availability lookup found no usable body snapshot.",
+        "No external hint is known for this route."
+      ],
+      "notes": "Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
       "oldPath": "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
       "newRoute": "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
-      "status": "needs-review",
+      "status": "unrecoverable",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
@@ -339,7 +360,13 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Contains TODO/verification markers or unresolved migration text."
+      "recoveryStatus": "unrecoverable-from-checked-sources",
+      "recoveryNotes": [
+        "Live old-site article body is empty or unusable.",
+        "Wayback availability lookup found no usable body snapshot.",
+        "Known external hints did not produce a usable body candidate."
+      ],
+      "notes": "Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/fresvik-hengsel",
@@ -356,6 +383,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -373,13 +402,15 @@
       "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt",
       "oldPath": "/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt",
       "newRoute": "/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt",
-      "status": "needs-review",
+      "status": "unrecoverable",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
@@ -390,7 +421,13 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Contains TODO/verification markers or unresolved migration text."
+      "recoveryStatus": "unrecoverable-from-checked-sources",
+      "recoveryNotes": [
+        "Live old-site article body is empty or unusable.",
+        "Wayback availability lookup found no usable body snapshot.",
+        "No external hint is known for this route."
+      ],
+      "notes": "Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/gladhistorie-fresvik-kjole-fryserom",
@@ -407,6 +444,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -424,6 +463,8 @@
       "hasExternalLinks": true,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -441,6 +482,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -458,13 +501,15 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/ledig-stilling-som-produksjonsmedarbeidar",
       "oldPath": "/aktuelt/ledig-stilling-som-produksjonsmedarbeidar",
       "newRoute": "/aktuelt/ledig-stilling-som-produksjonsmedarbeidar",
-      "status": "needs-review",
+      "status": "unrecoverable",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
@@ -475,7 +520,13 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Contains TODO/verification markers or unresolved migration text."
+      "recoveryStatus": "unrecoverable-from-checked-sources",
+      "recoveryNotes": [
+        "Live old-site article body is empty or unusable.",
+        "Wayback availability lookup found no usable body snapshot.",
+        "No external hint is known for this route."
+      ],
+      "notes": "Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/montasje-prosjekt",
@@ -492,6 +543,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 10,
       "localImageCount": 10,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -509,6 +562,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -526,6 +581,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -543,6 +600,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 9,
       "localImageCount": 9,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -560,6 +619,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -577,6 +638,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -594,13 +657,15 @@
       "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 6,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/stor-leveranse-til-buskerud-storcash",
       "oldPath": "/aktuelt/stor-leveranse-til-buskerud-storcash",
       "newRoute": "/aktuelt/stor-leveranse-til-buskerud-storcash",
-      "status": "needs-review",
+      "status": "unrecoverable",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
@@ -611,24 +676,36 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Contains TODO/verification markers or unresolved migration text."
+      "recoveryStatus": "unrecoverable-from-checked-sources",
+      "recoveryNotes": [
+        "Live old-site article body is empty or unusable.",
+        "Wayback availability lookup found no usable body snapshot.",
+        "No external hint is known for this route."
+      ],
+      "notes": "Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/to-ledige-stillingar-i-haust",
       "oldPath": "/aktuelt/to-ledige-stillingar-i-haust",
       "newRoute": "/aktuelt/to-ledige-stillingar-i-haust",
-      "status": "needs-review",
+      "status": "unrecoverable",
       "contentType": "news",
       "hasTitle": true,
       "hasIntro": true,
-      "hasFullBody": false,
+      "hasFullBody": true,
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
-      "notes": "Contains TODO/verification markers or unresolved migration text."
+      "recoveryStatus": "unrecoverable-from-checked-sources",
+      "recoveryNotes": [
+        "Live old-site article body is empty or unusable.",
+        "Wayback availability lookup found no usable body snapshot.",
+        "No external hint is known for this route."
+      ],
+      "notes": "Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body."
     },
     {
       "oldUrl": "https://www.fresvik.no/aktuelt/tomas-kruvellis-vaar-nye-mann",
@@ -645,6 +722,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -662,6 +741,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -679,6 +760,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -696,6 +779,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -713,6 +798,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -730,6 +817,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -747,6 +836,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -764,6 +855,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -781,6 +874,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -798,6 +893,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -815,6 +912,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -832,6 +931,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -849,6 +950,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -866,6 +969,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -883,6 +988,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -900,6 +1007,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -917,6 +1026,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -934,6 +1045,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -951,6 +1064,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -968,6 +1083,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -985,6 +1102,8 @@
       "hasExternalLinks": true,
       "oldImageCount": 1,
       "localImageCount": 5,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1002,6 +1121,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1019,6 +1140,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1036,6 +1159,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 18,
       "localImageCount": 17,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1070,6 +1195,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1087,6 +1214,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1104,6 +1233,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1121,6 +1252,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 6,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1138,6 +1271,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1155,6 +1290,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1172,6 +1309,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 11,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1189,6 +1328,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1206,6 +1347,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /produkt/fresvik-pur-panel."
     },
     {
@@ -1223,6 +1366,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 7,
       "localImageCount": 6,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1240,6 +1385,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 8,
       "localImageCount": 9,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1257,6 +1404,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1274,6 +1423,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 8,
       "localImageCount": 6,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1291,6 +1442,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /produkt."
     },
     {
@@ -1308,6 +1461,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 25,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1325,6 +1480,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 4,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1342,6 +1499,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1359,6 +1518,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1376,6 +1537,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1393,6 +1556,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1410,6 +1575,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1427,6 +1594,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /referansar."
     },
     {
@@ -1444,6 +1613,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /referansar."
     },
     {
@@ -1461,6 +1632,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /referansar."
     },
     {
@@ -1478,6 +1651,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /referansar."
     },
     {
@@ -1495,6 +1670,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1512,6 +1689,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1529,6 +1708,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1546,6 +1727,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 7,
       "localImageCount": 7,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1563,6 +1746,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1580,6 +1765,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1597,6 +1784,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1614,6 +1803,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 9,
       "localImageCount": 9,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1631,6 +1822,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1648,6 +1841,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1665,6 +1860,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 6,
       "localImageCount": 6,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1682,6 +1879,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1699,6 +1898,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1716,6 +1917,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1733,6 +1936,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 3,
       "localImageCount": 3,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1750,6 +1955,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 4,
       "localImageCount": 4,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1767,6 +1974,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1784,6 +1993,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 9,
       "localImageCount": 9,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1801,6 +2012,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 5,
       "localImageCount": 5,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1818,6 +2031,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /kontakt."
     },
     {
@@ -1835,6 +2050,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 13,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /."
     },
     {
@@ -1852,6 +2069,8 @@
       "hasExternalLinks": true,
       "oldImageCount": 4,
       "localImageCount": 4,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1869,6 +2088,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -1886,6 +2107,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 0,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Redirects to /tilleggsutstyr."
     },
     {
@@ -1903,6 +2126,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1920,6 +2145,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1937,6 +2164,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 1,
       "localImageCount": 1,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
@@ -1954,13 +2183,15 @@
       "hasExternalLinks": false,
       "oldImageCount": 12,
       "localImageCount": 23,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     },
     {
       "oldUrl": "https://www.fresvik.no/tilsette",
       "oldPath": "/tilsette",
       "newRoute": "/tilsette",
-      "status": "needs-review",
+      "status": "page",
       "contentType": "employee",
       "hasTitle": true,
       "hasIntro": true,
@@ -1971,7 +2202,9 @@
       "hasExternalLinks": false,
       "oldImageCount": 14,
       "localImageCount": 14,
-      "notes": "Contains TODO/verification markers or unresolved migration text."
+      "recoveryStatus": null,
+      "recoveryNotes": [],
+      "notes": "Covered as migrated page in local data."
     },
     {
       "oldUrl": "https://www.fresvik.no/transportskade",
@@ -1988,6 +2221,8 @@
       "hasExternalLinks": false,
       "oldImageCount": 2,
       "localImageCount": 2,
+      "recoveryStatus": null,
+      "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
     }
   ],
@@ -8333,54 +8568,5 @@
       "status": "keep"
     }
   ],
-  "todos": [
-    {
-      "type": "route",
-      "target": "/aktuelt",
-      "status": "needs-review",
-      "task": "Contains TODO/verification markers or unresolved migration text."
-    },
-    {
-      "type": "route",
-      "target": "/aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra",
-      "status": "needs-review",
-      "task": "Contains TODO/verification markers or unresolved migration text."
-    },
-    {
-      "type": "route",
-      "target": "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
-      "status": "needs-review",
-      "task": "Contains TODO/verification markers or unresolved migration text."
-    },
-    {
-      "type": "route",
-      "target": "/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt",
-      "status": "needs-review",
-      "task": "Contains TODO/verification markers or unresolved migration text."
-    },
-    {
-      "type": "route",
-      "target": "/aktuelt/ledig-stilling-som-produksjonsmedarbeidar",
-      "status": "needs-review",
-      "task": "Contains TODO/verification markers or unresolved migration text."
-    },
-    {
-      "type": "route",
-      "target": "/aktuelt/stor-leveranse-til-buskerud-storcash",
-      "status": "needs-review",
-      "task": "Contains TODO/verification markers or unresolved migration text."
-    },
-    {
-      "type": "route",
-      "target": "/aktuelt/to-ledige-stillingar-i-haust",
-      "status": "needs-review",
-      "task": "Contains TODO/verification markers or unresolved migration text."
-    },
-    {
-      "type": "route",
-      "target": "/tilsette",
-      "status": "needs-review",
-      "task": "Contains TODO/verification markers or unresolved migration text."
-    }
-  ]
+  "todos": []
 }

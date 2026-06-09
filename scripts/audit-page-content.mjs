@@ -8,6 +8,7 @@ const root = path.resolve(import.meta.dirname, "..");
 const tempDir = path.join(root, ".generated", "page-content-audit-cjs");
 const oldBaseUrl = "https://www.fresvik.no";
 const routeAuditPath = path.join(root, "MACHINE_READABLE_MIGRATION_AUDIT.json");
+const newsRecoveryPath = path.join(root, "NEWS_CONTENT_RECOVERY_AUDIT.json");
 const jsonPath = path.join(root, "MACHINE_READABLE_PAGE_CONTENT_AUDIT.json");
 const markdownPath = path.join(root, "PAGE_CONTENT_MIGRATION_AUDIT.md");
 
@@ -245,6 +246,7 @@ function routeStatusForContent({
   oldDocuments,
   localDocuments,
   homepageRows,
+  recovery,
 }) {
   if (route.status === "redirect") return "redirect";
   if (route.oldPath === "/") {
@@ -257,6 +259,7 @@ function routeStatusForContent({
   ) {
     return "migrated";
   }
+  if (recovery?.status === "unrecoverable-from-checked-sources") return "unrecoverable";
   if (extract.extractionStatus === "unrecoverable") return "needs-review";
   if (oldParagraphMatches.length === 0) return "needs-review";
 
@@ -285,6 +288,11 @@ function notesForRow(row) {
   if (!row.hasExtract && row.status !== "redirect") notes.push("No old HTML extract is available.");
   if (row.extractionStatus === "unrecoverable" && !row.structuredListAccepted) {
     notes.push("Old HTML extraction failed or produced no reliable body.");
+  }
+  if (row.recoveryStatus === "unrecoverable-from-checked-sources") {
+    notes.push(
+      "Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body.",
+    );
   }
   if (
     row.status !== "redirect" &&
@@ -341,6 +349,10 @@ const seedByRoute = new Map(
 );
 const manifest = readJson(path.join(root, "sanity", "seed", "assetManifest.json"), []);
 const homepageRows = routeAudit.homepage || [];
+const newsRecovery = readJson(newsRecoveryPath, { results: [] });
+const recoveryByPath = new Map(
+  (newsRecovery.results || []).map((result) => [result.path, result]),
+);
 const ignoredOldDocuments = new Map([
   [
     "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
@@ -360,6 +372,7 @@ const pages = routeAudit.routes.map((route) => {
   const page = getContentPage(route.oldPath) || createLegacyContentPage(route.oldPath);
   const seedDoc = seedByRoute.get(route.oldPath);
   const extract = getOldSiteContentExtract(route.oldPath);
+  const recovery = recoveryByPath.get(route.oldPath);
   const localText = [pageText(page), seedText(seedDoc)].filter(Boolean).join("\n");
   const oldParagraphMatches = matchedParagraphs(extract?.bodyParagraphs || [], localText);
   const oldImages = [...new Set(extract?.imageUrls || [])];
@@ -404,6 +417,7 @@ const pages = routeAudit.routes.map((route) => {
     oldDocuments: requiredOldDocuments,
     localDocuments,
     homepageRows,
+    recovery,
   });
 
   const row = {
@@ -430,6 +444,8 @@ const pages = routeAudit.routes.map((route) => {
     oldInternalLinkCount: oldInternalLinks.length,
     oldExternalLinkCount: oldExternalLinks.length,
     localLinkCount: localLinks.length,
+    recoveryStatus: recovery?.status || null,
+    recoveryNotes: recovery?.notes || [],
     structuredListAccepted,
     missingParagraphs: oldParagraphMatches
       .filter((paragraph) => !paragraph.matched)
@@ -510,6 +526,7 @@ This report is stricter than route coverage. A route is not considered content-m
 | Redirect | ${audit.summary.statusCounts.redirect || 0} |
 | Partial | ${audit.summary.statusCounts.partial || 0} |
 | Needs-review | ${audit.summary.statusCounts["needs-review"] || 0} |
+| Unrecoverable documented | ${audit.summary.statusCounts.unrecoverable || 0} |
 | Todo queue | ${audit.summary.todoCount} |
 
 Next batch: \`${audit.summary.nextBatch}\`

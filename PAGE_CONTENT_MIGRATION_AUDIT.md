@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-06-08T23:31:12.827Z
+Generated: 2026-06-09T06:18:27.474Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -12,10 +12,11 @@ This report is stricter than route coverage. A route is not considered content-m
 | Migrated | 71 |
 | Redirect | 29 |
 | Partial | 0 |
-| Needs-review | 6 |
-| Todo queue | 6 |
+| Needs-review | 0 |
+| Unrecoverable documented | 6 |
+| Todo queue | 0 |
 
-Next batch: `news`
+Next batch: `none`
 
 ## Batch Counts
 
@@ -30,14 +31,7 @@ Next batch: `news`
 
 ## Work Queue
 
-| batch | path | status | task |
-| --- | --- | --- | --- |
-| news | /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | needs-review | Old HTML extraction failed or produced no reliable body. |
-| news | /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | needs-review | Old HTML extraction failed or produced no reliable body. |
-| news | /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | needs-review | Old HTML extraction failed or produced no reliable body. |
-| news | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | needs-review | Old HTML extraction failed or produced no reliable body. |
-| news | /aktuelt/stor-leveranse-til-buskerud-storcash | needs-review | Old HTML extraction failed or produced no reliable body. |
-| news | /aktuelt/to-ledige-stillingar-i-haust | needs-review | Old HTML extraction failed or produced no reliable body. |
+- Ingen.
 
 ## Page Evidence Coverage
 
@@ -99,12 +93,12 @@ Next batch: `news`
 | news | /aktuelt/skjererom | migrated | 2/2 | 6/6 | 2/0 | 26/44 | Strict content evidence is covered. |
 | news | /aktuelt/tomas-kruvellis-vaar-nye-mann | migrated | 7/7 | 1/1 | 2/0 | 26/37 | Strict content evidence is covered. |
 | news | /aktuelt/vi-er-blitt-sertifisert-miljofyrtarn | migrated | 7/7 | 1/1 | 2/0 | 26/37 | Strict content evidence is covered. |
-| news | /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | needs-review | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. |
-| news | /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | needs-review | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. |
-| news | /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | needs-review | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. |
-| news | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | needs-review | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. |
-| news | /aktuelt/stor-leveranse-til-buskerud-storcash | needs-review | 0/0 | 0/0 | 0/0 | 1/37 | Old HTML extraction failed or produced no reliable body. |
-| news | /aktuelt/to-ledige-stillingar-i-haust | needs-review | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. |
+| news | /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | unrecoverable | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| news | /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | unrecoverable | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| news | /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | unrecoverable | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| news | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | unrecoverable | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| news | /aktuelt/stor-leveranse-til-buskerud-storcash | unrecoverable | 0/0 | 0/0 | 0/0 | 1/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| news | /aktuelt/to-ledige-stillingar-i-haust | unrecoverable | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | references | /referansar | migrated | 1/1 | 25/0 | 2/0 | 60/59 | Strict content evidence is covered. |
 | references | /referansar/2014/7/8/coop-extra-sogndal | migrated | 1/1 | 4/3 | 2/0 | 26/38 | Strict content evidence is covered. |
 | references | /referansar/2014/7/8/interfrukt-vrt-strste-prosjekt | migrated | 5/5 | 4/4 | 2/0 | 26/40 | Strict content evidence is covered. |

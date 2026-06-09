@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-08T23:31:10.810Z
+Generated: 2026-06-09T06:18:25.381Z
 
 ## Summary
 
@@ -11,11 +11,12 @@ Generated: 2026-06-08T23:31:10.810Z
 | Local baseline old image count | 325 |
 | Live sitemap image entries | 322 |
 | Live sitemap unique image URLs | 275 |
-| Migrated page count | 69 |
+| Migrated page count | 71 |
 | Redirect count | 29 |
 | Partial count | 0 |
 | Missing count | 0 |
-| Needs-review count | 8 |
+| Needs-review count | 0 |
+| Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
 | Local image assets | 259 |
 | Local document/PDF assets | 26 |
@@ -50,22 +51,22 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | oldPath | newRoute | status | type | title | intro | body | images | docs | notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | / | / | page | page | yes | yes | yes | 20/13 | yes | Covered as migrated page in local data. |
-| /aktuelt | /aktuelt | needs-review | news | yes | yes | yes | 19/0 | no | Contains TODO/verification markers or unresolved migration text. |
+| /aktuelt | /aktuelt | page | news | yes | yes | yes | 19/0 | no | Covered as migrated page in local data. |
 | /aktuelt/40-aars-jubileum | /aktuelt/40-aars-jubileum | page | news | yes | yes | yes | 4/4 | yes | Covered as migrated page in local data. |
 | /aktuelt/agnar-er-snart-pensjonistnbsp | /aktuelt/agnar-er-snart-pensjonistnbsp | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /aktuelt/arne-olav-ny-salskonsulent | /aktuelt/arne-olav-ny-salskonsulent | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/ein-investering-for-henga-med-i-tidanbsp | /aktuelt/ein-investering-for-henga-med-i-tidanbsp | page | news | yes | yes | yes | 3/3 | yes | Covered as migrated page in local data. |
 | /aktuelt/fasade-element-og-takplater-ruukki | /aktuelt/fasade-element-og-takplater-ruukki | page | news | yes | yes | yes | 6/6 | yes | Covered as migrated page in local data. |
-| /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | needs-review | news | yes | yes | yes | 0/0 | no | Contains TODO/verification markers or unresolved migration text. |
-| /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | needs-review | news | yes | yes | yes | 0/0 | no | Contains TODO/verification markers or unresolved migration text. |
+| /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | /aktuelt/fresvik-hengsel | /aktuelt/fresvik-hengsel | page | news | yes | yes | yes | 0/0 | yes | Covered as migrated page in local data. |
 | /aktuelt/fresvik-kjolerom-til-fruktbonde | /aktuelt/fresvik-kjolerom-til-fruktbonde | page | news | yes | yes | yes | 4/4 | yes | Covered as migrated page in local data. |
-| /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | needs-review | news | yes | yes | yes | 0/0 | no | Contains TODO/verification markers or unresolved migration text. |
+| /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | /aktuelt/gladhistorie-fresvik-kjole-fryserom | /aktuelt/gladhistorie-fresvik-kjole-fryserom | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/innfesting-mot-golv | /aktuelt/innfesting-mot-golv | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/john-bothun-blir-pensjonist | /aktuelt/john-bothun-blir-pensjonist | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /aktuelt/jul-2020 | /aktuelt/jul-2020 | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
-| /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | needs-review | news | yes | yes | yes | 0/0 | no | Contains TODO/verification markers or unresolved migration text. |
+| /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | /aktuelt/montasje-prosjekt | /aktuelt/montasje-prosjekt | page | news | yes | yes | yes | 10/10 | yes | Covered as migrated page in local data. |
 | /aktuelt/ny-teknisk-teiknar-havard-berdal | /aktuelt/ny-teknisk-teiknar-havard-berdal | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/nye-monteringsanvisningar | /aktuelt/nye-monteringsanvisningar | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
@@ -73,8 +74,8 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /aktuelt/portproduksjon | /aktuelt/portproduksjon | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /aktuelt/samaneh-shakeri-ny-teknisk-sjef | /aktuelt/samaneh-shakeri-ny-teknisk-sjef | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/skjererom | /aktuelt/skjererom | page | news | yes | yes | yes | 6/6 | yes | Covered as migrated page in local data. |
-| /aktuelt/stor-leveranse-til-buskerud-storcash | /aktuelt/stor-leveranse-til-buskerud-storcash | needs-review | news | yes | yes | yes | 0/0 | no | Contains TODO/verification markers or unresolved migration text. |
-| /aktuelt/to-ledige-stillingar-i-haust | /aktuelt/to-ledige-stillingar-i-haust | needs-review | news | yes | yes | no | 0/0 | no | Contains TODO/verification markers or unresolved migration text. |
+| /aktuelt/stor-leveranse-til-buskerud-storcash | /aktuelt/stor-leveranse-til-buskerud-storcash | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| /aktuelt/to-ledige-stillingar-i-haust | /aktuelt/to-ledige-stillingar-i-haust | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | /aktuelt/tomas-kruvellis-vaar-nye-mann | /aktuelt/tomas-kruvellis-vaar-nye-mann | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/vi-er-blitt-sertifisert-miljofyrtarn | /aktuelt/vi-er-blitt-sertifisert-miljofyrtarn | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /andre-produkter | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |
@@ -153,7 +154,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /tenester/montasje | /tenester/montasje | page | service | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /tenester/service-reservedeler | /tenester/service-reservedeler | page | service | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /tilleggsutstyr | /tilleggsutstyr | page | unknown | yes | yes | yes | 23/12 | yes | Covered as migrated page in local data. |
-| /tilsette | /tilsette | needs-review | employee | yes | yes | yes | 14/14 | no | Contains TODO/verification markers or unresolved migration text. |
+| /tilsette | /tilsette | page | employee | yes | yes | yes | 14/14 | no | Covered as migrated page in local data. |
 | /transportskade | /transportskade | page | support | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 
 ## Content completeness
@@ -276,22 +277,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | type | target | status | task |
 | --- | --- | --- | --- |
-| route | /aktuelt | needs-review | Contains TODO/verification markers or unresolved migration text. |
-| route | /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | needs-review | Contains TODO/verification markers or unresolved migration text. |
-| route | /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | needs-review | Contains TODO/verification markers or unresolved migration text. |
-| route | /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | needs-review | Contains TODO/verification markers or unresolved migration text. |
-| route | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | needs-review | Contains TODO/verification markers or unresolved migration text. |
-| route | /aktuelt/stor-leveranse-til-buskerud-storcash | needs-review | Contains TODO/verification markers or unresolved migration text. |
-| route | /aktuelt/to-ledige-stillingar-i-haust | needs-review | Contains TODO/verification markers or unresolved migration text. |
-| route | /tilsette | needs-review | Contains TODO/verification markers or unresolved migration text. |
 
 ## Final TODO list
 
-- route: /aktuelt [needs-review] - Contains TODO/verification markers or unresolved migration text.
-- route: /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra [needs-review] - Contains TODO/verification markers or unresolved migration text.
-- route: /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv [needs-review] - Contains TODO/verification markers or unresolved migration text.
-- route: /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt [needs-review] - Contains TODO/verification markers or unresolved migration text.
-- route: /aktuelt/ledig-stilling-som-produksjonsmedarbeidar [needs-review] - Contains TODO/verification markers or unresolved migration text.
-- route: /aktuelt/stor-leveranse-til-buskerud-storcash [needs-review] - Contains TODO/verification markers or unresolved migration text.
-- route: /aktuelt/to-ledige-stillingar-i-haust [needs-review] - Contains TODO/verification markers or unresolved migration text.
-- route: /tilsette [needs-review] - Contains TODO/verification markers or unresolved migration text.
+- Ingen.

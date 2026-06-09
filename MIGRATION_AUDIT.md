@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-09T22:58:35.019Z
+Generated: 2026-06-09T23:24:20.639Z
 
 ## Summary
 
@@ -18,9 +18,9 @@ Generated: 2026-06-09T22:58:35.019Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 259 |
-| Local document/PDF assets | 26 |
-| Asset originalUrls recovered in manifest | 275 |
+| Local image assets | 260 |
+| Local document/PDF assets | 27 |
+| Asset originalUrls recovered in manifest | 276 |
 
 Do not treat the migration as complete while any route, asset, document or link remains `partial`, `missing`, `needs-review`, `inventory-only`, `thumbnail-or-variant` or `local-only`.
 
@@ -173,8 +173,8 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 322 |
 | Live sitemap unique image URLs | 275 |
-| Local migrated image assets | 259 |
-| Sitemap images classified migrated | 269 |
+| Local migrated image assets | 260 |
+| Sitemap images classified migrated | 270 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
 | Sitemap images missing local match | 0 |
@@ -202,6 +202,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /assets/fresvik/documents/pir-panel.pdf | PIR-Paneler produktblad | migrated | yes | 302439 | https://www.fresvik.no/s/PIR.pdf | Recovered likely old URL with confidence 0.50. |
 | /assets/fresvik/documents/produktblad-fresvik-skyveport.pdf | Produktblad Fresvik Skyveport | migrated | yes | 1648458 | https://www.fresvik.no/s/Produktblad-Fresvik-Skyveport.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/pur-ce-merke.pdf | Dokument | migrated | yes | 150364 | https://www.fresvik.no/s/PUR-ce-merke.pdf | Recovered likely old URL with confidence 1.00. |
+| /assets/fresvik/documents/pur-produktbladfp.pdf | Last ned produktblad | migrated | yes | 201960 | https://www.fresvik.no/s/PUR-ProduktbladFP.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/quick-start-5010exp.pdf | Quick Start 5010Exp | migrated | yes | 1001335 | https://www.fresvik.no/s/Quick-Start-5010Exp-indB.pdf | Recovered likely old URL with confidence 0.75. |
 | /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf | Dokument | migrated | yes | 58526 | https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf | Dokument | migrated | yes | 253758 | https://www.fresvik.no/s/7060s-fnfz.pdf | Recovered likely old URL with confidence 0.33. |
@@ -215,10 +216,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 308 |
+| Internal link references | 313 |
 | OK routes | 161 |
 | Redirect links | 0 |
-| Asset links OK | 147 |
+| Asset links OK | 152 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -231,6 +232,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | https://sintefcertification.no/Product/Index/129 | src/data/pages.ts: | certification/documentation | keep |
 | https://www.sintefcertification.no/Product/Index/129 | src/data/pages.ts: | certification/documentation | keep |
 | https://rapportering.miljofyrtarn.no/stats/176324 | src/data/pages.ts: | external-reference | keep |
+| https://www.gasta.no/ | src/data/pages.ts: | external-reference | keep |
 | https://www.fresvik.no/ | src/data/pages.ts: | source-url | keep |
 | https://www.gasta.no | src/data/pages.ts: | external-reference | keep |
 | https://www.fresvik.no/produkt/fresvik-pir-panel | src/data/pages.ts: | source-url | keep |

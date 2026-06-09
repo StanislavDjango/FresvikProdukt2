@@ -466,6 +466,7 @@
       "/produkt",
       "/produkt/fasadepanel",
       "/produkt/fresvik-pir-panel",
+      "/produkt/fresvik-pur-panel",
       "/produkt/frysetunnel",
       "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar",
@@ -490,6 +491,7 @@
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/personvernerklering",
       "https://www.fresvik.no/produkt/fasadepanel",
+      "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel",
       "https://www.fresvik.no/produkt/frysetunnel",
       "https://www.fresvik.no/produkt/kjole-frysedorer",
@@ -515,6 +517,26 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
     "notes": "Uploaded to Sanity as file-9d7fe2cee10add3c304f9a47a0a25b2301674447-pdf."
+  },
+  {
+    "originalUrl": "https://www.fresvik.no/s/PUR-ProduktbladFP.pdf",
+    "localPath": "/assets/fresvik/documents/pur-produktbladfp.pdf",
+    "filePath": "public/assets/fresvik/documents/pur-produktbladfp.pdf",
+    "assetType": "document",
+    "usedBy": [
+      "/produkt/fresvik-pur-panel",
+      "documentFile-assets-fresvik-documents-pur-produktbladfp-pdf"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-panel"
+    ],
+    "sha256": "869a4678758ac9fc22f22e412c0e22a31fc1b51457a5f9a4263c67221e51a7df",
+    "fileSize": 201960,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "file asset",
+    "notes": "Recovered likely originalUrl from local source data."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Quick-Start-5010Exp-indB.pdf",
@@ -561,6 +583,7 @@
       "/produkt",
       "/produkt/fasadepanel",
       "/produkt/fresvik-pir-panel",
+      "/produkt/fresvik-pur-panel",
       "/produkt/frysetunnel",
       "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar",
@@ -585,6 +608,7 @@
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/personvernerklering",
       "https://www.fresvik.no/produkt/fasadepanel",
+      "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel",
       "https://www.fresvik.no/produkt/frysetunnel",
       "https://www.fresvik.no/produkt/kjole-frysedorer",
@@ -1243,7 +1267,6 @@
       "/produkt/fasadepanel",
       "/produkt/fresvik-panel",
       "/produkt/fresvik-pir-panel",
-      "/produkt/fresvik-pur-panel",
       "/produkt/frysetunnel",
       "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar",
@@ -2262,12 +2285,14 @@
       "/",
       "/aktuelt",
       "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn",
-      "/produkt/fresvik-pir-panel"
+      "/produkt/fresvik-pir-panel",
+      "/produkt/fresvik-pur-panel"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
       "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn",
+      "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel"
     ],
     "sha256": "35963d67a5a5041e814bbd71a2457b8e5f5656ec6fa795870a5c122d3e1c25af",
@@ -3100,9 +3125,11 @@
     "filePath": "public/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
     "assetType": "image",
     "usedBy": [
-      "/produkt/fresvik-pir-panel"
+      "/produkt/fresvik-pir-panel",
+      "/produkt/fresvik-pur-panel"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel"
     ],
     "sha256": "6140421f2b6b3818b2fdf2a800c450e0c5533113309efb87da0b52c8d26970bd",
@@ -3373,11 +3400,13 @@
     "usedBy": [
       "/",
       "/kjolerom-fryserom-offshore",
-      "/produkt/fresvik-pir-panel"
+      "/produkt/fresvik-pir-panel",
+      "/produkt/fresvik-pur-panel"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
       "https://www.fresvik.no/kjolerom-fryserom-offshore",
+      "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel"
     ],
     "sha256": "5b1170a00cc0cbef5a95003c900c70d453ec000d40e744a15f5e7e27c351fba1",
@@ -3971,9 +4000,11 @@
     "assetType": "image",
     "usedBy": [
       "/produkt/fresvik-pir-panel",
+      "/produkt/fresvik-pur-panel",
       "/produkt/kjole-fryseportar"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
     ],
@@ -4056,10 +4087,12 @@
     "assetType": "image",
     "usedBy": [
       "/kjolerom-fryserom-offshore",
+      "/produkt/fresvik-pur-panel",
       "/produkt/frysetunnel"
     ],
     "sourcePages": [
       "https://www.fresvik.no/kjolerom-fryserom-offshore",
+      "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/frysetunnel"
     ],
     "sha256": "ce537f1b1c47bc74a4493b0a0040dc2ad4b29ca9a026e379ce0bc2e5941f995a",
@@ -4695,10 +4728,12 @@
     "filePath": "public/assets/fresvik/images/old-site/home-poly.png",
     "assetType": "image",
     "usedBy": [
-      "/"
+      "/",
+      "/produkt/fresvik-pur-panel"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/"
+      "https://www.fresvik.no/",
+      "https://www.fresvik.no/produkt/fresvik-panel"
     ],
     "sha256": "2b6b3b595661934307cf8fab8884ac53e32f5a30ce2b5c630749e393d419b5fe",
     "fileSize": 4420,
@@ -4721,10 +4756,12 @@
     "assetType": "image",
     "usedBy": [
       "/",
-      "/produkt/fresvik-pir-panel"
+      "/produkt/fresvik-pir-panel",
+      "/produkt/fresvik-pur-panel"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
+      "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel"
     ],
     "sha256": "3d57740b69f180b4d7a670142c455e78cf45c47335fa8a41d5913aefc3345ef5",
@@ -4747,10 +4784,12 @@
     "filePath": "public/assets/fresvik/images/old-site/home-startbank.png",
     "assetType": "image",
     "usedBy": [
-      "/"
+      "/",
+      "/produkt/fresvik-pur-panel"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/"
+      "https://www.fresvik.no/",
+      "https://www.fresvik.no/produkt/fresvik-panel"
     ],
     "sha256": "4d57fc11a3e0b82763a0dca92d36309d7116c8e4f8f44be32a5e7a6ec7143386",
     "fileSize": 13922,
@@ -4839,9 +4878,11 @@
     "filePath": "public/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/produkt/fresvik-pir-panel"
+      "/produkt/fresvik-pir-panel",
+      "/produkt/fresvik-pur-panel"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel"
     ],
     "sha256": "91476c0417c3a69b658ceb50de2bfa3672679883cc68a737295431778fbda740",
@@ -5510,9 +5551,11 @@
     "assetType": "image",
     "usedBy": [
       "/produkt/fresvik-pir-panel",
+      "/produkt/fresvik-pur-panel",
       "/produkt/frysetunnel"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel",
       "https://www.fresvik.no/produkt/frysetunnel"
     ],
@@ -5694,6 +5737,25 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Uploaded to Sanity as image-441a9d027917311646628415b8146e23f8d409b0-2500x1625-webp."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/pur-video-file.png",
+    "filePath": "public/assets/fresvik/images/old-site/pur-video-file.png",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/fresvik-pur-panel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-panel"
+    ],
+    "sha256": "627cbe8f03a805dfbe742cc55f60e6a671f76bb12664bc44731839ecc4666cdc",
+    "fileSize": 8018,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429110160-6F1ROKOETGXSA6EXEYHF/Queen-Elisabeth-II.png",
@@ -6093,11 +6155,13 @@
     "usedBy": [
       "/",
       "/kjolerom-fryserom-offshore",
-      "/produkt/fresvik-pir-panel"
+      "/produkt/fresvik-pir-panel",
+      "/produkt/fresvik-pur-panel"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
       "https://www.fresvik.no/kjolerom-fryserom-offshore",
+      "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel"
     ],
     "sha256": "96c63f297fad91792ddddbe61e416a8af20962a3c03d41afb0a41e52bceae6f1",

@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-06-09T22:58:37.069Z
+Generated: 2026-06-09T23:24:22.737Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -62,7 +62,7 @@ Next batch: `none`
 | products | /andre-produkter/pego-innestengningsalarm | redirect | 0/0 | 1/0 | 0/0 | 1/0 | Redirects to /tilleggsutstyr. |
 | products | /andre-produkter/pvc-gardiner | redirect | 0/0 | 1/0 | 0/0 | 1/0 | Redirects to /tilleggsutstyr. |
 | products | /andre-produkter/standard-handtak | redirect | 0/0 | 1/0 | 0/0 | 1/0 | Redirects to /tilleggsutstyr. |
-| products | /produkt/fresvik-panel | redirect | 0/0 | 1/0 | 0/0 | 1/0 | Redirects to /produkt/fresvik-pur-panel. |
+| products | /produkt/fresvik-panel | redirect | 0/0 | 13/0 | 3/0 | 1/0 | Redirects to /produkt/fresvik-pur-panel. |
 | products | /produktfoto | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /produkt. |
 | products | /store | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /tilleggsutstyr. |
 | products | /store/p/dr-tiltrekker-diktator | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /tilleggsutstyr. |

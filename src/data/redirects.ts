@@ -151,6 +151,11 @@ export const redirectRules: RedirectRule[] = [
     permanent: true,
   },
   {
+    source: "/s/PUR-ProduktbladFP.pdf",
+    destination: "/assets/fresvik/documents/pur-produktbladfp.pdf",
+    permanent: true,
+  },
+  {
     source: "/s/PUR-ce-merke.pdf",
     destination: "/assets/fresvik/documents/pur-ce-merke.pdf",
     permanent: true,

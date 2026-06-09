@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-09T22:58:37.069Z",
+    "generatedAt": "2026-06-09T23:24:22.737Z",
     "routeCount": 106,
     "statusCounts": {
       "migrated": 71,
@@ -806,9 +806,9 @@
       "oldWordCount": 0,
       "localWordCount": 133,
       "oldImageCount": 0,
-      "localImageCount": 1,
+      "localImageCount": 13,
       "oldDocumentCount": 0,
-      "localDocumentCount": 0,
+      "localDocumentCount": 3,
       "ignoredOldDocumentCount": 0,
       "ignoredOldDocumentReasons": [],
       "oldInternalLinkCount": 0,

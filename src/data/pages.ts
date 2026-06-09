@@ -674,51 +674,6 @@ const transportDamageSections: Section[] = [
   },
 ];
 
-const commonPanelBenefits: ContentCard[] = [
-  {
-    title: "Utvikla og produsert i Norge",
-    text:
-      "Panelinnhaldet er henta frå gamle produktsider. Fresvik legg vekt på norsk utvikling, produksjon og kort leveranseveg.",
-  },
-  {
-    title: "Enkel montasje med eksenterlås",
-    text:
-      "Fresvik-panel er basert på eit fleksibelt modulsystem med eksenterlås i overgangane.",
-  },
-  {
-    title: "Modulmål gir mindre svinn",
-    text:
-      "Fleksible modulmål og kundetilpassing skal bidra til mindre svinn og avfall på byggeplassen.",
-  },
-  {
-    title: "Hygienisk overflate",
-    text:
-      "Panela har hygienisk overflate. Standard overflate er 0,55 mm galvanisert stålplate med 25 µm polyester, type FoodSafe.",
-  },
-];
-
-const purTechnicalCards: ContentCard[] = [
-  {
-    title: "Kjerne og tykkelse",
-    text:
-      "Sandwichelement med oppskumma polyuretan som kjerne. Tykkelse: 75, 100, 125, 150 og 175 mm.",
-  },
-  {
-    title: "Densitet og vekt",
-    text: "Densitet: 40 (+/-3) kg/m3. Vekt ca. 13 - 17 kg/m2.",
-  },
-  {
-    title: "U-verdi og temperatur",
-    text:
-      "U-verdi/termisk transmittans: 0.13 - 0.29 W/(m²K). Temperatur: -40°C til +120°C.",
-  },
-  {
-    title: "Fleksible mål",
-    text:
-      "Fleksibel romhøgde i trinn på 50 mm opptil 8000 mm, og fleksibel modulbredde i trinn på 300 mm.",
-  },
-];
-
 const pirDocuments: ContentCard[] = [
   {
     title: "PIR-Paneler produktblad",
@@ -754,6 +709,36 @@ const pirDocuments: ContentCard[] = [
     title: "PUR-ce-merke.pdf",
     text:
       "CE-dokumentlenke vist i botn av gammal PIR-side. Gammal URL: https://www.fresvik.no/s/PUR-ce-merke.pdf.",
+    href: "/assets/fresvik/documents/pur-ce-merke.pdf",
+  },
+];
+
+const purDocuments: ContentCard[] = [
+  {
+    title: "Last ned produktblad",
+    text:
+      "Produktblad frå gammal PUR-side. Gammal URL: https://www.fresvik.no/s/PUR-ProduktbladFP.pdf.",
+    href: "/assets/fresvik/documents/pur-produktbladfp.pdf",
+    imageUrl: "/assets/fresvik/images/old-site/file-f5f844b125.png",
+    imageAlt: "Last ned produktblad",
+  },
+  {
+    title: "Produktblad-ikon frå gammal side",
+    text:
+      "Bildeelement frå gammal PUR-side i området ved produktblad-nedlasting.",
+    imageUrl: "/assets/fresvik/images/old-site/pur-video-file.png",
+    imageAlt: "Produktblad-ikon frå gammal PUR-side",
+  },
+  {
+    title: "Sentral Godkjenning Fresvik Produkt",
+    text:
+      "Dokumentlenke frå gammal PUR-side. Gammal URL: https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf.",
+    href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+  },
+  {
+    title: "PUR-ce-merke.pdf",
+    text:
+      "CE-dokumentlenke vist i botn av gammal PUR-side. Gammal URL: https://www.fresvik.no/s/PUR-ce-merke.pdf.",
     href: "/assets/fresvik/documents/pur-ce-merke.pdf",
   },
 ];
@@ -1076,14 +1061,188 @@ const pirSections = [
 
 const purSections = [
   {
-    title: "Produktfordelar frå gammal side",
+    title: "Full tekst frå gammal side",
     intro:
-      "Fresvik PUR-Panel er eit sandwichelement med oppskumma polyuretan som kjerne, innkapsla mellom to stålplater.",
-    items: commonPanelBenefits,
+      "Kjeldetekst henta manuelt frå https://www.fresvik.no/produkt/fresvik-panel 2026-06-10.",
+    items: [
+      {
+        title: "Fresvik PUR-Panel til kjøle- og fryserom",
+        text:
+          "Fresvik Produkt har produsert kjøle- og fryserom sidan 1980, og er i dag den einaste norske produsenten av isolasjonspanel til kjøle- og fryserom.\n\nFresvik kjøle- og fryserom blir levert med veggar, golv, tak og dørar eller portar. Vår storleik, kombinert med ei bevisst satsing på fleksible produksjonsløysingar, set oss i stand til å levere kundetilpassa løysingar.\n\nFresvik PUR-Panel er eit sandwichelement med oppskumma polyuretan som kjerne, innkapsla mellom to stålplater.",
+        imageUrl: "/assets/fresvik/images/old-site/flake-black-3b186da893.png",
+        imageAlt: "Fresvik PUR-Panel",
+      },
+    ],
+  },
+  {
+    title: "Produktfordelar frå gammal side",
+    intro: "Fordelane er henta frå gammal PUR-side utan omskriving.",
+    items: [
+      {
+        title: "Utvikla og produsert i Norge",
+        text: "Utvikla og produsert i Norge.",
+      },
+      {
+        title: "SINTEF-godkjent",
+        text: "SINTEF-godkjent.",
+      },
+      {
+        title: "Fleksibelt på byggeplass",
+        text: "Fleksibelt på byggeplass.",
+      },
+      {
+        title: "Enkel montasje med eksenterlås",
+        text: "Enkel montasje med eksenterlås.",
+      },
+      {
+        title: "Modulmål gir mindre svinn",
+        text: "Modulmål gir mindre svinn.",
+      },
+      {
+        title: "Kort design-, produksjons- og leveringstid",
+        text: "Kort design-, produksjons- og leveringstid.",
+      },
+    ],
   },
   {
     title: "Tekniske data",
-    items: purTechnicalCards,
+    items: [
+      {
+        title: "Høgtrykkskum av PUR (polyuretan)",
+        text:
+          "Brannklasse: C-s3, d0\n\nTykkelse: 75, 100, 125, 150 og 175 mm\n\nDensitet: 40 (+/-3) kg/m3\n\nVekt (ca.): 13 - 17 kg/m2\n\nU-verdi/termisk transmittans: 0.13 - 0.29 W/(m²K)\n\nTemperatur: -40°C til +120°C\n\nFleksibel romhøgde (trinn på 50 mm, opptil 8000 mm)\n\nFleksibel modulbredde (trinn på 300 mm)",
+      },
+      {
+        title: "Konstruksjon",
+        text:
+          "Fresvik-panel er basert på eit fleksibelt modulsystem med eksenterlås i overgangane. Panela har ei hygienisk overflate.",
+        imageUrl: "/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg",
+        imageAlt: "Konstruksjon av Fresvik PUR-Panel",
+      },
+      {
+        title: "Isolasjon",
+        text:
+          "Høytrykkskumma polyuretan, ca. 40-45 kg/m3. Tilfredsstiller gjeldande miljøkrav.",
+        imageUrl: "/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg",
+        imageAlt: "Isolasjon i Fresvik PUR-Panel",
+      },
+      {
+        title: "Overflate",
+        text:
+          "Standard overflate i 0,55 mm galvanisert stålplate med 25 µm polyester, type FoodSafe.\n\nOverflate kan leverast i rustfritt stål, syrefast stål, glassfiber-armert polyester eller andre platetypar.",
+        imageUrl: "/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
+        imageAlt: "Overflate på Fresvik PUR-Panel",
+      },
+    ],
+  },
+  {
+    title: "Dokument",
+    items: purDocuments,
+  },
+  {
+    title: "For samarbeidspartnarar",
+    intro:
+      "Vår visjon er å vere den beste samarbeidspartnaren for deg som kjøleentreprenør. Ønskjer du meir informasjon om produkta våre, ta gjerne kontakt med oss.",
+    items: [
+      {
+        title: "Har du eit prosjekt du vil diskutere med oss?",
+        text: "Ta kontakt.",
+        href: "/kontakt",
+      },
+    ],
+  },
+  {
+    title: "Kontaktinformasjon frå gammal side",
+    intro: "Kontaktblokkane under låg synleg på den gamle PUR-sida.",
+    items: [
+      {
+        title: "Fresvik Produkt AS",
+        text:
+          "Fresvikvegen 995,\n6896 Fresvik\nTel: 57 69 83 00\nE-post: post@fresvik.no",
+      },
+      {
+        title: "Salsavdeling Fresvik",
+        text:
+          "Arne-Olav Lien Bardølsgård\nMob: 99 55 25 49\narnbar@fresvik.no",
+      },
+      {
+        title: "Salsavdeling Drammen",
+        text:
+          "Lars Erling Livrud\nMob: 40 47 79 12\nlarliv@fresvik.no",
+      },
+      {
+        title: "Frode Winther",
+        text: "Frode Winther\nMob: 91 38 39 49\nfrowin@fresvik.no",
+      },
+    ],
+  },
+  {
+    title: "Nyheitsbrev og footerlenker frå gammal side",
+    intro:
+      "Motta nyheitsbrev. Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen. Sjå vår personvernerklæring.",
+    items: [
+      {
+        title: "Personvernerklæring",
+        text: "Footer-lenke frå gammal PUR-side.",
+        href: "/personvernerklering",
+      },
+      {
+        title: "Openheitslova",
+        text: "Footer-lenke frå gammal PUR-side.",
+        href: "/openheitslova",
+      },
+      {
+        title: "Nettside levert av GASTA",
+        text: "Ekstern footer-lenke frå gammal PUR-side.",
+        href: "https://www.gasta.no/",
+      },
+    ],
+  },
+  {
+    title: "Sertifikat- og botnlenker frå gammal side",
+    intro: "Lenker og merke som låg i botnområdet på gammal PUR-side.",
+    items: [
+      {
+        title: "Sentral godkjenning",
+        text: "Dokument frå gammal PUR-side.",
+        href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+        imageAlt: "Sentral godkjenning",
+      },
+      {
+        title: "SINTEF Certification TG 2135",
+        text: "Ekstern lenke frå gammal PUR-side.",
+        href: "https://www.sintefcertification.no/Product/Index/129",
+        imageUrl: "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+        imageAlt: "TG 2135",
+      },
+      {
+        title: "Polyurethan",
+        text: "Merke frå gammal PUR-side.",
+        imageUrl: "/assets/fresvik/images/old-site/home-poly.png",
+        imageAlt: "Polyurethan isolerer betre",
+      },
+      {
+        title: "StartBANK",
+        text: "Merke frå gammal PUR-side.",
+        imageUrl: "/assets/fresvik/images/old-site/home-startbank.png",
+        imageAlt: "StartBANK",
+      },
+      {
+        title: "Miljøfyrtårn",
+        text: "Ekstern lenke frå gammal PUR-side.",
+        href: "https://rapportering.miljofyrtarn.no/stats/176324",
+        imageUrl: "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
+        imageAlt: "Miljøfyrtårn",
+      },
+      {
+        title: "PUR CE-merke",
+        text: "Dokument frå gammal PUR-side.",
+        href: "/assets/fresvik/documents/pur-ce-merke.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+        imageAlt: "CE-logo",
+      },
+    ],
   },
 ];
 
@@ -1456,21 +1615,17 @@ export const contentPages: ContentPage[] = [
   },
   {
     slug: "/produkt/fresvik-pur-panel",
-    title: "Fresvik PUR Panel",
+    title: "Fresvik PUR-Panel til kjøle- og fryserom",
     eyebrow: "Produkt",
     intro:
-      "Sandwichelement med oppskumma polyuretan som kjerne, innkapsla mellom to stålplater.",
+      "Fresvik Produkt har produsert kjøle- og fryserom sidan 1980, og er i dag den einaste norske produsenten av isolasjonspanel til kjøle- og fryserom.",
     description:
-      "Fresvik PUR Panel med tekniske data og produktfordelar frå gammal Fresvik Panel-side.",
+      "Fresvik PUR-Panel tilbyr isolasjonspanel til kjøle- og fryserom, produsert i Norge med fleksible løsninger, enkel montering og miljøvennlig design.",
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/fresvik-panel",
-    cards: oldProductCards.filter((item) => item.href === "/produkt/fresvik-panel"),
+    cards: [],
     sections: purSections,
-    todo: [
-      "Redirect frå `/produkt/fresvik-panel` til `/produkt/fresvik-pur-panel` er lagt til i app-logikk, men bør også vurderast som permanent redirect før lansering.",
-      "Importer produktbilete og eventuelle PDF-ar til Sanity assets.",
-    ],
   },
   {
     slug: "/produkt/kjole-fryseportar",
@@ -2244,6 +2399,7 @@ const legacyDocumentHrefMap: Record<string, string> = {
     "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
   "/s/PIR-ProduktbladFP.pdf": "/assets/fresvik/documents/pir-panel.pdf",
   "/s/PIR.pdf": "/assets/fresvik/documents/pir-panel.pdf",
+  "/s/PUR-ProduktbladFP.pdf": "/assets/fresvik/documents/pur-produktbladfp.pdf",
   "/s/PUR-ce-merke.pdf": "/assets/fresvik/documents/pur-ce-merke.pdf",
   "/s/Produktblad-Fresvik-Skyveport.pdf":
     "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",

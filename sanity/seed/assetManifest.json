@@ -391,7 +391,7 @@
     },
     "status": "duplicate",
     "targetSanityType": "file asset",
-    "notes": "Duplicate file content of /assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf."
+    "notes": "Duplicate file content of /assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf. Unused local migration cache file; keep until asset review is complete."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/PIR.pdf",
@@ -1181,10 +1181,12 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/elebar-ventil",
+      "/produkt/fresvik-pir-panel",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/elebar-ventil",
+      "https://www.fresvik.no/produkt/fresvik-pir-panel",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "2108946c8b8845302cd0f8a5f3d1cc0b7978bbb30094afa76a299c051743d45f",
@@ -2229,10 +2231,12 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/maxielebar-ventil",
+      "/produkt/fresvik-pir-panel",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/maxielebar-ventil",
+      "https://www.fresvik.no/produkt/fresvik-pir-panel",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "b6bc673ded991ac133b20647136e8363c9abe4a4efcb11151d77bda7982a2af1",
@@ -2257,12 +2261,14 @@
     "usedBy": [
       "/",
       "/aktuelt",
-      "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn"
+      "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn",
+      "/produkt/fresvik-pir-panel"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
       "https://www.fresvik.no/aktuelt",
-      "https://www.fresvik.no/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn"
+      "https://www.fresvik.no/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn",
+      "https://www.fresvik.no/produkt/fresvik-pir-panel"
     ],
     "sha256": "35963d67a5a5041e814bbd71a2457b8e5f5656ec6fa795870a5c122d3e1c25af",
     "fileSize": 338293,
@@ -2389,10 +2395,12 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/pego-innestengningsalarm",
+      "/produkt/fresvik-pir-panel",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/pego-innestengningsalarm",
+      "https://www.fresvik.no/produkt/fresvik-pir-panel",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "d41c5a71df1f00436bb719d6b2ba0bb6b3c1f4e7111a3bff4279aef247f80bff",
@@ -3091,12 +3099,8 @@
     "localPath": "/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
     "filePath": "public/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
     "assetType": "image",
-    "usedBy": [
-      "/produkt/fresvik-pir-panel"
-    ],
-    "sourcePages": [
-      "https://www.fresvik.no/produkt/fresvik-pir-panel"
-    ],
+    "usedBy": [],
+    "sourcePages": [],
     "sha256": "6140421f2b6b3818b2fdf2a800c450e0c5533113309efb87da0b52c8d26970bd",
     "fileSize": 8578,
     "sanityAssetId": "image-6662fe24a6a65820e955efb56edf4c5ec14d8352-544x672-webp",
@@ -3109,7 +3113,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-6662fe24a6a65820e955efb56edf4c5ec14d8352-544x672-webp."
+    "notes": "Uploaded to Sanity as image-6662fe24a6a65820e955efb56edf4c5ec14d8352-544x672-webp. Unused local migration cache file; keep until asset review is complete."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d1e8ab46-e86a-4e94-a140-75a4bf64054d/aaa.jpg",
@@ -3364,11 +3368,13 @@
     "assetType": "image",
     "usedBy": [
       "/",
-      "/kjolerom-fryserom-offshore"
+      "/kjolerom-fryserom-offshore",
+      "/produkt/fresvik-pir-panel"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
-      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+      "https://www.fresvik.no/kjolerom-fryserom-offshore",
+      "https://www.fresvik.no/produkt/fresvik-pir-panel"
     ],
     "sha256": "5b1170a00cc0cbef5a95003c900c70d453ec000d40e744a15f5e7e27c351fba1",
     "fileSize": 24072,
@@ -4710,10 +4716,12 @@
     "filePath": "public/assets/fresvik/images/old-site/home-sentral-godkjent.png",
     "assetType": "image",
     "usedBy": [
-      "/"
+      "/",
+      "/produkt/fresvik-pir-panel"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/"
+      "https://www.fresvik.no/",
+      "https://www.fresvik.no/produkt/fresvik-pir-panel"
     ],
     "sha256": "3d57740b69f180b4d7a670142c455e78cf45c47335fa8a41d5913aefc3345ef5",
     "fileSize": 10784,
@@ -5421,12 +5429,8 @@
     "localPath": "/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
     "filePath": "public/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
     "assetType": "image",
-    "usedBy": [
-      "/produkt/fresvik-pir-panel"
-    ],
-    "sourcePages": [
-      "https://www.fresvik.no/produkt/fresvik-pir-panel"
-    ],
+    "usedBy": [],
+    "sourcePages": [],
     "sha256": "1fb8c9fbc9b08f42939890e8f29fa678480769b18d6a6f01d13ee4e1cb78f23d",
     "fileSize": 20212,
     "sanityAssetId": "image-98430dd0ff862231f37304216bd18608bc3a1601-2121x1501-webp",
@@ -5439,7 +5443,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-98430dd0ff862231f37304216bd18608bc3a1601-2121x1501-webp."
+    "notes": "Uploaded to Sanity as image-98430dd0ff862231f37304216bd18608bc3a1601-2121x1501-webp. Unused local migration cache file; keep until asset review is complete."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/77b0a4a1-facb-46df-8cca-95a14e4374c7/Maintenance.png",
@@ -6080,11 +6084,13 @@
     "assetType": "image",
     "usedBy": [
       "/",
-      "/kjolerom-fryserom-offshore"
+      "/kjolerom-fryserom-offshore",
+      "/produkt/fresvik-pir-panel"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
-      "https://www.fresvik.no/kjolerom-fryserom-offshore"
+      "https://www.fresvik.no/kjolerom-fryserom-offshore",
+      "https://www.fresvik.no/produkt/fresvik-pir-panel"
     ],
     "sha256": "96c63f297fad91792ddddbe61e416a8af20962a3c03d41afb0a41e52bceae6f1",
     "fileSize": 82194,

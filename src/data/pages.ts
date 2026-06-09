@@ -697,28 +697,6 @@ const commonPanelBenefits: ContentCard[] = [
   },
 ];
 
-const pirTechnicalCards: ContentCard[] = [
-  {
-    title: "Kjerne og tykkelse",
-    text:
-      "Sandwichelement med oppskumma PIR-skum som kjerne. Tykkelse: 75, 100, 125, 150 og 175 mm.",
-  },
-  {
-    title: "Densitet og vekt",
-    text: "Densitet: 43 (+/-3) kg/m3. Vekt ca. 14 - 18.5 kg/m2.",
-  },
-  {
-    title: "U-verdi og temperatur",
-    text:
-      "U-verdi/termisk transmittans: 0.14 - 0.29 W/(m²K). Temperatur: -40°C til +70°C.",
-  },
-  {
-    title: "Fleksible mål",
-    text:
-      "Fleksibel romhøgde i trinn på 50 mm opptil 8000 mm, og fleksibel modulbredde i trinn på 300 mm.",
-  },
-];
-
 const purTechnicalCards: ContentCard[] = [
   {
     title: "Kjerne og tykkelse",
@@ -744,13 +722,39 @@ const purTechnicalCards: ContentCard[] = [
 const pirDocuments: ContentCard[] = [
   {
     title: "PIR-Paneler produktblad",
-    text: "Produktblad funne på gammal Fresvik PIR-Panel-side.",
+    text:
+      "Produktblad frå gammal PIR-side. Gammal URL: https://www.fresvik.no/s/PIR.pdf.",
+    href: "/assets/fresvik/documents/pir-panel.pdf",
+  },
+  {
+    title: "PIR-ProduktbladFP.pdf",
+    text:
+      "Ekstra produktbladlenke funnen på gammal PIR-side. Gammal URL: https://www.fresvik.no/s/PIR-ProduktbladFP.pdf. Lokal fil peikar til same migrerte produktblad.",
     href: "/assets/fresvik/documents/pir-panel.pdf",
   },
   {
     title: "PIR-Paneler montasjeanvisning",
-    text: "Montasjeanvisning funne på gammal Fresvik PIR-Panel-side.",
+    text:
+      "Montasjeanvisning funne på gammal PIR-side. Gammal URL: https://www.fresvik.no/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf.",
+    href: "/assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf",
+  },
+  {
+    title: "PIR-Paneler montasjeanvisning (legacy duplicate)",
+    text:
+      "Duplikat i lokal migration cache av same montasjeanvisning. Behalde for sporbarheit fram til Sanity asset-verifisering er ferdig.",
     href: "/assets/fresvik/documents/pir-panel-montasjeanvisning.pdf",
+  },
+  {
+    title: "Sentral Godkjenning Fresvik Produkt",
+    text:
+      "Dokumentlenke frå gammal PIR-side. Gammal URL: https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf.",
+    href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+  },
+  {
+    title: "PUR-ce-merke.pdf",
+    text:
+      "CE-dokumentlenke vist i botn av gammal PIR-side. Gammal URL: https://www.fresvik.no/s/PUR-ce-merke.pdf.",
+    href: "/assets/fresvik/documents/pur-ce-merke.pdf",
   },
 ];
 
@@ -868,18 +872,199 @@ const electricSkyveportDownloads: ContentCard[] = [
 
 const pirSections = [
   {
+    title: "Full tekst frå gammal side",
+    intro:
+      "Kjeldetekst henta manuelt frå https://www.fresvik.no/produkt/fresvik-pir-panel 2026-06-10.",
+    items: [
+      {
+        title: "Fresvik PIR-Panel til kjøle- og fryserom",
+        text:
+          "Fresvik Produkt har produsert kjøle- og fryserom sidan 1980, og er i dag den einaste norske produsenten av isolasjonspanel til kjøle- og fryserom.\n\nFresvik kjøle- og fryserom blir levert med veggar, golv, tak og dørar eller portar. Vår storleik, kombinert med ei bevisst satsing på fleksible produksjonsløysingar, set oss i stand til å levere kundetilpassa løysingar.\n\nFresvik PIR-Panel er eit sandwichelement med oppskumma PIR-skum (Polyisocyanurat-skum) som kjerne, innkapsla mellom to stålplater.",
+        imageUrl: "/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg",
+        imageAlt: "Fresvik PIR-Panel til kjøle- og fryserom",
+      },
+    ],
+  },
+  {
     title: "Produktfordelar frå gammal side",
     intro:
-      "Fresvik PIR-Panel er eit sandwichelement med oppskumma PIR-skum som kjerne, innkapsla mellom to stålplater.",
-    items: commonPanelBenefits,
+      "Fordelane er henta frå gammal PIR-side utan omskriving.",
+    items: [
+      {
+        title: "Utvikla og produsert i Norge",
+        text: "Utvikla og produsert i Norge.",
+      },
+      {
+        title: "SINTEF-godkjent",
+        text: "SINTEF-godkjent.",
+      },
+      {
+        title: "Fleksibelt på byggeplass",
+        text: "Fleksibelt på byggeplass.",
+      },
+      {
+        title: "Enkel montasje med eksenterlås",
+        text: "Enkel montasje med eksenterlås.",
+      },
+      {
+        title: "Modulmål gir mindre svinn",
+        text: "Modulmål gir mindre svinn.",
+      },
+      {
+        title: "Kort design-, produksjons- og leveringstid",
+        text: "Kort design-, produksjons- og leveringstid.",
+      },
+    ],
+  },
+  {
+    title: "Den første norske produsenten av",
+    intro: "tilpassa PIR-Panel med enkel eksenterlås",
+    items: [
+      {
+        title: "PIR-Panel",
+        text:
+          "Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås.",
+        imageUrl: "/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg",
+        imageAlt: "PIR-Panel frå gammal Fresvik-side",
+      },
+    ],
   },
   {
     title: "Tekniske data",
-    items: pirTechnicalCards,
+    items: [
+      {
+        title: "Høgtrykkskum av PIR (polyisocyanurat)",
+        text:
+          "Brannklasse: B-s1, d0\n\nTykkelse: 75, 100, 125, 150 og 175 mm\n\nDensitet: 43 (+/-3) kg/m3\n\nVekt (ca.): 14 - 18.5 kg/m2\n\nU-verdi/termisk transmittans: 0.14 - 0.29 W/(m²K)\n\nTemperatur: -40°C til +70°C\n\nFleksibel romhøgde (trinn på 50 mm, opptil 8000 mm)\n\nFleksibel modulbredde (trinn på 300 mm)",
+      },
+      {
+        title: "Konstruksjon",
+        text:
+          "Fresvik-panel er basert på eit fleksibelt modulsystem med eksenterlås i overgangane. Panela har ei hygienisk overflate.",
+      },
+      {
+        title: "Isolasjon",
+        text:
+          "Høytrykkskumma polyuretan, ca. 40-45 kg/m3. Tilfredsstiller gjeldande miljøkrav.",
+      },
+      {
+        title: "Overflate",
+        text:
+          "Standard overflate i 0,55 mm galvanisert stålplate med 25 µm polyester, type FoodSafe.\n\nOverflate kan leverast i rustfritt stål, syrefast stål, glassfiber-armert polyester eller andre platetypar.",
+      },
+    ],
   },
   {
     title: "Dokument",
     items: pirDocuments,
+  },
+  {
+    title: "Tilleggsutstyr frå gammal side",
+    intro:
+      "Gammal PIR-side lenka vidare til desse produkta under innhaldssida.",
+    items: [
+      {
+        title: "Elebar ventil",
+        text: "Lenke frå gammal PIR-side.",
+        href: "/andre-produkter/elebar-ventil",
+        imageUrl: "/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg",
+        imageAlt: "Elebar ventil",
+      },
+      {
+        title: "MaxiElebar ventil",
+        text: "Lenke frå gammal PIR-side.",
+        href: "/andre-produkter/maxielebar-ventil",
+        imageUrl: "/assets/fresvik/images/migrated/maxielebar-ventil-inne-web.jpg",
+        imageAlt: "MaxiElebar ventil",
+      },
+      {
+        title: "PEGO innestengningsalarm",
+        text: "Lenke frå gammal PIR-side.",
+        href: "/andre-produkter/pego-innestengningsalarm",
+        imageUrl: "/assets/fresvik/images/migrated/pego-innestengningsalarm-web.jpg",
+        imageAlt: "PEGO innestengningsalarm",
+      },
+      {
+        title: "Beslag",
+        text: "Lenke frå gammal PIR-side.",
+        href: "/andre-produkter/beslag",
+        imageUrl: "/assets/fresvik/images/old-site/file-f5f844b125.png",
+        imageAlt: "Beslag",
+      },
+    ],
+  },
+  {
+    title: "For samarbeidspartnarar",
+    intro:
+      "Vår visjon er å vere den beste samarbeidspartnaren for deg som kjøleentreprenør. Ønskjer du meir informasjon om produkta våre, ta gjerne kontakt med oss.",
+    items: [
+      {
+        title: "Har du eit prosjekt du vil diskutere med oss?",
+        text: "Ta kontakt.",
+        href: "/kontakt",
+      },
+    ],
+  },
+  {
+    title: "Kontaktinformasjon frå gammal side",
+    intro:
+      "Kontaktblokkane under låg synleg på den gamle PIR-sida.",
+    items: [
+      {
+        title: "Fresvik Produkt AS",
+        text:
+          "Fresvikvegen 995,\n6896 Fresvik\nTel: 57 69 83 00\nE-post: post@fresvik.no",
+      },
+      {
+        title: "Salsavdeling Fresvik",
+        text:
+          "Arne-Olav Lien Bardølsgård\nMob: 99 55 25 49\narnbar@fresvik.no",
+      },
+      {
+        title: "Salsavdeling Drammen",
+        text:
+          "Lars Erling Livrud\nMob: 40 47 79 12\nlarliv@fresvik.no",
+      },
+      {
+        title: "Frode Winther",
+        text: "Frode Winther\nMob: 91 38 39 49\nfrowin@fresvik.no",
+      },
+    ],
+  },
+  {
+    title: "Sertifikat- og botnlenker frå gammal side",
+    intro:
+      "Lenker og merke som låg i botnområdet på gammal PIR-side.",
+    items: [
+      {
+        title: "Sentral godkjenning",
+        text: "Dokument frå gammal PIR-side.",
+        href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+        imageAlt: "Sentral godkjenning",
+      },
+      {
+        title: "SINTEF Certification TG 2135",
+        text: "Ekstern lenke frå gammal PIR-side.",
+        href: "https://www.sintefcertification.no/Product/Index/129",
+        imageUrl: "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+        imageAlt: "TG 2135",
+      },
+      {
+        title: "PUR CE-merke",
+        text: "Dokument frå gammal PIR-side.",
+        href: "/assets/fresvik/documents/pur-ce-merke.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+        imageAlt: "CE-logo",
+      },
+      {
+        title: "Miljøfyrtårn",
+        text: "Ekstern lenke frå gammal PIR-side.",
+        href: "https://rapportering.miljofyrtarn.no/stats/176324",
+        imageUrl: "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
+        imageAlt: "Miljøfyrtårn",
+      },
+    ],
   },
 ];
 
@@ -1251,21 +1436,17 @@ export const contentPages: ContentPage[] = [
   },
   {
     slug: "/produkt/fresvik-pir-panel",
-    title: "Fresvik PIR Panel",
+    title: "Fresvik PIR-Panel til kjøle- og fryserom",
     eyebrow: "Produkt",
     intro:
-      "Sandwichelement med oppskumma PIR-skum som kjerne, utvikla og produsert i Norge for kjøle- og fryserom.",
+      "Fresvik Produkt har produsert kjøle- og fryserom sidan 1980, og er i dag den einaste norske produsenten av isolasjonspanel til kjøle- og fryserom.",
     description:
-      "Fresvik PIR Panel med tekniske data, produktfordelar og dokumentasjon frå gammal Fresvik-side.",
+      "Fresvik PIR-panel er et innovativt isolasjonsmateriale som gir bedre isolasjonsevne per kvadratmeter, og bedre brannsikkerhet enn PUR paneler.",
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/fresvik-pir-panel",
     cards: oldProductCards.filter((item) => item.href === "/produkt/fresvik-pir-panel"),
     sections: pirSections,
-    todo: [
-      "Importer produktbilete til Sanity assets eller lokal assets-mappe.",
-      "Kvalitetssikre tekniske data mot original PDF før endeleg lansering.",
-    ],
   },
   {
     slug: "/produkt/fresvik-pur-panel",

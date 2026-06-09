@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-09T06:18:25.381Z
+Generated: 2026-06-09T22:40:53.133Z
 
 ## Summary
 
@@ -110,7 +110,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /produkt | /produkt | page | product | yes | yes | yes | 11/6 | yes | Covered as migrated page in local data. |
 | /produkt/fasadepanel | /produkt/fasadepanel | page | product | yes | yes | yes | 3/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | /produkt/fresvik-pur-panel | redirect | product | yes | yes | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
-| /produkt/fresvik-pir-panel | /produkt/fresvik-pir-panel | page | product | yes | yes | yes | 6/7 | yes | Covered as migrated page in local data. |
+| /produkt/fresvik-pir-panel | /produkt/fresvik-pir-panel | page | product | yes | yes | yes | 11/7 | yes | Covered as migrated page in local data. |
 | /produkt/frysetunnel | /produkt/frysetunnel | page | product | yes | yes | yes | 9/8 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-frysedorer | /produkt/kjole-frysedorer | page | product | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-fryseportar | /produkt/kjole-fryseportar | page | product | yes | yes | yes | 6/8 | yes | Covered as migrated page in local data. |
@@ -185,7 +185,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | localPath | title | status | routeAvailable | fileSize | oldUrl | notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | /assets/fresvik/documents/endre-skyveretning.pdf | Endre skyveretning | migrated | yes | 174280 | https://www.fresvik.no/s/Endre-Skyveretning.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf | Dokument | migrated | yes | 1031884 | https://www.fresvik.no/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf | Recovered likely old URL with confidence 1.00. |
+| /assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf | PIR-Paneler montasjeanvisning | migrated | yes | 1031884 | https://www.fresvik.no/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf | Dør | migrated | yes | 4217580 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.67. |
 | /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf | Fryserom, Norsk/English | migrated | yes | 1929048 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf | Kjølerom, Norsk/English | migrated | yes | 1596484 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.67. |
@@ -198,7 +198,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf | Aktsemdvurdering 2024 | migrated | yes | 201642 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
 | /assets/fresvik/documents/openheitslova-rutine-plikter.pdf | Rutine for oppfylling av plikter etter Openheitslova | migrated | yes | 276631 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
 | /assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf | Utgreiing 2024 | migrated | yes | 268546 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
-| /assets/fresvik/documents/pir-panel-montasjeanvisning.pdf | PIR-Paneler montasjeanvisning | migrated | yes | 1031884 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.40. |
+| /assets/fresvik/documents/pir-panel-montasjeanvisning.pdf | PIR-Paneler montasjeanvisning (legacy duplicate) | migrated | yes | 1031884 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.40. |
 | /assets/fresvik/documents/pir-panel.pdf | PIR-Paneler produktblad | migrated | yes | 302439 | https://www.fresvik.no/s/PIR.pdf | Recovered likely old URL with confidence 0.50. |
 | /assets/fresvik/documents/produktblad-fresvik-skyveport.pdf | Produktblad Fresvik Skyveport | migrated | yes | 1648458 | https://www.fresvik.no/s/Produktblad-Fresvik-Skyveport.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/pur-ce-merke.pdf | Dokument | migrated | yes | 150364 | https://www.fresvik.no/s/PUR-ce-merke.pdf | Recovered likely old URL with confidence 1.00. |
@@ -215,10 +215,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 292 |
-| OK routes | 156 |
+| Internal link references | 305 |
+| OK routes | 161 |
 | Redirect links | 0 |
-| Asset links OK | 136 |
+| Asset links OK | 144 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -229,6 +229,8 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | url | sourcePage | purpose | status |
 | --- | --- | --- | --- |
 | https://sintefcertification.no/Product/Index/129 | src/data/pages.ts: | certification/documentation | keep |
+| https://www.sintefcertification.no/Product/Index/129 | src/data/pages.ts: | certification/documentation | keep |
+| https://rapportering.miljofyrtarn.no/stats/176324 | src/data/pages.ts: | external-reference | keep |
 | https://www.fresvik.no/ | src/data/pages.ts: | source-url | keep |
 | https://www.gasta.no | src/data/pages.ts: | external-reference | keep |
 | https://www.fresvik.no/produkt/fresvik-pir-panel | src/data/pages.ts: | source-url | keep |
@@ -265,7 +267,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | --- | --- | --- | --- | --- |
 | /produkt/fasadepanel | page | yes | 3/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | redirect | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
-| /produkt/fresvik-pir-panel | page | yes | 6/7 | yes | Covered as migrated page in local data. |
+| /produkt/fresvik-pir-panel | page | yes | 11/7 | yes | Covered as migrated page in local data. |
 | /produkt/frysetunnel | page | yes | 9/8 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-frysedorer | page | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-fryseportar | page | yes | 6/8 | yes | Covered as migrated page in local data. |

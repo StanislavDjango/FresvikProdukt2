@@ -3099,8 +3099,12 @@
     "localPath": "/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
     "filePath": "public/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/produkt/fresvik-pir-panel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-pir-panel"
+    ],
     "sha256": "6140421f2b6b3818b2fdf2a800c450e0c5533113309efb87da0b52c8d26970bd",
     "fileSize": 8578,
     "sanityAssetId": "image-6662fe24a6a65820e955efb56edf4c5ec14d8352-544x672-webp",
@@ -5429,8 +5433,12 @@
     "localPath": "/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
     "filePath": "public/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/produkt/fresvik-pir-panel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-pir-panel"
+    ],
     "sha256": "1fb8c9fbc9b08f42939890e8f29fa678480769b18d6a6f01d13ee4e1cb78f23d",
     "fileSize": 20212,
     "sanityAssetId": "image-98430dd0ff862231f37304216bd18608bc3a1601-2121x1501-webp",

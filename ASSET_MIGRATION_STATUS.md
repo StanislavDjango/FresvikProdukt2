@@ -10,7 +10,7 @@ Generated from local migration cache and source data.
 | Images | 259 |
 | PDFs/documents | 26 |
 | Other assets | 0 |
-| Used assets | 164 |
+| Used assets | 166 |
 | Unused assets | 118 |
 | Missing assets | 0 |
 | Duplicate assets | 3 |

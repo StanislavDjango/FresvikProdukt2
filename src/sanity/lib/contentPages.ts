@@ -117,6 +117,11 @@ const CONTENT_SLUGS_QUERY = defineQuery(`*[
   defined(slug.current)
 ].slug.current`);
 
+const localMigrationStructurePaths = new Set([
+  "/",
+  "/produkt/fresvik-pir-panel",
+]);
+
 const NEWS_INDEX_QUERY = defineQuery(`*[_type == "newsArticle"] | order(date desc, title asc) {
   title,
   "slug": slug.current,
@@ -405,7 +410,8 @@ function mergeContentPage(
 ): ContentPage {
   const path = pathForSlug(doc.slug);
   const ownSections = sanitySections(doc);
-  const keepLocalMigrationStructure = path === "/" && Boolean(fallback);
+  const keepLocalMigrationStructure =
+    Boolean(fallback) && localMigrationStructurePaths.has(path);
   const sanityCards = imageCard(doc);
   let sections: ContentPage["sections"];
   let cards: ContentPage["cards"];
@@ -429,16 +435,24 @@ function mergeContentPage(
 
   return {
     slug: path,
-    title: doc.title || fallback?.title || "Fresvik Produkt",
+    title:
+      keepLocalMigrationStructure && fallback
+        ? fallback.title
+        : doc.title || fallback?.title || "Fresvik Produkt",
     eyebrow: eyebrowFor(doc, fallback),
-    intro: firstUsefulText(doc) || fallback?.intro || doc.title || "Fresvik Produkt",
+    intro:
+      keepLocalMigrationStructure && fallback
+        ? fallback.intro
+        : firstUsefulText(doc) || fallback?.intro || doc.title || "Fresvik Produkt",
     description:
-      doc.seoDescription ||
-      doc.excerpt ||
-      doc.shortDescription ||
-      doc.description ||
-      fallback?.description ||
-      firstUsefulText(doc),
+      keepLocalMigrationStructure && fallback
+        ? fallback.description
+        : doc.seoDescription ||
+          doc.excerpt ||
+          doc.shortDescription ||
+          doc.description ||
+          fallback?.description ||
+          firstUsefulText(doc),
     pageType: fallback?.pageType || pageTypeFor(doc),
     priority: fallback?.priority || "medium",
     sourceUrl: doc.sourceUrl || fallback?.sourceUrl,

@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-09T22:40:53.133Z
+Generated: 2026-06-09T22:58:35.019Z
 
 ## Summary
 
@@ -110,7 +110,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /produkt | /produkt | page | product | yes | yes | yes | 11/6 | yes | Covered as migrated page in local data. |
 | /produkt/fasadepanel | /produkt/fasadepanel | page | product | yes | yes | yes | 3/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | /produkt/fresvik-pur-panel | redirect | product | yes | yes | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
-| /produkt/fresvik-pir-panel | /produkt/fresvik-pir-panel | page | product | yes | yes | yes | 11/7 | yes | Covered as migrated page in local data. |
+| /produkt/fresvik-pir-panel | /produkt/fresvik-pir-panel | page | product | yes | yes | yes | 12/7 | yes | Covered as migrated page in local data. |
 | /produkt/frysetunnel | /produkt/frysetunnel | page | product | yes | yes | yes | 9/8 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-frysedorer | /produkt/kjole-frysedorer | page | product | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-fryseportar | /produkt/kjole-fryseportar | page | product | yes | yes | yes | 6/8 | yes | Covered as migrated page in local data. |
@@ -215,10 +215,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 305 |
+| Internal link references | 308 |
 | OK routes | 161 |
 | Redirect links | 0 |
-| Asset links OK | 144 |
+| Asset links OK | 147 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -267,7 +267,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | --- | --- | --- | --- | --- |
 | /produkt/fasadepanel | page | yes | 3/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | redirect | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
-| /produkt/fresvik-pir-panel | page | yes | 11/7 | yes | Covered as migrated page in local data. |
+| /produkt/fresvik-pir-panel | page | yes | 12/7 | yes | Covered as migrated page in local data. |
 | /produkt/frysetunnel | page | yes | 9/8 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-frysedorer | page | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-fryseportar | page | yes | 6/8 | yes | Covered as migrated page in local data. |

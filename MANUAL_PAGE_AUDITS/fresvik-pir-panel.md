@@ -11,6 +11,8 @@
 
 Статус после ручной правки: `migrated`, но с оговоркой `visual-layout-not-verified`, потому что дизайн не является задачей этой фазы.
 
+Runtime note: для этой страницы локальная migration structure должна иметь приоритет над текущим Sanity-документом, потому что Sanity ещё содержит старую упрощённую версию без полного набора фото/секций.
+
 ## Section coverage
 
 | Секция старой страницы | Есть на старом сайте | Есть в новом проекте | Точный текст | Фото | Ссылки/PDF | Статус | Notes |
@@ -18,11 +20,12 @@
 | Hero/H1: `Fresvik PIR-Panel til kjøle- og fryserom` | yes | yes | yes | yes | n/a | migrated | Заголовок и intro перенесены в page title/intro и `Full tekst frå gammal side`. |
 | Main body about Fresvik production since 1980 | yes | yes | yes | yes | n/a | migrated | Три старых абзаца перенесены без пересказа. |
 | Benefit list | yes | yes | yes | n/a | n/a | migrated | Перенесены: `Utvikla og produsert i Norge`, `SINTEF-godkjent`, `Fleksibelt på byggeplass`, `Enkel montasje med eksenterlås`, `Modulmål gir mindre svinn`, `Kort design-, produksjons- og leveringstid`. |
-| Promo block: `Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås` | yes | yes | yes | yes | n/a | migrated | Добавлен отдельным блоком. |
+| Promo block: `Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås` | yes | yes | yes | yes | n/a | migrated | Добавлен отдельным блоком с PIR/B-s1,d0 баннером. |
 | Technical data | yes | yes | yes | n/a | n/a | migrated | Brannklasse, tykkelse, densitet, vekt, U-verdi, temperatur, romhøgde og modulbredde перенесены как строки старой страницы. |
 | `Konstruksjon` | yes | yes | yes | n/a | n/a | migrated | Перенесён старый текст. |
-| `Isolasjon` | yes | yes | yes | n/a | n/a | migrated | Перенесено как на старой странице, включая формулировку `polyuretan`. |
-| `Overflate` | yes | yes | yes | n/a | n/a | migrated | Перенесены обе старые строки. |
+| `Konstruksjon` photo | yes | yes | n/a | yes | n/a | migrated | Локально: `/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg`. |
+| `Isolasjon` | yes | yes | yes | yes | n/a | migrated | Перенесено как на старой странице, включая формулировку `polyuretan`. Фото: `/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg`. |
+| `Overflate` | yes | yes | yes | yes | n/a | migrated | Перенесены обе старые строки. Фото: `/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg`. |
 | Product PDF links | yes | yes | yes | n/a | yes | migrated | `/s/PIR.pdf`, `/s/PIR-ProduktbladFP.pdf`, `/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf` представлены локальными PDF. |
 | Footer/certificate document links | yes | yes | yes | yes | yes | migrated | `Sentral-Godkjenning-Fresvik-Produkt.pdf`, SINTEF external, `PUR-ce-merke.pdf`, Miljøfyrtårn external добавлены в отдельную секцию. |
 | Tilleggsutstyr teaser links | yes | yes | yes | yes | yes | migrated | `Elebar`, `MaxiElebar`, `PEGO`, `Beslag` представлены с локальными изображениями и старыми/new route ссылками. |
@@ -45,6 +48,7 @@
 | Old page image role | Local path | Status | Notes |
 |---|---|---|---|
 | Product/room image | `/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg` | migrated | Извлечено из старой PIR-страницы. |
+| PIR/B-s1,d0 banner | `/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png` | migrated | Старый верхний графический баннер PIR-Panel / B-s1,d0. |
 | PIR/product block image | `/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg` | migrated | Извлечено из старой PIR-страницы. |
 | Beslag teaser image | `/assets/fresvik/images/old-site/file-f5f844b125.png` | migrated | Извлечено из старой PIR-страницы. |
 | Elebar teaser | `/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg` | migrated | Используется для старой teaser-ссылки. |

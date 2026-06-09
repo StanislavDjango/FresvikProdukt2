@@ -924,8 +924,8 @@ const pirSections = [
         title: "PIR-Panel",
         text:
           "Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås.",
-        imageUrl: "/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg",
-        imageAlt: "PIR-Panel frå gammal Fresvik-side",
+        imageUrl: "/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
+        imageAlt: "PIR-Panel B-s1,d0",
       },
     ],
   },
@@ -941,16 +941,22 @@ const pirSections = [
         title: "Konstruksjon",
         text:
           "Fresvik-panel er basert på eit fleksibelt modulsystem med eksenterlås i overgangane. Panela har ei hygienisk overflate.",
+        imageUrl: "/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg",
+        imageAlt: "Konstruksjon av Fresvik PIR-Panel",
       },
       {
         title: "Isolasjon",
         text:
           "Høytrykkskumma polyuretan, ca. 40-45 kg/m3. Tilfredsstiller gjeldande miljøkrav.",
+        imageUrl: "/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg",
+        imageAlt: "Isolasjon i Fresvik PIR-Panel",
       },
       {
         title: "Overflate",
         text:
           "Standard overflate i 0,55 mm galvanisert stålplate med 25 µm polyester, type FoodSafe.\n\nOverflate kan leverast i rustfritt stål, syrefast stål, glassfiber-armert polyester eller andre platetypar.",
+        imageUrl: "/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
+        imageAlt: "Overflate på Fresvik PIR-Panel",
       },
     ],
   },
@@ -1445,7 +1451,7 @@ export const contentPages: ContentPage[] = [
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/fresvik-pir-panel",
-    cards: oldProductCards.filter((item) => item.href === "/produkt/fresvik-pir-panel"),
+    cards: [],
     sections: pirSections,
   },
   {

@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-09T23:24:20.639Z
+Generated: 2026-06-10T09:59:32.477Z
 
 ## Summary
 
@@ -18,7 +18,7 @@ Generated: 2026-06-09T23:24:20.639Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 260 |
+| Local image assets | 263 |
 | Local document/PDF assets | 27 |
 | Asset originalUrls recovered in manifest | 276 |
 
@@ -105,7 +105,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /kontakt | /kontakt | page | page | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /kundeservice/faq | /kundeservice/faq | page | support | yes | yes | yes | 5/5 | yes | Covered as migrated page in local data. |
 | /monteringsanvisning | /monteringsanvisning | page | document | yes | yes | yes | 6/6 | yes | Covered as migrated page in local data. |
-| /monteringsanvisningar-fresvik-skyveport | /monteringsanvisningar-fresvik-skyveport | page | document | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
+| /monteringsanvisningar-fresvik-skyveport | /monteringsanvisningar-fresvik-skyveport | page | document | yes | yes | yes | 2/1 | yes | Covered as migrated page in local data. |
 | /personvernerklering | /personvernerklering | page | legal | yes | yes | yes | 0/0 | yes | Covered as migrated page in local data. |
 | /produkt | /produkt | page | product | yes | yes | yes | 11/6 | yes | Covered as migrated page in local data. |
 | /produkt/fasadepanel | /produkt/fasadepanel | page | product | yes | yes | yes | 3/3 | yes | Covered as migrated page in local data. |
@@ -113,7 +113,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /produkt/fresvik-pir-panel | /produkt/fresvik-pir-panel | page | product | yes | yes | yes | 12/7 | yes | Covered as migrated page in local data. |
 | /produkt/frysetunnel | /produkt/frysetunnel | page | product | yes | yes | yes | 9/8 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-frysedorer | /produkt/kjole-frysedorer | page | product | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
-| /produkt/kjole-fryseportar | /produkt/kjole-fryseportar | page | product | yes | yes | yes | 6/8 | yes | Covered as migrated page in local data. |
+| /produkt/kjole-fryseportar | /produkt/kjole-fryseportar | page | product | yes | yes | yes | 13/8 | yes | Covered as migrated page in local data. |
 | /produktfoto | /produkt | redirect | product | yes | yes | no | 0/6 | no | Redirects to /produkt. |
 | /referansar | /referansar | page | reference | yes | yes | yes | 25/0 | yes | Covered as migrated page in local data. |
 | /referansar/2014/7/8/coop-extra-sogndal | /referansar/2014/7/8/coop-extra-sogndal | page | reference | yes | yes | yes | 4/3 | yes | Covered as migrated page in local data. |
@@ -173,7 +173,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 322 |
 | Live sitemap unique image URLs | 275 |
-| Local migrated image assets | 260 |
+| Local migrated image assets | 263 |
 | Sitemap images classified migrated | 270 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
@@ -216,10 +216,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 313 |
-| OK routes | 161 |
+| Internal link references | 321 |
+| OK routes | 163 |
 | Redirect links | 0 |
-| Asset links OK | 152 |
+| Asset links OK | 158 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -272,7 +272,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /produkt/fresvik-pir-panel | page | yes | 12/7 | yes | Covered as migrated page in local data. |
 | /produkt/frysetunnel | page | yes | 9/8 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-frysedorer | page | yes | 2/2 | yes | Covered as migrated page in local data. |
-| /produkt/kjole-fryseportar | page | yes | 6/8 | yes | Covered as migrated page in local data. |
+| /produkt/kjole-fryseportar | page | yes | 13/8 | yes | Covered as migrated page in local data. |
 | /tenester/leveranse | page | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /tenester/montasje | page | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /tenester/service-reservedeler | page | yes | 1/1 | yes | Covered as migrated page in local data. |

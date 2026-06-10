@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-06-09T23:24:22.737Z
+Generated: 2026-06-10T09:59:34.530Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -43,7 +43,7 @@ Next batch: `none`
 | products | /produkt/fresvik-pir-panel | migrated | 12/12 | 13/6 | 5/3 | 15/42 | Strict content evidence is covered. |
 | products | /produkt/frysetunnel | migrated | 15/15 | 9/8 | 2/0 | 27/37 | Strict content evidence is covered. |
 | products | /produkt/kjole-frysedorer | migrated | 5/5 | 2/2 | 2/0 | 27/42 | Strict content evidence is covered. |
-| products | /produkt/kjole-fryseportar | migrated | 12/12 | 6/6 | 4/2 | 32/40 | Strict content evidence is covered. |
+| products | /produkt/kjole-fryseportar | migrated | 12/12 | 14/6 | 4/2 | 13/40 | Strict content evidence is covered. |
 | products | /andre-produkter | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /tilleggsutstyr. |
 | products | /andre-produkter/2014/7/9/industri-slagdor | redirect | 0/0 | 1/0 | 0/0 | 1/0 | Redirects to /tilleggsutstyr. |
 | products | /andre-produkter/2014/7/9/skipsdrer | redirect | 0/0 | 1/0 | 0/0 | 1/0 | Redirects to /tilleggsutstyr. |
@@ -68,7 +68,7 @@ Next batch: `none`
 | products | /store/p/dr-tiltrekker-diktator | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /tilleggsutstyr. |
 | services-documents | /dokumentasjon | migrated | 1/1 | 5/1 | 9/5 | 52/42 | Strict content evidence is covered. |
 | services-documents | /monteringsanvisning | migrated | 1/1 | 6/6 | 6/4 | 40/40 | Strict content evidence is covered. |
-| services-documents | /monteringsanvisningar-fresvik-skyveport | migrated | 2/2 | 1/1 | 10/6 | 43/41 | Strict content evidence is covered. |
+| services-documents | /monteringsanvisningar-fresvik-skyveport | migrated | 2/2 | 2/1 | 10/6 | 43/41 | Strict content evidence is covered. |
 | services-documents | /tenester/leveranse | migrated | 3/3 | 2/2 | 2/0 | 27/35 | Strict content evidence is covered. |
 | services-documents | /tenester/montasje | migrated | 3/3 | 2/2 | 2/0 | 27/35 | Strict content evidence is covered. |
 | services-documents | /tenester/service-reservedeler | migrated | 2/2 | 1/1 | 2/0 | 27/35 | Strict content evidence is covered. |

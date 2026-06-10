@@ -1,6 +1,6 @@
 # Homepage Migration Audit
 
-Generated: 2026-06-09T23:24:20.639Z
+Generated: 2026-06-10T09:59:32.477Z
 
 Source old URL: https://www.fresvik.no/
 

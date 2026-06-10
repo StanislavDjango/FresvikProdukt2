@@ -746,13 +746,19 @@ const purDocuments: ContentCard[] = [
 const portDocuments: ContentCard[] = [
   {
     title: "Produktblad Fresvik Skyveport",
-    text: "Produktblad for skyveport frå gammal portside.",
+    text:
+      "Produktblad for skyveport frå gammal portside. Gammal URL: https://www.fresvik.no/s/Produktblad-Fresvik-Skyveport.pdf.",
     href: "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
+    imageUrl: "/assets/fresvik/images/old-site/file-f5f844b125.png",
+    imageAlt: "Last ned produktblad",
   },
   {
     title: "Monteringsanvisning manuell port",
-    text: "PDF for manuell portmontasje frå gammal portside.",
+    text:
+      "PDF for manuell portmontasje frå gammal portside. Gammal URL: https://www.fresvik.no/s/Fresvik-Port-Montasjeanvisning.pdf.",
     href: "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
+    imageUrl: "/assets/fresvik/images/old-site/file-f5f844b125.png",
+    imageAlt: "Monteringsanvisning manuell port",
   },
   {
     title: "Monteringsanvisning elektrisk port",
@@ -1248,50 +1254,232 @@ const purSections = [
 
 const portSections = [
   {
-    title: "Skyveport til kjøle- og fryserom",
+    title: "Full tekst frå gammal side",
     intro:
-      "Fresvik Produkt produserer kjøle- og fryseportar til næringsmiddelbransjen, engroslager og lagerbygg.",
+      "Kjeldetekst henta manuelt frå https://www.fresvik.no/produkt/kjole-fryseportar 2026-06-10.",
     items: [
       {
-        title: "Skreddarsydd etter mål",
+        title: "Skyveport til kjøle- og fryserom",
         text:
-          "Portane blir skreddarsydde ved fabrikken etter spesifikasjon frå kunde, og kan vere manuelle eller elektrisk drivne.",
-      },
-      {
-        title: "Kvalitet og isolering",
-        text:
-          "Skyveportane er kjende for kvalitet og god isoleringsevne, og er laga for slitasje og tøff behandling.",
-      },
-      {
-        title: "Tetting og varmekabel",
-        text:
-          "Beslagets løftemekanisme og gummipakningar i EPDM-kvalitet sørger for god tetting. Fryseport har doble pakningar og sjølvregulerande varmekabel.",
+          "Fresvik Produkt har lang erfaring med å produsere kjøle- og fryseportar til næringsmiddelbransjen, engroslager og lagerbygg.\n\nSkyveportar er ofte utsett for stor slitasje og må tåle tøff behandling. Fresvik skyveportar er kjende for sin kvalitet og gode isoleringsevne.\n\nVi skreddarsyr portar ved vår fabrikk etter spesifikasjon frå kunde.Skyveporten kan vere manuell eller elektrisk driven, etter behov.",
+        imageUrl: "/assets/fresvik/images/old-site/fresvik-port-hero.jpeg",
+        imageAlt: "Skyveport til kjøle- og fryserom",
       },
     ],
   },
   {
-    title: "Tekniske punkt",
+    title: "Produktfordelar frå gammal side",
+    intro:
+      "Fordelane er henta frå gammal side for kjøle- og fryseportar utan omskriving.",
+    items: [
+      {
+        title: "Manuell eller elektrisk",
+        text: "Manuell eller elektrisk.",
+      },
+      {
+        title: "Utvikla og produsert i Norge",
+        text: "Utvikla og produsert i Norge.",
+      },
+      {
+        title: "Skreddarsydd etter mål",
+        text: "Skreddarsydd etter mål.",
+      },
+      {
+        title: "Høg kvalitet og god isoleringsevne",
+        text: "Høg kvalitet og god isoleringsevne.",
+      },
+    ],
+  },
+  {
+    title: "Produktbilete frå gammal side",
+    intro: "Bileta låg i produktområdet på den gamle port-sida.",
+    items: [
+      {
+        title: "Kjøle/fryseport",
+        text: "Kjøle/fryseport.",
+        imageUrl: "/assets/fresvik/images/old-site/fresvik-skyveport-cedbd2620d.jpeg",
+        imageAlt: "Kjøle/fryseport",
+      },
+      {
+        title: "Motor",
+        text: "Motor.",
+        imageUrl:
+          "/assets/fresvik/images/old-site/motor-fresvik-elektrisk-skyveport-4124d9ef0b.jpeg",
+        imageAlt: "Motor Fresvik elektrisk skyveport",
+      },
+      {
+        title: "Lås",
+        text: "Lås.",
+        imageUrl: "/assets/fresvik/images/old-site/laas-fresvik-skyveport-217ddc424b.jpeg",
+        imageAlt: "Lås Fresvik skyveport",
+      },
+    ],
+  },
+  {
+    title: "Produktinformasjon",
     items: [
       {
         title: "Dørblad",
-        text:
-          "Galvanisert stålplate med polyesterlakkert FoodSafe-overflate. Dørblad og beslag kan leverast i rustfritt stål.",
+        text: "Galvansiert stålplate i polyesterlakkert overflate i Foodsafe kvalitet.",
       },
       {
-        title: "Kjøl og frys",
+        title: "Isolering",
         text:
-          "Frys: 100 og 125 mm skumma polyurethane. Kjøl: 75 og 100 mm skumma polyurethane.",
+          "Frys: 100 og 125 mm skumma polyurethane, ca. 40 kg./m3.\n\nKjøl: 75 og 100 mm skumma polyurethane, ca. 40 kg./m3.",
       },
       {
-        title: "Automatikk",
+        title: "Beslag",
+        text: "Heve/skyvebeslag. Inn- og utvendig åpnar.",
+      },
+      {
+        title: "Karm",
         text:
-          "Automatisk elektrisk opning/stenging kan leverast med trykknapp- eller snortrekkbrytar som standard.",
+          "Utanpåliggende sjøvannsbestandig, eloksert aluminium. Fryseport leverast med terskel og innlagt sjølvregulerande varmekabel 230V. Effekt varmekabel = 51 W/meter. Skifting av varmekabel kan skje utan å demontera porten.",
+      },
+      {
+        title: "Tetning",
+        text:
+          "Beslagets løftemekanisme og gummipakninger i EPDM-kvalitet, sørger for god tetting. Doble pakningar på fryseport.",
+      },
+      {
+        title: "Mål",
+        text: "Produserast etter mål frå kunde.",
+      },
+      {
+        title: "Ekstra",
+        text:
+          "Automatisk (elektrisk) åpning/stenging med trykknapp-/snortrekkbrytar som standard.\n\nRadio-styring.\n\nSylinderlås.\n\nDørblad og beslag i rustfritt stål.",
       },
     ],
   },
   {
     title: "Dokument",
     items: portDocuments,
+  },
+  {
+    title: "For samarbeidspartnarar",
+    intro:
+      "Vår visjon er å vere den beste samarbeidspartnaren for deg som kjøleentreprenør. Ønskjer du meir informasjon om produkta våre, ta gjerne kontakt med oss.",
+    items: [
+      {
+        title: "Har du eit prosjekt du vil diskutere med oss?",
+        text: "Ta kontakt.",
+        href: "/kontakt",
+      },
+    ],
+  },
+  {
+    title: "Tilleggsprodukt",
+    intro: "Gammal portside lenka vidare til desse tilleggsprodukta.",
+    items: [
+      {
+        title: "PVC-gardiner",
+        text: "Tilleggsprodukt frå gammal portside.",
+        href: "/andre-produkter/pvc-gardiner",
+        imageUrl: "/assets/fresvik/images/old-site/pvc-gardin-web-port.jpg",
+        imageAlt: "PVC-gardiner",
+      },
+      {
+        title: "Køyrerampe",
+        text: "Tilleggsprodukt frå gammal portside.",
+        href: "/andre-produkter/kjlerampe",
+        imageUrl: "/assets/fresvik/images/old-site/rampe3-copy-port.jpg",
+        imageAlt: "Køyrerampe",
+      },
+    ],
+  },
+  {
+    title: "Kontaktinformasjon frå gammal side",
+    intro: "Kontaktblokkane under låg synleg på den gamle port-sida.",
+    items: [
+      {
+        title: "Fresvik Produkt AS",
+        text:
+          "Fresvikvegen 995,\n6896 Fresvik\nTel: 57 69 83 00\nE-post: post@fresvik.no",
+      },
+      {
+        title: "Salsavdeling Fresvik",
+        text:
+          "Arne-Olav Lien Bardølsgård\nMob: 99 55 25 49\narnbar@fresvik.no",
+      },
+      {
+        title: "Salsavdeling Drammen",
+        text:
+          "Lars Erling Livrud\nMob: 40 47 79 12\nlarliv@fresvik.no",
+      },
+      {
+        title: "Frode Winther",
+        text: "Frode Winther\nMob: 91 38 39 49\nfrowin@fresvik.no",
+      },
+    ],
+  },
+  {
+    title: "Nyheitsbrev og footerlenker frå gammal side",
+    intro:
+      "Motta nyheitsbrev. Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen. Sjå vår personvernerklæring.",
+    items: [
+      {
+        title: "Personvernerklæring",
+        text: "Footer-lenke frå gammal portside.",
+        href: "/personvernerklering",
+      },
+      {
+        title: "Openheitslova",
+        text: "Footer-lenke frå gammal portside.",
+        href: "/openheitslova",
+      },
+      {
+        title: "Nettside levert av GASTA",
+        text: "Ekstern footer-lenke frå gammal portside.",
+        href: "https://www.gasta.no/",
+      },
+    ],
+  },
+  {
+    title: "Sertifikat- og botnlenker frå gammal side",
+    intro: "Lenker og merke som låg i botnområdet på gammal portside.",
+    items: [
+      {
+        title: "Sentral godkjenning",
+        text: "Dokument frå gammal portside.",
+        href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+        imageAlt: "Sentral godkjenning",
+      },
+      {
+        title: "SINTEF Certification TG 2135",
+        text: "Ekstern lenke frå gammal portside.",
+        href: "https://www.sintefcertification.no/Product/Index/129",
+        imageUrl: "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+        imageAlt: "TG 2135",
+      },
+      {
+        title: "Polyurethan",
+        text: "Merke frå gammal portside.",
+        imageUrl: "/assets/fresvik/images/old-site/home-poly.png",
+        imageAlt: "Polyurethan isolerer betre",
+      },
+      {
+        title: "StartBANK",
+        text: "Merke frå gammal portside.",
+        imageUrl: "/assets/fresvik/images/old-site/home-startbank.png",
+        imageAlt: "StartBANK",
+      },
+      {
+        title: "Miljøfyrtårn",
+        text: "Ekstern lenke frå gammal portside.",
+        href: "https://rapportering.miljofyrtarn.no/stats/176324",
+        imageUrl: "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
+        imageAlt: "Miljøfyrtårn",
+      },
+      {
+        title: "PUR CE-merke",
+        text: "Dokument frå gammal portside.",
+        href: "/assets/fresvik/documents/pur-ce-merke.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+        imageAlt: "CE-logo",
+      },
+    ],
   },
 ];
 
@@ -1629,21 +1817,17 @@ export const contentPages: ContentPage[] = [
   },
   {
     slug: "/produkt/kjole-fryseportar",
-    title: "Kjøle- og fryseportar",
+    title: "Skyveport til kjøle- og fryserom",
     eyebrow: "Produkt",
     intro:
-      "Skyveportar for kjøle- og frysemiljø med krav til drift, isoleringsevne og tett funksjon.",
+      "Fresvik Produkt har lang erfaring med å produsere kjøle- og fryseportar til næringsmiddelbransjen, engroslager og lagerbygg.",
     description:
-      "Produktområde for kjøle- og fryseportar frå Fresvik Produkt.",
+      "Fresvik Produkt tilbyr skreddersydde kjøle- og fryseportar av høy kvalitet, med god isolasjon og tilpasning etter behov. Perfekt for næringsmiddelindustri og lagerbygg.",
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/kjole-fryseportar",
-    cards: oldProductCards.filter((item) => item.href === "/produkt/kjole-fryseportar"),
+    cards: [],
     sections: portSections,
-    todo: [
-      "Importer portbilete og dokument til Sanity assets.",
-      "Kvalitetssikre tekniske detaljar og variantar mot produktblad.",
-    ],
   },
   {
     slug: "/produkt/kjole-frysedorer",

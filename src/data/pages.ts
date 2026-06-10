@@ -1485,24 +1485,230 @@ const portSections = [
 
 const doorSections = [
   {
-    title: "Dører til kjøle- og fryserom",
+    title: "Full tekst frå gammal side",
     intro:
-      "Fresvik Produkt tilbyr tre modellar til ulike bruksområde, med galvanisert stålplate og FoodSafe-overflate.",
+      "Kjeldetekst henta manuelt frå https://www.fresvik.no/produkt/kjole-frysedorer 2026-06-10.",
     items: [
       {
-        title: "Konstruksjon",
+        title: "Dører til kjøle- og fryserom",
         text:
-          "Dørblad med pakningar er montert på utanpåliggande karm i 2 mm pulverlakkert galvanisert stål.",
+          "Fresvik Produkt er ein betydeleg leverandør av kjøle- og fryseromsdører. Vi tilbyr tre modellar til ulike bruksområde.\n\nAlle våre dører har overflate av galvanisert stålplate med polyesterlakk, type Foodsafe. Isolasjon består av høgtrykkskumma polyurethan.",
+        imageUrl: "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
+        imageAlt: "Dører til kjøle- og fryserom",
+      },
+    ],
+  },
+  {
+    title: "Vår standardleveranse",
+    items: [
+      {
+        title: "Dørblad med pakningar",
+        text:
+          "Dørblad med pakningar, montert på karm (Utanpåliggande karm i 2 mm, pulverlakkert galvanisert stål).",
       },
       {
-        title: "Fryseromsdørar",
+        title: "Varmekabel i fryseromsdørar",
         text:
-          "Fryseromsdørar har sjølvregulerande varmekabel, 230V og 16W/m.",
+          "Varmekabel i fryseromsdørar (sjølvregulerande. 230V, 16W/m).",
       },
       {
-        title: "Rask levering",
+        title: "Hevehengsler",
+        text: "Hevehengsler med forspenning.",
+      },
+    ],
+  },
+  {
+    title: "Standarddører på lager gir rask levering",
+    items: [
+      {
+        title: "Standarddører på lager gir rask levering",
         text:
-          "Fresvik har lager av standard kjøleromsdører med slepelist i breidde-lysmål 800, 900, 1000 og 1100 mm, og standard høgde 2055 mm inkludert slepelista.",
+          "Vi har lager av standard kjøleromsdører med slepelist. Dette er dører med breidde-lysmål på 800, 900, 1000 og 1100 mm, og standard høgde 2055 mm inkludert slepelista.\n\nFor leveringstid, ta kontakt med salg.",
+      },
+    ],
+  },
+  {
+    title: "Produktfordelar frå gammal side",
+    intro:
+      "Fordelane under låg synleg på den gamle sida for kjøle- og frysedører.",
+    items: [
+      {
+        title: "Utvikla og produsert i Norge",
+        text: "Utvikla og produsert i Norge.",
+      },
+      {
+        title: "Tre ulike dørmodellar",
+        text: "Tre ulike dørmodellar.",
+      },
+      {
+        title: "Høg kvalitet og rask leveranse",
+        text: "Høg kvalitet og rask leveranse.",
+      },
+    ],
+  },
+  {
+    title: "Våre dører",
+    intro: "Gammal dørside lenka vidare til desse tre dørmodellane.",
+    items: [
+      {
+        title: "Standard dører",
+        text: "Standard dører.",
+        href: "/andre-produkter/2014/7/9/standard-drer",
+        imageUrl: "/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
+        imageAlt: "Standard dør Fresvik Produkt",
+      },
+      {
+        title: "Skipsdører",
+        text: "Skipsdører.",
+        href: "/andre-produkter/2014/7/9/skipsdrer",
+        imageUrl: "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
+        imageAlt: "Skipsdør Fresvik Produkt",
+      },
+      {
+        title: "Industri slagdør",
+        text: "Industri slagdør.",
+        href: "/andre-produkter/2014/7/9/industri-slagdor",
+        imageUrl: "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
+        imageAlt: "Industri slagdør Fresvik Produkt",
+      },
+    ],
+  },
+  {
+    title: "Tilleggsutstyr til kjøle- og fryseromsdører",
+    intro: "Gammal dørside lenka vidare til dette tilleggsutstyret.",
+    items: [
+      {
+        title: "Standard håndtak",
+        text: "Standard håndtak.",
+        href: "/andre-produkter/standard-handtak",
+        imageUrl: "/assets/fresvik/images/old-site/handtak-standard-door.jpg",
+        imageAlt: "Standard håndtak",
+      },
+      {
+        title: "PVC-gardiner",
+        text: "PVC-gardiner.",
+        href: "/andre-produkter/pvc-gardiner",
+        imageUrl: "/assets/fresvik/images/old-site/pvc-gardin-web-port.jpg",
+        imageAlt: "PVC-gardiner",
+      },
+      {
+        title: "Diktator dørtiltrekker",
+        text: "Diktator dørtiltrekker.",
+        href: "/andre-produkter/diktator-dortiltrekker",
+        imageUrl: "/assets/fresvik/images/old-site/diktator-door.jpg",
+        imageAlt: "Diktator dørtiltrekker",
+      },
+      {
+        title: "Køyrerampe",
+        text: "Køyrerampe.",
+        href: "/andre-produkter/kjlerampe",
+        imageUrl: "/assets/fresvik/images/old-site/rampe3-copy-port.jpg",
+        imageAlt: "Køyrerampe",
+      },
+    ],
+  },
+  {
+    title: "For samarbeidspartnarar",
+    intro:
+      "Vår visjon er å vere den beste samarbeidspartnaren for deg som kjøleentreprenør. Ønskjer du meir informasjon om produkta våre, ta gjerne kontakt med oss.",
+    items: [
+      {
+        title: "Har du eit prosjekt du vil diskutere med oss?",
+        text: "Ta kontakt.",
+        href: "/kontakt",
+      },
+    ],
+  },
+  {
+    title: "Kontaktinformasjon frå gammal side",
+    intro: "Kontaktblokkane under låg synleg på den gamle dør-sida.",
+    items: [
+      {
+        title: "Fresvik Produkt AS",
+        text:
+          "Fresvikvegen 995,\n6896 Fresvik\nTel: 57 69 83 00\nE-post: post@fresvik.no",
+      },
+      {
+        title: "Salsavdeling Fresvik",
+        text:
+          "Arne-Olav Lien Bardølsgård\nMob: 99 55 25 49\narnbar@fresvik.no",
+      },
+      {
+        title: "Salsavdeling Drammen",
+        text:
+          "Lars Erling Livrud\nMob: 40 47 79 12\nlarliv@fresvik.no",
+      },
+      {
+        title: "Frode Winther",
+        text: "Frode Winther\nMob: 91 38 39 49\nfrowin@fresvik.no",
+      },
+    ],
+  },
+  {
+    title: "Nyheitsbrev og footerlenker frå gammal side",
+    intro:
+      "Motta nyheitsbrev. Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen. Sjå vår personvernerklæring.",
+    items: [
+      {
+        title: "Personvernerklæring",
+        text: "Footer-lenke frå gammal dørside.",
+        href: "/personvernerklering",
+      },
+      {
+        title: "Openheitslova",
+        text: "Footer-lenke frå gammal dørside.",
+        href: "/openheitslova",
+      },
+      {
+        title: "Nettside levert av GASTA",
+        text: "Ekstern footer-lenke frå gammal dørside.",
+        href: "https://www.gasta.no/",
+      },
+    ],
+  },
+  {
+    title: "Sertifikat- og botnlenker frå gammal side",
+    intro: "Lenker og merke som låg i botnområdet på gammal dørside.",
+    items: [
+      {
+        title: "Sentral godkjenning",
+        text: "Dokument frå gammal dørside.",
+        href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+        imageAlt: "Sentral godkjenning",
+      },
+      {
+        title: "SINTEF Certification TG 2135",
+        text: "Ekstern lenke frå gammal dørside.",
+        href: "https://www.sintefcertification.no/Product/Index/129",
+        imageUrl: "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+        imageAlt: "TG 2135",
+      },
+      {
+        title: "Polyurethan",
+        text: "Merke frå gammal dørside.",
+        imageUrl: "/assets/fresvik/images/old-site/home-poly.png",
+        imageAlt: "Polyurethan isolerer betre",
+      },
+      {
+        title: "StartBANK",
+        text: "Merke frå gammal dørside.",
+        imageUrl: "/assets/fresvik/images/old-site/home-startbank.png",
+        imageAlt: "StartBANK",
+      },
+      {
+        title: "Miljøfyrtårn",
+        text: "Ekstern lenke frå gammal dørside.",
+        href: "https://rapportering.miljofyrtarn.no/stats/176324",
+        imageUrl: "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
+        imageAlt: "Miljøfyrtårn",
+      },
+      {
+        title: "PUR CE-merke",
+        text: "Dokument frå gammal dørside.",
+        href: "/assets/fresvik/documents/pur-ce-merke.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+        imageAlt: "CE-logo",
       },
     ],
   },
@@ -1831,21 +2037,17 @@ export const contentPages: ContentPage[] = [
   },
   {
     slug: "/produkt/kjole-frysedorer",
-    title: "Kjøle- og frysedører",
+    title: "Dører til kjøle- og fryserom",
     eyebrow: "Produkt",
     intro:
-      "Kjøle- og fryseromsdører med FoodSafe-overflate, polyuretanisolasjon og modellar for ulike bruksområde.",
+      "Fresvik Produkt er ein betydeleg leverandør av kjøle- og fryseromsdører. Vi tilbyr tre modellar til ulike bruksområde.",
     description:
-      "Produktområde for kjøle- og frysedører frå Fresvik Produkt.",
+      "Utforsk høykvalitets kjøle- og frysedører fra Fresvik Produkt med rask levering og norsk produksjon. Perfekt for ulike behov innen kuldeopplegg.",
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/kjole-frysedorer",
-    cards: oldProductCards.filter((item) => item.href === "/produkt/kjole-frysedorer"),
+    cards: [],
     sections: doorSections,
-    todo: [
-      "Migrer dørvariantar, bilete og eventuelle produktblad.",
-      "Kvalitetssikre lagerførte standardmål og leveringstid med Fresvik.",
-    ],
   },
   {
     slug: "/produkt/fasadepanel",

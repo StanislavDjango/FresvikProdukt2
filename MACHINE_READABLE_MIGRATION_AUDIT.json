@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-10T09:59:32.477Z",
+    "generatedAt": "2026-06-10T10:14:07.385Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -14,9 +14,9 @@
     "needsReviewCount": 0,
     "unrecoverableCount": 6,
     "inventoryOnlyCount": 0,
-    "localImageAssets": 263,
+    "localImageAssets": 269,
     "localDocumentAssets": 27,
-    "originalUrlsRecovered": 276,
+    "originalUrlsRecovered": 282,
     "routeStatusCounts": {
       "page": 71,
       "unrecoverable": 6,
@@ -25,7 +25,7 @@
     "assetStatusCounts": {
       "migrated": 270,
       "duplicate": 47,
-      "ignored-with-reason": 10,
+      "ignored-with-reason": 14,
       "unrecoverable": 8
     },
     "documentStatusCounts": {
@@ -1401,9 +1401,9 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 2,
-      "localImageCount": 2,
+      "localImageCount": 14,
       "recoveryStatus": null,
       "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
@@ -3002,20 +3002,20 @@
       "oldPath": "/andre-produkter/2014/7/9/skipsdrer",
       "title": "Andre produkt - Skipsdører - Make it stand out",
       "caption": "Whatever it is, the way you tell your story online can make all the difference.",
-      "localPath": "/assets/fresvik/images/migrated/skipsdr-fresvik-produkt.jpg",
+      "localPath": "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
       "status": "migrated",
-      "confidence": 0.623,
-      "notes": "Matched by filename/source similarity (0.62)."
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429948521-DGRCHMLC0A18PBW3X2E0/Industri+slagd%C3%B8r+Fresvik+Produkt.jpg",
       "oldPath": "/andre-produkter/2014/7/9/industri-slagdor",
       "title": "Andre produkt - Industri slagdør - Make it stand out",
       "caption": "Whatever it is, the way you tell your story online can make all the difference.",
-      "localPath": "/assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg",
+      "localPath": "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
       "status": "migrated",
-      "confidence": 0.668,
-      "notes": "Matched by filename/source similarity (0.67)."
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241166920-U2FPLWGLYNB9M3NT7Z1J/Baza+fryserom+-+1.jpeg",
@@ -5488,6 +5488,16 @@
       "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
     },
     {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228929704-D375BPIENART1ETAC9I8/Diktator_web.jpg",
+      "oldPath": "/produkt/kjole-frysedorer",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/diktator-door.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
       "oldPath": "/kjolerom-fryserom-offshore, /produkt/fresvik-panel, /produkt/frysetunnel",
       "title": "",
@@ -5508,8 +5518,18 @@
       "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
     },
     {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228905898-3XE99LUNV7I41AHQIIL5/Ha%CC%8Andtak+standard_web.jpg",
+      "oldPath": "/produkt/kjole-frysedorer",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/handtak-standard-door.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
-      "oldPath": "/, /produkt/fresvik-panel, /produkt/kjole-fryseportar",
+      "oldPath": "/, /produkt/fresvik-panel, /produkt/kjole-frysedorer, /produkt/kjole-fryseportar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/home-poly.png",
@@ -5519,7 +5539,7 @@
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385862366-SQTJIQF8X2Y8LT02Z2UT/sentral%2Bgodkjent.png",
-      "oldPath": "/, /produkt/fresvik-panel, /produkt/fresvik-pir-panel, /produkt/kjole-fryseportar",
+      "oldPath": "/, /produkt/fresvik-panel, /produkt/fresvik-pir-panel, /produkt/kjole-frysedorer, /produkt/kjole-fryseportar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
@@ -5529,7 +5549,7 @@
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385876430-SF9NN179JLHLSGSAMMMQ/Startbarnk.png",
-      "oldPath": "/, /produkt/fresvik-panel, /produkt/kjole-fryseportar",
+      "oldPath": "/, /produkt/fresvik-panel, /produkt/kjole-frysedorer, /produkt/kjole-fryseportar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/home-startbank.png",
@@ -5548,6 +5568,16 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0fa83857-67f7-4d27-bd1e-2967f67f9d2e/FP+Produkt+11.jpg",
+      "oldPath": "/produkt/kjole-frysedorer",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
       "originalUrl": "TODO: unknown original URL",
       "oldPath": "/produkt/fresvik-panel",
       "title": "",
@@ -5559,7 +5589,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/produkt/kjole-fryseportar",
+      "oldPath": "/produkt/kjole-frysedorer, /produkt/kjole-fryseportar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/pvc-gardin-web-port.jpg",
@@ -5569,13 +5599,23 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/produkt/kjole-fryseportar",
+      "oldPath": "/produkt/kjole-frysedorer, /produkt/kjole-fryseportar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/rampe3-copy-port.jpg",
       "status": "unrecoverable",
       "confidence": 0,
       "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694430019551-8ORIUHF96LTND4P0LYWU/Standard+D%C3%B8r+Fresvik+Produkt.jpg",
+      "oldPath": "/produkt/kjole-frysedorer",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     }
   ],
   "documents": [
@@ -6782,10 +6822,98 @@
       "notes": "Local migration asset exists."
     },
     {
+      "href": "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
+      "normalized": "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1496,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/2014/7/9/standard-drer",
+      "normalized": "/andre-produkter/2014/7/9/standard-drer",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1556,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
+      "normalized": "/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1557,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/2014/7/9/skipsdrer",
+      "normalized": "/andre-produkter/2014/7/9/skipsdrer",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1563,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
+      "normalized": "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1564,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/2014/7/9/industri-slagdor",
+      "normalized": "/andre-produkter/2014/7/9/industri-slagdor",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1570,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
+      "normalized": "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1571,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/standard-handtak",
+      "normalized": "/andre-produkter/standard-handtak",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1583,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/handtak-standard-door.jpg",
+      "normalized": "/assets/fresvik/images/old-site/handtak-standard-door.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1584,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/diktator-dortiltrekker",
+      "normalized": "/andre-produkter/diktator-dortiltrekker",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1597,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/diktator-door.jpg",
+      "normalized": "/assets/fresvik/images/old-site/diktator-door.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1598,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
       "href": "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
       "normalized": "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 1620,
+      "line": 1826,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6793,7 +6921,7 @@
       "href": "/assets/fresvik/images/migrated/flake-left.png",
       "normalized": "/assets/fresvik/images/migrated/flake-left.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 1641,
+      "line": 1847,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6801,7 +6929,7 @@
       "href": "/assets/fresvik/images/old-site/home-job-factory.jpg",
       "normalized": "/assets/fresvik/images/old-site/home-job-factory.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 1659,
+      "line": 1865,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -8266,6 +8394,14 @@
       "normalized": "/assets/fresvik/images/migrated/new-logo-design-2024-made-with-postermywall-15.png",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
       "line": 102,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
+      "normalized": "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 103,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },

@@ -39,6 +39,30 @@ const knownOriginalUrls = new Map([
     "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/67e1460b-fd80-4be3-98d1-1fa26118af4c/FP+Produkt+23.jpg",
   ],
   [
+    "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0fa83857-67f7-4d27-bd1e-2967f67f9d2e/FP+Produkt+11.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694430019551-8ORIUHF96LTND4P0LYWU/Standard+D%C3%B8r+Fresvik+Produkt.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429912105-GUXVAQLQO6L6XRSJ0NYV/Skipsd%C3%B8r+Fresvik+Produkt.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429948521-DGRCHMLC0A18PBW3X2E0/Industri+slagd%C3%B8r+Fresvik+Produkt.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/handtak-standard-door.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228905898-3XE99LUNV7I41AHQIIL5/Ha%CC%8Andtak+standard_web.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/diktator-door.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228929704-D375BPIENART1ETAC9I8/Diktator_web.jpg",
+  ],
+  [
     "/assets/fresvik/images/old-site/home-fasadepanel.webp",
     "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1c0b8495-5976-420a-b7a9-eb2f88e17b74/image-asset+%281%29.jpg",
   ],

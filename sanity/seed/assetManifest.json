@@ -1318,7 +1318,6 @@
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/produkt/fasadepanel",
-      "/produkt/kjole-frysedorer",
       "/tenester",
       "/tenester/service-reservedeler"
     ],
@@ -1330,7 +1329,6 @@
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt/fasadepanel",
-      "https://www.fresvik.no/produkt/kjole-frysedorer",
       "https://www.fresvik.no/tenester/service-reservedeler"
     ],
     "sha256": "7e8207b17477b59b7341d1b23e9b0a97d06be555891f2a8a7f7e71bf5e3133b9",
@@ -2285,6 +2283,7 @@
       "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn",
       "/produkt/fresvik-pir-panel",
       "/produkt/fresvik-pur-panel",
+      "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar"
     ],
     "sourcePages": [
@@ -2293,6 +2292,7 @@
       "https://www.fresvik.no/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn",
       "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel",
+      "https://www.fresvik.no/produkt/kjole-frysedorer",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
     ],
     "sha256": "35963d67a5a5041e814bbd71a2457b8e5f5656ec6fa795870a5c122d3e1c25af",
@@ -3402,6 +3402,7 @@
       "/kjolerom-fryserom-offshore",
       "/produkt/fresvik-pir-panel",
       "/produkt/fresvik-pur-panel",
+      "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar"
     ],
     "sourcePages": [
@@ -3409,6 +3410,7 @@
       "https://www.fresvik.no/kjolerom-fryserom-offshore",
       "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel",
+      "https://www.fresvik.no/produkt/kjole-frysedorer",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
     ],
     "sha256": "5b1170a00cc0cbef5a95003c900c70d453ec000d40e744a15f5e7e27c351fba1",
@@ -3449,6 +3451,31 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Uploaded to Sanity as image-16b3256026dbdb92c377ab127de2e184e8fe727e-500x344-jpg."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228929704-D375BPIENART1ETAC9I8/Diktator_web.jpg",
+    "localPath": "/assets/fresvik/images/old-site/diktator-door.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/diktator-door.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/kjole-frysedorer"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/kjole-frysedorer"
+    ],
+    "sha256": "948085607562741405b5809a9240862b282f5f35b000a307b2ed5a35ab2ccc43",
+    "fileSize": 130246,
+    "sanityAssetId": "image-7b18a65a49dcb6a7fbe00ae38c862e2cb616d7ba-1280x1920-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-7b18a65a49dcb6a7fbe00ae38c862e2cb616d7ba-1280x1920-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/diktator-web.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6a3c9da6-49a6-479e-a5bd-efda8fe4cb86/Door.png",
@@ -4570,6 +4597,31 @@
     "notes": "Unused local migration cache file; keep until asset review is complete."
   },
   {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228905898-3XE99LUNV7I41AHQIIL5/Ha%CC%8Andtak+standard_web.jpg",
+    "localPath": "/assets/fresvik/images/old-site/handtak-standard-door.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/handtak-standard-door.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/kjole-frysedorer"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/kjole-frysedorer"
+    ],
+    "sha256": "6a05b6ae1a8d056676272694e647b52d8e9fc9c440ac4bf25e84a9e557c16d85",
+    "fileSize": 230207,
+    "sanityAssetId": "image-cbfca83dcbd9f732b2e11cf5de77e836807d12aa-1920x1280-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-cbfca83dcbd9f732b2e11cf5de77e836807d12aa-1920x1280-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/handtak-standard-web.jpg."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1c0b8495-5976-420a-b7a9-eb2f88e17b74/image-asset+%281%29.jpg",
     "localPath": "/assets/fresvik/images/old-site/home-fasadepanel.webp",
     "filePath": "public/assets/fresvik/images/old-site/home-fasadepanel.webp",
@@ -4753,11 +4805,13 @@
     "usedBy": [
       "/",
       "/produkt/fresvik-pur-panel",
+      "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
       "https://www.fresvik.no/produkt/fresvik-panel",
+      "https://www.fresvik.no/produkt/kjole-frysedorer",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
     ],
     "sha256": "2b6b3b595661934307cf8fab8884ac53e32f5a30ce2b5c630749e393d419b5fe",
@@ -4783,12 +4837,14 @@
       "/",
       "/produkt/fresvik-pir-panel",
       "/produkt/fresvik-pur-panel",
+      "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
       "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel",
+      "https://www.fresvik.no/produkt/kjole-frysedorer",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
     ],
     "sha256": "3d57740b69f180b4d7a670142c455e78cf45c47335fa8a41d5913aefc3345ef5",
@@ -4813,11 +4869,13 @@
     "usedBy": [
       "/",
       "/produkt/fresvik-pur-panel",
+      "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
       "https://www.fresvik.no/produkt/fresvik-panel",
+      "https://www.fresvik.no/produkt/kjole-frysedorer",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
     ],
     "sha256": "4d57fc11a3e0b82763a0dca92d36309d7116c8e4f8f44be32a5e7a6ec7143386",
@@ -5284,6 +5342,31 @@
     "notes": "Unused local migration cache file; keep until asset review is complete."
   },
   {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429948521-DGRCHMLC0A18PBW3X2E0/Industri+slagd%C3%B8r+Fresvik+Produkt.jpg",
+    "localPath": "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/kjole-frysedorer"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/kjole-frysedorer"
+    ],
+    "sha256": "d5aeae51b5a69c2a28ae00a8d6902d3710d882ee2500c75fce78e5d94a04adf0",
+    "fileSize": 7955,
+    "sanityAssetId": "image-480e7915d182556d0edf1dd85697f756a4d121c5-188x250-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-480e7915d182556d0edf1dd85697f756a4d121c5-188x250-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428947506-E2RZ7M6AJLX1T5O1BSIU/Innvendig+_m%C3%B8bler_kl%C3%A6r.JPG",
     "localPath": "/assets/fresvik/images/old-site/innvendig-m-bler-kl-r-7ee2829374.jpg",
     "filePath": "public/assets/fresvik/images/old-site/innvendig-m-bler-kl-r-7ee2829374.jpg",
@@ -5472,6 +5555,25 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Uploaded to Sanity as image-0c0053727901dffd2235af306658b95071336e86-500x334-jpg."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0fa83857-67f7-4d27-bd1e-2967f67f9d2e/FP+Produkt+11.jpg",
+    "localPath": "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/kjole-frysedorer"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/kjole-frysedorer"
+    ],
+    "sha256": "09ca3f420aee7e2f0767643c815f6f1e4fe6ee85b0cd70f6b63fac6f862f1329",
+    "fileSize": 326238,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "Recovered originalUrl from live old /startside sitemap."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/9ad0d3fc-c1d2-4e24-b22d-5fa4ff11ae87/Laas+Fresvik+Skyveport.jpeg",
@@ -5792,9 +5894,11 @@
     "filePath": "public/assets/fresvik/images/old-site/pvc-gardin-web-port.jpg",
     "assetType": "image",
     "usedBy": [
+      "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/produkt/kjole-frysedorer",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
     ],
     "sha256": "5ff01acc7413e769c0c23f82551bf36e43e7258e13c6b6ea0c148efad12618a9",
@@ -5836,9 +5940,11 @@
     "filePath": "public/assets/fresvik/images/old-site/rampe3-copy-port.jpg",
     "assetType": "image",
     "usedBy": [
+      "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/produkt/kjole-frysedorer",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
     ],
     "sha256": "6f896819fbaae6f75f3a27e5cc8ec1c8ef4c373f6f5107e6ac37e579f176d083",
@@ -5963,6 +6069,31 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Uploaded to Sanity as image-51e305609ed90e223859ad573d573f9a5fe4f1e5-2400x1350-webp."
+  },
+  {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429912105-GUXVAQLQO6L6XRSJ0NYV/Skipsd%C3%B8r+Fresvik+Produkt.jpg",
+    "localPath": "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/kjole-frysedorer"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/kjole-frysedorer"
+    ],
+    "sha256": "4df6b6650ec7296734dcfabef0eff2022da3391d72ddf63aab642eeaf4e335bc",
+    "fileSize": 18754,
+    "sanityAssetId": "image-175c727b44bd3ab2d56e04a514704ceee9fbac74-508x678-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-175c727b44bd3ab2d56e04a514704ceee9fbac74-508x678-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/skipsdr-fresvik-produkt.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/f152d606-3742-407e-99fc-8e412f82cab6/Skjermbilde+2026-02-27+110131.png",
@@ -6190,6 +6321,25 @@
     "notes": "Unused local migration cache file; keep until asset review is complete."
   },
   {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694430019551-8ORIUHF96LTND4P0LYWU/Standard+D%C3%B8r+Fresvik+Produkt.jpg",
+    "localPath": "/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/kjole-frysedorer"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/kjole-frysedorer"
+    ],
+    "sha256": "2113401f63181d9f2762be9bc02a30227b8c7f16c9224b436b9ca3e07c7434f7",
+    "fileSize": 218202,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "Recovered originalUrl from live old /startside sitemap."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d7336c08-84f5-48ed-afdf-aeec8f8d139b/Temperature.png",
     "localPath": "/assets/fresvik/images/old-site/temperature-b74d87e4fb.png",
     "filePath": "public/assets/fresvik/images/old-site/temperature-b74d87e4fb.png",
@@ -6224,6 +6374,7 @@
       "/kjolerom-fryserom-offshore",
       "/produkt/fresvik-pir-panel",
       "/produkt/fresvik-pur-panel",
+      "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar"
     ],
     "sourcePages": [
@@ -6231,6 +6382,7 @@
       "https://www.fresvik.no/kjolerom-fryserom-offshore",
       "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel",
+      "https://www.fresvik.no/produkt/kjole-frysedorer",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
     ],
     "sha256": "96c63f297fad91792ddddbe61e416a8af20962a3c03d41afb0a41e52bceae6f1",

@@ -1,0 +1,63 @@
+Produkt
+Fresvik Frysetunnel
+Skreddarsydd til ditt unike produksjonsmiljø.
+Full tekst frå gammal side
+Kjeldetekst henta manuelt frå https://www.fresvik.no/produkt/frysetunnel 2026-06-11.
+Skreddarsydd til ditt unike produksjonsmiljø. I næringsmiddelproduksjon handlar innfrysing om meir enn temperatur aleine. Når råvarer og ferdigvarer blir frosne raskt og kontrollert, blir kvaliteten betre teken vare på gjennom heile verdikjeda. Ein effektiv frysetunnel bidreg til å avgrense krystalldanning, bevare struktur og redusere tap av smak, tekstur og haldbarheit. For produsentar med store volum gir dette ei meir føreseieleg handtering av varer, frå produksjon og mellomlagring til vidare transport. Med Fresvik Produkt får du ei løysing utvikla for produksjonsmiljø der kapasitet, næringsmiddeltryggleik og stabil flyt er avgjerande. Resultatet er ei meir kontrollert innfrysingsprosess, tilpassa krav frå moderne matproduksjon.
+Kontrollert innfrysing
+Rask, jamn og kontrollert innfrysing
+Frysetunnelar frå Fresvik Produkt er utvikla for rask, jamn og kontrollert innfrysing i krevjande produksjonsmiljø. Ei driftssikker løysing for næringsmiddelbedrifter som treng å ta vare på kvalitet, haldbarheit og effektiv flyt gjennom produksjonen.
+Konstruksjon og bruksområde
+Skreddarsydde PIR-panel og robuste detaljar
+Fresvik Produkt sine frysetunnelar er konstruerte med skreddarsydde PIR-panel og robuste detaljar, tilpassa både maritime og landbaserte applikasjonar. Løysingane er utvikla for å sikre stabile frysetemperaturar, redusert energitap, lang levetid og optimal hygienisk utforming. Produkta eignar seg godt for bruk på skip, offshoreinstallasjonar og industrielle næringsmiddelanlegg på land. Frysetunnelane blir bygde med prefabrikkerte PIR-isolasjonspanel og tilpassa dører, og kan leverast i ulike dimensjonar og konfigurasjonar basert på kapasitet og bruksområde. Løysingane blir òg tilpassa gjeldande krav til hygiene, brannklasse og drift.
+Skreddarsydde PIR-panel
+Frysetunnelen blir bygd opp av prefabrikkerte PIR-panel produsert i Fresvik i Sogn. Brannklasse B-s1,d0 og hygienisk FoodSafe-overflate som standard, med tjukkelser frå 75 til 175 mm tilpassa kapasitet og driftstemperatur. Andre overflater som rustfritt eller syrefast stål kan leverast på førespurnad. Eksenterlås i overgangane gjev tette skjøter og rask, presis montering på byggjeplass.
+Spesialtilpassa dører
+Hver frysetunnel blir levert med dører som er produsert etter mål og tilpasset lysmål, drift og bruksområde. Standard overflate er galvanisert stålplate med polyesterlakk i FoodSafe-kvalitet, og isolasjon i høytrykkskummet polyuretan. Andre overflater som rustfritt eller syrefast stål kan leveres på forespørsel. Døren kommer som standard med hevehengsler med forspenning. Ved fryse-applikasjoner installeres også selvregulerende varmekabel i karmen (230V, 16W/m).
+Sjå kva vi har levert til andre kundar
+Frysetunnelar blir brukt i næringsmiddelindustrien til rask innfrysing av fisk, kjøt, bakerivarer og meieriprodukt. Fresvik Produkt har levert kjøle- og fryseløysingar til norsk næringsmiddelindustri i over 45 år.
+Alle referansar
+Alle referansar.
+Spar Lund Torv
+Spar Lund Torv fekk levert nytt fryserom, tre nye kjølerom og deleveggar med norskproduserte PIR-panel frå Fresvik Produkt. Leveransen omfatta òg innestengingsalarm, PVC-gardin og pendeldører frå Kvanne Industrier.
+Baza Fredrikstad
+Fresvik Produkt leverte eit skreddarsydd fryserom til Baza Nordic i Fredrikstad, tilpassa effektiv og driftssikker lagring av frosne varer. Løysinga gir auka kapasitet, betre logistikkflyt og stabile lagringsforhold gjennom heile året.
+For samarbeidspartnarar
+Har du eit prosjekt du vil diskutere med oss?
+Ta kontakt.
+Kontaktinformasjon frå gammal side
+Kontaktblokkane under låg synleg på den gamle frysetunnel-sida.
+Fresvik Produkt AS
+Fresvikvegen 995, 6896 Fresvik Tel: 57 69 83 00 E-post: post@fresvik.no
+Salsavdeling Fresvik
+Arne-Olav Lien Bardølsgård Mob: 99 55 25 49 arnbar@fresvik.no
+Salsavdeling Drammen
+Lars Erling Livrud Mob: 40 47 79 12 larliv@fresvik.no
+Frode Winther
+Frode Winther Mob: 91 38 39 49 frowin@fresvik.no
+Nyheitsbrev og footerlenker frå gammal side
+Motta nyheitsbrev. Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen. Sjå vår personvernerklæring.
+Personvernerklæring
+Footer-lenke frå gammal frysetunnel-side.
+Openheitslova
+Nettside levert av GASTA
+GASTA.
+Sertifikat- og botnlenker frå gammal side
+Lenker og merke som låg i botnområdet på gammal frysetunnel-side.
+Sentral godkjenning
+Dokument frå gammal frysetunnel-side.
+SINTEF Certification TG 2135
+Ekstern lenke frå gammal frysetunnel-side.
+Dokumentasjon
+StartBANK
+Merke frå gammal frysetunnel-side.
+Miljøfyrtårn
+PUR CE-merke
+Klar for å diskutere prosjektet?
+Ta kontakt med Fresvik Produkt for teknisk avklaring, produktval og vidare planlegging.
+Fresvik Produkt AS leverer isolerte panel, kjøle- og fryseløysingar, montasje og service til norske prosjekt.
+Fresvikvegen 995, 6896 Fresvik
+Nettstad
+Informasjon
+© Fresvik Produkt AS
+Modernisert med Next.js, Sanity og Vercel.

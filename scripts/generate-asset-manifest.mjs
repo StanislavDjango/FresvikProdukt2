@@ -127,6 +127,34 @@ const knownOriginalUrls = new Map([
     "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1700040185087-O7K1UNJLYM01IO9TVQT5/ce-logo-png-transparent.png",
   ],
   [
+    "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c.png",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/9d04f9a9-5bbe-4b9d-9593-72e6ca06806b/b12b5d19-2424-48de-bdea-c83b503c880c.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/fryst-laks.png",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d7b7a341-353c-4260-afe7-8858187c72fd/Fryst+Laks.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1.png",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d04658e0-dce8-4c18-ba78-e00e6440b419/b12b5d19-2424-48de-bdea-c83b503c880c+%281%29.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/notfjaer1.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/339870db-e604-492a-a688-fbc917a03d26/notfjaer1.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/fresvik-hengsle.jpeg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e0a96aed-bc93-4a20-95d0-cd042af1bb3b/Fresvik+Hengsle.jpeg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/spar-lund-torv-fp-1.png",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/70099be8-6751-41f7-aea3-d4501ff3c09a/Spar+Lund+Torv+FP+1.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/baza-fryserom-4.jpeg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241168352-9XAEM8D0U1DJA7JIBNLP/Baza+fryserom+-+4.jpeg",
+  ],
+  [
     "/assets/fresvik/images/old-site/home-job-factory.jpg",
     "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5fc55087-b42c-48d7-9587-0811aa56c942/Fresvik+Produkt+-+Fabrikk-27.jpg",
   ],

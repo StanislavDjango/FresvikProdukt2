@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-11T08:57:56.711Z",
+    "generatedAt": "2026-06-11T09:18:58.474Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -14,18 +14,18 @@
     "needsReviewCount": 0,
     "unrecoverableCount": 6,
     "inventoryOnlyCount": 0,
-    "localImageAssets": 284,
+    "localImageAssets": 291,
     "localDocumentAssets": 27,
-    "originalUrlsRecovered": 297,
+    "originalUrlsRecovered": 304,
     "routeStatusCounts": {
       "page": 71,
       "unrecoverable": 6,
       "redirect": 29
     },
     "assetStatusCounts": {
-      "migrated": 270,
+      "migrated": 271,
       "duplicate": 47,
-      "ignored-with-reason": 27,
+      "ignored-with-reason": 32,
       "unrecoverable": 8
     },
     "documentStatusCounts": {
@@ -1382,9 +1382,9 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 8,
-      "localImageCount": 9,
+      "localImageCount": 15,
       "recoveryStatus": null,
       "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
@@ -4892,10 +4892,10 @@
       "oldPath": "/produktfoto",
       "title": "",
       "caption": "",
-      "localPath": null,
-      "status": "ignored-with-reason",
-      "confidence": 0.167,
-      "notes": "Old URL redirects to /produkt; sitemap image is not required on a redirect-only route."
+      "localPath": "/assets/fresvik/images/old-site/fresvik-hengsle.jpeg",
+      "status": "migrated",
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/f93d7dc8-0b74-49f8-bc45-1cb5054f1490/Snitt+gjennom+pakning.jpeg",
@@ -5498,8 +5498,38 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d04658e0-dce8-4c18-ba78-e00e6440b419/b12b5d19-2424-48de-bdea-c83b503c880c+%281%29.png",
+      "oldPath": "/produkt/frysetunnel",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1.png",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/9d04f9a9-5bbe-4b9d-9593-72e6ca06806b/b12b5d19-2424-48de-bdea-c83b503c880c.png",
+      "oldPath": "/produkt/frysetunnel",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c.png",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241168352-9XAEM8D0U1DJA7JIBNLP/Baza+fryserom+-+4.jpeg",
+      "oldPath": "/produkt/frysetunnel",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/baza-fryserom-4.jpeg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1700040185087-O7K1UNJLYM01IO9TVQT5/ce-logo-png-transparent.png",
-      "oldPath": "/produkt/fasadepanel",
+      "oldPath": "/produkt/fasadepanel, /produkt/frysetunnel",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/ce-logo-png-transparent.webp",
@@ -5559,7 +5589,7 @@
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
-      "oldPath": "/kjolerom-fryserom-offshore, /produkt/fresvik-panel, /produkt/frysetunnel",
+      "oldPath": "/kjolerom-fryserom-offshore, /produkt/fresvik-panel",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/flake-black-3b186da893.png",
@@ -5569,7 +5599,7 @@
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/13922f08-1a26-4996-98ca-874c87c1d3cb/flake.png",
-      "oldPath": "/produkt/fasadepanel",
+      "oldPath": "/produkt/fasadepanel, /produkt/frysetunnel",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/flake.png",
@@ -5586,6 +5616,16 @@
       "status": "unrecoverable",
       "confidence": 0,
       "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d7b7a341-353c-4260-afe7-8858187c72fd/Fryst+Laks.png",
+      "oldPath": "/produkt/frysetunnel",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/fryst-laks.png",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228905898-3XE99LUNV7I41AHQIIL5/Ha%CC%8Andtak+standard_web.jpg",
@@ -5648,8 +5688,18 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/339870db-e604-492a-a688-fbc917a03d26/notfjaer1.jpg",
+      "oldPath": "/produkt/frysetunnel",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/notfjaer1.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
-      "oldPath": "/produkt/fasadepanel",
+      "oldPath": "/produkt/fasadepanel, /produkt/frysetunnel",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/poly.webp",
@@ -5699,10 +5749,20 @@
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385862366-SQTJIQF8X2Y8LT02Z2UT/sentral%2Bgodkjent.png",
-      "oldPath": "/produkt/fasadepanel",
+      "oldPath": "/produkt/fasadepanel, /produkt/frysetunnel",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/sentral-godkjent.webp",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/70099be8-6751-41f7-aea3-d4501ff3c09a/Spar+Lund+Torv+FP+1.png",
+      "oldPath": "/produkt/frysetunnel",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fp-1.png",
       "status": "ignored-with-reason",
       "confidence": 0,
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
@@ -5719,7 +5779,7 @@
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385876430-SF9NN179JLHLSGSAMMMQ/Startbarnk.png",
-      "oldPath": "/produkt/fasadepanel",
+      "oldPath": "/produkt/fasadepanel, /produkt/frysetunnel",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/startbarnk.webp",
@@ -5729,7 +5789,7 @@
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385867638-53S21SMAIEM6JIMC4IZ7/TG-2135.jpg",
-      "oldPath": "/produkt/fasadepanel",
+      "oldPath": "/produkt/fasadepanel, /produkt/frysetunnel",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/tg-2135.webp",
@@ -5739,7 +5799,7 @@
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385879029-1G9MX2OPCNVO7N0PMHZF/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
-      "oldPath": "/produkt/fasadepanel",
+      "oldPath": "/produkt/fasadepanel, /produkt/frysetunnel",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.jpg",
@@ -7168,10 +7228,98 @@
       "notes": "Local migration asset exists."
     },
     {
+      "href": "/send-foresporsel",
+      "normalized": "/send-foresporsel",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1935,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c.png",
+      "normalized": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1936,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/fryst-laks.png",
+      "normalized": "/assets/fresvik/images/old-site/fryst-laks.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1948,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1.png",
+      "normalized": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1961,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/notfjaer1.jpg",
+      "normalized": "/assets/fresvik/images/old-site/notfjaer1.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1974,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/fresvik-hengsle.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/fresvik-hengsle.jpeg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1988,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/referansar",
+      "normalized": "/referansar",
+      "sourceFile": "src/data/pages.ts",
+      "line": 2001,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+      "normalized": "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+      "sourceFile": "src/data/pages.ts",
+      "line": 2009,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/spar-lund-torv-fp-1.png",
+      "normalized": "/assets/fresvik/images/old-site/spar-lund-torv-fp-1.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 2010,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/referansar/fryserom-baza-fredrikstad",
+      "normalized": "/referansar/fryserom-baza-fredrikstad",
+      "sourceFile": "src/data/pages.ts",
+      "line": 2017,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/baza-fryserom-4.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/baza-fryserom-4.jpeg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 2018,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
       "href": "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
       "normalized": "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 2009,
+      "line": 2150,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7179,7 +7327,7 @@
       "href": "/assets/fresvik/images/old-site/home-job-factory.jpg",
       "normalized": "/assets/fresvik/images/old-site/home-job-factory.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 2048,
+      "line": 2189,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -8648,8 +8796,8 @@
       "notes": "Local migration asset exists."
     },
     {
-      "href": "/assets/fresvik/images/migrated/new-logo-design-2024-made-with-postermywall-15.png",
-      "normalized": "/assets/fresvik/images/migrated/new-logo-design-2024-made-with-postermywall-15.png",
+      "href": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c.png",
+      "normalized": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c.png",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
       "line": 102,
       "status": "asset-ok",

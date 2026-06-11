@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/produkt/frysetunnel",
+  "newUrl": "http://127.0.0.1:3062/produkt/frysetunnel",
+  "checkedAt": "2026-06-11T09:18:15.594Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 28,
+    "missingTextBlocks": 0,
+    "oldLinks": 42,
+    "missingLinks": 0,
+    "oldImages": 15,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

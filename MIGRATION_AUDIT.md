@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-11T08:57:56.711Z
+Generated: 2026-06-11T09:18:58.474Z
 
 ## Summary
 
@@ -18,9 +18,9 @@ Generated: 2026-06-11T08:57:56.711Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 284 |
+| Local image assets | 291 |
 | Local document/PDF assets | 27 |
-| Asset originalUrls recovered in manifest | 297 |
+| Asset originalUrls recovered in manifest | 304 |
 
 Do not treat the migration as complete while any route, asset, document or link remains `partial`, `missing`, `needs-review`, `inventory-only`, `thumbnail-or-variant` or `local-only`.
 
@@ -111,7 +111,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /produkt/fasadepanel | /produkt/fasadepanel | page | product | yes | yes | yes | 14/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | /produkt/fresvik-pur-panel | redirect | product | yes | yes | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
 | /produkt/fresvik-pir-panel | /produkt/fresvik-pir-panel | page | product | yes | yes | yes | 12/7 | yes | Covered as migrated page in local data. |
-| /produkt/frysetunnel | /produkt/frysetunnel | page | product | yes | yes | yes | 9/8 | yes | Covered as migrated page in local data. |
+| /produkt/frysetunnel | /produkt/frysetunnel | page | product | yes | yes | yes | 15/8 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-frysedorer | /produkt/kjole-frysedorer | page | product | yes | yes | yes | 14/2 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-fryseportar | /produkt/kjole-fryseportar | page | product | yes | yes | yes | 13/8 | yes | Covered as migrated page in local data. |
 | /produktfoto | /produkt | redirect | product | yes | yes | no | 0/6 | no | Redirects to /produkt. |
@@ -173,8 +173,8 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 322 |
 | Live sitemap unique image URLs | 275 |
-| Local migrated image assets | 284 |
-| Sitemap images classified migrated | 270 |
+| Local migrated image assets | 291 |
+| Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
 | Sitemap images missing local match | 0 |
@@ -216,10 +216,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 349 |
-| OK routes | 171 |
+| Internal link references | 360 |
+| OK routes | 175 |
 | Redirect links | 0 |
-| Asset links OK | 178 |
+| Asset links OK | 185 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -270,7 +270,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /produkt/fasadepanel | page | yes | 14/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | redirect | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
 | /produkt/fresvik-pir-panel | page | yes | 12/7 | yes | Covered as migrated page in local data. |
-| /produkt/frysetunnel | page | yes | 9/8 | yes | Covered as migrated page in local data. |
+| /produkt/frysetunnel | page | yes | 15/8 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-frysedorer | page | yes | 14/2 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-fryseportar | page | yes | 13/8 | yes | Covered as migrated page in local data. |
 | /tenester/leveranse | page | yes | 2/2 | yes | Covered as migrated page in local data. |

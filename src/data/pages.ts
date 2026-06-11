@@ -1924,66 +1924,207 @@ const facadeSections = [
 
 const frysetunnelSections = [
   {
-    title: "Kontrollert innfrysing",
+    title: "Full tekst frå gammal side",
     intro:
-      "Gamle Fresvik-tekstar legg vekt på at innfrysing i næringsmiddelproduksjon handlar om meir enn temperatur aleine.",
+      "Kjeldetekst henta manuelt frå https://www.fresvik.no/produkt/frysetunnel 2026-06-11.",
     items: [
       {
-        title: "Rask og jamn prosess",
+        title: "Fresvik Frysetunnel",
         text:
-          "Frysetunnelar frå Fresvik Produkt er utvikla for rask, jamn og kontrollert innfrysing i krevjande produksjonsmiljø.",
+          "Skreddarsydd til ditt unike produksjonsmiljø.\n\nI næringsmiddelproduksjon handlar innfrysing om meir enn temperatur aleine. Når råvarer og ferdigvarer blir frosne raskt og kontrollert, blir kvaliteten betre teken vare på gjennom heile verdikjeda.\n\nEin effektiv frysetunnel bidreg til å avgrense krystalldanning, bevare struktur og redusere tap av smak, tekstur og haldbarheit. For produsentar med store volum gir dette ei meir føreseieleg handtering av varer, frå produksjon og mellomlagring til vidare transport.\n\nMed Fresvik Produkt får du ei løysing utvikla for produksjonsmiljø der kapasitet, næringsmiddeltryggleik og stabil flyt er avgjerande. Resultatet er ei meir kontrollert innfrysingsprosess, tilpassa krav frå moderne matproduksjon.",
+        href: "/send-foresporsel",
+        imageUrl: "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c.png",
+        imageAlt: "Fresvik Frysetunnel",
       },
+    ],
+  },
+  {
+    title: "Kontrollert innfrysing",
+    items: [
       {
-        title: "Kvalitet gjennom verdikjeda",
+        title: "Rask, jamn og kontrollert innfrysing",
         text:
-          "Når råvarer og ferdigvarer blir frosne raskt og kontrollert, blir kvaliteten betre teken vare på gjennom heile verdikjeda.",
-      },
-      {
-        title: "Mindre krystalldanning",
-        text:
-          "Ein effektiv frysetunnel bidreg til å avgrense krystalldanning, bevare struktur og redusere tap av smak, tekstur og haldbarheit.",
+          "Frysetunnelar frå Fresvik Produkt er utvikla for rask, jamn og kontrollert innfrysing i krevjande produksjonsmiljø.\n\nEi driftssikker løysing for næringsmiddelbedrifter som treng å ta vare på kvalitet, haldbarheit og effektiv flyt gjennom produksjonen.",
+        imageUrl: "/assets/fresvik/images/old-site/fryst-laks.png",
+        imageAlt: "Fryst laks",
       },
     ],
   },
   {
     title: "Konstruksjon og bruksområde",
-    intro:
-      "Fresvik Produkt sine frysetunnelar er konstruerte med skreddarsydde PIR-panel og robuste detaljar.",
     items: [
       {
-        title: "PIR-panel frå Fresvik",
+        title: "Skreddarsydde PIR-panel og robuste detaljar",
         text:
-          "Frysetunnelen blir bygd opp av prefabrikkerte PIR-panel produsert i Fresvik i Sogn, med brannklasse B-s1,d0 og hygienisk FoodSafe-overflate som standard.",
-      },
-      {
-        title: "Maritimt og landbasert",
-        text:
-          "Løysingane er tilpassa både maritime og landbaserte applikasjonar, inkludert skip, offshoreinstallasjonar og industrielle næringsmiddelanlegg.",
-      },
-      {
-        title: "Tilpassa dimensjonar",
-        text:
-          "Frysetunnelane kan leverast i ulike dimensjonar og konfigurasjonar basert på kapasitet og bruksområde.",
+          "Fresvik Produkt sine frysetunnelar er konstruerte med skreddarsydde PIR-panel og robuste detaljar, tilpassa både maritime og landbaserte applikasjonar.\n\nLøysingane er utvikla for å sikre stabile frysetemperaturar, redusert energitap, lang levetid og optimal hygienisk utforming. Produkta eignar seg godt for bruk på skip, offshoreinstallasjonar og industrielle næringsmiddelanlegg på land.\n\nFrysetunnelane blir bygde med prefabrikkerte PIR-isolasjonspanel og tilpassa dører, og kan leverast i ulike dimensjonar og konfigurasjonar basert på kapasitet og bruksområde. Løysingane blir òg tilpassa gjeldande krav til hygiene, brannklasse og drift.",
+        href: "/send-foresporsel",
+        imageUrl: "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1.png",
+        imageAlt: "Fresvik frysetunnel konstruksjon",
       },
     ],
   },
   {
-    title: "Detaljar frå gammal produktside",
+    title: "Skreddarsydde PIR-panel",
     items: [
       {
-        title: "Overflater og tjukkleikar",
+        title: "Skreddarsydde PIR-panel",
         text:
-          "Standard FoodSafe-overflate blir oppgitt saman med tjukkleikar frå 75 til 175 mm. Rustfritt eller syrefast stål kan leverast på førespurnad.",
+          "Frysetunnelen blir bygd opp av prefabrikkerte PIR-panel produsert i Fresvik i Sogn. Brannklasse B-s1,d0 og hygienisk FoodSafe-overflate som standard, med tjukkelser frå 75 til 175 mm tilpassa kapasitet og driftstemperatur. Andre overflater som rustfritt eller syrefast stål kan leverast på førespurnad. Eksenterlås i overgangane gjev tette skjøter og rask, presis montering på byggjeplass.",
+        href: "/produkt/fresvik-pir-panel",
+        imageUrl: "/assets/fresvik/images/old-site/notfjaer1.jpg",
+        imageAlt:
+          "Bilde av et kuttet tverrsnitt av en bygningsvegg som viser ulike lag med isolasjon, damp- og luftbarrierer, og ytre kledningsmateriale.",
+      },
+    ],
+  },
+  {
+    title: "Spesialtilpassa dører",
+    items: [
+      {
+        title: "Spesialtilpassa dører",
+        text:
+          "Hver frysetunnel blir levert med dører som er produsert etter mål og tilpasset lysmål, drift og bruksområde. Standard overflate er galvanisert stålplate med polyesterlakk i FoodSafe-kvalitet, og isolasjon i høytrykkskummet polyuretan. Andre overflater som rustfritt eller syrefast stål kan leveres på forespørsel. Døren kommer som standard med hevehengsler med forspenning. Ved fryse-applikasjoner installeres også selvregulerende varmekabel i karmen (230V, 16W/m).",
+        href: "/produkt/kjole-frysedorer",
+        imageUrl: "/assets/fresvik/images/old-site/fresvik-hengsle.jpeg",
+        imageAlt: "Fresvik hengsle",
+      },
+    ],
+  },
+  {
+    title: "Sjå kva vi har levert til andre kundar",
+    intro:
+      "Frysetunnelar blir brukt i næringsmiddelindustrien til rask innfrysing av fisk, kjøt, bakerivarer og meieriprodukt. Fresvik Produkt har levert kjøle- og fryseløysingar til norsk næringsmiddelindustri i over 45 år.",
+    items: [
+      {
+        title: "Alle referansar",
+        text: "Alle referansar.",
+        href: "/referansar",
+        imageUrl: "/assets/fresvik/images/migrated/flake-black.png",
+        imageAlt: "Et snøfnuggmønster med hvit på svart bakgrunn.",
       },
       {
-        title: "Dører etter mål",
+        title: "Spar Lund Torv",
         text:
-          "Kvar frysetunnel blir levert med dører produsert etter mål og tilpassa lysmål, drift og bruksområde.",
+          "Spar Lund Torv fekk levert nytt fryserom, tre nye kjølerom og deleveggar med norskproduserte PIR-panel frå Fresvik Produkt. Leveransen omfatta òg innestengingsalarm, PVC-gardin og pendeldører frå Kvanne Industrier.",
+        href: "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+        imageUrl: "/assets/fresvik/images/old-site/spar-lund-torv-fp-1.png",
+        imageAlt: "Spar Lund Torv",
       },
       {
-        title: "Referansebruk",
+        title: "Baza Fredrikstad",
         text:
-          "Frysetunnelar blir brukt i næringsmiddelindustrien til rask innfrysing av fisk, kjøt, bakerivarer og meieriprodukt.",
+          "Fresvik Produkt leverte eit skreddarsydd fryserom til Baza Nordic i Fredrikstad, tilpassa effektiv og driftssikker lagring av frosne varer. Løysinga gir auka kapasitet, betre logistikkflyt og stabile lagringsforhold gjennom heile året.",
+        href: "/referansar/fryserom-baza-fredrikstad",
+        imageUrl: "/assets/fresvik/images/old-site/baza-fryserom-4.jpeg",
+        imageAlt: "Baza fryserom",
+      },
+    ],
+  },
+  {
+    title: "For samarbeidspartnarar",
+    items: [
+      {
+        title: "Har du eit prosjekt du vil diskutere med oss?",
+        text: "Ta kontakt.",
+        href: "/kontakt",
+      },
+    ],
+  },
+  {
+    title: "Kontaktinformasjon frå gammal side",
+    intro: "Kontaktblokkane under låg synleg på den gamle frysetunnel-sida.",
+    items: [
+      {
+        title: "Fresvik Produkt AS",
+        text:
+          "Fresvikvegen 995,\n6896 Fresvik\nTel: 57 69 83 00\nE-post: post@fresvik.no",
+        imageUrl: "/assets/fresvik/images/old-site/flake.png",
+        imageAlt: "Snøfnugg",
+      },
+      {
+        title: "Salsavdeling Fresvik",
+        text:
+          "Arne-Olav Lien Bardølsgård\nMob: 99 55 25 49\narnbar@fresvik.no",
+      },
+      {
+        title: "Salsavdeling Drammen",
+        text:
+          "Lars Erling Livrud\nMob: 40 47 79 12\nlarliv@fresvik.no",
+      },
+      {
+        title: "Frode Winther",
+        text: "Frode Winther\nMob: 91 38 39 49\nfrowin@fresvik.no",
+      },
+    ],
+  },
+  {
+    title: "Nyheitsbrev og footerlenker frå gammal side",
+    intro:
+      "Motta nyheitsbrev. Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen. Sjå vår personvernerklæring.",
+    items: [
+      {
+        title: "Personvernerklæring",
+        text: "Footer-lenke frå gammal frysetunnel-side.",
+        href: "/personvernerklering",
+      },
+      {
+        title: "Openheitslova",
+        text: "Footer-lenke frå gammal frysetunnel-side.",
+        href: "/openheitslova",
+      },
+      {
+        title: "Nettside levert av GASTA",
+        text: "GASTA.",
+        href: "https://www.gasta.no/",
+      },
+    ],
+  },
+  {
+    title: "Sertifikat- og botnlenker frå gammal side",
+    intro: "Lenker og merke som låg i botnområdet på gammal frysetunnel-side.",
+    items: [
+      {
+        title: "Sentral godkjenning",
+        text: "Dokument frå gammal frysetunnel-side.",
+        href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/sentral-godkjent.webp",
+        imageAlt: "Sentral godkjenning",
+      },
+      {
+        title: "SINTEF Certification TG 2135",
+        text: "Ekstern lenke frå gammal frysetunnel-side.",
+        href: "https://www.sintefcertification.no/Product/Index/129",
+        imageUrl: "/assets/fresvik/images/old-site/tg-2135.webp",
+        imageAlt: "TG 2135",
+      },
+      {
+        title: "Dokumentasjon",
+        text: "Footer-lenke frå gammal frysetunnel-side.",
+        href: "/dokumentasjon",
+        imageUrl: "/assets/fresvik/images/old-site/poly.webp",
+        imageAlt: "Polyurethan isolerer betre",
+      },
+      {
+        title: "StartBANK",
+        text: "Merke frå gammal frysetunnel-side.",
+        href: "/dokumentasjon",
+        imageUrl: "/assets/fresvik/images/old-site/startbarnk.webp",
+        imageAlt: "StartBANK",
+      },
+      {
+        title: "Miljøfyrtårn",
+        text: "Ekstern lenke frå gammal frysetunnel-side.",
+        href: "https://rapportering.miljofyrtarn.no/stats/176324",
+        imageUrl:
+          "/assets/fresvik/images/old-site/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.jpg",
+        imageAlt: "Miljøfyrtårn",
+      },
+      {
+        title: "PUR CE-merke",
+        text: "Dokument frå gammal frysetunnel-side.",
+        href: "/assets/fresvik/documents/pur-ce-merke.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/ce-logo-png-transparent.webp",
+        imageAlt: "CE-logo",
       },
     ],
   },
@@ -2251,18 +2392,14 @@ export const contentPages: ContentPage[] = [
     title: "Fresvik Frysetunnel",
     eyebrow: "Produkt",
     intro:
-      "Frysetunnelar frå Fresvik Produkt er utvikla for rask, jamn og kontrollert innfrysing i krevjande produksjonsmiljø.",
+      "Skreddarsydd til ditt unike produksjonsmiljø.",
     description:
-      "Fresvik Frysetunnel for kontrollert innfrysing i næringsmiddelproduksjon, maritime miljø og landbaserte industrianlegg.",
+      "Fresvik Frysetunnel er ei skreddarsydd løysing for rask, jamn og kontrollert innfrysing i moderne matproduksjon.",
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/frysetunnel",
-    cards: oldProductCards.filter((item) => item.href === "/produkt/frysetunnel"),
+    cards: [],
     sections: frysetunnelSections,
-    todo: [
-      "Kvalitetssikre kapasitetsdata og eventuelle tekniske mål mot Fresvik før endeleg lansering.",
-      "Importer frysetunnel-bilete til Sanity assets når mediaforvaltninga er klar.",
-    ],
   },
   {
     slug: "/tilleggsutstyr",

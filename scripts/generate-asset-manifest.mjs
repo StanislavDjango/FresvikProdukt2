@@ -67,6 +67,66 @@ const knownOriginalUrls = new Map([
     "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1c0b8495-5976-420a-b7a9-eb2f88e17b74/image-asset+%281%29.jpg",
   ],
   [
+    "/assets/fresvik/images/old-site/fasadepanel-fresvik-produkt.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0dd646b1-d3ba-4123-80f5-119820adfe81/Fasadepanel+Fresvik+Produkt.jpeg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/fasadepanel-nortura-herland.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5a6e06c4-282a-434c-8ba5-3d15e713ab30/Fasadepanel+Nortura+Herland.jpeg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/fasadepanel-reference-celsa.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428993165-4EZ2Y7UAU2975IUA0HWB/image-asset.jpeg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/image-asset.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428993165-4EZ2Y7UAU2975IUA0HWB/image-asset.jpeg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/fasadepanel-reference-interfrukt.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429062896-9N26M8VSYJ13D54MBGKC/01.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/01.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429062896-9N26M8VSYJ13D54MBGKC/01.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/profil3-copy-fasadepanel.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228957634-HCADFJMCX83H0GB9N5Y1/profil3+copy.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/profil3-copy.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228957634-HCADFJMCX83H0GB9N5Y1/profil3+copy.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/flake.png",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/13922f08-1a26-4996-98ca-874c87c1d3cb/flake.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/sentral-godkjent.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385862366-SQTJIQF8X2Y8LT02Z2UT/sentral%2Bgodkjent.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/tg-2135.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385867638-53S21SMAIEM6JIMC4IZ7/TG-2135.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/poly.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/startbarnk.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385876430-SF9NN179JLHLSGSAMMMQ/Startbarnk.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385879029-1G9MX2OPCNVO7N0PMHZF/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+  ],
+  [
+    "/assets/fresvik/images/old-site/ce-logo-png-transparent.webp",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1700040185087-O7K1UNJLYM01IO9TVQT5/ce-logo-png-transparent.png",
+  ],
+  [
     "/assets/fresvik/images/old-site/home-job-factory.jpg",
     "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5fc55087-b42c-48d7-9587-0811aa56c942/Fresvik+Produkt+-+Fabrikk-27.jpg",
   ],

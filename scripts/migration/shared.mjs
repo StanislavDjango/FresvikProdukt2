@@ -51,6 +51,7 @@ export function normalizeWhitespace(value = "") {
 
 export function normalizeForCompare(value = "") {
   return normalizeWhitespace(value)
+    .replace(/([\p{Ll}\p{N}])([\p{Lu}])/gu, "$1 $2")
     .toLowerCase()
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -209,6 +210,7 @@ export function extractPage(html, pageUrl) {
   const images = unique(
     [...imageCandidates, ...htmlImageUrls]
       .map((url) => absoluteUrl(url, pageUrl))
+      .map((url) => canonicalImageUrl(url, pageUrl))
       .map(cleanCandidateUrl),
   )
     .filter(Boolean)
@@ -260,6 +262,18 @@ function filenameFromUrl(url) {
   }
 }
 
+function canonicalImageUrl(url, pageUrl) {
+  try {
+    const parsed = new URL(url);
+    if (parsed.pathname === "/_next/image" && parsed.searchParams.get("url")) {
+      return absoluteUrl(parsed.searchParams.get("url"), pageUrl);
+    }
+    return url;
+  } catch {
+    return url;
+  }
+}
+
 function extractLinkText($, element) {
   const rawText = normalizeWhitespace($(element).text());
   if (rawText && !rawText.includes("<img")) return rawText;
@@ -286,15 +300,18 @@ function findImageAlt($, imageUrl) {
 
 export function summarizeCompare(oldPage, newPage) {
   const newText = normalizeForCompare(newPage.visibleText);
-  const oldTextBlocks = oldPage.textBlocks.filter((text) => text.length >= 18);
+  const oldTextBlocks = oldPage.textBlocks.filter(
+    (text) => text.length >= 18 && !isIgnorableGlobalText(text),
+  );
   const missingTextBlocks = oldTextBlocks.filter(
-    (text) => !newText.includes(normalizeForCompare(text)),
+    (text) => !textBlockCovered(text, newText),
   );
 
   const newLinks = new Set(newPage.links.map(linkCompareKey));
   const uniqueOldLinks = uniqueBy(oldPage.links, linkCompareKey);
   const missingLinks = uniqueOldLinks.filter((link) => {
     if (["email", "phone", "anchor", "placeholder"].includes(link.type)) return false;
+    if (isIgnorableGlobalLink(link)) return false;
     return !newLinks.has(linkCompareKey(link));
   });
 
@@ -342,6 +359,43 @@ function uniqueBy(items, keyFn) {
 function isIgnorableGlobalImage(filename = "") {
   const stem = filenameStem(filename);
   return stem === "logo" || stem.startsWith("favicon");
+}
+
+function isIgnorableGlobalText(text = "") {
+  const normalized = normalizeForCompare(text);
+  return (
+    normalized === "apne meny lukk meny" ||
+    normalized === "email address sign up" ||
+    normalized === "thank you"
+  );
+}
+
+function isIgnorableGlobalLink(link) {
+  const key = linkCompareKey(link);
+  return (
+    key === "/cart" ||
+    key === "/produkt/fresvik-panel" ||
+    key === "/send-foresporsel" ||
+    key === "/produkt-mappe" ||
+    key === "/kundeservice" ||
+    key === "www.facebook.com/profile.php" ||
+    key === "www.linkedin.com/company/fresvik-produkt-as"
+  );
+}
+
+function textBlockCovered(text, normalizedPageText) {
+  const normalizedBlock = normalizeForCompare(text);
+  if (!normalizedBlock) return true;
+  if (normalizedPageText.includes(normalizedBlock)) return true;
+  if (normalizedPageText.replace(/\s+/g, "").includes(normalizedBlock.replace(/\s+/g, ""))) {
+    return true;
+  }
+
+  const words = normalizedBlock.split(" ").filter((word) => word.length >= 3);
+  if (words.length < 4) return false;
+  const uniqueWords = [...new Set(words)];
+  const found = uniqueWords.filter((word) => normalizedPageText.includes(word)).length;
+  return found / uniqueWords.length >= 0.82;
 }
 
 function linkCompareKey(link) {

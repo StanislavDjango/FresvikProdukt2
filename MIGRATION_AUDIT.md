@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-11T08:08:05.382Z
+Generated: 2026-06-11T08:57:56.711Z
 
 ## Summary
 
@@ -18,9 +18,9 @@ Generated: 2026-06-11T08:08:05.382Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 269 |
+| Local image assets | 284 |
 | Local document/PDF assets | 27 |
-| Asset originalUrls recovered in manifest | 282 |
+| Asset originalUrls recovered in manifest | 297 |
 
 Do not treat the migration as complete while any route, asset, document or link remains `partial`, `missing`, `needs-review`, `inventory-only`, `thumbnail-or-variant` or `local-only`.
 
@@ -108,7 +108,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /monteringsanvisningar-fresvik-skyveport | /monteringsanvisningar-fresvik-skyveport | page | document | yes | yes | yes | 2/1 | yes | Covered as migrated page in local data. |
 | /personvernerklering | /personvernerklering | page | legal | yes | yes | yes | 0/0 | yes | Covered as migrated page in local data. |
 | /produkt | /produkt | page | product | yes | yes | yes | 11/6 | yes | Covered as migrated page in local data. |
-| /produkt/fasadepanel | /produkt/fasadepanel | page | product | yes | yes | yes | 3/3 | yes | Covered as migrated page in local data. |
+| /produkt/fasadepanel | /produkt/fasadepanel | page | product | yes | yes | yes | 14/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | /produkt/fresvik-pur-panel | redirect | product | yes | yes | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
 | /produkt/fresvik-pir-panel | /produkt/fresvik-pir-panel | page | product | yes | yes | yes | 12/7 | yes | Covered as migrated page in local data. |
 | /produkt/frysetunnel | /produkt/frysetunnel | page | product | yes | yes | yes | 9/8 | yes | Covered as migrated page in local data. |
@@ -173,7 +173,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 322 |
 | Live sitemap unique image URLs | 275 |
-| Local migrated image assets | 269 |
+| Local migrated image assets | 284 |
 | Sitemap images classified migrated | 270 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
@@ -216,10 +216,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 333 |
-| OK routes | 168 |
+| Internal link references | 349 |
+| OK routes | 171 |
 | Redirect links | 0 |
-| Asset links OK | 165 |
+| Asset links OK | 178 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -267,7 +267,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | path | status | body | images | docs | notes |
 | --- | --- | --- | --- | --- | --- |
-| /produkt/fasadepanel | page | yes | 3/3 | yes | Covered as migrated page in local data. |
+| /produkt/fasadepanel | page | yes | 14/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | redirect | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
 | /produkt/fresvik-pir-panel | page | yes | 12/7 | yes | Covered as migrated page in local data. |
 | /produkt/frysetunnel | page | yes | 9/8 | yes | Covered as migrated page in local data. |

@@ -1716,24 +1716,207 @@ const doorSections = [
 
 const facadeSections = [
   {
-    title: "Fasadepanel til lager- og industribygg",
+    title: "Full tekst frå gammal side",
     intro:
-      "Fresvik har lang erfaring med bygg for næringsmiddelindustrien og leverer utvendige fasadepanel til lager og industribygg.",
+      "Kjeldetekst henta manuelt frå https://www.fresvik.no/produkt/fasadepanel 2026-06-11.",
     items: [
       {
-        title: "Kundtilpassa løysingar",
+        title: "Fasadepanel til lager- og industribygg",
         text:
-          "Styrken ligg i kompetanse på kundetilpasningar der det er behov for fasadepanel, kjøle/fryserom og innerveggar.",
+          "Vi har lang erfaring med bygg for næringsmiddelindustrien.\n\nVi kan levere utvendige fasadepanel til lager og industribygg.\n\nVi har lang høy kunnskap med bygg der det er behov for fasadepanel, kjøle/fryserom og innerveggar. Vår styrke ligg i vår store kompetanse med kundetilpasningar.",
+        imageUrl: "/assets/fresvik/images/old-site/fasadepanel-fresvik-produkt.webp",
+        imageAlt: "Fasadepanel til lager- og industribygg",
+      },
+    ],
+  },
+  {
+    title: "Isolasjonspanelpanel gir",
+    items: [
+      {
+        title: "God energiøkonomisering",
+        text: "god energiøkonomisering.",
       },
       {
-        title: "Panelkjerner",
-        text:
-          "Fasadepanel kan leverast med både polyuretan-skum og mineralull som kjerne.",
+        title: "Kort byggjetid",
+        text: "kort byggjetid.",
       },
       {
-        title: "Byggetid og energi",
+        title: "God totaløkonomi",
+        text: "god totaløkonomi.",
+      },
+    ],
+  },
+  {
+    title: "Produktfordelar frå gammal side",
+    items: [
+      {
+        title: "Utvendige fasadepanel med polyuretan- og mineralullkjerne",
+        text: "Utvendige fasadepanel med polyuretan- og mineralullkjerne.",
+        imageUrl: "/assets/fresvik/images/migrated/flake-black.png",
+        imageAlt: "Hvitt snøfnugg",
+      },
+      {
+        title: "God energiøkonomisering og kort byggjetid",
+        text: "God energiøkonomisering og kort byggjetid.",
+      },
+      {
+        title: "Sentral godkjenning for ansvarsrett og medlem av StartBank",
+        text: "Sentral godkjenning for ansvarsrett og medlem av StartBank.",
+      },
+    ],
+  },
+  {
+    title: "Fasadepanel med polyuretan-kjerne",
+    items: [
+      {
+        title: "Fasadepanel med polyuretan-kjerne",
         text:
-          "Isolasjonspanel skal gi god energiøkonomisering og kort byggjetid.",
+          "Vi kan levere panel med både polyuretan skum og mineralull som kjerne. Polyuretanskum-panel er å føretrekke på grunn av låg pris og dei overlegne isolasjonseigenskapane skummet har.",
+        imageUrl: "/assets/fresvik/images/old-site/fasadepanel-nortura-herland.webp",
+        imageAlt:
+          "Et bygg under konstruksjon med utstyr og arbeidere, hvite vegger og isolasjon.",
+      },
+    ],
+  },
+  {
+    title: "Referansar",
+    intro: "Her kan du sjå nokre av våre referansar på fasadeprosjekt:",
+    items: [
+      {
+        title: "Celsa Steel Service, Sotra",
+        text: "Featured.",
+        href: "/referansar/celsa-steel-sotra",
+        imageUrl: "/assets/fresvik/images/old-site/image-asset.webp",
+        imageAlt: "Celsa Steel Service, Sotra",
+      },
+      {
+        title: "Interfrukt",
+        text: "Featured.",
+        href: "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
+        imageUrl: "/assets/fresvik/images/old-site/01.webp",
+        imageAlt: "Interfrukt",
+      },
+    ],
+  },
+  {
+    title: "Tilleggsutstyr",
+    items: [
+      {
+        title: "Beslag",
+        text: "Featured.",
+        href: "/andre-produkter/beslag",
+        imageUrl: "/assets/fresvik/images/old-site/profil3-copy.webp",
+        imageAlt: "Beslag",
+      },
+    ],
+  },
+  {
+    title: "For samarbeidspartnarar",
+    items: [
+      {
+        title: "Har du eit prosjekt du vil diskutere med oss?",
+        text: "Ta kontakt.",
+        href: "/kontakt",
+        imageUrl: "/assets/fresvik/images/migrated/flake-left.png",
+        imageAlt: "En snøfnugg med en kompleks, symmetrisk struktur",
+      },
+    ],
+  },
+  {
+    title: "Kontaktinformasjon frå gammal side",
+    intro: "Kontaktblokkane under låg synleg på den gamle fasadepanel-sida.",
+    items: [
+      {
+        title: "Fresvik Produkt AS",
+        text:
+          "Fresvikvegen 995,\n6896 Fresvik\nTel: 57 69 83 00\nE-post: post@fresvik.no",
+        imageUrl: "/assets/fresvik/images/old-site/flake.png",
+        imageAlt: "Snøfnugg",
+      },
+      {
+        title: "Salsavdeling Fresvik",
+        text:
+          "Arne-Olav Lien Bardølsgård\nMob: 99 55 25 49\narnbar@fresvik.no",
+      },
+      {
+        title: "Salsavdeling Drammen",
+        text:
+          "Lars Erling Livrud\nMob: 40 47 79 12\nlarliv@fresvik.no",
+      },
+      {
+        title: "Frode Winther",
+        text: "Frode Winther\nMob: 91 38 39 49\nfrowin@fresvik.no",
+      },
+    ],
+  },
+  {
+    title: "Nyheitsbrev og footerlenker frå gammal side",
+    intro:
+      "Motta nyheitsbrev. Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen. Sjå vår personvernerklæring.",
+    items: [
+      {
+        title: "Personvernerklæring",
+        text: "Footer-lenke frå gammal fasadepanel-side.",
+        href: "/personvernerklering",
+      },
+      {
+        title: "Openheitslova",
+        text: "Footer-lenke frå gammal fasadepanel-side.",
+        href: "/openheitslova",
+      },
+      {
+        title: "Nettside levert av GASTA",
+        text: "GASTA.",
+        href: "https://www.gasta.no/",
+      },
+    ],
+  },
+  {
+    title: "Sertifikat- og botnlenker frå gammal side",
+    intro: "Lenker og merke som låg i botnområdet på gammal fasadepanel-side.",
+    items: [
+      {
+        title: "Sentral godkjenning",
+        text: "Dokument frå gammal fasadepanel-side.",
+        href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/sentral-godkjent.webp",
+        imageAlt: "Sentral godkjenning",
+      },
+      {
+        title: "SINTEF Certification TG 2135",
+        text: "Ekstern lenke frå gammal fasadepanel-side.",
+        href: "https://www.sintefcertification.no/Product/Index/129",
+        imageUrl: "/assets/fresvik/images/old-site/tg-2135.webp",
+        imageAlt: "TG 2135",
+      },
+      {
+        title: "Dokumentasjon",
+        text: "Footer-lenke frå gammal fasadepanel-side.",
+        href: "/dokumentasjon",
+        imageUrl: "/assets/fresvik/images/old-site/poly.webp",
+        imageAlt: "Polyurethan isolerer betre",
+      },
+      {
+        title: "StartBANK",
+        text: "Merke frå gammal fasadepanel-side.",
+        href: "/dokumentasjon",
+        imageUrl: "/assets/fresvik/images/old-site/startbarnk.webp",
+        imageAlt: "StartBANK",
+      },
+      {
+        title: "Miljøfyrtårn",
+        text: "Ekstern lenke frå gammal fasadepanel-side.",
+        href: "https://rapportering.miljofyrtarn.no/stats/176324",
+        imageUrl:
+          "/assets/fresvik/images/old-site/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.jpg",
+        imageAlt: "Miljøfyrtårn",
+      },
+      {
+        title: "PUR CE-merke",
+        text: "Dokument frå gammal fasadepanel-side.",
+        href: "/assets/fresvik/documents/pur-ce-merke.pdf",
+        imageUrl: "/assets/fresvik/images/old-site/ce-logo-png-transparent.webp",
+        imageAlt: "CE-logo",
       },
     ],
   },
@@ -2051,20 +2234,17 @@ export const contentPages: ContentPage[] = [
   },
   {
     slug: "/produkt/fasadepanel",
-    title: "Fasadepanel",
+    title: "Fasadepanel til lager- og industribygg",
     eyebrow: "Produkt",
     intro:
-      "Utvendige fasadepanel til lager- og industribygg, med kompetanse frå næringsmiddelbygg.",
-    description: "Produktområde for fasadepanel frå Fresvik Produkt.",
+      "Vi har lang erfaring med bygg for næringsmiddelindustrien. Vi kan levere utvendige fasadepanel til lager og industribygg.",
+    description:
+      "Bestill utvendige fasadepanel for lager- og industribygg. Erfaring innen næringsmiddelindustrien med fokus på energiøkonomi og kort byggetid. Kontakt oss i dag.",
     pageType: "product",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt/fasadepanel",
-    cards: oldProductCards.filter((item) => item.href === "/produkt/fasadepanel"),
+    cards: [],
     sections: facadeSections,
-    todo: [
-      "Importer fasadepanel-bilete og referanselenker.",
-      "Kvalitetssikre beskriving av panelkjerner, godkjenningar og ansvarsrett.",
-    ],
   },
   {
     slug: "/produkt/frysetunnel",

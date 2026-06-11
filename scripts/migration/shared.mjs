@@ -291,15 +291,11 @@ export function summarizeCompare(oldPage, newPage) {
     (text) => !newText.includes(normalizeForCompare(text)),
   );
 
-  const newLinks = new Set(
-    newPage.links.map((link) => normalizeLinkForCompare(link.absoluteUrl || link.href)),
-  );
-  const uniqueOldLinks = uniqueBy(oldPage.links, (link) =>
-    normalizeLinkForCompare(link.absoluteUrl || link.href),
-  );
+  const newLinks = new Set(newPage.links.map(linkCompareKey));
+  const uniqueOldLinks = uniqueBy(oldPage.links, linkCompareKey);
   const missingLinks = uniqueOldLinks.filter((link) => {
     if (["email", "phone", "anchor", "placeholder"].includes(link.type)) return false;
-    return !newLinks.has(normalizeLinkForCompare(link.absoluteUrl || link.href));
+    return !newLinks.has(linkCompareKey(link));
   });
 
   const newImageStems = new Set(newPage.images.map((image) => filenameStem(image.filename)));
@@ -346,6 +342,31 @@ function uniqueBy(items, keyFn) {
 function isIgnorableGlobalImage(filename = "") {
   const stem = filenameStem(filename);
   return stem === "logo" || stem.startsWith("favicon");
+}
+
+function linkCompareKey(link) {
+  const value = link.absoluteUrl || link.href || "";
+  if (link.type === "internal") return pathnameCompareKey(value);
+  if (link.type === "document" || link.type === "asset") return fileCompareKey(value);
+  return normalizeLinkForCompare(value);
+}
+
+function pathnameCompareKey(value = "") {
+  try {
+    const parsed = new URL(value);
+    return parsed.pathname.replace(/\/+$/, "") || "/";
+  } catch {
+    return value.replace(/\/+$/, "");
+  }
+}
+
+function fileCompareKey(value = "") {
+  try {
+    const parsed = new URL(value);
+    return filenameStem(path.basename(parsed.pathname));
+  } catch {
+    return filenameStem(path.basename(value));
+  }
 }
 
 function normalizeLinkForCompare(value = "") {

@@ -12,6 +12,8 @@
     "check:migration": "node scripts/check-migration-assets.mjs",
     "audit:migration": "node scripts/audit-migration.mjs",
     "audit:content": "node scripts/audit-page-content.mjs",
+    "validate:data": "node scripts/validate-migration-data.mjs",
+    "migration:checkpoint": "npm run validate:data && npm run audit:migration && npm run audit:content && npm run check:assets && npm run check:migration && npm run lint && npm run build",
     "migration:crawl-page": "node scripts/migration/crawl-page.mjs",
     "migration:compare-page": "node scripts/migration/compare-page.mjs",
     "content:salvage-news": "node scripts/salvage-news-content.mjs",

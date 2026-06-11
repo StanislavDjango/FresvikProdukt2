@@ -1,13 +1,13 @@
 {
   "oldUrl": "https://www.fresvik.no/produkt/fasadepanel",
-  "newUrl": "http://127.0.0.1:3057/produkt/fasadepanel",
-  "checkedAt": "2026-06-11T07:51:18.305Z",
+  "newUrl": "http://127.0.0.1:3058/produkt/fasadepanel",
+  "checkedAt": "2026-06-11T08:07:40.376Z",
   "status": "partial",
   "counts": {
     "oldTextBlocks": 23,
     "missingTextBlocks": 21,
-    "oldLinks": 42,
-    "missingLinks": 37,
+    "oldLinks": 43,
+    "missingLinks": 15,
     "oldImages": 14,
     "missingImages": 13
   },
@@ -42,117 +42,9 @@
       "type": "internal"
     },
     {
-      "text": "Fresvik Produkt",
-      "href": "/",
-      "absoluteUrl": "https://www.fresvik.no/",
-      "type": "internal"
-    },
-    {
-      "text": "Fresvik PIR-Panel",
-      "href": "/produkt/fresvik-pir-panel",
-      "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-pir-panel",
-      "type": "internal"
-    },
-    {
       "text": "Fresvik PUR-Panel",
       "href": "/produkt/fresvik-panel",
       "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-panel",
-      "type": "internal"
-    },
-    {
-      "text": "Kjøle- og fryseportar",
-      "href": "/produkt/kjole-fryseportar",
-      "absoluteUrl": "https://www.fresvik.no/produkt/kjole-fryseportar",
-      "type": "internal"
-    },
-    {
-      "text": "Kjøle- og frysedører",
-      "href": "/produkt/kjole-frysedorer",
-      "absoluteUrl": "https://www.fresvik.no/produkt/kjole-frysedorer",
-      "type": "internal"
-    },
-    {
-      "text": "Frysetunnel",
-      "href": "/produkt/frysetunnel",
-      "absoluteUrl": "https://www.fresvik.no/produkt/frysetunnel",
-      "type": "internal"
-    },
-    {
-      "text": "Tilleggsutstyr",
-      "href": "/tilleggsutstyr",
-      "absoluteUrl": "https://www.fresvik.no/tilleggsutstyr",
-      "type": "internal"
-    },
-    {
-      "text": "Referansar",
-      "href": "/referansar",
-      "absoluteUrl": "https://www.fresvik.no/referansar",
-      "type": "internal"
-    },
-    {
-      "text": "Montasje",
-      "href": "/tenester/montasje",
-      "absoluteUrl": "https://www.fresvik.no/tenester/montasje",
-      "type": "internal"
-    },
-    {
-      "text": "Leveranse",
-      "href": "/tenester/leveranse",
-      "absoluteUrl": "https://www.fresvik.no/tenester/leveranse",
-      "type": "internal"
-    },
-    {
-      "text": "Service og reservedeler",
-      "href": "/tenester/service-reservedeler",
-      "absoluteUrl": "https://www.fresvik.no/tenester/service-reservedeler",
-      "type": "internal"
-    },
-    {
-      "text": "Dokumentasjon",
-      "href": "/dokumentasjon",
-      "absoluteUrl": "https://www.fresvik.no/dokumentasjon",
-      "type": "internal"
-    },
-    {
-      "text": "Monteringsanvisningar",
-      "href": "/monteringsanvisning",
-      "absoluteUrl": "https://www.fresvik.no/monteringsanvisning",
-      "type": "internal"
-    },
-    {
-      "text": "Ofte Stilte Spørsmål",
-      "href": "/kundeservice/faq",
-      "absoluteUrl": "https://www.fresvik.no/kundeservice/faq",
-      "type": "internal"
-    },
-    {
-      "text": "Fresvik Produkt",
-      "href": "/firmainfo",
-      "absoluteUrl": "https://www.fresvik.no/firmainfo",
-      "type": "internal"
-    },
-    {
-      "text": "Tilsette",
-      "href": "/tilsette",
-      "absoluteUrl": "https://www.fresvik.no/tilsette",
-      "type": "internal"
-    },
-    {
-      "text": "Aktuelt",
-      "href": "/aktuelt",
-      "absoluteUrl": "https://www.fresvik.no/aktuelt",
-      "type": "internal"
-    },
-    {
-      "text": "Ledig stilling",
-      "href": "/stillingledig",
-      "absoluteUrl": "https://www.fresvik.no/stillingledig",
-      "type": "internal"
-    },
-    {
-      "text": "Kontakt",
-      "href": "/kontakt",
-      "absoluteUrl": "https://www.fresvik.no/kontakt",
       "type": "internal"
     },
     {
@@ -180,21 +72,9 @@
       "type": "internal"
     },
     {
-      "text": "Mappe: Tenester",
-      "href": "/tenester",
-      "absoluteUrl": "https://www.fresvik.no/tenester",
-      "type": "internal"
-    },
-    {
       "text": "Mappe: Kundeservice",
       "href": "/kundeservice",
       "absoluteUrl": "https://www.fresvik.no/kundeservice",
-      "type": "internal"
-    },
-    {
-      "text": "Mappe: Om oss",
-      "href": "/om-oss",
-      "absoluteUrl": "https://www.fresvik.no/om-oss",
       "type": "internal"
     },
     {
@@ -213,18 +93,6 @@
       "text": "Beslag",
       "href": "/andre-produkter/beslag",
       "absoluteUrl": "https://www.fresvik.no/andre-produkter/beslag",
-      "type": "internal"
-    },
-    {
-      "text": "Personvernerklæring",
-      "href": "/personvernerklering",
-      "absoluteUrl": "https://www.fresvik.no/personvernerklering",
-      "type": "internal"
-    },
-    {
-      "text": "Openheitslova",
-      "href": "/openheitslova",
-      "absoluteUrl": "https://www.fresvik.no/openheitslova",
       "type": "internal"
     },
     {

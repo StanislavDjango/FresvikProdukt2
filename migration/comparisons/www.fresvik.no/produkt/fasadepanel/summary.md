@@ -1,8 +1,8 @@
 # Page comparison
 
 Old URL: https://www.fresvik.no/produkt/fasadepanel
-New URL: http://127.0.0.1:3057/produkt/fasadepanel
-Checked: 2026-06-11T07:51:18.306Z
+New URL: http://127.0.0.1:3058/produkt/fasadepanel
+Checked: 2026-06-11T08:07:40.377Z
 Status: partial
 
 ## Counts
@@ -13,8 +13,8 @@ Status: partial
 | Missing text blocks | 21 |
 | Old images | 14 |
 | Missing images | 13 |
-| Old links | 42 |
-| Missing links | 37 |
+| Old links | 43 |
+| Missing links | 15 |
 
 ## Missing Text Blocks
 
@@ -59,37 +59,15 @@ Status: partial
 ## Missing Links
 
 - 0 — https://www.fresvik.no/cart
-- Fresvik Produkt — https://www.fresvik.no/
-- Fresvik PIR-Panel — https://www.fresvik.no/produkt/fresvik-pir-panel
 - Fresvik PUR-Panel — https://www.fresvik.no/produkt/fresvik-panel
-- Kjøle- og fryseportar — https://www.fresvik.no/produkt/kjole-fryseportar
-- Kjøle- og frysedører — https://www.fresvik.no/produkt/kjole-frysedorer
-- Frysetunnel — https://www.fresvik.no/produkt/frysetunnel
-- Tilleggsutstyr — https://www.fresvik.no/tilleggsutstyr
-- Referansar — https://www.fresvik.no/referansar
-- Montasje — https://www.fresvik.no/tenester/montasje
-- Leveranse — https://www.fresvik.no/tenester/leveranse
-- Service og reservedeler — https://www.fresvik.no/tenester/service-reservedeler
-- Dokumentasjon — https://www.fresvik.no/dokumentasjon
-- Monteringsanvisningar — https://www.fresvik.no/monteringsanvisning
-- Ofte Stilte Spørsmål — https://www.fresvik.no/kundeservice/faq
-- Fresvik Produkt — https://www.fresvik.no/firmainfo
-- Tilsette — https://www.fresvik.no/tilsette
-- Aktuelt — https://www.fresvik.no/aktuelt
-- Ledig stilling — https://www.fresvik.no/stillingledig
-- Kontakt — https://www.fresvik.no/kontakt
 - Facebook — https://www.facebook.com/profile.php?id=100057316063120
 - LinkedIn — https://www.linkedin.com/company/fresvik-produkt-as/
 - Send forespørsel — https://www.fresvik.no/send-foresporsel
 - Mappe: Produkt — https://www.fresvik.no/produkt-mappe
-- Mappe: Tenester — https://www.fresvik.no/tenester
 - Mappe: Kundeservice — https://www.fresvik.no/kundeservice
-- Mappe: Om oss — https://www.fresvik.no/om-oss
 - Celsa Steel Service, Sotra — https://www.fresvik.no/referansar/celsa-steel-sotra
 - Interfrukt — https://www.fresvik.no/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt
 - Beslag — https://www.fresvik.no/andre-produkter/beslag
-- Personvernerklæring — https://www.fresvik.no/personvernerklering
-- Openheitslova — https://www.fresvik.no/openheitslova
 - GASTA — https://www.gasta.no/
 - sentral+godkjent.png — https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf
 - TG-2135.jpg — https://www.sintefcertification.no/Product/Index/129

@@ -1,0 +1,8 @@
+{
+  "siteName": "fresvik",
+  "oldBaseUrl": "https://www.fresvik.no",
+  "assetDir": "public/assets/fresvik",
+  "evidenceDir": "migration/evidence",
+  "comparisonDir": "migration/comparisons",
+  "defaultNewBaseUrl": "http://127.0.0.1:3000"
+}

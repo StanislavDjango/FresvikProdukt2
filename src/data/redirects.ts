@@ -21,6 +21,11 @@ export const redirectRules: RedirectRule[] = [
     permanent: true,
   },
   {
+    source: "/tenester",
+    destination: "/tenester/montasje",
+    permanent: false,
+  },
+  {
     source: "/store",
     destination: "/tilleggsutstyr",
     permanent: true,

@@ -3336,11 +3336,13 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/leveranse",
       "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
@@ -3441,11 +3443,13 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/leveranse",
       "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
@@ -3464,11 +3468,13 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/leveranse",
       "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
@@ -3932,11 +3938,13 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/leveranse",
       "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
@@ -4776,9 +4784,11 @@
     "filePath": "public/assets/fresvik/images/old-site/flake-black.png",
     "assetType": "image",
     "usedBy": [
+      "/tenester/leveranse",
       "/tenester/montasje"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje"
     ],
     "sha256": "b2fbab26d90e1fb0171d5da17c3da86a07952b18b555ee590c51c30a5f013563",
@@ -4829,6 +4839,7 @@
       "/produkt",
       "/produkt/fasadepanel",
       "/produkt/frysetunnel",
+      "/tenester/leveranse",
       "/tenester/montasje",
       "/tilleggsutstyr"
     ],
@@ -4836,6 +4847,7 @@
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/produkt/fasadepanel",
       "https://www.fresvik.no/produkt/frysetunnel",
+      "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
@@ -6736,6 +6748,31 @@
     "notes": "Unused local migration cache file; keep until asset review is complete."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/port1web.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/port1web.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/tenester/leveranse"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tenester/leveranse"
+    ],
+    "sha256": "ee054f044a9a598615cda5754410992bce54b4e2d1d5f58e05807642170a34fd",
+    "fileSize": 292798,
+    "sanityAssetId": "image-c01473110649fad9c7daea3edc6787c1927d11d4-2126x800-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c01473110649fad9c7daea3edc6787c1927d11d4-2126x800-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/port1web.jpg."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/01c192a0-dbab-49e5-b8fd-629244295ab4/prod8.jpg",
     "localPath": "/assets/fresvik/images/old-site/prod8-651c53b842.jpg",
     "filePath": "public/assets/fresvik/images/old-site/prod8-651c53b842.jpg",
@@ -6940,11 +6977,13 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/leveranse",
       "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
@@ -7791,11 +7830,13 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/leveranse",
       "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],

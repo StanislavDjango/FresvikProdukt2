@@ -6,25 +6,25 @@ Generated from local migration cache and source data.
 
 | Metric | Count |
 | --- | ---: |
-| Total assets found | 354 |
-| Images | 327 |
+| Total assets found | 355 |
+| Images | 328 |
 | PDFs/documents | 27 |
 | Other assets | 0 |
-| Used assets | 226 |
+| Used assets | 227 |
 | Unused assets | 120 |
 | Missing assets | 0 |
 | Duplicate assets | 7 |
 | Ready for Sanity | 35 |
-| Uploaded to Sanity | 192 |
+| Uploaded to Sanity | 193 |
 | Failed or needs review | 0 |
-| TODO original URLs | 47 |
+| TODO original URLs | 48 |
 
 ## Status Counts
 
 - `duplicate`: 7
 - `ready-for-sanity`: 35
 - `unused`: 120
-- `uploaded-to-sanity`: 192
+- `uploaded-to-sanity`: 193
 
 ## Local Path Usage
 
@@ -124,7 +124,7 @@ Generated from local migration cache and source data.
 | Baseline old sitemap image count | 325 |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Local migrated image assets | 327 |
+| Local migrated image assets | 328 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |

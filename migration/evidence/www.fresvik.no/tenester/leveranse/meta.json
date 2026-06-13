@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/tenester/leveranse",
+  "finalUrl": "https://www.fresvik.no/tenester/leveranse",
+  "fetchedAt": "2026-06-13T19:46:15.089Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Leveranse | Bestill pålitelig levering i dag — Fresvik Produkt",
+  "metaDescription": "Fresvik Produkt tilbyr sikre og pålitelige leveranser av isolasjons- og kjølesystemer med detaljerte monteringsveiledninger. Kontakt oss for ekspertise og skreddersydde løsninger.",
+  "counts": {
+    "headings": 12,
+    "textBlocks": 24,
+    "links": 92,
+    "images": 32,
+    "documents": 2
+  }
+}

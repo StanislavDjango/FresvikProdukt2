@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-13T19:44:24.603Z
+Generated: 2026-06-13T19:48:54.629Z
 
 ## Summary
 
@@ -18,7 +18,7 @@ Generated: 2026-06-13T19:44:24.603Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 327 |
+| Local image assets | 328 |
 | Local document/PDF assets | 27 |
 | Asset originalUrls recovered in manifest | 307 |
 
@@ -150,7 +150,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /stillingledig | /stillingledig | page | page | yes | yes | yes | 4/4 | yes | Covered as migrated page in local data. |
 | /store | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |
 | /store/p/dr-tiltrekker-diktator | /tilleggsutstyr | redirect | product | yes | yes | no | 0/1 | no | Redirects to /tilleggsutstyr. |
-| /tenester/leveranse | /tenester/leveranse | page | service | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
+| /tenester/leveranse | /tenester/leveranse | page | service | yes | yes | yes | 11/2 | yes | Covered as migrated page in local data. |
 | /tenester/montasje | /tenester/montasje | page | service | yes | yes | yes | 11/2 | yes | Covered as migrated page in local data. |
 | /tenester/service-reservedeler | /tenester/service-reservedeler | page | service | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /tilleggsutstyr | /tilleggsutstyr | page | unknown | yes | yes | yes | 31/12 | yes | Covered as migrated page in local data. |
@@ -173,7 +173,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Local migrated image assets | 327 |
+| Local migrated image assets | 328 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
@@ -216,10 +216,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 394 |
+| Internal link references | 395 |
 | OK routes | 174 |
 | Redirect links | 0 |
-| Asset links OK | 220 |
+| Asset links OK | 221 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -274,7 +274,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /produkt/frysetunnel | page | yes | 15/8 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-frysedorer | page | yes | 14/2 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-fryseportar | page | yes | 13/8 | yes | Covered as migrated page in local data. |
-| /tenester/leveranse | page | yes | 2/2 | yes | Covered as migrated page in local data. |
+| /tenester/leveranse | page | yes | 11/2 | yes | Covered as migrated page in local data. |
 | /tenester/montasje | page | yes | 11/2 | yes | Covered as migrated page in local data. |
 | /tenester/service-reservedeler | page | yes | 1/1 | yes | Covered as migrated page in local data. |
 

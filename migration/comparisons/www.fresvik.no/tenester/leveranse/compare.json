@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/tenester/leveranse",
+  "newUrl": "http://127.0.0.1:3060/tenester/leveranse",
+  "checkedAt": "2026-06-13T19:47:52.968Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 15,
+    "missingTextBlocks": 0,
+    "oldLinks": 40,
+    "missingLinks": 0,
+    "oldImages": 9,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

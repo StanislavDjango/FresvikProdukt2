@@ -802,6 +802,37 @@ const montasjeContactCards: ContentCard[] = [
   ...accessoryContactCards.slice(1),
 ];
 
+const leveranseCards: ContentCard[] = [
+  {
+    title: "Fokus på leveransesikkerheit",
+    text:
+      "Om leveransen er fasadeelement, standard eller spesialtilpassa kjølerom/fryserom, legg vi vekt på leveransesikkerheit. Du skal vite at du får leveransen til riktig tid.",
+    imageUrl: "/assets/fresvik/images/old-site/port1web.jpg",
+    imageAlt:
+      "En mann som jobber på fabrikker til Fresvik Produkt i Norge, holder på med å forme et isolasjonspanel.",
+  },
+  {
+    title: "Alle nødvendige delar i pakken",
+    text:
+      'Vi leverer "pakkar" med alle nødvendige deler som er godt og synleg merka, og våre gode monteringsanvisningar lastar du lett ned frå heimesida vår.',
+  },
+  {
+    title: "Synleg merking",
+    text: "Synleg merking",
+  },
+  {
+    title: "Gode monteringsansvisningar på nett",
+    text: "Gode monteringsansvisningar på nett",
+  },
+  {
+    title: "Har du eit prosjekt du vil diskutere med oss?",
+    text: "Har du eit prosjekt du vil diskutere med oss?",
+    href: "/kontakt",
+    imageUrl: "/assets/fresvik/images/old-site/flake.png",
+    imageAlt: "Snøfnugg",
+  },
+];
+
 const supportTextByHref: Record<string, string> = {
   "/kjolerom-fryserom-butikk":
     "Fresvik Produkt er marknadsleiar på kjøle- og fryserom til daglegvarehandel, bensinstasjonar og storkioskar, og leverer gjerne totalpakke med panel, portar, glassfrontar, hylleinnreiing, beslag, ventilar, festemateriell og montasje gjennom samarbeidande montasjeselskap.",
@@ -2872,7 +2903,7 @@ export const contentPages: ContentPage[] = [
     title: "Leveranse",
     eyebrow: "Teneste",
     intro:
-      "Leveransesikkerheit for fasadeelement, standard og spesialtilpassa kjølerom/fryserom.",
+      "Fokus på leveransesikkerheit",
     description: "Leveransetenester frå Fresvik Produkt.",
     pageType: "service",
     priority: "high",
@@ -2880,27 +2911,18 @@ export const contentPages: ContentPage[] = [
     cards: oldServiceCards.filter((item) => item.href === "/tenester/leveranse"),
     sections: [
       {
-        title: "Leveranse frå gammal side",
-        items: [
-          {
-            title: "Fokus på leveransesikkerheit",
-            text:
-              "Fresvik legg vekt på at kunden skal vite at leveransen kjem til riktig tid.",
-          },
-          {
-            title: "Alle nødvendige delar i pakken",
-            text:
-              "Leveransane blir pakka med nødvendige delar som er godt og synleg merka.",
-          },
-          {
-            title: "Monteringsanvisningar på nett",
-            text:
-              "Gode monteringsanvisningar skal vere lette å laste ned frå heimesida.",
-          },
-        ],
+        title: "Leveranse",
+        items: leveranseCards,
+      },
+      {
+        title: "Kontakt",
+        items: montasjeContactCards,
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
       },
     ],
-    todo: ["Kvalitetssikre leveransevilkår og eventuelle juridiske betingelsar."],
   },
   {
     slug: "/tenester/service-reservedeler",

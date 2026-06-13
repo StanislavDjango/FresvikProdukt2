@@ -1,0 +1,80 @@
+Teneste
+Leveranse
+Fokus på leveransesikkerheit
+2026-03-10
+Teneste registrert frå gammal sitemap med kjeldetekst, prosess og lenker bevart.
+Om leveransen er fasadeelement, standard eller spesialtilpassa kjølerom/fryserom, legg vi vekt på leveransesikkerheit. Du skal vite at du får leveransen til riktig tid.
+Alle nødvendige delar i pakken
+Vi leverer "pakkar" med alle nødvendige deler som er godt og synleg merka, og våre gode monteringsanvisningar lastar du lett ned frå heimesida vår.
+Synleg merking
+Gode monteringsansvisningar på nett
+Har du eit prosjekt du vil diskutere med oss?
+Kontakt
+Fresvik Produkt AS
+Fresvikvegen 995,6896 FresvikTel: 57 69 83 00E-post: post@fresvik.no
+Salsavdeling Fresvik:
+Arne-Olav Lien BardølsgårdMob: 99 55 25 49arnbar@fresvik.no
+Salsavdeling Drammen:
+Lars Erling LivrudMob: 40 47 79 12larliv@fresvik.no
+Salsavdeling Drammen
+Frode WintherMob: 91 38 39 49frowin@fresvik.no
+Dokumentasjon og sertifikat
+Sentral godkjenning
+sentral+godkjent.png
+SINTEF Teknisk Godkjenning
+TG-2135.jpg
+Poly
+Poly.png
+StartBANK
+Startbarnk.png
+Miljøfyrtårn
+wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png
+CE
+ce-logo-png-transparent.png
+Nettside levert av GASTA
+Motta nyheitsbrev Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen.Sjå vår personvernerklæring. PersonvernerklæringOpenheitslovaNettside levert av GASTA
+Full tekst frå gammal side
+Kjeldetekst henta frå https://www.fresvik.no/tenester/leveranse.
+Leveranse | Bestill pålitelig levering i dag - Fresvik Produkt
+Fokus på leveransesikkerheit Alle nødvendige delar i pakken Gode monteringsansvisningar på nett Om leveransen er fasadeelement, standard eller spesialtilpassa kjølerom/fryserom, legg vi vekt på leveransesikkerheit. Du skal vite at du får leveransen til riktig tid. Vi leverer "pakkar" med alle nødvendige deler som er godt og synleg merka, og våre gode monteringsanvisningar lastar du lett ned frå heimesida vår. Har du eit prosjekt du vil diskutere med oss?
+Bilde frå gammal side
+Leveranse | Bestill pålitelig levering i dag - Fresvik Produkt bilde 1
+Bilde frå gammal side, bevart med sourceUrl i migration extract.
+Leveranse | Bestill pålitelig levering i dag - Fresvik Produkt bilde 2
+Dokumentlenker frå gammal side
+Dokument
+https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf
+https://www.fresvik.no/s/PUR-ce-merke.pdf
+Lenker frå gammal side
+Ekstern lenke
+/produkt/fresvik-pir-panel
+/produkt/fresvik-panel
+/produkt/kjole-fryseportar
+/produkt/kjole-frysedorer
+/produkt/fasadepanel
+/produkt/frysetunnel
+/tilleggsutstyr
+/referansar
+/tenester/montasje
+/tenester/service-reservedeler
+/dokumentasjon
+/monteringsanvisning
+/kundeservice/faq
+/firmainfo
+/tilsette
+/aktuelt
+/stillingledig
+/kontakt
+/send-foresporsel
+/tenester
+/om-oss
+/personvernerklering
+/openheitslova
+Klar for å diskutere prosjektet?
+Ta kontakt med Fresvik Produkt for teknisk avklaring, produktval og vidare planlegging.
+Fresvik Produkt AS leverer isolerte panel, kjøle- og fryseløysingar, montasje og service til norske prosjekt.
+Fresvikvegen 995, 6896 Fresvik
+Nettstad
+Informasjon
+© Fresvik Produkt AS
+Modernisert med Next.js, Sanity og Vercel.

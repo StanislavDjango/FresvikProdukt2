@@ -833,6 +833,32 @@ const leveranseCards: ContentCard[] = [
   },
 ];
 
+const serviceReservedelerCards: ContentCard[] = [
+  {
+    title: "Viss noko går gale, stiller vi opp.",
+    text: "Viss noko går gale, stiller vi opp.",
+    imageUrl: "/assets/fresvik/images/old-site/flake-left.png",
+    imageAlt: "Snøkrystall på svart bakgrunn",
+  },
+  {
+    title: "Reservedeler på lager",
+    text:
+      "Vi har til ein kvar tid eit godt lager av reservedeler til dører og portar. Det gjer at vi kan levere dei spesifikke delane du treng!",
+  },
+  {
+    title: "Rask leveringstid",
+    text:
+      "Kundane våre har store krav til leveringstid på reservedeler om noko går gale. Reservelager i kombinasjon med mange samarbeidspartnarar, gjer at vi kan ha kort leveringstid når det trengst.",
+  },
+  {
+    title: "Treng du service eller deler?",
+    text: "Treng du service eller deler?",
+    href: "/kontakt",
+    imageUrl: "/assets/fresvik/images/old-site/flake.png",
+    imageAlt: "Snøfnugg",
+  },
+];
+
 const supportTextByHref: Record<string, string> = {
   "/kjolerom-fryserom-butikk":
     "Fresvik Produkt er marknadsleiar på kjøle- og fryserom til daglegvarehandel, bensinstasjonar og storkioskar, og leverer gjerne totalpakke med panel, portar, glassfrontar, hylleinnreiing, beslag, ventilar, festemateriell og montasje gjennom samarbeidande montasjeselskap.",
@@ -2928,8 +2954,7 @@ export const contentPages: ContentPage[] = [
     slug: "/tenester/service-reservedeler",
     title: "Service og reservedeler",
     eyebrow: "Teneste",
-    intro:
-      "Service og reservedeler for dører og portar når noko går gale og leveringstid betyr mykje.",
+    intro: "Viss noko går gale, stiller vi opp.",
     description: "Service og reservedeler frå Fresvik Produkt.",
     pageType: "service",
     priority: "high",
@@ -2937,27 +2962,18 @@ export const contentPages: ContentPage[] = [
     cards: oldServiceCards.filter((item) => item.href === "/tenester/service-reservedeler"),
     sections: [
       {
-        title: "Service frå gammal side",
-        items: [
-          {
-            title: "Viss noko går gale, stiller vi opp",
-            text:
-              "Den gamle sida legg vekt på at Fresvik stiller opp når kundane treng service eller delar.",
-          },
-          {
-            title: "Lager av reservedeler",
-            text:
-              "Fresvik oppgir å ha eit godt lager av reservedeler til dører og portar, slik at dei kan levere spesifikke delar ved behov.",
-          },
-          {
-            title: "Kort leveringstid",
-            text:
-              "Reservelager kombinert med samarbeidspartnarar skal gi kort leveringstid når det trengst.",
-          },
-        ],
+        title: "Service og reservedeler",
+        items: serviceReservedelerCards,
+      },
+      {
+        title: "Kontakt",
+        items: productIndexContactCards,
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
       },
     ],
-    todo: ["Legg inn servicekontakt, skjema eller reservedelsflyt i Sanity."],
   },
   {
     slug: "/dokumentasjon",

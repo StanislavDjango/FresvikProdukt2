@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/tenester/service-reservedeler",
+  "newUrl": "http://127.0.0.1:3060/tenester/service-reservedeler",
+  "checkedAt": "2026-06-13T19:51:37.766Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 15,
+    "missingTextBlocks": 0,
+    "oldLinks": 42,
+    "missingLinks": 0,
+    "oldImages": 8,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

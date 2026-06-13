@@ -3338,12 +3338,14 @@
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
+      "/tenester/service-reservedeler",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
+      "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "bb48f0ffebfdac026924cff201c4fc079d4ff0836c7f965bb895947685ac317a",
@@ -3445,12 +3447,14 @@
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
+      "/tenester/service-reservedeler",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
+      "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "3349ec2902c21e626f6c789e12ba4edda423f31a15c331dc4e6f26af7e7a05b6",
@@ -3470,12 +3474,14 @@
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
+      "/tenester/service-reservedeler",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
+      "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "ef021f557487948648d5a917c55a0b057ddb0dfe0935f8c2379af3f8328bdce6",
@@ -3940,12 +3946,14 @@
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
+      "/tenester/service-reservedeler",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
+      "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "8d6fdc6e42382898ed7029e6db2e2254755121cbbdf117bca7b8182597886a13",
@@ -4811,10 +4819,12 @@
     "filePath": "public/assets/fresvik/images/old-site/flake-left.png",
     "assetType": "image",
     "usedBy": [
-      "/produkt"
+      "/produkt",
+      "/tenester/service-reservedeler"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/service-reservedeler"
     ],
     "sha256": "7e8207b17477b59b7341d1b23e9b0a97d06be555891f2a8a7f7e71bf5e3133b9",
     "fileSize": 17963,
@@ -4841,6 +4851,7 @@
       "/produkt/frysetunnel",
       "/tenester/leveranse",
       "/tenester/montasje",
+      "/tenester/service-reservedeler",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
@@ -4849,6 +4860,7 @@
       "https://www.fresvik.no/produkt/frysetunnel",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
+      "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "27e20960aaad940d294ba861e9d5783457caed68982d13fb67abcc9b1c42c54b",
@@ -6979,12 +6991,14 @@
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
+      "/tenester/service-reservedeler",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
+      "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "2fad91adbe2d6d746828cd3fb49f385acd59129e7cc388fc2ecb4e519c0c84c7",
@@ -7832,12 +7846,14 @@
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
+      "/tenester/service-reservedeler",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
+      "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "8180a4229a0f968b6c7c6ddf18fe50c7970978d2ddfff66b5e7aa7645b328ee9",

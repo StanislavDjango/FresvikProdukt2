@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-13T19:48:54.629Z
+Generated: 2026-06-13T19:52:39.243Z
 
 ## Summary
 
@@ -152,7 +152,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /store/p/dr-tiltrekker-diktator | /tilleggsutstyr | redirect | product | yes | yes | no | 0/1 | no | Redirects to /tilleggsutstyr. |
 | /tenester/leveranse | /tenester/leveranse | page | service | yes | yes | yes | 11/2 | yes | Covered as migrated page in local data. |
 | /tenester/montasje | /tenester/montasje | page | service | yes | yes | yes | 11/2 | yes | Covered as migrated page in local data. |
-| /tenester/service-reservedeler | /tenester/service-reservedeler | page | service | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
+| /tenester/service-reservedeler | /tenester/service-reservedeler | page | service | yes | yes | yes | 9/1 | yes | Covered as migrated page in local data. |
 | /tilleggsutstyr | /tilleggsutstyr | page | unknown | yes | yes | yes | 31/12 | yes | Covered as migrated page in local data. |
 | /tilsette | /tilsette | page | employee | yes | yes | yes | 14/14 | no | Covered as migrated page in local data. |
 | /transportskade | /transportskade | page | support | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
@@ -276,7 +276,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /produkt/kjole-fryseportar | page | yes | 13/8 | yes | Covered as migrated page in local data. |
 | /tenester/leveranse | page | yes | 11/2 | yes | Covered as migrated page in local data. |
 | /tenester/montasje | page | yes | 11/2 | yes | Covered as migrated page in local data. |
-| /tenester/service-reservedeler | page | yes | 1/1 | yes | Covered as migrated page in local data. |
+| /tenester/service-reservedeler | page | yes | 9/1 | yes | Covered as migrated page in local data. |
 
 ## Missing / partial / needs-review
 

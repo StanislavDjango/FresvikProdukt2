@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/tenester/service-reservedeler",
+  "finalUrl": "https://www.fresvik.no/tenester/service-reservedeler",
+  "fetchedAt": "2026-06-13T19:50:39.772Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Service og reservedeler | Få hjelp nå – Bestill reservedeler — Fresvik Produkt",
+  "metaDescription": "Finn rask leveranse av reservedeler og service for dører og porter hos Fresvik Produkt. Vi tilbyr kompetent support og et godt lager for dine behov.",
+  "counts": {
+    "headings": 11,
+    "textBlocks": 23,
+    "links": 93,
+    "images": 24,
+    "documents": 2
+  }
+}

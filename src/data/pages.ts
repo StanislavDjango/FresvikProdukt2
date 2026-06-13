@@ -1,7 +1,6 @@
 import {
   oldSiteCompanyFacts,
   getOldSiteInventoryItem,
-  oldSiteAccessories,
   oldSiteDocuments,
   oldSiteEmployees,
   oldSiteFaqItems,
@@ -473,69 +472,184 @@ const accessoryTextByHref: Record<string, string> = {
     "Større slagdør for kjøle- eller fryserom i industrimiljø som slakteri, meieri og engroslager. Løysinga kan leverast for kjøl eller frys, med solide hengsler, dobbel pakning og måltilpassa dørblad.",
 };
 
-const accessoryDetailCards = oldSiteAccessories.map((item) => ({
-  title: item.title,
-  text:
-    accessoryTextByHref[item.href] ||
-    "Denne tilbehørssida er funnen i gammal sitemap. Brødtekst må hentast i ein seinare migreringspass.",
-  href: item.href,
-  meta: item.lastmod,
-  imageUrl: item.imageUrl,
-  imageAlt: item.imageAlt || item.title,
-}));
-
 const accessoryOrderCards: ContentCard[] = [
   {
     title: "Dørtiltrekker / Diktator",
-    text: "Artikkelnr 23001",
+    text: "Dørtiltrekker / Diktator Artikkelnr 23001",
+    imageUrl: "/assets/fresvik/images/old-site/1463-fr-plata-instal.webp",
+    imageAlt: "Dørtiltrekker / Diktator",
   },
   {
     title: "Innestengningsalarm",
-    text: "Artikkelnr 3069",
+    text: "Innestengningsalarm Artikkelnr 3069",
+    imageUrl: "/assets/fresvik/images/old-site/alarm.png",
+    imageAlt: "Innestengningsalarm",
   },
   {
     title: "Selvlukkende hengsel",
-    text: "Artikkelnr 24600",
+    text: "Selvlukkende hengsel Artikkelnr 24600",
+    imageUrl: "/assets/fresvik/images/old-site/Skjermbilde+2026-02-27+110131.png",
+    imageAlt: "Selvlukkende hengsel",
   },
   {
     title: "Trykkavlastarventil Elbar",
-    text: "Artikkelnr 30651",
+    text: "Trykkavlastarventil Elbar Artikkelnr 30651",
+    imageUrl: "/assets/fresvik/images/old-site/valve.png",
+    imageAlt: "Trykkavlastarventil Elbar",
   },
   {
     title: "Trykkavlastarventil Maxi Elbar",
-    text: "Artikkelnr 30652",
+    text: "Trykkavlastarventil Maxi Elbar Artikkelnr 30652",
+    imageUrl: "/assets/fresvik/images/old-site/fermod.png",
+    imageAlt: "Trykkavlastarventil Maxi Elbar",
   },
   {
     title: "Automatisk kompositt-lås rustfri",
-    text: "Artikkelnr 24083",
+    text: "Automatisk kompositt-lås rustfri Artikkelnr 24083",
+    imageUrl: "/assets/fresvik/images/old-site/sika.png",
+    imageAlt: "Automatisk kompositt-lås rustfri",
   },
   {
     title: "Brannklassifisert fugemasse Sikasil-670",
-    text: "Artikkelnr 3004",
+    text: "Brannklassifisert fugemasse Sikasil-670 Artikkelnr 3004",
+    imageUrl: "/assets/fresvik/images/old-site/soudal.png",
+    imageAlt: "Brannklassifisert fugemasse Sikasil-670",
   },
   {
     title: "Nøytralherdende sanitær byggsilikon fugemasse",
-    text: "Artikkelnr 3000",
+    text: "Nøytralherdende sanitær byggsilikon fugemasse Artikkelnr 3000",
+    imageUrl: "/assets/fresvik/images/old-site/soudal+II.png",
+    imageAlt: "Nøytralherdende sanitær byggsilikon fugemasse",
   },
   {
     title: "Soudal fugeskum all season premium",
-    text: "Artikkelnr 3021",
+    text: "Soudal fugeskum all season premium Artikkelnr 3021",
+    imageUrl: "/assets/fresvik/images/old-site/sika+II.png",
+    imageAlt: "Soudal fugeskum all season premium",
   },
   {
-    title: "PU-skum Sika Boom-420 Fire",
-    text: "Artikkelnr 3006",
+    title: "PU-skum Sika Boom®-420 Fire",
+    text: "PU-skum Sika Boom®-420 Fire Artikkelnr 3006",
+    imageUrl: "/assets/fresvik/images/old-site/glassplate.png",
+    imageAlt: "PU-skum Sika Boom®-420 Fire",
   },
   {
     title: "Flexibelt glasfiber overflate",
-    text: "Artikkelnr 10261",
+    text: "Flexibelt glasfiber overflate Artikkelnr 10261",
+    imageUrl: "/assets/fresvik/images/old-site/Skjermbilde+2026-02-27+114255.png",
+    imageAlt: "Flexibelt glasfiber overflate",
   },
   {
     title: "Plywood dørkplate med belegg",
-    text: "Artikkelnr 1103",
+    text: "Plywood dørkplate med belegg Artikkelnr 1103",
+    imageUrl: "/assets/fresvik/images/old-site/IK.png",
+    imageAlt: "Plywood dørkplate med belegg",
   },
   {
     title: "Intertecnica hengsel 2640",
-    text: "Artikkelnr 10409",
+    text: "Intertecnica hengsel 2640 Artikkelnr 10409",
+    imageUrl: "/assets/fresvik/images/old-site/flake.png",
+    imageAlt: "Intertecnica hengsel 2640",
+  },
+];
+
+const accessoryIntroCards: ContentCard[] = [
+  {
+    title: "Treng du tilbehøyr?",
+    text:
+      "Treng du tilbehøyr til kjøle- eller fryserommet ditt, eller ein reservedel? Hos oss finn du det meste du treng.",
+    imageUrl: "/assets/fresvik/images/old-site/1463-fr-plata-instal.webp",
+    imageAlt: "Tilleggsutstyr",
+  },
+  {
+    title: "Hjelp til rett reservedel",
+    text:
+      "Er du usikker på kva reservedel som passar, tek vi gjerne ein prat og hjelper deg å finne rett løysing.",
+  },
+  {
+    title: "Bestilling",
+    text:
+      "For bestilling av tilbehøyr og reservedelar, send oss ein e-post eller ring innkjøparen vår:",
+  },
+  {
+    title: "Tomas Kruvelis",
+    text: "Tomas Kruvelis Tomkru@fresvik.no Tlf: +47 46 58 14 22",
+    href: "mailto:tomkru@fresvik.no",
+  },
+];
+
+const accessoryContactCards: ContentCard[] = [
+  {
+    title: "Fresvik Produkt AS",
+    text: "Fresvikvegen 995,6896 FresvikTel: 57 69 83 00E-post: post@fresvik.no",
+    href: "mailto:post@fresvik.no",
+  },
+  {
+    title: "Salsavdeling Fresvik:",
+    text: "Arne-Olav Lien BardølsgårdMob: 99 55 25 49arnbar@fresvik.no",
+    href: "mailto:arnbar@fresvik.no",
+  },
+  {
+    title: "Salsavdeling Drammen:",
+    text: "Lars Erling LivrudMob: 40 47 79 12larliv@fresvik.no",
+    href: "mailto:larliv@fresvik.no",
+  },
+  {
+    title: "Salsavdeling Drammen",
+    text: "Frode WintherMob: 91 38 39 49frowin@fresvik.no",
+    href: "mailto:frowin@fresvik.no",
+  },
+];
+
+const accessoryCertificationCards: ContentCard[] = [
+  {
+    title: "Sentral godkjenning",
+    text: "sentral+godkjent.png",
+    href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+    imageUrl: "/assets/fresvik/images/old-site/sentral+godkjent.png",
+    imageAlt: "sentral+godkjent.png",
+  },
+  {
+    title: "SINTEF Teknisk Godkjenning",
+    text: "TG-2135.jpg",
+    href: "https://www.sintefcertification.no/Product/Index/129",
+    imageUrl: "/assets/fresvik/images/old-site/TG-2135.jpg",
+    imageAlt: "TG-2135.jpg",
+  },
+  {
+    title: "Poly",
+    text: "Poly.png",
+    href: "/dokumentasjon",
+    imageUrl: "/assets/fresvik/images/old-site/Poly.png",
+    imageAlt: "Poly.png",
+  },
+  {
+    title: "StartBANK",
+    text: "Startbarnk.png",
+    href: "/dokumentasjon",
+    imageUrl: "/assets/fresvik/images/old-site/Startbarnk.png",
+    imageAlt: "Startbarnk.png",
+  },
+  {
+    title: "Miljøfyrtårn",
+    text: "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+    href: "https://rapportering.miljofyrtarn.no/stats/176324",
+    imageUrl:
+      "/assets/fresvik/images/old-site/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+    imageAlt: "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+  },
+  {
+    title: "CE",
+    text: "ce-logo-png-transparent.png",
+    href: "/assets/fresvik/documents/pur-ce-merke.pdf",
+    imageUrl: "/assets/fresvik/images/old-site/ce-logo-png-transparent.png",
+    imageAlt: "ce-logo-png-transparent.png",
+  },
+  {
+    title: "Nettside levert av GASTA",
+    text:
+      "Motta nyheitsbrev Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen.Sjå vår personvernerklæring. PersonvernerklæringOpenheitslovaNettside levert av GASTA",
+    href: "https://www.gasta.no/",
   },
 ];
 
@@ -2404,32 +2518,38 @@ export const contentPages: ContentPage[] = [
   {
     slug: "/tilleggsutstyr",
     title: "Tilleggsutstyr",
-    eyebrow: "Produkt",
+    eyebrow: "OG RESERVEDELAR",
     intro:
-      "Tilbehøyr og reservedelar til kjøle- og fryserom, med hjelp frå Fresvik til å finne rett løysing.",
+      "Treng du tilbehøyr til kjøle- eller fryserommet ditt, eller ein reservedel? Hos oss finn du det meste du treng.",
     description:
-      "Tilleggsutstyr og relaterte produkt for Fresvik-produkt.",
+      "Tilleggsutstyr og reservedelar til kjøle- eller fryserom.",
     pageType: "product",
     priority: "medium",
     sourceUrl: "https://www.fresvik.no/tilleggsutstyr",
-    cards: accessoryDetailCards.slice(0, 6),
+    cards: accessoryIntroCards,
     sections: [
       {
-        title: "Tilbehøyr og reservedelar",
+        title: "Tilleggsutstyr og reservedelar",
         intro:
-          "Den gamle sida seier at Fresvik har det meste ein treng av tilbehøyr og reservedelar, og hjelper kundar å finne rett del.",
-        items: accessoryDetailCards,
+          "Er du usikker på kva reservedel som passar, tek vi gjerne ein prat og hjelper deg å finne rett løysing.",
+        items: accessoryIntroCards,
       },
       {
-        title: "Artikkelnummer frå gammal side",
+        title: "Artikkelnummer",
         intro:
-          "Dette er varelinjer funne på gammal tilleggsutstyrside. Dei bør kvalitetssikrast og flyttast til Sanity som strukturerte reservedelar før endeleg lansering.",
+          "For bestilling av tilbehøyr og reservedelar, send oss ein e-post eller ring innkjøparen vår:",
         items: accessoryOrderCards,
       },
-    ],
-    todo: [
-      "Avgjer om tilleggsutstyr skal vere eigne produkt, reservedelar eller sideblokker i Sanity.",
-      "Kvalitetssikre artikkelnummer og sortiment før endeleg lansering.",
+      {
+        title: "Kontakt",
+        items: accessoryContactCards,
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        intro:
+          "Lenker og sertifikatbilete frå den gamle sida er bevart med same dokumentmål eller ekstern URL.",
+        items: accessoryCertificationCards,
+      },
     ],
   },
   {

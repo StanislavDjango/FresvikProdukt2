@@ -1,0 +1,118 @@
+OG RESERVEDELAR
+Tilleggsutstyr
+Treng du tilbehøyr til kjøle- eller fryserommet ditt, eller ein reservedel? Hos oss finn du det meste du treng.
+Treng du tilbehøyr?
+Hjelp til rett reservedel
+Er du usikker på kva reservedel som passar, tek vi gjerne ein prat og hjelper deg å finne rett løysing.
+Bestilling
+For bestilling av tilbehøyr og reservedelar, send oss ein e-post eller ring innkjøparen vår:
+Tomas Kruvelis
+Tomas Kruvelis Tomkru@fresvik.no Tlf: +47 46 58 14 22
+Tilleggsutstyr og reservedelar
+Artikkelnummer
+Dørtiltrekker / Diktator
+Dørtiltrekker / Diktator Artikkelnr 23001
+Innestengningsalarm
+Innestengningsalarm Artikkelnr 3069
+Selvlukkende hengsel
+Selvlukkende hengsel Artikkelnr 24600
+Trykkavlastarventil Elbar
+Trykkavlastarventil Elbar Artikkelnr 30651
+Trykkavlastarventil Maxi Elbar
+Trykkavlastarventil Maxi Elbar Artikkelnr 30652
+Automatisk kompositt-lås rustfri
+Automatisk kompositt-lås rustfri Artikkelnr 24083
+Brannklassifisert fugemasse Sikasil-670
+Brannklassifisert fugemasse Sikasil-670 Artikkelnr 3004
+Nøytralherdende sanitær byggsilikon fugemasse
+Nøytralherdende sanitær byggsilikon fugemasse Artikkelnr 3000
+Soudal fugeskum all season premium
+Soudal fugeskum all season premium Artikkelnr 3021
+PU-skum Sika Boom®-420 Fire
+PU-skum Sika Boom®-420 Fire Artikkelnr 3006
+Flexibelt glasfiber overflate
+Flexibelt glasfiber overflate Artikkelnr 10261
+Plywood dørkplate med belegg
+Plywood dørkplate med belegg Artikkelnr 1103
+Intertecnica hengsel 2640
+Intertecnica hengsel 2640 Artikkelnr 10409
+Kontakt
+Fresvik Produkt AS
+Fresvikvegen 995,6896 FresvikTel: 57 69 83 00E-post: post@fresvik.no
+Salsavdeling Fresvik:
+Arne-Olav Lien BardølsgårdMob: 99 55 25 49arnbar@fresvik.no
+Salsavdeling Drammen:
+Lars Erling LivrudMob: 40 47 79 12larliv@fresvik.no
+Salsavdeling Drammen
+Frode WintherMob: 91 38 39 49frowin@fresvik.no
+Dokumentasjon og sertifikat
+Lenker og sertifikatbilete frå den gamle sida er bevart med same dokumentmål eller ekstern URL.
+Sentral godkjenning
+sentral+godkjent.png
+SINTEF Teknisk Godkjenning
+TG-2135.jpg
+Poly
+Poly.png
+StartBANK
+Startbarnk.png
+Miljøfyrtårn
+wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png
+CE
+ce-logo-png-transparent.png
+Nettside levert av GASTA
+Motta nyheitsbrev Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen.Sjå vår personvernerklæring. PersonvernerklæringOpenheitslovaNettside levert av GASTA
+Full tekst frå gammal side
+Kjeldetekst henta frå https://www.fresvik.no/tilleggsutstyr.
+Tilleggsutstyr - Fresvik Produkt
+Treng du tilbehøyr til kjøle- eller fryserommet ditt, eller ein reservedel? Hos oss finn du det meste du treng. Er du usikker på kva reservedel som passar, tek vi gjerne ein prat og hjelper deg å finne rett løysing. For bestilling av tilbehøyr og reservedelar, send oss ein e-post eller ring innkjøparen vår:
+Bilde frå gammal side
+Tilleggsutstyr - Fresvik Produkt bilde 1
+Bilde frå gammal side, bevart med sourceUrl i migration extract.
+Tilleggsutstyr - Fresvik Produkt bilde 2
+Tilleggsutstyr - Fresvik Produkt bilde 3
+Tilleggsutstyr - Fresvik Produkt bilde 4
+Tilleggsutstyr - Fresvik Produkt bilde 5
+Tilleggsutstyr - Fresvik Produkt bilde 6
+Tilleggsutstyr - Fresvik Produkt bilde 7
+Tilleggsutstyr - Fresvik Produkt bilde 8
+Tilleggsutstyr - Fresvik Produkt bilde 9
+Tilleggsutstyr - Fresvik Produkt bilde 10
+Tilleggsutstyr - Fresvik Produkt bilde 11
+Tilleggsutstyr - Fresvik Produkt bilde 12
+Dokumentlenker frå gammal side
+Dokument
+https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf
+https://www.fresvik.no/s/PUR-ce-merke.pdf
+Lenker frå gammal side
+Ekstern lenke
+/produkt/fresvik-pir-panel
+/produkt/fresvik-panel
+/produkt/kjole-fryseportar
+/produkt/kjole-frysedorer
+/produkt/fasadepanel
+/produkt/frysetunnel
+/referansar
+/tenester/montasje
+/tenester/leveranse
+/tenester/service-reservedeler
+/dokumentasjon
+/monteringsanvisning
+/kundeservice/faq
+/firmainfo
+/tilsette
+/aktuelt
+/stillingledig
+/kontakt
+/send-foresporsel
+/tenester
+/om-oss
+/personvernerklering
+/openheitslova
+Klar for å diskutere prosjektet?
+Ta kontakt med Fresvik Produkt for teknisk avklaring, produktval og vidare planlegging.
+Fresvik Produkt AS leverer isolerte panel, kjøle- og fryseløysingar, montasje og service til norske prosjekt.
+Fresvikvegen 995, 6896 Fresvik
+Nettstad
+Informasjon
+© Fresvik Produkt AS
+Modernisert med Next.js, Sanity og Vercel.

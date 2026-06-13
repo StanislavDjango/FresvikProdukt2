@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/tilleggsutstyr",
+  "newUrl": "http://127.0.0.1:3060/tilleggsutstyr",
+  "checkedAt": "2026-06-13T19:27:07.305Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 14,
+    "missingTextBlocks": 0,
+    "oldLinks": 41,
+    "missingLinks": 0,
+    "oldImages": 19,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

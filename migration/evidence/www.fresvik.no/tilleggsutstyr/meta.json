@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/tilleggsutstyr",
+  "finalUrl": "https://www.fresvik.no/tilleggsutstyr",
+  "fetchedAt": "2026-06-13T19:19:17.647Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Tilleggsutstyr — Fresvik Produkt",
+  "metaDescription": "",
+  "counts": {
+    "headings": 8,
+    "textBlocks": 25,
+    "links": 105,
+    "images": 112,
+    "documents": 2
+  }
+}

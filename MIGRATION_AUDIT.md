@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-11T09:18:58.474Z
+Generated: 2026-06-13T19:29:02.074Z
 
 ## Summary
 
@@ -9,8 +9,8 @@ Generated: 2026-06-11T09:18:58.474Z
 | Local baseline old URL count | 105 |
 | Live sitemap URL count | 104 |
 | Local baseline old image count | 325 |
-| Live sitemap image entries | 322 |
-| Live sitemap unique image URLs | 275 |
+| Live sitemap image entries | 323 |
+| Live sitemap unique image URLs | 276 |
 | Migrated page count | 71 |
 | Redirect count | 29 |
 | Partial count | 0 |
@@ -18,7 +18,7 @@ Generated: 2026-06-11T09:18:58.474Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 291 |
+| Local image assets | 309 |
 | Local document/PDF assets | 27 |
 | Asset originalUrls recovered in manifest | 304 |
 
@@ -44,13 +44,13 @@ The root homepage `https://www.fresvik.no/` is audited as its own route even tho
 
 ## Old sitemap coverage
 
-The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 image entries checked earlier. The live donor sitemap currently returns 104 URLs and 322 image entries (275 unique image URLs). The difference must be treated as source drift until manually reviewed.
+The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 image entries checked earlier. The live donor sitemap currently returns 104 URLs and 323 image entries (276 unique image URLs). The difference must be treated as source drift until manually reviewed.
 
 ## Route coverage
 
 | oldPath | newRoute | status | type | title | intro | body | images | docs | notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| / | / | page | page | yes | yes | yes | 20/13 | yes | Covered as migrated page in local data. |
+| / | / | page | page | yes | yes | yes | 20/14 | yes | Covered as migrated page in local data. |
 | /aktuelt | /aktuelt | page | news | yes | yes | yes | 19/0 | no | Covered as migrated page in local data. |
 | /aktuelt/40-aars-jubileum | /aktuelt/40-aars-jubileum | page | news | yes | yes | yes | 4/4 | yes | Covered as migrated page in local data. |
 | /aktuelt/agnar-er-snart-pensjonistnbsp | /aktuelt/agnar-er-snart-pensjonistnbsp | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
@@ -146,14 +146,14 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /referansar/spesialloysing-torkerom-drageboden-kaupanger | /referansar/spesialloysing-torkerom-drageboden-kaupanger | page | reference | yes | yes | yes | 9/9 | yes | Covered as migrated page in local data. |
 | /referansar/vik-helse-og-omsorgssenter | /referansar/vik-helse-og-omsorgssenter | page | reference | yes | yes | yes | 5/5 | yes | Covered as migrated page in local data. |
 | /send-foresporsel | /kontakt | redirect | unknown | yes | yes | no | 0/0 | no | Redirects to /kontakt. |
-| /startside | / | redirect | unknown | yes | yes | no | 0/13 | no | Redirects to /. |
+| /startside | / | redirect | unknown | yes | yes | no | 0/14 | no | Redirects to /. |
 | /stillingledig | /stillingledig | page | page | yes | yes | yes | 4/4 | yes | Covered as migrated page in local data. |
 | /store | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |
 | /store/p/dr-tiltrekker-diktator | /tilleggsutstyr | redirect | product | yes | yes | no | 0/1 | no | Redirects to /tilleggsutstyr. |
 | /tenester/leveranse | /tenester/leveranse | page | service | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /tenester/montasje | /tenester/montasje | page | service | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /tenester/service-reservedeler | /tenester/service-reservedeler | page | service | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
-| /tilleggsutstyr | /tilleggsutstyr | page | unknown | yes | yes | yes | 23/12 | yes | Covered as migrated page in local data. |
+| /tilleggsutstyr | /tilleggsutstyr | page | unknown | yes | yes | yes | 31/12 | yes | Covered as migrated page in local data. |
 | /tilsette | /tilsette | page | employee | yes | yes | yes | 14/14 | no | Covered as migrated page in local data. |
 | /transportskade | /transportskade | page | support | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 
@@ -171,9 +171,9 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Live sitemap image entries | 322 |
-| Live sitemap unique image URLs | 275 |
-| Local migrated image assets | 291 |
+| Live sitemap image entries | 323 |
+| Live sitemap unique image URLs | 276 |
+| Local migrated image assets | 309 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
@@ -216,10 +216,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 360 |
+| Internal link references | 377 |
 | OK routes | 175 |
 | Redirect links | 0 |
-| Asset links OK | 185 |
+| Asset links OK | 202 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -229,10 +229,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | url | sourcePage | purpose | status |
 | --- | --- | --- | --- |
-| https://sintefcertification.no/Product/Index/129 | src/data/pages.ts: | certification/documentation | keep |
 | https://www.sintefcertification.no/Product/Index/129 | src/data/pages.ts: | certification/documentation | keep |
 | https://rapportering.miljofyrtarn.no/stats/176324 | src/data/pages.ts: | external-reference | keep |
 | https://www.gasta.no/ | src/data/pages.ts: | external-reference | keep |
+| https://sintefcertification.no/Product/Index/129 | src/data/pages.ts: | certification/documentation | keep |
 | https://www.fresvik.no/ | src/data/pages.ts: | source-url | keep |
 | https://www.gasta.no | src/data/pages.ts: | external-reference | keep |
 | https://www.fresvik.no/produkt/fresvik-pir-panel | src/data/pages.ts: | source-url | keep |

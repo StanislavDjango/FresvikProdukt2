@@ -125,6 +125,7 @@ const localMigrationStructurePaths = new Set([
   "/produkt/kjole-frysedorer",
   "/produkt/fasadepanel",
   "/produkt/frysetunnel",
+  "/tilleggsutstyr",
 ]);
 
 const NEWS_INDEX_QUERY = defineQuery(`*[_type == "newsArticle"] | order(date desc, title asc) {

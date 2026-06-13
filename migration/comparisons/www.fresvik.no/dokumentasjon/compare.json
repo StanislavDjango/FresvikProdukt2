@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/dokumentasjon",
+  "newUrl": "http://127.0.0.1:3060/dokumentasjon",
+  "checkedAt": "2026-06-13T20:00:30.932Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 24,
+    "missingTextBlocks": 0,
+    "oldLinks": 47,
+    "missingLinks": 0,
+    "oldImages": 8,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

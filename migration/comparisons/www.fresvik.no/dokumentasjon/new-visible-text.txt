@@ -1,0 +1,93 @@
+Kundeservice
+Dokumentasjon
+Her finn du teknisk godkjenning, miljødokument, leveringsbetingelser, sentral godkjenning og monteringsanvisninger.
+Miljødokument
+Last ned miljødokument
+Samsvarssertifikat
+for konsistent ytelse Last ned Fresvik PIR-Panel CPR
+Teknisk godkjenning
+Last ned teknisk godkjenning
+Godkjenningsdokument hjå SINTEF
+Monterings-anvisningar
+Sjå eiga side for monteringsanvisningar
+Levering
+Last ned leveringsbetingelser
+Noko du savnar?
+Ta for all del kontakt med oss
+Transportskade
+Sentral godkjenning
+Last ned sentral godkjenning
+Ytelseserklæring
+Last ned ytelseserklæring
+Kontakt
+Fresvik Produkt AS
+Fresvikvegen 995,6896 FresvikTel: 57 69 83 00E-post: post@fresvik.no
+Salsavdeling Fresvik:
+Arne-Olav Lien BardølsgårdMob: 99 55 25 49arnbar@fresvik.no
+Salsavdeling Drammen:
+Lars Erling LivrudMob: 40 47 79 12larliv@fresvik.no
+Salsavdeling Drammen
+Frode WintherMob: 91 38 39 49frowin@fresvik.no
+Dokumentasjon og sertifikat
+sentral+godkjent.png
+SINTEF Teknisk Godkjenning
+TG-2135.jpg
+Poly
+Poly.png
+StartBANK
+Startbarnk.png
+Miljøfyrtårn
+wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png
+CE
+ce-logo-png-transparent.png
+Nettside levert av GASTA
+Motta nyheitsbrev Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen.Sjå vår personvernerklæring. PersonvernerklæringOpenheitslovaNettside levert av GASTA
+Full tekst frå gammal side
+Kjeldetekst henta frå https://www.fresvik.no/dokumentasjon.
+Dokumentasjon | Utforsk dokumentasjon – kontakt oss for hjelp - Fresvik Produkt
+Her finn du teknisk godkjenning, miljødokument, leveringsbetingelser, sentral godkjenning og monteringsanvisninger. Ta for all del kontakt med oss Last ned Fresvik PIR-Panel CPR Sjå eiga side for monteringsanvisningar Last ned teknisk godkjenning Godkjenningsdokument hjå SINTEF Last ned leveringsbetingelser Last ned sentral godkjenning Last ned ytelseserklæring
+Bilde frå gammal side
+Dokumentasjon | Utforsk dokumentasjon – kontakt oss for hjelp - Fresvik Produkt bilde 1
+Bilde frå gammal side, bevart med sourceUrl i migration extract.
+Dokumentlenker frå gammal side
+Dokument
+https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf
+https://www.fresvik.no/s/7060s-fnfz.pdf
+https://www.fresvik.no/s/2135g-5.pdf
+https://www.fresvik.no/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf
+https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf
+https://www.fresvik.no/s/Ytelseserklring-Fresvik-Produkt.pdf
+https://www.fresvik.no/s/PUR-ce-merke.pdf
+Lenker frå gammal side
+Ekstern lenke
+/produkt/fresvik-pir-panel
+/produkt/fresvik-panel
+/produkt/kjole-fryseportar
+/produkt/kjole-frysedorer
+/produkt/fasadepanel
+/produkt/frysetunnel
+/tilleggsutstyr
+/referansar
+/tenester/montasje
+/tenester/leveranse
+/tenester/service-reservedeler
+/monteringsanvisning
+/kundeservice/faq
+/firmainfo
+/tilsette
+/aktuelt
+/stillingledig
+/kontakt
+/send-foresporsel
+/tenester
+/om-oss
+/s/Miljdokument-Fresvik-Produkt.pdf
+/s/7060s-fnfz.pdf
+Klar for å diskutere prosjektet?
+Ta kontakt med Fresvik Produkt for teknisk avklaring, produktval og vidare planlegging.
+Fresvik Produkt AS leverer isolerte panel, kjøle- og fryseløysingar, montasje og service til norske prosjekt.
+Fresvikvegen 995, 6896 Fresvik
+Nettstad
+Informasjon
+© Fresvik Produkt AS
+Modernisert med Next.js, Sanity og Vercel.

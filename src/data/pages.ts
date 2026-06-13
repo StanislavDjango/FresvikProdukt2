@@ -1086,38 +1086,65 @@ const portDocuments: ContentCard[] = [
 const documentationDownloads: ContentCard[] = [
   {
     title: "Miljødokument",
-    text: "Miljødokument for Fresvik Produkt.",
-    href: "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
+    text: "Last ned miljødokument",
+    href: "/s/Miljdokument-Fresvik-Produkt.pdf",
   },
   {
-    title: "Fresvik PIR-Panel CPR",
-    text: "CPR-dokument for Fresvik PIR-Panel.",
-    href: "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
+    title: "Samsvarssertifikat",
+    text: "for konsistent ytelse Last ned Fresvik PIR-Panel CPR",
+    href: "/s/7060s-fnfz.pdf",
   },
   {
     title: "Teknisk godkjenning",
-    text: "Teknisk godkjenning frå gammal dokumentasjonsside.",
-    href: "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
+    text: "Last ned teknisk godkjenning",
+    href: "/s/2135g-5.pdf",
   },
   {
     title: "Godkjenningsdokument hjå SINTEF",
-    text: "Ekstern SINTEF Certification-side.",
+    text: "Godkjenningsdokument hjå SINTEF",
     href: "https://sintefcertification.no/Product/Index/129",
   },
   {
-    title: "Leveringsbetingelser",
-    text: "Leveringsvilkår for Fresvik Produkt.",
-    href: "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
+    title: "Monterings-anvisningar",
+    text: "Sjå eiga side for monteringsanvisningar",
+    href: "/monteringsanvisning",
+  },
+  {
+    title: "Levering",
+    text: "Last ned leveringsbetingelser",
+    href: "/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf",
+  },
+  {
+    title: "Transportskade",
+    text: "Transportskade",
+    href: "/transportskade",
   },
   {
     title: "Sentral godkjenning",
-    text: "Sentral godkjenning frå gammal dokumentasjonsside.",
-    href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
+    text: "Last ned sentral godkjenning",
+    href: "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
   },
   {
     title: "Ytelseserklæring",
-    text: "Ytelseserklæring for Fresvik Produkt.",
-    href: "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
+    text: "Last ned ytelseserklæring",
+    href: "/s/Ytelseserklring-Fresvik-Produkt.pdf",
+  },
+];
+
+const documentationIntroCards: ContentCard[] = [
+  {
+    title: "Noko du savnar?",
+    text: "Ta for all del kontakt med oss",
+    href: "/kontakt",
+    imageUrl: "/assets/fresvik/images/old-site/flake-left.png",
+    imageAlt: "En snøfnugg tegning i hvitt på svart bakgrunn.",
+  },
+  {
+    title: "Dokumentasjon",
+    text:
+      "Her finn du teknisk godkjenning, miljødokument, leveringsbetingelser, sentral godkjenning og monteringsanvisninger.",
+    imageUrl: "/assets/fresvik/images/old-site/flake.png",
+    imageAlt: "Snøfnugg",
   },
 ];
 
@@ -2980,7 +3007,7 @@ export const contentPages: ContentPage[] = [
     title: "Dokumentasjon",
     eyebrow: "Kundeservice",
     intro:
-      "Teknisk godkjenning, miljødokument, leveringsbetingelser, sentral godkjenning og monteringsanvisningar.",
+      "Her finn du teknisk godkjenning, miljødokument, leveringsbetingelser, sentral godkjenning og monteringsanvisninger.",
     description:
       "Dokumentasjon, datablad og PDF-filer frå Fresvik Produkt.",
     pageType: "support",
@@ -2989,27 +3016,21 @@ export const contentPages: ContentPage[] = [
     cards: documentationDownloads.slice(0, 6),
     sections: [
       {
-        title: "Nedlastingar frå gammal dokumentasjonsside",
-        intro:
-          "Desse dokumentlenkene er funne på gammal side og bør importerast til Sanity assets eller lokal dokumentmappe før endeleg lansering.",
+        title: "Noko du savnar?",
+        items: documentationIntroCards,
+      },
+      {
+        title: "Dokumentasjon",
         items: documentationDownloads,
       },
       {
-        title: "Dokumentasjon frå gammal sitemap",
-        intro:
-          "Desse dokumentasjons- og monteringssidene er funne i gammal sitemap. Neste steg er å hente PDF-ar og koble dei til `documentFile`.",
-        items: oldDocumentCards,
+        title: "Kontakt",
+        items: productIndexContactCards,
       },
       {
-        title: "Support- og prosjektsider som må vurderast",
-        intro:
-          "Desse sidene kan bli eigne landingssider, dokumentasjon eller redirects.",
-        items: supportDetailCards,
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
       },
-    ],
-    todo: [
-      "Importer PDF-ar til Sanity `documentFile` eller `public/assets/fresvik/documents/`.",
-      "Bygg filter/søk når dokumentlista er komplett.",
     ],
   },
   {

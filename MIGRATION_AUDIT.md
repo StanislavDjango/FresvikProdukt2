@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-13T19:56:17.582Z
+Generated: 2026-06-13T20:01:54.670Z
 
 ## Summary
 
@@ -96,7 +96,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /andre-produkter/pego-innestengningsalarm | /tilleggsutstyr | redirect | product | yes | yes | no | 1/2 | no | Redirects to /tilleggsutstyr. |
 | /andre-produkter/pvc-gardiner | /tilleggsutstyr | redirect | product | yes | yes | no | 1/2 | no | Redirects to /tilleggsutstyr. |
 | /andre-produkter/standard-handtak | /tilleggsutstyr | redirect | product | yes | yes | no | 1/1 | no | Redirects to /tilleggsutstyr. |
-| /dokumentasjon | /dokumentasjon | page | document | yes | yes | yes | 5/1 | yes | Covered as migrated page in local data. |
+| /dokumentasjon | /dokumentasjon | page | document | yes | yes | yes | 9/1 | yes | Covered as migrated page in local data. |
 | /firmainfo | /firmainfo | page | page | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /kjolerom-fryserom-butikk | /kjolerom-fryserom-butikk | page | support | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /kjolerom-fryserom-offshore | /kjolerom-fryserom-offshore | page | support | yes | yes | yes | 17/18 | yes | Covered as migrated page in local data. |
@@ -191,8 +191,8 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf | Kjølerom, Norsk/English | migrated | yes | 1596484 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.67. |
 | /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf | Monteringsanvisning manuell port | migrated | yes | 6789859 | https://www.fresvik.no/s/Fresvik-Port-Montasjeanvisning.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf | Koblingskjema Fermod 5010 | migrated | yes | 2166231 | https://www.fresvik.no/s/Koblingsskjema-Fermod-5010.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf | Leveringsbetingelser | migrated | yes | 350922 | https://www.fresvik.no/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | Recovered likely old URL with confidence 0.75. |
-| /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf | Miljødokument | migrated | yes | 38764 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
+| /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf | Dokument | migrated | yes | 350922 | https://www.fresvik.no/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | Recovered likely old URL with confidence 0.75. |
+| /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf | Dokument | migrated | yes | 38764 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
 | /assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf | Montasjeanvisning 5010 for 2150 | migrated | yes | 3418684 | https://www.fresvik.no/s/Montasjeanvisning-5010-for-2150.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf | Montasjeanvisning 5010 for 3530 og 7530 | migrated | yes | 3531249 | https://www.fresvik.no/s/Montasjeanvisning-5010-for-3530-og-7530.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf | Aktsemdvurdering 2024 | migrated | yes | 201642 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
@@ -206,24 +206,30 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /assets/fresvik/documents/quick-start-5010exp.pdf | Quick Start 5010Exp | migrated | yes | 1001335 | https://www.fresvik.no/s/Quick-Start-5010Exp-indB.pdf | Recovered likely old URL with confidence 0.75. |
 | /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf | Dokument | migrated | yes | 58526 | https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf | Dokument | migrated | yes | 253758 | https://www.fresvik.no/s/7060s-fnfz.pdf | Recovered likely old URL with confidence 0.33. |
-| /assets/fresvik/documents/sintef-produktsertifikat.pdf | Teknisk godkjenning | migrated | yes | 439904 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
+| /assets/fresvik/documents/sintef-produktsertifikat.pdf | sintef-produktsertifikat | needs-review | no | 439904 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
 | /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf | Dokument | migrated | yes | 439904 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
-| /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf | Fresvik PIR-Panel CPR | migrated | yes | 253758 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
+| /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf | sintef-teknisk-godkjenning | needs-review | no | 253758 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
 | /assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf | Tilleggsutstyr NMOptions kits 5010Exp | migrated | yes | 2177053 | https://www.fresvik.no/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf | Recovered likely old URL with confidence 0.75. |
-| /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf | Ytelseserklæring | migrated | yes | 882067 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
+| /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf | Dokument | migrated | yes | 882067 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
 
 ## Internal links
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 395 |
-| OK routes | 174 |
-| Redirect links | 0 |
-| Asset links OK | 221 |
+| Internal link references | 396 |
+| OK routes | 176 |
+| Redirect links | 6 |
+| Asset links OK | 214 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
 | --- | --- | --- | --- |
+| /s/Miljdokument-Fresvik-Produkt.pdf | src/data/pages.ts:1090 | redirect | Redirects to /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf. |
+| /s/7060s-fnfz.pdf | src/data/pages.ts:1095 | redirect | Redirects to /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf. |
+| /s/2135g-5.pdf | src/data/pages.ts:1100 | redirect | Redirects to /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf. |
+| /s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | src/data/pages.ts:1115 | redirect | Redirects to /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf. |
+| /s/Sentral-Godkjenning-Fresvik-Produkt.pdf | src/data/pages.ts:1125 | redirect | Redirects to /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf. |
+| /s/Ytelseserklring-Fresvik-Produkt.pdf | src/data/pages.ts:1130 | redirect | Redirects to /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf. |
 
 ## External links
 
@@ -282,7 +288,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | type | target | status | task |
 | --- | --- | --- | --- |
+| document | /assets/fresvik/documents/sintef-produktsertifikat.pdf | needs-review | Exact old PDF URL was not recoverable from sitemap/local source data. |
+| document | /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf | needs-review | Exact old PDF URL was not recoverable from sitemap/local source data. |
 
 ## Final TODO list
 
-- Ingen.
+- document: /assets/fresvik/documents/sintef-produktsertifikat.pdf [needs-review] - Exact old PDF URL was not recoverable from sitemap/local source data.
+- document: /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf [needs-review] - Exact old PDF URL was not recoverable from sitemap/local source data.

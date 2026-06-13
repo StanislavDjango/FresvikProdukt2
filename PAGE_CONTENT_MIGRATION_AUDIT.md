@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-06-13T19:56:19.529Z
+Generated: 2026-06-13T20:01:56.651Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -66,7 +66,7 @@ Next batch: `none`
 | products | /produktfoto | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /produkt. |
 | products | /store | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /tilleggsutstyr. |
 | products | /store/p/dr-tiltrekker-diktator | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /tilleggsutstyr. |
-| services-documents | /dokumentasjon | migrated | 1/1 | 5/1 | 9/5 | 52/42 | Strict content evidence is covered. |
+| services-documents | /dokumentasjon | migrated | 1/1 | 9/1 | 7/5 | 58/42 | Strict content evidence is covered. |
 | services-documents | /monteringsanvisning | migrated | 1/1 | 6/6 | 6/4 | 40/40 | Strict content evidence is covered. |
 | services-documents | /monteringsanvisningar-fresvik-skyveport | migrated | 2/2 | 2/1 | 10/6 | 43/41 | Strict content evidence is covered. |
 | services-documents | /tenester/leveranse | migrated | 3/3 | 11/2 | 2/0 | 39/35 | Strict content evidence is covered. |

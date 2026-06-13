@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/dokumentasjon",
+  "finalUrl": "https://www.fresvik.no/dokumentasjon",
+  "fetchedAt": "2026-06-13T19:58:31.998Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Dokumentasjon | Utforsk dokumentasjon – kontakt oss for hjelp — Fresvik Produkt",
+  "metaDescription": "Få tilgang til dokumentasjon, tekniske godkjenninger, monteringsanvisningar og miljødokumenter for Fresvik Produkt sitt sortiment av isolasjonspanel og bygningsløsninger.",
+  "counts": {
+    "headings": 16,
+    "textBlocks": 37,
+    "links": 101,
+    "images": 24,
+    "documents": 8
+  }
+}

@@ -668,13 +668,8 @@
     "localPath": "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
     "filePath": "public/assets/fresvik/documents/sintef-produktsertifikat.pdf",
     "assetType": "document",
-    "usedBy": [
-      "/dokumentasjon",
-      "documentFile-assets-fresvik-documents-sintef-produktsertifikat-pdf"
-    ],
-    "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon"
-    ],
+    "usedBy": [],
+    "sourcePages": [],
     "sha256": "0f8659caba8780d251cde2d4f971b254cfa7055f71a74d8ec889f70d4d9d7559",
     "fileSize": 439904,
     "sanityAssetId": "file-f4d1fc0155bce9a3c39d992ddf3e2310174c3e7a-pdf",
@@ -687,7 +682,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-f4d1fc0155bce9a3c39d992ddf3e2310174c3e7a-pdf."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-f4d1fc0155bce9a3c39d992ddf3e2310174c3e7a-pdf. Unused local migration cache file; keep until asset review is complete."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -720,13 +715,8 @@
     "localPath": "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
     "filePath": "public/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
     "assetType": "document",
-    "usedBy": [
-      "/dokumentasjon",
-      "documentFile-assets-fresvik-documents-sintef-teknisk-godkjenning-pdf"
-    ],
-    "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon"
-    ],
+    "usedBy": [],
+    "sourcePages": [],
     "sha256": "9bd598c9a508ad9c6b8f5840eba4841b6e07f8a846ab204c18f1dd23d6eac266",
     "fileSize": 253758,
     "sanityAssetId": "file-a69fb1480b6c346e39c50c622d0ac1d9d87925fd-pdf",
@@ -739,7 +729,7 @@
     },
     "status": "duplicate",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf. Unused local migration cache file; keep until asset review is complete."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf",
@@ -1039,13 +1029,11 @@
     "filePath": "public/assets/fresvik/images/migrated/coop-extra-sogndal.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/dokumentasjon",
       "/kjolerom-fryserom-butikk",
       "/referansar",
       "/referansar/2014/7/8/coop-extra-sogndal"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/kjolerom-fryserom-butikk",
       "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/2014/7/8/coop-extra-sogndal"
@@ -1829,11 +1817,9 @@
     "filePath": "public/assets/fresvik/images/migrated/image-asset-39.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/dokumentasjon",
       "/kjolerom-fryserom-offshore"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/kjolerom-fryserom-offshore"
     ],
     "sha256": "9ac7a9ad5541c60c361de4e93653f0c5ee6d2e91dfcd924967d66d9ab3c26fb4",
@@ -1856,11 +1842,9 @@
     "filePath": "public/assets/fresvik/images/migrated/image-asset-42.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/dokumentasjon",
       "/kjolerom-fryserom-storkjokken"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/kjolerom-fryserom-storkjokken"
     ],
     "sha256": "cbcb42e78d918a7538ec1649ca320dffafb18f96a13c0050e7becc624b710d98",
@@ -2829,11 +2813,9 @@
     "filePath": "public/assets/fresvik/images/migrated/transportskade-fresvik-produkt.jpg",
     "assetType": "image",
     "usedBy": [
-      "/dokumentasjon",
       "/transportskade"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/transportskade"
     ],
     "sha256": "65663a64cc77e63a1ef60d5d42981f02f70dc4739912511166c8b26caf2746fc",
@@ -3335,6 +3317,7 @@
     "filePath": "public/assets/fresvik/images/old-site/Poly.png",
     "assetType": "image",
     "usedBy": [
+      "/dokumentasjon",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -3342,6 +3325,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -3444,6 +3428,7 @@
     "filePath": "public/assets/fresvik/images/old-site/Startbarnk.png",
     "assetType": "image",
     "usedBy": [
+      "/dokumentasjon",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -3451,6 +3436,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -3471,6 +3457,7 @@
     "filePath": "public/assets/fresvik/images/old-site/TG-2135.jpg",
     "assetType": "image",
     "usedBy": [
+      "/dokumentasjon",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -3478,6 +3465,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -3943,6 +3931,7 @@
     "filePath": "public/assets/fresvik/images/old-site/ce-logo-png-transparent.png",
     "assetType": "image",
     "usedBy": [
+      "/dokumentasjon",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -3950,6 +3939,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -4819,10 +4809,12 @@
     "filePath": "public/assets/fresvik/images/old-site/flake-left.png",
     "assetType": "image",
     "usedBy": [
+      "/dokumentasjon",
       "/produkt",
       "/tenester/service-reservedeler"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/service-reservedeler"
     ],
@@ -4846,6 +4838,7 @@
     "filePath": "public/assets/fresvik/images/old-site/flake.png",
     "assetType": "image",
     "usedBy": [
+      "/dokumentasjon",
       "/produkt",
       "/produkt/fasadepanel",
       "/produkt/frysetunnel",
@@ -4855,6 +4848,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/produkt/fasadepanel",
       "https://www.fresvik.no/produkt/frysetunnel",
@@ -6988,6 +6982,7 @@
     "filePath": "public/assets/fresvik/images/old-site/sentral+godkjent.png",
     "assetType": "image",
     "usedBy": [
+      "/dokumentasjon",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -6995,6 +6990,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -7843,6 +7839,7 @@
     "filePath": "public/assets/fresvik/images/old-site/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
     "assetType": "image",
     "usedBy": [
+      "/dokumentasjon",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -7850,6 +7847,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",

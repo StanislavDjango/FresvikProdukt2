@@ -180,27 +180,27 @@ const faqTextByTitle: Record<string, string> = {
   "Kva er hovudforskjellen mellom PIR og PUR i kjøle- og fryserom?":
     "Den største forskjellen ligg i branneigenskapane. PIR har generelt betre brannmotstand og lågare røykutvikling enn PUR, samtidig som begge materiala har svært gode isolasjonseigenskapar.",
   "I kva prosjekt bør PIR føretrekkjast framfor PUR?":
-    "PIR bør føretrekkjast i prosjekt der brannsikkerheit og risikoreduksjon er særleg viktig, til dømes store kjøle- og fryselager, bygg med strenge brannkrav, industri- og næringsbygg, prosjekt med særlege forsikringskrav og anlegg med høg verdi på lagra varer.",
+    "PIR bør føretrekkjast i prosjekt der brannsikkerheit og risikoreduksjon er særleg viktig. Dette gjeld spesielt: Store kjøle- og fryselager. Bygg med strenge brannkrav. Industri- og næringsbygg. Prosjekt der forsikringsselskap stiller ekstra krav. Anlegg med høg verdi på lagra varer. I slike tilfelle gir PIR ein betre tryggleiksmargin, samtidig som isolasjonseigenskapane blir haldne på eit høgt nivå. Dersom du er i tvil om kva materiale som passar best, er det trygt å velje PIR. Det gir ekstra tryggleik når det gjeld brann og god isolasjonsevne – eit solid val for dei fleste prosjekt.",
   "Kvifor har PIR-panel nesten same U-verdi som PUR-panel, men betre branneigenskapar?":
-    "PIR og PUR har nesten lik U-verdi, men PIR-skummet har betre branneigenskapar fordi det reagerer med å verne overflata ved brann og har høgare termisk stabilitet. PIR får brannklasse B, medan PUR har klasse C.",
+    "Sjølv om PIR- og PUR-panel har nesten lik U-verdi (isolasjonsevne), har PIR betre branneigenskapar fordi skummet reagerer med å verne overflata ved brann og har høgare termisk stabilitet. PIR isolerer like godt, men toler varme og brann betydeleg betre enn PUR. Difor får PIR brannklasse B, medan PUR har klasse C.",
   "Har PIR-panela låsemekanisme i skøytane og hjørna, slik som PUR-panela?":
-    "Ja. Fresvik oppgir at PIR- og PUR-panel har same design og same låsemekanisme i skøytane og hjørna.",
+    "Våre PIR- og PUR-panel har same design og same låsemekanisme i skøytane og hjørna.",
   "Kva er PVC-gardin, og når bør ein bruke PVC-gardiner i kjølerom eller fryserom?":
-    "PVC-gardiner er fleksible PVC-strimlar i døropningar som reduserer varmetap og trekk når døra blir opna. Dei blir ofte brukt i rom med mykje trafikk for å halde stabil temperatur, redusere energitap og betre arbeidskomfort. Fresvik produserer både faste og skyvbare PVC-gardiner.",
+    "PVC-gardiner er fleksible PVC-strimlar som blir monterte i dør­opningar for å redusere varmetap og trekk når døra blir opna. Dei blir ofte brukte i kjøle- og fryserom med mykje trafikk, der dører blir opna ofte. PVC-gardiner bidreg til å: Redusere energitap. Oppretthalde stabil temperatur. Hindre luftlekkasje av varm luft. Forbetre arbeidskomfort. I fryserom blir spesialtilpassa PVC brukt som toler låge temperaturar. Vi produserer to typar PVC-gardiner: både faste og skyvbare PVC-gardiner.",
   "Kva er forskjellen på ein kjøleromsdør og ein fryseromsdør?":
-    "For vanlege kjøle- og fryseromsdører ligg forskjellen i at fryseromsdøra har varmekabel i karmen. Industridører skil seg også på isolasjon, konstruksjon, tetting og løysingar for låge minusgrader.",
+    "For vanlege kjøle- og fryseromsdører ligg forskjellen i at fryseromsdøra har varmekabel i karmen, elles er dørene like. For dører av industritypen ligg forskjellen i isolasjon og konstruksjon: Ei kjøleromsdør er berekna for kjølerom med moderate temperaturar, og har isolasjon og tetting tilpassa normal kjøledrift. Ei fryseromsdør er konstruert for djupfrysing ved låge minusgrader og har tjukkare isolasjon, dobbel pakning og varmekabel i karmen for å hindre at pakningane frys fast.",
   "Korleis er vekta/densiteten på PIR-panel samanlikna med PUR-panel?":
-    "PUR-panel har densitet 40 +/- 2 kg/m3 og vekt om lag 13-17 kg/m2. PIR-panel har densitet 42 +/- 2 kg/m3 og vekt om lag 14-18,5 kg/m2.",
+    "PUR-panel har ein densitet på 40 ±2 kg/m³ (vekt ca. 13 - 17 kg/m2), medan PIR-panel har ein densitet på 42 ±2 kg/m³ (vekt ca. 14 – 18.5 kg/m2).",
   "Kan PIR-panel brukast ved same temperaturar som PUR-panel?":
     "PIR har temperaturområde frå -40 °C til +70 °C, medan PUR toler -40 °C til +120 °C.",
   "Kan PIR-panela produserast i same storleik som PUR-panela?":
-    "Ja. Fresvik tilbyr fleksibel romhøgd i trinn på 50 mm, opptil 8000 mm, og tjukkleikar på 75, 100, 125, 150 og 175 mm.",
+    "Ja. Vi tilbyr fleksibel romhøgd med trinn på 50 mm, opptil 8000 mm, og ulike tjukkleikar: 75 mm, 100 mm, 125 mm, 150 mm og 175 mm.",
   "Kan de produsere dører og portar med PIR-skum?":
-    "Ja. Fresvik leverer både dører og portar med PIR-skum, med same design som PUR-produkta.",
+    "Ja, vi leverer både dører og portar med PIR-skum, med same design som våre PUR-produkt.",
   "Kva er kjøleromspanel, og kva tjukkleik bør ein velje til kjøl og fryserom?":
-    "Kjøleromspanel er isolerte sandwichpanel til veggar, tak og eventuelt golv i kjøle- og fryserom. For kjølerom på 2-6 °C er 75-100 mm vanleg, medan fryserom frå 0 til -40 °C vanlegvis brukar 100-175 mm avhengig av U-verdi og energikrav.",
+    "Kjøleromspanel er isolerte sandwichpanel som blir brukte til veggar, tak og eventuelt golv i kjøle- og fryserom. Val av tjukkleik avheng av romtemperatur og energikrav: Kjølerom (2°C – 6°C): Vanlegvis 75–100 mm. Fryserom (0°C – -40°C): Vanlegvis 100–175 mm, avhengig av krav til U-verdi og energieffektivitet. Rett dimensjonering er viktig for å sikre stabil temperatur og lågt energiforbruk.",
   "Kan Fresvik Produkt levere kjøle- og fryserom på spesialmål eller for skreddarsydde prosjekt?":
-    "Ja. Fresvik Produkt leverer kjøle- og fryserom tilpassa prosjektet sine behov, med panel og løysingar på spesialmål for eksisterande bygg, produksjonslokale og større eller meir komplekse anlegg.",
+    "Ja, Fresvik Produkt leverer kjøle- og fryserom tilpassa prosjektet sine behov. Vi produserer panel og løysingar på spesialmål, slik at rommet kan tilpassast eksisterande bygg, produksjonslokale eller spesifikke krav frå kunden. Vi tilpassar løysingar etter kunden sine behov, enten det gjeld spesielle mål, tekniske krav eller større og meir komplekse anlegg.",
 };
 
 function inventoryCards(
@@ -223,6 +223,42 @@ const faqCards = oldSiteFaqItems.map((item) => ({
   text: faqTextByTitle[item.title],
   href: item.href,
 }));
+
+const faqCustomerCards: ContentCard[] = [
+  {
+    title: "Våre kundar",
+    text:
+      "Basert på modular, skreddarsyr vi kjøle- og fryserom for butikk, næringsmiddelindustri, institusjonar, storkjøken, skip og offshoreinstallasjonar.",
+    imageUrl: "/assets/fresvik/images/old-site/flake.png",
+    imageAlt: "Snøfnugg",
+  },
+  {
+    title: "Butikk",
+    text:
+      "Vi er marknadsleiar på kjøle- og fryserom til daglegvarehandel, energistasjonar og storkioskar.",
+    href: "/kjolerom-fryserom-butikk",
+    imageUrl: "/assets/fresvik/images/old-site/1715599204491.jpg",
+    imageAlt:
+      "Meieriavdelingen i en dagligvarebutikk med et stort skilt som sier 'MEIERI' og et mindre skilt som sier 'Alltid lave priser'.",
+  },
+  {
+    title: "Skip/offshore",
+    text:
+      "Vi er einaste norske produsent av polyuretan sandwich-panel godkjend for maritimt bruk - DIN 4102-B2.",
+    href: "/kjolerom-fryserom-offshore",
+    imageUrl: "/assets/fresvik/images/old-site/image-asset+(2).jpeg",
+    imageAlt: "En stor red og hvit offshore supply skip seiler i vannet.",
+  },
+  {
+    title: "Storkjøkken/institusjon",
+    text:
+      "Vi leverer kjøle- fryserom og tilleggsprodukt til storkjøken og institusjonar over heile landet.",
+    href: "/kjolerom-fryserom-storkjokken",
+    imageUrl: "/assets/fresvik/images/old-site/1733820776326.jpg",
+    imageAlt:
+      "Et tomt rom med hvite vegger, grå gulv, taklys, og et klimaanlegg med to vifter på veggen.",
+  },
+];
 
 const employeeCards = oldSiteEmployees.map((employee) => ({
   title: employee.title,
@@ -3137,10 +3173,9 @@ export const contentPages: ContentPage[] = [
   },
   {
     slug: "/kundeservice/faq",
-    title: "FAQ",
+    title: "Ofte Stilte Spørsmål",
     eyebrow: "Kundeservice",
-    intro:
-      "Ofte stilte spørsmål frå gammal Fresvik-side er samla her som grunnlag for ein enkel, søkbar og mobilvennleg struktur.",
+    intro: "Ofte Stilte Spørsmål",
     description: "Ofte stilte spørsmål for kundar av Fresvik Produkt.",
     pageType: "support",
     priority: "medium",
@@ -3148,14 +3183,23 @@ export const contentPages: ContentPage[] = [
     cards: faqCards.slice(0, 6),
     sections: [
       {
-        title: "Spørsmål og svar frå gammal FAQ",
-        intro:
-          "Spørsmåla og svara er henta frå den gamle FAQ-sida og er samla her som grunnlag for vidare Sanity-import.",
+        title: "Ofte Stilte Spørsmål",
         items: faqCards,
       },
-    ],
-    todo: [
-      "Importer og vedlikehald spørsmåla og svara som `faqItem`-dokument i Sanity.",
+      {
+        title: "Våre kundar",
+        intro:
+          "Basert på modular, skreddarsyr vi kjøle- og fryserom for butikk, næringsmiddelindustri, institusjonar, storkjøken, skip og offshoreinstallasjonar.",
+        items: faqCustomerCards,
+      },
+      {
+        title: "Kontakt",
+        items: productIndexContactCards,
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
+      },
     ],
   },
   {

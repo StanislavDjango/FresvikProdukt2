@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/kundeservice/faq",
+  "finalUrl": "https://www.fresvik.no/kundeservice/faq",
+  "fetchedAt": "2026-06-13T20:14:13.392Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Ofte Stilte Spørsmål — Fresvik Produkt",
+  "metaDescription": "",
+  "counts": {
+    "headings": 13,
+    "textBlocks": 85,
+    "links": 99,
+    "images": 48,
+    "documents": 2
+  }
+}

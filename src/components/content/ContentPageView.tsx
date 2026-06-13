@@ -46,7 +46,7 @@ function CardLink({ href, label }: { href: string; label: string }) {
 }
 
 function FAQAccordion({ page }: ContentPageViewProps) {
-  const questions = page.sections.flatMap((section) => section.items);
+  const questions = page.sections[0]?.items || [];
 
   return (
     <section className="border-b border-slate-200 bg-white">
@@ -60,22 +60,59 @@ function FAQAccordion({ page }: ContentPageViewProps) {
           {questions.map((item, index) => (
             <details key={`${item.title}-${index}`} className="group">
               <summary className="flex cursor-pointer list-none items-start justify-between gap-4 p-5 text-left font-semibold text-slate-950 transition hover:bg-slate-50 [&::-webkit-details-marker]:hidden">
-                <span>{item.title}</span>
+                <h3 className="text-base font-semibold">{item.title}</h3>
                 <ChevronDown
                   aria-hidden="true"
                   className="mt-0.5 shrink-0 text-cyan-800 transition group-open:rotate-180"
                   size={20}
                 />
               </summary>
-              <div className="px-5 pb-5 text-sm leading-7 text-slate-600">
+              <p className="px-5 pb-5 text-sm leading-7 text-slate-600">
                 {item.text}
-              </div>
+              </p>
             </details>
           ))}
         </div>
       </Container>
     </section>
   );
+}
+
+function ContentSections({ sections }: { sections: ContentPage["sections"] }) {
+  return sections.map((section) => (
+    <section key={section.title} className="py-14">
+      <Container>
+        <SectionHeader title={section.title} intro={section.intro} />
+        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {section.items.map((item) => (
+            <Card key={item.title}>
+              {item.imageUrl ? (
+                <Image
+                  src={item.imageUrl}
+                  alt={item.imageAlt || item.title}
+                  width={720}
+                  height={420}
+                  className="-mx-5 -mt-5 mb-5 h-48 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover"
+                />
+              ) : null}
+              {item.meta ? (
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
+                  {item.meta}
+                </p>
+              ) : null}
+              <h3 className="text-lg font-semibold text-slate-950">
+                {item.title}
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                {item.text}
+              </p>
+              {item.href ? <CardLink href={item.href} label="Opne" /> : null}
+            </Card>
+          ))}
+        </div>
+      </Container>
+    </section>
+  ));
 }
 
 export function ContentPageView({ page }: ContentPageViewProps) {
@@ -176,42 +213,12 @@ export function ContentPageView({ page }: ContentPageViewProps) {
       ) : null}
 
       {isFaqPage ? (
-        <FAQAccordion page={page} />
+        <>
+          <FAQAccordion page={page} />
+          <ContentSections sections={page.sections.slice(1)} />
+        </>
       ) : (
-        page.sections.map((section) => (
-          <section key={section.title} className="py-14">
-            <Container>
-              <SectionHeader title={section.title} intro={section.intro} />
-              <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {section.items.map((item) => (
-                  <Card key={item.title}>
-                    {item.imageUrl ? (
-                      <Image
-                        src={item.imageUrl}
-                        alt={item.imageAlt || item.title}
-                        width={720}
-                        height={420}
-                        className="-mx-5 -mt-5 mb-5 h-48 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover"
-                      />
-                    ) : null}
-                    {item.meta ? (
-                      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
-                        {item.meta}
-                      </p>
-                    ) : null}
-                    <h3 className="text-lg font-semibold text-slate-950">
-                      {item.title}
-                    </h3>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">
-                      {item.text}
-                    </p>
-                    {item.href ? <CardLink href={item.href} label="Opne" /> : null}
-                  </Card>
-                ))}
-              </div>
-            </Container>
-          </section>
-        ))
+        <ContentSections sections={page.sections} />
       )}
 
       {showMigrationDetails && page.todo && page.todo.length > 0 ? (

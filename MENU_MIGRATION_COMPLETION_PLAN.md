@@ -96,7 +96,7 @@ LINK_CHECK_BASE_URL=http://127.0.0.1:3060 npm run check:links
 - [x] Цель: `/dokumentasjon` — oldUrl: `https://www.fresvik.no/dokumentasjon`; audit: `MANUAL_PAGE_AUDITS/dokumentasjon.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`; PDF/product sheets проверены через redirect `/s/...` на локальные документы.
 - [x] Цель: `/monteringsanvisning` — oldUrl: `https://www.fresvik.no/monteringsanvisning`; audit: `MANUAL_PAGE_AUDITS/monteringsanvisning.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`; все монтажные PDF проверены через redirect `/s/...` на локальные документы.
 - [x] Цель: `/monteringsanvisningar-fresvik-skyveport` — oldUrl: `https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport`; audit: `MANUAL_PAGE_AUDITS/monteringsanvisningar-fresvik-skyveport.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`.
-- [ ] Цель: `/kundeservice/faq` — oldUrl: `https://www.fresvik.no/kundeservice/faq`; audit: `MANUAL_PAGE_AUDITS/faq.md`; статус: `pending`.
+- [x] Цель: `/kundeservice/faq` — oldUrl: `https://www.fresvik.no/kundeservice/faq`; audit: `MANUAL_PAGE_AUDITS/faq.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`.
 
 ## Очередь 4: Referansar, Aktuelt И Om Oss
 

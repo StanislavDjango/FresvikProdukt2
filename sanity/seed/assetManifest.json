@@ -2972,6 +2972,25 @@
     "notes": "Uploaded to Sanity as image-4e7dd83a023bf9c7d818af357d310a181ffa8dbc-997x712-jpg."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/1715599204491.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/1715599204491.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/kundeservice/faq"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kundeservice/faq"
+    ],
+    "sha256": "6b5691379f3a04dc8e9afc0bbd3843113628fde130f4f946e1b46c37a48d718c",
+    "fileSize": 101048,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719842658617-JWM3CCE08BXLOYQPYV8C/1715599204829_upscale+2.jpeg",
     "localPath": "/assets/fresvik/images/old-site/1715599204829-upscale-2-346667b36f.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/1715599204829-upscale-2-346667b36f.jpeg",
@@ -3027,6 +3046,25 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Uploaded to Sanity as image-fc39642257086e0f52e466e755a4d5843137c5a9-1242x1536-jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/1733820776326.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/1733820776326.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/kundeservice/faq"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kundeservice/faq"
+    ],
+    "sha256": "b59cc08ea8f43f6665312809f7fa008e0c91ebd850ca1e13f7d176873ad7ead3",
+    "fileSize": 70038,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429031003-XGGG9MZ489LJVUEFG4ZF/20151021_174814.jpg",
@@ -3390,6 +3428,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
@@ -3400,6 +3439,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
@@ -3524,6 +3564,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
@@ -3534,6 +3575,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
@@ -3557,6 +3599,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
@@ -3567,6 +3610,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
@@ -4035,6 +4079,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
@@ -4045,6 +4090,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
@@ -4915,6 +4961,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
@@ -4922,6 +4969,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
@@ -4948,6 +4996,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
@@ -4960,6 +5009,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
@@ -5850,6 +5900,25 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Uploaded to Sanity as image-aa6d44f63059220b01ebe3bb9cf9a13a17510866-420x730-webp."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/image-asset+(2).jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/image-asset+(2).jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/kundeservice/faq"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/kundeservice/faq"
+    ],
+    "sha256": "9266d57d1302d8fb153274ef5704d90c3426645cde95da8ac352d8cde0c4ab74",
+    "fileSize": 49676,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429060062-EZP0IEJNN4BIRSLEWVOG/image-asset.jpeg",
@@ -7096,6 +7165,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
@@ -7106,6 +7176,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
@@ -7957,6 +8028,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
@@ -7967,6 +8039,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",

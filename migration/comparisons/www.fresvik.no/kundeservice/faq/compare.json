@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/kundeservice/faq",
+  "newUrl": "http://127.0.0.1:3060/kundeservice/faq",
+  "checkedAt": "2026-06-13T20:19:44.471Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 75,
+    "missingTextBlocks": 0,
+    "oldLinks": 43,
+    "missingLinks": 0,
+    "oldImages": 11,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+  "newUrl": "http://127.0.0.1:3060/monteringsanvisningar-fresvik-skyveport",
+  "checkedAt": "2026-06-13T20:11:16.455Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 14,
+    "missingTextBlocks": 0,
+    "oldLinks": 46,
+    "missingLinks": 0,
+    "oldImages": 8,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

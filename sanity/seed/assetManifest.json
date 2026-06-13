@@ -136,13 +136,11 @@
     "assetType": "document",
     "usedBy": [
       "/monteringsanvisning",
-      "/monteringsanvisningar-fresvik-skyveport",
       "/produkt/kjole-fryseportar",
       "documentFile-assets-fresvik-documents-fresvik-port-montasjeanvisning-pdf"
     ],
     "sourcePages": [
       "https://www.fresvik.no/monteringsanvisning",
-      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
     ],
     "sha256": "678fc58b2f04714fd3b340525546be35c5cae7db9f27b90dacde9657f436eb08",
@@ -425,12 +423,10 @@
     "filePath": "public/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
     "assetType": "document",
     "usedBy": [
-      "/monteringsanvisningar-fresvik-skyveport",
       "/produkt/kjole-fryseportar",
       "documentFile-assets-fresvik-documents-produktblad-fresvik-skyveport-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
     ],
     "sha256": "1550154bc7a37fd187eecda74607cfc736efe1e58d82d02703bccc9a377be7ea",
@@ -3395,6 +3391,7 @@
     "usedBy": [
       "/dokumentasjon",
       "/monteringsanvisning",
+      "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -3404,6 +3401,7 @@
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -3527,6 +3525,7 @@
     "usedBy": [
       "/dokumentasjon",
       "/monteringsanvisning",
+      "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -3536,6 +3535,7 @@
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -3558,6 +3558,7 @@
     "usedBy": [
       "/dokumentasjon",
       "/monteringsanvisning",
+      "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -3567,6 +3568,7 @@
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -4034,6 +4036,7 @@
     "usedBy": [
       "/dokumentasjon",
       "/monteringsanvisning",
+      "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -4043,6 +4046,7 @@
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -4768,13 +4772,11 @@
     "filePath": "public/assets/fresvik/images/old-site/file-f5f844b125.png",
     "assetType": "image",
     "usedBy": [
-      "/monteringsanvisningar-fresvik-skyveport",
       "/produkt/fresvik-pir-panel",
       "/produkt/fresvik-pur-panel",
       "/produkt/kjole-fryseportar"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel",
       "https://www.fresvik.no/produkt/kjole-fryseportar"
@@ -4914,12 +4916,14 @@
     "usedBy": [
       "/dokumentasjon",
       "/monteringsanvisning",
+      "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/tenester/service-reservedeler"
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/service-reservedeler"
     ],
@@ -4945,6 +4949,7 @@
     "usedBy": [
       "/dokumentasjon",
       "/monteringsanvisning",
+      "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/produkt/fasadepanel",
       "/produkt/frysetunnel",
@@ -4956,6 +4961,7 @@
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/produkt/fasadepanel",
       "https://www.fresvik.no/produkt/frysetunnel",
@@ -7091,6 +7097,7 @@
     "usedBy": [
       "/dokumentasjon",
       "/monteringsanvisning",
+      "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -7100,6 +7107,7 @@
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -7950,6 +7958,7 @@
     "usedBy": [
       "/dokumentasjon",
       "/monteringsanvisning",
+      "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -7959,6 +7968,7 @@
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",

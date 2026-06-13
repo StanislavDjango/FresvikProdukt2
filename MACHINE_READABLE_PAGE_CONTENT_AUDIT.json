@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-13T20:07:18.425Z",
+    "generatedAt": "2026-06-13T20:12:20.930Z",
     "routeCount": 106,
     "statusCounts": {
       "migrated": 71,
@@ -990,11 +990,11 @@
       "matchedParagraphCount": 2,
       "textCoverage": 1,
       "oldWordCount": 28,
-      "localWordCount": 1122,
+      "localWordCount": 1272,
       "oldImageCount": 1,
-      "localImageCount": 2,
+      "localImageCount": 9,
       "oldDocumentCount": 6,
-      "localDocumentCount": 10,
+      "localDocumentCount": 8,
       "ignoredOldDocumentCount": 2,
       "ignoredOldDocumentReasons": [
         "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf (handled-globally: site-wide old footer/document link is migrated through documentation pages.)",
@@ -1002,7 +1002,7 @@
       ],
       "oldInternalLinkCount": 36,
       "oldExternalLinkCount": 5,
-      "localLinkCount": 43,
+      "localLinkCount": 52,
       "recoveryStatus": null,
       "recoveryNotes": [],
       "structuredListAccepted": false,

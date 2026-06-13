@@ -1201,33 +1201,48 @@ const mountingInfoCards: ContentCard[] = [
 const electricSkyveportDownloads: ContentCard[] = [
   {
     title: "Koblingskjema Fermod 5010",
-    text: "Koblingsskjema for elektrisk styring av Fresvik Skyveport.",
-    href: "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
+    text: "Koblingskjema Fermod 5010",
+    href: "/s/Koblingsskjema-Fermod-5010.pdf",
   },
   {
-    title: "Montasjeanvisning 5010 for 2150",
+    title: "Montasjeanvisning for Fermod 5010 på manuelt beslag 2150",
     text: "Montasjeanvisning for Fermod 5010 på manuelt beslag 2150.",
-    href: "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
+    href: "/s/Montasjeanvisning-5010-for-2150.pdf",
   },
   {
-    title: "Montasjeanvisning 5010 for 3530 og 7530",
+    title: "Montasjeanvisning for Fermod 5010 på manuelt beslag 3530 og 7530",
     text: "Montasjeanvisning for Fermod 5010 på manuelt beslag 3530 og 7530.",
-    href: "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
+    href: "/s/Montasjeanvisning-5010-for-3530-og-7530.pdf",
   },
   {
-    title: "Quick Start 5010Exp",
-    text: "Quick Start-dokument for 5010Exp.",
-    href: "/assets/fresvik/documents/quick-start-5010exp.pdf",
+    title: "Quick Start",
+    text: "Quick Start",
+    href: "/s/Quick-Start-5010Exp-indB.pdf",
   },
   {
     title: "Endre skyveretning",
-    text: "Rettleiing for å endre skyveretning.",
-    href: "/assets/fresvik/documents/endre-skyveretning.pdf",
+    text: "Endre skyveretning",
+    href: "/s/Endre-Skyveretning.pdf",
   },
   {
-    title: "Tilleggsutstyr NMOptions kits 5010Exp",
-    text: "Tilleggsutstyrsdokument for 5010Exp.",
-    href: "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
+    title: "Tilleggsutstyr",
+    text: "Tilleggsutstyr",
+    href: "/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf",
+  },
+];
+
+const electricSkyveportIntroCards: ContentCard[] = [
+  {
+    title: "Monteringsanvisningar for elektrisk styring av Fresvik Skyveport",
+    text: "Monteringsanvisningar for elektrisk styring av Fresvik Skyveport",
+    imageUrl: "/assets/fresvik/images/old-site/flake-left.png",
+    imageAlt: "En snøkrystall med detaljert mønster",
+  },
+  {
+    title: "Fresvik Skyveport",
+    text: "Fresvik Skyveport",
+    imageUrl: "/assets/fresvik/images/old-site/flake.png",
+    imageAlt: "Snøfnugg",
   },
 ];
 
@@ -3094,7 +3109,7 @@ export const contentPages: ContentPage[] = [
     title: "Monteringsanvisningar for elektrisk styring av Fresvik Skyveport",
     eyebrow: "Dokumentasjon",
     intro:
-      "Teknisk dokumentasjon og monteringsfiler for elektrisk styring av Fresvik Skyveport.",
+      "Monteringsanvisningar for elektrisk styring av Fresvik Skyveport",
     description:
       "Monteringsanvisningar og teknisk dokumentasjon for elektrisk styring av Fresvik Skyveport.",
     pageType: "support",
@@ -3103,21 +3118,21 @@ export const contentPages: ContentPage[] = [
     cards: electricSkyveportDownloads.slice(0, 3),
     sections: [
       {
+        title: "Monteringsanvisningar for elektrisk styring av Fresvik Skyveport",
+        items: electricSkyveportIntroCards,
+      },
+      {
         title: "Filer frå gammal skyveportside",
-        intro:
-          "Dokumenta er lasta ned frå gammal Fresvik-side og kopla som lokale PDF-filer for trygg gjennomgang i ny nettstad.",
         items: electricSkyveportDownloads,
       },
       {
-        title: "Relatert dokumentasjon",
-        items: portDocuments.filter((item) =>
-          item.href?.includes("assets/fresvik/documents"),
-        ),
+        title: "Kontakt",
+        items: productIndexContactCards,
       },
-    ],
-    todo: [
-      "Kvalitetssikre at alle elektriske styringsdokument framleis er gjeldande før endeleg lansering.",
-      "Flytt PDF-ane til Sanity assets når dokumentmodellen er i bruk.",
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
+      },
     ],
   },
   {

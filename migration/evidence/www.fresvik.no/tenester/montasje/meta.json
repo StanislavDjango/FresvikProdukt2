@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/tenester/montasje",
+  "finalUrl": "https://www.fresvik.no/tenester/montasje",
+  "fetchedAt": "2026-06-13T19:38:49.377Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Montasje | Få profesjonell montasje - kontakt oss i dag — Fresvik Produkt",
+  "metaDescription": "Fresvik Produkt tilbyr profesjonell montasje av isolasjonsplater, fasadepaneler og kjøle- og fryseporter. Kontakt oss for pålitelig montasjetjeneste i byggenæringen.",
+  "counts": {
+    "headings": 16,
+    "textBlocks": 32,
+    "links": 92,
+    "images": 32,
+    "documents": 2
+  }
+}

@@ -86,7 +86,7 @@ LINK_CHECK_BASE_URL=http://127.0.0.1:3060 npm run check:links
 
 ## Очередь 2: Tenester
 
-- [ ] Цель: `/tenester/montasje` — oldUrl: `https://www.fresvik.no/tenester/montasje`; audit: `MANUAL_PAGE_AUDITS/montasje.md`; статус: `pending`.
+- [x] Цель: `/tenester/montasje` — oldUrl: `https://www.fresvik.no/tenester/montasje`; audit: `MANUAL_PAGE_AUDITS/montasje.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`.
 - [ ] Цель: `/tenester/leveranse` — oldUrl: `https://www.fresvik.no/tenester/leveranse`; audit: `MANUAL_PAGE_AUDITS/leveranse.md`; статус: `pending`.
 - [ ] Цель: `/tenester/service-reservedeler` — oldUrl: `https://www.fresvik.no/tenester/service-reservedeler`; audit: `MANUAL_PAGE_AUDITS/service-reservedeler.md`; статус: `pending`.
 - [ ] Цель: `/tenester` — oldUrl: `https://www.fresvik.no/tenester`; audit: `MANUAL_PAGE_AUDITS/tenester.md`; статус: `pending`; примечание: индексная страница закрывается после проверки трёх service pages.

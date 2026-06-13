@@ -3336,10 +3336,12 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "bb48f0ffebfdac026924cff201c4fc079d4ff0836c7f965bb895947685ac317a",
@@ -3439,10 +3441,12 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "3349ec2902c21e626f6c789e12ba4edda423f31a15c331dc4e6f26af7e7a05b6",
@@ -3460,10 +3464,12 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "ef021f557487948648d5a917c55a0b057ddb0dfe0935f8c2379af3f8328bdce6",
@@ -3473,6 +3479,31 @@
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/_K6R3776_07032013.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/_K6R3776_07032013.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/tenester/montasje"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tenester/montasje"
+    ],
+    "sha256": "ba7bf3ee5e3b13d555a19d3b4208b887a741d81da1a21c0e6db4026e031c23a6",
+    "fileSize": 425644,
+    "sanityAssetId": "image-14a149133495e7c3a90f2566ea91dd1c497e0ea9-2500x1762-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-14a149133495e7c3a90f2566ea91dd1c497e0ea9-2500x1762-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/k6r3776-07032013.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/ce3eb664-c398-48ec-bcab-3acefac67026/aaa.jpg",
@@ -3901,10 +3932,12 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "8d6fdc6e42382898ed7029e6db2e2254755121cbbdf117bca7b8182597886a13",
@@ -4739,6 +4772,31 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/flake-black.png",
+    "filePath": "public/assets/fresvik/images/old-site/flake-black.png",
+    "assetType": "image",
+    "usedBy": [
+      "/tenester/montasje"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tenester/montasje"
+    ],
+    "sha256": "b2fbab26d90e1fb0171d5da17c3da86a07952b18b555ee590c51c30a5f013563",
+    "fileSize": 19539,
+    "sanityAssetId": "image-a39d29d41b5adcc697e2659db7637a2cddbef6a4-205x140-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a39d29d41b5adcc697e2659db7637a2cddbef6a4-205x140-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/flake-black.png."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/flake-left.png",
     "filePath": "public/assets/fresvik/images/old-site/flake-left.png",
     "assetType": "image",
@@ -4771,12 +4829,14 @@
       "/produkt",
       "/produkt/fasadepanel",
       "/produkt/frysetunnel",
+      "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/produkt/fasadepanel",
       "https://www.fresvik.no/produkt/frysetunnel",
+      "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "27e20960aaad940d294ba861e9d5783457caed68982d13fb67abcc9b1c42c54b",
@@ -6880,10 +6940,12 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "2fad91adbe2d6d746828cd3fb49f385acd59129e7cc388fc2ecb4e519c0c84c7",
@@ -7729,10 +7791,12 @@
     "assetType": "image",
     "usedBy": [
       "/produkt",
+      "/tenester/montasje",
       "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "8180a4229a0f968b6c7c6ddf18fe50c7970978d2ddfff66b5e7aa7645b328ee9",

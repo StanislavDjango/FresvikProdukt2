@@ -753,6 +753,55 @@ const productIndexContactCards: ContentCard[] = [
   ...accessoryContactCards.slice(1),
 ];
 
+const montasjeServiceCards: ContentCard[] = [
+  {
+    title: "Fresvik-panel til kjølerom og fryserom",
+    text: "Fresvik-panel til kjølerom og fryserom",
+    href: "/produkt/fresvik-pir-panel",
+    imageUrl: "/assets/fresvik/images/old-site/_K6R3776_07032013.jpg",
+    imageAlt:
+      "To personer i blå arbeidsklær monterer et fryserom for Fresvik Produkt.",
+  },
+  {
+    title: "Sandwhich-panel for fasade",
+    text: "Sandwhich-panel for fasade",
+    href: "/produkt/fasadepanel",
+    imageUrl: "/assets/fresvik/images/old-site/flake-black.png",
+    imageAlt: "En svart bakgrunn med en simpel, geometrisk snøkrystall i linjer",
+  },
+  {
+    title: "Kjøle- og fryseportar",
+    text: "Kjøle- og fryseportar",
+    href: "/produkt/kjole-fryseportar",
+    imageUrl: "/assets/fresvik/images/old-site/flake.png",
+    imageAlt: "Kjøle- og fryseportar",
+  },
+  {
+    title: "Kjøle- og frysedører",
+    text: "Kjøle- og frysedører",
+    href: "/produkt/kjole-frysedorer",
+    imageUrl: "/assets/fresvik/images/old-site/flake.png",
+    imageAlt: "Kjøle- og frysedører",
+  },
+  {
+    title: "Vindu",
+    text: "Vindu",
+  },
+  {
+    title: "Beslag",
+    text: "Beslag",
+  },
+];
+
+const montasjeContactCards: ContentCard[] = [
+  {
+    ...accessoryContactCards[0],
+    imageUrl: "/assets/fresvik/images/old-site/flake-black.png",
+    imageAlt: "En svart bakgrunn med en simpel, geometrisk snøkrystall i linjer",
+  },
+  ...accessoryContactCards.slice(1),
+];
+
 const supportTextByHref: Record<string, string> = {
   "/kjolerom-fryserom-butikk":
     "Fresvik Produkt er marknadsleiar på kjøle- og fryserom til daglegvarehandel, bensinstasjonar og storkioskar, og leverer gjerne totalpakke med panel, portar, glassfrontar, hylleinnreiing, beslag, ventilar, festemateriell og montasje gjennom samarbeidande montasjeselskap.",
@@ -2760,7 +2809,7 @@ export const contentPages: ContentPage[] = [
     title: "Montasje",
     eyebrow: "Teneste",
     intro:
-      "Fresvik Produkt tilbyr montasje av Fresvik-panel til kjølerom og fryserom, og sandwich-panel for fasade.",
+      "Fresvik produkt tilbyr montasje av:",
     description: "Montasjetenester frå Fresvik Produkt.",
     pageType: "service",
     priority: "high",
@@ -2768,29 +2817,54 @@ export const contentPages: ContentPage[] = [
     cards: oldServiceCards.filter((item) => item.href === "/tenester/montasje"),
     sections: [
       {
-        title: "Montasje frå gammal side",
+        title: "Fresvik produkt tilbyr montasje av:",
+        items: montasjeServiceCards,
+      },
+      {
+        title: "Sentral godkjenning",
         items: [
           {
-            title: "Erfarne montørar",
-            text:
-              "Montasje blir gjort i samarbeid med erfarne montørar.",
+            title: "Montasje gjer vi i samarbeid med erfarne montører.",
+            text: "Montasje gjer vi i samarbeid med erfarne montører.",
           },
           {
             title: "Sentral godkjenning",
             text:
-              "Fresvik Produkt er sentralt godkjent og oppgir at dette dokumenterer kompetanse, erfaring og system tilpassa byggenæringa.",
+              "Fresvik Produkt er sentralt godkjent, som betyr at vi har kompetanse, erfaring og systemer som er tilpasset til kundenes aktivitet i byggenæringen. Dette dokumenterer at vi har:",
+            href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
           },
           {
-            title: "Kontakt sal",
-            text:
-              "Den gamle sida ber kundar ta kontakt med salsavdelinga for meir informasjon om montørane.",
+            title: "Riktig kompetanse og erfaring fra fagområdet",
+            text: "Riktig kompetanse og erfaring fra fagområdet",
+          },
+          {
+            title: "Kvalitetssikringsrutiner",
+            text: "Kvalitetssikringsrutiner",
+          },
+          {
+            title: "Betaler skatter og avgifter",
+            text: "Betaler skatter og avgifter",
           },
         ],
       },
-    ],
-    todo: [
-      "Importer servicebilete og dokumentasjon for sentral godkjenning.",
-      "Kvalitetssikre formulering rundt skatter/avgifter og godkjenningar.",
+      {
+        title: "Meir informasjon om montasje?",
+        items: [
+          {
+            title: "Ta kontakt med vår salsavdeling for meir informasjon om montørane våre.",
+            text:
+              "Ta kontakt med vår salsavdeling for meir informasjon om montørane våre.",
+          },
+        ],
+      },
+      {
+        title: "Kontakt",
+        items: montasjeContactCards,
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
+      },
     ],
   },
   {

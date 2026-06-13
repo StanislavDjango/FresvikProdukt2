@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/monteringsanvisning",
+  "newUrl": "http://127.0.0.1:3060/monteringsanvisning",
+  "checkedAt": "2026-06-13T20:06:03.746Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 18,
+    "missingTextBlocks": 0,
+    "oldLinks": 45,
+    "missingLinks": 0,
+    "oldImages": 13,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

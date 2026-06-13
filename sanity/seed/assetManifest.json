@@ -3148,6 +3148,25 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/diktator-web.jpg."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Dør.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Dør.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/monteringsanvisning"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/monteringsanvisning"
+    ],
+    "sha256": "bc72436fc9ff53a464b5af81b028e6c743f43b9571483a1e466c96399ce0870a",
+    "fileSize": 4910,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228907943-YZH3JL5ULG3PTOBWRL20/Elebar+ventil_web.jpg",
     "localPath": "/assets/fresvik/images/old-site/Elebar+ventil_web.jpg",
     "filePath": "public/assets/fresvik/images/old-site/Elebar+ventil_web.jpg",
@@ -3168,6 +3187,25 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Elektrisk+port.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Elektrisk+port.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/monteringsanvisning"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/monteringsanvisning"
+    ],
+    "sha256": "58ba8ce3fb23f72b0e76a7065314a11a8ef6aaac2b88d56d11f21278987ff6c3",
+    "fileSize": 97268,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
     "filePath": "public/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
     "assetType": "image",
@@ -3179,6 +3217,25 @@
     ],
     "sha256": "5d4402b40af38bb9ce06d0cf288ff4fadbeff133fcf2fd2686b46b2d85af4acd",
     "fileSize": 138633,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Fryserom.png",
+    "filePath": "public/assets/fresvik/images/old-site/Fryserom.png",
+    "assetType": "image",
+    "usedBy": [
+      "/monteringsanvisning"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/monteringsanvisning"
+    ],
+    "sha256": "2cbecd4cd1319fa150bc8c144a6a1b8c77e0d41bed7835757e8f8ad4d0adb5ee",
+    "fileSize": 168700,
     "sanityAssetId": null,
     "sanityReference": null,
     "status": "ready-for-sanity",
@@ -3255,6 +3312,25 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Kjølerom.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Kjølerom.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/monteringsanvisning"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/monteringsanvisning"
+    ],
+    "sha256": "908e202284a56878696d0886c79bd932d059c02cd4a7db96a9f7b1eaeb221578",
+    "fileSize": 39154,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228912794-P8C77VM56V7MKF43USZ1/MaxiElebar+ventli_web.jpg",
     "localPath": "/assets/fresvik/images/old-site/MaxiElebar+ventli_web.jpg",
     "filePath": "public/assets/fresvik/images/old-site/MaxiElebar+ventli_web.jpg",
@@ -3318,6 +3394,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/monteringsanvisning",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -3326,6 +3403,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -3334,6 +3412,25 @@
     ],
     "sha256": "bb48f0ffebfdac026924cff201c4fc079d4ff0836c7f965bb895947685ac317a",
     "fileSize": 6213,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Port.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Port.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/monteringsanvisning"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/monteringsanvisning"
+    ],
+    "sha256": "127b4f10945bdab50afdfb0f0903551f90b8572aea498187f22c3a14a81028dd",
+    "fileSize": 26504,
     "sanityAssetId": null,
     "sanityReference": null,
     "status": "ready-for-sanity",
@@ -3429,6 +3526,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/monteringsanvisning",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -3437,6 +3535,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -3458,6 +3557,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/monteringsanvisning",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -3466,6 +3566,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -3932,6 +4033,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/monteringsanvisning",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -3940,6 +4042,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -4810,11 +4913,13 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/monteringsanvisning",
       "/produkt",
       "/tenester/service-reservedeler"
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/service-reservedeler"
     ],
@@ -4839,6 +4944,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/monteringsanvisning",
       "/produkt",
       "/produkt/fasadepanel",
       "/produkt/frysetunnel",
@@ -4849,6 +4955,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/produkt/fasadepanel",
       "https://www.fresvik.no/produkt/frysetunnel",
@@ -5209,7 +5316,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-66c9e8a8d0b3670f2969b0069ebba9cdb79a9ca3-2500x1667-webp."
+    "notes": "Uploaded to Sanity as image-66c9e8a8d0b3670f2969b0069ebba9cdb79a9ca3-2500x1667-webp. Duplicate file content of /assets/fresvik/images/old-site/Elektrisk+port.jpeg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1698216874163-KLN7EVX53DHNZV3JNUXG/Fresvik+Toppledere+sogn.no.jpeg",
@@ -6983,6 +7090,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/monteringsanvisning",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -6991,6 +7099,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -7840,6 +7949,7 @@
     "assetType": "image",
     "usedBy": [
       "/dokumentasjon",
+      "/monteringsanvisning",
       "/produkt",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -7848,6 +7958,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",

@@ -131,6 +131,7 @@ const localMigrationStructurePaths = new Set([
   "/tenester/leveranse",
   "/tenester/service-reservedeler",
   "/dokumentasjon",
+  "/monteringsanvisning",
 ]);
 
 const NEWS_INDEX_QUERY = defineQuery(`*[_type == "newsArticle"] | order(date desc, title asc) {

@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-13T20:01:54.670Z
+Generated: 2026-06-13T20:07:16.461Z
 
 ## Summary
 
@@ -18,7 +18,7 @@ Generated: 2026-06-13T20:01:54.670Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 328 |
+| Local image assets | 333 |
 | Local document/PDF assets | 27 |
 | Asset originalUrls recovered in manifest | 307 |
 
@@ -104,7 +104,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /kjolerom-fryserom-storkjokken | /kjolerom-fryserom-storkjokken | page | support | yes | yes | yes | 3/3 | yes | Covered as migrated page in local data. |
 | /kontakt | /kontakt | page | page | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /kundeservice/faq | /kundeservice/faq | page | support | yes | yes | yes | 5/5 | yes | Covered as migrated page in local data. |
-| /monteringsanvisning | /monteringsanvisning | page | document | yes | yes | yes | 6/6 | yes | Covered as migrated page in local data. |
+| /monteringsanvisning | /monteringsanvisning | page | document | yes | yes | yes | 19/6 | yes | Covered as migrated page in local data. |
 | /monteringsanvisningar-fresvik-skyveport | /monteringsanvisningar-fresvik-skyveport | page | document | yes | yes | yes | 2/1 | yes | Covered as migrated page in local data. |
 | /personvernerklering | /personvernerklering | page | legal | yes | yes | yes | 0/0 | yes | Covered as migrated page in local data. |
 | /produkt | /produkt | page | product | yes | yes | yes | 29/6 | yes | Covered as migrated page in local data. |
@@ -173,7 +173,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Local migrated image assets | 328 |
+| Local migrated image assets | 333 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
@@ -186,9 +186,9 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | --- | --- | --- | --- | --- | --- |
 | /assets/fresvik/documents/endre-skyveretning.pdf | Endre skyveretning | migrated | yes | 174280 | https://www.fresvik.no/s/Endre-Skyveretning.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf | PIR-Paneler montasjeanvisning | migrated | yes | 1031884 | https://www.fresvik.no/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf | Dør | migrated | yes | 4217580 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.67. |
-| /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf | Fryserom, Norsk/English | migrated | yes | 1929048 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf | Kjølerom, Norsk/English | migrated | yes | 1596484 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.67. |
+| /assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf | Dokument | migrated | yes | 4217580 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.67. |
+| /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf | Dokument | migrated | yes | 1929048 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 1.00. |
+| /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf | Dokument | migrated | yes | 1596484 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.67. |
 | /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf | Monteringsanvisning manuell port | migrated | yes | 6789859 | https://www.fresvik.no/s/Fresvik-Port-Montasjeanvisning.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf | Koblingskjema Fermod 5010 | migrated | yes | 2166231 | https://www.fresvik.no/s/Koblingsskjema-Fermod-5010.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf | Dokument | migrated | yes | 350922 | https://www.fresvik.no/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | Recovered likely old URL with confidence 0.75. |
@@ -216,10 +216,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 396 |
+| Internal link references | 403 |
 | OK routes | 176 |
-| Redirect links | 6 |
-| Asset links OK | 214 |
+| Redirect links | 10 |
+| Asset links OK | 217 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -230,6 +230,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | src/data/pages.ts:1115 | redirect | Redirects to /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf. |
 | /s/Sentral-Godkjenning-Fresvik-Produkt.pdf | src/data/pages.ts:1125 | redirect | Redirects to /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf. |
 | /s/Ytelseserklring-Fresvik-Produkt.pdf | src/data/pages.ts:1130 | redirect | Redirects to /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf. |
+| /s/Fresvik-Fryserom-Montasjeanvisning.pdf | src/data/pages.ts:1155 | redirect | Redirects to /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf. |
+| /s/Fresvik-Port-Montasjeanvisning.pdf | src/data/pages.ts:1162 | redirect | Redirects to /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf. |
+| /s/Fresvik-Kjlerom-Montasjeanvisning.pdf | src/data/pages.ts:1170 | redirect | Redirects to /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf. |
+| /s/Fresvik-Dr-Montasjeanvisning.pdf | src/data/pages.ts:1184 | redirect | Redirects to /assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf. |
 
 ## External links
 

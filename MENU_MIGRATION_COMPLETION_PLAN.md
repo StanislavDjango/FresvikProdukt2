@@ -94,7 +94,7 @@ LINK_CHECK_BASE_URL=http://127.0.0.1:3060 npm run check:links
 ## Очередь 3: Dokumentasjon И Kundeservice
 
 - [x] Цель: `/dokumentasjon` — oldUrl: `https://www.fresvik.no/dokumentasjon`; audit: `MANUAL_PAGE_AUDITS/dokumentasjon.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`; PDF/product sheets проверены через redirect `/s/...` на локальные документы.
-- [ ] Цель: `/monteringsanvisning` — oldUrl: `https://www.fresvik.no/monteringsanvisning`; audit: `MANUAL_PAGE_AUDITS/monteringsanvisning.md`; статус: `pending`; примечание: проверить все монтажные PDF.
+- [x] Цель: `/monteringsanvisning` — oldUrl: `https://www.fresvik.no/monteringsanvisning`; audit: `MANUAL_PAGE_AUDITS/monteringsanvisning.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`; все монтажные PDF проверены через redirect `/s/...` на локальные документы.
 - [ ] Цель: `/monteringsanvisningar-fresvik-skyveport` — oldUrl: `https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport`; audit: `MANUAL_PAGE_AUDITS/monteringsanvisningar-fresvik-skyveport.md`; статус: `pending`.
 - [ ] Цель: `/kundeservice/faq` — oldUrl: `https://www.fresvik.no/kundeservice/faq`; audit: `MANUAL_PAGE_AUDITS/faq.md`; статус: `pending`.
 

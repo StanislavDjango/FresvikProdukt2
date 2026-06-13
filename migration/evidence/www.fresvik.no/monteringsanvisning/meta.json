@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/monteringsanvisning",
+  "finalUrl": "https://www.fresvik.no/monteringsanvisning",
+  "fetchedAt": "2026-06-13T20:03:42.008Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Monteringsanvisningar | Last ned monteringsguider i dag — Fresvik Produkt",
+  "metaDescription": "Finn monteringsanvisninger for Fresvik-produkter som fryserom, kjølerom, porter og dører. Last ned teknisk dokumentasjon og få profesjonell veiledning.",
+  "counts": {
+    "headings": 15,
+    "textBlocks": 30,
+    "links": 97,
+    "images": 64,
+    "documents": 6
+  }
+}

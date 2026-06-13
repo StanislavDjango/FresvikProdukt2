@@ -1,7 +1,6 @@
 import {
   oldSiteCompanyFacts,
   getOldSiteInventoryItem,
-  oldSiteDocuments,
   oldSiteEmployees,
   oldSiteFaqItems,
   oldSiteLegalDocuments,
@@ -394,11 +393,6 @@ const referenceCards = inventoryCards(
 const oldServiceCards = inventoryCards(
   oldSiteServices,
   "Teneste registrert frå gammal sitemap med kjeldetekst, prosess og lenker bevart.",
-);
-
-const oldDocumentCards = inventoryCards(
-  oldSiteDocuments,
-  "Dokumentasjonsside registrert frå gammal sitemap med PDF-ar og eksterne dokument bevart.",
 );
 
 const accessoryTextByHref: Record<string, string> = {
@@ -1150,24 +1144,57 @@ const documentationIntroCards: ContentCard[] = [
 
 const mountingDownloads: ContentCard[] = [
   {
-    title: "Fryserom, Norsk/English",
-    text: "Monteringsanvisning for fryserom.",
-    href: "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
+    title: "Fryserom",
+    text: "Last ned monteringsanvisning for fryserom, Norsk/English",
+    href: "/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
+    imageUrl: "/assets/fresvik/images/old-site/Fryserom.png",
+    imageAlt: "Temperert rom med frostfritt skap og frostmur",
   },
   {
-    title: "Manuell port",
-    text: "Monteringsanvisning for manuell port.",
-    href: "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
+    title: "Port",
+    text: "Last ned monteringsanvisning for manuell port",
+    href: "/s/Fresvik-Port-Montasjeanvisning.pdf",
+    imageUrl: "/assets/fresvik/images/old-site/Port.jpeg",
+    imageAlt:
+      "Industriellt kjølelager- eller fryseavdeling med store metallrom og en person i oransje arbeidstøy som håndterer en pall.",
   },
   {
-    title: "Kjølerom, Norsk/English",
-    text: "Monteringsanvisning for kjølerom.",
-    href: "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
+    title: "Kjølerom",
+    text: "Last ned monteringsanvisning for kjølerom, Norsk/English",
+    href: "/s/Fresvik-Kjlerom-Montasjeanvisning.pdf",
+    imageUrl: "/assets/fresvik/images/old-site/Kjølerom.jpeg",
+    imageAlt: "Kjølerom",
+  },
+  {
+    title: "Elektrisk port",
+    text: "Monteringsanvisning for elektrisk port.",
+    href: "/monteringsanvisningar-fresvik-skyveport",
+    imageUrl: "/assets/fresvik/images/old-site/Elektrisk+port.jpeg",
+    imageAlt: "Bilde av en fryseport produsert av Fresvik Produkt.",
   },
   {
     title: "Dør",
-    text: "Monteringsanvisning for dør.",
-    href: "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
+    text: "Last ned monteringsanvisning for dør",
+    href: "/s/Fresvik-Dr-Montasjeanvisning.pdf",
+    imageUrl: "/assets/fresvik/images/old-site/Dør.jpeg",
+    imageAlt: "Dør",
+  },
+];
+
+const mountingInfoCards: ContentCard[] = [
+  {
+    title: "Ute etter dokumentasjon?",
+    text:
+      "Teknisk godkjenning, miljødokumentasjon, leveringsbetingelser og sentral godkjenning finn du på sida om dokumentasjon.",
+    href: "/dokumentasjon",
+    imageUrl: "/assets/fresvik/images/old-site/flake-left.png",
+    imageAlt: "Snøkrystall mot svart bakgrunn",
+  },
+  {
+    title: "Monteringsanvisningar",
+    text: "Her finn du monteringsanvisningar på våre produkt.",
+    imageUrl: "/assets/fresvik/images/old-site/flake.png",
+    imageAlt: "Snøfnugg",
   },
 ];
 
@@ -3035,10 +3062,9 @@ export const contentPages: ContentPage[] = [
   },
   {
     slug: "/monteringsanvisning",
-    title: "Monteringsanvisning",
+    title: "Monteringsanvisningar",
     eyebrow: "Dokumentasjon",
-    intro:
-      "Monteringsanvisningar for fryserom, kjølerom, portar og dører.",
+    intro: "Her finn du monteringsanvisningar på våre produkt.",
     description: "Monteringsanvisningar frå Fresvik Produkt.",
     pageType: "support",
     priority: "high",
@@ -3046,19 +3072,22 @@ export const contentPages: ContentPage[] = [
     cards: mountingDownloads,
     sections: [
       {
-        title: "Monteringsfiler frå gammal side",
-        intro:
-          "Dokumenta er henta frå gammal Fresvik-side og ligg mellombels som lokale filer fram til dei blir flytta til Sanity assets.",
+        title: "Monteringsanvisningar",
         items: mountingDownloads,
       },
       {
-        title: "Relaterte dokumentasjonssider",
-        items: oldDocumentCards.filter((item) =>
-          item.href?.includes("monterings"),
-        ),
+        title: "Ute etter dokumentasjon?",
+        items: mountingInfoCards,
+      },
+      {
+        title: "Kontakt",
+        items: productIndexContactCards,
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
       },
     ],
-    todo: ["Legg dokumenta inn som `documentFile` i Sanity."],
   },
   {
     slug: "/monteringsanvisningar-fresvik-skyveport",

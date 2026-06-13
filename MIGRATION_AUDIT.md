@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-13T19:29:02.074Z
+Generated: 2026-06-13T19:37:15.846Z
 
 ## Summary
 
@@ -18,9 +18,9 @@ Generated: 2026-06-13T19:29:02.074Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 309 |
+| Local image assets | 325 |
 | Local document/PDF assets | 27 |
-| Asset originalUrls recovered in manifest | 304 |
+| Asset originalUrls recovered in manifest | 307 |
 
 Do not treat the migration as complete while any route, asset, document or link remains `partial`, `missing`, `needs-review`, `inventory-only`, `thumbnail-or-variant` or `local-only`.
 
@@ -107,7 +107,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /monteringsanvisning | /monteringsanvisning | page | document | yes | yes | yes | 6/6 | yes | Covered as migrated page in local data. |
 | /monteringsanvisningar-fresvik-skyveport | /monteringsanvisningar-fresvik-skyveport | page | document | yes | yes | yes | 2/1 | yes | Covered as migrated page in local data. |
 | /personvernerklering | /personvernerklering | page | legal | yes | yes | yes | 0/0 | yes | Covered as migrated page in local data. |
-| /produkt | /produkt | page | product | yes | yes | yes | 11/6 | yes | Covered as migrated page in local data. |
+| /produkt | /produkt | page | product | yes | yes | yes | 29/6 | yes | Covered as migrated page in local data. |
 | /produkt/fasadepanel | /produkt/fasadepanel | page | product | yes | yes | yes | 14/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | /produkt/fresvik-pur-panel | redirect | product | yes | yes | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
 | /produkt/fresvik-pir-panel | /produkt/fresvik-pir-panel | page | product | yes | yes | yes | 12/7 | yes | Covered as migrated page in local data. |
@@ -173,7 +173,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Local migrated image assets | 309 |
+| Local migrated image assets | 325 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
@@ -216,10 +216,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 377 |
-| OK routes | 175 |
+| Internal link references | 392 |
+| OK routes | 174 |
 | Redirect links | 0 |
-| Asset links OK | 202 |
+| Asset links OK | 218 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -235,6 +235,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | https://sintefcertification.no/Product/Index/129 | src/data/pages.ts: | certification/documentation | keep |
 | https://www.fresvik.no/ | src/data/pages.ts: | source-url | keep |
 | https://www.gasta.no | src/data/pages.ts: | external-reference | keep |
+| https://www.fresvik.no/produkt | src/data/pages.ts: | source-url | keep |
 | https://www.fresvik.no/produkt/fresvik-pir-panel | src/data/pages.ts: | source-url | keep |
 | https://www.fresvik.no/produkt/fresvik-panel | src/data/pages.ts: | source-url | keep |
 | https://www.fresvik.no/produkt/kjole-fryseportar | src/data/pages.ts: | source-url | keep |

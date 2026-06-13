@@ -6,7 +6,6 @@ import {
   oldSiteFaqItems,
   oldSiteLegalDocuments,
   oldSiteNews,
-  oldSiteProducts,
   oldSiteReferences,
   oldSiteServices,
   oldSiteSupportPages,
@@ -43,44 +42,6 @@ export type ContentPage = {
   sections: Section[];
   todo?: string[];
 };
-
-const productCards: ContentCard[] = [
-  {
-    title: "Fresvik PIR Panel",
-    text: "Isolerte panel for prosjekt der låg vekt, god isolasjon og presis montering er viktig.",
-    href: "/produkt/fresvik-pir-panel",
-  },
-  {
-    title: "Fresvik PUR Panel",
-    text: "Panel for kjøle-, fryse- og industribygg med kjeldetekst bevart frå gammal produktside.",
-    href: "/produkt/fresvik-pur-panel",
-  },
-  {
-    title: "Kjøle- og fryseportar",
-    text: "Portløysingar for temperaturstyrte miljø, lager og næringsmiddelprosjekt.",
-    href: "/produkt/kjole-fryseportar",
-  },
-  {
-    title: "Kjøle- og frysedører",
-    text: "Dører for kjøle- og fryserom med fokus på drift, tetting og dagleg bruk.",
-    href: "/produkt/kjole-frysedorer",
-  },
-  {
-    title: "Fasadepanel",
-    text: "Fasadepanel for bygg der teknisk funksjon og eit ryddig uttrykk må fungere saman.",
-    href: "/produkt/fasadepanel",
-  },
-  {
-    title: "Frysetunnel",
-    text: "Frysetunnelar for rask, jamn og kontrollert innfrysing i krevjande produksjonsmiljø.",
-    href: "/produkt/frysetunnel",
-  },
-  {
-    title: "Tilleggsutstyr",
-    text: "Tilbehør og kompletterande delar for panel-, port- og dørløysingar.",
-    href: "/tilleggsutstyr",
-  },
-];
 
 const serviceCards: ContentCard[] = [
   {
@@ -430,11 +391,6 @@ const referenceCards = inventoryCards(
   referenceTextByHref,
 );
 
-const oldProductCards = inventoryCards(
-  oldSiteProducts,
-  "Produkt registrert frå gammal sitemap med kjeldetekst, tekniske data og dokument bevart.",
-);
-
 const oldServiceCards = inventoryCards(
   oldSiteServices,
   "Teneste registrert frå gammal sitemap med kjeldetekst, prosess og lenker bevart.",
@@ -653,6 +609,150 @@ const accessoryCertificationCards: ContentCard[] = [
   },
 ];
 
+const productIndexHeroCards: ContentCard[] = [
+  {
+    title: "Fresvik-panel",
+    text: "VÅRE PRODUKT Fresvik-panel Utvikla og produsert i Norge",
+    href: "/produkt/fresvik-panel",
+    imageUrl: "/assets/fresvik/images/old-site/aaa.jpg",
+    imageAlt:
+      "Korridor med hvite dører, belysning, ventilasjon og gulv med antiskli-mønster.",
+  },
+  {
+    title: "Fleksibelt på byggeplass",
+    text: "Fleksibelt på byggeplass",
+    imageUrl: "/assets/fresvik/images/old-site/flake.png",
+    imageAlt: "Fleksibelt på byggeplass",
+  },
+  {
+    title: "Enkel montasje med eksenterlås",
+    text: "Enkel montasje med eksenterlås",
+    imageUrl: "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
+    imageAlt: "Enkel montasje med eksenterlås",
+  },
+  {
+    title: "Modulmål gir mindre svinn",
+    text: "Modulmål gir mindre svinn",
+    imageUrl: "/assets/fresvik/images/old-site/fresvik-fryse-dor_ny.jpg",
+    imageAlt: "Modulmål gir mindre svinn",
+  },
+];
+
+const productIndexMainCards: ContentCard[] = [
+  {
+    title: "VÅRE PRODUKT Kjøle- og fryseportar",
+    text: "Kjøle- og fryseportar",
+    href: "/produkt/kjole-fryseportar",
+    imageUrl: "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
+    imageAlt: "Kjøle- og fryseportar",
+  },
+  {
+    title: "VÅRE PRODUKT Kjøle- og frysedører",
+    text: "Kjøle- og frysedører",
+    href: "/produkt/kjole-frysedorer",
+    imageUrl: "/assets/fresvik/images/old-site/fresvik-fryse-dor_ny.jpg",
+    imageAlt: "Kjøle- og frysedører",
+  },
+  {
+    title: "VÅRE PRODUKT Fasadepanel",
+    text: "Fasadepanel",
+    href: "/produkt/fasadepanel",
+    imageUrl: "/assets/fresvik/images/old-site/image-asset.jpg",
+    imageAlt: "Fasadepanel",
+  },
+];
+
+const productIndexAccessoryCards: ContentCard[] = [
+  {
+    title: "Standard håndtak",
+    text: "Standard håndtak",
+    href: "/andre-produkter/standard-handtak",
+    imageUrl: "/assets/fresvik/images/old-site/Håndtak+standard_web.jpg",
+    imageAlt: "Standard håndtak",
+  },
+  {
+    title: "Elebar ventil",
+    text: "Elebar ventil",
+    href: "/andre-produkter/elebar-ventil",
+    imageUrl: "/assets/fresvik/images/old-site/Elebar+ventil_web.jpg",
+    imageAlt: "Elebar ventil",
+  },
+  {
+    title: "MaxiElebar ventil",
+    text: "MaxiElebar ventil",
+    href: "/andre-produkter/maxielebar-ventil",
+    imageUrl: "/assets/fresvik/images/old-site/MaxiElebar+ventli_web.jpg",
+    imageAlt: "MaxiElebar ventil",
+  },
+  {
+    title: "PEGO Innestengnings-alarm",
+    text: "PEGO Innestengnings-alarm",
+    href: "/andre-produkter/pego-innestengningsalarm",
+    imageUrl: "/assets/fresvik/images/old-site/PEGO+innestengningsalarm_web.jpg",
+    imageAlt: "PEGO Innestengnings-alarm",
+  },
+  {
+    title: "PVC-gardiner",
+    text: "PVC-gardiner",
+    href: "/andre-produkter/pvc-gardiner",
+    imageUrl: "/assets/fresvik/images/old-site/PVC-gardin_web.jpg",
+    imageAlt: "PVC-gardiner",
+  },
+  {
+    title: "Diktator dørtiltrekker",
+    text: "Diktator dørtiltrekker",
+    href: "/andre-produkter/diktator-dortiltrekker",
+    imageUrl: "/assets/fresvik/images/old-site/Diktator_web.jpg",
+    imageAlt: "Diktator dørtiltrekker",
+  },
+  {
+    title: "Køyrerampe",
+    text: "Køyrerampe",
+    href: "/andre-produkter/kjlerampe",
+    imageUrl: "/assets/fresvik/images/old-site/rampe3+copy.jpg",
+    imageAlt: "Køyrerampe",
+  },
+  {
+    title: "Beslag",
+    text: "Beslag",
+    href: "/andre-produkter/beslag",
+    imageUrl: "/assets/fresvik/images/old-site/profil3+copy.jpg",
+    imageAlt: "Beslag",
+  },
+  {
+    title: "Standard dører",
+    text: "Standard dører",
+    href: "/andre-produkter/2014/7/9/standard-drer",
+    imageUrl: "/assets/fresvik/images/old-site/Standard+Dør+Fresvik+Produkt.jpg",
+    imageAlt: "Standard dører",
+  },
+  {
+    title: "Skipsdører",
+    text: "Skipsdører",
+    href: "/andre-produkter/2014/7/9/skipsdrer",
+    imageUrl: "/assets/fresvik/images/old-site/Skipsdør+Fresvik+Produkt.jpg",
+    imageAlt: "Skipsdører",
+  },
+  {
+    title: "Industri slagdør",
+    text: "Industri slagdør",
+    href: "/andre-produkter/2014/7/9/industri-slagdor",
+    imageUrl: "/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
+    imageAlt: "Industri slagdør",
+  },
+];
+
+const productIndexContactCards: ContentCard[] = [
+  {
+    title: "Fresvik Produkt AS",
+    text: "Fresvikvegen 995,6896 FresvikTel: 57 69 83 00E-post: post@fresvik.no",
+    href: "mailto:post@fresvik.no",
+    imageUrl: "/assets/fresvik/images/old-site/flake-left.png",
+    imageAlt: "En snøkrystall eller snøfnugg på en svart bakgrunn.",
+  },
+  ...accessoryContactCards.slice(1),
+];
+
 const supportTextByHref: Record<string, string> = {
   "/kjolerom-fryserom-butikk":
     "Fresvik Produkt er marknadsleiar på kjøle- og fryserom til daglegvarehandel, bensinstasjonar og storkioskar, og leverer gjerne totalpakke med panel, portar, glassfrontar, hylleinnreiing, beslag, ventilar, festemateriell og montasje gjennom samarbeidande montasjeselskap.",
@@ -676,10 +776,6 @@ const supportDetailCards = oldSiteSupportPages.map((item) => ({
   imageUrl: item.imageUrl,
   imageAlt: item.imageAlt || item.title,
 }));
-
-const customerSegmentCards = supportDetailCards.filter((item) =>
-  item.href?.startsWith("/kjolerom-fryserom"),
-);
 
 const transportDamageCards: ContentCard[] = [
   {
@@ -2405,31 +2501,40 @@ export const contentPages: ContentPage[] = [
   },
   {
     slug: "/produkt",
-    title: "Produkt",
-    eyebrow: "Panel, portar, dører og tilbehør",
-    intro:
-      "Finn produktområda Fresvik Produkt skal presentere på den nye nettstaden.",
+    title: "Fresvik-panel",
+    eyebrow: "VÅRE PRODUKT",
+    intro: "Utvikla og produsert i Norge",
     description:
-      "Oversikt over produkt frå Fresvik Produkt: PIR/PUR-panel, kjøle- og fryseportar, dører, fasadepanel og tilleggsutstyr.",
+      "VÅRE PRODUKT Fresvik-panel Utvikla og produsert i Norge.",
     pageType: "index",
     priority: "high",
-    cards: oldProductCards.slice(0, 6),
+    sourceUrl: "https://www.fresvik.no/produkt",
+    cards: productIndexHeroCards,
     sections: [
-      { title: "Produktområde i ny struktur", items: productCards },
       {
-        title: "Produkt-URL-ar frå gammal sitemap",
-        intro:
-          "Desse produkt- og produktfoto-sidene er funne i gammal sitemap og skal migrerast eller redirectast.",
-        items: oldProductCards,
+        title: "Fresvik-panel",
+        intro: "Utvikla og produsert i Norge",
+        items: productIndexHeroCards,
       },
       {
-        title: "Kundesegment frå gammal nettstad",
+        title: "Våre produkt",
+        items: productIndexMainCards,
+      },
+      {
+        title: "Tilbehør",
+        items: productIndexAccessoryCards,
+      },
+      {
+        title: "Kontakt",
+        items: productIndexContactCards,
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
         intro:
-          "Segment-sidene frå gammal nettstad viser korleis produkt og tenester blir brukt i butikk, offshore og storkjøkken/institusjon.",
-        items: customerSegmentCards,
+          "Lenker og sertifikatbilete frå den gamle produktsida er bevart med same dokumentmål eller ekstern URL.",
+        items: accessoryCertificationCards,
       },
     ],
-    todo: ["Importer produktbilete og PDF-dokument frå gammal nettstad."],
   },
   {
     slug: "/produkt/fresvik-pir-panel",

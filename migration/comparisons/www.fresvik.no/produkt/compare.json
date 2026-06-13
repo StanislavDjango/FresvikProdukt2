@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/produkt",
+  "newUrl": "http://127.0.0.1:3060/produkt",
+  "checkedAt": "2026-06-13T19:37:01.349Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 18,
+    "missingTextBlocks": 0,
+    "oldLinks": 51,
+    "missingLinks": 0,
+    "oldImages": 23,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

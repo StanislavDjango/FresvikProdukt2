@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-06-13T19:29:04.034Z
+Generated: 2026-06-13T19:37:17.798Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -38,7 +38,7 @@ Next batch: `none`
 | batch | path | status | text | images | docs | links | notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | homepage | / | migrated | 9/9 | 20/3 | 2/0 | 47/41 | Strict content evidence is covered. |
-| products | /produkt | migrated | 0/0 | 11/6 | 2/0 | 48/46 | Structured index/list page: old body text was not extractable, but list links/images are covered. |
+| products | /produkt | migrated | 0/0 | 29/6 | 2/0 | 53/46 | Structured index/list page: old body text was not extractable, but list links/images are covered. |
 | products | /produkt/fasadepanel | migrated | 7/7 | 14/3 | 2/0 | 13/38 | Strict content evidence is covered. |
 | products | /produkt/fresvik-pir-panel | migrated | 12/12 | 13/6 | 5/3 | 15/42 | Strict content evidence is covered. |
 | products | /produkt/frysetunnel | migrated | 15/15 | 16/8 | 2/0 | 17/37 | Strict content evidence is covered. |

@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-13T19:29:02.074Z",
+    "generatedAt": "2026-06-13T19:37:15.846Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -14,9 +14,9 @@
     "needsReviewCount": 0,
     "unrecoverableCount": 6,
     "inventoryOnlyCount": 0,
-    "localImageAssets": 309,
+    "localImageAssets": 325,
     "localDocumentAssets": 27,
-    "originalUrlsRecovered": 304,
+    "originalUrlsRecovered": 307,
     "routeStatusCounts": {
       "page": 71,
       "unrecoverable": 6,
@@ -26,7 +26,7 @@
       "migrated": 271,
       "ignored-with-reason": 33,
       "duplicate": 47,
-      "unrecoverable": 26
+      "unrecoverable": 39
     },
     "documentStatusCounts": {
       "migrated": 27
@@ -1306,9 +1306,9 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 6,
-      "localImageCount": 11,
+      "localImageCount": 29,
       "recoveryStatus": null,
       "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
@@ -2822,10 +2822,10 @@
       "oldPath": "/andre-produkter/elebar-ventil",
       "title": "Andre produkt - Elebar ventil - Make it stand out",
       "caption": "Whatever it is, the way you tell your story online can make all the difference.",
-      "localPath": "/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg",
+      "localPath": "/assets/fresvik/images/old-site/Elebar+ventil_web.jpg",
       "status": "migrated",
-      "confidence": 0.65,
-      "notes": "Matched by filename/source similarity (0.65)."
+      "confidence": 0.7,
+      "notes": "Matched by filename/source similarity (0.70)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228910970-GA9J3XJZ7A746P0MBQJ4/MaxiElebar+ventil+inne_web.jpg",
@@ -2842,10 +2842,10 @@
       "oldPath": "/andre-produkter/maxielebar-ventil",
       "title": "Andre produkt - MaxiElebar ventil - Make it stand out",
       "caption": "Whatever it is, the way you tell your story online can make all the difference.",
-      "localPath": "/assets/fresvik/images/migrated/maxielebar-ventil-inne-web.jpg",
+      "localPath": "/assets/fresvik/images/old-site/MaxiElebar+ventli_web.jpg",
       "status": "migrated",
-      "confidence": 0.636,
-      "notes": "Matched by filename/source similarity (0.64)."
+      "confidence": 0.69,
+      "notes": "Matched by filename/source similarity (0.69)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228916130-S0DQVN00OYIZASC3CQKV/PEGO+innestengningsalarm_web.jpg",
@@ -2922,10 +2922,10 @@
       "oldPath": "/andre-produkter/kjlerampe",
       "title": "Andre produkt - Køyrerampe",
       "caption": "",
-      "localPath": "/assets/fresvik/images/migrated/rampe1-copy.jpg",
+      "localPath": "/assets/fresvik/images/old-site/rampe3+copy.jpg",
       "status": "migrated",
-      "confidence": 0.683,
-      "notes": "Matched by filename/source similarity (0.68)."
+      "confidence": 0.773,
+      "notes": "Matched by filename/source similarity (0.77)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228943559-L0SXG2I29YLNU5JDWJP5/profil1+copy.jpg",
@@ -5519,6 +5519,36 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/Diktator_web.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/Håndtak+standard_web.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
@@ -5529,10 +5559,50 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilleggsutstyr",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/PEGO+innestengningsalarm_web.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/PVC-gardin_web.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Poly.png",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/Skipsdør+Fresvik+Produkt.jpg",
       "status": "unrecoverable",
       "confidence": 0,
       "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
@@ -5559,7 +5629,17 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilleggsutstyr",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/Standard+Dør+Fresvik+Produkt.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Startbarnk.png",
@@ -5569,10 +5649,20 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilleggsutstyr",
+      "oldPath": "/produkt, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/TG-2135.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/aaa.jpg",
       "status": "unrecoverable",
       "confidence": 0,
       "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
@@ -5619,7 +5709,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilleggsutstyr",
+      "oldPath": "/produkt, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/ce-logo-png-transparent.png",
@@ -5708,14 +5798,34 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/flake-left.png",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/13922f08-1a26-4996-98ca-874c87c1d3cb/flake.png",
-      "oldPath": "/produkt/fasadepanel, /produkt/frysetunnel, /tilleggsutstyr",
+      "oldPath": "/produkt, /produkt/fasadepanel, /produkt/frysetunnel, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/flake.png",
       "status": "ignored-with-reason",
       "confidence": 0,
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/fresvik-fryse-dor_ny.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
     },
     {
       "originalUrl": "TODO: unknown original URL",
@@ -5798,6 +5908,16 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/image-asset.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0fa83857-67f7-4d27-bd1e-2967f67f9d2e/FP+Produkt+11.jpg",
       "oldPath": "/produkt/kjole-frysedorer",
       "title": "",
@@ -5826,6 +5946,16 @@
       "status": "ignored-with-reason",
       "confidence": 0,
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/profil3+copy.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228957634-HCADFJMCX83H0GB9N5Y1/profil3+copy.jpg",
@@ -5869,7 +5999,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilleggsutstyr",
+      "oldPath": "/produkt, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/sentral+godkjent.png",
@@ -5989,7 +6119,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilleggsutstyr",
+      "oldPath": "/produkt, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
@@ -6292,6 +6422,7 @@
         "https://www.fresvik.no/monteringsanvisning",
         "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
         "https://www.fresvik.no/personvernerklering",
+        "https://www.fresvik.no/produkt",
         "https://www.fresvik.no/produkt/fasadepanel",
         "https://www.fresvik.no/produkt/fresvik-panel",
         "https://www.fresvik.no/produkt/fresvik-pir-panel",
@@ -6385,6 +6516,7 @@
         "https://www.fresvik.no/monteringsanvisning",
         "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
         "https://www.fresvik.no/personvernerklering",
+        "https://www.fresvik.no/produkt",
         "https://www.fresvik.no/produkt/fasadepanel",
         "https://www.fresvik.no/produkt/fresvik-panel",
         "https://www.fresvik.no/produkt/fresvik-pir-panel",
@@ -6530,66 +6662,10 @@
   ],
   "internalLinks": [
     {
-      "href": "/produkt/fresvik-pir-panel",
-      "normalized": "/produkt/fresvik-pir-panel",
-      "sourceFile": "src/data/pages.ts",
-      "line": 51,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/produkt/fresvik-pur-panel",
-      "normalized": "/produkt/fresvik-pur-panel",
-      "sourceFile": "src/data/pages.ts",
-      "line": 56,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/produkt/kjole-fryseportar",
-      "normalized": "/produkt/kjole-fryseportar",
-      "sourceFile": "src/data/pages.ts",
-      "line": 61,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/produkt/kjole-frysedorer",
-      "normalized": "/produkt/kjole-frysedorer",
-      "sourceFile": "src/data/pages.ts",
-      "line": 66,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/produkt/fasadepanel",
-      "normalized": "/produkt/fasadepanel",
-      "sourceFile": "src/data/pages.ts",
-      "line": 71,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/produkt/frysetunnel",
-      "normalized": "/produkt/frysetunnel",
-      "sourceFile": "src/data/pages.ts",
-      "line": 76,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/tilleggsutstyr",
-      "normalized": "/tilleggsutstyr",
-      "sourceFile": "src/data/pages.ts",
-      "line": 81,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
       "href": "/tenester/montasje",
       "normalized": "/tenester/montasje",
       "sourceFile": "src/data/pages.ts",
-      "line": 89,
+      "line": 50,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6597,7 +6673,7 @@
       "href": "/tenester/leveranse",
       "normalized": "/tenester/leveranse",
       "sourceFile": "src/data/pages.ts",
-      "line": 94,
+      "line": 55,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6605,7 +6681,15 @@
       "href": "/tenester/service-reservedeler",
       "normalized": "/tenester/service-reservedeler",
       "sourceFile": "src/data/pages.ts",
-      "line": 99,
+      "line": 60,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/produkt/fresvik-pir-panel",
+      "normalized": "/produkt/fresvik-pir-panel",
+      "sourceFile": "src/data/pages.ts",
+      "line": 69,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6613,39 +6697,71 @@
       "href": "/assets/fresvik/images/old-site/home-pir-fire-illustration.png",
       "normalized": "/assets/fresvik/images/old-site/home-pir-fire-illustration.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 109,
+      "line": 70,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/produkt/fresvik-pur-panel",
+      "normalized": "/produkt/fresvik-pur-panel",
+      "sourceFile": "src/data/pages.ts",
+      "line": 77,
+      "status": "ok",
+      "notes": "Internal route exists."
     },
     {
       "href": "/assets/fresvik/images/old-site/home-fresvik-panel-room.jpg",
       "normalized": "/assets/fresvik/images/old-site/home-fresvik-panel-room.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 117,
+      "line": 78,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/produkt/kjole-fryseportar",
+      "normalized": "/produkt/kjole-fryseportar",
+      "sourceFile": "src/data/pages.ts",
+      "line": 84,
+      "status": "ok",
+      "notes": "Internal route exists."
     },
     {
       "href": "/assets/fresvik/images/old-site/home-kjole-fryseportar.jpg",
       "normalized": "/assets/fresvik/images/old-site/home-kjole-fryseportar.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 124,
+      "line": 85,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/produkt/kjole-frysedorer",
+      "normalized": "/produkt/kjole-frysedorer",
+      "sourceFile": "src/data/pages.ts",
+      "line": 91,
+      "status": "ok",
+      "notes": "Internal route exists."
     },
     {
       "href": "/assets/fresvik/images/old-site/home-kjole-frysedorer.jpg",
       "normalized": "/assets/fresvik/images/old-site/home-kjole-frysedorer.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 131,
+      "line": 92,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/produkt/fasadepanel",
+      "normalized": "/produkt/fasadepanel",
+      "sourceFile": "src/data/pages.ts",
+      "line": 98,
+      "status": "ok",
+      "notes": "Internal route exists."
     },
     {
       "href": "/assets/fresvik/images/old-site/home-fasadepanel.webp",
       "normalized": "/assets/fresvik/images/old-site/home-fasadepanel.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 138,
+      "line": 99,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6653,7 +6769,7 @@
       "href": "/kjolerom-fryserom-butikk",
       "normalized": "/kjolerom-fryserom-butikk",
       "sourceFile": "src/data/pages.ts",
-      "line": 148,
+      "line": 109,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6661,7 +6777,7 @@
       "href": "/assets/fresvik/images/old-site/1715599204491-06f69a318b.jpg",
       "normalized": "/assets/fresvik/images/old-site/1715599204491-06f69a318b.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 149,
+      "line": 110,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6669,7 +6785,7 @@
       "href": "/kjolerom-fryserom-offshore",
       "normalized": "/kjolerom-fryserom-offshore",
       "sourceFile": "src/data/pages.ts",
-      "line": 156,
+      "line": 117,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6677,7 +6793,7 @@
       "href": "/assets/fresvik/images/old-site/image-asset-2-59c753eb14.jpeg",
       "normalized": "/assets/fresvik/images/old-site/image-asset-2-59c753eb14.jpeg",
       "sourceFile": "src/data/pages.ts",
-      "line": 157,
+      "line": 118,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6685,7 +6801,7 @@
       "href": "/kjolerom-fryserom-storkjokken",
       "normalized": "/kjolerom-fryserom-storkjokken",
       "sourceFile": "src/data/pages.ts",
-      "line": 164,
+      "line": 125,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6693,7 +6809,7 @@
       "href": "/assets/fresvik/images/old-site/1733820776326-534d12e99d.jpg",
       "normalized": "/assets/fresvik/images/old-site/1733820776326-534d12e99d.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 165,
+      "line": 126,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6701,7 +6817,7 @@
       "href": "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
       "normalized": "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
       "sourceFile": "src/data/pages.ts",
-      "line": 174,
+      "line": 135,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6709,7 +6825,7 @@
       "href": "/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
       "normalized": "/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 175,
+      "line": 136,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6717,7 +6833,7 @@
       "href": "/aktuelt/ny-teknisk-teiknar-havard-berdal",
       "normalized": "/aktuelt/ny-teknisk-teiknar-havard-berdal",
       "sourceFile": "src/data/pages.ts",
-      "line": 182,
+      "line": 143,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6725,7 +6841,7 @@
       "href": "/assets/fresvik/images/migrated/havard-berdal.jpg",
       "normalized": "/assets/fresvik/images/migrated/havard-berdal.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 183,
+      "line": 144,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6733,7 +6849,7 @@
       "href": "/aktuelt/john-bothun-blir-pensjonist",
       "normalized": "/aktuelt/john-bothun-blir-pensjonist",
       "sourceFile": "src/data/pages.ts",
-      "line": 190,
+      "line": 151,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6741,7 +6857,7 @@
       "href": "/assets/fresvik/images/migrated/john-bthun-fresvik-produkt.jpg",
       "normalized": "/assets/fresvik/images/migrated/john-bthun-fresvik-produkt.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 191,
+      "line": 152,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6749,7 +6865,7 @@
       "href": "/firmainfo",
       "normalized": "/firmainfo",
       "sourceFile": "src/data/pages.ts",
-      "line": 200,
+      "line": 161,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6757,7 +6873,7 @@
       "href": "/tilsette",
       "normalized": "/tilsette",
       "sourceFile": "src/data/pages.ts",
-      "line": 205,
+      "line": 166,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6765,7 +6881,7 @@
       "href": "/aktuelt",
       "normalized": "/aktuelt",
       "sourceFile": "src/data/pages.ts",
-      "line": 210,
+      "line": 171,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6773,7 +6889,7 @@
       "href": "/stillingledig",
       "normalized": "/stillingledig",
       "sourceFile": "src/data/pages.ts",
-      "line": 215,
+      "line": 176,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6781,7 +6897,7 @@
       "href": "/assets/fresvik/images/old-site/1463-fr-plata-instal.webp",
       "normalized": "/assets/fresvik/images/old-site/1463-fr-plata-instal.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 479,
+      "line": 435,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6789,7 +6905,7 @@
       "href": "/assets/fresvik/images/old-site/alarm.png",
       "normalized": "/assets/fresvik/images/old-site/alarm.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 485,
+      "line": 441,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6797,7 +6913,7 @@
       "href": "/assets/fresvik/images/old-site/Skjermbilde+2026-02-27+110131.png",
       "normalized": "/assets/fresvik/images/old-site/Skjermbilde+2026-02-27+110131.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 491,
+      "line": 447,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6805,7 +6921,7 @@
       "href": "/assets/fresvik/images/old-site/valve.png",
       "normalized": "/assets/fresvik/images/old-site/valve.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 497,
+      "line": 453,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6813,7 +6929,7 @@
       "href": "/assets/fresvik/images/old-site/fermod.png",
       "normalized": "/assets/fresvik/images/old-site/fermod.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 503,
+      "line": 459,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6821,7 +6937,7 @@
       "href": "/assets/fresvik/images/old-site/sika.png",
       "normalized": "/assets/fresvik/images/old-site/sika.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 509,
+      "line": 465,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6829,7 +6945,7 @@
       "href": "/assets/fresvik/images/old-site/soudal.png",
       "normalized": "/assets/fresvik/images/old-site/soudal.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 515,
+      "line": 471,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6837,7 +6953,7 @@
       "href": "/assets/fresvik/images/old-site/soudal+II.png",
       "normalized": "/assets/fresvik/images/old-site/soudal+II.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 521,
+      "line": 477,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6845,7 +6961,7 @@
       "href": "/assets/fresvik/images/old-site/sika+II.png",
       "normalized": "/assets/fresvik/images/old-site/sika+II.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 527,
+      "line": 483,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6853,7 +6969,7 @@
       "href": "/assets/fresvik/images/old-site/glassplate.png",
       "normalized": "/assets/fresvik/images/old-site/glassplate.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 533,
+      "line": 489,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6861,7 +6977,7 @@
       "href": "/assets/fresvik/images/old-site/Skjermbilde+2026-02-27+114255.png",
       "normalized": "/assets/fresvik/images/old-site/Skjermbilde+2026-02-27+114255.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 539,
+      "line": 495,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6869,7 +6985,7 @@
       "href": "/assets/fresvik/images/old-site/IK.png",
       "normalized": "/assets/fresvik/images/old-site/IK.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 545,
+      "line": 501,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6877,7 +6993,7 @@
       "href": "/assets/fresvik/images/old-site/flake.png",
       "normalized": "/assets/fresvik/images/old-site/flake.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 551,
+      "line": 507,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6885,7 +7001,7 @@
       "href": "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
       "normalized": "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 608,
+      "line": 564,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6893,7 +7009,7 @@
       "href": "/assets/fresvik/images/old-site/sentral+godkjent.png",
       "normalized": "/assets/fresvik/images/old-site/sentral+godkjent.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 609,
+      "line": 565,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6901,7 +7017,7 @@
       "href": "/assets/fresvik/images/old-site/TG-2135.jpg",
       "normalized": "/assets/fresvik/images/old-site/TG-2135.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 616,
+      "line": 572,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6909,7 +7025,7 @@
       "href": "/dokumentasjon",
       "normalized": "/dokumentasjon",
       "sourceFile": "src/data/pages.ts",
-      "line": 622,
+      "line": 578,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -6917,7 +7033,7 @@
       "href": "/assets/fresvik/images/old-site/Poly.png",
       "normalized": "/assets/fresvik/images/old-site/Poly.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 623,
+      "line": 579,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6925,7 +7041,7 @@
       "href": "/assets/fresvik/images/old-site/Startbarnk.png",
       "normalized": "/assets/fresvik/images/old-site/Startbarnk.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 630,
+      "line": 586,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6933,7 +7049,7 @@
       "href": "/assets/fresvik/documents/pur-ce-merke.pdf",
       "normalized": "/assets/fresvik/documents/pur-ce-merke.pdf",
       "sourceFile": "src/data/pages.ts",
-      "line": 644,
+      "line": 600,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -6941,471 +7057,47 @@
       "href": "/assets/fresvik/images/old-site/ce-logo-png-transparent.png",
       "normalized": "/assets/fresvik/images/old-site/ce-logo-png-transparent.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 645,
+      "line": 601,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
     {
-      "href": "/assets/fresvik/documents/pir-panel.pdf",
-      "normalized": "/assets/fresvik/documents/pir-panel.pdf",
+      "href": "/produkt/fresvik-panel",
+      "normalized": "/produkt/fresvik-panel",
       "sourceFile": "src/data/pages.ts",
-      "line": 796,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf",
-      "normalized": "/assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 808,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/pir-panel-montasjeanvisning.pdf",
-      "normalized": "/assets/fresvik/documents/pir-panel-montasjeanvisning.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 814,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/pur-produktbladfp.pdf",
-      "normalized": "/assets/fresvik/documents/pur-produktbladfp.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 835,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/file-f5f844b125.png",
-      "normalized": "/assets/fresvik/images/old-site/file-f5f844b125.png",
-      "sourceFile": "src/data/pages.ts",
-      "line": 836,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/pur-video-file.png",
-      "normalized": "/assets/fresvik/images/old-site/pur-video-file.png",
-      "sourceFile": "src/data/pages.ts",
-      "line": 843,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
-      "normalized": "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 865,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
-      "normalized": "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 873,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/monteringsanvisningar-fresvik-skyveport",
-      "normalized": "/monteringsanvisningar-fresvik-skyveport",
-      "sourceFile": "src/data/pages.ts",
-      "line": 880,
+      "line": 616,
       "status": "ok",
       "notes": "Internal route exists."
     },
     {
-      "href": "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
-      "normalized": "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
+      "href": "/assets/fresvik/images/old-site/aaa.jpg",
+      "normalized": "/assets/fresvik/images/old-site/aaa.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 888,
+      "line": 617,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
     {
-      "href": "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
-      "normalized": "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
+      "href": "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
+      "normalized": "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 893,
+      "line": 630,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
     {
-      "href": "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
-      "normalized": "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
+      "href": "/assets/fresvik/images/old-site/fresvik-fryse-dor_ny.jpg",
+      "normalized": "/assets/fresvik/images/old-site/fresvik-fryse-dor_ny.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 898,
+      "line": 636,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
     {
-      "href": "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
-      "normalized": "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
+      "href": "/assets/fresvik/images/old-site/image-asset.jpg",
+      "normalized": "/assets/fresvik/images/old-site/image-asset.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 908,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
-      "normalized": "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 918,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
-      "normalized": "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 926,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
-      "normalized": "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 936,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
-      "normalized": "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 941,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
-      "normalized": "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 949,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
-      "normalized": "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 954,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
-      "normalized": "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 959,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/quick-start-5010exp.pdf",
-      "normalized": "/assets/fresvik/documents/quick-start-5010exp.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 964,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/endre-skyveretning.pdf",
-      "normalized": "/assets/fresvik/documents/endre-skyveretning.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 969,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
-      "normalized": "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
-      "sourceFile": "src/data/pages.ts",
-      "line": 974,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg",
-      "normalized": "/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 988,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
-      "normalized": "/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1032,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg",
-      "normalized": "/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1056,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
-      "normalized": "/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1063,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/andre-produkter/elebar-ventil",
-      "normalized": "/andre-produkter/elebar-ventil",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1080,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg",
-      "normalized": "/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1081,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/andre-produkter/maxielebar-ventil",
-      "normalized": "/andre-produkter/maxielebar-ventil",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1087,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/assets/fresvik/images/migrated/maxielebar-ventil-inne-web.jpg",
-      "normalized": "/assets/fresvik/images/migrated/maxielebar-ventil-inne-web.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1088,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/andre-produkter/pego-innestengningsalarm",
-      "normalized": "/andre-produkter/pego-innestengningsalarm",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1094,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/assets/fresvik/images/migrated/pego-innestengningsalarm-web.jpg",
-      "normalized": "/assets/fresvik/images/migrated/pego-innestengningsalarm-web.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1095,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/andre-produkter/beslag",
-      "normalized": "/andre-produkter/beslag",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1101,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/kontakt",
-      "normalized": "/kontakt",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1115,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
-      "normalized": "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1154,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
-      "normalized": "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1161,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
-      "normalized": "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1168,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
-      "normalized": "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1175,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/flake-black-3b186da893.png",
-      "normalized": "/assets/fresvik/images/old-site/flake-black-3b186da893.png",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1192,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/personvernerklering",
-      "normalized": "/personvernerklering",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1307,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/openheitslova",
-      "normalized": "/openheitslova",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1312,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/home-poly.png",
-      "normalized": "/assets/fresvik/images/old-site/home-poly.png",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1342,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/home-startbank.png",
-      "normalized": "/assets/fresvik/images/old-site/home-startbank.png",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1348,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/fresvik-port-hero.jpeg",
-      "normalized": "/assets/fresvik/images/old-site/fresvik-port-hero.jpeg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1379,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/fresvik-skyveport-cedbd2620d.jpeg",
-      "normalized": "/assets/fresvik/images/old-site/fresvik-skyveport-cedbd2620d.jpeg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1414,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/laas-fresvik-skyveport-217ddc424b.jpeg",
-      "normalized": "/assets/fresvik/images/old-site/laas-fresvik-skyveport-217ddc424b.jpeg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1427,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/andre-produkter/pvc-gardiner",
-      "normalized": "/andre-produkter/pvc-gardiner",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1492,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/pvc-gardin-web-port.jpg",
-      "normalized": "/assets/fresvik/images/old-site/pvc-gardin-web-port.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1493,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/andre-produkter/kjlerampe",
-      "normalized": "/andre-produkter/kjlerampe",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1499,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/rampe3-copy-port.jpg",
-      "normalized": "/assets/fresvik/images/old-site/rampe3-copy-port.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1500,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
-      "normalized": "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1610,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/andre-produkter/2014/7/9/standard-drer",
-      "normalized": "/andre-produkter/2014/7/9/standard-drer",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1670,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
-      "normalized": "/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1671,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/andre-produkter/2014/7/9/skipsdrer",
-      "normalized": "/andre-produkter/2014/7/9/skipsdrer",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1677,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
-      "normalized": "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1678,
-      "status": "asset-ok",
-      "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/andre-produkter/2014/7/9/industri-slagdor",
-      "normalized": "/andre-produkter/2014/7/9/industri-slagdor",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1684,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
-      "normalized": "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
-      "sourceFile": "src/data/pages.ts",
-      "line": 1685,
+      "line": 660,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7413,15 +7105,79 @@
       "href": "/andre-produkter/standard-handtak",
       "normalized": "/andre-produkter/standard-handtak",
       "sourceFile": "src/data/pages.ts",
-      "line": 1697,
+      "line": 669,
       "status": "ok",
       "notes": "Internal route exists."
     },
     {
-      "href": "/assets/fresvik/images/old-site/handtak-standard-door.jpg",
-      "normalized": "/assets/fresvik/images/old-site/handtak-standard-door.jpg",
+      "href": "/assets/fresvik/images/old-site/Håndtak+standard_web.jpg",
+      "normalized": "/assets/fresvik/images/old-site/Håndtak+standard_web.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 1698,
+      "line": 670,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/elebar-ventil",
+      "normalized": "/andre-produkter/elebar-ventil",
+      "sourceFile": "src/data/pages.ts",
+      "line": 676,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/Elebar+ventil_web.jpg",
+      "normalized": "/assets/fresvik/images/old-site/Elebar+ventil_web.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 677,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/maxielebar-ventil",
+      "normalized": "/andre-produkter/maxielebar-ventil",
+      "sourceFile": "src/data/pages.ts",
+      "line": 683,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/MaxiElebar+ventli_web.jpg",
+      "normalized": "/assets/fresvik/images/old-site/MaxiElebar+ventli_web.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 684,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/pego-innestengningsalarm",
+      "normalized": "/andre-produkter/pego-innestengningsalarm",
+      "sourceFile": "src/data/pages.ts",
+      "line": 690,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/PEGO+innestengningsalarm_web.jpg",
+      "normalized": "/assets/fresvik/images/old-site/PEGO+innestengningsalarm_web.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 691,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/pvc-gardiner",
+      "normalized": "/andre-produkter/pvc-gardiner",
+      "sourceFile": "src/data/pages.ts",
+      "line": 697,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/PVC-gardin_web.jpg",
+      "normalized": "/assets/fresvik/images/old-site/PVC-gardin_web.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 698,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7429,15 +7185,511 @@
       "href": "/andre-produkter/diktator-dortiltrekker",
       "normalized": "/andre-produkter/diktator-dortiltrekker",
       "sourceFile": "src/data/pages.ts",
-      "line": 1711,
+      "line": 704,
       "status": "ok",
       "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/Diktator_web.jpg",
+      "normalized": "/assets/fresvik/images/old-site/Diktator_web.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 705,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/kjlerampe",
+      "normalized": "/andre-produkter/kjlerampe",
+      "sourceFile": "src/data/pages.ts",
+      "line": 711,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/rampe3+copy.jpg",
+      "normalized": "/assets/fresvik/images/old-site/rampe3+copy.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 712,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/beslag",
+      "normalized": "/andre-produkter/beslag",
+      "sourceFile": "src/data/pages.ts",
+      "line": 718,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/profil3+copy.jpg",
+      "normalized": "/assets/fresvik/images/old-site/profil3+copy.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 719,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/2014/7/9/standard-drer",
+      "normalized": "/andre-produkter/2014/7/9/standard-drer",
+      "sourceFile": "src/data/pages.ts",
+      "line": 725,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/Standard+Dør+Fresvik+Produkt.jpg",
+      "normalized": "/assets/fresvik/images/old-site/Standard+Dør+Fresvik+Produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 726,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/2014/7/9/skipsdrer",
+      "normalized": "/andre-produkter/2014/7/9/skipsdrer",
+      "sourceFile": "src/data/pages.ts",
+      "line": 732,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/Skipsdør+Fresvik+Produkt.jpg",
+      "normalized": "/assets/fresvik/images/old-site/Skipsdør+Fresvik+Produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 733,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/andre-produkter/2014/7/9/industri-slagdor",
+      "normalized": "/andre-produkter/2014/7/9/industri-slagdor",
+      "sourceFile": "src/data/pages.ts",
+      "line": 739,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
+      "normalized": "/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 740,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/flake-left.png",
+      "normalized": "/assets/fresvik/images/old-site/flake-left.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 750,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/pir-panel.pdf",
+      "normalized": "/assets/fresvik/documents/pir-panel.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 892,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf",
+      "normalized": "/assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 904,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/pir-panel-montasjeanvisning.pdf",
+      "normalized": "/assets/fresvik/documents/pir-panel-montasjeanvisning.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 910,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/pur-produktbladfp.pdf",
+      "normalized": "/assets/fresvik/documents/pur-produktbladfp.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 931,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/file-f5f844b125.png",
+      "normalized": "/assets/fresvik/images/old-site/file-f5f844b125.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 932,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/pur-video-file.png",
+      "normalized": "/assets/fresvik/images/old-site/pur-video-file.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 939,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
+      "normalized": "/assets/fresvik/documents/produktblad-fresvik-skyveport.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 961,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
+      "normalized": "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 969,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/monteringsanvisningar-fresvik-skyveport",
+      "normalized": "/monteringsanvisningar-fresvik-skyveport",
+      "sourceFile": "src/data/pages.ts",
+      "line": 976,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
+      "normalized": "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 984,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
+      "normalized": "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 989,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
+      "normalized": "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 994,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
+      "normalized": "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1004,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
+      "normalized": "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1014,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
+      "normalized": "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1022,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
+      "normalized": "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1032,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
+      "normalized": "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1037,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
+      "normalized": "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1045,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
+      "normalized": "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1050,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
+      "normalized": "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1055,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/quick-start-5010exp.pdf",
+      "normalized": "/assets/fresvik/documents/quick-start-5010exp.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1060,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/endre-skyveretning.pdf",
+      "normalized": "/assets/fresvik/documents/endre-skyveretning.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1065,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
+      "normalized": "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1070,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg",
+      "normalized": "/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1084,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
+      "normalized": "/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1128,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1152,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
+      "normalized": "/assets/fresvik/images/old-site/aaa-e82ae393b0.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1159,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg",
+      "normalized": "/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1177,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/migrated/maxielebar-ventil-inne-web.jpg",
+      "normalized": "/assets/fresvik/images/migrated/maxielebar-ventil-inne-web.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1184,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/migrated/pego-innestengningsalarm-web.jpg",
+      "normalized": "/assets/fresvik/images/migrated/pego-innestengningsalarm-web.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1191,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/kontakt",
+      "normalized": "/kontakt",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1211,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+      "normalized": "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1250,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+      "normalized": "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1257,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+      "normalized": "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1264,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
+      "normalized": "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1271,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/flake-black-3b186da893.png",
+      "normalized": "/assets/fresvik/images/old-site/flake-black-3b186da893.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1288,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/personvernerklering",
+      "normalized": "/personvernerklering",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1403,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/openheitslova",
+      "normalized": "/openheitslova",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1408,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/home-poly.png",
+      "normalized": "/assets/fresvik/images/old-site/home-poly.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1438,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/home-startbank.png",
+      "normalized": "/assets/fresvik/images/old-site/home-startbank.png",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1444,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/fresvik-port-hero.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/fresvik-port-hero.jpeg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1475,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/fresvik-skyveport-cedbd2620d.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/fresvik-skyveport-cedbd2620d.jpeg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1510,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/laas-fresvik-skyveport-217ddc424b.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/laas-fresvik-skyveport-217ddc424b.jpeg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1523,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/pvc-gardin-web-port.jpg",
+      "normalized": "/assets/fresvik/images/old-site/pvc-gardin-web-port.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1589,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/rampe3-copy-port.jpg",
+      "normalized": "/assets/fresvik/images/old-site/rampe3-copy-port.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1596,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
+      "normalized": "/assets/fresvik/images/old-site/kjole-frysedorer-hero.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1706,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
+      "normalized": "/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1767,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
+      "normalized": "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1774,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
+      "normalized": "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1781,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/handtak-standard-door.jpg",
+      "normalized": "/assets/fresvik/images/old-site/handtak-standard-door.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 1794,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
     },
     {
       "href": "/assets/fresvik/images/old-site/diktator-door.jpg",
       "normalized": "/assets/fresvik/images/old-site/diktator-door.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 1712,
+      "line": 1808,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7445,7 +7697,7 @@
       "href": "/assets/fresvik/images/old-site/fasadepanel-fresvik-produkt.webp",
       "normalized": "/assets/fresvik/images/old-site/fasadepanel-fresvik-produkt.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 1841,
+      "line": 1937,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7453,7 +7705,7 @@
       "href": "/assets/fresvik/images/migrated/flake-black.png",
       "normalized": "/assets/fresvik/images/migrated/flake-black.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 1869,
+      "line": 1965,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7461,7 +7713,7 @@
       "href": "/assets/fresvik/images/old-site/fasadepanel-nortura-herland.webp",
       "normalized": "/assets/fresvik/images/old-site/fasadepanel-nortura-herland.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 1889,
+      "line": 1985,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7469,7 +7721,7 @@
       "href": "/referansar/celsa-steel-sotra",
       "normalized": "/referansar/celsa-steel-sotra",
       "sourceFile": "src/data/pages.ts",
-      "line": 1902,
+      "line": 1998,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -7477,7 +7729,7 @@
       "href": "/assets/fresvik/images/old-site/image-asset.webp",
       "normalized": "/assets/fresvik/images/old-site/image-asset.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 1903,
+      "line": 1999,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7485,7 +7737,7 @@
       "href": "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
       "normalized": "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
       "sourceFile": "src/data/pages.ts",
-      "line": 1909,
+      "line": 2005,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -7493,7 +7745,7 @@
       "href": "/assets/fresvik/images/old-site/01.webp",
       "normalized": "/assets/fresvik/images/old-site/01.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 1910,
+      "line": 2006,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7501,7 +7753,7 @@
       "href": "/assets/fresvik/images/old-site/profil3-copy.webp",
       "normalized": "/assets/fresvik/images/old-site/profil3-copy.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 1922,
+      "line": 2018,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7509,7 +7761,7 @@
       "href": "/assets/fresvik/images/migrated/flake-left.png",
       "normalized": "/assets/fresvik/images/migrated/flake-left.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 1934,
+      "line": 2030,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7517,7 +7769,7 @@
       "href": "/assets/fresvik/images/old-site/sentral-godkjent.webp",
       "normalized": "/assets/fresvik/images/old-site/sentral-godkjent.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 1996,
+      "line": 2092,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7525,7 +7777,7 @@
       "href": "/assets/fresvik/images/old-site/tg-2135.webp",
       "normalized": "/assets/fresvik/images/old-site/tg-2135.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 2003,
+      "line": 2099,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7533,7 +7785,7 @@
       "href": "/assets/fresvik/images/old-site/poly.webp",
       "normalized": "/assets/fresvik/images/old-site/poly.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 2010,
+      "line": 2106,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7541,7 +7793,7 @@
       "href": "/assets/fresvik/images/old-site/startbarnk.webp",
       "normalized": "/assets/fresvik/images/old-site/startbarnk.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 2017,
+      "line": 2113,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7549,7 +7801,7 @@
       "href": "/assets/fresvik/images/old-site/ce-logo-png-transparent.webp",
       "normalized": "/assets/fresvik/images/old-site/ce-logo-png-transparent.webp",
       "sourceFile": "src/data/pages.ts",
-      "line": 2032,
+      "line": 2128,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7557,7 +7809,7 @@
       "href": "/send-foresporsel",
       "normalized": "/send-foresporsel",
       "sourceFile": "src/data/pages.ts",
-      "line": 2049,
+      "line": 2145,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -7565,7 +7817,7 @@
       "href": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c.png",
       "normalized": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 2050,
+      "line": 2146,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7573,7 +7825,7 @@
       "href": "/assets/fresvik/images/old-site/fryst-laks.png",
       "normalized": "/assets/fresvik/images/old-site/fryst-laks.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 2062,
+      "line": 2158,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7581,7 +7833,7 @@
       "href": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1.png",
       "normalized": "/assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 2075,
+      "line": 2171,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7589,7 +7841,7 @@
       "href": "/assets/fresvik/images/old-site/notfjaer1.jpg",
       "normalized": "/assets/fresvik/images/old-site/notfjaer1.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 2088,
+      "line": 2184,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7597,7 +7849,7 @@
       "href": "/assets/fresvik/images/old-site/fresvik-hengsle.jpeg",
       "normalized": "/assets/fresvik/images/old-site/fresvik-hengsle.jpeg",
       "sourceFile": "src/data/pages.ts",
-      "line": 2102,
+      "line": 2198,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7605,7 +7857,7 @@
       "href": "/referansar",
       "normalized": "/referansar",
       "sourceFile": "src/data/pages.ts",
-      "line": 2115,
+      "line": 2211,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -7613,7 +7865,7 @@
       "href": "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
       "normalized": "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
       "sourceFile": "src/data/pages.ts",
-      "line": 2123,
+      "line": 2219,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -7621,7 +7873,7 @@
       "href": "/assets/fresvik/images/old-site/spar-lund-torv-fp-1.png",
       "normalized": "/assets/fresvik/images/old-site/spar-lund-torv-fp-1.png",
       "sourceFile": "src/data/pages.ts",
-      "line": 2124,
+      "line": 2220,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7629,7 +7881,7 @@
       "href": "/referansar/fryserom-baza-fredrikstad",
       "normalized": "/referansar/fryserom-baza-fredrikstad",
       "sourceFile": "src/data/pages.ts",
-      "line": 2131,
+      "line": 2227,
       "status": "ok",
       "notes": "Internal route exists."
     },
@@ -7637,7 +7889,7 @@
       "href": "/assets/fresvik/images/old-site/baza-fryserom-4.jpeg",
       "normalized": "/assets/fresvik/images/old-site/baza-fryserom-4.jpeg",
       "sourceFile": "src/data/pages.ts",
-      "line": 2132,
+      "line": 2228,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7645,7 +7897,7 @@
       "href": "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
       "normalized": "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 2264,
+      "line": 2360,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -7653,7 +7905,7 @@
       "href": "/assets/fresvik/images/old-site/home-job-factory.jpg",
       "normalized": "/assets/fresvik/images/old-site/home-job-factory.jpg",
       "sourceFile": "src/data/pages.ts",
-      "line": 2303,
+      "line": 2399,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },
@@ -9074,8 +9326,8 @@
       "notes": "Local migration asset exists."
     },
     {
-      "href": "/assets/fresvik/images/migrated/flake-black.png",
-      "normalized": "/assets/fresvik/images/migrated/flake-black.png",
+      "href": "/assets/fresvik/images/old-site/aaa.jpg",
+      "normalized": "/assets/fresvik/images/old-site/aaa.jpg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
       "line": 93,
       "status": "asset-ok",
@@ -9581,6 +9833,12 @@
       "sourcePage": "src/data/pages.ts",
       "url": "https://www.gasta.no",
       "purpose": "external-reference",
+      "status": "keep"
+    },
+    {
+      "sourcePage": "src/data/pages.ts",
+      "url": "https://www.fresvik.no/produkt",
+      "purpose": "source-url",
       "status": "keep"
     },
     {

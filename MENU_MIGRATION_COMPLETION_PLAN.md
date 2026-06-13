@@ -82,7 +82,7 @@ LINK_CHECK_BASE_URL=http://127.0.0.1:3060 npm run check:links
 ## Очередь 1: Закрыть Раздел Produkt
 
 - [x] Цель: `/tilleggsutstyr` — oldUrl: `https://www.fresvik.no/tilleggsutstyr`; audit: `MANUAL_PAGE_AUDITS/tilleggsutstyr.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`.
-- [ ] Цель: `/produkt` — oldUrl: `https://www.fresvik.no/produkt`; audit: `MANUAL_PAGE_AUDITS/produkt.md`; статус: `pending`; примечание: индексная страница закрывается после проверки карточек/ссылок на все продуктовые страницы.
+- [x] Цель: `/produkt` — oldUrl: `https://www.fresvik.no/produkt`; audit: `MANUAL_PAGE_AUDITS/produkt.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`.
 
 ## Очередь 2: Tenester
 

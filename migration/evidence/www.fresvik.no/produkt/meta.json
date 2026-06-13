@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/produkt",
+  "finalUrl": "https://www.fresvik.no/produkt",
+  "fetchedAt": "2026-06-13T19:31:25.921Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Produkt | Oppdag kvalitetsbyggeprodukter – Kontakt oss i dag — Fresvik Produkt",
+  "metaDescription": "Fresvik Produkt tilbyr norskeproduserte byggeprodukter som PIR- og PUR-panel, kjøle- og fryseporter, og fasadepanel med enkel montering og fleksibilitet for bygg. Kontakt oss for løsninger.",
+  "counts": {
+    "headings": 19,
+    "textBlocks": 29,
+    "links": 122,
+    "images": 67,
+    "documents": 2
+  }
+}

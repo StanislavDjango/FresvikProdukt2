@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-13T19:29:04.034Z",
+    "generatedAt": "2026-06-13T19:37:17.798Z",
     "routeCount": 106,
     "statusCounts": {
       "migrated": 71,
@@ -66,9 +66,9 @@
       "matchedParagraphCount": 0,
       "textCoverage": 0,
       "oldWordCount": 16,
-      "localWordCount": 1649,
+      "localWordCount": 1314,
       "oldImageCount": 6,
-      "localImageCount": 11,
+      "localImageCount": 29,
       "oldDocumentCount": 0,
       "localDocumentCount": 2,
       "ignoredOldDocumentCount": 2,
@@ -78,7 +78,7 @@
       ],
       "oldInternalLinkCount": 41,
       "oldExternalLinkCount": 5,
-      "localLinkCount": 48,
+      "localLinkCount": 53,
       "recoveryStatus": null,
       "recoveryNotes": [],
       "structuredListAccepted": true,

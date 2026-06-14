@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-06-14T17:28:26.293Z
+Generated: 2026-06-14T17:39:10.004Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -72,7 +72,7 @@ Next batch: `none`
 | services-documents | /tenester/leveranse | migrated | 3/3 | 11/2 | 2/0 | 39/35 | Strict content evidence is covered. |
 | services-documents | /tenester/montasje | migrated | 3/3 | 11/2 | 2/0 | 43/35 | Strict content evidence is covered. |
 | services-documents | /tenester/service-reservedeler | migrated | 2/2 | 9/1 | 2/0 | 39/35 | Strict content evidence is covered. |
-| news | /aktuelt | migrated | 0/0 | 19/0 | 0/0 | 35/56 | Structured index/list page: old body text was not extractable, but list links/images are covered. |
+| news | /aktuelt | migrated | 0/0 | 31/0 | 2/0 | 49/56 | Structured index/list page: old body text was not extractable, but list links/images are covered. |
 | news | /aktuelt/40-aars-jubileum | migrated | 3/3 | 4/4 | 2/0 | 26/37 | Strict content evidence is covered. |
 | news | /aktuelt/agnar-er-snart-pensjonistnbsp | migrated | 15/15 | 2/2 | 2/0 | 26/37 | Strict content evidence is covered. |
 | news | /aktuelt/arne-olav-ny-salskonsulent | migrated | 5/5 | 1/1 | 2/0 | 26/37 | Strict content evidence is covered. |

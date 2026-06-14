@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/aktuelt",
+  "finalUrl": "https://www.fresvik.no/aktuelt",
+  "fetchedAt": "2026-06-14T17:31:06.750Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Aktuelt | Oppdag, les, og kontakt oss nå — Fresvik Produkt",
+  "metaDescription": "Utforsk oppdaterte nyheter og relevante tjenester fra Fresvik Produkt, inkludert produktnyheter, teamoppdateringer og miljøsertifiseringer.",
+  "counts": {
+    "headings": 25,
+    "textBlocks": 52,
+    "links": 146,
+    "images": 160,
+    "documents": 2
+  }
+}

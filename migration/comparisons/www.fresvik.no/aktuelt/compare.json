@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/aktuelt",
+  "newUrl": "http://127.0.0.1:3060/aktuelt",
+  "checkedAt": "2026-06-14T17:39:02.340Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 43,
+    "missingTextBlocks": 0,
+    "oldLinks": 61,
+    "missingLinks": 0,
+    "oldImages": 25,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

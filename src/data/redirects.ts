@@ -51,6 +51,16 @@ export const redirectRules: RedirectRule[] = [
     permanent: true,
   },
   {
+    source: "/referansar-list/fryse-og-kjolerom-til-sogn-frukt-og-gront",
+    destination: "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront",
+    permanent: true,
+  },
+  {
+    source: "/referansar-list/celsa-steel-sotra",
+    destination: "/referansar/celsa-steel-sotra",
+    permanent: true,
+  },
+  {
     source: "/produktfoto",
     destination: "/produkt",
     permanent: true,

@@ -414,11 +414,115 @@ const referenceTextByHref: Record<string, string> = {
     "Coop Extra Naustdal fekk kjøle- og fryserom, fryseport og fleire kjølerom frå Fresvik Produkt gjennom samarbeidspartnar. Leveransen var skreddartilpassa mål og skråtak, og montert av AKS Montering.",
 };
 
-const newsCards = inventoryCards(
+const newsIndexTextByHref: Record<string, string> = {
+  ...newsTextByHref,
+  "/aktuelt/john-bothun-blir-pensjonist":
+    "Den som i dag har vore lengst tilsett i Fresvik Produkt vil pensjonere seg frå 1. september.",
+  "/aktuelt/ein-investering-for-henga-med-i-tidanbsp":
+    "Etter sommarferien i år kunne vi spent ta i bruk roboten, og det vi kallar “kaos-lager”, der elementa vert lagra.",
+  "/aktuelt/agnar-er-snart-pensjonistnbsp":
+    "Etter 44 år med dedikert arbeid, er Agnar Bøtun klar for pensjonisttilværelsen - eller er han?",
+  "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv":
+    "Vil du jobba på skulen, i barnehagen, på butikken eller hjå Fresvik Produkt? No har du sjansen til å få leva ut draumen om eit liv i den idylliske fjordbygda Fresvik. Les heile artikkelen på sogn.no",
+  "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn":
+    "Vi er stolte og glade for å endeleg vere Miljøfyrtårn.",
+  "/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt":
+    "I starten av året har vi hatt gleda av å levere fryse- og kjølerom til Fellespakkeriet på Håbakken i Lærdal.",
+  "/aktuelt/jul-2020": "Vi stengjer produksjon i romjula.",
+  "/aktuelt/arne-olav-ny-salskonsulent":
+    "Vi vil gjerne presentere vår nye salskonsulent, Arne-Olav Lien Bardølsgård",
+  "/aktuelt/fresvik-kjolerom-til-fruktbonde":
+    "Fruktbonde Ivar Slinde hadde behov for kjølerom - vi leverte og monterte.",
+  "/aktuelt/40-aars-jubileum":
+    "22. februar var det 40 år sidan Botolv Hov starta Fresvik Produkt. I ein alder av 98 år var gründaren til stades på omvising i fabrikken.",
+  "/aktuelt/innfesting-mot-golv":
+    "Kjenne du til vår gode innfestingsløysing?",
+  "/aktuelt/gladhistorie-fresvik-kjole-fryserom":
+    "Fresvik Produkt gjer mykje for å hjelpe kundane våre med ulike utfordringar, og det gjer me med stor glede!",
+};
+
+const newsIndexImageByHref: Record<string, string> = {
+  "/aktuelt/samaneh-shakeri-ny-teknisk-sjef":
+    "/assets/fresvik/images/old-site/Samaneh+Shakeri+bannerbilde.jpg",
+  "/aktuelt/ny-teknisk-teiknar-havard-berdal":
+    "/assets/fresvik/images/old-site/Håvard+Berdal.jpeg",
+  "/aktuelt/john-bothun-blir-pensjonist":
+    "/assets/fresvik/images/old-site/John+Bøthun_Fresvik+Produkt.jpg",
+  "/aktuelt/ein-investering-for-henga-med-i-tidanbsp":
+    "/assets/fresvik/images/old-site/Fresvik+Produkt+NY-4.jpeg",
+  "/aktuelt/agnar-er-snart-pensjonistnbsp":
+    "/assets/fresvik/images/old-site/Agnar3.jpeg",
+  "/aktuelt/to-ledige-stillingar-i-haust":
+    "/assets/fresvik/images/old-site/prod8.jpg",
+  "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv":
+    "/assets/fresvik/images/old-site/Fresvik+Toppledere+sogn.no.jpeg",
+  "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn":
+    "/assets/fresvik/images/old-site/Miljøfyrtårn_Fresvik+Produkt.jpg",
+  "/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt":
+    "/assets/fresvik/images/old-site/IMG_2589.jpg",
+  "/aktuelt/ledig-stilling-som-produksjonsmedarbeidar":
+    "/assets/fresvik/images/old-site/prod1.jpg",
+  "/aktuelt/jul-2020":
+    "/assets/fresvik/images/old-site/Fresvik+produkt+julehjarte+dekorasjon.jpg",
+  "/aktuelt/arne-olav-ny-salskonsulent":
+    "/assets/fresvik/images/old-site/Fresvik+produikt+seljar+Arne-Olav.jpg",
+  "/aktuelt/fresvik-kjolerom-til-fruktbonde":
+    "/assets/fresvik/images/old-site/image-asset.jpeg",
+  "/aktuelt/40-aars-jubileum":
+    "/assets/fresvik/images/old-site/frå+produksjonen++Kopi+(002).jpg",
+  "/aktuelt/innfesting-mot-golv":
+    "/assets/fresvik/images/old-site/Fresvik+ionnfesting+mot+golv.jpg",
+  "/aktuelt/gladhistorie-fresvik-kjole-fryserom":
+    "/assets/fresvik/images/old-site/Fresvik_illustrasjon-1.jpg",
+  "/aktuelt/tomas-kruvellis-vaar-nye-mann":
+    "/assets/fresvik/images/old-site/tomas+kruvelis+20180315_121307.jpg",
+  "/aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra":
+    "/assets/fresvik/images/old-site/DSC_2670.JPG",
+};
+
+const newsIndexTitleByHref: Record<string, string> = {
+  "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv":
+    "Fresvik – ein god jobb og eit godt liv",
+  "/aktuelt/fresvik-kjolerom-til-fruktbonde":
+    "Kjølerom til fruktbonde - enkelt og raskt levert",
+};
+
+const newsIndexCards = inventoryCards(
   oldSiteNews,
   "Nyheit registrert frå gammal sitemap med kjeldeside bevart for migrering.",
-  newsTextByHref,
-);
+  newsIndexTextByHref,
+).map((card) => ({
+  ...card,
+  title: card.href ? newsIndexTitleByHref[card.href] || card.title : card.title,
+  imageUrl: card.href ? newsIndexImageByHref[card.href] || card.imageUrl : card.imageUrl,
+}));
+
+const newsIndexSourceLinkCards: ContentCard[] = [
+  {
+    title: "Fresvik – ein god jobb og eit godt liv",
+    text: "Les heile artikkelen på sogn.no",
+    href: "https://www.sogn.no/bu-i-sogn-artiklar/fresvik-ein-god-jobb-og-eit-godt-liv",
+  },
+  {
+    title: "Fryse- og kjølerom til Sogn Frukt og Grønt",
+    text: "Gammal referanselenke frå aktuelt-indeksen.",
+    href: "/referansar-list/fryse-og-kjolerom-til-sogn-frukt-og-gront",
+  },
+  {
+    title: "Fasadeprosjekt for Celsa Steel Service på Sotra",
+    text: "Gammal referanselenke frå aktuelt-indeksen.",
+    href: "/referansar-list/celsa-steel-sotra",
+  },
+];
+
+const newsIndexIntroCards: ContentCard[] = [
+  {
+    title: "Aktuelt",
+    text: "Aktuelt",
+    imageUrl: "/assets/fresvik/images/old-site/flake.png",
+    imageAlt: "flake.png",
+  },
+];
 
 const referenceIndexTextByHref: Record<string, string> = {
   ...referenceTextByHref,
@@ -3394,20 +3498,31 @@ export const contentPages: ContentPage[] = [
   {
     slug: "/aktuelt",
     title: "Aktuelt",
-    eyebrow: "Nyheiter",
-    intro:
-      "Aktuelle saker og nyheiter frå Fresvik Produkt skal samlast i ein enkel nyheitsstruktur.",
+    eyebrow: "Aktuelt",
+    intro: "Aktuelt",
     description: "Aktuelt og nyheiter frå Fresvik Produkt.",
     pageType: "company",
     priority: "medium",
     sourceUrl: "https://www.fresvik.no/aktuelt",
-    cards: newsCards.slice(0, 9),
+    cards: newsIndexCards.slice(0, 9),
     sections: [
       {
-        title: "Registrerte nyheiter frå gammal sitemap",
+        title: "Aktuelt",
         intro:
           "Dette er faktiske nyheits-URL-ar, datoar, bilete og kjeldetekst frå den gamle nettstaden.",
-        items: newsCards,
+        items: [...newsIndexIntroCards, ...newsIndexCards],
+      },
+      {
+        title: "Lenker frå gammal aktuelt-side",
+        items: newsIndexSourceLinkCards,
+      },
+      {
+        title: "Kontakt",
+        items: accessoryContactCards,
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
       },
     ],
   },

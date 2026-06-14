@@ -450,6 +450,7 @@
     "assetType": "document",
     "usedBy": [
       "/",
+      "/aktuelt",
       "/dokumentasjon",
       "/firmainfo",
       "/kjolerom-fryserom-butikk",
@@ -477,6 +478,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
+      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/firmainfo",
       "https://www.fresvik.no/kjolerom-fryserom-butikk",
@@ -568,6 +570,7 @@
     "assetType": "document",
     "usedBy": [
       "/",
+      "/aktuelt",
       "/dokumentasjon",
       "/firmainfo",
       "/kjolerom-fryserom-butikk",
@@ -595,6 +598,7 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
+      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/firmainfo",
       "https://www.fresvik.no/kjolerom-fryserom-butikk",
@@ -914,11 +918,9 @@
     "filePath": "public/assets/fresvik/images/migrated/agnar3.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/aktuelt",
       "/aktuelt/agnar-er-snart-pensjonistnbsp"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/agnar-er-snart-pensjonistnbsp"
     ],
     "sha256": "b72feeab1dd9353800a259dfd90ce9dc6179737aff5b090467a03e9f7881f47b",
@@ -1370,11 +1372,9 @@
     "filePath": "public/assets/fresvik/images/migrated/fresvik-illustrasjon-1.jpg",
     "assetType": "image",
     "usedBy": [
-      "/aktuelt",
       "/aktuelt/gladhistorie-fresvik-kjole-fryserom"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/gladhistorie-fresvik-kjole-fryserom"
     ],
     "sha256": "c6e74d70f3cb6c71cdcb3cf5de4f7b68057c75c5720171c1843440deb7bb7254",
@@ -1397,11 +1397,9 @@
     "filePath": "public/assets/fresvik/images/migrated/fresvik-ionnfesting-mot-golv.jpg",
     "assetType": "image",
     "usedBy": [
-      "/aktuelt",
       "/aktuelt/innfesting-mot-golv"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/innfesting-mot-golv"
     ],
     "sha256": "dc0c4b94d1a50d8d7b7a00f4736ae8b5c5cbcfd291fffb0f332276db7aba6beb",
@@ -1424,11 +1422,9 @@
     "filePath": "public/assets/fresvik/images/migrated/fresvik-kj-c3-b8lerom-ivar-slinde.jpg",
     "assetType": "image",
     "usedBy": [
-      "/aktuelt",
       "/aktuelt/fresvik-kjolerom-til-fruktbonde"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/fresvik-kjolerom-til-fruktbonde"
     ],
     "sha256": "c7ca20744a92097c2e58216ac0b46dd890ac4e01faf615d6b53456dd165640b9",
@@ -1451,11 +1447,9 @@
     "filePath": "public/assets/fresvik/images/migrated/fresvik-produikt-seljar-arne-olav.jpg",
     "assetType": "image",
     "usedBy": [
-      "/aktuelt",
       "/aktuelt/arne-olav-ny-salskonsulent"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/arne-olav-ny-salskonsulent"
     ],
     "sha256": "0c8ae47138837a34ea46e15e5cab3a4207709e3eb7004adfedfedb4230e145e3",
@@ -1478,11 +1472,9 @@
     "filePath": "public/assets/fresvik/images/migrated/fresvik-produkt-40-aar.jpg",
     "assetType": "image",
     "usedBy": [
-      "/aktuelt",
       "/aktuelt/40-aars-jubileum"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/40-aars-jubileum"
     ],
     "sha256": "14c681318723675d965bcb93f600bc85678b74a131d58381006a46dcd6545382",
@@ -1505,11 +1497,9 @@
     "filePath": "public/assets/fresvik/images/migrated/fresvik-produkt-julehjarte-dekorasjon.jpg",
     "assetType": "image",
     "usedBy": [
-      "/aktuelt",
       "/aktuelt/jul-2020"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/jul-2020"
     ],
     "sha256": "75d7b752b9b8504e2ca78abd4f9a204aef728db0236011a7fb090b305aaa141f",
@@ -1532,11 +1522,9 @@
     "filePath": "public/assets/fresvik/images/migrated/fresvik-produkt-ny-4.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/aktuelt",
       "/aktuelt/ein-investering-for-henga-med-i-tidanbsp"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/ein-investering-for-henga-med-i-tidanbsp"
     ],
     "sha256": "caa9f7786752c4509968cb33753a7a32691b7a166dc2dcc449569255bb1d03d0",
@@ -1688,12 +1676,10 @@
     "assetType": "image",
     "usedBy": [
       "/",
-      "/aktuelt",
       "/aktuelt/ny-teknisk-teiknar-havard-berdal"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/ny-teknisk-teiknar-havard-berdal"
     ],
     "sha256": "43d3b10e69825153f9a517362acb4f546ac741e8a238124a1ebd7ac99c8728d2",
@@ -2032,12 +2018,10 @@
     "assetType": "image",
     "usedBy": [
       "/",
-      "/aktuelt",
       "/aktuelt/john-bothun-blir-pensjonist"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/john-bothun-blir-pensjonist"
     ],
     "sha256": "9cb9c64f7f949b90718c36b52c9e53af8fa98bf2715b5aef371562db5c8a1024",
@@ -2219,7 +2203,6 @@
     "assetType": "image",
     "usedBy": [
       "/",
-      "/aktuelt",
       "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn",
       "/produkt/fresvik-pir-panel",
       "/produkt/fresvik-pur-panel",
@@ -2228,7 +2211,6 @@
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn",
       "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/produkt/fresvik-pir-panel",
@@ -2565,14 +2547,12 @@
     "assetType": "image",
     "usedBy": [
       "/",
-      "/aktuelt",
       "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
       "/tilsette",
       "employee-samaneh-shakeri"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
       "https://www.fresvik.no/tilsette"
     ],
@@ -2724,11 +2704,9 @@
     "filePath": "public/assets/fresvik/images/migrated/tomas-kruvelis-20180315-121307.jpg",
     "assetType": "image",
     "usedBy": [
-      "/aktuelt",
       "/aktuelt/tomas-kruvellis-vaar-nye-mann"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/tomas-kruvellis-vaar-nye-mann"
     ],
     "sha256": "9550bc355ee31f4b864e585e4ff51b22ddbec107b587f299a2eaac0095ddf697",
@@ -3168,6 +3146,31 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Agnar3.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Agnar3.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "b72feeab1dd9353800a259dfd90ce9dc6179737aff5b090467a03e9f7881f47b",
+    "fileSize": 1750868,
+    "sanityAssetId": "image-fe7cad4fa092199f341bbb13b15db8a8c2f3436b-2500x3500-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-fe7cad4fa092199f341bbb13b15db8a8c2f3436b-2500x3500-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/agnar3.jpeg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/Baza+fryserom+-+2.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/Baza+fryserom+-+2.jpeg",
     "assetType": "image",
@@ -3223,6 +3226,25 @@
     ],
     "sha256": "430079793c15338804a77e035346dd71b21cdfcb6c909b6adf01675f02ca345a",
     "fileSize": 614194,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/DSC_2670.JPG",
+    "filePath": "public/assets/fresvik/images/old-site/DSC_2670.JPG",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "39e916f60cdb7c6744bd7ead037046c3fe90752405cc22af39dd200e774a1d0f",
+    "fileSize": 28800,
     "sanityAssetId": null,
     "sanityReference": null,
     "status": "ready-for-sanity",
@@ -3338,6 +3360,50 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Fresvik+Produkt+NY-4.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Fresvik+Produkt+NY-4.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "caa9f7786752c4509968cb33753a7a32691b7a166dc2dcc449569255bb1d03d0",
+    "fileSize": 957993,
+    "sanityAssetId": "image-59b761cc51b1c2d62f0311ec1c68eb8290f03fc7-2500x1666-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-59b761cc51b1c2d62f0311ec1c68eb8290f03fc7-2500x1666-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/fresvik-produkt-ny-4.jpeg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Fresvik+Toppledere+sogn.no.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Fresvik+Toppledere+sogn.no.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "2034931e05e046cd2a35b5b9ccba895c488dd7f023a3ee6253683940063651db",
+    "fileSize": 825831,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
     "filePath": "public/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
     "assetType": "image",
@@ -3349,6 +3415,94 @@
     ],
     "sha256": "5d4402b40af38bb9ce06d0cf288ff4fadbeff133fcf2fd2686b46b2d85af4acd",
     "fileSize": 138633,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Fresvik+ionnfesting+mot+golv.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Fresvik+ionnfesting+mot+golv.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "dc0c4b94d1a50d8d7b7a00f4736ae8b5c5cbcfd291fffb0f332276db7aba6beb",
+    "fileSize": 39309,
+    "sanityAssetId": "image-84745493e5dd088567da99209f6be776b014575d-1552x725-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-84745493e5dd088567da99209f6be776b014575d-1552x725-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/fresvik-ionnfesting-mot-golv.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Fresvik+produikt+seljar+Arne-Olav.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Fresvik+produikt+seljar+Arne-Olav.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "37f8437aef5a9203afeae76fc7137e64cb9f1b1efc17abebeead2f1711bf97b2",
+    "fileSize": 813864,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Fresvik+produkt+julehjarte+dekorasjon.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Fresvik+produkt+julehjarte+dekorasjon.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "75d7b752b9b8504e2ca78abd4f9a204aef728db0236011a7fb090b305aaa141f",
+    "fileSize": 209457,
+    "sanityAssetId": "image-ac0c6eec9a260eb73cc629c9594ea504c674d959-1827x1717-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ac0c6eec9a260eb73cc629c9594ea504c674d959-1827x1717-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/fresvik-produkt-julehjarte-dekorasjon.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Fresvik_illustrasjon-1.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Fresvik_illustrasjon-1.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "5959ad08ca339ef50c83212a1d54944c01d31a040cc83f98009bb85256d79bcc",
+    "fileSize": 281087,
     "sanityAssetId": null,
     "sanityReference": null,
     "status": "ready-for-sanity",
@@ -3420,6 +3574,25 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Håvard+Berdal.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Håvard+Berdal.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "48e94bb1ad4298e26fdc4be0d0a63dc266df96ded0e20ffbf2c1917eaf4331b8",
+    "fileSize": 423470,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/IK.png",
     "filePath": "public/assets/fresvik/images/old-site/IK.png",
     "assetType": "image",
@@ -3443,9 +3616,11 @@
     "filePath": "public/assets/fresvik/images/old-site/IMG_2589.jpg",
     "assetType": "image",
     "usedBy": [
+      "/aktuelt",
       "/referansar"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/referansar"
     ],
     "sha256": "66f476fe0dcdd78103b07763ef039cd264cd83e321739c15c55303fa062bf833",
@@ -3505,6 +3680,31 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/John+Bøthun_Fresvik+Produkt.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/John+Bøthun_Fresvik+Produkt.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "9cb9c64f7f949b90718c36b52c9e53af8fa98bf2715b5aef371562db5c8a1024",
+    "fileSize": 491826,
+    "sanityAssetId": "image-3fab2fa12ba0817c623efc654cc441e81734efa1-1920x1280-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-3fab2fa12ba0817c623efc654cc441e81734efa1-1920x1280-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/john-bthun-fresvik-produkt.jpg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -3596,6 +3796,31 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Miljøfyrtårn_Fresvik+Produkt.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Miljøfyrtårn_Fresvik+Produkt.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "35963d67a5a5041e814bbd71a2457b8e5f5656ec6fa795870a5c122d3e1c25af",
+    "fileSize": 338293,
+    "sanityAssetId": "image-c1b66edc25b63d2881de28823d1d00c605b4b187-1920x1080-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c1b66edc25b63d2881de28823d1d00c605b4b187-1920x1080-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/PEGO+innestengningsalarm_web.jpg",
     "filePath": "public/assets/fresvik/images/old-site/PEGO+innestengningsalarm_web.jpg",
     "assetType": "image",
@@ -3638,6 +3863,7 @@
     "filePath": "public/assets/fresvik/images/old-site/Poly.png",
     "assetType": "image",
     "usedBy": [
+      "/aktuelt",
       "/dokumentasjon",
       "/kundeservice/faq",
       "/monteringsanvisning",
@@ -3650,6 +3876,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
@@ -3701,6 +3928,25 @@
     ],
     "sha256": "127b4f10945bdab50afdfb0f0903551f90b8572aea498187f22c3a14a81028dd",
     "fileSize": 26504,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Samaneh+Shakeri+bannerbilde.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Samaneh+Shakeri+bannerbilde.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "b3b6bb78c1ed37e75d7f39901b53aa256aad011071c18687272075c3b0382507",
+    "fileSize": 133082,
     "sanityAssetId": null,
     "sanityReference": null,
     "status": "ready-for-sanity",
@@ -3820,6 +4066,7 @@
     "filePath": "public/assets/fresvik/images/old-site/Startbarnk.png",
     "assetType": "image",
     "usedBy": [
+      "/aktuelt",
       "/dokumentasjon",
       "/kundeservice/faq",
       "/monteringsanvisning",
@@ -3832,6 +4079,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
@@ -3857,6 +4105,7 @@
     "filePath": "public/assets/fresvik/images/old-site/TG-2135.jpg",
     "assetType": "image",
     "usedBy": [
+      "/aktuelt",
       "/dokumentasjon",
       "/kundeservice/faq",
       "/monteringsanvisning",
@@ -3869,6 +4118,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
@@ -4364,6 +4614,7 @@
     "filePath": "public/assets/fresvik/images/old-site/ce-logo-png-transparent.png",
     "assetType": "image",
     "usedBy": [
+      "/aktuelt",
       "/dokumentasjon",
       "/kundeservice/faq",
       "/monteringsanvisning",
@@ -4376,6 +4627,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
@@ -5302,6 +5554,7 @@
     "filePath": "public/assets/fresvik/images/old-site/flake.png",
     "assetType": "image",
     "usedBy": [
+      "/aktuelt",
       "/dokumentasjon",
       "/kundeservice/faq",
       "/monteringsanvisning",
@@ -5316,6 +5569,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
@@ -5808,6 +6062,25 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Duplicate file content of /assets/fresvik/images/old-site/fryst-laks-0ce60abbff.png."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/frå+produksjonen++Kopi+(002).jpg",
+    "filePath": "public/assets/fresvik/images/old-site/frå+produksjonen++Kopi+(002).jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "4136ce1a2a39d428d73ece5a893139b852b16dfea54e8c3ab5c141e0dffc0e08",
+    "fileSize": 351000,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/c1a5b7bc-5c62-421d-931a-65dcb0cc86fd/glassplate.png",
@@ -6389,9 +6662,11 @@
     "filePath": "public/assets/fresvik/images/old-site/image-asset.jpeg",
     "assetType": "image",
     "usedBy": [
+      "/aktuelt",
       "/referansar"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/referansar"
     ],
     "sha256": "d6c42b0b15555814bf1631740fb0d2e77d878af7481ea32be610c082b2126ee7",
@@ -7314,6 +7589,25 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/port1web.jpg."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/prod1.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/prod1.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "31cbc8d2caa5be79632beef3cc4cde0256f703d74d174d79304efa016fb16fe5",
+    "fileSize": 312034,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/01c192a0-dbab-49e5-b8fd-629244295ab4/prod8.jpg",
     "localPath": "/assets/fresvik/images/old-site/prod8-651c53b842.jpg",
     "filePath": "public/assets/fresvik/images/old-site/prod8-651c53b842.jpg",
@@ -7337,6 +7631,25 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Uploaded to Sanity as image-441a9d027917311646628415b8146e23f8d409b0-2500x1625-webp."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/prod8.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/prod8.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "45c2d6db79bef11c1cc95f308054db361e889b241c3dfbaaff725adb62ab417a",
+    "fileSize": 594221,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -7517,6 +7830,7 @@
     "filePath": "public/assets/fresvik/images/old-site/sentral+godkjent.png",
     "assetType": "image",
     "usedBy": [
+      "/aktuelt",
       "/dokumentasjon",
       "/kundeservice/faq",
       "/monteringsanvisning",
@@ -7529,6 +7843,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
@@ -8156,6 +8471,25 @@
     "notes": "Duplicate file content of /assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/tomas+kruvelis+20180315_121307.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/tomas+kruvelis+20180315_121307.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt"
+    ],
+    "sha256": "9d8eb05115ba110d234e9632bb82196ad17842ebe68d7e2872503e5a592f13a1",
+    "fileSize": 22086,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428950967-OR3SD8N14UBWZ0Q068KC/Utvendig+liggende.JPG",
     "localPath": "/assets/fresvik/images/old-site/utvendig-liggende-efe87a655e.jpg",
     "filePath": "public/assets/fresvik/images/old-site/utvendig-liggende-efe87a655e.jpg",
@@ -8382,6 +8716,7 @@
     "filePath": "public/assets/fresvik/images/old-site/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
     "assetType": "image",
     "usedBy": [
+      "/aktuelt",
       "/dokumentasjon",
       "/kundeservice/faq",
       "/monteringsanvisning",
@@ -8394,6 +8729,7 @@
       "/tilleggsutstyr"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",

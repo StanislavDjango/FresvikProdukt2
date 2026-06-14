@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-14T17:28:24.355Z
+Generated: 2026-06-14T17:39:08.013Z
 
 ## Summary
 
@@ -18,7 +18,7 @@ Generated: 2026-06-14T17:28:24.355Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 353 |
+| Local image assets | 369 |
 | Local document/PDF assets | 27 |
 | Asset originalUrls recovered in manifest | 308 |
 
@@ -51,7 +51,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | oldPath | newRoute | status | type | title | intro | body | images | docs | notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | / | / | page | page | yes | yes | yes | 20/14 | yes | Covered as migrated page in local data. |
-| /aktuelt | /aktuelt | page | news | yes | yes | yes | 19/0 | no | Covered as migrated page in local data. |
+| /aktuelt | /aktuelt | page | news | yes | yes | yes | 31/0 | yes | Covered as migrated page in local data. |
 | /aktuelt/40-aars-jubileum | /aktuelt/40-aars-jubileum | page | news | yes | yes | yes | 4/4 | yes | Covered as migrated page in local data. |
 | /aktuelt/agnar-er-snart-pensjonistnbsp | /aktuelt/agnar-er-snart-pensjonistnbsp | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /aktuelt/arne-olav-ny-salskonsulent | /aktuelt/arne-olav-ny-salskonsulent | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
@@ -173,7 +173,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Local migrated image assets | 353 |
+| Local migrated image assets | 369 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
@@ -216,36 +216,39 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 410 |
+| Internal link references | 413 |
 | OK routes | 179 |
-| Redirect links | 17 |
-| Asset links OK | 214 |
+| Redirect links | 19 |
+| Asset links OK | 215 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
 | --- | --- | --- | --- |
-| /s/Miljdokument-Fresvik-Produkt.pdf | src/data/pages.ts:1198 | redirect | Redirects to /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf. |
-| /s/7060s-fnfz.pdf | src/data/pages.ts:1203 | redirect | Redirects to /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf. |
-| /s/2135g-5.pdf | src/data/pages.ts:1208 | redirect | Redirects to /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf. |
-| /s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | src/data/pages.ts:1223 | redirect | Redirects to /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf. |
-| /s/Sentral-Godkjenning-Fresvik-Produkt.pdf | src/data/pages.ts:1233 | redirect | Redirects to /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf. |
-| /s/Ytelseserklring-Fresvik-Produkt.pdf | src/data/pages.ts:1238 | redirect | Redirects to /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf. |
-| /s/Fresvik-Fryserom-Montasjeanvisning.pdf | src/data/pages.ts:1263 | redirect | Redirects to /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf. |
-| /s/Fresvik-Port-Montasjeanvisning.pdf | src/data/pages.ts:1270 | redirect | Redirects to /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf. |
-| /s/Fresvik-Kjlerom-Montasjeanvisning.pdf | src/data/pages.ts:1278 | redirect | Redirects to /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf. |
-| /s/Fresvik-Dr-Montasjeanvisning.pdf | src/data/pages.ts:1292 | redirect | Redirects to /assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf. |
-| /s/Koblingsskjema-Fermod-5010.pdf | src/data/pages.ts:1319 | redirect | Redirects to /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf. |
-| /s/Montasjeanvisning-5010-for-2150.pdf | src/data/pages.ts:1324 | redirect | Redirects to /assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf. |
-| /s/Montasjeanvisning-5010-for-3530-og-7530.pdf | src/data/pages.ts:1329 | redirect | Redirects to /assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf. |
-| /s/Quick-Start-5010Exp-indB.pdf | src/data/pages.ts:1334 | redirect | Redirects to /assets/fresvik/documents/quick-start-5010exp.pdf. |
-| /s/Endre-Skyveretning.pdf | src/data/pages.ts:1339 | redirect | Redirects to /assets/fresvik/documents/endre-skyveretning.pdf. |
-| /s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf | src/data/pages.ts:1344 | redirect | Redirects to /assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf. |
-| /om-oss/fresvik-produkt | src/data/pages.ts:3303 | redirect | Redirects to /firmainfo. |
+| /referansar-list/fryse-og-kjolerom-til-sogn-frukt-og-gront | src/data/pages.ts:509 | redirect | Redirects to /referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront. |
+| /referansar-list/celsa-steel-sotra | src/data/pages.ts:514 | redirect | Redirects to /referansar/celsa-steel-sotra. |
+| /s/Miljdokument-Fresvik-Produkt.pdf | src/data/pages.ts:1296 | redirect | Redirects to /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf. |
+| /s/7060s-fnfz.pdf | src/data/pages.ts:1301 | redirect | Redirects to /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf. |
+| /s/2135g-5.pdf | src/data/pages.ts:1306 | redirect | Redirects to /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf. |
+| /s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | src/data/pages.ts:1321 | redirect | Redirects to /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf. |
+| /s/Sentral-Godkjenning-Fresvik-Produkt.pdf | src/data/pages.ts:1331 | redirect | Redirects to /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf. |
+| /s/Ytelseserklring-Fresvik-Produkt.pdf | src/data/pages.ts:1336 | redirect | Redirects to /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf. |
+| /s/Fresvik-Fryserom-Montasjeanvisning.pdf | src/data/pages.ts:1361 | redirect | Redirects to /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf. |
+| /s/Fresvik-Port-Montasjeanvisning.pdf | src/data/pages.ts:1368 | redirect | Redirects to /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf. |
+| /s/Fresvik-Kjlerom-Montasjeanvisning.pdf | src/data/pages.ts:1376 | redirect | Redirects to /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf. |
+| /s/Fresvik-Dr-Montasjeanvisning.pdf | src/data/pages.ts:1390 | redirect | Redirects to /assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf. |
+| /s/Koblingsskjema-Fermod-5010.pdf | src/data/pages.ts:1417 | redirect | Redirects to /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf. |
+| /s/Montasjeanvisning-5010-for-2150.pdf | src/data/pages.ts:1422 | redirect | Redirects to /assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf. |
+| /s/Montasjeanvisning-5010-for-3530-og-7530.pdf | src/data/pages.ts:1427 | redirect | Redirects to /assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf. |
+| /s/Quick-Start-5010Exp-indB.pdf | src/data/pages.ts:1432 | redirect | Redirects to /assets/fresvik/documents/quick-start-5010exp.pdf. |
+| /s/Endre-Skyveretning.pdf | src/data/pages.ts:1437 | redirect | Redirects to /assets/fresvik/documents/endre-skyveretning.pdf. |
+| /s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf | src/data/pages.ts:1442 | redirect | Redirects to /assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf. |
+| /om-oss/fresvik-produkt | src/data/pages.ts:3401 | redirect | Redirects to /firmainfo. |
 
 ## External links
 
 | url | sourcePage | purpose | status |
 | --- | --- | --- | --- |
+| https://www.sogn.no/bu-i-sogn-artiklar/fresvik-ein-god-jobb-og-eit-godt-liv | src/data/pages.ts: | external-reference | keep |
 | https://www.sintefcertification.no/Product/Index/129 | src/data/pages.ts: | certification/documentation | keep |
 | https://rapportering.miljofyrtarn.no/stats/176324 | src/data/pages.ts: | external-reference | keep |
 | https://www.gasta.no/ | src/data/pages.ts: | external-reference | keep |

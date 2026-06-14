@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/stillingledig",
+  "newUrl": "http://127.0.0.1:3060/stillingledig",
+  "checkedAt": "2026-06-14T17:54:04.071Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 40,
+    "missingTextBlocks": 0,
+    "oldLinks": 43,
+    "missingLinks": 0,
+    "oldImages": 11,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

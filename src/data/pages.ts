@@ -3629,9 +3629,18 @@ export const contentPages: ContentPage[] = [
         title: "Ledig stilling frå gammal side",
         items: [
           {
+            title: "Jobbe med oss?",
+            text:
+              "Noregs største fagmiljø på isolasjonspanel Godt arbeidsmiljø med kjekke kollegaer Gode pensjons- og forsikringsordningar Kontor i Fresvik og Drammen",
+            imageUrl: "/assets/fresvik/images/old-site/prod8.jpg",
+            imageAlt: "prod8.jpg",
+          },
+          {
             title: "Vil du vere med på å halde Noreg kaldt?",
             text:
               "Fresvik Produkt AS søkjer ein offensiv og relasjonsbyggjande seljar. Kandidaten bør like kundekontakt, ha teknisk forståing og vere motivert for å finne gode løysingar for kundane.",
+            imageUrl: "/assets/fresvik/images/old-site/flake-black.png",
+            imageAlt: "flake-black.png",
           },
           {
             title: "Kvifor velje Fresvik Produkt?",
@@ -3652,13 +3661,36 @@ export const contentPages: ContentPage[] = [
             title: "Bu og jobbe i Fresvik",
             text:
               "Sida løftar Fresvik som ei aktiv jordbruksbygd ved fjorden, med trygg oppvekst, lag og organisasjonar, musikkfestival, industri og rikt friluftsliv.",
+            href: "https://www.sogn.no/fresvik",
+            imageUrl:
+              "/assets/fresvik/images/old-site/Fresvik+frå+BJØNNSTIGEN+2017+SS.jpg",
+            imageAlt: "Fresvik frå Bjønnstigen",
+          },
+          {
+            title: "Fresvik - ein god jobb og eit godt liv",
+            text:
+              "Vil du jobba på skulen, i barnehagen, på butikken eller hjå Fresvik Produkt? No har du sjansen til å få leva ut draumen om eit liv i den idylliske fjordbygda Fresvik.",
+            href:
+              "https://www.sogn.no/bu-i-sogn-artiklar/fresvik-ein-god-jobb-og-eit-godt-liv",
+            imageUrl: "/assets/fresvik/images/old-site/Fresvik+Toppledere+sogn.no.jpeg",
+            imageAlt: "Fresvik toppledere sogn.no",
+          },
+          {
+            title: "Spørsmål om stillinga?",
+            text: "Spørsmål om stillinga? Thomas Skogheim, tel: 95 76 12 19",
+            imageUrl: "/assets/fresvik/images/old-site/flake.png",
+            imageAlt: "flake.png",
           },
         ],
       },
-    ],
-    todo: [
-      "Verifiser om stillinga framleis er open før produksjonsdomene blir flytta.",
-      "Flytt stillinga til Sanity som redigerbart innhald eller `newsArticle`/jobbmodell.",
+      {
+        title: "Kontakt",
+        items: accessoryContactCards,
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
+      },
     ],
   },
   {

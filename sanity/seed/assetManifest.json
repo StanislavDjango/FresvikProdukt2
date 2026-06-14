@@ -3437,10 +3437,12 @@
     "filePath": "public/assets/fresvik/images/old-site/Fresvik+Toppledere+sogn.no.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/aktuelt"
+      "/aktuelt",
+      "/stillingledig"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt"
+      "https://www.fresvik.no/aktuelt",
+      "https://www.fresvik.no/stillingledig"
     ],
     "sha256": "2034931e05e046cd2a35b5b9ccba895c488dd7f023a3ee6253683940063651db",
     "fileSize": 825831,
@@ -3463,6 +3465,25 @@
     ],
     "sha256": "5d4402b40af38bb9ce06d0cf288ff4fadbeff133fcf2fd2686b46b2d85af4acd",
     "fileSize": 138633,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Fresvik+frå+BJØNNSTIGEN+2017+SS.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Fresvik+frå+BJØNNSTIGEN+2017+SS.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/stillingledig"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/stillingledig"
+    ],
+    "sha256": "6aa30880cfa9a9cdeb2b5f3286ed47c40d61614a3238004d35a04b0b5b8f885a",
+    "fileSize": 499195,
     "sanityAssetId": null,
     "sanityReference": null,
     "status": "ready-for-sanity",
@@ -4094,6 +4115,7 @@
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/referansar",
+      "/stillingledig",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -4109,6 +4131,7 @@
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/stillingledig",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -4426,6 +4449,7 @@
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/referansar",
+      "/stillingledig",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -4441,6 +4465,7 @@
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/stillingledig",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -4469,6 +4494,7 @@
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/referansar",
+      "/stillingledig",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -4484,6 +4510,7 @@
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/stillingledig",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -5007,6 +5034,7 @@
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/referansar",
+      "/stillingledig",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -5022,6 +5050,7 @@
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/stillingledig",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -5881,10 +5910,12 @@
     "filePath": "public/assets/fresvik/images/old-site/flake-black.png",
     "assetType": "image",
     "usedBy": [
+      "/stillingledig",
       "/tenester/leveranse",
       "/tenester/montasje"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/stillingledig",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje"
     ],
@@ -5953,6 +5984,7 @@
       "/produkt/fasadepanel",
       "/produkt/frysetunnel",
       "/referansar",
+      "/stillingledig",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -5970,6 +6002,7 @@
       "https://www.fresvik.no/produkt/fasadepanel",
       "https://www.fresvik.no/produkt/frysetunnel",
       "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/stillingledig",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -8031,10 +8064,12 @@
     "filePath": "public/assets/fresvik/images/old-site/prod8.jpg",
     "assetType": "image",
     "usedBy": [
-      "/aktuelt"
+      "/aktuelt",
+      "/stillingledig"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/aktuelt"
+      "https://www.fresvik.no/aktuelt",
+      "https://www.fresvik.no/stillingledig"
     ],
     "sha256": "45c2d6db79bef11c1cc95f308054db361e889b241c3dfbaaff725adb62ab417a",
     "fileSize": 594221,
@@ -8231,6 +8266,7 @@
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/referansar",
+      "/stillingledig",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -8246,6 +8282,7 @@
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/stillingledig",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -9121,6 +9158,7 @@
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
       "/referansar",
+      "/stillingledig",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -9136,6 +9174,7 @@
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/stillingledig",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",

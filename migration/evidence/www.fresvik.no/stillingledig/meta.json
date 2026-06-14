@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/stillingledig",
+  "finalUrl": "https://www.fresvik.no/stillingledig",
+  "fetchedAt": "2026-06-14T17:51:26.576Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Ledig stilling | Bli med oss – Søknad nå — Fresvik Produkt",
+  "metaDescription": "Oppdag muligheter med Fresvik Produkt. Søk ledige stillinger og bli en del av vårt team i en innovativ bedrift innen isolasjonsløsninger.",
+  "counts": {
+    "headings": 15,
+    "textBlocks": 53,
+    "links": 95,
+    "images": 48,
+    "documents": 2
+  }
+}

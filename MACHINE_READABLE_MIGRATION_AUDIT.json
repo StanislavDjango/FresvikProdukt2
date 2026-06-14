@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-14T17:49:55.657Z",
+    "generatedAt": "2026-06-14T17:54:09.783Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -14,7 +14,7 @@
     "needsReviewCount": 0,
     "unrecoverableCount": 6,
     "inventoryOnlyCount": 0,
-    "localImageAssets": 384,
+    "localImageAssets": 385,
     "localDocumentAssets": 27,
     "originalUrlsRecovered": 308,
     "routeStatusCounts": {
@@ -26,7 +26,7 @@
       "migrated": 271,
       "ignored-with-reason": 33,
       "duplicate": 47,
-      "unrecoverable": 97
+      "unrecoverable": 98
     },
     "documentStatusCounts": {
       "migrated": 25,
@@ -2069,7 +2069,7 @@
       "hasInternalLinks": true,
       "hasExternalLinks": true,
       "oldImageCount": 4,
-      "localImageCount": 4,
+      "localImageCount": 15,
       "recoveryStatus": null,
       "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
@@ -5680,7 +5680,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt",
+      "oldPath": "/aktuelt, /stillingledig",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Fresvik+Toppledere+sogn.no.jpeg",
@@ -5694,6 +5694,16 @@
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/stillingledig",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/Fresvik+frå+BJØNNSTIGEN+2017+SS.jpg",
       "status": "unrecoverable",
       "confidence": 0,
       "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
@@ -5960,7 +5970,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Poly.png",
@@ -6100,7 +6110,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Startbarnk.png",
@@ -6110,7 +6120,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/TG-2135.jpg",
@@ -6200,7 +6210,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/ce-logo-png-transparent.png",
@@ -6300,7 +6310,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tenester/leveranse, /tenester/montasje",
+      "oldPath": "/stillingledig, /tenester/leveranse, /tenester/montasje",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/flake-black.png",
@@ -6320,7 +6330,7 @@
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/13922f08-1a26-4996-98ca-874c87c1d3cb/flake.png",
-      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /produkt/fasadepanel, /produkt/frysetunnel, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /produkt/fasadepanel, /produkt/frysetunnel, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/flake.png",
@@ -6510,7 +6520,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt",
+      "oldPath": "/aktuelt, /stillingledig",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/prod8.jpg",
@@ -6570,7 +6580,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/sentral+godkjent.png",
@@ -6700,7 +6710,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
@@ -8651,6 +8661,22 @@
       "line": 3434,
       "status": "redirect",
       "notes": "Redirects to /firmainfo."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/prod8.jpg",
+      "normalized": "/assets/fresvik/images/old-site/prod8.jpg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 3635,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/Fresvik+Toppledere+sogn.no.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/Fresvik+Toppledere+sogn.no.jpeg",
+      "sourceFile": "src/data/pages.ts",
+      "line": 3675,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
     },
     {
       "href": "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
@@ -10734,6 +10760,12 @@
       "sourcePage": "src/data/pages.ts",
       "url": "https://www.fresvik.no/stillingledig",
       "purpose": "source-url",
+      "status": "keep"
+    },
+    {
+      "sourcePage": "src/data/pages.ts",
+      "url": "https://www.sogn.no/fresvik",
+      "purpose": "external-reference",
       "status": "keep"
     },
     {

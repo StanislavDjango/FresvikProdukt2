@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-14T17:49:55.657Z
+Generated: 2026-06-14T17:54:09.783Z
 
 ## Summary
 
@@ -18,7 +18,7 @@ Generated: 2026-06-14T17:49:55.657Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 384 |
+| Local image assets | 385 |
 | Local document/PDF assets | 27 |
 | Asset originalUrls recovered in manifest | 308 |
 
@@ -147,7 +147,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /referansar/vik-helse-og-omsorgssenter | /referansar/vik-helse-og-omsorgssenter | page | reference | yes | yes | yes | 5/5 | yes | Covered as migrated page in local data. |
 | /send-foresporsel | /kontakt | redirect | unknown | yes | yes | no | 0/0 | no | Redirects to /kontakt. |
 | /startside | / | redirect | unknown | yes | yes | no | 0/14 | no | Redirects to /. |
-| /stillingledig | /stillingledig | page | page | yes | yes | yes | 4/4 | yes | Covered as migrated page in local data. |
+| /stillingledig | /stillingledig | page | page | yes | yes | yes | 15/4 | yes | Covered as migrated page in local data. |
 | /store | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |
 | /store/p/dr-tiltrekker-diktator | /tilleggsutstyr | redirect | product | yes | yes | no | 0/1 | no | Redirects to /tilleggsutstyr. |
 | /tenester/leveranse | /tenester/leveranse | page | service | yes | yes | yes | 11/2 | yes | Covered as migrated page in local data. |
@@ -173,7 +173,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Local migrated image assets | 384 |
+| Local migrated image assets | 385 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
@@ -216,10 +216,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 414 |
+| Internal link references | 416 |
 | OK routes | 179 |
 | Redirect links | 19 |
-| Asset links OK | 216 |
+| Asset links OK | 218 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -279,6 +279,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | https://www.fresvik.no/tilsette | src/data/pages.ts: | source-url | keep |
 | https://www.fresvik.no/aktuelt | src/data/pages.ts: | source-url | keep |
 | https://www.fresvik.no/stillingledig | src/data/pages.ts: | source-url | keep |
+| https://www.sogn.no/fresvik | src/data/pages.ts: | external-reference | keep |
 | https://www.fresvik.no/personvernerklering | src/data/pages.ts: | source-url | keep |
 | https://www.fresvik.no/openheitslova | src/data/pages.ts: | source-url | keep |
 | https://www.fresvik.no${slug} | src/data/pages.ts: | source-url | keep |

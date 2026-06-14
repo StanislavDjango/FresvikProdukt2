@@ -3697,8 +3697,7 @@ export const contentPages: ContentPage[] = [
     slug: "/personvernerklering",
     title: "Personvernerklæring",
     eyebrow: "Juridisk",
-    intro:
-      "Personvernerklæringa frå gammal Fresvik-side er flytta inn som strukturert innhald for vidare kvalitetssikring.",
+    intro: "Personvernerklæring",
     description: "Personvernerklæring for Fresvik Produkt.",
     pageType: "legal",
     priority: "high",
@@ -3711,15 +3710,15 @@ export const contentPages: ContentPage[] = [
           {
             title: "1. Om Fresvik Produkt AS",
             text:
-              "Eigar av nettsida er Fresvik Produkt AS, Fresvikvegen 995, 6896 Fresvik. E-post: post@fresvik.no. Organisasjonsnummer: NO 922 582 270.",
+              "Eigar av denne nettsida er: Fresvik Produkt AS, Fresvikvegen 995, 6896 Fresvik. Epost: post@fresvik.no. Vårt org. nr er: NO 922 582 270.",
           },
           {
-            title: "2. Føremålet med handsaming av personopplysningar",
+            title: "2. Føremålet med vår handsaming av personopplysningar",
             text:
-              "I samband med kundeforhold kan Fresvik innhente namn, adresse, e-post, telefonnummer, organisasjonsnummer og anna nødvendig informasjon. Opplysningane blir brukte til å handtere kundeforholdet, og kunden har rett til innsyn, retting og sletting av lagra data.",
+              "I samband med kundeforhold må vi innhente opplysningar som namn, adresse, epost, telefonnr, organisasjonsnummer og anna nødvendig informasjon. Dette er opplysningar vi utelukkande nyttar for å handtere ditt kundeforhold. Vi tek vare på opplysningane så lenge vi har eit kundeforhold. Du har rett til innsyn, retting og sletting av data vi har lagra om deg. Etter endt kundeforhold vil vi ta vare på data så lenge vi ser det hensiktsmessig for å hjelpe deg med eventuell historikk om du skulle ha behov for det.",
           },
           {
-            title: "3. Utlevering til tredjepart",
+            title: "3. Utlevering av personopplysningar til tredjepart",
             text:
               "Personopplysningar blir ikkje utleverte til tredjepart med mindre det ligg føre lovbestemt opplysningsplikt ovanfor offentlege myndigheiter.",
           },
@@ -3729,36 +3728,63 @@ export const contentPages: ContentPage[] = [
               "Kunderegisteret inneheld opplysningar som namn, adresse, telefon, eventuelt selskapsnamn, kontaktpersonar og informasjon om kjøpte tenester og produkt. Opplysningane blir lagra så lenge det er tenleg for Fresvik.",
           },
           {
-            title: "5-6. Informasjonskapslar",
+            title: "5. Informasjonskapslar",
             text:
-              "Sida opplyser at Squarespace og Google Analytics blir brukt til å samle anonymisert informasjon om korleis besøkande brukar nettsida, mellom anna tal besøkande, kvar dei kjem frå og kva sider dei besøker. Informasjonen blir brukt til rapportar og for å betre nettsida.",
+              "Fresvik.no nyttar informasjonskapslar, også kalt cookies, på nettsidene. Ved å bruke nettsida vår samtykker du i at vi kan setje desse i din nettlesar. Cookies er standard Internett-teknologi som dei aller fleste nettstader nyttar. Vi nyttar denne kunnskapen for å tilby deg ei betre kundeoppleving neste gang du kjem til nettsida vår. Dei fleste nettlesarar, som Opera, Internet Explorer, Firefox, Safari etc, er innstilt slik at cookies blir akseptert automatisk. Om du ikkje ønskjer å akseptere cookies må du sjølv endre innstillingane i din nettlesar. Merk at denne innstillinga kan føre til at mange nettstader ikkje vil fungere optimalt.",
           },
           {
-            title: "Nyheitsbrev",
+            title: "6. Bruk av informasjonskapslar på denne nettsida",
             text:
-              "Ved påmelding til nyheitsbrev samtykker brukaren til lagring av namn og e-postadresse. Fresvik brukar Mailchimp til utsendingar og opplyser at informasjonen blir lagra til brukaren melder seg av.",
+              "Eigar: Squarespace/Google AnalyticsFøremål: Samle informasjon om korleis besøkande nyttar nettsida. Vi brukar denne informasjonen for å lage rapportar for å betre nettsida. Informasjonskapslane anonymiserer all informasjon. Dei seier noko om tal besøkande på nettsida, kvar dei kjem frå og kva sider dei besøker.Eigar: VimeoFøremål: Lagar statistikk på visningar og visningsdata på videoar på sida.Eigar: YoutubeFøremål: Lagar statistikk på visningar og visningsdata på videoar på sida.",
+          },
+          {
+            title: "7. Nyheitsbrev",
+            text:
+              "Ved å melde deg på Fresvik Produkt AS sitt nyheitsbrev, samtykker du til at vi lagrar ditt namn og din e-postadresse. Dette brukar vi til å sende ut relevant informasjon om oss og våre tenester. Vi nyttar Mailchimp for å handtere utsendingar av e-postar. Fresvik Produkt AS forpliktar seg til å ikkje dele informasjonen din med andre partar. Informasjonen vil ligge lagra hjå oss inntil til du eventuelt melder deg av nyheitsbrevet. Alle våre utsendingar har funksjonalitet for at du kan melde deg av med eit klikk.",
           },
           {
             title: "8. Kontaktskjema",
             text:
-              "Når ein fyller ut kontaktskjema på nettsida, blir informasjonen lagra i Fresvik sitt CRM-system for å kunne yte betre kundeservice. Fresvik opplyser at dei ikkje ønskjer å ta vare på detaljar lenger enn nødvendig.",
+              "Når du fyller ut kontaktskjema på nettsida lagrar vi denne informasjonen i vårt CRM-system. Denne informasjonen vil vi lagre for å kunne yte betre kundeservice. Vi etterstrebar å ikkje ta vare på dine detaljar lenger enn nødvendig. Ønskjer du å bli sletta, sjå kapittel om Innsyn, retting og sletting av personinformasjon under.",
           },
           {
-            title: "10. Innsyn, retting og sletting",
+            title: "9. Deling",
             text:
-              "Etter personopplysningsloven § 18 kan privatpersonar krevje innsyn i registrerte opplysningar ved å kontakte Fresvik Produkt AS på post@fresvik.no. Uriktige, ufullstendige eller uønskte opplysningar kan krevjast retta eller sletta.",
+              "Det er muleg å dele artiklar på nettsida i sosiale medium (Facebook, Twitter). Vidare handtering av data som blir delt i sosiale medium, vert regulert av din avtale med det aktuelle nettsamfunnet.",
+          },
+          {
+            title: "10. Innsyn, retting og sletting av personinformasjon",
+            text:
+              "Etter personopplysningsloven § 18 har du som privatperson krav på innsyn i dei opplysningar som er registrert om deg. Innsyn kan ein få ved å hendvende seg til Fresvik Produkt AS på epost: post@fresvik.no. Dersom registrerte opplysningar er uriktige, ufullstendige eller du ønskjer å slette dine opplysningar, kan ein krevje dette i henhold til personopplysningsloven § 27.",
           },
           {
             title: "11. Ansvarleg databehandlar",
             text:
-              "Dagleg leiar i Fresvik Produkt AS er ansvarleg for handsaming av personopplysningar, internkontroll og at eventuelle avvik frå gjeldande lovverk blir meldt inn og retta. Spørsmål kan sendast til post@fresvik.no.",
+              "Dagleg leiar i Fresvik Produkt AS er ansvarleg for handsaming av personopplysningar. Vedkommande er ansvarleg for at det vert gjennomført internkontrollar med omsyn til behandling av personopplysningar, og at evt. avvik frå gjeldande lovverk blir meldt inn og retta. Vi etterstrebar til einkvar tid å følgje gjeldande regelverk for personvern.Har du spørsmål, ta kontakt på post@fresvik.no.",
           },
         ],
       },
-    ],
-    todo: [
-      "Juridisk tekst er henta frå gammal side, men bør lesast av ansvarleg person før domene flyttast.",
-      "Oppdater omtale av cookies/analytics etter ny teknisk løysing på Vercel/Sanity.",
+      {
+        title: "Kontakt",
+        items: accessoryContactCards,
+      },
+      {
+        title: "Motta nyheitsbrev",
+        items: [
+          {
+            title: "Motta nyheitsbrev",
+            text:
+              "Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen.Sjå vår personvernerklæring.",
+            href: "/personvernerklering",
+            imageUrl: "/assets/fresvik/images/old-site/flake.png",
+            imageAlt: "flake.png",
+          },
+        ],
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
+      },
     ],
   },
   {

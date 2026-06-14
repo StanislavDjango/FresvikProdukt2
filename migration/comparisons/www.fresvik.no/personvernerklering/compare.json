@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/personvernerklering",
+  "newUrl": "http://127.0.0.1:3060/personvernerklering",
+  "checkedAt": "2026-06-14T18:06:21.827Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 42,
+    "missingTextBlocks": 0,
+    "oldLinks": 40,
+    "missingLinks": 0,
+    "oldImages": 7,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

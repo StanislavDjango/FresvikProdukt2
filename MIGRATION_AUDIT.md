@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-14T18:02:15.482Z
+Generated: 2026-06-14T18:07:14.439Z
 
 ## Summary
 
@@ -106,7 +106,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /kundeservice/faq | /kundeservice/faq | page | support | yes | yes | yes | 16/5 | yes | Covered as migrated page in local data. |
 | /monteringsanvisning | /monteringsanvisning | page | document | yes | yes | yes | 19/6 | yes | Covered as migrated page in local data. |
 | /monteringsanvisningar-fresvik-skyveport | /monteringsanvisningar-fresvik-skyveport | page | document | yes | yes | yes | 9/1 | yes | Covered as migrated page in local data. |
-| /personvernerklering | /personvernerklering | page | legal | yes | yes | yes | 0/0 | yes | Covered as migrated page in local data. |
+| /personvernerklering | /personvernerklering | page | legal | yes | yes | yes | 7/0 | yes | Covered as migrated page in local data. |
 | /produkt | /produkt | page | product | yes | yes | yes | 29/6 | yes | Covered as migrated page in local data. |
 | /produkt/fasadepanel | /produkt/fasadepanel | page | product | yes | yes | yes | 14/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | /produkt/fresvik-pur-panel | redirect | product | yes | yes | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
@@ -216,10 +216,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 416 |
+| Internal link references | 417 |
 | OK routes | 179 |
 | Redirect links | 19 |
-| Asset links OK | 218 |
+| Asset links OK | 219 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |

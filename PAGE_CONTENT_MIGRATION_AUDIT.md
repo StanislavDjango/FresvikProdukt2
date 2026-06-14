@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-06-14T18:02:17.507Z
+Generated: 2026-06-14T18:07:16.444Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -135,7 +135,7 @@ Next batch: `none`
 | support-company-legal | /kjolerom-fryserom-storkjokken | migrated | 5/5 | 3/3 | 2/0 | 27/38 | Strict content evidence is covered. |
 | support-company-legal | /kontakt | migrated | 2/2 | 1/1 | 2/0 | 26/35 | Strict content evidence is covered. |
 | support-company-legal | /kundeservice/faq | migrated | 27/27 | 16/5 | 2/0 | 58/38 | Strict content evidence is covered. |
-| support-company-legal | /personvernerklering | migrated | 13/13 | 0/0 | 2/0 | 26/35 | Strict content evidence is covered. |
+| support-company-legal | /personvernerklering | migrated | 13/13 | 7/0 | 2/0 | 38/35 | Strict content evidence is covered. |
 | support-company-legal | /stillingledig | migrated | 21/21 | 15/4 | 2/0 | 41/37 | Strict content evidence is covered. |
 | support-company-legal | /tilleggsutstyr | migrated | 3/3 | 31/12 | 2/0 | 39/35 | Strict content evidence is covered. |
 | support-company-legal | /tilsette | migrated | 0/0 | 35/14 | 2/0 | 31/35 | Structured index/list page: old body text was not extractable, but list links/images are covered. |

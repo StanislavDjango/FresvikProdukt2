@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/personvernerklering",
+  "finalUrl": "https://www.fresvik.no/personvernerklering",
+  "fetchedAt": "2026-06-14T18:03:59.513Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "General 1 — Fresvik Produkt",
+  "metaDescription": "",
+  "counts": {
+    "headings": 18,
+    "textBlocks": 55,
+    "links": 91,
+    "images": 16,
+    "documents": 2
+  }
+}

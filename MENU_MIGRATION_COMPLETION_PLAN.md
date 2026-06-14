@@ -102,8 +102,8 @@ LINK_CHECK_BASE_URL=http://127.0.0.1:3060 npm run check:links
 
 - [x] Цель: `/referansar` — oldUrl: `https://www.fresvik.no/referansar`; audit: `MANUAL_PAGE_AUDITS/referansar.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`; примечание: donor index cards, category links, footer/contact/certification blocks copied.
 - [x] Цель: `/aktuelt` — oldUrl: `https://www.fresvik.no/aktuelt`; audit: `MANUAL_PAGE_AUDITS/aktuelt.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`; примечание: donor news index cards, source links, footer/contact/certification blocks copied.
-- [ ] Цель: `/om-oss` — oldUrl: `https://www.fresvik.no/om-oss`; audit: `MANUAL_PAGE_AUDITS/om-oss.md`; статус: `pending`.
-- [ ] Цель: `/firmainfo` — oldUrl: `https://www.fresvik.no/firmainfo`; audit: `MANUAL_PAGE_AUDITS/firmainfo.md`; статус: `pending`.
+- [x] Цель: `/om-oss` — oldUrl: `https://www.fresvik.no/om-oss`; audit: `MANUAL_PAGE_AUDITS/om-oss.md`; статус: `redirect`; примечание: donor returns `302 location: /firmainfo`; local redirect added.
+- [x] Цель: `/firmainfo` — oldUrl: `https://www.fresvik.no/firmainfo`; audit: `MANUAL_PAGE_AUDITS/firmainfo.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`; примечание: donor company text, factory image, footer/contact/certification blocks copied.
 - [ ] Цель: `/tilsette` — oldUrl: `https://www.fresvik.no/tilsette`; audit: `MANUAL_PAGE_AUDITS/tilsette.md`; статус: `pending`; примечание: проверить сотрудников, фото, e-mail, phone.
 - [ ] Цель: `/stillingledig` — oldUrl: `https://www.fresvik.no/stillingledig`; audit: `MANUAL_PAGE_AUDITS/stillingledig.md`; статус: `pending`.
 

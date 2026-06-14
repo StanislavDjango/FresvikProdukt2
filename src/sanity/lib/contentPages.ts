@@ -136,6 +136,7 @@ const localMigrationStructurePaths = new Set([
   "/kundeservice/faq",
   "/referansar",
   "/aktuelt",
+  "/firmainfo",
 ]);
 
 const NEWS_INDEX_QUERY = defineQuery(`*[_type == "newsArticle"] | order(date desc, title asc) {

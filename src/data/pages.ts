@@ -3453,6 +3453,14 @@ export const contentPages: ContentPage[] = [
           "Teksten er henta frå gammal firmainfo-side og skal seinare inn i Sanity som redigerbart innhald.",
         items: [
           {
+            title: "Om Fresvik Produkt",
+            text:
+              "Fresvik Produkt er den einaste norske produsenten av isolasjonspanel, dører og portar til kjøle- og fryserom.",
+            imageUrl:
+              "/assets/fresvik/images/old-site/Fresvik+Produkt+-+Fabrikk-24.jpg",
+            imageAlt: "Fresvik Produkt fabrikk",
+          },
+          {
             title: "Fagkunnskap og samarbeid",
             text:
               "Fresvik Produkt oppgir at dei er den einaste norske produsenten av isolasjonspanel, dører og portar til kjøle- og fryserom. Visjonen er å vere den beste samarbeidspartnaren for kjøleentreprenørar.",
@@ -3469,10 +3477,22 @@ export const contentPages: ContentPage[] = [
           },
         ],
       },
-    ],
-    todo: [
-      "Kontroller organisasjonsnummer, formelle selskapsdata og eventuelle sertifikat før publisering.",
-      "Flytt firmateksten til Sanity `page` når innhaldsmodellen blir fylt.",
+      {
+        title: "Kontakt",
+        items: [
+          {
+            title: "Har du eit prosjekt du vil diskutere med oss?",
+            text: "Har du eit prosjekt du vil diskutere med oss?",
+            imageUrl: "/assets/fresvik/images/old-site/flake.png",
+            imageAlt: "flake.png",
+          },
+          ...accessoryContactCards,
+        ],
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
+      },
     ],
   },
   {

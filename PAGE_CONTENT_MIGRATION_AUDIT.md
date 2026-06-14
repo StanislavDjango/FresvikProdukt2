@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-06-14T17:39:10.004Z
+Generated: 2026-06-14T17:45:15.704Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -129,7 +129,7 @@ Next batch: `none`
 | references | /referansar/category/Framside-referansar | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /referansar. |
 | references | /referansar/category/Kjøle-+fryserom+butikk | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /referansar. |
 | references | /referansar/category/Storkjøkken-restaurant | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /referansar. |
-| support-company-legal | /firmainfo | migrated | 7/7 | 1/1 | 2/0 | 30/35 | Strict content evidence is covered. |
+| support-company-legal | /firmainfo | migrated | 7/7 | 9/1 | 2/0 | 41/35 | Strict content evidence is covered. |
 | support-company-legal | /kjolerom-fryserom-butikk | migrated | 6/6 | 2/2 | 2/0 | 27/39 | Strict content evidence is covered. |
 | support-company-legal | /kjolerom-fryserom-offshore | migrated | 17/17 | 17/17 | 2/0 | 27/35 | Strict content evidence is covered. |
 | support-company-legal | /kjolerom-fryserom-storkjokken | migrated | 5/5 | 3/3 | 2/0 | 27/38 | Strict content evidence is covered. |

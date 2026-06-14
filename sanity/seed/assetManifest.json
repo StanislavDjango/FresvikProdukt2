@@ -3360,6 +3360,25 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Fresvik+Produkt+-+Fabrikk-24.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Fresvik+Produkt+-+Fabrikk-24.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/firmainfo"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/firmainfo"
+    ],
+    "sha256": "a9df5ef86781d0f5c03f40cebe12713032d8bdb004c206d381b0903315478bef",
+    "fileSize": 682305,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/Fresvik+Produkt+NY-4.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/Fresvik+Produkt+NY-4.jpeg",
     "assetType": "image",
@@ -3865,6 +3884,7 @@
     "usedBy": [
       "/aktuelt",
       "/dokumentasjon",
+      "/firmainfo",
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
@@ -3878,6 +3898,7 @@
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/firmainfo",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
@@ -4068,6 +4089,7 @@
     "usedBy": [
       "/aktuelt",
       "/dokumentasjon",
+      "/firmainfo",
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
@@ -4081,6 +4103,7 @@
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/firmainfo",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
@@ -4107,6 +4130,7 @@
     "usedBy": [
       "/aktuelt",
       "/dokumentasjon",
+      "/firmainfo",
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
@@ -4120,6 +4144,7 @@
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/firmainfo",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
@@ -4616,6 +4641,7 @@
     "usedBy": [
       "/aktuelt",
       "/dokumentasjon",
+      "/firmainfo",
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
@@ -4629,6 +4655,7 @@
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/firmainfo",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
@@ -5556,6 +5583,7 @@
     "usedBy": [
       "/aktuelt",
       "/dokumentasjon",
+      "/firmainfo",
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
@@ -5571,6 +5599,7 @@
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/firmainfo",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
@@ -7832,6 +7861,7 @@
     "usedBy": [
       "/aktuelt",
       "/dokumentasjon",
+      "/firmainfo",
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
@@ -7845,6 +7875,7 @@
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/firmainfo",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
@@ -8718,6 +8749,7 @@
     "usedBy": [
       "/aktuelt",
       "/dokumentasjon",
+      "/firmainfo",
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
@@ -8731,6 +8763,7 @@
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/firmainfo",
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",

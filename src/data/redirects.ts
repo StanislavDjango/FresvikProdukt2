@@ -21,6 +21,11 @@ export const redirectRules: RedirectRule[] = [
     permanent: true,
   },
   {
+    source: "/om-oss",
+    destination: "/firmainfo",
+    permanent: false,
+  },
+  {
     source: "/tenester",
     destination: "/tenester/montasje",
     permanent: false,

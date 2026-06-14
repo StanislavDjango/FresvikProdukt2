@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-14T17:39:08.013Z
+Generated: 2026-06-14T17:45:13.715Z
 
 ## Summary
 
@@ -18,7 +18,7 @@ Generated: 2026-06-14T17:39:08.013Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 369 |
+| Local image assets | 370 |
 | Local document/PDF assets | 27 |
 | Asset originalUrls recovered in manifest | 308 |
 
@@ -97,7 +97,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /andre-produkter/pvc-gardiner | /tilleggsutstyr | redirect | product | yes | yes | no | 1/2 | no | Redirects to /tilleggsutstyr. |
 | /andre-produkter/standard-handtak | /tilleggsutstyr | redirect | product | yes | yes | no | 1/1 | no | Redirects to /tilleggsutstyr. |
 | /dokumentasjon | /dokumentasjon | page | document | yes | yes | yes | 9/1 | yes | Covered as migrated page in local data. |
-| /firmainfo | /firmainfo | page | page | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
+| /firmainfo | /firmainfo | page | page | yes | yes | yes | 9/1 | yes | Covered as migrated page in local data. |
 | /kjolerom-fryserom-butikk | /kjolerom-fryserom-butikk | page | support | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /kjolerom-fryserom-offshore | /kjolerom-fryserom-offshore | page | support | yes | yes | yes | 17/18 | yes | Covered as migrated page in local data. |
 | /kjolerom-fryserom-offshore-1 | /kjolerom-fryserom-offshore | redirect | support | yes | yes | no | 0/0 | no | Present in local legacyRoutes baseline but not present in current live sitemap. |
@@ -173,7 +173,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Local migrated image assets | 369 |
+| Local migrated image assets | 370 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |

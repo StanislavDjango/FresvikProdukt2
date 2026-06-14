@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/firmainfo",
+  "newUrl": "http://127.0.0.1:3060/firmainfo",
+  "checkedAt": "2026-06-14T17:45:07.933Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 17,
+    "missingTextBlocks": 0,
+    "oldLinks": 40,
+    "missingLinks": 0,
+    "oldImages": 8,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

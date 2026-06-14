@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/om-oss",
+  "finalUrl": "https://www.fresvik.no/firmainfo",
+  "fetchedAt": "2026-06-14T17:40:55.934Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Fresvik Produkt | Oppdag skreddersydde kjøleløsninger – Kontakt oss! — Fresvik Produkt",
+  "metaDescription": "Fresvik Produkt er den eneste norske produsenten av isolasjonspanel, dører og porter til kjøle- og fryserom, med kortreiste produkter og skreddersydde løsninger. Kontakt oss i dag!",
+  "counts": {
+    "headings": 9,
+    "textBlocks": 24,
+    "links": 93,
+    "images": 24,
+    "documents": 2
+  }
+}

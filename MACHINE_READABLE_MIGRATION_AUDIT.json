@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-14T17:39:08.013Z",
+    "generatedAt": "2026-06-14T17:45:13.715Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -14,7 +14,7 @@
     "needsReviewCount": 0,
     "unrecoverableCount": 6,
     "inventoryOnlyCount": 0,
-    "localImageAssets": 369,
+    "localImageAssets": 370,
     "localDocumentAssets": 27,
     "originalUrlsRecovered": 308,
     "routeStatusCounts": {
@@ -26,7 +26,7 @@
       "migrated": 271,
       "ignored-with-reason": 33,
       "duplicate": 47,
-      "unrecoverable": 82
+      "unrecoverable": 83
     },
     "documentStatusCounts": {
       "migrated": 25,
@@ -1119,9 +1119,9 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 1,
-      "localImageCount": 1,
+      "localImageCount": 9,
       "recoveryStatus": null,
       "recoveryNotes": [],
       "notes": "Covered as migrated page in local data."
@@ -5650,6 +5650,16 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
+      "oldPath": "/firmainfo",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/Fresvik+Produkt+-+Fabrikk-24.jpg",
+      "status": "unrecoverable",
+      "confidence": 0,
+      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+    },
+    {
+      "originalUrl": "TODO: unknown original URL",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
@@ -5870,7 +5880,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Poly.png",
@@ -5960,7 +5970,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Startbarnk.png",
@@ -5970,7 +5980,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/TG-2135.jpg",
@@ -6050,7 +6060,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/ce-logo-png-transparent.png",
@@ -6170,7 +6180,7 @@
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/13922f08-1a26-4996-98ca-874c87c1d3cb/flake.png",
-      "oldPath": "/aktuelt, /dokumentasjon, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /produkt/fasadepanel, /produkt/frysetunnel, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /produkt/fasadepanel, /produkt/frysetunnel, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/flake.png",
@@ -6420,7 +6430,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/sentral+godkjent.png",
@@ -6550,7 +6560,7 @@
     },
     {
       "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
+      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /referansar, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",

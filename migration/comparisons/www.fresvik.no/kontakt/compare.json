@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/kontakt",
+  "newUrl": "http://127.0.0.1:3060/kontakt",
+  "checkedAt": "2026-06-14T18:01:26.057Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 16,
+    "missingTextBlocks": 0,
+    "oldLinks": 42,
+    "missingLinks": 0,
+    "oldImages": 8,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

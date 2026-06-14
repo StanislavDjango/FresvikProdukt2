@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/kontakt",
+  "finalUrl": "https://www.fresvik.no/kontakt",
+  "fetchedAt": "2026-06-14T17:56:45.543Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Kontakt | Få hjelp – Kontakt oss i dag — Fresvik Produkt",
+  "metaDescription": "Kontakt Fresvik Produkt for forespørsler om isolasjonspaneler, kjøle- og frysedører, samt service og leveranser. Ta kontakt for prosjektinformasjon og tilbud.",
+  "counts": {
+    "headings": 10,
+    "textBlocks": 24,
+    "links": 97,
+    "images": 24,
+    "documents": 2
+  }
+}

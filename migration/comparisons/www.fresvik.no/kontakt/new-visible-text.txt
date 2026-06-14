@@ -1,0 +1,47 @@
+Prosjekt, sal og teknisk avklaring
+Kontakt Fresvik Produkt
+Har du eit prosjekt du vil diskutere? Vi hjelper med isolerte panel, kjøle- og fryseløysingar, levering, montasje og service.
+Direkte kontakt
+Eller finn rett salskontakt under. Vi svarar normalt innan ein arbeidsdag.
+Kontortid
+Man-fre 08-16
+Lokasjonar
+Fresvik og Drammen
+Kontakt oss
+Har du eit prosjekt du vil diskutere? Ta gjerne kontakt på post@fresvik.noKom direkte i kontakt med ein av oss: Sjå tilsette
+Hovudkontor
+Fresvik - Hovudkontor
+Fresvikvegen 9956896 Fresvik
+Salskontor
+Drammen - Salskontor
+Tollbugata 1053041 Drammen
+Salsavdeling
+Kom direkte i kontakt med ein av oss
+Vel personen som passar best for prosjektet ditt, eller send førespørselen til felles innboks.
+Fresvik
+Arne-Olav Lien Bardølsgård
+Drammen
+Lars Erling Livrud
+Noreg
+Frode Winther
+Prosjekt og sal
+Send førespørsel
+Fortel kort om behovet, så tek vi kontakt
+Skjemaet opnar ein ferdig e-post til Fresvik. Neste steg blir å koble dette til Sanity og ein server action/API for direkte sending.
+Fresvik Produkt AS
+Fresvikvegen 995,6896 FresvikTel: 57 69 83 00E-post: post@fresvik.no
+Salsavdeling Fresvik:
+Arne-Olav Lien BardølsgårdMob: 99 55 25 49arnbar@fresvik.no
+Salsavdeling Drammen:
+Lars Erling LivrudMob: 40 47 79 12larliv@fresvik.no
+Salsavdeling Drammen
+Frode WintherMob: 91 38 39 49frowin@fresvik.no
+Motta nyheitsbrev
+Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen.Sjå vår personvernerklæring.
+PersonvernerklæringOpenheitslovaNettside levert av GASTA
+Fresvik Produkt AS leverer isolerte panel, kjøle- og fryseløysingar, montasje og service til norske prosjekt.
+Fresvikvegen 995, 6896 Fresvik
+Nettstad
+Informasjon
+© Fresvik Produkt AS
+Modernisert med Next.js, Sanity og Vercel.

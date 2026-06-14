@@ -109,7 +109,7 @@ LINK_CHECK_BASE_URL=http://127.0.0.1:3060 npm run check:links
 
 ## Очередь 5: Kontakt И Footer Pages
 
-- [ ] Цель: `/kontakt` — oldUrl: `https://www.fresvik.no/kontakt`; audit: `MANUAL_PAGE_AUDITS/kontakt.md`; статус: `pending`; примечание: не ломать существующий route `/kontakt`.
+- [x] Цель: `/kontakt` — oldUrl: `https://www.fresvik.no/kontakt`; audit: `MANUAL_PAGE_AUDITS/kontakt.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`; примечание: existing route preserved, donor contact/footer/certification blocks copied.
 - [ ] Цель: `/personvernerklering` — oldUrl: `https://www.fresvik.no/personvernerklering`; audit: `MANUAL_PAGE_AUDITS/personvernerklering.md`; статус: `pending`.
 - [ ] Цель: `/openheitslova` — oldUrl: `https://www.fresvik.no/openheitslova`; audit: `MANUAL_PAGE_AUDITS/openheitslova.md`; статус: `pending`.
 

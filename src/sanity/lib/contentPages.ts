@@ -140,6 +140,7 @@ const localMigrationStructurePaths = new Set([
   "/tilsette",
   "/stillingledig",
   "/personvernerklering",
+  "/openheitslova",
 ]);
 
 const NEWS_INDEX_QUERY = defineQuery(`*[_type == "newsArticle"] | order(date desc, title asc) {

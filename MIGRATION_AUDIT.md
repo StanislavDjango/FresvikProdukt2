@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-14T18:07:14.439Z
+Generated: 2026-06-14T18:17:49.110Z
 
 ## Summary
 
@@ -19,8 +19,8 @@ Generated: 2026-06-14T18:07:14.439Z
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
 | Local image assets | 385 |
-| Local document/PDF assets | 27 |
-| Asset originalUrls recovered in manifest | 308 |
+| Local document/PDF assets | 30 |
+| Asset originalUrls recovered in manifest | 312 |
 
 Do not treat the migration as complete while any route, asset, document or link remains `partial`, `missing`, `needs-review`, `inventory-only`, `thumbnail-or-variant` or `local-only`.
 
@@ -195,9 +195,12 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf | Dokument | migrated | yes | 38764 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
 | /assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf | Dokument | migrated | yes | 3418684 | https://www.fresvik.no/s/Montasjeanvisning-5010-for-2150.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf | Dokument | migrated | yes | 3531249 | https://www.fresvik.no/s/Montasjeanvisning-5010-for-3530-og-7530.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf | Aktsemdvurdering 2024 | migrated | yes | 201642 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
-| /assets/fresvik/documents/openheitslova-rutine-plikter.pdf | Rutine for oppfylling av plikter etter Openheitslova | migrated | yes | 276631 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
-| /assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf | Utgreiing 2024 | migrated | yes | 268546 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
+| /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf | openheitslova-aktsemdvurderingar-2024 | needs-review | no | 201642 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
+| /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf | openheitslova-aktsemdvurderingar-2025 | migrated | yes | 102216 | https://www.fresvik.no/s/Aktsemdvurderingar-2025.pdf | Recovered likely old URL with confidence 0.20. |
+| /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf | openheitslova-rutine-plikter-2025 | migrated | yes | 276631 | https://www.fresvik.no/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | Recovered likely old URL with confidence 0.20. |
+| /assets/fresvik/documents/openheitslova-rutine-plikter.pdf | openheitslova-rutine-plikter | needs-review | no | 276631 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
+| /assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf | openheitslova-utgreiing-2024-signert | needs-review | no | 268546 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
+| /assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf | openheitslova-utgreiing-2025-signert | migrated | yes | 249038 | https://www.fresvik.no/s/2025-Utgreiing-signert.pdf | Recovered likely old URL with confidence 0.20. |
 | /assets/fresvik/documents/pir-panel-montasjeanvisning.pdf | PIR-Paneler montasjeanvisning (legacy duplicate) | migrated | yes | 1031884 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.40. |
 | /assets/fresvik/documents/pir-panel.pdf | PIR-Paneler produktblad | migrated | yes | 302439 | https://www.fresvik.no/s/PIR.pdf | Recovered likely old URL with confidence 0.50. |
 | /assets/fresvik/documents/produktblad-fresvik-skyveport.pdf | Produktblad Fresvik Skyveport | migrated | yes | 1648458 | https://www.fresvik.no/s/Produktblad-Fresvik-Skyveport.pdf | Recovered likely old URL with confidence 1.00. |
@@ -207,7 +210,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf | Dokument | migrated | yes | 58526 | https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf | Dokument | migrated | yes | 253758 | https://www.fresvik.no/s/7060s-fnfz.pdf | Recovered likely old URL with confidence 0.33. |
 | /assets/fresvik/documents/sintef-produktsertifikat.pdf | sintef-produktsertifikat | needs-review | no | 439904 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
-| /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf | Dokument | migrated | yes | 439904 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
+| /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf | Dokument | migrated | yes | 439904 | https://www.fresvik.no/s/2135g-5.pdf | Recovered likely old URL with confidence 0.25. |
 | /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf | sintef-teknisk-godkjenning | needs-review | no | 253758 | TODO: unknown original URL | Exact old PDF URL was not recoverable from sitemap/local source data. |
 | /assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf | Dokument | migrated | yes | 2177053 | https://www.fresvik.no/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf | Recovered likely old URL with confidence 0.75. |
 | /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf | Dokument | migrated | yes | 882067 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
@@ -216,10 +219,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 417 |
+| Internal link references | 414 |
 | OK routes | 179 |
-| Redirect links | 19 |
-| Asset links OK | 219 |
+| Redirect links | 22 |
+| Asset links OK | 213 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -243,6 +246,9 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /s/Endre-Skyveretning.pdf | src/data/pages.ts:1470 | redirect | Redirects to /assets/fresvik/documents/endre-skyveretning.pdf. |
 | /s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf | src/data/pages.ts:1475 | redirect | Redirects to /assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf. |
 | /om-oss/fresvik-produkt | src/data/pages.ts:3434 | redirect | Redirects to /firmainfo. |
+| /s/Aktsemdvurderingar-2025.pdf | src/data/oldSiteInventory.ts:801 | redirect | Redirects to /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf. |
+| /s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | src/data/oldSiteInventory.ts:805 | redirect | Redirects to /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf. |
+| /s/2025-Utgreiing-signert.pdf | src/data/oldSiteInventory.ts:809 | redirect | Redirects to /assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf. |
 
 ## External links
 
@@ -282,6 +288,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | https://www.sogn.no/fresvik | src/data/pages.ts: | external-reference | keep |
 | https://www.fresvik.no/personvernerklering | src/data/pages.ts: | source-url | keep |
 | https://www.fresvik.no/openheitslova | src/data/pages.ts: | source-url | keep |
+| https://lovdata.no/dokument/NL/lov/2021-06-18-99 | src/data/pages.ts: | legal-reference | keep |
 | https://www.fresvik.no${slug} | src/data/pages.ts: | source-url | keep |
 | https://lovdata.no/dokument/NL/lov/2021-06-18-99 | src/data/oldSiteInventory.ts: | legal-reference | keep |
 
@@ -303,10 +310,16 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | type | target | status | task |
 | --- | --- | --- | --- |
+| document | /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf | needs-review | Exact old PDF URL was not recoverable from sitemap/local source data. |
+| document | /assets/fresvik/documents/openheitslova-rutine-plikter.pdf | needs-review | Exact old PDF URL was not recoverable from sitemap/local source data. |
+| document | /assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf | needs-review | Exact old PDF URL was not recoverable from sitemap/local source data. |
 | document | /assets/fresvik/documents/sintef-produktsertifikat.pdf | needs-review | Exact old PDF URL was not recoverable from sitemap/local source data. |
 | document | /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf | needs-review | Exact old PDF URL was not recoverable from sitemap/local source data. |
 
 ## Final TODO list
 
+- document: /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf [needs-review] - Exact old PDF URL was not recoverable from sitemap/local source data.
+- document: /assets/fresvik/documents/openheitslova-rutine-plikter.pdf [needs-review] - Exact old PDF URL was not recoverable from sitemap/local source data.
+- document: /assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf [needs-review] - Exact old PDF URL was not recoverable from sitemap/local source data.
 - document: /assets/fresvik/documents/sintef-produktsertifikat.pdf [needs-review] - Exact old PDF URL was not recoverable from sitemap/local source data.
 - document: /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf [needs-review] - Exact old PDF URL was not recoverable from sitemap/local source data.

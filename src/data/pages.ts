@@ -3803,14 +3803,21 @@ export const contentPages: ContentPage[] = [
         title: "Tekst frå gammal Openheitslova-side",
         items: [
           {
-            title: "Arbeid med krava i lova",
+            title: "Openheitslova",
             text:
-              "Fresvik Produkt oppgir at dei er opptekne av problemstillinga og gjennomfører kontinuerleg tiltak for å tilfredsstille krava i lova.",
+              "I Fresvik Produkt er vi opptekne av problemstillinga, og gjennomfører kontinuerlig tiltak for å tilfredsstille krava i lova. På bakgrunn av §5 i openheitslova skal vi offentleggjere ei utgreiing, som du kan laste ned på lenka under.",
           },
           {
-            title: "Utgreiing og dokument",
+            title: "Personvernerklæring",
             text:
-              "På bakgrunn av §5 i openheitslova skal verksemda offentleggjere ei utgreiing. Dokumentlenkene frå gammal side er lagt inn som eksterne kjelder og bør importerast til Sanity assets.",
+              "Sjå personvernerklæringa vår for korleis vi behandlar personlege data.",
+            href: "/personvernerklering",
+          },
+          {
+            title: "Meir om openheitslova",
+            text:
+              "Heile lova, “Lov om virksomheters åpenhet og arbeid med grunnleggende menneskerettigheter og anstendige arbeidsforhold”, finn du på Lovdata.",
+            href: "https://lovdata.no/dokument/NL/lov/2021-06-18-99",
           },
         ],
       },
@@ -3818,10 +3825,27 @@ export const contentPages: ContentPage[] = [
         title: "Dokument og eksterne kjelder",
         items: legalDocumentCards,
       },
-    ],
-    todo: [
-      "Kvalitetssikre juridisk tekst og PDF-versjonar før domene flyttast.",
-      "Importer PDF-ar til Sanity `documentFile` eller `public/assets/fresvik/documents/`.",
+      {
+        title: "Kontakt",
+        items: accessoryContactCards,
+      },
+      {
+        title: "Motta nyheitsbrev",
+        items: [
+          {
+            title: "Motta nyheitsbrev",
+            text:
+              "Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen.Sjå vår personvernerklæring.",
+            href: "/personvernerklering",
+            imageUrl: "/assets/fresvik/images/old-site/flake.png",
+            imageAlt: "flake.png",
+          },
+        ],
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
+      },
     ],
   },
 ];

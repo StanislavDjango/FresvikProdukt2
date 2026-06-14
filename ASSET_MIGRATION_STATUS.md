@@ -6,29 +6,29 @@ Generated from local migration cache and source data.
 
 | Metric | Count |
 | --- | ---: |
-| Total assets found | 412 |
+| Total assets found | 415 |
 | Images | 385 |
-| PDFs/documents | 27 |
+| PDFs/documents | 30 |
 | Other assets | 0 |
 | Used assets | 282 |
 | Unused assets | 120 |
 | Missing assets | 0 |
 | Duplicate assets | 7 |
-| Ready for Sanity | 63 |
+| Ready for Sanity | 66 |
 | Uploaded to Sanity | 222 |
 | Failed or needs review | 0 |
-| TODO original URLs | 104 |
+| TODO original URLs | 103 |
 
 ## Status Counts
 
 - `duplicate`: 7
-- `ready-for-sanity`: 63
+- `ready-for-sanity`: 66
 - `unused`: 120
 - `uploaded-to-sanity`: 222
 
 ## Local Path Usage
 
-85 routes/documents still use local `/assets/fresvik` paths while assets wait for Sanity import.
+110 routes/documents still use local `/assets/fresvik` paths while assets wait for Sanity import.
 
 - `/`
 - `/aktuelt`
@@ -107,6 +107,31 @@ Generated from local migration cache and source data.
 - `/referansar/restauranthuset-malin`
 - `/referansar/spesialloysing-torkerom-drageboden-kaupanger`
 - `/referansar/vik-helse-og-omsorgssenter`
+- `/s/2025-Utgreiing-signert.pdf`
+- `/s/2135g-5.pdf`
+- `/s/7060s-fnfz.pdf`
+- `/s/Aktsemdvurderingar-2025.pdf`
+- `/s/Endre-Skyveretning.pdf`
+- `/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf`
+- `/s/Fresvik-Dr-Montasjeanvisning.pdf`
+- `/s/Fresvik-Fryserom-Montasjeanvisning.pdf`
+- `/s/Fresvik-Kjlerom-Montasjeanvisning.pdf`
+- `/s/Fresvik-Port-Montasjeanvisning.pdf`
+- `/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf`
+- `/s/Koblingsskjema-Fermod-5010.pdf`
+- `/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf`
+- `/s/Miljdokument-Fresvik-Produkt.pdf`
+- `/s/Montasjeanvisning-5010-for-2150.pdf`
+- `/s/Montasjeanvisning-5010-for-3530-og-7530.pdf`
+- `/s/PIR-ProduktbladFP.pdf`
+- `/s/PIR.pdf`
+- `/s/PUR-ProduktbladFP.pdf`
+- `/s/PUR-ce-merke.pdf`
+- `/s/Produktblad-Fresvik-Skyveport.pdf`
+- `/s/Quick-Start-5010Exp-indB.pdf`
+- `/s/Sentral-Godkjenning-Fresvik-Produkt.pdf`
+- `/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf`
+- `/s/Ytelseserklring-Fresvik-Produkt.pdf`
 - `/stillingledig`
 - `/tenester`
 - `/tenester/leveranse`

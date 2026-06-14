@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/openheitslova",
+  "finalUrl": "https://www.fresvik.no/openheitslova",
+  "fetchedAt": "2026-06-14T18:08:56.324Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Openheitslova | Vis åpenhet i bygg og arbeidsmiljø — Fresvik Produkt",
+  "metaDescription": "Fresvik Produkt fremmer åpenhet og menneskerettigheter gjennom sine byggeløsninger og tilbyr omfattende tjenester. Lær mer om våre tiltak og løsninger i samsvar med openheitslova.",
+  "counts": {
+    "headings": 9,
+    "textBlocks": 26,
+    "links": 96,
+    "images": 16,
+    "documents": 5
+  }
+}

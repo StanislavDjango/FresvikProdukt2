@@ -101,6 +101,25 @@ export const redirectRules: RedirectRule[] = [
     permanent: true,
   },
   {
+    source: "/s/Aktsemdvurderingar-2025.pdf",
+    destination:
+      "/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf",
+    permanent: true,
+  },
+  {
+    source:
+      "/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf",
+    destination:
+      "/assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf",
+    permanent: true,
+  },
+  {
+    source: "/s/2025-Utgreiing-signert.pdf",
+    destination:
+      "/assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf",
+    permanent: true,
+  },
+  {
     source: "/s/2135g-5.pdf",
     destination: "/assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf",
     permanent: true,

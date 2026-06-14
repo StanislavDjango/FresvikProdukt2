@@ -318,6 +318,25 @@ function collectAssetUsageFromSeed(usage) {
   }
 }
 
+function collectAssetUsageFromRedirects(usage, redirectRules) {
+  const originalUrlsByDestination = new Map();
+
+  for (const rule of redirectRules) {
+    if (!rule.destination?.startsWith("/assets/fresvik/")) continue;
+
+    const sourceUrl = rule.source?.startsWith("/")
+      ? `https://www.fresvik.no${rule.source}`
+      : rule.source;
+    addToUsage(usage, rule.destination, [rule.source], [sourceUrl]);
+
+    if (sourceUrl) {
+      originalUrlsByDestination.set(rule.destination, sourceUrl);
+    }
+  }
+
+  return originalUrlsByDestination;
+}
+
 function loadExistingManifest() {
   if (!existsSync(manifestPath)) return new Map();
 
@@ -377,6 +396,10 @@ async function buildManifest() {
     path.join(tempDir, "node_modules", "@", "data", "oldSiteContentExtract.js"),
   );
   compileTs(path.join(root, "src", "data", "pages.ts"), path.join(tempDir, "pages.js"));
+  compileTs(
+    path.join(root, "src", "data", "redirects.ts"),
+    path.join(tempDir, "redirects.js"),
+  );
 
   const inventory = require(path.join(
     tempDir,
@@ -386,11 +409,13 @@ async function buildManifest() {
     "oldSiteInventory.js",
   ));
   const { getAllContentPages } = require(path.join(tempDir, "pages.js"));
+  const { redirectRules } = require(path.join(tempDir, "redirects.js"));
 
   const usage = new Map();
   collectAssetUsageFromInventory(usage, inventory);
   collectAssetUsageFromPages(usage, getAllContentPages());
   collectAssetUsageFromSeed(usage);
+  const redirectOriginalUrls = collectAssetUsageFromRedirects(usage, redirectRules);
 
   const existing = loadExistingManifest();
   const filePaths = await listFiles(assetRoot);
@@ -411,14 +436,21 @@ async function buildManifest() {
     const usedBy = [...(usage.get(localPath)?.usedBy || [])].sort();
     const sourcePages = [...(usage.get(localPath)?.sourcePages || [])].sort();
     const knownOriginalUrl = knownOriginalUrls.get(localPath);
+    const redirectOriginalUrl = redirectOriginalUrls.get(localPath);
     const originalUrl =
       previous?.originalUrl && !previous.originalUrl.startsWith("TODO")
         ? previous.originalUrl
-        : knownOriginalUrl || previous?.originalUrl || "TODO: unknown original URL";
+        : knownOriginalUrl ||
+          redirectOriginalUrl ||
+          previous?.originalUrl ||
+          "TODO: unknown original URL";
     const notes =
       knownOriginalUrl &&
       String(previous?.notes || "").includes("TODO: exact original remote asset URL")
         ? "Recovered originalUrl from live old /startside sitemap."
+        : redirectOriginalUrl &&
+            String(previous?.notes || "").includes("TODO: exact original remote asset URL")
+          ? "Recovered originalUrl from local redirect source."
         : previous?.notes || "";
 
     baseEntries.push({

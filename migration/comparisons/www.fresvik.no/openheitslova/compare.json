@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/openheitslova",
+  "newUrl": "http://127.0.0.1:3060/openheitslova",
+  "checkedAt": "2026-06-14T18:11:08.662Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 18,
+    "missingTextBlocks": 0,
+    "oldLinks": 44,
+    "missingLinks": 0,
+    "oldImages": 7,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

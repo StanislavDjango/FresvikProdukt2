@@ -111,18 +111,18 @@ LINK_CHECK_BASE_URL=http://127.0.0.1:3060 npm run check:links
 
 - [x] Цель: `/kontakt` — oldUrl: `https://www.fresvik.no/kontakt`; audit: `MANUAL_PAGE_AUDITS/kontakt.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`; примечание: existing route preserved, donor contact/footer/certification blocks copied.
 - [x] Цель: `/personvernerklering` — oldUrl: `https://www.fresvik.no/personvernerklering`; audit: `MANUAL_PAGE_AUDITS/personvernerklering.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`; примечание: exact donor privacy text, contact/footer/certification blocks copied.
-- [ ] Цель: `/openheitslova` — oldUrl: `https://www.fresvik.no/openheitslova`; audit: `MANUAL_PAGE_AUDITS/openheitslova.md`; статус: `pending`.
+- [x] Цель: `/openheitslova` — oldUrl: `https://www.fresvik.no/openheitslova`; audit: `MANUAL_PAGE_AUDITS/openheitslova.md`; статус: `migrated`; compare: `0 text / 0 images / 0 links missing`; примечание: live 2025 PDF links preserved via local redirects, donor text/footer/certification blocks copied.
 
 ## После Закрытия Всех Пунктов Меню
 
-- [ ] Пересобрать `MIGRATION_AUDIT.md`.
-- [ ] Пересобрать `MACHINE_READABLE_MIGRATION_AUDIT.json`.
-- [ ] Пересобрать `PAGE_CONTENT_MIGRATION_AUDIT.md`.
-- [ ] Пересобрать `MACHINE_READABLE_PAGE_CONTENT_AUDIT.json`.
-- [ ] Проверить, что `partial`, `missing`, `needs-review` остались только с явной внешней причиной.
-- [ ] Проверить, что broken internal links = `0`.
-- [ ] Проверить, что все PDF имеют `oldUrl`, `localPath`, `title`, `sourcePage`, `fileSize`, `usedBy`, `status`.
-- [ ] Проверить, что все sitemap/HTML images имеют статус `migrated`, `duplicate`, `thumbnail-or-variant`, `ignored-with-reason`, `external-only` или `missing`.
+- [x] Пересобрать `MIGRATION_AUDIT.md`.
+- [x] Пересобрать `MACHINE_READABLE_MIGRATION_AUDIT.json`.
+- [x] Пересобрать `PAGE_CONTENT_MIGRATION_AUDIT.md`.
+- [x] Пересобрать `MACHINE_READABLE_PAGE_CONTENT_AUDIT.json`.
+- [x] Проверить, что `partial`, `missing`, `needs-review` остались только с явной внешней причиной; routes: `partial=0`, `missing=0`, `needs-review=0`, documents: `25 migrated`, `5 needs-review` с documented unrecoverable old URL.
+- [x] Проверить, что broken internal links = `0`.
+- [x] Проверить, что все PDF имеют `oldUrl`, `localPath`, `title`, `sourcePage`, `fileSize`, `usedBy`, `status`; 5 historical/duplicate local PDFs remain `needs-review` because exact old URL is not recoverable.
+- [x] Проверить, что все sitemap/HTML images имеют статус `migrated`, `duplicate`, `ignored-with-reason` или `unrecoverable`; current audit has no `missing`, `thumbnail-or-variant`, `external-only` or `local-only` image leftovers.
 
 ## Финальный Checkpoint Перед Следующей Фазой
 

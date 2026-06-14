@@ -6,10 +6,12 @@
     "assetType": "document",
     "usedBy": [
       "/monteringsanvisningar-fresvik-skyveport",
+      "/s/Endre-Skyveretning.pdf",
       "documentFile-assets-fresvik-documents-endre-skyveretning-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport"
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/s/Endre-Skyveretning.pdf"
     ],
     "sha256": "8fa892ff3bfd0c0ae363c22e4d9dbb15d0068dfa97fe10c511f2e16671926a83",
     "fileSize": 174280,
@@ -32,10 +34,12 @@
     "assetType": "document",
     "usedBy": [
       "/produkt/fresvik-pir-panel",
+      "/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf",
       "documentFile-assets-fresvik-documents-fp-pir-paneler-montasjeanvisning-nov-2025-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt/fresvik-pir-panel"
+      "https://www.fresvik.no/produkt/fresvik-pir-panel",
+      "https://www.fresvik.no/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf"
     ],
     "sha256": "60d17bf1ddce35d249117bb998be04b8b38781077e0e1d343af1ebed10afcaa6",
     "fileSize": 1031884,
@@ -58,10 +62,12 @@
     "assetType": "document",
     "usedBy": [
       "/monteringsanvisning",
+      "/s/Fresvik-Dr-Montasjeanvisning.pdf",
       "documentFile-assets-fresvik-documents-fresvik-dor-montasjeanvisning-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/monteringsanvisning"
+      "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/s/Fresvik-Dr-Montasjeanvisning.pdf"
     ],
     "sha256": "fd02d6fb2d2374321141f3cac0ec43254b4c063f25b1afd618ec1f81ff739081",
     "fileSize": 4217580,
@@ -84,10 +90,12 @@
     "assetType": "document",
     "usedBy": [
       "/monteringsanvisning",
+      "/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
       "documentFile-assets-fresvik-documents-fresvik-fryserom-montasjeanvisning-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/monteringsanvisning"
+      "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf"
     ],
     "sha256": "45d995ef8ccdf4579e866ce73629fab0abc47aba1c9684514b703a0d3474e818",
     "fileSize": 1929048,
@@ -110,10 +118,12 @@
     "assetType": "document",
     "usedBy": [
       "/monteringsanvisning",
+      "/s/Fresvik-Kjlerom-Montasjeanvisning.pdf",
       "documentFile-assets-fresvik-documents-fresvik-kjolerom-montasjeanvisning-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/monteringsanvisning"
+      "https://www.fresvik.no/monteringsanvisning",
+      "https://www.fresvik.no/s/Fresvik-Kjlerom-Montasjeanvisning.pdf"
     ],
     "sha256": "0a7cc9d9b8eeca2d9fc4eaadd84fef0e68ea06523ec8300f5cd44fa9c8405a45",
     "fileSize": 1596484,
@@ -137,11 +147,13 @@
     "usedBy": [
       "/monteringsanvisning",
       "/produkt/kjole-fryseportar",
+      "/s/Fresvik-Port-Montasjeanvisning.pdf",
       "documentFile-assets-fresvik-documents-fresvik-port-montasjeanvisning-pdf"
     ],
     "sourcePages": [
       "https://www.fresvik.no/monteringsanvisning",
-      "https://www.fresvik.no/produkt/kjole-fryseportar"
+      "https://www.fresvik.no/produkt/kjole-fryseportar",
+      "https://www.fresvik.no/s/Fresvik-Port-Montasjeanvisning.pdf"
     ],
     "sha256": "678fc58b2f04714fd3b340525546be35c5cae7db9f27b90dacde9657f436eb08",
     "fileSize": 6789859,
@@ -164,10 +176,12 @@
     "assetType": "document",
     "usedBy": [
       "/monteringsanvisningar-fresvik-skyveport",
+      "/s/Koblingsskjema-Fermod-5010.pdf",
       "documentFile-assets-fresvik-documents-koblingsskjema-fermod-5010-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport"
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/s/Koblingsskjema-Fermod-5010.pdf"
     ],
     "sha256": "75aed3e0f94fbccd3ded2b3b359f0e5e40c5af91ec3513f6ef405df74b1180c3",
     "fileSize": 2166231,
@@ -190,10 +204,12 @@
     "assetType": "document",
     "usedBy": [
       "/dokumentasjon",
+      "/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf",
       "documentFile-assets-fresvik-documents-leveringsvilkar-fresvik-produkt-2023-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon"
+      "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf"
     ],
     "sha256": "89635550d26e97c1b8157c89536bb3e4d824998bc13476483f973a57d717fb8c",
     "fileSize": 350922,
@@ -216,10 +232,12 @@
     "assetType": "document",
     "usedBy": [
       "/dokumentasjon",
+      "/s/Miljdokument-Fresvik-Produkt.pdf",
       "documentFile-assets-fresvik-documents-miljodokument-fresvik-produkt-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon"
+      "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf"
     ],
     "sha256": "663b18bd9fa6040376dd2b2207af3bae913fa5f39c7456a935585eacc35170aa",
     "fileSize": 38764,
@@ -242,10 +260,12 @@
     "assetType": "document",
     "usedBy": [
       "/monteringsanvisningar-fresvik-skyveport",
+      "/s/Montasjeanvisning-5010-for-2150.pdf",
       "documentFile-assets-fresvik-documents-montasjeanvisning-5010-for-2150-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport"
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/s/Montasjeanvisning-5010-for-2150.pdf"
     ],
     "sha256": "046b1c2f26cee834ff07b0d4809ce0ec9d2b4021c83eb4e32425b5e317cd1eb9",
     "fileSize": 3418684,
@@ -268,10 +288,12 @@
     "assetType": "document",
     "usedBy": [
       "/monteringsanvisningar-fresvik-skyveport",
+      "/s/Montasjeanvisning-5010-for-3530-og-7530.pdf",
       "documentFile-assets-fresvik-documents-montasjeanvisning-5010-for-3530-og-7530-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport"
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/s/Montasjeanvisning-5010-for-3530-og-7530.pdf"
     ],
     "sha256": "f9acf43035a3d3f6e5b97571fffae9a3d9a387244a59f0bb056fa0c2e6c62088",
     "fileSize": 3531249,
@@ -292,13 +314,8 @@
     "localPath": "/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf",
     "filePath": "public/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf",
     "assetType": "document",
-    "usedBy": [
-      "/openheitslova",
-      "documentFile-assets-fresvik-documents-openheitslova-aktsemdvurderingar-2024-pdf"
-    ],
-    "sourcePages": [
-      "https://www.fresvik.no/openheitslova"
-    ],
+    "usedBy": [],
+    "sourcePages": [],
     "sha256": "130a9f106eac1c91d60e62d82a40a1c7a93263abd45e92f218a1b59564aaf19b",
     "fileSize": 201642,
     "sanityAssetId": "file-6309dd9c873c80855975441bdf3f67016b389eca-pdf",
@@ -311,20 +328,53 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-6309dd9c873c80855975441bdf3f67016b389eca-pdf."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-6309dd9c873c80855975441bdf3f67016b389eca-pdf. Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://www.fresvik.no/s/Aktsemdvurderingar-2025.pdf",
+    "localPath": "/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf",
+    "filePath": "public/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf",
+    "assetType": "document",
+    "usedBy": [
+      "/s/Aktsemdvurderingar-2025.pdf"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/s/Aktsemdvurderingar-2025.pdf"
+    ],
+    "sha256": "c47a2fd1c1040bdba68c0b32c2ddb0121e098d9ddd81f3259292d06da32917d3",
+    "fileSize": 102216,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "file asset",
+    "notes": "Recovered originalUrl from local redirect source."
+  },
+  {
+    "originalUrl": "https://www.fresvik.no/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf",
+    "localPath": "/assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf",
+    "filePath": "public/assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf",
+    "assetType": "document",
+    "usedBy": [
+      "/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf"
+    ],
+    "sha256": "2cc48c3ee1e51b50b66632bc8d211836017088ae41ee912616e2aa35408aca34",
+    "fileSize": 276631,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "file asset",
+    "notes": "Recovered originalUrl from local redirect source."
   },
   {
     "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/documents/openheitslova-rutine-plikter.pdf",
     "filePath": "public/assets/fresvik/documents/openheitslova-rutine-plikter.pdf",
     "assetType": "document",
-    "usedBy": [
-      "/openheitslova",
-      "documentFile-assets-fresvik-documents-openheitslova-rutine-plikter-pdf"
-    ],
-    "sourcePages": [
-      "https://www.fresvik.no/openheitslova"
-    ],
+    "usedBy": [],
+    "sourcePages": [],
     "sha256": "2cc48c3ee1e51b50b66632bc8d211836017088ae41ee912616e2aa35408aca34",
     "fileSize": 276631,
     "sanityAssetId": "file-73d76ff3f4036bd901d31ea3b57fc2a473dff192-pdf",
@@ -337,20 +387,15 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-73d76ff3f4036bd901d31ea3b57fc2a473dff192-pdf."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-73d76ff3f4036bd901d31ea3b57fc2a473dff192-pdf. Duplicate file content of /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf. Unused local migration cache file; keep until asset review is complete."
   },
   {
     "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf",
     "filePath": "public/assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf",
     "assetType": "document",
-    "usedBy": [
-      "/openheitslova",
-      "documentFile-assets-fresvik-documents-openheitslova-utgreiing-2024-signert-pdf"
-    ],
-    "sourcePages": [
-      "https://www.fresvik.no/openheitslova"
-    ],
+    "usedBy": [],
+    "sourcePages": [],
     "sha256": "9c0dc19d532ccba0092b9e267f24b64d70d53a08ddac99b19cd81bbcfabc545a",
     "fileSize": 268546,
     "sanityAssetId": "file-9d76a9e981639a76bbf7742be404a05ba46688ed-pdf",
@@ -363,7 +408,26 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-9d76a9e981639a76bbf7742be404a05ba46688ed-pdf."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-9d76a9e981639a76bbf7742be404a05ba46688ed-pdf. Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "https://www.fresvik.no/s/2025-Utgreiing-signert.pdf",
+    "localPath": "/assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf",
+    "filePath": "public/assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf",
+    "assetType": "document",
+    "usedBy": [
+      "/s/2025-Utgreiing-signert.pdf"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/s/2025-Utgreiing-signert.pdf"
+    ],
+    "sha256": "cf9f21897b01d9a1ef09beb05ee41372b3ed4fee11ee495cbdb6c5c9eda0b921",
+    "fileSize": 249038,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "file asset",
+    "notes": "Recovered originalUrl from local redirect source."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
@@ -398,10 +462,14 @@
     "assetType": "document",
     "usedBy": [
       "/produkt/fresvik-pir-panel",
+      "/s/PIR-ProduktbladFP.pdf",
+      "/s/PIR.pdf",
       "documentFile-assets-fresvik-documents-pir-panel-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt/fresvik-pir-panel"
+      "https://www.fresvik.no/produkt/fresvik-pir-panel",
+      "https://www.fresvik.no/s/PIR-ProduktbladFP.pdf",
+      "https://www.fresvik.no/s/PIR.pdf"
     ],
     "sha256": "eeaae14f9c804c28431b0a4704b5d9d389cecbe2217475746d33a71e86baeb4f",
     "fileSize": 302439,
@@ -424,10 +492,12 @@
     "assetType": "document",
     "usedBy": [
       "/produkt/kjole-fryseportar",
+      "/s/Produktblad-Fresvik-Skyveport.pdf",
       "documentFile-assets-fresvik-documents-produktblad-fresvik-skyveport-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt/kjole-fryseportar"
+      "https://www.fresvik.no/produkt/kjole-fryseportar",
+      "https://www.fresvik.no/s/Produktblad-Fresvik-Skyveport.pdf"
     ],
     "sha256": "1550154bc7a37fd187eecda74607cfc736efe1e58d82d02703bccc9a377be7ea",
     "fileSize": 1648458,
@@ -459,6 +529,7 @@
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
+      "/openheitslova",
       "/personvernerklering",
       "/produkt",
       "/produkt/fasadepanel",
@@ -468,6 +539,7 @@
       "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar",
       "/referansar",
+      "/s/PUR-ce-merke.pdf",
       "/stillingledig",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -488,6 +560,7 @@
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/openheitslova",
       "https://www.fresvik.no/personvernerklering",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/produkt/fasadepanel",
@@ -497,6 +570,7 @@
       "https://www.fresvik.no/produkt/kjole-frysedorer",
       "https://www.fresvik.no/produkt/kjole-fryseportar",
       "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/s/PUR-ce-merke.pdf",
       "https://www.fresvik.no/stillingledig",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -526,10 +600,12 @@
     "assetType": "document",
     "usedBy": [
       "/produkt/fresvik-pur-panel",
+      "/s/PUR-ProduktbladFP.pdf",
       "documentFile-assets-fresvik-documents-pur-produktbladfp-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt/fresvik-panel"
+      "https://www.fresvik.no/produkt/fresvik-panel",
+      "https://www.fresvik.no/s/PUR-ProduktbladFP.pdf"
     ],
     "sha256": "869a4678758ac9fc22f22e412c0e22a31fc1b51457a5f9a4263c67221e51a7df",
     "fileSize": 201960,
@@ -546,10 +622,12 @@
     "assetType": "document",
     "usedBy": [
       "/monteringsanvisningar-fresvik-skyveport",
+      "/s/Quick-Start-5010Exp-indB.pdf",
       "documentFile-assets-fresvik-documents-quick-start-5010exp-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport"
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/s/Quick-Start-5010Exp-indB.pdf"
     ],
     "sha256": "295631217447a645cdf846959df12e3fdff743c15e0ceeabfa1b70abda0266bf",
     "fileSize": 1001335,
@@ -581,6 +659,7 @@
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
+      "/openheitslova",
       "/personvernerklering",
       "/produkt",
       "/produkt/fasadepanel",
@@ -590,6 +669,7 @@
       "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar",
       "/referansar",
+      "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
       "/stillingledig",
       "/tenester/leveranse",
       "/tenester/montasje",
@@ -610,6 +690,7 @@
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/openheitslova",
       "https://www.fresvik.no/personvernerklering",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/produkt/fasadepanel",
@@ -619,6 +700,7 @@
       "https://www.fresvik.no/produkt/kjole-frysedorer",
       "https://www.fresvik.no/produkt/kjole-fryseportar",
       "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
       "https://www.fresvik.no/stillingledig",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
@@ -648,10 +730,12 @@
     "assetType": "document",
     "usedBy": [
       "/dokumentasjon",
+      "/s/7060s-fnfz.pdf",
       "documentFile-assets-fresvik-documents-sintef-produktsertifikat-7060s-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon"
+      "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/s/7060s-fnfz.pdf"
     ],
     "sha256": "9bd598c9a508ad9c6b8f5840eba4841b6e07f8a846ab204c18f1dd23d6eac266",
     "fileSize": 253758,
@@ -689,16 +773,18 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as file-f4d1fc0155bce9a3c39d992ddf3e2310174c3e7a-pdf. Unused local migration cache file; keep until asset review is complete."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://www.fresvik.no/s/2135g-5.pdf",
     "localPath": "/assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf",
     "filePath": "public/assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf",
     "assetType": "document",
     "usedBy": [
       "/dokumentasjon",
+      "/s/2135g-5.pdf",
       "documentFile-assets-fresvik-documents-sintef-teknisk-godkjenning-2135g-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon"
+      "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/s/2135g-5.pdf"
     ],
     "sha256": "0f8659caba8780d251cde2d4f971b254cfa7055f71a74d8ec889f70d4d9d7559",
     "fileSize": 439904,
@@ -712,7 +798,7 @@
     },
     "status": "duplicate",
     "targetSanityType": "file asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/documents/sintef-produktsertifikat.pdf."
+    "notes": "Recovered originalUrl from local redirect source. Duplicate file content of /assets/fresvik/documents/sintef-produktsertifikat.pdf."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -742,10 +828,12 @@
     "assetType": "document",
     "usedBy": [
       "/monteringsanvisningar-fresvik-skyveport",
+      "/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf",
       "documentFile-assets-fresvik-documents-tilleggsutstyr-nmoptions-kits5010exp-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport"
+      "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf"
     ],
     "sha256": "b5cf8efa42125f7a0484b30b4db1ecdf0422ef5e5b50ad8e6464506bf044f1e9",
     "fileSize": 2177053,
@@ -768,10 +856,12 @@
     "assetType": "document",
     "usedBy": [
       "/dokumentasjon",
+      "/s/Ytelseserklring-Fresvik-Produkt.pdf",
       "documentFile-assets-fresvik-documents-ytelseserklaring-fresvik-produkt-pdf"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/dokumentasjon"
+      "https://www.fresvik.no/dokumentasjon",
+      "https://www.fresvik.no/s/Ytelseserklring-Fresvik-Produkt.pdf"
     ],
     "sha256": "db518af5c6055af8c2a5af6c03423595d5a9c491f8a62166ddb428ff8b4932a3",
     "fileSize": 882067,
@@ -4113,6 +4203,7 @@
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
+      "/openheitslova",
       "/personvernerklering",
       "/produkt",
       "/referansar",
@@ -4130,6 +4221,7 @@
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/openheitslova",
       "https://www.fresvik.no/personvernerklering",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",
@@ -4449,6 +4541,7 @@
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
+      "/openheitslova",
       "/personvernerklering",
       "/produkt",
       "/referansar",
@@ -4466,6 +4559,7 @@
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/openheitslova",
       "https://www.fresvik.no/personvernerklering",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",
@@ -4496,6 +4590,7 @@
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
+      "/openheitslova",
       "/personvernerklering",
       "/produkt",
       "/referansar",
@@ -4513,6 +4608,7 @@
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/openheitslova",
       "https://www.fresvik.no/personvernerklering",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",
@@ -5038,6 +5134,7 @@
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
+      "/openheitslova",
       "/personvernerklering",
       "/produkt",
       "/referansar",
@@ -5055,6 +5152,7 @@
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/openheitslova",
       "https://www.fresvik.no/personvernerklering",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",
@@ -5988,6 +6086,7 @@
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
+      "/openheitslova",
       "/personvernerklering",
       "/produkt",
       "/produkt/fasadepanel",
@@ -6007,6 +6106,7 @@
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/openheitslova",
       "https://www.fresvik.no/personvernerklering",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/produkt/fasadepanel",
@@ -8274,6 +8374,7 @@
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
+      "/openheitslova",
       "/personvernerklering",
       "/produkt",
       "/referansar",
@@ -8291,6 +8392,7 @@
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/openheitslova",
       "https://www.fresvik.no/personvernerklering",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",
@@ -9168,6 +9270,7 @@
       "/kundeservice/faq",
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
+      "/openheitslova",
       "/personvernerklering",
       "/produkt",
       "/referansar",
@@ -9185,6 +9288,7 @@
       "https://www.fresvik.no/kundeservice/faq",
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
+      "https://www.fresvik.no/openheitslova",
       "https://www.fresvik.no/personvernerklering",
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/referansar",

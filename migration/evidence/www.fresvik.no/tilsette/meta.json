@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/tilsette",
+  "finalUrl": "https://www.fresvik.no/tilsette",
+  "fetchedAt": "2026-06-14T17:46:33.908Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Tilsette | Møt teamet bak Fresvik Produkt – Kontakt oss i dag — Fresvik Produkt",
+  "metaDescription": "Møt det dyktige teamet bak Fresvik Produkt. Se hvordan vi kan gi deg svaret på det du lurer på, og hvordan vi sammen kan finne skreddersydde løsninger for deg.",
+  "counts": {
+    "headings": 20,
+    "textBlocks": 75,
+    "links": 120,
+    "images": 128,
+    "documents": 2
+  }
+}

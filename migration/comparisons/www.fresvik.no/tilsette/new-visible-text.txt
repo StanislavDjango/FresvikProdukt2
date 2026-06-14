@@ -1,0 +1,64 @@
+Kontaktpersonar
+Tilsette
+Kontaktpersonar frå gammal tilsette-side er samla her med rolle, telefon, e-post og bilete der kjelda hadde dette.
+Lars Erling Livrud
+Sals- og marknadssjefTel: 32 20 82 00Mob: 404 77 912E-post: larliv@fresvik.no
+Frode Winther
+Sal, avdeling DrammenTel: 32 20 82 00Mob: 913 83 949E-post: frowin@fresvik.no
+Arne-Olav Lien Bardølsgård
+Sal, avdeling FresvikMob: 995 52 549E-post: arnbar@fresvik.no
+Ove Fedje
+Teknisk teikning og sal skip/offshoreMob: 911 76 599E-post: ovefed@fresvik.no
+Tomas Kruvelis
+Delesal/innkjøpMob: 465 81 422E-post: tomkru@fresvik.no
+Gyda Bøtun
+Adm dirMob: 992 27 516E-post: gydbot@fresvik.no
+Dette er persondata frå gammal offentleg side. Før endeleg lansering bør rekkefølgje og samtykke/personvern rutine sjekkast.
+Sigmund Hauglum
+Lager og logistikkMob: 954 68 212E-post: sighau@fresvik.no
+Siv Settevik
+ProduksjonsleiarMob: 41 6 60 685E-post: sivset@fresvik.no
+Håvard Berdal
+Teknisk teikningMob: 909 12 476E-post: havber@fresvik.no
+Oddrun Time
+AdministrasjonskoordinatorMob: 907 46 651E-post: oddtim@fresvik.no
+Siri Otterhjell
+TransportansvarlegMob: 977 72 856E-post: sirott@fresvik.no
+Ragnvald Grov Sørdal
+LønnsansvarlegMob: 909 77 331E-post: ragsor@fresvik.no
+Nils Gunnar Finne
+ProduktutviklingMob: 915 13 117
+Samaneh Shakeri
+Teknisk sjefMob:480 98 928E-post: samsha@fresvik.no
+Kontakt
+Fresvik Produkt AS
+Fresvikvegen 995,6896 FresvikTel: 57 69 83 00E-post: post@fresvik.no
+Salsavdeling Fresvik:
+Arne-Olav Lien BardølsgårdMob: 99 55 25 49arnbar@fresvik.no
+Salsavdeling Drammen:
+Lars Erling LivrudMob: 40 47 79 12larliv@fresvik.no
+Salsavdeling Drammen
+Frode WintherMob: 91 38 39 49frowin@fresvik.no
+Dokumentasjon og sertifikat
+Sentral godkjenning
+sentral+godkjent.png
+SINTEF Teknisk Godkjenning
+TG-2135.jpg
+Poly
+Poly.png
+StartBANK
+Startbarnk.png
+Miljøfyrtårn
+wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png
+CE
+ce-logo-png-transparent.png
+Nettside levert av GASTA
+Motta nyheitsbrev Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen.Sjå vår personvernerklæring. PersonvernerklæringOpenheitslovaNettside levert av GASTA
+Klar for å diskutere prosjektet?
+Ta kontakt med Fresvik Produkt for teknisk avklaring, produktval og vidare planlegging.
+Fresvik Produkt AS leverer isolerte panel, kjøle- og fryseløysingar, montasje og service til norske prosjekt.
+Fresvikvegen 995, 6896 Fresvik
+Nettstad
+Informasjon
+© Fresvik Produkt AS
+Modernisert med Next.js, Sanity og Vercel.

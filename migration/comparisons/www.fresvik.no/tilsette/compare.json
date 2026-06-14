@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/tilsette",
+  "newUrl": "http://127.0.0.1:3060/tilsette",
+  "checkedAt": "2026-06-14T17:49:49.807Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 46,
+    "missingTextBlocks": 0,
+    "oldLinks": 65,
+    "missingLinks": 0,
+    "oldImages": 21,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

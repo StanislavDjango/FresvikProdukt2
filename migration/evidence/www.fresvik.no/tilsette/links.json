@@ -1,0 +1,722 @@
+[
+  {
+    "text": "0",
+    "href": "/cart",
+    "absoluteUrl": "https://www.fresvik.no/cart",
+    "type": "internal"
+  },
+  {
+    "text": "Hopp til innhold",
+    "href": "#page",
+    "absoluteUrl": "https://www.fresvik.no/tilsette#page",
+    "type": "anchor"
+  },
+  {
+    "text": "Fresvik Produkt",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PIR-Panel",
+    "href": "/produkt/fresvik-pir-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-pir-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PUR-Panel",
+    "href": "/produkt/fresvik-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og fryseportar",
+    "href": "/produkt/kjole-fryseportar",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-fryseportar",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og frysedører",
+    "href": "/produkt/kjole-frysedorer",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-frysedorer",
+    "type": "internal"
+  },
+  {
+    "text": "Fasadepanel",
+    "href": "/produkt/fasadepanel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fasadepanel",
+    "type": "internal"
+  },
+  {
+    "text": "Frysetunnel",
+    "href": "/produkt/frysetunnel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/frysetunnel",
+    "type": "internal"
+  },
+  {
+    "text": "Tilleggsutstyr",
+    "href": "/tilleggsutstyr",
+    "absoluteUrl": "https://www.fresvik.no/tilleggsutstyr",
+    "type": "internal"
+  },
+  {
+    "text": "Referansar",
+    "href": "/referansar",
+    "absoluteUrl": "https://www.fresvik.no/referansar",
+    "type": "internal"
+  },
+  {
+    "text": "Montasje",
+    "href": "/tenester/montasje",
+    "absoluteUrl": "https://www.fresvik.no/tenester/montasje",
+    "type": "internal"
+  },
+  {
+    "text": "Leveranse",
+    "href": "/tenester/leveranse",
+    "absoluteUrl": "https://www.fresvik.no/tenester/leveranse",
+    "type": "internal"
+  },
+  {
+    "text": "Service og reservedeler",
+    "href": "/tenester/service-reservedeler",
+    "absoluteUrl": "https://www.fresvik.no/tenester/service-reservedeler",
+    "type": "internal"
+  },
+  {
+    "text": "Dokumentasjon",
+    "href": "/dokumentasjon",
+    "absoluteUrl": "https://www.fresvik.no/dokumentasjon",
+    "type": "internal"
+  },
+  {
+    "text": "Monteringsanvisningar",
+    "href": "/monteringsanvisning",
+    "absoluteUrl": "https://www.fresvik.no/monteringsanvisning",
+    "type": "internal"
+  },
+  {
+    "text": "Ofte Stilte Spørsmål",
+    "href": "/kundeservice/faq",
+    "absoluteUrl": "https://www.fresvik.no/kundeservice/faq",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik Produkt",
+    "href": "/firmainfo",
+    "absoluteUrl": "https://www.fresvik.no/firmainfo",
+    "type": "internal"
+  },
+  {
+    "text": "Tilsette",
+    "href": "/tilsette",
+    "absoluteUrl": "https://www.fresvik.no/tilsette",
+    "type": "internal"
+  },
+  {
+    "text": "Aktuelt",
+    "href": "/aktuelt",
+    "absoluteUrl": "https://www.fresvik.no/aktuelt",
+    "type": "internal"
+  },
+  {
+    "text": "Ledig stilling",
+    "href": "/stillingledig",
+    "absoluteUrl": "https://www.fresvik.no/stillingledig",
+    "type": "internal"
+  },
+  {
+    "text": "Kontakt",
+    "href": "/kontakt",
+    "absoluteUrl": "https://www.fresvik.no/kontakt",
+    "type": "internal"
+  },
+  {
+    "text": "Facebook",
+    "href": "https://www.facebook.com/profile.php?id=100057316063120",
+    "absoluteUrl": "https://www.facebook.com/profile.php?id=100057316063120",
+    "type": "external"
+  },
+  {
+    "text": "LinkedIn",
+    "href": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "absoluteUrl": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "type": "external"
+  },
+  {
+    "text": "Send forespørsel",
+    "href": "/send-foresporsel",
+    "absoluteUrl": "https://www.fresvik.no/send-foresporsel",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik Produkt",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PIR-Panel",
+    "href": "/produkt/fresvik-pir-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-pir-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PUR-Panel",
+    "href": "/produkt/fresvik-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og fryseportar",
+    "href": "/produkt/kjole-fryseportar",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-fryseportar",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og frysedører",
+    "href": "/produkt/kjole-frysedorer",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-frysedorer",
+    "type": "internal"
+  },
+  {
+    "text": "Fasadepanel",
+    "href": "/produkt/fasadepanel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fasadepanel",
+    "type": "internal"
+  },
+  {
+    "text": "Frysetunnel",
+    "href": "/produkt/frysetunnel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/frysetunnel",
+    "type": "internal"
+  },
+  {
+    "text": "Tilleggsutstyr",
+    "href": "/tilleggsutstyr",
+    "absoluteUrl": "https://www.fresvik.no/tilleggsutstyr",
+    "type": "internal"
+  },
+  {
+    "text": "Referansar",
+    "href": "/referansar",
+    "absoluteUrl": "https://www.fresvik.no/referansar",
+    "type": "internal"
+  },
+  {
+    "text": "Montasje",
+    "href": "/tenester/montasje",
+    "absoluteUrl": "https://www.fresvik.no/tenester/montasje",
+    "type": "internal"
+  },
+  {
+    "text": "Leveranse",
+    "href": "/tenester/leveranse",
+    "absoluteUrl": "https://www.fresvik.no/tenester/leveranse",
+    "type": "internal"
+  },
+  {
+    "text": "Service og reservedeler",
+    "href": "/tenester/service-reservedeler",
+    "absoluteUrl": "https://www.fresvik.no/tenester/service-reservedeler",
+    "type": "internal"
+  },
+  {
+    "text": "Dokumentasjon",
+    "href": "/dokumentasjon",
+    "absoluteUrl": "https://www.fresvik.no/dokumentasjon",
+    "type": "internal"
+  },
+  {
+    "text": "Monteringsanvisningar",
+    "href": "/monteringsanvisning",
+    "absoluteUrl": "https://www.fresvik.no/monteringsanvisning",
+    "type": "internal"
+  },
+  {
+    "text": "Ofte Stilte Spørsmål",
+    "href": "/kundeservice/faq",
+    "absoluteUrl": "https://www.fresvik.no/kundeservice/faq",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik Produkt",
+    "href": "/firmainfo",
+    "absoluteUrl": "https://www.fresvik.no/firmainfo",
+    "type": "internal"
+  },
+  {
+    "text": "Tilsette",
+    "href": "/tilsette",
+    "absoluteUrl": "https://www.fresvik.no/tilsette",
+    "type": "internal"
+  },
+  {
+    "text": "Aktuelt",
+    "href": "/aktuelt",
+    "absoluteUrl": "https://www.fresvik.no/aktuelt",
+    "type": "internal"
+  },
+  {
+    "text": "Ledig stilling",
+    "href": "/stillingledig",
+    "absoluteUrl": "https://www.fresvik.no/stillingledig",
+    "type": "internal"
+  },
+  {
+    "text": "Kontakt",
+    "href": "/kontakt",
+    "absoluteUrl": "https://www.fresvik.no/kontakt",
+    "type": "internal"
+  },
+  {
+    "text": "Facebook",
+    "href": "https://www.facebook.com/profile.php?id=100057316063120",
+    "absoluteUrl": "https://www.facebook.com/profile.php?id=100057316063120",
+    "type": "external"
+  },
+  {
+    "text": "LinkedIn",
+    "href": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "absoluteUrl": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "type": "external"
+  },
+  {
+    "text": "Send forespørsel",
+    "href": "/send-foresporsel",
+    "absoluteUrl": "https://www.fresvik.no/send-foresporsel",
+    "type": "internal"
+  },
+  {
+    "text": "Mappe: Produkt",
+    "href": "/produkt-mappe",
+    "absoluteUrl": "https://www.fresvik.no/produkt-mappe",
+    "type": "internal"
+  },
+  {
+    "text": "Tilbake",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PIR-Panel",
+    "href": "/produkt/fresvik-pir-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-pir-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PUR-Panel",
+    "href": "/produkt/fresvik-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og fryseportar",
+    "href": "/produkt/kjole-fryseportar",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-fryseportar",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og frysedører",
+    "href": "/produkt/kjole-frysedorer",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-frysedorer",
+    "type": "internal"
+  },
+  {
+    "text": "Fasadepanel",
+    "href": "/produkt/fasadepanel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fasadepanel",
+    "type": "internal"
+  },
+  {
+    "text": "Frysetunnel",
+    "href": "/produkt/frysetunnel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/frysetunnel",
+    "type": "internal"
+  },
+  {
+    "text": "Tilleggsutstyr",
+    "href": "/tilleggsutstyr",
+    "absoluteUrl": "https://www.fresvik.no/tilleggsutstyr",
+    "type": "internal"
+  },
+  {
+    "text": "Referansar",
+    "href": "/referansar",
+    "absoluteUrl": "https://www.fresvik.no/referansar",
+    "type": "internal"
+  },
+  {
+    "text": "Mappe: Tenester",
+    "href": "/tenester",
+    "absoluteUrl": "https://www.fresvik.no/tenester",
+    "type": "internal"
+  },
+  {
+    "text": "Tilbake",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Montasje",
+    "href": "/tenester/montasje",
+    "absoluteUrl": "https://www.fresvik.no/tenester/montasje",
+    "type": "internal"
+  },
+  {
+    "text": "Leveranse",
+    "href": "/tenester/leveranse",
+    "absoluteUrl": "https://www.fresvik.no/tenester/leveranse",
+    "type": "internal"
+  },
+  {
+    "text": "Service og reservedeler",
+    "href": "/tenester/service-reservedeler",
+    "absoluteUrl": "https://www.fresvik.no/tenester/service-reservedeler",
+    "type": "internal"
+  },
+  {
+    "text": "Mappe: Kundeservice",
+    "href": "/kundeservice",
+    "absoluteUrl": "https://www.fresvik.no/kundeservice",
+    "type": "internal"
+  },
+  {
+    "text": "Tilbake",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Dokumentasjon",
+    "href": "/dokumentasjon",
+    "absoluteUrl": "https://www.fresvik.no/dokumentasjon",
+    "type": "internal"
+  },
+  {
+    "text": "Monteringsanvisningar",
+    "href": "/monteringsanvisning",
+    "absoluteUrl": "https://www.fresvik.no/monteringsanvisning",
+    "type": "internal"
+  },
+  {
+    "text": "Ofte Stilte Spørsmål",
+    "href": "/kundeservice/faq",
+    "absoluteUrl": "https://www.fresvik.no/kundeservice/faq",
+    "type": "internal"
+  },
+  {
+    "text": "Mappe: Om oss",
+    "href": "/om-oss",
+    "absoluteUrl": "https://www.fresvik.no/om-oss",
+    "type": "internal"
+  },
+  {
+    "text": "Tilbake",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik Produkt",
+    "href": "/firmainfo",
+    "absoluteUrl": "https://www.fresvik.no/firmainfo",
+    "type": "internal"
+  },
+  {
+    "text": "Tilsette",
+    "href": "/tilsette",
+    "absoluteUrl": "https://www.fresvik.no/tilsette",
+    "type": "internal"
+  },
+  {
+    "text": "Aktuelt",
+    "href": "/aktuelt",
+    "absoluteUrl": "https://www.fresvik.no/aktuelt",
+    "type": "internal"
+  },
+  {
+    "text": "Ledig stilling",
+    "href": "/stillingledig",
+    "absoluteUrl": "https://www.fresvik.no/stillingledig",
+    "type": "internal"
+  },
+  {
+    "text": "Kontakt",
+    "href": "/kontakt",
+    "absoluteUrl": "https://www.fresvik.no/kontakt",
+    "type": "internal"
+  },
+  {
+    "text": "Facebook",
+    "href": "https://www.facebook.com/profile.php?id=100057316063120",
+    "absoluteUrl": "https://www.facebook.com/profile.php?id=100057316063120",
+    "type": "external"
+  },
+  {
+    "text": "LinkedIn",
+    "href": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "absoluteUrl": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "type": "external"
+  },
+  {
+    "text": "Send forespørsel",
+    "href": "/send-foresporsel",
+    "absoluteUrl": "https://www.fresvik.no/send-foresporsel",
+    "type": "internal"
+  },
+  {
+    "text": "32 20 82 00",
+    "href": "tel:004732208200",
+    "absoluteUrl": "tel:004732208200",
+    "type": "phone"
+  },
+  {
+    "text": "404 77 912",
+    "href": "tel:004740477912",
+    "absoluteUrl": "tel:004740477912",
+    "type": "phone"
+  },
+  {
+    "text": "larliv@fresvik.no",
+    "href": "mailto:larliv@fresvik.no",
+    "absoluteUrl": "mailto:larliv@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "32 20 82 00",
+    "href": "tel:004732208200",
+    "absoluteUrl": "tel:004732208200",
+    "type": "phone"
+  },
+  {
+    "text": "913 83 949",
+    "href": "tel:004791 383949",
+    "absoluteUrl": "tel:004791 383949",
+    "type": "phone"
+  },
+  {
+    "text": "frowin@fresvik.no",
+    "href": "mailto:frowin@fresvik.no",
+    "absoluteUrl": "mailto:frowin@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "995 52 549",
+    "href": "tel:004799552549",
+    "absoluteUrl": "tel:004799552549",
+    "type": "phone"
+  },
+  {
+    "text": "arnbar@fresvik.no",
+    "href": "mailto:arnbar@fresvik.no",
+    "absoluteUrl": "mailto:arnbar@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "911 76 599",
+    "href": "tel:004791176599",
+    "absoluteUrl": "tel:004791176599",
+    "type": "phone"
+  },
+  {
+    "text": "ovefed@fresvik.no",
+    "href": "mailto:ovefed@fresvik.no",
+    "absoluteUrl": "mailto:ovefed@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "465 81 422",
+    "href": "tel:004746581422",
+    "absoluteUrl": "tel:004746581422",
+    "type": "phone"
+  },
+  {
+    "text": "tomkru@fresvik.no",
+    "href": "mailto:tomkru@fresvik.no",
+    "absoluteUrl": "mailto:tomkru@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "992 27 516",
+    "href": "tel:004799227516",
+    "absoluteUrl": "tel:004799227516",
+    "type": "phone"
+  },
+  {
+    "text": "gydbot@fresvik.no",
+    "href": "mailto:gydbot@fresvik.no",
+    "absoluteUrl": "mailto:gydbot@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "954 68 212",
+    "href": "tel:004795468212",
+    "absoluteUrl": "tel:004795468212",
+    "type": "phone"
+  },
+  {
+    "text": "sighau@fresvik.no",
+    "href": "mailto:sighau@fresvik.no",
+    "absoluteUrl": "mailto:sighau@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "41 6 60 685",
+    "href": "tel:004741660685",
+    "absoluteUrl": "tel:004741660685",
+    "type": "phone"
+  },
+  {
+    "text": "sivset@fresvik.no",
+    "href": "mailto:sivset@fresvik.no",
+    "absoluteUrl": "mailto:sivset@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "909 12 476",
+    "href": "tel:004790912476",
+    "absoluteUrl": "tel:004790912476",
+    "type": "phone"
+  },
+  {
+    "text": "havber@fresvik.no",
+    "href": "mailto:havber@fresvik.no",
+    "absoluteUrl": "mailto:havber@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "907 46 651",
+    "href": "tel:004790746651",
+    "absoluteUrl": "tel:004790746651",
+    "type": "phone"
+  },
+  {
+    "text": "oddtim@fresvik.no",
+    "href": "mailto:oddtim@fresvik.no",
+    "absoluteUrl": "mailto:oddtim@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "977 72 856",
+    "href": "tel:004797772856",
+    "absoluteUrl": "tel:004797772856",
+    "type": "phone"
+  },
+  {
+    "text": "sirott@fresvik.no",
+    "href": "mailto:sirott@fresvik.no",
+    "absoluteUrl": "mailto:sirott@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "909 77 331",
+    "href": "tel:004790977331",
+    "absoluteUrl": "tel:004790977331",
+    "type": "phone"
+  },
+  {
+    "text": "ragsor@fresvik.no",
+    "href": "mailto:ragsor@fresvik.no",
+    "absoluteUrl": "mailto:ragsor@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "915 13 117",
+    "href": "tel:004791513117",
+    "absoluteUrl": "tel:004791513117",
+    "type": "phone"
+  },
+  {
+    "text": "480 98 928",
+    "href": "tel:004748098928",
+    "absoluteUrl": "tel:004748098928",
+    "type": "phone"
+  },
+  {
+    "text": "samsha@fresvik.no",
+    "href": "mailto:samsha@fresvik.no",
+    "absoluteUrl": "mailto:samsha@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "post@fresvik.no",
+    "href": "mailto:post@fresvik.no",
+    "absoluteUrl": "mailto:post@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "arnbar@fresvik.no",
+    "href": "mailto:arnbar@fresvik.no",
+    "absoluteUrl": "mailto:arnbar@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "larliv@fresvik.no",
+    "href": "mailto:larliv@fresvik.no",
+    "absoluteUrl": "mailto:larliv@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "frowin@fresvik.no",
+    "href": "mailto:frowin@fresvik.no",
+    "absoluteUrl": "mailto:frowin@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "Personvernerklæring",
+    "href": "/personvernerklering",
+    "absoluteUrl": "https://www.fresvik.no/personvernerklering",
+    "type": "internal"
+  },
+  {
+    "text": "Openheitslova",
+    "href": "/openheitslova",
+    "absoluteUrl": "https://www.fresvik.no/openheitslova",
+    "type": "internal"
+  },
+  {
+    "text": "GASTA",
+    "href": "https://www.gasta.no",
+    "absoluteUrl": "https://www.gasta.no/",
+    "type": "external"
+  },
+  {
+    "text": "sentral+godkjent.png",
+    "href": "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+    "absoluteUrl": "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+    "type": "document"
+  },
+  {
+    "text": "TG-2135.jpg",
+    "href": "https://www.sintefcertification.no/Product/Index/129",
+    "absoluteUrl": "https://www.sintefcertification.no/Product/Index/129",
+    "type": "external"
+  },
+  {
+    "text": "Poly.png",
+    "href": "/dokumentasjon",
+    "absoluteUrl": "https://www.fresvik.no/dokumentasjon",
+    "type": "internal"
+  },
+  {
+    "text": "Startbarnk.png",
+    "href": "/dokumentasjon",
+    "absoluteUrl": "https://www.fresvik.no/dokumentasjon",
+    "type": "internal"
+  },
+  {
+    "text": "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+    "href": "https://rapportering.miljofyrtarn.no/stats/176324",
+    "absoluteUrl": "https://rapportering.miljofyrtarn.no/stats/176324",
+    "type": "external"
+  },
+  {
+    "text": "ce-logo-png-transparent.png",
+    "href": "/s/PUR-ce-merke.pdf",
+    "absoluteUrl": "https://www.fresvik.no/s/PUR-ce-merke.pdf",
+    "type": "document"
+  }
+]

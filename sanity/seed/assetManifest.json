@@ -473,6 +473,7 @@
       "/tenester/montasje",
       "/tenester/service-reservedeler",
       "/tilleggsutstyr",
+      "/tilsette",
       "/transportskade",
       "documentFile-assets-fresvik-documents-pur-ce-merke-pdf"
     ],
@@ -501,6 +502,7 @@
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilleggsutstyr",
+      "https://www.fresvik.no/tilsette",
       "https://www.fresvik.no/transportskade"
     ],
     "sha256": "596ac549d312966cacb69673491b8988ede60f20a297d6ba84fd85702e4e0c45",
@@ -593,6 +595,7 @@
       "/tenester/montasje",
       "/tenester/service-reservedeler",
       "/tilleggsutstyr",
+      "/tilsette",
       "/transportskade",
       "documentFile-assets-fresvik-documents-sentral-godkjenning-fresvik-produkt-pdf"
     ],
@@ -621,6 +624,7 @@
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilleggsutstyr",
+      "https://www.fresvik.no/tilsette",
       "https://www.fresvik.no/transportskade"
     ],
     "sha256": "c20f54560e598cce7d8622cd55eb8619a533a10e5c0cf3087987b75326cccc9f",
@@ -3171,6 +3175,31 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Arne-Olav-Lien-Bardølsgård.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Arne-Olav-Lien-Bardølsgård.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "1d9ba4753b0bb250a46b0cb51dfcfb73aa330452f5a97bba0c6f5c9429d483c9",
+    "fileSize": 1586993,
+    "sanityAssetId": "image-dd8d025d21e69ac0bda0a5a7e17d5c2eaa50eac5-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-dd8d025d21e69ac0bda0a5a7e17d5c2eaa50eac5-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/arne-olav-lien-bardlsgard.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/Baza+fryserom+-+2.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/Baza+fryserom+-+2.jpeg",
     "assetType": "image",
@@ -3530,6 +3559,31 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Frode-Winther.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Frode-Winther.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "45fb273004a6e6b917ba103792b7288b33d6f423d883413ed7f28d517b321ce1",
+    "fileSize": 1344508,
+    "sanityAssetId": "image-5d8c15ba58e835ef436a305e34189a6e3d794bd1-2388x2876-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5d8c15ba58e835ef436a305e34189a6e3d794bd1-2388x2876-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/frode-winther.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/Fryserom+OBS+Alna+4_red.jpg",
     "filePath": "public/assets/fresvik/images/old-site/Fryserom+OBS+Alna+4_red.jpg",
     "assetType": "image",
@@ -3565,6 +3619,31 @@
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Gyda+Bøthun.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Gyda+Bøthun.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "d9e923e2b422376fc710c981d1c04c04850acdc8168c4debece3501159dd7ab0",
+    "fileSize": 604294,
+    "sanityAssetId": "image-678591e5df161059ff8f26f3401e73572277185f-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-678591e5df161059ff8f26f3401e73572277185f-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/gyda-bthun.jpeg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -3609,6 +3688,31 @@
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Håvard+Berdal.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Håvard+Berdal.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "24fede5e38db319b3f880a8bd6a888567f0873762da64453dae2ba5ab8355256",
+    "fileSize": 142452,
+    "sanityAssetId": "image-69fb258019b547fbdd80be41b7ad78e1cbc3bbeb-1000x1204-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-69fb258019b547fbdd80be41b7ad78e1cbc3bbeb-1000x1204-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/havard-berdal-71.jpg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -3795,6 +3899,31 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Lars-Erling-Livrud.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Lars-Erling-Livrud.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "3bc3215c94bf0e841894093a03d74b5cee5764affa34d770c6a65f94a44b01cd",
+    "fileSize": 1663027,
+    "sanityAssetId": "image-bbe033863e221db9ce6190ab8236a3101e6a0e3e-2318x2791-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-bbe033863e221db9ce6190ab8236a3101e6a0e3e-2318x2791-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/lars-erling-livrud.jpeg."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228912794-P8C77VM56V7MKF43USZ1/MaxiElebar+ventli_web.jpg",
     "localPath": "/assets/fresvik/images/old-site/MaxiElebar+ventli_web.jpg",
     "filePath": "public/assets/fresvik/images/old-site/MaxiElebar+ventli_web.jpg",
@@ -3837,6 +3966,81 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Nils+Gunnar+Finne.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Nils+Gunnar+Finne.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "b14d6511a63daa75349e5321342d9fcd12373f1dd0a017694ef07d5d2a0960f4",
+    "fileSize": 766027,
+    "sanityAssetId": "image-2cdedbfd33888d6e8c8147b784251f46e5f0e62c-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-2cdedbfd33888d6e8c8147b784251f46e5f0e62c-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/nils-gunnar-finne.jpeg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Oddrun+Time.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Oddrun+Time.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "8d9693e3f2d7473cac3b229c4802af51a30a1c348b370d6bd612d3575bef3f7e",
+    "fileSize": 964609,
+    "sanityAssetId": "image-b9e5ebe157ba1242fefb476a5789efd5303d8ea9-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-b9e5ebe157ba1242fefb476a5789efd5303d8ea9-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/oddrun-time.jpeg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Ove+Fedje.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Ove+Fedje.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "42ee5bdeccadd82ef70788b91aa46fce7edf169614f86b3aa7064b8122a42484",
+    "fileSize": 700338,
+    "sanityAssetId": "image-e2af6a4268eebcd7b8d3fc8630d5da3edbbc5e96-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-e2af6a4268eebcd7b8d3fc8630d5da3edbbc5e96-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/ove-fedje.jpeg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -3893,7 +4097,8 @@
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
-      "/tilleggsutstyr"
+      "/tilleggsutstyr",
+      "/tilsette"
     ],
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
@@ -3907,7 +4112,8 @@
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/tilleggsutstyr",
+      "https://www.fresvik.no/tilsette"
     ],
     "sha256": "bb48f0ffebfdac026924cff201c4fc079d4ff0836c7f965bb895947685ac317a",
     "fileSize": 6213,
@@ -3957,6 +4163,31 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Ragnvald+Grov+Sørdal.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Ragnvald+Grov+Sørdal.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "25bad208394ba60fdf6317b003e4333cdb395d296297477353ba3af8d92facf4",
+    "fileSize": 637482,
+    "sanityAssetId": "image-13199457bda12f14f626b8b4da827db60117fb58-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-13199457bda12f14f626b8b4da827db60117fb58-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/ragnvald-grov-srdal.jpeg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/Samaneh+Shakeri+bannerbilde.jpg",
     "filePath": "public/assets/fresvik/images/old-site/Samaneh+Shakeri+bannerbilde.jpg",
     "assetType": "image",
@@ -3973,6 +4204,106 @@
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Samaneh+Shakeri.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Samaneh+Shakeri.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "fcc71e370704f0132e37f592b38a60398b55f8ab4935d811f869219bf713c1bd",
+    "fileSize": 649025,
+    "sanityAssetId": "image-dd58a0dd9a10b12f205ddb6bceb7103badea491f-2500x3214-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-dd58a0dd9a10b12f205ddb6bceb7103badea491f-2500x3214-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/samaneh-shakeri.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Sigmund+Hauglum.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Sigmund+Hauglum.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "72d735e1bd218c2a83bce3d6004727533681a268d7fd58d0520288a5a6162685",
+    "fileSize": 278681,
+    "sanityAssetId": "image-5725688aaf0e819908d6176c4ae8d5f007149fb3-1000x1204-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5725688aaf0e819908d6176c4ae8d5f007149fb3-1000x1204-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/sigmund-hauglum.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Siri+Otterhjell.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Siri+Otterhjell.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "692b1ce96d49a85ae20c043af4c7f2dc1b611fd8a32326fc967bc75e2dd2ec8e",
+    "fileSize": 593871,
+    "sanityAssetId": "image-16defaa6b4ad1e18fd153c7defb072b128145ebc-2500x3008-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-16defaa6b4ad1e18fd153c7defb072b128145ebc-2500x3008-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/siri-otterhjell.jpeg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Siv+Settevik.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Siv+Settevik.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "9e40f6600b46c4e135f4c6fda0fa2e4903e07b1617e0fa84fb0d7038b3a8e1c9",
+    "fileSize": 594197,
+    "sanityAssetId": "image-8f7899d6a0045cf45f0a8611833f8b3e1ba53f97-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8f7899d6a0045cf45f0a8611833f8b3e1ba53f97-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/siv-settevik.jpeg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -4098,7 +4429,8 @@
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
-      "/tilleggsutstyr"
+      "/tilleggsutstyr",
+      "/tilsette"
     ],
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
@@ -4112,7 +4444,8 @@
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/tilleggsutstyr",
+      "https://www.fresvik.no/tilsette"
     ],
     "sha256": "3349ec2902c21e626f6c789e12ba4edda423f31a15c331dc4e6f26af7e7a05b6",
     "fileSize": 17420,
@@ -4139,7 +4472,8 @@
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
-      "/tilleggsutstyr"
+      "/tilleggsutstyr",
+      "/tilsette"
     ],
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
@@ -4153,7 +4487,8 @@
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/tilleggsutstyr",
+      "https://www.fresvik.no/tilsette"
     ],
     "sha256": "ef021f557487948648d5a917c55a0b057ddb0dfe0935f8c2379af3f8328bdce6",
     "fileSize": 104132,
@@ -4162,6 +4497,31 @@
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Tomas-Kruvelis.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Tomas-Kruvelis.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/tilsette"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/tilsette"
+    ],
+    "sha256": "b0baffa10506d98d0db4af384f14bdc6192ea75c7a6ae6f75c09564f1c439148",
+    "fileSize": 1572394,
+    "sanityAssetId": "image-a8520828472778a51f49adcb45427f245a3839cf-2500x3009-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a8520828472778a51f49adcb45427f245a3839cf-2500x3009-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/tomas-kruvelis.jpg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -4650,7 +5010,8 @@
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
-      "/tilleggsutstyr"
+      "/tilleggsutstyr",
+      "/tilsette"
     ],
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
@@ -4664,7 +5025,8 @@
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/tilleggsutstyr",
+      "https://www.fresvik.no/tilsette"
     ],
     "sha256": "8d6fdc6e42382898ed7029e6db2e2254755121cbbdf117bca7b8182597886a13",
     "fileSize": 66134,
@@ -5594,7 +5956,8 @@
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
-      "/tilleggsutstyr"
+      "/tilleggsutstyr",
+      "/tilsette"
     ],
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
@@ -5610,7 +5973,8 @@
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/tilleggsutstyr",
+      "https://www.fresvik.no/tilsette"
     ],
     "sha256": "27e20960aaad940d294ba861e9d5783457caed68982d13fb67abcc9b1c42c54b",
     "fileSize": 18171,
@@ -7870,7 +8234,8 @@
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
-      "/tilleggsutstyr"
+      "/tilleggsutstyr",
+      "/tilsette"
     ],
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
@@ -7884,7 +8249,8 @@
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/tilleggsutstyr",
+      "https://www.fresvik.no/tilsette"
     ],
     "sha256": "2fad91adbe2d6d746828cd3fb49f385acd59129e7cc388fc2ecb4e519c0c84c7",
     "fileSize": 16680,
@@ -8758,7 +9124,8 @@
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
-      "/tilleggsutstyr"
+      "/tilleggsutstyr",
+      "/tilsette"
     ],
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
@@ -8772,7 +9139,8 @@
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/tilleggsutstyr",
+      "https://www.fresvik.no/tilsette"
     ],
     "sha256": "8180a4229a0f968b6c7c6ddf18fe50c7970978d2ddfff66b5e7aa7645b328ee9",
     "fileSize": 23507,

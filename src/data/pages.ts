@@ -260,19 +260,52 @@ const faqCustomerCards: ContentCard[] = [
   },
 ];
 
+const employeeImageByTitle: Record<string, string> = {
+  "Lars Erling Livrud": "/assets/fresvik/images/old-site/Lars-Erling-Livrud.jpeg",
+  "Frode Winther": "/assets/fresvik/images/old-site/Frode-Winther.jpg",
+  "Arne-Olav Lien Bardølsgård":
+    "/assets/fresvik/images/old-site/Arne-Olav-Lien-Bardølsgård.jpg",
+  "Ove Fedje": "/assets/fresvik/images/old-site/Ove+Fedje.jpeg",
+  "Tomas Kruvelis": "/assets/fresvik/images/old-site/Tomas-Kruvelis.jpg",
+  "Gyda Bøtun": "/assets/fresvik/images/old-site/Gyda+Bøthun.jpeg",
+  "Sigmund Hauglum": "/assets/fresvik/images/old-site/Sigmund+Hauglum.jpg",
+  "Siv Settevik": "/assets/fresvik/images/old-site/Siv+Settevik.jpeg",
+  "Håvard Berdal": "/assets/fresvik/images/old-site/Håvard+Berdal.jpg",
+  "Oddrun Time": "/assets/fresvik/images/old-site/Oddrun+Time.jpeg",
+  "Siri Otterhjell": "/assets/fresvik/images/old-site/Siri+Otterhjell.jpeg",
+  "Ragnvald Grov Sørdal": "/assets/fresvik/images/old-site/Ragnvald+Grov+Sørdal.jpeg",
+  "Nils Gunnar Finne": "/assets/fresvik/images/old-site/Nils+Gunnar+Finne.jpeg",
+  "Samaneh Shakeri": "/assets/fresvik/images/old-site/Samaneh+Shakeri.jpg",
+};
+
+const employeeContactTextByTitle: Record<string, string> = {
+  "Lars Erling Livrud":
+    "Sals- og marknadssjefTel: 32 20 82 00Mob: 404 77 912E-post: larliv@fresvik.no",
+  "Frode Winther":
+    "Sal, avdeling DrammenTel: 32 20 82 00Mob: 913 83 949E-post: frowin@fresvik.no",
+  "Arne-Olav Lien Bardølsgård":
+    "Sal, avdeling FresvikMob: 995 52 549E-post: arnbar@fresvik.no",
+  "Ove Fedje":
+    "Teknisk teikning og sal skip/offshoreMob: 911 76 599E-post: ovefed@fresvik.no",
+  "Tomas Kruvelis": "Delesal/innkjøpMob: 465 81 422E-post: tomkru@fresvik.no",
+  "Gyda Bøtun": "Adm dirMob: 992 27 516E-post: gydbot@fresvik.no",
+  "Sigmund Hauglum": "Lager og logistikkMob: 954 68 212E-post: sighau@fresvik.no",
+  "Siv Settevik": "ProduksjonsleiarMob: 41 6 60 685E-post: sivset@fresvik.no",
+  "Håvard Berdal": "Teknisk teikningMob: 909 12 476E-post: havber@fresvik.no",
+  "Oddrun Time": "AdministrasjonskoordinatorMob: 907 46 651E-post: oddtim@fresvik.no",
+  "Siri Otterhjell": "TransportansvarlegMob: 977 72 856E-post: sirott@fresvik.no",
+  "Ragnvald Grov Sørdal": "LønnsansvarlegMob: 909 77 331E-post: ragsor@fresvik.no",
+  "Nils Gunnar Finne": "ProduktutviklingMob: 915 13 117",
+  "Samaneh Shakeri": "Teknisk sjefMob:480 98 928E-post: samsha@fresvik.no",
+};
+
 const employeeCards = oldSiteEmployees.map((employee) => ({
   title: employee.title,
-  text: [
-    employee.role,
-    employee.location ? `Avdeling: ${employee.location}` : null,
-    employee.phone ? `Telefon: ${employee.phone}` : null,
-    employee.mobile ? `Mobil: ${employee.mobile}` : null,
-    employee.email ? `E-post: ${employee.email}` : null,
-  ]
-    .filter(Boolean)
-    .join(" | "),
+  text:
+    employeeContactTextByTitle[employee.title] ||
+    [employee.role, employee.phone, employee.mobile, employee.email].filter(Boolean).join(""),
   href: employee.href,
-  imageUrl: employee.imageUrl,
+  imageUrl: employeeImageByTitle[employee.title] || employee.imageUrl,
   imageAlt: employee.imageAlt || employee.title,
 }));
 
@@ -3512,6 +3545,22 @@ export const contentPages: ContentPage[] = [
         intro:
           "Dette er persondata frå gammal offentleg side. Før endeleg lansering bør rekkefølgje og samtykke/personvern rutine sjekkast.",
         items: employeeCards,
+      },
+      {
+        title: "Kontakt",
+        items: [
+          {
+            title: "Kontakt",
+            text: "Kontakt",
+            imageUrl: "/assets/fresvik/images/old-site/flake.png",
+            imageAlt: "flake.png",
+          },
+          ...accessoryContactCards,
+        ],
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
       },
     ],
   },

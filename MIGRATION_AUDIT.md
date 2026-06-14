@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-14T17:45:13.715Z
+Generated: 2026-06-14T17:49:55.657Z
 
 ## Summary
 
@@ -18,7 +18,7 @@ Generated: 2026-06-14T17:45:13.715Z
 | Needs-review count | 0 |
 | Unrecoverable documented | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 370 |
+| Local image assets | 384 |
 | Local document/PDF assets | 27 |
 | Asset originalUrls recovered in manifest | 308 |
 
@@ -154,7 +154,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /tenester/montasje | /tenester/montasje | page | service | yes | yes | yes | 11/2 | yes | Covered as migrated page in local data. |
 | /tenester/service-reservedeler | /tenester/service-reservedeler | page | service | yes | yes | yes | 9/1 | yes | Covered as migrated page in local data. |
 | /tilleggsutstyr | /tilleggsutstyr | page | unknown | yes | yes | yes | 31/12 | yes | Covered as migrated page in local data. |
-| /tilsette | /tilsette | page | employee | yes | yes | yes | 14/14 | no | Covered as migrated page in local data. |
+| /tilsette | /tilsette | page | employee | yes | yes | yes | 21/14 | yes | Covered as migrated page in local data. |
 | /transportskade | /transportskade | page | support | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 
 ## Content completeness
@@ -173,7 +173,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Local migrated image assets | 370 |
+| Local migrated image assets | 384 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
@@ -216,33 +216,33 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 413 |
+| Internal link references | 414 |
 | OK routes | 179 |
 | Redirect links | 19 |
-| Asset links OK | 215 |
+| Asset links OK | 216 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
 | --- | --- | --- | --- |
-| /referansar-list/fryse-og-kjolerom-til-sogn-frukt-og-gront | src/data/pages.ts:509 | redirect | Redirects to /referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront. |
-| /referansar-list/celsa-steel-sotra | src/data/pages.ts:514 | redirect | Redirects to /referansar/celsa-steel-sotra. |
-| /s/Miljdokument-Fresvik-Produkt.pdf | src/data/pages.ts:1296 | redirect | Redirects to /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf. |
-| /s/7060s-fnfz.pdf | src/data/pages.ts:1301 | redirect | Redirects to /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf. |
-| /s/2135g-5.pdf | src/data/pages.ts:1306 | redirect | Redirects to /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf. |
-| /s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | src/data/pages.ts:1321 | redirect | Redirects to /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf. |
-| /s/Sentral-Godkjenning-Fresvik-Produkt.pdf | src/data/pages.ts:1331 | redirect | Redirects to /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf. |
-| /s/Ytelseserklring-Fresvik-Produkt.pdf | src/data/pages.ts:1336 | redirect | Redirects to /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf. |
-| /s/Fresvik-Fryserom-Montasjeanvisning.pdf | src/data/pages.ts:1361 | redirect | Redirects to /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf. |
-| /s/Fresvik-Port-Montasjeanvisning.pdf | src/data/pages.ts:1368 | redirect | Redirects to /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf. |
-| /s/Fresvik-Kjlerom-Montasjeanvisning.pdf | src/data/pages.ts:1376 | redirect | Redirects to /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf. |
-| /s/Fresvik-Dr-Montasjeanvisning.pdf | src/data/pages.ts:1390 | redirect | Redirects to /assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf. |
-| /s/Koblingsskjema-Fermod-5010.pdf | src/data/pages.ts:1417 | redirect | Redirects to /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf. |
-| /s/Montasjeanvisning-5010-for-2150.pdf | src/data/pages.ts:1422 | redirect | Redirects to /assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf. |
-| /s/Montasjeanvisning-5010-for-3530-og-7530.pdf | src/data/pages.ts:1427 | redirect | Redirects to /assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf. |
-| /s/Quick-Start-5010Exp-indB.pdf | src/data/pages.ts:1432 | redirect | Redirects to /assets/fresvik/documents/quick-start-5010exp.pdf. |
-| /s/Endre-Skyveretning.pdf | src/data/pages.ts:1437 | redirect | Redirects to /assets/fresvik/documents/endre-skyveretning.pdf. |
-| /s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf | src/data/pages.ts:1442 | redirect | Redirects to /assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf. |
-| /om-oss/fresvik-produkt | src/data/pages.ts:3401 | redirect | Redirects to /firmainfo. |
+| /referansar-list/fryse-og-kjolerom-til-sogn-frukt-og-gront | src/data/pages.ts:542 | redirect | Redirects to /referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront. |
+| /referansar-list/celsa-steel-sotra | src/data/pages.ts:547 | redirect | Redirects to /referansar/celsa-steel-sotra. |
+| /s/Miljdokument-Fresvik-Produkt.pdf | src/data/pages.ts:1329 | redirect | Redirects to /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf. |
+| /s/7060s-fnfz.pdf | src/data/pages.ts:1334 | redirect | Redirects to /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf. |
+| /s/2135g-5.pdf | src/data/pages.ts:1339 | redirect | Redirects to /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf. |
+| /s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | src/data/pages.ts:1354 | redirect | Redirects to /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf. |
+| /s/Sentral-Godkjenning-Fresvik-Produkt.pdf | src/data/pages.ts:1364 | redirect | Redirects to /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf. |
+| /s/Ytelseserklring-Fresvik-Produkt.pdf | src/data/pages.ts:1369 | redirect | Redirects to /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf. |
+| /s/Fresvik-Fryserom-Montasjeanvisning.pdf | src/data/pages.ts:1394 | redirect | Redirects to /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf. |
+| /s/Fresvik-Port-Montasjeanvisning.pdf | src/data/pages.ts:1401 | redirect | Redirects to /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf. |
+| /s/Fresvik-Kjlerom-Montasjeanvisning.pdf | src/data/pages.ts:1409 | redirect | Redirects to /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf. |
+| /s/Fresvik-Dr-Montasjeanvisning.pdf | src/data/pages.ts:1423 | redirect | Redirects to /assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf. |
+| /s/Koblingsskjema-Fermod-5010.pdf | src/data/pages.ts:1450 | redirect | Redirects to /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf. |
+| /s/Montasjeanvisning-5010-for-2150.pdf | src/data/pages.ts:1455 | redirect | Redirects to /assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf. |
+| /s/Montasjeanvisning-5010-for-3530-og-7530.pdf | src/data/pages.ts:1460 | redirect | Redirects to /assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf. |
+| /s/Quick-Start-5010Exp-indB.pdf | src/data/pages.ts:1465 | redirect | Redirects to /assets/fresvik/documents/quick-start-5010exp.pdf. |
+| /s/Endre-Skyveretning.pdf | src/data/pages.ts:1470 | redirect | Redirects to /assets/fresvik/documents/endre-skyveretning.pdf. |
+| /s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf | src/data/pages.ts:1475 | redirect | Redirects to /assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf. |
+| /om-oss/fresvik-produkt | src/data/pages.ts:3434 | redirect | Redirects to /firmainfo. |
 
 ## External links
 

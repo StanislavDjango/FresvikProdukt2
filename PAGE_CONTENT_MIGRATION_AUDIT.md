@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-06-14T17:45:15.704Z
+Generated: 2026-06-14T17:49:57.728Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -138,7 +138,7 @@ Next batch: `none`
 | support-company-legal | /personvernerklering | migrated | 13/13 | 0/0 | 2/0 | 26/35 | Strict content evidence is covered. |
 | support-company-legal | /stillingledig | migrated | 21/21 | 4/4 | 2/0 | 28/37 | Strict content evidence is covered. |
 | support-company-legal | /tilleggsutstyr | migrated | 3/3 | 31/12 | 2/0 | 39/35 | Strict content evidence is covered. |
-| support-company-legal | /tilsette | migrated | 0/0 | 14/14 | 0/0 | 20/35 | Structured index/list page: old body text was not extractable, but list links/images are covered. |
+| support-company-legal | /tilsette | migrated | 0/0 | 35/14 | 2/0 | 31/35 | Structured index/list page: old body text was not extractable, but list links/images are covered. |
 | support-company-legal | /transportskade | migrated | 5/5 | 2/2 | 2/0 | 27/35 | Strict content evidence is covered. |
 | support-company-legal | /kjolerom-fryserom-offshore-1 | redirect | 0/0 | 0/0 | 0/0 | 0/0 | Redirects to /kjolerom-fryserom-offshore. |
 | support-company-legal | /send-foresporsel | redirect | 0/0 | 0/0 | 0/0 | 1/0 | Redirects to /kontakt. |

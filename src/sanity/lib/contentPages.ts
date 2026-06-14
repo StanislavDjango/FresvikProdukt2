@@ -134,6 +134,7 @@ const localMigrationStructurePaths = new Set([
   "/monteringsanvisning",
   "/monteringsanvisningar-fresvik-skyveport",
   "/kundeservice/faq",
+  "/referansar",
 ]);
 
 const NEWS_INDEX_QUERY = defineQuery(`*[_type == "newsArticle"] | order(date desc, title asc) {

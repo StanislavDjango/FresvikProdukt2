@@ -420,11 +420,83 @@ const newsCards = inventoryCards(
   newsTextByHref,
 );
 
-const referenceCards = inventoryCards(
+const referenceIndexTextByHref: Record<string, string> = {
+  ...referenceTextByHref,
+  "/referansar/bunnpris-hammerfest":
+    "Langt nord i vårt vakre land har vi levert ett fryserom og ett kjølerom til meierivarer.",
+  "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront":
+    "I starten av året har vi hatt gleda av å levere fryse- og kjølerom til Fellespakkeriet på Håbakken i Lærdal.",
+  "/referansar/fryserom-fryseport-rentokil":
+    "For Kelvin har vi bygd fryserom til nytt uvanleg bruksområde!",
+  "/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar":
+    "Meir miljøvennleg bygging i daglegvarebransjen.",
+};
+
+const referenceIndexBaseCards = inventoryCards(
   oldSiteReferences,
   "Referanse registrert frå gammal sitemap med kjeldeside bevart for migrering.",
-  referenceTextByHref,
+  referenceIndexTextByHref,
 );
+
+const referenceIndexImageByHref: Record<string, string> = {
+  "/referansar/fryserom-baza-fredrikstad":
+    "/assets/fresvik/images/old-site/Baza+fryserom+-+2.jpeg",
+  "/referansar/historisk-leveranse-pir-panel-spar-lund-torv":
+    "/assets/fresvik/images/old-site/Spar+Lund+Torv+-+Fresvik+Produkt+1+.jpeg",
+  "/referansar/bjerkreim-legekontor-vikesaa":
+    "/assets/fresvik/images/old-site/Bjerkreim+Legekontor+1.jpeg",
+  "/referansar/kjolerom-kjoledor-bunnpris-volda":
+    "/assets/fresvik/images/old-site/Kjølerom+Bunnpris+Volda+3.jpg",
+  "/referansar/fryserom-coop-obs-alnabru":
+    "/assets/fresvik/images/old-site/Fryserom+OBS+Alna+4_red.jpg",
+  "/referansar/vik-helse-og-omsorgssenter":
+    "/assets/fresvik/images/old-site/Vik+helse-+og+sjukeheim+1.jpg",
+  "/referansar/fryse-og-kjolerom-kiwi-otta":
+    "/assets/fresvik/images/old-site/Kiwi+Otta+1.jpeg",
+  "/referansar/nye-leveransar-til-rema-1000-ya-i-larvik":
+    "/assets/fresvik/images/old-site/1715599204491_upscale.jpeg",
+  "/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark":
+    "/assets/fresvik/images/old-site/FP+Dyreparken.jpg",
+  "/referansar/spesialloysing-torkerom-drageboden-kaupanger":
+    "/assets/fresvik/images/old-site/DSC03067.jpg",
+  "/referansar/omfattande-leveranse-til-bakehuset-trondheim":
+    "/assets/fresvik/images/old-site/20220616_152821_1.jpg",
+  "/referansar/fryseromsportar-til-rema-1000-i-narvik":
+    "/assets/fresvik/images/old-site/IMG_6262.jpg",
+  "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront":
+    "/assets/fresvik/images/old-site/IMG_2589.jpg",
+  "/referansar/fryserom-fryseport-rentokil":
+    "/assets/fresvik/images/old-site/image-asset.jpeg",
+  "/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar":
+    "/assets/fresvik/images/old-site/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
+  "/referansar/karlsoybruket":
+    "/assets/fresvik/images/old-site/Port+Karlsøybruket+2017.jpg",
+  "/referansar/fiskehallen":
+    "/assets/fresvik/images/old-site/fiskehallen2.jpg",
+};
+
+const referenceIndexCards = referenceIndexBaseCards.map((card) => ({
+  ...card,
+  imageUrl: card.href ? referenceIndexImageByHref[card.href] || card.imageUrl : card.imageUrl,
+}));
+
+const referenceCategoryCards: ContentCard[] = [
+  {
+    title: "Kjøle- fryserom butikk",
+    text: "Kjøle- fryserom butikk",
+    href: "/referansar/category/Kj%C3%B8le-+fryserom+butikk",
+  },
+  {
+    title: "Storkjøkken-restaurant",
+    text: "Storkjøkken-restaurant",
+    href: "/referansar/category/Storkj%C3%B8kken-restaurant",
+  },
+  {
+    title: "Fasadepanel",
+    text: "Fasadepanel",
+    href: "/referansar/category/Fasadepanel",
+  },
+];
 
 const oldServiceCards = inventoryCards(
   oldSiteServices,
@@ -3205,23 +3277,46 @@ export const contentPages: ContentPage[] = [
   {
     slug: "/referansar",
     title: "Referansar",
-    eyebrow: "Prosjekt og kundar",
+    eyebrow: "Referansar",
     intro:
-      "Referansar skal vise prosjekt, bruksområde og kundetypar på ein ryddig og filterbar måte.",
+      "Ein leiande leverandør av kjølerom og fryserom",
     description: "Referanseprosjekt frå Fresvik Produkt.",
     pageType: "company",
     priority: "medium",
     sourceUrl: "https://www.fresvik.no/referansar",
-    cards: referenceCards.slice(0, 9),
+    cards: referenceIndexCards.slice(0, 9),
     sections: [
       {
-        title: "Registrerte referanseprosjekt frå gammal sitemap",
+        title: "Ein leiande leverandør av kjølerom og fryserom",
         intro:
-          "Dette er faktiske referanse-URL-ar og bilete frå den gamle nettstaden. Neste steg er å flytte brødtekst, kategori og metadata til Sanity.",
-        items: referenceCards,
+          "Vi leverer til næringsmiddelindustrien og til næringsbygg, institusjonar, storkjøkken, butikkar, laboratorium,skip og offshoreinstallasjonar. Vårt produktspekter er basert på modular, og vi legg sterk vekt på skreddarsaum, leveransesikkerheit og kvalitet. Her er nokre av våre referansar:",
+        items: [
+          {
+            title: "skreddarsaum, leveransesikkerheit og kvalitet",
+            text: "skreddarsaum, leveransesikkerheit og kvalitet",
+            href: "/om-oss/fresvik-produkt",
+            imageUrl: "/assets/fresvik/images/old-site/flake.png",
+            imageAlt: "flake.png",
+          },
+        ],
+      },
+      {
+        title: "Referansar",
+        items: referenceIndexCards,
+      },
+      {
+        title: "Kategoriar",
+        items: referenceCategoryCards,
+      },
+      {
+        title: "Kontakt",
+        items: accessoryContactCards,
+      },
+      {
+        title: "Dokumentasjon og sertifikat",
+        items: accessoryCertificationCards,
       },
     ],
-    todo: ["Importer referanseprosjekta som `referenceProject`-dokument i Sanity."],
   },
   {
     slug: "/om-oss",

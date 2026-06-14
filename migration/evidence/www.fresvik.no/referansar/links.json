@@ -1,0 +1,968 @@
+[
+  {
+    "text": "0",
+    "href": "/cart",
+    "absoluteUrl": "https://www.fresvik.no/cart",
+    "type": "internal"
+  },
+  {
+    "text": "Hopp til innhold",
+    "href": "#page",
+    "absoluteUrl": "https://www.fresvik.no/referansar#page",
+    "type": "anchor"
+  },
+  {
+    "text": "Fresvik Produkt",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PIR-Panel",
+    "href": "/produkt/fresvik-pir-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-pir-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PUR-Panel",
+    "href": "/produkt/fresvik-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og fryseportar",
+    "href": "/produkt/kjole-fryseportar",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-fryseportar",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og frysedører",
+    "href": "/produkt/kjole-frysedorer",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-frysedorer",
+    "type": "internal"
+  },
+  {
+    "text": "Fasadepanel",
+    "href": "/produkt/fasadepanel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fasadepanel",
+    "type": "internal"
+  },
+  {
+    "text": "Frysetunnel",
+    "href": "/produkt/frysetunnel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/frysetunnel",
+    "type": "internal"
+  },
+  {
+    "text": "Tilleggsutstyr",
+    "href": "/tilleggsutstyr",
+    "absoluteUrl": "https://www.fresvik.no/tilleggsutstyr",
+    "type": "internal"
+  },
+  {
+    "text": "Referansar",
+    "href": "/referansar",
+    "absoluteUrl": "https://www.fresvik.no/referansar",
+    "type": "internal"
+  },
+  {
+    "text": "Montasje",
+    "href": "/tenester/montasje",
+    "absoluteUrl": "https://www.fresvik.no/tenester/montasje",
+    "type": "internal"
+  },
+  {
+    "text": "Leveranse",
+    "href": "/tenester/leveranse",
+    "absoluteUrl": "https://www.fresvik.no/tenester/leveranse",
+    "type": "internal"
+  },
+  {
+    "text": "Service og reservedeler",
+    "href": "/tenester/service-reservedeler",
+    "absoluteUrl": "https://www.fresvik.no/tenester/service-reservedeler",
+    "type": "internal"
+  },
+  {
+    "text": "Dokumentasjon",
+    "href": "/dokumentasjon",
+    "absoluteUrl": "https://www.fresvik.no/dokumentasjon",
+    "type": "internal"
+  },
+  {
+    "text": "Monteringsanvisningar",
+    "href": "/monteringsanvisning",
+    "absoluteUrl": "https://www.fresvik.no/monteringsanvisning",
+    "type": "internal"
+  },
+  {
+    "text": "Ofte Stilte Spørsmål",
+    "href": "/kundeservice/faq",
+    "absoluteUrl": "https://www.fresvik.no/kundeservice/faq",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik Produkt",
+    "href": "/firmainfo",
+    "absoluteUrl": "https://www.fresvik.no/firmainfo",
+    "type": "internal"
+  },
+  {
+    "text": "Tilsette",
+    "href": "/tilsette",
+    "absoluteUrl": "https://www.fresvik.no/tilsette",
+    "type": "internal"
+  },
+  {
+    "text": "Aktuelt",
+    "href": "/aktuelt",
+    "absoluteUrl": "https://www.fresvik.no/aktuelt",
+    "type": "internal"
+  },
+  {
+    "text": "Ledig stilling",
+    "href": "/stillingledig",
+    "absoluteUrl": "https://www.fresvik.no/stillingledig",
+    "type": "internal"
+  },
+  {
+    "text": "Kontakt",
+    "href": "/kontakt",
+    "absoluteUrl": "https://www.fresvik.no/kontakt",
+    "type": "internal"
+  },
+  {
+    "text": "Facebook",
+    "href": "https://www.facebook.com/profile.php?id=100057316063120",
+    "absoluteUrl": "https://www.facebook.com/profile.php?id=100057316063120",
+    "type": "external"
+  },
+  {
+    "text": "LinkedIn",
+    "href": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "absoluteUrl": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "type": "external"
+  },
+  {
+    "text": "Send forespørsel",
+    "href": "/send-foresporsel",
+    "absoluteUrl": "https://www.fresvik.no/send-foresporsel",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik Produkt",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PIR-Panel",
+    "href": "/produkt/fresvik-pir-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-pir-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PUR-Panel",
+    "href": "/produkt/fresvik-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og fryseportar",
+    "href": "/produkt/kjole-fryseportar",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-fryseportar",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og frysedører",
+    "href": "/produkt/kjole-frysedorer",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-frysedorer",
+    "type": "internal"
+  },
+  {
+    "text": "Fasadepanel",
+    "href": "/produkt/fasadepanel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fasadepanel",
+    "type": "internal"
+  },
+  {
+    "text": "Frysetunnel",
+    "href": "/produkt/frysetunnel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/frysetunnel",
+    "type": "internal"
+  },
+  {
+    "text": "Tilleggsutstyr",
+    "href": "/tilleggsutstyr",
+    "absoluteUrl": "https://www.fresvik.no/tilleggsutstyr",
+    "type": "internal"
+  },
+  {
+    "text": "Referansar",
+    "href": "/referansar",
+    "absoluteUrl": "https://www.fresvik.no/referansar",
+    "type": "internal"
+  },
+  {
+    "text": "Montasje",
+    "href": "/tenester/montasje",
+    "absoluteUrl": "https://www.fresvik.no/tenester/montasje",
+    "type": "internal"
+  },
+  {
+    "text": "Leveranse",
+    "href": "/tenester/leveranse",
+    "absoluteUrl": "https://www.fresvik.no/tenester/leveranse",
+    "type": "internal"
+  },
+  {
+    "text": "Service og reservedeler",
+    "href": "/tenester/service-reservedeler",
+    "absoluteUrl": "https://www.fresvik.no/tenester/service-reservedeler",
+    "type": "internal"
+  },
+  {
+    "text": "Dokumentasjon",
+    "href": "/dokumentasjon",
+    "absoluteUrl": "https://www.fresvik.no/dokumentasjon",
+    "type": "internal"
+  },
+  {
+    "text": "Monteringsanvisningar",
+    "href": "/monteringsanvisning",
+    "absoluteUrl": "https://www.fresvik.no/monteringsanvisning",
+    "type": "internal"
+  },
+  {
+    "text": "Ofte Stilte Spørsmål",
+    "href": "/kundeservice/faq",
+    "absoluteUrl": "https://www.fresvik.no/kundeservice/faq",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik Produkt",
+    "href": "/firmainfo",
+    "absoluteUrl": "https://www.fresvik.no/firmainfo",
+    "type": "internal"
+  },
+  {
+    "text": "Tilsette",
+    "href": "/tilsette",
+    "absoluteUrl": "https://www.fresvik.no/tilsette",
+    "type": "internal"
+  },
+  {
+    "text": "Aktuelt",
+    "href": "/aktuelt",
+    "absoluteUrl": "https://www.fresvik.no/aktuelt",
+    "type": "internal"
+  },
+  {
+    "text": "Ledig stilling",
+    "href": "/stillingledig",
+    "absoluteUrl": "https://www.fresvik.no/stillingledig",
+    "type": "internal"
+  },
+  {
+    "text": "Kontakt",
+    "href": "/kontakt",
+    "absoluteUrl": "https://www.fresvik.no/kontakt",
+    "type": "internal"
+  },
+  {
+    "text": "Facebook",
+    "href": "https://www.facebook.com/profile.php?id=100057316063120",
+    "absoluteUrl": "https://www.facebook.com/profile.php?id=100057316063120",
+    "type": "external"
+  },
+  {
+    "text": "LinkedIn",
+    "href": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "absoluteUrl": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "type": "external"
+  },
+  {
+    "text": "Send forespørsel",
+    "href": "/send-foresporsel",
+    "absoluteUrl": "https://www.fresvik.no/send-foresporsel",
+    "type": "internal"
+  },
+  {
+    "text": "Mappe: Produkt",
+    "href": "/produkt-mappe",
+    "absoluteUrl": "https://www.fresvik.no/produkt-mappe",
+    "type": "internal"
+  },
+  {
+    "text": "Tilbake",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PIR-Panel",
+    "href": "/produkt/fresvik-pir-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-pir-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik PUR-Panel",
+    "href": "/produkt/fresvik-panel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fresvik-panel",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og fryseportar",
+    "href": "/produkt/kjole-fryseportar",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-fryseportar",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og frysedører",
+    "href": "/produkt/kjole-frysedorer",
+    "absoluteUrl": "https://www.fresvik.no/produkt/kjole-frysedorer",
+    "type": "internal"
+  },
+  {
+    "text": "Fasadepanel",
+    "href": "/produkt/fasadepanel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/fasadepanel",
+    "type": "internal"
+  },
+  {
+    "text": "Frysetunnel",
+    "href": "/produkt/frysetunnel",
+    "absoluteUrl": "https://www.fresvik.no/produkt/frysetunnel",
+    "type": "internal"
+  },
+  {
+    "text": "Tilleggsutstyr",
+    "href": "/tilleggsutstyr",
+    "absoluteUrl": "https://www.fresvik.no/tilleggsutstyr",
+    "type": "internal"
+  },
+  {
+    "text": "Referansar",
+    "href": "/referansar",
+    "absoluteUrl": "https://www.fresvik.no/referansar",
+    "type": "internal"
+  },
+  {
+    "text": "Mappe: Tenester",
+    "href": "/tenester",
+    "absoluteUrl": "https://www.fresvik.no/tenester",
+    "type": "internal"
+  },
+  {
+    "text": "Tilbake",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Montasje",
+    "href": "/tenester/montasje",
+    "absoluteUrl": "https://www.fresvik.no/tenester/montasje",
+    "type": "internal"
+  },
+  {
+    "text": "Leveranse",
+    "href": "/tenester/leveranse",
+    "absoluteUrl": "https://www.fresvik.no/tenester/leveranse",
+    "type": "internal"
+  },
+  {
+    "text": "Service og reservedeler",
+    "href": "/tenester/service-reservedeler",
+    "absoluteUrl": "https://www.fresvik.no/tenester/service-reservedeler",
+    "type": "internal"
+  },
+  {
+    "text": "Mappe: Kundeservice",
+    "href": "/kundeservice",
+    "absoluteUrl": "https://www.fresvik.no/kundeservice",
+    "type": "internal"
+  },
+  {
+    "text": "Tilbake",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Dokumentasjon",
+    "href": "/dokumentasjon",
+    "absoluteUrl": "https://www.fresvik.no/dokumentasjon",
+    "type": "internal"
+  },
+  {
+    "text": "Monteringsanvisningar",
+    "href": "/monteringsanvisning",
+    "absoluteUrl": "https://www.fresvik.no/monteringsanvisning",
+    "type": "internal"
+  },
+  {
+    "text": "Ofte Stilte Spørsmål",
+    "href": "/kundeservice/faq",
+    "absoluteUrl": "https://www.fresvik.no/kundeservice/faq",
+    "type": "internal"
+  },
+  {
+    "text": "Mappe: Om oss",
+    "href": "/om-oss",
+    "absoluteUrl": "https://www.fresvik.no/om-oss",
+    "type": "internal"
+  },
+  {
+    "text": "Tilbake",
+    "href": "/",
+    "absoluteUrl": "https://www.fresvik.no/",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik Produkt",
+    "href": "/firmainfo",
+    "absoluteUrl": "https://www.fresvik.no/firmainfo",
+    "type": "internal"
+  },
+  {
+    "text": "Tilsette",
+    "href": "/tilsette",
+    "absoluteUrl": "https://www.fresvik.no/tilsette",
+    "type": "internal"
+  },
+  {
+    "text": "Aktuelt",
+    "href": "/aktuelt",
+    "absoluteUrl": "https://www.fresvik.no/aktuelt",
+    "type": "internal"
+  },
+  {
+    "text": "Ledig stilling",
+    "href": "/stillingledig",
+    "absoluteUrl": "https://www.fresvik.no/stillingledig",
+    "type": "internal"
+  },
+  {
+    "text": "Kontakt",
+    "href": "/kontakt",
+    "absoluteUrl": "https://www.fresvik.no/kontakt",
+    "type": "internal"
+  },
+  {
+    "text": "Facebook",
+    "href": "https://www.facebook.com/profile.php?id=100057316063120",
+    "absoluteUrl": "https://www.facebook.com/profile.php?id=100057316063120",
+    "type": "external"
+  },
+  {
+    "text": "LinkedIn",
+    "href": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "absoluteUrl": "https://www.linkedin.com/company/fresvik-produkt-as/",
+    "type": "external"
+  },
+  {
+    "text": "Send forespørsel",
+    "href": "/send-foresporsel",
+    "absoluteUrl": "https://www.fresvik.no/send-foresporsel",
+    "type": "internal"
+  },
+  {
+    "text": "skreddarsaum, leveransesikkerheit og kvalitet",
+    "href": "/om-oss/fresvik-produkt",
+    "absoluteUrl": "https://www.fresvik.no/om-oss/fresvik-produkt",
+    "type": "internal"
+  },
+  {
+    "text": "Skreddarsydd fryserom til Baza i Fredrikstad",
+    "href": "/referansar/fryserom-baza-fredrikstad",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryserom-baza-fredrikstad",
+    "type": "internal"
+  },
+  {
+    "text": "Skreddarsydd fryserom til Baza i Fredrikstad",
+    "href": "/referansar/fryserom-baza-fredrikstad",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryserom-baza-fredrikstad",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/fryserom-baza-fredrikstad",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryserom-baza-fredrikstad",
+    "type": "internal"
+  },
+  {
+    "text": "Historisk leveranse til Spar Lund Torv",
+    "href": "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+    "absoluteUrl": "https://www.fresvik.no/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+    "type": "internal"
+  },
+  {
+    "text": "Historisk leveranse til Spar Lund Torv",
+    "href": "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+    "absoluteUrl": "https://www.fresvik.no/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+    "absoluteUrl": "https://www.fresvik.no/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+    "type": "internal"
+  },
+  {
+    "text": "Bjerkreim Legekontor: fryselager og kjølerom",
+    "href": "/referansar/bjerkreim-legekontor-vikesaa",
+    "absoluteUrl": "https://www.fresvik.no/referansar/bjerkreim-legekontor-vikesaa",
+    "type": "internal"
+  },
+  {
+    "text": "Bjerkreim Legekontor: fryselager og kjølerom",
+    "href": "/referansar/bjerkreim-legekontor-vikesaa",
+    "absoluteUrl": "https://www.fresvik.no/referansar/bjerkreim-legekontor-vikesaa",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/bjerkreim-legekontor-vikesaa",
+    "absoluteUrl": "https://www.fresvik.no/referansar/bjerkreim-legekontor-vikesaa",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og fryserom til Bunnpris Hammerfest",
+    "href": "/referansar/bunnpris-hammerfest",
+    "absoluteUrl": "https://www.fresvik.no/referansar/bunnpris-hammerfest",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og fryserom til Bunnpris Hammerfest",
+    "href": "/referansar/bunnpris-hammerfest",
+    "absoluteUrl": "https://www.fresvik.no/referansar/bunnpris-hammerfest",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/bunnpris-hammerfest",
+    "absoluteUrl": "https://www.fresvik.no/referansar/bunnpris-hammerfest",
+    "type": "internal"
+  },
+  {
+    "text": "Bunnpris Volda: Nytt kjølerom med isolert kjøledør",
+    "href": "/referansar/kjolerom-kjoledor-bunnpris-volda",
+    "absoluteUrl": "https://www.fresvik.no/referansar/kjolerom-kjoledor-bunnpris-volda",
+    "type": "internal"
+  },
+  {
+    "text": "Bunnpris Volda: Nytt kjølerom med isolert kjøledør",
+    "href": "/referansar/kjolerom-kjoledor-bunnpris-volda",
+    "absoluteUrl": "https://www.fresvik.no/referansar/kjolerom-kjoledor-bunnpris-volda",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/kjolerom-kjoledor-bunnpris-volda",
+    "absoluteUrl": "https://www.fresvik.no/referansar/kjolerom-kjoledor-bunnpris-volda",
+    "type": "internal"
+  },
+  {
+    "text": "Nytt stort fryserom til Coop Obs Alnabru",
+    "href": "/referansar/fryserom-coop-obs-alnabru",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryserom-coop-obs-alnabru",
+    "type": "internal"
+  },
+  {
+    "text": "Nytt stort fryserom til Coop Obs Alnabru",
+    "href": "/referansar/fryserom-coop-obs-alnabru",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryserom-coop-obs-alnabru",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/fryserom-coop-obs-alnabru",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryserom-coop-obs-alnabru",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og fryserom til nye Vik helse- og omsorgssenter",
+    "href": "/referansar/vik-helse-og-omsorgssenter",
+    "absoluteUrl": "https://www.fresvik.no/referansar/vik-helse-og-omsorgssenter",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- og fryserom til nye Vik helse- og omsorgssenter",
+    "href": "/referansar/vik-helse-og-omsorgssenter",
+    "absoluteUrl": "https://www.fresvik.no/referansar/vik-helse-og-omsorgssenter",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/vik-helse-og-omsorgssenter",
+    "absoluteUrl": "https://www.fresvik.no/referansar/vik-helse-og-omsorgssenter",
+    "type": "internal"
+  },
+  {
+    "text": "Nok ein Kiwi-butikk får nye fryse- og kjølerom",
+    "href": "/referansar/fryse-og-kjolerom-kiwi-otta",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta",
+    "type": "internal"
+  },
+  {
+    "text": "Nok ein Kiwi-butikk får nye fryse- og kjølerom",
+    "href": "/referansar/fryse-og-kjolerom-kiwi-otta",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/fryse-og-kjolerom-kiwi-otta",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta",
+    "type": "internal"
+  },
+  {
+    "text": "Nye leveransar til Rema 1000 Øya i Larvik",
+    "href": "/referansar/nye-leveransar-til-rema-1000-ya-i-larvik",
+    "absoluteUrl": "https://www.fresvik.no/referansar/nye-leveransar-til-rema-1000-ya-i-larvik",
+    "type": "internal"
+  },
+  {
+    "text": "Nye leveransar til Rema 1000 Øya i Larvik",
+    "href": "/referansar/nye-leveransar-til-rema-1000-ya-i-larvik",
+    "absoluteUrl": "https://www.fresvik.no/referansar/nye-leveransar-til-rema-1000-ya-i-larvik",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/nye-leveransar-til-rema-1000-ya-i-larvik",
+    "absoluteUrl": "https://www.fresvik.no/referansar/nye-leveransar-til-rema-1000-ya-i-larvik",
+    "type": "internal"
+  },
+  {
+    "text": "Ny leveranse til Dyreparken Safaricamp i Kristiansand Dyrepark",
+    "href": "/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark",
+    "absoluteUrl": "https://www.fresvik.no/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark",
+    "type": "internal"
+  },
+  {
+    "text": "Ny leveranse til Dyreparken Safaricamp i Kristiansand Dyrepark",
+    "href": "/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark",
+    "absoluteUrl": "https://www.fresvik.no/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark",
+    "absoluteUrl": "https://www.fresvik.no/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark",
+    "type": "internal"
+  },
+  {
+    "text": "Spesialløysing til tørkerom hjå Drageboden Kaupanger",
+    "href": "/referansar/spesialloysing-torkerom-drageboden-kaupanger",
+    "absoluteUrl": "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger",
+    "type": "internal"
+  },
+  {
+    "text": "Spesialløysing til tørkerom hjå Drageboden Kaupanger",
+    "href": "/referansar/spesialloysing-torkerom-drageboden-kaupanger",
+    "absoluteUrl": "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/spesialloysing-torkerom-drageboden-kaupanger",
+    "absoluteUrl": "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger",
+    "type": "internal"
+  },
+  {
+    "text": "Omfattande leveranse til Bakehuset Trondheim",
+    "href": "/referansar/omfattande-leveranse-til-bakehuset-trondheim",
+    "absoluteUrl": "https://www.fresvik.no/referansar/omfattande-leveranse-til-bakehuset-trondheim",
+    "type": "internal"
+  },
+  {
+    "text": "Omfattande leveranse til Bakehuset Trondheim",
+    "href": "/referansar/omfattande-leveranse-til-bakehuset-trondheim",
+    "absoluteUrl": "https://www.fresvik.no/referansar/omfattande-leveranse-til-bakehuset-trondheim",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/omfattande-leveranse-til-bakehuset-trondheim",
+    "absoluteUrl": "https://www.fresvik.no/referansar/omfattande-leveranse-til-bakehuset-trondheim",
+    "type": "internal"
+  },
+  {
+    "text": "Fryseromsportar til Rema 1000 i Narvik",
+    "href": "/referansar/fryseromsportar-til-rema-1000-i-narvik",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryseromsportar-til-rema-1000-i-narvik",
+    "type": "internal"
+  },
+  {
+    "text": "Fryseromsportar til Rema 1000 i Narvik",
+    "href": "/referansar/fryseromsportar-til-rema-1000-i-narvik",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryseromsportar-til-rema-1000-i-narvik",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/fryseromsportar-til-rema-1000-i-narvik",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryseromsportar-til-rema-1000-i-narvik",
+    "type": "internal"
+  },
+  {
+    "text": "Fryse- og kjølerom til Sogn Frukt og Grønt",
+    "href": "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront",
+    "type": "internal"
+  },
+  {
+    "text": "Fryse- og kjølerom til Sogn Frukt og Grønt",
+    "href": "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront",
+    "type": "internal"
+  },
+  {
+    "text": "Fryserom og fryseport til Rentokil, Skjetten",
+    "href": "/referansar/fryserom-fryseport-rentokil",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil",
+    "type": "internal"
+  },
+  {
+    "text": "Fryserom og fryseport til Rentokil, Skjetten",
+    "href": "/referansar/fryserom-fryseport-rentokil",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/fryserom-fryseport-rentokil",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik kjøle- og fryserom i miljøvennlege daglegvarebutikkar",
+    "href": "/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- fryserom butikk",
+    "href": "/referansar/category/Kj%C3%B8le-+fryserom+butikk",
+    "absoluteUrl": "https://www.fresvik.no/referansar/category/Kj%C3%B8le-+fryserom+butikk",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- fryserom butikk",
+    "href": "/referansar/category/Kj%C3%B8le-+fryserom+butikk",
+    "absoluteUrl": "https://www.fresvik.no/referansar/category/Kj%C3%B8le-+fryserom+butikk",
+    "type": "internal"
+  },
+  {
+    "text": "Fresvik kjøle- og fryserom i miljøvennlege daglegvarebutikkar",
+    "href": "/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar",
+    "type": "internal"
+  },
+  {
+    "text": "Karlsøybruket",
+    "href": "/referansar/karlsoybruket",
+    "absoluteUrl": "https://www.fresvik.no/referansar/karlsoybruket",
+    "type": "internal"
+  },
+  {
+    "text": "Karlsøybruket",
+    "href": "/referansar/karlsoybruket",
+    "absoluteUrl": "https://www.fresvik.no/referansar/karlsoybruket",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/karlsoybruket",
+    "absoluteUrl": "https://www.fresvik.no/referansar/karlsoybruket",
+    "type": "internal"
+  },
+  {
+    "text": "Fiskehallen",
+    "href": "/referansar/fiskehallen",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fiskehallen",
+    "type": "internal"
+  },
+  {
+    "text": "Storkjøkken-restaurant",
+    "href": "/referansar/category/Storkj%C3%B8kken-restaurant",
+    "absoluteUrl": "https://www.fresvik.no/referansar/category/Storkj%C3%B8kken-restaurant",
+    "type": "internal"
+  },
+  {
+    "text": "Storkjøkken-restaurant",
+    "href": "/referansar/category/Storkj%C3%B8kken-restaurant",
+    "absoluteUrl": "https://www.fresvik.no/referansar/category/Storkj%C3%B8kken-restaurant",
+    "type": "internal"
+  },
+  {
+    "text": "Fiskehallen",
+    "href": "/referansar/fiskehallen",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fiskehallen",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/fiskehallen",
+    "absoluteUrl": "https://www.fresvik.no/referansar/fiskehallen",
+    "type": "internal"
+  },
+  {
+    "text": "Celsa Steel Service, Sotra",
+    "href": "/referansar/celsa-steel-sotra",
+    "absoluteUrl": "https://www.fresvik.no/referansar/celsa-steel-sotra",
+    "type": "internal"
+  },
+  {
+    "text": "Fasadepanel",
+    "href": "/referansar/category/Fasadepanel",
+    "absoluteUrl": "https://www.fresvik.no/referansar/category/Fasadepanel",
+    "type": "internal"
+  },
+  {
+    "text": "Fasadepanel",
+    "href": "/referansar/category/Fasadepanel",
+    "absoluteUrl": "https://www.fresvik.no/referansar/category/Fasadepanel",
+    "type": "internal"
+  },
+  {
+    "text": "Celsa Steel Service, Sotra",
+    "href": "/referansar/celsa-steel-sotra",
+    "absoluteUrl": "https://www.fresvik.no/referansar/celsa-steel-sotra",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/celsa-steel-sotra",
+    "absoluteUrl": "https://www.fresvik.no/referansar/celsa-steel-sotra",
+    "type": "internal"
+  },
+  {
+    "text": "Buskerud storcash",
+    "href": "/referansar/buskerud-storcash",
+    "absoluteUrl": "https://www.fresvik.no/referansar/buskerud-storcash",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- fryserom butikk",
+    "href": "/referansar/category/Kj%C3%B8le-+fryserom+butikk",
+    "absoluteUrl": "https://www.fresvik.no/referansar/category/Kj%C3%B8le-+fryserom+butikk",
+    "type": "internal"
+  },
+  {
+    "text": "Kjøle- fryserom butikk",
+    "href": "/referansar/category/Kj%C3%B8le-+fryserom+butikk",
+    "absoluteUrl": "https://www.fresvik.no/referansar/category/Kj%C3%B8le-+fryserom+butikk",
+    "type": "internal"
+  },
+  {
+    "text": "Buskerud storcash",
+    "href": "/referansar/buskerud-storcash",
+    "absoluteUrl": "https://www.fresvik.no/referansar/buskerud-storcash",
+    "type": "internal"
+  },
+  {
+    "text": "Les mer",
+    "href": "/referansar/buskerud-storcash",
+    "absoluteUrl": "https://www.fresvik.no/referansar/buskerud-storcash",
+    "type": "internal"
+  },
+  {
+    "text": "Eldre innlegg",
+    "href": "/referansar?offset=1482152778981",
+    "absoluteUrl": "https://www.fresvik.no/referansar?offset=1482152778981",
+    "type": "internal"
+  },
+  {
+    "text": "post@fresvik.no",
+    "href": "mailto:post@fresvik.no",
+    "absoluteUrl": "mailto:post@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "arnbar@fresvik.no",
+    "href": "mailto:arnbar@fresvik.no",
+    "absoluteUrl": "mailto:arnbar@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "larliv@fresvik.no",
+    "href": "mailto:larliv@fresvik.no",
+    "absoluteUrl": "mailto:larliv@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "frowin@fresvik.no",
+    "href": "mailto:frowin@fresvik.no",
+    "absoluteUrl": "mailto:frowin@fresvik.no",
+    "type": "email"
+  },
+  {
+    "text": "Personvernerklæring",
+    "href": "/personvernerklering",
+    "absoluteUrl": "https://www.fresvik.no/personvernerklering",
+    "type": "internal"
+  },
+  {
+    "text": "Openheitslova",
+    "href": "/openheitslova",
+    "absoluteUrl": "https://www.fresvik.no/openheitslova",
+    "type": "internal"
+  },
+  {
+    "text": "GASTA",
+    "href": "https://www.gasta.no",
+    "absoluteUrl": "https://www.gasta.no/",
+    "type": "external"
+  },
+  {
+    "text": "sentral+godkjent.png",
+    "href": "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+    "absoluteUrl": "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+    "type": "document"
+  },
+  {
+    "text": "TG-2135.jpg",
+    "href": "https://www.sintefcertification.no/Product/Index/129",
+    "absoluteUrl": "https://www.sintefcertification.no/Product/Index/129",
+    "type": "external"
+  },
+  {
+    "text": "Poly.png",
+    "href": "/dokumentasjon",
+    "absoluteUrl": "https://www.fresvik.no/dokumentasjon",
+    "type": "internal"
+  },
+  {
+    "text": "Startbarnk.png",
+    "href": "/dokumentasjon",
+    "absoluteUrl": "https://www.fresvik.no/dokumentasjon",
+    "type": "internal"
+  },
+  {
+    "text": "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+    "href": "https://rapportering.miljofyrtarn.no/stats/176324",
+    "absoluteUrl": "https://rapportering.miljofyrtarn.no/stats/176324",
+    "type": "external"
+  },
+  {
+    "text": "ce-logo-png-transparent.png",
+    "href": "/s/PUR-ce-merke.pdf",
+    "absoluteUrl": "https://www.fresvik.no/s/PUR-ce-merke.pdf",
+    "type": "document"
+  }
+]

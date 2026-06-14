@@ -837,11 +837,9 @@
     "filePath": "public/assets/fresvik/images/migrated/1715599204491-upscale.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/nye-leveransar-til-rema-1000-ya-i-larvik"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/nye-leveransar-til-rema-1000-ya-i-larvik"
     ],
     "sha256": "1a8048a57a5d7817302fe6fb42845bcc43b6133c263784b71a4a39897a13a26f",
@@ -891,11 +889,9 @@
     "filePath": "public/assets/fresvik/images/migrated/20220616-152720-1.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/omfattande-leveranse-til-bakehuset-trondheim"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/omfattande-leveranse-til-bakehuset-trondheim"
     ],
     "sha256": "c8439907e80a4c22b8976c86c883d7c5f56b66a25a73c53bb12cfef718af38ee",
@@ -971,11 +967,9 @@
     "filePath": "public/assets/fresvik/images/migrated/baza-fryserom-1.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/fryserom-baza-fredrikstad"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/fryserom-baza-fredrikstad"
     ],
     "sha256": "83ca6baada28eb64c8aa9a6c02b53953ea843083c9ff80271035f37cea5bcbbd",
@@ -998,11 +992,9 @@
     "filePath": "public/assets/fresvik/images/migrated/bjerkreim-legekontor-1.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/bjerkreim-legekontor-vikesaa"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/bjerkreim-legekontor-vikesaa"
     ],
     "sha256": "4184edeba569e290c0d6b0f56d0cf71280e4969817c800be7fbf66b016019b04",
@@ -1158,11 +1150,9 @@
     "filePath": "public/assets/fresvik/images/migrated/dsc03066.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/spesialloysing-torkerom-drageboden-kaupanger"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger"
     ],
     "sha256": "9596c0b2df6ebe53db7d8a4616a7345de98f334ee050873c0fe05e3c924229ad",
@@ -1212,11 +1202,9 @@
     "filePath": "public/assets/fresvik/images/migrated/fiskehallen1.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/fiskehallen"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/fiskehallen"
     ],
     "sha256": "7b59dffbd042098c8a03663c871962b9d53ed81999424757ba79a40af5cab2d6",
@@ -1330,11 +1318,9 @@
     "filePath": "public/assets/fresvik/images/migrated/fp-dyreparken.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark"
     ],
     "sha256": "290f153a706c96fb6a5b34468a0bc7c66ff4ffbbd3f43092d3cb966a87c38f81",
@@ -1599,11 +1585,9 @@
     "filePath": "public/assets/fresvik/images/migrated/fryserom-obs-alna-3-red.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/fryserom-coop-obs-alnabru"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/fryserom-coop-obs-alnabru"
     ],
     "sha256": "6b2208990175c5360ef57f8502c3849368d4f3c267c2aba049993e706b1a39ba",
@@ -1920,11 +1904,9 @@
     "filePath": "public/assets/fresvik/images/migrated/img-2589.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront"
     ],
     "sha256": "66f476fe0dcdd78103b07763ef039cd264cd83e321739c15c55303fa062bf833",
@@ -1947,11 +1929,9 @@
     "filePath": "public/assets/fresvik/images/migrated/img-6262.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/fryseromsportar-til-rema-1000-i-narvik"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/fryseromsportar-til-rema-1000-i-narvik"
     ],
     "sha256": "ae80394b84e25557f342afb88532e904d2a7c1859c9f0d6de3fb9e83e8729c64",
@@ -1974,11 +1954,9 @@
     "filePath": "public/assets/fresvik/images/migrated/img-7324.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/karlsoybruket"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/karlsoybruket"
     ],
     "sha256": "430565e491a0c735b14257f0c33b1e3734b90063243665224d03aed14d6f4d1c",
@@ -2112,11 +2090,9 @@
     "filePath": "public/assets/fresvik/images/migrated/kiwi-otta-1.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/fryse-og-kjolerom-kiwi-otta"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta"
     ],
     "sha256": "d1aceef75504a7643232f77b1d928f79f4a5e593cb4358c074090575a76997e7",
@@ -2139,11 +2115,9 @@
     "filePath": "public/assets/fresvik/images/migrated/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar"
     ],
     "sha256": "b8d0bc13cdada15e670d3343183ab6fc608f7be2a35e2a52d5328c2acc82860e",
@@ -2166,11 +2140,9 @@
     "filePath": "public/assets/fresvik/images/migrated/kjlerom-bunnpris-volda-3.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/kjolerom-kjoledor-bunnpris-volda"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/kjolerom-kjoledor-bunnpris-volda"
     ],
     "sha256": "a404a5e613a71839ad6332731dce086c5cbfb51fbf3d1d54c7e629f05e0df5ef",
@@ -2567,11 +2539,9 @@
     "filePath": "public/assets/fresvik/images/migrated/resvik-fryserom-innvendig-2.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/fryserom-fryseport-rentokil"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil"
     ],
     "sha256": "854c49c2f805e5697e75ead65fa2edd8753131f5192393fe272ae1f83a70ae51",
@@ -2729,11 +2699,9 @@
     "filePath": "public/assets/fresvik/images/migrated/spar-lund-torv-fresvik-produkt-1.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
     ],
     "sha256": "8049504ca87ef511ab45d4ee36297aa65fce7deb0ea635b8842a28d94a498f3c",
@@ -2834,11 +2802,9 @@
     "filePath": "public/assets/fresvik/images/migrated/vik-helse-og-sjukeheim-1.jpg",
     "assetType": "image",
     "usedBy": [
-      "/referansar",
       "/referansar/vik-helse-og-omsorgssenter"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/referansar/vik-helse-og-omsorgssenter"
     ],
     "sha256": "857bb650fca99e7006644299638274905ccac7b862eca18678cd6383f9a7d639",
@@ -2989,6 +2955,31 @@
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/1715599204491_upscale.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/1715599204491_upscale.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "1a8048a57a5d7817302fe6fb42845bcc43b6133c263784b71a4a39897a13a26f",
+    "fileSize": 542882,
+    "sanityAssetId": "image-973d38d17b2ba602568927e77f73ab86b90c9e04-2290x1636-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-973d38d17b2ba602568927e77f73ab86b90c9e04-2290x1636-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/1715599204491-upscale.jpeg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719842658617-JWM3CCE08BXLOYQPYV8C/1715599204829_upscale+2.jpeg",
@@ -3158,6 +3149,88 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/20220616_152821_1.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/20220616_152821_1.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "5283fa607645ebdf684cc5b44a9a561a50682be7e42fa203dd7d036ee62ca06e",
+    "fileSize": 705262,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Baza+fryserom+-+2.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Baza+fryserom+-+2.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "bb47c2e1bea3b4be474410fb79951148be0476c73aee8687e737e1162ccc41bf",
+    "fileSize": 136845,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Bjerkreim+Legekontor+1.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Bjerkreim+Legekontor+1.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "4184edeba569e290c0d6b0f56d0cf71280e4969817c800be7fbf66b016019b04",
+    "fileSize": 234364,
+    "sanityAssetId": "image-660b45792b8fcef9b7fe8f083cbd7784f2414d4f-1280x960-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-660b45792b8fcef9b7fe8f083cbd7784f2414d4f-1280x960-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/bjerkreim-legekontor-1.jpeg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/DSC03067.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/DSC03067.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "430079793c15338804a77e035346dd71b21cdfcb6c909b6adf01675f02ca345a",
+    "fileSize": 614194,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/Diktator_web.jpg",
     "filePath": "public/assets/fresvik/images/old-site/Diktator_web.jpg",
     "assetType": "image",
@@ -3240,6 +3313,31 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/FP+Dyreparken.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/FP+Dyreparken.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "290f153a706c96fb6a5b34468a0bc7c66ff4ffbbd3f43092d3cb966a87c38f81",
+    "fileSize": 486553,
+    "sanityAssetId": "image-62110a9c09ba5d178d265fc71d070a46fa602dd4-2500x1875-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-62110a9c09ba5d178d265fc71d070a46fa602dd4-2500x1875-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/fp-dyreparken.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
     "filePath": "public/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
     "assetType": "image",
@@ -3251,6 +3349,25 @@
     ],
     "sha256": "5d4402b40af38bb9ce06d0cf288ff4fadbeff133fcf2fd2686b46b2d85af4acd",
     "fileSize": 138633,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Fryserom+OBS+Alna+4_red.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Fryserom+OBS+Alna+4_red.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "414948926e43f16a6d2bdfeafd7f1b5f84f267182b12a290cdd97062bc2d1e2d",
+    "fileSize": 386345,
     "sanityAssetId": null,
     "sanityReference": null,
     "status": "ready-for-sanity",
@@ -3322,6 +3439,50 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/IMG_2589.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/IMG_2589.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "66f476fe0dcdd78103b07763ef039cd264cd83e321739c15c55303fa062bf833",
+    "fileSize": 317606,
+    "sanityAssetId": "image-d04792ce4f6360ebb55cb7d3b746d87cf9ca1ab6-2048x1152-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-d04792ce4f6360ebb55cb7d3b746d87cf9ca1ab6-2048x1152-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/img-2589.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/IMG_6262.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/IMG_6262.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "e174a9cbf2b5336f3f2523f3ed60933ad32d492564bc00e81246c6db8b61c226",
+    "fileSize": 519162,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
     "filePath": "public/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
     "assetType": "image",
@@ -3344,6 +3505,56 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Kiwi+Otta+1.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Kiwi+Otta+1.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "d1aceef75504a7643232f77b1d928f79f4a5e593cb4358c074090575a76997e7",
+    "fileSize": 787920,
+    "sanityAssetId": "image-ef84ff4a1886e6279cd9e98e9e8cc83accf823f2-1707x2276-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ef84ff4a1886e6279cd9e98e9e8cc83accf823f2-1707x2276-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/kiwi-otta-1.jpeg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Kjølerom+Bunnpris+Volda+3.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Kjølerom+Bunnpris+Volda+3.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "a404a5e613a71839ad6332731dce086c5cbfb51fbf3d1d54c7e629f05e0df5ef",
+    "fileSize": 1248901,
+    "sanityAssetId": "image-56dc11321f7727d0e1ce98808c80bfec6b562283-2500x3084-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-56dc11321f7727d0e1ce98808c80bfec6b562283-2500x3084-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/kjlerom-bunnpris-volda-3.jpg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -3432,6 +3643,7 @@
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
+      "/referansar",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -3443,6 +3655,7 @@
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -3450,6 +3663,25 @@
     ],
     "sha256": "bb48f0ffebfdac026924cff201c4fc079d4ff0836c7f965bb895947685ac317a",
     "fileSize": 6213,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Port+Karlsøybruket+2017.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Port+Karlsøybruket+2017.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "a98cb5c6d54313c458ceec693d656112f8f74caa2ce8696add2390673c866d41",
+    "fileSize": 169377,
     "sanityAssetId": null,
     "sanityReference": null,
     "status": "ready-for-sanity",
@@ -3540,6 +3772,31 @@
   },
   {
     "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Spar+Lund+Torv+-+Fresvik+Produkt+1+.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/Spar+Lund+Torv+-+Fresvik+Produkt+1+.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "8049504ca87ef511ab45d4ee36297aa65fce7deb0ea635b8842a28d94a498f3c",
+    "fileSize": 220724,
+    "sanityAssetId": "image-fbefe0b1d94d8deb49100b18d665ad86a187d17b-960x1280-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-fbefe0b1d94d8deb49100b18d665ad86a187d17b-960x1280-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/spar-lund-torv-fresvik-produkt-1.jpeg."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/Standard+Dør+Fresvik+Produkt.jpg",
     "filePath": "public/assets/fresvik/images/old-site/Standard+Dør+Fresvik+Produkt.jpg",
     "assetType": "image",
@@ -3568,6 +3825,7 @@
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
+      "/referansar",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -3579,6 +3837,7 @@
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -3603,6 +3862,7 @@
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
+      "/referansar",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -3614,6 +3874,7 @@
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -3626,6 +3887,31 @@
     "status": "ready-for-sanity",
     "targetSanityType": "image asset",
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/Vik+helse-+og+sjukeheim+1.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/Vik+helse-+og+sjukeheim+1.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "857bb650fca99e7006644299638274905ccac7b862eca18678cd6383f9a7d639",
+    "fileSize": 79523,
+    "sanityAssetId": "image-89521047913acc09957fdce9407330398ce70a29-1280x960-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-89521047913acc09957fdce9407330398ce70a29-1280x960-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/vik-helse-og-sjukeheim-1.jpg."
   },
   {
     "originalUrl": "TODO: unknown original URL",
@@ -4083,6 +4369,7 @@
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
+      "/referansar",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -4094,6 +4381,7 @@
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -4857,6 +5145,25 @@
     "notes": "Unused local migration cache file; keep until asset review is complete."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/fiskehallen2.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/fiskehallen2.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "a8325e2b0e068c61cf7ae56f94ebf5cd815c29c0bc9074febbfb864be2483d40",
+    "fileSize": 12380,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428977824-1SLJQKUEMWQWZV9TYSR2/fiskehallen3.jpg",
     "localPath": "/assets/fresvik/images/old-site/fiskehallen3-97fbee8985.jpg",
     "filePath": "public/assets/fresvik/images/old-site/fiskehallen3-97fbee8985.jpg",
@@ -5002,6 +5309,7 @@
       "/produkt",
       "/produkt/fasadepanel",
       "/produkt/frysetunnel",
+      "/referansar",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -5015,6 +5323,7 @@
       "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/produkt/fasadepanel",
       "https://www.fresvik.no/produkt/frysetunnel",
+      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -6075,6 +6384,25 @@
     "notes": "Unused local migration cache file; keep until asset review is complete."
   },
   {
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429017477-0IFGJV9VBNRIORCR2GDD/image-asset.png",
+    "localPath": "/assets/fresvik/images/old-site/image-asset.jpeg",
+    "filePath": "public/assets/fresvik/images/old-site/image-asset.jpeg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "d6c42b0b15555814bf1631740fb0d2e77d878af7481ea32be610c082b2126ee7",
+    "fileSize": 178105,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "Recovered originalUrl from old sitemap by exact filename match."
+  },
+  {
     "originalUrl": "TODO: unknown original URL",
     "localPath": "/assets/fresvik/images/old-site/image-asset.jpg",
     "filePath": "public/assets/fresvik/images/old-site/image-asset.jpg",
@@ -6541,6 +6869,31 @@
     "status": "unused",
     "targetSanityType": "image asset",
     "notes": "Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/referansar"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar"
+    ],
+    "sha256": "b8d0bc13cdada15e670d3343183ab6fc608f7be2a35e2a52d5328c2acc82860e",
+    "fileSize": 110154,
+    "sanityAssetId": "image-53b15cd83588261645addb3a6c8c0fcb3b4aeb71-1200x450-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-53b15cd83588261645addb3a6c8c0fcb3b4aeb71-1200x450-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Duplicate file content of /assets/fresvik/images/migrated/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1742460549482-HKLIKAJBX1RFGR000CFX/Kj%C3%B8lerom+Bunnpris+Volda+1.jpg",
@@ -7169,6 +7522,7 @@
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
+      "/referansar",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -7180,6 +7534,7 @@
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
@@ -8032,6 +8387,7 @@
       "/monteringsanvisning",
       "/monteringsanvisningar-fresvik-skyveport",
       "/produkt",
+      "/referansar",
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
@@ -8043,6 +8399,7 @@
       "https://www.fresvik.no/monteringsanvisning",
       "https://www.fresvik.no/monteringsanvisningar-fresvik-skyveport",
       "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",

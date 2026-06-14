@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-06-13T20:20:50.112Z
+Generated: 2026-06-14T17:28:26.293Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -99,7 +99,7 @@ Next batch: `none`
 | news | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | unrecoverable | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | news | /aktuelt/stor-leveranse-til-buskerud-storcash | unrecoverable | 0/0 | 0/0 | 0/0 | 1/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | news | /aktuelt/to-ledige-stillingar-i-haust | unrecoverable | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
-| references | /referansar | migrated | 1/1 | 25/0 | 2/0 | 60/59 | Strict content evidence is covered. |
+| references | /referansar | migrated | 1/1 | 32/0 | 2/0 | 75/59 | Strict content evidence is covered. |
 | references | /referansar/2014/7/8/coop-extra-sogndal | migrated | 1/1 | 4/3 | 2/0 | 26/38 | Strict content evidence is covered. |
 | references | /referansar/2014/7/8/interfrukt-vrt-strste-prosjekt | migrated | 5/5 | 4/4 | 2/0 | 26/40 | Strict content evidence is covered. |
 | references | /referansar/bjerke-spekemat | migrated | 4/4 | 4/4 | 2/0 | 26/44 | Strict content evidence is covered. |

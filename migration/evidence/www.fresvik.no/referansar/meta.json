@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/referansar",
+  "finalUrl": "https://www.fresvik.no/referansar",
+  "fetchedAt": "2026-06-13T20:23:34.223Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Referansar | Utforsk referanser - Kontakt oss i dag — Fresvik Produkt",
+  "metaDescription": "Oppdag våre referanser og prosjekter innen kjølerom, fryserom og spesialtilpassede løsninger for næringsmiddel, institusjoner og detaljhandel. Kontakt oss for skreddersydde løsninger.",
+  "counts": {
+    "headings": 28,
+    "textBlocks": 47,
+    "links": 161,
+    "images": 168,
+    "documents": 2
+  }
+}

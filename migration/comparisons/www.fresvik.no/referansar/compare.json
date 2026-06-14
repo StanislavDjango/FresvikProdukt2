@@ -1,0 +1,17 @@
+{
+  "oldUrl": "https://www.fresvik.no/referansar",
+  "newUrl": "http://127.0.0.1:3060/referansar",
+  "checkedAt": "2026-06-14T17:29:45.214Z",
+  "status": "migrated",
+  "counts": {
+    "oldTextBlocks": 36,
+    "missingTextBlocks": 0,
+    "oldLinks": 64,
+    "missingLinks": 0,
+    "oldImages": 24,
+    "missingImages": 0
+  },
+  "missingTextBlocks": [],
+  "missingLinks": [],
+  "missingImages": []
+}

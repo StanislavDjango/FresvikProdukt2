@@ -445,8 +445,7 @@ function loadExistingManifest() {
 function statusFor(entry, canonicalByHash) {
   if (
     entry.status === "needs-review" ||
-    entry.status === "external-only" ||
-    entry.status === "duplicate"
+    entry.status === "external-only"
   ) {
     return entry.status;
   }
@@ -579,7 +578,14 @@ async function buildManifest() {
   }
 
   const canonicalByHash = new Map();
-  for (const entry of baseEntries) {
+  const canonicalCandidates = [...baseEntries].sort((a, b) => {
+    const aUploaded = a.sanityAssetId || a.sanityReference ? 1 : 0;
+    const bUploaded = b.sanityAssetId || b.sanityReference ? 1 : 0;
+    if (aUploaded !== bUploaded) return bUploaded - aUploaded;
+    if (a.usedBy.length !== b.usedBy.length) return b.usedBy.length - a.usedBy.length;
+    return a.localPath.localeCompare(b.localPath);
+  });
+  for (const entry of canonicalCandidates) {
     if (!entry.sha256) continue;
     if (!canonicalByHash.has(entry.sha256)) {
       canonicalByHash.set(entry.sha256, entry.localPath);

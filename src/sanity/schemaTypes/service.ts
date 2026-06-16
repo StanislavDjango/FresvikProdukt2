@@ -47,6 +47,20 @@ export const service = defineType({
         },
       ],
     }),
+    defineField({
+      name: "migrationCards",
+      title: "Migrated cards",
+      type: "array",
+      of: [{ type: "migrationCard" }],
+      description: "Exact service cards imported from the local migration source.",
+    }),
+    defineField({
+      name: "migrationSections",
+      title: "Migrated sections",
+      type: "array",
+      of: [{ type: "migrationSection" }],
+      description: "Exact service sections imported from the local migration source.",
+    }),
     defineField({ name: "ctaText", title: "CTA text", type: "text" }),
     defineField({ name: "seoTitle", title: "SEO title", type: "string" }),
     defineField({

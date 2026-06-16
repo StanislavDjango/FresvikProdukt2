@@ -376,7 +376,7 @@
         "_ref": "file-73d76ff3f4036bd901d31ea3b57fc2a473dff192-pdf"
       }
     },
-    "status": "duplicate",
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
     "notes": "Recovered originalUrl from local redirect source. Reuses Sanity asset from duplicate local file /assets/fresvik/documents/openheitslova-rutine-plikter.pdf."
   },
@@ -469,7 +469,7 @@
         "_ref": "file-8590a72595648269dd09412fb1980e5d098a66f4-pdf"
       }
     },
-    "status": "duplicate",
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
     "notes": "Duplicate file content of /assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf. Unused local migration cache file; keep until asset review is complete."
   },
@@ -794,7 +794,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
-    "notes": "Recovered originalUrl from duplicate file hash. Unused local migration cache file; keep until asset review is complete."
+    "notes": "Recovered originalUrl from duplicate file hash. Unused local migration cache file; keep until asset review is complete. Duplicate file content of /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf."
   },
   {
     "originalUrl": "https://www.fresvik.no/s/2135g-5.pdf",
@@ -820,7 +820,7 @@
         "_ref": "file-f4d1fc0155bce9a3c39d992ddf3e2310174c3e7a-pdf"
       }
     },
-    "status": "duplicate",
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
     "notes": "Recovered originalUrl from local redirect source. Duplicate file content of /assets/fresvik/documents/sintef-produktsertifikat.pdf."
   },
@@ -841,7 +841,7 @@
         "_ref": "file-a69fb1480b6c346e39c50c622d0ac1d9d87925fd-pdf"
       }
     },
-    "status": "duplicate",
+    "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
     "notes": "Recovered originalUrl from duplicate file hash. Duplicate file content of /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf. Unused local migration cache file; keep until asset review is complete."
   },
@@ -2025,7 +2025,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-d04792ce4f6360ebb55cb7d3b746d87cf9ca1ab6-2048x1152-jpg."
+    "notes": "Uploaded to Sanity as image-d04792ce4f6360ebb55cb7d3b746d87cf9ca1ab6-2048x1152-jpg. Duplicate file content of /assets/fresvik/images/old-site/IMG_2589.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428921988-GSQLH7E9ACJ9DPWSSGRW/IMG_6262.jpg",
@@ -3532,7 +3532,7 @@
         "_ref": "image-66c9e8a8d0b3670f2969b0069ebba9cdb79a9ca3-2500x1667-webp"
       }
     },
-    "status": "duplicate",
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Recovered originalUrl from migration evidence images.json. Reuses Sanity asset from duplicate local file /assets/fresvik/images/old-site/fresvik-skyveport-cedbd2620d.jpeg."
   },
@@ -3659,9 +3659,9 @@
         "_ref": "image-332f734294499336366f9659ee1af908e71fb1c0-1500x843-jpg"
       }
     },
-    "status": "duplicate",
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Recovered originalUrl from migration evidence images.json. Reuses Sanity asset from duplicate local file /assets/fresvik/images/old-site/fresvik-aks-montering2-4f3973c999.jpg."
+    "notes": "Recovered originalUrl from migration evidence images.json. Reuses Sanity asset from duplicate local file /assets/fresvik/images/old-site/fresvik-aks-montering2-4f3973c999.jpg. Duplicate file content of /assets/fresvik/images/old-site/fresvik-aks-montering2-4f3973c999.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/45de53c6-9a74-44c2-9a4d-c8e9563832aa/Fresvik+fra%CC%8A+BJ%C3%98NNSTIGEN+2017+SS.jpg",
@@ -4743,7 +4743,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Recovered originalUrl from migration evidence images.json. Uploaded to Sanity as image-338db6dddacde8929b5d1381848d0899cb00ede0-1440x1920-jpg."
+    "notes": "Recovered originalUrl from migration evidence images.json. Uploaded to Sanity as image-338db6dddacde8929b5d1381848d0899cb00ede0-1440x1920-jpg. Duplicate file content of /assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385876430-SF9NN179JLHLSGSAMMMQ/Startbarnk.png",
@@ -5093,7 +5093,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-95fb7e753957013d870e5af5bc851798e1491b11-1448x1086-png. Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-95fb7e753957013d870e5af5bc851798e1491b11-1448x1086-png. Unused local migration cache file; keep until asset review is complete. Duplicate file content of /assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1.png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d04658e0-dce8-4c18-ba78-e00e6440b419/b12b5d19-2424-48de-bdea-c83b503c880c+%281%29.png",
@@ -5143,7 +5143,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Duplicate file content of /assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1-0c402f4dae.png."
+    "notes": "Duplicate file content of /assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1-0c402f4dae.png. Duplicate file content of /assets/fresvik/images/old-site/b12b5d19-2424-48de-bdea-c83b503c880c-1.png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241166915-Q47EXNO6K811P4RRIQL1/Baza+fryserom+-+2.jpeg",
@@ -5194,7 +5194,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-89b1d210dd989070e21cd4f50b7ae18d7eb10678-1280x960-jpg. Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-89b1d210dd989070e21cd4f50b7ae18d7eb10678-1280x960-jpg. Unused local migration cache file; keep until asset review is complete. Duplicate file content of /assets/fresvik/images/old-site/baza-fryserom-4.jpeg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241168352-9XAEM8D0U1DJA7JIBNLP/Baza+fryserom+-+4.jpeg",
@@ -6063,11 +6063,17 @@
     "sourcePages": [],
     "sha256": "93b042d91474b8907abaf8e41504bdcff44fe9c0a7a733e844ccd47211e1bfb3",
     "fileSize": 132230,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-5a74b2361d2e7bc9d39b3bc0c44c953f12f950b1-1500x843-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5a74b2361d2e7bc9d39b3bc0c44c953f12f950b1-1500x843-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Duplicate file content of /assets/fresvik/images/old-site/image-asset.webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429062896-9N26M8VSYJ13D54MBGKC/01.jpg",
@@ -6086,7 +6092,7 @@
         "_ref": "image-17e5bd39dbb533ddb2f59587798f807f1d6f28d3-1160x460-webp"
       }
     },
-    "status": "duplicate",
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Duplicate file content of /assets/fresvik/images/old-site/01.webp. Unused local migration cache file; keep until asset review is complete."
   },
@@ -6251,7 +6257,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-9998c94b0e1e955cc009f4d46e5547e9f4451454-205x140-png."
+    "notes": "Uploaded to Sanity as image-9998c94b0e1e955cc009f4d46e5547e9f4451454-205x140-png. Duplicate file content of /assets/fresvik/images/old-site/flake.png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
@@ -6551,7 +6557,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-c5559e73c2e58d10a4fdf965d291e50f2cc080fa-1757x988-jpg."
+    "notes": "Uploaded to Sanity as image-c5559e73c2e58d10a4fdf965d291e50f2cc080fa-1757x988-jpg. Duplicate file content of /assets/fresvik/images/old-site/fresvik-fryse-dor_ny.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b405b8f4-c0fa-4090-a6a3-3af3f5ded4e7/fresvik-fryse-dor_ny.jpg",
@@ -6597,7 +6603,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-d48f60c5dcfbee31f5499de173da3f86e1fafdc3-2500x1675-jpg. Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-d48f60c5dcfbee31f5499de173da3f86e1fafdc3-2500x1675-jpg. Unused local migration cache file; keep until asset review is complete. Duplicate file content of /assets/fresvik/images/old-site/fresvik-hengsle.jpeg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/eb9ae19e-edcf-41a9-be74-461e6e203327/Fresvik+Hengsle.jpeg",
@@ -6848,7 +6854,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-5484a23aed5c4d3a885b5ed73e38e9cd90ac3417-1448x1086-png. Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-5484a23aed5c4d3a885b5ed73e38e9cd90ac3417-1448x1086-png. Unused local migration cache file; keep until asset review is complete. Duplicate file content of /assets/fresvik/images/old-site/fryst-laks.png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d7b7a341-353c-4260-afe7-8858187c72fd/Fryst+Laks.png",
@@ -7551,11 +7557,17 @@
     ],
     "sha256": "93b042d91474b8907abaf8e41504bdcff44fe9c0a7a733e844ccd47211e1bfb3",
     "fileSize": 132230,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "duplicate",
+    "sanityAssetId": "image-5a74b2361d2e7bc9d39b3bc0c44c953f12f950b1-1500x843-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5a74b2361d2e7bc9d39b3bc0c44c953f12f950b1-1500x843-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Duplicate file content of /assets/fresvik/images/old-site/fasadepanel-reference-celsa.webp."
+    "notes": "Duplicate file content of /assets/fresvik/images/old-site/fasadepanel-reference-celsa.webp. Uploaded to Sanity as image-5a74b2361d2e7bc9d39b3bc0c44c953f12f950b1-1500x843-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428924464-DCQYSEE365PEUI0VLR5W/image002.jpg",
@@ -8547,11 +8559,17 @@
     "sourcePages": [],
     "sha256": "a5615c7025dd30464568a7d7313a8708cbc60e7856eda2191ee8715081202611",
     "fileSize": 36338,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-23afbc5b669c9fd3a4fabb3d2d583b68238a8cc7-1772x1017-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-23afbc5b669c9fd3a4fabb3d2d583b68238a8cc7-1772x1017-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Duplicate file content of /assets/fresvik/images/old-site/profil3-copy.webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228950180-P4LBNTIWCBK3NKG3923N/profil3+copy.jpg",
@@ -8566,11 +8584,17 @@
     ],
     "sha256": "a5615c7025dd30464568a7d7313a8708cbc60e7856eda2191ee8715081202611",
     "fileSize": 36338,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "duplicate",
+    "sanityAssetId": "image-23afbc5b669c9fd3a4fabb3d2d583b68238a8cc7-1772x1017-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-23afbc5b669c9fd3a4fabb3d2d583b68238a8cc7-1772x1017-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Duplicate file content of /assets/fresvik/images/old-site/profil3-copy-fasadepanel.webp."
+    "notes": "Duplicate file content of /assets/fresvik/images/old-site/profil3-copy-fasadepanel.webp. Uploaded to Sanity as image-23afbc5b669c9fd3a4fabb3d2d583b68238a8cc7-1772x1017-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/274b289f-83c3-4317-9b12-479b670803da/video-file.png",
@@ -9167,7 +9191,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-cc152b7a0fdf7178d9590c4fb6011790c6205196-1570x1180-png. Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-cc152b7a0fdf7178d9590c4fb6011790c6205196-1570x1180-png. Unused local migration cache file; keep until asset review is complete. Duplicate file content of /assets/fresvik/images/old-site/spar-lund-torv-fp-1.png."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/70099be8-6751-41f7-aea3-d4501ff3c09a/Spar+Lund+Torv+FP+1.png",
@@ -9290,7 +9314,7 @@
         "_ref": "image-338db6dddacde8929b5d1381848d0899cb00ede0-1440x1920-jpg"
       }
     },
-    "status": "duplicate",
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/old-site/Standard+Dør+Fresvik+Produkt.jpg."
   },

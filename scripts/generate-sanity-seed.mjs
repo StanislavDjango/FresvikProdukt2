@@ -84,6 +84,57 @@ function pageImage(page) {
   );
 }
 
+function cleanObject(value) {
+  return Object.fromEntries(
+    Object.entries(value).filter(([, entryValue]) => {
+      if (entryValue === undefined || entryValue === null) return false;
+      if (Array.isArray(entryValue) && entryValue.length === 0) return false;
+      return entryValue !== "";
+    }),
+  );
+}
+
+function migrationCard(card, key) {
+  const localImagePath = card.imageUrl?.startsWith("/assets/fresvik/")
+    ? card.imageUrl
+    : undefined;
+  const localDocumentPath = card.href?.startsWith("/assets/fresvik/documents/")
+    ? card.href
+    : undefined;
+
+  return cleanObject({
+    _key: key,
+    _type: "migrationCard",
+    title: card.title,
+    text: card.text,
+    href: card.href,
+    meta: card.meta,
+    imageAlt: card.imageAlt,
+    migratedImagePath: localImagePath,
+    migrationLocalDocumentPath: localDocumentPath,
+  });
+}
+
+function migrationCards(page) {
+  return page.cards.map((card, index) =>
+    migrationCard(card, `card-${index}`),
+  );
+}
+
+function migrationSections(page) {
+  return page.sections.map((section, sectionIndex) =>
+    cleanObject({
+      _key: `section-${sectionIndex}`,
+      _type: "migrationSection",
+      title: section.title,
+      intro: section.intro,
+      items: section.items.map((item, itemIndex) =>
+        migrationCard(item, `section-${sectionIndex}-item-${itemIndex}`),
+      ),
+    }),
+  );
+}
+
 function documentCategory(title) {
   const lowered = title.toLowerCase();
   if (lowered.includes("montering")) return "Monteringsanvisning";
@@ -185,6 +236,8 @@ for (const page of pages) {
         value: item.text,
       })),
       applications: page.cards.map((card) => card.title),
+      migrationCards: migrationCards(page),
+      migrationSections: migrationSections(page),
       seoTitle: page.title,
       seoDescription: page.description,
       sourceUrl: page.sourceUrl,
@@ -208,6 +261,8 @@ for (const page of pages) {
           text: item.text,
         })),
       ),
+      migrationCards: migrationCards(page),
+      migrationSections: migrationSections(page),
       ctaText: "Kontakt Fresvik Produkt for meir informasjon.",
       seoTitle: page.title,
       seoDescription: page.description,
@@ -224,6 +279,8 @@ for (const page of pages) {
     slug: { _type: "slug", current: slugCurrent(page.slug) },
     intro: page.intro,
     body: pageBody(page),
+    migrationCards: migrationCards(page),
+    migrationSections: migrationSections(page),
     seoTitle: page.title,
     seoDescription: page.description,
     sourceUrl: page.sourceUrl,

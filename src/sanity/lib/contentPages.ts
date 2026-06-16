@@ -21,6 +21,25 @@ type SanityDocumentRef = {
   fileUrl?: string;
 };
 
+type SanityMigrationCard = {
+  title?: string;
+  text?: string;
+  href?: string;
+  meta?: string;
+  imageAlt?: string;
+  migratedImagePath?: string;
+  migrationLocalDocumentPath?: string;
+  migrationBackupLocalPath?: string;
+  imageUrl?: string;
+  fileUrl?: string;
+};
+
+type SanityMigrationSection = {
+  title?: string;
+  intro?: string;
+  items?: SanityMigrationCard[];
+};
+
 type SanityContentDoc = {
   _type:
     | "page"
@@ -51,6 +70,8 @@ type SanityContentDoc = {
   location?: string;
   customerType?: string;
   documents?: SanityDocumentRef[];
+  migrationCards?: SanityMigrationCard[];
+  migrationSections?: SanityMigrationSection[];
 };
 
 type SanityIndexItem = {
@@ -109,6 +130,34 @@ const CONTENT_DOC_QUERY = defineQuery(`*[
     externalUrl,
     localPath,
     "fileUrl": file.asset->url
+  },
+  "migrationCards": migrationCards[]{
+    title,
+    text,
+    href,
+    meta,
+    imageAlt,
+    migratedImagePath,
+    migrationLocalDocumentPath,
+    migrationBackupLocalPath,
+    "imageUrl": image.asset->url,
+    "fileUrl": file.asset->url
+  },
+  "migrationSections": migrationSections[]{
+    title,
+    intro,
+    "items": items[]{
+      title,
+      text,
+      href,
+      meta,
+      imageAlt,
+      migratedImagePath,
+      migrationLocalDocumentPath,
+      migrationBackupLocalPath,
+      "imageUrl": image.asset->url,
+      "fileUrl": file.asset->url
+    }
   }
 }`);
 
@@ -319,6 +368,35 @@ function documentsSection(documents?: SanityDocumentRef[]) {
   return { title: "Dokument", items };
 }
 
+function migrationContentCard(card: SanityMigrationCard): ContentCard {
+  return {
+    title: card.title || "Innhald",
+    text: card.text || card.meta || "Migrert innhald frå Sanity.",
+    href: card.fileUrl || card.href,
+    meta: card.meta,
+    imageUrl: card.imageUrl,
+    imageAlt: card.imageAlt || card.title,
+  };
+}
+
+function migrationCards(doc: SanityContentDoc) {
+  return (doc.migrationCards || [])
+    .map(migrationContentCard)
+    .filter((card) => card.title && card.text);
+}
+
+function migrationSections(doc: SanityContentDoc) {
+  return (doc.migrationSections || [])
+    .map((section) => ({
+      title: section.title || "Innhald",
+      intro: section.intro,
+      items: (section.items || [])
+        .map(migrationContentCard)
+        .filter((item) => item.title && item.text),
+    }))
+    .filter((section) => section.title && section.items.length > 0);
+}
+
 function sanitySections(doc: SanityContentDoc) {
   const sections = [
     bodySection(doc),
@@ -431,9 +509,11 @@ function mergeContentPage(
 ): ContentPage {
   const path = pathForSlug(doc.slug);
   const ownSections = sanitySections(doc);
+  const structuredMigrationSections = migrationSections(doc);
   const keepLocalMigrationStructure =
     Boolean(fallback) && localMigrationStructurePaths.has(path);
-  const sanityCards = imageCard(doc);
+  const sanityCards = migrationCards(doc);
+  const imageCards = imageCard(doc);
   let sections: ContentPage["sections"];
   let cards: ContentPage["cards"];
 
@@ -442,16 +522,20 @@ function mergeContentPage(
     cards = fallback?.cards || [];
   } else {
     sections =
-      indexSections.length > 0
+      structuredMigrationSections.length > 0
+        ? structuredMigrationSections
+        : indexSections.length > 0
         ? indexSections
         : ownSections.length > 0
           ? ownSections
           : fallback?.sections || [];
     cards =
-      indexSections[0]?.items.slice(0, 9) ||
-      (sanityCards.length > 0
+      sanityCards.length > 0
         ? sanityCards
-        : withoutLocalAssetRefs(fallback?.cards || []));
+        : indexSections[0]?.items.slice(0, 9) ||
+          (imageCards.length > 0
+            ? imageCards
+            : withoutLocalAssetRefs(fallback?.cards || []));
   }
 
   return {

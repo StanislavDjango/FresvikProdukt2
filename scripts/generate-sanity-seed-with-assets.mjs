@@ -47,9 +47,29 @@ function clone(value) {
 
 function buildReferenceMap(manifest) {
   const references = new Map();
+  const referencesByHash = new Map();
   for (const entry of manifest) {
     if (!entry.localPath || !entry.sanityReference?.asset?._ref) continue;
     references.set(entry.localPath, entry.sanityReference);
+    if (entry.sha256 && !referencesByHash.has(entry.sha256)) {
+      referencesByHash.set(entry.sha256, entry.sanityReference);
+    }
+  }
+  for (const entry of manifest) {
+    if (!entry.localPath || references.has(entry.localPath)) continue;
+    const hashReference = entry.sha256 ? referencesByHash.get(entry.sha256) : null;
+    if (hashReference) {
+      references.set(entry.localPath, hashReference);
+      continue;
+    }
+
+    const duplicatePath = String(entry.notes || "").match(
+      /Duplicate file content of (\/assets\/fresvik\/[^.]+(?:\.[a-z0-9]+))/i,
+    )?.[1];
+    const duplicateReference = duplicatePath ? references.get(duplicatePath) : null;
+    if (duplicateReference) {
+      references.set(entry.localPath, duplicateReference);
+    }
   }
   return references;
 }
@@ -75,6 +95,30 @@ const stats = {
   missingFileRefs: 0,
 };
 
+function rewriteMigrationCardAssets(card) {
+  if (card.migratedImagePath) {
+    const reference = references.get(card.migratedImagePath);
+    if (reference?._type === "image") {
+      card.image = clone(reference);
+      card.migrationBackupLocalPath ||= card.migratedImagePath;
+      stats.imagesRewritten += 1;
+    } else {
+      stats.missingImageRefs += 1;
+    }
+  }
+
+  if (card.migrationLocalDocumentPath) {
+    const reference = references.get(card.migrationLocalDocumentPath);
+    if (reference?._type === "file") {
+      card.file = clone(reference);
+      card.migrationBackupLocalPath ||= card.migrationLocalDocumentPath;
+      stats.filesRewritten += 1;
+    } else {
+      stats.missingFileRefs += 1;
+    }
+  }
+}
+
 const rewrittenDocs = docs.map((doc) => {
   const nextDoc = clone(doc);
   const imageField = imageFieldByType[nextDoc._type];
@@ -98,6 +142,16 @@ const rewrittenDocs = docs.map((doc) => {
       stats.filesRewritten += 1;
     } else {
       stats.missingFileRefs += 1;
+    }
+  }
+
+  for (const card of nextDoc.migrationCards || []) {
+    rewriteMigrationCardAssets(card);
+  }
+
+  for (const section of nextDoc.migrationSections || []) {
+    for (const item of section.items || []) {
+      rewriteMigrationCardAssets(item);
     }
   }
 

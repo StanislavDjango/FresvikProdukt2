@@ -59,6 +59,22 @@ const pageContentAuditSchema = z.object({
   todos: z.array(z.unknown()),
 });
 
+const sanityRuntimeParityAuditSchema = z.object({
+  summary: z.object({
+    generatedAt: z.string().min(1),
+    auditedRoutes: z.number().int().nonnegative(),
+    readyForSanityRuntime: z.number().int().nonnegative(),
+    localFallbackRequired: z.number().int().nonnegative(),
+  }),
+  routes: z.array(
+    z.object({
+      route: z.string().min(1),
+      status: z.enum(["ready-for-sanity-runtime", "local-fallback-required"]),
+    }).passthrough(),
+  ),
+  todos: z.array(z.unknown()),
+});
+
 const seedDocumentSchema = z
   .object({
     _id: z.string().min(1),
@@ -183,6 +199,15 @@ addCheck("page content audit", async () => {
   const result = pageContentAuditSchema.safeParse(audit);
   if (!result.success) throw new Error(z.prettifyError(result.error));
   return `${audit.pages.length} pages`;
+});
+
+addCheck("sanity runtime parity audit", async () => {
+  const relativePath = "MACHINE_READABLE_SANITY_RUNTIME_PARITY_AUDIT.json";
+  if (!existsSync(projectPath(relativePath))) return "missing optional file";
+  const audit = await readJson(relativePath);
+  const result = sanityRuntimeParityAuditSchema.safeParse(audit);
+  if (!result.success) throw new Error(z.prettifyError(result.error));
+  return `${audit.routes.length} protected runtime routes`;
 });
 
 addCheck("evidence cache", async () => {

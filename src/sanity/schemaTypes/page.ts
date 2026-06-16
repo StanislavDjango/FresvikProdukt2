@@ -25,6 +25,20 @@ export const page = defineType({
       type: "array",
       of: [{ type: "block" }],
     }),
+    defineField({
+      name: "migrationCards",
+      title: "Migrated cards",
+      type: "array",
+      of: [{ type: "migrationCard" }],
+      description: "Exact page cards imported from the local migration source.",
+    }),
+    defineField({
+      name: "migrationSections",
+      title: "Migrated sections",
+      type: "array",
+      of: [{ type: "migrationSection" }],
+      description: "Exact page sections imported from the local migration source.",
+    }),
     defineField({ name: "heroImage", title: "Hero image", type: "image" }),
     defineField({
       name: "migratedImagePath",

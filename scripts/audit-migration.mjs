@@ -825,6 +825,49 @@ function bestDocumentMatch(documentAsset, remotePdfUrls) {
   return best;
 }
 
+const documentDispositionByLocalPath = new Map([
+  [
+    "/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf",
+    {
+      status: "archived-with-reason",
+      notes:
+        "Archived historical Openheitslova 2024 document. The live donor page now links 2025 documents; old PDF URL was verified by exact SHA-256 and the local cache is retained for traceability.",
+    },
+  ],
+  [
+    "/assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf",
+    {
+      status: "archived-with-reason",
+      notes:
+        "Archived historical Openheitslova 2024 signed statement. The live donor page now links 2025 documents; old PDF URL was verified by exact SHA-256 and the local cache is retained for traceability.",
+    },
+  ],
+  [
+    "/assets/fresvik/documents/openheitslova-rutine-plikter.pdf",
+    {
+      status: "duplicate",
+      notes:
+        "Duplicate of /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf by exact SHA-256. Canonical old URL redirects to the 2025 local PDF; duplicate cache kept until final asset cleanup.",
+    },
+  ],
+  [
+    "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
+    {
+      status: "duplicate",
+      notes:
+        "Duplicate of /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf by exact SHA-256. Canonical redirect /s/2135g-5.pdf points to the 2135g local PDF; duplicate cache kept until final asset cleanup.",
+    },
+  ],
+  [
+    "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
+    {
+      status: "duplicate",
+      notes:
+        "Duplicate of /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf by exact SHA-256. Canonical redirect /s/7060s-fnfz.pdf points to the 7060s local PDF; duplicate cache kept until final asset cleanup.",
+    },
+  ],
+]);
+
 function collectRemotePdfUrls(sitemapEntries) {
   const urls = [];
   const textFiles = [
@@ -863,6 +906,7 @@ function documentRowsFromAssets(documentAssets, seedDocs, sitemapEntries) {
     const seedDoc = seedByLocalPath.get(asset.localPath);
     const fileExists = existsSync(path.join(root, asset.filePath));
     const best = bestDocumentMatch(asset, remotePdfUrls);
+    const disposition = documentDispositionByLocalPath.get(asset.localPath);
     const recoveredOldUrl =
       asset.originalUrl && !asset.originalUrl.startsWith("TODO")
         ? asset.originalUrl
@@ -877,11 +921,14 @@ function documentRowsFromAssets(documentAssets, seedDocs, sitemapEntries) {
       fileSize: asset.fileSize,
       usedBy: asset.usedBy,
       routeAvailable: asset.usedBy.some((route) => route.startsWith("/")),
-      status: fileExists && asset.usedBy.length > 0 ? "migrated" : "needs-review",
+      status:
+        disposition?.status ||
+        (fileExists && asset.usedBy.length > 0 ? "migrated" : "needs-review"),
       notes:
-        recoveredOldUrl.startsWith("TODO")
+        disposition?.notes ||
+        (recoveredOldUrl.startsWith("TODO")
           ? "Exact old PDF URL was not recoverable from sitemap/local source data."
-          : `Recovered likely old URL with confidence ${best?.score.toFixed(2) || "1.00"}.`,
+          : `Recovered likely old URL with confidence ${best?.score.toFixed(2) || "1.00"}.`),
     };
   });
 }
@@ -1157,7 +1204,7 @@ const todos = [
       task: asset.notes,
     })),
   ...documentRows
-    .filter((document) => document.status !== "migrated")
+    .filter((document) => ["missing", "needs-review"].includes(document.status))
     .map((document) => ({
       type: "document",
       target: document.localPath,

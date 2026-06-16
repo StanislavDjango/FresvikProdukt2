@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-16T18:25:40.188Z",
+    "generatedAt": "2026-06-16T18:34:14.815Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -29,7 +29,8 @@
     },
     "documentStatusCounts": {
       "migrated": 25,
-      "needs-review": 5
+      "archived-with-reason": 2,
+      "duplicate": 3
     }
   },
   "homepage": [
@@ -6897,8 +6898,8 @@
       "fileSize": 201642,
       "usedBy": [],
       "routeAvailable": false,
-      "status": "needs-review",
-      "notes": "Recovered likely old URL with confidence 0.00."
+      "status": "archived-with-reason",
+      "notes": "Archived historical Openheitslova 2024 document. The live donor page now links 2025 documents; old PDF URL was verified by exact SHA-256 and the local cache is retained for traceability."
     },
     {
       "oldUrl": "https://www.fresvik.no/s/Aktsemdvurderingar-2025.pdf",
@@ -6938,8 +6939,8 @@
       "fileSize": 276631,
       "usedBy": [],
       "routeAvailable": false,
-      "status": "needs-review",
-      "notes": "Recovered likely old URL with confidence 0.00."
+      "status": "duplicate",
+      "notes": "Duplicate of /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf by exact SHA-256. Canonical old URL redirects to the 2025 local PDF; duplicate cache kept until final asset cleanup."
     },
     {
       "oldUrl": "https://www.fresvik.no/s/2024-Utgreiing-signert.pdf",
@@ -6949,8 +6950,8 @@
       "fileSize": 268546,
       "usedBy": [],
       "routeAvailable": false,
-      "status": "needs-review",
-      "notes": "Recovered likely old URL with confidence 0.00."
+      "status": "archived-with-reason",
+      "notes": "Archived historical Openheitslova 2024 signed statement. The live donor page now links 2025 documents; old PDF URL was verified by exact SHA-256 and the local cache is retained for traceability."
     },
     {
       "oldUrl": "https://www.fresvik.no/s/2025-Utgreiing-signert.pdf",
@@ -7223,8 +7224,8 @@
       "fileSize": 439904,
       "usedBy": [],
       "routeAvailable": false,
-      "status": "needs-review",
-      "notes": "Recovered likely old URL with confidence 0.00."
+      "status": "duplicate",
+      "notes": "Duplicate of /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf by exact SHA-256. Canonical redirect /s/2135g-5.pdf points to the 2135g local PDF; duplicate cache kept until final asset cleanup."
     },
     {
       "oldUrl": "https://www.fresvik.no/s/2135g-5.pdf",
@@ -7252,8 +7253,8 @@
       "fileSize": 253758,
       "usedBy": [],
       "routeAvailable": false,
-      "status": "needs-review",
-      "notes": "Recovered likely old URL with confidence 0.25."
+      "status": "duplicate",
+      "notes": "Duplicate of /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf by exact SHA-256. Canonical redirect /s/7060s-fnfz.pdf points to the 7060s local PDF; duplicate cache kept until final asset cleanup."
     },
     {
       "oldUrl": "https://www.fresvik.no/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf",
@@ -10830,36 +10831,5 @@
       "status": "keep"
     }
   ],
-  "todos": [
-    {
-      "type": "document",
-      "target": "/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf",
-      "status": "needs-review",
-      "task": "Recovered likely old URL with confidence 0.00."
-    },
-    {
-      "type": "document",
-      "target": "/assets/fresvik/documents/openheitslova-rutine-plikter.pdf",
-      "status": "needs-review",
-      "task": "Recovered likely old URL with confidence 0.00."
-    },
-    {
-      "type": "document",
-      "target": "/assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf",
-      "status": "needs-review",
-      "task": "Recovered likely old URL with confidence 0.00."
-    },
-    {
-      "type": "document",
-      "target": "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
-      "status": "needs-review",
-      "task": "Recovered likely old URL with confidence 0.00."
-    },
-    {
-      "type": "document",
-      "target": "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
-      "status": "needs-review",
-      "task": "Recovered likely old URL with confidence 0.25."
-    }
-  ]
+  "todos": []
 }

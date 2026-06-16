@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-16T18:25:40.188Z
+Generated: 2026-06-16T18:34:14.815Z
 
 ## Summary
 
@@ -195,11 +195,11 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf | Dokument | migrated | yes | 38764 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
 | /assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf | Dokument | migrated | yes | 3418684 | https://www.fresvik.no/s/Montasjeanvisning-5010-for-2150.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf | Dokument | migrated | yes | 3531249 | https://www.fresvik.no/s/Montasjeanvisning-5010-for-3530-og-7530.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf | openheitslova-aktsemdvurderingar-2024 | needs-review | no | 201642 | https://www.fresvik.no/s/2024-Aktsemdvurderingar-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.00. |
+| /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf | openheitslova-aktsemdvurderingar-2024 | archived-with-reason | no | 201642 | https://www.fresvik.no/s/2024-Aktsemdvurderingar-Fresvik-Produkt.pdf | Archived historical Openheitslova 2024 document. The live donor page now links 2025 documents; old PDF URL was verified by exact SHA-256 and the local cache is retained for traceability. |
 | /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf | openheitslova-aktsemdvurderingar-2025 | migrated | yes | 102216 | https://www.fresvik.no/s/Aktsemdvurderingar-2025.pdf | Recovered likely old URL with confidence 0.20. |
 | /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf | openheitslova-rutine-plikter-2025 | migrated | yes | 276631 | https://www.fresvik.no/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | Recovered likely old URL with confidence 0.20. |
-| /assets/fresvik/documents/openheitslova-rutine-plikter.pdf | openheitslova-rutine-plikter | needs-review | no | 276631 | https://www.fresvik.no/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | Recovered likely old URL with confidence 0.00. |
-| /assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf | openheitslova-utgreiing-2024-signert | needs-review | no | 268546 | https://www.fresvik.no/s/2024-Utgreiing-signert.pdf | Recovered likely old URL with confidence 0.00. |
+| /assets/fresvik/documents/openheitslova-rutine-plikter.pdf | openheitslova-rutine-plikter | duplicate | no | 276631 | https://www.fresvik.no/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | Duplicate of /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf by exact SHA-256. Canonical old URL redirects to the 2025 local PDF; duplicate cache kept until final asset cleanup. |
+| /assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf | openheitslova-utgreiing-2024-signert | archived-with-reason | no | 268546 | https://www.fresvik.no/s/2024-Utgreiing-signert.pdf | Archived historical Openheitslova 2024 signed statement. The live donor page now links 2025 documents; old PDF URL was verified by exact SHA-256 and the local cache is retained for traceability. |
 | /assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf | openheitslova-utgreiing-2025-signert | migrated | yes | 249038 | https://www.fresvik.no/s/2025-Utgreiing-signert.pdf | Recovered likely old URL with confidence 0.20. |
 | /assets/fresvik/documents/pir-panel-montasjeanvisning.pdf | PIR-Paneler montasjeanvisning (legacy duplicate) | migrated | yes | 1031884 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.40. |
 | /assets/fresvik/documents/pir-panel.pdf | PIR-Paneler produktblad | migrated | yes | 302439 | https://www.fresvik.no/s/PIR.pdf | Recovered likely old URL with confidence 0.50. |
@@ -209,9 +209,9 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /assets/fresvik/documents/quick-start-5010exp.pdf | Dokument | migrated | yes | 1001335 | https://www.fresvik.no/s/Quick-Start-5010Exp-indB.pdf | Recovered likely old URL with confidence 0.75. |
 | /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf | Dokument | migrated | yes | 58526 | https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf | Dokument | migrated | yes | 253758 | https://www.fresvik.no/s/7060s-fnfz.pdf | Recovered likely old URL with confidence 0.33. |
-| /assets/fresvik/documents/sintef-produktsertifikat.pdf | sintef-produktsertifikat | needs-review | no | 439904 | https://www.fresvik.no/s/2135g-5.pdf | Recovered likely old URL with confidence 0.00. |
+| /assets/fresvik/documents/sintef-produktsertifikat.pdf | sintef-produktsertifikat | duplicate | no | 439904 | https://www.fresvik.no/s/2135g-5.pdf | Duplicate of /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf by exact SHA-256. Canonical redirect /s/2135g-5.pdf points to the 2135g local PDF; duplicate cache kept until final asset cleanup. |
 | /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf | Dokument | migrated | yes | 439904 | https://www.fresvik.no/s/2135g-5.pdf | Recovered likely old URL with confidence 0.25. |
-| /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf | sintef-teknisk-godkjenning | needs-review | no | 253758 | https://www.fresvik.no/s/7060s-fnfz.pdf | Recovered likely old URL with confidence 0.25. |
+| /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf | sintef-teknisk-godkjenning | duplicate | no | 253758 | https://www.fresvik.no/s/7060s-fnfz.pdf | Duplicate of /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf by exact SHA-256. Canonical redirect /s/7060s-fnfz.pdf points to the 7060s local PDF; duplicate cache kept until final asset cleanup. |
 | /assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf | Dokument | migrated | yes | 2177053 | https://www.fresvik.no/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf | Recovered likely old URL with confidence 0.75. |
 | /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf | Dokument | migrated | yes | 882067 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
 
@@ -310,16 +310,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | type | target | status | task |
 | --- | --- | --- | --- |
-| document | /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf | needs-review | Recovered likely old URL with confidence 0.00. |
-| document | /assets/fresvik/documents/openheitslova-rutine-plikter.pdf | needs-review | Recovered likely old URL with confidence 0.00. |
-| document | /assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf | needs-review | Recovered likely old URL with confidence 0.00. |
-| document | /assets/fresvik/documents/sintef-produktsertifikat.pdf | needs-review | Recovered likely old URL with confidence 0.00. |
-| document | /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf | needs-review | Recovered likely old URL with confidence 0.25. |
 
 ## Final TODO list
 
-- document: /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf [needs-review] - Recovered likely old URL with confidence 0.00.
-- document: /assets/fresvik/documents/openheitslova-rutine-plikter.pdf [needs-review] - Recovered likely old URL with confidence 0.00.
-- document: /assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf [needs-review] - Recovered likely old URL with confidence 0.00.
-- document: /assets/fresvik/documents/sintef-produktsertifikat.pdf [needs-review] - Recovered likely old URL with confidence 0.00.
-- document: /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf [needs-review] - Recovered likely old URL with confidence 0.25.
+- Ingen.

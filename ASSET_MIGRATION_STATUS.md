@@ -13,22 +13,21 @@ Generated from local migration cache and source data.
 | Used assets | 282 |
 | Unused assets | 120 |
 | Missing assets | 0 |
-| Duplicate assets | 7 |
-| Ready for Sanity | 66 |
-| Uploaded to Sanity | 222 |
+| Duplicate assets | 10 |
+| Ready for Sanity | 0 |
+| Uploaded to Sanity | 285 |
 | Failed or needs review | 0 |
 | TODO original URLs | 0 |
 
 ## Status Counts
 
-- `duplicate`: 7
-- `ready-for-sanity`: 66
+- `duplicate`: 10
 - `unused`: 120
-- `uploaded-to-sanity`: 222
+- `uploaded-to-sanity`: 285
 
 ## Local Path Usage
 
-110 routes/documents still use local `/assets/fresvik` paths while assets wait for Sanity import.
+110 routes/documents still retain local `/assets/fresvik` paths as migration fallback/backup fields.
 
 - `/`
 - `/aktuelt`
@@ -161,8 +160,8 @@ Source drift note: `src/data/legacyRoutes.ts` stores the earlier baseline, while
 
 ## Notes
 
-- `public/assets/fresvik` remains a temporary migration cache.
-- `originalUrl` is marked `TODO: unknown original URL` where the exact old remote asset URL was not retained in local source data.
+- `public/assets/fresvik` remains a temporary migration cache until production verification confirms Sanity asset references are safe everywhere.
+- `originalUrl` is retained for every asset; if new files are added later, mark unknown sources explicitly instead of guessing.
 - Real Sanity upload requires `NEXT_PUBLIC_SANITY_PROJECT_ID`, `NEXT_PUBLIC_SANITY_DATASET`, `NEXT_PUBLIC_SANITY_API_VERSION`, and `SANITY_AUTH_TOKEN`.
 - `sanity/seed/migratedContent.ndjson` remains the baseline; generate `sanity/seed/migratedContent.withAssets.ndjson` after uploads instead of overwriting it.
 - Do not delete local files until Sanity upload, reference generation, and production verification are complete.

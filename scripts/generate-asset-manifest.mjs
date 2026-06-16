@@ -691,7 +691,7 @@ ${[...byStatus.entries()]
 
 ## Local Path Usage
 
-${localPathUsers.length} routes/documents still use local \`/assets/fresvik\` paths while assets wait for Sanity import.
+${localPathUsers.length} routes/documents still retain local \`/assets/fresvik\` paths as migration fallback/backup fields.
 
 ${localPathUsers.map((route) => `- \`${route}\``).join("\n")}
 
@@ -699,8 +699,8 @@ ${sitemapComparison}
 
 ## Notes
 
-- \`public/assets/fresvik\` remains a temporary migration cache.
-- \`originalUrl\` is marked \`TODO: unknown original URL\` where the exact old remote asset URL was not retained in local source data.
+- \`public/assets/fresvik\` remains a temporary migration cache until production verification confirms Sanity asset references are safe everywhere.
+- \`originalUrl\` is retained for every asset; if new files are added later, mark unknown sources explicitly instead of guessing.
 - Real Sanity upload requires \`NEXT_PUBLIC_SANITY_PROJECT_ID\`, \`NEXT_PUBLIC_SANITY_DATASET\`, \`NEXT_PUBLIC_SANITY_API_VERSION\`, and \`SANITY_AUTH_TOKEN\`.
 - \`sanity/seed/migratedContent.ndjson\` remains the baseline; generate \`sanity/seed/migratedContent.withAssets.ndjson\` after uploads instead of overwriting it.
 - Do not delete local files until Sanity upload, reference generation, and production verification are complete.

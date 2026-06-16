@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-14T18:17:49.110Z",
+    "generatedAt": "2026-06-16T18:25:40.188Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -16,7 +16,7 @@
     "inventoryOnlyCount": 0,
     "localImageAssets": 385,
     "localDocumentAssets": 30,
-    "originalUrlsRecovered": 312,
+    "originalUrlsRecovered": 415,
     "routeStatusCounts": {
       "page": 71,
       "unrecoverable": 6,
@@ -24,9 +24,8 @@
     },
     "assetStatusCounts": {
       "migrated": 271,
-      "ignored-with-reason": 33,
-      "duplicate": 47,
-      "unrecoverable": 98
+      "ignored-with-reason": 128,
+      "duplicate": 47
     },
     "documentStatusCounts": {
       "migrated": 25,
@@ -2245,8 +2244,8 @@
       "caption": "Håvard Berdal er ny teknisk teiknar.",
       "localPath": "/assets/fresvik/images/migrated/havard-berdal.jpg",
       "status": "migrated",
-      "confidence": 1.267,
-      "notes": "Matched by filename/source similarity (1.27)."
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc7a35a3-51fe-4a8a-aac6-32c13c72b7ad/John+B%C3%B8thun_Fresvik+Produkt.jpg",
@@ -3003,7 +3002,7 @@
       "oldPath": "/andre-produkter/2014/7/9/skipsdrer",
       "title": "Andre produkt - Skipsdører - Make it stand out",
       "caption": "Whatever it is, the way you tell your story online can make all the difference.",
-      "localPath": "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
+      "localPath": "/assets/fresvik/images/migrated/skipsdr-fresvik-produkt.jpg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -3013,7 +3012,7 @@
       "oldPath": "/andre-produkter/2014/7/9/industri-slagdor",
       "title": "Andre produkt - Industri slagdør - Make it stand out",
       "caption": "Whatever it is, the way you tell your story online can make all the difference.",
-      "localPath": "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
+      "localPath": "/assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -3033,7 +3032,7 @@
       "oldPath": "/referansar/fryserom-baza-fredrikstad",
       "title": "Referansar - Skreddarsydd fryserom til Baza i Fredrikstad",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/baza-fryserom-2-0c918f6111.jpeg",
+      "localPath": "/assets/fresvik/images/old-site/Baza+fryserom+-+2.jpeg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -3243,7 +3242,7 @@
       "oldPath": "/referansar/fryserom-coop-obs-alnabru",
       "title": "Referansar - Nytt stort fryserom til Coop Obs Alnabru",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/fryserom-obs-alna-4-red-2d87e8b63a.jpg",
+      "localPath": "/assets/fresvik/images/old-site/Fryserom+OBS+Alna+4_red.jpg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -4213,7 +4212,7 @@
       "oldPath": "/startside",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/image-asset-2-59c753eb14.jpeg",
+      "localPath": "/assets/fresvik/images/old-site/image-asset+(2).jpeg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -4295,8 +4294,8 @@
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/pur-video-file.png",
       "status": "migrated",
-      "confidence": 0.735,
-      "notes": "Matched by filename/source similarity (0.73)."
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
@@ -4493,7 +4492,7 @@
       "oldPath": "/monteringsanvisning",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/fryserom-ae1ec6822f.png",
+      "localPath": "/assets/fresvik/images/old-site/Fryserom.png",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -4503,7 +4502,7 @@
       "oldPath": "/monteringsanvisning",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/port-3ee7689036.jpeg",
+      "localPath": "/assets/fresvik/images/old-site/Port.jpeg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -4513,7 +4512,7 @@
       "oldPath": "/monteringsanvisning",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/kj-lerom-c7897dab06.jpeg",
+      "localPath": "/assets/fresvik/images/old-site/Kjølerom.jpeg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -4523,7 +4522,7 @@
       "oldPath": "/monteringsanvisning",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/elektrisk-port-ba22e68a48.jpeg",
+      "localPath": "/assets/fresvik/images/old-site/Elektrisk+port.jpeg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -4533,7 +4532,7 @@
       "oldPath": "/monteringsanvisning",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/d-r-5b9c2c6401.jpeg",
+      "localPath": "/assets/fresvik/images/old-site/Dør.jpeg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -4573,7 +4572,7 @@
       "oldPath": "/stillingledig",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/fresvik-fra-bj-nnstigen-2017-ss-1cbf932fbe.jpg",
+      "localPath": "/assets/fresvik/images/old-site/Fresvik+frå+BJØNNSTIGEN+2017+SS.jpg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -4583,7 +4582,7 @@
       "oldPath": "/stillingledig",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/fresvik-toppledere-sogn-no-af42ffcb02.jpeg",
+      "localPath": "/assets/fresvik/images/old-site/Fresvik+Toppledere+sogn.no.jpeg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -4653,7 +4652,7 @@
       "oldPath": "/tilsette",
       "title": "Tilsette",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/gyda-b-thun-3ffab6f574.jpeg",
+      "localPath": "/assets/fresvik/images/migrated/gyda-bthun.jpeg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -4713,7 +4712,7 @@
       "oldPath": "/tilsette",
       "title": "Tilsette",
       "caption": "",
-      "localPath": "/assets/fresvik/images/migrated/havard-berdal.jpg",
+      "localPath": "/assets/fresvik/images/migrated/havard-berdal-71.jpg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -4803,7 +4802,7 @@
       "oldPath": "/produkt",
       "title": "Produkt - VÅRE PRODUKT",
       "caption": "Kjøle- og fryseportar",
-      "localPath": "/assets/fresvik/images/old-site/fresvik-aks-montering2-4f3973c999.jpg",
+      "localPath": "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -5053,7 +5052,7 @@
       "oldPath": "/kundeservice/faq",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/image-asset-2-59c753eb14.jpeg",
+      "localPath": "/assets/fresvik/images/old-site/image-asset+(2).jpeg",
       "status": "duplicate",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -5073,10 +5072,10 @@
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/migrated/1463-fr-plata-instal.png",
+      "localPath": "/assets/fresvik/images/old-site/1463-fr-plata-instal.webp",
       "status": "migrated",
-      "confidence": 1.214,
-      "notes": "Matched by filename/source similarity (1.21)."
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/97325d4f-52eb-4793-b596-69bbe7d3070e/alarm.png",
@@ -5093,7 +5092,7 @@
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/skjermbilde-2026-02-27-110131-ed5d3c67cc.png",
+      "localPath": "/assets/fresvik/images/old-site/Skjermbilde+2026-02-27+110131.png",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -5143,7 +5142,7 @@
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/soudal-ii-81251aba54.png",
+      "localPath": "/assets/fresvik/images/old-site/soudal+II.png",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -5153,7 +5152,7 @@
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/sika-ii-abca664136.png",
+      "localPath": "/assets/fresvik/images/old-site/sika+II.png",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -5173,7 +5172,7 @@
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/skjermbilde-2026-02-27-114255-0c8781cd9a.png",
+      "localPath": "/assets/fresvik/images/old-site/Skjermbilde+2026-02-27+114255.png",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -5183,7 +5182,7 @@
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/ik-2e5033431e.png",
+      "localPath": "/assets/fresvik/images/old-site/IK.png",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -5323,7 +5322,7 @@
       "oldPath": "/kjolerom-fryserom-offshore",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+      "localPath": "/assets/fresvik/images/old-site/TG-2135.jpg",
       "status": "migrated",
       "confidence": 1.5,
       "notes": "Matched by filename/source similarity (1.50)."
@@ -5459,46 +5458,6 @@
       "notes": "Matched by filename/source similarity (1.50)."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilsette",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/migrated/gyda-bthun.jpeg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilsette",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/migrated/havard-berdal-71.jpg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/andre-produkter/2014/7/9/industri-slagdor",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/andre-produkter/2014/7/9/skipsdrer",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/migrated/skipsdr-fresvik-produkt.jpg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429062896-9N26M8VSYJ13D54MBGKC/01.jpg",
       "oldPath": "/produkt/fasadepanel",
       "title": "",
@@ -5509,674 +5468,524 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilleggsutstyr",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/1463-fr-plata-instal.webp",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b806d454-5edc-4d8a-a9d1-67dfb6b34618/1715599204491.jpg",
       "oldPath": "/kundeservice/faq",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/1715599204491.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719861802726-ES6I90DYD3FYRFXQ2UAL/1715599204491_upscale.jpeg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/1715599204491_upscale.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6d63789a-8276-4fa7-ac6e-3767cc054fae/1733820776326.jpg",
       "oldPath": "/kundeservice/faq",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/1733820776326.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428920564-110FAZG3WNKHVQ6QPPX3/20220616_152821_1.jpg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/20220616_152821_1.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1702900160938-N8DQTB537FIXPAT24N89/Agnar3.jpeg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Agnar3.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/93b9ca60-337d-4e73-b309-95730a7b81fa/Arne-Olav-Lien-Bard%C3%B8lsga%CC%8Ard.jpg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Arne-Olav-Lien-Bardølsgård.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/referansar",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Baza+fryserom+-+2.jpeg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502389661-0NT1K8HKOIMI3JAQC92D/Bjerkreim+Legekontor+1.jpeg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Bjerkreim+Legekontor+1.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428909386-0UAOJ3QVB0WUWOV8RFMF/DSC03067.jpg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/DSC03067.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228680243-XRGFO1CPPOIXV3Q6E9TA/DSC_2670.JPG",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/DSC_2670.JPG",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228929704-D375BPIENART1ETAC9I8/Diktator_web.jpg",
       "oldPath": "/produkt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Diktator_web.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/monteringsanvisning",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Dør.jpeg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/monteringsanvisning",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Elektrisk+port.jpeg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719861861376-8H1BWLIBUKQ4JR416A2F/FP+Dyreparken.jpg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/FP+Dyreparken.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/de26e0b9-12ae-417e-ac1c-460acd407e5b/Fresvik+Produkt+-+Fabrikk-24.jpg",
       "oldPath": "/firmainfo",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Fresvik+Produkt+-+Fabrikk-24.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1702899879816-1ITCQ6T5FUMQO5S33W88/Fresvik+Produkt+NY-4.jpeg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Fresvik+Produkt+NY-4.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /stillingledig",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Fresvik+Toppledere+sogn.no.jpeg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/produkt",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/stillingledig",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Fresvik+frå+BJØNNSTIGEN+2017+SS.jpg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228670427-ISAY97839OB4AJLP7WHC/Fresvik+ionnfesting+mot+golv.jpg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Fresvik+ionnfesting+mot+golv.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228649364-UFEC8NC6DXGJJKF6MWP5/Fresvik+produikt+seljar+Arne-Olav.jpg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Fresvik+produikt+seljar+Arne-Olav.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228644406-33EMZZGG3XJWJX98WEZR/Fresvik+produkt+julehjarte+dekorasjon.jpg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Fresvik+produkt+julehjarte+dekorasjon.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228674554-9LUWSGKHXR9DDN8F1N9S/Fresvik_illustrasjon-1.jpg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Fresvik_illustrasjon-1.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3b7cf69c-95a8-4c92-bc6a-e8e78147c29b/Frode-Winther.jpg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Frode-Winther.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/referansar",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Fryserom+OBS+Alna+4_red.jpg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/monteringsanvisning",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Fryserom.png",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/61ebde5c-0774-4dc1-92c8-4ed21efb4114/Gyda+B%C3%B8thun.jpeg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Gyda+Bøthun.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228905898-3XE99LUNV7I41AHQIIL5/Ha%CC%8Andtak+standard_web.jpg",
       "oldPath": "/produkt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Håndtak+standard_web.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b94105b0-13b1-4bc6-b401-9bb4e6a082cf/Ha%CC%8Avard+Berdal.jpeg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Håvard+Berdal.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc41dc96-71bb-4347-b2f8-bf0658a7d73e/Ha%CC%8Avard+Berdal.jpg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Håvard+Berdal.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilleggsutstyr",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/IK.png",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428934426-54STKYSMZXBLZUQT1Y69/IMG_2589.jpg",
       "oldPath": "/aktuelt, /referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/IMG_2589.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428933307-K3DJQ1E35WMDO0GKLY1A/IMG_6262.jpg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/IMG_6262.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429948521-DGRCHMLC0A18PBW3X2E0/Industri+slagd%C3%B8r+Fresvik+Produkt.jpg",
       "oldPath": "/produkt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc7a35a3-51fe-4a8a-aac6-32c13c72b7ad/John+B%C3%B8thun_Fresvik+Produkt.jpg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/John+Bøthun_Fresvik+Produkt.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820354075-093JAT4O9XRFJQLFQLUX/Kiwi+Otta+1.jpeg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Kiwi+Otta+1.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1742460548045-IK0PV2OD0TE4E6PHMPW0/Kj%C3%B8lerom+Bunnpris+Volda+3.jpg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Kjølerom+Bunnpris+Volda+3.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/monteringsanvisning",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Kjølerom.jpeg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6462fe9f-f6d3-4ea6-ba4c-7e1e22feaaa6/Lars-Erling-Livrud.jpeg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Lars-Erling-Livrud.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228638026-QDHSLZ9KGVGGYFQOFGLW/Milj%C3%B8fyrta%CC%8Arn_Fresvik+Produkt.jpg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Miljøfyrtårn_Fresvik+Produkt.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/cf2c17a5-1e90-4ab0-96e9-0d4052afeb4a/Nils+Gunnar+Finne.jpeg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Nils+Gunnar+Finne.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dff2816f-bc5c-43f7-a06b-91c0427e1f50/Oddrun+Time.jpeg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Oddrun+Time.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/8cb3117f-86e2-4a0a-b333-5722d9c1946a/Ove+Fedje.jpeg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Ove+Fedje.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228920932-36RYEH9XKSBDP0NDVOZG/PEGO+innestengningsalarm_web.jpg",
       "oldPath": "/produkt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/PEGO+innestengningsalarm_web.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228926344-8MJOI792Q623SDUIEYUI/PVC-gardin_web.jpg",
       "oldPath": "/produkt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/PVC-gardin_web.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
       "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /openheitslova, /personvernerklering, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Poly.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428975022-73UI63V2IODY84N7PG6I/Port+Karls%C3%B8ybruket+2017.jpg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Port+Karlsøybruket+2017.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/monteringsanvisning",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Port.jpeg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/425b8a7b-7d36-4709-b058-61a730bd2e74/Ragnvald+Grov+S%C3%B8rdal.jpeg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Ragnvald+Grov+Sørdal.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733746970526-TBD6CZKJHAR5MS0PFACO/Samaneh+Shakeri+bannerbilde.jpg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Samaneh+Shakeri+bannerbilde.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e6a1706c-a13b-41d3-8e62-479cbae3fa46/Samaneh+Shakeri.jpg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Samaneh+Shakeri.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b8b854bc-2ce5-4194-beff-1f375dec6407/Sigmund+Hauglum.jpg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Sigmund+Hauglum.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/a7e012d5-b583-472d-85c0-a3d3eb0d24aa/Siri+Otterhjell.jpeg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Siri+Otterhjell.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/573f8aab-6b3e-4c90-86e0-797986364f58/Siv+Settevik.jpeg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Siv+Settevik.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429912105-GUXVAQLQO6L6XRSJ0NYV/Skipsd%C3%B8r+Fresvik+Produkt.jpg",
       "oldPath": "/produkt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Skipsdør+Fresvik+Produkt.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilleggsutstyr",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Skjermbilde+2026-02-27+110131.png",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/tilleggsutstyr",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/Skjermbilde+2026-02-27+114255.png",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222151377-Y2600X4366PYP2EVYBJ9/Spar+Lund+Torv+-+Fresvik+Produkt+1+.jpeg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Spar+Lund+Torv+-+Fresvik+Produkt+1+.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694430019551-8ORIUHF96LTND4P0LYWU/Standard+D%C3%B8r+Fresvik+Produkt.jpg",
       "oldPath": "/produkt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Standard+Dør+Fresvik+Produkt.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385876430-SF9NN179JLHLSGSAMMMQ/Startbarnk.png",
       "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /openheitslova, /personvernerklering, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Startbarnk.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /openheitslova, /personvernerklering, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/TG-2135.jpg",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dbba98a8-e809-46c8-b875-ce3ef3aee28a/Tomas-Kruvelis.jpg",
       "oldPath": "/tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Tomas-Kruvelis.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749159320-QFVQ5BDRGRH74139ILFZ/Vik+helse-+og+sjukeheim+1.jpg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/Vik+helse-+og+sjukeheim+1.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228769500-4TTIXKAO1JNS9J2G51MG/_K6R3776_07032013.jpg",
       "oldPath": "/tenester/montasje",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/_K6R3776_07032013.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d1e8ab46-e86a-4e94-a140-75a4bf64054d/aaa.jpg",
       "oldPath": "/produkt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/aaa.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/97325d4f-52eb-4793-b596-69bbe7d3070e/alarm.png",
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/alarm.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d04658e0-dce8-4c18-ba78-e00e6440b419/b12b5d19-2424-48de-bdea-c83b503c880c+%281%29.png",
@@ -6199,6 +6008,16 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241166915-Q47EXNO6K811P4RRIQL1/Baza+fryserom+-+2.jpeg",
+      "oldPath": "",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/baza-fryserom-2-0c918f6111.jpeg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241168352-9XAEM8D0U1DJA7JIBNLP/Baza+fryserom+-+4.jpeg",
       "oldPath": "/produkt/frysetunnel",
       "title": "",
@@ -6209,14 +6028,14 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1700040185087-O7K1UNJLYM01IO9TVQT5/ce-logo-png-transparent.png",
       "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /openheitslova, /personvernerklering, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/ce-logo-png-transparent.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1700040185087-O7K1UNJLYM01IO9TVQT5/ce-logo-png-transparent.png",
@@ -6229,11 +6048,31 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/33cd3f9d-cf72-4271-8f61-52108209b9b9/D%C3%B8r.jpeg",
+      "oldPath": "/monteringsanvisning",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/d-r-5b9c2c6401.jpeg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228929704-D375BPIENART1ETAC9I8/Diktator_web.jpg",
       "oldPath": "/produkt/kjole-frysedorer",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/diktator-door.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/17f574d6-7d71-483d-ba5b-14108ce48d91/Elektrisk+port.jpeg",
+      "oldPath": "/monteringsanvisning",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/elektrisk-port-ba22e68a48.jpeg",
       "status": "ignored-with-reason",
       "confidence": 0,
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
@@ -6279,24 +6118,24 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/08771da3-ee6f-416a-9369-ff384ef62aba/fermod.png",
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/fermod.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428980136-F7AB7NW8M9CQA765TLQZ/fiskehallen2.jpg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/fiskehallen2.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
@@ -6309,24 +6148,24 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/00a09d9e-82d6-404a-ac83-38ed77ef6990/flake-black.png",
       "oldPath": "/stillingledig, /tenester/leveranse, /tenester/montasje",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/flake-black.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d9eb7ec0-de12-4f73-8ef4-a1676022fbfb/flake-left.png",
       "oldPath": "/dokumentasjon, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /produkt, /tenester/service-reservedeler",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/flake-left.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/13922f08-1a26-4996-98ca-874c87c1d3cb/flake.png",
@@ -6339,24 +6178,74 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5aab7eed-051d-445b-b821-a6d81571f361/Fresvik%2Baks%2Bmontering2.jpg",
+      "oldPath": "/produkt",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/fresvik-aks-montering2-4f3973c999.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/45de53c6-9a74-44c2-9a4d-c8e9563832aa/Fresvik+fra%CC%8A+BJ%C3%98NNSTIGEN+2017+SS.jpg",
+      "oldPath": "/stillingledig",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/fresvik-fra-bj-nnstigen-2017-ss-1cbf932fbe.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/b405b8f4-c0fa-4090-a6a3-3af3f5ded4e7/fresvik-fryse-dor_ny.jpg",
       "oldPath": "/produkt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/fresvik-fryse-dor_ny.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/70286a73-681d-4793-8f74-66c3a5955e80/Fresvik+Port.jpeg?format=2500w",
       "oldPath": "/produkt/kjole-fryseportar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/fresvik-port-hero.jpeg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1698216874163-KLN7EVX53DHNZV3JNUXG/Fresvik+Toppledere+sogn.no.jpeg",
+      "oldPath": "/stillingledig",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/fresvik-toppledere-sogn-no-af42ffcb02.jpeg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/edb3073f-4d52-4f2b-bcc8-eccccb3d364b/Fryserom.png",
+      "oldPath": "/monteringsanvisning",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/fryserom-ae1ec6822f.png",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1734082729594-KTDB3CX6KXLCG0K5DW13/Fryserom+OBS+Alna+4_red.jpg",
+      "oldPath": "",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/fryserom-obs-alna-4-red-2d87e8b63a.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d7b7a341-353c-4260-afe7-8858187c72fd/Fryst+Laks.png",
@@ -6369,24 +6258,34 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228667443-PSKX42FG2YXT5UCI1XV0/fr%C3%A5+produksjonen++Kopi+%28002%29.jpg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/frå+produksjonen++Kopi+(002).jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/c1a5b7bc-5c62-421d-931a-65dcb0cc86fd/glassplate.png",
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/glassplate.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/61ebde5c-0774-4dc1-92c8-4ed21efb4114/Gyda+B%C3%B8thun.jpeg",
+      "oldPath": "",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/gyda-b-thun-3ffab6f574.jpeg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228905898-3XE99LUNV7I41AHQIIL5/Ha%CC%8Andtak+standard_web.jpg",
@@ -6429,14 +6328,24 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/kundeservice/faq",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/90003639-b348-4c7a-a713-286ffa59c3e3/IK.png",
+      "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/image-asset+(2).jpeg",
-      "status": "unrecoverable",
+      "localPath": "/assets/fresvik/images/old-site/ik-2e5033431e.png",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5736240f-7b74-4bca-a556-1c4cf313614e/image-asset+%282%29.jpeg",
+      "oldPath": "/, /kundeservice/faq",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/image-asset-2-59c753eb14.jpeg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429051200-R0UVYZO6J6WM4KZN512O/image-asset.jpeg",
@@ -6449,24 +6358,44 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0e918a1c-81aa-42be-ac6c-a76670486056/image-asset.jpg",
       "oldPath": "/produkt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/image-asset.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429948521-DGRCHMLC0A18PBW3X2E0/Industri+slagd%C3%B8r+Fresvik+Produkt.jpg",
+      "oldPath": "/produkt/kjole-frysedorer",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428965488-X05XS4QHRX5C8V1VJ218/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
       "oldPath": "/referansar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/ad4e5e8c-1d47-4b54-aef7-ed7c423a5755/Kj%C3%B8lerom.jpeg",
+      "oldPath": "/monteringsanvisning",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/kj-lerom-c7897dab06.jpeg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0fa83857-67f7-4d27-bd1e-2967f67f9d2e/FP+Produkt+11.jpg",
@@ -6499,44 +6428,54 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/34a43d9f-90b0-4bd3-af63-a116052ad983/Port.jpeg",
+      "oldPath": "/monteringsanvisning",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/port-3ee7689036.jpeg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3c01276b-1589-49c6-9503-8cd8519959d9/port1web.jpg",
       "oldPath": "/tenester/leveranse",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/port1web.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228640890-3GQPWH4X4GPZANQHPOW2/prod1.jpg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/prod1.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/01c192a0-dbab-49e5-b8fd-629244295ab4/prod8.jpg",
       "oldPath": "/aktuelt, /stillingledig",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/prod8.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228957634-HCADFJMCX83H0GB9N5Y1/profil3+copy.jpg",
       "oldPath": "/produkt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/profil3+copy.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228957634-HCADFJMCX83H0GB9N5Y1/profil3+copy.jpg",
@@ -6549,44 +6488,34 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
-      "oldPath": "/produkt/fresvik-panel",
-      "title": "",
-      "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/pur-video-file.png",
-      "status": "unrecoverable",
-      "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
-    },
-    {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228926344-8MJOI792Q623SDUIEYUI/PVC-gardin_web.jpg",
       "oldPath": "/produkt/kjole-frysedorer, /produkt/kjole-fryseportar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/pvc-gardin-web-port.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228943516-BXO830KPXQI3FFOSDCRN/rampe3+copy.jpg",
       "oldPath": "/produkt/kjole-frysedorer, /produkt/kjole-fryseportar",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/rampe3-copy-port.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385862366-SQTJIQF8X2Y8LT02Z2UT/sentral%2Bgodkjent.png",
       "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /openheitslova, /personvernerklering, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/sentral+godkjent.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385862366-SQTJIQF8X2Y8LT02Z2UT/sentral%2Bgodkjent.png",
@@ -6599,44 +6528,74 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/01d5327d-ae87-45d4-9431-4787da924aa4/sika+II.png",
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/sika+II.png",
-      "status": "unrecoverable",
+      "localPath": "/assets/fresvik/images/old-site/sika-ii-abca664136.png",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3e67dc93-31ab-4ea9-9e88-2277be7198bb/sika.png",
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/sika.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429912105-GUXVAQLQO6L6XRSJ0NYV/Skipsd%C3%B8r+Fresvik+Produkt.jpg",
+      "oldPath": "/produkt/kjole-frysedorer",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/skipsdor-fresvik-produkt.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/f152d606-3742-407e-99fc-8e412f82cab6/Skjermbilde+2026-02-27+110131.png",
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
-      "localPath": "/assets/fresvik/images/old-site/soudal+II.png",
-      "status": "unrecoverable",
+      "localPath": "/assets/fresvik/images/old-site/skjermbilde-2026-02-27-110131-ed5d3c67cc.png",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/4a4c209a-5fec-496f-80da-a49a9d68e75b/Skjermbilde+2026-02-27+114255.png",
+      "oldPath": "/tilleggsutstyr",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/skjermbilde-2026-02-27-114255-0c8781cd9a.png",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/e4cbf21e-a956-4d47-9fb5-3a7a2924b91e/soudal+II.png",
+      "oldPath": "/tilleggsutstyr",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/soudal-ii-81251aba54.png",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/33b9b91b-e0d9-4d5f-b1e3-72e6932ea2f6/soudal.png",
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/soudal.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/70099be8-6751-41f7-aea3-d4501ff3c09a/Spar+Lund+Torv+FP+1.png",
@@ -6670,6 +6629,16 @@
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385867638-53S21SMAIEM6JIMC4IZ7/TG-2135.jpg",
+      "oldPath": "/, /kjolerom-fryserom-offshore, /produkt/fresvik-panel, /produkt/fresvik-pir-panel, /produkt/kjole-frysedorer, /produkt/kjole-fryseportar",
+      "title": "",
+      "caption": "",
+      "localPath": "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
+      "status": "ignored-with-reason",
+      "confidence": 0,
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385867638-53S21SMAIEM6JIMC4IZ7/TG-2135.jpg",
       "oldPath": "/produkt/fasadepanel, /produkt/frysetunnel",
       "title": "",
       "caption": "",
@@ -6679,24 +6648,24 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228679098-YQP0VDWZK5FQ810SNX76/tomas+kruvelis+20180315_121307.jpg",
       "oldPath": "/aktuelt",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/tomas+kruvelis+20180315_121307.jpg",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/bb85c1ec-830f-451e-afb1-a7d1eef82bd9/valve.png",
       "oldPath": "/tilleggsutstyr",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/valve.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385879029-1G9MX2OPCNVO7N0PMHZF/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
@@ -6709,14 +6678,14 @@
       "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     },
     {
-      "originalUrl": "TODO: unknown original URL",
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385879029-1G9MX2OPCNVO7N0PMHZF/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
       "oldPath": "/aktuelt, /dokumentasjon, /firmainfo, /kundeservice/faq, /monteringsanvisning, /monteringsanvisningar-fresvik-skyveport, /openheitslova, /personvernerklering, /produkt, /referansar, /stillingledig, /tenester/leveranse, /tenester/montasje, /tenester/service-reservedeler, /tilleggsutstyr, /tilsette",
       "title": "",
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
-      "status": "unrecoverable",
+      "status": "ignored-with-reason",
       "confidence": 0,
-      "notes": "Local migration cache image is used, but exact remote originalUrl is unrecoverable from current sitemap/HTML; sourcePages are retained."
+      "notes": "Local image is used by migrated data and has originalUrl, but that URL is absent from the current live sitemap; kept as source drift cache."
     }
   ],
   "documents": [
@@ -6921,7 +6890,7 @@
       "notes": "Recovered likely old URL with confidence 1.00."
     },
     {
-      "oldUrl": "TODO: unknown original URL",
+      "oldUrl": "https://www.fresvik.no/s/2024-Aktsemdvurderingar-Fresvik-Produkt.pdf",
       "localPath": "/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf",
       "title": "openheitslova-aktsemdvurderingar-2024",
       "sourcePages": [],
@@ -6929,7 +6898,7 @@
       "usedBy": [],
       "routeAvailable": false,
       "status": "needs-review",
-      "notes": "Exact old PDF URL was not recoverable from sitemap/local source data."
+      "notes": "Recovered likely old URL with confidence 0.00."
     },
     {
       "oldUrl": "https://www.fresvik.no/s/Aktsemdvurderingar-2025.pdf",
@@ -6962,7 +6931,7 @@
       "notes": "Recovered likely old URL with confidence 0.20."
     },
     {
-      "oldUrl": "TODO: unknown original URL",
+      "oldUrl": "https://www.fresvik.no/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf",
       "localPath": "/assets/fresvik/documents/openheitslova-rutine-plikter.pdf",
       "title": "openheitslova-rutine-plikter",
       "sourcePages": [],
@@ -6970,10 +6939,10 @@
       "usedBy": [],
       "routeAvailable": false,
       "status": "needs-review",
-      "notes": "Exact old PDF URL was not recoverable from sitemap/local source data."
+      "notes": "Recovered likely old URL with confidence 0.00."
     },
     {
-      "oldUrl": "TODO: unknown original URL",
+      "oldUrl": "https://www.fresvik.no/s/2024-Utgreiing-signert.pdf",
       "localPath": "/assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf",
       "title": "openheitslova-utgreiing-2024-signert",
       "sourcePages": [],
@@ -6981,7 +6950,7 @@
       "usedBy": [],
       "routeAvailable": false,
       "status": "needs-review",
-      "notes": "Exact old PDF URL was not recoverable from sitemap/local source data."
+      "notes": "Recovered likely old URL with confidence 0.00."
     },
     {
       "oldUrl": "https://www.fresvik.no/s/2025-Utgreiing-signert.pdf",
@@ -7247,7 +7216,7 @@
       "notes": "Recovered likely old URL with confidence 0.33."
     },
     {
-      "oldUrl": "TODO: unknown original URL",
+      "oldUrl": "https://www.fresvik.no/s/2135g-5.pdf",
       "localPath": "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
       "title": "sintef-produktsertifikat",
       "sourcePages": [],
@@ -7255,7 +7224,7 @@
       "usedBy": [],
       "routeAvailable": false,
       "status": "needs-review",
-      "notes": "Exact old PDF URL was not recoverable from sitemap/local source data."
+      "notes": "Recovered likely old URL with confidence 0.00."
     },
     {
       "oldUrl": "https://www.fresvik.no/s/2135g-5.pdf",
@@ -7276,7 +7245,7 @@
       "notes": "Recovered likely old URL with confidence 0.25."
     },
     {
-      "oldUrl": "TODO: unknown original URL",
+      "oldUrl": "https://www.fresvik.no/s/7060s-fnfz.pdf",
       "localPath": "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
       "title": "sintef-teknisk-godkjenning",
       "sourcePages": [],
@@ -7284,7 +7253,7 @@
       "usedBy": [],
       "routeAvailable": false,
       "status": "needs-review",
-      "notes": "Exact old PDF URL was not recoverable from sitemap/local source data."
+      "notes": "Recovered likely old URL with confidence 0.25."
     },
     {
       "oldUrl": "https://www.fresvik.no/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf",
@@ -10866,31 +10835,31 @@
       "type": "document",
       "target": "/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf",
       "status": "needs-review",
-      "task": "Exact old PDF URL was not recoverable from sitemap/local source data."
+      "task": "Recovered likely old URL with confidence 0.00."
     },
     {
       "type": "document",
       "target": "/assets/fresvik/documents/openheitslova-rutine-plikter.pdf",
       "status": "needs-review",
-      "task": "Exact old PDF URL was not recoverable from sitemap/local source data."
+      "task": "Recovered likely old URL with confidence 0.00."
     },
     {
       "type": "document",
       "target": "/assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf",
       "status": "needs-review",
-      "task": "Exact old PDF URL was not recoverable from sitemap/local source data."
+      "task": "Recovered likely old URL with confidence 0.00."
     },
     {
       "type": "document",
       "target": "/assets/fresvik/documents/sintef-produktsertifikat.pdf",
       "status": "needs-review",
-      "task": "Exact old PDF URL was not recoverable from sitemap/local source data."
+      "task": "Recovered likely old URL with confidence 0.00."
     },
     {
       "type": "document",
       "target": "/assets/fresvik/documents/sintef-teknisk-godkjenning.pdf",
       "status": "needs-review",
-      "task": "Exact old PDF URL was not recoverable from sitemap/local source data."
+      "task": "Recovered likely old URL with confidence 0.25."
     }
   ]
 }

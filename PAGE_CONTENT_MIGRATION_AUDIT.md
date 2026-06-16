@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-06-14T18:17:51.149Z
+Generated: 2026-06-16T18:25:44.002Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 

@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/produkt/fresvik-panel",
+  "finalUrl": "https://www.fresvik.no/produkt/fresvik-panel",
+  "fetchedAt": "2026-06-16T18:20:36.926Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Fresvik PUR-Panel | Utforsk våre løsninger – kontakt oss i dag — Fresvik Produkt",
+  "metaDescription": "Fresvik PUR-Panel tilbyr isolasjonspanel til kjøle- og fryserom, produsert i Norge med fleksible løsninger, enkel montering og miljøvennlig design.",
+  "counts": {
+    "headings": 19,
+    "textBlocks": 46,
+    "links": 96,
+    "images": 72,
+    "documents": 4
+  }
+}

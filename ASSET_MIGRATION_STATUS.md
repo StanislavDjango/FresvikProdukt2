@@ -17,7 +17,7 @@ Generated from local migration cache and source data.
 | Ready for Sanity | 66 |
 | Uploaded to Sanity | 222 |
 | Failed or needs review | 0 |
-| TODO original URLs | 103 |
+| TODO original URLs | 0 |
 
 ## Status Counts
 

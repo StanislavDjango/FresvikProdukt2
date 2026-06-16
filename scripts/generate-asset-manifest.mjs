@@ -19,6 +19,14 @@ const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg
 const documentExtensions = new Set([".pdf", ".doc", ".docx", ".xls", ".xlsx"]);
 const knownOriginalUrls = new Map([
   [
+    "/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf",
+    "https://www.fresvik.no/s/2024-Aktsemdvurderingar-Fresvik-Produkt.pdf",
+  ],
+  [
+    "/assets/fresvik/documents/openheitslova-utgreiing-2024-signert.pdf",
+    "https://www.fresvik.no/s/2024-Utgreiing-signert.pdf",
+  ],
+  [
     "/assets/fresvik/images/old-site/home-flag-of-norway.jpg",
     "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/c9b5403a-bfc1-4fde-9c6b-c448d7c8e9e0/Flag_of_Norway_with_proportions.svg.jpg",
   ],
@@ -43,6 +51,10 @@ const knownOriginalUrls = new Map([
     "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0fa83857-67f7-4d27-bd1e-2967f67f9d2e/FP+Produkt+11.jpg",
   ],
   [
+    "/assets/fresvik/images/old-site/fresvik-port-hero.jpeg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/70286a73-681d-4793-8f74-66c3a5955e80/Fresvik+Port.jpeg?format=2500w",
+  ],
+  [
     "/assets/fresvik/images/old-site/standard-dor-fresvik-produkt.jpg",
     "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694430019551-8ORIUHF96LTND4P0LYWU/Standard+D%C3%B8r+Fresvik+Produkt.jpg",
   ],
@@ -61,6 +73,18 @@ const knownOriginalUrls = new Map([
   [
     "/assets/fresvik/images/old-site/diktator-door.jpg",
     "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228929704-D375BPIENART1ETAC9I8/Diktator_web.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/pvc-gardin-web-port.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228926344-8MJOI792Q623SDUIEYUI/PVC-gardin_web.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/rampe3-copy-port.jpg",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228943516-BXO830KPXQI3FFOSDCRN/rampe3+copy.jpg",
+  ],
+  [
+    "/assets/fresvik/images/old-site/pur-video-file.png",
+    "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/274b289f-83c3-4317-9b12-479b670803da/video-file.png",
   ],
   [
     "/assets/fresvik/images/old-site/home-fasadepanel.webp",
@@ -337,6 +361,80 @@ function collectAssetUsageFromRedirects(usage, redirectRules) {
   return originalUrlsByDestination;
 }
 
+function withoutQuery(url) {
+  return String(url || "").split("?")[0];
+}
+
+function normalizeFilename(filename) {
+  try {
+    filename = decodeURIComponent(filename);
+  } catch {
+    // Keep the original string if it is not URI encoded.
+  }
+  return String(filename || "").normalize("NFC").toLowerCase();
+}
+
+function sourcePageFromEvidenceImagesPath(imagesPath) {
+  const evidenceRoot = path.join(root, "migration", "evidence", "www.fresvik.no");
+  const pagePath = path
+    .relative(evidenceRoot, path.dirname(imagesPath))
+    .split(path.sep)
+    .join("/");
+  return `https://www.fresvik.no/${pagePath}`.replace(/\/$/, "");
+}
+
+function addEvidenceCandidate(map, filename, originalUrl, sourcePage) {
+  if (!filename || !originalUrl) return;
+  const key = normalizeFilename(filename);
+  if (!map.has(key)) map.set(key, []);
+  const cleanUrl = withoutQuery(originalUrl);
+  const existing = map
+    .get(key)
+    .find((candidate) => candidate.originalUrl === cleanUrl && candidate.sourcePage === sourcePage);
+  if (!existing) {
+    map.get(key).push({ originalUrl: cleanUrl, sourcePage });
+  }
+}
+
+async function collectOriginalUrlsFromEvidence() {
+  const evidenceRoot = path.join(root, "migration", "evidence", "www.fresvik.no");
+  const byFilename = new Map();
+  if (!existsSync(evidenceRoot)) return byFilename;
+
+  const evidenceFiles = (await listFiles(evidenceRoot)).filter(
+    (filePath) => path.basename(filePath) === "images.json",
+  );
+  for (const imagesPath of evidenceFiles) {
+    const sourcePage = sourcePageFromEvidenceImagesPath(imagesPath);
+    const images = JSON.parse(await readFile(imagesPath, "utf8"));
+    for (const image of images) {
+      addEvidenceCandidate(byFilename, image.filename, image.originalUrl, sourcePage);
+    }
+  }
+
+  return byFilename;
+}
+
+function recoverOriginalUrlFromEvidence(localPath, sourcePages, evidenceOriginalUrls) {
+  const filename = normalizeFilename(path.basename(localPath));
+  const candidates = evidenceOriginalUrls.get(filename) || [];
+  if (candidates.length === 0) return null;
+
+  const uniqueSourceMatches = [
+    ...new Set(
+      candidates
+        .filter((candidate) => sourcePages.includes(candidate.sourcePage))
+        .map((candidate) => candidate.originalUrl),
+    ),
+  ];
+  if (uniqueSourceMatches.length === 1) return uniqueSourceMatches[0];
+
+  const uniqueUrls = [...new Set(candidates.map((candidate) => candidate.originalUrl))];
+  if (uniqueUrls.length === 1) return uniqueUrls[0];
+
+  return null;
+}
+
 function loadExistingManifest() {
   if (!existsSync(manifestPath)) return new Map();
 
@@ -416,6 +514,7 @@ async function buildManifest() {
   collectAssetUsageFromPages(usage, getAllContentPages());
   collectAssetUsageFromSeed(usage);
   const redirectOriginalUrls = collectAssetUsageFromRedirects(usage, redirectRules);
+  const evidenceOriginalUrls = await collectOriginalUrlsFromEvidence();
 
   const existing = loadExistingManifest();
   const filePaths = await listFiles(assetRoot);
@@ -437,20 +536,29 @@ async function buildManifest() {
     const sourcePages = [...(usage.get(localPath)?.sourcePages || [])].sort();
     const knownOriginalUrl = knownOriginalUrls.get(localPath);
     const redirectOriginalUrl = redirectOriginalUrls.get(localPath);
+    const evidenceOriginalUrl = recoverOriginalUrlFromEvidence(
+      localPath,
+      sourcePages,
+      evidenceOriginalUrls,
+    );
     const originalUrl =
       previous?.originalUrl && !previous.originalUrl.startsWith("TODO")
         ? previous.originalUrl
         : knownOriginalUrl ||
           redirectOriginalUrl ||
+          evidenceOriginalUrl ||
           previous?.originalUrl ||
           "TODO: unknown original URL";
     const notes =
       knownOriginalUrl &&
       String(previous?.notes || "").includes("TODO: exact original remote asset URL")
-        ? "Recovered originalUrl from live old /startside sitemap."
+        ? "Recovered originalUrl from known migration evidence mapping."
         : redirectOriginalUrl &&
             String(previous?.notes || "").includes("TODO: exact original remote asset URL")
           ? "Recovered originalUrl from local redirect source."
+        : evidenceOriginalUrl &&
+            String(previous?.notes || "").includes("TODO: exact original remote asset URL")
+          ? "Recovered originalUrl from migration evidence images.json."
         : previous?.notes || "";
 
     baseEntries.push({
@@ -478,6 +586,12 @@ async function buildManifest() {
     }
   }
   const entryByLocalPath = new Map(baseEntries.map((entry) => [entry.localPath, entry]));
+  const originalUrlsByHash = new Map();
+  for (const entry of baseEntries) {
+    if (!entry.sha256 || entry.originalUrl.startsWith("TODO")) continue;
+    if (!originalUrlsByHash.has(entry.sha256)) originalUrlsByHash.set(entry.sha256, new Set());
+    originalUrlsByHash.get(entry.sha256).add(entry.originalUrl);
+  }
 
   return baseEntries.map((entry) => {
     const duplicateOf =
@@ -485,10 +599,19 @@ async function buildManifest() {
         ? canonicalByHash.get(entry.sha256)
         : null;
     const canonicalEntry = duplicateOf ? entryByLocalPath.get(duplicateOf) : null;
+    const hashOriginalUrls = entry.sha256 ? originalUrlsByHash.get(entry.sha256) : null;
+    const inheritedOriginalUrl =
+      entry.originalUrl.startsWith("TODO") && hashOriginalUrls?.size === 1
+        ? [...hashOriginalUrls][0]
+        : null;
     const resolvedEntry = {
       ...entry,
+      originalUrl: inheritedOriginalUrl || entry.originalUrl,
       sanityAssetId: entry.sanityAssetId || canonicalEntry?.sanityAssetId || null,
       sanityReference: entry.sanityReference || canonicalEntry?.sanityReference || null,
+      notes: inheritedOriginalUrl
+        ? "Recovered originalUrl from duplicate file hash."
+        : entry.notes,
     };
 
     return {

@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-06-16T18:34:14.815Z
+Generated: 2026-06-16T18:36:59.105Z
 
 ## Summary
 
@@ -16,7 +16,8 @@ Generated: 2026-06-16T18:34:14.815Z
 | Partial count | 0 |
 | Missing count | 0 |
 | Needs-review count | 0 |
-| Unrecoverable documented | 6 |
+| Unrecoverable unresolved | 0 |
+| Unrecoverable with evidence | 6 |
 | Inventory-only count | 0 |
 | Local image assets | 385 |
 | Local document/PDF assets | 30 |
@@ -57,16 +58,16 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /aktuelt/arne-olav-ny-salskonsulent | /aktuelt/arne-olav-ny-salskonsulent | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/ein-investering-for-henga-med-i-tidanbsp | /aktuelt/ein-investering-for-henga-med-i-tidanbsp | page | news | yes | yes | yes | 3/3 | yes | Covered as migrated page in local data. |
 | /aktuelt/fasade-element-og-takplater-ruukki | /aktuelt/fasade-element-og-takplater-ruukki | page | news | yes | yes | yes | 6/6 | yes | Covered as migrated page in local data. |
-| /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
-| /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | unrecoverable-with-evidence | news | yes | yes | no | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | unrecoverable-with-evidence | news | yes | yes | no | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | /aktuelt/fresvik-hengsel | /aktuelt/fresvik-hengsel | page | news | yes | yes | yes | 0/0 | yes | Covered as migrated page in local data. |
 | /aktuelt/fresvik-kjolerom-til-fruktbonde | /aktuelt/fresvik-kjolerom-til-fruktbonde | page | news | yes | yes | yes | 4/4 | yes | Covered as migrated page in local data. |
-| /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | unrecoverable-with-evidence | news | yes | yes | no | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | /aktuelt/gladhistorie-fresvik-kjole-fryserom | /aktuelt/gladhistorie-fresvik-kjole-fryserom | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/innfesting-mot-golv | /aktuelt/innfesting-mot-golv | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/john-bothun-blir-pensjonist | /aktuelt/john-bothun-blir-pensjonist | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /aktuelt/jul-2020 | /aktuelt/jul-2020 | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
-| /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | unrecoverable-with-evidence | news | yes | yes | no | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | /aktuelt/montasje-prosjekt | /aktuelt/montasje-prosjekt | page | news | yes | yes | yes | 10/10 | yes | Covered as migrated page in local data. |
 | /aktuelt/ny-teknisk-teiknar-havard-berdal | /aktuelt/ny-teknisk-teiknar-havard-berdal | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/nye-monteringsanvisningar | /aktuelt/nye-monteringsanvisningar | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
@@ -74,8 +75,8 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /aktuelt/portproduksjon | /aktuelt/portproduksjon | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /aktuelt/samaneh-shakeri-ny-teknisk-sjef | /aktuelt/samaneh-shakeri-ny-teknisk-sjef | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/skjererom | /aktuelt/skjererom | page | news | yes | yes | yes | 6/6 | yes | Covered as migrated page in local data. |
-| /aktuelt/stor-leveranse-til-buskerud-storcash | /aktuelt/stor-leveranse-til-buskerud-storcash | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
-| /aktuelt/to-ledige-stillingar-i-haust | /aktuelt/to-ledige-stillingar-i-haust | unrecoverable | news | yes | yes | yes | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| /aktuelt/stor-leveranse-til-buskerud-storcash | /aktuelt/stor-leveranse-til-buskerud-storcash | unrecoverable-with-evidence | news | yes | yes | no | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
+| /aktuelt/to-ledige-stillingar-i-haust | /aktuelt/to-ledige-stillingar-i-haust | unrecoverable-with-evidence | news | yes | yes | no | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | /aktuelt/tomas-kruvellis-vaar-nye-mann | /aktuelt/tomas-kruvellis-vaar-nye-mann | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/vi-er-blitt-sertifisert-miljofyrtarn | /aktuelt/vi-er-blitt-sertifisert-miljofyrtarn | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /andre-produkter | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |

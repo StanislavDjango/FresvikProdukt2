@@ -526,6 +526,7 @@ function hasTodoMarkers(text) {
 
 function bodyComplete(pathname, page, seedDoc, status) {
   if (status === "redirect") return false;
+  if (status === "unrecoverable-with-evidence") return false;
   const text = [pageText(page), JSON.stringify(seedDoc || {})].join("\n");
   const wordCount = words(text).length;
   if (!page && !seedDoc) return false;
@@ -571,7 +572,9 @@ function routeStatus({
       : "partial";
   }
   if (structuredListCovered(pathname, page, sitemapImages, localImages)) return "page";
-  if (recovery?.status === "unrecoverable-from-checked-sources") return "unrecoverable";
+  if (recovery?.status === "unrecoverable-from-checked-sources") {
+    return "unrecoverable-with-evidence";
+  }
   if (extract?.extractionStatus === "unrecoverable") return "needs-review";
   if ((pathname.startsWith("/aktuelt/") || pathname.startsWith("/referansar/")) && !extract) {
     return "partial";
@@ -1129,7 +1132,7 @@ const routeRows = routeSitemapEntries.map((entry) => {
             : "Strict audit: local content appears shorter than a full old detail page, lacks reliable extracted body evidence, documents, or not all sitemap images are represented."
           : status === "needs-review"
             ? "Contains TODO/verification markers or unresolved migration text."
-            : status === "unrecoverable"
+            : status === "unrecoverable-with-evidence"
               ? "Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body."
               : status === "missing"
                 ? "No local page, seed document, or redirect found."
@@ -1238,6 +1241,9 @@ const audit = {
     missingCount: routes.filter((route) => route.status === "missing").length,
     needsReviewCount: routes.filter((route) => route.status === "needs-review").length,
     unrecoverableCount: routes.filter((route) => route.status === "unrecoverable").length,
+    unrecoverableWithEvidenceCount: routes.filter(
+      (route) => route.status === "unrecoverable-with-evidence",
+    ).length,
     inventoryOnlyCount: routes.filter((route) => route.status === "inventory-only").length,
     localImageAssets: localImageAssetsAfterUpdate.length,
     localDocumentAssets: documentAssets.length,
@@ -1345,7 +1351,8 @@ Generated: ${audit.summary.generatedAt}
 | Partial count | ${audit.summary.partialCount} |
 | Missing count | ${audit.summary.missingCount} |
 | Needs-review count | ${audit.summary.needsReviewCount} |
-| Unrecoverable documented | ${audit.summary.unrecoverableCount} |
+| Unrecoverable unresolved | ${audit.summary.unrecoverableCount} |
+| Unrecoverable with evidence | ${audit.summary.unrecoverableWithEvidenceCount} |
 | Inventory-only count | ${audit.summary.inventoryOnlyCount} |
 | Local image assets | ${audit.summary.localImageAssets} |
 | Local document/PDF assets | ${audit.summary.localDocumentAssets} |

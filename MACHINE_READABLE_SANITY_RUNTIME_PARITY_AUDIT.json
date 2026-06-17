@@ -1,9 +1,9 @@
 {
   "summary": {
-    "generatedAt": "2026-06-17T13:50:00.989Z",
+    "generatedAt": "2026-06-17T14:44:24.111Z",
     "auditedRoutes": 23,
-    "fallbackProtectedRoutes": 13,
-    "sanityRuntimeSwitchedRoutes": 10,
+    "fallbackProtectedRoutes": 9,
+    "sanityRuntimeSwitchedRoutes": 14,
     "readyForSanityRuntime": 23,
     "localFallbackRequired": 0,
     "routesWithBackupWarnings": 23,
@@ -392,7 +392,7 @@
     },
     {
       "route": "/dokumentasjon",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "page",
@@ -697,7 +697,7 @@
     },
     {
       "route": "/kundeservice/faq",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "page",
@@ -834,7 +834,7 @@
     },
     {
       "route": "/monteringsanvisning",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "page",
@@ -1010,7 +1010,7 @@
     },
     {
       "route": "/monteringsanvisningar-fresvik-skyveport",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "page",

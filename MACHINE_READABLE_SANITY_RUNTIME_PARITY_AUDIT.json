@@ -1,9 +1,9 @@
 {
   "summary": {
-    "generatedAt": "2026-06-17T14:44:24.111Z",
+    "generatedAt": "2026-06-17T15:38:21.648Z",
     "auditedRoutes": 23,
-    "fallbackProtectedRoutes": 9,
-    "sanityRuntimeSwitchedRoutes": 14,
+    "fallbackProtectedRoutes": 6,
+    "sanityRuntimeSwitchedRoutes": 17,
     "readyForSanityRuntime": 23,
     "localFallbackRequired": 0,
     "routesWithBackupWarnings": 23,
@@ -173,7 +173,7 @@
     },
     {
       "route": "/aktuelt",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "page",
@@ -2216,7 +2216,7 @@
     },
     {
       "route": "/referansar",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "page",
@@ -3140,7 +3140,7 @@
     },
     {
       "route": "/tilsette",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "page",

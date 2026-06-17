@@ -1,12 +1,12 @@
 # Sanity Runtime Parity Audit
 
-Generated: 2026-06-17T15:45:06.913Z
+Generated: 2026-06-17T15:51:58.888Z
 
 ## Summary
 
 - Audited runtime candidate routes: 23
-- Still protected by local fallback: 2
-- Already switched to Sanity runtime: 21
+- Still protected by local fallback: 0
+- Already switched to Sanity runtime: 23
 - Ready for Sanity runtime: 23
 - Still requiring local fallback: 0
 - Fallback source: `src/sanity/lib/contentPages.ts localMigrationStructurePaths`
@@ -19,7 +19,7 @@ PDFs/documents, or links.
 
 | Route | Runtime mode | Status | Local words | Sanity words | Text % | Local images | Sanity images | Local PDFs | Sanity files | Notes |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| `/` | local-fallback-protected | ready-for-sanity-runtime | 1136 | 2131 | 100% | 20 | 40 | 2 | 4 | 22 local backup asset ref(s) kept for source traceability |
+| `/` | sanity-runtime-switched | ready-for-sanity-runtime | 1136 | 2131 | 100% | 20 | 40 | 2 | 4 | 22 local backup asset ref(s) kept for source traceability |
 | `/aktuelt` | sanity-runtime-switched | ready-for-sanity-runtime | 1493 | 3335 | 100% | 31 | 76 | 2 | 4 | 33 local backup asset ref(s) kept for source traceability |
 | `/dokumentasjon` | sanity-runtime-switched | ready-for-sanity-runtime | 726 | 2141 | 100% | 9 | 16 | 7 | 48 | 36 local backup asset ref(s) kept for source traceability |
 | `/firmainfo` | sanity-runtime-switched | ready-for-sanity-runtime | 792 | 1503 | 100% | 9 | 16 | 2 | 4 | 11 local backup asset ref(s) kept for source traceability |
@@ -28,7 +28,7 @@ PDFs/documents, or links.
 | `/monteringsanvisningar-fresvik-skyveport` | sanity-runtime-switched | ready-for-sanity-runtime | 738 | 1344 | 100% | 9 | 16 | 8 | 16 | 17 local backup asset ref(s) kept for source traceability |
 | `/openheitslova` | sanity-runtime-switched | ready-for-sanity-runtime | 525 | 937 | 100% | 7 | 14 | 2 | 4 | 9 local backup asset ref(s) kept for source traceability |
 | `/personvernerklering` | sanity-runtime-switched | ready-for-sanity-runtime | 1736 | 3395 | 100% | 7 | 14 | 2 | 4 | 9 local backup asset ref(s) kept for source traceability |
-| `/produkt` | local-fallback-protected | ready-for-sanity-runtime | 742 | 1486 | 100% | 29 | 62 | 2 | 4 | 31 local backup asset ref(s) kept for source traceability |
+| `/produkt` | sanity-runtime-switched | ready-for-sanity-runtime | 742 | 1486 | 100% | 29 | 62 | 2 | 4 | 31 local backup asset ref(s) kept for source traceability |
 | `/produkt/fasadepanel` | sanity-runtime-switched | ready-for-sanity-runtime | 461 | 553 | 100% | 14 | 28 | 2 | 4 | 16 local backup asset ref(s) kept for source traceability |
 | `/produkt/fresvik-pir-panel` | sanity-runtime-switched | ready-for-sanity-runtime | 773 | 1026 | 100% | 12 | 24 | 5 | 8 | 17 local backup asset ref(s) kept for source traceability |
 | `/produkt/fresvik-pur-panel` | sanity-runtime-switched | ready-for-sanity-runtime | 675 | 902 | 100% | 12 | 24 | 3 | 6 | 15 local backup asset ref(s) kept for source traceability |
@@ -49,6 +49,6 @@ No blockers found.
 
 ## Next Actions
 
-- 21 route(s) are already running through Sanity runtime without parity blockers.
-- Next step: remove the next small batch from `localMigrationStructurePaths`, run build/link checks, and compare rendered pages before removing the full fallback list.
+- All audited runtime routes are running through Sanity runtime without parity blockers.
+- Next step: verify the deployed Vercel production alias and then plan source-traceability/local-cache cleanup as a separate phase.
 - Keep `migrationBackupLocalPath`, `migratedImagePath`, and `migrationLocalDocumentPath` until final source-traceability cleanup.

@@ -63,7 +63,9 @@ function loadPagesModule() {
 
 function localMigrationStructurePaths() {
   const source = readFileSync(contentPagesPath, "utf8");
-  const match = source.match(/const localMigrationStructurePaths = new Set\(\[([\s\S]*?)\]\);/);
+  const match = source.match(
+    /const localMigrationStructurePaths = new Set(?:<[^>]+>)?\(\[([\s\S]*?)\]\);/,
+  );
   if (!match) {
     throw new Error("Could not read localMigrationStructurePaths from src/sanity/lib/contentPages.ts");
   }
@@ -628,7 +630,11 @@ ${
 
 ${
   summary.localFallbackRequired === 0
-    ? `- ${summary.sanityRuntimeSwitchedRoutes} route(s) are already running through Sanity runtime without parity blockers.
+    ? summary.fallbackProtectedRoutes === 0
+      ? `- All audited runtime routes are running through Sanity runtime without parity blockers.
+- Next step: verify the deployed Vercel production alias and then plan source-traceability/local-cache cleanup as a separate phase.
+- Keep \`migrationBackupLocalPath\`, \`migratedImagePath\`, and \`migrationLocalDocumentPath\` until final source-traceability cleanup.`
+      : `- ${summary.sanityRuntimeSwitchedRoutes} route(s) are already running through Sanity runtime without parity blockers.
 - Next step: remove the next small batch from \`localMigrationStructurePaths\`, run build/link checks, and compare rendered pages before removing the full fallback list.
 - Keep \`migrationBackupLocalPath\`, \`migratedImagePath\`, and \`migrationLocalDocumentPath\` until final source-traceability cleanup.`
     : `- Keep protected routes in \`localMigrationStructurePaths\` until this report shows \`ready-for-sanity-runtime\`.

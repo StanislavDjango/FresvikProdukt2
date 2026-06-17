@@ -1,9 +1,9 @@
 {
   "summary": {
-    "generatedAt": "2026-06-17T15:45:06.913Z",
+    "generatedAt": "2026-06-17T15:51:58.888Z",
     "auditedRoutes": 23,
-    "fallbackProtectedRoutes": 2,
-    "sanityRuntimeSwitchedRoutes": 21,
+    "fallbackProtectedRoutes": 0,
+    "sanityRuntimeSwitchedRoutes": 23,
     "readyForSanityRuntime": 23,
     "localFallbackRequired": 0,
     "routesWithBackupWarnings": 23,
@@ -13,7 +13,7 @@
   "routes": [
     {
       "route": "/",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "page",
@@ -1343,7 +1343,7 @@
     },
     {
       "route": "/produkt",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "page",

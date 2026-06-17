@@ -166,10 +166,7 @@ const CONTENT_SLUGS_QUERY = defineQuery(`*[
   defined(slug.current)
 ].slug.current`);
 
-const localMigrationStructurePaths = new Set([
-  "/",
-  "/produkt",
-]);
+const localMigrationStructurePaths = new Set<string>([]);
 
 const NEWS_INDEX_QUERY = defineQuery(`*[_type == "newsArticle"] | order(date desc, title asc) {
   title,

@@ -125,7 +125,7 @@ export function Header() {
                 </Link>
 
                 {item.children ? (
-                  <div className="invisible absolute left-0 top-full z-30 min-w-72 translate-y-2 opacity-0 transition group-hover:visible group-hover:translate-y-3 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-3 group-focus-within:opacity-100">
+                  <div className="invisible absolute left-0 top-full z-30 min-w-72 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                     <div className="rounded-[8px] border border-slate-200 bg-white p-2 shadow-xl shadow-slate-950/10">
                       <Link
                         href={item.href}

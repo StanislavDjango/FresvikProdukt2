@@ -1,9 +1,9 @@
 {
   "summary": {
-    "generatedAt": "2026-06-17T13:32:57.907Z",
+    "generatedAt": "2026-06-17T13:47:03.600Z",
     "auditedRoutes": 23,
-    "fallbackProtectedRoutes": 20,
-    "sanityRuntimeSwitchedRoutes": 3,
+    "fallbackProtectedRoutes": 16,
+    "sanityRuntimeSwitchedRoutes": 7,
     "readyForSanityRuntime": 23,
     "localFallbackRequired": 0,
     "routesWithBackupWarnings": 23,
@@ -1548,7 +1548,7 @@
     },
     {
       "route": "/produkt/fasadepanel",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "product",
@@ -1873,7 +1873,7 @@
     },
     {
       "route": "/produkt/frysetunnel",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "product",
@@ -1988,7 +1988,7 @@
     },
     {
       "route": "/produkt/kjole-frysedorer",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "product",
@@ -2101,7 +2101,7 @@
     },
     {
       "route": "/produkt/kjole-fryseportar",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "product",

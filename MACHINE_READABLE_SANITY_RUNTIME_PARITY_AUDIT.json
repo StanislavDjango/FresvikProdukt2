@@ -1,9 +1,9 @@
 {
   "summary": {
-    "generatedAt": "2026-06-17T13:47:03.600Z",
+    "generatedAt": "2026-06-17T13:50:00.989Z",
     "auditedRoutes": 23,
-    "fallbackProtectedRoutes": 16,
-    "sanityRuntimeSwitchedRoutes": 7,
+    "fallbackProtectedRoutes": 13,
+    "sanityRuntimeSwitchedRoutes": 10,
     "readyForSanityRuntime": 23,
     "localFallbackRequired": 0,
     "routesWithBackupWarnings": 23,
@@ -2600,7 +2600,7 @@
     },
     {
       "route": "/tenester/leveranse",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "service",
@@ -2716,7 +2716,7 @@
     },
     {
       "route": "/tenester/montasje",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "service",
@@ -2832,7 +2832,7 @@
     },
     {
       "route": "/tenester/service-reservedeler",
-      "runtimeMode": "local-fallback-protected",
+      "runtimeMode": "sanity-runtime-switched",
       "localPageFound": true,
       "sanityDocumentFound": true,
       "sanityType": "service",

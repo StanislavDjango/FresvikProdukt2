@@ -169,13 +169,10 @@ const CONTENT_SLUGS_QUERY = defineQuery(`*[
 const localMigrationStructurePaths = new Set([
   "/",
   "/produkt",
-  "/produkt/fresvik-pir-panel",
-  "/produkt/fresvik-pur-panel",
   "/produkt/kjole-fryseportar",
   "/produkt/kjole-frysedorer",
   "/produkt/fasadepanel",
   "/produkt/frysetunnel",
-  "/tilleggsutstyr",
   "/tenester/montasje",
   "/tenester/leveranse",
   "/tenester/service-reservedeler",

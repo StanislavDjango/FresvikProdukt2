@@ -63,6 +63,8 @@ const sanityRuntimeParityAuditSchema = z.object({
   summary: z.object({
     generatedAt: z.string().min(1),
     auditedRoutes: z.number().int().nonnegative(),
+    fallbackProtectedRoutes: z.number().int().nonnegative().optional(),
+    sanityRuntimeSwitchedRoutes: z.number().int().nonnegative().optional(),
     readyForSanityRuntime: z.number().int().nonnegative(),
     localFallbackRequired: z.number().int().nonnegative(),
   }),
@@ -207,7 +209,7 @@ addCheck("sanity runtime parity audit", async () => {
   const audit = await readJson(relativePath);
   const result = sanityRuntimeParityAuditSchema.safeParse(audit);
   if (!result.success) throw new Error(z.prettifyError(result.error));
-  return `${audit.routes.length} protected runtime routes`;
+  return `${audit.routes.length} runtime parity routes, ${audit.summary.sanityRuntimeSwitchedRoutes || 0} switched`;
 });
 
 addCheck("evidence cache", async () => {

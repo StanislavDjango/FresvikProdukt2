@@ -71,6 +71,16 @@ function localMigrationStructurePaths() {
   return [...match[1].matchAll(/"([^"]+)"/g)].map(([, value]) => value);
 }
 
+function previousAuditedRoutes() {
+  if (!existsSync(jsonPath)) return [];
+  try {
+    const parsed = JSON.parse(readFileSync(jsonPath, "utf8"));
+    return (parsed.routes || []).map((route) => route.route).filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
 function slugForPath(route) {
   if (route === "/") return "home";
   return route.replace(/^\/+|\/+$/g, "") || "home";
@@ -279,14 +289,15 @@ function statusFor(row) {
 
 function markdownTable(rows) {
   const lines = [
-    "| Route | Status | Local words | Sanity words | Text % | Local images | Sanity images | Local PDFs | Sanity files | Notes |",
-    "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |",
+    "| Route | Runtime mode | Status | Local words | Sanity words | Text % | Local images | Sanity images | Local PDFs | Sanity files | Notes |",
+    "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |",
   ];
 
   for (const row of rows) {
     lines.push(
       `| ${[
         `\`${row.route}\``,
+        row.runtimeMode,
         row.status,
         row.localWords,
         row.sanityWords,
@@ -499,7 +510,8 @@ async function fetchIndexItems(client, route) {
 async function main() {
   const { getContentPage } = loadPagesModule();
   const client = createSanityClient();
-  const routes = localMigrationStructurePaths();
+  const protectedRoutes = new Set(localMigrationStructurePaths());
+  const routes = unique([...protectedRoutes, ...previousAuditedRoutes()]);
 
   const rows = [];
   for (const route of routes) {
@@ -524,6 +536,9 @@ async function main() {
 
     const baseRow = {
       route,
+      runtimeMode: protectedRoutes.has(route)
+        ? "local-fallback-protected"
+        : "sanity-runtime-switched",
       localPageFound: Boolean(fallbackPage),
       sanityDocumentFound: Boolean(doc),
       sanityType: doc?._type || null,
@@ -550,6 +565,12 @@ async function main() {
   const summary = {
     generatedAt: new Date().toISOString(),
     auditedRoutes: rows.length,
+    fallbackProtectedRoutes: rows.filter(
+      (row) => row.runtimeMode === "local-fallback-protected",
+    ).length,
+    sanityRuntimeSwitchedRoutes: rows.filter(
+      (row) => row.runtimeMode === "sanity-runtime-switched",
+    ).length,
     readyForSanityRuntime: rows.filter((row) => row.status === "ready-for-sanity-runtime").length,
     localFallbackRequired: rows.filter((row) => row.status === "local-fallback-required").length,
     routesWithBackupWarnings: rows.filter((row) => row.warnings.length > 0).length,
@@ -578,7 +599,9 @@ Generated: ${summary.generatedAt}
 
 ## Summary
 
-- Audited routes protected by local migration fallback: ${summary.auditedRoutes}
+- Audited runtime candidate routes: ${summary.auditedRoutes}
+- Still protected by local fallback: ${summary.fallbackProtectedRoutes}
+- Already switched to Sanity runtime: ${summary.sanityRuntimeSwitchedRoutes}
 - Ready for Sanity runtime: ${summary.readyForSanityRuntime}
 - Still requiring local fallback: ${summary.localFallbackRequired}
 - Fallback source: \`${summary.localFallbackSource}\`
@@ -605,8 +628,8 @@ ${
 
 ${
   summary.localFallbackRequired === 0
-    ? `- The protected routes are ready for a controlled Sanity-runtime switch test.
-- Next step: remove a small batch from \`localMigrationStructurePaths\`, run build/link checks, and compare rendered pages before removing the full fallback list.
+    ? `- ${summary.sanityRuntimeSwitchedRoutes} route(s) are already running through Sanity runtime without parity blockers.
+- Next step: remove the next small batch from \`localMigrationStructurePaths\`, run build/link checks, and compare rendered pages before removing the full fallback list.
 - Keep \`migrationBackupLocalPath\`, \`migratedImagePath\`, and \`migrationLocalDocumentPath\` until final source-traceability cleanup.`
     : `- Keep protected routes in \`localMigrationStructurePaths\` until this report shows \`ready-for-sanity-runtime\`.
 - Enrich Sanity schemas/seed with section/card/image/document structures for routes where local fallback is still required.

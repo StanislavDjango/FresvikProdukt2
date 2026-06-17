@@ -24,6 +24,8 @@ Generated: 2026-06-17
 | Runtime Sanity PDF refs | `198` Sanity file refs across audited runtime pages |
 | Unique Sanity PDF URL HEAD checks | `21` URLs, `0` failures |
 | Desktop dropdown gap fix | Present on production; old `translate-y` gap class absent |
+| Navigation DOM check | Main dropdown links present, mobile menu trigger present, no missing nav hrefs |
+| Visual smoke screenshots | `12` screenshots across desktop/mobile key pages, `0` failures |
 
 ## Runtime Routes Checked
 
@@ -32,6 +34,18 @@ The production HTML check used the routes from
 
 Every checked route returned `200`, used Sanity CDN refs, and had no local
 `/assets/fresvik` references in the rendered HTML.
+
+## Navigation And Visual Smoke
+
+- Desktop dropdowns use the `pt-2` hover bridge and no old `translate-y` gap
+  classes were found on production.
+- Main navigation hrefs for product, service, documentation, references,
+  company, news, employees, job, and contact pages were present.
+- The mobile menu trigger was present in production HTML.
+- DOM checks confirmed `header`, `main`, `footer`, and `h1` on key pages.
+- Screenshot smoke captured desktop and mobile renders for `/`, `/produkt`,
+  `/produkt/fresvik-pir-panel`, `/dokumentasjon`, `/referansar`, and
+  `/kontakt`; all screenshots were non-empty.
 
 ## Notes
 

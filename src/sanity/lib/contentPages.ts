@@ -169,10 +169,6 @@ const CONTENT_SLUGS_QUERY = defineQuery(`*[
 const localMigrationStructurePaths = new Set([
   "/",
   "/produkt",
-  "/firmainfo",
-  "/stillingledig",
-  "/personvernerklering",
-  "/openheitslova",
 ]);
 
 const NEWS_INDEX_QUERY = defineQuery(`*[_type == "newsArticle"] | order(date desc, title asc) {

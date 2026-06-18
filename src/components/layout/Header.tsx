@@ -21,7 +21,7 @@ function isActivePath(pathname: string, item: NavigationItem) {
 
 function linkClass(active: boolean) {
   return [
-    "inline-flex h-11 items-center gap-1.5 rounded-[6px] px-3 text-sm font-semibold transition",
+    "inline-flex h-11 items-center gap-1.5 whitespace-nowrap rounded-[6px] px-3 text-sm font-semibold transition",
     active
       ? "bg-cyan-50 text-cyan-900"
       : "text-slate-700 hover:bg-slate-100 hover:text-slate-950",
@@ -89,16 +89,16 @@ export function Header() {
         <Link
           href="/"
           onClick={closeMobileMenu}
-          className="flex min-w-0 items-center"
+          className="flex shrink-0 items-center rounded-[10px] bg-white px-2 py-1 shadow-sm shadow-slate-950/10 ring-1 ring-slate-200"
           aria-label="Fresvik Produkt framside"
         >
           <Image
-            src="/assets/fresvik/brand/fresvik-logo-transparent.png"
+            src="/assets/fresvik/brand/fresvik-logo-on-white.png"
             alt="Fresvik Produkt"
-            width={1642}
-            height={393}
+            width={1738}
+            height={449}
             priority
-            className="h-11 w-auto max-w-[11rem] object-contain sm:h-12 sm:max-w-[12.5rem]"
+            className="h-12 w-auto max-w-[12.5rem] object-contain sm:h-14 sm:max-w-[15rem] xl:h-16 xl:max-w-[17rem]"
           />
         </Link>
 
@@ -159,14 +159,14 @@ export function Header() {
         <div className="hidden items-center gap-2 xl:flex">
           <a
             href="mailto:post@fresvik.no"
-            className="inline-flex h-11 items-center gap-2 rounded-[6px] border border-slate-300 px-4 text-sm font-semibold text-slate-900 transition hover:border-cyan-800 hover:text-cyan-800"
+            className="inline-flex h-11 items-center gap-2 whitespace-nowrap rounded-[6px] border border-slate-300 px-4 text-sm font-semibold text-slate-900 transition hover:border-cyan-800 hover:text-cyan-800"
           >
             <Mail aria-hidden="true" size={17} />
             post@fresvik.no
           </a>
           <a
             href="tel:+4757698300"
-            className="inline-flex h-11 items-center gap-2 rounded-[6px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800"
+            className="inline-flex h-11 items-center gap-2 whitespace-nowrap rounded-[6px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800"
           >
             <Phone aria-hidden="true" size={17} />
             Ring oss

@@ -115,14 +115,14 @@ export function Footer() {
                 <Link
                   href="/"
                   aria-label="Fresvik Produkt framside"
-                  className="inline-flex rounded-[8px] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+                  className="inline-flex rounded-[8px] bg-white p-2 shadow-lg shadow-slate-950/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
                 >
                   <Image
-                    src="/assets/fresvik/brand/fresvik-logo-transparent.png"
+                    src="/assets/fresvik/brand/fresvik-logo-on-white.png"
                     alt="Fresvik Produkt"
-                    width={1642}
-                    height={393}
-                    className="h-14 w-auto max-w-[15rem] object-contain"
+                    width={1738}
+                    height={449}
+                    className="h-16 w-auto max-w-[17rem] object-contain"
                   />
                 </Link>
                 <p className="mt-5 max-w-sm text-sm leading-6 text-slate-300">

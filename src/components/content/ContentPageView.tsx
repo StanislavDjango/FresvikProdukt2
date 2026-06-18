@@ -78,14 +78,30 @@ function FAQAccordion({ page }: ContentPageViewProps) {
   );
 }
 
+function contentCardKey(
+  item: ContentPage["cards"][number],
+  index: number,
+  scope: string,
+) {
+  return [scope, item.href, item.imageUrl, item.title, index]
+    .filter(Boolean)
+    .join("-");
+}
+
 function ContentSections({ sections }: { sections: ContentPage["sections"] }) {
-  return sections.map((section) => (
-    <section key={section.title} className="py-14">
+  return sections.map((section, sectionIndex) => (
+    <section key={`${section.title}-${sectionIndex}`} className="py-14">
       <Container>
         <SectionHeader title={section.title} intro={section.intro} />
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {section.items.map((item) => (
-            <Card key={item.title}>
+          {section.items.map((item, itemIndex) => (
+            <Card
+              key={contentCardKey(
+                item,
+                itemIndex,
+                `${section.title}-${sectionIndex}`,
+              )}
+            >
               {item.imageUrl ? (
                 <Image
                   src={item.imageUrl}
@@ -182,8 +198,11 @@ export function ContentPageView({ page }: ContentPageViewProps) {
         <section className="border-b border-slate-200 bg-white">
           <Container className="py-12">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {page.cards.map((card) => (
-                <Card key={card.title} className="flex flex-col">
+              {page.cards.map((card, cardIndex) => (
+                <Card
+                  key={contentCardKey(card, cardIndex, `${page.slug}-cards`)}
+                  className="flex flex-col"
+                >
                   {card.imageUrl ? (
                     <Image
                       src={card.imageUrl}

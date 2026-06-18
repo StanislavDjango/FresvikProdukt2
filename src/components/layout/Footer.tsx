@@ -8,6 +8,7 @@ import {
   Phone,
   ShieldCheck,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   footerNavigation,
@@ -114,19 +115,15 @@ export function Footer() {
                 <Link
                   href="/"
                   aria-label="Fresvik Produkt framside"
-                  className="inline-flex items-center gap-3 rounded-[8px] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+                  className="inline-flex rounded-[8px] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
                 >
-                  <span className="grid size-12 place-items-center rounded-[8px] bg-cyan-700 text-sm font-bold text-white shadow-lg shadow-cyan-950/30">
-                    FP
-                  </span>
-                  <span className="leading-tight">
-                    <span className="block text-lg font-semibold uppercase tracking-[0.08em]">
-                      Fresvik
-                    </span>
-                    <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">
-                      Produkt
-                    </span>
-                  </span>
+                  <Image
+                    src="/assets/fresvik/brand/fresvik-logo-transparent.png"
+                    alt="Fresvik Produkt"
+                    width={1642}
+                    height={393}
+                    className="h-14 w-auto max-w-[15rem] object-contain"
+                  />
                 </Link>
                 <p className="mt-5 max-w-sm text-sm leading-6 text-slate-300">
                   Isolerte panel, dører, portar, montasje og dokumentasjon for

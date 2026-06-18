@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/fresvik-logo.svg",
+        url: "/assets/fresvik/brand/fresvik-logo-original.png",
         alt: siteName,
       },
     ],
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: siteName,
     description:
       "Isolerte panel, kjøle- og fryseløysingar, montasje og service frå Fresvik Produkt.",
-    images: ["/fresvik-logo.svg"],
+    images: ["/assets/fresvik/brand/fresvik-logo-original.png"],
   },
 };
 

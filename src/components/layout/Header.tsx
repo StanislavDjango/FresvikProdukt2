@@ -8,6 +8,7 @@ import {
   Phone,
   X,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -91,17 +92,14 @@ export function Header() {
           className="flex min-w-0 items-center"
           aria-label="Fresvik Produkt framside"
         >
-          <span className="grid size-11 shrink-0 place-items-center rounded-[8px] bg-cyan-800 text-sm font-bold text-white shadow-sm shadow-cyan-950/20">
-            FP
-          </span>
-          <span className="ml-3 min-w-0 leading-tight">
-            <span className="block text-base font-semibold uppercase tracking-[0.08em] text-slate-950 sm:text-lg">
-              Fresvik
-            </span>
-            <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-cyan-800">
-              Produkt
-            </span>
-          </span>
+          <Image
+            src="/assets/fresvik/brand/fresvik-logo-transparent.png"
+            alt="Fresvik Produkt"
+            width={1642}
+            height={393}
+            priority
+            className="h-11 w-auto max-w-[11rem] object-contain sm:h-12 sm:max-w-[12.5rem]"
+          />
         </Link>
 
         <nav

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/fresvik-logo.svg",
+        url: "/assets/fresvik/brand/fresvik-logo-original.png",
         alt: "Fresvik Produkt",
       },
     ],
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Kontakt Fresvik Produkt",
     description:
       "Snakk med Fresvik Produkt om prosjekt, sal, service og leveranse.",
-    images: ["/fresvik-logo.svg"],
+    images: ["/assets/fresvik/brand/fresvik-logo-original.png"],
   },
 };
 

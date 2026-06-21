@@ -10,30 +10,30 @@ type HomeHeroProps = {
 
 export function HomeHero({ page }: HomeHeroProps) {
   return (
-    <section className="relative isolate flex min-h-[34rem] overflow-hidden bg-slate-100 text-slate-950 sm:min-h-[38rem] lg:min-h-[calc(100svh-8rem)] lg:max-h-[48rem]">
+    <section className="relative isolate flex min-h-[32rem] overflow-hidden bg-slate-100 text-slate-950 sm:min-h-[34rem] lg:min-h-[36rem]">
       <Image
         src="/assets/fresvik/brand/fresvik-factory-hero.webp"
         alt="Fresvik Produkt sitt produksjonsanlegg mellom fjell og fjord"
         fill
         preload
         sizes="100vw"
-        className="-z-20 object-cover object-[62%_center] sm:object-center"
+        className="-z-20 object-cover object-[64%_center] sm:object-center"
       />
-      <div className="absolute inset-x-0 bottom-0 -z-10 h-[78%] bg-[linear-gradient(0deg,rgba(255,255,255,0.86)_0%,rgba(255,255,255,0.68)_72%,rgba(255,255,255,0.08)_100%)] sm:inset-y-0 sm:right-auto sm:h-auto sm:w-[78%] sm:bg-white/68 sm:backdrop-blur-[1px] sm:[clip-path:polygon(0_0,82%_0,100%_50%,82%_100%,0_100%)] lg:w-[62%]" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.72)_54%,rgba(255,255,255,0.05)_84%)] sm:bg-[linear-gradient(90deg,rgba(255,255,255,0.94)_0%,rgba(255,255,255,0.78)_36%,rgba(255,255,255,0.16)_62%,rgba(255,255,255,0)_78%)]" />
 
-      <Container className="flex w-full items-end pb-12 pt-40 sm:items-center sm:py-16 lg:py-20">
-        <div className="max-w-3xl sm:max-w-[62%] lg:max-w-2xl">
-          <p className="mb-5 inline-flex items-center gap-2 rounded-[6px] border border-cyan-900/20 bg-white/70 px-3 py-2 text-sm font-semibold text-cyan-950 backdrop-blur-sm">
+      <Container className="flex w-full items-end pb-8 pt-32 sm:items-center sm:py-12">
+        <div className="max-w-2xl sm:max-w-[58%]">
+          <p className="mb-4 inline-flex items-center gap-2 rounded-[6px] border border-cyan-900/20 bg-white/75 px-3 py-2 text-sm font-semibold text-cyan-950 backdrop-blur-sm">
             <CheckCircle2 aria-hidden="true" size={17} />
             {page.eyebrow}
           </p>
-          <h1 className="text-4xl font-semibold leading-tight tracking-normal text-slate-950 sm:text-5xl lg:text-6xl">
+          <h1 className="text-3xl font-semibold leading-tight tracking-normal text-slate-950 sm:text-4xl lg:text-5xl">
             {page.title}
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+          <p className="mt-4 max-w-xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
             {page.intro}
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:flex">
             <Link
               href="/kontakt"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] bg-cyan-800 px-5 text-sm font-semibold text-white shadow-lg transition hover:bg-cyan-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-800"

@@ -19,7 +19,7 @@ export function HomeHero({ page }: HomeHeroProps) {
         sizes="100vw"
         className="-z-20 object-cover object-[62%_center] sm:object-center"
       />
-      <div className="absolute inset-x-0 bottom-0 -z-10 h-[78%] bg-[linear-gradient(0deg,rgba(255,255,255,0.98)_0%,rgba(255,255,255,0.9)_72%,rgba(255,255,255,0.18)_100%)] sm:inset-y-0 sm:right-auto sm:h-auto sm:w-[78%] sm:bg-white/85 sm:backdrop-blur-[2px] sm:[clip-path:polygon(0_0,82%_0,100%_50%,82%_100%,0_100%)] lg:w-[62%]" />
+      <div className="absolute inset-x-0 bottom-0 -z-10 h-[78%] bg-[linear-gradient(0deg,rgba(255,255,255,0.86)_0%,rgba(255,255,255,0.68)_72%,rgba(255,255,255,0.08)_100%)] sm:inset-y-0 sm:right-auto sm:h-auto sm:w-[78%] sm:bg-white/68 sm:backdrop-blur-[1px] sm:[clip-path:polygon(0_0,82%_0,100%_50%,82%_100%,0_100%)] lg:w-[62%]" />
 
       <Container className="flex w-full items-end pb-12 pt-40 sm:items-center sm:py-16 lg:py-20">
         <div className="max-w-3xl sm:max-w-[62%] lg:max-w-2xl">

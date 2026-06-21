@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ContentPageView } from "@/components/content/ContentPageView";
+import { HomeHero } from "@/components/home/HomeHero";
 import { getContentPage } from "@/data/pages";
 import { pageMetadata } from "@/lib/seo";
 import { getSanityContentPage } from "@/sanity/lib/contentPages";
@@ -28,5 +29,10 @@ export default async function Home() {
     return null;
   }
 
-  return <ContentPageView page={contentPage} />;
+  return (
+    <ContentPageView
+      page={contentPage}
+      hero={<HomeHero page={contentPage} />}
+    />
+  );
 }

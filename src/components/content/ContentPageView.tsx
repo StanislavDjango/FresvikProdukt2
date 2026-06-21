@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { CTASection } from "@/components/CTASection";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
@@ -14,6 +15,7 @@ import type { ContentPage } from "@/data/pages";
 
 type ContentPageViewProps = {
   page: ContentPage;
+  hero?: ReactNode;
 };
 
 function isExternalHref(href: string) {
@@ -131,7 +133,7 @@ function ContentSections({ sections }: { sections: ContentPage["sections"] }) {
   ));
 }
 
-export function ContentPageView({ page }: ContentPageViewProps) {
+export function ContentPageView({ page, hero }: ContentPageViewProps) {
   const showMigrationDetails = page.showMigrationDetails === true;
   const isFaqPage = page.slug === "/kundeservice/faq";
   const jsonLd =
@@ -157,42 +159,44 @@ export function ContentPageView({ page }: ContentPageViewProps) {
         />
       ) : null}
 
-      <section className="relative overflow-hidden bg-slate-950 text-white">
-        <div className="absolute inset-0 opacity-35 [background-image:linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:48px_48px]" />
-        <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-cyan-950/70 to-transparent" />
-        <Container className="relative py-16 lg:py-24">
-          <div className="max-w-4xl">
-            <p className="mb-5 inline-flex items-center gap-2 rounded-[6px] border border-white/15 bg-white/10 px-3 py-2 text-sm font-medium text-cyan-50">
-              <CheckCircle2 aria-hidden="true" size={17} />
-              {page.eyebrow}
-            </p>
-            <h1 className="text-4xl font-semibold leading-tight tracking-normal text-white sm:text-5xl lg:text-6xl">
-              {page.title}
-            </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-              {page.intro}
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/kontakt"
-                className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] bg-white px-5 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50"
-              >
-                Kontakt oss <ArrowRight aria-hidden="true" size={18} />
-              </Link>
-              {showMigrationDetails && page.sourceUrl ? (
-                <a
-                  href={page.sourceUrl}
-                  className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] border border-white/25 px-5 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
-                  target="_blank"
-                  rel="noreferrer"
+      {hero ?? (
+        <section className="relative overflow-hidden bg-slate-950 text-white">
+          <div className="absolute inset-0 opacity-35 [background-image:linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:48px_48px]" />
+          <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-cyan-950/70 to-transparent" />
+          <Container className="relative py-16 lg:py-24">
+            <div className="max-w-4xl">
+              <p className="mb-5 inline-flex items-center gap-2 rounded-[6px] border border-white/15 bg-white/10 px-3 py-2 text-sm font-medium text-cyan-50">
+                <CheckCircle2 aria-hidden="true" size={17} />
+                {page.eyebrow}
+              </p>
+              <h1 className="text-4xl font-semibold leading-tight tracking-normal text-white sm:text-5xl lg:text-6xl">
+                {page.title}
+              </h1>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
+                {page.intro}
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href="/kontakt"
+                  className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] bg-white px-5 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50"
                 >
-                  Gammal kjelde <ExternalLink aria-hidden="true" size={18} />
-                </a>
-              ) : null}
+                  Kontakt oss <ArrowRight aria-hidden="true" size={18} />
+                </Link>
+                {showMigrationDetails && page.sourceUrl ? (
+                  <a
+                    href={page.sourceUrl}
+                    className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] border border-white/25 px-5 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Gammal kjelde <ExternalLink aria-hidden="true" size={18} />
+                  </a>
+                ) : null}
+              </div>
             </div>
-          </div>
-        </Container>
-      </section>
+          </Container>
+        </section>
+      )}
 
       {!isFaqPage && page.cards.length > 0 ? (
         <section className="border-b border-slate-200 bg-white">

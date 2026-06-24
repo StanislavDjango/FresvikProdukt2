@@ -3,6 +3,7 @@
 import {
   ArrowRight,
   ChevronDown,
+  ExternalLink,
   Mail,
   Menu,
   Phone,
@@ -62,16 +63,14 @@ function DesktopMenuItem({
   item,
   pathname,
   openMenu,
-  openMenuItem,
+  toggleMenu,
   closeMenu,
-  scheduleCloseMenu,
 }: {
   item: NavigationItem;
   pathname: string;
   openMenu: string | null;
-  openMenuItem: (href: string) => void;
+  toggleMenu: (href: string) => void;
   closeMenu: () => void;
-  scheduleCloseMenu: () => void;
 }) {
   const active = isActivePath(pathname, item);
   const isOpen = openMenu === item.href;
@@ -82,42 +81,41 @@ function DesktopMenuItem({
     intro: "Gå vidare til relevante sider i denne delen av nettstaden.",
   };
 
-  function openItemMenu() {
-    if (hasChildren) {
-      openMenuItem(item.href);
-    } else {
-      closeMenu();
-    }
-  }
-
   return (
     <div
       className="relative"
-      onMouseEnter={openItemMenu}
-      onMouseLeave={scheduleCloseMenu}
-      onFocus={openItemMenu}
       onKeyDown={(event) => {
         if (event.key === "Escape") {
           closeMenu();
         }
       }}
     >
-      <Link
-        href={item.href}
-        className={linkClass(active)}
-        aria-current={active ? "page" : undefined}
-        aria-haspopup={hasChildren ? "menu" : undefined}
-        aria-expanded={hasChildren ? isOpen : undefined}
-      >
-        {item.label}
-        {hasChildren ? (
+      {hasChildren ? (
+        <button
+          type="button"
+          className={linkClass(active)}
+          aria-current={active ? "page" : undefined}
+          aria-haspopup="menu"
+          aria-expanded={isOpen}
+          onClick={() => toggleMenu(item.href)}
+        >
+          {item.label}
           <ChevronDown
             aria-hidden="true"
             size={15}
             className={["transition", isOpen ? "rotate-180" : ""].join(" ")}
           />
-        ) : null}
-      </Link>
+        </button>
+      ) : (
+        <Link
+          href={item.href}
+          className={linkClass(active)}
+          aria-current={active ? "page" : undefined}
+          onClick={closeMenu}
+        >
+          {item.label}
+        </Link>
+      )}
 
       {hasChildren ? (
         <div
@@ -125,9 +123,6 @@ function DesktopMenuItem({
             "fixed inset-x-0 top-[7.25rem] z-30 transition-opacity duration-100",
             isOpen ? "visible opacity-100" : "invisible opacity-0",
           ].join(" ")}
-          onMouseEnter={openItemMenu}
-          onMouseLeave={scheduleCloseMenu}
-          onFocus={openItemMenu}
         >
           <div className="border-y border-slate-200 bg-white shadow-xl shadow-slate-950/10">
             <div className="mx-auto grid max-w-7xl gap-8 px-8 py-6 lg:grid-cols-[18rem_1fr]">
@@ -147,7 +142,7 @@ function DesktopMenuItem({
                   onClick={closeMenu}
                 >
                   Alle {item.label.toLowerCase()}
-                  <ArrowRight aria-hidden="true" size={16} />
+                  <ExternalLink aria-hidden="true" size={15} />
                 </Link>
               </div>
 
@@ -240,31 +235,14 @@ export function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
-  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const headerRef = useRef<HTMLElement | null>(null);
 
-  function clearScheduledClose() {
-    if (closeTimer.current) {
-      clearTimeout(closeTimer.current);
-      closeTimer.current = null;
-    }
-  }
-
-  function openDesktopMenu(href: string) {
-    clearScheduledClose();
-    setOpenMenu(href);
+  function toggleDesktopMenu(href: string) {
+    setOpenMenu((current) => (current === href ? null : href));
   }
 
   function closeDesktopMenu() {
-    clearScheduledClose();
     setOpenMenu(null);
-  }
-
-  function scheduleCloseDesktopMenu() {
-    clearScheduledClose();
-    closeTimer.current = setTimeout(() => {
-      setOpenMenu(null);
-      closeTimer.current = null;
-    }, 260);
   }
 
   useEffect(() => {
@@ -278,14 +256,44 @@ export function Header() {
     };
   }, [mobileOpen]);
 
-  useEffect(() => clearScheduledClose, []);
+  useEffect(() => {
+    if (!openMenu) return;
+
+    function handlePointerDown(event: PointerEvent) {
+      if (
+        event.target instanceof Node &&
+        headerRef.current?.contains(event.target)
+      ) {
+        return;
+      }
+
+      closeDesktopMenu();
+    }
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        closeDesktopMenu();
+      }
+    }
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [openMenu]);
 
   function closeMobileMenu() {
     setMobileOpen(false);
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/96 shadow-sm shadow-slate-950/[0.03] backdrop-blur-xl">
+    <header
+      ref={headerRef}
+      className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/96 shadow-sm shadow-slate-950/[0.03] backdrop-blur-xl"
+    >
       <div className="hidden border-b border-slate-200/70 bg-slate-950 text-white lg:block">
         <div className="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-8 text-xs font-semibold">
           <p className="text-white/80">
@@ -337,9 +345,8 @@ export function Header() {
               item={item}
               pathname={pathname}
               openMenu={openMenu}
-              openMenuItem={openDesktopMenu}
+              toggleMenu={toggleDesktopMenu}
               closeMenu={closeDesktopMenu}
-              scheduleCloseMenu={scheduleCloseDesktopMenu}
             />
           ))}
         </nav>

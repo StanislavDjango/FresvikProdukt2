@@ -236,13 +236,33 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const headerRef = useRef<HTMLElement | null>(null);
+  const mouseLeaveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function clearMouseLeaveClose() {
+    if (mouseLeaveTimer.current) {
+      clearTimeout(mouseLeaveTimer.current);
+      mouseLeaveTimer.current = null;
+    }
+  }
 
   function toggleDesktopMenu(href: string) {
+    clearMouseLeaveClose();
     setOpenMenu((current) => (current === href ? null : href));
   }
 
   function closeDesktopMenu() {
+    clearMouseLeaveClose();
     setOpenMenu(null);
+  }
+
+  function scheduleMouseLeaveClose() {
+    if (!openMenu) return;
+
+    clearMouseLeaveClose();
+    mouseLeaveTimer.current = setTimeout(() => {
+      setOpenMenu(null);
+      mouseLeaveTimer.current = null;
+    }, 120);
   }
 
   useEffect(() => {
@@ -267,12 +287,14 @@ export function Header() {
         return;
       }
 
-      closeDesktopMenu();
+      clearMouseLeaveClose();
+      setOpenMenu(null);
     }
 
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        closeDesktopMenu();
+        clearMouseLeaveClose();
+        setOpenMenu(null);
       }
     }
 
@@ -285,6 +307,8 @@ export function Header() {
     };
   }, [openMenu]);
 
+  useEffect(() => clearMouseLeaveClose, []);
+
   function closeMobileMenu() {
     setMobileOpen(false);
   }
@@ -292,6 +316,8 @@ export function Header() {
   return (
     <header
       ref={headerRef}
+      onMouseEnter={clearMouseLeaveClose}
+      onMouseLeave={scheduleMouseLeaveClose}
       className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/96 shadow-sm shadow-slate-950/[0.03] backdrop-blur-xl"
     >
       <div className="hidden border-b border-slate-200/70 bg-slate-950 text-white lg:block">

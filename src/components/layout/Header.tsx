@@ -29,6 +29,36 @@ function linkClass(active: boolean) {
   ].join(" ");
 }
 
+const menuMeta: Record<
+  string,
+  {
+    eyebrow: string;
+    title: string;
+    intro: string;
+  }
+> = {
+  "/produkt": {
+    eyebrow: "Produkt",
+    title: "Produktfamiliane",
+    intro: "Panel, dører, portar og utstyr samla etter bruksområde.",
+  },
+  "/tenester": {
+    eyebrow: "Tenester",
+    title: "Frå levering til service",
+    intro: "Praktisk oppfølging gjennom prosjekt og ettermarknad.",
+  },
+  "/dokumentasjon": {
+    eyebrow: "Dokumentasjon",
+    title: "Underlag og rettleiing",
+    intro: "Finn monteringsanvisningar, tekniske dokument og FAQ.",
+  },
+  "/om-oss": {
+    eyebrow: "Om oss",
+    title: "Fresvik Produkt",
+    intro: "Firmainfo, tilsette, nyheiter og ledige stillingar.",
+  },
+};
+
 function DesktopMenuItem({
   item,
   pathname,
@@ -43,6 +73,12 @@ function DesktopMenuItem({
   const active = isActivePath(pathname, item);
   const isOpen = openMenu === item.href;
   const hasChildren = Boolean(item.children?.length);
+  const meta = menuMeta[item.href] ?? {
+    eyebrow: item.label,
+    title: item.label,
+    intro: "Gå vidare til relevante sider i denne delen av nettstaden.",
+  };
+  const isWideMenu = (item.children?.length ?? 0) > 4;
 
   return (
     <div
@@ -76,49 +112,82 @@ function DesktopMenuItem({
       {hasChildren ? (
         <div
           className={[
-            "absolute left-1/2 top-full z-30 w-[19rem] -translate-x-1/2 pt-3 transition duration-150",
+            "absolute left-1/2 top-full z-30 -translate-x-1/2 pt-3 transition duration-150",
+            isWideMenu ? "w-[39rem]" : "w-[31rem]",
             isOpen
               ? "visible translate-y-0 opacity-100"
               : "invisible -translate-y-1 opacity-0",
           ].join(" ")}
           onFocus={() => setOpenMenu(item.href)}
         >
-          <div className="rounded-[10px] border border-slate-200 bg-white p-2 shadow-2xl shadow-slate-950/12 ring-1 ring-slate-950/[0.02]">
-            <Link
-              href={item.href}
-              className="mb-1 flex items-center justify-between rounded-[8px] bg-slate-950 px-3.5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
-              onClick={() => setOpenMenu(null)}
-            >
-              Alle {item.label.toLowerCase()}
-              <ArrowRight aria-hidden="true" size={16} />
-            </Link>
-            <div className="grid gap-1 border-t border-slate-100 pt-2">
-              {item.children?.map((child) => {
-                const childActive = pathname === child.href;
-
-                return (
+          <div className="relative overflow-hidden rounded-[14px] border border-slate-200 bg-white shadow-2xl shadow-slate-950/15 ring-1 ring-slate-950/[0.03]">
+            <div className="absolute left-1/2 top-0 size-3 -translate-x-1/2 -translate-y-1/2 rotate-45 border-l border-t border-slate-200 bg-white" />
+            <div className="grid grid-cols-[12.5rem_1fr]">
+              <div className="relative overflow-hidden bg-slate-950 p-4 text-white">
+                <div className="absolute inset-0 opacity-25 [background-image:linear-gradient(90deg,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.12)_1px,transparent_1px)] [background-size:28px_28px]" />
+                <div className="relative flex h-full min-h-56 flex-col">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-200">
+                    {meta.eyebrow}
+                  </p>
+                  <p className="mt-4 text-xl font-semibold leading-tight">
+                    {meta.title}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                    {meta.intro}
+                  </p>
                   <Link
-                    key={child.href}
-                    href={child.href}
+                    href={item.href}
+                    className="mt-auto inline-flex h-10 items-center justify-between gap-3 rounded-[8px] bg-white px-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus:ring-2 focus:ring-cyan-300"
                     onClick={() => setOpenMenu(null)}
-                    className={[
-                      "flex min-h-11 items-center justify-between gap-3 rounded-[8px] px-3.5 py-2.5 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2",
-                      childActive
-                        ? "bg-cyan-50 text-cyan-950"
-                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-950",
-                    ].join(" ")}
                   >
-                    {child.label}
-                    {childActive ? (
-                      <CheckCircle2
-                        aria-hidden="true"
-                        size={16}
-                        className="shrink-0 text-cyan-700"
-                      />
-                    ) : null}
+                    Alle {item.label.toLowerCase()}
+                    <ArrowRight aria-hidden="true" size={16} />
                   </Link>
-                );
-              })}
+                </div>
+              </div>
+
+              <div
+                className={[
+                  "grid content-start gap-2 bg-white p-3",
+                  isWideMenu ? "grid-cols-2" : "grid-cols-1",
+                ].join(" ")}
+              >
+                {item.children?.map((child) => {
+                  const childActive = pathname === child.href;
+
+                  return (
+                    <Link
+                      key={child.href}
+                      href={child.href}
+                      onClick={() => setOpenMenu(null)}
+                      className={[
+                        "group flex min-h-[3.35rem] items-center justify-between gap-3 rounded-[10px] border px-3.5 py-3 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2",
+                        childActive
+                          ? "border-cyan-200 bg-cyan-50 text-cyan-950"
+                          : "border-transparent text-slate-700 hover:border-slate-200 hover:bg-slate-50 hover:text-slate-950",
+                      ].join(" ")}
+                    >
+                      <span className="flex items-center gap-3">
+                        <span
+                          className={[
+                            "grid size-7 shrink-0 place-items-center rounded-[7px] transition",
+                            childActive
+                              ? "bg-cyan-700 text-white"
+                              : "bg-slate-100 text-cyan-800 group-hover:bg-cyan-50",
+                          ].join(" ")}
+                        >
+                          {childActive ? (
+                            <CheckCircle2 aria-hidden="true" size={15} />
+                          ) : (
+                            <ArrowRight aria-hidden="true" size={15} />
+                          )}
+                        </span>
+                        {child.label}
+                      </span>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

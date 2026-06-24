@@ -3,7 +3,6 @@
 import {
   ArrowRight,
   ChevronDown,
-  CheckCircle2,
   Mail,
   Menu,
   Phone,
@@ -12,7 +11,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { mainNavigation, type NavigationItem } from "@/data/navigation";
 
 function isActivePath(pathname: string, item: NavigationItem) {
@@ -78,14 +77,36 @@ function DesktopMenuItem({
     title: item.label,
     intro: "Gå vidare til relevante sider i denne delen av nettstaden.",
   };
-  const isWideMenu = (item.children?.length ?? 0) > 4;
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function clearScheduledClose() {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+  }
+
+  function openItemMenu() {
+    clearScheduledClose();
+    setOpenMenu(item.href);
+  }
+
+  function scheduleClose() {
+    clearScheduledClose();
+    closeTimer.current = setTimeout(() => {
+      setOpenMenu(null);
+      closeTimer.current = null;
+    }, 220);
+  }
+
+  useEffect(() => clearScheduledClose, []);
 
   return (
     <div
       className="relative"
-      onMouseEnter={() => setOpenMenu(item.href)}
-      onMouseLeave={() => setOpenMenu(null)}
-      onFocus={() => setOpenMenu(item.href)}
+      onMouseEnter={openItemMenu}
+      onMouseLeave={scheduleClose}
+      onFocus={openItemMenu}
       onKeyDown={(event) => {
         if (event.key === "Escape") {
           setOpenMenu(null);
@@ -112,46 +133,38 @@ function DesktopMenuItem({
       {hasChildren ? (
         <div
           className={[
-            "absolute left-1/2 top-full z-30 -translate-x-1/2 pt-3 transition duration-150",
-            isWideMenu ? "w-[39rem]" : "w-[31rem]",
+            "fixed inset-x-0 top-[7.25rem] z-30 transition duration-150",
             isOpen
               ? "visible translate-y-0 opacity-100"
               : "invisible -translate-y-1 opacity-0",
           ].join(" ")}
-          onFocus={() => setOpenMenu(item.href)}
+          onMouseEnter={openItemMenu}
+          onMouseLeave={scheduleClose}
+          onFocus={openItemMenu}
         >
-          <div className="relative overflow-hidden rounded-[14px] border border-slate-200 bg-white shadow-2xl shadow-slate-950/15 ring-1 ring-slate-950/[0.03]">
-            <div className="absolute left-1/2 top-0 size-3 -translate-x-1/2 -translate-y-1/2 rotate-45 border-l border-t border-slate-200 bg-white" />
-            <div className="grid grid-cols-[12.5rem_1fr]">
-              <div className="relative overflow-hidden bg-slate-950 p-4 text-white">
-                <div className="absolute inset-0 opacity-25 [background-image:linear-gradient(90deg,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.12)_1px,transparent_1px)] [background-size:28px_28px]" />
-                <div className="relative flex h-full min-h-56 flex-col">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-200">
-                    {meta.eyebrow}
-                  </p>
-                  <p className="mt-4 text-xl font-semibold leading-tight">
-                    {meta.title}
-                  </p>
-                  <p className="mt-3 text-sm leading-6 text-slate-300">
-                    {meta.intro}
-                  </p>
-                  <Link
-                    href={item.href}
-                    className="mt-auto inline-flex h-10 items-center justify-between gap-3 rounded-[8px] bg-white px-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus:ring-2 focus:ring-cyan-300"
-                    onClick={() => setOpenMenu(null)}
-                  >
-                    Alle {item.label.toLowerCase()}
-                    <ArrowRight aria-hidden="true" size={16} />
-                  </Link>
-                </div>
+          <div className="border-y border-slate-200 bg-white shadow-xl shadow-slate-950/10">
+            <div className="mx-auto grid max-w-7xl gap-8 px-8 py-6 lg:grid-cols-[18rem_1fr]">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-800">
+                  {meta.eyebrow}
+                </p>
+                <p className="mt-2 text-2xl font-semibold tracking-normal text-slate-950">
+                  {meta.title}
+                </p>
+                <p className="mt-3 max-w-xs text-sm leading-6 text-slate-600">
+                  {meta.intro}
+                </p>
+                <Link
+                  href={item.href}
+                  className="mt-5 inline-flex h-10 items-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
+                  onClick={() => setOpenMenu(null)}
+                >
+                  Alle {item.label.toLowerCase()}
+                  <ArrowRight aria-hidden="true" size={16} />
+                </Link>
               </div>
 
-              <div
-                className={[
-                  "grid content-start gap-2 bg-white p-3",
-                  isWideMenu ? "grid-cols-2" : "grid-cols-1",
-                ].join(" ")}
-              >
+              <div className="grid content-start gap-3 sm:grid-cols-2 xl:grid-cols-4">
                 {item.children?.map((child) => {
                   const childActive = pathname === child.href;
 
@@ -161,28 +174,19 @@ function DesktopMenuItem({
                       href={child.href}
                       onClick={() => setOpenMenu(null)}
                       className={[
-                        "group flex min-h-[3.35rem] items-center justify-between gap-3 rounded-[10px] border px-3.5 py-3 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2",
+                        "group min-h-20 rounded-[10px] border p-4 transition focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2",
                         childActive
                           ? "border-cyan-200 bg-cyan-50 text-cyan-950"
-                          : "border-transparent text-slate-700 hover:border-slate-200 hover:bg-slate-50 hover:text-slate-950",
+                          : "border-slate-200 bg-slate-50/70 text-slate-800 hover:border-cyan-200 hover:bg-white hover:shadow-md hover:shadow-slate-950/[0.05]",
                       ].join(" ")}
                     >
-                      <span className="flex items-center gap-3">
-                        <span
-                          className={[
-                            "grid size-7 shrink-0 place-items-center rounded-[7px] transition",
-                            childActive
-                              ? "bg-cyan-700 text-white"
-                              : "bg-slate-100 text-cyan-800 group-hover:bg-cyan-50",
-                          ].join(" ")}
-                        >
-                          {childActive ? (
-                            <CheckCircle2 aria-hidden="true" size={15} />
-                          ) : (
-                            <ArrowRight aria-hidden="true" size={15} />
-                          )}
-                        </span>
+                      <span className="flex items-center justify-between gap-3 text-sm font-semibold">
                         {child.label}
+                        <ArrowRight
+                          aria-hidden="true"
+                          size={16}
+                          className="shrink-0 text-cyan-800 transition group-hover:translate-x-0.5"
+                        />
                       </span>
                     </Link>
                   );
@@ -311,7 +315,6 @@ export function Header() {
         <nav
           aria-label="Hovudmeny"
           className="hidden items-center gap-1 rounded-[10px] border border-slate-200 bg-slate-50/90 p-1 lg:flex"
-          onMouseLeave={() => setOpenMenu(null)}
         >
           {mainNavigation.map((item) => (
             <DesktopMenuItem

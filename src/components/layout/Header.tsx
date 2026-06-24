@@ -62,12 +62,16 @@ function DesktopMenuItem({
   item,
   pathname,
   openMenu,
-  setOpenMenu,
+  openMenuItem,
+  closeMenu,
+  scheduleCloseMenu,
 }: {
   item: NavigationItem;
   pathname: string;
   openMenu: string | null;
-  setOpenMenu: (href: string | null) => void;
+  openMenuItem: (href: string) => void;
+  closeMenu: () => void;
+  scheduleCloseMenu: () => void;
 }) {
   const active = isActivePath(pathname, item);
   const isOpen = openMenu === item.href;
@@ -77,39 +81,24 @@ function DesktopMenuItem({
     title: item.label,
     intro: "Gå vidare til relevante sider i denne delen av nettstaden.",
   };
-  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  function clearScheduledClose() {
-    if (closeTimer.current) {
-      clearTimeout(closeTimer.current);
-      closeTimer.current = null;
-    }
-  }
 
   function openItemMenu() {
-    clearScheduledClose();
-    setOpenMenu(item.href);
+    if (hasChildren) {
+      openMenuItem(item.href);
+    } else {
+      closeMenu();
+    }
   }
-
-  function scheduleClose() {
-    clearScheduledClose();
-    closeTimer.current = setTimeout(() => {
-      setOpenMenu(null);
-      closeTimer.current = null;
-    }, 220);
-  }
-
-  useEffect(() => clearScheduledClose, []);
 
   return (
     <div
       className="relative"
       onMouseEnter={openItemMenu}
-      onMouseLeave={scheduleClose}
+      onMouseLeave={scheduleCloseMenu}
       onFocus={openItemMenu}
       onKeyDown={(event) => {
         if (event.key === "Escape") {
-          setOpenMenu(null);
+          closeMenu();
         }
       }}
     >
@@ -133,13 +122,11 @@ function DesktopMenuItem({
       {hasChildren ? (
         <div
           className={[
-            "fixed inset-x-0 top-[7.25rem] z-30 transition duration-150",
-            isOpen
-              ? "visible translate-y-0 opacity-100"
-              : "invisible -translate-y-1 opacity-0",
+            "fixed inset-x-0 top-[7.25rem] z-30 transition-opacity duration-100",
+            isOpen ? "visible opacity-100" : "invisible opacity-0",
           ].join(" ")}
           onMouseEnter={openItemMenu}
-          onMouseLeave={scheduleClose}
+          onMouseLeave={scheduleCloseMenu}
           onFocus={openItemMenu}
         >
           <div className="border-y border-slate-200 bg-white shadow-xl shadow-slate-950/10">
@@ -157,7 +144,7 @@ function DesktopMenuItem({
                 <Link
                   href={item.href}
                   className="mt-5 inline-flex h-10 items-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
-                  onClick={() => setOpenMenu(null)}
+                  onClick={closeMenu}
                 >
                   Alle {item.label.toLowerCase()}
                   <ArrowRight aria-hidden="true" size={16} />
@@ -172,7 +159,7 @@ function DesktopMenuItem({
                     <Link
                       key={child.href}
                       href={child.href}
-                      onClick={() => setOpenMenu(null)}
+                      onClick={closeMenu}
                       className={[
                         "group min-h-20 rounded-[10px] border p-4 transition focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2",
                         childActive
@@ -253,6 +240,32 @@ export function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function clearScheduledClose() {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+  }
+
+  function openDesktopMenu(href: string) {
+    clearScheduledClose();
+    setOpenMenu(href);
+  }
+
+  function closeDesktopMenu() {
+    clearScheduledClose();
+    setOpenMenu(null);
+  }
+
+  function scheduleCloseDesktopMenu() {
+    clearScheduledClose();
+    closeTimer.current = setTimeout(() => {
+      setOpenMenu(null);
+      closeTimer.current = null;
+    }, 260);
+  }
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -264,6 +277,8 @@ export function Header() {
       document.body.style.overflow = originalOverflow;
     };
   }, [mobileOpen]);
+
+  useEffect(() => clearScheduledClose, []);
 
   function closeMobileMenu() {
     setMobileOpen(false);
@@ -322,7 +337,9 @@ export function Header() {
               item={item}
               pathname={pathname}
               openMenu={openMenu}
-              setOpenMenu={setOpenMenu}
+              openMenuItem={openDesktopMenu}
+              closeMenu={closeDesktopMenu}
+              scheduleCloseMenu={scheduleCloseDesktopMenu}
             />
           ))}
         </nav>

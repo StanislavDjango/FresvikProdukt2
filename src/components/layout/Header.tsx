@@ -3,7 +3,6 @@
 import {
   ArrowRight,
   ChevronDown,
-  ExternalLink,
   Mail,
   Menu,
   Phone,
@@ -35,28 +34,65 @@ const menuMeta: Record<
     eyebrow: string;
     title: string;
     intro: string;
+    actionLabel: string;
+    ctaText?: string;
+    ctaHref?: string;
+    ctaLabel?: string;
   }
 > = {
   "/produkt": {
     eyebrow: "Produkt",
-    title: "Produktfamiliane",
-    intro: "Panel, dører, portar og utstyr samla etter bruksområde.",
+    title: "Våre produkt",
+    intro: "Isolerte panel, dører, portar og utstyr for kjøle- og fryserom.",
+    actionLabel: "Sjå alle produkt",
+    ctaText: "Treng du hjelp til å finne riktig produkt?",
+    ctaHref: "/kontakt",
+    ctaLabel: "Send førespørsel",
   },
   "/tenester": {
     eyebrow: "Tenester",
-    title: "Frå levering til service",
-    intro: "Praktisk oppfølging gjennom prosjekt og ettermarknad.",
+    title: "Våre tenester",
+    intro: "Frå levering og montering til service, oppfølging og reservedeler.",
+    actionLabel: "Les meir om tenester",
+    ctaText: "Har du spørsmål om våre tenester?",
+    ctaHref: "/kontakt",
+    ctaLabel: "Kontakt oss",
   },
   "/dokumentasjon": {
     eyebrow: "Dokumentasjon",
-    title: "Underlag og rettleiing",
-    intro: "Finn monteringsanvisningar, tekniske dokument og FAQ.",
+    title: "Dokumentasjon",
+    intro: "Finn produktunderlag, monteringsanvisningar og praktisk rettleiing.",
+    actionLabel: "Til dokumentasjon",
+    ctaText: "Finn du ikkje det du leitar etter?",
+    ctaHref: "/kontakt",
+    ctaLabel: "Kontakt oss",
   },
   "/om-oss": {
     eyebrow: "Om oss",
     title: "Fresvik Produkt",
     intro: "Firmainfo, tilsette, nyheiter og ledige stillingar.",
+    actionLabel: "Om Fresvik",
   },
+};
+
+const menuItemDescriptions: Record<string, string> = {
+  "/produkt/fresvik-pir-panel": "Høgeffektive isolerte PIR-panel for vegg og tak.",
+  "/produkt/fresvik-pur-panel": "PUR-panel med framragande isolasjonsevne.",
+  "/produkt/kjole-fryseportar": "Robuste skyve- og hengsleportar for kjøle- og fryserom.",
+  "/produkt/kjole-frysedorer": "Dører med høg isolasjon og driftstryggleik.",
+  "/produkt/fasadepanel": "Estetiske og slitesterke panel for fasadeløysingar.",
+  "/produkt/frysetunnel": "Effektive frysetunnelar for rask og skånsam frysing.",
+  "/tilleggsutstyr": "Komponentar og tilbehør som kompletterer løysinga.",
+  "/tenester/montasje": "Profesjonell montering utført av erfarne fagfolk.",
+  "/tenester/leveranse": "Sikker og effektiv levering til avtalt tid og stad.",
+  "/tenester/service-reservedeler": "Service, vedlikehald og reservedeler for optimal drift.",
+  "/monteringsanvisning": "Steg-for-steg rettleiing for montering og installasjon.",
+  "/monteringsanvisningar-fresvik-skyveport": "Rettleiing for elektrisk skyveport.",
+  "/kundeservice/faq": "Svar på vanlege spørsmål om produkt og dokumentasjon.",
+  "/firmainfo": "Selskapsinformasjon og praktiske opplysningar.",
+  "/tilsette": "Kontaktpersonar og fagfolk i Fresvik Produkt.",
+  "/aktuelt": "Nyheiter, artiklar og oppdateringar frå Fresvik.",
+  "/stillingledig": "Ledige stillingar og karrieremoglegheiter.",
 };
 
 function DesktopMenuItem({
@@ -79,7 +115,9 @@ function DesktopMenuItem({
     eyebrow: item.label,
     title: item.label,
     intro: "Gå vidare til relevante sider i denne delen av nettstaden.",
+    actionLabel: `Alle ${item.label.toLowerCase()}`,
   };
+  const isCompactMenu = item.href === "/om-oss";
 
   return (
     <div
@@ -120,35 +158,55 @@ function DesktopMenuItem({
       {hasChildren ? (
         <div
           className={[
-            "fixed inset-x-0 top-[7.25rem] z-30 transition-opacity duration-100",
+            "fixed inset-x-0 top-[7.25rem] z-30 px-4 transition-opacity duration-100",
             isOpen ? "visible opacity-100" : "invisible opacity-0",
           ].join(" ")}
         >
-          <div className="border-y border-slate-200 bg-white shadow-xl shadow-slate-950/10">
-            <div className="mx-auto grid max-w-7xl gap-8 px-8 py-6 lg:grid-cols-[18rem_1fr]">
-              <div>
+          <div
+            className={[
+              "mx-auto overflow-hidden rounded-[14px] border border-slate-200 bg-white shadow-2xl shadow-slate-950/14 ring-1 ring-slate-950/[0.02]",
+              isCompactMenu ? "max-w-3xl" : "max-w-6xl",
+            ].join(" ")}
+          >
+            <div
+              className={[
+                "grid gap-6 p-4",
+                isCompactMenu
+                  ? "lg:grid-cols-[15rem_1fr]"
+                  : "lg:grid-cols-[16rem_1fr]",
+              ].join(" ")}
+            >
+              <div className="rounded-[10px] border border-slate-100 bg-gradient-to-b from-cyan-50/70 to-slate-50 p-5">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-800">
                   {meta.eyebrow}
                 </p>
-                <p className="mt-2 text-2xl font-semibold tracking-normal text-slate-950">
+                <p className="mt-8 text-xl font-semibold tracking-normal text-slate-950">
                   {meta.title}
                 </p>
-                <p className="mt-3 max-w-xs text-sm leading-6 text-slate-600">
+                <p className="mt-3 text-sm leading-6 text-slate-600">
                   {meta.intro}
                 </p>
                 <Link
                   href={item.href}
-                  className="mt-5 inline-flex h-10 items-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
+                  className="mt-6 inline-flex h-10 items-center justify-center rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
                   onClick={closeMenu}
                 >
-                  Alle {item.label.toLowerCase()}
-                  <ExternalLink aria-hidden="true" size={15} />
+                  {meta.actionLabel}
+                  <span aria-hidden="true" className="ml-2">
+                    →
+                  </span>
                 </Link>
               </div>
 
-              <div className="grid content-start gap-3 sm:grid-cols-2 xl:grid-cols-4">
+              <div
+                className={[
+                  "grid content-start gap-x-8",
+                  isCompactMenu ? "gap-y-1" : "gap-y-0 md:grid-cols-2",
+                ].join(" ")}
+              >
                 {item.children?.map((child) => {
                   const childActive = pathname === child.href;
+                  const description = menuItemDescriptions[child.href];
 
                   return (
                     <Link
@@ -156,25 +214,64 @@ function DesktopMenuItem({
                       href={child.href}
                       onClick={closeMenu}
                       className={[
-                        "group min-h-20 rounded-[10px] border p-4 transition focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2",
+                        "group flex min-h-[4.25rem] items-start justify-between gap-4 border-b border-slate-100 px-1 py-4 transition last:border-b-0 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 md:last:border-b",
                         childActive
-                          ? "border-cyan-200 bg-cyan-50 text-cyan-950"
-                          : "border-slate-200 bg-slate-50/70 text-slate-800 hover:border-cyan-200 hover:bg-white hover:shadow-md hover:shadow-slate-950/[0.05]",
+                          ? "text-cyan-950"
+                          : "text-slate-900 hover:text-cyan-900",
                       ].join(" ")}
                     >
-                      <span className="flex items-center justify-between gap-3 text-sm font-semibold">
-                        {child.label}
-                        <ArrowRight
-                          aria-hidden="true"
-                          size={16}
-                          className="shrink-0 text-cyan-800 transition group-hover:translate-x-0.5"
-                        />
+                      <span>
+                        <span className="block text-sm font-semibold">
+                          {child.label}
+                        </span>
+                        {description ? (
+                          <span className="mt-1 block text-sm leading-6 text-slate-500">
+                            {description}
+                          </span>
+                        ) : null}
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        className="mt-0.5 shrink-0 text-lg leading-none text-cyan-800 transition group-hover:translate-x-0.5"
+                      >
+                        →
                       </span>
                     </Link>
                   );
                 })}
               </div>
             </div>
+
+            {!isCompactMenu && meta.ctaText && meta.ctaHref && meta.ctaLabel ? (
+              <div className="border-t border-slate-100 bg-cyan-50/60 px-4 py-3">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <p className="text-sm font-semibold text-slate-950">
+                    {meta.ctaText}
+                    <span className="block font-normal text-slate-600">
+                      Send oss ein førespørsel, så hjelper vi deg.
+                    </span>
+                  </p>
+                  <div className="flex flex-col gap-2 sm:flex-row">
+                    <Link
+                      href={meta.ctaHref}
+                      className="inline-flex h-10 items-center justify-center rounded-[8px] border border-cyan-800 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
+                      onClick={closeMenu}
+                    >
+                      {meta.ctaLabel}
+                      <span aria-hidden="true" className="ml-2">
+                        →
+                      </span>
+                    </Link>
+                    <a
+                      href="tel:+4757698300"
+                      className="inline-flex h-10 items-center justify-center rounded-[8px] border border-cyan-800 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
+                    >
+                      +47 57 69 83 00
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
       ) : null}

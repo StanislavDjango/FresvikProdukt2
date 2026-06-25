@@ -2,7 +2,6 @@
 
 import {
   ArrowRight,
-  ChevronDown,
   Mail,
   Menu,
   Phone,
@@ -13,6 +12,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { mainNavigation, type NavigationItem } from "@/data/navigation";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
 
 function isActivePath(pathname: string, item: NavigationItem) {
   if (pathname === item.href) return true;
@@ -120,8 +128,8 @@ function DesktopMenuItem({
   const isCompactMenu = item.href === "/om-oss";
 
   return (
-    <div
-      className="relative"
+    <NavigationMenuItem
+      value={item.href}
       onKeyDown={(event) => {
         if (event.key === "Escape") {
           closeMenu();
@@ -129,52 +137,48 @@ function DesktopMenuItem({
       }}
     >
       {hasChildren ? (
-        <button
-          type="button"
-          className={linkClass(active)}
+        <NavigationMenuTrigger
+          data-active={active ? "" : undefined}
           aria-current={active ? "page" : undefined}
-          aria-haspopup="menu"
           aria-expanded={isOpen}
           onClick={() => toggleMenu(item.href)}
         >
           {item.label}
-          <ChevronDown
-            aria-hidden="true"
-            size={15}
-            className={["transition", isOpen ? "rotate-180" : ""].join(" ")}
-          />
-        </button>
+        </NavigationMenuTrigger>
       ) : (
-        <Link
-          href={item.href}
-          className={linkClass(active)}
-          aria-current={active ? "page" : undefined}
-          onClick={closeMenu}
-        >
-          {item.label}
-        </Link>
+        <NavigationMenuLink asChild>
+          <Link
+            href={item.href}
+            className={linkClass(active)}
+            aria-current={active ? "page" : undefined}
+            onClick={closeMenu}
+          >
+            {item.label}
+          </Link>
+        </NavigationMenuLink>
       )}
 
       {hasChildren ? (
-        <div
-          className={[
+        <NavigationMenuContent
+          forceMount
+          className={cn(
             "fixed inset-x-0 top-[7.25rem] z-30 px-4 transition-opacity duration-100",
             isOpen ? "visible opacity-100" : "invisible opacity-0",
-          ].join(" ")}
+          )}
         >
           <div
-            className={[
+            className={cn(
               "mx-auto overflow-hidden rounded-[14px] border border-slate-200 bg-white shadow-2xl shadow-slate-950/14 ring-1 ring-slate-950/[0.02]",
               isCompactMenu ? "max-w-3xl" : "max-w-6xl",
-            ].join(" ")}
+            )}
           >
             <div
-              className={[
+              className={cn(
                 "grid gap-6 p-4",
                 isCompactMenu
                   ? "lg:grid-cols-[15rem_1fr]"
                   : "lg:grid-cols-[16rem_1fr]",
-              ].join(" ")}
+              )}
             >
               <div className="rounded-[10px] border border-slate-100 bg-gradient-to-b from-cyan-50/70 to-slate-50 p-5">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-800">
@@ -199,10 +203,10 @@ function DesktopMenuItem({
               </div>
 
               <div
-                className={[
+                className={cn(
                   "grid content-start gap-x-8",
                   isCompactMenu ? "gap-y-1" : "gap-y-0 md:grid-cols-2",
-                ].join(" ")}
+                )}
               >
                 {item.children?.map((child) => {
                   const childActive = pathname === child.href;
@@ -213,12 +217,12 @@ function DesktopMenuItem({
                       key={child.href}
                       href={child.href}
                       onClick={closeMenu}
-                      className={[
+                      className={cn(
                         "group flex min-h-[4.25rem] items-start justify-between gap-4 border-b border-slate-100 px-1 py-4 transition last:border-b-0 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 md:last:border-b",
                         childActive
                           ? "text-cyan-950"
                           : "text-slate-900 hover:text-cyan-900",
-                      ].join(" ")}
+                      )}
                     >
                       <span>
                         <span className="block text-sm font-semibold">
@@ -273,9 +277,9 @@ function DesktopMenuItem({
               </div>
             ) : null}
           </div>
-        </div>
+        </NavigationMenuContent>
       ) : null}
-    </div>
+    </NavigationMenuItem>
   );
 }
 
@@ -458,21 +462,27 @@ export function Header() {
           />
         </Link>
 
-        <nav
+        <NavigationMenu
+          value={openMenu ?? ""}
+          onValueChange={() => undefined}
+          delayDuration={0}
+          skipDelayDuration={0}
           aria-label="Hovudmeny"
           className="hidden items-center gap-1 rounded-[10px] border border-slate-200 bg-slate-50/90 p-1 lg:flex"
         >
-          {mainNavigation.map((item) => (
-            <DesktopMenuItem
-              key={item.href}
-              item={item}
-              pathname={pathname}
-              openMenu={openMenu}
-              toggleMenu={toggleDesktopMenu}
-              closeMenu={closeDesktopMenu}
-            />
-          ))}
-        </nav>
+          <NavigationMenuList>
+            {mainNavigation.map((item) => (
+              <DesktopMenuItem
+                key={item.href}
+                item={item}
+                pathname={pathname}
+                openMenu={openMenu}
+                toggleMenu={toggleDesktopMenu}
+                closeMenu={closeDesktopMenu}
+              />
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
 
         <div className="hidden items-center gap-2 xl:flex">
           <a

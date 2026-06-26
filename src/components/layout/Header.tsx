@@ -570,9 +570,11 @@ export function Header() {
           </span>
         </Link>
 
-        <div className="hidden shrink-0 items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-black uppercase tracking-[0.12em] text-slate-700 shadow-sm shadow-slate-950/[0.03] 2xl:inline-flex">
-          <NorwayFlag />
-          Norsk produsent
+        <div
+          aria-label="Norsk produsent"
+          className="hidden shrink-0 items-center rounded-full border border-slate-200 bg-white px-2.5 py-2 shadow-sm shadow-slate-950/[0.03] 2xl:inline-flex"
+        >
+          <NorwayFlag className="h-[1.125rem] w-7" />
         </div>
 
         <NavigationMenu

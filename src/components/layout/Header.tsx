@@ -2,6 +2,7 @@
 
 import {
   ArrowRight,
+  ChevronDown,
   Mail,
   Menu,
   Phone,
@@ -287,54 +288,125 @@ function MobileLink({
   item,
   onNavigate,
   pathname,
+  openSection,
+  onToggle,
 }: {
   item: NavigationItem;
   onNavigate: () => void;
   pathname: string;
+  openSection: string | null;
+  onToggle: (href: string) => void;
 }) {
   const active = isActivePath(pathname, item);
+  const hasChildren = Boolean(item.children?.length);
+  const isOpen = openSection === item.href;
+  const meta = menuMeta[item.href];
+
+  if (hasChildren) {
+    const panelId = `mobile-menu-${item.href.replace(/[^a-z0-9]+/gi, "-")}`;
+
+    return (
+      <section className="overflow-hidden rounded-[12px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04]">
+        <button
+          type="button"
+          aria-expanded={isOpen}
+          aria-controls={panelId}
+          onClick={() => onToggle(item.href)}
+          className={cn(
+            "flex min-h-14 w-full items-center justify-between gap-3 px-4 py-3 text-left text-base font-semibold transition focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-700",
+            active
+              ? "bg-cyan-50 text-cyan-950"
+              : "text-slate-950 hover:bg-slate-50",
+          )}
+        >
+          <span>
+            {item.label}
+            {meta?.intro ? (
+              <span className="mt-1 block text-sm font-normal leading-5 text-slate-500">
+                {meta.intro}
+              </span>
+            ) : null}
+          </span>
+          <ChevronDown
+            aria-hidden="true"
+            size={19}
+            className={cn(
+              "shrink-0 text-cyan-800 transition-transform duration-150",
+              isOpen ? "rotate-180" : "rotate-0",
+            )}
+          />
+        </button>
+
+        <div
+          id={panelId}
+          hidden={!isOpen}
+          className="border-t border-slate-100 bg-slate-50/70 p-2"
+        >
+          <Link
+            href={item.href}
+            onClick={onNavigate}
+            className="mb-1 flex min-h-11 items-center justify-between rounded-[8px] bg-slate-950 px-3.5 py-2 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
+          >
+            {meta?.actionLabel ?? `Alle ${item.label.toLowerCase()}`}
+            <ArrowRight aria-hidden="true" size={17} />
+          </Link>
+
+          <div className="grid gap-1">
+            {item.children?.map((child) => {
+              const description = menuItemDescriptions[child.href];
+
+              return (
+                <Link
+                  key={child.href}
+                  href={child.href}
+                  onClick={onNavigate}
+                  className={cn(
+                    "rounded-[8px] px-3.5 py-3 text-sm transition focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2",
+                    pathname === child.href
+                      ? "bg-cyan-50 text-cyan-950"
+                      : "text-slate-700 hover:bg-white hover:text-slate-950",
+                  )}
+                >
+                  <span className="block font-semibold">{child.label}</span>
+                  {description ? (
+                    <span className="mt-1 block leading-5 text-slate-500">
+                      {description}
+                    </span>
+                  ) : null}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
-    <div className="rounded-[10px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.03]">
+    <section className="overflow-hidden rounded-[12px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04]">
       <Link
         href={item.href}
         onClick={onNavigate}
-        className={[
-          "flex min-h-[3.25rem] items-center justify-between gap-3 rounded-[10px] px-4 py-3 text-base font-semibold transition",
+        className={cn(
+          "flex min-h-14 items-center justify-between gap-3 px-4 py-3 text-base font-semibold transition focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-700",
           active
             ? "bg-cyan-50 text-cyan-950"
-            : "text-slate-950 hover:text-cyan-900",
-        ].join(" ")}
+            : "text-slate-950 hover:bg-slate-50 hover:text-cyan-900",
+        )}
       >
         {item.label}
         <ArrowRight aria-hidden="true" size={18} className="shrink-0" />
       </Link>
-      {item.children ? (
-        <div className="grid gap-1 border-t border-slate-100 p-2">
-          {item.children.map((child) => (
-            <Link
-              key={child.href}
-              href={child.href}
-              onClick={onNavigate}
-              className={[
-                "rounded-[8px] px-3 py-2.5 text-sm font-semibold transition",
-                pathname === child.href
-                  ? "bg-cyan-50 text-cyan-950"
-                  : "text-slate-600 hover:bg-slate-50 hover:text-slate-950",
-              ].join(" ")}
-            >
-              {child.label}
-            </Link>
-          ))}
-        </div>
-      ) : null}
-    </div>
+    </section>
   );
 }
 
 export function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileOpenSection, setMobileOpenSection] = useState<string | null>(
+    null,
+  );
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const headerRef = useRef<HTMLElement | null>(null);
   const mouseLeaveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -412,6 +484,32 @@ export function Header() {
 
   function closeMobileMenu() {
     setMobileOpen(false);
+  }
+
+  function getDefaultMobileSection() {
+    const activeItem = mainNavigation.find(
+      (item) => item.children?.length && isActivePath(pathname, item),
+    );
+
+    return (
+      activeItem?.href ??
+      mainNavigation.find((item) => item.children?.length)?.href ??
+      null
+    );
+  }
+
+  function toggleMobileMenu() {
+    if (mobileOpen) {
+      setMobileOpen(false);
+      return;
+    }
+
+    setMobileOpenSection(getDefaultMobileSection());
+    setMobileOpen(true);
+  }
+
+  function toggleMobileSection(href: string) {
+    setMobileOpenSection((current) => (current === href ? null : href));
   }
 
   return (
@@ -513,7 +611,7 @@ export function Header() {
           type="button"
           aria-label={mobileOpen ? "Lukk meny" : "Opne meny"}
           aria-expanded={mobileOpen}
-          onClick={() => setMobileOpen((open) => !open)}
+          onClick={toggleMobileMenu}
           className="grid size-11 shrink-0 place-items-center rounded-[8px] border border-slate-300 bg-white text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 lg:hidden"
         >
           {mobileOpen ? <X aria-hidden="true" size={21} /> : <Menu aria-hidden="true" size={21} />}
@@ -522,17 +620,29 @@ export function Header() {
 
       {mobileOpen ? (
         <div className="lg:hidden">
-          <div className="absolute inset-x-0 top-full z-50 border-t border-slate-200 bg-slate-50 shadow-2xl shadow-slate-950/15">
+          <div className="absolute inset-x-0 top-full z-50 border-t border-slate-200 bg-slate-50/98 shadow-2xl shadow-slate-950/15 backdrop-blur-xl">
             <nav
               aria-label="Mobilmeny"
               className="mx-auto grid max-h-[calc(100dvh-4.5rem)] max-w-7xl content-start gap-3 overflow-y-auto px-4 py-4 sm:max-h-[calc(100dvh-5rem)] sm:px-5"
             >
+              <div className="rounded-[12px] border border-cyan-100 bg-gradient-to-br from-cyan-50 to-white p-4">
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                  Fresvik Produkt
+                </p>
+                <p className="mt-2 max-w-md text-sm leading-6 text-slate-700">
+                  Finn produkt, tenester og dokumentasjon for kjøle- og
+                  fryseløysingar.
+                </p>
+              </div>
+
               {mainNavigation.map((item) => (
                 <MobileLink
                   key={item.href}
                   item={item}
                   pathname={pathname}
                   onNavigate={closeMobileMenu}
+                  openSection={mobileOpenSection}
+                  onToggle={toggleMobileSection}
                 />
               ))}
 

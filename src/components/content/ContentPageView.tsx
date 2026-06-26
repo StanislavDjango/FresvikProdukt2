@@ -544,8 +544,6 @@ function HomeSection({
   }
 
   if (isNews) {
-    const [featuredItem, ...sideItems] = visibleItems;
-
     return (
       <section className="border-b border-slate-200 bg-slate-50">
         <Container className="py-14 lg:py-16">
@@ -564,74 +562,39 @@ function HomeSection({
             </Link>
           </div>
 
-          <div className="mt-8 grid gap-4 lg:grid-cols-[1.25fr_0.75fr]">
-            {featuredItem ? (
-              <article className="group relative overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]">
-                <div className="grid min-h-[280px] lg:grid-cols-[0.9fr_1.1fr]">
-                  <div className="flex flex-col justify-center p-6 sm:p-8">
-                    {featuredItem.meta ? (
-                      <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-800">
-                        {featuredItem.meta}
-                      </p>
-                    ) : null}
-                    <h3 className="mt-3 text-2xl font-semibold tracking-normal text-slate-950">
-                      {featuredItem.title}
-                    </h3>
-                    <p className="mt-4 text-sm leading-7 text-slate-600">
-                      {featuredItem.text}
-                    </p>
-                    {featuredItem.href ? (
-                      <CardLink href={featuredItem.href} label="Les meir" />
-                    ) : null}
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {visibleItems.map((item, itemIndex) => (
+              <article
+                key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}-news`)}
+                className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]"
+              >
+                {item.imageUrl ? (
+                  <div className="relative h-56 overflow-hidden bg-slate-100">
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.imageAlt || item.title}
+                      fill
+                      sizes="(min-width: 768px) 30vw, 100vw"
+                      className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                    />
                   </div>
-                  {featuredItem.imageUrl ? (
-                    <div className="relative min-h-56 overflow-hidden bg-slate-100 lg:min-h-full">
-                      <Image
-                        src={featuredItem.imageUrl}
-                        alt={featuredItem.imageAlt || featuredItem.title}
-                        fill
-                        sizes="(min-width: 1024px) 42vw, 100vw"
-                        className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
-                      />
-                      <div className="absolute inset-y-0 left-0 hidden w-1/3 bg-gradient-to-r from-white to-transparent lg:block" />
-                    </div>
+                ) : null}
+                <div className="flex grow flex-col p-5">
+                  {item.meta ? (
+                    <p className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
+                      {item.meta}
+                    </p>
                   ) : null}
+                  <h3 className="text-lg font-semibold text-slate-950">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 grow text-sm leading-6 text-slate-600">
+                    {item.text}
+                  </p>
+                  {item.href ? <CardLink href={item.href} label="Les meir" /> : null}
                 </div>
               </article>
-            ) : null}
-
-            <div className="grid gap-4">
-              {sideItems.map((item, itemIndex) => (
-                <article
-                  key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}-side`)}
-                  className="group grid min-h-[150px] overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lg hover:shadow-slate-950/[0.06] sm:grid-cols-[1fr_0.85fr]"
-                >
-                  <div className="flex min-h-[150px] flex-col justify-center p-5">
-                    {item.meta ? (
-                      <p className="text-[11px] font-black uppercase tracking-[0.14em] text-cyan-800">
-                        {item.meta}
-                      </p>
-                    ) : null}
-                    <h3 className="mt-2 text-base font-semibold text-slate-950">
-                      {item.title}
-                    </h3>
-                    {item.href ? <CardLink href={item.href} label="Les meir" /> : null}
-                  </div>
-                  {item.imageUrl ? (
-                    <div className="relative min-h-40 overflow-hidden bg-slate-100 sm:min-h-full">
-                      <Image
-                        src={item.imageUrl}
-                        alt={item.imageAlt || item.title}
-                        fill
-                        sizes="(min-width: 1024px) 16vw, 100vw"
-                        className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
-                      />
-                      <div className="absolute inset-y-0 left-0 hidden w-1/4 bg-gradient-to-r from-white to-transparent sm:block" />
-                    </div>
-                  ) : null}
-                </article>
-              ))}
-            </div>
+            ))}
           </div>
         </Container>
       </section>

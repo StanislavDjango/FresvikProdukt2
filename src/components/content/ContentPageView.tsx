@@ -453,6 +453,191 @@ function HomeSection({
     ? section.items.filter((item) => !item.title.toLowerCase().includes("dekor"))
     : section.items;
 
+  if (isCustomers) {
+    const accentItem =
+      visibleItems.find((item) => item.title.toLowerCase().includes("skip")) ||
+      visibleItems[0];
+    const secondaryItems = visibleItems.filter((item) => item !== accentItem);
+
+    return (
+      <section className="border-b border-slate-200 bg-white">
+        <Container className="py-14 lg:py-16">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <SectionHeader
+              eyebrow="Bruksområde"
+              title={section.title}
+              intro={section.intro}
+            />
+          </div>
+
+          <div className="mt-8 grid gap-4 lg:grid-cols-[1.08fr_0.92fr]">
+            {accentItem ? (
+              <article className="group relative min-h-[360px] overflow-hidden rounded-[8px] border border-slate-800 bg-slate-950 text-white shadow-xl shadow-slate-950/10">
+                {accentItem.imageUrl ? (
+                  <Image
+                    src={accentItem.imageUrl}
+                    alt={accentItem.imageAlt || accentItem.title}
+                    fill
+                    sizes="(min-width: 1024px) 48vw, 100vw"
+                    className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                  />
+                ) : null}
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/70 to-slate-950/10" />
+                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-950 to-transparent" />
+                <div className="relative flex min-h-[360px] max-w-md flex-col justify-end p-6 sm:p-8">
+                  <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-200">
+                    Bruksområde
+                  </p>
+                  <h3 className="mt-4 text-3xl font-semibold tracking-normal">
+                    {accentItem.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-slate-200">
+                    {accentItem.text}
+                  </p>
+                  {accentItem.href ? (
+                    <Link
+                      href={accentItem.href}
+                      className="mt-6 inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+                    >
+                      Les meir
+                      <ArrowRight aria-hidden="true" size={17} />
+                    </Link>
+                  ) : null}
+                </div>
+              </article>
+            ) : null}
+
+            <div className="grid gap-4">
+              {secondaryItems.map((item, itemIndex) => (
+                <article
+                  key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}-secondary`)}
+                  className="group grid min-h-[220px] overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] sm:min-h-[178px] sm:grid-cols-[0.95fr_1.05fr]"
+                >
+                  <div className="flex min-h-[220px] flex-col justify-center p-5 sm:min-h-[178px] sm:p-6">
+                    <h3 className="text-xl font-semibold text-slate-950">
+                      {item.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-6 text-slate-600">
+                      {item.text}
+                    </p>
+                    {item.href ? <CardLink href={item.href} label="Les meir" /> : null}
+                  </div>
+                  {item.imageUrl ? (
+                    <div className="relative min-h-44 overflow-hidden bg-slate-100 sm:min-h-full">
+                      <Image
+                        src={item.imageUrl}
+                        alt={item.imageAlt || item.title}
+                        fill
+                        sizes="(min-width: 1024px) 24vw, 100vw"
+                        className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                      />
+                      <div className="absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white to-transparent" />
+                    </div>
+                  ) : null}
+                </article>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+    );
+  }
+
+  if (isNews) {
+    const [featuredItem, ...sideItems] = visibleItems;
+
+    return (
+      <section className="border-b border-slate-200 bg-slate-50">
+        <Container className="py-14 lg:py-16">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <SectionHeader
+              eyebrow="Aktuelt"
+              title={section.title}
+              intro={section.intro}
+            />
+            <Link
+              href="/aktuelt"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+            >
+              Alle saker
+              <ArrowRight aria-hidden="true" size={17} />
+            </Link>
+          </div>
+
+          <div className="mt-8 grid gap-4 lg:grid-cols-[1.25fr_0.75fr]">
+            {featuredItem ? (
+              <article className="group relative overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]">
+                <div className="grid min-h-[280px] lg:grid-cols-[0.9fr_1.1fr]">
+                  <div className="flex flex-col justify-center p-6 sm:p-8">
+                    {featuredItem.meta ? (
+                      <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-800">
+                        {featuredItem.meta}
+                      </p>
+                    ) : null}
+                    <h3 className="mt-3 text-2xl font-semibold tracking-normal text-slate-950">
+                      {featuredItem.title}
+                    </h3>
+                    <p className="mt-4 text-sm leading-7 text-slate-600">
+                      {featuredItem.text}
+                    </p>
+                    {featuredItem.href ? (
+                      <CardLink href={featuredItem.href} label="Les meir" />
+                    ) : null}
+                  </div>
+                  {featuredItem.imageUrl ? (
+                    <div className="relative min-h-56 overflow-hidden bg-slate-100 lg:min-h-full">
+                      <Image
+                        src={featuredItem.imageUrl}
+                        alt={featuredItem.imageAlt || featuredItem.title}
+                        fill
+                        sizes="(min-width: 1024px) 42vw, 100vw"
+                        className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                      />
+                      <div className="absolute inset-y-0 left-0 hidden w-1/3 bg-gradient-to-r from-white to-transparent lg:block" />
+                    </div>
+                  ) : null}
+                </div>
+              </article>
+            ) : null}
+
+            <div className="grid gap-4">
+              {sideItems.map((item, itemIndex) => (
+                <article
+                  key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}-side`)}
+                  className="group grid min-h-[150px] overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lg hover:shadow-slate-950/[0.06] sm:grid-cols-[1fr_0.85fr]"
+                >
+                  <div className="flex min-h-[150px] flex-col justify-center p-5">
+                    {item.meta ? (
+                      <p className="text-[11px] font-black uppercase tracking-[0.14em] text-cyan-800">
+                        {item.meta}
+                      </p>
+                    ) : null}
+                    <h3 className="mt-2 text-base font-semibold text-slate-950">
+                      {item.title}
+                    </h3>
+                    {item.href ? <CardLink href={item.href} label="Les meir" /> : null}
+                  </div>
+                  {item.imageUrl ? (
+                    <div className="relative min-h-40 overflow-hidden bg-slate-100 sm:min-h-full">
+                      <Image
+                        src={item.imageUrl}
+                        alt={item.imageAlt || item.title}
+                        fill
+                        sizes="(min-width: 1024px) 16vw, 100vw"
+                        className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                      />
+                      <div className="absolute inset-y-0 left-0 hidden w-1/4 bg-gradient-to-r from-white to-transparent sm:block" />
+                    </div>
+                  ) : null}
+                </article>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+    );
+  }
+
   return (
     <section className={`border-b border-slate-200 ${background}`}>
       <Container className="py-14 lg:py-16">

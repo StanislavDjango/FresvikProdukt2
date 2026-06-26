@@ -25,9 +25,7 @@ function isExternalHref(href: string) {
 
 function CardLink({ href, label }: { href: string; label: string }) {
   const className =
-    "group/link mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition hover:text-slate-950";
-  const iconClassName =
-    "transition duration-200 group-hover:translate-x-0.5 group-hover/link:translate-x-1";
+    "mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition hover:text-slate-950";
 
   if (isExternalHref(href)) {
     const isWebUrl = /^https?:\/\//.test(href);
@@ -38,16 +36,14 @@ function CardLink({ href, label }: { href: string; label: string }) {
         target={isWebUrl ? "_blank" : undefined}
         rel={isWebUrl ? "noreferrer" : undefined}
       >
-        {label}
-        <ExternalLink aria-hidden="true" className={iconClassName} size={17} />
+        {label} <ExternalLink aria-hidden="true" size={17} />
       </a>
     );
   }
 
   return (
     <Link href={href} className={className}>
-      {label}
-      <ArrowRight aria-hidden="true" className={iconClassName} size={17} />
+      {label} <ArrowRight aria-hidden="true" size={17} />
     </Link>
   );
 }
@@ -157,28 +153,6 @@ function labelFromHref(href: string) {
       ?.replace(/-/g, " ")
       .replace(/\b\w/g, (letter) => letter.toUpperCase()) || href;
   }
-}
-
-function productCardLabel(title: string) {
-  const normalizedTitle = title.toLowerCase();
-
-  if (normalizedTitle.includes("port")) {
-    return "Portar";
-  }
-
-  if (normalizedTitle.includes("dør") || normalizedTitle.includes("dorer")) {
-    return "Dører";
-  }
-
-  if (normalizedTitle.includes("fasade")) {
-    return "Fasade";
-  }
-
-  if (normalizedTitle.includes("fryse")) {
-    return "Frys";
-  }
-
-  return "Panel";
 }
 
 function HomeSection({
@@ -615,66 +589,6 @@ function HomeSection({
                     {item.title}
                   </h3>
                   <p className="mt-3 grow text-sm leading-6 text-slate-600">
-                    {item.text}
-                  </p>
-                  {item.href ? <CardLink href={item.href} label="Les meir" /> : null}
-                </div>
-              </article>
-            ))}
-          </div>
-        </Container>
-      </section>
-    );
-  }
-
-  if (isProducts) {
-    return (
-      <section className="relative overflow-hidden border-b border-slate-200 bg-slate-50">
-        <div className="absolute inset-0 opacity-60 [background-image:linear-gradient(90deg,rgba(15,23,42,0.035)_1px,transparent_1px),linear-gradient(rgba(15,23,42,0.035)_1px,transparent_1px)] [background-size:44px_44px]" />
-        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white to-transparent" />
-        <Container className="relative py-14 lg:py-16">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-            <SectionHeader
-              eyebrow="Produkt"
-              title={displayTitle}
-              intro={displayIntro}
-            />
-            <Link
-              href="/produkt"
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 shadow-sm shadow-slate-950/[0.03] transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
-            >
-              Alle produkt
-              <ArrowRight aria-hidden="true" size={17} />
-            </Link>
-          </div>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {visibleItems.map((item, itemIndex) => (
-              <article
-                key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}-product`)}
-                className="group relative flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition duration-300 hover:-translate-y-1 hover:border-cyan-200 hover:shadow-2xl hover:shadow-slate-950/[0.10]"
-              >
-                <span className="absolute inset-x-0 top-0 z-10 h-1 bg-gradient-to-r from-cyan-700 via-cyan-400 to-transparent opacity-80" />
-                {item.imageUrl ? (
-                  <div className="relative h-52 overflow-hidden bg-slate-100">
-                    <Image
-                      src={item.imageUrl}
-                      alt={item.imageAlt || item.title}
-                      fill
-                      sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 100vw"
-                      className="object-cover object-center transition duration-500 group-hover:scale-[1.035]"
-                    />
-                    <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white via-white/55 to-transparent" />
-                  </div>
-                ) : null}
-                <div className="flex grow flex-col p-5">
-                  <p className="mb-3 w-fit rounded-[6px] border border-cyan-100 bg-cyan-50 px-2.5 py-1 text-[11px] font-black uppercase tracking-[0.14em] text-cyan-800">
-                    {productCardLabel(item.title)}
-                  </p>
-                  <h3 className="text-lg font-semibold text-slate-950">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 grow text-sm leading-6 text-slate-600 line-clamp-4">
                     {item.text}
                   </p>
                   {item.href ? <CardLink href={item.href} label="Les meir" /> : null}

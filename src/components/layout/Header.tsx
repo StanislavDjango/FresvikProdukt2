@@ -570,13 +570,6 @@ export function Header() {
           </span>
         </Link>
 
-        <span
-          aria-label="Norsk produsent"
-          className="hidden h-11 w-12 shrink-0 items-center justify-center 2xl:inline-flex"
-        >
-          <NorwayFlag className="h-6 w-9 rounded-[2px] shadow-none ring-0" />
-        </span>
-
         <NavigationMenu
           value={openMenu ?? ""}
           onValueChange={() => undefined}
@@ -614,6 +607,12 @@ export function Header() {
             <Phone aria-hidden="true" size={17} />
             Ring oss
           </a>
+          <span
+            aria-label="Norsk produsent"
+            className="inline-flex h-[3.25rem] w-14 shrink-0 items-center justify-center"
+          >
+            <NorwayFlag className="h-7 w-11 rounded-[2px] shadow-none ring-0" />
+          </span>
         </div>
 
         <button

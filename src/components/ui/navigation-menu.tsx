@@ -34,7 +34,7 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName;
 const NavigationMenuItem = NavigationMenuPrimitive.Item;
 
 const navigationMenuTriggerStyle =
-  "group inline-flex h-11 items-center justify-center gap-1.5 whitespace-nowrap rounded-[7px] px-3.5 text-sm font-semibold transition hover:bg-white hover:text-slate-950 focus:bg-white focus:text-slate-950 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 focus:ring-offset-white disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-cyan-50 data-[active]:text-cyan-950 data-[active]:shadow-sm data-[active]:shadow-cyan-950/[0.04] data-[state=open]:bg-cyan-50 data-[state=open]:text-cyan-950";
+  "group inline-flex h-11 items-center justify-center gap-1.5 whitespace-nowrap rounded-[8px] px-3.5 text-sm font-semibold text-slate-800 transition hover:bg-[#F3F6F8] hover:text-[#075F7A] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-[#EAF8FB] data-[active]:text-[#075F7A] data-[active]:shadow-[inset_0_-2px_0_#0891B2] data-[state=open]:bg-[#EAF8FB] data-[state=open]:text-[#075F7A] data-[state=open]:shadow-[inset_0_-2px_0_#0891B2]";
 
 const NavigationMenuTrigger = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Trigger>,

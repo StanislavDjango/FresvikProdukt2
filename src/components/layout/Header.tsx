@@ -30,10 +30,10 @@ function isActivePath(pathname: string, item: NavigationItem) {
 
 function linkClass(active: boolean) {
   return [
-    "inline-flex h-11 items-center gap-1.5 whitespace-nowrap rounded-[7px] px-3.5 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 focus:ring-offset-white",
+    "inline-flex h-11 items-center gap-1.5 whitespace-nowrap rounded-[8px] px-3.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white",
     active
-      ? "bg-cyan-50 text-cyan-950 shadow-sm shadow-cyan-950/[0.04]"
-      : "text-slate-700 hover:bg-white hover:text-slate-950",
+      ? "bg-[#EAF8FB] text-[#075F7A] shadow-[inset_0_-2px_0_#0891B2]"
+      : "text-slate-800 hover:bg-[#F3F6F8] hover:text-[#075F7A]",
   ].join(" ");
 }
 

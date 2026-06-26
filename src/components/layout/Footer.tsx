@@ -115,15 +115,23 @@ export function Footer() {
                 <Link
                   href="/"
                   aria-label="Fresvik Produkt framside"
-                  className="inline-flex rounded-[8px] bg-white p-2 shadow-lg shadow-slate-950/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+                  className="inline-flex items-center gap-3 rounded-[8px] py-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-4 focus-visible:ring-offset-slate-950"
                 >
                   <Image
-                    src="/assets/fresvik/brand/fresvik-logo-on-white.png"
+                    src="/assets/fresvik/brand/fresvik-fp-logo-transparent.png"
                     alt="Fresvik Produkt"
-                    width={1738}
-                    height={449}
-                    className="h-16 w-auto max-w-[17rem] object-contain"
+                    width={890}
+                    height={898}
+                    className="size-12 object-contain"
                   />
+                  <span className="leading-none">
+                    <span className="block text-lg font-black tracking-[0.16em] text-white">
+                      FRESVIK
+                    </span>
+                    <span className="mt-1 block text-[0.8rem] font-black tracking-[0.32em] text-cyan-300">
+                      PRODUKT
+                    </span>
+                  </span>
                 </Link>
                 <p className="mt-5 max-w-sm text-sm leading-6 text-slate-300">
                   Isolerte panel, dører, portar, montasje og dokumentasjon for

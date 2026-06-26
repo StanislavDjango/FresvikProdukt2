@@ -449,17 +449,25 @@ export function Header() {
         <Link
           href="/"
           onClick={closeMobileMenu}
-          className="flex shrink-0 items-center rounded-[12px] bg-white px-2.5 py-1.5 shadow-sm shadow-slate-950/10 ring-1 ring-slate-200 transition hover:shadow-md hover:shadow-slate-950/10 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
+          className="flex shrink-0 items-center gap-2.5 rounded-[8px] py-1.5 transition opacity-95 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-4"
           aria-label="Fresvik Produkt framside"
         >
           <Image
-            src="/assets/fresvik/brand/fresvik-logo-on-white.png"
+            src="/assets/fresvik/brand/fresvik-fp-logo-transparent.png"
             alt="Fresvik Produkt"
-            width={1738}
-            height={449}
+            width={890}
+            height={898}
             priority
-            className="h-11 w-auto max-w-[11.5rem] object-contain sm:h-14 sm:max-w-[15rem] xl:h-[3.75rem] xl:max-w-[16rem]"
+            className="size-10 object-contain sm:size-12"
           />
+          <span className="leading-none">
+            <span className="block text-base font-black tracking-[0.16em] text-slate-950 sm:text-lg">
+              FRESVIK
+            </span>
+            <span className="mt-1 block text-xs font-black tracking-[0.32em] text-cyan-800 sm:text-[0.8rem]">
+              PRODUKT
+            </span>
+          </span>
         </Link>
 
         <NavigationMenu

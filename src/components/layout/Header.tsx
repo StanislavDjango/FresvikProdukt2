@@ -593,14 +593,14 @@ export function Header() {
         <div className="hidden items-center gap-2 xl:flex">
           <a
             href="mailto:post@fresvik.no"
-            className="inline-flex h-11 items-center gap-2 whitespace-nowrap rounded-[8px] border border-slate-300 px-4 text-sm font-semibold text-slate-900 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
+            className="inline-flex h-[3.25rem] items-center gap-2 whitespace-nowrap rounded-[10px] border border-slate-300 px-4 text-sm font-semibold text-slate-900 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
           >
             <Mail aria-hidden="true" size={17} />
             post@fresvik.no
           </a>
           <a
             href="tel:+4757698300"
-            className="inline-flex h-11 items-center gap-2 whitespace-nowrap rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
+            className="inline-flex h-[3.25rem] items-center gap-2 whitespace-nowrap rounded-[10px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
           >
             <Phone aria-hidden="true" size={17} />
             Ring oss

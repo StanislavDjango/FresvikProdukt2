@@ -132,7 +132,7 @@ const homeNewsCards: ContentCard[] = [
     title: "Møt vår nye tekniske sjef",
     text: "Aktuelt-sak vist på den gamle framsida.",
     href: "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
-    imageUrl: "/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
+    imageUrl: "/assets/fresvik/images/old-site/Samaneh+Shakeri+bannerbilde.jpg",
     imageAlt: "Møt vår nye tekniske sjef",
   },
   {

@@ -111,7 +111,7 @@ function ContentSections({ sections }: { sections: ContentPage["sections"] }) {
                   alt={item.imageAlt || item.title}
                   width={720}
                   height={420}
-                  className="-mx-5 -mt-5 mb-5 h-52 w-[calc(100%+2.5rem)] rounded-t-[8px] bg-slate-50 object-contain"
+                  className="-mx-5 -mt-5 mb-5 h-52 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover object-center"
                 />
               ) : null}
               {item.meta ? (
@@ -522,7 +522,7 @@ function HomeSection({
                         ? "hidden"
                         : isDecorativeCard
                         ? "h-48 w-full object-contain p-8 opacity-80"
-                        : "h-52 w-full bg-slate-50 object-contain transition duration-300 group-hover:scale-[1.01]"
+                        : "h-52 w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]"
                     }
                   />
                 ) : null}
@@ -661,7 +661,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
                       alt={card.imageAlt || card.title}
                       width={720}
                       height={420}
-                      className="-mx-5 -mt-5 mb-5 h-52 w-[calc(100%+2.5rem)] rounded-t-[8px] bg-slate-50 object-contain"
+                      className="-mx-5 -mt-5 mb-5 h-52 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover object-center"
                     />
                   ) : null}
                   {card.meta ? (

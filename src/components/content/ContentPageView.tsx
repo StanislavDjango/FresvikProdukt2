@@ -111,7 +111,7 @@ function ContentSections({ sections }: { sections: ContentPage["sections"] }) {
                   alt={item.imageAlt || item.title}
                   width={720}
                   height={420}
-                  className="-mx-5 -mt-5 mb-5 h-48 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover"
+                  className="-mx-5 -mt-5 mb-5 h-52 w-[calc(100%+2.5rem)] rounded-t-[8px] bg-slate-50 object-contain"
                 />
               ) : null}
               {item.meta ? (
@@ -449,6 +449,10 @@ function HomeSection({
     );
   }
 
+  const visibleItems = isCustomers
+    ? section.items.filter((item) => !item.title.toLowerCase().includes("dekor"))
+    : section.items;
+
   return (
     <section className={`border-b border-slate-200 ${background}`}>
       <Container className="py-14 lg:py-16">
@@ -494,7 +498,7 @@ function HomeSection({
               : "mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3"
           }
         >
-          {section.items.map((item, itemIndex) => {
+          {visibleItems.map((item, itemIndex) => {
             const isDecorativeCard = item.title.toLowerCase().includes("dekor");
 
             return (
@@ -518,7 +522,7 @@ function HomeSection({
                         ? "hidden"
                         : isDecorativeCard
                         ? "h-48 w-full object-contain p-8 opacity-80"
-                        : "h-48 w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                        : "h-52 w-full bg-slate-50 object-contain transition duration-300 group-hover:scale-[1.01]"
                     }
                   />
                 ) : null}
@@ -657,7 +661,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
                       alt={card.imageAlt || card.title}
                       width={720}
                       height={420}
-                      className="-mx-5 -mt-5 mb-5 h-48 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover"
+                      className="-mx-5 -mt-5 mb-5 h-52 w-[calc(100%+2.5rem)] rounded-t-[8px] bg-slate-50 object-contain"
                     />
                   ) : null}
                   {card.meta ? (

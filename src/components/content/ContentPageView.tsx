@@ -12,6 +12,7 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import type { ContentPage } from "@/data/pages";
+import { cn } from "@/lib/utils";
 
 type ContentPageViewProps = {
   page: ContentPage;
@@ -133,9 +134,524 @@ function ContentSections({ sections }: { sections: ContentPage["sections"] }) {
   ));
 }
 
+function labelFromHref(href: string) {
+  try {
+    const url = new URL(href, "https://www.fresvik.no");
+    const path = url.pathname === "/" ? url.hostname : url.pathname;
+
+    return path
+      .split("/")
+      .filter(Boolean)
+      .at(-1)
+      ?.replace(/-/g, " ")
+      .replace(/\b\w/g, (letter) => letter.toUpperCase()) || path;
+  } catch {
+    return href
+      .split("/")
+      .filter(Boolean)
+      .at(-1)
+      ?.replace(/-/g, " ")
+      .replace(/\b\w/g, (letter) => letter.toUpperCase()) || href;
+  }
+}
+
+function HomeFeatureCards({ cards }: { cards: ContentPage["cards"] }) {
+  if (cards.length === 0) return null;
+
+  const [leadCard, ...supportCards] = cards;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="grid gap-4 lg:grid-cols-[1.05fr_1.95fr]">
+          <article className="overflow-hidden rounded-[8px] border border-slate-200 bg-slate-950 text-white shadow-sm shadow-slate-950/10">
+            {leadCard.imageUrl ? (
+              <Image
+                src={leadCard.imageUrl}
+                alt={leadCard.imageAlt || leadCard.title}
+                width={900}
+                height={560}
+                className="h-64 w-full object-cover opacity-95"
+              />
+            ) : null}
+            <div className="p-6">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
+                Fresvik Produkt
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-normal">
+                {leadCard.title}
+              </h2>
+              <p className="mt-3 text-sm leading-7 text-slate-300">
+                {leadCard.text}
+              </p>
+              {leadCard.href ? (
+                <CardLink href={leadCard.href} label="Les meir" />
+              ) : null}
+            </div>
+          </article>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            {supportCards.map((card, cardIndex) => (
+              <article
+                key={contentCardKey(card, cardIndex, "home-feature")}
+                className="group overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]"
+              >
+                {card.imageUrl ? (
+                  <Image
+                    src={card.imageUrl}
+                    alt={card.imageAlt || card.title}
+                    width={720}
+                    height={430}
+                    className="h-48 w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                  />
+                ) : null}
+                <div className="p-5">
+                  {card.meta ? (
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
+                      {card.meta}
+                    </p>
+                  ) : null}
+                  <h3 className="text-xl font-semibold text-slate-950">
+                    {card.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">
+                    {card.text}
+                  </p>
+                  {card.href ? <CardLink href={card.href} label="Les meir" /> : null}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function HomeSection({
+  section,
+  sectionIndex,
+}: {
+  section: ContentPage["sections"][number];
+  sectionIndex: number;
+}) {
+  const isProducts = section.title.includes("Produktteaserar");
+  const isCustomers = section.title === "Våre kundar";
+  const isNews = section.title === "Aktuelt";
+  const isJob = section.title === "Vil du jobbe hjå oss?";
+  const isContact = section.title === "Kontakt";
+  const isNewsletter = section.title === "Motta nyheitsbrev";
+  const isBadges = section.title === "Footer sertifikat og merker";
+  const isFullTextArchive = section.title === "Full tekst frå gammal side";
+  const isImageArchive = section.title === "Bilde frå gammal side";
+  const isDocumentArchive =
+    section.title === "Dokumentlenker frå gammal side" ||
+    section.items.every((item) => item.title === "Dokument");
+  const isLinkArchive =
+    section.title === "Lenker frå gammal side" ||
+    section.items.every((item) => item.title === "Ekstern lenke");
+  const background = isProducts || isNews || isBadges ? "bg-slate-50" : "bg-white";
+  const displayTitle = isProducts ? "Produkt og løysingar" : section.title;
+  const displayIntro = isProducts
+    ? "Utvalde produkt og løysingar frå Fresvik Produkt, bevart frå den gamle framsida og rydda for rask oversikt."
+    : section.intro;
+
+  if (isBadges) {
+    return (
+      <section className="border-b border-slate-200 bg-slate-50">
+        <Container className="py-12">
+          <SectionHeader
+            eyebrow="Dokumentert"
+            title="Godkjenningar og merker"
+            intro={section.intro}
+          />
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+            {section.items.map((item, itemIndex) => (
+              <article
+                key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
+                className="flex min-h-32 flex-col items-center justify-center rounded-[8px] border border-slate-200 bg-white p-4 text-center shadow-sm shadow-slate-950/[0.03]"
+              >
+                {item.imageUrl ? (
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.imageAlt || item.title}
+                    width={260}
+                    height={160}
+                    className="max-h-16 w-auto object-contain"
+                  />
+                ) : null}
+                <h3 className="mt-3 text-sm font-semibold text-slate-950">
+                  {item.title}
+                </h3>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+    );
+  }
+
+  if (isFullTextArchive) {
+    const text = section.items.map((item) => item.text).join("\n\n");
+    const paragraphs = text.split(/\n{2,}/).filter(Boolean);
+
+    return (
+      <section className="border-b border-slate-200 bg-white">
+        <Container className="py-14 lg:py-16">
+          <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
+            <SectionHeader
+              eyebrow="Kjeldetekst"
+              title="Tekst frå gammal framside"
+              intro={section.intro}
+            />
+            <article className="rounded-[8px] border border-slate-200 bg-slate-50 p-5 text-base leading-8 text-slate-700 sm:p-6">
+              {paragraphs.map((paragraph, paragraphIndex) => (
+                <p key={`${section.title}-paragraph-${paragraphIndex}`} className="mt-4 first:mt-0">
+                  {paragraph}
+                </p>
+              ))}
+            </article>
+          </div>
+        </Container>
+      </section>
+    );
+  }
+
+  if (isImageArchive) {
+    return (
+      <section className="border-b border-slate-200 bg-white">
+        <Container className="py-12">
+          <SectionHeader
+            eyebrow="Migrerte bilde"
+            title="Bilde frå gammal side"
+            intro="Bilete og merke som vart funne i gammal framside-extract, bevart for kontroll og vidare bruk."
+          />
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {section.items.map((item, itemIndex) => (
+              <article
+                key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
+                className="overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.03]"
+              >
+                {item.imageUrl ? (
+                  <div className="grid h-48 place-items-center bg-slate-50 p-6">
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.imageAlt || item.title}
+                      width={420}
+                      height={260}
+                      className="max-h-36 w-auto object-contain"
+                    />
+                  </div>
+                ) : null}
+                <div className="p-4">
+                  <h3 className="text-sm font-semibold text-slate-950">
+                    Bilde {itemIndex + 1}
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">
+                    {item.text}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+    );
+  }
+
+  if (isDocumentArchive) {
+    return (
+      <section className="border-b border-slate-200 bg-white">
+        <Container className="py-12">
+          <div className="rounded-[8px] border border-slate-200 bg-white p-5 shadow-sm shadow-slate-950/[0.03] sm:p-6">
+            <SectionHeader
+              eyebrow="Dokument"
+              title="Dokument frå gammal side"
+              intro="PDF- og dokumentlenker som vart funne på den gamle framsida, samla i ei kompakt liste."
+            />
+            <div className="mt-6 grid gap-2 md:grid-cols-2">
+              {section.items.map((item, itemIndex) => {
+                const href = item.href || item.text;
+                const label = labelFromHref(item.text);
+
+                return isExternalHref(href) ? (
+                  <a
+                    key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group flex min-h-12 items-center justify-between gap-3 rounded-[8px] border border-slate-200 bg-slate-50 px-3.5 py-2 text-sm font-semibold text-slate-700 transition hover:border-cyan-200 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+                  >
+                    <span className="truncate">{label}</span>
+                    <ExternalLink
+                      aria-hidden="true"
+                      size={16}
+                      className="shrink-0 text-cyan-800 transition group-hover:translate-x-0.5"
+                    />
+                  </a>
+                ) : (
+                  <Link
+                    key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
+                    href={href}
+                    className="group flex min-h-12 items-center justify-between gap-3 rounded-[8px] border border-slate-200 bg-slate-50 px-3.5 py-2 text-sm font-semibold text-slate-700 transition hover:border-cyan-200 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+                  >
+                    <span className="truncate">{label}</span>
+                    <ArrowRight
+                      aria-hidden="true"
+                      size={16}
+                      className="shrink-0 text-cyan-800 transition group-hover:translate-x-0.5"
+                    />
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </Container>
+      </section>
+    );
+  }
+
+  if (isLinkArchive) {
+    return (
+      <section className="border-b border-slate-200 bg-white">
+        <Container className="py-12">
+          <div className="rounded-[8px] border border-slate-200 bg-slate-50 p-5 sm:p-6">
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+              <SectionHeader
+                eyebrow="Migrerte lenker"
+                title="Bevarte lenker frå gammal side"
+                intro="Lenker som vart funne på den gamle framsida. Dei er samla kompakt her, slik at migrert informasjon framleis kan kontrollerast utan å dominere sida."
+              />
+              <Link
+                href="/kontakt"
+                className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+              >
+                Kontakt oss
+                <ArrowRight aria-hidden="true" size={17} />
+              </Link>
+            </div>
+            <div className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+              {section.items.map((item, itemIndex) => (
+                <Link
+                  key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
+                  href={item.href || item.text}
+                  className="group flex min-h-12 items-center justify-between gap-3 rounded-[8px] border border-slate-200 bg-white px-3.5 py-2 text-sm font-semibold text-slate-700 transition hover:border-cyan-200 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+                >
+                  <span className="truncate">{labelFromHref(item.text)}</span>
+                  <ArrowRight
+                    aria-hidden="true"
+                    size={16}
+                    className="shrink-0 text-cyan-800 transition group-hover:translate-x-0.5"
+                  />
+                </Link>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+    );
+  }
+
+  if (isJob) {
+    const item = section.items[0];
+
+    return (
+      <section className="border-b border-slate-200 bg-white">
+        <Container className="py-14 lg:py-16">
+          <article className="grid overflow-hidden rounded-[8px] border border-slate-200 bg-slate-950 text-white shadow-xl shadow-slate-950/10 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="p-6 sm:p-8 lg:p-10">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
+                Arbeid i Fresvik
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-normal sm:text-4xl">
+                {item.title}
+              </h2>
+              <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">
+                {item.text}
+              </p>
+              {item.href ? (
+                <Link
+                  href={item.href}
+                  className="mt-7 inline-flex h-12 items-center justify-center gap-2 rounded-[8px] bg-white px-5 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+                >
+                  Sjå ledige stillingar
+                  <ArrowRight aria-hidden="true" size={18} />
+                </Link>
+              ) : null}
+            </div>
+            {item.imageUrl ? (
+              <Image
+                src={item.imageUrl}
+                alt={item.imageAlt || item.title}
+                width={900}
+                height={620}
+                className="h-72 w-full object-cover lg:h-full"
+              />
+            ) : null}
+          </article>
+        </Container>
+      </section>
+    );
+  }
+
+  if (isNewsletter) {
+    return (
+      <section className="border-b border-slate-200 bg-white">
+        <Container className="py-12">
+          <div className="grid gap-6 rounded-[8px] border border-cyan-100 bg-gradient-to-br from-cyan-50 to-white p-6 sm:p-8 lg:grid-cols-[1fr_1.3fr]">
+            <SectionHeader title={section.title} intro={section.intro} />
+            <div className="grid content-start gap-3 sm:grid-cols-2">
+              {section.items.map((item, itemIndex) => (
+                <article
+                  key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
+                  className="rounded-[8px] border border-white bg-white/75 p-4 shadow-sm shadow-slate-950/[0.03]"
+                >
+                  <h3 className="text-sm font-semibold text-slate-950">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">
+                    {item.text}
+                  </p>
+                  {item.href ? <CardLink href={item.href} label="Opne" /> : null}
+                </article>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+    );
+  }
+
+  return (
+    <section className={`border-b border-slate-200 ${background}`}>
+      <Container className="py-14 lg:py-16">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow={
+              isProducts
+                ? "Produkt"
+                : isCustomers
+                ? "Bruksområde"
+                : isNews
+                ? "Aktuelt"
+                : isContact
+                ? "Kontakt"
+                : undefined
+            }
+            title={displayTitle}
+            intro={displayIntro}
+          />
+          {isProducts ? (
+            <Link
+              href="/produkt"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+            >
+              Alle produkt
+              <ArrowRight aria-hidden="true" size={17} />
+            </Link>
+          ) : isNews ? (
+            <Link
+              href="/aktuelt"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+            >
+              Alle saker
+              <ArrowRight aria-hidden="true" size={17} />
+            </Link>
+          ) : null}
+        </div>
+
+        <div
+          className={
+            isContact
+              ? "mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4"
+              : "mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3"
+          }
+        >
+          {section.items.map((item, itemIndex) => {
+            const isDecorativeCard = item.title.toLowerCase().includes("dekor");
+
+            return (
+              <article
+                key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
+                className={cn(
+                  "group flex min-h-full flex-col overflow-hidden rounded-[8px] border shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]",
+                  isDecorativeCard
+                    ? "border-slate-800 bg-slate-950 text-white"
+                    : "border-slate-200 bg-white",
+                )}
+              >
+                {item.imageUrl ? (
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.imageAlt || item.title}
+                    width={720}
+                    height={430}
+                    className={
+                      isContact
+                        ? "hidden"
+                        : isDecorativeCard
+                        ? "h-48 w-full object-contain p-8 opacity-80"
+                        : "h-48 w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                    }
+                  />
+                ) : null}
+                <div className="flex grow flex-col p-5">
+                  {item.meta ? (
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
+                      {item.meta}
+                    </p>
+                  ) : null}
+                  <h3
+                    className={cn(
+                      "text-lg font-semibold",
+                      isDecorativeCard ? "text-white" : "text-slate-950",
+                    )}
+                  >
+                    {item.title}
+                  </h3>
+                  <p
+                    className={cn(
+                      "mt-3 grow text-sm leading-6",
+                      isDecorativeCard ? "text-slate-300" : "text-slate-600",
+                    )}
+                  >
+                    {item.text}
+                  </p>
+                  {item.href ? (
+                    <CardLink
+                      href={item.href}
+                      label={isContact ? "Kontakt" : "Les meir"}
+                    />
+                  ) : null}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function HomeContent({ page }: { page: ContentPage }) {
+  return (
+    <>
+      <HomeFeatureCards cards={page.cards} />
+      {page.sections.map((section, sectionIndex) => (
+        <HomeSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+          sectionIndex={sectionIndex}
+        />
+      ))}
+    </>
+  );
+}
+
 export function ContentPageView({ page, hero }: ContentPageViewProps) {
   const showMigrationDetails = page.showMigrationDetails === true;
   const isFaqPage = page.slug === "/kundeservice/faq";
+  const isHomePage = page.pageType === "home";
   const jsonLd =
     page.pageType === "product"
       ? {
@@ -198,7 +714,9 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
         </section>
       )}
 
-      {!isFaqPage && page.cards.length > 0 ? (
+      {isHomePage ? (
+        <HomeContent page={page} />
+      ) : !isFaqPage && page.cards.length > 0 ? (
         <section className="border-b border-slate-200 bg-white">
           <Container className="py-12">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -235,7 +753,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
         </section>
       ) : null}
 
-      {isFaqPage ? (
+      {isHomePage ? null : isFaqPage ? (
         <>
           <FAQAccordion page={page} />
           <ContentSections sections={page.sections.slice(1)} />

@@ -156,9 +156,52 @@ function labelFromHref(href: string) {
 }
 
 function HomeFeatureCards({ cards }: { cards: ContentPage["cards"] }) {
-  if (cards.length === 0) return null;
+  const visibleCards = cards.filter((card) => card.title !== "Norsk produsent");
 
-  const [leadCard, ...supportCards] = cards;
+  if (visibleCards.length === 0) return null;
+
+  if (visibleCards.length <= 2) {
+    return (
+      <section className="border-b border-slate-200 bg-white">
+        <Container className="py-14 lg:py-16">
+          <div className="grid gap-4 md:grid-cols-2">
+            {visibleCards.map((card, cardIndex) => (
+              <article
+                key={contentCardKey(card, cardIndex, "home-feature")}
+                className="group overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]"
+              >
+                {card.imageUrl ? (
+                  <Image
+                    src={card.imageUrl}
+                    alt={card.imageAlt || card.title}
+                    width={720}
+                    height={430}
+                    className="h-52 w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                  />
+                ) : null}
+                <div className="p-5">
+                  {card.meta ? (
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
+                      {card.meta}
+                    </p>
+                  ) : null}
+                  <h2 className="text-xl font-semibold text-slate-950">
+                    {card.title}
+                  </h2>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">
+                    {card.text}
+                  </p>
+                  {card.href ? <CardLink href={card.href} label="Les meir" /> : null}
+                </div>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+    );
+  }
+
+  const [leadCard, ...supportCards] = visibleCards;
 
   return (
     <section className="border-b border-slate-200 bg-white">

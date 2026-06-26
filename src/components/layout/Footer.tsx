@@ -15,6 +15,7 @@ import {
   mainNavigation,
   type NavigationItem,
 } from "@/data/navigation";
+import { NorwayFlag } from "@/components/ui/NorwayFlag";
 
 const productLinks =
   mainNavigation.find((item) => item.href === "/produkt")?.children ?? [];
@@ -137,6 +138,10 @@ export function Footer() {
                   Isolerte panel, dører, portar, montasje og dokumentasjon for
                   profesjonelle kjøle- og fryseløysingar.
                 </p>
+                <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-xs font-semibold text-slate-200">
+                  <NorwayFlag />
+                  Norsk produsent frå Fresvik
+                </div>
               </div>
 
               <div className="grid gap-3 text-sm">

@@ -21,6 +21,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { NorwayFlag } from "@/components/ui/NorwayFlag";
 import { cn } from "@/lib/utils";
 
 function isActivePath(pathname: string, item: NavigationItem) {
@@ -521,7 +522,8 @@ export function Header() {
     >
       <div className="hidden border-b border-slate-200/70 bg-slate-950 text-white lg:block">
         <div className="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-8 text-xs font-semibold">
-          <p className="text-white/80">
+          <p className="inline-flex items-center gap-2 text-white/80">
+            <NorwayFlag className="h-3.5 w-5 ring-white/20" />
             Norsk produksjon av panel, dører og portar til kjøle- og fryserom.
           </p>
           <div className="flex items-center gap-5">
@@ -567,6 +569,11 @@ export function Header() {
             </span>
           </span>
         </Link>
+
+        <div className="hidden shrink-0 items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-xs font-black uppercase tracking-[0.12em] text-slate-700 shadow-sm shadow-slate-950/[0.03] 2xl:inline-flex">
+          <NorwayFlag />
+          Norsk produsent
+        </div>
 
         <NavigationMenu
           value={openMenu ?? ""}
@@ -626,7 +633,8 @@ export function Header() {
               className="mx-auto grid max-h-[calc(100dvh-4.5rem)] max-w-7xl content-start gap-3 overflow-y-auto px-4 py-4 sm:max-h-[calc(100dvh-5rem)] sm:px-5"
             >
               <div className="rounded-[12px] border border-cyan-100 bg-gradient-to-br from-cyan-50 to-white p-4">
-                <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                <p className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                  <NorwayFlag />
                   Fresvik Produkt
                 </p>
                 <p className="mt-2 max-w-md text-sm leading-6 text-slate-700">

@@ -25,7 +25,7 @@ function isExternalHref(href: string) {
 
 function CardLink({ href, label }: { href: string; label: string }) {
   const className =
-    "mt-5 inline-flex items-center gap-2 text-sm font-semibold text-cyan-800 transition hover:text-slate-950";
+    "mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition hover:text-slate-950";
 
   if (isExternalHref(href)) {
     const isWebUrl = /^https?:\/\//.test(href);

@@ -572,9 +572,9 @@ export function Header() {
 
         <span
           aria-label="Norsk produsent"
-          className="hidden shrink-0 items-center 2xl:inline-flex"
+          className="hidden h-11 w-12 shrink-0 items-center justify-center 2xl:inline-flex"
         >
-          <NorwayFlag className="h-5 w-[1.875rem] rounded-[2px] shadow-none ring-0" />
+          <NorwayFlag className="h-6 w-9 rounded-[2px] shadow-none ring-0" />
         </span>
 
         <NavigationMenu

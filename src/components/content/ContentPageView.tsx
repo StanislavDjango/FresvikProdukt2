@@ -290,14 +290,21 @@ function HomeSection({
     const badgeItems = section.items.filter((item) => item.imageUrl);
 
     return (
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b border-slate-900 bg-slate-950 text-white">
         <Container className="py-14 lg:py-16">
-          <SectionHeader
-            eyebrow="Dokumentert"
-            title="Godkjenningar og sertifikat"
-            intro="Sertifikat, godkjenningar og dokumentasjon frå Fresvik Produkt samla som raske dokumentlenker."
-          />
-          <div className="mt-8 rounded-[8px] border border-slate-200 bg-slate-50 p-3 shadow-sm shadow-slate-950/[0.03]">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-cyan-300">
+              Dokumentert
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-normal text-white sm:text-4xl">
+              Godkjenningar og sertifikat
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-300">
+              Sertifikat, godkjenningar og dokumentasjon frå Fresvik Produkt
+              samla som raske dokumentlenker.
+            </p>
+          </div>
+          <div className="mt-8 rounded-[8px] border border-white/10 bg-white/[0.04] p-3 shadow-2xl shadow-slate-950/20">
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
               {badgeItems.map((item, itemIndex) => (
                 <CertificationBadgeLink

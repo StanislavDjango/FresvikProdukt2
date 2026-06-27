@@ -23,6 +23,39 @@ function isExternalHref(href: string) {
   return /^(https?:\/\/|mailto:|tel:)/.test(href);
 }
 
+function isPdfHref(href: string) {
+  return /\.pdf($|\?)/i.test(href);
+}
+
+function certificationFallbackHref(title: string) {
+  const normalizedTitle = title.toLowerCase();
+
+  if (normalizedTitle.includes("sentral")) {
+    return "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf";
+  }
+
+  if (
+    normalizedTitle.includes("tg-2135") ||
+    normalizedTitle.includes("sintef")
+  ) {
+    return "/assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf";
+  }
+
+  if (normalizedTitle.includes("poly")) {
+    return "/assets/fresvik/documents/pur-produktbladfp.pdf";
+  }
+
+  if (normalizedTitle.includes("miljø")) {
+    return "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf";
+  }
+
+  if (normalizedTitle.includes("ce")) {
+    return "/assets/fresvik/documents/pur-ce-merke.pdf";
+  }
+
+  return undefined;
+}
+
 function CardLink({ href, label }: { href: string; label: string }) {
   const className =
     "mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition hover:text-slate-950";
@@ -44,6 +77,66 @@ function CardLink({ href, label }: { href: string; label: string }) {
   return (
     <Link href={href} className={className}>
       {label} <ArrowRight aria-hidden="true" size={17} />
+    </Link>
+  );
+}
+
+function CertificationBadgeLink({
+  item,
+  itemIndex,
+  scope,
+}: {
+  item: ContentPage["sections"][number]["items"][number];
+  itemIndex: number;
+  scope: string;
+}) {
+  const href = item.href || certificationFallbackHref(item.title) || "/dokumentasjon";
+  const isExternal = isExternalHref(href);
+  const isPdf = isPdfHref(href);
+  const className =
+    "group flex min-h-28 items-center justify-center rounded-[8px] border border-slate-200 bg-white p-5 shadow-sm shadow-slate-950/[0.03] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700";
+  const content = (
+    <>
+      {item.imageUrl ? (
+        <Image
+          src={item.imageUrl}
+          alt={item.imageAlt || item.title}
+          width={280}
+          height={180}
+          className="max-h-16 w-auto max-w-full object-contain transition duration-300 group-hover:scale-[1.04]"
+        />
+      ) : (
+        <span className="text-sm font-semibold text-slate-700">
+          {item.title}
+        </span>
+      )}
+      <span className="sr-only">
+        Opne {item.title}
+      </span>
+    </>
+  );
+
+  if (isExternal || isPdf) {
+    return (
+      <a
+        key={contentCardKey(item, itemIndex, scope)}
+        href={href}
+        className={className}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      key={contentCardKey(item, itemIndex, scope)}
+      href={href}
+      className={className}
+    >
+      {content}
     </Link>
   );
 }
@@ -185,7 +278,7 @@ function HomeSection({
 
   if (
     isNewsletter ||
-    isBadges ||
+    isFullTextArchive ||
     isImageArchive ||
     isDocumentArchive ||
     isLinkArchive
@@ -194,34 +287,31 @@ function HomeSection({
   }
 
   if (isBadges) {
+    const badgeItems = section.items.filter((item) => item.imageUrl);
+
     return (
-      <section className="border-b border-slate-200 bg-slate-50">
-        <Container className="py-12">
+      <section className="border-b border-slate-200 bg-white">
+        <Container className="py-14 lg:py-16">
           <SectionHeader
             eyebrow="Dokumentert"
-            title="Godkjenningar og merker"
-            intro={section.intro}
+            title="Godkjenningar og sertifikat"
+            intro="Sertifikat, godkjenningar og dokumentasjon frå Fresvik Produkt samla som raske dokumentlenker."
           />
-          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
-            {section.items.map((item, itemIndex) => (
-              <article
-                key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
-                className="flex min-h-32 flex-col items-center justify-center rounded-[8px] border border-slate-200 bg-white p-4 text-center shadow-sm shadow-slate-950/[0.03]"
-              >
-                {item.imageUrl ? (
-                  <Image
-                    src={item.imageUrl}
-                    alt={item.imageAlt || item.title}
-                    width={260}
-                    height={160}
-                    className="max-h-16 w-auto object-contain"
-                  />
-                ) : null}
-                <h3 className="mt-3 text-sm font-semibold text-slate-950">
-                  {item.title}
-                </h3>
-              </article>
-            ))}
+          <div className="mt-8 rounded-[8px] border border-slate-200 bg-slate-50 p-3 shadow-sm shadow-slate-950/[0.03]">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+              {badgeItems.map((item, itemIndex) => (
+                <CertificationBadgeLink
+                  key={contentCardKey(
+                    item,
+                    itemIndex,
+                    `${section.title}-${sectionIndex}`,
+                  )}
+                  item={item}
+                  itemIndex={itemIndex}
+                  scope={`${section.title}-${sectionIndex}`}
+                />
+              ))}
+            </div>
           </div>
         </Container>
       </section>
@@ -880,7 +970,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
         </section>
       ) : null}
 
-      <CTASection />
+      {isHomePage ? null : <CTASection />}
     </main>
   );
 }

@@ -2877,41 +2877,47 @@ export const contentPages: ContentPage[] = [
       {
         title: "Footer sertifikat og merker",
         intro:
-          "Bileta låg i footer-området på den gamle framsida og blir bevart som migrerte assets.",
+          "Sertifikat, godkjenningar og dokumentasjon frå Fresvik Produkt.",
         items: [
           {
             title: "Sentral godkjent",
             text: "Sertifikatmerke frå gammal framside.",
+            href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
             imageUrl: "/assets/fresvik/images/old-site/home-sentral-godkjent.png",
             imageAlt: "sentral+godkjent.png",
           },
           {
             title: "TG-2135",
             text: "Sertifikatmerke frå gammal framside.",
+            href: "/assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf",
             imageUrl: "/assets/fresvik/images/old-site/tg-2135-78cb0925dd.jpg",
             imageAlt: "TG-2135.jpg",
           },
           {
             title: "Poly",
             text: "Merke frå gammal framside.",
+            href: "/assets/fresvik/documents/pur-produktbladfp.pdf",
             imageUrl: "/assets/fresvik/images/old-site/home-poly.png",
             imageAlt: "Poly.png",
           },
           {
             title: "Startbank",
             text: "Merke frå gammal framside.",
+            href: "/dokumentasjon",
             imageUrl: "/assets/fresvik/images/old-site/home-startbank.png",
             imageAlt: "Startbarnk.png",
           },
           {
             title: "Miljøfyrtårn",
             text: "Merke frå gammal framside.",
+            href: "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
             imageUrl: "/assets/fresvik/images/migrated/miljfyrtarn-fresvik-produkt.jpg",
             imageAlt: "Miljøfyrtårn",
           },
           {
             title: "CE",
             text: "CE-logo frå gammal framside.",
+            href: "/assets/fresvik/documents/pur-ce-merke.pdf",
             imageUrl: "/assets/fresvik/images/old-site/ce-logo-png-transparent-e6364eebb9.png",
             imageAlt: "ce-logo-png-transparent.png",
           },

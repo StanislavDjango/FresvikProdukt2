@@ -183,6 +183,16 @@ function HomeSection({
     ? "Utvalde produkt og løysingar frå Fresvik Produkt, bevart frå den gamle framsida og rydda for rask oversikt."
     : section.intro;
 
+  if (
+    isNewsletter ||
+    isBadges ||
+    isImageArchive ||
+    isDocumentArchive ||
+    isLinkArchive
+  ) {
+    return null;
+  }
+
   if (isBadges) {
     return (
       <section className="border-b border-slate-200 bg-slate-50">

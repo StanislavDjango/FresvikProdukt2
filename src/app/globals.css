@@ -28,6 +28,20 @@ body {
   color: #ffffff;
 }
 
+.animate-fresvik-gradient-line {
+  animation: fresvik-gradient-line 3.2s linear infinite;
+}
+
+@keyframes fresvik-gradient-line {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 240% 50%;
+  }
+}
+
 a,
 button,
 input,

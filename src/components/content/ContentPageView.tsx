@@ -549,7 +549,7 @@ function HomeSection({
         <Container className="py-14 lg:py-16">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeader
-              eyebrow="Aktuelt"
+              eyebrow="Nyheiter"
               title={section.title}
               intro={section.intro}
             />
@@ -614,7 +614,7 @@ function HomeSection({
                 : isNews
                 ? "Aktuelt"
                 : isContact
-                ? "Kontakt"
+                ? "Ta kontakt"
                 : undefined
             }
             title={displayTitle}

@@ -28,17 +28,57 @@ body {
   color: #ffffff;
 }
 
-.animate-fresvik-gradient-line {
-  animation: fresvik-gradient-line 3.2s linear infinite;
+.fresvik-card-divider {
+  position: relative;
+  height: 4px;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #0e7490 38%,
+    #22d3ee 50%,
+    #0e7490 62%,
+    transparent 100%
+  );
 }
 
-@keyframes fresvik-gradient-line {
+.fresvik-card-divider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 34%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.95),
+    transparent
+  );
+  filter: blur(1px);
+  opacity: 0;
+  transform: translateX(-130%) skewX(-18deg);
+}
+
+.group:hover .fresvik-card-divider::after {
+  animation: fresvik-divider-shine 850ms ease-out;
+}
+
+@keyframes fresvik-divider-shine {
   0% {
-    background-position: 0% 50%;
+    opacity: 0;
+    transform: translateX(-130%) skewX(-18deg);
+  }
+
+  20% {
+    opacity: 0.85;
+  }
+
+  75% {
+    opacity: 0.85;
   }
 
   100% {
-    background-position: 240% 50%;
+    opacity: 0;
+    transform: translateX(330%) skewX(-18deg);
   }
 }
 

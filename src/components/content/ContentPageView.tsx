@@ -155,18 +155,6 @@ function labelFromHref(href: string) {
   }
 }
 
-function productImageDividerClass(index: number) {
-  const variants = [
-    "h-[3px] bg-cyan-700",
-    "h-[3px] bg-gradient-to-r from-slate-950 via-cyan-700 to-slate-200",
-    "h-[4px] bg-[linear-gradient(90deg,#0f172a,#0891b2,#f97316,#22c55e,#0f172a)] bg-[length:240%_100%] animate-fresvik-gradient-line",
-    "h-[5px] bg-[repeating-linear-gradient(90deg,#0891b2_0_18px,#e2e8f0_18px_28px)]",
-    "h-[4px] bg-gradient-to-r from-transparent via-cyan-700 to-transparent",
-  ];
-
-  return variants[index % variants.length];
-}
-
 function HomeSection({
   section,
   sectionIndex,
@@ -689,7 +677,7 @@ function HomeSection({
                     {isProducts && !isDecorativeCard ? (
                       <div
                         aria-hidden="true"
-                        className={productImageDividerClass(itemIndex)}
+                        className="fresvik-card-divider"
                       />
                     ) : null}
                   </>

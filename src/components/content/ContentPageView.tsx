@@ -863,7 +863,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
   const isHomePage = page.pageType === "home";
   const customHero =
     hero ??
-    page.slug === "/produkt/fresvik-pir-panel" ? <PirPanelHero /> : null;
+    (page.slug === "/produkt/fresvik-pir-panel" ? <PirPanelHero /> : null);
   const jsonLd =
     page.pageType === "product"
       ? {

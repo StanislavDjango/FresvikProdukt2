@@ -841,76 +841,18 @@ function HomeContent({ page }: { page: ContentPage }) {
   );
 }
 
-function PirPanelHero({ page }: { page: ContentPage }) {
-  const benefits = [
-    "Utvikla og produsert i Norge",
-    "SINTEF-godkjent",
-    "Enkel montasje med eksenterlås",
-  ];
-
+function PirPanelHero() {
   return (
     <section className="relative isolate overflow-hidden border-b border-slate-200 bg-white">
       <Image
         src="/assets/fresvik/images/generated/fresvik-pir-panel-hero-background.png"
-        alt=""
-        width={1916}
-        height={821}
+        alt="Fresvik PIR-Panel til kjøle- og fryserom"
+        width={1914}
+        height={822}
         preload
         sizes="100vw"
-        className="h-[34rem] w-full object-cover object-[58%_center] sm:h-auto sm:object-contain"
+        className="h-auto w-full"
       />
-
-      <div className="absolute left-[6%] top-[7%] w-24 sm:left-[8%] sm:top-[8%] sm:w-[13vw] sm:max-w-52">
-        <Image
-          src="/assets/fresvik/images/generated/fresvik-pir-panel-icon.png"
-          alt=""
-          width={1254}
-          height={1254}
-          sizes="(max-width: 768px) 6rem, 13vw"
-          className="h-auto w-full"
-        />
-      </div>
-
-      <div className="absolute left-[6%] top-[32%] max-w-[88vw] sm:left-[15%] sm:top-[34%] sm:max-w-[38%]">
-        <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800 sm:text-[0.8rem]">
-          {page.eyebrow}
-        </p>
-        <h1 className="mt-3 text-[clamp(2.1rem,3.25vw,4rem)] font-black leading-[1.04] tracking-normal text-slate-900">
-          Fresvik <span className="text-orange-600">PIR-Panel</span>
-          <span className="mt-1.5 block text-[clamp(1.45rem,2.05vw,2.35rem)] font-semibold leading-tight text-slate-800">
-            til kjøle- og fryserom
-          </span>
-        </h1>
-        <p className="mt-3 max-w-xl text-[clamp(0.95rem,1.05vw,1.15rem)] leading-7 text-slate-700">
-          Brannsikre panel med PIR-skum for moderne kjøle- og fryserom.
-        </p>
-        <div className="mt-4 flex max-w-xl flex-wrap gap-x-4 gap-y-2">
-          {benefits.map((benefit) => (
-            <p
-              key={benefit}
-              className="border-l-2 border-orange-500 pl-3 text-sm font-semibold text-slate-800"
-            >
-              {benefit}
-            </p>
-          ))}
-        </div>
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <Link
-            href="/kontakt"
-            className="inline-flex h-11 items-center justify-center gap-2 rounded-[6px] bg-orange-600 px-5 text-sm font-semibold text-white shadow-lg shadow-orange-950/10 transition hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
-          >
-            Send førespørsel <ArrowRight aria-hidden="true" size={17} />
-          </Link>
-          <a
-            href="/assets/fresvik/documents/pir-panel.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-11 items-center justify-center gap-2 rounded-[6px] border border-slate-300 bg-white/80 px-5 text-sm font-semibold text-slate-950 backdrop-blur-sm transition hover:border-cyan-800 hover:bg-white hover:text-cyan-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-800 focus-visible:ring-offset-2"
-          >
-            Produktblad <ExternalLink aria-hidden="true" size={17} />
-          </a>
-        </div>
-      </div>
     </section>
   );
 }
@@ -921,9 +863,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
   const isHomePage = page.pageType === "home";
   const customHero =
     hero ??
-    (page.slug === "/produkt/fresvik-pir-panel" ? (
-      <PirPanelHero page={page} />
-    ) : null);
+    page.slug === "/produkt/fresvik-pir-panel" ? <PirPanelHero /> : null;
   const jsonLd =
     page.pageType === "product"
       ? {

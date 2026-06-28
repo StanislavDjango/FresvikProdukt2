@@ -843,46 +843,20 @@ function HomeContent({ page }: { page: ContentPage }) {
 
 function PirPanelHero({ page }: { page: ContentPage }) {
   return (
-    <section className="relative isolate flex min-h-[28rem] overflow-hidden bg-slate-100 text-slate-950 sm:min-h-[30rem] lg:min-h-[32rem]">
-      <Image
-        src="/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg"
-        alt="Konstruksjon av Fresvik PIR-Panel"
-        fill
-        preload
-        sizes="100vw"
-        className="-z-20 object-cover object-[62%_center] sm:object-center"
-      />
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgba(255,255,255,0.94)_0%,rgba(255,255,255,0.74)_58%,rgba(255,255,255,0.16)_100%)] sm:bg-[linear-gradient(90deg,rgba(255,255,255,0.96)_0%,rgba(255,255,255,0.86)_40%,rgba(255,255,255,0.34)_66%,rgba(255,255,255,0.05)_100%)]" />
-      <div className="absolute inset-0 -z-10 opacity-35 [background-image:linear-gradient(90deg,rgba(8,126,164,0.14)_1px,transparent_1px),linear-gradient(rgba(8,126,164,0.12)_1px,transparent_1px)] [background-size:48px_48px]" />
-
-      <Container className="flex w-full items-end pb-8 pt-28 sm:items-center sm:py-12">
-        <div className="max-w-2xl rounded-[8px] border border-white/70 bg-white/72 p-5 shadow-2xl shadow-slate-950/10 backdrop-blur-sm sm:p-7 lg:max-w-[58%]">
-          <p className="mb-4 inline-flex items-center gap-2 rounded-[6px] border border-cyan-900/20 bg-cyan-50/80 px-3 py-2 text-sm font-semibold text-cyan-950">
-            <CheckCircle2 aria-hidden="true" size={17} />
-            {page.eyebrow}
-          </p>
-          <h1 className="text-3xl font-semibold leading-tight tracking-normal text-slate-950 sm:text-4xl lg:text-5xl">
-            {page.title}
-          </h1>
-          <p className="mt-4 max-w-xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-            {page.intro}
-          </p>
-          <div className="mt-6 grid grid-cols-1 gap-3 sm:flex">
-            <Link
-              href="/kontakt"
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] bg-cyan-800 px-5 text-sm font-semibold text-white shadow-lg shadow-cyan-950/10 transition hover:bg-cyan-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-800"
-            >
-              Kontakt oss <ArrowRight aria-hidden="true" size={18} />
-            </Link>
-            <a
-              href="/assets/fresvik/documents/pir-panel.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] border border-slate-400 bg-white/70 px-5 text-sm font-semibold text-slate-950 backdrop-blur-sm transition hover:border-cyan-800 hover:bg-white hover:text-cyan-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-800"
-            >
-              Produktblad <ExternalLink aria-hidden="true" size={18} />
-            </a>
-          </div>
+    <section className="border-b border-slate-200 bg-white">
+      <h1 className="sr-only">{page.title}</h1>
+      <p className="sr-only">{page.intro}</p>
+      <Container className="py-5 sm:py-6">
+        <div className="overflow-hidden rounded-[10px] border border-slate-200 bg-slate-100 shadow-xl shadow-slate-950/[0.08]">
+          <Image
+            src="/assets/fresvik/images/generated/fresvik-pir-panel-hero.png"
+            alt="Fresvik PIR-Panel: brannsikre panel med PIR-skum, utvikla og produsert i Norge, SINTEF-godkjent og enkel montasje med eksenterlås."
+            width={1916}
+            height={821}
+            preload
+            sizes="(max-width: 768px) 100vw, 1280px"
+            className="h-auto w-full"
+          />
         </div>
       </Container>
     </section>

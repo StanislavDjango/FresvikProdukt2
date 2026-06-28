@@ -846,19 +846,15 @@ function PirPanelHero({ page }: { page: ContentPage }) {
     <section className="border-b border-slate-200 bg-white">
       <h1 className="sr-only">{page.title}</h1>
       <p className="sr-only">{page.intro}</p>
-      <Container className="py-5 sm:py-6">
-        <div className="overflow-hidden rounded-[10px] border border-slate-200 bg-slate-100 shadow-xl shadow-slate-950/[0.08]">
-          <Image
-            src="/assets/fresvik/images/generated/fresvik-pir-panel-hero.png"
-            alt="Fresvik PIR-Panel: brannsikre panel med PIR-skum, utvikla og produsert i Norge, SINTEF-godkjent og enkel montasje med eksenterlås."
-            width={1916}
-            height={821}
-            preload
-            sizes="(max-width: 768px) 100vw, 1280px"
-            className="h-auto w-full"
-          />
-        </div>
-      </Container>
+      <Image
+        src="/assets/fresvik/images/generated/fresvik-pir-panel-hero.png"
+        alt="Fresvik PIR-Panel: brannsikre panel med PIR-skum, utvikla og produsert i Norge, SINTEF-godkjent og enkel montasje med eksenterlås."
+        width={1916}
+        height={821}
+        preload
+        sizes="100vw"
+        className="h-auto w-full"
+      />
     </section>
   );
 }

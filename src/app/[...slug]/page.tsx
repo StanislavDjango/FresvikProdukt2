@@ -72,6 +72,10 @@ export default async function DynamicContentPage({ params }: RouteProps) {
     return <ContentPageView page={sanityPage} />;
   }
 
+  if (page) {
+    return <ContentPageView page={page} />;
+  }
+
   if (isLegacyRoute(path)) {
     return <ContentPageView page={createLegacyContentPage(path)} />;
   }

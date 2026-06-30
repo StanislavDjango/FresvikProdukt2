@@ -1493,9 +1493,8 @@ const electricSkyveportIntroCards: ContentCard[] = [
 
 const pirSections = [
   {
-    title: "Full tekst frå gammal side",
-    intro:
-      "Kjeldetekst henta manuelt frå https://www.fresvik.no/produkt/fresvik-pir-panel 2026-06-10.",
+    title: "Fresvik PIR-Panel til kjøle- og fryserom",
+    intro: "Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås.",
     items: [
       {
         title: "Fresvik PIR-Panel til kjøle- og fryserom",
@@ -1503,50 +1502,6 @@ const pirSections = [
           "Fresvik Produkt har produsert kjøle- og fryserom sidan 1980, og er i dag den einaste norske produsenten av isolasjonspanel til kjøle- og fryserom.\n\nFresvik kjøle- og fryserom blir levert med veggar, golv, tak og dørar eller portar. Vår storleik, kombinert med ei bevisst satsing på fleksible produksjonsløysingar, set oss i stand til å levere kundetilpassa løysingar.\n\nFresvik PIR-Panel er eit sandwichelement med oppskumma PIR-skum (Polyisocyanurat-skum) som kjerne, innkapsla mellom to stålplater.",
         imageUrl: "/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg",
         imageAlt: "Fresvik PIR-Panel til kjøle- og fryserom",
-      },
-    ],
-  },
-  {
-    title: "Produktfordelar frå gammal side",
-    intro:
-      "Fordelane er henta frå gammal PIR-side utan omskriving.",
-    items: [
-      {
-        title: "Utvikla og produsert i Norge",
-        text: "Utvikla og produsert i Norge.",
-      },
-      {
-        title: "SINTEF-godkjent",
-        text: "SINTEF-godkjent.",
-      },
-      {
-        title: "Fleksibelt på byggeplass",
-        text: "Fleksibelt på byggeplass.",
-      },
-      {
-        title: "Enkel montasje med eksenterlås",
-        text: "Enkel montasje med eksenterlås.",
-      },
-      {
-        title: "Modulmål gir mindre svinn",
-        text: "Modulmål gir mindre svinn.",
-      },
-      {
-        title: "Kort design-, produksjons- og leveringstid",
-        text: "Kort design-, produksjons- og leveringstid.",
-      },
-    ],
-  },
-  {
-    title: "Den første norske produsenten av",
-    intro: "tilpassa PIR-Panel med enkel eksenterlås",
-    items: [
-      {
-        title: "PIR-Panel",
-        text:
-          "Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås.",
-        imageUrl: "/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png",
-        imageAlt: "PIR-Panel B-s1,d0",
       },
     ],
   },
@@ -2760,7 +2715,342 @@ const frysetunnelSections = [
   },
 ];
 
+const accessoryDetailSources = [
+  {
+    slug: "/andre-produkter/standard-handtak",
+    title: "Standard håndtak",
+    intro: "Standard håndtak for kjøle- og fryseromsdører.",
+    text:
+      "Dette er håndtaket som blir levert som standard håndtak på utsida av døra. Ein kan óg få dei montert på innsida.\n\nTa kontakt med vår salsavdeling for meir informasjon.",
+    images: [
+      {
+        title: "Standard håndtak",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/old-site/Håndtak+standard_web.jpg",
+        imageAlt: "Standard håndtak",
+      },
+    ],
+    previous: undefined,
+    next: "/andre-produkter/elebar-ventil",
+  },
+  {
+    slug: "/andre-produkter/elebar-ventil",
+    title: "Elebar ventil",
+    intro: "Trykkavlastingsventil for mindre fryserom.",
+    text:
+      "For å hindre vakuum i fryserom, er det nødvendig å installere ventilar. Elebar ventil passar til mindre fryserom.\n\nTa kontakt med vår salsavdeling for meir informasjon.",
+    images: [
+      {
+        title: "Inne",
+        text: "Elebar ventil innvendig.",
+        imageUrl: "/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg",
+        imageAlt: "Elebar ventil inne",
+      },
+      {
+        title: "Ute",
+        text: "Elebar ventil utvendig.",
+        imageUrl: "/assets/fresvik/images/old-site/Elebar+ventil_web.jpg",
+        imageAlt: "Elebar ventil ute",
+      },
+    ],
+    previous: "/andre-produkter/standard-handtak",
+    next: "/andre-produkter/maxielebar-ventil",
+  },
+  {
+    slug: "/andre-produkter/maxielebar-ventil",
+    title: "MaxiElebar ventil",
+    intro: "Trykkavlastingsventil for større fryserom.",
+    text:
+      "For å hindre vakuum i fryserom, er det nødvendig å installere ventilar. MaxiElebar ventil passar til større fryserom.\n\nTa kontakt med vår salsavdeling for meir informasjon.",
+    images: [
+      {
+        title: "Inne",
+        text: "MaxiElebar ventil innvendig.",
+        imageUrl: "/assets/fresvik/images/migrated/maxielebar-ventil-inne-web.jpg",
+        imageAlt: "MaxiElebar ventil inne",
+      },
+      {
+        title: "Ute",
+        text: "MaxiElebar ventil utvendig.",
+        imageUrl: "/assets/fresvik/images/old-site/MaxiElebar+ventli_web.jpg",
+        imageAlt: "MaxiElebar ventil ute",
+      },
+    ],
+    previous: "/andre-produkter/elebar-ventil",
+    next: "/andre-produkter/pego-innestengningsalarm",
+  },
+  {
+    slug: "/andre-produkter/pego-innestengningsalarm",
+    title: "PEGO Innestengnings-alarm",
+    intro: "Innestengningsalarm med nødalarmknapp for fryserom.",
+    text:
+      "PEGO innestengningsalarm med nødalarmknapp. Ved naudstilfelle inne i fryserom, kan det vere lurt å montere innestengningsalarm. Vi tar automatisk med alarm i tilbod ved førespurnad på fryserom, med mindre noko anna er spesifisert.\n\nTa kontakt med vår salsavdeling for meir informasjon.",
+    images: [
+      {
+        title: "PEGO innestengningsalarm",
+        text: "PEGO innestengningsalarm.",
+        imageUrl: "/assets/fresvik/images/migrated/pego-innestengningsalarm-web.jpg",
+        imageAlt: "PEGO innestengningsalarm",
+      },
+      {
+        title: "PEGO nødalarmknapp",
+        text: "PEGO nødalarmknapp.",
+        imageUrl: "/assets/fresvik/images/old-site/pego-nodalarm-knapp-web.jpg",
+        imageAlt: "PEGO nødalarmknapp",
+      },
+    ],
+    previous: "/andre-produkter/maxielebar-ventil",
+    next: "/andre-produkter/pvc-gardiner",
+  },
+  {
+    slug: "/andre-produkter/pvc-gardiner",
+    title: "PVC-gardiner",
+    intro: "PVC-gardiner som reduserer kuldetap ved mykje trafikk.",
+    text:
+      "Reduserer kuldetap i perioder der porten står open i lengre tid på grunn av hyppig trafikk. PVC-gardin er ein enkel og rimeleg løysning som også nyttast til inndeling av mindre rom og innkleding av maskiner og utstyr.\n\nKonstruksjon: Består av transparent PVC-strips med overlapp montert til eit oppheng i aluminium.\n\nLeverast i to versjonar: Stripsmål 300 x 3 mm og stripsmål 200 x 2 mm. Begge leverast i kuldebestandig utførelse.\n\nDimensjonar: PVC-gardin leverast i dimensjonar tilpassa dei fleste behov. Dimensjon 300 x 3 mm nyttast i opninger med truck-køyring. Dimensjon 200 x 2 mm nyttast i opninger med lettare trafikk.\n\nEkstraleveranse: Kan leverast på skinne for å skyve gardina til sides.",
+    images: [
+      {
+        title: "PVC-gardin",
+        text: "PVC-gardin.",
+        imageUrl: "/assets/fresvik/images/migrated/pvc-gardin-web.jpg",
+        imageAlt: "PVC-gardin",
+      },
+      {
+        title: "Oppheng PVC-gardin",
+        text: "Oppheng PVC-gardin.",
+        imageUrl: "/assets/fresvik/images/old-site/pvc-gardin-oppheng-web.jpg",
+        imageAlt: "Oppheng PVC-gardin",
+      },
+    ],
+    previous: "/andre-produkter/pego-innestengningsalarm",
+    next: "/andre-produkter/diktator-dortiltrekker",
+  },
+  {
+    slug: "/andre-produkter/diktator-dortiltrekker",
+    title: "Diktator dørtiltrekker",
+    intro: "Dørtiltrekker for dører som treng kontrollert lukking.",
+    text:
+      "Dørtiltrekker kan i nokre tilfelle vere nødvendig å montere. Desse kan óg ettermonterast.\n\nTa kontakt med vår salsavdeling for meir informasjon.",
+    images: [
+      {
+        title: "Diktator dørtiltrekker",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/migrated/diktator-web.jpg",
+        imageAlt: "Diktator dørtiltrekker",
+      },
+    ],
+    previous: "/andre-produkter/pvc-gardiner",
+    next: "/andre-produkter/kjlerampe",
+  },
+  {
+    slug: "/andre-produkter/kjlerampe",
+    title: "Køyrerampe",
+    intro: "Aluminium køyrerampe til kjøle- og fryserom.",
+    text:
+      "Fresvik Produkt produserer aluminium kjøyrerampe både til kjøl og fryserom.\n\nTa kontakt med vår salsavdeling for meir informasjon.",
+    images: [
+      {
+        title: "Køyrerampe 1",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/migrated/rampe1-copy.jpg",
+        imageAlt: "Køyrerampe",
+      },
+      {
+        title: "Køyrerampe 2",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/old-site/rampe2-copy.jpg",
+        imageAlt: "Køyrerampe",
+      },
+      {
+        title: "Køyrerampe 3",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/old-site/rampe3+copy.jpg",
+        imageAlt: "Køyrerampe",
+      },
+    ],
+    previous: "/andre-produkter/diktator-dortiltrekker",
+    next: "/andre-produkter/beslag",
+  },
+  {
+    slug: "/andre-produkter/beslag",
+    title: "Beslag",
+    intro: "Beslag til komplett leveranse og tett montasje.",
+    text:
+      "Fresvik Produkt baserer seg på komplett leveranse. Det betyr at saman med panela våre sender vi også nødvendige beslag til montasje.\n\nVi produserer beslag av same stål som panela blir laga av. Utforming av beslaga er viktig, fordi ein er avhengig av det blir tett og at det må sjå pent ut når montasjen er ferdig.\n\nStorleik på, og utforming av, beslaga må tilpassast til panela. Difor må endeleg utforming av beslaga av og til bli bestemt på byggjeplass saman med oppdragsgjevar.",
+    images: [
+      {
+        title: "Profil 1",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/migrated/profil1-copy.jpg",
+        imageAlt: "Beslag profil",
+      },
+      {
+        title: "Profil 1b",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/old-site/profil1b-copy.jpg",
+        imageAlt: "Beslag profil",
+      },
+      {
+        title: "Profil 2",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/old-site/profil2-copy.jpg",
+        imageAlt: "Beslag profil",
+      },
+      {
+        title: "Profil 3",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/old-site/profil3+copy.jpg",
+        imageAlt: "Beslag profil",
+      },
+      {
+        title: "Profil 3b",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/old-site/profil3b-copy.jpg",
+        imageAlt: "Beslag profil",
+      },
+      {
+        title: "Profil 4",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/old-site/profil4-copy.jpg",
+        imageAlt: "Beslag profil",
+      },
+    ],
+    previous: "/andre-produkter/kjlerampe",
+    next: "/andre-produkter/2014/7/9/standard-drer",
+  },
+  {
+    slug: "/andre-produkter/2014/7/9/standard-drer",
+    title: "Standard dører",
+    intro: "Standard kjøle- og fryseromsdør for mindre og mellomstore rom.",
+    text:
+      "Standard kjøle og fryseromsdør. Berekna for mindre og mellomstore rom. Blir også nytta til inspeksjonsluker og nødutgangsluker i større anlegg.\n\nKonstruksjon: Dørbladet har overflate av galvanisert stålplate med polyesterlakk, type Foodsafe. Isolasjon av 80 mm, høgtrykkskumma polyurethane.\n\nUtanpåliggande karm i 2 mm, pulverlakkert galvanisert stål. Fryseromsdørar leverast med varmekabel i karmen, kabelen er sjølvregulerande. 230V, 16W/m. Karmen leverast som standard med terskelprofil. Tetting ved magnetpakning montert i pvc-profil på dørbladet. Lett utskiftbar.\n\nStandardleveranse: Dørblad med pakningar, montert på karm som beskreve over. Varmekabel i fryseromsdørar. Hevehengsler med forspenning.\n\nEkstraleveranse: Terskelfri løysing med slepelist i botnen av dørbladet. Liggande terskel for nedstøyping på frysedør med slepelist. Lås med innvendig nødåpner. Dørblad og karm i rustfri utførelse. Dørtiltrekkar, eventuelt med dørpumpe. Mål utanom standard. Oppkøyringsrampe i aluminium til fryseromsdørar.\n\nKort leveringstid: Vi har lager av standard dører. Dører med bredde-lysmål på 700, 800, 900 og 1000 mm kan som regel sendast same dag eller seinast innen 48 timar. Kontakt oss for leveringstid og pris.",
+    images: [
+      {
+        title: "Standard dører",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/old-site/Standard+Dør+Fresvik+Produkt.jpg",
+        imageAlt: "Standard dører",
+      },
+    ],
+    previous: "/andre-produkter/beslag",
+    next: "/andre-produkter/2014/7/9/skipsdrer",
+  },
+  {
+    slug: "/andre-produkter/2014/7/9/skipsdrer",
+    title: "Skipsdører",
+    intro: "Slagdør spesielt berekna for kjøle- og fryserom ombord i skip.",
+    text:
+      "Slagdør spesielt berekna for kjøle- og fryserom ombord i skip.\n\nKonstruksjon: Dørblad med overflate i 25 µm polyesterlakkert stålplate eller rustfritt stål. Isolering: 80 mm skumma polyurethan, ca. 40 kg/m3.\n\nBeslag: Kraftige hengsler og lås med innvendig nødåpner.\n\nKarm: Utanpåliggande i 2 mm profilert rustfritt stål. Fryseromsdørar leverast med innlagt varmekabel, 16 W pr. meter. 230 V.\n\nTetting: Kraftig, utskiftbar pakning.\n\nMål: Produserast etter mål frå kunde.\n\nMontering: Kan monterast på stålskott, trevegger eller isolasjonspanel.",
+    images: [
+      {
+        title: "Skipsdører",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/migrated/skipsdr-fresvik-produkt.jpg",
+        imageAlt: "Skipsdører",
+      },
+    ],
+    previous: "/andre-produkter/2014/7/9/standard-drer",
+    next: "/andre-produkter/2014/7/9/industri-slagdor",
+  },
+  {
+    slug: "/andre-produkter/2014/7/9/industri-slagdor",
+    title: "Industri slagdør",
+    intro: "Større slagdør for kjøle- eller fryserom berekna for industribruk.",
+    text:
+      "Større slagdør for kjøle eller fryserom berekna for industribruk. Eksempelvis slakteri, meieri, engroslager.\n\nKonstruksjon: Dørblad med overflate av 25 µm polyesterlakkert galvanisert stålplate type FOODSAFE.\n\nIsolering: Frys: 100 eller 125 mm skumma polyurethane, ca. 40 kg/m3. Kjøl: 100 mm skumma polyurethane, ca. 40 kg/m3.\n\nBeslag: Løftehengsler. Inn- og utvendig åpnar med smekksperre.\n\nKarm: Utanpåliggande av sjøvannsbestandig, eloksert aluminium. Frysedørar leverast med terskel og innlagt, sjølvregulerande 230 V varmekabel. Effekt varmekabel 51 W/meter. Skifting av varmekabel kan skje utan å demontere døra.\n\nTetting: Dobbel gummipakning i EPDM-kvalitet. Dobbel slepegummi mot golv.\n\nMål: Produserast etter mål frå kunde.\n\nEkstra: Lås med innvendig nødopner. Dørblad i rustfritt stål.",
+    images: [
+      {
+        title: "Industri slagdør",
+        text: "Bilde frå gammal side.",
+        imageUrl: "/assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg",
+        imageAlt: "Industri slagdør",
+      },
+    ],
+    previous: "/andre-produkter/2014/7/9/skipsdrer",
+    next: undefined,
+  },
+] satisfies Array<{
+  slug: string;
+  title: string;
+  intro: string;
+  text: string;
+  images: ContentCard[];
+  previous?: string;
+  next?: string;
+}>;
+
+const accessoryDetailPages: ContentPage[] = accessoryDetailSources.map(
+  (item) => {
+    const relatedItems: ContentCard[] = [];
+
+    if (item.previous) {
+      relatedItems.push({
+        title: "Førre",
+        text:
+          accessoryDetailSources.find((source) => source.slug === item.previous)
+            ?.title || "Førre side",
+        href: item.previous,
+      });
+    }
+
+    relatedItems.push(
+      {
+        title: "Alle tilleggsutstyr",
+        text: "Tilbake til oversikta for tilleggsutstyr og reservedelar.",
+        href: "/tilleggsutstyr",
+      },
+    );
+
+    if (item.next) {
+      relatedItems.push({
+        title: "Neste",
+        text:
+          accessoryDetailSources.find((source) => source.slug === item.next)
+            ?.title || "Neste side",
+        href: item.next,
+      });
+    }
+
+    return {
+      slug: item.slug,
+      title: item.title,
+      eyebrow: "Tilleggsutstyr",
+      intro: item.intro,
+      description: item.intro,
+      pageType: "product",
+      priority: "medium",
+      sourceUrl: `https://www.fresvik.no${item.slug}`,
+      cards: item.images.slice(0, 3),
+      sections: [
+        {
+          title: "Produktinformasjon",
+          intro: "Tekst henta frå gammal side utan omskriving.",
+          items: [
+            {
+              title: item.title,
+              text: item.text,
+              imageUrl: item.images[0]?.imageUrl,
+              imageAlt: item.images[0]?.imageAlt || item.title,
+            },
+          ],
+        },
+        {
+          title: "Bilde frå gammal side",
+          intro: "Bilete bevart frå den gamle produktsida.",
+          items: item.images,
+        },
+        {
+          title: "Vidare i tilleggsutstyr",
+          intro: "Navigasjon mellom gamle tilleggsutstyr-sider.",
+          items: relatedItems,
+        },
+      ],
+    };
+  },
+);
+
 export const contentPages: ContentPage[] = [
+  ...accessoryDetailPages,
   {
     slug: "/",
     title: "Leiande fagfolk på kjøle- og fryserom i Norge",

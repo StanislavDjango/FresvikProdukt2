@@ -609,9 +609,9 @@ export function Header() {
           </a>
           <span
             aria-label="Norsk produsent"
-            className="inline-flex h-[3.25rem] w-14 shrink-0 items-center justify-center"
+            className="inline-flex h-[3.25rem] w-20 shrink-0 items-center justify-center"
           >
-            <NorwayFlag className="h-7 w-11 rounded-[2px] shadow-none ring-0" />
+            <NorwayFlag className="h-[2.8125rem] w-[4.5rem] rounded-[2px] shadow-none ring-0" />
           </span>
         </div>
 

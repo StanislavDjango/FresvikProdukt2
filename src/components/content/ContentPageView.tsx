@@ -1,8 +1,9 @@
 import {
   ArrowRight,
-  CheckCircle2,
   ChevronDown,
+  Download,
   ExternalLink,
+  FileText,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -184,47 +185,517 @@ function contentCardKey(
     .join("-");
 }
 
-function ContentSections({ sections }: { sections: ContentPage["sections"] }) {
-  return sections.map((section, sectionIndex) => (
-    <section key={`${section.title}-${sectionIndex}`} className="py-14">
-      <Container>
-        <SectionHeader title={section.title} intro={section.intro} />
-        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+function ProductIntroSection({
+  section,
+  highlight,
+}: {
+  section: ContentPage["sections"][number];
+  highlight?: string;
+}) {
+  const item = section.items[0];
+  const paragraphs = item?.text.split(/\n{2,}/).filter(Boolean) || [];
+
+  if (!item) return null;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <article className="grid overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-xl shadow-slate-950/[0.06] lg:grid-cols-[0.92fr_1.08fr]">
+          {item.imageUrl ? (
+            <div className="relative min-h-72 bg-slate-100 lg:min-h-full">
+              <Image
+                src={item.imageUrl}
+                alt={item.imageAlt || item.title}
+                fill
+                sizes="(min-width: 1024px) 42vw, 100vw"
+                className="object-cover object-center"
+              />
+            </div>
+          ) : null}
+          <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+              Produktinformasjon
+            </p>
+            <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+              {item.title}
+            </h2>
+            <div className="mt-5 space-y-4 text-base leading-8 text-slate-700">
+              {paragraphs.map((paragraph, paragraphIndex) => (
+                <p key={`${item.title}-paragraph-${paragraphIndex}`}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            {highlight ? (
+              <div className="mt-7 rounded-[8px] border border-cyan-100 bg-cyan-50 px-5 py-4 text-base font-semibold leading-7 text-slate-950">
+                {highlight}
+              </div>
+            ) : null}
+          </div>
+        </article>
+      </Container>
+    </section>
+  );
+}
+
+function ProductDetailTextSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const isTechnicalData = section.title === "Tekniske data";
+
+  if (isTechnicalData) {
+    const [primaryItem, ...detailItems] = section.items;
+    const primaryValues =
+      primaryItem?.text.split(/\n{2,}/).filter(Boolean) || [];
+
+    return (
+      <section className="border-b border-slate-200 bg-slate-50">
+        <Container className="py-14 lg:py-16">
+          <div className="grid gap-8 lg:grid-cols-[0.34fr_0.66fr]">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                Spesifikasjonar
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+                {section.title}
+              </h2>
+              <p className="mt-4 text-base leading-7 text-slate-600">
+                Viktige tekniske data for Fresvik PIR-Panel, samla for rask
+                vurdering av brannklasse, dimensjonar, vekt, U-verdi og
+                materialval.
+              </p>
+            </div>
+
+            <div className="grid gap-4">
+              {primaryItem ? (
+                <article className="overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04]">
+                  <div className="border-b border-slate-200 bg-slate-950 px-5 py-4 text-white sm:px-6">
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
+                      Kjerne
+                    </p>
+                    <h3 className="mt-2 text-xl font-semibold">
+                      {primaryItem.title}
+                    </h3>
+                  </div>
+                  <dl className="grid gap-px bg-slate-200 sm:grid-cols-2">
+                    {primaryValues.map((value, valueIndex) => {
+                      const [label, ...rest] = value.split(":");
+                      const hasLabel = rest.length > 0;
+
+                      return (
+                        <div
+                          key={`${primaryItem.title}-${valueIndex}`}
+                          className="bg-white px-5 py-4"
+                        >
+                          <dt className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
+                            {hasLabel ? label.trim() : `Punkt ${valueIndex + 1}`}
+                          </dt>
+                          <dd className="mt-1 text-base font-semibold leading-7 text-slate-950">
+                            {hasLabel ? rest.join(":").trim() : value}
+                          </dd>
+                        </div>
+                      );
+                    })}
+                  </dl>
+                </article>
+              ) : null}
+
+              <div className="grid gap-4 md:grid-cols-3">
+                {detailItems.map((item, itemIndex) => (
+                  <article
+                    key={contentCardKey(item, itemIndex, section.title)}
+                    className="group overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]"
+                  >
+                    {item.imageUrl ? (
+                      <div className="relative h-40 overflow-hidden bg-slate-100">
+                        <Image
+                          src={item.imageUrl}
+                          alt={item.imageAlt || item.title}
+                          fill
+                          sizes="(min-width: 768px) 20vw, 100vw"
+                          className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                        />
+                      </div>
+                    ) : null}
+                    <div className="p-5">
+                      <h3 className="text-lg font-semibold text-slate-950">
+                        {item.title}
+                      </h3>
+                      <div className="mt-3 space-y-3 text-sm leading-7 text-slate-600">
+                        {item.text
+                          .split(/\n{2,}/)
+                          .filter(Boolean)
+                          .map((paragraph, paragraphIndex) => (
+                            <p key={`${item.title}-${paragraphIndex}`}>
+                              {paragraph}
+                            </p>
+                          ))}
+                      </div>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+    );
+  }
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="grid gap-8 lg:grid-cols-[0.38fr_0.62fr]">
+          <SectionHeader title={section.title} intro={section.intro} />
+          <div className="divide-y divide-slate-200 border-y border-slate-200">
+            {section.items.map((item, itemIndex) => {
+              const paragraphs = item.text.split(/\n{2,}/).filter(Boolean);
+
+              return (
+                <article
+                  key={contentCardKey(item, itemIndex, section.title)}
+                  className="grid gap-6 py-7 md:grid-cols-[1fr_auto]"
+                >
+                  <div>
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                      {String(itemIndex + 1).padStart(2, "0")}
+                    </p>
+                    <h3 className="mt-2 text-2xl font-semibold tracking-normal text-slate-950">
+                      {item.title}
+                    </h3>
+                    <div className="mt-4 space-y-3 text-base leading-8 text-slate-700">
+                      {paragraphs.map((paragraph, paragraphIndex) => (
+                        <p key={`${item.title}-text-${paragraphIndex}`}>
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                  {item.imageUrl ? (
+                    <div className="relative min-h-52 overflow-hidden rounded-[8px] border border-slate-200 bg-slate-100 md:w-80">
+                      <Image
+                        src={item.imageUrl}
+                        alt={item.imageAlt || item.title}
+                        fill
+                        sizes="(min-width: 768px) 20rem, 100vw"
+                        className="object-cover object-center"
+                      />
+                    </div>
+                  ) : null}
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function ProductDocumentSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="grid gap-8 lg:grid-cols-[0.34fr_0.66fr]">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+              Nedlasting
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+              {section.title}
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600">
+              Produktblad, monteringsinformasjon og dokumentasjon samla som
+              raske dokumentlenker.
+            </p>
+          </div>
+
+          <div className="grid gap-3">
+            {section.items.map((item, itemIndex) => {
+              const href = item.href || item.text;
+              const isExternal = isExternalHref(href);
+              const isPdf = isPdfHref(href);
+              const className =
+                "group grid gap-4 rounded-[8px] border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-xl hover:shadow-slate-950/[0.08] sm:grid-cols-[auto_1fr_auto] sm:items-center";
+              const content = (
+                <>
+                  <span className="grid size-12 place-items-center rounded-[8px] bg-white text-cyan-800 shadow-sm shadow-slate-950/[0.04] ring-1 ring-slate-200">
+                    {isPdf || isExternal ? (
+                      <Download aria-hidden="true" size={21} />
+                    ) : (
+                      <FileText aria-hidden="true" size={21} />
+                    )}
+                  </span>
+                  <span>
+                    <span className="block text-base font-semibold text-slate-950">
+                      {item.title}
+                    </span>
+                    <span className="mt-1 block text-sm leading-6 text-slate-600">
+                      {item.text}
+                    </span>
+                  </span>
+                  <span className="inline-flex h-10 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition group-hover:border-cyan-800 group-hover:text-cyan-800">
+                    Opne
+                    {isExternal || isPdf ? (
+                      <ExternalLink aria-hidden="true" size={16} />
+                    ) : (
+                      <ArrowRight aria-hidden="true" size={16} />
+                    )}
+                  </span>
+                </>
+              );
+
+              if (isExternal || isPdf) {
+                return (
+                  <a
+                    key={contentCardKey(item, itemIndex, section.title)}
+                    href={href}
+                    className={className}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {content}
+                  </a>
+                );
+              }
+
+              return (
+                <Link
+                  key={contentCardKey(item, itemIndex, section.title)}
+                  href={href}
+                  className={className}
+                >
+                  {content}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function ProductRelatedSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-14 lg:py-16">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow="Relaterte løysingar"
+            title="Tilleggsutstyr"
+            intro={section.intro}
+          />
+          <Link
+            href="/tilleggsutstyr"
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+          >
+            Alt tilleggsutstyr
+            <ArrowRight aria-hidden="true" size={17} />
+          </Link>
+        </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {section.items.map((item, itemIndex) => (
-            <Card
-              key={contentCardKey(
-                item,
-                itemIndex,
-                `${section.title}-${sectionIndex}`,
-              )}
+            <Link
+              key={contentCardKey(item, itemIndex, section.title)}
+              href={item.href || "/tilleggsutstyr"}
+              className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
             >
               {item.imageUrl ? (
-                <Image
-                  src={item.imageUrl}
-                  alt={item.imageAlt || item.title}
-                  width={720}
-                  height={420}
-                  className="-mx-5 -mt-5 mb-5 h-52 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover object-center"
-                />
+                <div className="relative h-44 overflow-hidden bg-slate-100">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.imageAlt || item.title}
+                    fill
+                    sizes="(min-width: 1280px) 18rem, (min-width: 768px) 45vw, 100vw"
+                    className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
               ) : null}
-              {item.meta ? (
-                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
-                  {item.meta}
+              <div className="flex grow flex-col p-5">
+                <h3 className="text-lg font-semibold text-slate-950">
+                  {item.title}
+                </h3>
+                <p className="mt-3 grow text-sm leading-6 text-slate-600">
+                  {item.text}
                 </p>
-              ) : null}
-              <h3 className="text-lg font-semibold text-slate-950">
-                {item.title}
-              </h3>
-              <p className="mt-3 text-sm leading-6 text-slate-600">
-                {item.text}
-              </p>
-              {item.href ? <CardLink href={item.href} label="Opne" /> : null}
-            </Card>
+                <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                </span>
+              </div>
+            </Link>
           ))}
         </div>
       </Container>
     </section>
-  ));
+  );
+}
+
+function ContentSections({
+  sections,
+  pageSlug,
+}: {
+  sections: ContentPage["sections"];
+  pageSlug?: string;
+}) {
+  const isPirPage = pageSlug === "/produkt/fresvik-pir-panel";
+  const isAccessoryPage = pageSlug?.startsWith("/andre-produkter/") ?? false;
+  const pirProducerSection = isPirPage
+    ? sections.find((section) =>
+        section.title.startsWith("Den første norske produsenten"),
+      )
+    : undefined;
+  const pirProducerHighlight =
+    pirProducerSection?.items[0]?.text ||
+    (pirProducerSection
+      ? `${pirProducerSection.title} ${pirProducerSection.intro || ""}.`
+      : "Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås.");
+  const visibleSections = isPirPage
+    ? sections.filter(
+        (section) =>
+          section.title !== "Produktfordelar frå gammal side" &&
+          !section.title.startsWith("Den første norske produsenten"),
+      )
+    : sections;
+
+  return visibleSections.map((section, sectionIndex) => {
+    const isPirIntro =
+      isPirPage &&
+      (section.title === "Full tekst frå gammal side" ||
+        section.title === "Fresvik PIR-Panel til kjøle- og fryserom");
+
+    if (isPirIntro) {
+      return (
+        <ProductIntroSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+          highlight={pirProducerHighlight}
+        />
+      );
+    }
+
+    if (isPirPage && section.title === "Dokument") {
+      return (
+        <ProductDocumentSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isPirPage && section.title.startsWith("Tilleggsutstyr")) {
+      return (
+        <ProductRelatedSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isPirPage && section.title === "Kontaktinformasjon frå gammal side") {
+      return null;
+    }
+
+    if (isPirPage && section.title === "For samarbeidspartnarar") {
+      const item = section.items[0];
+
+      return (
+        <section
+          key={`${section.title}-${sectionIndex}`}
+          className="border-b border-slate-200 bg-white"
+        >
+          <Container className="py-12">
+            <div className="grid gap-6 rounded-[8px] border border-cyan-100 bg-cyan-50 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                  Samarbeid
+                </p>
+                <h2 className="mt-3 text-2xl font-semibold tracking-normal text-slate-950 sm:text-3xl">
+                  For samarbeidspartnarar
+                </h2>
+                <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
+                  {section.intro}
+                </p>
+              </div>
+              {item?.href ? (
+                <Link
+                  href={item.href}
+                  className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+                >
+                  Kontakt oss
+                  <ArrowRight aria-hidden="true" size={17} />
+                </Link>
+              ) : null}
+            </div>
+          </Container>
+        </section>
+      );
+    }
+
+    if (
+      (isPirPage || isAccessoryPage) &&
+      section.items.every((item) => !item.href)
+    ) {
+      return (
+        <ProductDetailTextSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    return (
+      <section key={`${section.title}-${sectionIndex}`} className="py-14">
+        <Container>
+          <SectionHeader title={section.title} intro={section.intro} />
+          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {section.items.map((item, itemIndex) => (
+              <Card
+                key={contentCardKey(
+                  item,
+                  itemIndex,
+                  `${section.title}-${sectionIndex}`,
+                )}
+              >
+                {item.imageUrl ? (
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.imageAlt || item.title}
+                    width={720}
+                    height={420}
+                    className="-mx-5 -mt-5 mb-5 h-52 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover object-center"
+                  />
+                ) : null}
+                {item.meta ? (
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
+                    {item.meta}
+                  </p>
+                ) : null}
+                <h3 className="text-lg font-semibold text-slate-950">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  {item.text}
+                </p>
+                {item.href ? <CardLink href={item.href} label="Opne" /> : null}
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </section>
+    );
+  });
 }
 
 function labelFromHref(href: string) {
@@ -841,29 +1312,15 @@ function HomeContent({ page }: { page: ContentPage }) {
   );
 }
 
-function PirPanelHero() {
-  return (
-    <section className="relative isolate overflow-hidden border-b border-slate-200 bg-white">
-      <Image
-        src="/assets/fresvik/images/generated/fresvik-pir-panel-hero-background.png"
-        alt="Fresvik PIR-Panel til kjøle- og fryserom"
-        width={1914}
-        height={822}
-        preload
-        sizes="100vw"
-        className="h-auto w-full"
-      />
-    </section>
-  );
-}
-
 export function ContentPageView({ page, hero }: ContentPageViewProps) {
   const showMigrationDetails = page.showMigrationDetails === true;
   const isFaqPage = page.slug === "/kundeservice/faq";
   const isHomePage = page.pageType === "home";
-  const customHero =
-    hero ??
-    (page.slug === "/produkt/fresvik-pir-panel" ? <PirPanelHero /> : null);
+  const showTopCards =
+    !isFaqPage &&
+    page.cards.length > 0 &&
+    page.slug !== "/produkt/fresvik-pir-panel";
+  const customHero = hero ?? null;
   const jsonLd =
     page.pageType === "product"
       ? {
@@ -888,38 +1345,40 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
       ) : null}
 
       {customHero ?? (
-        <section className="relative overflow-hidden bg-slate-950 text-white">
-          <div className="absolute inset-0 opacity-35 [background-image:linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:48px_48px]" />
-          <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-cyan-950/70 to-transparent" />
-          <Container className="relative py-16 lg:py-24">
-            <div className="max-w-4xl">
-              <p className="mb-5 inline-flex items-center gap-2 rounded-[6px] border border-white/15 bg-white/10 px-3 py-2 text-sm font-medium text-cyan-50">
-                <CheckCircle2 aria-hidden="true" size={17} />
-                {page.eyebrow}
-              </p>
-              <h1 className="text-4xl font-semibold leading-tight tracking-normal text-white sm:text-5xl lg:text-6xl">
-                {page.title}
-              </h1>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-                {page.intro}
-              </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Link
-                  href="/kontakt"
-                  className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] bg-white px-5 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50"
-                >
-                  Kontakt oss <ArrowRight aria-hidden="true" size={18} />
-                </Link>
-                {showMigrationDetails && page.sourceUrl ? (
-                  <a
-                    href={page.sourceUrl}
-                    className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] border border-white/25 px-5 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
-                    target="_blank"
-                    rel="noreferrer"
+        <section className="border-b border-slate-200 bg-slate-50">
+          <Container className="py-8 lg:py-10">
+            <div className="overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04]">
+              <div className="h-1 bg-gradient-to-r from-cyan-700 via-sky-400 to-orange-500" />
+              <div className="grid gap-6 p-5 sm:p-6 lg:grid-cols-[1fr_auto] lg:items-end lg:p-8">
+                <div className="max-w-4xl">
+                  <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                    {page.eyebrow}
+                  </p>
+                  <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-normal text-slate-950 sm:text-4xl lg:text-5xl">
+                    {page.title}
+                  </h1>
+                  <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg">
+                    {page.intro}
+                  </p>
+                </div>
+                <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
+                  <Link
+                    href="/kontakt"
+                    className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
                   >
-                    Gammal kjelde <ExternalLink aria-hidden="true" size={18} />
-                  </a>
-                ) : null}
+                    Kontakt oss <ArrowRight aria-hidden="true" size={17} />
+                  </Link>
+                  {showMigrationDetails && page.sourceUrl ? (
+                    <a
+                      href={page.sourceUrl}
+                      className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Gammal kjelde <ExternalLink aria-hidden="true" size={17} />
+                    </a>
+                  ) : null}
+                </div>
               </div>
             </div>
           </Container>
@@ -928,7 +1387,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
 
       {isHomePage ? (
         <HomeContent page={page} />
-      ) : !isFaqPage && page.cards.length > 0 ? (
+      ) : showTopCards ? (
         <section className="border-b border-slate-200 bg-white">
           <Container className="py-12">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -968,10 +1427,10 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
       {isHomePage ? null : isFaqPage ? (
         <>
           <FAQAccordion page={page} />
-          <ContentSections sections={page.sections.slice(1)} />
+          <ContentSections sections={page.sections.slice(1)} pageSlug={page.slug} />
         </>
       ) : (
-        <ContentSections sections={page.sections} />
+        <ContentSections sections={page.sections} pageSlug={page.slug} />
       )}
 
       {showMigrationDetails && page.todo && page.todo.length > 0 ? (

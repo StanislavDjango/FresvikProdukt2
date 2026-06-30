@@ -1,5 +1,110 @@
 [
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/brand/fresvik-factory-hero-original.png",
+    "filePath": "public/assets/fresvik/brand/fresvik-factory-hero-original.png",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "915526506a2872e5b6177e150c6d093e64094a8647ed4c260fdd54077ab0b6fb",
+    "fileSize": 2688190,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/brand/fresvik-factory-hero.webp",
+    "filePath": "public/assets/fresvik/brand/fresvik-factory-hero.webp",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "c1f3d50cabadd294ffba5344c62f302e1d335a8eb2c5e0d40f2bda324b385407",
+    "fileSize": 370550,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/brand/fresvik-fp-logo-source.png",
+    "filePath": "public/assets/fresvik/brand/fresvik-fp-logo-source.png",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "d5df7728dfb62e5f6b5b0541599b2813f8144bad950601d4e3e38fbf0413cdb8",
+    "fileSize": 799081,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/brand/fresvik-fp-logo-transparent.png",
+    "filePath": "public/assets/fresvik/brand/fresvik-fp-logo-transparent.png",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "ebbbd620972b650e58ed9375e8892901f270c55ac354d4bd4f1812841993cfae",
+    "fileSize": 470505,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/brand/fresvik-logo-on-white.png",
+    "filePath": "public/assets/fresvik/brand/fresvik-logo-on-white.png",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "ed34bd8b81a50f87ba68700fa933a71cf68a9d9b26ea81a838546de426aa3a41",
+    "fileSize": 258555,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/brand/fresvik-logo-original.png",
+    "filePath": "public/assets/fresvik/brand/fresvik-logo-original.png",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "ce3d98b0685b4222b9caa4725e372f2fad703bacb00f8feec5a7f48f6c447d33",
+    "fileSize": 840184,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/brand/fresvik-logo-transparent.png",
+    "filePath": "public/assets/fresvik/brand/fresvik-logo-transparent.png",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "bc5a410fbc2f31b2c67547a34d6317024600e575f1c30a83dd69d23434703116",
+    "fileSize": 440854,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Unused local migration cache file; keep until asset review is complete."
+  },
+  {
     "originalUrl": "https://www.fresvik.no/s/Endre-Skyveretning.pdf",
     "localPath": "/assets/fresvik/documents/endre-skyveretning.pdf",
     "filePath": "public/assets/fresvik/documents/endre-skyveretning.pdf",
@@ -231,11 +336,13 @@
     "filePath": "public/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
     "assetType": "document",
     "usedBy": [
+      "/",
       "/dokumentasjon",
       "/s/Miljdokument-Fresvik-Produkt.pdf",
       "documentFile-assets-fresvik-documents-miljodokument-fresvik-produkt-pdf"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf"
     ],
@@ -617,11 +724,13 @@
     "filePath": "public/assets/fresvik/documents/pur-produktbladfp.pdf",
     "assetType": "document",
     "usedBy": [
+      "/",
       "/produkt/fresvik-pur-panel",
       "/s/PUR-ProduktbladFP.pdf",
       "documentFile-assets-fresvik-documents-pur-produktbladfp-pdf"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/",
       "https://www.fresvik.no/produkt/fresvik-panel",
       "https://www.fresvik.no/s/PUR-ProduktbladFP.pdf"
     ],
@@ -802,11 +911,13 @@
     "filePath": "public/assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf",
     "assetType": "document",
     "usedBy": [
+      "/",
       "/dokumentasjon",
       "/s/2135g-5.pdf",
       "documentFile-assets-fresvik-documents-sintef-teknisk-godkjenning-2135g-pdf"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/",
       "https://www.fresvik.no/dokumentasjon",
       "https://www.fresvik.no/s/2135g-5.pdf"
     ],
@@ -900,6 +1011,36 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "file asset",
     "notes": "Uploaded to Sanity as file-b08a03d177b936f760de90b946cecad9089cf10a-pdf."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/generated/fresvik-pir-panel-hero-background.png",
+    "filePath": "public/assets/fresvik/images/generated/fresvik-pir-panel-hero-background.png",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "58d5fd8151c915974ca51d5cfd774347fcaafeb96d694ade79f51db194969ce4",
+    "fileSize": 1722491,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Unused local migration cache file; keep until asset review is complete."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/generated/fresvik-pir-panel-hero.png",
+    "filePath": "public/assets/fresvik/images/generated/fresvik-pir-panel-hero.png",
+    "assetType": "image",
+    "usedBy": [],
+    "sourcePages": [],
+    "sha256": "6848e0fa9ea2d76efe2038599fbc5b4a5e8658c4782eddfd4720a55315c89993",
+    "fileSize": 1652199,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "unused",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Unused local migration cache file; keep until asset review is complete."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1747635709094-QZ1DMKF9F7N73IKHN7JA/1000024746.jpg",
@@ -1759,7 +1900,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-cbfca83dcbd9f732b2e11cf5de77e836807d12aa-1920x1280-jpg."
+    "notes": "Uploaded to Sanity as image-cbfca83dcbd9f732b2e11cf5de77e836807d12aa-1920x1280-jpg. Duplicate file content of /assets/fresvik/images/old-site/Håndtak+standard_web.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc41dc96-71bb-4347-b2f8-bf0658a7d73e/Ha%CC%8Avard+Berdal.jpg",
@@ -2664,13 +2805,11 @@
     "filePath": "public/assets/fresvik/images/migrated/samaneh-shakeri.jpg",
     "assetType": "image",
     "usedBy": [
-      "/",
       "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
       "/tilsette",
       "employee-samaneh-shakeri"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/",
       "https://www.fresvik.no/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
       "https://www.fresvik.no/tilsette"
     ],
@@ -3492,9 +3631,11 @@
     "filePath": "public/assets/fresvik/images/old-site/Elebar+ventil_web.jpg",
     "assetType": "image",
     "usedBy": [
+      "/andre-produkter/elebar-ventil",
       "/produkt"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/elebar-ventil",
       "https://www.fresvik.no/produkt"
     ],
     "sha256": "208732276e59ce2a1eaddbd10084986652ae2c3823b226624da35e9d16bf4fc2",
@@ -3894,9 +4035,11 @@
     "filePath": "public/assets/fresvik/images/old-site/Håndtak+standard_web.jpg",
     "assetType": "image",
     "usedBy": [
+      "/andre-produkter/standard-handtak",
       "/produkt"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/standard-handtak",
       "https://www.fresvik.no/produkt"
     ],
     "sha256": "6a05b6ae1a8d056676272694e647b52d8e9fc9c440ac4bf25e84a9e557c16d85",
@@ -4196,9 +4339,11 @@
     "filePath": "public/assets/fresvik/images/old-site/MaxiElebar+ventli_web.jpg",
     "assetType": "image",
     "usedBy": [
+      "/andre-produkter/maxielebar-ventil",
       "/produkt"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/maxielebar-ventil",
       "https://www.fresvik.no/produkt"
     ],
     "sha256": "95395aff36ab60b2c766994ac2e90ba1f2eea65f84f972bb8d3f8dce1c76b82d",
@@ -4501,9 +4646,11 @@
     "filePath": "public/assets/fresvik/images/old-site/Samaneh+Shakeri+bannerbilde.jpg",
     "assetType": "image",
     "usedBy": [
+      "/",
       "/aktuelt"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/",
       "https://www.fresvik.no/aktuelt"
     ],
     "sha256": "b3b6bb78c1ed37e75d7f39901b53aa256aad011071c18687272075c3b0382507",
@@ -4726,9 +4873,11 @@
     "filePath": "public/assets/fresvik/images/old-site/Standard+Dør+Fresvik+Produkt.jpg",
     "assetType": "image",
     "usedBy": [
+      "/andre-produkter/2014/7/9/standard-drer",
       "/produkt"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/2014/7/9/standard-drer",
       "https://www.fresvik.no/produkt"
     ],
     "sha256": "2113401f63181d9f2762be9bc02a30227b8c7f16c9224b436b9ca3e07c7434f7",
@@ -7015,7 +7164,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/handtak-standard-web.jpg."
+    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/handtak-standard-web.jpg. Duplicate file content of /assets/fresvik/images/old-site/Håndtak+standard_web.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1c0b8495-5976-420a-b7a9-eb2f88e17b74/image-asset+%281%29.jpg",
@@ -8357,6 +8506,25 @@
     "notes": "Unused local migration cache file; keep until asset review is complete."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/pego-nodalarm-knapp-web.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/pego-nodalarm-knapp-web.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/andre-produkter/pego-innestengningsalarm"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/pego-innestengningsalarm"
+    ],
+    "sha256": "da86561265676c5b080f57f76f995e75730ceb80f5cfbb1c3642a524a453b084",
+    "fileSize": 36780,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
     "localPath": "/assets/fresvik/images/old-site/poly.webp",
     "filePath": "public/assets/fresvik/images/old-site/poly.webp",
@@ -8526,14 +8694,54 @@
     "notes": "Recovered originalUrl from migration evidence images.json. Uploaded to Sanity as image-f62f91630e507c4b7afb59a0b45259a2db98d9ba-2500x1625-jpg."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/profil1b-copy.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/profil1b-copy.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/andre-produkter/beslag"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/beslag"
+    ],
+    "sha256": "51fe6ef876969f7446a38d2fe676d312b0ade222c18a0cf7a29798bce7482082",
+    "fileSize": 63152,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/profil2-copy.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/profil2-copy.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/andre-produkter/beslag"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/beslag"
+    ],
+    "sha256": "b96464750b50ce791d6fe6840544bf0853e47a4b5c6e241658191997f42166fc",
+    "fileSize": 44186,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228957634-HCADFJMCX83H0GB9N5Y1/profil3+copy.jpg",
     "localPath": "/assets/fresvik/images/old-site/profil3+copy.jpg",
     "filePath": "public/assets/fresvik/images/old-site/profil3+copy.jpg",
     "assetType": "image",
     "usedBy": [
+      "/andre-produkter/beslag",
       "/produkt"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/beslag",
       "https://www.fresvik.no/produkt"
     ],
     "sha256": "166a9dcdaa6bf36c579fa17784334b5f74ebcbb36738e0ac54c24fe513584836",
@@ -8597,6 +8805,44 @@
     "notes": "Duplicate file content of /assets/fresvik/images/old-site/profil3-copy-fasadepanel.webp. Uploaded to Sanity as image-23afbc5b669c9fd3a4fabb3d2d583b68238a8cc7-1772x1017-webp."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/profil3b-copy.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/profil3b-copy.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/andre-produkter/beslag"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/beslag"
+    ],
+    "sha256": "c68b0a5928178ab4a105d3f5abd6c997f0300e6cff9d80a41c36b01b842fdb30",
+    "fileSize": 38636,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/profil4-copy.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/profil4-copy.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/andre-produkter/beslag"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/beslag"
+    ],
+    "sha256": "1c969ab48ab3044e74b9f8c1da96367e1dc35063d5a6546197b5949666b45859",
+    "fileSize": 43482,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/274b289f-83c3-4317-9b12-479b670803da/video-file.png",
     "localPath": "/assets/fresvik/images/old-site/pur-video-file.png",
     "filePath": "public/assets/fresvik/images/old-site/pur-video-file.png",
@@ -8620,6 +8866,25 @@
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
     "notes": "Recovered originalUrl from live old /startside sitemap. Uploaded to Sanity as image-c6253f49f2f7be390cf109a74e15ffcf8ebece33-512x512-webp."
+  },
+  {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/pvc-gardin-oppheng-web.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/pvc-gardin-oppheng-web.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/andre-produkter/pvc-gardiner"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/pvc-gardiner"
+    ],
+    "sha256": "491756ec2acd76e80ced9c5e0069241e4a034a756baa1e22574a9714bdb63b46",
+    "fileSize": 121098,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228926344-8MJOI792Q623SDUIEYUI/PVC-gardin_web.jpg",
@@ -8674,14 +8939,35 @@
     "notes": "Uploaded to Sanity as image-3cb32719df53f0afcf7975732ecd1c93a03a697a-720x408-webp."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/rampe2-copy.jpg",
+    "filePath": "public/assets/fresvik/images/old-site/rampe2-copy.jpg",
+    "assetType": "image",
+    "usedBy": [
+      "/andre-produkter/kjlerampe"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/kjlerampe"
+    ],
+    "sha256": "2670a1e7b8150dbf0d05362a09c83cbf749661587d3eb1decfd0398afe3e2170",
+    "fileSize": 241498,
+    "sanityAssetId": null,
+    "sanityReference": null,
+    "status": "ready-for-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228939468-4AEMY1N761USRYQC9BPW/rampe3+copy.jpg",
     "localPath": "/assets/fresvik/images/old-site/rampe3+copy.jpg",
     "filePath": "public/assets/fresvik/images/old-site/rampe3+copy.jpg",
     "assetType": "image",
     "usedBy": [
+      "/andre-produkter/kjlerampe",
       "/produkt"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/kjlerampe",
       "https://www.fresvik.no/produkt"
     ],
     "sha256": "5ecc96d314c7bc5ce9a27e886f6ac780d03b593d130db50453934cfd4d75b30c",

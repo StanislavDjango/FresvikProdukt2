@@ -46,7 +46,7 @@ export const redirectRules: RedirectRule[] = [
     permanent: true,
   },
   {
-    source: "/andre-produkter/:slug*",
+    source: "/andre-produkter/category/:slug*",
     destination: "/tilleggsutstyr",
     permanent: true,
   },

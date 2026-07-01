@@ -1621,9 +1621,11 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
   const showMigrationDetails = page.showMigrationDetails === true;
   const isFaqPage = page.slug === "/kundeservice/faq";
   const isHomePage = page.pageType === "home";
+  const isAccessoryPage = page.slug.startsWith("/andre-produkter/");
   const suppressTopCards =
     page.slug === "/produkt/fresvik-pir-panel" ||
-    page.slug === "/produkt/kjole-fryseportar";
+    page.slug === "/produkt/kjole-fryseportar" ||
+    isAccessoryPage;
   const showTopCards =
     !isFaqPage &&
     page.cards.length > 0 &&

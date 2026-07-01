@@ -240,8 +240,12 @@ function ProductIntroSection({
 
 function ProductDetailTextSection({
   section,
+  showIndex = true,
+  showIntro = true,
 }: {
   section: ContentPage["sections"][number];
+  showIndex?: boolean;
+  showIntro?: boolean;
 }) {
   const isTechnicalData = section.title === "Tekniske data";
 
@@ -348,7 +352,10 @@ function ProductDetailTextSection({
     <section className="border-b border-slate-200 bg-white">
       <Container className="py-14 lg:py-16">
         <div className="grid gap-8 lg:grid-cols-[0.38fr_0.62fr]">
-          <SectionHeader title={section.title} intro={section.intro} />
+          <SectionHeader
+            title={section.title}
+            intro={showIntro ? section.intro : undefined}
+          />
           <div className="divide-y divide-slate-200 border-y border-slate-200">
             {section.items.map((item, itemIndex) => {
               const paragraphs = item.text.split(/\n{2,}/).filter(Boolean);
@@ -359,9 +366,11 @@ function ProductDetailTextSection({
                   className="grid gap-6 py-7 md:grid-cols-[1fr_auto]"
                 >
                   <div>
-                    <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-                      {String(itemIndex + 1).padStart(2, "0")}
-                    </p>
+                    {showIndex ? (
+                      <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                        {String(itemIndex + 1).padStart(2, "0")}
+                      </p>
+                    ) : null}
                     <h3 className="mt-2 text-2xl font-semibold tracking-normal text-slate-950">
                       {item.title}
                     </h3>
@@ -388,6 +397,47 @@ function ProductDetailTextSection({
               );
             })}
           </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function AccessoryImageGallerySection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="mb-8">
+          <SectionHeader title="Bilete" />
+        </div>
+        <div className="grid gap-4 lg:grid-cols-2">
+          {section.items.map((item, itemIndex) => (
+            <article
+              key={contentCardKey(item, itemIndex, section.title)}
+              className="group overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]"
+            >
+              {item.imageUrl ? (
+                <div className="relative aspect-[16/9] overflow-hidden bg-slate-100">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.imageAlt || item.title}
+                    fill
+                    sizes="(min-width: 1024px) 42rem, 100vw"
+                    className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+              ) : null}
+              <div className="p-5">
+                <h3 className="text-lg font-semibold text-slate-950">
+                  {item.title}
+                </h3>
+              </div>
+            </article>
+          ))}
         </div>
       </Container>
     </section>
@@ -891,10 +941,21 @@ function ContentSections({
       (isDesignedProductPage || isAccessoryPage) &&
       section.items.every((item) => !item.href)
     ) {
+      if (isAccessoryPage && section.title === "Bilde frå gammal side") {
+        return (
+          <AccessoryImageGallerySection
+            key={`${section.title}-${sectionIndex}`}
+            section={section}
+          />
+        );
+      }
+
       return (
         <ProductDetailTextSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          showIndex={!isAccessoryPage}
+          showIntro={!isAccessoryPage}
         />
       );
     }
@@ -1560,10 +1621,13 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
   const showMigrationDetails = page.showMigrationDetails === true;
   const isFaqPage = page.slug === "/kundeservice/faq";
   const isHomePage = page.pageType === "home";
+  const suppressTopCards =
+    page.slug === "/produkt/fresvik-pir-panel" ||
+    page.slug === "/produkt/kjole-fryseportar";
   const showTopCards =
     !isFaqPage &&
     page.cards.length > 0 &&
-    page.slug !== "/produkt/fresvik-pir-panel";
+    !suppressTopCards;
   const customHero = hero ?? null;
   const jsonLd =
     page.pageType === "product"

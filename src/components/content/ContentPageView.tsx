@@ -446,8 +446,10 @@ function AccessoryImageGallerySection({
 
 function ProductBenefitsSection({
   section,
+  showIndex = true,
 }: {
   section: ContentPage["sections"][number];
+  showIndex?: boolean;
 }) {
   return (
     <section className="border-b border-slate-200 bg-slate-50">
@@ -470,9 +472,11 @@ function ProductBenefitsSection({
                 key={contentCardKey(item, itemIndex, section.title)}
                 className="rounded-[8px] border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-lg hover:shadow-slate-950/[0.06]"
               >
-                <p className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
-                  {String(itemIndex + 1).padStart(2, "0")}
-                </p>
+                {showIndex ? (
+                  <p className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
+                    {String(itemIndex + 1).padStart(2, "0")}
+                  </p>
+                ) : null}
                 <h3 className="mt-2 text-base font-semibold leading-snug text-slate-950">
                   {item.title}
                 </h3>
@@ -718,6 +722,72 @@ function ProductRelatedSection({
   );
 }
 
+function ProductReferenceSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow="Referansar"
+            title="Utvalde fasadeprosjekt"
+            intro={section.intro}
+          />
+          <Link
+            href="/referansar"
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+          >
+            Alle referansar
+            <ArrowRight aria-hidden="true" size={17} />
+          </Link>
+        </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-2">
+          {section.items.map((item, itemIndex) => (
+            <Link
+              key={contentCardKey(item, itemIndex, section.title)}
+              href={item.href || "/referansar"}
+              className="group grid min-h-full overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 lg:grid-cols-[1.08fr_0.92fr]"
+            >
+              <div className="flex flex-col justify-center p-5 sm:p-6">
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                  Fasadepanel
+                </p>
+                <h3 className="mt-3 text-2xl font-semibold tracking-normal text-slate-950">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-sm leading-6 text-slate-600">
+                  {item.text === "Featured."
+                    ? "Referanse frå gammal fasadepanel-side."
+                    : item.text}
+                </p>
+                <span className="mt-6 inline-flex self-start items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                </span>
+              </div>
+              {item.imageUrl ? (
+                <div className="relative min-h-64 overflow-hidden bg-slate-100">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.imageAlt || item.title}
+                    fill
+                    sizes="(min-width: 1024px) 28rem, 100vw"
+                    className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                  />
+                  <div className="absolute inset-y-0 left-0 hidden w-1/4 bg-gradient-to-r from-white to-transparent lg:block" />
+                </div>
+              ) : null}
+            </Link>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ProductCertificateLinksSection({
   section,
 }: {
@@ -801,7 +871,8 @@ function ContentSections({
 }) {
   const isPirPage = pageSlug === "/produkt/fresvik-pir-panel";
   const isPortPage = pageSlug === "/produkt/kjole-fryseportar";
-  const isDesignedProductPage = isPirPage || isPortPage;
+  const isFacadePage = pageSlug === "/produkt/fasadepanel";
+  const isDesignedProductPage = isPirPage || isPortPage || isFacadePage;
   const isAccessoryPage = pageSlug?.startsWith("/andre-produkter/") ?? false;
   const pirProducerSection = isPirPage
     ? sections.find((section) =>
@@ -818,6 +889,10 @@ function ContentSections({
         (section) =>
           !(isPirPage && section.title === "Produktfordelar frå gammal side") &&
           !(isPirPage && section.title.startsWith("Den første norske produsenten")) &&
+          !(
+            isFacadePage &&
+            section.title === "Kontaktinformasjon frå gammal side"
+          ) &&
           section.title !== "Nyheitsbrev og footerlenker frå gammal side",
       )
     : sections;
@@ -831,8 +906,10 @@ function ContentSections({
       isPortPage &&
       (section.title === "Full tekst frå gammal side" ||
         section.title === "Skyveport til kjøle- og fryserom");
+    const isFacadeIntro =
+      isFacadePage && section.title === "Full tekst frå gammal side";
 
-    if (isPirIntro || isPortIntro) {
+    if (isPirIntro || isPortIntro || isFacadeIntro) {
       return (
         <ProductIntroSection
           key={`${section.title}-${sectionIndex}`}
@@ -842,9 +919,40 @@ function ContentSections({
       );
     }
 
-    if (isPortPage && section.title === "Produktfordelar frå gammal side") {
+    if (
+      isFacadePage &&
+      section.title === "Isolasjonspanelpanel gir"
+    ) {
       return (
         <ProductBenefitsSection
+          key={`${section.title}-${sectionIndex}`}
+          section={{
+            ...section,
+            title: "Isolasjonspanel gir",
+            intro:
+              "Tre praktiske grunnar til å bruke isolasjonspanel i lager- og industribygg.",
+          }}
+          showIndex={false}
+        />
+      );
+    }
+
+    if (
+      (isPortPage || isFacadePage) &&
+      section.title === "Produktfordelar frå gammal side"
+    ) {
+      return (
+        <ProductBenefitsSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+          showIndex={!isFacadePage}
+        />
+      );
+    }
+
+    if (isFacadePage && section.title === "Referansar") {
+      return (
+        <ProductReferenceSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
         />
@@ -954,7 +1062,7 @@ function ContentSections({
         <ProductDetailTextSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
-          showIndex={!isAccessoryPage}
+          showIndex={!(isAccessoryPage || isFacadePage)}
           showIntro={!isAccessoryPage}
         />
       );

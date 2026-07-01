@@ -238,6 +238,52 @@ function ProductIntroSection({
   );
 }
 
+function FacadeCoreSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const item = section.items[0];
+  const paragraphs = item?.text.split(/\n{2,}/).filter(Boolean) || [];
+
+  if (!item) return null;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <article className="grid overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-xl shadow-slate-950/[0.06] lg:grid-cols-[0.95fr_1.05fr]">
+          {item.imageUrl ? (
+            <div className="relative min-h-72 bg-slate-100 lg:min-h-full">
+              <Image
+                src={item.imageUrl}
+                alt={item.imageAlt || section.title}
+                fill
+                sizes="(min-width: 1024px) 42vw, 100vw"
+                className="object-cover object-center"
+              />
+            </div>
+          ) : null}
+          <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+              Kjerne og materiale
+            </p>
+            <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+              {section.title}
+            </h2>
+            <div className="mt-5 space-y-4 text-base leading-8 text-slate-700">
+              {paragraphs.map((paragraph, paragraphIndex) => (
+                <p key={`${section.title}-paragraph-${paragraphIndex}`}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
+        </article>
+      </Container>
+    </section>
+  );
+}
+
 function ProductDetailTextSection({
   section,
   showIndex = true,
@@ -397,6 +443,86 @@ function ProductDetailTextSection({
               );
             })}
           </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function ReferenceIntroSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const item = section.items[0];
+  const paragraphs = item?.text.split(/\n{2,}/).filter(Boolean) || [];
+
+  if (!item) return null;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <article className="grid overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-xl shadow-slate-950/[0.06] lg:grid-cols-[0.95fr_1.05fr]">
+          {item.imageUrl ? (
+            <div className="relative min-h-72 bg-slate-100 lg:min-h-full">
+              <Image
+                src={item.imageUrl}
+                alt={item.imageAlt || item.title}
+                fill
+                sizes="(min-width: 1024px) 42vw, 100vw"
+                className="object-cover object-center"
+              />
+            </div>
+          ) : null}
+          <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+              Prosjektinformasjon
+            </p>
+            <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+              {item.title}
+            </h2>
+            <div className="mt-5 space-y-4 text-base leading-8 text-slate-700">
+              {paragraphs.map((paragraph, paragraphIndex) => (
+                <p key={`${item.title}-reference-${paragraphIndex}`}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
+        </article>
+      </Container>
+    </section>
+  );
+}
+
+function ReferenceImageGallerySection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-14 lg:py-16">
+        <SectionHeader eyebrow="Referanse" title="Bilete frå prosjektet" />
+        <div className="mt-8 grid gap-4 md:grid-cols-2">
+          {section.items.map((item, itemIndex) => (
+            <article
+              key={contentCardKey(item, itemIndex, section.title)}
+              className="group overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]"
+            >
+              {item.imageUrl ? (
+                <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.imageAlt || item.title}
+                    fill
+                    sizes="(min-width: 768px) 40vw, 100vw"
+                    className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+              ) : null}
+            </article>
+          ))}
         </div>
       </Container>
     </section>
@@ -874,6 +1000,8 @@ function ContentSections({
   const isFacadePage = pageSlug === "/produkt/fasadepanel";
   const isDesignedProductPage = isPirPage || isPortPage || isFacadePage;
   const isAccessoryPage = pageSlug?.startsWith("/andre-produkter/") ?? false;
+  const isReferenceDetailPage =
+    (pageSlug?.startsWith("/referansar/") ?? false) && pageSlug !== "/referansar";
   const pirProducerSection = isPirPage
     ? sections.find((section) =>
         section.title.startsWith("Den første norske produsenten"),
@@ -884,18 +1012,37 @@ function ContentSections({
     (pirProducerSection
       ? `${pirProducerSection.title} ${pirProducerSection.intro || ""}.`
       : "Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås.");
-  const visibleSections = isDesignedProductPage
-    ? sections.filter(
-        (section) =>
-          !(isPirPage && section.title === "Produktfordelar frå gammal side") &&
-          !(isPirPage && section.title.startsWith("Den første norske produsenten")) &&
-          !(
-            isFacadePage &&
-            section.title === "Kontaktinformasjon frå gammal side"
-          ) &&
-          section.title !== "Nyheitsbrev og footerlenker frå gammal side",
-      )
-    : sections;
+  const visibleSections =
+    isDesignedProductPage || isReferenceDetailPage
+      ? sections.filter(
+          (section) =>
+            !(
+              isPirPage &&
+              section.title === "Produktfordelar frå gammal side"
+            ) &&
+            !(
+              isPirPage &&
+              section.title.startsWith("Den første norske produsenten")
+            ) &&
+            !(
+              isFacadePage &&
+              section.title === "Kontaktinformasjon frå gammal side"
+            ) &&
+            !(
+              isReferenceDetailPage &&
+              section.title === "Referanse frå gammal side"
+            ) &&
+            !(
+              isReferenceDetailPage &&
+              section.title === "Dokumentlenker frå gammal side"
+            ) &&
+            !(
+              isReferenceDetailPage &&
+              section.title === "Lenker frå gammal side"
+            ) &&
+            section.title !== "Nyheitsbrev og footerlenker frå gammal side",
+        )
+      : sections;
 
   return visibleSections.map((section, sectionIndex) => {
     const isPirIntro =
@@ -915,6 +1062,28 @@ function ContentSections({
           key={`${section.title}-${sectionIndex}`}
           section={section}
           highlight={isPirIntro ? pirProducerHighlight : undefined}
+        />
+      );
+    }
+
+    if (
+      isReferenceDetailPage &&
+      (section.title === "Full tekst frå gammal side" ||
+        section.title === "Prosjekttekst")
+    ) {
+      return (
+        <ReferenceIntroSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isFacadePage && section.title === "Fasadepanel med polyuretan-kjerne") {
+      return (
+        <FacadeCoreSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
         />
       );
     }
@@ -1046,12 +1215,21 @@ function ContentSections({
     }
 
     if (
-      (isDesignedProductPage || isAccessoryPage) &&
+      (isDesignedProductPage || isAccessoryPage || isReferenceDetailPage) &&
       section.items.every((item) => !item.href)
     ) {
       if (isAccessoryPage && section.title === "Bilde frå gammal side") {
         return (
           <AccessoryImageGallerySection
+            key={`${section.title}-${sectionIndex}`}
+            section={section}
+          />
+        );
+      }
+
+      if (isReferenceDetailPage && section.title === "Bilde frå gammal side") {
+        return (
+          <ReferenceImageGallerySection
             key={`${section.title}-${sectionIndex}`}
             section={section}
           />
@@ -1730,9 +1908,13 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
   const isFaqPage = page.slug === "/kundeservice/faq";
   const isHomePage = page.pageType === "home";
   const isAccessoryPage = page.slug.startsWith("/andre-produkter/");
+  const isReferenceDetailPage =
+    page.slug.startsWith("/referansar/") && page.slug !== "/referansar";
   const suppressTopCards =
     page.slug === "/produkt/fresvik-pir-panel" ||
     page.slug === "/produkt/kjole-fryseportar" ||
+    page.slug === "/produkt/fasadepanel" ||
+    isReferenceDetailPage ||
     isAccessoryPage;
   const showTopCards =
     !isFaqPage &&

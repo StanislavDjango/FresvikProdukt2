@@ -312,8 +312,22 @@ function bodySection(doc: SanityContentDoc) {
 
   if (paragraphs.length === 0) return null;
 
+  if (doc._type === "referenceProject") {
+    return {
+      title: "Prosjekttekst",
+      items: [
+        {
+          title: doc.title || "Referanse",
+          text: paragraphs.join("\n\n"),
+          imageUrl: doc.imageUrl,
+          imageAlt: doc.title || "Referanse",
+        },
+      ],
+    };
+  }
+
   return {
-    title: doc._type === "referenceProject" ? "Prosjekttekst" : "Innhald frå Sanity",
+    title: "Innhald frå Sanity",
     items: paragraphs.map((text, index) => ({
       title: paragraphs.length === 1 ? doc.title || "Innhald" : `Avsnitt ${index + 1}`,
       text,

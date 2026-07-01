@@ -394,6 +394,125 @@ function ProductDetailTextSection({
   );
 }
 
+function ProductBenefitsSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-12 lg:py-14">
+        <div className="grid gap-8 rounded-[8px] border border-slate-200 bg-white p-6 shadow-sm shadow-slate-950/[0.04] sm:p-8 lg:grid-cols-[0.35fr_0.65fr]">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+              Fordelar
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950">
+              {section.title.replace(" frå gammal side", "")}
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600">
+              {section.intro}
+            </p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {section.items.map((item, itemIndex) => (
+              <article
+                key={contentCardKey(item, itemIndex, section.title)}
+                className="rounded-[8px] border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-lg hover:shadow-slate-950/[0.06]"
+              >
+                <p className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
+                  {String(itemIndex + 1).padStart(2, "0")}
+                </p>
+                <h3 className="mt-2 text-base font-semibold leading-snug text-slate-950">
+                  {item.title}
+                </h3>
+              </article>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function ProductImageGallerySection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const [featuredItem, ...secondaryItems] = section.items;
+
+  if (!featuredItem) return null;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow="Detaljar"
+            title="Port, motor og lås"
+            intro={section.intro}
+          />
+        </div>
+        <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
+          <article className="group overflow-hidden rounded-[8px] border border-slate-200 bg-slate-950 text-white shadow-xl shadow-slate-950/[0.08]">
+            {featuredItem.imageUrl ? (
+              <div className="relative min-h-[22rem] overflow-hidden bg-slate-900">
+                <Image
+                  src={featuredItem.imageUrl}
+                  alt={featuredItem.imageAlt || featuredItem.title}
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                />
+                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-950/90 to-transparent" />
+              </div>
+            ) : null}
+            <div className="p-5 sm:p-6">
+              <h3 className="text-2xl font-semibold tracking-normal">
+                {featuredItem.title}
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-slate-300">
+                {featuredItem.text}
+              </p>
+            </div>
+          </article>
+
+          <div className="grid gap-4">
+            {secondaryItems.map((item, itemIndex) => (
+              <article
+                key={contentCardKey(item, itemIndex, `${section.title}-secondary`)}
+                className="group grid overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] sm:grid-cols-[0.92fr_1.08fr]"
+              >
+                <div className="flex min-h-40 flex-col justify-center p-5">
+                  <h3 className="text-xl font-semibold text-slate-950">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">
+                    {item.text}
+                  </p>
+                </div>
+                {item.imageUrl ? (
+                  <div className="relative min-h-44 overflow-hidden bg-slate-100">
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.imageAlt || item.title}
+                      fill
+                      sizes="(min-width: 1024px) 22vw, 100vw"
+                      className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                    />
+                    <div className="absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white to-transparent" />
+                  </div>
+                ) : null}
+              </article>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ProductDocumentSection({
   section,
 }: {
@@ -487,20 +606,27 @@ function ProductRelatedSection({
 }: {
   section: ContentPage["sections"][number];
 }) {
+  const title = section.title.includes("Tilleggsprodukt")
+    ? "Tilleggsprodukt"
+    : "Tilleggsutstyr";
+  const ctaLabel = section.title.includes("Tilleggsprodukt")
+    ? "Alt tilleggsutstyr"
+    : "Alt tilleggsutstyr";
+
   return (
     <section className="border-b border-slate-200 bg-slate-50">
       <Container className="py-14 lg:py-16">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeader
             eyebrow="Relaterte løysingar"
-            title="Tilleggsutstyr"
+            title={title}
             intro={section.intro}
           />
           <Link
             href="/tilleggsutstyr"
             className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
           >
-            Alt tilleggsutstyr
+            {ctaLabel}
             <ArrowRight aria-hidden="true" size={17} />
           </Link>
         </div>
@@ -624,6 +750,8 @@ function ContentSections({
   pageSlug?: string;
 }) {
   const isPirPage = pageSlug === "/produkt/fresvik-pir-panel";
+  const isPortPage = pageSlug === "/produkt/kjole-fryseportar";
+  const isDesignedProductPage = isPirPage || isPortPage;
   const isAccessoryPage = pageSlug?.startsWith("/andre-produkter/") ?? false;
   const pirProducerSection = isPirPage
     ? sections.find((section) =>
@@ -635,11 +763,12 @@ function ContentSections({
     (pirProducerSection
       ? `${pirProducerSection.title} ${pirProducerSection.intro || ""}.`
       : "Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås.");
-  const visibleSections = isPirPage
+  const visibleSections = isDesignedProductPage
     ? sections.filter(
         (section) =>
-          section.title !== "Produktfordelar frå gammal side" &&
-          !section.title.startsWith("Den første norske produsenten"),
+          !(isPirPage && section.title === "Produktfordelar frå gammal side") &&
+          !(isPirPage && section.title.startsWith("Den første norske produsenten")) &&
+          section.title !== "Nyheitsbrev og footerlenker frå gammal side",
       )
     : sections;
 
@@ -648,18 +777,40 @@ function ContentSections({
       isPirPage &&
       (section.title === "Full tekst frå gammal side" ||
         section.title === "Fresvik PIR-Panel til kjøle- og fryserom");
+    const isPortIntro =
+      isPortPage &&
+      (section.title === "Full tekst frå gammal side" ||
+        section.title === "Skyveport til kjøle- og fryserom");
 
-    if (isPirIntro) {
+    if (isPirIntro || isPortIntro) {
       return (
         <ProductIntroSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
-          highlight={pirProducerHighlight}
+          highlight={isPirIntro ? pirProducerHighlight : undefined}
         />
       );
     }
 
-    if (isPirPage && section.title === "Dokument") {
+    if (isPortPage && section.title === "Produktfordelar frå gammal side") {
+      return (
+        <ProductBenefitsSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isPortPage && section.title === "Produktbilete frå gammal side") {
+      return (
+        <ProductImageGallerySection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isDesignedProductPage && section.title === "Dokument") {
       return (
         <ProductDocumentSection
           key={`${section.title}-${sectionIndex}`}
@@ -668,7 +819,11 @@ function ContentSections({
       );
     }
 
-    if (isPirPage && section.title.startsWith("Tilleggsutstyr")) {
+    if (
+      isDesignedProductPage &&
+      (section.title.startsWith("Tilleggsutstyr") ||
+        section.title.startsWith("Tilleggsprodukt"))
+    ) {
       return (
         <ProductRelatedSection
           key={`${section.title}-${sectionIndex}`}
@@ -677,7 +832,10 @@ function ContentSections({
       );
     }
 
-    if (isPirPage && section.title === "Sertifikat- og botnlenker frå gammal side") {
+    if (
+      isDesignedProductPage &&
+      section.title === "Sertifikat- og botnlenker frå gammal side"
+    ) {
       return (
         <ProductCertificateLinksSection
           key={`${section.title}-${sectionIndex}`}
@@ -686,11 +844,14 @@ function ContentSections({
       );
     }
 
-    if (isPirPage && section.title === "Kontaktinformasjon frå gammal side") {
+    if (
+      isDesignedProductPage &&
+      section.title === "Kontaktinformasjon frå gammal side"
+    ) {
       return null;
     }
 
-    if (isPirPage && section.title === "For samarbeidspartnarar") {
+    if (isDesignedProductPage && section.title === "For samarbeidspartnarar") {
       const item = section.items[0];
 
       return (
@@ -727,7 +888,7 @@ function ContentSections({
     }
 
     if (
-      (isPirPage || isAccessoryPage) &&
+      (isDesignedProductPage || isAccessoryPage) &&
       section.items.every((item) => !item.href)
     ) {
       return (

@@ -542,6 +542,80 @@ function ProductRelatedSection({
   );
 }
 
+function ProductCertificateLinksSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-slate-50 py-12">
+      <Container>
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <SectionHeader
+            eyebrow="Dokumentert"
+            title="Sertifikat og godkjenningar"
+            intro={section.intro}
+          />
+          <Link
+            href="/dokumentasjon"
+            className="inline-flex h-10 w-fit items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+          >
+            Dokumentasjon
+            <ArrowRight aria-hidden="true" size={16} />
+          </Link>
+        </div>
+
+        <div className="mt-7 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+          {section.items.map((item, itemIndex) => {
+            const href =
+              item.href || certificationFallbackHref(item.title) || "/dokumentasjon";
+            const isExternal = isExternalHref(href);
+            const LinkElement = isExternal || isPdfHref(href) ? "a" : Link;
+            const linkProps =
+              isExternal || isPdfHref(href)
+                ? { href, target: "_blank", rel: "noreferrer" }
+                : { href };
+
+            return (
+              <LinkElement
+                key={contentCardKey(item, itemIndex, section.title)}
+                {...linkProps}
+                className="group flex min-h-[11.5rem] flex-col rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+              >
+                <div className="flex h-24 items-center justify-center border-b border-slate-100 bg-white p-4">
+                  {item.imageUrl ? (
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.imageAlt || item.title}
+                      width={220}
+                      height={120}
+                      className="max-h-16 w-auto max-w-full object-contain transition duration-300 group-hover:scale-[1.04]"
+                    />
+                  ) : (
+                    <FileText aria-hidden="true" className="text-cyan-800" size={30} />
+                  )}
+                </div>
+                <div className="flex grow flex-col p-4">
+                  <h3 className="text-base font-semibold leading-snug text-slate-950">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 grow text-xs leading-5 text-slate-600">
+                    {item.text}
+                  </p>
+                  <span className="mt-3 inline-flex self-end items-center gap-1.5 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                    Opne
+                    <ExternalLink aria-hidden="true" size={15} />
+                  </span>
+                </div>
+              </LinkElement>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ContentSections({
   sections,
   pageSlug,
@@ -597,6 +671,15 @@ function ContentSections({
     if (isPirPage && section.title.startsWith("Tilleggsutstyr")) {
       return (
         <ProductRelatedSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isPirPage && section.title === "Sertifikat- og botnlenker frå gammal side") {
+      return (
+        <ProductCertificateLinksSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
         />

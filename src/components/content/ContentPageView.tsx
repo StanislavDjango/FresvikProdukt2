@@ -185,6 +185,86 @@ function contentCardKey(
     .join("-");
 }
 
+const tilleggsutstyrOverviewItems: ContentPage["cards"] = [
+  {
+    title: "Standard håndtak",
+    text: "Standard håndtak for kjøle- og fryseromsdører.",
+    href: "/andre-produkter/standard-handtak",
+    imageUrl: "/assets/fresvik/images/old-site/Håndtak+standard_web.jpg",
+    imageAlt: "Standard håndtak",
+  },
+  {
+    title: "Elebar ventil",
+    text: "Ventil for mindre fryserom som hjelper mot vakuum.",
+    href: "/andre-produkter/elebar-ventil",
+    imageUrl: "/assets/fresvik/images/old-site/Elebar+ventil_web.jpg",
+    imageAlt: "Elebar ventil",
+  },
+  {
+    title: "MaxiElebar ventil",
+    text: "Ventil for større fryserom der trykkutjamning er nødvendig.",
+    href: "/andre-produkter/maxielebar-ventil",
+    imageUrl: "/assets/fresvik/images/old-site/MaxiElebar+ventli_web.jpg",
+    imageAlt: "MaxiElebar ventil",
+  },
+  {
+    title: "PEGO innestengningsalarm",
+    text: "Alarm og nødalarmknapp for naudstilfelle inne i fryserom.",
+    href: "/andre-produkter/pego-innestengningsalarm",
+    imageUrl: "/assets/fresvik/images/old-site/PEGO+innestengningsalarm_web.jpg",
+    imageAlt: "PEGO innestengningsalarm",
+  },
+  {
+    title: "PVC-gardiner",
+    text: "Reduserer kuldetap ved mykje trafikk gjennom opne portar.",
+    href: "/andre-produkter/pvc-gardiner",
+    imageUrl: "/assets/fresvik/images/old-site/PVC-gardin_web.jpg",
+    imageAlt: "PVC-gardiner",
+  },
+  {
+    title: "Diktator dørtiltrekker",
+    text: "Dørtiltrekker som kan monterast der lukking må sikrast.",
+    href: "/andre-produkter/diktator-dortiltrekker",
+    imageUrl: "/assets/fresvik/images/old-site/Diktator_web.jpg",
+    imageAlt: "Diktator dørtiltrekker",
+  },
+  {
+    title: "Køyrerampe",
+    text: "Køyreramper i aluminium til kjøle- og fryserom.",
+    href: "/andre-produkter/kjlerampe",
+    imageUrl: "/assets/fresvik/images/old-site/rampe3+copy.jpg",
+    imageAlt: "Køyrerampe",
+  },
+  {
+    title: "Beslag",
+    text: "Tilpassa beslag produsert av same stål som panela.",
+    href: "/andre-produkter/beslag",
+    imageUrl: "/assets/fresvik/images/old-site/profil3+copy.jpg",
+    imageAlt: "Beslag",
+  },
+  {
+    title: "Standard dører",
+    text: "Standard kjøle- og fryseromsdører for mindre og mellomstore rom.",
+    href: "/andre-produkter/2014/7/9/standard-drer",
+    imageUrl: "/assets/fresvik/images/old-site/Standard+Dør+Fresvik+Produkt.jpg",
+    imageAlt: "Standard dører",
+  },
+  {
+    title: "Skipsdører",
+    text: "Slagdører utvikla for kjøle- og fryserom om bord i skip.",
+    href: "/andre-produkter/2014/7/9/skipsdrer",
+    imageUrl: "/assets/fresvik/images/old-site/Skipsdør+Fresvik+Produkt.jpg",
+    imageAlt: "Skipsdører",
+  },
+  {
+    title: "Industri slagdør",
+    text: "Større slagdør for kjøle- og fryserom i industrimiljø.",
+    href: "/andre-produkter/2014/7/9/industri-slagdor",
+    imageUrl: "/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
+    imageAlt: "Industri slagdør",
+  },
+];
+
 function ProductIntroSection({
   section,
   highlight,
@@ -848,6 +928,168 @@ function ProductRelatedSection({
   );
 }
 
+function AccessoryOverviewSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const items = section.items.some((item) => item.href?.startsWith("/andre-produkter/"))
+    ? section.items
+    : tilleggsutstyrOverviewItems;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow="Tilleggsutstyr"
+            title="Utstyr og reservedelar"
+            intro={section.intro}
+          />
+          <Link
+            href="/kontakt"
+            className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+          >
+            Spør oss om rett del
+            <ArrowRight aria-hidden="true" size={17} />
+          </Link>
+        </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {items.map((item, itemIndex) => (
+            <Link
+              key={contentCardKey(item, itemIndex, section.title)}
+              href={item.href || "/tilleggsutstyr"}
+              className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+            >
+              {item.imageUrl ? (
+                <div className="relative h-48 overflow-hidden bg-slate-100">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.imageAlt || item.title}
+                    fill
+                    sizes="(min-width: 1280px) 25rem, (min-width: 768px) 45vw, 100vw"
+                    className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+              ) : null}
+              <span className="relative h-1 overflow-hidden bg-gradient-to-r from-cyan-700 via-sky-400 to-orange-500 before:absolute before:inset-y-0 before:-left-1/3 before:w-1/3 before:bg-white/70 before:opacity-0 before:blur-sm before:transition group-hover:before:left-full group-hover:before:opacity-100 group-hover:before:duration-700" />
+              <div className="flex grow flex-col p-5">
+                <h3 className="text-lg font-semibold text-slate-950">
+                  {item.title}
+                </h3>
+                <p className="mt-3 grow text-sm leading-6 text-slate-600">
+                  {item.text}
+                </p>
+                <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function accessoryArticleNumber(text: string) {
+  return text.match(/Artikkelnr\s+\S+/i)?.[0];
+}
+
+function AccessoryOrderSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-14 lg:py-16">
+        <div className="grid gap-8 lg:grid-cols-[0.32fr_0.68fr]">
+          <SectionHeader
+            eyebrow="Bestilling"
+            title="Artikkelnummer"
+            intro={section.intro}
+          />
+          <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+            {section.items.map((item, itemIndex) => {
+              const articleNumber = accessoryArticleNumber(item.text);
+
+              return (
+                <article
+                  key={contentCardKey(item, itemIndex, section.title)}
+                  className="grid overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] sm:grid-cols-[6.5rem_1fr]"
+                >
+                  {item.imageUrl ? (
+                    <div className="relative min-h-28 bg-slate-100">
+                      <Image
+                        src={item.imageUrl}
+                        alt={item.imageAlt || item.title}
+                        fill
+                        sizes="8rem"
+                        className="object-cover object-center"
+                      />
+                    </div>
+                  ) : null}
+                  <div className="flex min-h-28 flex-col justify-center p-4">
+                    <h3 className="text-sm font-semibold leading-snug text-slate-950">
+                      {item.title}
+                    </h3>
+                    {articleNumber ? (
+                      <p className="mt-2 w-fit rounded-[8px] bg-cyan-50 px-2.5 py-1 text-xs font-semibold text-cyan-800">
+                        {articleNumber}
+                      </p>
+                    ) : null}
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function AccessoryContactSection() {
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12">
+        <div className="grid gap-6 rounded-[8px] border border-slate-200 bg-slate-950 p-6 text-white shadow-xl shadow-slate-950/[0.08] sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
+              Reservedelar
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-normal sm:text-3xl">
+              Treng du hjelp til å finne rett del?
+            </h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-300 sm:text-base">
+              Send oss ein førespurnad, så hjelper vi deg med tilbehøyr,
+              reservedelar og praktiske avklaringar før bestilling.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <a
+              href="mailto:post@fresvik.no"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+            >
+              post@fresvik.no
+              <ExternalLink aria-hidden="true" size={16} />
+            </a>
+            <a
+              href="tel:+4757698300"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-white/20 px-4 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+            >
+              57 69 83 00
+              <ArrowRight aria-hidden="true" size={16} />
+            </a>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ProductReferenceSection({
   section,
   eyebrow = "Referansar",
@@ -927,6 +1169,10 @@ function ProductCertificateLinksSection({
 }: {
   section: ContentPage["sections"][number];
 }) {
+  const items = section.items.filter(
+    (item) => !item.title.toLowerCase().includes("gasta"),
+  );
+
   return (
     <section className="border-b border-slate-200 bg-slate-50 py-12">
       <Container>
@@ -946,7 +1192,7 @@ function ProductCertificateLinksSection({
         </div>
 
         <div className="mt-7 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-          {section.items.map((item, itemIndex) => {
+          {items.map((item, itemIndex) => {
             const href =
               item.href || certificationFallbackHref(item.title) || "/dokumentasjon";
             const isExternal = isExternalHref(href);
@@ -1012,6 +1258,7 @@ function ContentSections({
   const isPortPage = pageSlug === "/produkt/kjole-fryseportar";
   const isFacadePage = pageSlug === "/produkt/fasadepanel";
   const isFrysetunnelPage = pageSlug === "/produkt/frysetunnel";
+  const isAccessoryIndexPage = pageSlug === "/tilleggsutstyr";
   const isDesignedProductPage =
     isPirPage || isPortPage || isFacadePage || isFrysetunnelPage;
   const isAccessoryPage = pageSlug?.startsWith("/andre-produkter/") ?? false;
@@ -1028,7 +1275,7 @@ function ContentSections({
       ? `${pirProducerSection.title} ${pirProducerSection.intro || ""}.`
       : "Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås.");
   const visibleSections =
-    isDesignedProductPage || isReferenceDetailPage
+    isDesignedProductPage || isReferenceDetailPage || isAccessoryIndexPage
       ? sections.filter(
           (section) =>
             !(
@@ -1055,11 +1302,58 @@ function ContentSections({
               isReferenceDetailPage &&
               section.title === "Lenker frå gammal side"
             ) &&
+            !(
+              isAccessoryIndexPage &&
+              (section.title === "Full tekst frå gammal side" ||
+                section.title === "Bilde frå gammal side")
+            ) &&
             section.title !== "Nyheitsbrev og footerlenker frå gammal side",
         )
       : sections;
 
   return visibleSections.map((section, sectionIndex) => {
+    if (
+      isAccessoryIndexPage &&
+      (section.title === "Tilleggsutstyr og reservedelar" ||
+        section.title === "Tilleggsutstyr til kjøle- og fryserom")
+    ) {
+      return (
+        <AccessoryOverviewSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isAccessoryIndexPage && section.title === "Artikkelnummer") {
+      return (
+        <AccessoryOrderSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isAccessoryIndexPage && section.title === "Kontakt") {
+      return <AccessoryContactSection key={`${section.title}-${sectionIndex}`} />;
+    }
+
+    if (
+      isAccessoryIndexPage &&
+      section.title === "Dokumentasjon og sertifikat"
+    ) {
+      return (
+        <ProductCertificateLinksSection
+          key={`${section.title}-${sectionIndex}`}
+          section={{
+            ...section,
+            intro:
+              "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker.",
+          }}
+        />
+      );
+    }
+
     const isPirIntro =
       isPirPage &&
       (section.title === "Full tekst frå gammal side" ||

@@ -748,31 +748,6 @@ const accessoryOrderCards: ContentCard[] = [
   },
 ];
 
-const accessoryIntroCards: ContentCard[] = [
-  {
-    title: "Treng du tilbehøyr?",
-    text:
-      "Treng du tilbehøyr til kjøle- eller fryserommet ditt, eller ein reservedel? Hos oss finn du det meste du treng.",
-    imageUrl: "/assets/fresvik/images/old-site/1463-fr-plata-instal.webp",
-    imageAlt: "Tilleggsutstyr",
-  },
-  {
-    title: "Hjelp til rett reservedel",
-    text:
-      "Er du usikker på kva reservedel som passar, tek vi gjerne ein prat og hjelper deg å finne rett løysing.",
-  },
-  {
-    title: "Bestilling",
-    text:
-      "For bestilling av tilbehøyr og reservedelar, send oss ein e-post eller ring innkjøparen vår:",
-  },
-  {
-    title: "Tomas Kruvelis",
-    text: "Tomas Kruvelis Tomkru@fresvik.no Tlf: +47 46 58 14 22",
-    href: "mailto:tomkru@fresvik.no",
-  },
-];
-
 const accessoryContactCards: ContentCard[] = [
   {
     title: "Fresvik Produkt AS",
@@ -3347,13 +3322,13 @@ export const contentPages: ContentPage[] = [
     pageType: "product",
     priority: "medium",
     sourceUrl: "https://www.fresvik.no/tilleggsutstyr",
-    cards: accessoryIntroCards,
+    cards: [],
     sections: [
       {
-        title: "Tilleggsutstyr og reservedelar",
+        title: "Tilleggsutstyr til kjøle- og fryserom",
         intro:
-          "Er du usikker på kva reservedel som passar, tek vi gjerne ein prat og hjelper deg å finne rett løysing.",
-        items: accessoryIntroCards,
+          "Utstyr og tilbehøyr som kompletterer kjøle- og fryserom frå Fresvik Produkt.",
+        items: productIndexAccessoryCards,
       },
       {
         title: "Artikkelnummer",

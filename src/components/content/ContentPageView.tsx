@@ -850,16 +850,24 @@ function ProductRelatedSection({
 
 function ProductReferenceSection({
   section,
+  eyebrow = "Referansar",
+  title = "Utvalde fasadeprosjekt",
+  badge = "Fasadepanel",
 }: {
   section: ContentPage["sections"][number];
+  eyebrow?: string;
+  title?: string;
+  badge?: string;
 }) {
+  const items = section.items.filter((item) => item.href !== "/referansar");
+
   return (
     <section className="border-b border-slate-200 bg-white">
       <Container className="py-14 lg:py-16">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeader
-            eyebrow="Referansar"
-            title="Utvalde fasadeprosjekt"
+            eyebrow={eyebrow}
+            title={title}
             intro={section.intro}
           />
           <Link
@@ -872,7 +880,7 @@ function ProductReferenceSection({
         </div>
 
         <div className="mt-8 grid gap-4 md:grid-cols-2">
-          {section.items.map((item, itemIndex) => (
+          {items.map((item, itemIndex) => (
             <Link
               key={contentCardKey(item, itemIndex, section.title)}
               href={item.href || "/referansar"}
@@ -880,7 +888,7 @@ function ProductReferenceSection({
             >
               <div className="flex flex-col justify-center p-5 sm:p-6">
                 <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-                  Fasadepanel
+                  {badge}
                 </p>
                 <h3 className="mt-3 text-2xl font-semibold tracking-normal text-slate-950">
                   {item.title}
@@ -942,6 +950,11 @@ function ProductCertificateLinksSection({
             const href =
               item.href || certificationFallbackHref(item.title) || "/dokumentasjon";
             const isExternal = isExternalHref(href);
+            const displayText = item.text.toLowerCase().includes("gammal")
+              ? isExternal
+                ? "Ekstern sertifikatlenke."
+                : "Sertifikat og dokumentasjon."
+              : item.text;
             const LinkElement = isExternal || isPdfHref(href) ? "a" : Link;
             const linkProps =
               isExternal || isPdfHref(href)
@@ -972,7 +985,7 @@ function ProductCertificateLinksSection({
                     {item.title}
                   </h3>
                   <p className="mt-2 grow text-xs leading-5 text-slate-600">
-                    {item.text}
+                    {displayText}
                   </p>
                   <span className="mt-3 inline-flex self-end items-center gap-1.5 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
                     Opne
@@ -998,7 +1011,9 @@ function ContentSections({
   const isPirPage = pageSlug === "/produkt/fresvik-pir-panel";
   const isPortPage = pageSlug === "/produkt/kjole-fryseportar";
   const isFacadePage = pageSlug === "/produkt/fasadepanel";
-  const isDesignedProductPage = isPirPage || isPortPage || isFacadePage;
+  const isFrysetunnelPage = pageSlug === "/produkt/frysetunnel";
+  const isDesignedProductPage =
+    isPirPage || isPortPage || isFacadePage || isFrysetunnelPage;
   const isAccessoryPage = pageSlug?.startsWith("/andre-produkter/") ?? false;
   const isReferenceDetailPage =
     (pageSlug?.startsWith("/referansar/") ?? false) && pageSlug !== "/referansar";
@@ -1055,8 +1070,10 @@ function ContentSections({
         section.title === "Skyveport til kjøle- og fryserom");
     const isFacadeIntro =
       isFacadePage && section.title === "Full tekst frå gammal side";
+    const isFrysetunnelIntro =
+      isFrysetunnelPage && section.title === "Full tekst frå gammal side";
 
-    if (isPirIntro || isPortIntro || isFacadeIntro) {
+    if (isPirIntro || isPortIntro || isFacadeIntro || isFrysetunnelIntro) {
       return (
         <ProductIntroSection
           key={`${section.title}-${sectionIndex}`}
@@ -1124,6 +1141,21 @@ function ContentSections({
         <ProductReferenceSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+        />
+      );
+    }
+
+    if (
+      isFrysetunnelPage &&
+      section.title === "Sjå kva vi har levert til andre kundar"
+    ) {
+      return (
+        <ProductReferenceSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+          eyebrow="Referansar"
+          title="Fryseprosjekt og leveransar"
+          badge="Frysetunnel"
         />
       );
     }
@@ -1240,7 +1272,7 @@ function ContentSections({
         <ProductDetailTextSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
-          showIndex={!(isAccessoryPage || isFacadePage)}
+          showIndex={!(isAccessoryPage || isFacadePage || isFrysetunnelPage)}
           showIntro={!isAccessoryPage}
         />
       );
@@ -1914,6 +1946,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug === "/produkt/fresvik-pir-panel" ||
     page.slug === "/produkt/kjole-fryseportar" ||
     page.slug === "/produkt/fasadepanel" ||
+    page.slug === "/produkt/frysetunnel" ||
     isReferenceDetailPage ||
     isAccessoryPage;
   const showTopCards =

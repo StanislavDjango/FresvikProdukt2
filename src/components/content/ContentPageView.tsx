@@ -1,9 +1,13 @@
 import {
   ArrowRight,
+  CheckCircle2,
   ChevronDown,
   Download,
   ExternalLink,
   FileText,
+  PhoneCall,
+  ShieldCheck,
+  Wrench,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -1021,6 +1025,239 @@ function DoorAccessorySection({
   );
 }
 
+function ServiceMontasjeSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const descriptions: Record<string, string> = {
+    "Fresvik-panel til kjølerom og fryserom":
+      "Montering av isolerte panel for komplette kjøle- og fryserom.",
+    "Sandwhich-panel for fasade":
+      "Montasje av fasadepanel til lager- og industribygg.",
+    "Kjøle- og fryseportar":
+      "Portløysingar tilpassa kjøle- og fryserom, lager og industri.",
+    "Kjøle- og frysedører":
+      "Dører til kjøle- og fryserom levert som del av komplett løysing.",
+    Vindu: "Vindu og tilhøyrande detaljar som del av rom- og panelløysing.",
+    Beslag: "Tilpassa beslag for tett, ryddig og komplett montasje.",
+  };
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow="Montasje"
+            title="Fresvik Produkt tilbyr montasje av"
+            intro="Vi kan levere montasje for panel, portar, dører og tilhøyrande løysingar gjennom erfarne samarbeidspartnarar."
+          />
+          <Link
+            href="/kontakt"
+            className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+          >
+            Avklar montasje
+            <ArrowRight aria-hidden="true" size={17} />
+          </Link>
+        </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {section.items.map((item, itemIndex) => {
+            const imageUrl =
+              item.imageUrl &&
+              !item.imageUrl.includes("flake") &&
+              !item.imageUrl.includes("snø")
+                ? item.imageUrl
+                : undefined;
+            const displayTitle = item.title.replace("Sandwhich", "Sandwich");
+            const displayText = descriptions[item.title] || item.text;
+            const content = (
+              <>
+                {imageUrl ? (
+                  <div className="relative h-48 overflow-hidden bg-slate-100">
+                    <Image
+                      src={imageUrl}
+                      alt={item.imageAlt || item.title}
+                      fill
+                      sizes="(min-width: 1280px) 28vw, (min-width: 768px) 45vw, 100vw"
+                      className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                ) : (
+                  <div className="grid h-48 place-items-center bg-slate-950 text-cyan-200">
+                    <Wrench aria-hidden="true" size={42} strokeWidth={1.7} />
+                  </div>
+                )}
+                <span className="relative h-1 overflow-hidden bg-gradient-to-r from-cyan-700 via-sky-400 to-orange-500 before:absolute before:inset-y-0 before:-left-1/3 before:w-1/3 before:bg-white/70 before:opacity-0 before:blur-sm before:transition group-hover:before:left-full group-hover:before:opacity-100 group-hover:before:duration-700" />
+                <div className="flex grow flex-col p-5">
+                  <h3 className="text-lg font-semibold text-slate-950">
+                    {displayTitle}
+                  </h3>
+                  <p className="mt-3 grow text-sm leading-6 text-slate-600">
+                    {displayText}
+                  </p>
+                  <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                    {item.href ? "Les meir" : "Kontakt oss"}
+                    <ArrowRight aria-hidden="true" size={17} />
+                  </span>
+                </div>
+              </>
+            );
+
+            if (item.href) {
+              return (
+                <Link
+                  key={contentCardKey(item, itemIndex, section.title)}
+                  href={item.href}
+                  className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+                >
+                  {content}
+                </Link>
+              );
+            }
+
+            return (
+              <Link
+                key={contentCardKey(item, itemIndex, section.title)}
+                href="/kontakt"
+                className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+              >
+                {content}
+              </Link>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function ServiceApprovalSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const introItem = section.items[0];
+  const documentItem = section.items.find((item) => item.href);
+  const bulletItems = section.items.filter(
+    (item) => item !== introItem && item !== documentItem,
+  );
+
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-14 lg:py-16">
+        <div className="grid overflow-hidden rounded-[8px] border border-slate-900 bg-slate-950 shadow-xl shadow-slate-950/[0.12] lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="flex flex-col justify-between gap-8 border-b border-white/10 p-6 text-white sm:p-8 lg:border-b-0 lg:border-r">
+            <div>
+              <span className="grid size-12 place-items-center rounded-[8px] bg-cyan-300/10 text-cyan-200 ring-1 ring-cyan-200/20">
+                <ShieldCheck aria-hidden="true" size={25} />
+              </span>
+              <p className="mt-6 text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
+                Godkjenning
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-normal text-white sm:text-4xl">
+                Sentral godkjenning
+              </h2>
+              {introItem ? (
+                <p className="mt-5 text-base leading-8 text-slate-300">
+                  {introItem.text}
+                </p>
+              ) : null}
+            </div>
+
+            {documentItem?.href ? (
+              <a
+                href={documentItem.href}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+              >
+                Opne godkjenning
+                <ExternalLink aria-hidden="true" size={16} />
+              </a>
+            ) : null}
+          </div>
+
+          <div className="bg-white p-6 sm:p-8">
+            {documentItem ? (
+              <div>
+                <h3 className="text-xl font-semibold text-slate-950">
+                  Kompetanse dokumentert
+                </h3>
+                <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
+                  {documentItem.text}
+                </p>
+              </div>
+            ) : null}
+
+            <div className="mt-7 grid gap-3 sm:grid-cols-3">
+              {bulletItems.map((item, itemIndex) => (
+                <article
+                  key={contentCardKey(item, itemIndex, section.title)}
+                  className="rounded-[8px] border border-slate-200 bg-slate-50 p-4"
+                >
+                  <CheckCircle2
+                    aria-hidden="true"
+                    className="text-cyan-800"
+                    size={20}
+                  />
+                  <h4 className="mt-4 text-base font-semibold leading-snug text-slate-950">
+                    {item.title}
+                  </h4>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function ServiceContactCtaSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const text = section.items[0]?.text || "Ta kontakt for meir informasjon.";
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12">
+        <div className="grid gap-5 rounded-[8px] border border-cyan-100 bg-cyan-50 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+              Montasje
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-normal text-slate-950 sm:text-3xl">
+              Meir informasjon om montasje?
+            </h2>
+            <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
+              {text}
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="/kontakt"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+            >
+              Kontakt oss
+              <ArrowRight aria-hidden="true" size={17} />
+            </Link>
+            <a
+              href="tel:+4757698300"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+            >
+              <PhoneCall aria-hidden="true" size={17} />
+              57 69 83 00
+            </a>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function AccessoryOverviewSection({
   section,
 }: {
@@ -1356,6 +1593,7 @@ function ContentSections({
   const isDoorPage = pageSlug === "/produkt/kjole-frysedorer";
   const isFacadePage = pageSlug === "/produkt/fasadepanel";
   const isFrysetunnelPage = pageSlug === "/produkt/frysetunnel";
+  const isMontasjeServicePage = pageSlug === "/tenester/montasje";
   const isAccessoryIndexPage = pageSlug === "/tilleggsutstyr";
   const isDesignedProductPage =
     isPirPage ||
@@ -1378,7 +1616,10 @@ function ContentSections({
       ? `${pirProducerSection.title} ${pirProducerSection.intro || ""}.`
       : "Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås.");
   const visibleSections =
-    isDesignedProductPage || isReferenceDetailPage || isAccessoryIndexPage
+    isDesignedProductPage ||
+    isReferenceDetailPage ||
+    isAccessoryIndexPage ||
+    isMontasjeServicePage
       ? sections.filter(
           (section) =>
             !(
@@ -1409,6 +1650,13 @@ function ContentSections({
               isAccessoryIndexPage &&
               (section.title === "Full tekst frå gammal side" ||
                 section.title === "Bilde frå gammal side")
+            ) &&
+            !(
+              isMontasjeServicePage &&
+              (section.title === "Full tekst frå gammal side" ||
+                section.title === "Bilde frå gammal side" ||
+                section.title === "Dokumentlenker frå gammal side" ||
+                section.title === "Lenker frå gammal side")
             ) &&
             section.title !== "Nyheitsbrev og footerlenker frå gammal side",
         )
@@ -1443,6 +1691,59 @@ function ContentSections({
 
     if (
       isAccessoryIndexPage &&
+      section.title === "Dokumentasjon og sertifikat"
+    ) {
+      return (
+        <ProductCertificateLinksSection
+          key={`${section.title}-${sectionIndex}`}
+          section={{
+            ...section,
+            intro:
+              "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker.",
+          }}
+        />
+      );
+    }
+
+    if (
+      isMontasjeServicePage &&
+      section.title === "Fresvik produkt tilbyr montasje av:"
+    ) {
+      return (
+        <ServiceMontasjeSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isMontasjeServicePage && section.title === "Sentral godkjenning") {
+      return (
+        <ServiceApprovalSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (
+      isMontasjeServicePage &&
+      section.title === "Meir informasjon om montasje?"
+    ) {
+      return (
+        <ServiceContactCtaSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isMontasjeServicePage && section.title === "Kontakt") {
+      return null;
+    }
+
+    if (
+      isMontasjeServicePage &&
       section.title === "Dokumentasjon og sertifikat"
     ) {
       return (
@@ -2382,6 +2683,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug === "/produkt/kjole-frysedorer" ||
     page.slug === "/produkt/fasadepanel" ||
     page.slug === "/produkt/frysetunnel" ||
+    page.slug === "/tenester/montasje" ||
     isReferenceDetailPage ||
     isAccessoryPage;
   const showTopCards =

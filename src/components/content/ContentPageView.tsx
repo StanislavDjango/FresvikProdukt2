@@ -366,10 +366,12 @@ function FacadeCoreSection({
 
 function ProductDetailTextSection({
   section,
+  productName = "Fresvik-panel",
   showIndex = true,
   showIntro = true,
 }: {
   section: ContentPage["sections"][number];
+  productName?: string;
   showIndex?: boolean;
   showIntro?: boolean;
 }) {
@@ -392,7 +394,7 @@ function ProductDetailTextSection({
                 {section.title}
               </h2>
               <p className="mt-4 text-base leading-7 text-slate-600">
-                Viktige tekniske data for Fresvik PIR-Panel, samla for rask
+                Viktige tekniske data for {productName}, samla for rask
                 vurdering av brannklasse, dimensjonar, vekt, U-verdi og
                 materialval.
               </p>
@@ -797,9 +799,9 @@ function ProductDocumentSection({
 
           <div className="grid gap-3">
             {section.items.map((item, itemIndex) => {
-              const href = item.href || item.text;
-              const isExternal = isExternalHref(href);
-              const isPdf = isPdfHref(href);
+              const href = item.href;
+              const isExternal = href ? isExternalHref(href) : false;
+              const isPdf = href ? isPdfHref(href) : false;
               const className =
                 "group grid gap-4 rounded-[8px] border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-xl hover:shadow-slate-950/[0.08] sm:grid-cols-[auto_1fr_auto] sm:items-center";
               const content = (
@@ -819,16 +821,29 @@ function ProductDocumentSection({
                       {item.text}
                     </span>
                   </span>
-                  <span className="inline-flex h-10 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition group-hover:border-cyan-800 group-hover:text-cyan-800">
-                    Opne
-                    {isExternal || isPdf ? (
-                      <ExternalLink aria-hidden="true" size={16} />
-                    ) : (
-                      <ArrowRight aria-hidden="true" size={16} />
-                    )}
-                  </span>
+                  {href ? (
+                    <span className="inline-flex h-10 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition group-hover:border-cyan-800 group-hover:text-cyan-800">
+                      Opne
+                      {isExternal || isPdf ? (
+                        <ExternalLink aria-hidden="true" size={16} />
+                      ) : (
+                        <ArrowRight aria-hidden="true" size={16} />
+                      )}
+                    </span>
+                  ) : null}
                 </>
               );
+
+              if (!href) {
+                return (
+                  <article
+                    key={contentCardKey(item, itemIndex, section.title)}
+                    className={className}
+                  >
+                    {content}
+                  </article>
+                );
+              }
 
               if (isExternal || isPdf) {
                 return (
@@ -1255,12 +1270,13 @@ function ContentSections({
   pageSlug?: string;
 }) {
   const isPirPage = pageSlug === "/produkt/fresvik-pir-panel";
+  const isPurPage = pageSlug === "/produkt/fresvik-pur-panel";
   const isPortPage = pageSlug === "/produkt/kjole-fryseportar";
   const isFacadePage = pageSlug === "/produkt/fasadepanel";
   const isFrysetunnelPage = pageSlug === "/produkt/frysetunnel";
   const isAccessoryIndexPage = pageSlug === "/tilleggsutstyr";
   const isDesignedProductPage =
-    isPirPage || isPortPage || isFacadePage || isFrysetunnelPage;
+    isPirPage || isPurPage || isPortPage || isFacadePage || isFrysetunnelPage;
   const isAccessoryPage = pageSlug?.startsWith("/andre-produkter/") ?? false;
   const isReferenceDetailPage =
     (pageSlug?.startsWith("/referansar/") ?? false) && pageSlug !== "/referansar";
@@ -1358,6 +1374,10 @@ function ContentSections({
       isPirPage &&
       (section.title === "Full tekst frå gammal side" ||
         section.title === "Fresvik PIR-Panel til kjøle- og fryserom");
+    const isPurIntro =
+      isPurPage &&
+      (section.title === "Full tekst frå gammal side" ||
+        section.title === "Fresvik PUR-Panel til kjøle- og fryserom");
     const isPortIntro =
       isPortPage &&
       (section.title === "Full tekst frå gammal side" ||
@@ -1367,7 +1387,13 @@ function ContentSections({
     const isFrysetunnelIntro =
       isFrysetunnelPage && section.title === "Full tekst frå gammal side";
 
-    if (isPirIntro || isPortIntro || isFacadeIntro || isFrysetunnelIntro) {
+    if (
+      isPirIntro ||
+      isPurIntro ||
+      isPortIntro ||
+      isFacadeIntro ||
+      isFrysetunnelIntro
+    ) {
       return (
         <ProductIntroSection
           key={`${section.title}-${sectionIndex}`}
@@ -1418,14 +1444,14 @@ function ContentSections({
     }
 
     if (
-      (isPortPage || isFacadePage) &&
+      (isPurPage || isPortPage || isFacadePage) &&
       section.title === "Produktfordelar frå gammal side"
     ) {
       return (
         <ProductBenefitsSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
-          showIndex={!isFacadePage}
+          showIndex={isPortPage}
         />
       );
     }
@@ -1566,6 +1592,7 @@ function ContentSections({
         <ProductDetailTextSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          productName={isPurPage ? "Fresvik PUR-Panel" : undefined}
           showIndex={!(isAccessoryPage || isFacadePage || isFrysetunnelPage)}
           showIntro={!isAccessoryPage}
         />
@@ -2238,6 +2265,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug.startsWith("/referansar/") && page.slug !== "/referansar";
   const suppressTopCards =
     page.slug === "/produkt/fresvik-pir-panel" ||
+    page.slug === "/produkt/fresvik-pur-panel" ||
     page.slug === "/produkt/kjole-fryseportar" ||
     page.slug === "/produkt/fasadepanel" ||
     page.slug === "/produkt/frysetunnel" ||

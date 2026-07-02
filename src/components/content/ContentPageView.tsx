@@ -943,6 +943,84 @@ function ProductRelatedSection({
   );
 }
 
+function DoorModelsSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow="Dørmodellar"
+            title="Tre dørtypar til ulike bruksområde"
+            intro="Vel mellom standarddører, skipsdører og større industri-slagdører etter behovet i kjøle- eller fryserommet."
+          />
+          <Link
+            href="/tilleggsutstyr"
+            className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+          >
+            Sjå tilleggsutstyr
+            <ArrowRight aria-hidden="true" size={17} />
+          </Link>
+        </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
+          {section.items.map((item, itemIndex) => (
+            <Link
+              key={contentCardKey(item, itemIndex, section.title)}
+              href={item.href || "/tilleggsutstyr"}
+              className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+            >
+              {item.imageUrl ? (
+                <div className="relative h-52 overflow-hidden bg-slate-100">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.imageAlt || item.title}
+                    fill
+                    sizes="(min-width: 768px) 30vw, 100vw"
+                    className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+              ) : null}
+              <span className="relative h-1 overflow-hidden bg-gradient-to-r from-cyan-700 via-sky-400 to-orange-500 before:absolute before:inset-y-0 before:-left-1/3 before:w-1/3 before:bg-white/70 before:opacity-0 before:blur-sm before:transition group-hover:before:left-full group-hover:before:opacity-100 group-hover:before:duration-700" />
+              <div className="flex grow flex-col p-5">
+                <h3 className="text-lg font-semibold text-slate-950">
+                  {item.title}
+                </h3>
+                <p className="mt-3 grow text-sm leading-6 text-slate-600">
+                  {item.text.replace(/\.$/, "")}
+                </p>
+                <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function DoorAccessorySection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <ProductRelatedSection
+      section={{
+        ...section,
+        title: "Tilleggsutstyr",
+        intro:
+          "Utstyr som ofte blir brukt saman med kjøle- og fryseromsdører.",
+      }}
+    />
+  );
+}
+
 function AccessoryOverviewSection({
   section,
 }: {
@@ -1187,6 +1265,9 @@ function ProductCertificateLinksSection({
   const items = section.items.filter(
     (item) => !item.title.toLowerCase().includes("gasta"),
   );
+  const displayIntro = section.intro?.toLowerCase().includes("gammal")
+    ? "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker."
+    : section.intro;
 
   return (
     <section className="border-b border-slate-200 bg-slate-50 py-12">
@@ -1195,7 +1276,7 @@ function ProductCertificateLinksSection({
           <SectionHeader
             eyebrow="Dokumentert"
             title="Sertifikat og godkjenningar"
-            intro={section.intro}
+            intro={displayIntro}
           />
           <Link
             href="/dokumentasjon"
@@ -1272,11 +1353,17 @@ function ContentSections({
   const isPirPage = pageSlug === "/produkt/fresvik-pir-panel";
   const isPurPage = pageSlug === "/produkt/fresvik-pur-panel";
   const isPortPage = pageSlug === "/produkt/kjole-fryseportar";
+  const isDoorPage = pageSlug === "/produkt/kjole-frysedorer";
   const isFacadePage = pageSlug === "/produkt/fasadepanel";
   const isFrysetunnelPage = pageSlug === "/produkt/frysetunnel";
   const isAccessoryIndexPage = pageSlug === "/tilleggsutstyr";
   const isDesignedProductPage =
-    isPirPage || isPurPage || isPortPage || isFacadePage || isFrysetunnelPage;
+    isPirPage ||
+    isPurPage ||
+    isPortPage ||
+    isDoorPage ||
+    isFacadePage ||
+    isFrysetunnelPage;
   const isAccessoryPage = pageSlug?.startsWith("/andre-produkter/") ?? false;
   const isReferenceDetailPage =
     (pageSlug?.startsWith("/referansar/") ?? false) && pageSlug !== "/referansar";
@@ -1382,6 +1469,10 @@ function ContentSections({
       isPortPage &&
       (section.title === "Full tekst frå gammal side" ||
         section.title === "Skyveport til kjøle- og fryserom");
+    const isDoorIntro =
+      isDoorPage &&
+      (section.title === "Full tekst frå gammal side" ||
+        section.title === "Dører til kjøle- og fryserom");
     const isFacadeIntro =
       isFacadePage && section.title === "Full tekst frå gammal side";
     const isFrysetunnelIntro =
@@ -1391,6 +1482,7 @@ function ContentSections({
       isPirIntro ||
       isPurIntro ||
       isPortIntro ||
+      isDoorIntro ||
       isFacadeIntro ||
       isFrysetunnelIntro
     ) {
@@ -1444,7 +1536,7 @@ function ContentSections({
     }
 
     if (
-      (isPurPage || isPortPage || isFacadePage) &&
+      (isPurPage || isPortPage || isDoorPage || isFacadePage) &&
       section.title === "Produktfordelar frå gammal side"
     ) {
       return (
@@ -1452,6 +1544,15 @@ function ContentSections({
           key={`${section.title}-${sectionIndex}`}
           section={section}
           showIndex={isPortPage}
+        />
+      );
+    }
+
+    if (isDoorPage && section.title === "Våre dører") {
+      return (
+        <DoorModelsSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
         />
       );
     }
@@ -1503,6 +1604,15 @@ function ContentSections({
       (section.title.startsWith("Tilleggsutstyr") ||
         section.title.startsWith("Tilleggsprodukt"))
     ) {
+      if (isDoorPage) {
+        return (
+          <DoorAccessorySection
+            key={`${section.title}-${sectionIndex}`}
+            section={section}
+          />
+        );
+      }
+
       return (
         <ProductRelatedSection
           key={`${section.title}-${sectionIndex}`}
@@ -1593,7 +1703,9 @@ function ContentSections({
           key={`${section.title}-${sectionIndex}`}
           section={section}
           productName={isPurPage ? "Fresvik PUR-Panel" : undefined}
-          showIndex={!(isAccessoryPage || isFacadePage || isFrysetunnelPage)}
+          showIndex={
+            !(isAccessoryPage || isDoorPage || isFacadePage || isFrysetunnelPage)
+          }
           showIntro={!isAccessoryPage}
         />
       );
@@ -2267,6 +2379,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug === "/produkt/fresvik-pir-panel" ||
     page.slug === "/produkt/fresvik-pur-panel" ||
     page.slug === "/produkt/kjole-fryseportar" ||
+    page.slug === "/produkt/kjole-frysedorer" ||
     page.slug === "/produkt/fasadepanel" ||
     page.slug === "/produkt/frysetunnel" ||
     isReferenceDetailPage ||

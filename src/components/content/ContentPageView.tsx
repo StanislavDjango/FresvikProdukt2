@@ -153,9 +153,9 @@ function FAQAccordion({ page }: ContentPageViewProps) {
     <section className="border-b border-slate-200 bg-white">
       <Container className="py-12">
         <SectionHeader
-          eyebrow="FAQ"
-          title="Ofte stilte spørsmål"
-          intro={page.sections[0]?.intro || page.description}
+          eyebrow="Kundeservice"
+          title="Svar på vanlege spørsmål"
+          intro="Praktisk informasjon om produkt, materialval, dimensjonering og løysingar frå Fresvik Produkt."
         />
         <div className="mt-8 divide-y divide-slate-200 rounded-[8px] border border-slate-200 bg-white">
           {questions.map((item, index) => (
@@ -169,7 +169,7 @@ function FAQAccordion({ page }: ContentPageViewProps) {
                 />
               </summary>
               <p className="px-5 pb-5 text-sm leading-7 text-slate-600">
-                {item.text}
+                {item.text || "Ta kontakt med Fresvik Produkt for meir informasjon."}
               </p>
             </details>
           ))}
@@ -3608,10 +3608,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
       ) : null}
 
       {isHomePage ? null : isFaqPage ? (
-        <>
-          <FAQAccordion page={page} />
-          <ContentSections sections={page.sections.slice(1)} pageSlug={page.slug} />
-        </>
+        <FAQAccordion page={page} />
       ) : (
         <ContentSections sections={page.sections} pageSlug={page.slug} />
       )}

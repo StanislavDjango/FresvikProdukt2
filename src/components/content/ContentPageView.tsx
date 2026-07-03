@@ -1030,6 +1030,156 @@ function DocumentationContactSection() {
   );
 }
 
+function MountingDownloadsSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow="Nedlasting"
+            title="Monteringsanvisningar"
+            intro="Monteringsrettleiingar for rom, dører og portar samla som raske dokumentlenker."
+          />
+          <Link
+            href="/dokumentasjon"
+            className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+          >
+            All dokumentasjon
+            <ArrowRight aria-hidden="true" size={17} />
+          </Link>
+        </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {section.items.map((item, itemIndex) => {
+            const href = item.href;
+            const isPdf = href ? isPdfHref(href) : false;
+            const isExternal = href ? isExternalHref(href) : false;
+            const className =
+              "group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700";
+            const content = (
+              <>
+                {item.imageUrl ? (
+                  <div className="relative h-44 overflow-hidden border-b border-slate-100 bg-slate-100">
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.imageAlt || item.title}
+                      fill
+                      sizes="(min-width: 1280px) 28vw, (min-width: 768px) 45vw, 100vw"
+                      className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="fresvik-card-divider absolute inset-x-0 bottom-0"
+                    />
+                  </div>
+                ) : null}
+                <div className="flex grow flex-col p-5">
+                  <div className="flex items-start gap-3">
+                    <span className="mt-0.5 grid size-10 shrink-0 place-items-center rounded-[8px] bg-cyan-50 text-cyan-800 ring-1 ring-cyan-100">
+                      {isPdf || isExternal ? (
+                        <Download aria-hidden="true" size={19} />
+                      ) : (
+                        <FileText aria-hidden="true" size={19} />
+                      )}
+                    </span>
+                    <div>
+                      <h2 className="text-lg font-semibold text-slate-950">
+                        {item.title}
+                      </h2>
+                      <p className="mt-2 text-sm leading-6 text-slate-600">
+                        {item.text}
+                      </p>
+                    </div>
+                  </div>
+                  {href ? (
+                    <span className="mt-6 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                      Opne
+                      {isPdf || isExternal ? (
+                        <ExternalLink aria-hidden="true" size={16} />
+                      ) : (
+                        <ArrowRight aria-hidden="true" size={16} />
+                      )}
+                    </span>
+                  ) : null}
+                </div>
+              </>
+            );
+
+            if (!href) {
+              return (
+                <article
+                  key={contentCardKey(item, itemIndex, section.title)}
+                  className={className}
+                >
+                  {content}
+                </article>
+              );
+            }
+
+            if (isPdf || isExternal) {
+              return (
+                <a
+                  key={contentCardKey(item, itemIndex, section.title)}
+                  href={href}
+                  className={className}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {content}
+                </a>
+              );
+            }
+
+            return (
+              <Link
+                key={contentCardKey(item, itemIndex, section.title)}
+                href={href}
+                className={className}
+              >
+                {content}
+              </Link>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function MountingDocumentationCta() {
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-12">
+        <div className="grid gap-5 rounded-[8px] border border-slate-200 bg-white p-5 shadow-sm shadow-slate-950/[0.04] sm:p-6 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+              Dokumentasjon
+            </p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-normal text-slate-950">
+              Ute etter sertifikat eller produktblad?
+            </h2>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">
+              Teknisk godkjenning, miljødokumentasjon, leveringsvilkår og
+              sentral godkjenning ligg samla på dokumentasjonssida.
+            </p>
+          </div>
+          <Link
+            href="/dokumentasjon"
+            className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+          >
+            Gå til dokumentasjon
+            <ArrowRight aria-hidden="true" size={17} />
+          </Link>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ProductRelatedSection({
   section,
 }: {
@@ -2015,6 +2165,7 @@ function ContentSections({
   const isFacadePage = pageSlug === "/produkt/fasadepanel";
   const isFrysetunnelPage = pageSlug === "/produkt/frysetunnel";
   const isDocumentationPage = pageSlug === "/dokumentasjon";
+  const isMountingPage = pageSlug === "/monteringsanvisning";
   const isServiceIndexPage = pageSlug === "/tenester";
   const isMontasjeServicePage = pageSlug === "/tenester/montasje";
   const isLeveranseServicePage = pageSlug === "/tenester/leveranse";
@@ -2049,6 +2200,7 @@ function ContentSections({
     isDesignedProductPage ||
     isReferenceDetailPage ||
     isDocumentationPage ||
+    isMountingPage ||
     isAccessoryIndexPage ||
     isStyledServicePage
       ? sections.filter(
@@ -2087,6 +2239,15 @@ function ContentSections({
                 section.title === "Lenker frå gammal side")
             ) &&
             !(
+              isMountingPage &&
+              (section.title === "Dokumentasjon og sertifikat" ||
+                section.title === "Kontakt" ||
+                section.title === "Full tekst frå gammal side" ||
+                section.title === "Bilde frå gammal side" ||
+                section.title === "Dokumentlenker frå gammal side" ||
+                section.title === "Lenker frå gammal side")
+            ) &&
+            !(
               isAccessoryIndexPage &&
               (section.title === "Full tekst frå gammal side" ||
                 section.title === "Bilde frå gammal side")
@@ -2107,6 +2268,19 @@ function ContentSections({
       : sections;
 
   return visibleSections.map((section, sectionIndex) => {
+    if (isMountingPage && section.title === "Monteringsanvisningar") {
+      return (
+        <MountingDownloadsSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isMountingPage && section.title === "Ute etter dokumentasjon?") {
+      return <MountingDocumentationCta key={`${section.title}-${sectionIndex}`} />;
+    }
+
     if (isDocumentationPage && section.title === "Dokumentasjon") {
       return (
         <DocumentationDownloadsSection
@@ -3183,6 +3357,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug === "/tenester/leveranse" ||
     page.slug === "/tenester/service-reservedeler" ||
     page.slug === "/dokumentasjon" ||
+    page.slug === "/monteringsanvisning" ||
     isReferenceDetailPage ||
     isAccessoryPage;
   const showTopCards =

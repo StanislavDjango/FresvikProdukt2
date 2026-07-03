@@ -1132,6 +1132,105 @@ function ServiceMontasjeSection({
   );
 }
 
+function ServiceDeliverySection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const [featuredItem, ...secondaryItems] = section.items;
+  const ctaItem = secondaryItems.find((item) => item.href);
+  const detailItems = secondaryItems.filter((item) => !item.href);
+  const detailText: Record<string, string> = {
+    "Synleg merking":
+      "Delar blir godt og synleg merka, slik at mottak og montering blir ryddigare.",
+    "Gode monteringsansvisningar på nett":
+      "Monteringsanvisningar er enkle å laste ned frå nettsida når leveransen skal monterast.",
+  };
+
+  if (!featuredItem) return null;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="grid gap-8 lg:grid-cols-[0.38fr_0.62fr] lg:items-start">
+          <SectionHeader
+            eyebrow="Leveranse"
+            title="Fokus på leveransesikkerheit"
+            intro="Leveransen skal vere komplett, tydeleg merka og kome fram til avtalt tid."
+          />
+
+          <article className="overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-xl shadow-slate-950/[0.06]">
+            {featuredItem.imageUrl ? (
+              <div className="relative min-h-72 bg-slate-100">
+                <Image
+                  src={featuredItem.imageUrl}
+                  alt={featuredItem.imageAlt || featuredItem.title}
+                  fill
+                  sizes="(min-width: 1024px) 52vw, 100vw"
+                  className="object-cover object-center"
+                />
+                <div className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white/80 to-transparent" />
+              </div>
+            ) : null}
+            <div className="grid gap-6 p-6 sm:p-8 lg:grid-cols-[1.1fr_0.9fr]">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                  Trygg leveranse
+                </p>
+                <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950">
+                  {featuredItem.title}
+                </h2>
+                <p className="mt-4 text-base leading-8 text-slate-700">
+                  {featuredItem.text}
+                </p>
+              </div>
+
+              <div className="grid gap-3">
+                {detailItems.map((item, itemIndex) => (
+                  <article
+                    key={contentCardKey(item, itemIndex, section.title)}
+                    className="rounded-[8px] border border-slate-200 bg-slate-50 p-4"
+                  >
+                    <CheckCircle2
+                      aria-hidden="true"
+                      className="text-cyan-800"
+                      size={20}
+                    />
+                    <h3 className="mt-3 text-base font-semibold leading-snug text-slate-950">
+                      {item.title.replace(
+                        "monteringsansvisningar",
+                        "monteringsanvisningar",
+                      )}
+                    </h3>
+                    <p className="mt-2 text-sm leading-6 text-slate-600">
+                      {detailText[item.title] || item.text}
+                    </p>
+                  </article>
+                ))}
+              </div>
+            </div>
+
+            {ctaItem?.href ? (
+              <div className="border-t border-slate-200 bg-slate-50 p-5 sm:flex sm:items-center sm:justify-between sm:gap-4">
+                <p className="text-sm font-semibold text-slate-950">
+                  {ctaItem.title}
+                </p>
+                <Link
+                  href={ctaItem.href}
+                  className="mt-4 inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 sm:mt-0"
+                >
+                  Kontakt oss
+                  <ArrowRight aria-hidden="true" size={17} />
+                </Link>
+              </div>
+            ) : null}
+          </article>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ServiceApprovalSection({
   section,
 }: {
@@ -1594,6 +1693,8 @@ function ContentSections({
   const isFacadePage = pageSlug === "/produkt/fasadepanel";
   const isFrysetunnelPage = pageSlug === "/produkt/frysetunnel";
   const isMontasjeServicePage = pageSlug === "/tenester/montasje";
+  const isLeveranseServicePage = pageSlug === "/tenester/leveranse";
+  const isStyledServicePage = isMontasjeServicePage || isLeveranseServicePage;
   const isAccessoryIndexPage = pageSlug === "/tilleggsutstyr";
   const isDesignedProductPage =
     isPirPage ||
@@ -1619,7 +1720,7 @@ function ContentSections({
     isDesignedProductPage ||
     isReferenceDetailPage ||
     isAccessoryIndexPage ||
-    isMontasjeServicePage
+    isStyledServicePage
       ? sections.filter(
           (section) =>
             !(
@@ -1652,7 +1753,7 @@ function ContentSections({
                 section.title === "Bilde frå gammal side")
             ) &&
             !(
-              isMontasjeServicePage &&
+              isStyledServicePage &&
               (section.title === "Full tekst frå gammal side" ||
                 section.title === "Bilde frå gammal side" ||
                 section.title === "Dokumentlenker frå gammal side" ||
@@ -1705,6 +1806,15 @@ function ContentSections({
       );
     }
 
+    if (isLeveranseServicePage && section.title === "Leveranse") {
+      return (
+        <ServiceDeliverySection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
     if (
       isMontasjeServicePage &&
       section.title === "Fresvik produkt tilbyr montasje av:"
@@ -1742,8 +1852,12 @@ function ContentSections({
       return null;
     }
 
+    if (isLeveranseServicePage && section.title === "Kontakt") {
+      return null;
+    }
+
     if (
-      isMontasjeServicePage &&
+      isStyledServicePage &&
       section.title === "Dokumentasjon og sertifikat"
     ) {
       return (
@@ -2684,6 +2798,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug === "/produkt/fasadepanel" ||
     page.slug === "/produkt/frysetunnel" ||
     page.slug === "/tenester/montasje" ||
+    page.slug === "/tenester/leveranse" ||
     isReferenceDetailPage ||
     isAccessoryPage;
   const showTopCards =

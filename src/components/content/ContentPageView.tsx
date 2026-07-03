@@ -1231,6 +1231,103 @@ function ServiceDeliverySection({
   );
 }
 
+function ServicePartsSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const [introItem, ...secondaryItems] = section.items;
+  const ctaItem = secondaryItems.find((item) => item.href);
+  const detailItems = secondaryItems.filter((item) => !item.href);
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="grid overflow-hidden rounded-[8px] border border-slate-900 bg-slate-950 shadow-xl shadow-slate-950/[0.12] lg:grid-cols-[0.92fr_1.08fr]">
+          <div className="relative min-h-80 p-6 text-white sm:p-8 lg:p-10">
+            {introItem?.imageUrl ? (
+              <Image
+                src={introItem.imageUrl}
+                alt={introItem.imageAlt || introItem.title}
+                fill
+                sizes="(min-width: 1024px) 42vw, 100vw"
+                className="object-cover object-center opacity-20"
+              />
+            ) : null}
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-950/95 to-cyan-950/70" />
+            <div className="relative z-10 flex min-h-64 flex-col justify-between">
+              <div>
+                <span className="grid size-12 place-items-center rounded-[8px] bg-cyan-300/10 text-cyan-200 ring-1 ring-cyan-200/20">
+                  <Wrench aria-hidden="true" size={25} />
+                </span>
+                <p className="mt-6 text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
+                  Service
+                </p>
+                <h2 className="mt-3 max-w-xl text-3xl font-semibold tracking-normal text-white sm:text-4xl">
+                  {introItem?.title || "Viss noko går gale, stiller vi opp."}
+                </h2>
+                <p className="mt-5 max-w-xl text-base leading-8 text-slate-300">
+                  Vi hjelper med service og reservedeler til dører og portar når
+                  det hastar.
+                </p>
+              </div>
+
+              {ctaItem?.href ? (
+                <Link
+                  href={ctaItem.href}
+                  className="mt-8 inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+                >
+                  Kontakt service
+                  <ArrowRight aria-hidden="true" size={17} />
+                </Link>
+              ) : null}
+            </div>
+          </div>
+
+          <div className="grid gap-4 bg-white p-6 sm:p-8">
+            {detailItems.map((item, itemIndex) => (
+              <article
+                key={contentCardKey(item, itemIndex, section.title)}
+                className="rounded-[8px] border border-slate-200 bg-slate-50 p-5"
+              >
+                <CheckCircle2
+                  aria-hidden="true"
+                  className="text-cyan-800"
+                  size={21}
+                />
+                <h3 className="mt-4 text-xl font-semibold tracking-normal text-slate-950">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-base leading-7 text-slate-700">
+                  {item.text}
+                </p>
+              </article>
+            ))}
+
+            <div className="rounded-[8px] border border-cyan-100 bg-cyan-50 p-5 sm:flex sm:items-center sm:justify-between sm:gap-4">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                  Kontakt
+                </p>
+                <h3 className="mt-2 text-lg font-semibold text-slate-950">
+                  {ctaItem?.title || "Treng du service eller deler?"}
+                </h3>
+              </div>
+              <a
+                href="tel:+4757698300"
+                className="mt-4 inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 sm:mt-0"
+              >
+                <PhoneCall aria-hidden="true" size={17} />
+                57 69 83 00
+              </a>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ServiceApprovalSection({
   section,
 }: {
@@ -1694,7 +1791,9 @@ function ContentSections({
   const isFrysetunnelPage = pageSlug === "/produkt/frysetunnel";
   const isMontasjeServicePage = pageSlug === "/tenester/montasje";
   const isLeveranseServicePage = pageSlug === "/tenester/leveranse";
-  const isStyledServicePage = isMontasjeServicePage || isLeveranseServicePage;
+  const isServicePartsPage = pageSlug === "/tenester/service-reservedeler";
+  const isStyledServicePage =
+    isMontasjeServicePage || isLeveranseServicePage || isServicePartsPage;
   const isAccessoryIndexPage = pageSlug === "/tilleggsutstyr";
   const isDesignedProductPage =
     isPirPage ||
@@ -1816,6 +1915,18 @@ function ContentSections({
     }
 
     if (
+      isServicePartsPage &&
+      section.title === "Service og reservedeler"
+    ) {
+      return (
+        <ServicePartsSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (
       isMontasjeServicePage &&
       section.title === "Fresvik produkt tilbyr montasje av:"
     ) {
@@ -1853,6 +1964,10 @@ function ContentSections({
     }
 
     if (isLeveranseServicePage && section.title === "Kontakt") {
+      return null;
+    }
+
+    if (isServicePartsPage && section.title === "Kontakt") {
       return null;
     }
 
@@ -2799,6 +2914,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug === "/produkt/frysetunnel" ||
     page.slug === "/tenester/montasje" ||
     page.slug === "/tenester/leveranse" ||
+    page.slug === "/tenester/service-reservedeler" ||
     isReferenceDetailPage ||
     isAccessoryPage;
   const showTopCards =

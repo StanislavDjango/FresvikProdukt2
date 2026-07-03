@@ -1180,6 +1180,118 @@ function MountingDocumentationCta() {
   );
 }
 
+function ElectricSkyveportDownloadsSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const descriptions: Record<string, string> = {
+    "Koblingskjema Fermod 5010":
+      "Koblingsskjema for elektrisk styring Fermod 5010.",
+    "Montasjeanvisning for Fermod 5010 på manuelt beslag 2150":
+      "Montasje av Fermod 5010 på manuelt beslag 2150.",
+    "Montasjeanvisning for Fermod 5010 på manuelt beslag 3530 og 7530":
+      "Montasje av Fermod 5010 på manuelt beslag 3530 og 7530.",
+    "Quick Start": "Hurtigstart for 5010Exp.",
+    "Endre skyveretning": "Rettleiing for å endre skyveretning.",
+    Tilleggsutstyr: "Tilleggsutstyr og options kit for 5010Exp.",
+  };
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow="Elektrisk skyveport"
+            title="Filer for Fermod 5010"
+            intro="Koblingsskjema, montasjeanvisningar og praktiske PDF-filer for elektrisk styring av Fresvik Skyveport."
+          />
+          <Link
+            href="/monteringsanvisning"
+            className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+          >
+            Alle monteringsanvisningar
+            <ArrowRight aria-hidden="true" size={17} />
+          </Link>
+        </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {section.items.map((item, itemIndex) => {
+            const href = item.href;
+            const isPdf = href ? isPdfHref(href) : false;
+            const isExternal = href ? isExternalHref(href) : false;
+            const keyScope = "electric-skyveport-downloads";
+            const className =
+              "group flex min-h-full flex-col rounded-[8px] border border-slate-200 bg-slate-50 p-5 shadow-sm shadow-slate-950/[0.03] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700";
+            const content = (
+              <>
+                <div className="flex items-start gap-4">
+                  <span className="grid size-12 shrink-0 place-items-center rounded-[8px] bg-white text-cyan-800 shadow-sm shadow-slate-950/[0.04] ring-1 ring-slate-200 transition group-hover:bg-cyan-50">
+                    <FileText aria-hidden="true" size={21} />
+                  </span>
+                  <div>
+                    <h2 className="text-lg font-semibold text-slate-950">
+                      {item.title}
+                    </h2>
+                    <p className="mt-2 text-sm leading-6 text-slate-600">
+                      {descriptions[item.title] || item.text}
+                    </p>
+                  </div>
+                </div>
+                {href ? (
+                  <span className="mt-6 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                    Opne
+                    {isPdf || isExternal ? (
+                      <ExternalLink aria-hidden="true" size={16} />
+                    ) : (
+                      <ArrowRight aria-hidden="true" size={16} />
+                    )}
+                  </span>
+                ) : null}
+              </>
+            );
+
+            if (!href) {
+              return (
+                <article
+                  key={contentCardKey(item, itemIndex, keyScope)}
+                  className={className}
+                >
+                  {content}
+                </article>
+              );
+            }
+
+            if (isPdf || isExternal) {
+              return (
+                <a
+                  key={contentCardKey(item, itemIndex, keyScope)}
+                  href={href}
+                  className={className}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {content}
+                </a>
+              );
+            }
+
+            return (
+              <Link
+                key={contentCardKey(item, itemIndex, keyScope)}
+                href={href}
+                className={className}
+              >
+                {content}
+              </Link>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ProductRelatedSection({
   section,
 }: {
@@ -2166,6 +2278,8 @@ function ContentSections({
   const isFrysetunnelPage = pageSlug === "/produkt/frysetunnel";
   const isDocumentationPage = pageSlug === "/dokumentasjon";
   const isMountingPage = pageSlug === "/monteringsanvisning";
+  const isElectricSkyveportPage =
+    pageSlug === "/monteringsanvisningar-fresvik-skyveport";
   const isServiceIndexPage = pageSlug === "/tenester";
   const isMontasjeServicePage = pageSlug === "/tenester/montasje";
   const isLeveranseServicePage = pageSlug === "/tenester/leveranse";
@@ -2201,6 +2315,7 @@ function ContentSections({
     isReferenceDetailPage ||
     isDocumentationPage ||
     isMountingPage ||
+    isElectricSkyveportPage ||
     isAccessoryIndexPage ||
     isStyledServicePage
       ? sections.filter(
@@ -2239,6 +2354,17 @@ function ContentSections({
                 section.title === "Lenker frå gammal side")
             ) &&
             !(
+              isElectricSkyveportPage &&
+              (section.title ===
+                "Monteringsanvisningar for elektrisk styring av Fresvik Skyveport" ||
+                section.title === "Dokumentasjon og sertifikat" ||
+                section.title === "Kontakt" ||
+                section.title === "Full tekst frå gammal side" ||
+                section.title === "Bilde frå gammal side" ||
+                section.title === "Dokumentlenker frå gammal side" ||
+                section.title === "Lenker frå gammal side")
+            ) &&
+            !(
               isMountingPage &&
               (section.title === "Dokumentasjon og sertifikat" ||
                 section.title === "Kontakt" ||
@@ -2268,6 +2394,18 @@ function ContentSections({
       : sections;
 
   return visibleSections.map((section, sectionIndex) => {
+    if (
+      isElectricSkyveportPage &&
+      section.title === "Filer frå gammal skyveportside"
+    ) {
+      return (
+        <ElectricSkyveportDownloadsSection
+          key={`electric-skyveport-downloads-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
     if (isMountingPage && section.title === "Monteringsanvisningar") {
       return (
         <MountingDownloadsSection
@@ -3358,6 +3496,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug === "/tenester/service-reservedeler" ||
     page.slug === "/dokumentasjon" ||
     page.slug === "/monteringsanvisning" ||
+    page.slug === "/monteringsanvisningar-fresvik-skyveport" ||
     isReferenceDetailPage ||
     isAccessoryPage;
   const showTopCards =

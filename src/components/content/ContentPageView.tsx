@@ -1328,6 +1328,81 @@ function ServicePartsSection({
   );
 }
 
+function ServiceIndexSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const serviceDescriptions: Record<string, string> = {
+    Montasje:
+      "Planlegging og gjennomføring av montasje for panel, portar, dører og tilhøyrande løysingar.",
+    Leveranse:
+      "Koordinering av komplette leveransar til prosjekt, med vekt på sikker levering og tydeleg merking.",
+    "Service og reservedeler":
+      "Oppfølging etter levering, service og reservedeler til dører og portar når noko hastar.",
+  };
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="grid gap-8 lg:grid-cols-[0.35fr_0.65fr]">
+          <div>
+            <SectionHeader
+              eyebrow="Tenester"
+              title="Frå avklaring til ferdig leveranse"
+              intro="Fresvik Produkt hjelper med montasje, leveranse og oppfølging av kjøle-, fryse- og panelløysingar."
+            />
+            <Link
+              href="/kontakt"
+              className="mt-6 inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+            >
+              Kontakt oss
+              <ArrowRight aria-hidden="true" size={17} />
+            </Link>
+          </div>
+
+          <div className="grid gap-4">
+            {section.items.map((item, itemIndex) => {
+              const icon =
+                item.title === "Montasje" ? (
+                  <Wrench aria-hidden="true" size={23} />
+                ) : item.title === "Leveranse" ? (
+                  <CheckCircle2 aria-hidden="true" size={23} />
+                ) : (
+                  <ShieldCheck aria-hidden="true" size={23} />
+                );
+
+              return (
+                <Link
+                  key={contentCardKey(item, itemIndex, section.title)}
+                  href={item.href || "/tenester"}
+                  className="group grid gap-4 rounded-[8px] border border-slate-200 bg-slate-50 p-5 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 sm:grid-cols-[auto_1fr_auto] sm:items-center"
+                >
+                  <span className="grid size-12 place-items-center rounded-[8px] bg-white text-cyan-800 shadow-sm shadow-slate-950/[0.04] ring-1 ring-slate-200 transition group-hover:bg-cyan-50">
+                    {icon}
+                  </span>
+                  <span>
+                    <span className="block text-lg font-semibold text-slate-950">
+                      {item.title}
+                    </span>
+                    <span className="mt-2 block text-sm leading-6 text-slate-600">
+                      {serviceDescriptions[item.title] || item.text}
+                    </span>
+                  </span>
+                  <span className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                    Les meir
+                    <ArrowRight aria-hidden="true" size={17} />
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ServiceApprovalSection({
   section,
 }: {
@@ -1789,11 +1864,15 @@ function ContentSections({
   const isDoorPage = pageSlug === "/produkt/kjole-frysedorer";
   const isFacadePage = pageSlug === "/produkt/fasadepanel";
   const isFrysetunnelPage = pageSlug === "/produkt/frysetunnel";
+  const isServiceIndexPage = pageSlug === "/tenester";
   const isMontasjeServicePage = pageSlug === "/tenester/montasje";
   const isLeveranseServicePage = pageSlug === "/tenester/leveranse";
   const isServicePartsPage = pageSlug === "/tenester/service-reservedeler";
   const isStyledServicePage =
-    isMontasjeServicePage || isLeveranseServicePage || isServicePartsPage;
+    isServiceIndexPage ||
+    isMontasjeServicePage ||
+    isLeveranseServicePage ||
+    isServicePartsPage;
   const isAccessoryIndexPage = pageSlug === "/tilleggsutstyr";
   const isDesignedProductPage =
     isPirPage ||
@@ -1858,6 +1937,10 @@ function ContentSections({
                 section.title === "Dokumentlenker frå gammal side" ||
                 section.title === "Lenker frå gammal side")
             ) &&
+            !(
+              isServiceIndexPage &&
+              section.title === "Teneste-URL-ar frå gammal sitemap"
+            ) &&
             section.title !== "Nyheitsbrev og footerlenker frå gammal side",
         )
       : sections;
@@ -1901,6 +1984,15 @@ function ContentSections({
             intro:
               "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker.",
           }}
+        />
+      );
+    }
+
+    if (isServiceIndexPage && section.title === "Tenesteområde") {
+      return (
+        <ServiceIndexSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
         />
       );
     }
@@ -2912,6 +3004,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug === "/produkt/kjole-frysedorer" ||
     page.slug === "/produkt/fasadepanel" ||
     page.slug === "/produkt/frysetunnel" ||
+    page.slug === "/tenester" ||
     page.slug === "/tenester/montasje" ||
     page.slug === "/tenester/leveranse" ||
     page.slug === "/tenester/service-reservedeler" ||

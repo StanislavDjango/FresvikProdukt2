@@ -26,11 +26,6 @@ export const redirectRules: RedirectRule[] = [
     permanent: false,
   },
   {
-    source: "/tenester",
-    destination: "/tenester/montasje",
-    permanent: false,
-  },
-  {
     source: "/store",
     destination: "/tilleggsutstyr",
     permanent: true,

@@ -1324,7 +1324,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Uploaded to Sanity as image-7b18a65a49dcb6a7fbe00ae38c862e2cb616d7ba-1280x1920-jpg."
+    "notes": "Uploaded to Sanity as image-7b18a65a49dcb6a7fbe00ae38c862e2cb616d7ba-1280x1920-jpg. Duplicate file content of /assets/fresvik/images/old-site/Diktator_web.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228959146-O18ZOPO4ZJZA3KCU13SL/dor_ny.jpg",
@@ -2241,7 +2241,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Recovered originalUrl from duplicate file hash."
+    "notes": "Recovered originalUrl from duplicate file hash. Duplicate file content of /assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429054718-WXG74WTBHLGX9QBE7NTA/image-asset.jpeg",
@@ -2928,7 +2928,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Recovered originalUrl from duplicate file hash."
+    "notes": "Recovered originalUrl from duplicate file hash. Duplicate file content of /assets/fresvik/images/old-site/Skipsdør+Fresvik+Produkt.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222151377-Y2600X4366PYP2EVYBJ9/Spar+Lund+Torv+-+Fresvik+Produkt+1+.jpeg",
@@ -3581,10 +3581,12 @@
     "filePath": "public/assets/fresvik/images/old-site/Diktator_web.jpg",
     "assetType": "image",
     "usedBy": [
-      "/produkt"
+      "/produkt",
+      "/tilleggsutstyr"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "948085607562741405b5809a9240862b282f5f35b000a307b2ed5a35ab2ccc43",
     "fileSize": 130246,
@@ -3632,11 +3634,13 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/elebar-ventil",
-      "/produkt"
+      "/produkt",
+      "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/elebar-ventil",
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "208732276e59ce2a1eaddbd10084986652ae2c3823b226624da35e9d16bf4fc2",
     "fileSize": 153875,
@@ -4036,11 +4040,13 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/standard-handtak",
-      "/produkt"
+      "/produkt",
+      "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/standard-handtak",
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "6a05b6ae1a8d056676272694e647b52d8e9fc9c440ac4bf25e84a9e557c16d85",
     "fileSize": 230207,
@@ -4189,10 +4195,12 @@
     "filePath": "public/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
     "assetType": "image",
     "usedBy": [
-      "/produkt"
+      "/produkt",
+      "/tilleggsutstyr"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "d5aeae51b5a69c2a28ae00a8d6902d3710d882ee2500c75fce78e5d94a04adf0",
     "fileSize": 7955,
@@ -4340,11 +4348,13 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/maxielebar-ventil",
-      "/produkt"
+      "/produkt",
+      "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/maxielebar-ventil",
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "95395aff36ab60b2c766994ac2e90ba1f2eea65f84f972bb8d3f8dce1c76b82d",
     "fileSize": 183047,
@@ -4466,10 +4476,12 @@
     "filePath": "public/assets/fresvik/images/old-site/PEGO+innestengningsalarm_web.jpg",
     "assetType": "image",
     "usedBy": [
-      "/produkt"
+      "/produkt",
+      "/tilleggsutstyr"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "84bfb917b6c3fc7987f9af7df82b266a988d8733eeb77ef7ab75ffdc7cc343eb",
     "fileSize": 248339,
@@ -4491,10 +4503,12 @@
     "filePath": "public/assets/fresvik/images/old-site/PVC-gardin_web.jpg",
     "assetType": "image",
     "usedBy": [
-      "/produkt"
+      "/produkt",
+      "/tilleggsutstyr"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "d55bacb1286e900554e78e8ac850a33e663e373e84ca4eeaa06abedda9bd5a50",
     "fileSize": 286726,
@@ -4773,10 +4787,12 @@
     "filePath": "public/assets/fresvik/images/old-site/Skipsdør+Fresvik+Produkt.jpg",
     "assetType": "image",
     "usedBy": [
-      "/produkt"
+      "/produkt",
+      "/tilleggsutstyr"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "4df6b6650ec7296734dcfabef0eff2022da3391d72ddf63aab642eeaf4e335bc",
     "fileSize": 18754,
@@ -4874,11 +4890,13 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/2014/7/9/standard-drer",
-      "/produkt"
+      "/produkt",
+      "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/2014/7/9/standard-drer",
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "2113401f63181d9f2762be9bc02a30227b8c7f16c9224b436b9ca3e07c7434f7",
     "fileSize": 218202,
@@ -5635,7 +5653,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/diktator-web.jpg."
+    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/diktator-web.jpg. Duplicate file content of /assets/fresvik/images/old-site/Diktator_web.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6a3c9da6-49a6-479e-a5bd-efda8fe4cb86/Door.png",
@@ -8011,7 +8029,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg."
+    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg. Duplicate file content of /assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428947506-E2RZ7M6AJLX1T5O1BSIU/Innvendig+_m%C3%B8bler_kl%C3%A6r.JPG",
@@ -8738,11 +8756,13 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/beslag",
-      "/produkt"
+      "/produkt",
+      "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/beslag",
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "166a9dcdaa6bf36c579fa17784334b5f74ebcbb36738e0ac54c24fe513584836",
     "fileSize": 76360,
@@ -8964,11 +8984,13 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/kjlerampe",
-      "/produkt"
+      "/produkt",
+      "/tilleggsutstyr"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/kjlerampe",
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/tilleggsutstyr"
     ],
     "sha256": "5ecc96d314c7bc5ce9a27e886f6ac780d03b593d130db50453934cfd4d75b30c",
     "fileSize": 242572,
@@ -9281,7 +9303,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/skipsdr-fresvik-produkt.jpg."
+    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/skipsdr-fresvik-produkt.jpg. Duplicate file content of /assets/fresvik/images/old-site/Skipsdør+Fresvik+Produkt.jpg."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/f152d606-3742-407e-99fc-8e412f82cab6/Skjermbilde+2026-02-27+110131.png",

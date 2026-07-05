@@ -21,6 +21,11 @@
 - `/andre-produkter/pego-innestengningsalarm`
 - `/andre-produkter/pvc-gardiner`
 - `/andre-produkter/beslag`
+- `/andre-produkter/diktator-dortiltrekker`
+- `/andre-produkter/kjlerampe`
+- `/andre-produkter/2014/7/9/standard-drer`
+- `/andre-produkter/2014/7/9/skipsdrer`
+- `/andre-produkter/2014/7/9/industri-slagdor`
 
 Общий шаблон, который сохраняем:
 
@@ -50,31 +55,36 @@
 
 Эти страницы идут первыми, потому что они уже связаны с блоком `Tilleggsutstyr` и нижней навигацией.
 
-- [ ] `/andre-produkter/diktator-dortiltrekker`
+- [x] `/andre-produkter/diktator-dortiltrekker`
   - Проверить старый текст и фото.
   - Убрать карточный дубль, если он есть.
   - Оформить как detail page.
   - Проверить previous/next навигацию.
+  - Статус: закрыто через общий accessory detail шаблон; smoke `200`, top cards `false`, служебные подписи `false`.
 
-- [ ] `/andre-produkter/kjlerampe`
+- [x] `/andre-produkter/kjlerampe`
   - Проверить все 3 изображения рампы.
   - Оформить изображения аккуратной галереей внутри product information.
   - Проверить spelling: старый route `kjlerampe` сохраняем ради URL, но в UI пишем `Køyrerampe`.
+  - Статус: закрыто через общий accessory detail шаблон; 3 изображения показываются внутри product information, route сохранён.
 
-- [ ] `/andre-produkter/2014/7/9/standard-drer`
+- [x] `/andre-produkter/2014/7/9/standard-drer`
   - Перенести/проверить полный технический текст.
   - Сделать длинный текст читаемым: разделы `Konstruksjon`, `Standardleveranse`, `Ekstraleveranse`, `Kort leveringstid`.
   - Проверить фото двери.
+  - Статус: закрыто; технические абзацы автоматически оформлены как отдельные секции.
 
-- [ ] `/andre-produkter/2014/7/9/skipsdrer`
+- [x] `/andre-produkter/2014/7/9/skipsdrer`
   - Проверить полный текст.
   - Оформить технические пункты как читаемый список/секции.
   - Проверить фото.
+  - Статус: закрыто; технические абзацы автоматически оформлены как отдельные секции.
 
-- [ ] `/andre-produkter/2014/7/9/industri-slagdor`
+- [x] `/andre-produkter/2014/7/9/industri-slagdor`
   - Проверить полный текст.
   - Оформить технические пункты как читаемый список/секции.
   - Проверить фото.
+  - Статус: закрыто; технические абзацы автоматически оформлены как отдельные секции.
 
 ## Очередь 2: Продуктовые Страницы
 

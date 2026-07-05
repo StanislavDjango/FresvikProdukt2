@@ -189,6 +189,23 @@ function contentCardKey(
     .join("-");
 }
 
+function splitLeadingLabel(paragraph: string) {
+  const colonIndex = paragraph.indexOf(":");
+
+  if (colonIndex <= 0 || colonIndex > 28) {
+    return undefined;
+  }
+
+  const label = paragraph.slice(0, colonIndex).trim();
+  const text = paragraph.slice(colonIndex + 1).trim();
+
+  if (!label || !text || /[.!?]/.test(label)) {
+    return undefined;
+  }
+
+  return { label, text };
+}
+
 const tilleggsutstyrOverviewItems: ContentPage["cards"] = [
   {
     title: "Standard håndtak",
@@ -665,11 +682,24 @@ function AccessoryDetailSection({
 }) {
   const item = section.items[0];
   const paragraphs = item?.text.split(/\n{2,}/).filter(Boolean) || [];
+  const introParagraphs: string[] = [];
+  const detailParagraphs: Array<{ label: string; text: string }> = [];
   const imageItems =
     imageSection?.items.filter((imageItem) => imageItem.imageUrl) ||
     section.items.filter((sectionItem) => sectionItem.imageUrl);
 
   if (!item) return null;
+
+  paragraphs.forEach((paragraph) => {
+    const splitParagraph = splitLeadingLabel(paragraph);
+
+    if (splitParagraph) {
+      detailParagraphs.push(splitParagraph);
+      return;
+    }
+
+    introParagraphs.push(paragraph);
+  });
 
   return (
     <section className="border-b border-slate-200 bg-white">
@@ -682,13 +712,32 @@ function AccessoryDetailSection({
             <h2 className="mt-4 text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
               {item.title}
             </h2>
-            <div className="mt-5 space-y-4 text-base leading-8 text-slate-700">
-              {paragraphs.map((paragraph, paragraphIndex) => (
-                <p key={`${item.title}-accessory-${paragraphIndex}`}>
-                  {paragraph}
-                </p>
-              ))}
-            </div>
+            {introParagraphs.length > 0 ? (
+              <div className="mt-5 space-y-4 text-base leading-8 text-slate-700">
+                {introParagraphs.map((paragraph, paragraphIndex) => (
+                  <p key={`${item.title}-accessory-${paragraphIndex}`}>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ) : null}
+            {detailParagraphs.length > 0 ? (
+              <div className="mt-6 grid gap-3">
+                {detailParagraphs.map((detail, detailIndex) => (
+                  <div
+                    key={`${item.title}-detail-${detail.label}-${detailIndex}`}
+                    className="rounded-[8px] border border-slate-200 bg-slate-50 p-4"
+                  >
+                    <h3 className="text-sm font-black uppercase tracking-[0.14em] text-cyan-800">
+                      {detail.label}
+                    </h3>
+                    <p className="mt-2 text-base leading-7 text-slate-700">
+                      {detail.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            ) : null}
             <div className="mt-7 flex flex-wrap gap-3">
               <Link
                 href="/kontakt"
@@ -706,7 +755,12 @@ function AccessoryDetailSection({
           </div>
 
           {imageItems.length > 0 ? (
-            <div className="grid gap-px bg-slate-200 p-px">
+            <div
+              className={cn(
+                "grid gap-px bg-slate-200 p-px",
+                imageItems.length > 1 && "sm:grid-cols-2",
+              )}
+            >
               {imageItems.map((imageItem, imageIndex) => (
                 <figure
                   key={contentCardKey(
@@ -716,7 +770,14 @@ function AccessoryDetailSection({
                   )}
                   className="group overflow-hidden bg-slate-50"
                 >
-                  <div className="relative aspect-[16/11] min-h-64 overflow-hidden">
+                  <div
+                    className={cn(
+                      "relative overflow-hidden",
+                      imageItems.length > 1
+                        ? "aspect-[4/3] min-h-52"
+                        : "aspect-[16/11] min-h-64",
+                    )}
+                  >
                     <Image
                       src={imageItem.imageUrl || item.imageUrl || ""}
                       alt={imageItem.imageAlt || imageItem.title}

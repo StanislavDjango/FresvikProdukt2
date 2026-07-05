@@ -656,6 +656,157 @@ function AccessoryImageGallerySection({
   );
 }
 
+function AccessoryDetailSection({
+  section,
+  imageSection,
+}: {
+  section: ContentPage["sections"][number];
+  imageSection?: ContentPage["sections"][number];
+}) {
+  const item = section.items[0];
+  const paragraphs = item?.text.split(/\n{2,}/).filter(Boolean) || [];
+  const imageItems =
+    imageSection?.items.filter((imageItem) => imageItem.imageUrl) ||
+    section.items.filter((sectionItem) => sectionItem.imageUrl);
+
+  if (!item) return null;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <article className="grid overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-xl shadow-slate-950/[0.06] lg:grid-cols-[0.92fr_1.08fr]">
+          <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+              Produktinformasjon
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+              {item.title}
+            </h2>
+            <div className="mt-5 space-y-4 text-base leading-8 text-slate-700">
+              {paragraphs.map((paragraph, paragraphIndex) => (
+                <p key={`${item.title}-accessory-${paragraphIndex}`}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Link
+                href="/kontakt"
+                className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+              >
+                Kontakt oss <ArrowRight aria-hidden="true" size={17} />
+              </Link>
+              <Link
+                href="/tilleggsutstyr"
+                className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+              >
+                Alt tilleggsutstyr <ArrowRight aria-hidden="true" size={17} />
+              </Link>
+            </div>
+          </div>
+
+          {imageItems.length > 0 ? (
+            <div className="grid gap-px bg-slate-200 p-px">
+              {imageItems.map((imageItem, imageIndex) => (
+                <figure
+                  key={contentCardKey(
+                    imageItem,
+                    imageIndex,
+                    `${section.title}-accessory-images`,
+                  )}
+                  className="group overflow-hidden bg-slate-50"
+                >
+                  <div className="relative aspect-[16/11] min-h-64 overflow-hidden">
+                    <Image
+                      src={imageItem.imageUrl || item.imageUrl || ""}
+                      alt={imageItem.imageAlt || imageItem.title}
+                      fill
+                      sizes="(min-width: 1024px) 44vw, 100vw"
+                      className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                  {imageItems.length > 1 ? (
+                    <figcaption className="border-t border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-950">
+                      {imageItem.title}
+                    </figcaption>
+                  ) : null}
+                </figure>
+              ))}
+            </div>
+          ) : null}
+        </article>
+      </Container>
+    </section>
+  );
+}
+
+function AccessoryNavigationSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const previous = section.items.find((item) => item.title === "Førre");
+  const overview = section.items.find((item) => item.title === "Alle tilleggsutstyr");
+  const next = section.items.find((item) => item.title === "Neste");
+
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-10">
+        <nav
+          aria-label="Vidare i tilleggsutstyr"
+          className="grid gap-3 md:grid-cols-3"
+        >
+          {previous?.href ? (
+            <Link
+              href={previous.href}
+              className="group flex min-h-24 flex-col justify-center rounded-[8px] border border-slate-200 bg-white p-5 shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lg hover:shadow-slate-950/[0.06]"
+            >
+              <span className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
+                Førre
+              </span>
+              <span className="mt-2 font-semibold text-slate-950">
+                {previous.text}
+              </span>
+            </Link>
+          ) : (
+            <div />
+          )}
+
+          {overview?.href ? (
+            <Link
+              href={overview.href}
+              className="group flex min-h-24 flex-col justify-center rounded-[8px] border border-slate-950 bg-slate-950 p-5 text-white shadow-lg shadow-slate-950/[0.12] transition hover:-translate-y-0.5 hover:bg-cyan-900"
+            >
+              <span className="text-xs font-black uppercase tracking-[0.14em] text-cyan-300">
+                Oversikt
+              </span>
+              <span className="mt-2 font-semibold">
+                Alle tilleggsutstyr
+              </span>
+            </Link>
+          ) : null}
+
+          {next?.href ? (
+            <Link
+              href={next.href}
+              className="group flex min-h-24 flex-col justify-center rounded-[8px] border border-slate-200 bg-white p-5 text-right shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lg hover:shadow-slate-950/[0.06]"
+            >
+              <span className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
+                Neste
+              </span>
+              <span className="mt-2 font-semibold text-slate-950">
+                {next.text}
+              </span>
+            </Link>
+          ) : (
+            <div />
+          )}
+        </nav>
+      </Container>
+    </section>
+  );
+}
+
 function ProductBenefitsSection({
   section,
   showIndex = true,
@@ -2526,6 +2677,9 @@ function ContentSections({
   const isAccessoryPage = pageSlug?.startsWith("/andre-produkter/") ?? false;
   const isReferenceDetailPage =
     (pageSlug?.startsWith("/referansar/") ?? false) && pageSlug !== "/referansar";
+  const accessoryImagesSection = isAccessoryPage
+    ? sections.find((section) => section.title === "Bilde frå gammal side")
+    : undefined;
   const pirProducerSection = isPirPage
     ? sections.find((section) =>
         section.title.startsWith("Den første norske produsenten"),
@@ -2543,6 +2697,7 @@ function ContentSections({
     isMountingPage ||
     isElectricSkyveportPage ||
     isAccessoryIndexPage ||
+    isAccessoryPage ||
     isStyledServicePage ||
     isReferenceIndexPage ||
     isNewsIndexPage
@@ -2605,6 +2760,10 @@ function ContentSections({
               isAccessoryIndexPage &&
               (section.title === "Full tekst frå gammal side" ||
                 section.title === "Bilde frå gammal side")
+            ) &&
+            !(
+              isAccessoryPage &&
+              section.title === "Bilde frå gammal side"
             ) &&
             !(
               isStyledServicePage &&
@@ -2722,6 +2881,25 @@ function ContentSections({
 
     if (isDocumentationPage && section.title === "Noko du savnar?") {
       return <DocumentationContactSection key={`${section.title}-${sectionIndex}`} />;
+    }
+
+    if (isAccessoryPage && section.title === "Produktinformasjon") {
+      return (
+        <AccessoryDetailSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+          imageSection={accessoryImagesSection}
+        />
+      );
+    }
+
+    if (isAccessoryPage && section.title === "Vidare i tilleggsutstyr") {
+      return (
+        <AccessoryNavigationSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
     }
 
     if (

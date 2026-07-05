@@ -279,19 +279,19 @@ LINK_CHECK_BASE_URL=https://fresvik-produkt2.vercel.app npm run check:links
 
 ## Ближайшая Рабочая Цель
 
-Следующая конкретная страница:
+Следующая конкретная очередь:
 
 ```text
-/andre-produkter/diktator-dortiltrekker
+/dokumentasjon
+/monteringsanvisning
+/monteringsanvisningar-fresvik-skyveport
 ```
 
 После неё:
 
 ```text
-/andre-produkter/kjlerampe
-/andre-produkter/2014/7/9/standard-drer
-/andre-produkter/2014/7/9/skipsdrer
-/andre-produkter/2014/7/9/industri-slagdor
+/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt
+/referansar/celsa-steel-sotra
 ```
 
-Когда эта очередь будет закрыта, раздел `Tilleggsutstyr / andre-produkter` можно считать визуально и контентно выровненным.
+Когда очередь документации будет закрыта, можно переходить к `Referansar`.

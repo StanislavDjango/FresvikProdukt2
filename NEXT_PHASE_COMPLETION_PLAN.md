@@ -155,8 +155,8 @@
 
 Сначала страницы, которые уже всплыли из `fasadepanel`:
 
-- [ ] `/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt`
-- [ ] `/referansar/celsa-steel-sotra`
+- [x] `/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt`
+- [x] `/referansar/celsa-steel-sotra`
 
 Потом остальные reference pages из inventory:
 
@@ -178,6 +178,8 @@
 - [ ] `/referansar/fryserom-fryseport-rentokil`
 - [ ] `/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar`
 - [ ] `/referansar/karlsoybruket`
+
+Статус: первые две reference pages закрыты вручную; полный старый project body перенесён без переписывания, проектные изображения загружены в Sanity, старые page-specific prev/next/contact links сохранены через новые routes.
 - [ ] `/referansar/fiskehallen`
 - [ ] `/referansar/buskerud-storcash`
 - [ ] `/referansar/bjerke-spekemat`

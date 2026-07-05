@@ -352,22 +352,244 @@ const referenceByHref = new Map(
     section.items.map((item) => [item.href, item.text]),
   ),
 );
+
+const referenceProjectOverrides = new Map([
+  [
+    "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
+    {
+      title: "Interfrukt",
+      description: [
+        "På Langhus i Ski kommune har Anthon B. Nilsen bygd nytt grossistlager for frukt-og grønt på heile 21 300 kvadratmeter for Interfrukt SA.",
+        "Interfrukt framleiger til ni ulike frukt-aktørar og det nye grossistlageret inneheld tørrlager, kjølelager, fryselager samt kontordel.",
+        "Vi i Fresvik Produkt vart valt som leverandør av frys- og kjøleveggar i prosjektet, der Norske Stålbygg var totalentreprenør. Det er store dimensjonar på bygget, vår leveranse bestod av heile 16.500 kvm kjøle- og frysepanelar.",
+        "- Den største utfordringa var høgda på 10,5 meter. Vi produserer panel på 8 meter, så panela måtte skøytast, men med not og fjør i panel-endane oppnår vi god styrke.",
+        "Montasjen pågjekk i perioden august til desember 2013, og gjekk smertefritt seier vår prosjektleiar Arek Lekki.",
+        "Ønskjer du meir informasjon om våre produkt - kontakt vår salsavdeling.",
+      ].join("\n"),
+      year: 2014,
+      category: "Fasadepanel",
+      location: "Langhus",
+      customerType: "Grossistlager for frukt og grønt",
+      migratedImagePath: "/assets/fresvik/images/migrated/interfrukt-langhus.webp",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Interfrukt",
+              text: [
+                "På Langhus i Ski kommune har Anthon B. Nilsen bygd nytt grossistlager for frukt-og grønt på heile 21 300 kvadratmeter for Interfrukt SA.",
+                "Interfrukt framleiger til ni ulike frukt-aktørar og det nye grossistlageret inneheld tørrlager, kjølelager, fryselager samt kontordel.",
+                "Vi i Fresvik Produkt vart valt som leverandør av frys- og kjøleveggar i prosjektet, der Norske Stålbygg var totalentreprenør. Det er store dimensjonar på bygget, vår leveranse bestod av heile 16.500 kvm kjøle- og frysepanelar.",
+                "- Den største utfordringa var høgda på 10,5 meter. Vi produserer panel på 8 meter, så panela måtte skøytast, men med not og fjør i panel-endane oppnår vi god styrke.",
+                "Montasjen pågjekk i perioden august til desember 2013, og gjekk smertefritt seier vår prosjektleiar Arek Lekki.",
+                "Ønskjer du meir informasjon om våre produkt - kontakt vår salsavdeling.",
+              ].join("\n\n"),
+              meta: "9. juli 2014",
+              imageAlt: "Grossistlager for Interfrukt på Langhus",
+              migratedImagePath: "/assets/fresvik/images/migrated/interfrukt-langhus.webp",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Bilde frå gammal side",
+          intro: "Prosjektbilete bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "Interfrukt prosjektbilde 1",
+              text: "Bilde frå gammal Interfrukt-side.",
+              imageAlt: "Grossistlager for Interfrukt på Langhus",
+              migratedImagePath: "/assets/fresvik/images/migrated/interfrukt-langhus.webp",
+            },
+            {
+              _key: "reference-project-image-1",
+              _type: "migrationCard",
+              title: "Interfrukt prosjektbilde 2",
+              text: "Bilde frå gammal Interfrukt-side.",
+              imageAlt: "Interfrukt kjøle- og frysepanel",
+              migratedImagePath: "/assets/fresvik/images/old-site/image-asset-72273e78e1.jpeg",
+            },
+            {
+              _key: "reference-project-image-2",
+              _type: "migrationCard",
+              title: "Interfrukt prosjektbilde 3",
+              text: "Bilde frå gammal Interfrukt-side.",
+              imageAlt: "Interfrukt kjøle- og frysepanel",
+              migratedImagePath: "/assets/fresvik/images/old-site/image-asset-fb046a8b70.jpeg",
+            },
+            {
+              _key: "reference-project-image-3",
+              _type: "migrationCard",
+              title: "Interfrukt prosjektbilde 4",
+              text: "Bilde frå gammal Interfrukt-side.",
+              imageAlt: "Interfrukt kjøle- og frysepanel",
+              migratedImagePath: "/assets/fresvik/images/old-site/image-asset-1d4ca4e9fd.jpeg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-contact",
+              _type: "migrationCard",
+              title: "Ta kontakt",
+              text: "Gammal side lenka vidare til salsavdeling for meir informasjon.",
+              href: "/kontakt",
+            },
+            {
+              _key: "reference-project-prev",
+              _type: "migrationCard",
+              title: "Coop Extra Naustdal",
+              text: "Forrige referanse frå gammal side.",
+              href: "/referansar/fryserom-med-fryseport-til-coop-extra-naustdal",
+            },
+            {
+              _key: "reference-project-next",
+              _type: "migrationCard",
+              title: "Coop Extra Sogndal",
+              text: "Neste referanse frå gammal side.",
+              href: "/referansar/2014/7/8/coop-extra-sogndal",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    "/referansar/celsa-steel-sotra",
+    {
+      title: "Celsa Steel Service, Sotra",
+      description: [
+        "Den 18. april begynte vi fasadeprosjektet på Celsa Steel Service AS sitt nye bygg på Sotra. Celsa Steel Service er ein av dei store aktørane på armeringsstål i Norge, og har åtte avdelingar i landet.",
+        "Hovudentreprenøren er Brødrene Ulveseth AS.",
+        "Det nye produksjonsanlegget på Straume er 3250 kvadratmeter, og vi sto for levering og montering av 2600 kvadratmeter fasadepanel med mineralull-kjerne, beslag og 16 stk. vinduer.",
+        "Vårt prosjekt vart avslutta den 19.mai, og i oktober skal stålbedrifta flytte inn i sitt nye produksjonsanlegg.",
+      ].join("\n"),
+      year: 2014,
+      category: "Fasadepanel",
+      location: "Straume/Sotra",
+      customerType: "Produksjonsanlegg",
+      migratedImagePath: "/assets/fresvik/images/migrated/dsc-2579.jpg",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Celsa Steel Service, Sotra",
+              text: [
+                "Den 18. april begynte vi fasadeprosjektet på Celsa Steel Service AS sitt nye bygg på Sotra. Celsa Steel Service er ein av dei store aktørane på armeringsstål i Norge, og har åtte avdelingar i landet.",
+                "Hovudentreprenøren er Brødrene Ulveseth AS.",
+                "Det nye produksjonsanlegget på Straume er 3250 kvadratmeter, og vi sto for levering og montering av 2600 kvadratmeter fasadepanel med mineralull-kjerne, beslag og 16 stk. vinduer.",
+                "Vårt prosjekt vart avslutta den 19.mai, og i oktober skal stålbedrifta flytte inn i sitt nye produksjonsanlegg.",
+              ].join("\n\n"),
+              meta: "26. juni 2014",
+              imageAlt: "Celsa Steel Service sitt produksjonsanlegg på Sotra",
+              migratedImagePath: "/assets/fresvik/images/migrated/dsc-2579.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Bilde frå gammal side",
+          intro: "Prosjektbilete bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "Celsa Steel Service prosjektbilde 1",
+              text: "Bilde frå gammal Celsa-side.",
+              imageAlt: "Celsa Steel Service sitt produksjonsanlegg på Sotra",
+              migratedImagePath: "/assets/fresvik/images/migrated/dsc-2579.jpg",
+            },
+            {
+              _key: "reference-project-image-1",
+              _type: "migrationCard",
+              title: "Celsa Steel Service prosjektbilde 2",
+              text: "Bilde frå gammal Celsa-side.",
+              imageAlt: "Fasadeprosjekt for Celsa Steel Service",
+              migratedImagePath: "/assets/fresvik/images/old-site/dsc-2482-6376a08a05.jpg",
+            },
+            {
+              _key: "reference-project-image-2",
+              _type: "migrationCard",
+              title: "Celsa Steel Service prosjektbilde 3",
+              text: "Bilde frå gammal Celsa-side.",
+              imageAlt: "Fasadeprosjekt for Celsa Steel Service",
+              migratedImagePath: "/assets/fresvik/images/old-site/dsc-2671-bd36a37fac.jpg",
+            },
+            {
+              _key: "reference-project-image-3",
+              _type: "migrationCard",
+              title: "Celsa Steel Service prosjektbilde 4",
+              text: "Bilde frå gammal Celsa-side.",
+              imageAlt: "Fasadeprosjekt for Celsa Steel Service",
+              migratedImagePath: "/assets/fresvik/images/old-site/dsc-2677-27266e77f0.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-prev",
+              _type: "migrationCard",
+              title: "Fiskehallen",
+              text: "Forrige referanse frå gammal side.",
+              href: "/referansar/fiskehallen",
+            },
+            {
+              _key: "reference-project-next",
+              _type: "migrationCard",
+              title: "Buskerud Storcash",
+              text: "Neste referanse frå gammal side.",
+              href: "/referansar/buskerud-storcash",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+]);
+
 oldSiteReferences.forEach((item) => {
   const extract = getOldSiteContentExtract(item.href);
   const bodyText =
     extract?.bodyParagraphs?.length > 0
       ? extract.bodyParagraphs.join("\n")
       : referenceByHref.get(item.href) || "";
+  const override = referenceProjectOverrides.get(item.href);
   add({
     _id: slugId("referenceProject", item.href),
     _type: "referenceProject",
-    title: item.title,
+    title: override?.title || item.title,
     slug: { _type: "slug", current: slugCurrent(item.href) },
-    description: bodyText,
-    year: (extract?.publishedAt || item.lastmod)
+    description: override?.description || bodyText,
+    year: override?.year || ((extract?.publishedAt || item.lastmod)
       ? Number((extract?.publishedAt || item.lastmod).slice(0, 4))
-      : undefined,
-    migratedImagePath: extract?.imageUrls?.[0] || item.imageUrl,
+      : undefined),
+    category: override?.category,
+    location: override?.location,
+    customerType: override?.customerType,
+    migratedImagePath: override?.migratedImagePath || extract?.imageUrls?.[0] || item.imageUrl,
+    migrationSections: override?.migrationSections,
     sourceUrl: extract?.sourceUrl || `https://www.fresvik.no${item.href}`,
   });
 });

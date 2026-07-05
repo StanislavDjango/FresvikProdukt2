@@ -632,6 +632,61 @@ function ReferenceImageGallerySection({
   );
 }
 
+function ReferenceLinksSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const items = section.items.filter((item) => item.href);
+
+  if (items.length === 0) return null;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-10 lg:py-12">
+        <div className="rounded-[8px] border border-slate-200 bg-slate-50 p-5 sm:p-6">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                Relaterte lenker
+              </p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-normal text-slate-950">
+                Referansar frå gammal side
+              </h2>
+            </div>
+            <p className="max-w-xl text-sm leading-6 text-slate-600">
+              Page-specific lenker frå den gamle referansesida er bevart her for
+              kontroll og vidare navigasjon.
+            </p>
+          </div>
+          <div className="mt-5 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+            {items.map((item, itemIndex) => (
+              <Link
+                key={contentCardKey(item, itemIndex, section.title)}
+                href={item.href || "/referansar"}
+                className="group flex min-h-24 flex-col justify-between rounded-[8px] border border-slate-200 bg-white p-4 text-slate-950 shadow-sm shadow-slate-950/[0.03] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lg hover:shadow-slate-950/[0.06] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+              >
+                <span>
+                  <span className="block text-base font-semibold">
+                    {item.title}
+                  </span>
+                  <span className="mt-2 block text-sm leading-6 text-slate-600">
+                    {item.text}
+                  </span>
+                </span>
+                <span className="mt-4 inline-flex items-center gap-2 self-end text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                  Opne
+                  <ArrowRight aria-hidden="true" size={17} />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function AccessoryImageGallerySection({
   section,
 }: {
@@ -2786,10 +2841,6 @@ function ContentSections({
               section.title === "Dokumentlenker frå gammal side"
             ) &&
             !(
-              isReferenceDetailPage &&
-              section.title === "Lenker frå gammal side"
-            ) &&
-            !(
               isDocumentationPage &&
               (section.title === "Dokumentasjon og sertifikat" ||
                 section.title === "Kontakt" ||
@@ -3278,6 +3329,15 @@ function ContentSections({
 
       return (
         <ProductRelatedSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isReferenceDetailPage && section.title === "Lenker frå gammal side") {
+      return (
+        <ReferenceLinksSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
         />

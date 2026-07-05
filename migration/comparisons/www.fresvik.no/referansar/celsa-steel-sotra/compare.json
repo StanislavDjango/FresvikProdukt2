@@ -1,0 +1,149 @@
+{
+  "oldUrl": "https://www.fresvik.no/referansar/celsa-steel-sotra",
+  "newUrl": "http://127.0.0.1:3060/referansar/celsa-steel-sotra",
+  "checkedAt": "2026-07-05T20:13:25.236Z",
+  "status": "partial",
+  "counts": {
+    "oldTextBlocks": 14,
+    "missingTextBlocks": 9,
+    "oldLinks": 47,
+    "missingLinks": 10,
+    "oldImages": 12,
+    "missingImages": 12
+  },
+  "missingTextBlocks": [
+    "Vi skaper lønnsame nettsider basert på Squarespace, og utviklar gjerne din visuelle identitet eller hjelper deg med digital markedsføring.",
+    "Fresvikvegen 995,6896 FresvikTel: 57 69 83 00E-post: post@fresvik.no",
+    "Salsavdeling Fresvik:",
+    "Arne-Olav Lien BardølsgårdMob: 99 55 25 49arnbar@fresvik.no",
+    "Salsavdeling Drammen:",
+    "Lars Erling LivrudMob: 40 47 79 12larliv@fresvik.no",
+    "Frode WintherMob: 91 38 39 49frowin@fresvik.no",
+    "Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen.Sjå vår personvernerklæring.",
+    "PersonvernerklæringOpenheitslovaNettside levert av GASTA"
+  ],
+  "missingLinks": [
+    {
+      "text": "Fasadepanel",
+      "href": "/referansar/category/Fasadepanel",
+      "absoluteUrl": "https://www.fresvik.no/referansar/category/Fasadepanel",
+      "type": "internal"
+    },
+    {
+      "text": "DSC_2579.JPG",
+      "href": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428982293-NKH2SU6F4RGFUQLJJGCN/DSC_2579.JPG",
+      "absoluteUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428982293-NKH2SU6F4RGFUQLJJGCN/DSC_2579.JPG",
+      "type": "asset"
+    },
+    {
+      "text": "DSC_2482.JPG",
+      "href": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428985050-AIFF7GJ0HDZV62ICT58R/DSC_2482.JPG",
+      "absoluteUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428985050-AIFF7GJ0HDZV62ICT58R/DSC_2482.JPG",
+      "type": "asset"
+    },
+    {
+      "text": "DSC_2671.JPG",
+      "href": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428987630-CK5V4ACMWFCH15BVAF3M/DSC_2671.JPG",
+      "absoluteUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428987630-CK5V4ACMWFCH15BVAF3M/DSC_2671.JPG",
+      "type": "asset"
+    },
+    {
+      "text": "DSC_2677.JPG",
+      "href": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428990248-VDVDQOHHA0Q06N40YCEY/DSC_2677.JPG",
+      "absoluteUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428990248-VDVDQOHHA0Q06N40YCEY/DSC_2677.JPG",
+      "type": "asset"
+    },
+    {
+      "text": "https://www.gasta.no/",
+      "href": "https://www.gasta.no/",
+      "absoluteUrl": "https://www.gasta.no/",
+      "type": "external"
+    },
+    {
+      "text": "sentral+godkjent.png",
+      "href": "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+      "absoluteUrl": "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+      "type": "document"
+    },
+    {
+      "text": "TG-2135.jpg",
+      "href": "https://www.sintefcertification.no/Product/Index/129",
+      "absoluteUrl": "https://www.sintefcertification.no/Product/Index/129",
+      "type": "external"
+    },
+    {
+      "text": "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+      "href": "https://rapportering.miljofyrtarn.no/stats/176324",
+      "absoluteUrl": "https://rapportering.miljofyrtarn.no/stats/176324",
+      "type": "external"
+    },
+    {
+      "text": "ce-logo-png-transparent.png",
+      "href": "/s/PUR-ce-merke.pdf",
+      "absoluteUrl": "https://www.fresvik.no/s/PUR-ce-merke.pdf",
+      "type": "document"
+    }
+  ],
+  "missingImages": [
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428982293-NKH2SU6F4RGFUQLJJGCN/DSC_2579.JPG",
+      "filename": "DSC_2579.JPG",
+      "alt": "DSC_2579.JPG"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428985050-AIFF7GJ0HDZV62ICT58R/DSC_2482.JPG",
+      "filename": "DSC_2482.JPG",
+      "alt": "DSC_2482.JPG"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428987630-CK5V4ACMWFCH15BVAF3M/DSC_2671.JPG",
+      "filename": "DSC_2671.JPG",
+      "alt": "DSC_2671.JPG"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428990248-VDVDQOHHA0Q06N40YCEY/DSC_2677.JPG",
+      "filename": "DSC_2677.JPG",
+      "alt": "DSC_2677.JPG"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v2/namespaces/memberAccountAvatars/libraries/517544fce4b06960b9c245e8/edcda299-5f10-40b3-82f9-180df35d9ac3/Kvit_Gr%C3%B8n.png?format=300w",
+      "filename": "Kvit_Grøn.png",
+      "alt": ""
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/13922f08-1a26-4996-98ca-874c87c1d3cb/flake.png",
+      "filename": "flake.png",
+      "alt": ""
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385862366-SQTJIQF8X2Y8LT02Z2UT/sentral%2Bgodkjent.png",
+      "filename": "sentral+godkjent.png",
+      "alt": ""
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385867638-53S21SMAIEM6JIMC4IZ7/TG-2135.jpg",
+      "filename": "TG-2135.jpg",
+      "alt": "TG-2135.jpg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
+      "filename": "Poly.png",
+      "alt": "Poly.png"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385876430-SF9NN179JLHLSGSAMMMQ/Startbarnk.png",
+      "filename": "Startbarnk.png",
+      "alt": "Startbarnk.png"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385879029-1G9MX2OPCNVO7N0PMHZF/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+      "filename": "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+      "alt": "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1700040185087-O7K1UNJLYM01IO9TVQT5/ce-logo-png-transparent.png",
+      "filename": "ce-logo-png-transparent.png",
+      "alt": "ce-logo-png-transparent.png"
+    }
+  ]
+}

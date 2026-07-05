@@ -5989,11 +5989,17 @@
     "sourcePages": [],
     "sha256": "84bf45e5e58a01dab69a931baed1717f7f2537623fe4839609af946d8c39594e",
     "fileSize": 172388,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-89af78d4ea04e43b614c4ea856f93b577db150fd-1500x843-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-89af78d4ea04e43b614c4ea856f93b577db150fd-1500x843-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-89af78d4ea04e43b614c4ea856f93b577db150fd-1500x843-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428987630-CK5V4ACMWFCH15BVAF3M/DSC_2671.JPG",
@@ -6004,11 +6010,17 @@
     "sourcePages": [],
     "sha256": "04938398224783634066072861896c000857f1c177fbf318d0d3d8ec469e129a",
     "fileSize": 137332,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-2c2c5f96a378555c29b11edfd034f060187751a2-1500x843-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-2c2c5f96a378555c29b11edfd034f060187751a2-1500x843-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-2c2c5f96a378555c29b11edfd034f060187751a2-1500x843-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428990248-VDVDQOHHA0Q06N40YCEY/DSC_2677.JPG",
@@ -6019,11 +6031,17 @@
     "sourcePages": [],
     "sha256": "8b3163627bcd147eddf09a3766cd1a795aaea023a5e08c0164b38097dda539ea",
     "fileSize": 157498,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-b6a30bb7f98f3d7b06ac06ae73bf4fba71a9e365-1500x843-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-b6a30bb7f98f3d7b06ac06ae73bf4fba71a9e365-1500x843-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-b6a30bb7f98f3d7b06ac06ae73bf4fba71a9e365-1500x843-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428892083-5EKMCHELNT4XCV5DSQ0D/DSC03067.jpg",
@@ -7514,11 +7532,17 @@
     "sourcePages": [],
     "sha256": "cb1653a1ccf6d35c23638241102e3c8c0a3af366f2abbde205ffd8de25ef69e8",
     "fileSize": 10300,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-61fc1c3f85d47999d0050a1f7e9c3f480eeb79de-356x237-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-61fc1c3f85d47999d0050a1f7e9c3f480eeb79de-356x237-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-61fc1c3f85d47999d0050a1f7e9c3f480eeb79de-356x237-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5736240f-7b74-4bca-a556-1c4cf313614e/image-asset+%282%29.jpeg",
@@ -7638,11 +7662,17 @@
     "sourcePages": [],
     "sha256": "b26013943d837a43ed194274cbd88e2f53e2dccd99e17f04d534bbc7648108a0",
     "fileSize": 18008,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-a30a77936dc79720388ec09c9abca56fb15676c2-356x237-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a30a77936dc79720388ec09c9abca56fb15676c2-356x237-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-a30a77936dc79720388ec09c9abca56fb15676c2-356x237-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429058256-K0RSTJ6L6L3XCP9WMN29/image-asset.jpeg",
@@ -7653,11 +7683,17 @@
     "sourcePages": [],
     "sha256": "7e416754ab4d25a11d0ff72e498c7a727bfed0d2e605281544853324ade76b1d",
     "fileSize": 17080,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-336832bf5419026b192378a6111c55e72da0d80b-356x237-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-336832bf5419026b192378a6111c55e72da0d80b-356x237-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-336832bf5419026b192378a6111c55e72da0d80b-356x237-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429017477-0IFGJV9VBNRIORCR2GDD/image-asset.png",

@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
+  "finalUrl": "https://www.fresvik.no/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
+  "fetchedAt": "2026-07-05T19:34:21.897Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Interfrukt — Fresvik Produkt",
+  "metaDescription": "På Langhus i Ski kommune har Anthon B. Nilsen bygd nytt grossistlager for frukt-og grønt på heile 21 300 kvadratmeter for Interfrukt SA.",
+  "counts": {
+    "headings": 10,
+    "textBlocks": 26,
+    "links": 99,
+    "images": 49,
+    "documents": 2
+  }
+}

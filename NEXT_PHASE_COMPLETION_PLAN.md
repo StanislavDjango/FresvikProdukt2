@@ -137,9 +137,9 @@
 
 ## Очередь 4: Dokumentasjon
 
-- [ ] `/dokumentasjon`
-- [ ] `/monteringsanvisning`
-- [ ] `/monteringsanvisningar-fresvik-skyveport`
+- [x] `/dokumentasjon`
+- [x] `/monteringsanvisning`
+- [x] `/monteringsanvisningar-fresvik-skyveport`
 
 Фокус:
 
@@ -148,6 +148,8 @@
 - не должно быть битых `/s/...`;
 - локальные redirects должны сохраняться;
 - не удалять local asset cache.
+
+Статус: очередь закрыта; Sanity page-documents нормализованы, видимые PDF-ссылки больше не используют старые `/s/...`; smoke `200` для всех 3 страниц; найдено 16 PDF-ссылок, все отвечают `200 application/pdf`; служебные миграционные подписи `false`.
 
 ## Очередь 5: Referansar
 

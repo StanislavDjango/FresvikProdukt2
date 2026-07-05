@@ -1301,17 +1301,17 @@ const documentationDownloads: ContentCard[] = [
   {
     title: "Miljødokument",
     text: "Last ned miljødokument",
-    href: "/s/Miljdokument-Fresvik-Produkt.pdf",
+    href: "/assets/fresvik/documents/miljodokument-fresvik-produkt.pdf",
   },
   {
     title: "Samsvarssertifikat",
     text: "for konsistent ytelse Last ned Fresvik PIR-Panel CPR",
-    href: "/s/7060s-fnfz.pdf",
+    href: "/assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf",
   },
   {
     title: "Teknisk godkjenning",
     text: "Last ned teknisk godkjenning",
-    href: "/s/2135g-5.pdf",
+    href: "/assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf",
   },
   {
     title: "Godkjenningsdokument hjå SINTEF",
@@ -1326,7 +1326,7 @@ const documentationDownloads: ContentCard[] = [
   {
     title: "Levering",
     text: "Last ned leveringsbetingelser",
-    href: "/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf",
+    href: "/assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf",
   },
   {
     title: "Transportskade",
@@ -1336,12 +1336,12 @@ const documentationDownloads: ContentCard[] = [
   {
     title: "Sentral godkjenning",
     text: "Last ned sentral godkjenning",
-    href: "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+    href: "/assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf",
   },
   {
     title: "Ytelseserklæring",
     text: "Last ned ytelseserklæring",
-    href: "/s/Ytelseserklring-Fresvik-Produkt.pdf",
+    href: "/assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf",
   },
 ];
 
@@ -1366,14 +1366,14 @@ const mountingDownloads: ContentCard[] = [
   {
     title: "Fryserom",
     text: "Last ned monteringsanvisning for fryserom, Norsk/English",
-    href: "/s/Fresvik-Fryserom-Montasjeanvisning.pdf",
+    href: "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
     imageUrl: "/assets/fresvik/images/old-site/Fryserom.png",
     imageAlt: "Temperert rom med frostfritt skap og frostmur",
   },
   {
     title: "Port",
     text: "Last ned monteringsanvisning for manuell port",
-    href: "/s/Fresvik-Port-Montasjeanvisning.pdf",
+    href: "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
     imageUrl: "/assets/fresvik/images/old-site/Port.jpeg",
     imageAlt:
       "Industriellt kjølelager- eller fryseavdeling med store metallrom og en person i oransje arbeidstøy som håndterer en pall.",
@@ -1381,7 +1381,7 @@ const mountingDownloads: ContentCard[] = [
   {
     title: "Kjølerom",
     text: "Last ned monteringsanvisning for kjølerom, Norsk/English",
-    href: "/s/Fresvik-Kjlerom-Montasjeanvisning.pdf",
+    href: "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
     imageUrl: "/assets/fresvik/images/old-site/Kjølerom.jpeg",
     imageAlt: "Kjølerom",
   },
@@ -1395,7 +1395,7 @@ const mountingDownloads: ContentCard[] = [
   {
     title: "Dør",
     text: "Last ned monteringsanvisning for dør",
-    href: "/s/Fresvik-Dr-Montasjeanvisning.pdf",
+    href: "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
     imageUrl: "/assets/fresvik/images/old-site/Dør.jpeg",
     imageAlt: "Dør",
   },
@@ -1422,32 +1422,32 @@ const electricSkyveportDownloads: ContentCard[] = [
   {
     title: "Koblingskjema Fermod 5010",
     text: "Koblingskjema Fermod 5010",
-    href: "/s/Koblingsskjema-Fermod-5010.pdf",
+    href: "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
   },
   {
     title: "Montasjeanvisning for Fermod 5010 på manuelt beslag 2150",
     text: "Montasjeanvisning for Fermod 5010 på manuelt beslag 2150.",
-    href: "/s/Montasjeanvisning-5010-for-2150.pdf",
+    href: "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
   },
   {
     title: "Montasjeanvisning for Fermod 5010 på manuelt beslag 3530 og 7530",
     text: "Montasjeanvisning for Fermod 5010 på manuelt beslag 3530 og 7530.",
-    href: "/s/Montasjeanvisning-5010-for-3530-og-7530.pdf",
+    href: "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
   },
   {
     title: "Quick Start",
     text: "Quick Start",
-    href: "/s/Quick-Start-5010Exp-indB.pdf",
+    href: "/assets/fresvik/documents/quick-start-5010exp.pdf",
   },
   {
     title: "Endre skyveretning",
     text: "Endre skyveretning",
-    href: "/s/Endre-Skyveretning.pdf",
+    href: "/assets/fresvik/documents/endre-skyveretning.pdf",
   },
   {
     title: "Tilleggsutstyr",
     text: "Tilleggsutstyr",
-    href: "/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf",
+    href: "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
   },
 ];
 

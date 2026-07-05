@@ -996,6 +996,12 @@ function ProductDocumentSection({
 }: {
   section: ContentPage["sections"][number];
 }) {
+  const linkedItems = section.items.filter(
+    (item): item is typeof item & { href: string } => Boolean(item.href),
+  );
+
+  if (linkedItems.length === 0) return null;
+
   return (
     <section className="border-b border-slate-200 bg-white">
       <Container className="py-14 lg:py-16">
@@ -1014,10 +1020,10 @@ function ProductDocumentSection({
           </div>
 
           <div className="grid gap-3">
-            {section.items.map((item, itemIndex) => {
+            {linkedItems.map((item, itemIndex) => {
               const href = item.href;
-              const isExternal = href ? isExternalHref(href) : false;
-              const isPdf = href ? isPdfHref(href) : false;
+              const isExternal = isExternalHref(href);
+              const isPdf = isPdfHref(href);
               const className =
                 "group grid gap-4 rounded-[8px] border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-xl hover:shadow-slate-950/[0.08] sm:grid-cols-[auto_1fr_auto] sm:items-center";
               const content = (
@@ -1037,29 +1043,16 @@ function ProductDocumentSection({
                       {item.text}
                     </span>
                   </span>
-                  {href ? (
-                    <span className="inline-flex h-10 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition group-hover:border-cyan-800 group-hover:text-cyan-800">
-                      Opne
-                      {isExternal || isPdf ? (
-                        <ExternalLink aria-hidden="true" size={16} />
-                      ) : (
-                        <ArrowRight aria-hidden="true" size={16} />
-                      )}
-                    </span>
-                  ) : null}
+                  <span className="inline-flex h-10 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition group-hover:border-cyan-800 group-hover:text-cyan-800">
+                    Opne
+                    {isExternal || isPdf ? (
+                      <ExternalLink aria-hidden="true" size={16} />
+                    ) : (
+                      <ArrowRight aria-hidden="true" size={16} />
+                    )}
+                  </span>
                 </>
               );
-
-              if (!href) {
-                return (
-                  <article
-                    key={contentCardKey(item, itemIndex, section.title)}
-                    className={className}
-                  >
-                    {content}
-                  </article>
-                );
-              }
 
               if (isExternal || isPdf) {
                 return (
@@ -2722,6 +2715,7 @@ function ContentSections({
   const isServicePartsPage = pageSlug === "/tenester/service-reservedeler";
   const isReferenceIndexPage = pageSlug === "/referansar";
   const isNewsIndexPage = pageSlug === "/aktuelt";
+  const isProductIndexPage = pageSlug === "/produkt";
   const isStyledServicePage =
     isServiceIndexPage ||
     isMontasjeServicePage ||
@@ -2753,6 +2747,7 @@ function ContentSections({
       : "Den første norske produsenten av tilpassa PIR-Panel med enkel eksenterlås.");
   const visibleSections =
     isDesignedProductPage ||
+    isProductIndexPage ||
     isReferenceDetailPage ||
     isDocumentationPage ||
     isMountingPage ||
@@ -2771,6 +2766,10 @@ function ContentSections({
             !(
               isPirPage &&
               section.title.startsWith("Den første norske produsenten")
+            ) &&
+            !(
+              isDesignedProductPage &&
+              section.title === "For samarbeidspartnarar"
             ) &&
             !(
               isFacadePage &&
@@ -2987,6 +2986,22 @@ function ContentSections({
 
     if (isAccessoryIndexPage && section.title === "Kontakt") {
       return <AccessoryContactSection key={`${section.title}-${sectionIndex}`} />;
+    }
+
+    if (
+      isProductIndexPage &&
+      section.title === "Dokumentasjon og sertifikat"
+    ) {
+      return (
+        <ProductCertificateLinksSection
+          key={`${section.title}-${sectionIndex}`}
+          section={{
+            ...section,
+            intro:
+              "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker.",
+          }}
+        />
+      );
     }
 
     if (

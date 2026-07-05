@@ -2716,6 +2716,7 @@ function ContentSections({
   const isReferenceIndexPage = pageSlug === "/referansar";
   const isNewsIndexPage = pageSlug === "/aktuelt";
   const isProductIndexPage = pageSlug === "/produkt";
+  const isTransportDamagePage = pageSlug === "/transportskade";
   const isStyledServicePage =
     isServiceIndexPage ||
     isMontasjeServicePage ||
@@ -2748,6 +2749,7 @@ function ContentSections({
   const visibleSections =
     isDesignedProductPage ||
     isProductIndexPage ||
+    isTransportDamagePage ||
     isReferenceDetailPage ||
     isDocumentationPage ||
     isMountingPage ||
@@ -2827,6 +2829,13 @@ function ContentSections({
             ) &&
             !(
               isStyledServicePage &&
+              (section.title === "Full tekst frå gammal side" ||
+                section.title === "Bilde frå gammal side" ||
+                section.title === "Dokumentlenker frå gammal side" ||
+                section.title === "Lenker frå gammal side")
+            ) &&
+            !(
+              isTransportDamagePage &&
               (section.title === "Full tekst frå gammal side" ||
                 section.title === "Bilde frå gammal side" ||
                 section.title === "Dokumentlenker frå gammal side" ||

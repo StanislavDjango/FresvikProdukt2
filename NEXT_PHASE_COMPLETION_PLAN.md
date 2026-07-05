@@ -119,12 +119,12 @@
 
 ## Очередь 3: Tenester И Kundeservice
 
-- [ ] `/tenester/montasje`
-- [ ] `/tenester/leveranse`
-- [ ] `/tenester/service-reservedeler`
-- [ ] `/kundeservice/faq`
-- [ ] `/transportskade`
-- [ ] `/send-foresporsel`
+- [x] `/tenester/montasje`
+- [x] `/tenester/leveranse`
+- [x] `/tenester/service-reservedeler`
+- [x] `/kundeservice/faq`
+- [x] `/transportskade`
+- [x] `/send-foresporsel`
 
 Для каждой:
 
@@ -132,6 +132,8 @@
 - убрать служебные миграционные подписи;
 - проверить CTA и контактные ссылки;
 - проверить, что страница не выглядит как черновой склад.
+
+Статус: очередь закрыта; smoke `200` для `/tenester`, service pages, FAQ и `/transportskade`; `/send-foresporsel` отдаёт `308 -> /kontakt`; видимые служебные подписи `false`.
 
 ## Очередь 4: Dokumentasjon
 

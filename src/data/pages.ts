@@ -1199,7 +1199,7 @@ const transportDamageSections: Section[] = [
   {
     title: "Slik gjer du ved transportskade",
     intro:
-      "Dette er prosedyretekst frå gammal transportskade-side. Den bør kvalitetssikrast juridisk mot leveringsvilkår før endeleg lansering.",
+      "Kontroller leveransen ved mottak, noter eventuelle skadar på fraktbrev og send bilete og dokumentasjon til Fresvik omgåande.",
     items: transportDamageCards,
   },
 ];

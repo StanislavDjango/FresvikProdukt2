@@ -2288,6 +2288,119 @@ function ReferenceCategorySection({
   );
 }
 
+function NewsIndexSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const items = section.items.filter(
+    (item) => item.href && item.title !== "Aktuelt",
+  );
+
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-14 lg:py-16">
+        <SectionHeader
+          eyebrow="Nyheiter"
+          title="Siste frå Fresvik"
+          intro="Nyheiter, leveransar og oppdateringar frå Fresvik Produkt."
+        />
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {items.map((item, itemIndex) => (
+            <Link
+              key={contentCardKey(item, itemIndex, "news-index")}
+              href={item.href || "/aktuelt"}
+              className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+            >
+              {item.imageUrl ? (
+                <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.imageAlt || item.title}
+                    fill
+                    sizes="(min-width: 1280px) 27vw, (min-width: 768px) 45vw, 100vw"
+                    className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+              ) : null}
+              <span className="relative h-1 overflow-hidden bg-gradient-to-r from-cyan-700 via-sky-400 to-orange-500 before:absolute before:inset-y-0 before:-left-1/3 before:w-1/3 before:bg-white/70 before:opacity-0 before:blur-sm before:transition group-hover:before:left-full group-hover:before:opacity-100 group-hover:before:duration-700" />
+              <div className="flex grow flex-col p-5">
+                {item.meta ? (
+                  <p className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
+                    {item.meta}
+                  </p>
+                ) : null}
+                <h3 className="text-lg font-semibold leading-snug text-slate-950">
+                  {item.title}
+                </h3>
+                <p className="mt-3 grow text-sm leading-6 text-slate-600">
+                  {item.text}
+                </p>
+                <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function NewsSourceLinksSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12">
+        <div className="grid gap-6 rounded-[8px] border border-slate-200 bg-white p-6 shadow-sm shadow-slate-950/[0.04] sm:p-8 lg:grid-cols-[0.34fr_0.66fr]">
+          <SectionHeader
+            eyebrow="Vidare lesing"
+            title="Lenker knytt til saker"
+            intro="Nokre saker peikar vidare til tilhøyrande referansar og eksterne artiklar."
+          />
+          <div className="grid gap-3">
+            {section.items.map((item, itemIndex) => {
+              const href = item.href || "/aktuelt";
+              const LinkElement = isExternalHref(href) ? "a" : Link;
+              const linkProps = isExternalHref(href)
+                ? { href, target: "_blank", rel: "noreferrer" }
+                : { href };
+
+              return (
+                <LinkElement
+                  key={contentCardKey(item, itemIndex, "news-source-links")}
+                  {...linkProps}
+                  className="group flex items-center justify-between gap-4 rounded-[8px] border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-cyan-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+                >
+                  <span>
+                    <span className="block text-sm font-semibold text-slate-950">
+                      {item.title}
+                    </span>
+                    <span className="mt-1 block text-sm leading-6 text-slate-600">
+                      {item.text.toLowerCase().includes("gammal")
+                        ? "Referanseprosjekt knytt til aktuell sak."
+                        : item.text}
+                    </span>
+                  </span>
+                  <ArrowRight
+                    aria-hidden="true"
+                    className="shrink-0 text-cyan-800 transition group-hover:translate-x-0.5"
+                    size={17}
+                  />
+                </LinkElement>
+              );
+            })}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ProductCertificateLinksSection({
   section,
 }: {
@@ -2396,6 +2509,7 @@ function ContentSections({
   const isLeveranseServicePage = pageSlug === "/tenester/leveranse";
   const isServicePartsPage = pageSlug === "/tenester/service-reservedeler";
   const isReferenceIndexPage = pageSlug === "/referansar";
+  const isNewsIndexPage = pageSlug === "/aktuelt";
   const isStyledServicePage =
     isServiceIndexPage ||
     isMontasjeServicePage ||
@@ -2430,7 +2544,8 @@ function ContentSections({
     isElectricSkyveportPage ||
     isAccessoryIndexPage ||
     isStyledServicePage ||
-    isReferenceIndexPage
+    isReferenceIndexPage ||
+    isNewsIndexPage
       ? sections.filter(
           (section) =>
             !(
@@ -2504,6 +2619,11 @@ function ContentSections({
                 section.title === "Dokumentasjon og sertifikat")
             ) &&
             !(
+              isNewsIndexPage &&
+              (section.title === "Kontakt" ||
+                section.title === "Dokumentasjon og sertifikat")
+            ) &&
+            !(
               isServiceIndexPage &&
               section.title === "Teneste-URL-ar frå gammal sitemap"
             ) &&
@@ -2512,6 +2632,30 @@ function ContentSections({
       : sections;
 
   return visibleSections.map((section, sectionIndex) => {
+    if (
+      isNewsIndexPage &&
+      (section.title === "Aktuelt" || section.title === "Nyheiter frå Sanity")
+    ) {
+      return (
+        <NewsIndexSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (
+      isNewsIndexPage &&
+      section.title === "Lenker frå gammal aktuelt-side"
+    ) {
+      return (
+        <NewsSourceLinksSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
     if (
       isReferenceIndexPage &&
       section.title === "Ein leiande leverandør av kjølerom og fryserom"
@@ -3646,6 +3790,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug === "/monteringsanvisning" ||
     page.slug === "/monteringsanvisningar-fresvik-skyveport" ||
     page.slug === "/referansar" ||
+    page.slug === "/aktuelt" ||
     isReferenceDetailPage ||
     isAccessoryPage;
   const showTopCards =

@@ -3837,9 +3837,10 @@ export const contentPages: ContentPage[] = [
   },
   {
     slug: "/aktuelt",
-    title: "Aktuelt",
+    title: "Nyheiter frå Fresvik Produkt",
     eyebrow: "Aktuelt",
-    intro: "Aktuelt",
+    intro:
+      "Siste saker, leveransar og oppdateringar frå Fresvik Produkt.",
     description: "Aktuelt og nyheiter frå Fresvik Produkt.",
     pageType: "company",
     priority: "medium",

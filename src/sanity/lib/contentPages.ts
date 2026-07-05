@@ -528,15 +528,21 @@ function mergeContentPage(
             : withoutLocalAssetRefs(fallback?.cards || []));
   }
 
+  const useFallbackHero = path === "/aktuelt" && Boolean(fallback);
+
   return {
     slug: path,
     title:
-      keepLocalMigrationStructure && fallback
+      useFallbackHero && fallback
+        ? fallback.title
+        : keepLocalMigrationStructure && fallback
         ? fallback.title
         : doc.title || fallback?.title || "Fresvik Produkt",
     eyebrow: eyebrowFor(doc, fallback),
     intro:
-      keepLocalMigrationStructure && fallback
+      useFallbackHero && fallback
+        ? fallback.intro
+        : keepLocalMigrationStructure && fallback
         ? fallback.intro
         : firstUsefulText(doc) || fallback?.intro || doc.title || "Fresvik Produkt",
     description:

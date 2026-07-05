@@ -2177,6 +2177,117 @@ function ProductReferenceSection({
   );
 }
 
+function ReferenceIndexIntroSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12 lg:py-14">
+        <div className="grid gap-8 rounded-[8px] border border-slate-200 bg-slate-50 p-6 shadow-sm shadow-slate-950/[0.04] sm:p-8 lg:grid-cols-[0.35fr_0.65fr] lg:items-center">
+          <SectionHeader
+            eyebrow="Erfaring"
+            title="Leveransar til butikk, industri, storkjøken og offshore"
+          />
+          <p className="text-base leading-8 text-slate-700">
+            {section.intro}
+          </p>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function ReferenceIndexGridSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-14 lg:py-16">
+        <SectionHeader
+          eyebrow="Prosjekt"
+          title="Utvalde referansar"
+          intro="Prosjekt frå ulike bruksområde, bevart frå den gamle referansesida og rydda for rask oversikt."
+        />
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {section.items.map((item, itemIndex) => (
+            <Link
+              key={contentCardKey(item, itemIndex, "reference-index")}
+              href={item.href || "/referansar"}
+              className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+            >
+              {item.imageUrl ? (
+                <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.imageAlt || item.title}
+                    fill
+                    sizes="(min-width: 1280px) 27vw, (min-width: 768px) 45vw, 100vw"
+                    className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+              ) : null}
+              <span className="relative h-1 overflow-hidden bg-gradient-to-r from-cyan-700 via-sky-400 to-orange-500 before:absolute before:inset-y-0 before:-left-1/3 before:w-1/3 before:bg-white/70 before:opacity-0 before:blur-sm before:transition group-hover:before:left-full group-hover:before:opacity-100 group-hover:before:duration-700" />
+              <div className="flex grow flex-col p-5">
+                <h3 className="text-lg font-semibold leading-snug text-slate-950">
+                  {item.title}
+                </h3>
+                <p className="mt-3 grow text-sm leading-6 text-slate-600">
+                  {item.text}
+                </p>
+                <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function ReferenceCategorySection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12">
+        <div className="rounded-[8px] border border-slate-200 bg-white p-6 shadow-sm shadow-slate-950/[0.04] sm:p-8">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <SectionHeader
+              eyebrow="Kategoriar"
+              title="Finn referansar etter bruksområde"
+              intro="Snarvegar til dei gamle referansekategoriane."
+            />
+          </div>
+          <div className="mt-6 grid gap-3 sm:grid-cols-3">
+            {section.items.map((item, itemIndex) => (
+              <Link
+                key={contentCardKey(item, itemIndex, "reference-categories")}
+                href={item.href || "/referansar"}
+                className="group flex min-h-24 items-center justify-between gap-4 rounded-[8px] border border-slate-200 bg-slate-50 p-4 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-cyan-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+              >
+                <span>{item.title}</span>
+                <ArrowRight
+                  aria-hidden="true"
+                  className="shrink-0 text-cyan-800 transition group-hover:translate-x-0.5"
+                  size={17}
+                />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ProductCertificateLinksSection({
   section,
 }: {
@@ -2284,6 +2395,7 @@ function ContentSections({
   const isMontasjeServicePage = pageSlug === "/tenester/montasje";
   const isLeveranseServicePage = pageSlug === "/tenester/leveranse";
   const isServicePartsPage = pageSlug === "/tenester/service-reservedeler";
+  const isReferenceIndexPage = pageSlug === "/referansar";
   const isStyledServicePage =
     isServiceIndexPage ||
     isMontasjeServicePage ||
@@ -2317,7 +2429,8 @@ function ContentSections({
     isMountingPage ||
     isElectricSkyveportPage ||
     isAccessoryIndexPage ||
-    isStyledServicePage
+    isStyledServicePage ||
+    isReferenceIndexPage
       ? sections.filter(
           (section) =>
             !(
@@ -2386,6 +2499,11 @@ function ContentSections({
                 section.title === "Lenker frå gammal side")
             ) &&
             !(
+              isReferenceIndexPage &&
+              (section.title === "Kontakt" ||
+                section.title === "Dokumentasjon og sertifikat")
+            ) &&
+            !(
               isServiceIndexPage &&
               section.title === "Teneste-URL-ar frå gammal sitemap"
             ) &&
@@ -2394,6 +2512,36 @@ function ContentSections({
       : sections;
 
   return visibleSections.map((section, sectionIndex) => {
+    if (
+      isReferenceIndexPage &&
+      section.title === "Ein leiande leverandør av kjølerom og fryserom"
+    ) {
+      return (
+        <ReferenceIndexIntroSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isReferenceIndexPage && section.title === "Referansar") {
+      return (
+        <ReferenceIndexGridSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isReferenceIndexPage && section.title === "Kategoriar") {
+      return (
+        <ReferenceCategorySection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
     if (
       isElectricSkyveportPage &&
       section.title === "Filer frå gammal skyveportside"
@@ -3497,6 +3645,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug === "/dokumentasjon" ||
     page.slug === "/monteringsanvisning" ||
     page.slug === "/monteringsanvisningar-fresvik-skyveport" ||
+    page.slug === "/referansar" ||
     isReferenceDetailPage ||
     isAccessoryPage;
   const showTopCards =

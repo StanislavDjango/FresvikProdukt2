@@ -5420,60 +5420,100 @@
     "localPath": "/assets/fresvik/images/old-site/bjerkreim-legekontor-2-15392c46d2.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/bjerkreim-legekontor-2-15392c46d2.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/bjerkreim-legekontor-vikesaa"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/bjerkreim-legekontor-vikesaa"
+    ],
     "sha256": "9f71060117311fc24351ebd6ce1e28ec592a4b8989c7f678983ebcea862d2601",
     "fileSize": 74780,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-9226f359e1dfd0171e2db7f17ea89fb7fa9777d3-960x1280-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-9226f359e1dfd0171e2db7f17ea89fb7fa9777d3-960x1280-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-9226f359e1dfd0171e2db7f17ea89fb7fa9777d3-960x1280-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502390326-4VBRJ3Z96PQGL1361BHP/Bjerkreim+Legekontor+3.jpeg",
     "localPath": "/assets/fresvik/images/old-site/bjerkreim-legekontor-3-49a0ccc7a5.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/bjerkreim-legekontor-3-49a0ccc7a5.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/bjerkreim-legekontor-vikesaa"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/bjerkreim-legekontor-vikesaa"
+    ],
     "sha256": "662ec977b4f86ee76f49d0eb240df4ce6d79dfb034feb940ca1940d146676f7d",
     "fileSize": 50978,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-14aa7332f386898fde471046777847b78c01eccd-960x1280-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-14aa7332f386898fde471046777847b78c01eccd-960x1280-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-14aa7332f386898fde471046777847b78c01eccd-960x1280-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502390704-UH15UGGZ9W6OZCPWPV7W/Bjerkreim+Legekontor+4.jpeg",
     "localPath": "/assets/fresvik/images/old-site/bjerkreim-legekontor-4-a2734bc915.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/bjerkreim-legekontor-4-a2734bc915.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/bjerkreim-legekontor-vikesaa"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/bjerkreim-legekontor-vikesaa"
+    ],
     "sha256": "f548f2e11b5108a77a0100fdfe84410e0b7acfae0c3cfe60b927541f0f6bd61d",
     "fileSize": 38724,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-0685e988f7a57439083042a202a072c130c056a0-1280x960-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-0685e988f7a57439083042a202a072c130c056a0-1280x960-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-0685e988f7a57439083042a202a072c130c056a0-1280x960-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1757502391645-OIXSCC6IU0N5L8TQF94B/Bjerkreim+Legekontor+5.jpeg",
     "localPath": "/assets/fresvik/images/old-site/bjerkreim-legekontor-5-670f56525d.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/bjerkreim-legekontor-5-670f56525d.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/bjerkreim-legekontor-vikesaa"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/bjerkreim-legekontor-vikesaa"
+    ],
     "sha256": "a3cd310f435fd78da979c464bf57f742b762074c00de085926baa0432e6d96c6",
     "fileSize": 59800,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-e4859708fd8bf965132fb66f8368d47a9e3e9e1d-1280x960-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-e4859708fd8bf965132fb66f8368d47a9e3e9e1d-1280x960-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-e4859708fd8bf965132fb66f8368d47a9e3e9e1d-1280x960-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228660492-WD5GO7MOKHKGA07TMN91/Botolv+Hov+og+Knut+Hovland+i+samtale.jpg",

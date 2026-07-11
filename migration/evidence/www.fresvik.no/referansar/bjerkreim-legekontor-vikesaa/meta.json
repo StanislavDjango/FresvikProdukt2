@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/referansar/bjerkreim-legekontor-vikesaa",
+  "finalUrl": "https://www.fresvik.no/referansar/bjerkreim-legekontor-vikesaa",
+  "fetchedAt": "2026-07-11T19:16:01.627Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Bjerkreim Legekontor: fryselager og kjølerom — Fresvik Produkt",
+  "metaDescription": "Prosjekt med omsorgsbustadar har fått skreddarsydde løysingar for kjølerom og fryselager.",
+  "counts": {
+    "headings": 10,
+    "textBlocks": 27,
+    "links": 102,
+    "images": 22,
+    "documents": 2
+  }
+}

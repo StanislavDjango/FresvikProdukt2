@@ -648,6 +648,7 @@
       "/aktuelt",
       "/dokumentasjon",
       "/firmainfo",
+      "/home",
       "/kjolerom-fryserom-butikk",
       "/kjolerom-fryserom-offshore",
       "/kjolerom-fryserom-storkjokken",
@@ -786,6 +787,7 @@
       "/aktuelt",
       "/dokumentasjon",
       "/firmainfo",
+      "/home",
       "/kjolerom-fryserom-butikk",
       "/kjolerom-fryserom-offshore",
       "/kjolerom-fryserom-storkjokken",
@@ -1539,6 +1541,7 @@
     "usedBy": [
       "/",
       "/dokumentasjon",
+      "/home",
       "/kjolerom-fryserom-storkjokken",
       "/kundeservice/faq",
       "/monteringsanvisning",
@@ -1935,7 +1938,8 @@
     "assetType": "image",
     "usedBy": [
       "/",
-      "/aktuelt/ny-teknisk-teiknar-havard-berdal"
+      "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+      "/home"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
@@ -2094,8 +2098,7 @@
     "usedBy": [
       "/aktuelt",
       "/aktuelt/skjererom",
-      "/produkt",
-      "/referansar/2014/7/8/coop-extra-sogndal"
+      "/produkt"
     ],
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
@@ -2277,7 +2280,8 @@
     "assetType": "image",
     "usedBy": [
       "/",
-      "/aktuelt/john-bothun-blir-pensjonist"
+      "/aktuelt/john-bothun-blir-pensjonist",
+      "/home"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
@@ -2463,6 +2467,7 @@
     "usedBy": [
       "/",
       "/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn",
+      "/home",
       "/produkt/fresvik-pir-panel",
       "/produkt/fresvik-pur-panel",
       "/produkt/kjole-frysedorer",
@@ -2806,10 +2811,12 @@
     "assetType": "image",
     "usedBy": [
       "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+      "/home",
       "/tilsette",
       "employee-samaneh-shakeri"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/",
       "https://www.fresvik.no/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
       "https://www.fresvik.no/tilsette"
     ],
@@ -3158,6 +3165,7 @@
     "assetType": "image",
     "usedBy": [
       "/",
+      "/home",
       "/kundeservice/faq"
     ],
     "sourcePages": [
@@ -3265,6 +3273,7 @@
     "assetType": "image",
     "usedBy": [
       "/",
+      "/home",
       "/kundeservice/faq"
     ],
     "sourcePages": [
@@ -5495,6 +5504,7 @@
     "assetType": "image",
     "usedBy": [
       "/",
+      "/home",
       "/kjolerom-fryserom-offshore",
       "/produkt/fresvik-pir-panel",
       "/produkt/fresvik-pur-panel",
@@ -5985,8 +5995,12 @@
     "localPath": "/assets/fresvik/images/old-site/dsc-2482-6376a08a05.jpg",
     "filePath": "public/assets/fresvik/images/old-site/dsc-2482-6376a08a05.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/celsa-steel-sotra"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/celsa-steel-sotra"
+    ],
     "sha256": "84bf45e5e58a01dab69a931baed1717f7f2537623fe4839609af946d8c39594e",
     "fileSize": 172388,
     "sanityAssetId": "image-89af78d4ea04e43b614c4ea856f93b577db150fd-1500x843-webp",
@@ -6006,8 +6020,12 @@
     "localPath": "/assets/fresvik/images/old-site/dsc-2671-bd36a37fac.jpg",
     "filePath": "public/assets/fresvik/images/old-site/dsc-2671-bd36a37fac.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/celsa-steel-sotra"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/celsa-steel-sotra"
+    ],
     "sha256": "04938398224783634066072861896c000857f1c177fbf318d0d3d8ec469e129a",
     "fileSize": 137332,
     "sanityAssetId": "image-2c2c5f96a378555c29b11edfd034f060187751a2-1500x843-webp",
@@ -6027,8 +6045,12 @@
     "localPath": "/assets/fresvik/images/old-site/dsc-2677-27266e77f0.jpg",
     "filePath": "public/assets/fresvik/images/old-site/dsc-2677-27266e77f0.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/celsa-steel-sotra"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/celsa-steel-sotra"
+    ],
     "sha256": "8b3163627bcd147eddf09a3766cd1a795aaea023a5e08c0164b38097dda539ea",
     "fileSize": 157498,
     "sanityAssetId": "image-b6a30bb7f98f3d7b06ac06ae73bf4fba71a9e365-1500x843-webp",
@@ -7208,7 +7230,8 @@
     "filePath": "public/assets/fresvik/images/old-site/home-fasadepanel.webp",
     "assetType": "image",
     "usedBy": [
-      "/"
+      "/",
+      "/home"
     ],
     "sourcePages": [
       "https://www.fresvik.no/"
@@ -7259,7 +7282,8 @@
     "filePath": "public/assets/fresvik/images/old-site/home-fresvik-panel-room.jpg",
     "assetType": "image",
     "usedBy": [
-      "/"
+      "/",
+      "/home"
     ],
     "sourcePages": [
       "https://www.fresvik.no/"
@@ -7284,7 +7308,8 @@
     "filePath": "public/assets/fresvik/images/old-site/home-job-factory.jpg",
     "assetType": "image",
     "usedBy": [
-      "/"
+      "/",
+      "/home"
     ],
     "sourcePages": [
       "https://www.fresvik.no/"
@@ -7309,7 +7334,8 @@
     "filePath": "public/assets/fresvik/images/old-site/home-kjole-frysedorer.jpg",
     "assetType": "image",
     "usedBy": [
-      "/"
+      "/",
+      "/home"
     ],
     "sourcePages": [
       "https://www.fresvik.no/"
@@ -7334,7 +7360,8 @@
     "filePath": "public/assets/fresvik/images/old-site/home-kjole-fryseportar.jpg",
     "assetType": "image",
     "usedBy": [
-      "/"
+      "/",
+      "/home"
     ],
     "sourcePages": [
       "https://www.fresvik.no/"
@@ -7359,7 +7386,8 @@
     "filePath": "public/assets/fresvik/images/old-site/home-pir-fire-illustration.png",
     "assetType": "image",
     "usedBy": [
-      "/"
+      "/",
+      "/home"
     ],
     "sourcePages": [
       "https://www.fresvik.no/"
@@ -7385,6 +7413,7 @@
     "assetType": "image",
     "usedBy": [
       "/",
+      "/home",
       "/produkt/fresvik-pur-panel",
       "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar"
@@ -7416,6 +7445,7 @@
     "assetType": "image",
     "usedBy": [
       "/",
+      "/home",
       "/produkt/fresvik-pir-panel",
       "/produkt/fresvik-pur-panel",
       "/produkt/kjole-frysedorer",
@@ -7449,6 +7479,7 @@
     "assetType": "image",
     "usedBy": [
       "/",
+      "/home",
       "/produkt/fresvik-pur-panel",
       "/produkt/kjole-frysedorer",
       "/produkt/kjole-fryseportar"
@@ -7528,8 +7559,12 @@
     "localPath": "/assets/fresvik/images/old-site/image-asset-1d4ca4e9fd.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/image-asset-1d4ca4e9fd.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt"
+    ],
     "sha256": "cb1653a1ccf6d35c23638241102e3c8c0a3af366f2abbde205ffd8de25ef69e8",
     "fileSize": 10300,
     "sanityAssetId": "image-61fc1c3f85d47999d0050a1f7e9c3f480eeb79de-356x237-webp",
@@ -7551,6 +7586,7 @@
     "assetType": "image",
     "usedBy": [
       "/",
+      "/home",
       "/kundeservice/faq"
     ],
     "sourcePages": [
@@ -7628,38 +7664,62 @@
     "localPath": "/assets/fresvik/images/old-site/image-asset-4ee32b3e77.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/image-asset-4ee32b3e77.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/2014/7/8/coop-extra-sogndal"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/2014/7/8/coop-extra-sogndal"
+    ],
     "sha256": "e3a3589dcac0e7e97018b6f2403190816e6f15b04f26f6757db170f159b5a122",
     "fileSize": 33190,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-77f0542c2cb0c49acb4603fb3f4b015b6f12666f-500x333-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-77f0542c2cb0c49acb4603fb3f4b015b6f12666f-500x333-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-77f0542c2cb0c49acb4603fb3f4b015b6f12666f-500x333-webp. Used by Coop Extra Sogndal reference migration."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429073960-NR2S2B7L2KR7DVFWMXLP/image-asset.jpeg",
     "localPath": "/assets/fresvik/images/old-site/image-asset-5bcf6cf645.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/image-asset-5bcf6cf645.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/2014/7/8/coop-extra-sogndal"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/2014/7/8/coop-extra-sogndal"
+    ],
     "sha256": "3a505fe7eb3e5921d68d5b0090c348d62a8b57d31d10a9caa0411f4655f5423e",
     "fileSize": 12224,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-8ebc3e3ac37128668bbda70555955b07477d192c-500x333-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8ebc3e3ac37128668bbda70555955b07477d192c-500x333-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-8ebc3e3ac37128668bbda70555955b07477d192c-500x333-webp. Used by Coop Extra Sogndal reference migration."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429056640-ZMCZ31HV3SFGVQ9T0U99/image-asset.jpeg",
     "localPath": "/assets/fresvik/images/old-site/image-asset-72273e78e1.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/image-asset-72273e78e1.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt"
+    ],
     "sha256": "b26013943d837a43ed194274cbd88e2f53e2dccd99e17f04d534bbc7648108a0",
     "fileSize": 18008,
     "sanityAssetId": "image-a30a77936dc79720388ec09c9abca56fb15676c2-356x237-webp",
@@ -7679,8 +7739,12 @@
     "localPath": "/assets/fresvik/images/old-site/image-asset-fb046a8b70.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/image-asset-fb046a8b70.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt"
+    ],
     "sha256": "7e416754ab4d25a11d0ff72e498c7a727bfed0d2e605281544853324ade76b1d",
     "fileSize": 17080,
     "sanityAssetId": "image-336832bf5419026b192378a6111c55e72da0d80b-356x237-webp",
@@ -9721,6 +9785,7 @@
     "assetType": "image",
     "usedBy": [
       "/",
+      "/home",
       "/kjolerom-fryserom-offshore",
       "/produkt/fresvik-pir-panel",
       "/produkt/fresvik-pur-panel",

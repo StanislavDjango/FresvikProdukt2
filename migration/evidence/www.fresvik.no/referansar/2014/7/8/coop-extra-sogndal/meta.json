@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/referansar/2014/7/8/coop-extra-sogndal",
+  "finalUrl": "https://www.fresvik.no/referansar/2014/7/8/coop-extra-sogndal",
+  "fetchedAt": "2026-07-11T17:55:40.626Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Coop Extra Sogndal — Fresvik Produkt",
+  "metaDescription": "Her har Fresvik Produkt levert kjøle- og fryserom til heile butikken.",
+  "counts": {
+    "headings": 10,
+    "textBlocks": 22,
+    "links": 97,
+    "images": 41,
+    "documents": 2
+  }
+}

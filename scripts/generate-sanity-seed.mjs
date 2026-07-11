@@ -355,6 +355,91 @@ const referenceByHref = new Map(
 
 const referenceProjectOverrides = new Map([
   [
+    "/referansar/2014/7/8/coop-extra-sogndal",
+    {
+      title: "Coop Extra Sogndal",
+      description:
+        "Fresvik Produkt har levert og montert kjøle- og fryserom til heile butikken. Totalt ca. 800 m² panel.",
+      year: 2014,
+      category: "Kjøle- fryserom butikk",
+      location: "Sogndal",
+      customerType: "Daglegvarebutikk",
+      migratedImagePath: "/assets/fresvik/images/migrated/coop-extra-sogndal.jpeg",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Coop Extra Sogndal",
+              text:
+                "Fresvik Produkt har levert og montert kjøle- og fryserom til heile butikken. Totalt ca. 800 m² panel.",
+              meta: "7. juli 2014",
+              imageAlt: "Coop Extra Sogndal kjøle- og fryserom",
+              migratedImagePath: "/assets/fresvik/images/migrated/coop-extra-sogndal.jpeg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Bilde frå gammal side",
+          intro: "Prosjektbilete bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "Coop Extra Sogndal prosjektbilde 1",
+              text: "Bilde frå gammal Coop Extra Sogndal-side.",
+              imageAlt: "Coop Extra Sogndal kjøle- og fryserom",
+              migratedImagePath: "/assets/fresvik/images/migrated/coop-extra-sogndal.jpeg",
+            },
+            {
+              _key: "reference-project-image-1",
+              _type: "migrationCard",
+              title: "Coop Extra Sogndal prosjektbilde 2",
+              text: "Bilde frå gammal Coop Extra Sogndal-side.",
+              imageAlt: "Coop Extra Sogndal kjøle- og fryserom",
+              migratedImagePath: "/assets/fresvik/images/old-site/image-asset-4ee32b3e77.jpeg",
+            },
+            {
+              _key: "reference-project-image-2",
+              _type: "migrationCard",
+              title: "Coop Extra Sogndal prosjektbilde 3",
+              text: "Bilde frå gammal Coop Extra Sogndal-side.",
+              imageAlt: "Coop Extra Sogndal kjøle- og fryserom",
+              migratedImagePath: "/assets/fresvik/images/old-site/image-asset-5bcf6cf645.jpeg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-contact",
+              _type: "migrationCard",
+              title: "Ta kontakt",
+              text: "Gammal side lenka vidare til salsavdeling for meir informasjon.",
+              href: "/kontakt",
+            },
+            {
+              _key: "reference-project-prev",
+              _type: "migrationCard",
+              title: "Interfrukt",
+              text: "Forrige referanse frå gammal side.",
+              href: "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
     {
       title: "Interfrukt",

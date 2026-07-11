@@ -262,6 +262,10 @@ function collectAssetUsageFromCard(map, card, usedBy, sourcePages) {
   if (card.imageUrl?.startsWith("/assets/fresvik/")) {
     addToUsage(map, card.imageUrl, usedBy, sourcePages);
   }
+
+  if (card.migratedImagePath?.startsWith("/assets/fresvik/")) {
+    addToUsage(map, card.migratedImagePath, usedBy, sourcePages);
+  }
 }
 
 function addToUsage(usage, assetPath, usedBy, sourcePages) {
@@ -339,6 +343,16 @@ function collectAssetUsageFromSeed(usage) {
     const usedBy = doc.slug?.current ? [`/${doc.slug.current}`] : [doc._id];
     addToUsage(usage, doc.localPath, usedBy, []);
     addToUsage(usage, doc.migratedImagePath, usedBy, []);
+
+    for (const card of doc.migrationCards || []) {
+      collectAssetUsageFromCard(usage, card, usedBy, [doc.sourceUrl]);
+    }
+
+    for (const section of doc.migrationSections || []) {
+      for (const item of section.items || []) {
+        collectAssetUsageFromCard(usage, item, usedBy, [doc.sourceUrl]);
+      }
+    }
   }
 }
 

@@ -338,6 +338,7 @@
     "usedBy": [
       "/",
       "/dokumentasjon",
+      "/home",
       "/s/Miljdokument-Fresvik-Produkt.pdf",
       "documentFile-assets-fresvik-documents-miljodokument-fresvik-produkt-pdf"
     ],
@@ -726,6 +727,7 @@
     "assetType": "document",
     "usedBy": [
       "/",
+      "/home",
       "/produkt/fresvik-pur-panel",
       "/s/PUR-ProduktbladFP.pdf",
       "documentFile-assets-fresvik-documents-pur-produktbladfp-pdf"
@@ -915,6 +917,7 @@
     "usedBy": [
       "/",
       "/dokumentasjon",
+      "/home",
       "/s/2135g-5.pdf",
       "documentFile-assets-fresvik-documents-sintef-teknisk-godkjenning-2135g-pdf"
     ],
@@ -2811,12 +2814,10 @@
     "assetType": "image",
     "usedBy": [
       "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
-      "/home",
       "/tilsette",
       "employee-samaneh-shakeri"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/",
       "https://www.fresvik.no/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
       "https://www.fresvik.no/tilsette"
     ],
@@ -4672,7 +4673,8 @@
     "assetType": "image",
     "usedBy": [
       "/",
-      "/aktuelt"
+      "/aktuelt",
+      "/home"
     ],
     "sourcePages": [
       "https://www.fresvik.no/",
@@ -9647,75 +9649,125 @@
     "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-2-c2c17be8ad.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-2-c2c17be8ad.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
+    ],
     "sha256": "168d72d0eb3e95a14a691dab501f25debf22f2a139c02ab1d24b8210c7c076cb",
     "fileSize": 99716,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-e205a30d7ced8945ffab7ed6ef556b08578804f6-960x1280-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-e205a30d7ced8945ffab7ed6ef556b08578804f6-960x1280-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-e205a30d7ced8945ffab7ed6ef556b08578804f6-960x1280-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222152378-KBAPNESE5W55KL8SNS8O/Spar+Lund+Torv+-+Fresvik+Produkt+3.jpeg",
     "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-3-f164cf8622.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-3-f164cf8622.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
+    ],
     "sha256": "fdb3a56bf9590911d3ef400d9c84c8f21801ba360e99f651aaac1734fd34f5f8",
     "fileSize": 61000,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-a66069241998d5e3e7ee4691b4605ff7396af0ea-960x1280-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a66069241998d5e3e7ee4691b4605ff7396af0ea-960x1280-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-a66069241998d5e3e7ee4691b4605ff7396af0ea-960x1280-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222152679-LYILDOX68CL4UT74DHQ2/Spar+Lund+Torv+-+Fresvik+Produkt+4.jpeg",
     "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-4-f3d73040e5.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-4-f3d73040e5.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
+    ],
     "sha256": "7c6ef2e59a44322175dbe3ca6691b7a548f376cd738faf89fdee2e63bc91775a",
     "fileSize": 84254,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-ec35e6f9fc0d955968d7d99f8d3e4c0b1f6abb66-960x1280-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ec35e6f9fc0d955968d7d99f8d3e4c0b1f6abb66-960x1280-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-ec35e6f9fc0d955968d7d99f8d3e4c0b1f6abb66-960x1280-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222153506-0WON6Y280B6K74BXED8X/Spar+Lund+Torv+-+Fresvik+Produkt+5.jpeg",
     "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-5-e03cc26d6f.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-5-e03cc26d6f.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
+    ],
     "sha256": "4af1ea6f2d58174bd5537b8ae2725c7faf34917064e3ff07e2085c2b7afcfd69",
     "fileSize": 99382,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-058e7b3a8ca50dae2439f6f11c7a5df22fe86373-960x1280-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-058e7b3a8ca50dae2439f6f11c7a5df22fe86373-960x1280-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-058e7b3a8ca50dae2439f6f11c7a5df22fe86373-960x1280-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1759222153812-BQAAWI4R2VF0K1FWH2HT/Spar+Lund+Torv+-+Fresvik+Produkt+6.jpeg",
     "localPath": "/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-6-3754b65db4.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/spar-lund-torv-fresvik-produkt-6-3754b65db4.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/historisk-leveranse-pir-panel-spar-lund-torv"
+    ],
     "sha256": "f0f7370603220c4e9dc49755d40ca16f3f87485badf9ca4102b2ff7fad4ec0bd",
     "fileSize": 125624,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-e4d64c07e5f4d7086a355a47e9c557c59c417f9f-960x1280-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-e4d64c07e5f4d7086a355a47e9c557c59c417f9f-960x1280-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-e4d64c07e5f4d7086a355a47e9c557c59c417f9f-960x1280-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694430019551-8ORIUHF96LTND4P0LYWU/Standard+D%C3%B8r+Fresvik+Produkt.jpg",

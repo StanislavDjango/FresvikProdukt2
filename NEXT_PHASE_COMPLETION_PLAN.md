@@ -162,7 +162,7 @@
 
 - [x] `/referansar/2014/7/8/coop-extra-sogndal`
 - [x] `/referansar/fryserom-baza-fredrikstad`
-- [ ] `/referansar/historisk-leveranse-pir-panel-spar-lund-torv`
+- [x] `/referansar/historisk-leveranse-pir-panel-spar-lund-torv`
 - [ ] `/referansar/bjerkreim-legekontor-vikesaa`
 - [ ] `/referansar/bunnpris-hammerfest`
 - [ ] `/referansar/kjolerom-kjoledor-bunnpris-volda`

@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+  "finalUrl": "https://www.fresvik.no/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+  "fetchedAt": "2026-07-11T18:53:05.767Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Historisk leveranse til Spar Lund Torv — Fresvik Produkt",
+  "metaDescription": "Fresvik Produkt har levert det aller første PIR-prosjektet som er produsert i Norge.",
+  "counts": {
+    "headings": 10,
+    "textBlocks": 28,
+    "links": 106,
+    "images": 23,
+    "documents": 2
+  }
+}

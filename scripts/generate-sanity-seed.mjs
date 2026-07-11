@@ -789,6 +789,98 @@ const referenceProjectOverrides = new Map([
     },
   ],
   [
+    "/referansar/bunnpris-hammerfest",
+    {
+      title: "Kjøle- og fryserom til Bunnpris Hammerfest",
+      description: [
+        "Bunnpris Hammerfest har fått seg nye rom fra Fresvik Produkt.",
+        "Langt nord i vårt vakre land har vi levert eit fryserom og eit kjølerom til meierivarer.",
+        "I tillegg til romleveranse, har vi levert innestengningsalarm, frysedør og PVC-gardin til fryserommet.",
+        "Takk til Plug-in Norge AS for eit godt samarbeid!",
+      ].join("\n"),
+      year: 2025,
+      category: "Kjøle- og fryserom",
+      location: "Hammerfest",
+      customerType: "Daglegvarebutikk",
+      migratedImagePath: "/assets/fresvik/images/migrated/1000024746.jpg",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Kjøle- og fryserom til Bunnpris Hammerfest",
+              text: [
+                "Bunnpris Hammerfest har fått seg nye rom fra Fresvik Produkt.",
+                "Langt nord i vårt vakre land har vi levert eit fryserom og eit kjølerom til meierivarer.",
+                "I tillegg til romleveranse, har vi levert innestengningsalarm, frysedør og PVC-gardin til fryserommet.",
+                "Takk til Plug-in Norge AS for eit godt samarbeid!",
+              ].join("\n"),
+              imageAlt: "Bunnpris Hammerfest prosjektbilde",
+              migratedImagePath: "/assets/fresvik/images/migrated/1000024746.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Bilde frå prosjektet",
+          intro: "Prosjektbilete bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "Bunnpris Hammerfest 1",
+              text: "Bilde frå gammal Bunnpris Hammerfest-side.",
+              imageAlt: "Bunnpris Hammerfest prosjektbilde 1",
+              migratedImagePath: "/assets/fresvik/images/migrated/1000024746.jpg",
+            },
+            {
+              _key: "reference-project-image-1",
+              _type: "migrationCard",
+              title: "Bunnpris Hammerfest 2",
+              text: "Bilde frå gammal Bunnpris Hammerfest-side.",
+              imageAlt: "Bunnpris Hammerfest prosjektbilde 2",
+              migratedImagePath: "/assets/fresvik/images/old-site/1000024748-b7ff43e043.jpg",
+            },
+            {
+              _key: "reference-project-image-2",
+              _type: "migrationCard",
+              title: "Bunnpris Hammerfest 3",
+              text: "Bilde frå gammal Bunnpris Hammerfest-side.",
+              imageAlt: "Bunnpris Hammerfest prosjektbilde 3",
+              migratedImagePath: "/assets/fresvik/images/old-site/1000024750-95c1c49ec6.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-prev",
+              _type: "migrationCard",
+              title: "Bjerkreim Legekontor: fryselager og kjølerom",
+              text: "Forrige referanse frå gammal side.",
+              href: "/referansar/bjerkreim-legekontor-vikesaa",
+            },
+            {
+              _key: "reference-project-next",
+              _type: "migrationCard",
+              title: "Bunnpris Volda: Nytt kjølerom med isolert kjøledør",
+              text: "Neste referanse frå gammal side.",
+              href: "/referansar/kjolerom-kjoledor-bunnpris-volda",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
     {
       title: "Interfrukt",

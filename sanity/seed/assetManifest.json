@@ -3109,30 +3109,50 @@
     "localPath": "/assets/fresvik/images/old-site/1000024748-b7ff43e043.jpg",
     "filePath": "public/assets/fresvik/images/old-site/1000024748-b7ff43e043.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/bunnpris-hammerfest"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/bunnpris-hammerfest"
+    ],
     "sha256": "375fe4947c37d7a0bd7530b6dbc03b2060b85f6b4463056d8e106b33adf31b89",
     "fileSize": 512198,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-9f75badb2e0f4923e45fa1f2643c2998a3a52b9c-1920x1440-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-9f75badb2e0f4923e45fa1f2643c2998a3a52b9c-1920x1440-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-9f75badb2e0f4923e45fa1f2643c2998a3a52b9c-1920x1440-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1747635709368-5D5OK0XZCHUMXD0KRLE2/1000024750.jpg",
     "localPath": "/assets/fresvik/images/old-site/1000024750-95c1c49ec6.jpg",
     "filePath": "public/assets/fresvik/images/old-site/1000024750-95c1c49ec6.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/bunnpris-hammerfest"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/bunnpris-hammerfest"
+    ],
     "sha256": "22fef7f62cb139328a4c4bbf188d80a3b556e61beb984f94b7c4fc5e059eae6f",
     "fileSize": 559432,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-fd4aa1b0a8af0b5dd17ce651086baab2c45a4922-1920x1440-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-fd4aa1b0a8af0b5dd17ce651086baab2c45a4922-1920x1440-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-fd4aa1b0a8af0b5dd17ce651086baab2c45a4922-1920x1440-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5416085d-ec3b-4270-bef9-0b20706ad193/1463-fr-plata-instal.webp",

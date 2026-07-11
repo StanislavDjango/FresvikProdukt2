@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/referansar/bunnpris-hammerfest",
+  "finalUrl": "https://www.fresvik.no/referansar/bunnpris-hammerfest",
+  "fetchedAt": "2026-07-11T19:32:52.692Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Kjøle- og fryserom til Bunnpris Hammerfest — Fresvik Produkt",
+  "metaDescription": "Langt nord i vårt vakre land har vi levert ett fryserom og ett kjølerom til meierivarer.",
+  "counts": {
+    "headings": 10,
+    "textBlocks": 27,
+    "links": 99,
+    "images": 20,
+    "documents": 2
+  }
+}

@@ -3490,10 +3490,12 @@
     "filePath": "public/assets/fresvik/images/old-site/Baza+fryserom+-+2.jpeg",
     "assetType": "image",
     "usedBy": [
-      "/referansar"
+      "/referansar",
+      "/referansar/fryserom-baza-fredrikstad"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/referansar"
+      "https://www.fresvik.no/referansar",
+      "https://www.fresvik.no/referansar/fryserom-baza-fredrikstad"
     ],
     "sha256": "bb47c2e1bea3b4be474410fb79951148be0476c73aee8687e737e1162ccc41bf",
     "fileSize": 136845,
@@ -5341,23 +5343,37 @@
     "localPath": "/assets/fresvik/images/old-site/baza-fryserom-3-07c5687883.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/baza-fryserom-3-07c5687883.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-baza-fredrikstad"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-baza-fredrikstad"
+    ],
     "sha256": "cd669b08a13f97adb312439d12ee48c644441142f08172388ad99368e454e378",
     "fileSize": 84072,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-5de19547ede29dd08f4873c9b98d0654410f0b24-1280x960-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5de19547ede29dd08f4873c9b98d0654410f0b24-1280x960-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-5de19547ede29dd08f4873c9b98d0654410f0b24-1280x960-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1771241168352-9XAEM8D0U1DJA7JIBNLP/Baza+fryserom+-+4.jpeg",
     "localPath": "/assets/fresvik/images/old-site/baza-fryserom-4-cb6ffaddb9.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/baza-fryserom-4-cb6ffaddb9.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-baza-fredrikstad"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-baza-fredrikstad"
+    ],
     "sha256": "5497d075705668345dab4d5e7732e7d26e1c1b61c07f98a93e214215faae3a87",
     "fileSize": 171134,
     "sanityAssetId": "image-89b1d210dd989070e21cd4f50b7ae18d7eb10678-1280x960-jpg",

@@ -161,7 +161,7 @@
 Потом остальные reference pages из inventory:
 
 - [x] `/referansar/2014/7/8/coop-extra-sogndal`
-- [ ] `/referansar/fryserom-baza-fredrikstad`
+- [x] `/referansar/fryserom-baza-fredrikstad`
 - [ ] `/referansar/historisk-leveranse-pir-panel-spar-lund-torv`
 - [ ] `/referansar/bjerkreim-legekontor-vikesaa`
 - [ ] `/referansar/bunnpris-hammerfest`

@@ -440,6 +440,108 @@ const referenceProjectOverrides = new Map([
     },
   ],
   [
+    "/referansar/fryserom-baza-fredrikstad",
+    {
+      title: "Skreddarsydd fryserom til Baza i Fredrikstad",
+      description: [
+        "Den nye løysinga sikrer driftssikker lagring av frosne varer året rundt.",
+        "Fresvik Produkt har levert eit skreddarsydd fryserom til Baza Nordic i Fredrikstad, tilpassa deira behov for effektiv og driftssikker lagring av frosne varer. Løysinga er utvikla med fokus på kvalitet, energieffektivitet og optimal utnytting av tilgjengeleg plass.",
+        "Installasjonen blei gjennomført i tett dialog med kunden for å sikre ein saumlaus prosess frå planlegging til ferdigstilling.",
+        "Resultatet er eit moderne fryserom som gir Baza auka kapasitet, betre logistikkflyt og stabile lagringsforhold året rundt.",
+        "Vi set stor pris på tilliten og samarbeidet med Baza, og er stolte av å bidra til deira vidare vekst.",
+      ].join("\n"),
+      year: 2026,
+      category: "Kjøle- og fryserom",
+      location: "Fredrikstad",
+      customerType: "Næringsmiddel",
+      migratedImagePath: "/assets/fresvik/images/migrated/baza-fryserom-1.jpeg",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Skreddarsydd fryserom til Baza i Fredrikstad",
+              text: [
+                "Den nye løysinga sikrer driftssikker lagring av frosne varer året rundt.",
+                "Fresvik Produkt har levert eit skreddarsydd fryserom til Baza Nordic i Fredrikstad, tilpassa deira behov for effektiv og driftssikker lagring av frosne varer. Løysinga er utvikla med fokus på kvalitet, energieffektivitet og optimal utnytting av tilgjengeleg plass.",
+                "Installasjonen blei gjennomført i tett dialog med kunden for å sikre ein saumlaus prosess frå planlegging til ferdigstilling.",
+                "Resultatet er eit moderne fryserom som gir Baza auka kapasitet, betre logistikkflyt og stabile lagringsforhold året rundt.",
+                "Vi set stor pris på tilliten og samarbeidet med Baza, og er stolte av å bidra til deira vidare vekst.",
+              ].join("\n"),
+              imageAlt: "Baza fryserom i Fredrikstad",
+              migratedImagePath: "/assets/fresvik/images/migrated/baza-fryserom-1.jpeg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Bilder frå prosjektet",
+          intro: "Prosjektbilete bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "Baza fryserom 1",
+              text: "Bilde frå gammal Baza-side.",
+              imageAlt: "Baza fryserom prosjektbilde 1",
+              migratedImagePath: "/assets/fresvik/images/migrated/baza-fryserom-1.jpeg",
+            },
+            {
+              _key: "reference-project-image-1",
+              _type: "migrationCard",
+              title: "Baza fryserom 2",
+              text: "Bilde frå gammal Baza-side.",
+              imageAlt: "Baza fryserom prosjektbilde 2",
+              migratedImagePath: "/assets/fresvik/images/old-site/Baza+fryserom+-+2.jpeg",
+            },
+            {
+              _key: "reference-project-image-2",
+              _type: "migrationCard",
+              title: "Baza fryserom 3",
+              text: "Bilde frå gammal Baza-side.",
+              imageAlt: "Baza fryserom prosjektbilde 3",
+              migratedImagePath: "/assets/fresvik/images/old-site/baza-fryserom-3-07c5687883.jpeg",
+            },
+            {
+              _key: "reference-project-image-3",
+              _type: "migrationCard",
+              title: "Baza fryserom 4",
+              text: "Bilde frå gammal Baza-side.",
+              imageAlt: "Baza fryserom prosjektbilde 4",
+              migratedImagePath: "/assets/fresvik/images/old-site/baza-fryserom-4-cb6ffaddb9.jpeg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-customer",
+              _type: "migrationCard",
+              title: "Baza Nordic",
+              text: "Kundelenke frå gammal referanseside.",
+              href: "https://baza.no/",
+            },
+            {
+              _key: "reference-project-next",
+              _type: "migrationCard",
+              title: "Historisk leveranse til Spar Lund Torv",
+              text: "Neste referanse frå gammal side.",
+              href: "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
     {
       title: "Interfrukt",

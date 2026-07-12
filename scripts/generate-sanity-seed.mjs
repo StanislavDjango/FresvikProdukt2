@@ -971,6 +971,103 @@ const referenceProjectOverrides = new Map([
     },
   ],
   [
+    "/referansar/fryserom-coop-obs-alnabru",
+    {
+      title: "Nytt stort fryserom til Coop Obs Alnabru",
+      description: [
+        "Fresvik Produkt fekk jobben med å levere eit nytt stort fryserom til Coop Obs Alnabru tidlegare i 2024.",
+        "I tillegg til fryserommet leverte vi fryseport, PVC-gardin og innestengningsalarm.",
+        "Vi takkar for oppdraget og godt samarbeid med Coolteam.",
+      ].join("\n"),
+      year: 2024,
+      category: "Kjøle- og fryserom",
+      location: "Alnabru",
+      customerType: "Daglegvarebutikk",
+      migratedImagePath: "/assets/fresvik/images/migrated/fryserom-obs-alna-3-red.jpg",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Nytt stort fryserom til Coop Obs Alnabru",
+              text: [
+                "Fresvik Produkt fekk jobben med å levere eit nytt stort fryserom til Coop Obs Alnabru tidlegare i 2024.",
+                "I tillegg til fryserommet leverte vi fryseport, PVC-gardin og innestengningsalarm.",
+                "Vi takkar for oppdraget og godt samarbeid med Coolteam.",
+              ].join("\n"),
+              imageAlt: "Fryserom til Coop Obs Alnabru",
+              migratedImagePath: "/assets/fresvik/images/migrated/fryserom-obs-alna-3-red.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Bilde frå prosjektet",
+          intro: "Prosjektbilete bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "Coop Obs Alnabru 1",
+              text: "Bilde frå gammal Coop Obs Alnabru-side.",
+              imageAlt: "Fryserom Coop Obs Alnabru prosjektbilde 1",
+              migratedImagePath: "/assets/fresvik/images/migrated/fryserom-obs-alna-3-red.jpg",
+            },
+            {
+              _key: "reference-project-image-1",
+              _type: "migrationCard",
+              title: "Coop Obs Alnabru 2",
+              text: "Bilde frå gammal Coop Obs Alnabru-side.",
+              imageAlt: "Fryserom Coop Obs Alnabru prosjektbilde 2",
+              migratedImagePath: "/assets/fresvik/images/old-site/fryserom-obs-alna-4-red-2d87e8b63a.jpg",
+            },
+            {
+              _key: "reference-project-image-2",
+              _type: "migrationCard",
+              title: "Coop Obs Alnabru 3",
+              text: "Bilde frå gammal Coop Obs Alnabru-side.",
+              imageAlt: "Fryserom Coop Obs Alnabru prosjektbilde 3",
+              migratedImagePath: "/assets/fresvik/images/old-site/fryserom-obs-alna-5-red-f01c79a8c6.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-coolteam",
+              _type: "migrationCard",
+              title: "Coolteam",
+              text: "Samarbeidspartnar nemnd på gammal side.",
+              href: "https://coolteam.no/",
+            },
+            {
+              _key: "reference-project-prev",
+              _type: "migrationCard",
+              title: "Bunnpris Volda: Nytt kjølerom med isolert kjøledør",
+              text: "Forrige referanse frå gammal side.",
+              href: "/referansar/kjolerom-kjoledor-bunnpris-volda",
+            },
+            {
+              _key: "reference-project-next",
+              _type: "migrationCard",
+              title: "Kjøle- og fryserom til nye Vik helse- og omsorgssenter",
+              text: "Neste referanse frå gammal side.",
+              href: "/referansar/vik-helse-og-omsorgssenter",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
     {
       title: "Interfrukt",

@@ -166,7 +166,7 @@
 - [x] `/referansar/bjerkreim-legekontor-vikesaa`
 - [x] `/referansar/bunnpris-hammerfest`
 - [x] `/referansar/kjolerom-kjoledor-bunnpris-volda`
-- [ ] `/referansar/fryserom-coop-obs-alnabru`
+- [x] `/referansar/fryserom-coop-obs-alnabru`
 - [ ] `/referansar/vik-helse-og-omsorgssenter`
 - [ ] `/referansar/fryse-og-kjolerom-kiwi-otta`
 - [ ] `/referansar/nye-leveransar-til-rema-1000-ya-i-larvik`

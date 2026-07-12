@@ -7095,30 +7095,50 @@
     "localPath": "/assets/fresvik/images/old-site/fryserom-obs-alna-4-red-2d87e8b63a.jpg",
     "filePath": "public/assets/fresvik/images/old-site/fryserom-obs-alna-4-red-2d87e8b63a.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-coop-obs-alnabru"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-coop-obs-alnabru"
+    ],
     "sha256": "3c6801fc8b4713271fa80a83ff06576187ad91412c1dbc941ba38dcd55839256",
     "fileSize": 276360,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-55457c24a3ac69fb8eb6f0f68cce6d9823d4d724-1280x1707-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-55457c24a3ac69fb8eb6f0f68cce6d9823d4d724-1280x1707-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-55457c24a3ac69fb8eb6f0f68cce6d9823d4d724-1280x1707-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1734082731057-SXEDBLFD5I91ZVZ449GU/Fryserom+OBS+Alna+5_red.jpg",
     "localPath": "/assets/fresvik/images/old-site/fryserom-obs-alna-5-red-f01c79a8c6.jpg",
     "filePath": "public/assets/fresvik/images/old-site/fryserom-obs-alna-5-red-f01c79a8c6.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-coop-obs-alnabru"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-coop-obs-alnabru"
+    ],
     "sha256": "1a130c871235bb82f9568fe7601ae9cf067b57dd5958e35d0ad6d1e62113446b",
     "fileSize": 101976,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-c03d11ab3471f077011f06f2d5fec63fd32e388a-1280x1639-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c03d11ab3471f077011f06f2d5fec63fd32e388a-1280x1639-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-c03d11ab3471f077011f06f2d5fec63fd32e388a-1280x1639-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/d7b7a341-353c-4260-afe7-8858187c72fd/Fryst+Laks.png",

@@ -10179,60 +10179,100 @@
     "localPath": "/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-2-9d84f6c72a.jpg",
     "filePath": "public/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-2-9d84f6c72a.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/vik-helse-og-omsorgssenter"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/vik-helse-og-omsorgssenter"
+    ],
     "sha256": "64e2667b4715281c2b61dabff67abed6f4f5229a19d9d6a50c645063b6bb523a",
     "fileSize": 80148,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-a9c26accc803cf712671f60c4f257742e9e9f999-1280x1707-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a9c26accc803cf712671f60c4f257742e9e9f999-1280x1707-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-a9c26accc803cf712671f60c4f257742e9e9f999-1280x1707-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749160310-4H05SN1MA15WN41W39O0/Vik+helse-+og+sjukeheim+3.jpg",
     "localPath": "/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-3-741bbf0fef.jpg",
     "filePath": "public/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-3-741bbf0fef.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/vik-helse-og-omsorgssenter"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/vik-helse-og-omsorgssenter"
+    ],
     "sha256": "0a4a1c18012d126e169b42cf731d317cdd61f49c72c5ffff0e47193bcd477c0c",
     "fileSize": 34078,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-dd3166d67d0afd40ec2d7129523d1042cca40ec8-1280x1707-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-dd3166d67d0afd40ec2d7129523d1042cca40ec8-1280x1707-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-dd3166d67d0afd40ec2d7129523d1042cca40ec8-1280x1707-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749160574-VBDN3DZROT33TD5VRFB7/Vik+helse-+og+sjukeheim+4.jpg",
     "localPath": "/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-4-f1a14468b8.jpg",
     "filePath": "public/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-4-f1a14468b8.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/vik-helse-og-omsorgssenter"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/vik-helse-og-omsorgssenter"
+    ],
     "sha256": "213dd6871ff515c620153ebee73f31ba29aa4b30ede388e2ce99e15e80b7b4cc",
     "fileSize": 36200,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-90a8d2689cc33869976c82b94bd49283172f1550-1280x1707-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-90a8d2689cc33869976c82b94bd49283172f1550-1280x1707-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-90a8d2689cc33869976c82b94bd49283172f1550-1280x1707-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733749161328-7V2KKMF03TL0DCE6HXCM/Vik+helse-+og+sjukeheim+5.jpg",
     "localPath": "/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-5-549411dc5b.jpg",
     "filePath": "public/assets/fresvik/images/old-site/vik-helse-og-sjukeheim-5-549411dc5b.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/vik-helse-og-omsorgssenter"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/vik-helse-og-omsorgssenter"
+    ],
     "sha256": "f0339750f87cf284fd8154cfdb35ad013cc63b9e8fbdd325505cdb7f55cd715b",
     "fileSize": 27078,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-143cd43d0d5a66f39d9d6e924095a3fed946743c-1280x1707-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-143cd43d0d5a66f39d9d6e924095a3fed946743c-1280x1707-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-143cd43d0d5a66f39d9d6e924095a3fed946743c-1280x1707-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385879029-1G9MX2OPCNVO7N0PMHZF/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",

@@ -170,7 +170,7 @@
 - [x] `/referansar/vik-helse-og-omsorgssenter`
 - [x] `/referansar/fryse-og-kjolerom-kiwi-otta`
 - [x] `/referansar/nye-leveransar-til-rema-1000-ya-i-larvik`
-- [ ] `/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark`
+- [x] `/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark`
 - [ ] `/referansar/spesialloysing-torkerom-drageboden-kaupanger`
 - [ ] `/referansar/omfattande-leveranse-til-bakehuset-trondheim`
 - [ ] `/referansar/fryseromsportar-til-rema-1000-i-narvik`

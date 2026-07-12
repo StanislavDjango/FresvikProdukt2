@@ -1391,6 +1391,86 @@ const referenceProjectOverrides = new Map([
     },
   ],
   [
+    "/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark",
+    {
+      title: "Ny leveranse til Dyreparken Safaricamp i Kristiansand Dyrepark",
+      description: [
+        "Fresvik Produkt har levert eit fryserom, fem kjølerom, innestengingsalarm, PVC-gardin og sju dører til Dyreparken Safaricamp i Kristiansand Dyrepark. Dørene er levert med sjølvlukkande hengsler – Fresvik Hengsler, som garanterer at døra aldri blir ståande åpen meir enn den trenger.",
+        "Som einaste norske produsent av isolasjonspanel, dører og portar til kjøle- og fryserom, tilbyr me skreddarsydde løysingar som sikrar funksjonalitet og tryggleik. Produkta er kortreiste og av høg kvalitet, med enkel montering takka vere eksenterlås og med smarte løysingar som Fresvik Hengsle. Med hovudkontor og produksjonsanlegg i Fresvik i Sogn og salgsavdeling i Drammen, leverer me påliteleg og effektivt over heile Noreg.",
+      ].join("\n"),
+      year: 2024,
+      category: "Kjøle- og fryserom",
+      location: "Kristiansand",
+      customerType: "Safaricamp",
+      migratedImagePath: "/assets/fresvik/images/migrated/fp-dyreparken.jpg",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Ny leveranse til Dyreparken Safaricamp i Kristiansand Dyrepark",
+              text: [
+                "Fresvik Produkt har levert eit fryserom, fem kjølerom, innestengingsalarm, PVC-gardin og sju dører til Dyreparken Safaricamp i Kristiansand Dyrepark. Dørene er levert med sjølvlukkande hengsler – Fresvik Hengsler, som garanterer at døra aldri blir ståande åpen meir enn den trenger.",
+                "Som einaste norske produsent av isolasjonspanel, dører og portar til kjøle- og fryserom, tilbyr me skreddarsydde løysingar som sikrar funksjonalitet og tryggleik. Produkta er kortreiste og av høg kvalitet, med enkel montering takka vere eksenterlås og med smarte løysingar som Fresvik Hengsle. Med hovudkontor og produksjonsanlegg i Fresvik i Sogn og salgsavdeling i Drammen, leverer me påliteleg og effektivt over heile Noreg.",
+              ].join("\n\n"),
+              imageAlt: "Fresvik leveranse til Dyreparken Safaricamp",
+              migratedImagePath: "/assets/fresvik/images/migrated/fp-dyreparken.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Bilde frå prosjektet",
+          intro: "Prosjektbilete bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "Dyreparken Safaricamp prosjektbilde 1",
+              text: "Bilde frå gammal Dyreparken Safaricamp-side.",
+              imageAlt: "Fresvik leveranse til Dyreparken Safaricamp",
+              migratedImagePath: "/assets/fresvik/images/migrated/fp-dyreparken.jpg",
+            },
+            {
+              _key: "reference-project-image-1",
+              _type: "migrationCard",
+              title: "Dyreparken Safaricamp prosjektbilde 2",
+              text: "Bilde frå gammal Dyreparken Safaricamp-side.",
+              imageAlt: "Fresvik leveranse til Dyreparken Safaricamp bilde 2",
+              migratedImagePath: "/assets/fresvik/images/old-site/fp-dyreparken-1-d75e447c80.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-prev",
+              _type: "migrationCard",
+              title: "Nye leveransar til Rema 1000 Øya i Larvik",
+              text: "Forrige referanse frå gammal side.",
+              href: "/referansar/nye-leveransar-til-rema-1000-ya-i-larvik",
+            },
+            {
+              _key: "reference-project-next",
+              _type: "migrationCard",
+              title: "Spesialløysing til tørkerom hjå Drageboden Kaupanger",
+              text: "Neste referanse frå gammal side.",
+              href: "/referansar/spesialloysing-torkerom-drageboden-kaupanger",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
     {
       title: "Interfrukt",

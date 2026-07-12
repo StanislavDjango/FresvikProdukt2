@@ -6719,15 +6719,25 @@
     "localPath": "/assets/fresvik/images/old-site/fp-dyreparken-1-d75e447c80.jpg",
     "filePath": "public/assets/fresvik/images/old-site/fp-dyreparken-1-d75e447c80.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark"
+    ],
     "sha256": "6d69af5f1c3b0aa20688aeb9f3bcb5f48b94ca42e3df7a172f84f6a22d8230bb",
     "fileSize": 330678,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-01e452dccc8f7e864033b8e75d9b5e925cc17e53-2500x3333-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-01e452dccc8f7e864033b8e75d9b5e925cc17e53-2500x3333-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-01e452dccc8f7e864033b8e75d9b5e925cc17e53-2500x3333-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228662503-DBOWOMM4YXZSZ5VTAZYF/fr%C3%A5+produksjonen++Kopi+%28002%29.jpg",

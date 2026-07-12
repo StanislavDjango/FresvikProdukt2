@@ -3262,30 +3262,50 @@
     "localPath": "/assets/fresvik/images/old-site/1715599204829-upscale-2-346667b36f.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/1715599204829-upscale-2-346667b36f.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/nye-leveransar-til-rema-1000-ya-i-larvik"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/nye-leveransar-til-rema-1000-ya-i-larvik"
+    ],
     "sha256": "b38ac8c1ccf52a42d1b95d1dec49f1865d625dbf74223b4586333a24c83111fc",
     "fileSize": 142334,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-cd526e44d26267a854774de2af10e3f822f022ea-2018x1442-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-cd526e44d26267a854774de2af10e3f822f022ea-2018x1442-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-cd526e44d26267a854774de2af10e3f822f022ea-2018x1442-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1719842660255-NLEIYO7M3SIMG7YTE0CE/1715599206722_upscale.jpeg",
     "localPath": "/assets/fresvik/images/old-site/1715599206722-upscale-2137d27afe.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/1715599206722-upscale-2137d27afe.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/nye-leveransar-til-rema-1000-ya-i-larvik"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/nye-leveransar-til-rema-1000-ya-i-larvik"
+    ],
     "sha256": "69b47eded79438aab0a808b394b14b67c5bfa16002c91dd6334673adf5be6464",
     "fileSize": 110874,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-acaba0d5fd29612de6b33a40c8a334755d544da6-1990x1422-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-acaba0d5fd29612de6b33a40c8a334755d544da6-1990x1422-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-acaba0d5fd29612de6b33a40c8a334755d544da6-1990x1422-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/6d63789a-8276-4fa7-ac6e-3767cc054fae/1733820776326.jpg",

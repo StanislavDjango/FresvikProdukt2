@@ -1307,6 +1307,90 @@ const referenceProjectOverrides = new Map([
     },
   ],
   [
+    "/referansar/nye-leveransar-til-rema-1000-ya-i-larvik",
+    {
+      title: "Nye leveransar til Rema 1000 Øya i Larvik",
+      description:
+        "Tidlegare i år leverte Fresvik Produkt nye kjøle- og fryserom til Rema 1000 Øya i Gamle Kongevei 47 i Larvik. Leveransen inkluderte eit fryserom og eit kjølerom, komplett med dører, innestengingsalarm, PVC-gardin og kjørerampe.",
+      year: 2024,
+      category: "Kjøle- og fryserom",
+      location: "Larvik",
+      customerType: "Daglegvarebutikk",
+      migratedImagePath: "/assets/fresvik/images/migrated/1715599204491-upscale.jpeg",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Nye leveransar til Rema 1000 Øya i Larvik",
+              text:
+                "Tidlegare i år leverte Fresvik Produkt nye kjøle- og fryserom til Rema 1000 Øya i Gamle Kongevei 47 i Larvik. Leveransen inkluderte eit fryserom og eit kjølerom, komplett med dører, innestengingsalarm, PVC-gardin og kjørerampe.",
+              imageAlt: "Kjøle- og fryserom til Rema 1000 Øya i Larvik",
+              migratedImagePath: "/assets/fresvik/images/migrated/1715599204491-upscale.jpeg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Bilde frå prosjektet",
+          intro: "Prosjektbilete bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "Rema 1000 Øya Larvik 1",
+              text: "Bilde frå gammal Rema 1000 Øya Larvik-side.",
+              imageAlt: "Rema 1000 Øya Larvik prosjektbilde 1",
+              migratedImagePath: "/assets/fresvik/images/migrated/1715599204491-upscale.jpeg",
+            },
+            {
+              _key: "reference-project-image-1",
+              _type: "migrationCard",
+              title: "Rema 1000 Øya Larvik 2",
+              text: "Bilde frå gammal Rema 1000 Øya Larvik-side.",
+              imageAlt: "Rema 1000 Øya Larvik prosjektbilde 2",
+              migratedImagePath: "/assets/fresvik/images/old-site/1715599206722-upscale-2137d27afe.jpeg",
+            },
+            {
+              _key: "reference-project-image-2",
+              _type: "migrationCard",
+              title: "Rema 1000 Øya Larvik 3",
+              text: "Bilde frå gammal Rema 1000 Øya Larvik-side.",
+              imageAlt: "Rema 1000 Øya Larvik prosjektbilde 3",
+              migratedImagePath: "/assets/fresvik/images/old-site/1715599204829-upscale-2-346667b36f.jpeg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-prev",
+              _type: "migrationCard",
+              title: "Nok ein Kiwi-butikk får nye fryse- og kjølerom",
+              text: "Forrige referanse frå gammal side.",
+              href: "/referansar/fryse-og-kjolerom-kiwi-otta",
+            },
+            {
+              _key: "reference-project-next",
+              _type: "migrationCard",
+              title: "Ny leveranse til Dyreparken Safaricamp i Kristiansand Dyrepark",
+              text: "Neste referanse frå gammal side.",
+              href: "/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
     {
       title: "Interfrukt",

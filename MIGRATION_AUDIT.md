@@ -1,27 +1,27 @@
 # Migration Audit
 
-Generated: 2026-06-16T18:36:59.105Z
+Generated: 2026-07-12T18:58:24.342Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
 | Local baseline old URL count | 105 |
-| Live sitemap URL count | 104 |
+| Live sitemap URL count | 105 |
 | Local baseline old image count | 325 |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Migrated page count | 71 |
-| Redirect count | 29 |
-| Partial count | 0 |
+| Migrated page count | 81 |
+| Redirect count | 18 |
+| Partial count | 2 |
 | Missing count | 0 |
 | Needs-review count | 0 |
 | Unrecoverable unresolved | 0 |
 | Unrecoverable with evidence | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 385 |
+| Local image assets | 401 |
 | Local document/PDF assets | 30 |
-| Asset originalUrls recovered in manifest | 415 |
+| Asset originalUrls recovered in manifest | 421 |
 
 Do not treat the migration as complete while any route, asset, document or link remains `partial`, `missing`, `needs-review`, `inventory-only`, `thumbnail-or-variant` or `local-only`.
 
@@ -36,7 +36,7 @@ The root homepage `https://www.fresvik.no/` is audited as its own route even tho
 | Fresvik-panel benefits | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
 | product teaser links | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
 | Våre kundar | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
-| Aktuelt | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| Aktuelt | yes | yes | yes | no | yes | partial | Missing images: /assets/fresvik/images/migrated/samaneh-shakeri.jpg |
 | job CTA | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
 | contact section | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
 | sales departments | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
@@ -45,13 +45,13 @@ The root homepage `https://www.fresvik.no/` is audited as its own route even tho
 
 ## Old sitemap coverage
 
-The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 image entries checked earlier. The live donor sitemap currently returns 104 URLs and 323 image entries (276 unique image URLs). The difference must be treated as source drift until manually reviewed.
+The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 image entries checked earlier. The live donor sitemap currently returns 105 URLs and 323 image entries (276 unique image URLs). The difference must be treated as source drift until manually reviewed.
 
 ## Route coverage
 
 | oldPath | newRoute | status | type | title | intro | body | images | docs | notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| / | / | page | page | yes | yes | yes | 20/14 | yes | Covered as migrated page in local data. |
+| / | / | partial | page | yes | yes | yes | 20/14 | yes | Homepage is checked section-by-section in HOMEPAGE_MIGRATION_AUDIT.md; one or more old sections are incomplete. |
 | /aktuelt | /aktuelt | page | news | yes | yes | yes | 31/0 | yes | Covered as migrated page in local data. |
 | /aktuelt/40-aars-jubileum | /aktuelt/40-aars-jubileum | page | news | yes | yes | yes | 4/4 | yes | Covered as migrated page in local data. |
 | /aktuelt/agnar-er-snart-pensjonistnbsp | /aktuelt/agnar-er-snart-pensjonistnbsp | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
@@ -67,6 +67,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /aktuelt/innfesting-mot-golv | /aktuelt/innfesting-mot-golv | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/john-bothun-blir-pensjonist | /aktuelt/john-bothun-blir-pensjonist | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /aktuelt/jul-2020 | /aktuelt/jul-2020 | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
+| /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | partial | news | yes | yes | no | 0/0 | no | Strict audit: local content appears shorter than a full old detail page, lacks reliable extracted body evidence, documents, or not all sitemap images are represented. |
 | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | unrecoverable-with-evidence | news | yes | yes | no | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | /aktuelt/montasje-prosjekt | /aktuelt/montasje-prosjekt | page | news | yes | yes | yes | 10/10 | yes | Covered as migrated page in local data. |
 | /aktuelt/ny-teknisk-teiknar-havard-berdal | /aktuelt/ny-teknisk-teiknar-havard-berdal | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
@@ -80,23 +81,23 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /aktuelt/tomas-kruvellis-vaar-nye-mann | /aktuelt/tomas-kruvellis-vaar-nye-mann | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/vi-er-blitt-sertifisert-miljofyrtarn | /aktuelt/vi-er-blitt-sertifisert-miljofyrtarn | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /andre-produkter | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |
-| /andre-produkter/2014/7/9/industri-slagdor | /tilleggsutstyr | redirect | product | yes | yes | no | 1/1 | no | Redirects to /tilleggsutstyr. |
-| /andre-produkter/2014/7/9/skipsdrer | /tilleggsutstyr | redirect | product | yes | yes | no | 1/1 | no | Redirects to /tilleggsutstyr. |
-| /andre-produkter/2014/7/9/standard-drer | /tilleggsutstyr | redirect | product | yes | yes | no | 1/1 | no | Redirects to /tilleggsutstyr. |
-| /andre-produkter/beslag | /tilleggsutstyr | redirect | product | yes | yes | no | 1/6 | no | Redirects to /tilleggsutstyr. |
+| /andre-produkter/2014/7/9/industri-slagdor | /andre-produkter/2014/7/9/industri-slagdor | page | product | yes | yes | yes | 1/1 | no | Covered as migrated page in local data. |
+| /andre-produkter/2014/7/9/skipsdrer | /andre-produkter/2014/7/9/skipsdrer | page | product | yes | yes | yes | 1/1 | no | Covered as migrated page in local data. |
+| /andre-produkter/2014/7/9/standard-drer | /andre-produkter/2014/7/9/standard-drer | page | product | yes | yes | yes | 1/1 | no | Covered as migrated page in local data. |
+| /andre-produkter/beslag | /andre-produkter/beslag | page | product | yes | yes | yes | 6/6 | no | Covered as migrated page in local data. |
 | /andre-produkter/category/Andre+produkt | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |
 | /andre-produkter/category/Dør | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |
 | /andre-produkter/category/dører | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |
 | /andre-produkter/category/Fasadepanel | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |
 | /andre-produkter/category/Port | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |
 | /andre-produkter/category/Tilleggsutstyr+kjølerom | /tilleggsutstyr | redirect | product | yes | yes | no | 0/0 | no | Redirects to /tilleggsutstyr. |
-| /andre-produkter/diktator-dortiltrekker | /tilleggsutstyr | redirect | product | yes | yes | no | 1/1 | no | Redirects to /tilleggsutstyr. |
-| /andre-produkter/elebar-ventil | /tilleggsutstyr | redirect | product | yes | yes | no | 1/2 | no | Redirects to /tilleggsutstyr. |
-| /andre-produkter/kjlerampe | /tilleggsutstyr | redirect | product | yes | yes | no | 1/3 | no | Redirects to /tilleggsutstyr. |
-| /andre-produkter/maxielebar-ventil | /tilleggsutstyr | redirect | product | yes | yes | no | 1/2 | no | Redirects to /tilleggsutstyr. |
-| /andre-produkter/pego-innestengningsalarm | /tilleggsutstyr | redirect | product | yes | yes | no | 1/2 | no | Redirects to /tilleggsutstyr. |
-| /andre-produkter/pvc-gardiner | /tilleggsutstyr | redirect | product | yes | yes | no | 1/2 | no | Redirects to /tilleggsutstyr. |
-| /andre-produkter/standard-handtak | /tilleggsutstyr | redirect | product | yes | yes | no | 1/1 | no | Redirects to /tilleggsutstyr. |
+| /andre-produkter/diktator-dortiltrekker | /andre-produkter/diktator-dortiltrekker | page | product | yes | yes | yes | 1/1 | no | Covered as migrated page in local data. |
+| /andre-produkter/elebar-ventil | /andre-produkter/elebar-ventil | page | product | yes | yes | yes | 2/2 | no | Covered as migrated page in local data. |
+| /andre-produkter/kjlerampe | /andre-produkter/kjlerampe | page | product | yes | yes | yes | 3/3 | no | Covered as migrated page in local data. |
+| /andre-produkter/maxielebar-ventil | /andre-produkter/maxielebar-ventil | page | product | yes | yes | yes | 2/2 | no | Covered as migrated page in local data. |
+| /andre-produkter/pego-innestengningsalarm | /andre-produkter/pego-innestengningsalarm | page | product | yes | yes | yes | 2/2 | no | Covered as migrated page in local data. |
+| /andre-produkter/pvc-gardiner | /andre-produkter/pvc-gardiner | page | product | yes | yes | yes | 2/2 | no | Covered as migrated page in local data. |
+| /andre-produkter/standard-handtak | /andre-produkter/standard-handtak | page | product | yes | yes | yes | 1/1 | no | Covered as migrated page in local data. |
 | /dokumentasjon | /dokumentasjon | page | document | yes | yes | yes | 9/1 | yes | Covered as migrated page in local data. |
 | /firmainfo | /firmainfo | page | page | yes | yes | yes | 9/1 | yes | Covered as migrated page in local data. |
 | /kjolerom-fryserom-butikk | /kjolerom-fryserom-butikk | page | support | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
@@ -111,7 +112,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /produkt | /produkt | page | product | yes | yes | yes | 29/6 | yes | Covered as migrated page in local data. |
 | /produkt/fasadepanel | /produkt/fasadepanel | page | product | yes | yes | yes | 14/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | /produkt/fresvik-pur-panel | redirect | product | yes | yes | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
-| /produkt/fresvik-pir-panel | /produkt/fresvik-pir-panel | page | product | yes | yes | yes | 12/7 | yes | Covered as migrated page in local data. |
+| /produkt/fresvik-pir-panel | /produkt/fresvik-pir-panel | page | product | yes | yes | yes | 13/7 | yes | Covered as migrated page in local data. |
 | /produkt/frysetunnel | /produkt/frysetunnel | page | product | yes | yes | yes | 15/8 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-frysedorer | /produkt/kjole-frysedorer | page | product | yes | yes | yes | 14/2 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-fryseportar | /produkt/kjole-fryseportar | page | product | yes | yes | yes | 13/8 | yes | Covered as migrated page in local data. |
@@ -154,13 +155,13 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /tenester/leveranse | /tenester/leveranse | page | service | yes | yes | yes | 11/2 | yes | Covered as migrated page in local data. |
 | /tenester/montasje | /tenester/montasje | page | service | yes | yes | yes | 11/2 | yes | Covered as migrated page in local data. |
 | /tenester/service-reservedeler | /tenester/service-reservedeler | page | service | yes | yes | yes | 9/1 | yes | Covered as migrated page in local data. |
-| /tilleggsutstyr | /tilleggsutstyr | page | unknown | yes | yes | yes | 31/12 | yes | Covered as migrated page in local data. |
+| /tilleggsutstyr | /tilleggsutstyr | page | unknown | yes | yes | yes | 42/12 | yes | Covered as migrated page in local data. |
 | /tilsette | /tilsette | page | employee | yes | yes | yes | 21/14 | yes | Covered as migrated page in local data. |
 | /transportskade | /transportskade | page | support | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 
 ## Content completeness
 
-- News pages: 27
+- News pages: 28
 - Reference pages: 30
 - Product pages/routes: 28
 - Service pages/routes: 3
@@ -174,7 +175,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Local migrated image assets | 385 |
+| Local migrated image assets | 401 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
@@ -185,17 +186,17 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | localPath | title | status | routeAvailable | fileSize | oldUrl | notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| /assets/fresvik/documents/endre-skyveretning.pdf | Dokument | migrated | yes | 174280 | https://www.fresvik.no/s/Endre-Skyveretning.pdf | Recovered likely old URL with confidence 1.00. |
+| /assets/fresvik/documents/endre-skyveretning.pdf | Endre skyveretning | migrated | yes | 174280 | https://www.fresvik.no/s/Endre-Skyveretning.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/fp-pir-paneler-montasjeanvisning-nov-2025.pdf | PIR-Paneler montasjeanvisning | migrated | yes | 1031884 | https://www.fresvik.no/s/FP-PIR-Paneler_Montasjeanvisning-nov-2025.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf | Dokument | migrated | yes | 4217580 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.67. |
-| /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf | Dokument | migrated | yes | 1929048 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf | Dokument | migrated | yes | 1596484 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.67. |
+| /assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf | Dør | migrated | yes | 4217580 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.67. |
+| /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf | Fryserom | migrated | yes | 1929048 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 1.00. |
+| /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf | Kjølerom | migrated | yes | 1596484 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.67. |
 | /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf | Monteringsanvisning manuell port | migrated | yes | 6789859 | https://www.fresvik.no/s/Fresvik-Port-Montasjeanvisning.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf | Dokument | migrated | yes | 2166231 | https://www.fresvik.no/s/Koblingsskjema-Fermod-5010.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf | Dokument | migrated | yes | 350922 | https://www.fresvik.no/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | Recovered likely old URL with confidence 0.75. |
-| /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf | Dokument | migrated | yes | 38764 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
-| /assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf | Dokument | migrated | yes | 3418684 | https://www.fresvik.no/s/Montasjeanvisning-5010-for-2150.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf | Dokument | migrated | yes | 3531249 | https://www.fresvik.no/s/Montasjeanvisning-5010-for-3530-og-7530.pdf | Recovered likely old URL with confidence 1.00. |
+| /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf | Koblingskjema Fermod 5010 | migrated | yes | 2166231 | https://www.fresvik.no/s/Koblingsskjema-Fermod-5010.pdf | Recovered likely old URL with confidence 1.00. |
+| /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf | Levering | migrated | yes | 350922 | https://www.fresvik.no/s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | Recovered likely old URL with confidence 0.75. |
+| /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf | Miljøfyrtårn | migrated | yes | 38764 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
+| /assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf | Montasjeanvisning for Fermod 5010 på manuelt beslag 2150 | migrated | yes | 3418684 | https://www.fresvik.no/s/Montasjeanvisning-5010-for-2150.pdf | Recovered likely old URL with confidence 1.00. |
+| /assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf | Montasjeanvisning for Fermod 5010 på manuelt beslag 3530 og 7530 | migrated | yes | 3531249 | https://www.fresvik.no/s/Montasjeanvisning-5010-for-3530-og-7530.pdf | Recovered likely old URL with confidence 1.00. |
 | /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2024.pdf | openheitslova-aktsemdvurderingar-2024 | archived-with-reason | no | 201642 | https://www.fresvik.no/s/2024-Aktsemdvurderingar-Fresvik-Produkt.pdf | Archived historical Openheitslova 2024 document. The live donor page now links 2025 documents; old PDF URL was verified by exact SHA-256 and the local cache is retained for traceability. |
 | /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf | openheitslova-aktsemdvurderingar-2025 | migrated | yes | 102216 | https://www.fresvik.no/s/Aktsemdvurderingar-2025.pdf | Recovered likely old URL with confidence 0.20. |
 | /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf | openheitslova-rutine-plikter-2025 | migrated | yes | 276631 | https://www.fresvik.no/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | Recovered likely old URL with confidence 0.20. |
@@ -205,51 +206,48 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /assets/fresvik/documents/pir-panel-montasjeanvisning.pdf | PIR-Paneler montasjeanvisning (legacy duplicate) | migrated | yes | 1031884 | https://www.fresvik.no/s/Fresvik-Fryserom-Montasjeanvisning.pdf | Recovered likely old URL with confidence 0.40. |
 | /assets/fresvik/documents/pir-panel.pdf | PIR-Paneler produktblad | migrated | yes | 302439 | https://www.fresvik.no/s/PIR.pdf | Recovered likely old URL with confidence 0.50. |
 | /assets/fresvik/documents/produktblad-fresvik-skyveport.pdf | Produktblad Fresvik Skyveport | migrated | yes | 1648458 | https://www.fresvik.no/s/Produktblad-Fresvik-Skyveport.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/pur-ce-merke.pdf | Dokument | migrated | yes | 150364 | https://www.fresvik.no/s/PUR-ce-merke.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/pur-produktbladfp.pdf | Last ned produktblad | migrated | yes | 201960 | https://www.fresvik.no/s/PUR-ProduktbladFP.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/quick-start-5010exp.pdf | Dokument | migrated | yes | 1001335 | https://www.fresvik.no/s/Quick-Start-5010Exp-indB.pdf | Recovered likely old URL with confidence 0.75. |
-| /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf | Dokument | migrated | yes | 58526 | https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 1.00. |
-| /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf | Dokument | migrated | yes | 253758 | https://www.fresvik.no/s/7060s-fnfz.pdf | Recovered likely old URL with confidence 0.33. |
+| /assets/fresvik/documents/pur-ce-merke.pdf | CE | migrated | yes | 150364 | https://www.fresvik.no/s/PUR-ce-merke.pdf | Recovered likely old URL with confidence 1.00. |
+| /assets/fresvik/documents/pur-produktbladfp.pdf | Poly | migrated | yes | 201960 | https://www.fresvik.no/s/PUR-ProduktbladFP.pdf | Recovered likely old URL with confidence 1.00. |
+| /assets/fresvik/documents/quick-start-5010exp.pdf | Quick Start | migrated | yes | 1001335 | https://www.fresvik.no/s/Quick-Start-5010Exp-indB.pdf | Recovered likely old URL with confidence 0.75. |
+| /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf | Sentral godkjent | migrated | yes | 58526 | https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 1.00. |
+| /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf | Samsvarssertifikat | migrated | yes | 253758 | https://www.fresvik.no/s/7060s-fnfz.pdf | Recovered likely old URL with confidence 0.33. |
 | /assets/fresvik/documents/sintef-produktsertifikat.pdf | sintef-produktsertifikat | duplicate | no | 439904 | https://www.fresvik.no/s/2135g-5.pdf | Duplicate of /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf by exact SHA-256. Canonical redirect /s/2135g-5.pdf points to the 2135g local PDF; duplicate cache kept until final asset cleanup. |
-| /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf | Dokument | migrated | yes | 439904 | https://www.fresvik.no/s/2135g-5.pdf | Recovered likely old URL with confidence 0.25. |
+| /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf | TG-2135 | migrated | yes | 439904 | https://www.fresvik.no/s/2135g-5.pdf | Recovered likely old URL with confidence 0.25. |
 | /assets/fresvik/documents/sintef-teknisk-godkjenning.pdf | sintef-teknisk-godkjenning | duplicate | no | 253758 | https://www.fresvik.no/s/7060s-fnfz.pdf | Duplicate of /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf by exact SHA-256. Canonical redirect /s/7060s-fnfz.pdf points to the 7060s local PDF; duplicate cache kept until final asset cleanup. |
-| /assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf | Dokument | migrated | yes | 2177053 | https://www.fresvik.no/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf | Recovered likely old URL with confidence 0.75. |
-| /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf | Dokument | migrated | yes | 882067 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
+| /assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf | Tilleggsutstyr | migrated | yes | 2177053 | https://www.fresvik.no/s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf | Recovered likely old URL with confidence 0.75. |
+| /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf | Ytelseserklæring | migrated | yes | 882067 | https://www.fresvik.no/s/Miljdokument-Fresvik-Produkt.pdf | Recovered likely old URL with confidence 0.67. |
 
 ## Internal links
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 414 |
-| OK routes | 179 |
-| Redirect links | 22 |
-| Asset links OK | 213 |
+| Internal link references | 742 |
+| OK routes | 251 |
+| Redirect links | 19 |
+| Asset links OK | 472 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
 | --- | --- | --- | --- |
 | /referansar-list/fryse-og-kjolerom-til-sogn-frukt-og-gront | src/data/pages.ts:542 | redirect | Redirects to /referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront. |
 | /referansar-list/celsa-steel-sotra | src/data/pages.ts:547 | redirect | Redirects to /referansar/celsa-steel-sotra. |
-| /s/Miljdokument-Fresvik-Produkt.pdf | src/data/pages.ts:1329 | redirect | Redirects to /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf. |
-| /s/7060s-fnfz.pdf | src/data/pages.ts:1334 | redirect | Redirects to /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf. |
-| /s/2135g-5.pdf | src/data/pages.ts:1339 | redirect | Redirects to /assets/fresvik/documents/sintef-teknisk-godkjenning-2135g.pdf. |
-| /s/Leveringsvilkar-Fresvik-Produkt_rev2023.pdf | src/data/pages.ts:1354 | redirect | Redirects to /assets/fresvik/documents/leveringsvilkar-fresvik-produkt-2023.pdf. |
-| /s/Sentral-Godkjenning-Fresvik-Produkt.pdf | src/data/pages.ts:1364 | redirect | Redirects to /assets/fresvik/documents/sentral-godkjenning-fresvik-produkt.pdf. |
-| /s/Ytelseserklring-Fresvik-Produkt.pdf | src/data/pages.ts:1369 | redirect | Redirects to /assets/fresvik/documents/ytelseserklaring-fresvik-produkt.pdf. |
-| /s/Fresvik-Fryserom-Montasjeanvisning.pdf | src/data/pages.ts:1394 | redirect | Redirects to /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf. |
-| /s/Fresvik-Port-Montasjeanvisning.pdf | src/data/pages.ts:1401 | redirect | Redirects to /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf. |
-| /s/Fresvik-Kjlerom-Montasjeanvisning.pdf | src/data/pages.ts:1409 | redirect | Redirects to /assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf. |
-| /s/Fresvik-Dr-Montasjeanvisning.pdf | src/data/pages.ts:1423 | redirect | Redirects to /assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf. |
-| /s/Koblingsskjema-Fermod-5010.pdf | src/data/pages.ts:1450 | redirect | Redirects to /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf. |
-| /s/Montasjeanvisning-5010-for-2150.pdf | src/data/pages.ts:1455 | redirect | Redirects to /assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf. |
-| /s/Montasjeanvisning-5010-for-3530-og-7530.pdf | src/data/pages.ts:1460 | redirect | Redirects to /assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf. |
-| /s/Quick-Start-5010Exp-indB.pdf | src/data/pages.ts:1465 | redirect | Redirects to /assets/fresvik/documents/quick-start-5010exp.pdf. |
-| /s/Endre-Skyveretning.pdf | src/data/pages.ts:1470 | redirect | Redirects to /assets/fresvik/documents/endre-skyveretning.pdf. |
-| /s/Tilleggsutstyr-NMoptions-kits5010Exp-A_NOR.pdf | src/data/pages.ts:1475 | redirect | Redirects to /assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf. |
-| /om-oss/fresvik-produkt | src/data/pages.ts:3434 | redirect | Redirects to /firmainfo. |
+| /om-oss/fresvik-produkt | src/data/pages.ts:3705 | redirect | Redirects to /firmainfo. |
 | /s/Aktsemdvurderingar-2025.pdf | src/data/oldSiteInventory.ts:801 | redirect | Redirects to /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf. |
 | /s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | src/data/oldSiteInventory.ts:805 | redirect | Redirects to /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf. |
 | /s/2025-Utgreiing-signert.pdf | src/data/oldSiteInventory.ts:809 | redirect | Redirects to /assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf. |
+| /referansar-list/fryse-og-kjolerom-til-sogn-frukt-og-gront | sanity/seed/migratedContent.ndjson:75 | redirect | Redirects to /referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront. |
+| /referansar-list/celsa-steel-sotra | sanity/seed/migratedContent.ndjson:75 | redirect | Redirects to /referansar/celsa-steel-sotra. |
+| /s/Miljdokument-Fresvik-Produkt.pdf | sanity/seed/migratedContent.ndjson:76 | redirect | Redirects to /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf. |
+| /s/7060s-fnfz.pdf | sanity/seed/migratedContent.ndjson:76 | redirect | Redirects to /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf. |
+| /s/Fresvik-Fryserom-Montasjeanvisning.pdf | sanity/seed/migratedContent.ndjson:83 | redirect | Redirects to /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf. |
+| /s/Fresvik-Port-Montasjeanvisning.pdf | sanity/seed/migratedContent.ndjson:83 | redirect | Redirects to /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf. |
+| /s/Koblingsskjema-Fermod-5010.pdf | sanity/seed/migratedContent.ndjson:84 | redirect | Redirects to /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf. |
+| /s/Aktsemdvurderingar-2025.pdf | sanity/seed/migratedContent.ndjson:86 | redirect | Redirects to /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf. |
+| /s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | sanity/seed/migratedContent.ndjson:86 | redirect | Redirects to /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf. |
+| /s/2025-Utgreiing-signert.pdf | sanity/seed/migratedContent.ndjson:86 | redirect | Redirects to /assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf. |
+| /om-oss/fresvik-produkt | sanity/seed/migratedContent.ndjson:89 | redirect | Redirects to /firmainfo. |
+| /s/PIR.pdf | sanity/seed/migratedContent.ndjson:106 | redirect | Redirects to /assets/fresvik/documents/pir-panel.pdf. |
+| /s/PIR-ProduktbladFP.pdf | sanity/seed/migratedContent.ndjson:106 | redirect | Redirects to /assets/fresvik/documents/pir-panel.pdf. |
 
 ## External links
 
@@ -260,6 +258,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | https://rapportering.miljofyrtarn.no/stats/176324 | src/data/pages.ts: | external-reference | keep |
 | https://www.gasta.no/ | src/data/pages.ts: | external-reference | keep |
 | https://sintefcertification.no/Product/Index/129 | src/data/pages.ts: | certification/documentation | keep |
+| https://www.fresvik.no${item.slug} | src/data/pages.ts: | source-url | keep |
 | https://www.fresvik.no/ | src/data/pages.ts: | source-url | keep |
 | https://www.gasta.no | src/data/pages.ts: | external-reference | keep |
 | https://www.fresvik.no/produkt | src/data/pages.ts: | source-url | keep |
@@ -299,7 +298,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | --- | --- | --- | --- | --- |
 | /produkt/fasadepanel | page | yes | 14/3 | yes | Covered as migrated page in local data. |
 | /produkt/fresvik-panel | redirect | no | 1/6 | no | Redirects to /produkt/fresvik-pur-panel. |
-| /produkt/fresvik-pir-panel | page | yes | 12/7 | yes | Covered as migrated page in local data. |
+| /produkt/fresvik-pir-panel | page | yes | 13/7 | yes | Covered as migrated page in local data. |
 | /produkt/frysetunnel | page | yes | 15/8 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-frysedorer | page | yes | 14/2 | yes | Covered as migrated page in local data. |
 | /produkt/kjole-fryseportar | page | yes | 13/8 | yes | Covered as migrated page in local data. |
@@ -311,7 +310,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | type | target | status | task |
 | --- | --- | --- | --- |
+| route | / | partial | Homepage is checked section-by-section in HOMEPAGE_MIGRATION_AUDIT.md; one or more old sections are incomplete. |
+| route | /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | partial | Strict audit: local content appears shorter than a full old detail page, lacks reliable extracted body evidence, documents, or not all sitemap images are represented. |
 
 ## Final TODO list
 
-- Ingen.
+- route: / [partial] - Homepage is checked section-by-section in HOMEPAGE_MIGRATION_AUDIT.md; one or more old sections are incomplete.
+- route: /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 [partial] - Strict audit: local content appears shorter than a full old detail page, lacks reliable extracted body evidence, documents, or not all sitemap images are represented.

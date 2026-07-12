@@ -1,6 +1,6 @@
 # Homepage Migration Audit
 
-Generated: 2026-06-16T18:36:59.105Z
+Generated: 2026-07-12T18:58:24.342Z
 
 Source old URL: https://www.fresvik.no/
 
@@ -17,7 +17,7 @@ The homepage is considered migrated only when every old section below has exact 
 | Fresvik-panel benefits | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
 | product teaser links | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
 | Våre kundar | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
-| Aktuelt | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
+| Aktuelt | yes | yes | yes | no | yes | partial | Missing images: /assets/fresvik/images/migrated/samaneh-shakeri.jpg |
 | job CTA | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
 | contact section | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
 | sales departments | yes | yes | yes | yes | yes | migrated | Required old homepage section content is present in local migration data. |
@@ -73,4 +73,4 @@ Personvernerklæring. Openheitslova. Nettside levert av GASTA.
 
 ## Final TODO
 
-- Ingen.
+- Aktuelt: Missing images: /assets/fresvik/images/migrated/samaneh-shakeri.jpg

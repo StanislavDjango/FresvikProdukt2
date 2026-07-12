@@ -3420,45 +3420,75 @@
     "localPath": "/assets/fresvik/images/old-site/20220616-152821-1-44fd99581b.jpg",
     "filePath": "public/assets/fresvik/images/old-site/20220616-152821-1-44fd99581b.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/omfattande-leveranse-til-bakehuset-trondheim"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/omfattande-leveranse-til-bakehuset-trondheim"
+    ],
     "sha256": "d2d7615cae6700660a9857aad5881a686d2e6fbd031ce08e1066e6ec4e6960d1",
     "fileSize": 327260,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-b145d312b750d998be4052b8a12507f2acfb933c-2500x3333-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-b145d312b750d998be4052b8a12507f2acfb933c-2500x3333-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-b145d312b750d998be4052b8a12507f2acfb933c-2500x3333-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428912640-66XSOJ3HPG4Z8FWH4KB9/20220616_153035_1.jpg",
     "localPath": "/assets/fresvik/images/old-site/20220616-153035-1-ca797d1273.jpg",
     "filePath": "public/assets/fresvik/images/old-site/20220616-153035-1-ca797d1273.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/omfattande-leveranse-til-bakehuset-trondheim"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/omfattande-leveranse-til-bakehuset-trondheim"
+    ],
     "sha256": "7203fe519ff541cf2412d52689817e1d63f21899a8c57c8a423173ff7e45773f",
     "fileSize": 138116,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-4c56ea7fa65abe18e2dc5f9190f3c1c90d6d0b47-2035x2713-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-4c56ea7fa65abe18e2dc5f9190f3c1c90d6d0b47-2035x2713-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-4c56ea7fa65abe18e2dc5f9190f3c1c90d6d0b47-2035x2713-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428915136-BP8S6BJYKGO7KOCTWYP5/20220616_175155_1.jpg",
     "localPath": "/assets/fresvik/images/old-site/20220616-175155-1-67567f4fc5.jpg",
     "filePath": "public/assets/fresvik/images/old-site/20220616-175155-1-67567f4fc5.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/omfattande-leveranse-til-bakehuset-trondheim"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/omfattande-leveranse-til-bakehuset-trondheim"
+    ],
     "sha256": "01432173c63fa64f659f14f6ad7d82b63dee8c58346edbc713476c874cd6af5d",
     "fileSize": 230460,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-03edcdeb3e53429a00d1a538bba8da8607d879ce-2431x3241-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-03edcdeb3e53429a00d1a538bba8da8607d879ce-2431x3241-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-03edcdeb3e53429a00d1a538bba8da8607d879ce-2431x3241-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428920564-110FAZG3WNKHVQ6QPPX3/20220616_152821_1.jpg",
@@ -8924,11 +8954,17 @@
     ],
     "sha256": "da86561265676c5b080f57f76f995e75730ceb80f5cfbb1c3642a524a453b084",
     "fileSize": 36780,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-67b248fc9611b1a3fdb4c0a4eb08a4a48bea6898-1920x1280-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-67b248fc9611b1a3fdb4c0a4eb08a4a48bea6898-1920x1280-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as image-67b248fc9611b1a3fdb4c0a4eb08a4a48bea6898-1920x1280-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
@@ -9100,7 +9136,7 @@
     "notes": "Recovered originalUrl from migration evidence images.json. Uploaded to Sanity as image-f62f91630e507c4b7afb59a0b45259a2db98d9ba-2500x1625-jpg."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228946012-5WOVZIGYCQGHG8AXPL4U/profil1b+copy.jpg",
     "localPath": "/assets/fresvik/images/old-site/profil1b-copy.jpg",
     "filePath": "public/assets/fresvik/images/old-site/profil1b-copy.jpg",
     "assetType": "image",
@@ -9112,14 +9148,20 @@
     ],
     "sha256": "51fe6ef876969f7446a38d2fe676d312b0ade222c18a0cf7a29798bce7482082",
     "fileSize": 63152,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-05f8efb24f5a5189ee1c446a7203353773d46098-1654x950-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-05f8efb24f5a5189ee1c446a7203353773d46098-1654x950-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "Recovered originalUrl from old sitemap by exact filename match. Uploaded to Sanity as image-05f8efb24f5a5189ee1c446a7203353773d46098-1654x950-webp."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228947979-OT7A0OMEA0W7B5MQY9ZA/profil2+copy.jpg",
     "localPath": "/assets/fresvik/images/old-site/profil2-copy.jpg",
     "filePath": "public/assets/fresvik/images/old-site/profil2-copy.jpg",
     "assetType": "image",
@@ -9131,11 +9173,17 @@
     ],
     "sha256": "b96464750b50ce791d6fe6840544bf0853e47a4b5c6e241658191997f42166fc",
     "fileSize": 44186,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-54d56fd9e021ec72d0a0d03f72dd04cf4f89df12-1772x1017-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-54d56fd9e021ec72d0a0d03f72dd04cf4f89df12-1772x1017-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "Recovered originalUrl from old sitemap by exact filename match. Uploaded to Sanity as image-54d56fd9e021ec72d0a0d03f72dd04cf4f89df12-1772x1017-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228957634-HCADFJMCX83H0GB9N5Y1/profil3+copy.jpg",
@@ -9213,7 +9261,7 @@
     "notes": "Duplicate file content of /assets/fresvik/images/old-site/profil3-copy-fasadepanel.webp. Uploaded to Sanity as image-23afbc5b669c9fd3a4fabb3d2d583b68238a8cc7-1772x1017-webp."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228952320-23XJ3451C7KXKEYF203F/profil3b+copy.jpg",
     "localPath": "/assets/fresvik/images/old-site/profil3b-copy.jpg",
     "filePath": "public/assets/fresvik/images/old-site/profil3b-copy.jpg",
     "assetType": "image",
@@ -9225,14 +9273,20 @@
     ],
     "sha256": "c68b0a5928178ab4a105d3f5abd6c997f0300e6cff9d80a41c36b01b842fdb30",
     "fileSize": 38636,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-5229213d7f8ca9663ae1c2845ac995354cec9ff9-1772x1017-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-5229213d7f8ca9663ae1c2845ac995354cec9ff9-1772x1017-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "Recovered originalUrl from old sitemap by exact filename match. Uploaded to Sanity as image-5229213d7f8ca9663ae1c2845ac995354cec9ff9-1772x1017-webp."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228954421-1R1X8090YDGX51QKD406/profil4+copy.jpg",
     "localPath": "/assets/fresvik/images/old-site/profil4-copy.jpg",
     "filePath": "public/assets/fresvik/images/old-site/profil4-copy.jpg",
     "assetType": "image",
@@ -9244,11 +9298,17 @@
     ],
     "sha256": "1c969ab48ab3044e74b9f8c1da96367e1dc35063d5a6546197b5949666b45859",
     "fileSize": 43482,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-c24d8a0c74cf57de598a68d78a816fdebc597f28-1772x1017-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-c24d8a0c74cf57de598a68d78a816fdebc597f28-1772x1017-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "Recovered originalUrl from old sitemap by exact filename match. Uploaded to Sanity as image-c24d8a0c74cf57de598a68d78a816fdebc597f28-1772x1017-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/274b289f-83c3-4317-9b12-479b670803da/video-file.png",
@@ -9276,7 +9336,7 @@
     "notes": "Recovered originalUrl from live old /startside sitemap. Uploaded to Sanity as image-c6253f49f2f7be390cf109a74e15ffcf8ebece33-512x512-webp."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228923236-VF124H7PEYUH9SOMAH57/PVC-gardin+oppheng_web.jpg",
     "localPath": "/assets/fresvik/images/old-site/pvc-gardin-oppheng-web.jpg",
     "filePath": "public/assets/fresvik/images/old-site/pvc-gardin-oppheng-web.jpg",
     "assetType": "image",
@@ -9288,11 +9348,17 @@
     ],
     "sha256": "491756ec2acd76e80ced9c5e0069241e4a034a756baa1e22574a9714bdb63b46",
     "fileSize": 121098,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-da519cc56557972dedebf4a1e38b703a7b57ee68-1920x1280-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-da519cc56557972dedebf4a1e38b703a7b57ee68-1920x1280-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "Recovered originalUrl from old sitemap by exact filename match. Uploaded to Sanity as image-da519cc56557972dedebf4a1e38b703a7b57ee68-1920x1280-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228926344-8MJOI792Q623SDUIEYUI/PVC-gardin_web.jpg",
@@ -9347,7 +9413,7 @@
     "notes": "Uploaded to Sanity as image-3cb32719df53f0afcf7975732ecd1c93a03a697a-720x408-webp."
   },
   {
-    "originalUrl": "TODO: unknown original URL",
+    "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228936102-CQB5ABWR9N6HODPVESKT/rampe2+copy.jpg",
     "localPath": "/assets/fresvik/images/old-site/rampe2-copy.jpg",
     "filePath": "public/assets/fresvik/images/old-site/rampe2-copy.jpg",
     "assetType": "image",
@@ -9359,11 +9425,17 @@
     ],
     "sha256": "2670a1e7b8150dbf0d05362a09c83cbf749661587d3eb1decfd0398afe3e2170",
     "fileSize": 241498,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "ready-for-sanity",
+    "sanityAssetId": "image-061fd5a1e93b95389509c6ce0bb7545f7281564a-2008x835-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-061fd5a1e93b95389509c6ce0bb7545f7281564a-2008x835-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+    "notes": "Recovered originalUrl from old sitemap by exact filename match. Uploaded to Sanity as image-061fd5a1e93b95389509c6ce0bb7545f7281564a-2008x835-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228939468-4AEMY1N761USRYQC9BPW/rampe3+copy.jpg",

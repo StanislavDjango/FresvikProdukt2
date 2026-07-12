@@ -3094,15 +3094,25 @@
     "localPath": "/assets/fresvik/images/old-site/012ea3a01a484d6f8fb98e3ffb7f11bf-89343347bc.jpg",
     "filePath": "public/assets/fresvik/images/old-site/012ea3a01a484d6f8fb98e3ffb7f11bf-89343347bc.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
     "sha256": "8254bb0f09b82317b9406563e0b11dc42643b852adf66a0a955fea551c474251",
     "fileSize": 113104,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-8c7af38d6355b3d04cb6dcc3d47a4568f97fe872-935x702-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8c7af38d6355b3d04cb6dcc3d47a4568f97fe872-935x702-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-8c7af38d6355b3d04cb6dcc3d47a4568f97fe872-935x702-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1747635721884-2CQFJA3H876XLWE60ZIO/1000024748.jpg",
@@ -6168,75 +6178,125 @@
     "localPath": "/assets/fresvik/images/old-site/dsc03067-556655ed95.jpg",
     "filePath": "public/assets/fresvik/images/old-site/dsc03067-556655ed95.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
     "sha256": "f7132d23554d90447e41fe87f2cdeedde3d48295c18bc12c37327d1d580a984a",
     "fileSize": 386872,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-26e947016a801b108ba8eed11b058f0e2d3bf390-2500x1875-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-26e947016a801b108ba8eed11b058f0e2d3bf390-2500x1875-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-26e947016a801b108ba8eed11b058f0e2d3bf390-2500x1875-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428896334-EAKV7RWRNAEU1XH4JOKO/DSC03068.jpg",
     "localPath": "/assets/fresvik/images/old-site/dsc03068-6b5d38613b.jpg",
     "filePath": "public/assets/fresvik/images/old-site/dsc03068-6b5d38613b.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
     "sha256": "544ac89d13c9ad2c004cce5bf59ef185b9246abcb4751ae236180dd438012361",
     "fileSize": 350132,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-2f2bc3b9f3c12e3044ddcf42b2e7486ae43298b4-2500x1875-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-2f2bc3b9f3c12e3044ddcf42b2e7486ae43298b4-2500x1875-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-2f2bc3b9f3c12e3044ddcf42b2e7486ae43298b4-2500x1875-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428898634-GM2EFO1MC9JYBL5MNJEU/DSC03069.jpg",
     "localPath": "/assets/fresvik/images/old-site/dsc03069-3979d8cacb.jpg",
     "filePath": "public/assets/fresvik/images/old-site/dsc03069-3979d8cacb.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
     "sha256": "aff2898fa6757021bc45300be75aa70074c9e2e0a511ca438b4790ba3aae4c87",
     "fileSize": 353764,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-996be721a8f87baedc1d9cd983215123e94951fb-2500x1875-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-996be721a8f87baedc1d9cd983215123e94951fb-2500x1875-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-996be721a8f87baedc1d9cd983215123e94951fb-2500x1875-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428901082-ZUJFDNPKO2OAIMB34T3O/DSC03070.jpg",
     "localPath": "/assets/fresvik/images/old-site/dsc03070-9fdfd3fbdd.jpg",
     "filePath": "public/assets/fresvik/images/old-site/dsc03070-9fdfd3fbdd.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
     "sha256": "b99f47082f7577ba81b39f060f8cb6d07c440950bf3fabee8eca75d4730606ce",
     "fileSize": 400972,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-1f457b49a7644ba534b68de5201ab27bdb899b62-2500x1875-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-1f457b49a7644ba534b68de5201ab27bdb899b62-2500x1875-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-1f457b49a7644ba534b68de5201ab27bdb899b62-2500x1875-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428903320-42FUUB7JS00A72SXHZZC/DSC03071.jpg",
     "localPath": "/assets/fresvik/images/old-site/dsc03071-873cd2675b.jpg",
     "filePath": "public/assets/fresvik/images/old-site/dsc03071-873cd2675b.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
     "sha256": "b43bd05921e4cfa3e45b099154dfb7ec598c3ad785978efc1843754c67e79768",
     "fileSize": 329182,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-944d9d52689dcd447b005cecfdec91aa0c05822e-2500x1875-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-944d9d52689dcd447b005cecfdec91aa0c05822e-2500x1875-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-944d9d52689dcd447b005cecfdec91aa0c05822e-2500x1875-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/17f574d6-7d71-483d-ba5b-14108ce48d91/Elektrisk+port.jpeg",
@@ -8164,30 +8224,50 @@
     "localPath": "/assets/fresvik/images/old-site/img-4862-2f840ea519.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/img-4862-2f840ea519.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
     "sha256": "b5dcba74bd84d7565b1631bfc7a60838cf042dfb4d2d103bf7d9c10ddf6b7fb3",
     "fileSize": 737508,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-e5f0e8c5883280b560b6a779107d0569a395aa79-2500x3333-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-e5f0e8c5883280b560b6a779107d0569a395aa79-2500x3333-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-e5f0e8c5883280b560b6a779107d0569a395aa79-2500x3333-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428906446-P9NAWX9RWAGJ1N90OAZ5/IMG_4867.JPEG",
     "localPath": "/assets/fresvik/images/old-site/img-4867-bf46ca70a7.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/img-4867-bf46ca70a7.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/spesialloysing-torkerom-drageboden-kaupanger"
+    ],
     "sha256": "b97a85241c68f35969e28e9cdd90cab0ddaa247858707eaf1412da651910712b",
     "fileSize": 583882,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-38f454f49b73bc2bc8b6fc1c4bc45d7d9001a4f7-2500x3333-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-38f454f49b73bc2bc8b6fc1c4bc45d7d9001a4f7-2500x3333-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-38f454f49b73bc2bc8b6fc1c4bc45d7d9001a4f7-2500x3333-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428928604-PO4V3C5W42U9QQ70YG1T/IMG_6262.jpg",

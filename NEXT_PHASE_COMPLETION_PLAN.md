@@ -171,7 +171,7 @@
 - [x] `/referansar/fryse-og-kjolerom-kiwi-otta`
 - [x] `/referansar/nye-leveransar-til-rema-1000-ya-i-larvik`
 - [x] `/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark`
-- [ ] `/referansar/spesialloysing-torkerom-drageboden-kaupanger`
+- [x] `/referansar/spesialloysing-torkerom-drageboden-kaupanger`
 - [ ] `/referansar/omfattande-leveranse-til-bakehuset-trondheim`
 - [ ] `/referansar/fryseromsportar-til-rema-1000-i-narvik`
 - [ ] `/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront`

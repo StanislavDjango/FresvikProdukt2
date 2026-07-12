@@ -1,0 +1,137 @@
+{
+  "oldUrl": "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta",
+  "newUrl": "http://127.0.0.1:3061/referansar/fryse-og-kjolerom-kiwi-otta",
+  "checkedAt": "2026-07-12T08:18:39.399Z",
+  "status": "partial",
+  "counts": {
+    "oldTextBlocks": 17,
+    "missingTextBlocks": 12,
+    "oldLinks": 43,
+    "missingLinks": 5,
+    "oldImages": 15,
+    "missingImages": 15
+  },
+  "missingTextBlocks": [
+    "Sjå fleire bilde frå prosjektet:",
+    "Ingvild er digital marknadsførar i Gasta design & kommunikasjon. Ho jobbar fast med mange av kundane våre, og er eksperten vår på digital annonsering.",
+    "Kjøle- og fryserom til nye Vik helse- og omsorgssenter",
+    "Nye leveransar til Rema 1000 Øya i Larvik",
+    "Fresvikvegen 995,6896 FresvikTel: 57 69 83 00E-post: post@fresvik.no",
+    "Salsavdeling Fresvik:",
+    "Arne-Olav Lien BardølsgårdMob: 99 55 25 49arnbar@fresvik.no",
+    "Salsavdeling Drammen:",
+    "Lars Erling LivrudMob: 40 47 79 12larliv@fresvik.no",
+    "Frode WintherMob: 91 38 39 49frowin@fresvik.no",
+    "Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen.Sjå vår personvernerklæring.",
+    "PersonvernerklæringOpenheitslovaNettside levert av GASTA"
+  ],
+  "missingLinks": [
+    {
+      "text": "GASTA",
+      "href": "https://www.gasta.no",
+      "absoluteUrl": "https://www.gasta.no/",
+      "type": "external"
+    },
+    {
+      "text": "sentral+godkjent.png",
+      "href": "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+      "absoluteUrl": "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+      "type": "document"
+    },
+    {
+      "text": "TG-2135.jpg",
+      "href": "https://www.sintefcertification.no/Product/Index/129",
+      "absoluteUrl": "https://www.sintefcertification.no/Product/Index/129",
+      "type": "external"
+    },
+    {
+      "text": "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+      "href": "https://rapportering.miljofyrtarn.no/stats/176324",
+      "absoluteUrl": "https://rapportering.miljofyrtarn.no/stats/176324",
+      "type": "external"
+    },
+    {
+      "text": "ce-logo-png-transparent.png",
+      "href": "/s/PUR-ce-merke.pdf",
+      "absoluteUrl": "https://www.fresvik.no/s/PUR-ce-merke.pdf",
+      "type": "document"
+    }
+  ],
+  "missingImages": [
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820354075-093JAT4O9XRFJQLFQLUX/Kiwi+Otta+1.jpeg",
+      "filename": "Kiwi+Otta+1.jpeg",
+      "alt": "Kiwi Otta 1.jpeg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820353677-2DLGZW39WPXSI4WPV61F/Kiwi+Otta+2.jpeg",
+      "filename": "Kiwi+Otta+2.jpeg",
+      "alt": "Kiwi Otta 2.jpeg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820355642-WX24TQEMCJ8SN6VMORAB/Kiwi+Otta+3.jpeg",
+      "filename": "Kiwi+Otta+3.jpeg",
+      "alt": "Kiwi Otta 3.jpeg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820355371-QE3LDA1RLTM2JFU3AAQD/Kiwi+Otta+4.jpeg",
+      "filename": "Kiwi+Otta+4.jpeg",
+      "alt": "Kiwi Otta 4.jpeg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820356759-43HHQ1M3U6ER2DH14XSP/Kiwi+Otta+5.jpeg",
+      "filename": "Kiwi+Otta+5.jpeg",
+      "alt": "Kiwi Otta 5.jpeg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820357273-ESYVYOU6F88HBC6GCB91/Kiwi+Otta+6.jpeg",
+      "filename": "Kiwi+Otta+6.jpeg",
+      "alt": "Kiwi Otta 6.jpeg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820358481-PTPPIHUT8L0UKJM41DUH/Kiwi+Otta+7.jpg",
+      "filename": "Kiwi+Otta+7.jpg",
+      "alt": "Kiwi Otta 7.jpg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v2/namespaces/memberAccountAvatars/libraries/63bbde663cf015586dddbe4f/76b562fe-b31d-432c-9dcf-3e179efb0b60/Ingvild+Helle+Hagen+2026+kvadrat.jpeg?format=300w",
+      "filename": "Ingvild+Helle+Hagen+2026+kvadrat.jpeg",
+      "alt": ""
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/13922f08-1a26-4996-98ca-874c87c1d3cb/flake.png",
+      "filename": "flake.png",
+      "alt": ""
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385862366-SQTJIQF8X2Y8LT02Z2UT/sentral%2Bgodkjent.png",
+      "filename": "sentral+godkjent.png",
+      "alt": ""
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385867638-53S21SMAIEM6JIMC4IZ7/TG-2135.jpg",
+      "filename": "TG-2135.jpg",
+      "alt": "TG-2135.jpg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
+      "filename": "Poly.png",
+      "alt": "Poly.png"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385876430-SF9NN179JLHLSGSAMMMQ/Startbarnk.png",
+      "filename": "Startbarnk.png",
+      "alt": "Startbarnk.png"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385879029-1G9MX2OPCNVO7N0PMHZF/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+      "filename": "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+      "alt": "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1700040185087-O7K1UNJLYM01IO9TVQT5/ce-logo-png-transparent.png",
+      "filename": "ce-logo-png-transparent.png",
+      "alt": "ce-logo-png-transparent.png"
+    }
+  ]
+}

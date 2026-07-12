@@ -168,7 +168,7 @@
 - [x] `/referansar/kjolerom-kjoledor-bunnpris-volda`
 - [x] `/referansar/fryserom-coop-obs-alnabru`
 - [x] `/referansar/vik-helse-og-omsorgssenter`
-- [ ] `/referansar/fryse-og-kjolerom-kiwi-otta`
+- [x] `/referansar/fryse-og-kjolerom-kiwi-otta`
 - [ ] `/referansar/nye-leveransar-til-rema-1000-ya-i-larvik`
 - [ ] `/referansar/ny-leveranse-til-dyreparken-safaricamp-i-kristiansand-dyrepark`
 - [ ] `/referansar/spesialloysing-torkerom-drageboden-kaupanger`

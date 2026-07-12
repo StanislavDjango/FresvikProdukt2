@@ -8279,90 +8279,150 @@
     "localPath": "/assets/fresvik/images/old-site/kiwi-otta-2-bcce8cf47d.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-2-bcce8cf47d.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
     "sha256": "237eea9f7855a6a826242765b2452ff75fe91f6d3402baa1c10259701cfc31d4",
     "fileSize": 513578,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-81bc5d134a9f6597bb84dc00540fb5219212694b-1707x2276-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-81bc5d134a9f6597bb84dc00540fb5219212694b-1707x2276-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-81bc5d134a9f6597bb84dc00540fb5219212694b-1707x2276-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820355642-WX24TQEMCJ8SN6VMORAB/Kiwi+Otta+3.jpeg",
     "localPath": "/assets/fresvik/images/old-site/kiwi-otta-3-91dee182be.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-3-91dee182be.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
     "sha256": "d9cb52fb13a4777b7822c3b59134d0dfbbab62b1ee5465c3706801bc56b5cee1",
     "fileSize": 370524,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-0edad00a6ad76c6b950998ff52df568db2d5a05c-1707x2276-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-0edad00a6ad76c6b950998ff52df568db2d5a05c-1707x2276-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-0edad00a6ad76c6b950998ff52df568db2d5a05c-1707x2276-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820355371-QE3LDA1RLTM2JFU3AAQD/Kiwi+Otta+4.jpeg",
     "localPath": "/assets/fresvik/images/old-site/kiwi-otta-4-dea768e669.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-4-dea768e669.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
     "sha256": "053ca17075cdb220709ba9e1835c92072622d4e4f2a42273452dd543509a0e7f",
     "fileSize": 63380,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-e10ad385e259b2954059d7c7695d2e9f4f87d063-1280x960-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-e10ad385e259b2954059d7c7695d2e9f4f87d063-1280x960-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-e10ad385e259b2954059d7c7695d2e9f4f87d063-1280x960-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820356759-43HHQ1M3U6ER2DH14XSP/Kiwi+Otta+5.jpeg",
     "localPath": "/assets/fresvik/images/old-site/kiwi-otta-5-9a1569c04c.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-5-9a1569c04c.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
     "sha256": "3941c6550c2176103f02eb5e46d4a9b75ced6784275312a0c9e0bb8bd2c10ebe",
     "fileSize": 381860,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-8b08021b1da9671fa4d63c048697388e59e9cfba-1707x2276-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8b08021b1da9671fa4d63c048697388e59e9cfba-1707x2276-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-8b08021b1da9671fa4d63c048697388e59e9cfba-1707x2276-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820357273-ESYVYOU6F88HBC6GCB91/Kiwi+Otta+6.jpeg",
     "localPath": "/assets/fresvik/images/old-site/kiwi-otta-6-374399c9c5.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-6-374399c9c5.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
     "sha256": "66e86ffe5afa208fd0a4ee5e54ea30171d8adec4dfaf4c7f6dc95c8def3b8736",
     "fileSize": 514390,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-58953448c92086b53d528cff2a236ce6767afb5c-1707x2276-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-58953448c92086b53d528cff2a236ce6767afb5c-1707x2276-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-58953448c92086b53d528cff2a236ce6767afb5c-1707x2276-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820358481-PTPPIHUT8L0UKJM41DUH/Kiwi+Otta+7.jpg",
     "localPath": "/assets/fresvik/images/old-site/kiwi-otta-7-09c22d5667.jpg",
     "filePath": "public/assets/fresvik/images/old-site/kiwi-otta-7-09c22d5667.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta"
+    ],
     "sha256": "459d461c7a9da0bf38761f6f2c3a0868175c985aec07675b2499415041f5b5d9",
     "fileSize": 707748,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-1083325c5d86a4859763d465c606fc72798a727e-1707x2276-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-1083325c5d86a4859763d465c606fc72798a727e-1707x2276-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Uploaded to Sanity as image-1083325c5d86a4859763d465c606fc72798a727e-1707x2276-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428965488-X05XS4QHRX5C8V1VJ218/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",

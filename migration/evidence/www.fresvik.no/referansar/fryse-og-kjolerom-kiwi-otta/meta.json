@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta",
+  "finalUrl": "https://www.fresvik.no/referansar/fryse-og-kjolerom-kiwi-otta",
+  "fetchedAt": "2026-07-12T08:07:18.919Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Nok ein Kiwi-butikk får nye fryse- og kjølerom — Fresvik Produkt",
+  "metaDescription": "Fresvik Produkt har levert fryse- og kjølerom til nok ein Kiwi-butikk, denne gongen i flotte Otta, nord i Gudbrandsdalen.",
+  "counts": {
+    "headings": 9,
+    "textBlocks": 25,
+    "links": 96,
+    "images": 73,
+    "documents": 2
+  }
+}

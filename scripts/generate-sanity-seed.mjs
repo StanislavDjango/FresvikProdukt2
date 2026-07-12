@@ -881,6 +881,96 @@ const referenceProjectOverrides = new Map([
     },
   ],
   [
+    "/referansar/kjolerom-kjoledor-bunnpris-volda",
+    {
+      title: "Bunnpris Volda: nytt kjølerom med isolert kjøledør",
+      description: [
+        "Fresvik Produkt har levert produkt til nok ein fornøgd kunde.",
+        "Vi leverte eit nytt kjølerom med kjøledør til nok ein Bunnpris-butikk, no i vakre Volda i Møre og Romsdal. Produkta er levert med standard FoodSafe Polyester-overflater, som gir enkelt reinhald og hindrar bakterievekst.",
+        "Takk til Fryst AS for eit godt samarbeid.",
+      ].join("\n"),
+      year: 2025,
+      category: "Kjøle- og fryserom",
+      location: "Volda",
+      customerType: "Daglegvarebutikk",
+      migratedImagePath: "/assets/fresvik/images/migrated/kjlerom-bunnpris-volda-3.jpg",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Bunnpris Volda: nytt kjølerom med isolert kjøledør",
+              text: [
+                "Fresvik Produkt har levert produkt til nok ein fornøgd kunde.",
+                "Vi leverte eit nytt kjølerom med kjøledør til nok ein Bunnpris-butikk, no i vakre Volda i Møre og Romsdal. Produkta er levert med standard FoodSafe Polyester-overflater, som gir enkelt reinhald og hindrar bakterievekst.",
+                "Takk til Fryst AS for eit godt samarbeid.",
+              ].join("\n"),
+              imageAlt: "Bunnpris Volda kjølerom med isolert kjøledør",
+              migratedImagePath: "/assets/fresvik/images/migrated/kjlerom-bunnpris-volda-3.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Bilde frå prosjektet",
+          intro: "Prosjektbilete bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "Bunnpris Volda 1",
+              text: "Bilde frå gammal Bunnpris Volda-side.",
+              imageAlt: "Bunnpris Volda prosjektbilde 1",
+              migratedImagePath: "/assets/fresvik/images/old-site/kj-lerom-bunnpris-volda-1-29c0ec8f7e.jpg",
+            },
+            {
+              _key: "reference-project-image-1",
+              _type: "migrationCard",
+              title: "Bunnpris Volda 2",
+              text: "Bilde frå gammal Bunnpris Volda-side.",
+              imageAlt: "Bunnpris Volda prosjektbilde 2",
+              migratedImagePath: "/assets/fresvik/images/old-site/kj-lerom-bunnpris-volda-2-d21d3cb590.jpg",
+            },
+            {
+              _key: "reference-project-image-2",
+              _type: "migrationCard",
+              title: "Bunnpris Volda 3",
+              text: "Bilde frå gammal Bunnpris Volda-side.",
+              imageAlt: "Bunnpris Volda prosjektbilde 3",
+              migratedImagePath: "/assets/fresvik/images/migrated/kjlerom-bunnpris-volda-3.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-prev",
+              _type: "migrationCard",
+              title: "Kjøle- og fryserom til Bunnpris Hammerfest",
+              text: "Forrige referanse frå gammal side.",
+              href: "/referansar/bunnpris-hammerfest",
+            },
+            {
+              _key: "reference-project-next",
+              _type: "migrationCard",
+              title: "Nytt stort fryserom til Coop Obs Alnabru",
+              text: "Neste referanse frå gammal side.",
+              href: "/referansar/fryserom-coop-obs-alnabru",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
     {
       title: "Interfrukt",

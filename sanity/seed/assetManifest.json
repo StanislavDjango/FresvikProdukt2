@@ -8374,30 +8374,50 @@
     "localPath": "/assets/fresvik/images/old-site/kj-lerom-bunnpris-volda-1-29c0ec8f7e.jpg",
     "filePath": "public/assets/fresvik/images/old-site/kj-lerom-bunnpris-volda-1-29c0ec8f7e.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/kjolerom-kjoledor-bunnpris-volda"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/kjolerom-kjoledor-bunnpris-volda"
+    ],
     "sha256": "775b586ea62bba08e9b2c3089e741fc5d449381d6e7540de0237e89425b18900",
     "fileSize": 375992,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-58b23a9ab1a5527ca3779a19ef69efa3c534b925-2500x1880-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-58b23a9ab1a5527ca3779a19ef69efa3c534b925-2500x1880-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-58b23a9ab1a5527ca3779a19ef69efa3c534b925-2500x1880-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1742460541335-2LVVCJP7J74G1E653QTT/Kj%C3%B8lerom+Bunnpris+Volda+2.jpg",
     "localPath": "/assets/fresvik/images/old-site/kj-lerom-bunnpris-volda-2-d21d3cb590.jpg",
     "filePath": "public/assets/fresvik/images/old-site/kj-lerom-bunnpris-volda-2-d21d3cb590.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/kjolerom-kjoledor-bunnpris-volda"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/kjolerom-kjoledor-bunnpris-volda"
+    ],
     "sha256": "a208561f64d09edbb94c02bb8c563043a65c50fd309fe3ad64df58bd225935a8",
     "fileSize": 245534,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-51c5c55579fcc68b86ca799785f8f2ed91344aed-2500x2457-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-51c5c55579fcc68b86ca799785f8f2ed91344aed-2500x2457-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-51c5c55579fcc68b86ca799785f8f2ed91344aed-2500x2457-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/ad4e5e8c-1d47-4b54-aef7-ed7c423a5755/Kj%C3%B8lerom.jpeg",

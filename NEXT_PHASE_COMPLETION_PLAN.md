@@ -183,7 +183,7 @@
 - [x] `/referansar/fiskehallen`
 - [x] `/referansar/buskerud-storcash`
 - [x] `/referansar/bjerke-spekemat`
-- [ ] `/referansar/restauranthuset`
+- [x] `/referansar/restauranthuset-malin`
 
 Для reference pages:
 

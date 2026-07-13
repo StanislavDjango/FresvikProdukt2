@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-13T21:23:24.607Z",
+    "generatedAt": "2026-07-13T21:36:34.594Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -2589,8 +2589,8 @@
       "caption": "",
       "localPath": "/assets/fresvik/images/migrated/image-asset.jpeg",
       "status": "migrated",
-      "confidence": 1.183,
-      "notes": "Matched by filename/source similarity (1.18)."
+      "confidence": 1.117,
+      "notes": "Matched by filename/source similarity (1.12)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228723604-E7710XDI3PJENLQGF6M5/P1011308.jpg",
@@ -13466,6 +13466,30 @@
       "normalized": "/assets/fresvik/images/old-site/20220616-152821-1-44fd99581b.jpg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
       "line": 133,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/image3-1dcfcdfc38.jpg",
+      "normalized": "/assets/fresvik/images/old-site/image3-1dcfcdfc38.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 134,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/image4-ed22cf6c20.jpg",
+      "normalized": "/assets/fresvik/images/old-site/image4-ed22cf6c20.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 134,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/image7-9d70827c73.jpg",
+      "normalized": "/assets/fresvik/images/old-site/image7-9d70827c73.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 134,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
     },

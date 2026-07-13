@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/referansar/restauranthuset-malin",
+  "finalUrl": "https://www.fresvik.no/referansar/restauranthuset-malin",
+  "fetchedAt": "2026-07-13T21:30:21.996Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Restauranthuset Malin — Fresvik Produkt",
+  "metaDescription": "Restaurantsuksess i Sogndal gjekk for kjøle- og fryserom frå Fresvik produkt&nbsp;",
+  "counts": {
+    "headings": 10,
+    "textBlocks": 28,
+    "links": 102,
+    "images": 29,
+    "documents": 2
+  }
+}

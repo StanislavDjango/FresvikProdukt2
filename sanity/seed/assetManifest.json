@@ -2101,12 +2101,14 @@
     "usedBy": [
       "/aktuelt",
       "/aktuelt/skjererom",
-      "/produkt"
+      "/produkt",
+      "/referansar/restauranthuset-malin"
     ],
     "sourcePages": [
       "https://www.fresvik.no/aktuelt",
       "https://www.fresvik.no/aktuelt/skjererom",
-      "https://www.fresvik.no/produkt"
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/referansar/restauranthuset-malin"
     ],
     "sha256": "3461d6b2aea78b3ca227248a5014bdbe42171e51fe65ee70b6a173ec9793b274",
     "fileSize": 184575,
@@ -8199,45 +8201,75 @@
     "localPath": "/assets/fresvik/images/old-site/image3-1dcfcdfc38.jpg",
     "filePath": "public/assets/fresvik/images/old-site/image3-1dcfcdfc38.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/restauranthuset-malin"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/restauranthuset-malin"
+    ],
     "sha256": "1870eef383c816c798689fc64f0e3954177f0f3e3d1aa92d7e3cb8a048d11259",
     "fileSize": 19958,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-53e115524bd54cc9dbd7c4c2ba554704ab8a9844-480x640-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-53e115524bd54cc9dbd7c4c2ba554704ab8a9844-480x640-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-53e115524bd54cc9dbd7c4c2ba554704ab8a9844-480x640-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429022576-B013O3TGMD1E1EBAO211/image4.JPG",
     "localPath": "/assets/fresvik/images/old-site/image4-ed22cf6c20.jpg",
     "filePath": "public/assets/fresvik/images/old-site/image4-ed22cf6c20.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/restauranthuset-malin"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/restauranthuset-malin"
+    ],
     "sha256": "25cd91c003bb7217770315f7c44ffdb2f00afbc639625b8c20f42b38552901c0",
     "fileSize": 11588,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-2ec00f4bb0b983ca6b1ff184b8022184fd881f8a-480x640-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-2ec00f4bb0b983ca6b1ff184b8022184fd881f8a-480x640-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-2ec00f4bb0b983ca6b1ff184b8022184fd881f8a-480x640-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429023872-3WOT3ZJ3AS3XDD2FXJWR/image7.JPG",
     "localPath": "/assets/fresvik/images/old-site/image7-9d70827c73.jpg",
     "filePath": "public/assets/fresvik/images/old-site/image7-9d70827c73.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/restauranthuset-malin"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/restauranthuset-malin"
+    ],
     "sha256": "f08e4e70f540adae7ba1b17fb1336a6c854be46a17e46ee4b5ae2f1960232572",
     "fileSize": 12354,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-cdef5ffd6240bc7617600e6f83d585bf2c23daaa-480x640-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-cdef5ffd6240bc7617600e6f83d585bf2c23daaa-480x640-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-cdef5ffd6240bc7617600e6f83d585bf2c23daaa-480x640-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428937244-T85VI6K03CHGZ7QX22W7/IMG_0650.JPEG",

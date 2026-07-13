@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-07-13T20:24:05.155Z
+Generated: 2026-07-13T20:36:54.831Z
 
 ## Summary
 
@@ -221,10 +221,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 757 |
+| Internal link references | 759 |
 | OK routes | 251 |
 | Redirect links | 19 |
-| Asset links OK | 487 |
+| Asset links OK | 489 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |

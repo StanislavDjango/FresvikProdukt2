@@ -8404,15 +8404,25 @@
     "localPath": "/assets/fresvik/images/old-site/img-7326-a7f540f769.jpg",
     "filePath": "public/assets/fresvik/images/old-site/img-7326-a7f540f769.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/karlsoybruket"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/karlsoybruket"
+    ],
     "sha256": "70ae85c2100c50202b9144eb896a6629cf8f326ed2b569bfd25b0d6f5b0a5694",
     "fileSize": 121498,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-4036432820169cb3c691afa7fc831ea639ac7626-1632x1224-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-4036432820169cb3c691afa7fc831ea639ac7626-1632x1224-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-4036432820169cb3c691afa7fc831ea639ac7626-1632x1224-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429948521-DGRCHMLC0A18PBW3X2E0/Industri+slagd%C3%B8r+Fresvik+Produkt.jpg",
@@ -9113,15 +9123,25 @@
     "localPath": "/assets/fresvik/images/old-site/port-karls-ybruket-2017-a668d7c80d.jpg",
     "filePath": "public/assets/fresvik/images/old-site/port-karls-ybruket-2017-a668d7c80d.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/karlsoybruket"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/karlsoybruket"
+    ],
     "sha256": "b0330c0af90b40cfbec613c7499d94611609ccfa9710e7fc5d6460dc30acb921",
     "fileSize": 71892,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-07d5f40f888d4c4e7b0ee866e81d739665f3698e-1632x1224-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-07d5f40f888d4c4e7b0ee866e81d739665f3698e-1632x1224-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-07d5f40f888d4c4e7b0ee866e81d739665f3698e-1632x1224-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/3c01276b-1589-49c6-9503-8cd8519959d9/port1web.jpg",

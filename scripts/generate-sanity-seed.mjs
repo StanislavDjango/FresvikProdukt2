@@ -2203,6 +2203,106 @@ const referenceProjectOverrides = new Map([
     },
   ],
   [
+    "/referansar/karlsoybruket",
+    {
+      title: "Karlsøybruket",
+      description: [
+        "På førjulsvinteren 2017 har Fresvik Produkt levert og montert deler av eit større anlegg til Isowest AS.",
+        "Karlsøybruket bygger nye produksjonslokaler for kvitfisk, og vi har levert vegger til sluser, kjølerom og produksjonskontor, samt kjøleport og glassfiberdører i inner- og yttervegger.",
+        "Over nyttår skal vi til same anlegget levere og montere fasadepanel til nytt bygg for renseanlegg mm.",
+        "Prosjektet har gått som planlagt, og vi ser fram til fortsettelsen på nyåret.",
+      ].join("\n"),
+      year: 2017,
+      category: "Kjøle- og fryserom",
+      location: "Karlsøy",
+      customerType: "Fiskeindustri",
+      migratedImagePath: "/assets/fresvik/images/migrated/img-7324.jpg",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Karlsøybruket",
+              text: [
+                "På førjulsvinteren 2017 har Fresvik Produkt levert og montert deler av eit større anlegg til Isowest AS.",
+                "Karlsøybruket bygger nye produksjonslokaler for kvitfisk, og vi har levert vegger til sluser, kjølerom og produksjonskontor, samt kjøleport og glassfiberdører i inner- og yttervegger.",
+                "Over nyttår skal vi til same anlegget levere og montere fasadepanel til nytt bygg for renseanlegg mm.",
+                "Prosjektet har gått som planlagt, og vi ser fram til fortsettelsen på nyåret.",
+              ].join("\n\n"),
+              meta: "12. desember 2017",
+              imageAlt: "IMG_7324.JPG",
+              migratedImagePath: "/assets/fresvik/images/migrated/img-7324.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Prosjektbilde",
+          intro: "Bilde bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "IMG_7324.JPG",
+              text: "IMG_7324.JPG",
+              imageAlt: "IMG_7324.JPG",
+              migratedImagePath: "/assets/fresvik/images/migrated/img-7324.jpg",
+            },
+            {
+              _key: "reference-project-image-1",
+              _type: "migrationCard",
+              title: "IMG_7326.JPG",
+              text: "IMG_7326.JPG",
+              imageAlt: "IMG_7326.JPG",
+              migratedImagePath: "/assets/fresvik/images/old-site/img-7326-a7f540f769.jpg",
+            },
+            {
+              _key: "reference-project-image-2",
+              _type: "migrationCard",
+              title: "Port Karlsøybruket 2017.jpg",
+              text: "Port Karlsøybruket 2017.jpg",
+              imageAlt: "Port Karlsøybruket 2017.jpg",
+              migratedImagePath: "/assets/fresvik/images/old-site/port-karls-ybruket-2017-a668d7c80d.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-isowest",
+              _type: "migrationCard",
+              title: "Isowest AS",
+              text: "Ekstern prosjektlenke frå gammal side.",
+              href: "http://www.isowest.no/",
+            },
+            {
+              _key: "reference-project-prev",
+              _type: "migrationCard",
+              title: "Fresvik kjøle- og fryserom i miljøvennlege daglegvarebutikkar",
+              text: "Forrige referanse frå gammal side.",
+              href: "/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar",
+            },
+            {
+              _key: "reference-project-next",
+              _type: "migrationCard",
+              title: "Fiskehallen",
+              text: "Neste referanse frå gammal side.",
+              href: "/referansar/fiskehallen",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
     {
       title: "Interfrukt",

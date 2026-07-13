@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-13T20:24:05.155Z",
+    "generatedAt": "2026-07-13T20:36:54.831Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -1901,7 +1901,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 3,
       "localImageCount": 3,
       "recoveryStatus": null,
@@ -13256,6 +13256,22 @@
     {
       "href": "/assets/fresvik/images/migrated/img-7324.jpg",
       "normalized": "/assets/fresvik/images/migrated/img-7324.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 129,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/img-7326-a7f540f769.jpg",
+      "normalized": "/assets/fresvik/images/old-site/img-7326-a7f540f769.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 129,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/port-karls-ybruket-2017-a668d7c80d.jpg",
+      "normalized": "/assets/fresvik/images/old-site/port-karls-ybruket-2017-a668d7c80d.jpg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
       "line": 129,
       "status": "asset-ok",

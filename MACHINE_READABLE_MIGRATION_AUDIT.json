@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-13T19:39:51.206Z",
+    "generatedAt": "2026-07-13T20:07:56.045Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -1200,7 +1200,7 @@
       "hasImages": false,
       "hasDocuments": false,
       "hasInternalLinks": false,
-      "hasExternalLinks": true,
+      "hasExternalLinks": false,
       "oldImageCount": 0,
       "localImageCount": 0,
       "notes": "Present in local legacyRoutes baseline but not present in current live sitemap."
@@ -1787,7 +1787,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 4,
       "localImageCount": 4,
       "recoveryStatus": null,
@@ -1806,7 +1806,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 3,
       "localImageCount": 3,
       "recoveryStatus": null,
@@ -1825,7 +1825,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 9,
       "localImageCount": 9,
       "recoveryStatus": null,
@@ -1882,7 +1882,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 6,
       "localImageCount": 6,
       "recoveryStatus": null,
@@ -2034,7 +2034,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 5,
       "localImageCount": 5,
       "recoveryStatus": null,
@@ -13096,6 +13096,70 @@
     {
       "href": "/assets/fresvik/images/migrated/resvik-fryserom-innvendig-2.jpg",
       "normalized": "/assets/fresvik/images/migrated/resvik-fryserom-innvendig-2.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 125,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/innvendig-m-bler-kl-r-7ee2829374.jpg",
+      "normalized": "/assets/fresvik/images/old-site/innvendig-m-bler-kl-r-7ee2829374.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 125,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/innvendig-port-f20899ab4a.jpg",
+      "normalized": "/assets/fresvik/images/old-site/innvendig-port-f20899ab4a.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 125,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/utvendig-liggende-efe87a655e.jpg",
+      "normalized": "/assets/fresvik/images/old-site/utvendig-liggende-efe87a655e.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 125,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/utvendig-port-med-rampe-1810c8dd34.jpg",
+      "normalized": "/assets/fresvik/images/old-site/utvendig-port-med-rampe-1810c8dd34.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 125,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/utvendig-portdetalj-709e934be3.jpg",
+      "normalized": "/assets/fresvik/images/old-site/utvendig-portdetalj-709e934be3.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 125,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/utvendig-rampe-a594c8609a.jpg",
+      "normalized": "/assets/fresvik/images/old-site/utvendig-rampe-a594c8609a.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 125,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/utvendig-staende-7e43a93c88.jpg",
+      "normalized": "/assets/fresvik/images/old-site/utvendig-staende-7e43a93c88.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 125,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/utvendig-ventiler-ec0949f672.jpg",
+      "normalized": "/assets/fresvik/images/old-site/utvendig-ventiler-ec0949f672.jpg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
       "line": 125,
       "status": "asset-ok",

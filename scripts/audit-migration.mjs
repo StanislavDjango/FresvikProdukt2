@@ -202,6 +202,20 @@ function pageLinks(page) {
   ].filter(Boolean);
 }
 
+function seedLinks(seedDoc) {
+  if (!seedDoc) return [];
+  return [
+    seedDoc.href,
+    ...(seedDoc.cards || []).map((card) => card.href),
+    ...(seedDoc.sections || []).flatMap((section) =>
+      (section.items || []).map((item) => item.href),
+    ),
+    ...(seedDoc.migrationSections || []).flatMap((section) =>
+      (section.items || []).map((item) => item.href),
+    ),
+  ].filter(Boolean);
+}
+
 const homepageSectionRequirements = [
   {
     section: "hero",
@@ -1106,6 +1120,7 @@ const routeRows = routeSitemapEntries.map((entry) => {
     recovery,
   });
   const fullBody = bodyComplete(entry.oldPath, page, seedDoc, status);
+  const localLinks = [...new Set([...pageLinks(page), ...seedLinks(seedDoc)])];
   return {
     oldUrl: entry.oldUrl,
     oldPath: entry.oldPath,
@@ -1117,8 +1132,8 @@ const routeRows = routeSitemapEntries.map((entry) => {
     hasFullBody: fullBody,
     hasImages: localImages.length > 0 || Boolean(seedDoc?.migratedImagePath),
     hasDocuments: docs.length > 0 || Boolean(seedDoc?.localPath),
-    hasInternalLinks: pageLinks(page).some((href) => href.startsWith("/")) || docs.length > 0,
-    hasExternalLinks: pageLinks(page).some((href) => /^(https?:\/\/|mailto:|tel:)/.test(href)),
+    hasInternalLinks: localLinks.some((href) => href.startsWith("/")) || docs.length > 0,
+    hasExternalLinks: localLinks.some((href) => /^(https?:\/\/|mailto:|tel:)/.test(href)),
     oldImageCount: entry.images.length,
     localImageCount: localImages.length,
     recoveryStatus: recovery?.status || null,
@@ -1148,6 +1163,7 @@ const legacyOnlyRows = legacyRoutes
     const page = pageForOldPath(oldPath) || appRoutePages.get(oldPath);
     const seedDoc = seedByRoute.get(oldPath);
     const status = redirect ? "redirect" : page || seedDoc ? "inventory-only" : "missing";
+    const localLinks = [...new Set([...pageLinks(page), ...seedLinks(seedDoc)])];
     return {
       oldUrl: `${oldBaseUrl}${oldPath}`,
       oldPath,
@@ -1159,8 +1175,8 @@ const legacyOnlyRows = legacyRoutes
       hasFullBody: bodyComplete(oldPath, page, seedDoc, status),
       hasImages: pageImages(page).length > 0 || Boolean(seedDoc?.migratedImagePath),
       hasDocuments: pageDocuments(page).length > 0 || Boolean(seedDoc?.localPath),
-      hasInternalLinks: pageDocuments(page).length > 0,
-      hasExternalLinks: /https?:\/\//.test(pageText(page)),
+      hasInternalLinks: localLinks.some((href) => href.startsWith("/")) || pageDocuments(page).length > 0,
+      hasExternalLinks: localLinks.some((href) => /^(https?:\/\/|mailto:|tel:)/.test(href)),
       oldImageCount: 0,
       localImageCount: [
         ...new Set([...pageImages(page), seedDoc?.migratedImagePath].filter(Boolean)),

@@ -8444,30 +8444,50 @@
     "localPath": "/assets/fresvik/images/old-site/innvendig-m-bler-kl-r-7ee2829374.jpg",
     "filePath": "public/assets/fresvik/images/old-site/innvendig-m-bler-kl-r-7ee2829374.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-fryseport-rentokil"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil"
+    ],
     "sha256": "912e1192fcd13f8e0ea8279b4fb2e1693cbf726fb356ccd51610b0b64f2b7281",
     "fileSize": 98170,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-7ae06b93714355e1f61c76bd6aa493092761a46d-1600x1067-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-7ae06b93714355e1f61c76bd6aa493092761a46d-1600x1067-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-7ae06b93714355e1f61c76bd6aa493092761a46d-1600x1067-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428949201-V72TX1IVU3JZ0578SZEP/Innvendig+port.JPG",
     "localPath": "/assets/fresvik/images/old-site/innvendig-port-f20899ab4a.jpg",
     "filePath": "public/assets/fresvik/images/old-site/innvendig-port-f20899ab4a.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-fryseport-rentokil"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil"
+    ],
     "sha256": "0f562d679bd152664d36c7669345ad4f1722241c7a905501e3ce033bbc47195c",
     "fileSize": 75366,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-4ffa01c58307ce44502ba4022f84775c1ee5c9ed-1600x1067-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-4ffa01c58307ce44502ba4022f84775c1ee5c9ed-1600x1067-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-4ffa01c58307ce44502ba4022f84775c1ee5c9ed-1600x1067-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/0ca2b5b0-b1dd-43b2-ad60-2e41bc82682f/John+og+Ha%CC%8Avard-2-1.jpg",
@@ -10351,90 +10371,150 @@
     "localPath": "/assets/fresvik/images/old-site/utvendig-liggende-efe87a655e.jpg",
     "filePath": "public/assets/fresvik/images/old-site/utvendig-liggende-efe87a655e.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-fryseport-rentokil"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil"
+    ],
     "sha256": "d9e157fcc7c2ab581605a8cb1bfc0cc00592189a3068f2e387a2fdace58387e3",
     "fileSize": 59560,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-bba72cb7be5a2e0acfbe247557b83625d8a7768f-1600x1067-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-bba72cb7be5a2e0acfbe247557b83625d8a7768f-1600x1067-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-bba72cb7be5a2e0acfbe247557b83625d8a7768f-1600x1067-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428952926-ZEF6H63I2YDXIWB2TONF/Utvendig+port+med+rampe.JPG",
     "localPath": "/assets/fresvik/images/old-site/utvendig-port-med-rampe-1810c8dd34.jpg",
     "filePath": "public/assets/fresvik/images/old-site/utvendig-port-med-rampe-1810c8dd34.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-fryseport-rentokil"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil"
+    ],
     "sha256": "6b8e2ebfb4ba08d039de5977bf5297ada1dfc2bfe66b985c0af2a906fd9a049d",
     "fileSize": 138220,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-ddd5bce61c814359c001a208be0fb5399bad6b4b-1067x1600-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ddd5bce61c814359c001a208be0fb5399bad6b4b-1067x1600-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-ddd5bce61c814359c001a208be0fb5399bad6b4b-1067x1600-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428955039-RJ8A0S93ZSA2HURBRZ2X/Utvendig+portdetalj.JPG",
     "localPath": "/assets/fresvik/images/old-site/utvendig-portdetalj-709e934be3.jpg",
     "filePath": "public/assets/fresvik/images/old-site/utvendig-portdetalj-709e934be3.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-fryseport-rentokil"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil"
+    ],
     "sha256": "1ad1064e77495ec01895cae611aa4524bbb76a195c38310de8b58e6b6de1cacd",
     "fileSize": 59260,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-327e163ba3dff17c841d27bf8eec4274b4a0c302-1067x1600-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-327e163ba3dff17c841d27bf8eec4274b4a0c302-1067x1600-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-327e163ba3dff17c841d27bf8eec4274b4a0c302-1067x1600-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428956875-EUJGYSII10J2UYF4BRHS/Utvendig+rampe.JPG",
     "localPath": "/assets/fresvik/images/old-site/utvendig-rampe-a594c8609a.jpg",
     "filePath": "public/assets/fresvik/images/old-site/utvendig-rampe-a594c8609a.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-fryseport-rentokil"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil"
+    ],
     "sha256": "ccbd565c8db3fb19273ca50ac9f0bc8c0ef5c2204622e06b8e7f92ea26d250f7",
     "fileSize": 178204,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-fce2fcedbe2789ea4188391d077de6d9646ca868-1600x1067-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-fce2fcedbe2789ea4188391d077de6d9646ca868-1600x1067-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-fce2fcedbe2789ea4188391d077de6d9646ca868-1600x1067-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428958638-I4GJYCNI21DXF61M7WWU/Utvendig+st%C3%A5ende.JPG",
     "localPath": "/assets/fresvik/images/old-site/utvendig-staende-7e43a93c88.jpg",
     "filePath": "public/assets/fresvik/images/old-site/utvendig-staende-7e43a93c88.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-fryseport-rentokil"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil"
+    ],
     "sha256": "f4298038f99fb648e395cc6a216b6bdb98dc2fb0f69334f2e2de57955368c26e",
     "fileSize": 44164,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-8f071b5aba64d59b161ab62601f64108d1ada2c4-1067x1600-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-8f071b5aba64d59b161ab62601f64108d1ada2c4-1067x1600-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-8f071b5aba64d59b161ab62601f64108d1ada2c4-1067x1600-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428960334-6L0PNR60IMRZMDJ0POOP/Utvendig+ventiler.JPG",
     "localPath": "/assets/fresvik/images/old-site/utvendig-ventiler-ec0949f672.jpg",
     "filePath": "public/assets/fresvik/images/old-site/utvendig-ventiler-ec0949f672.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryserom-fryseport-rentokil"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryserom-fryseport-rentokil"
+    ],
     "sha256": "95ea2404a064b0fa00618e52e8be4d855625f7d04773f9fdb4ec9b7705b4a063",
     "fileSize": 66548,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-0934952e558ef4b36884825549d5238704030d20-1600x1067-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-0934952e558ef4b36884825549d5238704030d20-1600x1067-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-0934952e558ef4b36884825549d5238704030d20-1600x1067-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/bb85c1ec-830f-451e-afb1-a7d1eef82bd9/valve.png",

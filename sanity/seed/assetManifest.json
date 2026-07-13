@@ -8154,45 +8154,75 @@
     "localPath": "/assets/fresvik/images/old-site/img-0650-b498a58520.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/img-0650-b498a58520.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront"
+    ],
     "sha256": "7476e3f019a9350833ef96ab6998ed9607928c6b452adf2098d93a7ff4e46c9a",
     "fileSize": 222814,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-f528bfc1354ce359516a7747df33c799daec21cd-2048x1536-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-f528bfc1354ce359516a7747df33c799daec21cd-2048x1536-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-f528bfc1354ce359516a7747df33c799daec21cd-2048x1536-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428939486-621BV560KS8AVNOXEKH2/IMG_1340.JPEG",
     "localPath": "/assets/fresvik/images/old-site/img-1340-a8752cb661.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/img-1340-a8752cb661.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront"
+    ],
     "sha256": "90634a3419000fcca26f3099e3aa300c4b4cf730eb476c88387d3c31651c93bd",
     "fileSize": 249158,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-ac01d354e14994488aacd54c99a5772e51db56ce-2048x1536-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ac01d354e14994488aacd54c99a5772e51db56ce-2048x1536-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-ac01d354e14994488aacd54c99a5772e51db56ce-2048x1536-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428941554-6U1B7ONO2I0O9EEWVBCX/IMG_1679.JPEG",
     "localPath": "/assets/fresvik/images/old-site/img-1679-ee1a28ad1e.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/img-1679-ee1a28ad1e.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront"
+    ],
     "sha256": "75534f45daaef38c3b9ae9afe6c16d5ef283cc98956a535e7de49007ddc04344",
     "fileSize": 298672,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-ed11bec2dea3d4bb9b07855588b30247875d094f-2048x1536-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ed11bec2dea3d4bb9b07855588b30247875d094f-2048x1536-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-ed11bec2dea3d4bb9b07855588b30247875d094f-2048x1536-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228777025-GH0LQ8SA6E9RR4W6ZLAG/IMG_2472.JPG",

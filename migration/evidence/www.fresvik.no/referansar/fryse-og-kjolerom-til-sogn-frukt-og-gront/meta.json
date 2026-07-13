@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront",
+  "finalUrl": "https://www.fresvik.no/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront",
+  "fetchedAt": "2026-07-13T19:22:44.438Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Fryse- og kjølerom til Sogn Frukt og Grønt — Fresvik Produkt",
+  "metaDescription": "I starten av året har vi hatt gleda av å levere fryse- og kjølerom til Fellespakkeriet på Håbakken i Lærdal.",
+  "counts": {
+    "headings": 11,
+    "textBlocks": 26,
+    "links": 97,
+    "images": 28,
+    "documents": 2
+  }
+}

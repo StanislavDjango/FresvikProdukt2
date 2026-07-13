@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-13T19:18:07.425Z",
+    "generatedAt": "2026-07-13T19:39:51.206Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -13016,6 +13016,30 @@
     {
       "href": "/assets/fresvik/images/migrated/img-2589.jpg",
       "normalized": "/assets/fresvik/images/migrated/img-2589.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 122,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/img-0650-b498a58520.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/img-0650-b498a58520.jpeg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 122,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/img-1340-a8752cb661.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/img-1340-a8752cb661.jpeg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 122,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/img-1679-ee1a28ad1e.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/img-1679-ee1a28ad1e.jpeg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
       "line": 122,
       "status": "asset-ok",

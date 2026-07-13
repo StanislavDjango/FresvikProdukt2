@@ -174,7 +174,7 @@
 - [x] `/referansar/spesialloysing-torkerom-drageboden-kaupanger`
 - [x] `/referansar/omfattande-leveranse-til-bakehuset-trondheim`
 - [x] `/referansar/fryseromsportar-til-rema-1000-i-narvik`
-- [ ] `/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront`
+- [x] `/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront`
 - [ ] `/referansar/fryserom-fryseport-rentokil`
 - [ ] `/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar`
 - [ ] `/referansar/karlsoybruket`

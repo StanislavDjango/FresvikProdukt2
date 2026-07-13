@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-13T19:18:09.919Z",
+    "generatedAt": "2026-07-13T19:39:53.602Z",
     "routeCount": 107,
     "statusCounts": {
       "partial": 1,
@@ -2433,7 +2433,7 @@
       "matchedParagraphCount": 3,
       "textCoverage": 1,
       "oldWordCount": 71,
-      "localWordCount": 642,
+      "localWordCount": 645,
       "oldImageCount": 4,
       "localImageCount": 4,
       "oldDocumentCount": 0,

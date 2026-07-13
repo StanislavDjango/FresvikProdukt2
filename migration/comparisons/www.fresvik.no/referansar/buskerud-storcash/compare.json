@@ -1,0 +1,157 @@
+{
+  "oldUrl": "https://www.fresvik.no/referansar/buskerud-storcash",
+  "newUrl": "http://127.0.0.1:3060/referansar/buskerud-storcash",
+  "checkedAt": "2026-07-13T21:05:33.774Z",
+  "status": "partial",
+  "counts": {
+    "oldTextBlocks": 18,
+    "missingTextBlocks": 12,
+    "oldLinks": 49,
+    "missingLinks": 10,
+    "oldImages": 13,
+    "missingImages": 13
+  },
+  "missingTextBlocks": [
+    "Foto: Trygve Indrelid",
+    "Vi skaper lønnsame nettsider basert på Squarespace, og utviklar gjerne din visuelle identitet eller hjelper deg med digital markedsføring.",
+    "Celsa Steel Service, Sotra",
+    "Bjerke spekemat og delikatesse",
+    "Fresvikvegen 995,6896 FresvikTel: 57 69 83 00E-post: post@fresvik.no",
+    "Salsavdeling Fresvik:",
+    "Arne-Olav Lien BardølsgårdMob: 99 55 25 49arnbar@fresvik.no",
+    "Salsavdeling Drammen:",
+    "Lars Erling LivrudMob: 40 47 79 12larliv@fresvik.no",
+    "Frode WintherMob: 91 38 39 49frowin@fresvik.no",
+    "Meld deg på vårt nyheitsbrev og få tips og inspirasjon frå bransjen.Sjå vår personvernerklæring.",
+    "PersonvernerklæringOpenheitslovaNettside levert av GASTA"
+  ],
+  "missingLinks": [
+    {
+      "text": "Fresvik isolasjonspanel",
+      "href": "https://www.fresvik.no/kjlerom-fryserom-butikk/",
+      "absoluteUrl": "https://www.fresvik.no/kjlerom-fryserom-butikk/",
+      "type": "internal"
+    },
+    {
+      "text": "dorer2_web.jpg",
+      "href": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428995765-ME1PI8W9HRL6MCAU66ZH/dorer2_web.jpg",
+      "absoluteUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428995765-ME1PI8W9HRL6MCAU66ZH/dorer2_web.jpg",
+      "type": "asset"
+    },
+    {
+      "text": "dorer4_web.jpg",
+      "href": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428997457-TEHF7FR3WDDJZ7W6RK2P/dorer4_web.jpg",
+      "absoluteUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428997457-TEHF7FR3WDDJZ7W6RK2P/dorer4_web.jpg",
+      "type": "asset"
+    },
+    {
+      "text": "dorer5_web.jpg",
+      "href": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428999154-2BWBQI0ECOGXQIWK0RYS/dorer5_web.jpg",
+      "absoluteUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428999154-2BWBQI0ECOGXQIWK0RYS/dorer5_web.jpg",
+      "type": "asset"
+    },
+    {
+      "text": "haandtak_web.jpg",
+      "href": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429000751-UHD6UZU92HWPNAEYQB9F/haandtak_web.jpg",
+      "absoluteUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429000751-UHD6UZU92HWPNAEYQB9F/haandtak_web.jpg",
+      "type": "asset"
+    },
+    {
+      "text": "https://www.gasta.no/",
+      "href": "https://www.gasta.no/",
+      "absoluteUrl": "https://www.gasta.no/",
+      "type": "external"
+    },
+    {
+      "text": "sentral+godkjent.png",
+      "href": "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+      "absoluteUrl": "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+      "type": "document"
+    },
+    {
+      "text": "TG-2135.jpg",
+      "href": "https://www.sintefcertification.no/Product/Index/129",
+      "absoluteUrl": "https://www.sintefcertification.no/Product/Index/129",
+      "type": "external"
+    },
+    {
+      "text": "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+      "href": "https://rapportering.miljofyrtarn.no/stats/176324",
+      "absoluteUrl": "https://rapportering.miljofyrtarn.no/stats/176324",
+      "type": "external"
+    },
+    {
+      "text": "ce-logo-png-transparent.png",
+      "href": "/s/PUR-ce-merke.pdf",
+      "absoluteUrl": "https://www.fresvik.no/s/PUR-ce-merke.pdf",
+      "type": "document"
+    }
+  ],
+  "missingImages": [
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428993712-UDHHY88O8YUFDULR9G1L/image-asset.jpeg",
+      "filename": "image-asset.jpeg",
+      "alt": ""
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428995765-ME1PI8W9HRL6MCAU66ZH/dorer2_web.jpg",
+      "filename": "dorer2_web.jpg",
+      "alt": "dorer2_web.jpg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428997457-TEHF7FR3WDDJZ7W6RK2P/dorer4_web.jpg",
+      "filename": "dorer4_web.jpg",
+      "alt": "dorer4_web.jpg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428999154-2BWBQI0ECOGXQIWK0RYS/dorer5_web.jpg",
+      "filename": "dorer5_web.jpg",
+      "alt": "dorer5_web.jpg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429000751-UHD6UZU92HWPNAEYQB9F/haandtak_web.jpg",
+      "filename": "haandtak_web.jpg",
+      "alt": "haandtak_web.jpg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v2/namespaces/memberAccountAvatars/libraries/517544fce4b06960b9c245e8/edcda299-5f10-40b3-82f9-180df35d9ac3/Kvit_Gr%C3%B8n.png?format=300w",
+      "filename": "Kvit_Grøn.png",
+      "alt": ""
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/13922f08-1a26-4996-98ca-874c87c1d3cb/flake.png",
+      "filename": "flake.png",
+      "alt": ""
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385862366-SQTJIQF8X2Y8LT02Z2UT/sentral%2Bgodkjent.png",
+      "filename": "sentral+godkjent.png",
+      "alt": ""
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385867638-53S21SMAIEM6JIMC4IZ7/TG-2135.jpg",
+      "filename": "TG-2135.jpg",
+      "alt": "TG-2135.jpg"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385870865-8TDYDXKTA92N3SV2CI5E/Poly.png",
+      "filename": "Poly.png",
+      "alt": "Poly.png"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385876430-SF9NN179JLHLSGSAMMMQ/Startbarnk.png",
+      "filename": "Startbarnk.png",
+      "alt": "Startbarnk.png"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693385879029-1G9MX2OPCNVO7N0PMHZF/wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+      "filename": "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png",
+      "alt": "wp-wp-content_uploads_2017_06_Miljfyrtarn-norsk-farger.png"
+    },
+    {
+      "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1700040185087-O7K1UNJLYM01IO9TVQT5/ce-logo-png-transparent.png",
+      "filename": "ce-logo-png-transparent.png",
+      "alt": "ce-logo-png-transparent.png"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-07-13T20:47:34.412Z
+Generated: 2026-07-13T21:06:09.973Z
 
 ## Summary
 
@@ -221,10 +221,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 761 |
-| OK routes | 251 |
-| Redirect links | 19 |
-| Asset links OK | 491 |
+| Internal link references | 767 |
+| OK routes | 252 |
+| Redirect links | 20 |
+| Asset links OK | 495 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -248,6 +248,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /om-oss/fresvik-produkt | sanity/seed/migratedContent.ndjson:89 | redirect | Redirects to /firmainfo. |
 | /s/PIR.pdf | sanity/seed/migratedContent.ndjson:106 | redirect | Redirects to /assets/fresvik/documents/pir-panel.pdf. |
 | /s/PIR-ProduktbladFP.pdf | sanity/seed/migratedContent.ndjson:106 | redirect | Redirects to /assets/fresvik/documents/pir-panel.pdf. |
+| /kjlerom-fryserom-butikk/ | sanity/seed/migratedContent.ndjson:117 | redirect | Redirects to /kjolerom-fryserom-butikk. |
 
 ## External links
 

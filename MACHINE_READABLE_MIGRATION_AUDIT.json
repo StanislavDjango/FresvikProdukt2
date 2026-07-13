@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-13T20:47:34.412Z",
+    "generatedAt": "2026-07-13T21:06:09.973Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -1597,7 +1597,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 5,
       "localImageCount": 5,
       "recoveryStatus": null,
@@ -12916,6 +12916,54 @@
       "line": 116,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/dorer2-web-23779e7371.jpg",
+      "normalized": "/assets/fresvik/images/old-site/dorer2-web-23779e7371.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 117,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/dorer4-web-67d1d45a02.jpg",
+      "normalized": "/assets/fresvik/images/old-site/dorer4-web-67d1d45a02.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 117,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/dorer5-web-fa6b64e0ea.jpg",
+      "normalized": "/assets/fresvik/images/old-site/dorer5-web-fa6b64e0ea.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 117,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/haandtak-web-7f81b0c34f.jpg",
+      "normalized": "/assets/fresvik/images/old-site/haandtak-web-7f81b0c34f.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 117,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/kjlerom-fryserom-butikk/",
+      "normalized": "/kjlerom-fryserom-butikk",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 117,
+      "status": "redirect",
+      "notes": "Redirects to /kjolerom-fryserom-butikk."
+    },
+    {
+      "href": "/produkt",
+      "normalized": "/produkt",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 117,
+      "status": "ok",
+      "notes": "Internal route exists."
     },
     {
       "href": "/assets/fresvik/images/old-site/dsc-2482-6376a08a05.jpg",

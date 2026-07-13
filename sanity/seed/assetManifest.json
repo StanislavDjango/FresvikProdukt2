@@ -5833,45 +5833,75 @@
     "localPath": "/assets/fresvik/images/old-site/dorer2-web-23779e7371.jpg",
     "filePath": "public/assets/fresvik/images/old-site/dorer2-web-23779e7371.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/buskerud-storcash"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/buskerud-storcash"
+    ],
     "sha256": "7d00e85d92e0d18600ea7a00446b669e6017675b7df13060d79fae5fad9f381f",
     "fileSize": 172110,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-b4f5e5a3169dbf57bcd7a6ad173c3406f85aa192-1500x925-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-b4f5e5a3169dbf57bcd7a6ad173c3406f85aa192-1500x925-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-b4f5e5a3169dbf57bcd7a6ad173c3406f85aa192-1500x925-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428997457-TEHF7FR3WDDJZ7W6RK2P/dorer4_web.jpg",
     "localPath": "/assets/fresvik/images/old-site/dorer4-web-67d1d45a02.jpg",
     "filePath": "public/assets/fresvik/images/old-site/dorer4-web-67d1d45a02.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/buskerud-storcash"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/buskerud-storcash"
+    ],
     "sha256": "d1460cc213192380d362afed801f869ca67a284b0d65b125dbd83d02cbd734a6",
     "fileSize": 144694,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-fba5bc97a7b521b4e51a0bf1e1b42eb704f4a450-1500x879-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-fba5bc97a7b521b4e51a0bf1e1b42eb704f4a450-1500x879-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-fba5bc97a7b521b4e51a0bf1e1b42eb704f4a450-1500x879-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428999154-2BWBQI0ECOGXQIWK0RYS/dorer5_web.jpg",
     "localPath": "/assets/fresvik/images/old-site/dorer5-web-fa6b64e0ea.jpg",
     "filePath": "public/assets/fresvik/images/old-site/dorer5-web-fa6b64e0ea.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/buskerud-storcash"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/buskerud-storcash"
+    ],
     "sha256": "9c72e98f723607259937c9792e3907d813e2e0bfa707ab64351160dd08a80be3",
     "fileSize": 152704,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-79b2183649ab29323ad44ae58b896fc72e1f29cd-1500x896-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-79b2183649ab29323ad44ae58b896fc72e1f29cd-1500x896-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-79b2183649ab29323ad44ae58b896fc72e1f29cd-1500x896-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228709048-YJA8KL8OWCDOM39IQUKG/DSC_0017.JPG",
@@ -7427,15 +7457,25 @@
     "localPath": "/assets/fresvik/images/old-site/haandtak-web-7f81b0c34f.jpg",
     "filePath": "public/assets/fresvik/images/old-site/haandtak-web-7f81b0c34f.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/buskerud-storcash"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/buskerud-storcash"
+    ],
     "sha256": "5816b316da0275c9ed3096e8124b8a7b1fffd0a6f36510b6339c84b6cfe6b098",
     "fileSize": 91954,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-7483ada2aaa4db776d075c45502dd5a273f65249-1500x2651-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-7483ada2aaa4db776d075c45502dd5a273f65249-1500x2651-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-7483ada2aaa4db776d075c45502dd5a273f65249-1500x2651-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228905898-3XE99LUNV7I41AHQIIL5/Ha%CC%8Andtak+standard_web.jpg",

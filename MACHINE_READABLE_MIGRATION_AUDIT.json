@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-13T20:07:56.045Z",
+    "generatedAt": "2026-07-13T20:24:05.155Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -1730,7 +1730,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 1,
       "localImageCount": 1,
       "recoveryStatus": null,

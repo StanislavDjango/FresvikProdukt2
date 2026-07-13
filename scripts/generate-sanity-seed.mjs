@@ -2103,6 +2103,106 @@ const referenceProjectOverrides = new Map([
     },
   ],
   [
+    "/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar",
+    {
+      title: "Fresvik kjøle- og fryserom i miljøvennlege daglegvarebutikkar",
+      description: [
+        "Nye Kiwi Skollenborg er bygd av NorgesGruppen Eiendom AS, og er del av ein trend vi no ser på bygging av meir miljøvennlege butikkar i daglegvarebransjen.",
+        "På Kiwi Skollenborg ved Kongsberg har dei med dette bygget redusert CO2-fotavtrykket med over 50 %, samanlikna med ein vanleg Kiwi-butikk.",
+        "Les meir om dette prosjektet i Dagbladet",
+        "Vi har levert fire kjølerom og eit fryserom til vår kunde Carrier Refrigation Norway, ein leveranse på ca 300 m2. Monteringa er gjort av AKS Montering.",
+        "Les meir om Kiwi Skollenborg i Bygg.no",
+      ].join("\n"),
+      year: 2018,
+      category: "Kjøle- fryserom butikk",
+      location: "Kongsberg",
+      customerType: "Daglegvarebutikk",
+      migratedImagePath: "/assets/fresvik/images/migrated/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Kiwi Skollenborg, Kongsberg",
+              text: [
+                "Nye Kiwi Skollenborg er bygd av NorgesGruppen Eiendom AS, og er del av ein trend vi no ser på bygging av meir miljøvennlege butikkar i daglegvarebransjen.",
+                "På Kiwi Skollenborg ved Kongsberg har dei med dette bygget redusert CO2-fotavtrykket med over 50 %, samanlikna med ein vanleg Kiwi-butikk.",
+                "Les meir om dette prosjektet i Dagbladet",
+                "Vi har levert fire kjølerom og eit fryserom til vår kunde Carrier Refrigation Norway, ein leveranse på ca 300 m2. Monteringa er gjort av AKS Montering.",
+                "Les meir om Kiwi Skollenborg i Bygg.no",
+              ].join("\n\n"),
+              meta: "20. juni 2018",
+              imageAlt: "Kiwi Skollenborg, Kongsberg",
+              migratedImagePath: "/assets/fresvik/images/migrated/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Prosjektbilde",
+          intro: "Bilde bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "Kiwi Skollenborg, Kongsberg",
+              text: "Kiwi Skollenborg, Kongsberg",
+              imageAlt: "Kiwi Skollenborg, Kongsberg",
+              migratedImagePath: "/assets/fresvik/images/migrated/kiwi-skollenborg-2018-06-18-1-redigert-4-gang.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-dagbladet",
+              _type: "migrationCard",
+              title: "Les meir om dette prosjektet i Dagbladet",
+              text: "Ekstern prosjektlenke frå gammal side.",
+              href: "https://www.dagbladet.no/mat/du-ser-ikke-hva-som-er-annerledes-med-denne-butikken-men-den-forandrer-norge/69898221",
+            },
+            {
+              _key: "reference-project-carrier",
+              _type: "migrationCard",
+              title: "Carrier Refrigation Norway",
+              text: "Ekstern prosjektlenke frå gammal side.",
+              href: "https://www.carrier.com/commercial-refrigeration/en/no/",
+            },
+            {
+              _key: "reference-project-bygg",
+              _type: "migrationCard",
+              title: "Les meir om Kiwi Skollenborg i Bygg.no",
+              text: "Ekstern prosjektlenke frå gammal side.",
+              href: "http://www.bygg.no/article/1344870",
+            },
+            {
+              _key: "reference-project-prev",
+              _type: "migrationCard",
+              title: "Fryserom og fryseport til Rentokil, Skjetten",
+              text: "Forrige referanse frå gammal side.",
+              href: "/referansar/fryserom-fryseport-rentokil",
+            },
+            {
+              _key: "reference-project-next",
+              _type: "migrationCard",
+              title: "Karlsøybruket",
+              text: "Neste referanse frå gammal side.",
+              href: "/referansar/karlsoybruket",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
     {
       title: "Interfrukt",

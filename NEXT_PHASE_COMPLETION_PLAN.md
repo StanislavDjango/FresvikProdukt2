@@ -176,7 +176,7 @@
 - [x] `/referansar/fryseromsportar-til-rema-1000-i-narvik`
 - [x] `/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront`
 - [x] `/referansar/fryserom-fryseport-rentokil`
-- [ ] `/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar`
+- [x] `/referansar/fresvik-kjole-og-fryserom-i-miljovennlege-daglegvarebutikkar`
 - [ ] `/referansar/karlsoybruket`
 
 Статус: первые две reference pages закрыты вручную; полный старый project body перенесён без переписывания, проектные изображения загружены в Sanity, старые page-specific prev/next/contact links сохранены через новые routes.

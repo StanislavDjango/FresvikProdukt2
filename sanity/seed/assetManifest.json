@@ -8059,30 +8059,50 @@
     "localPath": "/assets/fresvik/images/old-site/image002-0cccfb9d1c.jpg",
     "filePath": "public/assets/fresvik/images/old-site/image002-0cccfb9d1c.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryseromsportar-til-rema-1000-i-narvik"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryseromsportar-til-rema-1000-i-narvik"
+    ],
     "sha256": "1b64e8483c8fcdb30d5a2229e733023833606f09f15e4cbe9428ad0c54b788fa",
     "fileSize": 119568,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-ae677221eb0badc5ecea9a03a2301423ade94289-1512x2016-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-ae677221eb0badc5ecea9a03a2301423ade94289-1512x2016-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-ae677221eb0badc5ecea9a03a2301423ade94289-1512x2016-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428926428-PU6L6AB78V48NR3GPHGS/image003.jpg",
     "localPath": "/assets/fresvik/images/old-site/image003-ae909e6bb8.jpg",
     "filePath": "public/assets/fresvik/images/old-site/image003-ae909e6bb8.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryseromsportar-til-rema-1000-i-narvik"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryseromsportar-til-rema-1000-i-narvik"
+    ],
     "sha256": "de2c2e6bcf59f4fd9dc445ca5bb908c8f1c8e75a2715c9e943dbe5c37239e720",
     "fileSize": 220934,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-6c5a13488008e0a386e4dffbff5453ea4a77b5c8-1512x2016-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-6c5a13488008e0a386e4dffbff5453ea4a77b5c8-1512x2016-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-6c5a13488008e0a386e4dffbff5453ea4a77b5c8-1512x2016-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429021146-K1P64FHGBQD105579TXJ/image3.JPG",
@@ -8304,30 +8324,50 @@
     "localPath": "/assets/fresvik/images/old-site/img-6262-7fe02e1c0b.jpg",
     "filePath": "public/assets/fresvik/images/old-site/img-6262-7fe02e1c0b.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryseromsportar-til-rema-1000-i-narvik"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryseromsportar-til-rema-1000-i-narvik"
+    ],
     "sha256": "dfab5f78d6facfba82add73bd773c8d813f7b4dd7af6db8cb3c94950f2b947db",
     "fileSize": 387148,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-635d4700e5199d7b930783a331be90cbafe061eb-2016x1512-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-635d4700e5199d7b930783a331be90cbafe061eb-2016x1512-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-635d4700e5199d7b930783a331be90cbafe061eb-2016x1512-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428930606-RKWOL8R4GP65HOZ6SCEW/IMG_6263.jpg",
     "localPath": "/assets/fresvik/images/old-site/img-6263-356dfec01d.jpg",
     "filePath": "public/assets/fresvik/images/old-site/img-6263-356dfec01d.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fryseromsportar-til-rema-1000-i-narvik"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fryseromsportar-til-rema-1000-i-narvik"
+    ],
     "sha256": "39f0860aa8439fb3a92e328f2654d57e280f951c6f203752da498e1d70cf939e",
     "fileSize": 239018,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-759b73924158c757884d00a028ceb62bd23f46dd-2016x1512-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-759b73924158c757884d00a028ceb62bd23f46dd-2016x1512-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-759b73924158c757884d00a028ceb62bd23f46dd-2016x1512-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428969676-PWB8O8WFTC7ZUNCH8QKM/IMG_7326.JPG",

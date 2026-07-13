@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-12T18:58:24.342Z",
+    "generatedAt": "2026-07-13T19:18:07.425Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -2909,8 +2909,8 @@
       "caption": "Oppheng PVC-gardin.",
       "localPath": "/assets/fresvik/images/old-site/pvc-gardin-oppheng-web.jpg",
       "status": "migrated",
-      "confidence": 1.317,
-      "notes": "Matched by filename/source similarity (1.32)."
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228926673-R5XLINLC97ZQFF7EP91Y/Diktator_web.jpg",
@@ -2939,8 +2939,8 @@
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/rampe2-copy.jpg",
       "status": "migrated",
-      "confidence": 1.235,
-      "notes": "Matched by filename/source similarity (1.23)."
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228939468-4AEMY1N761USRYQC9BPW/rampe3+copy.jpg",
@@ -2969,8 +2969,8 @@
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/profil1b-copy.jpg",
       "status": "migrated",
-      "confidence": 1.235,
-      "notes": "Matched by filename/source similarity (1.23)."
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228947979-OT7A0OMEA0W7B5MQY9ZA/profil2+copy.jpg",
@@ -2979,8 +2979,8 @@
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/profil2-copy.jpg",
       "status": "migrated",
-      "confidence": 1.235,
-      "notes": "Matched by filename/source similarity (1.23)."
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228950180-P4LBNTIWCBK3NKG3923N/profil3+copy.jpg",
@@ -2999,8 +2999,8 @@
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/profil3b-copy.jpg",
       "status": "migrated",
-      "confidence": 1.235,
-      "notes": "Matched by filename/source similarity (1.23)."
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228954421-1R1X8090YDGX51QKD406/profil4+copy.jpg",
@@ -3009,8 +3009,8 @@
       "caption": "",
       "localPath": "/assets/fresvik/images/old-site/profil4-copy.jpg",
       "status": "migrated",
-      "confidence": 1.235,
-      "notes": "Matched by filename/source similarity (1.23)."
+      "confidence": 1.5,
+      "notes": "Matched by filename/source similarity (1.50)."
     },
     {
       "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1693228959146-O18ZOPO4ZJZA3KCU13SL/dor_ny.jpg",
@@ -13080,6 +13080,38 @@
     {
       "href": "/assets/fresvik/images/migrated/img-6262.jpg",
       "normalized": "/assets/fresvik/images/migrated/img-6262.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 127,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/image002-0cccfb9d1c.jpg",
+      "normalized": "/assets/fresvik/images/old-site/image002-0cccfb9d1c.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 127,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/image003-ae909e6bb8.jpg",
+      "normalized": "/assets/fresvik/images/old-site/image003-ae909e6bb8.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 127,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/img-6262-7fe02e1c0b.jpg",
+      "normalized": "/assets/fresvik/images/old-site/img-6262-7fe02e1c0b.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 127,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/img-6263-356dfec01d.jpg",
+      "normalized": "/assets/fresvik/images/old-site/img-6263-356dfec01d.jpg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
       "line": 127,
       "status": "asset-ok",

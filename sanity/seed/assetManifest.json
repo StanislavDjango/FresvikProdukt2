@@ -6575,15 +6575,25 @@
     "localPath": "/assets/fresvik/images/old-site/fiskehallen2-14ed360ecf.jpg",
     "filePath": "public/assets/fresvik/images/old-site/fiskehallen2-14ed360ecf.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fiskehallen"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fiskehallen"
+    ],
     "sha256": "8e2f1120c20b66776d3fcbda8e8aeb7a3fd10dcc812ea14d388aba13d80c3355",
     "fileSize": 8534,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-9b25bc649510f59550f2e3a4ea427f34c2ba23af-320x240-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-9b25bc649510f59550f2e3a4ea427f34c2ba23af-320x240-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-9b25bc649510f59550f2e3a4ea427f34c2ba23af-320x240-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428980136-F7AB7NW8M9CQA765TLQZ/fiskehallen2.jpg",
@@ -6615,15 +6625,25 @@
     "localPath": "/assets/fresvik/images/old-site/fiskehallen3-97fbee8985.jpg",
     "filePath": "public/assets/fresvik/images/old-site/fiskehallen3-97fbee8985.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/fiskehallen"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/fiskehallen"
+    ],
     "sha256": "a7a2527b3deb2097cd7eae634ddfe2e24b09c32e2d0c4ac426201c91b020a68b",
     "fileSize": 9328,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-67bab82e6affc00d3fabd8ab6f9ed91d164b387a-320x240-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-67bab82e6affc00d3fabd8ab6f9ed91d164b387a-320x240-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-67bab82e6affc00d3fabd8ab6f9ed91d164b387a-320x240-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/13922f08-1a26-4996-98ca-874c87c1d3cb/flake.png",

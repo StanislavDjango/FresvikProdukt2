@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-13T20:36:54.831Z",
+    "generatedAt": "2026-07-13T20:47:34.412Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -12944,6 +12944,22 @@
     {
       "href": "/assets/fresvik/images/migrated/fiskehallen1.jpg",
       "normalized": "/assets/fresvik/images/migrated/fiskehallen1.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 119,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/fiskehallen2-14ed360ecf.jpg",
+      "normalized": "/assets/fresvik/images/old-site/fiskehallen2-14ed360ecf.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 119,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/fiskehallen3-97fbee8985.jpg",
+      "normalized": "/assets/fresvik/images/old-site/fiskehallen3-97fbee8985.jpg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
       "line": 119,
       "status": "asset-ok",

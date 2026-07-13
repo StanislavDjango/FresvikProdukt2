@@ -2303,6 +2303,106 @@ const referenceProjectOverrides = new Map([
     },
   ],
   [
+    "/referansar/fiskehallen",
+    {
+      title: "Fiskehallen",
+      description: [
+        "Fresvik Produkt har gjennom åra levert mykje til Fiskehallen, og til mange ulike kundar der.",
+        "Siste del av året har vi hatt leveransar til Sjømat AS, som også held til her. Bileta viser litt av dette anlegget.",
+        "Dette prosjektet har bestått av både takflate, vegger og portar.",
+        "Også på Fiskehallen er det AKS Montering som er den føretrekte montøren.",
+      ].join("\n"),
+      year: 2017,
+      category: "Storkjøkken-restaurant",
+      location: "Fiskehallen",
+      customerType: "Sjømat",
+      migratedImagePath: "/assets/fresvik/images/migrated/fiskehallen1.jpg",
+      migrationSections: [
+        {
+          _key: "reference-project-text",
+          _type: "migrationSection",
+          title: "Prosjekttekst",
+          items: [
+            {
+              _key: "reference-project-text-main",
+              _type: "migrationCard",
+              title: "Fiskehallen",
+              text: [
+                "Fresvik Produkt har gjennom åra levert mykje til Fiskehallen, og til mange ulike kundar der.",
+                "Siste del av året har vi hatt leveransar til Sjømat AS, som også held til her. Bileta viser litt av dette anlegget.",
+                "Dette prosjektet har bestått av både takflate, vegger og portar.",
+                "Også på Fiskehallen er det AKS Montering som er den føretrekte montøren.",
+              ].join("\n\n"),
+              meta: "12. desember 2017",
+              imageAlt: "fiskehallen1.jpg",
+              migratedImagePath: "/assets/fresvik/images/migrated/fiskehallen1.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-images",
+          _type: "migrationSection",
+          title: "Prosjektbilde",
+          intro: "Bilde bevart frå den gamle referansesida.",
+          items: [
+            {
+              _key: "reference-project-image-0",
+              _type: "migrationCard",
+              title: "fiskehallen1.jpg",
+              text: "fiskehallen1.jpg",
+              imageAlt: "fiskehallen1.jpg",
+              migratedImagePath: "/assets/fresvik/images/migrated/fiskehallen1.jpg",
+            },
+            {
+              _key: "reference-project-image-1",
+              _type: "migrationCard",
+              title: "fiskehallen2.jpg",
+              text: "fiskehallen2.jpg",
+              imageAlt: "fiskehallen2.jpg",
+              migratedImagePath: "/assets/fresvik/images/old-site/fiskehallen2-14ed360ecf.jpg",
+            },
+            {
+              _key: "reference-project-image-2",
+              _type: "migrationCard",
+              title: "fiskehallen3.jpg",
+              text: "fiskehallen3.jpg",
+              imageAlt: "fiskehallen3.jpg",
+              migratedImagePath: "/assets/fresvik/images/old-site/fiskehallen3-97fbee8985.jpg",
+            },
+          ],
+        },
+        {
+          _key: "reference-project-links",
+          _type: "migrationSection",
+          title: "Lenker frå gammal side",
+          items: [
+            {
+              _key: "reference-project-category",
+              _type: "migrationCard",
+              title: "Storkjøkken-restaurant",
+              text: "Kategori frå gammal side.",
+              href: "/referansar/category/Storkj%C3%B8kken-restaurant",
+            },
+            {
+              _key: "reference-project-prev",
+              _type: "migrationCard",
+              title: "Karlsøybruket",
+              text: "Forrige referanse frå gammal side.",
+              href: "/referansar/karlsoybruket",
+            },
+            {
+              _key: "reference-project-next",
+              _type: "migrationCard",
+              title: "Celsa Steel Service, Sotra",
+              text: "Neste referanse frå gammal side.",
+              href: "/referansar/celsa-steel-sotra",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
     "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
     {
       title: "Interfrukt",

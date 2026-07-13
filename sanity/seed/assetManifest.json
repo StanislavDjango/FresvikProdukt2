@@ -6899,15 +6899,25 @@
     "localPath": "/assets/fresvik/images/old-site/fresvik-aks-montering2-1b72163da7.jpg",
     "filePath": "public/assets/fresvik/images/old-site/fresvik-aks-montering2-1b72163da7.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/bjerke-spekemat"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/bjerke-spekemat"
+    ],
     "sha256": "a7eff2d06e7f03b9cb7a2593b5b8eb0df4d370309b76b06c172f2382a6bf6ae3",
     "fileSize": 299076,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-e0ad131f57898a50f45cef79b55c51294c430b7f-2500x1867-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-e0ad131f57898a50f45cef79b55c51294c430b7f-2500x1867-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-e0ad131f57898a50f45cef79b55c51294c430b7f-2500x1867-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/5aab7eed-051d-445b-b821-a6d81571f361/Fresvik%2Baks%2Bmontering2.jpg",
@@ -6939,30 +6949,50 @@
     "localPath": "/assets/fresvik/images/old-site/fresvik-aks-montering4-969d79d1cf.jpg",
     "filePath": "public/assets/fresvik/images/old-site/fresvik-aks-montering4-969d79d1cf.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/bjerke-spekemat"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/bjerke-spekemat"
+    ],
     "sha256": "3e26fe890f31ac08b00750cf011c1e821ca2d7adb6f8f137fc96d3635e2c8375",
     "fileSize": 356418,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-106588e0187aed62059946e1f73bdc484d2a71c9-2500x1867-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-106588e0187aed62059946e1f73bdc484d2a71c9-2500x1867-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-106588e0187aed62059946e1f73bdc484d2a71c9-2500x1867-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694429012125-I6FUPFIY7HBPT712HTP8/Fresvik+aks+montering5.jpg",
     "localPath": "/assets/fresvik/images/old-site/fresvik-aks-montering5-55466bac4e.jpg",
     "filePath": "public/assets/fresvik/images/old-site/fresvik-aks-montering5-55466bac4e.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/referansar/bjerke-spekemat"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/referansar/bjerke-spekemat"
+    ],
     "sha256": "267f46d8da2b886b6454e49b81c4abb0132db1f1007c00c0f5f9b33a860b9e10",
     "fileSize": 242518,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-6f6377071419583e9f42605679fe58811e62f693-2500x1867-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-6f6377071419583e9f42605679fe58811e62f693-2500x1867-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity as image-6f6377071419583e9f42605679fe58811e62f693-2500x1867-webp."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/45de53c6-9a74-44c2-9a4d-c8e9563832aa/Fresvik+fra%CC%8A+BJ%C3%98NNSTIGEN+2017+SS.jpg",

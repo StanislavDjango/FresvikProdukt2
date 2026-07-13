@@ -182,7 +182,7 @@
 Статус: первые две reference pages закрыты вручную; полный старый project body перенесён без переписывания, проектные изображения загружены в Sanity, старые page-specific prev/next/contact links сохранены через новые routes.
 - [x] `/referansar/fiskehallen`
 - [x] `/referansar/buskerud-storcash`
-- [ ] `/referansar/bjerke-spekemat`
+- [x] `/referansar/bjerke-spekemat`
 - [ ] `/referansar/restauranthuset`
 
 Для reference pages:

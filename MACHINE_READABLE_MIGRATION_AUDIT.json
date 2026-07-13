@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-13T21:06:09.973Z",
+    "generatedAt": "2026-07-13T21:23:24.607Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -1540,7 +1540,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 4,
       "localImageCount": 4,
       "recoveryStatus": null,
@@ -12860,6 +12860,38 @@
       "line": 113,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/fresvik-aks-montering2-1b72163da7.jpg",
+      "normalized": "/assets/fresvik/images/old-site/fresvik-aks-montering2-1b72163da7.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 114,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/fresvik-aks-montering4-969d79d1cf.jpg",
+      "normalized": "/assets/fresvik/images/old-site/fresvik-aks-montering4-969d79d1cf.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 114,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/fresvik-aks-montering5-55466bac4e.jpg",
+      "normalized": "/assets/fresvik/images/old-site/fresvik-aks-montering5-55466bac4e.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 114,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/referansar/category/Framside-referansar",
+      "normalized": "/referansar/category/Framside-referansar",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 114,
+      "status": "ok",
+      "notes": "Internal route exists."
     },
     {
       "href": "/assets/fresvik/images/migrated/bjerkreim-legekontor-1.jpeg",

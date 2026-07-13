@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/referansar/bjerke-spekemat",
+  "finalUrl": "https://www.fresvik.no/referansar/bjerke-spekemat",
+  "fetchedAt": "2026-07-13T21:11:34.485Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Bjerke spekemat og delikatesse — Fresvik Produkt",
+  "metaDescription": "Både utvendige fasadepanel, innvendige skillevegger, dørar og portar til Bjerke Spekemat &amp; Delikatesse as.",
+  "counts": {
+    "headings": 11,
+    "textBlocks": 31,
+    "links": 103,
+    "images": 21,
+    "documents": 2
+  }
+}

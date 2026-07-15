@@ -557,6 +557,7 @@ function mergeContentPage(
     pageType: fallback?.pageType || pageTypeFor(doc),
     priority: fallback?.priority || "medium",
     sourceUrl: doc.sourceUrl || fallback?.sourceUrl,
+    publishedAt: doc.date,
     showMigrationDetails: false,
     cards,
     sections,

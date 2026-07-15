@@ -32,6 +32,19 @@ function isPdfHref(href: string) {
   return /\.pdf($|\?)/i.test(href);
 }
 
+function formatNorwegianDate(value?: string) {
+  if (!value) return undefined;
+
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+
+  return new Intl.DateTimeFormat("nn-NO", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  }).format(date);
+}
+
 const technicalMigrationSectionTitles = new Set([
   "Full tekst frå gammal side",
   "Bilde frå gammal side",
@@ -2946,6 +2959,80 @@ function NewsIndexSection({
   );
 }
 
+function NewsArticleBodySection({
+  page,
+  section,
+}: {
+  page: ContentPage;
+  section: ContentPage["sections"][number];
+}) {
+  const paragraphs = section.items
+    .flatMap((item) => item.text.split(/\n{2,}/))
+    .map((text) => text.trim())
+    .filter(Boolean);
+  const heroImage = page.cards.find((card) => card.imageUrl);
+  const formattedDate = formatNorwegianDate(page.publishedAt);
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12 lg:py-16">
+        <article className="overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04]">
+          <div className="grid gap-0 lg:grid-cols-[0.58fr_0.42fr]">
+            <div className="p-6 sm:p-8 lg:p-10">
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                  Aktuelt
+                </span>
+                {formattedDate ? (
+                  <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-600">
+                    {formattedDate}
+                  </span>
+                ) : null}
+              </div>
+
+              <h2 className="mt-5 max-w-3xl text-2xl font-semibold leading-tight text-slate-950 sm:text-3xl">
+                {page.title}
+              </h2>
+
+              <div className="mt-6 max-w-3xl space-y-4 text-base leading-8 text-slate-700">
+                {(paragraphs.length > 0 ? paragraphs : [page.intro]).map(
+                  (paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ),
+                )}
+              </div>
+
+            </div>
+
+            {heroImage?.imageUrl ? (
+              <div className="relative min-h-72 border-t border-slate-200 bg-slate-100 lg:border-l lg:border-t-0">
+                <Image
+                  src={heroImage.imageUrl}
+                  alt={heroImage.imageAlt || heroImage.title}
+                  fill
+                  sizes="(min-width: 1024px) 38vw, 100vw"
+                  className="object-cover object-center"
+                />
+              </div>
+            ) : (
+              <div className="flex min-h-72 items-center justify-center border-t border-slate-200 bg-slate-950 p-10 text-white lg:border-l lg:border-t-0">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan-200">
+                    Fresvik Produkt
+                  </p>
+                  <p className="mt-4 max-w-sm text-2xl font-semibold leading-tight">
+                    Kort melding frå arkivet
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+        </article>
+      </Container>
+    </section>
+  );
+}
+
 function NewsSourceLinksSection({
   section,
 }: {
@@ -3088,9 +3175,11 @@ function ProductCertificateLinksSection({
 function ContentSections({
   sections,
   pageSlug,
+  page,
 }: {
   sections: ContentPage["sections"];
   pageSlug?: string;
+  page?: ContentPage;
 }) {
   const isPirPage = pageSlug === "/produkt/fresvik-pir-panel";
   const isPurPage = pageSlug === "/produkt/fresvik-pur-panel";
@@ -3108,6 +3197,8 @@ function ContentSections({
   const isServicePartsPage = pageSlug === "/tenester/service-reservedeler";
   const isReferenceIndexPage = pageSlug === "/referansar";
   const isNewsIndexPage = pageSlug === "/aktuelt";
+  const isNewsDetailPage =
+    (pageSlug?.startsWith("/aktuelt/") ?? false) && pageSlug !== "/aktuelt";
   const isProductIndexPage = pageSlug === "/produkt";
   const isTransportDamagePage = pageSlug === "/transportskade";
   const isCompanyOverviewPage = pageSlug === "/om-oss";
@@ -3161,6 +3252,7 @@ function ContentSections({
     isStyledServicePage ||
     isReferenceIndexPage ||
     isNewsIndexPage ||
+    isNewsDetailPage ||
     isCompanyUtilityPage ||
     isLegalPage
       ? sections.filter(
@@ -3259,6 +3351,12 @@ function ContentSections({
                 section.title === "Dokumentasjon og sertifikat")
             ) &&
             !(
+              isNewsDetailPage &&
+              (section.title === "Kontakt" ||
+                section.title === "Dokumentasjon og sertifikat" ||
+                technicalMigrationSectionTitles.has(section.title))
+            ) &&
+            !(
               isServiceIndexPage &&
               section.title === "Teneste-URL-ar frå gammal sitemap"
             ) &&
@@ -3355,6 +3453,16 @@ function ContentSections({
       return (
         <NewsSourceLinksSection
           key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isNewsDetailPage && page && section.title === "Innhald frå Sanity") {
+      return (
+        <NewsArticleBodySection
+          key={`${section.title}-${sectionIndex}`}
+          page={page}
           section={section}
         />
       );
@@ -4655,7 +4763,11 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
       {isHomePage ? null : isFaqPage ? (
         <FAQAccordion page={page} />
       ) : (
-        <ContentSections sections={page.sections} pageSlug={page.slug} />
+        <ContentSections
+          sections={page.sections}
+          pageSlug={page.slug}
+          page={page}
+        />
       )}
 
       {showMigrationDetails && page.todo && page.todo.length > 0 ? (

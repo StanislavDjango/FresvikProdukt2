@@ -36,6 +36,7 @@ export type ContentPage = {
   pageType: "home" | "index" | "product" | "service" | "support" | "company" | "legal";
   priority: "high" | "medium" | "low";
   sourceUrl?: string;
+  publishedAt?: string;
   showMigrationDetails?: boolean;
   cards: ContentCard[];
   sections: Section[];

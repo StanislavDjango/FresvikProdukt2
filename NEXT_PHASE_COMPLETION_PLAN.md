@@ -205,19 +205,21 @@
 - [x] `/aktuelt/ein-investering-for-henga-med-i-tidanbsp`
 - [x] `/aktuelt/agnar-er-snart-pensjonistnbsp`
 - [x] `/aktuelt/to-ledige-stillingar-i-haust`
-- [ ] `/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv`
-- [ ] `/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn`
-- [ ] `/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt`
-- [ ] `/aktuelt/ledig-stilling-som-produksjonsmedarbeidar`
-- [ ] `/aktuelt/jul-2020`
-- [ ] `/aktuelt/arne-olav-ny-salskonsulent`
-- [ ] `/aktuelt/fresvik-kjolerom-til-fruktbonde`
-- [ ] `/aktuelt/40-aars-jubileum`
-- [ ] `/aktuelt/skjererom`
-- [ ] `/aktuelt/orklafoods-stranda`
-- [ ] `/aktuelt/nye-monteringsanvisningar`
-- [ ] `/aktuelt/fasade-element-og-takplater-ruukki`
-- [ ] `/aktuelt/portproduksjon`
+- [x] `/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv`
+- [x] `/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn`
+- [x] `/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt`
+- [x] `/aktuelt/ledig-stilling-som-produksjonsmedarbeidar`
+- [x] `/aktuelt/jul-2020`
+- [x] `/aktuelt/arne-olav-ny-salskonsulent`
+- [x] `/aktuelt/fresvik-kjolerom-til-fruktbonde`
+- [x] `/aktuelt/40-aars-jubileum`
+- [x] `/aktuelt/skjererom`
+- [x] `/aktuelt/orklafoods-stranda`
+- [x] `/aktuelt/nye-monteringsanvisningar`
+- [x] `/aktuelt/fasade-element-og-takplater-ruukki`
+- [x] `/aktuelt/portproduksjon`
+
+Status: lukka med felles news-detail mal som viser dato, bilete og brødtekst frå Sanity utan tekniske `Avsnitt`-kort. Tre korte saker (`fresvik-ein-god-jobb-og-eit-godt-liv`, `fryse-og-kjlerom-til-sogn-frukt-og-grnt`, `ledig-stilling-som-produksjonsmedarbeidar`) har berre recoverable meta/description frå gammal HTML og ingen sikre gamle body-bilete.
 
 Для news pages:
 

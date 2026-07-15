@@ -198,7 +198,7 @@
 
 - [x] `/aktuelt/samaneh-shakeri-ny-teknisk-sjef`
 - [x] `/aktuelt/ny-teknisk-teiknar-havard-berdal`
-- [ ] `/aktuelt/john-bothun-blir-pensjonist`
+- [x] `/aktuelt/john-bothun-blir-pensjonist`
 
 Потом остальные новости из inventory:
 

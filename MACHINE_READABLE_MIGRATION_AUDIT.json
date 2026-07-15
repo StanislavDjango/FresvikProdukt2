@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-15T18:21:22.513Z",
+    "generatedAt": "2026-07-15T18:42:19.939Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -10217,6 +10217,30 @@
       "notes": "Local migration asset exists."
     },
     {
+      "href": "/assets/fresvik/images/old-site/john-og-havard-2-1-ab95ada79b.jpg",
+      "normalized": "/assets/fresvik/images/old-site/john-og-havard-2-1-ab95ada79b.jpg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 61,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+      "normalized": "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 61,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
+      "normalized": "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 61,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
       "href": "/assets/fresvik/images/migrated/fresvik-produkt-julehjarte-dekorasjon.jpg",
       "normalized": "/assets/fresvik/images/migrated/fresvik-produkt-julehjarte-dekorasjon.jpg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
@@ -10297,14 +10321,6 @@
       "notes": "Internal route exists."
     },
     {
-      "href": "/aktuelt/ny-teknisk-teiknar-havard-berdal",
-      "normalized": "/aktuelt/ny-teknisk-teiknar-havard-berdal",
-      "sourceFile": "sanity/seed/migratedContent.ndjson",
-      "line": 70,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
       "href": "/assets/fresvik/images/migrated/image-asset.jpeg",
       "normalized": "/assets/fresvik/images/migrated/image-asset.jpeg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
@@ -10351,14 +10367,6 @@
       "line": 76,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
-      "normalized": "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
-      "sourceFile": "sanity/seed/migratedContent.ndjson",
-      "line": 76,
-      "status": "ok",
-      "notes": "Internal route exists."
     },
     {
       "href": "/assets/fresvik/images/old-site/Fresvik+Produkt+NY-4.jpeg",

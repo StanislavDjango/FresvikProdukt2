@@ -384,6 +384,36 @@ const newsArticleOverrides = new Map([
       },
     },
   ],
+  [
+    "/aktuelt/john-bothun-blir-pensjonist",
+    {
+      imageAlt:
+        "John Bøthun har jobba 42 år i Fresvik Produkt men blir no pensjonist.",
+      extraCards: [
+        {
+          _key: "news-article-image-1",
+          _type: "migrationCard",
+          title: "Håvard Berdal følger i John Bøthun sine fotspor",
+          text:
+            "Håvard Berdal følger i John Bøthun sine fotspor som teknisk teiknar.",
+          meta:
+            "Håvard Berdal følger i John Bøthun sine fotspor som teknisk teiknar.",
+          imageAlt:
+            "Håvard Berdal følger i John Bøthun sine fotspor som teknisk teiknar.",
+          migratedImagePath:
+            "/assets/fresvik/images/old-site/john-og-havard-2-1-ab95ada79b.jpg",
+        },
+      ],
+      previous: {
+        title: "Ny teknisk teiknar på plass",
+        href: "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+      },
+      next: {
+        title: "Ein investering for å henga med i tida",
+        href: "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
+      },
+    },
+  ],
 ]);
 
 function newsMigrationSections(item, extract, bodyText, override) {
@@ -414,6 +444,7 @@ function newsMigrationSections(item, extract, bodyText, override) {
           imageAlt: override.imageAlt,
           migratedImagePath: imagePath,
         },
+        ...(override.extraCards || []),
       ],
     },
     override.author

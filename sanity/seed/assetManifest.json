@@ -8653,15 +8653,25 @@
     "localPath": "/assets/fresvik/images/old-site/john-og-havard-2-1-ab95ada79b.jpg",
     "filePath": "public/assets/fresvik/images/old-site/john-og-havard-2-1-ab95ada79b.jpg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/aktuelt/john-bothun-blir-pensjonist"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt/john-bothun-blir-pensjonist"
+    ],
     "sha256": "5535be3eb59c03213c6f6f03bfbfc187039120b8bc9364a505f58a5ab3401e4a",
     "fileSize": 224624,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-4842d324c0c776b0bb776aab94d07897c457836b-2500x1667-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-4842d324c0c776b0bb776aab94d07897c457836b-2500x1667-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity for John Bøthun article secondary image."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1733820353677-2DLGZW39WPXSI4WPV61F/Kiwi+Otta+2.jpeg",

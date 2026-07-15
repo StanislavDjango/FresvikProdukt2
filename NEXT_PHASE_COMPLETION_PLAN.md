@@ -203,7 +203,7 @@
 Потом остальные новости из inventory:
 
 - [x] `/aktuelt/ein-investering-for-henga-med-i-tidanbsp`
-- [ ] `/aktuelt/agnar-er-snart-pensjonistnbsp`
+- [x] `/aktuelt/agnar-er-snart-pensjonistnbsp`
 - [ ] `/aktuelt/to-ledige-stillingar-i-haust`
 - [ ] `/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv`
 - [ ] `/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn`

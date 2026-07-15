@@ -5276,15 +5276,25 @@
     "localPath": "/assets/fresvik/images/old-site/agnar-i-truck-resized-cf74378d40.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/agnar-i-truck-resized-cf74378d40.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/aktuelt/agnar-er-snart-pensjonistnbsp"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt/agnar-er-snart-pensjonistnbsp"
+    ],
     "sha256": "052257ae65fae42d4df9e4567a25a80064361d184dba3fc7e7a8346b8082409f",
     "fileSize": 947499,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-a6ae3781174464edbacdcf5d6f78c5775c4d8112-2500x1786-jpg",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-a6ae3781174464edbacdcf5d6f78c5775c4d8112-2500x1786-jpg"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity for Agnar news article secondary image."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/97325d4f-52eb-4793-b596-69bbe7d3070e/alarm.png",

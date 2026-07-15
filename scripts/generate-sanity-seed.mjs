@@ -448,6 +448,31 @@ const newsArticleOverrides = new Map([
       },
     },
   ],
+  [
+    "/aktuelt/agnar-er-snart-pensjonistnbsp",
+    {
+      imageAlt: "Agnar Bøtun har 44 år bak seg i Fresvik Produkt.",
+      extraCards: [
+        {
+          _key: "news-article-image-1",
+          _type: "migrationCard",
+          title: "Agnar i truck",
+          text: "Foto frå den gamle artikkelen.",
+          imageAlt: "Agnar Bøtun i truck.",
+          migratedImagePath:
+            "/assets/fresvik/images/old-site/agnar-i-truck-resized-cf74378d40.jpeg",
+        },
+      ],
+      previous: {
+        title: "Ein investering for å henga med i tida",
+        href: "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
+      },
+      next: {
+        title: "Ledige stillingar",
+        href: "/aktuelt/to-ledige-stillingar-i-haust",
+      },
+    },
+  ],
 ]);
 
 function newsMigrationSections(item, extract, bodyText, override) {

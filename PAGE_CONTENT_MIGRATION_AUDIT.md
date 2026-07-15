@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-07-15T19:06:38.873Z
+Generated: 2026-07-15T19:26:34.042Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -88,7 +88,7 @@ Next batch: `products`
 | services-documents | /tenester/service-reservedeler | migrated | 2/2 | 9/1 | 2/0 | 39/35 | Strict content evidence is covered. |
 | news | /aktuelt | migrated | 0/0 | 32/0 | 2/0 | 50/56 | Structured index/list page: old body text was not extractable, but list links/images are covered. |
 | news | /aktuelt/40-aars-jubileum | migrated | 3/3 | 4/4 | 2/0 | 26/37 | Strict content evidence is covered. |
-| news | /aktuelt/agnar-er-snart-pensjonistnbsp | migrated | 15/15 | 2/2 | 2/0 | 26/37 | Strict content evidence is covered. |
+| news | /aktuelt/agnar-er-snart-pensjonistnbsp | migrated | 16/16 | 2/2 | 2/0 | 26/37 | Strict content evidence is covered. |
 | news | /aktuelt/arne-olav-ny-salskonsulent | migrated | 5/5 | 1/1 | 2/0 | 26/37 | Strict content evidence is covered. |
 | news | /aktuelt/ein-investering-for-henga-med-i-tidanbsp | migrated | 6/6 | 3/3 | 2/0 | 26/37 | Strict content evidence is covered. |
 | news | /aktuelt/fasade-element-og-takplater-ruukki | migrated | 5/5 | 6/6 | 2/0 | 26/45 | Strict content evidence is covered. |

@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-15T19:06:36.481Z",
+    "generatedAt": "2026-07-15T19:26:31.658Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -10161,6 +10161,30 @@
       "notes": "Local migration asset exists."
     },
     {
+      "href": "/assets/fresvik/images/old-site/agnar-i-truck-resized-cf74378d40.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/agnar-i-truck-resized-cf74378d40.jpeg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 50,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
+      "normalized": "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 50,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/aktuelt/to-ledige-stillingar-i-haust",
+      "normalized": "/aktuelt/to-ledige-stillingar-i-haust",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 50,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
       "href": "/assets/fresvik/images/migrated/fresvik-produikt-seljar-arne-olav.jpg",
       "normalized": "/assets/fresvik/images/migrated/fresvik-produikt-seljar-arne-olav.jpg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
@@ -10259,14 +10283,6 @@
     {
       "href": "/aktuelt/ny-teknisk-teiknar-havard-berdal",
       "normalized": "/aktuelt/ny-teknisk-teiknar-havard-berdal",
-      "sourceFile": "sanity/seed/migratedContent.ndjson",
-      "line": 61,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
-      "href": "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
-      "normalized": "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
       "line": 61,
       "status": "ok",
@@ -10407,14 +10423,6 @@
       "line": 76,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/aktuelt/to-ledige-stillingar-i-haust",
-      "normalized": "/aktuelt/to-ledige-stillingar-i-haust",
-      "sourceFile": "sanity/seed/migratedContent.ndjson",
-      "line": 76,
-      "status": "ok",
-      "notes": "Internal route exists."
     },
     {
       "href": "/assets/fresvik/images/old-site/prod8.jpg",

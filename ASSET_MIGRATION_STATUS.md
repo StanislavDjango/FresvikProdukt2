@@ -10,19 +10,19 @@ Generated from local migration cache and source data.
 | Images | 402 |
 | PDFs/documents | 30 |
 | Other assets | 0 |
-| Used assets | 371 |
-| Unused assets | 47 |
+| Used assets | 372 |
+| Unused assets | 46 |
 | Missing assets | 0 |
 | Duplicate assets | 0 |
 | Ready for Sanity | 0 |
-| Uploaded to Sanity | 385 |
+| Uploaded to Sanity | 386 |
 | Failed or needs review | 0 |
 | TODO original URLs | 11 |
 
 ## Status Counts
 
-- `unused`: 47
-- `uploaded-to-sanity`: 385
+- `unused`: 46
+- `uploaded-to-sanity`: 386
 
 ## Local Path Usage
 

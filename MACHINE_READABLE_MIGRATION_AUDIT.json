@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-15T18:42:19.939Z",
+    "generatedAt": "2026-07-15T19:06:36.481Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -10177,6 +10177,38 @@
       "notes": "Local migration asset exists."
     },
     {
+      "href": "/assets/fresvik/images/old-site/fresvik-produkt-5-0db0e30bd6.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/fresvik-produkt-5-0db0e30bd6.jpeg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 52,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/assets/fresvik/images/old-site/fresvik-produkt-6-b5c511d49c.jpeg",
+      "normalized": "/assets/fresvik/images/old-site/fresvik-produkt-6-b5c511d49c.jpeg",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 52,
+      "status": "asset-ok",
+      "notes": "Local migration asset exists."
+    },
+    {
+      "href": "/aktuelt/john-bothun-blir-pensjonist",
+      "normalized": "/aktuelt/john-bothun-blir-pensjonist",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 52,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
+      "href": "/aktuelt/agnar-er-snart-pensjonistnbsp",
+      "normalized": "/aktuelt/agnar-er-snart-pensjonistnbsp",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 52,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
       "href": "/assets/fresvik/images/migrated/image-asset-15.jpeg",
       "normalized": "/assets/fresvik/images/migrated/image-asset-15.jpeg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
@@ -10281,14 +10313,6 @@
       "notes": "Local migration asset exists."
     },
     {
-      "href": "/aktuelt/john-bothun-blir-pensjonist",
-      "normalized": "/aktuelt/john-bothun-blir-pensjonist",
-      "sourceFile": "sanity/seed/migratedContent.ndjson",
-      "line": 66,
-      "status": "ok",
-      "notes": "Internal route exists."
-    },
-    {
       "href": "/assets/fresvik/images/migrated/k6r3776-07032013.jpg",
       "normalized": "/assets/fresvik/images/migrated/k6r3776-07032013.jpg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
@@ -10375,14 +10399,6 @@
       "line": 76,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/aktuelt/agnar-er-snart-pensjonistnbsp",
-      "normalized": "/aktuelt/agnar-er-snart-pensjonistnbsp",
-      "sourceFile": "sanity/seed/migratedContent.ndjson",
-      "line": 76,
-      "status": "ok",
-      "notes": "Internal route exists."
     },
     {
       "href": "/assets/fresvik/images/old-site/Agnar3.jpeg",

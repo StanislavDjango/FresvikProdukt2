@@ -7192,30 +7192,50 @@
     "localPath": "/assets/fresvik/images/old-site/fresvik-produkt-5-0db0e30bd6.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/fresvik-produkt-5-0db0e30bd6.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/aktuelt/ein-investering-for-henga-med-i-tidanbsp"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt/ein-investering-for-henga-med-i-tidanbsp"
+    ],
     "sha256": "b9a6f53a2fe42b291a03b41e0d544e1b226efb29f9580671cebb25def61ec6d7",
     "fileSize": 673524,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-26582173db7e6bf54bb47b694e91e920a420c50b-2500x1667-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-26582173db7e6bf54bb47b694e91e920a420c50b-2500x1667-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity for automation news article gallery image."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/fc80740a-a426-451d-ac44-f30862c90003/Fresvik+Produkt-6.jpeg",
     "localPath": "/assets/fresvik/images/old-site/fresvik-produkt-6-b5c511d49c.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/fresvik-produkt-6-b5c511d49c.jpeg",
     "assetType": "image",
-    "usedBy": [],
-    "sourcePages": [],
+    "usedBy": [
+      "/aktuelt/ein-investering-for-henga-med-i-tidanbsp"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt/ein-investering-for-henga-med-i-tidanbsp"
+    ],
     "sha256": "234e84b86cdf91511b5b8aca5fd2775248437f8fdf6369d428c009deefbd7d0f",
     "fileSize": 532132,
-    "sanityAssetId": null,
-    "sanityReference": null,
-    "status": "unused",
+    "sanityAssetId": "image-0dd39a7d3d260f3ac1a0e691fa2e76c31438fbe4-2500x1667-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-0dd39a7d3d260f3ac1a0e691fa2e76c31438fbe4-2500x1667-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Unused local migration cache file; keep until asset review is complete."
+    "notes": "Unused local migration cache file; keep until asset review is complete. Uploaded to Sanity for automation news article gallery image."
   },
   {
     "originalUrl": "TODO: unknown original URL",

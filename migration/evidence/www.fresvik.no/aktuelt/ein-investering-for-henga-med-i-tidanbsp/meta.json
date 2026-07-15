@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
+  "finalUrl": "https://www.fresvik.no/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
+  "fetchedAt": "2026-07-15T18:50:33.160Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Ein investering for å henga med i tida — Fresvik Produkt",
+  "metaDescription": "Etter sommarferien i år kunne vi spent ta i bruk roboten, og det vi kallar “kaos-lager”, der elementa vert lagra.",
+  "counts": {
+    "headings": 9,
+    "textBlocks": 26,
+    "links": 95,
+    "images": 40,
+    "documents": 2
+  }
+}

@@ -414,6 +414,40 @@ const newsArticleOverrides = new Map([
       },
     },
   ],
+  [
+    "/aktuelt/ein-investering-for-henga-med-i-tidanbsp",
+    {
+      imageAlt: "Automatisering av pakkinga i produksjonen.",
+      extraCards: [
+        {
+          _key: "news-article-image-1",
+          _type: "migrationCard",
+          title: "Bilde frå artikkelen",
+          text: "Foto frå den gamle artikkelen.",
+          imageAlt: "Bilde frå artikkelen om automatisering i produksjonen.",
+          migratedImagePath:
+            "/assets/fresvik/images/old-site/fresvik-produkt-5-0db0e30bd6.jpeg",
+        },
+        {
+          _key: "news-article-image-2",
+          _type: "migrationCard",
+          title: "Bilde frå artikkelen",
+          text: "Foto frå den gamle artikkelen.",
+          imageAlt: "Bilde frå artikkelen om automatisering i produksjonen.",
+          migratedImagePath:
+            "/assets/fresvik/images/old-site/fresvik-produkt-6-b5c511d49c.jpeg",
+        },
+      ],
+      previous: {
+        title: "John Bøthun blir pensjonist",
+        href: "/aktuelt/john-bothun-blir-pensjonist",
+      },
+      next: {
+        title: "Agnar er snart pensjonist",
+        href: "/aktuelt/agnar-er-snart-pensjonistnbsp",
+      },
+    },
+  ],
 ]);
 
 function newsMigrationSections(item, extract, bodyText, override) {

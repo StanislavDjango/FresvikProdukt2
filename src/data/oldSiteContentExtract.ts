@@ -107,7 +107,9 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "description": "Utforsk oppdaterte nyheter og relevante tjenester fra Fresvik Produkt, inkludert produktnyheter, teamoppdateringer og miljøsertifiseringer.",
     "publishedAt": "",
     "modifiedAt": "",
-    "bodyParagraphs": [],
+    "bodyParagraphs": [
+      "Me ser etter reinhaldar og produksjonsmedarbeidar."
+    ],
     "imageUrls": [],
     "documentUrls": [
       "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
@@ -1803,7 +1805,9 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
     "description": "Me ser etter reinhaldar og produksjonsmedarbeidar.",
     "publishedAt": "2023-10-25T09:04:38+0200",
     "modifiedAt": "2023-12-20T08:32:32+0100",
-    "bodyParagraphs": [],
+    "bodyParagraphs": [
+      "Me ser etter reinhaldar og produksjonsmedarbeidar."
+    ],
     "imageUrls": [],
     "documentUrls": [
       "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",

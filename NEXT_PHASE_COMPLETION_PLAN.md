@@ -204,7 +204,7 @@
 
 - [x] `/aktuelt/ein-investering-for-henga-med-i-tidanbsp`
 - [x] `/aktuelt/agnar-er-snart-pensjonistnbsp`
-- [ ] `/aktuelt/to-ledige-stillingar-i-haust`
+- [x] `/aktuelt/to-ledige-stillingar-i-haust`
 - [ ] `/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv`
 - [ ] `/aktuelt/vi-er-blitt-sertifisert-miljofyrtarn`
 - [ ] `/aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt`

@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-15T19:26:31.658Z",
+    "generatedAt": "2026-07-15T19:43:37.609Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -721,8 +721,8 @@
       "hasFullBody": false,
       "hasImages": false,
       "hasDocuments": false,
-      "hasInternalLinks": false,
-      "hasExternalLinks": false,
+      "hasInternalLinks": true,
+      "hasExternalLinks": true,
       "oldImageCount": 0,
       "localImageCount": 0,
       "recoveryStatus": "unrecoverable-from-checked-sources",
@@ -10369,6 +10369,14 @@
       "notes": "Local migration asset exists."
     },
     {
+      "href": "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
+      "normalized": "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 73,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
       "href": "/assets/fresvik/images/migrated/tomas-kruvelis-20180315-121307.jpg",
       "normalized": "/assets/fresvik/images/migrated/tomas-kruvelis-20180315-121307.jpg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
@@ -10431,14 +10439,6 @@
       "line": 76,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
-      "normalized": "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
-      "sourceFile": "sanity/seed/migratedContent.ndjson",
-      "line": 76,
-      "status": "ok",
-      "notes": "Internal route exists."
     },
     {
       "href": "/assets/fresvik/images/old-site/Fresvik+Toppledere+sogn.no.jpeg",

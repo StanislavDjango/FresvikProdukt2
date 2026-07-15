@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-15T19:26:34.042Z",
+    "generatedAt": "2026-07-15T19:43:40.000Z",
     "routeCount": 107,
     "statusCounts": {
       "partial": 1,
@@ -1123,7 +1123,7 @@
       "oldParagraphCount": 0,
       "matchedParagraphCount": 0,
       "textCoverage": 0,
-      "oldWordCount": 0,
+      "oldWordCount": 6,
       "localWordCount": 2647,
       "oldImageCount": 0,
       "localImageCount": 32,
@@ -2035,8 +2035,8 @@
       "oldParagraphCount": 0,
       "matchedParagraphCount": 0,
       "textCoverage": 0,
-      "oldWordCount": 0,
-      "localWordCount": 115,
+      "oldWordCount": 6,
+      "localWordCount": 134,
       "oldImageCount": 0,
       "localImageCount": 0,
       "oldDocumentCount": 0,

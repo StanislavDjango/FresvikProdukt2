@@ -473,6 +473,32 @@ const newsArticleOverrides = new Map([
       },
     },
   ],
+  [
+    "/aktuelt/to-ledige-stillingar-i-haust",
+    {
+      title: "Ledige stillingar",
+      recoveryNote:
+        "Live old HTML contains no detailed job article body beyond the page title, date and short excerpt.",
+      extraCards: [
+        {
+          _key: "news-article-author-gasta",
+          _type: "migrationCard",
+          title: "Gasta Design",
+          text:
+            "Vi skaper lønnsame nettsider basert på Squarespace, og utviklar gjerne din visuelle identitet eller hjelper deg med digital markedsføring.",
+          href: "https://www.gasta.no/",
+        },
+      ],
+      previous: {
+        title: "Agnar er snart pensjonist",
+        href: "/aktuelt/agnar-er-snart-pensjonistnbsp",
+      },
+      next: {
+        title: "Fresvik – ein god jobb og eit godt liv",
+        href: "/aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv",
+      },
+    },
+  ],
 ]);
 
 function newsMigrationSections(item, extract, bodyText, override) {
@@ -497,7 +523,7 @@ function newsMigrationSections(item, extract, bodyText, override) {
         {
           _key: "news-article-main-text",
           _type: "migrationCard",
-          title: item.title,
+          title: override.title || item.title,
           text: bodyText || override.recoveryNote || "",
           meta: override.imageAlt,
           imageAlt: override.imageAlt,
@@ -565,7 +591,7 @@ oldSiteNews.forEach((item) => {
   add({
     _id: slugId("newsArticle", item.href),
     _type: "newsArticle",
-    title: item.title,
+    title: override?.title || item.title,
     slug: { _type: "slug", current: slugCurrent(item.href) },
     date: extract?.publishedAt?.slice(0, 10) || item.lastmod,
     excerpt:
@@ -573,7 +599,7 @@ oldSiteNews.forEach((item) => {
         ? override?.recoveryNote || extract.description
         : extract?.description || newsByHref.get(item.href),
     body: blocks(bodyText),
-    seoTitle: item.title,
+    seoTitle: override?.title || item.title,
     seoDescription:
       extract?.extractionStatus === "unrecoverable"
         ? override?.recoveryNote || extract.description

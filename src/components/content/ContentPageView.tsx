@@ -32,6 +32,13 @@ function isPdfHref(href: string) {
   return /\.pdf($|\?)/i.test(href);
 }
 
+const technicalMigrationSectionTitles = new Set([
+  "Full tekst frå gammal side",
+  "Bilde frå gammal side",
+  "Dokumentlenker frå gammal side",
+  "Lenker frå gammal side",
+]);
+
 function certificationFallbackHref(title: string) {
   const normalizedTitle = title.toLowerCase();
 
@@ -83,6 +90,337 @@ function CardLink({ href, label }: { href: string; label: string }) {
     <Link href={href} className={className}>
       {label} <ArrowRight aria-hidden="true" size={17} />
     </Link>
+  );
+}
+
+function CompanyOverviewSection({
+  section,
+  sectionIndex,
+}: {
+  section: ContentPage["sections"][number];
+  sectionIndex: number;
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12 lg:py-14">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {section.items.map((item, itemIndex) => (
+            <Link
+              key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
+              href={item.href || "/om-oss"}
+              className="group flex min-h-48 flex-col rounded-[8px] border border-slate-200 bg-slate-50 p-5 shadow-sm shadow-slate-950/[0.03] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-xl hover:shadow-slate-950/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+            >
+              <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-800">
+                Fresvik Produkt
+              </p>
+              <h2 className="mt-4 text-xl font-semibold text-slate-950">
+                {item.title}
+              </h2>
+              <p className="mt-3 grow text-sm leading-6 text-slate-600">
+                {item.text}
+              </p>
+              <span className="mt-5 inline-flex items-center gap-2 self-end text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
+                Opne <ArrowRight aria-hidden="true" size={17} />
+              </span>
+            </Link>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function CompanyInfoSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const imageItem = section.items.find((item) => item.imageUrl);
+  const textItems = section.items.filter((item) => item !== imageItem);
+  const intro = section.intro?.toLowerCase().includes("gammal")
+    ? "Nøkkelopplysningar om Fresvik Produkt og produksjonen i Fresvik."
+    : section.intro;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="grid gap-8 py-12 lg:grid-cols-[0.88fr_1.12fr] lg:items-start lg:py-16">
+        <div>
+          <SectionHeader
+            eyebrow="Selskapsinformasjon"
+            title="Norsk produsent i Fresvik"
+            intro={intro}
+          />
+          {imageItem?.imageUrl ? (
+            <div className="relative mt-7 overflow-hidden rounded-[8px] border border-slate-200 bg-slate-100 shadow-sm shadow-slate-950/[0.04]">
+              <Image
+                src={imageItem.imageUrl}
+                alt={imageItem.imageAlt || imageItem.title}
+                width={820}
+                height={520}
+                className="h-72 w-full object-cover object-center"
+              />
+            </div>
+          ) : null}
+        </div>
+        <div className="grid gap-4">
+          {textItems.map((item, itemIndex) => (
+            <article
+              key={contentCardKey(item, itemIndex, section.title)}
+              className="rounded-[8px] border border-slate-200 bg-slate-50 p-5"
+            >
+              <h3 className="text-lg font-semibold text-slate-950">
+                {item.title}
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-700">
+                {item.text}
+              </p>
+            </article>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function EmployeeGridSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const intro =
+    section.intro?.toLowerCase().includes("gammal") ||
+    section.intro?.toLowerCase().includes("persondata")
+      ? "Finn rett kontaktperson for sal, teknisk avklaring, logistikk og administrasjon."
+      : section.intro || "Finn rett kontaktperson hos Fresvik Produkt.";
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12 lg:py-16">
+        <SectionHeader
+          eyebrow="Kontaktpersonar"
+          title="Tilsette"
+          intro={intro}
+        />
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          {section.items.map((item, itemIndex) => {
+            const parts = item.text.split("|").map((part) => part.trim()).filter(Boolean);
+            const role = parts[0] || item.text;
+            const location = parts[1];
+            const phone = parts.find((part) => /\d/.test(part));
+            const email = parts.find((part) => part.includes("@"));
+
+            return (
+              <article
+                key={contentCardKey(item, itemIndex, section.title)}
+                className="group overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]"
+              >
+                {item.imageUrl ? (
+                  <div className="relative h-64 bg-slate-100">
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.imageAlt || item.title}
+                      fill
+                      sizes="(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-cover object-top transition duration-500 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                ) : null}
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold leading-snug text-slate-950">
+                    {item.title}
+                  </h3>
+                  <p className="mt-1 text-sm font-medium text-cyan-800">
+                    {role}
+                  </p>
+                  {location ? (
+                    <p className="mt-2 text-sm text-slate-500">{location}</p>
+                  ) : null}
+                  <div className="mt-5 grid gap-2 text-sm font-semibold text-slate-700">
+                    {phone ? (
+                      <a
+                        href={`tel:${phone.replace(/\s/g, "")}`}
+                        className="hover:text-cyan-800"
+                      >
+                        {phone}
+                      </a>
+                    ) : null}
+                    {email ? (
+                      <a
+                        href={`mailto:${email}`}
+                        className="break-all hover:text-cyan-800"
+                      >
+                        {email}
+                      </a>
+                    ) : null}
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function JobOpeningSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const [introItem, mainItem, ...details] = section.items;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12 lg:py-16">
+        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div className="overflow-hidden rounded-[8px] border border-slate-200 bg-slate-950 text-white shadow-xl shadow-slate-950/10">
+            {introItem?.imageUrl ? (
+              <Image
+                src={introItem.imageUrl}
+                alt={introItem.imageAlt || introItem.title}
+                width={900}
+                height={580}
+                className="h-72 w-full object-cover object-center opacity-90"
+              />
+            ) : null}
+            <div className="p-6 sm:p-8">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
+                Karriere
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-normal">
+                {mainItem?.title || introItem?.title || section.title}
+              </h2>
+              <p className="mt-4 text-base leading-8 text-slate-300">
+                {mainItem?.text || introItem?.text}
+              </p>
+            </div>
+          </div>
+          <div className="grid gap-4">
+            {details.map((item, itemIndex) => (
+              <article
+                key={contentCardKey(item, itemIndex, section.title)}
+                className="rounded-[8px] border border-slate-200 bg-slate-50 p-5"
+              >
+                <h3 className="text-lg font-semibold text-slate-950">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-700">
+                  {item.text}
+                </p>
+                {item.href ? <CardLink href={item.href} label="Opne" /> : null}
+              </article>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function LegalTextSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const title =
+    section.title === "Personverntekst frå gammal side"
+      ? "Personverntekst"
+      : section.title === "Tekst frå gammal Openheitslova-side"
+        ? "Openheitslova"
+        : section.title;
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12 lg:py-16">
+        <div className="mx-auto max-w-5xl">
+          <SectionHeader
+            eyebrow="Juridisk informasjon"
+            title={title}
+            intro={section.intro}
+          />
+          <div className="mt-8 grid gap-3">
+            {section.items.map((item, itemIndex) => (
+              <article
+                key={contentCardKey(item, itemIndex, section.title)}
+                className="rounded-[8px] border border-slate-200 bg-slate-50 p-5"
+              >
+                <h2 className="text-lg font-semibold text-slate-950">
+                  {item.title}
+                </h2>
+                <p className="mt-3 whitespace-pre-line text-sm leading-7 text-slate-700">
+                  {item.text}
+                </p>
+                {item.href ? <CardLink href={item.href} label="Opne" /> : null}
+              </article>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+function LegalDocumentsSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-12 lg:py-16">
+        <SectionHeader
+          eyebrow="Dokument"
+          title={section.title}
+          intro={section.intro}
+        />
+        <div className="mt-8 grid gap-3 md:grid-cols-2">
+          {section.items.map((item, itemIndex) => {
+            const href = item.href || "/openheitslova";
+            const isExternal = isExternalHref(href) || isPdfHref(href);
+            const className =
+              "group flex min-h-20 items-center justify-between gap-4 rounded-[8px] border border-slate-200 bg-white p-4 shadow-sm shadow-slate-950/[0.03] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.07]";
+            const content = (
+              <>
+                <span>
+                  <span className="block font-semibold text-slate-950">
+                    {item.title}
+                  </span>
+                  <span className="mt-1 block text-sm leading-6 text-slate-600">
+                    {item.text}
+                  </span>
+                </span>
+                <ExternalLink
+                  aria-hidden="true"
+                  size={18}
+                  className="shrink-0 text-cyan-800 transition group-hover:translate-x-0.5"
+                />
+              </>
+            );
+
+            return isExternal ? (
+              <a
+                key={contentCardKey(item, itemIndex, section.title)}
+                href={href}
+                className={className}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel={href.startsWith("http") ? "noreferrer" : undefined}
+              >
+                {content}
+              </a>
+            ) : (
+              <Link
+                key={contentCardKey(item, itemIndex, section.title)}
+                href={href}
+                className={className}
+              >
+                {content}
+              </Link>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
   );
 }
 
@@ -2772,6 +3110,15 @@ function ContentSections({
   const isNewsIndexPage = pageSlug === "/aktuelt";
   const isProductIndexPage = pageSlug === "/produkt";
   const isTransportDamagePage = pageSlug === "/transportskade";
+  const isCompanyOverviewPage = pageSlug === "/om-oss";
+  const isFirmainfoPage = pageSlug === "/firmainfo";
+  const isEmployeesPage = pageSlug === "/tilsette";
+  const isJobPage = pageSlug === "/stillingledig";
+  const isPrivacyPage = pageSlug === "/personvernerklering";
+  const isTransparencyPage = pageSlug === "/openheitslova";
+  const isLegalPage = isPrivacyPage || isTransparencyPage;
+  const isCompanyUtilityPage =
+    isCompanyOverviewPage || isFirmainfoPage || isEmployeesPage || isJobPage;
   const isStyledServicePage =
     isServiceIndexPage ||
     isMontasjeServicePage ||
@@ -2813,9 +3160,18 @@ function ContentSections({
     isAccessoryPage ||
     isStyledServicePage ||
     isReferenceIndexPage ||
-    isNewsIndexPage
+    isNewsIndexPage ||
+    isCompanyUtilityPage ||
+    isLegalPage
       ? sections.filter(
           (section) =>
+            !(
+              (isCompanyUtilityPage || isLegalPage) &&
+              (section.title === "Kontakt" ||
+                section.title === "Dokumentasjon og sertifikat" ||
+                section.title === "Motta nyheitsbrev" ||
+                technicalMigrationSectionTitles.has(section.title))
+            ) &&
             !(
               isPirPage &&
               section.title === "Produktfordelar frå gammal side"
@@ -2911,6 +3267,75 @@ function ContentSections({
       : sections;
 
   return visibleSections.map((section, sectionIndex) => {
+    if (isCompanyOverviewPage && section.title === "Vidare informasjon") {
+      return (
+        <CompanyOverviewSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+          sectionIndex={sectionIndex}
+        />
+      );
+    }
+
+    if (isFirmainfoPage && section.title === "Om Fresvik Produkt") {
+      return (
+        <CompanyInfoSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (
+      isEmployeesPage &&
+      (section.title === "Tilsette frå Sanity" ||
+        section.title === "Kontaktpersonar")
+    ) {
+      return (
+        <EmployeeGridSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (
+      isJobPage &&
+      (section.title === "Ledig stilling" ||
+        section.title === "Ledig stilling frå gammal side")
+    ) {
+      return (
+        <JobOpeningSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (
+      isLegalPage &&
+      (section.title === "Personverntekst" ||
+        section.title === "Personverntekst frå gammal side" ||
+        section.title === "Tekst frå gammal Openheitslova-side" ||
+        section.title === "Openheitslova")
+    ) {
+      return (
+        <LegalTextSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
+    if (isLegalPage && section.title === "Dokument og eksterne kjelder") {
+      return (
+        <LegalDocumentsSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
+    }
+
     if (
       isNewsIndexPage &&
       (section.title === "Aktuelt" || section.title === "Nyheiter frå Sanity")
@@ -4098,7 +4523,10 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
   const isAccessoryPage = page.slug.startsWith("/andre-produkter/");
   const isReferenceDetailPage =
     page.slug.startsWith("/referansar/") && page.slug !== "/referansar";
+  const isCompanyOrLegalPage =
+    page.pageType === "company" || page.pageType === "legal";
   const suppressTopCards =
+    isCompanyOrLegalPage ||
     page.slug === "/produkt/fresvik-pir-panel" ||
     page.slug === "/produkt/fresvik-pur-panel" ||
     page.slug === "/produkt/kjole-fryseportar" ||

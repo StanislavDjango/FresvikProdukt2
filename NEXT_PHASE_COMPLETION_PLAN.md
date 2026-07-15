@@ -228,13 +228,16 @@
 
 ## Очередь 7: Om Oss, Kontakt, Legal
 
-- [ ] `/om-oss`
-- [ ] `/firmainfo`
-- [ ] `/tilsette`
-- [ ] `/stillingledig`
-- [ ] `/kontakt`
-- [ ] `/personvernerklering`
-- [ ] `/openheitslova`
+- [x] `/om-oss`
+- [x] `/firmainfo`
+- [x] `/tilsette`
+- [x] `/stillingledig`
+- [x] `/kontakt`
+- [x] `/personvernerklering`
+- [x] `/openheitslova`
+
+Статус: закрыто пачкой. Служебные migration-секции скрыты из runtime, `/kontakt`
+очищен от дублирующих блоков, legal pages оставлены без переписывания текста.
 
 Фокус:
 

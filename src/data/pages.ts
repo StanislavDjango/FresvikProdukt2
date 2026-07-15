@@ -3731,13 +3731,12 @@ export const contentPages: ContentPage[] = [
     title: "Om Fresvik Produkt",
     eyebrow: "Selskapet",
     intro:
-      "Ein moderne inngang til firmainfo, tilsette, nyheiter og kontaktpunkt.",
+      "Fresvik Produkt samlar norsk produksjon, fagfolk og dokumenterte løysingar for kjøle- og fryserom.",
     description: "Om Fresvik Produkt, firmaet, menneska og aktuelle saker.",
     pageType: "company",
     priority: "medium",
     cards: companyCards,
     sections: [{ title: "Vidare informasjon", items: companyCards }],
-    todo: ["Migrer endeleg selskapsforteljing frå gammal nettstad."],
   },
   {
     slug: "/firmainfo",
@@ -3754,7 +3753,7 @@ export const contentPages: ContentPage[] = [
       {
         title: "Om Fresvik Produkt",
         intro:
-          "Teksten er henta frå gammal firmainfo-side og skal seinare inn i Sanity som redigerbart innhald.",
+          "Nøkkelopplysningar om Fresvik Produkt og produksjonen i Fresvik.",
         items: [
           {
             title: "Om Fresvik Produkt",
@@ -3804,7 +3803,7 @@ export const contentPages: ContentPage[] = [
     title: "Tilsette",
     eyebrow: "Kontaktpersonar",
     intro:
-      "Kontaktpersonar frå gammal tilsette-side er samla her med rolle, telefon, e-post og bilete der kjelda hadde dette.",
+      "Kontaktpersonar og fagfolk hos Fresvik Produkt, samla med rolle, telefon og e-post.",
     description: "Tilsette og kontaktpersonar hos Fresvik Produkt.",
     pageType: "company",
     priority: "medium",
@@ -3814,7 +3813,7 @@ export const contentPages: ContentPage[] = [
       {
         title: "Kontaktpersonar",
         intro:
-          "Dette er persondata frå gammal offentleg side. Før endeleg lansering bør rekkefølgje og samtykke/personvern rutine sjekkast.",
+          "Finn rett kontaktperson for sal, teknisk avklaring, logistikk og administrasjon.",
         items: employeeCards,
       },
       {
@@ -3898,7 +3897,7 @@ export const contentPages: ContentPage[] = [
     ],
     sections: [
       {
-        title: "Ledig stilling frå gammal side",
+        title: "Ledig stilling",
         items: [
           {
             title: "Jobbe med oss?",
@@ -3977,7 +3976,7 @@ export const contentPages: ContentPage[] = [
     cards: [],
     sections: [
       {
-        title: "Personverntekst frå gammal side",
+        title: "Personverntekst",
         items: [
           {
             title: "1. Om Fresvik Produkt AS",
@@ -4072,7 +4071,7 @@ export const contentPages: ContentPage[] = [
     cards: legalDocumentCards,
     sections: [
       {
-        title: "Tekst frå gammal Openheitslova-side",
+        title: "Openheitslova",
         items: [
           {
             title: "Openheitslova",

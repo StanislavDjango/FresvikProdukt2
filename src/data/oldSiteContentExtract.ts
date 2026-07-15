@@ -178,6 +178,37 @@ export const oldSiteContentExtracts: Record<string, OldSiteContentExtract> = {
       "No reliable body content was found in live old HTML; title/meta description only."
     ]
   },
+  "/aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026": {
+    "href": "/aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026",
+    "sourceUrl": "https://www.fresvik.no/aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026",
+    "title": "Ledig stilling: Seljar - arbeidsstad Fresvik",
+    "description": "Live old HTML contains title, date, author, next link and article image, but no reliable article body content.",
+    "publishedAt": "2026-07-10T09:32:54+0200",
+    "modifiedAt": "2026-07-10T09:32:57+0200",
+    "bodyParagraphs": [],
+    "imageUrls": [
+      "/assets/fresvik/images/old-site/fresvik-produkt-utv-3.webp"
+    ],
+    "documentUrls": [
+      "https://www.fresvik.no/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+      "https://www.fresvik.no/s/PUR-ce-merke.pdf"
+    ],
+    "internalLinks": [
+      "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+      "/s/Sentral-Godkjenning-Fresvik-Produkt.pdf",
+      "/s/PUR-ce-merke.pdf"
+    ],
+    "externalLinks": [
+      "https://www.gasta.no/",
+      "https://www.sintefcertification.no/Product/Index/129",
+      "https://rapportering.miljofyrtarn.no/stats/176324"
+    ],
+    "extractionStatus": "unrecoverable",
+    "notes": [
+      "Live old HTML re-crawled on 2026-07-15. The article route returns 200 and structured data preserves title, publish date, author and image, but the visible article body is empty.",
+      "Do not invent job advert text. Keep route as needs-review/unrecoverable until a Squarespace backup or external archive provides the missing body."
+    ]
+  },
   "/aktuelt/40-aars-jubileum": {
     "href": "/aktuelt/40-aars-jubileum",
     "sourceUrl": "https://www.fresvik.no/aktuelt/40-aars-jubileum",

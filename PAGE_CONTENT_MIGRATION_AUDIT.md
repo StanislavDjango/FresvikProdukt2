@@ -1,6 +1,6 @@
 # Page Content Migration Audit
 
-Generated: 2026-07-13T21:36:37.025Z
+Generated: 2026-07-15T18:02:00.084Z
 
 This report is stricter than route coverage. A route is not considered content-migrated unless old HTML evidence, body text, images, documents and links are represented in the local migration data.
 
@@ -45,7 +45,7 @@ Next batch: `products`
 | products | /andre-produkter/pego-innestengningsalarm | needs-review | No old HTML extract is available. |
 | products | /andre-produkter/pvc-gardiner | needs-review | No old HTML extract is available. |
 | products | /andre-produkter/standard-handtak | needs-review | No old HTML extract is available. |
-| news | /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | needs-review | No old HTML extract is available. |
+| news | /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | needs-review | Old HTML extraction failed or produced no reliable body. |
 
 ## Page Evidence Coverage
 
@@ -86,7 +86,7 @@ Next batch: `products`
 | services-documents | /tenester/leveranse | migrated | 3/3 | 11/2 | 2/0 | 39/35 | Strict content evidence is covered. |
 | services-documents | /tenester/montasje | migrated | 3/3 | 11/2 | 2/0 | 43/35 | Strict content evidence is covered. |
 | services-documents | /tenester/service-reservedeler | migrated | 2/2 | 9/1 | 2/0 | 39/35 | Strict content evidence is covered. |
-| news | /aktuelt | migrated | 0/0 | 31/0 | 2/0 | 49/56 | Structured index/list page: old body text was not extractable, but list links/images are covered. |
+| news | /aktuelt | migrated | 0/0 | 32/0 | 2/0 | 50/56 | Structured index/list page: old body text was not extractable, but list links/images are covered. |
 | news | /aktuelt/40-aars-jubileum | migrated | 3/3 | 4/4 | 2/0 | 26/37 | Strict content evidence is covered. |
 | news | /aktuelt/agnar-er-snart-pensjonistnbsp | migrated | 15/15 | 2/2 | 2/0 | 26/37 | Strict content evidence is covered. |
 | news | /aktuelt/arne-olav-ny-salskonsulent | migrated | 5/5 | 1/1 | 2/0 | 26/37 | Strict content evidence is covered. |
@@ -107,7 +107,7 @@ Next batch: `products`
 | news | /aktuelt/skjererom | migrated | 2/2 | 6/6 | 2/0 | 26/44 | Strict content evidence is covered. |
 | news | /aktuelt/tomas-kruvellis-vaar-nye-mann | migrated | 7/7 | 1/1 | 2/0 | 26/37 | Strict content evidence is covered. |
 | news | /aktuelt/vi-er-blitt-sertifisert-miljofyrtarn | migrated | 7/7 | 1/1 | 2/0 | 26/37 | Strict content evidence is covered. |
-| news | /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | needs-review | 0/0 | 0/0 | 0/0 | 0/0 | No old HTML extract is available. |
+| news | /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | needs-review | 0/0 | 1/1 | 0/0 | 1/6 | Old HTML extraction failed or produced no reliable body. |
 | news | /aktuelt/fasadeprosjekt-for-celsa-steel-service-sotra | unrecoverable | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | news | /aktuelt/fresvik-ein-god-jobb-og-eit-godt-liv | unrecoverable | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | news | /aktuelt/fryse-og-kjlerom-til-sogn-frukt-og-grnt | unrecoverable | 0/0 | 0/0 | 0/0 | 0/37 | Old HTML extraction failed or produced no reliable body. Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |

@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026",
+  "finalUrl": "https://www.fresvik.no/aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026",
+  "fetchedAt": "2026-07-15T17:43:39.437Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Ledig stilling: Seljar - arbeidsstad Fresvik — Fresvik Produkt",
+  "metaDescription": "",
+  "counts": {
+    "headings": 8,
+    "textBlocks": 20,
+    "links": 95,
+    "images": 17,
+    "documents": 2
+  }
+}

@@ -26,6 +26,20 @@ export const newsArticle = defineType({
       type: "array",
       of: [{ type: "block" }],
     }),
+    defineField({
+      name: "migrationCards",
+      title: "Migrated cards",
+      type: "array",
+      of: [{ type: "migrationCard" }],
+      description: "Exact news cards imported from the local migration source.",
+    }),
+    defineField({
+      name: "migrationSections",
+      title: "Migrated sections",
+      type: "array",
+      of: [{ type: "migrationSection" }],
+      description: "Exact news sections imported from the old site evidence.",
+    }),
     defineField({ name: "image", title: "Image", type: "image" }),
     defineField({
       name: "migratedImagePath",

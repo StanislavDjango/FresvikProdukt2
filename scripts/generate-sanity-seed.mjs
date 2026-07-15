@@ -325,23 +325,151 @@ const newsByHref = new Map(
     section.items.map((item) => [item.href, item.text]),
   ),
 );
+const newsArticleOverrides = new Map([
+  [
+    "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+    {
+      imageAlt: "Samaneh Shakeri, ny teknisk sjef i Fresvik Produkt.",
+      author: {
+        name: "Ingvild Hagen",
+        text:
+          "Ingvild er digital marknadsførar i Gasta design & kommunikasjon. Ho jobbar fast med mange av kundane våre, og er eksperten vår på digital annonsering.",
+        email: "ingvild@gasta.no",
+      },
+      previous: {
+        title: "Ledig stilling: Seljar - arbeidsstad Fresvik",
+        href: "/aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026",
+      },
+      next: {
+        title: "Ny teknisk teiknar på plass",
+        href: "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+      },
+    },
+  ],
+  [
+    "/aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026",
+    {
+      imageAlt: "Fresvik Produkt produksjonsmiljø.",
+      recoveryNote:
+        "Denne gamle nyheitssida er bevart som rute, men brødteksten er ikkje synleg i live HTML. Tittel, publiseringsdato, forfattar, bilde og neste-lenke er bevart frå gammal side.",
+      author: {
+        name: "Ingvild Hagen",
+        text:
+          "Ingvild er digital marknadsførar i Gasta design & kommunikasjon. Ho jobbar fast med mange av kundane våre, og er eksperten vår på digital annonsering.",
+        email: "ingvild@gasta.no",
+      },
+      next: {
+        title: "Møt vår nye tekniske sjef",
+        href: "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+      },
+    },
+  ],
+]);
+
+function newsMigrationSections(item, extract, bodyText, override) {
+  if (!override) return undefined;
+
+  const publishedAt = extract?.publishedAt
+    ? new Date(extract.publishedAt).toLocaleDateString("nn-NO", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      })
+    : item.lastmod;
+  const imagePath = extract?.imageUrls?.[0] || item.imageUrl;
+
+  return [
+    {
+      _key: "news-article-main",
+      _type: "migrationSection",
+      title: "Nyheit frå gammal side",
+      intro: `Publisert ${publishedAt}.`,
+      items: [
+        {
+          _key: "news-article-main-text",
+          _type: "migrationCard",
+          title: item.title,
+          text: bodyText || override.recoveryNote || "",
+          meta: override.imageAlt,
+          imageAlt: override.imageAlt,
+          migratedImagePath: imagePath,
+        },
+      ],
+    },
+    override.author
+      ? {
+          _key: "news-article-author",
+          _type: "migrationSection",
+          title: "Forfattar frå gammal side",
+          items: [
+            {
+              _key: "news-article-author-main",
+              _type: "migrationCard",
+              title: override.author.name,
+              text: override.author.text,
+              href: `mailto:${override.author.email}`,
+              meta: override.author.email,
+            },
+          ],
+        }
+      : undefined,
+    override.previous || override.next
+      ? {
+          _key: "news-article-links",
+          _type: "migrationSection",
+          title: "Navigasjon frå gammal side",
+          items: [
+            override.previous
+              ? {
+                  _key: "news-article-prev",
+                  _type: "migrationCard",
+                  title: override.previous.title,
+                  text: "Forrige nyheit frå gammal side.",
+                  href: override.previous.href,
+                }
+              : undefined,
+            override.next
+              ? {
+                  _key: "news-article-next",
+                  _type: "migrationCard",
+                  title: override.next.title,
+                  text: "Neste nyheit frå gammal side.",
+                  href: override.next.href,
+                }
+              : undefined,
+          ].filter(Boolean),
+        }
+      : undefined,
+  ].filter(Boolean);
+}
+
 oldSiteNews.forEach((item) => {
   const extract = getOldSiteContentExtract(item.href);
+  const override = newsArticleOverrides.get(item.href);
   const bodyText =
     extract?.bodyParagraphs?.length > 0
       ? extract.bodyParagraphs.join("\n")
-      : newsByHref.get(item.href) || "";
+      : extract?.extractionStatus === "unrecoverable"
+        ? override?.recoveryNote || extract.description || ""
+        : newsByHref.get(item.href) || "";
   add({
     _id: slugId("newsArticle", item.href),
     _type: "newsArticle",
     title: item.title,
     slug: { _type: "slug", current: slugCurrent(item.href) },
     date: extract?.publishedAt?.slice(0, 10) || item.lastmod,
-    excerpt: extract?.description || newsByHref.get(item.href),
+    excerpt:
+      extract?.extractionStatus === "unrecoverable"
+        ? override?.recoveryNote || extract.description
+        : extract?.description || newsByHref.get(item.href),
     body: blocks(bodyText),
     seoTitle: item.title,
-    seoDescription: extract?.description || newsByHref.get(item.href),
+    seoDescription:
+      extract?.extractionStatus === "unrecoverable"
+        ? override?.recoveryNote || extract.description
+        : extract?.description || newsByHref.get(item.href),
     migratedImagePath: extract?.imageUrls?.[0] || item.imageUrl,
+    migrationSections: newsMigrationSections(item, extract, bodyText, override),
     sourceUrl: extract?.sourceUrl || `https://www.fresvik.no${item.href}`,
   });
 });

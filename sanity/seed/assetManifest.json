@@ -7218,6 +7218,33 @@
     "notes": "Unused local migration cache file; keep until asset review is complete."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/old-site/fresvik-produkt-utv-3.webp",
+    "filePath": "public/assets/fresvik/images/old-site/fresvik-produkt-utv-3.webp",
+    "assetType": "image",
+    "usedBy": [
+      "/aktuelt",
+      "/aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/aktuelt",
+      "https://www.fresvik.no/aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026"
+    ],
+    "sha256": "fba9950bc9dc371531994fc1550e967e2216ad5a2397dae41c0e82b87209db53",
+    "fileSize": 296174,
+    "sanityAssetId": "image-41f2dc0f2591761322a100b96c13cccddcc239df-1500x844-webp",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-41f2dc0f2591761322a100b96c13cccddcc239df-1500x844-webp"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Uploaded to Sanity as image-41f2dc0f2591761322a100b96c13cccddcc239df-1500x844-webp."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1f77dd84-a862-4507-8ed4-f6c0e6c8e2e5/Fresvik+skyveport.jpeg",
     "localPath": "/assets/fresvik/images/old-site/fresvik-skyveport-cedbd2620d.jpeg",
     "filePath": "public/assets/fresvik/images/old-site/fresvik-skyveport-cedbd2620d.jpeg",

@@ -196,7 +196,7 @@
 
 Сначала 3 новости, которые видны на главной:
 
-- [ ] `/aktuelt/samaneh-shakeri-ny-teknisk-sjef`
+- [x] `/aktuelt/samaneh-shakeri-ny-teknisk-sjef`
 - [ ] `/aktuelt/ny-teknisk-teiknar-havard-berdal`
 - [ ] `/aktuelt/john-bothun-blir-pensjonist`
 

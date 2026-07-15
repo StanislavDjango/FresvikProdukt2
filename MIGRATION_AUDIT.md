@@ -1,6 +1,6 @@
 # Migration Audit
 
-Generated: 2026-07-13T21:36:34.594Z
+Generated: 2026-07-15T18:01:57.717Z
 
 ## Summary
 
@@ -13,13 +13,13 @@ Generated: 2026-07-13T21:36:34.594Z
 | Live sitemap unique image URLs | 276 |
 | Migrated page count | 81 |
 | Redirect count | 18 |
-| Partial count | 2 |
+| Partial count | 1 |
 | Missing count | 0 |
-| Needs-review count | 0 |
+| Needs-review count | 1 |
 | Unrecoverable unresolved | 0 |
 | Unrecoverable with evidence | 6 |
 | Inventory-only count | 0 |
-| Local image assets | 401 |
+| Local image assets | 402 |
 | Local document/PDF assets | 30 |
 | Asset originalUrls recovered in manifest | 421 |
 
@@ -52,7 +52,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | oldPath | newRoute | status | type | title | intro | body | images | docs | notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | / | / | partial | page | yes | yes | yes | 20/14 | yes | Homepage is checked section-by-section in HOMEPAGE_MIGRATION_AUDIT.md; one or more old sections are incomplete. |
-| /aktuelt | /aktuelt | page | news | yes | yes | yes | 31/0 | yes | Covered as migrated page in local data. |
+| /aktuelt | /aktuelt | page | news | yes | yes | yes | 32/0 | yes | Covered as migrated page in local data. |
 | /aktuelt/40-aars-jubileum | /aktuelt/40-aars-jubileum | page | news | yes | yes | yes | 4/4 | yes | Covered as migrated page in local data. |
 | /aktuelt/agnar-er-snart-pensjonistnbsp | /aktuelt/agnar-er-snart-pensjonistnbsp | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /aktuelt/arne-olav-ny-salskonsulent | /aktuelt/arne-olav-ny-salskonsulent | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
@@ -67,7 +67,7 @@ The project baseline in `src/data/legacyRoutes.ts` records 105 URLs and 325 imag
 | /aktuelt/innfesting-mot-golv | /aktuelt/innfesting-mot-golv | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
 | /aktuelt/john-bothun-blir-pensjonist | /aktuelt/john-bothun-blir-pensjonist | page | news | yes | yes | yes | 2/2 | yes | Covered as migrated page in local data. |
 | /aktuelt/jul-2020 | /aktuelt/jul-2020 | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
-| /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | partial | news | yes | yes | no | 0/0 | no | Strict audit: local content appears shorter than a full old detail page, lacks reliable extracted body evidence, documents, or not all sitemap images are represented. |
+| /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | needs-review | news | yes | yes | yes | 1/0 | no | Contains TODO/verification markers or unresolved migration text. |
 | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | /aktuelt/ledig-stilling-som-produksjonsmedarbeidar | unrecoverable-with-evidence | news | yes | yes | no | 0/0 | no | Documented external blocker: live old-site body is empty/unusable, no usable Wayback snapshot was found, and checked external hints did not recover full body. |
 | /aktuelt/montasje-prosjekt | /aktuelt/montasje-prosjekt | page | news | yes | yes | yes | 10/10 | yes | Covered as migrated page in local data. |
 | /aktuelt/ny-teknisk-teiknar-havard-berdal | /aktuelt/ny-teknisk-teiknar-havard-berdal | page | news | yes | yes | yes | 1/1 | yes | Covered as migrated page in local data. |
@@ -175,7 +175,7 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | --- | ---: |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Local migrated image assets | 401 |
+| Local migrated image assets | 402 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |
@@ -221,10 +221,10 @@ Any old news/reference detail with only a short migrated summary is marked `part
 
 | Metric | Count |
 | --- | ---: |
-| Internal link references | 774 |
-| OK routes | 253 |
+| Internal link references | 777 |
+| OK routes | 255 |
 | Redirect links | 20 |
-| Asset links OK | 501 |
+| Asset links OK | 502 |
 | Broken links | 0 |
 
 | href | sourceFile | status | notes |
@@ -232,23 +232,23 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | /referansar-list/fryse-og-kjolerom-til-sogn-frukt-og-gront | src/data/pages.ts:542 | redirect | Redirects to /referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront. |
 | /referansar-list/celsa-steel-sotra | src/data/pages.ts:547 | redirect | Redirects to /referansar/celsa-steel-sotra. |
 | /om-oss/fresvik-produkt | src/data/pages.ts:3705 | redirect | Redirects to /firmainfo. |
-| /s/Aktsemdvurderingar-2025.pdf | src/data/oldSiteInventory.ts:801 | redirect | Redirects to /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf. |
-| /s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | src/data/oldSiteInventory.ts:805 | redirect | Redirects to /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf. |
-| /s/2025-Utgreiing-signert.pdf | src/data/oldSiteInventory.ts:809 | redirect | Redirects to /assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf. |
-| /referansar-list/fryse-og-kjolerom-til-sogn-frukt-og-gront | sanity/seed/migratedContent.ndjson:75 | redirect | Redirects to /referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront. |
-| /referansar-list/celsa-steel-sotra | sanity/seed/migratedContent.ndjson:75 | redirect | Redirects to /referansar/celsa-steel-sotra. |
-| /s/Miljdokument-Fresvik-Produkt.pdf | sanity/seed/migratedContent.ndjson:76 | redirect | Redirects to /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf. |
-| /s/7060s-fnfz.pdf | sanity/seed/migratedContent.ndjson:76 | redirect | Redirects to /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf. |
-| /s/Fresvik-Fryserom-Montasjeanvisning.pdf | sanity/seed/migratedContent.ndjson:83 | redirect | Redirects to /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf. |
-| /s/Fresvik-Port-Montasjeanvisning.pdf | sanity/seed/migratedContent.ndjson:83 | redirect | Redirects to /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf. |
-| /s/Koblingsskjema-Fermod-5010.pdf | sanity/seed/migratedContent.ndjson:84 | redirect | Redirects to /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf. |
-| /s/Aktsemdvurderingar-2025.pdf | sanity/seed/migratedContent.ndjson:86 | redirect | Redirects to /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf. |
-| /s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | sanity/seed/migratedContent.ndjson:86 | redirect | Redirects to /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf. |
-| /s/2025-Utgreiing-signert.pdf | sanity/seed/migratedContent.ndjson:86 | redirect | Redirects to /assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf. |
-| /om-oss/fresvik-produkt | sanity/seed/migratedContent.ndjson:89 | redirect | Redirects to /firmainfo. |
-| /s/PIR.pdf | sanity/seed/migratedContent.ndjson:106 | redirect | Redirects to /assets/fresvik/documents/pir-panel.pdf. |
-| /s/PIR-ProduktbladFP.pdf | sanity/seed/migratedContent.ndjson:106 | redirect | Redirects to /assets/fresvik/documents/pir-panel.pdf. |
-| /kjlerom-fryserom-butikk/ | sanity/seed/migratedContent.ndjson:117 | redirect | Redirects to /kjolerom-fryserom-butikk. |
+| /s/Aktsemdvurderingar-2025.pdf | src/data/oldSiteInventory.ts:809 | redirect | Redirects to /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf. |
+| /s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | src/data/oldSiteInventory.ts:813 | redirect | Redirects to /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf. |
+| /s/2025-Utgreiing-signert.pdf | src/data/oldSiteInventory.ts:817 | redirect | Redirects to /assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf. |
+| /referansar-list/fryse-og-kjolerom-til-sogn-frukt-og-gront | sanity/seed/migratedContent.ndjson:76 | redirect | Redirects to /referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront. |
+| /referansar-list/celsa-steel-sotra | sanity/seed/migratedContent.ndjson:76 | redirect | Redirects to /referansar/celsa-steel-sotra. |
+| /s/Miljdokument-Fresvik-Produkt.pdf | sanity/seed/migratedContent.ndjson:77 | redirect | Redirects to /assets/fresvik/documents/miljodokument-fresvik-produkt.pdf. |
+| /s/7060s-fnfz.pdf | sanity/seed/migratedContent.ndjson:77 | redirect | Redirects to /assets/fresvik/documents/sintef-produktsertifikat-7060s.pdf. |
+| /s/Fresvik-Fryserom-Montasjeanvisning.pdf | sanity/seed/migratedContent.ndjson:84 | redirect | Redirects to /assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf. |
+| /s/Fresvik-Port-Montasjeanvisning.pdf | sanity/seed/migratedContent.ndjson:84 | redirect | Redirects to /assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf. |
+| /s/Koblingsskjema-Fermod-5010.pdf | sanity/seed/migratedContent.ndjson:85 | redirect | Redirects to /assets/fresvik/documents/koblingsskjema-fermod-5010.pdf. |
+| /s/Aktsemdvurderingar-2025.pdf | sanity/seed/migratedContent.ndjson:87 | redirect | Redirects to /assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf. |
+| /s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf | sanity/seed/migratedContent.ndjson:87 | redirect | Redirects to /assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf. |
+| /s/2025-Utgreiing-signert.pdf | sanity/seed/migratedContent.ndjson:87 | redirect | Redirects to /assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf. |
+| /om-oss/fresvik-produkt | sanity/seed/migratedContent.ndjson:90 | redirect | Redirects to /firmainfo. |
+| /s/PIR.pdf | sanity/seed/migratedContent.ndjson:107 | redirect | Redirects to /assets/fresvik/documents/pir-panel.pdf. |
+| /s/PIR-ProduktbladFP.pdf | sanity/seed/migratedContent.ndjson:107 | redirect | Redirects to /assets/fresvik/documents/pir-panel.pdf. |
+| /kjlerom-fryserom-butikk/ | sanity/seed/migratedContent.ndjson:118 | redirect | Redirects to /kjolerom-fryserom-butikk. |
 
 ## External links
 
@@ -312,9 +312,9 @@ Any old news/reference detail with only a short migrated summary is marked `part
 | type | target | status | task |
 | --- | --- | --- | --- |
 | route | / | partial | Homepage is checked section-by-section in HOMEPAGE_MIGRATION_AUDIT.md; one or more old sections are incomplete. |
-| route | /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | partial | Strict audit: local content appears shorter than a full old detail page, lacks reliable extracted body evidence, documents, or not all sitemap images are represented. |
+| route | /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 | needs-review | Contains TODO/verification markers or unresolved migration text. |
 
 ## Final TODO list
 
 - route: / [partial] - Homepage is checked section-by-section in HOMEPAGE_MIGRATION_AUDIT.md; one or more old sections are incomplete.
-- route: /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 [partial] - Strict audit: local content appears shorter than a full old detail page, lacks reliable extracted body evidence, documents, or not all sitemap images are represented.
+- route: /aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026 [needs-review] - Contains TODO/verification markers or unresolved migration text.

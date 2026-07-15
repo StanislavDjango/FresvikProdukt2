@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+  "finalUrl": "https://www.fresvik.no/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+  "fetchedAt": "2026-07-15T17:16:01.420Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Møt vår nye tekniske sjef — Fresvik Produkt",
+  "metaDescription": "Den nye tekniske sjefen har allereie sett sitt preg på arbeidet.",
+  "counts": {
+    "headings": 9,
+    "textBlocks": 30,
+    "links": 96,
+    "images": 25,
+    "documents": 2
+  }
+}

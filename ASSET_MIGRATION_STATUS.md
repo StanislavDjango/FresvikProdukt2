@@ -6,27 +6,27 @@ Generated from local migration cache and source data.
 
 | Metric | Count |
 | --- | ---: |
-| Total assets found | 431 |
-| Images | 401 |
+| Total assets found | 432 |
+| Images | 402 |
 | PDFs/documents | 30 |
 | Other assets | 0 |
-| Used assets | 367 |
+| Used assets | 368 |
 | Unused assets | 50 |
 | Missing assets | 0 |
 | Duplicate assets | 0 |
 | Ready for Sanity | 0 |
-| Uploaded to Sanity | 381 |
+| Uploaded to Sanity | 382 |
 | Failed or needs review | 0 |
-| TODO original URLs | 10 |
+| TODO original URLs | 11 |
 
 ## Status Counts
 
 - `unused`: 50
-- `uploaded-to-sanity`: 381
+- `uploaded-to-sanity`: 382
 
 ## Local Path Usage
 
-110 routes/documents still retain local `/assets/fresvik` paths as migration fallback/backup fields.
+111 routes/documents still retain local `/assets/fresvik` paths as migration fallback/backup fields.
 
 - `/`
 - `/aktuelt`
@@ -40,6 +40,7 @@ Generated from local migration cache and source data.
 - `/aktuelt/innfesting-mot-golv`
 - `/aktuelt/john-bothun-blir-pensjonist`
 - `/aktuelt/jul-2020`
+- `/aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026`
 - `/aktuelt/montasje-prosjekt`
 - `/aktuelt/ny-teknisk-teiknar-havard-berdal`
 - `/aktuelt/nye-monteringsanvisningar`
@@ -147,7 +148,7 @@ Generated from local migration cache and source data.
 | Baseline old sitemap image count | 325 |
 | Live sitemap image entries | 323 |
 | Live sitemap unique image URLs | 276 |
-| Local migrated image assets | 401 |
+| Local migrated image assets | 402 |
 | Sitemap images classified migrated | 271 |
 | Sitemap duplicate image entries | 47 |
 | Sitemap thumbnail/variant unresolved | 0 |

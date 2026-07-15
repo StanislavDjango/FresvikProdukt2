@@ -24,6 +24,14 @@ export const oldSiteNews: MigratedListItem[] = [
     imageAlt: "Samaneh Shakeri, ny teknisk sjef i Fresvik Produkt.",
   },
   {
+    title: "Ledig stilling: Seljar - arbeidsstad Fresvik",
+    href: "/aktuelt/ledig-stilling-seljar-arbeidsstad-fresvik-2026",
+    lastmod: "2026-07-10",
+    imageUrl:
+      "/assets/fresvik/images/old-site/fresvik-produkt-utv-3.webp",
+    imageAlt: "Fresvik Produkt produksjonsmiljø.",
+  },
+  {
     title: "Ny teknisk teiknar på plass",
     href: "/aktuelt/ny-teknisk-teiknar-havard-berdal",
     lastmod: "2024-08-28",

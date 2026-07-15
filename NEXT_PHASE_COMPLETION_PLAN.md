@@ -197,7 +197,7 @@
 Сначала 3 новости, которые видны на главной:
 
 - [x] `/aktuelt/samaneh-shakeri-ny-teknisk-sjef`
-- [ ] `/aktuelt/ny-teknisk-teiknar-havard-berdal`
+- [x] `/aktuelt/ny-teknisk-teiknar-havard-berdal`
 - [ ] `/aktuelt/john-bothun-blir-pensjonist`
 
 Потом остальные новости из inventory:

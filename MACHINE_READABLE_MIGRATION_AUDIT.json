@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-15T18:01:57.717Z",
+    "generatedAt": "2026-07-15T18:21:22.513Z",
     "sourceSitemap": "https://www.fresvik.no/sitemap.xml",
     "localBaselineUrlCount": 105,
     "localBaselineImageCount": 325,
@@ -585,7 +585,7 @@
       "hasImages": true,
       "hasDocuments": true,
       "hasInternalLinks": true,
-      "hasExternalLinks": false,
+      "hasExternalLinks": true,
       "oldImageCount": 1,
       "localImageCount": 1,
       "recoveryStatus": null,
@@ -10257,6 +10257,14 @@
       "notes": "Local migration asset exists."
     },
     {
+      "href": "/aktuelt/john-bothun-blir-pensjonist",
+      "normalized": "/aktuelt/john-bothun-blir-pensjonist",
+      "sourceFile": "sanity/seed/migratedContent.ndjson",
+      "line": 66,
+      "status": "ok",
+      "notes": "Internal route exists."
+    },
+    {
       "href": "/assets/fresvik/images/migrated/k6r3776-07032013.jpg",
       "normalized": "/assets/fresvik/images/migrated/k6r3776-07032013.jpg",
       "sourceFile": "sanity/seed/migratedContent.ndjson",
@@ -10335,14 +10343,6 @@
       "line": 76,
       "status": "asset-ok",
       "notes": "Local migration asset exists."
-    },
-    {
-      "href": "/aktuelt/john-bothun-blir-pensjonist",
-      "normalized": "/aktuelt/john-bothun-blir-pensjonist",
-      "sourceFile": "sanity/seed/migratedContent.ndjson",
-      "line": 76,
-      "status": "ok",
-      "notes": "Internal route exists."
     },
     {
       "href": "/assets/fresvik/images/old-site/John+Bøthun_Fresvik+Produkt.jpg",

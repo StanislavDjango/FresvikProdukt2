@@ -1,0 +1,16 @@
+{
+  "requestedUrl": "https://www.fresvik.no/aktuelt/ny-teknisk-teiknar-havard-berdal",
+  "finalUrl": "https://www.fresvik.no/aktuelt/ny-teknisk-teiknar-havard-berdal",
+  "fetchedAt": "2026-07-15T18:13:49.085Z",
+  "status": 200,
+  "contentType": "text/html;charset=utf-8",
+  "title": "Ny teknisk teiknar på plass — Fresvik Produkt",
+  "metaDescription": "Den nye teiknaren vår har arbeidd på kontoret sidan nyttår og er alt komen godt inn i funksjonen.",
+  "counts": {
+    "headings": 9,
+    "textBlocks": 26,
+    "links": 97,
+    "images": 25,
+    "documents": 2
+  }
+}

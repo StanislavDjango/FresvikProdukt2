@@ -364,6 +364,26 @@ const newsArticleOverrides = new Map([
       },
     },
   ],
+  [
+    "/aktuelt/ny-teknisk-teiknar-havard-berdal",
+    {
+      imageAlt: "Håvard Berdal er ny teknisk teiknar.",
+      author: {
+        name: "Ingvild Hagen",
+        text:
+          "Ingvild er digital marknadsførar i Gasta design & kommunikasjon. Ho jobbar fast med mange av kundane våre, og er eksperten vår på digital annonsering.",
+        email: "ingvild@gasta.no",
+      },
+      previous: {
+        title: "Møt vår nye tekniske sjef",
+        href: "/aktuelt/samaneh-shakeri-ny-teknisk-sjef",
+      },
+      next: {
+        title: "John Bøthun blir pensjonist",
+        href: "/aktuelt/john-bothun-blir-pensjonist",
+      },
+    },
+  ],
 ]);
 
 function newsMigrationSections(item, extract, bodyText, override) {

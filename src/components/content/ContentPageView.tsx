@@ -53,6 +53,12 @@ const technicalMigrationSectionTitles = new Set([
   "Lenker frå gammal side",
 ]);
 
+const frysetunnelFeatureSectionTitles = new Set([
+  "Konstruksjon og bruksområde",
+  "Skreddarsydde PIR-panel",
+  "Spesialtilpassa dører",
+]);
+
 function certificationFallbackHref(title: string) {
   const normalizedTitle = title.toLowerCase();
 
@@ -686,6 +692,97 @@ function ProductIntroSection({
             ) : null}
           </div>
         </article>
+      </Container>
+    </section>
+  );
+}
+
+function FrysetunnelFeatureRow({
+  sections,
+}: {
+  sections: ContentPage["sections"];
+}) {
+  const features = sections
+    .filter((section) => frysetunnelFeatureSectionTitles.has(section.title))
+    .map((section) => ({
+      section,
+      item: section.items[0],
+    }))
+    .filter(({ item }) => Boolean(item));
+
+  if (features.length === 0) return null;
+
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-12 lg:py-14">
+        <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow="Frysetunnel"
+            title="Konstruksjon og løysing"
+            intro="Dei viktigaste delane i frysetunnelen samla i ein ryddig oversikt."
+          />
+          <Link
+            href="/kontakt"
+            className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+          >
+            Avklar løysing
+            <ArrowRight aria-hidden="true" size={17} />
+          </Link>
+        </div>
+
+        <div className="grid gap-4 lg:grid-cols-3">
+          {features.map(({ section, item }, featureIndex) => {
+            if (!item) return null;
+            const paragraphs = item.text.split(/\n{2,}/).filter(Boolean);
+
+            return (
+              <article
+                key={`${section.title}-${featureIndex}`}
+                className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]"
+              >
+                {item.imageUrl ? (
+                  <>
+                    <div className="relative h-48 overflow-hidden bg-slate-100">
+                      <Image
+                        src={item.imageUrl}
+                        alt={item.imageAlt || item.title}
+                        fill
+                        sizes="(min-width: 1024px) 28vw, 100vw"
+                        className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                      />
+                    </div>
+                    <span className="relative h-1 overflow-hidden bg-gradient-to-r from-cyan-700 via-sky-400 to-orange-500 before:absolute before:inset-y-0 before:-left-1/3 before:w-1/3 before:bg-white/70 before:opacity-0 before:blur-sm before:transition group-hover:before:left-full group-hover:before:opacity-100 group-hover:before:duration-700" />
+                  </>
+                ) : null}
+
+                <div className="flex grow flex-col p-5 sm:p-6">
+                  <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-800">
+                    {section.title}
+                  </p>
+                  <h3 className="mt-3 text-xl font-semibold leading-snug text-slate-950">
+                    {item.title}
+                  </h3>
+                  <div className="mt-4 grow space-y-3 text-sm leading-6 text-slate-600">
+                    {paragraphs.map((paragraph, paragraphIndex) => (
+                      <p key={`${section.title}-feature-${paragraphIndex}`}>
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                  {item.href ? (
+                    <Link
+                      href={item.href}
+                      className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+                    >
+                      Les meir
+                      <ArrowRight aria-hidden="true" size={17} />
+                    </Link>
+                  ) : null}
+                </div>
+              </article>
+            );
+          })}
+        </div>
       </Container>
     </section>
   );
@@ -3297,6 +3394,10 @@ function ContentSections({
               section.title === "For samarbeidspartnarar"
             ) &&
             !(
+              isFrysetunnelPage &&
+              frysetunnelFeatureSectionTitles.has(section.title)
+            ) &&
+            !(
               isFacadePage &&
               section.title === "Kontaktinformasjon frå gammal side"
             ) &&
@@ -3757,6 +3858,19 @@ function ContentSections({
       isFacadeIntro ||
       isFrysetunnelIntro
     ) {
+      if (isFrysetunnelIntro) {
+        return [
+          <ProductIntroSection
+            key={`${section.title}-${sectionIndex}`}
+            section={section}
+          />,
+          <FrysetunnelFeatureRow
+            key="frysetunnel-feature-row"
+            sections={sections}
+          />,
+        ];
+      }
+
       return (
         <ProductIntroSection
           key={`${section.title}-${sectionIndex}`}

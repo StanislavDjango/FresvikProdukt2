@@ -1630,8 +1630,8 @@ const purSections = [
         title: "Fresvik PUR-Panel til kjøle- og fryserom",
         text:
           "Fresvik Produkt har produsert kjøle- og fryserom sidan 1980, og er i dag den einaste norske produsenten av isolasjonspanel til kjøle- og fryserom.\n\nFresvik kjøle- og fryserom blir levert med veggar, golv, tak og dørar eller portar. Vår storleik, kombinert med ei bevisst satsing på fleksible produksjonsløysingar, set oss i stand til å levere kundetilpassa løysingar.\n\nFresvik PUR-Panel er eit sandwichelement med oppskumma polyuretan som kjerne, innkapsla mellom to stålplater.",
-        imageUrl: "/assets/fresvik/images/old-site/flake-black-3b186da893.png",
-        imageAlt: "Fresvik PUR-Panel",
+        imageUrl: "/assets/fresvik/images/generated/fresvik-pur-panel-room.png",
+        imageAlt: "Fresvik PUR-Panel kjøle- og fryserom",
       },
     ],
   },

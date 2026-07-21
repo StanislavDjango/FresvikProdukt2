@@ -1048,6 +1048,31 @@
     "notes": "TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages. Unused local migration cache file; keep until asset review is complete."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/generated/fresvik-pur-panel-room.png",
+    "filePath": "public/assets/fresvik/images/generated/fresvik-pur-panel-room.png",
+    "assetType": "image",
+    "usedBy": [
+      "/produkt/fresvik-pur-panel"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/produkt/fresvik-panel"
+    ],
+    "sha256": "4c5fc414efeb3a3351e44d6656b64e6a8b2d3c4ea2754beaf209958fdbe16995",
+    "fileSize": 1981738,
+    "sanityAssetId": "image-31efd55404e3e7cf8e460ee23ae5e0594155fc6b-1448x1086-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-31efd55404e3e7cf8e460ee23ae5e0594155fc6b-1448x1086-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "User-provided generated replacement image from /home/stas/Downloads/ChatGPT Image Jul 21, 2026, 05_00_56 PM.png. Uploaded to Sanity as image-31efd55404e3e7cf8e460ee23ae5e0594155fc6b-1448x1086-png. TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1747635709094-QZ1DMKF9F7N73IKHN7JA/1000024746.jpg",
     "localPath": "/assets/fresvik/images/migrated/1000024746.jpg",
     "filePath": "public/assets/fresvik/images/migrated/1000024746.jpg",
@@ -3675,12 +3700,10 @@
     "filePath": "public/assets/fresvik/images/old-site/Diktator_web.jpg",
     "assetType": "image",
     "usedBy": [
-      "/produkt",
-      "/tilleggsutstyr"
+      "/produkt"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/produkt"
     ],
     "sha256": "948085607562741405b5809a9240862b282f5f35b000a307b2ed5a35ab2ccc43",
     "fileSize": 130246,
@@ -3728,13 +3751,11 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/elebar-ventil",
-      "/produkt",
-      "/tilleggsutstyr"
+      "/produkt"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/elebar-ventil",
-      "https://www.fresvik.no/produkt",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/produkt"
     ],
     "sha256": "208732276e59ce2a1eaddbd10084986652ae2c3823b226624da35e9d16bf4fc2",
     "fileSize": 153875,
@@ -4134,13 +4155,11 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/standard-handtak",
-      "/produkt",
-      "/tilleggsutstyr"
+      "/produkt"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/standard-handtak",
-      "https://www.fresvik.no/produkt",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/produkt"
     ],
     "sha256": "6a05b6ae1a8d056676272694e647b52d8e9fc9c440ac4bf25e84a9e557c16d85",
     "fileSize": 230207,
@@ -4289,12 +4308,10 @@
     "filePath": "public/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
     "assetType": "image",
     "usedBy": [
-      "/produkt",
-      "/tilleggsutstyr"
+      "/produkt"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/produkt"
     ],
     "sha256": "d5aeae51b5a69c2a28ae00a8d6902d3710d882ee2500c75fce78e5d94a04adf0",
     "fileSize": 7955,
@@ -4442,13 +4459,11 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/maxielebar-ventil",
-      "/produkt",
-      "/tilleggsutstyr"
+      "/produkt"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/maxielebar-ventil",
-      "https://www.fresvik.no/produkt",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/produkt"
     ],
     "sha256": "95395aff36ab60b2c766994ac2e90ba1f2eea65f84f972bb8d3f8dce1c76b82d",
     "fileSize": 183047,
@@ -4570,12 +4585,10 @@
     "filePath": "public/assets/fresvik/images/old-site/PEGO+innestengningsalarm_web.jpg",
     "assetType": "image",
     "usedBy": [
-      "/produkt",
-      "/tilleggsutstyr"
+      "/produkt"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/produkt"
     ],
     "sha256": "84bfb917b6c3fc7987f9af7df82b266a988d8733eeb77ef7ab75ffdc7cc343eb",
     "fileSize": 248339,
@@ -4597,12 +4610,10 @@
     "filePath": "public/assets/fresvik/images/old-site/PVC-gardin_web.jpg",
     "assetType": "image",
     "usedBy": [
-      "/produkt",
-      "/tilleggsutstyr"
+      "/produkt"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/produkt"
     ],
     "sha256": "d55bacb1286e900554e78e8ac850a33e663e373e84ca4eeaa06abedda9bd5a50",
     "fileSize": 286726,
@@ -4882,12 +4893,10 @@
     "filePath": "public/assets/fresvik/images/old-site/Skipsdør+Fresvik+Produkt.jpg",
     "assetType": "image",
     "usedBy": [
-      "/produkt",
-      "/tilleggsutstyr"
+      "/produkt"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/produkt",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/produkt"
     ],
     "sha256": "4df6b6650ec7296734dcfabef0eff2022da3391d72ddf63aab642eeaf4e335bc",
     "fileSize": 18754,
@@ -4985,13 +4994,11 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/2014/7/9/standard-drer",
-      "/produkt",
-      "/tilleggsutstyr"
+      "/produkt"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/2014/7/9/standard-drer",
-      "https://www.fresvik.no/produkt",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/produkt"
     ],
     "sha256": "2113401f63181d9f2762be9bc02a30227b8c7f16c9224b436b9ca3e07c7434f7",
     "fileSize": 218202,
@@ -6722,12 +6729,10 @@
     "filePath": "public/assets/fresvik/images/old-site/flake-black-3b186da893.png",
     "assetType": "image",
     "usedBy": [
-      "/kjolerom-fryserom-offshore",
-      "/produkt/fresvik-pur-panel"
+      "/kjolerom-fryserom-offshore"
     ],
     "sourcePages": [
-      "https://www.fresvik.no/kjolerom-fryserom-offshore",
-      "https://www.fresvik.no/produkt/fresvik-panel"
+      "https://www.fresvik.no/kjolerom-fryserom-offshore"
     ],
     "sha256": "ce537f1b1c47bc74a4493b0a0040dc2ad4b29ca9a026e379ce0bc2e5941f995a",
     "fileSize": 11828,
@@ -6829,7 +6834,6 @@
       "/tenester/leveranse",
       "/tenester/montasje",
       "/tenester/service-reservedeler",
-      "/tilleggsutstyr",
       "/tilsette"
     ],
     "sourcePages": [
@@ -6849,7 +6853,6 @@
       "https://www.fresvik.no/tenester/leveranse",
       "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
-      "https://www.fresvik.no/tilleggsutstyr",
       "https://www.fresvik.no/tilsette"
     ],
     "sha256": "27e20960aaad940d294ba861e9d5783457caed68982d13fb67abcc9b1c42c54b",
@@ -9491,13 +9494,11 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/beslag",
-      "/produkt",
-      "/tilleggsutstyr"
+      "/produkt"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/beslag",
-      "https://www.fresvik.no/produkt",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/produkt"
     ],
     "sha256": "166a9dcdaa6bf36c579fa17784334b5f74ebcbb36738e0ac54c24fe513584836",
     "fileSize": 76360,
@@ -9743,13 +9744,11 @@
     "assetType": "image",
     "usedBy": [
       "/andre-produkter/kjlerampe",
-      "/produkt",
-      "/tilleggsutstyr"
+      "/produkt"
     ],
     "sourcePages": [
       "https://www.fresvik.no/andre-produkter/kjlerampe",
-      "https://www.fresvik.no/produkt",
-      "https://www.fresvik.no/tilleggsutstyr"
+      "https://www.fresvik.no/produkt"
     ],
     "sha256": "5ecc96d314c7bc5ce9a27e886f6ac780d03b593d130db50453934cfd4d75b30c",
     "fileSize": 242572,

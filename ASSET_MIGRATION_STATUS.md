@@ -6,23 +6,23 @@ Generated from local migration cache and source data.
 
 | Metric | Count |
 | --- | ---: |
-| Total assets found | 432 |
-| Images | 402 |
+| Total assets found | 433 |
+| Images | 403 |
 | PDFs/documents | 30 |
 | Other assets | 0 |
-| Used assets | 372 |
+| Used assets | 373 |
 | Unused assets | 46 |
 | Missing assets | 0 |
 | Duplicate assets | 0 |
 | Ready for Sanity | 0 |
-| Uploaded to Sanity | 386 |
+| Uploaded to Sanity | 387 |
 | Failed or needs review | 0 |
-| TODO original URLs | 11 |
+| TODO original URLs | 12 |
 
 ## Status Counts
 
 - `unused`: 46
-- `uploaded-to-sanity`: 386
+- `uploaded-to-sanity`: 387
 
 ## Local Path Usage
 

@@ -3326,15 +3326,9 @@ export const contentPages: ContentPage[] = [
     cards: [],
     sections: [
       {
-        title: "Tilleggsutstyr til kjøle- og fryserom",
-        intro:
-          "Utstyr og tilbehøyr som kompletterer kjøle- og fryserom frå Fresvik Produkt.",
-        items: productIndexAccessoryCards,
-      },
-      {
         title: "Artikkelnummer",
         intro:
-          "For bestilling av tilbehøyr og reservedelar, send oss ein e-post eller ring innkjøparen vår:",
+          "For bestilling av tilbehøyr og reservedelar, send oss ein e-post eller ring innkjøparen vår: Tomas Kruvelis, Tomkru@fresvik.no, tlf. +47 46 58 14 22.",
         items: accessoryOrderCards,
       },
       {

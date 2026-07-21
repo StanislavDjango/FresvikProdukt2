@@ -5,6 +5,7 @@ import {
   Download,
   ExternalLink,
   FileText,
+  Mail,
   PhoneCall,
   ShieldCheck,
   Wrench,
@@ -2626,49 +2627,74 @@ function AccessoryOrderSection({
 }: {
   section: ContentPage["sections"][number];
 }) {
-  return (
-    <section className="border-b border-slate-200 bg-slate-50">
-      <Container className="py-14 lg:py-16">
-        <div className="grid gap-8 lg:grid-cols-[0.32fr_0.68fr]">
-          <SectionHeader
-            eyebrow="Bestilling"
-            title="Artikkelnummer"
-            intro={section.intro}
-          />
-          <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-            {section.items.map((item, itemIndex) => {
-              const articleNumber = accessoryArticleNumber(item.text);
+  const intro =
+    section.intro ||
+    "For bestilling av tilbehøyr og reservedelar, send oss ein e-post eller ring innkjøparen vår.";
 
-              return (
-                <article
-                  key={contentCardKey(item, itemIndex, section.title)}
-                  className="grid overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] sm:grid-cols-[6.5rem_1fr]"
-                >
-                  {item.imageUrl ? (
-                    <div className="relative min-h-28 bg-slate-100">
-                      <Image
-                        src={item.imageUrl}
-                        alt={item.imageAlt || item.title}
-                        fill
-                        sizes="8rem"
-                        className="object-cover object-center"
-                      />
-                    </div>
-                  ) : null}
-                  <div className="flex min-h-28 flex-col justify-center p-4">
-                    <h3 className="text-sm font-semibold leading-snug text-slate-950">
-                      {item.title}
-                    </h3>
-                    {articleNumber ? (
-                      <p className="mt-2 w-fit rounded-[8px] bg-cyan-50 px-2.5 py-1 text-xs font-semibold text-cyan-800">
-                        {articleNumber}
-                      </p>
-                    ) : null}
-                  </div>
-                </article>
-              );
-            })}
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeader
+            eyebrow="Reservedelar"
+            title="Tilleggsutstyr og reservedelar"
+            intro={intro}
+          />
+          <div className="flex flex-col gap-2 rounded-[8px] border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm shadow-slate-950/[0.03] sm:flex-row sm:items-center">
+            <span className="font-semibold text-slate-950">Tomas Kruvelis</span>
+            <span className="hidden text-slate-300 sm:inline">/</span>
+            <a
+              href="mailto:tomkru@fresvik.no"
+              className="inline-flex items-center gap-1.5 font-semibold text-cyan-800 transition hover:text-slate-950"
+            >
+              <Mail aria-hidden="true" size={15} />
+              Tomkru@fresvik.no
+            </a>
+            <span className="hidden text-slate-300 sm:inline">/</span>
+            <a
+              href="tel:+4746581422"
+              className="inline-flex items-center gap-1.5 font-semibold text-cyan-800 transition hover:text-slate-950"
+            >
+              <PhoneCall aria-hidden="true" size={15} />
+              46 58 14 22
+            </a>
           </div>
+        </div>
+
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {section.items.map((item, itemIndex) => {
+            const articleNumber = accessoryArticleNumber(item.text);
+
+            return (
+              <article
+                key={contentCardKey(item, itemIndex, section.title)}
+                className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]"
+              >
+                {item.imageUrl ? (
+                  <div className="relative aspect-[4/3] bg-slate-50 p-3">
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.imageAlt || item.title}
+                      fill
+                      sizes="(min-width: 1280px) 18rem, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
+                      className="object-contain object-center p-3 transition duration-500 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                ) : null}
+                <span className="relative h-1 overflow-hidden bg-gradient-to-r from-cyan-700 via-sky-400 to-orange-500 before:absolute before:inset-y-0 before:-left-1/3 before:w-1/3 before:bg-white/70 before:opacity-0 before:blur-sm before:transition group-hover:before:left-full group-hover:before:opacity-100 group-hover:before:duration-700" />
+                <div className="flex grow flex-col p-5">
+                  <h3 className="text-base font-semibold leading-snug text-slate-950">
+                    {item.title}
+                  </h3>
+                  {articleNumber ? (
+                    <p className="mt-3 w-fit rounded-[8px] bg-cyan-50 px-2.5 py-1 text-xs font-semibold text-cyan-800">
+                      {articleNumber}
+                    </p>
+                  ) : null}
+                </div>
+              </article>
+            );
+          })}
         </div>
       </Container>
     </section>
@@ -3320,7 +3346,9 @@ function ContentSections({
             !(
               isAccessoryIndexPage &&
               (section.title === "Full tekst frå gammal side" ||
-                section.title === "Bilde frå gammal side")
+                section.title === "Bilde frå gammal side" ||
+                section.title === "Tilleggsutstyr og reservedelar" ||
+                section.title === "Tilleggsutstyr til kjøle- og fryserom")
             ) &&
             !(
               isAccessoryPage &&
@@ -4648,6 +4676,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.slug === "/dokumentasjon" ||
     page.slug === "/monteringsanvisning" ||
     page.slug === "/monteringsanvisningar-fresvik-skyveport" ||
+    page.slug === "/tilleggsutstyr" ||
     page.slug === "/referansar" ||
     page.slug === "/aktuelt" ||
     isReferenceDetailPage ||

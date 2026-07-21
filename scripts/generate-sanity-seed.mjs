@@ -75,6 +75,30 @@ function pageBody(page) {
   );
 }
 
+const technicalMigrationSectionTitles = new Set([
+  "Full tekst frå gammal side",
+  "Bilde frå gammal side",
+  "Dokumentlenker frå gammal side",
+  "Lenker frå gammal side",
+]);
+
+function serviceProcessSteps(page) {
+  return page.sections
+    .filter(
+      (section) =>
+        !technicalMigrationSectionTitles.has(section.title) &&
+        section.title !== "Dokumentasjon og sertifikat" &&
+        section.title !== "Kontakt",
+    )
+    .flatMap((section) =>
+      section.items.map((item, index) => ({
+        _key: `${slugId("step", section.title)}-${index}`,
+        title: item.title,
+        text: item.text,
+      })),
+    );
+}
+
 function pageImage(page) {
   return (
     page.cards.find((card) => card.imageUrl)?.imageUrl ||
@@ -254,13 +278,7 @@ for (const page of pages) {
       slug: { _type: "slug", current: slugCurrent(page.slug) },
       intro: page.intro,
       body: pageBody(page),
-      processSteps: page.sections.flatMap((section) =>
-        section.items.map((item, index) => ({
-          _key: `${slugId("step", section.title)}-${index}`,
-          title: item.title,
-          text: item.text,
-        })),
-      ),
+      processSteps: serviceProcessSteps(page),
       migrationCards: migrationCards(page),
       migrationSections: migrationSections(page),
       ctaText: "Kontakt Fresvik Produkt for meir informasjon.",

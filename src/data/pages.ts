@@ -38,6 +38,7 @@ export type ContentPage = {
   sourceUrl?: string;
   publishedAt?: string;
   showMigrationDetails?: boolean;
+  suppressExtractCards?: boolean;
   cards: ContentCard[];
   sections: Section[];
   todo?: string[];
@@ -975,22 +976,16 @@ const montasjeServiceCards: ContentCard[] = [
     title: "Sandwhich-panel for fasade",
     text: "Sandwhich-panel for fasade",
     href: "/produkt/fasadepanel",
-    imageUrl: "/assets/fresvik/images/old-site/flake-black.png",
-    imageAlt: "En svart bakgrunn med en simpel, geometrisk snøkrystall i linjer",
   },
   {
     title: "Kjøle- og fryseportar",
     text: "Kjøle- og fryseportar",
     href: "/produkt/kjole-fryseportar",
-    imageUrl: "/assets/fresvik/images/old-site/flake.png",
-    imageAlt: "Kjøle- og fryseportar",
   },
   {
     title: "Kjøle- og frysedører",
     text: "Kjøle- og frysedører",
     href: "/produkt/kjole-frysedorer",
-    imageUrl: "/assets/fresvik/images/old-site/flake.png",
-    imageAlt: "Kjøle- og frysedører",
   },
   {
     title: "Vindu",
@@ -999,6 +994,7 @@ const montasjeServiceCards: ContentCard[] = [
   {
     title: "Beslag",
     text: "Beslag",
+    href: "/andre-produkter/beslag",
   },
 ];
 
@@ -3440,12 +3436,14 @@ export const contentPages: ContentPage[] = [
     title: "Montasje",
     eyebrow: "Teneste",
     intro:
-      "Fresvik produkt tilbyr montasje av:",
-    description: "Montasjetenester frå Fresvik Produkt.",
+      "Fresvik Produkt tilbyr profesjonell montasje av isolasjonsplater, fasadepaneler og kjøle- og fryseporter.",
+    description:
+      "Fresvik Produkt tilbyr profesjonell montasje av isolasjonsplater, fasadepaneler og kjøle- og fryseporter. Kontakt oss for pålitelig montasjetjeneste i byggenæringen.",
     pageType: "service",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/tenester/montasje",
-    cards: oldServiceCards.filter((item) => item.href === "/tenester/montasje"),
+    suppressExtractCards: true,
+    cards: [],
     sections: [
       {
         title: "Fresvik produkt tilbyr montasje av:",
@@ -3487,10 +3485,6 @@ export const contentPages: ContentPage[] = [
               "Ta kontakt med vår salsavdeling for meir informasjon om montørane våre.",
           },
         ],
-      },
-      {
-        title: "Kontakt",
-        items: montasjeContactCards,
       },
       {
         title: "Dokumentasjon og sertifikat",
@@ -4275,6 +4269,8 @@ function withOldSiteExtract(page: ContentPage): ContentPage {
             imageUrl: card.imageUrl || extract.imageUrls[0],
             imageAlt: card.imageAlt || extract.title || page.title,
           }))
+        : page.suppressExtractCards
+          ? []
         : extractBodyCards(extract.bodyParagraphs.slice(0, 2), extract.title || page.title),
     sections: [...page.sections, ...extractSections],
     todo: undefined,

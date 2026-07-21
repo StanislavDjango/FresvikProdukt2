@@ -2054,102 +2054,93 @@ function ServiceMontasjeSection({
 }: {
   section: ContentPage["sections"][number];
 }) {
-  const descriptions: Record<string, string> = {
-    "Fresvik-panel til kjølerom og fryserom":
-      "Montering av isolerte panel for komplette kjøle- og fryserom.",
-    "Sandwhich-panel for fasade":
-      "Montasje av fasadepanel til lager- og industribygg.",
-    "Kjøle- og fryseportar":
-      "Portløysingar tilpassa kjøle- og fryserom, lager og industri.",
-    "Kjøle- og frysedører":
-      "Dører til kjøle- og fryserom levert som del av komplett løysing.",
-    Vindu: "Vindu og tilhøyrande detaljar som del av rom- og panelløysing.",
-    Beslag: "Tilpassa beslag for tett, ryddig og komplett montasje.",
-  };
+  const visualItem = section.items.find((item) => item.imageUrl);
+  const visualImage =
+    visualItem?.imageUrl || "/assets/fresvik/images/old-site/_K6R3776_07032013.jpg";
 
   return (
     <section className="border-b border-slate-200 bg-white">
       <Container className="py-14 lg:py-16">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-          <SectionHeader
-            eyebrow="Montasje"
-            title="Fresvik Produkt tilbyr montasje av"
-            intro="Vi kan levere montasje for panel, portar, dører og tilhøyrande løysingar gjennom erfarne samarbeidspartnarar."
-          />
-          <Link
-            href="/kontakt"
-            className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
-          >
-            Avklar montasje
-            <ArrowRight aria-hidden="true" size={17} />
-          </Link>
-        </div>
+        <div className="grid overflow-hidden rounded-[8px] border border-slate-200 bg-slate-50 shadow-sm shadow-slate-950/[0.04] lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="relative min-h-[18rem] overflow-hidden bg-slate-950 sm:min-h-[24rem]">
+            <Image
+              src={visualImage}
+              alt={visualItem?.imageAlt || "Montasje av Fresvik kjøle- og fryserom"}
+              fill
+              sizes="(min-width: 1024px) 44vw, 100vw"
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/35 via-transparent to-transparent" />
+          </div>
 
-        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {section.items.map((item, itemIndex) => {
-            const imageUrl =
-              item.imageUrl &&
-              !item.imageUrl.includes("flake") &&
-              !item.imageUrl.includes("snø")
-                ? item.imageUrl
-                : undefined;
-            const displayTitle = item.title.replace("Sandwhich", "Sandwich");
-            const displayText = descriptions[item.title] || item.text;
-            const content = (
-              <>
-                {imageUrl ? (
-                  <div className="relative h-48 overflow-hidden bg-slate-100">
-                    <Image
-                      src={imageUrl}
-                      alt={item.imageAlt || item.title}
-                      fill
-                      sizes="(min-width: 1280px) 28vw, (min-width: 768px) 45vw, 100vw"
-                      className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
-                    />
+          <div className="p-6 sm:p-8 lg:p-10">
+            <SectionHeader
+              eyebrow="Montasje"
+              title="Fresvik produkt tilbyr montasje av"
+              intro="Fresvik Produkt kan levere montasje for panel, fasade, portar, dører, vindu og beslag."
+            />
+
+            <div className="mt-7 grid gap-3 sm:grid-cols-2">
+              {section.items.map((item, itemIndex) => {
+                const content = (
+                  <>
+                    <span className="grid size-10 shrink-0 place-items-center rounded-[8px] bg-cyan-50 text-cyan-800 ring-1 ring-cyan-100">
+                      <CheckCircle2 aria-hidden="true" size={19} />
+                    </span>
+                    <span className="min-w-0">
+                      <h3 className="text-sm font-semibold leading-snug text-slate-950">
+                        {item.title}
+                      </h3>
+                      {item.href ? (
+                        <span className="mt-1 inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-800">
+                          Les meir
+                          <ArrowRight aria-hidden="true" size={14} />
+                        </span>
+                      ) : null}
+                    </span>
+                  </>
+                );
+
+                if (item.href) {
+                  return (
+                    <Link
+                      key={contentCardKey(item, itemIndex, section.title)}
+                      href={item.href}
+                      className="group flex items-center gap-3 rounded-[8px] border border-slate-200 bg-white p-4 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lg hover:shadow-slate-950/[0.06] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+                    >
+                      {content}
+                    </Link>
+                  );
+                }
+
+                return (
+                  <div
+                    key={contentCardKey(item, itemIndex, section.title)}
+                    className="flex items-center gap-3 rounded-[8px] border border-slate-200 bg-white p-4"
+                  >
+                    {content}
                   </div>
-                ) : (
-                  <div className="grid h-48 place-items-center bg-slate-950 text-cyan-200">
-                    <Wrench aria-hidden="true" size={42} strokeWidth={1.7} />
-                  </div>
-                )}
-                <span className="relative h-1 overflow-hidden bg-gradient-to-r from-cyan-700 via-sky-400 to-orange-500 before:absolute before:inset-y-0 before:-left-1/3 before:w-1/3 before:bg-white/70 before:opacity-0 before:blur-sm before:transition group-hover:before:left-full group-hover:before:opacity-100 group-hover:before:duration-700" />
-                <div className="flex grow flex-col p-5">
-                  <h3 className="text-lg font-semibold text-slate-950">
-                    {displayTitle}
-                  </h3>
-                  <p className="mt-3 grow text-sm leading-6 text-slate-600">
-                    {displayText}
-                  </p>
-                  <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                    {item.href ? "Les meir" : "Kontakt oss"}
-                    <ArrowRight aria-hidden="true" size={17} />
-                  </span>
-                </div>
-              </>
-            );
+                );
+              })}
+            </div>
 
-            if (item.href) {
-              return (
-                <Link
-                  key={contentCardKey(item, itemIndex, section.title)}
-                  href={item.href}
-                  className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
-                >
-                  {content}
-                </Link>
-              );
-            }
-
-            return (
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <Link
-                key={contentCardKey(item, itemIndex, section.title)}
                 href="/kontakt"
-                className="group flex min-h-full flex-col overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+                className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
               >
-                {content}
+                Avklar montasje
+                <ArrowRight aria-hidden="true" size={17} />
               </Link>
-            );
-          })}
+              <Link
+                href="/monteringsanvisning"
+                className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
+              >
+                Monteringsanvisningar
+                <ArrowRight aria-hidden="true" size={17} />
+              </Link>
+            </div>
+          </div>
         </div>
       </Container>
     </section>

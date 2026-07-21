@@ -6755,13 +6755,11 @@
     "assetType": "image",
     "usedBy": [
       "/stillingledig",
-      "/tenester/leveranse",
-      "/tenester/montasje"
+      "/tenester/leveranse"
     ],
     "sourcePages": [
       "https://www.fresvik.no/stillingledig",
-      "https://www.fresvik.no/tenester/leveranse",
-      "https://www.fresvik.no/tenester/montasje"
+      "https://www.fresvik.no/tenester/leveranse"
     ],
     "sha256": "b2fbab26d90e1fb0171d5da17c3da86a07952b18b555ee590c51c30a5f013563",
     "fileSize": 19539,
@@ -6832,7 +6830,6 @@
       "/referansar",
       "/stillingledig",
       "/tenester/leveranse",
-      "/tenester/montasje",
       "/tenester/service-reservedeler",
       "/tilsette"
     ],
@@ -6851,7 +6848,6 @@
       "https://www.fresvik.no/referansar",
       "https://www.fresvik.no/stillingledig",
       "https://www.fresvik.no/tenester/leveranse",
-      "https://www.fresvik.no/tenester/montasje",
       "https://www.fresvik.no/tenester/service-reservedeler",
       "https://www.fresvik.no/tilsette"
     ],

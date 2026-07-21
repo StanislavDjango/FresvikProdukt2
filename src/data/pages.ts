@@ -947,7 +947,7 @@ const productIndexAccessoryCards: ContentCard[] = [
     title: "Industri slagdør",
     text: "Industri slagdør",
     href: "/andre-produkter/2014/7/9/industri-slagdor",
-    imageUrl: "/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
+    imageUrl: "/assets/fresvik/images/generated/industri-slagdor-cold-room-collage.png",
     imageAlt: "Industri slagdør",
   },
 ];
@@ -2119,7 +2119,7 @@ const doorSections = [
         title: "Industri slagdør",
         text: "Industri slagdør.",
         href: "/andre-produkter/2014/7/9/industri-slagdor",
-        imageUrl: "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
+        imageUrl: "/assets/fresvik/images/generated/industri-slagdor-cold-room-collage.png",
         imageAlt: "Industri slagdør Fresvik Produkt",
       },
     ],
@@ -2928,7 +2928,7 @@ const accessoryDetailSources = [
       {
         title: "Industri slagdør",
         text: "Bilde frå gammal side.",
-        imageUrl: "/assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg",
+        imageUrl: "/assets/fresvik/images/generated/industri-slagdor-cold-room-collage.png",
         imageAlt: "Industri slagdør",
       },
     ],

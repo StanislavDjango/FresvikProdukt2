@@ -639,7 +639,7 @@ const tilleggsutstyrOverviewItems: ContentPage["cards"] = [
     title: "Industri slagdør",
     text: "Større slagdør for kjøle- og fryserom i industrimiljø.",
     href: "/andre-produkter/2014/7/9/industri-slagdor",
-    imageUrl: "/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
+    imageUrl: "/assets/fresvik/images/generated/industri-slagdor-cold-room-collage.png",
     imageAlt: "Industri slagdør",
   },
 ];
@@ -1265,38 +1265,50 @@ function AccessoryDetailSection({
                 imageItems.length > 1 && "sm:grid-cols-2",
               )}
             >
-              {imageItems.map((imageItem, imageIndex) => (
-                <figure
-                  key={contentCardKey(
-                    imageItem,
-                    imageIndex,
-                    `${section.title}-accessory-images`,
-                  )}
-                  className="group overflow-hidden bg-slate-50"
-                >
-                  <div
-                    className={cn(
-                      "relative overflow-hidden",
-                      imageItems.length > 1
-                        ? "aspect-[4/3] min-h-52"
-                        : "aspect-[16/11] min-h-64",
+              {imageItems.map((imageItem, imageIndex) => {
+                const imageSrc = imageItem.imageUrl || item.imageUrl || "";
+                const isTallIndustriSlagdorImage = imageSrc.includes(
+                  "industri-slagdor-cold-room-collage",
+                );
+
+                return (
+                  <figure
+                    key={contentCardKey(
+                      imageItem,
+                      imageIndex,
+                      `${section.title}-accessory-images`,
                     )}
+                    className="group overflow-hidden bg-slate-50"
                   >
-                    <Image
-                      src={imageItem.imageUrl || item.imageUrl || ""}
-                      alt={imageItem.imageAlt || imageItem.title}
-                      fill
-                      sizes="(min-width: 1024px) 44vw, 100vw"
-                      className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"
-                    />
-                  </div>
-                  {imageItems.length > 1 ? (
-                    <figcaption className="border-t border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-950">
-                      {imageItem.title}
-                    </figcaption>
-                  ) : null}
-                </figure>
-              ))}
+                    <div
+                      className={cn(
+                        "relative overflow-hidden",
+                        imageItems.length > 1
+                          ? "aspect-[4/3] min-h-52"
+                          : "aspect-[16/11] min-h-64",
+                      )}
+                    >
+                      <Image
+                        src={imageSrc}
+                        alt={imageItem.imageAlt || imageItem.title}
+                        fill
+                        sizes="(min-width: 1024px) 44vw, 100vw"
+                        className={cn(
+                          "object-cover transition duration-500 group-hover:scale-[1.03]",
+                          isTallIndustriSlagdorImage
+                            ? "object-top"
+                            : "object-center",
+                        )}
+                      />
+                    </div>
+                    {imageItems.length > 1 ? (
+                      <figcaption className="border-t border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-950">
+                        {imageItem.title}
+                      </figcaption>
+                    ) : null}
+                  </figure>
+                );
+              })}
             </div>
           ) : null}
         </article>

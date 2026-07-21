@@ -1073,6 +1073,35 @@
     "notes": "User-provided generated replacement image from /home/stas/Downloads/ChatGPT Image Jul 21, 2026, 05_00_56 PM.png. Uploaded to Sanity as image-31efd55404e3e7cf8e460ee23ae5e0594155fc6b-1448x1086-png. TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
   },
   {
+    "originalUrl": "TODO: unknown original URL",
+    "localPath": "/assets/fresvik/images/generated/industri-slagdor-cold-room-collage.png",
+    "filePath": "public/assets/fresvik/images/generated/industri-slagdor-cold-room-collage.png",
+    "assetType": "image",
+    "usedBy": [
+      "/andre-produkter/2014/7/9/industri-slagdor",
+      "/produkt",
+      "/produkt/kjole-frysedorer"
+    ],
+    "sourcePages": [
+      "https://www.fresvik.no/andre-produkter/2014/7/9/industri-slagdor",
+      "https://www.fresvik.no/produkt",
+      "https://www.fresvik.no/produkt/kjole-frysedorer"
+    ],
+    "sha256": "c8f13f8747c828016fb5d5514941bc8835953140a40798fcb9fc53dd7845d3db",
+    "fileSize": 1824067,
+    "sanityAssetId": "image-f28437ac47121afc3d266213ce7a39eec6b480c3-860x1828-png",
+    "sanityReference": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-f28437ac47121afc3d266213ce7a39eec6b480c3-860x1828-png"
+      }
+    },
+    "status": "uploaded-to-sanity",
+    "targetSanityType": "image asset",
+    "notes": "User-provided generated replacement image from /home/stas/Downloads/ChatGPT Image Jul 21, 2026, 08_18_17 PM.png. Replaces the old Industri slagdør door image on request. Uploaded to Sanity as image-f28437ac47121afc3d266213ce7a39eec6b480c3-860x1828-png. Not an old-site original remote URL. TODO: exact original remote asset URL was not retained in local data; sourcePages records known old pages."
+  },
+  {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1747635709094-QZ1DMKF9F7N73IKHN7JA/1000024746.jpg",
     "localPath": "/assets/fresvik/images/migrated/1000024746.jpg",
     "filePath": "public/assets/fresvik/images/migrated/1000024746.jpg",
@@ -4307,12 +4336,8 @@
     "localPath": "/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
     "filePath": "public/assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg",
     "assetType": "image",
-    "usedBy": [
-      "/produkt"
-    ],
-    "sourcePages": [
-      "https://www.fresvik.no/produkt"
-    ],
+    "usedBy": [],
+    "sourcePages": [],
     "sha256": "d5aeae51b5a69c2a28ae00a8d6902d3710d882ee2500c75fce78e5d94a04adf0",
     "fileSize": 7955,
     "sanityAssetId": "image-480e7915d182556d0edf1dd85697f756a4d121c5-188x250-jpg",
@@ -4325,7 +4350,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Recovered originalUrl from migration evidence images.json. Duplicate file content of /assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg."
+    "notes": "Recovered originalUrl from migration evidence images.json. Duplicate file content of /assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg. Unused local migration cache file; keep until asset review is complete."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/dc7a35a3-51fe-4a8a-aac6-32c13c72b7ad/John+B%C3%B8thun_Fresvik+Produkt.jpg",
@@ -8607,12 +8632,8 @@
     "localPath": "/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
     "filePath": "public/assets/fresvik/images/old-site/industri-slagdor-fresvik-produkt.jpg",
     "assetType": "image",
-    "usedBy": [
-      "/produkt/kjole-frysedorer"
-    ],
-    "sourcePages": [
-      "https://www.fresvik.no/produkt/kjole-frysedorer"
-    ],
+    "usedBy": [],
+    "sourcePages": [],
     "sha256": "d5aeae51b5a69c2a28ae00a8d6902d3710d882ee2500c75fce78e5d94a04adf0",
     "fileSize": 7955,
     "sanityAssetId": "image-480e7915d182556d0edf1dd85697f756a4d121c5-188x250-jpg",
@@ -8625,7 +8646,7 @@
     },
     "status": "uploaded-to-sanity",
     "targetSanityType": "image asset",
-    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg. Duplicate file content of /assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg."
+    "notes": "Recovered originalUrl from live old /startside sitemap. Duplicate file content of /assets/fresvik/images/migrated/industri-slagdr-fresvik-produkt.jpg. Duplicate file content of /assets/fresvik/images/old-site/Industri+slagdør+Fresvik+Produkt.jpg. Unused local migration cache file; keep until asset review is complete."
   },
   {
     "originalUrl": "https://images.squarespace-cdn.com/content/v1/64ec79dc5754e2533112d764/1694428947506-E2RZ7M6AJLX1T5O1BSIU/Innvendig+_m%C3%B8bler_kl%C3%A6r.JPG",

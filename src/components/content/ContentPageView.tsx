@@ -2627,6 +2627,9 @@ function AccessoryOrderSection({
 }: {
   section: ContentPage["sections"][number];
 }) {
+  const items = section.items.filter(
+    (item) => !item.title.toLowerCase().includes("intertecnica hengsel"),
+  );
   const intro =
     section.intro ||
     "For bestilling av tilbehøyr og reservedelar, send oss ein e-post eller ring innkjøparen vår.";
@@ -2662,7 +2665,7 @@ function AccessoryOrderSection({
         </div>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {section.items.map((item, itemIndex) => {
+          {items.map((item, itemIndex) => {
             const articleNumber = accessoryArticleNumber(item.text);
 
             return (
@@ -3347,6 +3350,8 @@ function ContentSections({
               isAccessoryIndexPage &&
               (section.title === "Full tekst frå gammal side" ||
                 section.title === "Bilde frå gammal side" ||
+                section.title === "Dokumentlenker frå gammal side" ||
+                section.title === "Lenker frå gammal side" ||
                 section.title === "Tilleggsutstyr og reservedelar" ||
                 section.title === "Tilleggsutstyr til kjøle- og fryserom")
             ) &&

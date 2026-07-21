@@ -741,12 +741,6 @@ const accessoryOrderCards: ContentCard[] = [
     imageUrl: "/assets/fresvik/images/old-site/IK.png",
     imageAlt: "Plywood dørkplate med belegg",
   },
-  {
-    title: "Intertecnica hengsel 2640",
-    text: "Intertecnica hengsel 2640 Artikkelnr 10409",
-    imageUrl: "/assets/fresvik/images/old-site/flake.png",
-    imageAlt: "Intertecnica hengsel 2640",
-  },
 ];
 
 const accessoryContactCards: ContentCard[] = [

@@ -5205,9 +5205,11 @@
     "filePath": "public/assets/fresvik/images/old-site/_K6R3776_07032013.jpg",
     "assetType": "image",
     "usedBy": [
+      "/produkt",
       "/tenester/montasje"
     ],
     "sourcePages": [
+      "https://www.fresvik.no/produkt",
       "https://www.fresvik.no/tenester/montasje"
     ],
     "sha256": "ba7bf3ee5e3b13d555a19d3b4208b887a741d81da1a21c0e6db4026e031c23a6",

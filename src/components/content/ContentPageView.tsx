@@ -53,11 +53,109 @@ const technicalMigrationSectionTitles = new Set([
   "Lenker frå gammal side",
 ]);
 
+const publicArchiveOnlySectionTitles = new Set([
+  ...technicalMigrationSectionTitles,
+  "Nyheitsbrev og footerlenker frå gammal side",
+  "Teneste-URL-ar frå gammal sitemap",
+]);
+
 const frysetunnelFeatureSectionTitles = new Set([
   "Konstruksjon og bruksområde",
   "Skreddarsydde PIR-panel",
   "Spesialtilpassa dører",
 ]);
+
+function cleanMigrationIntro(text?: string) {
+  if (!text) return undefined;
+
+  const normalizedText = text.toLowerCase();
+  const migrationMarkers = [
+    "gammal side",
+    "gammal",
+    "gamle",
+    "utan omskriving",
+    "kjeldetekst",
+    "bevart frå",
+    "bevart med",
+    "migration",
+    "migrert",
+  ];
+
+  if (migrationMarkers.some((marker) => normalizedText.includes(marker))) {
+    return undefined;
+  }
+
+  return text;
+}
+
+function cleanCardText(text: string | undefined, fallback: string) {
+  return cleanMigrationIntro(text) || fallback;
+}
+
+function certificationDisplayText(
+  item: ContentPage["sections"][number]["items"][number],
+) {
+  const fallbackByTitle = new Map([
+    ["Sentral godkjenning", "Sentral godkjenning."],
+    [
+      "SINTEF Teknisk Godkjenning",
+      "Ekstern lenke til SINTEF Teknisk Godkjenning TG 2135.",
+    ],
+    ["Poly", "Polyuretan-dokumentasjon."],
+    ["StartBANK", "StartBANK-registrering."],
+    ["Miljøfyrtårn", "Miljøfyrtårn-sertifisering."],
+    ["CE", "CE-dokumentasjon."],
+  ]);
+  const text = item.text || fallbackByTitle.get(item.title);
+  const looksLikeFilename = /\.(png|jpe?g|webp|svg)$/i.test(text || "");
+
+  if (looksLikeFilename) {
+    return fallbackByTitle.get(item.title) || "Sertifikat og dokumentasjon.";
+  }
+
+  return cleanCardText(
+    text,
+    fallbackByTitle.get(item.title) || "Sertifikat og dokumentasjon.",
+  );
+}
+
+function cleanMigrationTitle(title: string) {
+  return title
+    .replace(" frå gammal aktuelt-side", "")
+    .replace(" frå gammal skyveportside", "")
+    .replace(" frå gammal sitemap", "")
+    .replace(" frå gammal framside", "")
+    .replace(" frå gammal side", "")
+    .replace(" frå Sanity", "");
+}
+
+function productCardFallback(title: string) {
+  if (title.toLowerCase().includes("fleksibelt")) {
+    return "Kundetilpassa løysingar som kan tilpassast byggjeplassen.";
+  }
+
+  return "Produkt og løysing frå Fresvik Produkt.";
+}
+
+function isPublicArchiveOnlySection(section: ContentPage["sections"][number]) {
+  return (
+    publicArchiveOnlySectionTitles.has(section.title) ||
+    section.title.includes("frå gammal side")
+  );
+}
+
+function isPublicArchiveOnlyItem(
+  item: ContentPage["sections"][number]["items"][number],
+) {
+  const title = item.title.toLowerCase();
+  const text = item.text?.toLowerCase() || "";
+
+  return (
+    title.includes("frå gammal side") ||
+    title.includes("produktblad-ikon") ||
+    text.includes("bildeelement frå gammal")
+  );
+}
 
 function certificationFallbackHref(title: string) {
   const normalizedTitle = title.toLowerCase();
@@ -137,7 +235,10 @@ function CompanyOverviewSection({
                 {item.title}
               </h2>
               <p className="mt-3 grow text-sm leading-6 text-slate-600">
-                {item.text}
+                {cleanCardText(
+                  item.text,
+                  "Finn meir informasjon om Fresvik Produkt.",
+                )}
               </p>
               <span className="mt-5 inline-flex items-center gap-2 self-end text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
                 Opne <ArrowRight aria-hidden="true" size={17} />
@@ -157,9 +258,9 @@ function CompanyInfoSection({
 }) {
   const imageItem = section.items.find((item) => item.imageUrl);
   const textItems = section.items.filter((item) => item !== imageItem);
-  const intro = section.intro?.toLowerCase().includes("gammal")
-    ? "Nøkkelopplysningar om Fresvik Produkt og produksjonen i Fresvik."
-    : section.intro;
+  const intro =
+    cleanMigrationIntro(section.intro) ||
+    "Nøkkelopplysningar om Fresvik Produkt og produksjonen i Fresvik.";
 
   return (
     <section className="border-b border-slate-200 bg-white">
@@ -192,7 +293,10 @@ function CompanyInfoSection({
                 {item.title}
               </h3>
               <p className="mt-3 text-sm leading-7 text-slate-700">
-                {item.text}
+                {cleanCardText(
+                  item.text,
+                  "Nøkkelopplysning om Fresvik Produkt.",
+                )}
               </p>
             </article>
           ))}
@@ -208,10 +312,8 @@ function EmployeeGridSection({
   section: ContentPage["sections"][number];
 }) {
   const intro =
-    section.intro?.toLowerCase().includes("gammal") ||
-    section.intro?.toLowerCase().includes("persondata")
-      ? "Finn rett kontaktperson for sal, teknisk avklaring, logistikk og administrasjon."
-      : section.intro || "Finn rett kontaktperson hos Fresvik Produkt.";
+    cleanMigrationIntro(section.intro) ||
+    "Finn rett kontaktperson for sal, teknisk avklaring, logistikk og administrasjon.";
 
   return (
     <section className="border-b border-slate-200 bg-white">
@@ -312,7 +414,10 @@ function JobOpeningSection({
                 {mainItem?.title || introItem?.title || section.title}
               </h2>
               <p className="mt-4 text-base leading-8 text-slate-300">
-                {mainItem?.text || introItem?.text}
+                {cleanCardText(
+                  mainItem?.text || introItem?.text,
+                  "Sjå ledige stillingar og moglegheiter hos Fresvik Produkt.",
+                )}
               </p>
             </div>
           </div>
@@ -326,7 +431,10 @@ function JobOpeningSection({
                   {item.title}
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-slate-700">
-                  {item.text}
+                  {cleanCardText(
+                    item.text,
+                    "Informasjon om stilling og arbeid hos Fresvik Produkt.",
+                  )}
                 </p>
                 {item.href ? <CardLink href={item.href} label="Opne" /> : null}
               </article>
@@ -357,7 +465,7 @@ function LegalTextSection({
           <SectionHeader
             eyebrow="Juridisk informasjon"
             title={title}
-            intro={section.intro}
+            intro={cleanMigrationIntro(section.intro)}
           />
           <div className="mt-8 grid gap-3">
             {section.items.map((item, itemIndex) => (
@@ -407,7 +515,10 @@ function LegalDocumentsSection({
                     {item.title}
                   </span>
                   <span className="mt-1 block text-sm leading-6 text-slate-600">
-                    {item.text}
+                    {cleanCardText(
+                      item.text,
+                      "Dokument eller ekstern kjelde.",
+                    )}
                   </span>
                 </span>
                 <ExternalLink
@@ -951,8 +1062,8 @@ function ProductDetailTextSection({
       <Container className="py-14 lg:py-16">
         <div className="grid gap-8 lg:grid-cols-[0.38fr_0.62fr]">
           <SectionHeader
-            title={section.title}
-            intro={showIntro ? section.intro : undefined}
+            title={cleanMigrationTitle(section.title)}
+            intro={showIntro ? cleanMigrationIntro(section.intro) : undefined}
           />
           <div className="divide-y divide-slate-200 border-y border-slate-200">
             {section.items.map((item, itemIndex) => {
@@ -1100,12 +1211,11 @@ function ReferenceLinksSection({
                 Relaterte lenker
               </p>
               <h2 className="mt-2 text-2xl font-semibold tracking-normal text-slate-950">
-                Referansar frå gammal side
+                Relaterte referansar
               </h2>
             </div>
             <p className="max-w-xl text-sm leading-6 text-slate-600">
-              Page-specific lenker frå den gamle referansesida er bevart her for
-              kontroll og vidare navigasjon.
+              Vidare lenker knytt til prosjektet.
             </p>
           </div>
           <div className="mt-5 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
@@ -1120,7 +1230,8 @@ function ReferenceLinksSection({
                     {item.title}
                   </span>
                   <span className="mt-2 block text-sm leading-6 text-slate-600">
-                    {item.text}
+                    {cleanMigrationIntro(item.text) ||
+                      "Relatert referanse eller ekstern lenke."}
                   </span>
                 </span>
                 <span className="mt-4 inline-flex items-center gap-2 self-end text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
@@ -1391,6 +1502,8 @@ function ProductBenefitsSection({
   section: ContentPage["sections"][number];
   showIndex?: boolean;
 }) {
+  const displayIntro = cleanMigrationIntro(section.intro);
+
   return (
     <section className="border-b border-slate-200 bg-slate-50">
       <Container className="py-12 lg:py-14">
@@ -1400,11 +1513,13 @@ function ProductBenefitsSection({
               Fordelar
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950">
-              {section.title.replace(" frå gammal side", "")}
+              {cleanMigrationTitle(section.title)}
             </h2>
-            <p className="mt-4 text-base leading-7 text-slate-600">
-              {section.intro}
-            </p>
+            {displayIntro ? (
+              <p className="mt-4 text-base leading-7 text-slate-600">
+                {displayIntro}
+              </p>
+            ) : null}
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
             {section.items.map((item, itemIndex) => (
@@ -1445,7 +1560,7 @@ function ProductImageGallerySection({
           <SectionHeader
             eyebrow="Detaljar"
             title="Port, motor og lås"
-            intro={section.intro}
+            intro={cleanMigrationIntro(section.intro)}
           />
         </div>
         <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
@@ -1467,7 +1582,7 @@ function ProductImageGallerySection({
                 {featuredItem.title}
               </h3>
               <p className="mt-2 text-sm leading-6 text-slate-300">
-                {featuredItem.text}
+                {cleanCardText(featuredItem.text, "Produktbilete.")}
               </p>
             </div>
           </article>
@@ -1483,7 +1598,7 @@ function ProductImageGallerySection({
                     {item.title}
                   </h3>
                   <p className="mt-3 text-sm leading-6 text-slate-600">
-                    {item.text}
+                    {cleanCardText(item.text, "Produktbilete.")}
                   </p>
                 </div>
                 {item.imageUrl ? (
@@ -1513,7 +1628,8 @@ function ProductDocumentSection({
   section: ContentPage["sections"][number];
 }) {
   const linkedItems = section.items.filter(
-    (item): item is typeof item & { href: string } => Boolean(item.href),
+    (item): item is typeof item & { href: string } =>
+      Boolean(item.href) && !isPublicArchiveOnlyItem(item),
   );
 
   if (linkedItems.length === 0) return null;
@@ -1556,7 +1672,12 @@ function ProductDocumentSection({
                       {item.title}
                     </span>
                     <span className="mt-1 block text-sm leading-6 text-slate-600">
-                      {item.text}
+                      {cleanCardText(
+                        item.text,
+                        isPdf
+                          ? "PDF-dokumentasjon for produktet."
+                          : "Dokumentasjon og teknisk informasjon.",
+                      )}
                     </span>
                   </span>
                   <span className="inline-flex h-10 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition group-hover:border-cyan-800 group-hover:text-cyan-800">
@@ -1663,7 +1784,11 @@ function DocumentationDownloadsSection({
                       {item.title}
                     </h2>
                     <p className="mt-2 text-sm leading-6 text-slate-600">
-                      {descriptions[item.title] || item.text}
+                      {descriptions[item.title] ||
+                        cleanCardText(
+                          item.text,
+                          "Dokumentasjon frå Fresvik Produkt.",
+                        )}
                     </p>
                   </div>
                 </div>
@@ -1812,7 +1937,10 @@ function MountingDownloadsSection({
                         {item.title}
                       </h2>
                       <p className="mt-2 text-sm leading-6 text-slate-600">
-                        {item.text}
+                        {cleanCardText(
+                          item.text,
+                          "Monteringsrettleiing og praktisk dokumentasjon.",
+                        )}
                       </p>
                     </div>
                   </div>
@@ -1955,7 +2083,11 @@ function ElectricSkyveportDownloadsSection({
                       {item.title}
                     </h2>
                     <p className="mt-2 text-sm leading-6 text-slate-600">
-                      {descriptions[item.title] || item.text}
+                      {descriptions[item.title] ||
+                        cleanCardText(
+                          item.text,
+                          "Dokumentasjon for elektrisk skyveport.",
+                        )}
                     </p>
                   </div>
                 </div>
@@ -2032,7 +2164,7 @@ function ProductRelatedSection({
           <SectionHeader
             eyebrow="Relaterte løysingar"
             title={title}
-            intro={section.intro}
+            intro={cleanMigrationIntro(section.intro)}
           />
           <Link
             href="/tilleggsutstyr"
@@ -2044,7 +2176,9 @@ function ProductRelatedSection({
         </div>
 
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {section.items.map((item, itemIndex) => (
+          {section.items
+            .filter((item) => !isPublicArchiveOnlyItem(item))
+            .map((item, itemIndex) => (
             <Link
               key={contentCardKey(item, itemIndex, section.title)}
               href={item.href || "/tilleggsutstyr"}
@@ -2066,7 +2200,10 @@ function ProductRelatedSection({
                   {item.title}
                 </h3>
                 <p className="mt-3 grow text-sm leading-6 text-slate-600">
-                  {item.text}
+                  {cleanCardText(
+                    item.text,
+                    "Tilleggsutstyr for kjøle- og fryserom.",
+                  )}
                 </p>
                 <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
                   Les meir <ArrowRight aria-hidden="true" size={17} />
@@ -2305,7 +2442,10 @@ function ServiceDeliverySection({
                   {featuredItem.title}
                 </h2>
                 <p className="mt-4 text-base leading-8 text-slate-700">
-                  {featuredItem.text}
+                  {cleanCardText(
+                    featuredItem.text,
+                    "Fresvik Produkt legg vekt på komplett og ryddig leveranse.",
+                  )}
                 </p>
               </div>
 
@@ -2327,7 +2467,11 @@ function ServiceDeliverySection({
                       )}
                     </h3>
                     <p className="mt-2 text-sm leading-6 text-slate-600">
-                      {detailText[item.title] || item.text}
+                      {detailText[item.title] ||
+                        cleanCardText(
+                          item.text,
+                          "Praktisk leveranseinformasjon frå Fresvik Produkt.",
+                        )}
                     </p>
                   </article>
                 ))}
@@ -2423,7 +2567,10 @@ function ServicePartsSection({
                   {item.title}
                 </h3>
                 <p className="mt-3 text-base leading-7 text-slate-700">
-                  {item.text}
+                  {cleanCardText(
+                    item.text,
+                    "Service og reservedeler for dører og portar.",
+                  )}
                 </p>
               </article>
             ))}
@@ -2510,7 +2657,11 @@ function ServiceIndexSection({
                       {item.title}
                     </span>
                     <span className="mt-2 block text-sm leading-6 text-slate-600">
-                      {serviceDescriptions[item.title] || item.text}
+                      {serviceDescriptions[item.title] ||
+                        cleanCardText(
+                          item.text,
+                          "Teneste frå Fresvik Produkt.",
+                        )}
                     </span>
                   </span>
                   <span className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
@@ -2555,7 +2706,10 @@ function ServiceApprovalSection({
               </h2>
               {introItem ? (
                 <p className="mt-5 text-base leading-8 text-slate-300">
-                  {introItem.text}
+                  {cleanCardText(
+                    introItem.text,
+                    "Fresvik Produkt har dokumentert kompetanse for montasje og leveranse.",
+                  )}
                 </p>
               ) : null}
             </div>
@@ -2580,7 +2734,10 @@ function ServiceApprovalSection({
                   Kompetanse dokumentert
                 </h3>
                 <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
-                  {documentItem.text}
+                  {cleanCardText(
+                    documentItem.text,
+                    "Dokumentasjon for sentral godkjenning.",
+                  )}
                 </p>
               </div>
             ) : null}
@@ -2669,7 +2826,7 @@ function AccessoryOverviewSection({
           <SectionHeader
             eyebrow="Tilleggsutstyr"
             title="Utstyr og reservedelar"
-            intro={section.intro}
+            intro={cleanMigrationIntro(section.intro)}
           />
           <Link
             href="/kontakt"
@@ -2704,7 +2861,10 @@ function AccessoryOverviewSection({
                   {item.title}
                 </h3>
                 <p className="mt-3 grow text-sm leading-6 text-slate-600">
-                  {item.text}
+                  {cleanCardText(
+                    item.text,
+                    "Tilbehøyr og reservedel frå Fresvik Produkt.",
+                  )}
                 </p>
                 <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
                   Les meir <ArrowRight aria-hidden="true" size={17} />
@@ -2843,6 +3003,45 @@ function AccessoryContactSection() {
   );
 }
 
+function ProductIndexContactSection() {
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-12">
+        <div className="grid gap-6 rounded-[8px] border border-slate-800 bg-slate-950 p-6 text-white shadow-xl shadow-slate-950/[0.08] sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
+              Produktval
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-normal sm:text-3xl">
+              Treng du hjelp til å finne rett løysing?
+            </h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-300 sm:text-base">
+              Ta kontakt med salsavdelinga for produktval, dokumentasjon,
+              teknisk avklaring eller eit konkret tilbod.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <a
+              href="mailto:post@fresvik.no"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+            >
+              <Mail aria-hidden="true" size={17} />
+              post@fresvik.no
+            </a>
+            <a
+              href="tel:+4757698300"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-white/20 px-4 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+            >
+              <PhoneCall aria-hidden="true" size={17} />
+              57 69 83 00
+            </a>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ProductReferenceSection({
   section,
   eyebrow = "Referansar",
@@ -2863,7 +3062,7 @@ function ProductReferenceSection({
           <SectionHeader
             eyebrow={eyebrow}
             title={title}
-            intro={section.intro}
+            intro={cleanMigrationIntro(section.intro)}
           />
           <Link
             href="/referansar"
@@ -2890,8 +3089,11 @@ function ProductReferenceSection({
                 </h3>
                 <p className="mt-4 text-sm leading-6 text-slate-600">
                   {item.text === "Featured."
-                    ? "Referanse frå gammal fasadepanel-side."
-                    : item.text}
+                    ? "Sjå prosjekt og løysingar frå Fresvik Produkt."
+                    : cleanCardText(
+                        item.text,
+                        "Sjå prosjekt og løysingar frå Fresvik Produkt.",
+                      )}
                 </p>
                 <span className="mt-6 inline-flex self-start items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
                   Les meir <ArrowRight aria-hidden="true" size={17} />
@@ -2931,7 +3133,10 @@ function ReferenceIndexIntroSection({
             title="Leveransar til butikk, industri, storkjøken og offshore"
           />
           <p className="text-base leading-8 text-slate-700">
-            {section.intro}
+            {cleanCardText(
+              section.intro,
+              "Fresvik Produkt leverer løysingar til butikk, industri, storkjøken og offshore.",
+            )}
           </p>
         </div>
       </Container>
@@ -2950,7 +3155,7 @@ function ReferenceIndexGridSection({
         <SectionHeader
           eyebrow="Prosjekt"
           title="Utvalde referansar"
-          intro="Prosjekt frå ulike bruksområde, bevart frå den gamle referansesida og rydda for rask oversikt."
+          intro="Prosjekt frå ulike bruksområde, samla for rask oversikt."
         />
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {section.items.map((item, itemIndex) => (
@@ -2976,7 +3181,10 @@ function ReferenceIndexGridSection({
                   {item.title}
                 </h3>
                 <p className="mt-3 grow text-sm leading-6 text-slate-600">
-                  {item.text}
+                  {cleanCardText(
+                    item.text,
+                    "Sjå prosjektet frå Fresvik Produkt.",
+                  )}
                 </p>
                 <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
                   Les meir <ArrowRight aria-hidden="true" size={17} />
@@ -3003,7 +3211,7 @@ function ReferenceCategorySection({
             <SectionHeader
               eyebrow="Kategoriar"
               title="Finn referansar etter bruksområde"
-              intro="Snarvegar til dei gamle referansekategoriane."
+              intro="Snarvegar til referansar etter bruksområde."
             />
           </div>
           <div className="mt-6 grid gap-3 sm:grid-cols-3">
@@ -3221,11 +3429,13 @@ function ProductCertificateLinksSection({
   section: ContentPage["sections"][number];
 }) {
   const items = section.items.filter(
-    (item) => !item.title.toLowerCase().includes("gasta"),
+    (item) =>
+      !item.title.toLowerCase().includes("gasta") &&
+      !isPublicArchiveOnlyItem(item),
   );
-  const displayIntro = section.intro?.toLowerCase().includes("gammal")
-    ? "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker."
-    : section.intro;
+  const displayIntro =
+    cleanMigrationIntro(section.intro) ||
+    "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker.";
 
   return (
     <section className="border-b border-slate-200 bg-slate-50 py-12">
@@ -3250,11 +3460,7 @@ function ProductCertificateLinksSection({
             const href =
               item.href || certificationFallbackHref(item.title) || "/dokumentasjon";
             const isExternal = isExternalHref(href);
-            const displayText = item.text.toLowerCase().includes("gammal")
-              ? isExternal
-                ? "Ekstern sertifikatlenke."
-                : "Sertifikat og dokumentasjon."
-              : item.text;
+            const displayText = certificationDisplayText(item);
             const LinkElement = isExternal || isPdfHref(href) ? "a" : Link;
             const linkProps =
               isExternal || isPdfHref(href)
@@ -3394,6 +3600,10 @@ function ContentSections({
                 technicalMigrationSectionTitles.has(section.title))
             ) &&
             !(
+              isProductIndexPage &&
+              isPublicArchiveOnlySection(section)
+            ) &&
+            !(
               isPirPage &&
               section.title === "Produktfordelar frå gammal side"
             ) &&
@@ -3499,7 +3709,7 @@ function ContentSections({
             ) &&
             section.title !== "Nyheitsbrev og footerlenker frå gammal side",
         )
-      : sections;
+      : sections.filter((section) => !isPublicArchiveOnlySection(section));
 
   return visibleSections.map((section, sectionIndex) => {
     if (isCompanyOverviewPage && section.title === "Vidare informasjon") {
@@ -3716,6 +3926,10 @@ function ContentSections({
 
     if (isAccessoryIndexPage && section.title === "Kontakt") {
       return <AccessoryContactSection key={`${section.title}-${sectionIndex}`} />;
+    }
+
+    if (isProductIndexPage && section.title === "Kontakt") {
+      return <ProductIndexContactSection key={`${section.title}-${sectionIndex}`} />;
     }
 
     if (
@@ -4120,65 +4334,53 @@ function ContentSections({
     return (
       <section key={`${section.title}-${sectionIndex}`} className="py-14">
         <Container>
-          <SectionHeader title={section.title} intro={section.intro} />
+          <SectionHeader
+            title={cleanMigrationTitle(section.title)}
+            intro={cleanMigrationIntro(section.intro)}
+          />
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {section.items.map((item, itemIndex) => (
-              <Card
-                key={contentCardKey(
-                  item,
-                  itemIndex,
-                  `${section.title}-${sectionIndex}`,
-                )}
-              >
-                {item.imageUrl ? (
-                  <Image
-                    src={item.imageUrl}
-                    alt={item.imageAlt || item.title}
-                    width={720}
-                    height={420}
-                    className="-mx-5 -mt-5 mb-5 h-52 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover object-center"
-                  />
-                ) : null}
-                {item.meta ? (
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
-                    {item.meta}
-                  </p>
-                ) : null}
-                <h3 className="text-lg font-semibold text-slate-950">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">
-                  {item.text}
-                </p>
-                {item.href ? <CardLink href={item.href} label="Opne" /> : null}
-              </Card>
-            ))}
+            {section.items.map((item, itemIndex) => {
+              const displayText = cleanMigrationIntro(item.text);
+
+              return (
+                <Card
+                  key={contentCardKey(
+                    item,
+                    itemIndex,
+                    `${section.title}-${sectionIndex}`,
+                  )}
+                >
+                  {item.imageUrl ? (
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.imageAlt || item.title}
+                      width={720}
+                      height={420}
+                      className="-mx-5 -mt-5 mb-5 h-52 w-[calc(100%+2.5rem)] rounded-t-[8px] object-cover object-center"
+                    />
+                  ) : null}
+                  {item.meta ? (
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-800">
+                      {item.meta}
+                    </p>
+                  ) : null}
+                  <h3 className="text-lg font-semibold text-slate-950">
+                    {item.title}
+                  </h3>
+                  {displayText ? (
+                    <p className="mt-3 text-sm leading-6 text-slate-600">
+                      {displayText}
+                    </p>
+                  ) : null}
+                  {item.href ? <CardLink href={item.href} label="Opne" /> : null}
+                </Card>
+              );
+            })}
           </div>
         </Container>
       </section>
     );
   });
-}
-
-function labelFromHref(href: string) {
-  try {
-    const url = new URL(href, "https://www.fresvik.no");
-    const path = url.pathname === "/" ? url.hostname : url.pathname;
-
-    return path
-      .split("/")
-      .filter(Boolean)
-      .at(-1)
-      ?.replace(/-/g, " ")
-      .replace(/\b\w/g, (letter) => letter.toUpperCase()) || path;
-  } catch {
-    return href
-      .split("/")
-      .filter(Boolean)
-      .at(-1)
-      ?.replace(/-/g, " ")
-      .replace(/\b\w/g, (letter) => letter.toUpperCase()) || href;
-  }
 }
 
 function HomeSection({
@@ -4206,8 +4408,8 @@ function HomeSection({
   const background = isProducts || isNews || isBadges ? "bg-slate-50" : "bg-white";
   const displayTitle = isProducts ? "Produkt og løysingar" : section.title;
   const displayIntro = isProducts
-    ? "Utvalde produkt og løysingar frå Fresvik Produkt, bevart frå den gamle framsida og rydda for rask oversikt."
-    : section.intro;
+    ? "Utvalde produkt og løysingar frå Fresvik Produkt samla for rask oversikt."
+    : cleanMigrationIntro(section.intro);
 
   if (
     isNewsletter ||
@@ -4258,167 +4460,6 @@ function HomeSection({
     );
   }
 
-  if (isFullTextArchive) {
-    const text = section.items.map((item) => item.text).join("\n\n");
-    const paragraphs = text.split(/\n{2,}/).filter(Boolean);
-
-    return (
-      <section className="border-b border-slate-200 bg-white">
-        <Container className="py-14 lg:py-16">
-          <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
-            <SectionHeader
-              eyebrow="Kjeldetekst"
-              title="Tekst frå gammal framside"
-              intro={section.intro}
-            />
-            <article className="rounded-[8px] border border-slate-200 bg-slate-50 p-5 text-base leading-8 text-slate-700 sm:p-6">
-              {paragraphs.map((paragraph, paragraphIndex) => (
-                <p key={`${section.title}-paragraph-${paragraphIndex}`} className="mt-4 first:mt-0">
-                  {paragraph}
-                </p>
-              ))}
-            </article>
-          </div>
-        </Container>
-      </section>
-    );
-  }
-
-  if (isImageArchive) {
-    return (
-      <section className="border-b border-slate-200 bg-white">
-        <Container className="py-12">
-          <SectionHeader
-            eyebrow="Migrerte bilde"
-            title="Bilde frå gammal side"
-            intro="Bilete og merke som vart funne i gammal framside-extract, bevart for kontroll og vidare bruk."
-          />
-          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {section.items.map((item, itemIndex) => (
-              <article
-                key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
-                className="overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.03]"
-              >
-                {item.imageUrl ? (
-                  <div className="grid h-48 place-items-center bg-slate-50 p-6">
-                    <Image
-                      src={item.imageUrl}
-                      alt={item.imageAlt || item.title}
-                      width={420}
-                      height={260}
-                      className="max-h-36 w-auto object-contain"
-                    />
-                  </div>
-                ) : null}
-                <div className="p-4">
-                  <h3 className="text-sm font-semibold text-slate-950">
-                    Bilde {itemIndex + 1}
-                  </h3>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
-                    {item.text}
-                  </p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </Container>
-      </section>
-    );
-  }
-
-  if (isDocumentArchive) {
-    return (
-      <section className="border-b border-slate-200 bg-white">
-        <Container className="py-12">
-          <div className="rounded-[8px] border border-slate-200 bg-white p-5 shadow-sm shadow-slate-950/[0.03] sm:p-6">
-            <SectionHeader
-              eyebrow="Dokument"
-              title="Dokument frå gammal side"
-              intro="PDF- og dokumentlenker som vart funne på den gamle framsida, samla i ei kompakt liste."
-            />
-            <div className="mt-6 grid gap-2 md:grid-cols-2">
-              {section.items.map((item, itemIndex) => {
-                const href = item.href || item.text;
-                const label = labelFromHref(item.text);
-
-                return isExternalHref(href) ? (
-                  <a
-                    key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group flex min-h-12 items-center justify-between gap-3 rounded-[8px] border border-slate-200 bg-slate-50 px-3.5 py-2 text-sm font-semibold text-slate-700 transition hover:border-cyan-200 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
-                  >
-                    <span className="truncate">{label}</span>
-                    <ExternalLink
-                      aria-hidden="true"
-                      size={16}
-                      className="shrink-0 text-cyan-800 transition group-hover:translate-x-0.5"
-                    />
-                  </a>
-                ) : (
-                  <Link
-                    key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
-                    href={href}
-                    className="group flex min-h-12 items-center justify-between gap-3 rounded-[8px] border border-slate-200 bg-slate-50 px-3.5 py-2 text-sm font-semibold text-slate-700 transition hover:border-cyan-200 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
-                  >
-                    <span className="truncate">{label}</span>
-                    <ArrowRight
-                      aria-hidden="true"
-                      size={16}
-                      className="shrink-0 text-cyan-800 transition group-hover:translate-x-0.5"
-                    />
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        </Container>
-      </section>
-    );
-  }
-
-  if (isLinkArchive) {
-    return (
-      <section className="border-b border-slate-200 bg-white">
-        <Container className="py-12">
-          <div className="rounded-[8px] border border-slate-200 bg-slate-50 p-5 sm:p-6">
-            <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-              <SectionHeader
-                eyebrow="Migrerte lenker"
-                title="Bevarte lenker frå gammal side"
-                intro="Lenker som vart funne på den gamle framsida. Dei er samla kompakt her, slik at migrert informasjon framleis kan kontrollerast utan å dominere sida."
-              />
-              <Link
-                href="/kontakt"
-                className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
-              >
-                Kontakt oss
-                <ArrowRight aria-hidden="true" size={17} />
-              </Link>
-            </div>
-            <div className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
-              {section.items.map((item, itemIndex) => (
-                <Link
-                  key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
-                  href={item.href || item.text}
-                  className="group flex min-h-12 items-center justify-between gap-3 rounded-[8px] border border-slate-200 bg-white px-3.5 py-2 text-sm font-semibold text-slate-700 transition hover:border-cyan-200 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
-                >
-                  <span className="truncate">{labelFromHref(item.text)}</span>
-                  <ArrowRight
-                    aria-hidden="true"
-                    size={16}
-                    className="shrink-0 text-cyan-800 transition group-hover:translate-x-0.5"
-                  />
-                </Link>
-              ))}
-            </div>
-          </div>
-        </Container>
-      </section>
-    );
-  }
-
   if (isJob) {
     const item = section.items[0];
 
@@ -4461,34 +4502,6 @@ function HomeSection({
     );
   }
 
-  if (isNewsletter) {
-    return (
-      <section className="border-b border-slate-200 bg-white">
-        <Container className="py-12">
-          <div className="grid gap-6 rounded-[8px] border border-cyan-100 bg-gradient-to-br from-cyan-50 to-white p-6 sm:p-8 lg:grid-cols-[1fr_1.3fr]">
-            <SectionHeader title={section.title} intro={section.intro} />
-            <div className="grid content-start gap-3 sm:grid-cols-2">
-              {section.items.map((item, itemIndex) => (
-                <article
-                  key={contentCardKey(item, itemIndex, `${section.title}-${sectionIndex}`)}
-                  className="rounded-[8px] border border-white bg-white/75 p-4 shadow-sm shadow-slate-950/[0.03]"
-                >
-                  <h3 className="text-sm font-semibold text-slate-950">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
-                    {item.text}
-                  </p>
-                  {item.href ? <CardLink href={item.href} label="Opne" /> : null}
-                </article>
-              ))}
-            </div>
-          </div>
-        </Container>
-      </section>
-    );
-  }
-
   const visibleItems = isCustomers
     ? section.items.filter((item) => !item.title.toLowerCase().includes("dekor"))
     : section.items;
@@ -4506,7 +4519,7 @@ function HomeSection({
             <SectionHeader
               eyebrow="Bruksområde"
               title={section.title}
-              intro={section.intro}
+              intro={cleanMigrationIntro(section.intro)}
             />
           </div>
 
@@ -4532,7 +4545,10 @@ function HomeSection({
                     {accentItem.title}
                   </h3>
                   <p className="mt-4 text-sm leading-7 text-slate-200">
-                    {accentItem.text}
+                    {cleanCardText(
+                      accentItem.text,
+                      "Løysingar frå Fresvik Produkt for profesjonelle kjøle- og fryserom.",
+                    )}
                   </p>
                   {accentItem.href ? (
                     <Link
@@ -4558,7 +4574,10 @@ function HomeSection({
                       {item.title}
                     </h3>
                     <p className="mt-3 text-sm leading-6 text-slate-600">
-                      {item.text}
+                      {cleanCardText(
+                        item.text,
+                        "Løysingar frå Fresvik Produkt for profesjonelle kjøle- og fryserom.",
+                      )}
                     </p>
                     {item.href ? <CardLink href={item.href} label="Les meir" /> : null}
                   </div>
@@ -4591,7 +4610,7 @@ function HomeSection({
             <SectionHeader
               eyebrow="Nyheiter"
               title={section.title}
-              intro={section.intro}
+              intro={cleanMigrationIntro(section.intro)}
             />
             <Link
               href="/aktuelt"
@@ -4629,7 +4648,10 @@ function HomeSection({
                     {item.title}
                   </h3>
                   <p className="mt-3 grow text-sm leading-6 text-slate-600">
-                    {item.text}
+                    {cleanCardText(
+                      item.text,
+                      "Les siste nytt frå Fresvik Produkt.",
+                    )}
                   </p>
                   {item.href ? <CardLink href={item.href} label="Les meir" /> : null}
                 </div>
@@ -4742,7 +4764,16 @@ function HomeSection({
                       isDecorativeCard ? "text-slate-300" : "text-slate-600",
                     )}
                   >
-                    {item.text}
+                    {cleanCardText(
+                      item.text,
+                      isProducts
+                        ? productCardFallback(item.title)
+                        : isCustomers
+                        ? "Løysingar frå Fresvik Produkt for profesjonelle kjøle- og fryserom."
+                        : isContact
+                        ? "Kontaktpunkt hos Fresvik Produkt."
+                        : "Informasjon frå Fresvik Produkt.",
+                    )}
                   </p>
                   {item.href ? (
                     <CardLink
@@ -4785,6 +4816,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
     page.pageType === "company" || page.pageType === "legal";
   const suppressTopCards =
     isCompanyOrLegalPage ||
+    page.slug === "/produkt" ||
     page.slug === "/produkt/fresvik-pir-panel" ||
     page.slug === "/produkt/fresvik-pur-panel" ||
     page.slug === "/produkt/kjole-fryseportar" ||

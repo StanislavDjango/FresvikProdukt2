@@ -822,7 +822,7 @@ const accessoryCertificationCards: ContentCard[] = [
 const productIndexHeroCards: ContentCard[] = [
   {
     title: "Fresvik-panel",
-    text: "VÅRE PRODUKT Fresvik-panel Utvikla og produsert i Norge",
+    text: "Utvikla og produsert i Norge.",
     href: "/produkt/fresvik-panel",
     imageUrl: "/assets/fresvik/images/old-site/aaa.jpg",
     imageAlt:
@@ -830,9 +830,11 @@ const productIndexHeroCards: ContentCard[] = [
   },
   {
     title: "Fleksibelt på byggeplass",
-    text: "Fleksibelt på byggeplass",
-    imageUrl: "/assets/fresvik/images/old-site/flake.png",
-    imageAlt: "Fleksibelt på byggeplass",
+    text: "Kundetilpassa modullar som kan tilpassast byggjeplassen.",
+    href: "/tenester/montasje",
+    imageUrl: "/assets/fresvik/images/old-site/_K6R3776_07032013.jpg",
+    imageAlt:
+      "Montasje av kjøle- og fryserom med Fresvik-panel på byggeplass.",
   },
   {
     title: "Enkel montasje med eksenterlås",
@@ -850,22 +852,22 @@ const productIndexHeroCards: ContentCard[] = [
 
 const productIndexMainCards: ContentCard[] = [
   {
-    title: "VÅRE PRODUKT Kjøle- og fryseportar",
-    text: "Kjøle- og fryseportar",
+    title: "Kjøle- og fryseportar",
+    text: "Portar for kjøle- og fryserom til næringsmiddelbransjen, engroslager og lagerbygg.",
     href: "/produkt/kjole-fryseportar",
     imageUrl: "/assets/fresvik/images/old-site/Fresvik+aks+montering2.jpg",
     imageAlt: "Kjøle- og fryseportar",
   },
   {
-    title: "VÅRE PRODUKT Kjøle- og frysedører",
-    text: "Kjøle- og frysedører",
+    title: "Kjøle- og frysedører",
+    text: "Dører for kjøle- og fryserom med krav til hygiene og driftstryggleik.",
     href: "/produkt/kjole-frysedorer",
     imageUrl: "/assets/fresvik/images/old-site/fresvik-fryse-dor_ny.jpg",
     imageAlt: "Kjøle- og frysedører",
   },
   {
-    title: "VÅRE PRODUKT Fasadepanel",
-    text: "Fasadepanel",
+    title: "Fasadepanel",
+    text: "Utvendige fasadepanel til lager- og industribygg.",
     href: "/produkt/fasadepanel",
     imageUrl: "/assets/fresvik/images/old-site/image-asset.jpg",
     imageAlt: "Fasadepanel",
@@ -3183,11 +3185,12 @@ export const contentPages: ContentPage[] = [
   },
   {
     slug: "/produkt",
-    title: "Fresvik-panel",
-    eyebrow: "VÅRE PRODUKT",
-    intro: "Utvikla og produsert i Norge",
+    title: "Produkt og løysingar",
+    eyebrow: "Produkt",
+    intro:
+      "Isolerte panel, dører, portar og tilleggsutstyr til kjøle- og fryserom.",
     description:
-      "VÅRE PRODUKT Fresvik-panel Utvikla og produsert i Norge.",
+      "Produkt og løysingar frå Fresvik Produkt for kjøle- og fryserom.",
     pageType: "index",
     priority: "high",
     sourceUrl: "https://www.fresvik.no/produkt",
@@ -3213,7 +3216,7 @@ export const contentPages: ContentPage[] = [
       {
         title: "Dokumentasjon og sertifikat",
         intro:
-          "Lenker og sertifikatbilete frå den gamle produktsida er bevart med same dokumentmål eller ekstern URL.",
+          "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker.",
         items: accessoryCertificationCards,
       },
     ],

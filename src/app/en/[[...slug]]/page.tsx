@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { ContentPageView } from "@/components/content/ContentPageView";
 import { legacyRoutes } from "@/data/legacyRoutes";
 import { publicRoutes } from "@/data/navigation";
 import { getEnglishContentPage } from "@/data/englishPages";
+import { stripLocalePrefix, withLocale } from "@/i18n/config";
 import { pageMetadata } from "@/lib/seo";
+import { getSanityContentPage } from "@/sanity/lib/contentPages";
 
 type RouteProps = {
   params: Promise<{ slug?: string[] }>;
@@ -12,15 +14,19 @@ type RouteProps = {
 
 function toSourcePath(slug?: string[]) {
   if (!slug?.length) return "/";
-  return `/${slug.join("/")}`;
+  return stripLocalePrefix(`/en/${slug.join("/")}`);
 }
 
 export function generateStaticParams() {
   const routes = new Set<string>([...publicRoutes, ...legacyRoutes]);
 
-  return Array.from(routes).map((route) => ({
-    slug: route === "/" ? [] : route.split("/").filter(Boolean),
-  }));
+  return Array.from(routes).map((route) => {
+    const englishRoute = withLocale(route, "en").replace(/^\/en\/?/, "/");
+
+    return {
+      slug: englishRoute === "/" ? [] : englishRoute.split("/").filter(Boolean),
+    };
+  });
 }
 
 export async function generateMetadata({
@@ -28,7 +34,17 @@ export async function generateMetadata({
 }: RouteProps): Promise<Metadata> {
   const { slug } = await params;
   const sourcePath = toSourcePath(slug);
-  const page = getEnglishContentPage(sourcePath);
+  const requestedPath = !slug?.length ? "/en" : `/en/${slug.join("/")}`;
+  const canonicalPath = withLocale(sourcePath, "en");
+
+  if (requestedPath !== canonicalPath) {
+    redirect(canonicalPath);
+  }
+
+  const sanityPage = await getSanityContentPage(sourcePath, "en");
+  const page = sanityPage
+    ? { ...sanityPage, slug: canonicalPath }
+    : getEnglishContentPage(sourcePath);
 
   if (!page) return {};
 
@@ -42,7 +58,17 @@ export async function generateMetadata({
 export default async function EnglishContentPage({ params }: RouteProps) {
   const { slug } = await params;
   const sourcePath = toSourcePath(slug);
-  const page = getEnglishContentPage(sourcePath);
+  const requestedPath = !slug?.length ? "/en" : `/en/${slug.join("/")}`;
+  const canonicalPath = withLocale(sourcePath, "en");
+
+  if (requestedPath !== canonicalPath) {
+    redirect(canonicalPath);
+  }
+
+  const sanityPage = await getSanityContentPage(sourcePath, "en");
+  const page = sanityPage
+    ? { ...sanityPage, slug: canonicalPath }
+    : getEnglishContentPage(sourcePath);
 
   if (!page) notFound();
 

@@ -34,4 +34,17 @@ export const languageFields = [
       { type: "referenceProject" },
     ],
   }),
+  defineField({
+    name: "sourceLanguage",
+    title: "Source language",
+    type: "string",
+    description:
+      "Optional migration marker for imported translations. Usually nn for English documents translated from Norwegian.",
+    options: {
+      list: [
+        { title: "Norwegian", value: "nn" },
+        { title: "English", value: "en" },
+      ],
+    },
+  }),
 ];

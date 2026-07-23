@@ -3,6 +3,7 @@ import { siteUrl } from "@/config/site";
 import { legacyRoutes } from "@/data/legacyRoutes";
 import { publicRoutes } from "@/data/navigation";
 import { isRedirectedSource } from "@/data/redirects";
+import { withLocale } from "@/i18n/config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-05-31T00:00:00.000Z");
@@ -10,7 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     (route) => !isRedirectedSource(route),
   );
 
-  return routes.map((route) => ({
+  const localizedRoutes = routes.flatMap((route) => [
+    route,
+    withLocale(route, "en"),
+  ]);
+
+  return localizedRoutes.map((route) => ({
     url: route === "/" ? siteUrl : `${siteUrl}${route}`,
     lastModified,
     changeFrequency: route === "/" ? "weekly" : "monthly",

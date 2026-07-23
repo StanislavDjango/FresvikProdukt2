@@ -1,0 +1,35 @@
+{
+  "Header": {
+    "topline": "Norwegian production of panels, doors and gates for cold and freezer rooms.",
+    "homeLabel": "Fresvik Produkt home",
+    "mainMenu": "Main menu",
+    "mobileMenu": "Mobile menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "call": "Call us",
+    "mobileIntro": "Find products, services and documentation for cold and freezer solutions.",
+    "switchLanguage": "Norsk"
+  },
+  "Footer": {
+    "headline": "Ready to clarify a cold, freezer or panel project?",
+    "intro": "Contact the sales team for product selection, documentation, technical clarification or a concrete offer.",
+    "sendRequest": "Send request",
+    "homeLabel": "Fresvik Produkt home",
+    "description": "Insulated panels, doors, gates, installation and documentation for professional cold and freezer solutions.",
+    "norwegianProducer": "Norwegian producer from Fresvik",
+    "legalLinks": "Legal links",
+    "backToTop": "Back to top",
+    "trustExperience": "45+ years of experience",
+    "trustProduction": "Norwegian production",
+    "trustDocuments": "Documented solutions"
+  },
+  "DevelopmentNotice": {
+    "close": "Close notice",
+    "eyebrow": "Development version",
+    "title": "This website is still being prepared",
+    "description": "You are viewing a modernized development version of the Fresvik Produkt website. Content and features are still being checked. For orders, requests and official information, you can still use the established website.",
+    "officialSite": "Official existing website:",
+    "openOldSite": "Open old website",
+    "continue": "Continue here"
+  }
+}

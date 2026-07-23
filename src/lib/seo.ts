@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { siteName } from "@/config/site";
 import type { ContentPage } from "@/data/pages";
+import { withLocale } from "@/i18n/config";
 
 const defaultOgImage = "/fresvik-logo.svg";
 
@@ -35,7 +36,7 @@ export function pageMetadata(
       canonical,
       languages: {
         "nn-NO": sourcePath,
-        en: sourcePath === "/" ? "/en" : `/en${sourcePath}`,
+        en: withLocale(sourcePath, "en"),
       },
     },
     openGraph: {

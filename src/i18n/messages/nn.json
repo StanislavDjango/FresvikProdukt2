@@ -1,0 +1,35 @@
+{
+  "Header": {
+    "topline": "Norsk produksjon av panel, dører og portar til kjøle- og fryserom.",
+    "homeLabel": "Fresvik Produkt framside",
+    "mainMenu": "Hovudmeny",
+    "mobileMenu": "Mobilmeny",
+    "openMenu": "Opne meny",
+    "closeMenu": "Lukk meny",
+    "call": "Ring oss",
+    "mobileIntro": "Finn produkt, tenester og dokumentasjon for kjøle- og fryseløysingar.",
+    "switchLanguage": "English"
+  },
+  "Footer": {
+    "headline": "Klar for å avklare kjøle-, fryse- eller panelprosjektet?",
+    "intro": "Ta kontakt med salsavdelinga for produktval, dokumentasjon, teknisk avklaring eller eit konkret tilbod.",
+    "sendRequest": "Send førespørsel",
+    "homeLabel": "Fresvik Produkt framside",
+    "description": "Isolerte panel, dører, portar, montasje og dokumentasjon for profesjonelle kjøle- og fryseløysingar.",
+    "norwegianProducer": "Norsk produsent frå Fresvik",
+    "legalLinks": "Juridiske lenker",
+    "backToTop": "Til toppen",
+    "trustExperience": "45+ års erfaring",
+    "trustProduction": "Norsk produksjon",
+    "trustDocuments": "Dokumenterte løysingar"
+  },
+  "DevelopmentNotice": {
+    "close": "Lukk melding",
+    "eyebrow": "Utviklingsversjon",
+    "title": "Denne nettsida er under arbeid",
+    "description": "Du ser no ein modernisert utviklingsversjon av Fresvik Produkt si nettside. Innhald og funksjonar blir framleis kontrollert. For bestillingar, førespurnader og offisiell informasjon kan du framleis bruke den etablerte nettsida.",
+    "officialSite": "Offisiell eksisterande nettside:",
+    "openOldSite": "Opne gammal nettside",
+    "continue": "Hald fram her"
+  }
+}

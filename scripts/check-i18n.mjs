@@ -1,0 +1,153 @@
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+
+function readJson(relativePath) {
+  return JSON.parse(fs.readFileSync(path.join(root, relativePath), "utf8"));
+}
+
+function readText(relativePath) {
+  return fs.readFileSync(path.join(root, relativePath), "utf8");
+}
+
+function readNdjson(relativePath) {
+  const absolutePath = path.join(root, relativePath);
+  if (!fs.existsSync(absolutePath)) return [];
+  return fs
+    .readFileSync(absolutePath, "utf8")
+    .split(/\n+/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => JSON.parse(line));
+}
+
+function flattenKeys(value, prefix = "") {
+  return Object.entries(value).flatMap(([key, nestedValue]) => {
+    const fullKey = prefix ? `${prefix}.${key}` : key;
+
+    if (
+      nestedValue &&
+      typeof nestedValue === "object" &&
+      !Array.isArray(nestedValue)
+    ) {
+      return flattenKeys(nestedValue, fullKey);
+    }
+
+    return [fullKey];
+  });
+}
+
+const routeMap = readJson("src/i18n/routeMap.json");
+const nnMessages = readJson("src/i18n/messages/nn.json");
+const enMessages = readJson("src/i18n/messages/en.json");
+const proxySource = readText("src/proxy.ts");
+const englishSeedDocs = readNdjson("sanity/seed/migratedContent.en.ndjson");
+
+const requiredEnglishRoutes = [
+  "/",
+  "/products",
+  "/products/fresvik-pir-panel",
+  "/products/fresvik-pur-panel",
+  "/products/cold-freezer-doors",
+  "/products/cold-freezer-ports",
+  "/products/facade-panels",
+  "/products/freezing-tunnel",
+  "/services",
+  "/services/installation",
+  "/services/delivery",
+  "/services/service-spare-parts",
+  "/documentation",
+  "/contact",
+  "/about",
+];
+
+const errors = [];
+
+const entries = Object.entries(routeMap);
+const englishPaths = entries.map(([, englishPath]) => englishPath);
+const duplicateEnglishPaths = englishPaths.filter(
+  (englishPath, index) => englishPaths.indexOf(englishPath) !== index,
+);
+
+for (const duplicate of new Set(duplicateEnglishPaths)) {
+  errors.push(`Duplicate English route mapping: ${duplicate}`);
+}
+
+for (const [sourcePath, englishPath] of entries) {
+  if (!sourcePath.startsWith("/")) {
+    errors.push(`Source path must start with "/": ${sourcePath}`);
+  }
+
+  if (!englishPath.startsWith("/")) {
+    errors.push(`English path must start with "/": ${englishPath}`);
+  }
+
+  if (englishPath.startsWith("/en")) {
+    errors.push(`English path must not include /en prefix in routeMap: ${englishPath}`);
+  }
+}
+
+for (const requiredPath of requiredEnglishRoutes) {
+  if (!englishPaths.includes(requiredPath)) {
+    errors.push(`Missing required English route: /en${requiredPath === "/" ? "" : requiredPath}`);
+  }
+}
+
+const nnKeys = flattenKeys(nnMessages).sort();
+const enKeys = flattenKeys(enMessages).sort();
+
+for (const key of nnKeys) {
+  if (!enKeys.includes(key)) {
+    errors.push(`Missing English message key: ${key}`);
+  }
+}
+
+for (const key of enKeys) {
+  if (!nnKeys.includes(key)) {
+    errors.push(`Missing Norwegian message key: ${key}`);
+  }
+}
+
+if (!proxySource.includes('pathname.startsWith("/studio")')) {
+  errors.push("/studio exclusion is missing from src/proxy.ts");
+}
+
+if (!proxySource.includes("withLocale(sourcePath, \"en\")")) {
+  errors.push("English canonical redirect is missing from src/proxy.ts");
+}
+
+if (englishSeedDocs.length === 0) {
+  errors.push("sanity/seed/migratedContent.en.ndjson is missing or empty");
+}
+
+for (const doc of englishSeedDocs) {
+  if (!doc._id?.startsWith("drafts.")) {
+    errors.push(`English seed document must be a draft: ${doc._id || doc.title}`);
+  }
+
+  if (doc.language !== "en") {
+    errors.push(`English seed document has wrong language: ${doc._id || doc.title}`);
+  }
+
+  if (doc.sourceLanguage !== "nn") {
+    errors.push(`English seed document has wrong sourceLanguage: ${doc._id || doc.title}`);
+  }
+
+  if (!doc.translationGroup) {
+    errors.push(`English seed document is missing translationGroup: ${doc._id || doc.title}`);
+  }
+}
+
+if (errors.length) {
+  console.error("i18n validation failed:");
+  for (const error of errors) {
+    console.error(`- ${error}`);
+  }
+  process.exit(1);
+}
+
+console.log(
+  `i18n validation passed for ${entries.length} route mappings, ${nnKeys.length} message keys and ${englishSeedDocs.length} English seed docs.`,
+);

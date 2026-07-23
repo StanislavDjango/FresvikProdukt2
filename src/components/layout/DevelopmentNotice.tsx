@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight, ExternalLink, Info, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState, useSyncExternalStore } from "react";
@@ -26,6 +27,7 @@ function getServerSnapshot() {
 }
 
 export function DevelopmentNotice() {
+  const t = useTranslations("DevelopmentNotice");
   const pathname = usePathname();
   const shouldShowStoredNotice = useSyncExternalStore(
     subscribeToStorage,
@@ -89,7 +91,7 @@ export function DevelopmentNotice() {
           type="button"
           onClick={dismiss}
           className="absolute right-3 top-3 inline-flex size-9 items-center justify-center rounded-full text-slate-500 transition hover:bg-slate-100 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
-          aria-label="Lukk melding"
+          aria-label={t("close")}
         >
           <X className="size-4" aria-hidden="true" />
         </button>
@@ -103,13 +105,13 @@ export function DevelopmentNotice() {
             </span>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-800">
-                Utviklingsversjon
+                {t("eyebrow")}
               </p>
               <h2
                 id="development-notice-title"
                 className="mt-2 text-2xl font-semibold tracking-normal text-slate-950 sm:text-3xl"
               >
-                Denne nettsida er under arbeid
+                {t("title")}
               </h2>
             </div>
           </div>
@@ -118,15 +120,12 @@ export function DevelopmentNotice() {
             id="development-notice-description"
             className="text-base leading-7 text-slate-600"
           >
-            Du ser no ein modernisert utviklingsversjon av Fresvik Produkt si
-            nettside. Innhald og funksjonar blir framleis kontrollert. For
-            bestillingar, førespurnader og offisiell informasjon kan du framleis
-            bruke den etablerte nettsida.
+            {t("description")}
           </p>
 
           <div className="rounded-[10px] border border-slate-200 bg-slate-50 p-4 text-sm leading-6 text-slate-700">
             <strong className="font-semibold text-slate-950">
-              Offisiell eksisterande nettside:
+              {t("officialSite")}
             </strong>{" "}
             <span className="break-all">www.fresvik.no</span>
           </div>
@@ -139,7 +138,7 @@ export function DevelopmentNotice() {
               onClick={dismiss}
               className="inline-flex h-12 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-5 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
             >
-              Opne gammal nettside
+              {t("openOldSite")}
               <ExternalLink className="size-4" aria-hidden="true" />
             </Link>
             <button
@@ -147,7 +146,7 @@ export function DevelopmentNotice() {
               onClick={dismiss}
               className="inline-flex h-12 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-5 text-sm font-semibold text-slate-950 transition hover:border-cyan-700 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
             >
-              Hald fram her
+              {t("continue")}
               <ArrowRight className="size-4" aria-hidden="true" />
             </button>
           </div>

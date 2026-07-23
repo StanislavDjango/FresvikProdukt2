@@ -1,21 +1,19 @@
-import { isLegacyRoute } from "@/data/legacyRoutes";
-import {
-  createLegacyContentPage,
-  type ContentCard,
-  getContentPage,
-  type ContentPage,
-} from "@/data/pages";
-import { englishPathBySourcePath, withLocale } from "@/i18n/config";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const pageCopy: Record<
-  string,
-  {
-    title: string;
-    eyebrow: string;
-    intro: string;
-    description: string;
-  }
-> = {
+const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const routeMapPath = path.join(root, "src", "i18n", "routeMap.json");
+const outputPath = path.join(
+  root,
+  "sanity",
+  "seed",
+  "migratedContent.en.ndjson",
+);
+
+const routeMap = JSON.parse(fs.readFileSync(routeMapPath, "utf8"));
+
+const englishCopy = {
   "/": {
     title: "Norwegian cold and freezer room solutions",
     eyebrow: "Fresvik Produkt",
@@ -61,8 +59,7 @@ const pageCopy: Record<
     eyebrow: "Product",
     intro:
       "Insulated doors for cold and freezer rooms, adapted to professional use.",
-    description:
-      "Cold and freezer room doors from Fresvik Produkt.",
+    description: "Cold and freezer room doors from Fresvik Produkt.",
   },
   "/produkt/fasadepanel": {
     title: "Facade panels for warehouses and industrial buildings",
@@ -89,8 +86,7 @@ const pageCopy: Record<
   "/tenester": {
     title: "Services",
     eyebrow: "Services",
-    intro:
-      "Delivery, installation, service and spare parts for Fresvik projects.",
+    intro: "Delivery, installation, service and spare parts for Fresvik projects.",
     description: "Services from Fresvik Produkt.",
   },
   "/tenester/montasje": {
@@ -110,8 +106,7 @@ const pageCopy: Record<
   "/tenester/service-reservedeler": {
     title: "Service and spare parts",
     eyebrow: "Service",
-    intro:
-      "Service, maintenance and spare parts after delivery.",
+    intro: "Service, maintenance and spare parts after delivery.",
     description: "Service and spare parts from Fresvik Produkt.",
   },
   "/dokumentasjon": {
@@ -124,15 +119,13 @@ const pageCopy: Record<
   "/referansar": {
     title: "References",
     eyebrow: "References",
-    intro:
-      "Selected projects and deliveries from Fresvik Produkt.",
+    intro: "Selected projects and deliveries from Fresvik Produkt.",
     description: "Reference projects from Fresvik Produkt.",
   },
   "/om-oss": {
     title: "About Fresvik Produkt",
     eyebrow: "Company",
-    intro:
-      "Company information, employees, news and available positions.",
+    intro: "Company information, employees, news and available positions.",
     description: "About Fresvik Produkt AS.",
   },
   "/kontakt": {
@@ -144,71 +137,97 @@ const pageCopy: Record<
   },
 };
 
-function englishNotice(path: string) {
+const typeByPrefix = [
+  ["/produkt/", "product"],
+  ["/tenester/", "service"],
+  ["/referansar/", "referenceProject"],
+  ["/aktuelt/", "newsArticle"],
+];
+
+function slugForEnglishPath(englishPath) {
+  if (englishPath === "/") return "home";
+  return englishPath.replace(/^\/+|\/+$/g, "");
+}
+
+function typeForSourcePath(sourcePath) {
+  if (sourcePath === "/produkt") return "page";
+  if (sourcePath === "/tenester") return "page";
+  if (sourcePath === "/referansar") return "page";
+  if (sourcePath === "/aktuelt") return "page";
+  const match = typeByPrefix.find(([prefix]) => sourcePath.startsWith(prefix));
+  return match?.[1] || "page";
+}
+
+function idSafe(value) {
+  return value
+    .replace(/^\/+|\/+$/g, "")
+    .replace(/[^a-zA-Z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .toLowerCase() || "home";
+}
+
+function bodyBlock(text) {
+  return [
+    {
+      _type: "block",
+      _key: "english-translation-status",
+      style: "normal",
+      children: [
+        {
+          _type: "span",
+          _key: "english-translation-status-span",
+          text,
+        },
+      ],
+    },
+  ];
+}
+
+const docs = Object.entries(englishCopy).map(([sourcePath, copy]) => {
+  const englishPath = routeMap[sourcePath];
+  if (!englishPath) {
+    throw new Error(`Missing routeMap entry for ${sourcePath}`);
+  }
+
+  const type = typeForSourcePath(sourcePath);
+  const slug = slugForEnglishPath(englishPath);
+
   return {
-    title: "English content status",
-    intro:
-      "The English version is being prepared. The Norwegian source content is kept available until the approved English translation is complete.",
-    items: [
+    _id: `drafts.${type}-en-${idSafe(sourcePath)}`,
+    _type: type,
+    title: copy.title,
+    slug: { _type: "slug", current: slug },
+    intro: copy.intro,
+    seoTitle: copy.title,
+    seoDescription: copy.description,
+    language: "en",
+    sourceLanguage: "nn",
+    translationGroup: `fresvik:${idSafe(sourcePath)}`,
+    sourceUrl: `https://www.fresvik.no${sourcePath === "/" ? "" : sourcePath}`,
+    body: bodyBlock(
+      "English translation draft. The Norwegian source page remains the approved complete content until this document is reviewed.",
+    ),
+    migrationSections: [
       {
-        title: "Norwegian source page",
-        text: "Open the complete Norwegian page with migrated text, images, documents and links.",
-        href: path,
+        _type: "migrationSection",
+        _key: "translation-status",
+        title: "Translation status",
+        intro:
+          "Draft English document generated from the approved route map. Translate and review before publishing.",
+        items: [
+          {
+            _type: "migrationCard",
+            _key: "norwegian-source",
+            title: "Norwegian source page",
+            text: "Use this page as the source of truth for the English translation.",
+            href: sourcePath,
+          },
+        ],
       },
     ],
   };
-}
+});
 
-function localizeCardLinks(card: ContentCard): ContentCard {
-  const href = card.href;
-  const canLocalize =
-    href &&
-    href.startsWith("/") &&
-    Object.prototype.hasOwnProperty.call(englishPathBySourcePath, href);
+fs.writeFileSync(outputPath, `${docs.map((doc) => JSON.stringify(doc)).join("\n")}\n`);
 
-  return {
-    ...card,
-    href: canLocalize ? withLocale(href, "en") : href,
-  };
-}
-
-export function getEnglishContentPage(path: string): ContentPage | null {
-  const source = getContentPage(path) ?? (isLegacyRoute(path) ? createLegacyContentPage(path) : null);
-  const copy = pageCopy[path];
-
-  if (!source && !copy) return null;
-
-  const base: ContentPage =
-    source ??
-    ({
-      slug: path,
-      title: copy?.title ?? "Fresvik Produkt",
-      eyebrow: copy?.eyebrow ?? "Fresvik Produkt",
-      intro: copy?.intro ?? "English content is being prepared.",
-      description: copy?.description ?? "English content is being prepared.",
-      pageType: "index",
-      priority: "low",
-      sourceUrl: `https://www.fresvik.no${path === "/" ? "" : path}`,
-      cards: [],
-      sections: [],
-    } satisfies ContentPage);
-
-  return {
-    ...base,
-    slug: withLocale(path, "en"),
-    title: copy?.title ?? base.title,
-    eyebrow: copy?.eyebrow ?? "Fresvik Produkt",
-    intro: copy?.intro ?? base.intro,
-    description: copy?.description ?? base.description,
-    cards: base.cards.map(localizeCardLinks),
-    sections: [
-      englishNotice(path),
-      ...base.sections.map((section) => ({
-        ...section,
-        items: section.items.map(localizeCardLinks),
-      })),
-    ],
-    showMigrationDetails: false,
-    suppressExtractCards: true,
-  };
-}
+console.log(`Wrote ${docs.length} English draft documents to ${path.relative(root, outputPath)}.`);

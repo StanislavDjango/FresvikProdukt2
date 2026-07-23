@@ -6,6 +6,7 @@ import {
 } from "@/data/pages";
 import { isSanityConfigured } from "../env";
 import { client } from "./client";
+import { englishPathForSourcePath } from "@/i18n/config";
 
 type PortableTextBlock = {
   _type?: string;
@@ -100,7 +101,7 @@ type SanityIndexItem = {
 
 const CONTENT_DOC_QUERY = defineQuery(`*[
   _type in ["page", "product", "service", "newsArticle", "referenceProject"] &&
-  slug.current == $slug &&
+  slug.current in $slugs &&
   ((language == $language) || (!defined(language) && $language == "nn"))
 ][0]{
   _type,
@@ -174,7 +175,10 @@ const CONTENT_SLUGS_QUERY = defineQuery(`*[
 
 const localMigrationStructurePaths = new Set<string>([]);
 
-const NEWS_INDEX_QUERY = defineQuery(`*[_type == "newsArticle"] | order(date desc, title asc) {
+const NEWS_INDEX_QUERY = defineQuery(`*[
+  _type == "newsArticle" &&
+  ((!defined(language) && $language == "nn") || language == $language)
+] | order(date desc, title asc) {
   title,
   "slug": slug.current,
   excerpt,
@@ -182,7 +186,10 @@ const NEWS_INDEX_QUERY = defineQuery(`*[_type == "newsArticle"] | order(date des
   "imageUrl": image.asset->url
 }`);
 
-const REFERENCES_INDEX_QUERY = defineQuery(`*[_type == "referenceProject"] | order(year desc, title asc) {
+const REFERENCES_INDEX_QUERY = defineQuery(`*[
+  _type == "referenceProject" &&
+  ((!defined(language) && $language == "nn") || language == $language)
+] | order(year desc, title asc) {
   title,
   "slug": slug.current,
   description,
@@ -192,7 +199,10 @@ const REFERENCES_INDEX_QUERY = defineQuery(`*[_type == "referenceProject"] | ord
   "imageUrl": image.asset->url
 }`);
 
-const PRODUCTS_INDEX_QUERY = defineQuery(`*[_type == "product"] | order(title asc) {
+const PRODUCTS_INDEX_QUERY = defineQuery(`*[
+  _type == "product" &&
+  ((!defined(language) && $language == "nn") || language == $language)
+] | order(title asc) {
   title,
   "slug": slug.current,
   intro,
@@ -200,14 +210,20 @@ const PRODUCTS_INDEX_QUERY = defineQuery(`*[_type == "product"] | order(title as
   "imageUrl": heroImage.asset->url
 }`);
 
-const SERVICES_INDEX_QUERY = defineQuery(`*[_type == "service"] | order(title asc) {
+const SERVICES_INDEX_QUERY = defineQuery(`*[
+  _type == "service" &&
+  ((!defined(language) && $language == "nn") || language == $language)
+] | order(title asc) {
   title,
   "slug": slug.current,
   intro,
   "imageUrl": image.asset->url
 }`);
 
-const DOCUMENTS_INDEX_QUERY = defineQuery(`*[_type == "documentFile"] | order(category asc, title asc) {
+const DOCUMENTS_INDEX_QUERY = defineQuery(`*[
+  _type == "documentFile" &&
+  ((!defined(language) && $language == "nn") || language == $language)
+] | order(category asc, title asc) {
   title,
   category,
   description,
@@ -216,7 +232,10 @@ const DOCUMENTS_INDEX_QUERY = defineQuery(`*[_type == "documentFile"] | order(ca
   "fileUrl": file.asset->url
 }`);
 
-const EMPLOYEES_INDEX_QUERY = defineQuery(`*[_type == "employee"] | order(order asc, name asc) {
+const EMPLOYEES_INDEX_QUERY = defineQuery(`*[
+  _type == "employee" &&
+  ((!defined(language) && $language == "nn") || language == $language)
+] | order(order asc, name asc) {
   "title": name,
   role,
   location,
@@ -225,7 +244,10 @@ const EMPLOYEES_INDEX_QUERY = defineQuery(`*[_type == "employee"] | order(order 
   "imageUrl": image.asset->url
 }`);
 
-const FAQ_INDEX_QUERY = defineQuery(`*[_type == "faqItem"] | order(order asc, question asc) {
+const FAQ_INDEX_QUERY = defineQuery(`*[
+  _type == "faqItem" &&
+  ((!defined(language) && $language == "nn") || language == $language)
+] | order(order asc, question asc) {
   "title": question,
   "text": pt::text(answer),
   category
@@ -460,25 +482,25 @@ function withoutLocalAssetRefs(cards: ContentCard[]) {
   }));
 }
 
-async function getIndexSections(path: string) {
+async function getIndexSections(path: string, language: "nn" | "en" = "nn") {
   if (path === "/aktuelt") {
-    const items = await client.fetch<SanityIndexItem[]>(NEWS_INDEX_QUERY, {}, { next: { revalidate: 60 } });
+    const items = await client.fetch<SanityIndexItem[]>(NEWS_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
     return [{ title: "Nyheiter frå Sanity", items: indexCards(items) }];
   }
   if (path === "/referansar") {
-    const items = await client.fetch<SanityIndexItem[]>(REFERENCES_INDEX_QUERY, {}, { next: { revalidate: 60 } });
+    const items = await client.fetch<SanityIndexItem[]>(REFERENCES_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
     return [{ title: "Referansar frå Sanity", items: indexCards(items) }];
   }
   if (path === "/produkt") {
-    const items = await client.fetch<SanityIndexItem[]>(PRODUCTS_INDEX_QUERY, {}, { next: { revalidate: 60 } });
+    const items = await client.fetch<SanityIndexItem[]>(PRODUCTS_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
     return [{ title: "Produkt frå Sanity", items: indexCards(items) }];
   }
   if (path === "/tenester") {
-    const items = await client.fetch<SanityIndexItem[]>(SERVICES_INDEX_QUERY, {}, { next: { revalidate: 60 } });
+    const items = await client.fetch<SanityIndexItem[]>(SERVICES_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
     return [{ title: "Tenester frå Sanity", items: indexCards(items) }];
   }
   if (path === "/dokumentasjon" || path === "/monteringsanvisning") {
-    const allItems = await client.fetch<SanityIndexItem[]>(DOCUMENTS_INDEX_QUERY, {}, { next: { revalidate: 60 } });
+    const allItems = await client.fetch<SanityIndexItem[]>(DOCUMENTS_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
     const filtered =
       path === "/monteringsanvisning"
         ? allItems.filter((item) =>
@@ -488,11 +510,11 @@ async function getIndexSections(path: string) {
     return [{ title: "Dokument frå Sanity", items: indexCards(filtered) }];
   }
   if (path === "/tilsette") {
-    const items = await client.fetch<SanityIndexItem[]>(EMPLOYEES_INDEX_QUERY, {}, { next: { revalidate: 60 } });
+    const items = await client.fetch<SanityIndexItem[]>(EMPLOYEES_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
     return [{ title: "Tilsette frå Sanity", items: indexCards(items) }];
   }
   if (path === "/kundeservice/faq") {
-    const items = await client.fetch<SanityIndexItem[]>(FAQ_INDEX_QUERY, {}, { next: { revalidate: 60 } });
+    const items = await client.fetch<SanityIndexItem[]>(FAQ_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
     return [{ title: "Spørsmål frå Sanity", items: indexCards(items) }];
   }
   return [];
@@ -591,20 +613,27 @@ export async function getSanityContentPage(path: string, language: "nn" | "en" =
   const fallback = getFallbackContentPage(path);
   if (!isSanityConfigured) return language === "nn" ? fallback : null;
 
+  const slugs = [slugForPath(path)];
+  if (language === "en") {
+    const englishPath = englishPathForSourcePath(path);
+    const englishSlug = slugForPath(englishPath);
+    if (!slugs.includes(englishSlug)) slugs.push(englishSlug);
+  }
+
   try {
     const doc = await client.fetch<SanityContentDoc | null>(
       CONTENT_DOC_QUERY,
-      { slug: slugForPath(path), language },
+      { slugs, language },
       { next: { revalidate: 60 } },
     );
 
     if (!doc) return language === "nn" ? fallback : null;
 
     const normalizedPath = pathForSlug(doc.slug);
-    const indexSections = await getIndexSections(normalizedPath);
+    const indexSections = await getIndexSections(normalizedPath, language);
     return mergeContentPage(doc, fallback, indexSections);
   } catch (error) {
     console.error(`Failed to load ${path} from Sanity`, error);
-    return fallback;
+    return language === "nn" ? fallback : null;
   }
 }

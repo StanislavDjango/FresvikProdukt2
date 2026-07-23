@@ -12,6 +12,17 @@ old PDF URLs.
 Do not delete `public/assets/fresvik` or migration backup fields until every
 check in this plan passes.
 
+## Housekeeping Completed
+
+2026-07-23:
+
+- Removed ignored local build/check caches: `.next` and `.generated`.
+- Removed obsolete root planning/handoff documents that were superseded by this
+  cleanup plan and `NEXT_PHASE_COMPLETION_PLAN.md`.
+- Kept migration audits, source evidence, Sanity seed files, and
+  `public/assets/fresvik` because they are still needed for traceability and
+  safe final cleanup.
+
 ## Keep For Now
 
 - `public/assets/fresvik`: temporary migration cache and legacy PDF redirect

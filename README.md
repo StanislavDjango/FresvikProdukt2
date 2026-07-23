@@ -1,6 +1,6 @@
 # Fresvik Next
 
-Modern Next.js front end for Fresvik Produkt.
+Modern Next.js/Sanity front end for Fresvik Produkt.
 
 ## Stack
 
@@ -18,12 +18,11 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000/kontakt`.
+Open `http://localhost:3000`.
 
 ## Sanity
 
-Copy `.env.example` to `.env.local` and fill in the Sanity project id when the
-real CMS project is created:
+Copy `.env.example` to `.env.local` and fill in the Sanity project settings:
 
 ```bash
 NEXT_PUBLIC_SANITY_PROJECT_ID=
@@ -31,24 +30,24 @@ NEXT_PUBLIC_SANITY_DATASET=production
 NEXT_PUBLIC_SANITY_API_VERSION=2026-05-30
 ```
 
-The Studio route is available at `/studio`.
+The Studio route is available at `/studio`. Runtime pages read migrated content
+from Sanity, with local migration data kept as backup/source traceability.
 
-The contact page is already wired to Sanity. If Sanity is not configured, the
-site uses the local fallback content from `src/data/contact.ts`.
-
-After creating the Sanity project, import the starter contact page document:
+To regenerate the import-ready seed after content or asset changes:
 
 ```bash
-npx sanity dataset import sanity/seed/contactPage.ndjson production --replace
+npm run assets:seed
 ```
 
-Then add the same Sanity environment variables in Vercel and redeploy.
+Do not remove `public/assets/fresvik` until `CLEANUP_PLAN.md` is complete.
 
 ## Verification
 
 ```bash
 npm run lint
 npm run build
+npm run check:migration
+npm run check:assets
 ```
 
 ## Deployment

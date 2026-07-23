@@ -43,23 +43,10 @@ nvm use
 
 ## Main Goal Right Now
 
-Stop design/UI polishing for now.
-
-The current goal is to move old Fresvik content into the new project as quickly
-and clearly as possible, creating a full content skeleton:
-
-- all old pages;
-- all old URLs;
-- all redirects;
-- all product/service/document/support/company pages;
-- all available text;
-- all photos;
-- all PDFs and documents;
-- all internal and external links;
-- clear TODO markers where data is missing or uncertain.
-
-The first goal is not final CMS elegance. The first goal is to get all
-information into the project so we can work with it.
+The migration skeleton and Sanity runtime are in place. The current goal is to
+finish the project carefully: keep migrated content intact, remove migration
+leftovers from public pages, clean obsolete planning files, and polish page
+layouts only where the already migrated information needs clearer presentation.
 
 ## Important Rule
 
@@ -86,16 +73,18 @@ Final goal:
 - generate Sanity asset references;
 - only later remove temporary local assets from GitHub.
 
-Do not delete local assets now.
+Do not delete local assets until the cleanup plan confirms that production,
+redirects, Sanity files, and source-traceability exports no longer need them.
 
 ## Important Files
 
 Read these before doing work:
 
-- `FAST_CONTENT_SKELETON_PLAN.md`
-- `MIGRATION_REPORT.md`
-- `CONTENT_MIGRATION_PLAN.md`
-- `TRANSFER_HANDOFF.md`
+- `NEXT_PHASE_COMPLETION_PLAN.md`
+- `CLEANUP_PLAN.md`
+- `MIGRATION_AUDIT.md`
+- `ASSET_MIGRATION_STATUS.md`
+- `PRODUCTION_RUNTIME_VERIFICATION.md`
 - `src/data/legacyRoutes.ts`
 - `src/data/pages.ts`
 - `src/data/oldSiteInventory.ts`
@@ -129,12 +118,12 @@ Asset folders:
 
 Work in phases:
 
-1. Complete fast content skeleton.
-2. Build/update asset manifest and status.
-3. Add quick checks for assets and links.
-4. Upload assets to Sanity after the skeleton is complete.
-5. Generate `migratedContent.withAssets.ndjson`.
-6. Only after that improve schemas, templates, and design.
+1. Keep production and Sanity runtime stable.
+2. Finish remaining page-by-page cleanup from `NEXT_PHASE_COMPLETION_PLAN.md`.
+3. Remove only obsolete public migration labels and duplicate presentation blocks.
+4. Keep `public/assets/fresvik` until `CLEANUP_PLAN.md` acceptance criteria pass.
+5. After source-traceability export and production verification, plan final asset
+   cache/backup-field cleanup.
 
 ## Useful Commands
 
@@ -151,12 +140,12 @@ git status --short --branch
 
 ## How To Report Progress
 
-When finishing a migration step, report:
+When finishing a cleanup step, report:
 
-- what old URLs/pages were covered;
-- what content was added;
-- what images/PDFs were found;
-- what remains `TODO` or `needs-review`;
+- what pages were touched;
+- what public migration leftovers were removed;
+- what assets/PDFs/links were verified;
+- what remains risky or unresolved;
 - what checks passed;
 - whether anything still uses local asset paths.
 

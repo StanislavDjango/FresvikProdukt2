@@ -9,27 +9,30 @@ This version has breaking changes — APIs, conventions, and file structure may 
 ## Current Mission
 
 We are rebuilding `https://www.fresvik.no/` as a modern Next.js/Sanity project.
-The current priority is **fast content migration**, not design polish.
+The fast migration phase is largely complete: content, images, PDF/documents,
+redirects, Sanity runtime, and production checks have been built around the old
+site inventory.
 
-Build the complete content skeleton first:
+The current priority is **final cleanup and controlled page polish**:
 
-- all old URLs represented as pages, redirects, or explicit TODO/partial pages;
-- all available page text migrated with source URLs;
-- all images, PDFs, documents, and links captured with source/original URLs;
-- local files under `public/assets/fresvik` used only as temporary migration cache;
-- missing or uncertain content marked clearly as `TODO`, `partial`, `missing`, or `needs-review`.
-
-Do not spend time redesigning UI unless a small component change is required to show migrated content.
+- keep old URLs represented as pages or redirects;
+- preserve migrated text, images, PDFs/documents, and links;
+- keep source/original URL traceability in migration data and asset manifests;
+- remove visible migration/debug labels from public pages;
+- improve page presentation only where it helps display already migrated content;
+- do not delete local migration assets or backup fields until the cleanup plan
+  allows it.
 
 ## Read First
 
-Before starting migration work, read:
+Before starting project work, read:
 
 1. `CODEX_PROJECT_BRIEF.md`
-2. `FAST_CONTENT_SKELETON_PLAN.md`
-3. `MIGRATION_REPORT.md`
-4. `CONTENT_MIGRATION_PLAN.md`
-5. `TRANSFER_HANDOFF.md`
+2. `NEXT_PHASE_COMPLETION_PLAN.md`
+3. `CLEANUP_PLAN.md`
+4. `MIGRATION_AUDIT.md`
+5. `ASSET_MIGRATION_STATUS.md`
+6. `PRODUCTION_RUNTIME_VERIFICATION.md`
 
 ## Working Directory
 
@@ -48,7 +51,7 @@ nvm use
 
 ## Verification
 
-Use quick checks while collecting content:
+Use quick checks while changing migrated content:
 
 ```bash
 npm run check:migration
@@ -60,7 +63,7 @@ When asset checks exist:
 npm run check:assets
 ```
 
-At the end of a content migration phase, run:
+At the end of a page/design cleanup batch, run:
 
 ```bash
 npm run build
@@ -68,7 +71,7 @@ npm run check:migration
 npm run check:links
 ```
 
-Avoid heavy visual checks during the fast content skeleton phase unless a visual regression is the actual task.
+Avoid heavy visual checks unless a visual regression is the actual task.
 
 ## Do Not Break
 

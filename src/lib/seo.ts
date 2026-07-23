@@ -16,22 +16,34 @@ function firstImage(page: ContentPage) {
 
 export function pageMetadata(
   page: ContentPage,
-  options: { noIndex?: boolean } = {},
+  options: {
+    noIndex?: boolean;
+    locale?: "nn" | "en";
+    canonical?: string;
+    alternateSourcePath?: string;
+  } = {},
 ): Metadata {
   const image = firstImage(page);
+  const sourcePath = options.alternateSourcePath ?? page.slug;
+  const canonical = options.canonical ?? page.slug;
+  const locale = options.locale ?? "nn";
 
   return {
     title: page.title,
     description: page.description,
     alternates: {
-      canonical: page.slug,
+      canonical,
+      languages: {
+        "nn-NO": sourcePath,
+        en: sourcePath === "/" ? "/en" : `/en${sourcePath}`,
+      },
     },
     openGraph: {
       title: page.title,
       description: page.description,
-      url: page.slug,
+      url: canonical,
       siteName,
-      locale: "nn_NO",
+      locale: locale === "en" ? "en_US" : "nn_NO",
       type: "website",
       images: [
         {

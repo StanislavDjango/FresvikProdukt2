@@ -1,10 +1,12 @@
 import { defineField, defineType } from "sanity";
+import { languageFields } from "./languageFields";
 
 export const referenceProject = defineType({
   name: "referenceProject",
   title: "Reference project",
   type: "document",
   fields: [
+    ...languageFields,
     defineField({
       name: "title",
       title: "Title",

@@ -12,7 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { mainNavigation, type NavigationItem } from "@/data/navigation";
+import { getMainNavigation, type NavigationItem } from "@/data/navigation";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -22,11 +22,15 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { NorwayFlag } from "@/components/ui/NorwayFlag";
+import { localeFromPathname, stripLocalePrefix, withLocale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 
 function isActivePath(pathname: string, item: NavigationItem) {
-  if (pathname === item.href) return true;
-  return item.children?.some((child) => pathname === child.href) || false;
+  const basePathname = stripLocalePrefix(pathname);
+  const baseHref = stripLocalePrefix(item.href);
+
+  if (basePathname === baseHref) return true;
+  return item.children?.some((child) => basePathname === stripLocalePrefix(child.href)) || false;
 }
 
 function linkClass(active: boolean) {
@@ -121,13 +125,14 @@ function DesktopMenuItem({
   const active = isActivePath(pathname, item);
   const isOpen = openMenu === item.href;
   const hasChildren = Boolean(item.children?.length);
-  const meta = menuMeta[item.href] ?? {
+  const baseHref = stripLocalePrefix(item.href);
+  const meta = menuMeta[baseHref] ?? {
     eyebrow: item.label,
     title: item.label,
     intro: "Gå vidare til relevante sider i denne delen av nettstaden.",
     actionLabel: `Alle ${item.label.toLowerCase()}`,
   };
-  const isCompactMenu = item.href === "/om-oss";
+  const isCompactMenu = baseHref === "/om-oss";
 
   return (
     <NavigationMenuItem
@@ -211,8 +216,8 @@ function DesktopMenuItem({
                 )}
               >
                 {item.children?.map((child) => {
-                  const childActive = pathname === child.href;
-                  const description = menuItemDescriptions[child.href];
+                  const childActive = stripLocalePrefix(pathname) === stripLocalePrefix(child.href);
+                  const description = menuItemDescriptions[stripLocalePrefix(child.href)];
 
                   return (
                     <Link
@@ -301,7 +306,7 @@ function MobileLink({
   const active = isActivePath(pathname, item);
   const hasChildren = Boolean(item.children?.length);
   const isOpen = openSection === item.href;
-  const meta = menuMeta[item.href];
+  const meta = menuMeta[stripLocalePrefix(item.href)];
 
   if (hasChildren) {
     const panelId = `mobile-menu-${item.href.replace(/[^a-z0-9]+/gi, "-")}`;
@@ -354,7 +359,7 @@ function MobileLink({
 
           <div className="grid gap-1">
             {item.children?.map((child) => {
-              const description = menuItemDescriptions[child.href];
+              const description = menuItemDescriptions[stripLocalePrefix(child.href)];
 
               return (
                 <Link
@@ -363,7 +368,7 @@ function MobileLink({
                   onClick={onNavigate}
                   className={cn(
                     "rounded-[8px] px-3.5 py-3 text-sm transition focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2",
-                    pathname === child.href
+                    stripLocalePrefix(pathname) === stripLocalePrefix(child.href)
                       ? "bg-cyan-50 text-cyan-950"
                       : "text-slate-700 hover:bg-white hover:text-slate-950",
                   )}
@@ -404,6 +409,10 @@ function MobileLink({
 
 export function Header() {
   const pathname = usePathname();
+  const locale = localeFromPathname(pathname);
+  const navigation = getMainNavigation(locale);
+  const norwegianHref = withLocale(pathname, "nn");
+  const englishHref = withLocale(pathname, "en");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileOpenSection, setMobileOpenSection] = useState<string | null>(
     null,
@@ -488,13 +497,13 @@ export function Header() {
   }
 
   function getDefaultMobileSection() {
-    const activeItem = mainNavigation.find(
+    const activeItem = navigation.find(
       (item) => item.children?.length && isActivePath(pathname, item),
     );
 
     return (
       activeItem?.href ??
-      mainNavigation.find((item) => item.children?.length)?.href ??
+      navigation.find((item) => item.children?.length)?.href ??
       null
     );
   }
@@ -524,7 +533,9 @@ export function Header() {
         <div className="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-8 text-xs font-semibold">
           <p className="inline-flex items-center gap-2 text-white/80">
             <NorwayFlag className="h-3.5 w-5 ring-white/20" />
-            Norsk produksjon av panel, dører og portar til kjøle- og fryserom.
+            {locale === "en"
+              ? "Norwegian production of panels, doors and gates for cold and freezer rooms."
+              : "Norsk produksjon av panel, dører og portar til kjøle- og fryserom."}
           </p>
           <div className="flex items-center gap-5">
             <a
@@ -550,7 +561,7 @@ export function Header() {
           href="/"
           onClick={closeMobileMenu}
           className="flex shrink-0 items-center gap-2.5 rounded-[8px] py-1.5 transition opacity-95 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-4"
-          aria-label="Fresvik Produkt framside"
+          aria-label={locale === "en" ? "Fresvik Produkt home" : "Fresvik Produkt framside"}
         >
           <Image
             src="/assets/fresvik/brand/fresvik-fp-logo-transparent.png"
@@ -575,11 +586,11 @@ export function Header() {
           onValueChange={() => undefined}
           delayDuration={0}
           skipDelayDuration={0}
-          aria-label="Hovudmeny"
+          aria-label={locale === "en" ? "Main menu" : "Hovudmeny"}
           className="hidden items-center gap-1 rounded-[10px] border border-slate-200 bg-slate-50/90 p-1 lg:flex"
         >
           <NavigationMenuList>
-            {mainNavigation.map((item) => (
+            {navigation.map((item) => (
               <DesktopMenuItem
                 key={item.href}
                 item={item}
@@ -605,8 +616,15 @@ export function Header() {
             className="inline-flex h-[3.25rem] items-center gap-2 whitespace-nowrap rounded-[10px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
           >
             <Phone aria-hidden="true" size={17} />
-            Ring oss
+            {locale === "en" ? "Call us" : "Ring oss"}
           </a>
+          <Link
+            href={locale === "en" ? norwegianHref : englishHref}
+            aria-label={locale === "en" ? "Switch to Norwegian" : "Switch to English"}
+            className="inline-flex h-[3.25rem] items-center justify-center rounded-[10px] border border-slate-300 px-3 text-sm font-black uppercase tracking-[0.12em] text-slate-800 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
+          >
+            {locale === "en" ? "NO" : "EN"}
+          </Link>
           <span
             aria-label="Norsk produsent"
             className="inline-flex h-[3.25rem] w-20 shrink-0 items-center justify-center"
@@ -617,7 +635,15 @@ export function Header() {
 
         <button
           type="button"
-          aria-label={mobileOpen ? "Lukk meny" : "Opne meny"}
+          aria-label={
+            mobileOpen
+              ? locale === "en"
+                ? "Close menu"
+                : "Lukk meny"
+              : locale === "en"
+                ? "Open menu"
+                : "Opne meny"
+          }
           aria-expanded={mobileOpen}
           onClick={toggleMobileMenu}
           className="grid size-11 shrink-0 place-items-center rounded-[8px] border border-slate-300 bg-white text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2 lg:hidden"
@@ -630,21 +656,22 @@ export function Header() {
         <div className="lg:hidden">
           <div className="absolute inset-x-0 top-full z-50 border-t border-slate-200 bg-slate-50/98 shadow-2xl shadow-slate-950/15 backdrop-blur-xl">
             <nav
-              aria-label="Mobilmeny"
+              aria-label={locale === "en" ? "Mobile menu" : "Mobilmeny"}
               className="mx-auto grid max-h-[calc(100dvh-4.5rem)] max-w-7xl content-start gap-3 overflow-y-auto px-4 py-4 sm:max-h-[calc(100dvh-5rem)] sm:px-5"
             >
               <div className="rounded-[12px] border border-cyan-100 bg-gradient-to-br from-cyan-50 to-white p-4">
                 <p className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
                   <NorwayFlag />
-                  Fresvik Produkt
+                  {locale === "en" ? "Fresvik Produkt" : "Fresvik Produkt"}
                 </p>
                 <p className="mt-2 max-w-md text-sm leading-6 text-slate-700">
-                  Finn produkt, tenester og dokumentasjon for kjøle- og
-                  fryseløysingar.
+                  {locale === "en"
+                    ? "Find products, services and documentation for cold and freezer solutions."
+                    : "Finn produkt, tenester og dokumentasjon for kjøle- og fryseløysingar."}
                 </p>
               </div>
 
-              {mainNavigation.map((item) => (
+              {navigation.map((item) => (
                 <MobileLink
                   key={item.href}
                   item={item}
@@ -668,8 +695,15 @@ export function Header() {
                   className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800"
                 >
                   <Phone aria-hidden="true" size={17} />
-                  Ring oss
+                  {locale === "en" ? "Call us" : "Ring oss"}
                 </a>
+                <Link
+                  href={locale === "en" ? norwegianHref : englishHref}
+                  onClick={closeMobileMenu}
+                  className="inline-flex min-h-12 items-center justify-center rounded-[8px] border border-slate-300 px-4 text-sm font-black uppercase tracking-[0.12em] text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 sm:col-span-2"
+                >
+                  {locale === "en" ? "Norsk" : "English"}
+                </Link>
               </div>
             </nav>
           </div>

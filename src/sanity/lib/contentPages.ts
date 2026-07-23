@@ -72,6 +72,8 @@ type SanityContentDoc = {
   documents?: SanityDocumentRef[];
   migrationCards?: SanityMigrationCard[];
   migrationSections?: SanityMigrationSection[];
+  language?: "nn" | "en";
+  translationGroup?: string;
 };
 
 type SanityIndexItem = {
@@ -98,7 +100,8 @@ type SanityIndexItem = {
 
 const CONTENT_DOC_QUERY = defineQuery(`*[
   _type in ["page", "product", "service", "newsArticle", "referenceProject"] &&
-  slug.current == $slug
+  slug.current == $slug &&
+  ((language == $language) || (!defined(language) && $language == "nn"))
 ][0]{
   _type,
   title,
@@ -122,6 +125,8 @@ const CONTENT_DOC_QUERY = defineQuery(`*[
   category,
   location,
   customerType,
+  language,
+  translationGroup,
   "imageUrl": coalesce(heroImage.asset->url, image.asset->url),
   "documents": documents[]->{
     title,
@@ -163,7 +168,8 @@ const CONTENT_DOC_QUERY = defineQuery(`*[
 
 const CONTENT_SLUGS_QUERY = defineQuery(`*[
   _type in ["page", "product", "service", "newsArticle", "referenceProject"] &&
-  defined(slug.current)
+  defined(slug.current) &&
+  (!defined(language) || language == "nn")
 ].slug.current`);
 
 const localMigrationStructurePaths = new Set<string>([]);
@@ -581,18 +587,18 @@ export async function getSanityContentSlugs() {
   }
 }
 
-export async function getSanityContentPage(path: string) {
+export async function getSanityContentPage(path: string, language: "nn" | "en" = "nn") {
   const fallback = getFallbackContentPage(path);
-  if (!isSanityConfigured) return fallback;
+  if (!isSanityConfigured) return language === "nn" ? fallback : null;
 
   try {
     const doc = await client.fetch<SanityContentDoc | null>(
       CONTENT_DOC_QUERY,
-      { slug: slugForPath(path) },
+      { slug: slugForPath(path), language },
       { next: { revalidate: 60 } },
     );
 
-    if (!doc) return fallback;
+    if (!doc) return language === "nn" ? fallback : null;
 
     const normalizedPath = pathForSlug(doc.slug);
     const indexSections = await getIndexSections(normalizedPath);

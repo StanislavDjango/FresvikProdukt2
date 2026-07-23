@@ -17,6 +17,13 @@ export const metadata: Metadata = {
   },
   description:
     "Fresvik Produkt leverer isolerte panel, portar, dører, montasje og service til norske prosjekt.",
+  alternates: {
+    canonical: "/",
+    languages: {
+      "nn-NO": "/",
+      en: "/en",
+    },
+  },
   applicationName: siteName,
   authors: [{ name: "Fresvik Produkt AS" }],
   publisher: "Fresvik Produkt AS",

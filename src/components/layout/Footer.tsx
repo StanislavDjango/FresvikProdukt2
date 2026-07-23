@@ -1,3 +1,5 @@
+"use client";
+
 import {
   ArrowRight,
   ArrowUp,
@@ -10,38 +12,45 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
-  footerNavigation,
-  mainNavigation,
+  getFooterNavigation,
+  getMainNavigation,
   type NavigationItem,
 } from "@/data/navigation";
 import { NorwayFlag } from "@/components/ui/NorwayFlag";
+import { localeFromPathname, withLocale } from "@/i18n/config";
 
-const productLinks =
-  mainNavigation.find((item) => item.href === "/produkt")?.children ?? [];
-const serviceLinks =
-  mainNavigation.find((item) => item.href === "/tenester")?.children ?? [];
-const documentationLinks =
-  mainNavigation.find((item) => item.href === "/dokumentasjon")?.children ?? [];
-const companyLinks =
-  mainNavigation.find((item) => item.href === "/om-oss")?.children ?? [];
-
-const footerGroups: Array<{
+function buildFooterGroups(locale: "nn" | "en"): Array<{
   title: string;
   href: string;
   links: NavigationItem[];
-}> = [
-  { title: "Produkt", href: "/produkt", links: productLinks },
-  { title: "Tenester", href: "/tenester", links: serviceLinks },
-  { title: "Dokumentasjon", href: "/dokumentasjon", links: documentationLinks },
-  { title: "Selskap", href: "/om-oss", links: companyLinks },
-];
+}> {
+  const navigation = getMainNavigation(locale);
 
-const trustItems = [
-  { icon: CheckCircle2, label: "45+ års erfaring" },
-  { icon: ShieldCheck, label: "Norsk produksjon" },
-  { icon: FileText, label: "Dokumenterte løysingar" },
-];
+  return [
+    {
+      title: locale === "en" ? "Products" : "Produkt",
+      href: withLocale("/produkt", locale),
+      links: navigation.find((item) => item.href === withLocale("/produkt", locale))?.children ?? [],
+    },
+    {
+      title: locale === "en" ? "Services" : "Tenester",
+      href: withLocale("/tenester", locale),
+      links: navigation.find((item) => item.href === withLocale("/tenester", locale))?.children ?? [],
+    },
+    {
+      title: locale === "en" ? "Documentation" : "Dokumentasjon",
+      href: withLocale("/dokumentasjon", locale),
+      links: navigation.find((item) => item.href === withLocale("/dokumentasjon", locale))?.children ?? [],
+    },
+    {
+      title: locale === "en" ? "Company" : "Selskap",
+      href: withLocale("/om-oss", locale),
+      links: navigation.find((item) => item.href === withLocale("/om-oss", locale))?.children ?? [],
+    },
+  ];
+}
 
 function FooterLink({ item }: { item: NavigationItem }) {
   return (
@@ -55,6 +64,25 @@ function FooterLink({ item }: { item: NavigationItem }) {
 }
 
 export function Footer() {
+  const pathname = usePathname();
+  const locale = localeFromPathname(pathname);
+  const footerGroups = buildFooterGroups(locale);
+  const footerNavigation = getFooterNavigation(locale);
+  const trustItems = [
+    {
+      icon: CheckCircle2,
+      label: locale === "en" ? "45+ years of experience" : "45+ års erfaring",
+    },
+    {
+      icon: ShieldCheck,
+      label: locale === "en" ? "Norwegian production" : "Norsk produksjon",
+    },
+    {
+      icon: FileText,
+      label: locale === "en" ? "Documented solutions" : "Dokumenterte løysingar",
+    },
+  ];
+
   return (
     <footer className="border-t border-slate-200 bg-slate-50">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-5 lg:px-8">
@@ -64,18 +92,21 @@ export function Footer() {
               Fresvik Produkt
             </p>
             <h2 className="mt-3 max-w-2xl text-3xl font-semibold leading-tight text-slate-950 sm:text-4xl">
-              Klar for å avklare kjøle-, fryse- eller panelprosjektet?
+              {locale === "en"
+                ? "Ready to clarify a cold, freezer or panel project?"
+                : "Klar for å avklare kjøle-, fryse- eller panelprosjektet?"}
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
-              Ta kontakt med salsavdelinga for produktval, dokumentasjon,
-              teknisk avklaring eller eit konkret tilbod.
+              {locale === "en"
+                ? "Contact the sales team for product selection, documentation, technical clarification or a concrete offer."
+                : "Ta kontakt med salsavdelinga for produktval, dokumentasjon, teknisk avklaring eller eit konkret tilbod."}
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/kontakt"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] bg-cyan-700 px-5 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
               >
-                Send førespørsel
+                {locale === "en" ? "Send request" : "Send førespørsel"}
                 <ArrowRight aria-hidden="true" size={17} />
               </Link>
               <a
@@ -115,7 +146,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/"
-                  aria-label="Fresvik Produkt framside"
+                  aria-label={locale === "en" ? "Fresvik Produkt home" : "Fresvik Produkt framside"}
                   className="inline-flex items-center gap-3 rounded-[8px] py-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-4 focus-visible:ring-offset-slate-950"
                 >
                   <Image
@@ -135,12 +166,13 @@ export function Footer() {
                   </span>
                 </Link>
                 <p className="mt-5 max-w-sm text-sm leading-6 text-slate-300">
-                  Isolerte panel, dører, portar, montasje og dokumentasjon for
-                  profesjonelle kjøle- og fryseløysingar.
+                  {locale === "en"
+                    ? "Insulated panels, doors, gates, installation and documentation for professional cold and freezer solutions."
+                    : "Isolerte panel, dører, portar, montasje og dokumentasjon for profesjonelle kjøle- og fryseløysingar."}
                 </p>
                 <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-xs font-semibold text-slate-200">
                   <NorwayFlag />
-                  Norsk produsent frå Fresvik
+                  {locale === "en" ? "Norwegian producer from Fresvik" : "Norsk produsent frå Fresvik"}
                 </div>
               </div>
 
@@ -204,7 +236,7 @@ export function Footer() {
           <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
             <p>© {new Date().getFullYear()} Fresvik Produkt AS</p>
             <nav
-              aria-label="Juridiske lenker"
+              aria-label={locale === "en" ? "Legal links" : "Juridiske lenker"}
               className="flex flex-wrap items-center gap-x-5 gap-y-2"
             >
               {footerNavigation.map((item) => (
@@ -219,7 +251,7 @@ export function Footer() {
             </nav>
             <Link
               href="#top"
-              aria-label="Til toppen"
+              aria-label={locale === "en" ? "Back to top" : "Til toppen"}
               className="grid size-10 place-items-center rounded-full border border-white/20 text-white transition hover:border-cyan-300 hover:text-cyan-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
             >
               <ArrowUp aria-hidden="true" size={18} />

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { DevelopmentNotice } from "@/components/layout/DevelopmentNotice";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 
@@ -12,6 +13,7 @@ export function SiteShell({ children }: SiteShellProps) {
       <Header />
       {children}
       <Footer />
+      <DevelopmentNotice />
     </div>
   );
 }

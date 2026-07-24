@@ -89,6 +89,14 @@ const structuredEnglishDraftSourceRoutes = [
   "/monteringsanvisning",
   "/monteringsanvisningar-fresvik-skyveport",
   "/kundeservice/faq",
+  "/referansar",
+  "/om-oss",
+  "/firmainfo",
+  "/tilsette",
+  "/aktuelt",
+  "/stillingledig",
+  "/personvernerklering",
+  "/openheitslova",
 ];
 
 const requiredContentMessageKeys = [

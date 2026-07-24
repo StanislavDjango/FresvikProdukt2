@@ -1234,6 +1234,453 @@ const priorityEnglishContent = {
       },
     ],
   },
+  "/referansar": {
+    body: [
+      "Fresvik Produkt delivers cold rooms, freezer rooms, doors, gates and facade panel solutions for food production, retail, institutions, commercial kitchens, laboratories, ships and offshore installations.",
+      "The reference overview shows selected projects where Fresvik Produkt has delivered tailored solutions with an emphasis on delivery reliability, quality and practical installation.",
+      "This English draft keeps the migrated project summaries as a review-ready overview. Individual reference pages may still need separate English routes before they are promoted in English navigation.",
+    ],
+    migrationSections: [
+      {
+        title: "Reference overview",
+        intro: "Selected migrated reference projects.",
+        items: [
+          {
+            title: "Coop Extra Sogndal",
+            text:
+              "Fresvik Produkt delivered and installed cold and freezer rooms for the entire Coop Extra Sogndal store, with about 800 m2 of panels.",
+            href: "/referansar/2014/7/8/coop-extra-sogndal",
+          },
+          {
+            title: "Interfrukt",
+            text:
+              "Fresvik Produkt supplied 16,500 m2 of cold and freezer panels for Interfrukt SA at Langhus in Ski municipality.",
+            href: "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
+          },
+          {
+            title: "Baza Fredrikstad",
+            text:
+              "A tailored freezer room for Baza Nordic in Fredrikstad, developed for efficient and reliable frozen-goods storage.",
+            href: "/referansar/fryserom-baza-fredrikstad",
+          },
+          {
+            title: "Spar Lund Torv",
+            text:
+              "A historic PIR delivery with a new freezer room, three cold rooms, dividing walls, alarm, PVC curtain and swing doors.",
+            href: "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+          },
+          {
+            title: "Celsa Steel Service, Sotra",
+            text:
+              "Fresvik delivered and installed facade panels with mineral wool core, flashing and windows for a new production facility.",
+            href: "/referansar/celsa-steel-sotra",
+          },
+        ],
+      },
+      {
+        title: "Reference categories",
+        intro: "Main project categories from the Norwegian overview.",
+        items: [
+          {
+            title: "Retail cold and freezer rooms",
+            text: "Projects for grocery stores, energy stations and kiosk environments.",
+          },
+          {
+            title: "Commercial kitchens and restaurants",
+            text: "Cold and freezer rooms for kitchens, restaurants and institutions.",
+          },
+          {
+            title: "Facade panels",
+            text: "Exterior panel deliveries for industrial and warehouse buildings.",
+          },
+        ],
+      },
+    ],
+  },
+  "/om-oss": {
+    body: [
+      "Fresvik Produkt combines Norwegian production, experienced specialists and documented solutions for cold rooms and freezer rooms.",
+      "The about page points visitors onward to company information, employees, news and available positions, while keeping Fresvik Produkt's production and expertise as the main context.",
+      "This English draft keeps the same navigation purpose as the Norwegian source page and should be reviewed before the English about section is published broadly.",
+    ],
+    migrationSections: [
+      {
+        title: "About Fresvik Produkt",
+        intro: "Company context from the migrated Norwegian about section.",
+        items: [
+          {
+            title: "Norwegian production",
+            text: "Fresvik Produkt produces insulated panels, doors and gates for cold and freezer rooms in Norway.",
+          },
+          {
+            title: "Documented solutions",
+            text: "The company presents product documentation, certificates and installation guides as part of the customer follow-up.",
+            href: "/en/documentation",
+          },
+          {
+            title: "Contact points",
+            text: "Customers can find company details, employees and contact information through the about section.",
+            href: "/en/contact",
+          },
+        ],
+      },
+      {
+        title: "Further information",
+        intro: "About-section links preserved from the Norwegian source page.",
+        items: [
+          {
+            title: "Company information",
+            text: "Company facts, contact points and key information about Fresvik Produkt.",
+            href: "/en/about/company-info",
+          },
+          {
+            title: "Employees",
+            text: "Overview of contact persons and departments.",
+            href: "/en/about/employees",
+          },
+          {
+            title: "News",
+            text: "News and updates from Fresvik Produkt.",
+            href: "/en/about/news",
+          },
+          {
+            title: "Careers",
+            text: "Information about current vacancies and the application process.",
+            href: "/en/about/careers",
+          },
+        ],
+      },
+    ],
+  },
+  "/firmainfo": {
+    body: [
+      "Fresvik Produkt is a Norwegian producer of insulated panels, doors and gates for cold rooms and freezer rooms, with production in Fresvik in Sogn.",
+      "The company presents itself as the only Norwegian producer of insulated panels, doors and gates for cold and freezer rooms, with a strong position in grocery stores, energy stations and convenience retail.",
+      "Company facts, contact details and legal identifiers should be preserved exactly when the English page is reviewed and approved.",
+    ],
+    migrationSections: [
+      {
+        title: "Company facts",
+        intro: "Key company information from the migrated Norwegian source.",
+        items: [
+          {
+            title: "Norwegian producer",
+            text: "Fresvik Produkt produces insulated panels, doors and gates for cold and freezer rooms.",
+          },
+          {
+            title: "Production in Fresvik",
+            text: "Production in Fresvik in Sogn supports short-travelled products and delivery reliability.",
+          },
+          {
+            title: "Head office and sales office",
+            text: "The head office and production facility are in Fresvik, with a sales office in Drammen.",
+          },
+          {
+            title: "Organisation number",
+            text: "NO 922 582 270. This detail must be checked against the official company record before final approval.",
+          },
+        ],
+      },
+      {
+        title: "Expertise and cooperation",
+        intro: "Business positioning from the source page.",
+        items: [
+          {
+            title: "Partner for refrigeration contractors",
+            text: "The company aims to be a strong cooperation partner for refrigeration contractors.",
+          },
+          {
+            title: "Flexible production",
+            text:
+              "Flexible production solutions make it possible to supply customised solutions with reduced waste on the building site.",
+          },
+          {
+            title: "Eccentric lock installation",
+            text: "Insulated panels are supplied with eccentric locks for quick and simple installation.",
+          },
+        ],
+      },
+    ],
+  },
+  "/tilsette": {
+    body: [
+      "The employees page gives customers and partners an overview of contact persons and departments at Fresvik Produkt.",
+      "Names, phone numbers and email addresses must be preserved exactly from the Norwegian source. English translation should only adjust surrounding labels and role descriptions.",
+      "This draft is intended as an English contact overview and should be reviewed against the live Sanity employee data before public English launch.",
+    ],
+    migrationSections: [
+      {
+        title: "Employee contact overview",
+        intro: "Use the page to find the right contact person or department.",
+        items: [
+          {
+            title: "Sales department Fresvik",
+            text: "Contact point for sales and project follow-up in Fresvik.",
+            href: "mailto:post@fresvik.no",
+          },
+          {
+            title: "Sales department Drammen",
+            text: "Contact point for sales and project follow-up in Drammen.",
+            href: "mailto:post@fresvik.no",
+          },
+          {
+            title: "Main switchboard",
+            text: "Call +47 57 69 83 00 or email post@fresvik.no if you are unsure who to contact.",
+            href: "mailto:post@fresvik.no",
+          },
+        ],
+      },
+      {
+        title: "Review requirements",
+        intro: "Employee data must be checked before approval.",
+        items: [
+          {
+            title: "Preserve names",
+            text: "Do not translate names.",
+          },
+          {
+            title: "Preserve contact details",
+            text: "Phone numbers and email addresses must match the current Norwegian source.",
+          },
+          {
+            title: "Translate labels only",
+            text: "Only department labels and short role descriptions should be translated.",
+          },
+        ],
+      },
+    ],
+  },
+  "/aktuelt": {
+    body: [
+      "The news page gathers updates from Fresvik Produkt, including employee news, company updates, project stories and trade-fair participation.",
+      "The English overview keeps the migrated news structure, but individual news articles still need a decision on whether they should receive full English article routes.",
+      "Until that decision is made, the English page should be treated as a draft overview rather than a fully approved English news archive.",
+    ],
+    migrationSections: [
+      {
+        title: "News overview",
+        intro: "Selected migrated news items from the Norwegian news page.",
+        items: [
+          {
+            title: "Meet our new technical manager",
+            text: "News item preserved from the old front page and news archive.",
+          },
+          {
+            title: "New technical drafter in place",
+            text: "Company update about a new technical drafter joining the office.",
+          },
+          {
+            title: "John Bøthun retires",
+            text: "News item about a long-serving employee retiring from Fresvik Produkt.",
+          },
+          {
+            title: "Fresvik Produkt at Nor-Fishing",
+            text: "Trade-fair news item from the migrated archive.",
+          },
+        ],
+      },
+      {
+        title: "Publishing decision",
+        intro: "The English news archive needs one final editorial decision.",
+        items: [
+          {
+            title: "Overview only",
+            text: "Keep the English page as an overview and link to Norwegian articles for details.",
+          },
+          {
+            title: "Full article translation",
+            text: "Translate selected article pages and add English article route mappings.",
+          },
+          {
+            title: "Review dates and images",
+            text: "Before approval, each promoted article needs checked dates, image captions and links.",
+          },
+        ],
+      },
+    ],
+  },
+  "/stillingledig": {
+    body: [
+      "The careers page presents Fresvik Produkt as a workplace and is used for available positions and application information.",
+      "The migrated source describes a professional environment for insulated panels, a good working environment, pension and insurance arrangements, and offices in Fresvik and Drammen.",
+      "Any active vacancy text must be reviewed before publishing in English, because job advertisements can change quickly and should not be treated as permanent translated content.",
+    ],
+    migrationSections: [
+      {
+        title: "Working at Fresvik Produkt",
+        intro: "Workplace points from the migrated Norwegian source.",
+        items: [
+          {
+            title: "Large specialist environment",
+            text: "The source describes Fresvik Produkt as a specialist environment for insulated panels.",
+          },
+          {
+            title: "Good working environment",
+            text: "The source highlights a good working environment with friendly colleagues.",
+          },
+          {
+            title: "Pension and insurance",
+            text: "Good pension and insurance arrangements are mentioned in the migrated job page.",
+          },
+          {
+            title: "Fresvik and Drammen",
+            text: "The page mentions office locations in Fresvik and Drammen.",
+          },
+        ],
+      },
+      {
+        title: "Vacancy review",
+        intro: "Career content must be checked before publishing.",
+        items: [
+          {
+            title: "Current position status",
+            text: "Confirm whether the vacancy is still active before public English launch.",
+          },
+          {
+            title: "Application details",
+            text: "Check deadline, contact person and application instructions before approval.",
+          },
+          {
+            title: "External links",
+            text: "Links about Fresvik as a place to live and work should be reviewed before publishing.",
+          },
+        ],
+      },
+    ],
+  },
+  "/personvernerklering": {
+    body: [
+      "This is a draft English privacy policy document translated from the migrated Norwegian source. It must be reviewed before it is used as official legal text.",
+      "The Norwegian source identifies Fresvik Produkt AS as the owner of the website, gives the company address, email address and organisation number, and describes how personal data is processed in customer relationships.",
+      "The source also covers disclosure to third parties, customer records, cookies, newsletter signup, contact forms, social sharing, access/correction/deletion rights and responsibility for processing personal data.",
+    ],
+    migrationSections: [
+      {
+        title: "Privacy policy draft",
+        intro: "Legal translation requires manual review before publishing.",
+        items: [
+          {
+            title: "1. About Fresvik Produkt AS",
+            text:
+              "Website owner: Fresvik Produkt AS, Fresvikvegen 995, 6896 Fresvik. Email: post@fresvik.no. Organisation number: NO 922 582 270.",
+          },
+          {
+            title: "2. Purpose of processing personal data",
+            text:
+              "Customer relationship data can include name, address, email, telephone number, organisation number and other necessary information used to manage the customer relationship.",
+          },
+          {
+            title: "3. Disclosure to third parties",
+            text:
+              "Personal data is not disclosed to third parties unless there is a legal obligation to provide information to public authorities.",
+          },
+          {
+            title: "4. Cookies and analytics",
+            text:
+              "The source page describes use of cookies, including statistics and embedded services. This section must be updated to match the new site stack before approval.",
+          },
+          {
+            title: "5. Access, correction and deletion",
+            text:
+              "Users may request access to registered information and ask for correction or deletion by contacting Fresvik Produkt AS.",
+          },
+        ],
+      },
+      {
+        title: "Legal review required",
+        intro: "Do not publish as approved legal text until checked.",
+        items: [
+          {
+            title: "Check new site cookies",
+            text: "The old source mentions Squarespace, Google Analytics and Vimeo; the new site may use a different setup.",
+          },
+          {
+            title: "Check legal terminology",
+            text: "Legal language must be reviewed by a qualified person before approval.",
+          },
+          {
+            title: "Preserve company details",
+            text: "Address, email and organisation number must be verified against current company records.",
+          },
+        ],
+      },
+    ],
+  },
+  "/openheitslova": {
+    body: [
+      "This is a draft English Transparency Act page translated from the migrated Norwegian source. It must be reviewed before it is used as official compliance text.",
+      "The Norwegian source explains that the Transparency Act promotes respect for fundamental human rights and decent working conditions, and gives the public access to information.",
+      "Fresvik Produkt states that it works continuously to satisfy the requirements of the Act and publishes documents connected to due diligence and reporting obligations.",
+    ],
+    migrationSections: [
+      {
+        title: "Transparency Act",
+        intro: "Draft translation of the migrated Norwegian content.",
+        items: [
+          {
+            title: "Company commitment",
+            text:
+              "Fresvik Produkt states that it works continuously with measures to satisfy the requirements of the Transparency Act.",
+          },
+          {
+            title: "Privacy policy",
+            text: "See the privacy policy for how personal data is processed.",
+            href: "/en/privacy-policy",
+          },
+          {
+            title: "Read the Act",
+            text:
+              "The full Norwegian Act is available on Lovdata as 'Lov om virksomheters åpenhet og arbeid med grunnleggende menneskerettigheter og anstendige arbeidsforhold'.",
+            href: "https://lovdata.no/dokument/NL/lov/2021-06-18-99",
+          },
+        ],
+      },
+      {
+        title: "Documents and external sources",
+        intro: "Document links from the migrated Norwegian Transparency Act page.",
+        items: [
+          {
+            title: "Due diligence assessment",
+            text: "PDF link from the migrated source page. Review file availability before approval.",
+            href: "/s/Aktsemdvurderingar-2025.pdf",
+          },
+          {
+            title: "Routine for fulfilling obligations",
+            text: "PDF link from the migrated source page. Review file availability before approval.",
+            href: "/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf",
+          },
+          {
+            title: "Statement 2025",
+            text: "PDF link from the migrated source page. Review file availability before approval.",
+            href: "/s/2025-Utgreiing-signert.pdf",
+          },
+          {
+            title: "Transparency Act on Lovdata",
+            text: "External legal source.",
+            href: "https://lovdata.no/dokument/NL/lov/2021-06-18-99",
+          },
+        ],
+      },
+      {
+        title: "Compliance review required",
+        intro: "Do not publish as approved compliance text until checked.",
+        items: [
+          {
+            title: "Verify document URLs",
+            text: "The migrated PDF links use old /s/ paths and should be checked or replaced with migrated asset URLs.",
+          },
+          {
+            title: "Check latest statement",
+            text: "Transparency Act statements can change yearly and must be checked against the latest signed file.",
+          },
+          {
+            title: "Legal terminology",
+            text: "Compliance wording must be reviewed before public English launch.",
+          },
+        ],
+      },
+    ],
+  },
 };
 
 function migrationSectionsFor(sourcePath) {

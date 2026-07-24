@@ -47,14 +47,14 @@ This file tracks the remaining content work for the English version. The `/en` r
 
 | Norwegian source | English URL | Sanity type | Current status | Required action |
 | --- | --- | --- | --- | --- |
-| `/referansar` | `/en/references` | `page` | draft summary | Translate references overview and project card text. |
-| `/om-oss` | `/en/about` | `page` | draft summary | Translate company overview and internal links. |
-| `/firmainfo` | `/en/about/company-info` | `page` | draft summary | Translate company facts without changing legal details. |
-| `/tilsette` | `/en/about/employees` | `page` | draft summary | Translate role labels only; preserve names, phone numbers and emails. |
-| `/aktuelt` | `/en/about/news` | `page` | draft summary | Translate news overview and decide whether individual news articles need English URLs. |
-| `/stillingledig` | `/en/about/careers` | `page` | draft summary | Translate career text and current position details if active. |
-| `/personvernerklering` | `/en/privacy-policy` | `page` | draft summary | Legal translation requires manual review. |
-| `/openheitslova` | `/en/transparency-act` | `page` | draft summary | Legal/compliance translation requires manual review. |
+| `/referansar` | `/en/references` | `page` | priority-3 draft | Review references overview and decide whether individual reference pages need English routes. |
+| `/om-oss` | `/en/about` | `page` | priority-3 draft | Review company overview and about-section links before approval. |
+| `/firmainfo` | `/en/about/company-info` | `page` | priority-3 draft | Review company facts without changing legal details. |
+| `/tilsette` | `/en/about/employees` | `page` | priority-3 draft | Review role labels and verify all names, phone numbers and emails from current source. |
+| `/aktuelt` | `/en/about/news` | `page` | priority-3 draft | Review news overview and decide whether individual news articles need English URLs. |
+| `/stillingledig` | `/en/about/careers` | `page` | priority-3 draft | Review whether vacancy text is current before publishing. |
+| `/personvernerklering` | `/en/privacy-policy` | `page` | priority-3 draft, legal review required | Legal translation requires manual review before approval. |
+| `/openheitslova` | `/en/transparency-act` | `page` | priority-3 draft, legal review required | Compliance translation and old `/s/` document links require manual review before approval. |
 
 ## Validation After Each Translation Batch
 

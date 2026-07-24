@@ -18,6 +18,10 @@ export const metadata: Metadata = {
     "Kontakt Fresvik Produkt for prosjekt, sal, service og leveranse av isolerte panel, portar og dører.",
   alternates: {
     canonical: "/kontakt",
+    languages: {
+      "nn-NO": "/kontakt",
+      en: "/en/contact",
+    },
   },
   openGraph: {
     title: "Kontakt Fresvik Produkt",

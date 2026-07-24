@@ -43,6 +43,7 @@ const routeMap = readJson("src/i18n/routeMap.json");
 const nnMessages = readJson("src/i18n/messages/nn.json");
 const enMessages = readJson("src/i18n/messages/en.json");
 const proxySource = readText("src/proxy.ts");
+const contactPageSource = readText("src/app/kontakt/page.tsx");
 const englishSeedDocs = readNdjson("sanity/seed/migratedContent.en.ndjson");
 
 const requiredEnglishRoutes = [
@@ -201,6 +202,10 @@ if (!proxySource.includes('pathname.startsWith("/studio")')) {
 
 if (!proxySource.includes("withLocale(sourcePath, \"en\")")) {
   errors.push("English canonical redirect is missing from src/proxy.ts");
+}
+
+if (!contactPageSource.includes('languages:') || !contactPageSource.includes('en: "/en/contact"')) {
+  errors.push("/kontakt metadata is missing English alternate language link");
 }
 
 if (englishSeedDocs.length === 0) {

@@ -9,6 +9,7 @@ This file tracks the remaining content work for the English version. The `/en` r
 - Norwegian pages without a prefix remain the source of truth.
 - English pages use `/en/...` URLs from `src/i18n/routeMap.json`.
 - `sanity/seed/migratedContent.en.ndjson` contains draft English documents only.
+- Public `/en` fallback pages must stay English-only: show translation status and a Norwegian source link, but do not render Norwegian body sections as English content.
 - Do not auto-translate technical claims without review.
 - Keep product names, Fresvik, PIR, PUR, SINTEF and CE unchanged.
 - Norwegian-only PDFs may be linked from English pages, but label them as Norwegian PDFs.

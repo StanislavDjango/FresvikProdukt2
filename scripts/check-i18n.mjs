@@ -44,6 +44,7 @@ const nnMessages = readJson("src/i18n/messages/nn.json");
 const enMessages = readJson("src/i18n/messages/en.json");
 const proxySource = readText("src/proxy.ts");
 const contactPageSource = readText("src/app/kontakt/page.tsx");
+const englishPagesSource = readText("src/data/englishPages.ts");
 const englishSeedDocs = readNdjson("sanity/seed/migratedContent.en.ndjson");
 const liveBaseUrl = process.env.I18N_CHECK_BASE_URL;
 const canonicalBaseUrl =
@@ -293,6 +294,14 @@ if (!proxySource.includes("withLocale(sourcePath, \"en\")")) {
 
 if (!contactPageSource.includes('languages:') || !contactPageSource.includes('en: "/en/contact"')) {
   errors.push("/kontakt metadata is missing English alternate language link");
+}
+
+if (englishPagesSource.includes("base.cards.map")) {
+  errors.push("English fallback pages must not render Norwegian source cards");
+}
+
+if (englishPagesSource.includes("base.sections.map")) {
+  errors.push("English fallback pages must not render Norwegian source sections");
 }
 
 if (englishSeedDocs.length === 0) {

@@ -13,11 +13,13 @@ Current implementation:
 - `/studio` is excluded from locale canonical redirects.
 - Header, footer, mega-menu descriptions and the development notice use localized UI messages from `src/i18n/messages`.
 - English pages first look for an English Sanity document and fall back to a clear temporary English page when translation is missing.
+- Temporary English fallback pages do not render Norwegian body sections or Norwegian product cards; they show English status copy and link to the Norwegian source page until an approved English Sanity document exists.
 - `npm run seed:sanity:en` writes `sanity/seed/migratedContent.en.ndjson` as draft English documents without overwriting the Norwegian baseline; the current seed covers all 26 entries in `src/i18n/routeMap.json`.
 - Sanity document schemas include language metadata for document-level translations.
 - `npm run check:i18n` validates route mapping, bidirectional language switch paths, message key parity, required content UI labels, English seed slug/sourceUrl coverage and the `/studio` proxy exclusion.
 - Production `/en` routes are live on `https://fresvik-produkt2.vercel.app`.
 - Production canonical and `hreflang` alternates are verified for Norwegian and English public pages, including the separate `/kontakt` route.
+- The public header does not offer an English switch from Norwegian pages until approved English Sanity content is ready; direct `/en` pages still show a return link back to Norwegian.
 
 Production verification on 2026-07-24 15:39 CEST:
 
@@ -73,12 +75,13 @@ The temporary fallback/seed layer also covers secondary menu pages such as `/en/
 
 ## Remaining Work
 
-1. Translate approved English content in Sanity, page by page. Current `/en` pages are intentionally temporary English summaries with a Norwegian source link until approved translations are imported.
+1. Translate approved English content in Sanity, page by page. Current `/en` pages are intentionally temporary English summaries with a Norwegian source link until approved translations are imported, without mixing in Norwegian page body content.
 2. Translate document titles/descriptions, while Norwegian PDFs may remain marked as Norwegian PDF.
 3. Replace temporary fallback notices once each English Sanity document is approved.
 4. Add any missing English route mappings before linking to those pages.
-5. Continue auditing page-specific hard-coded public UI strings before publishing English navigation broadly; the reusable `ContentPageView` labels are now message-backed.
-6. Run full checks after each approved translation batch and before exposing English navigation more prominently.
+5. Re-enable the public English language switch only after the first approved English content batch is imported and visually checked.
+6. Continue auditing page-specific hard-coded public UI strings before publishing English navigation broadly; the reusable `ContentPageView` labels are now message-backed.
+7. Run full checks after each approved translation batch and before exposing English navigation more prominently.
 
 ## Checks
 

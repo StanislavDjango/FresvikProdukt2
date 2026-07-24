@@ -1,11 +1,10 @@
 import { isLegacyRoute } from "@/data/legacyRoutes";
 import {
   createLegacyContentPage,
-  type ContentCard,
   getContentPage,
   type ContentPage,
 } from "@/data/pages";
-import { englishPathBySourcePath, withLocale } from "@/i18n/config";
+import { withLocale } from "@/i18n/config";
 
 const pageCopy: Record<
   string,
@@ -222,19 +221,6 @@ function englishNotice(path: string) {
   };
 }
 
-function localizeCardLinks(card: ContentCard): ContentCard {
-  const href = card.href;
-  const canLocalize =
-    href &&
-    href.startsWith("/") &&
-    Object.prototype.hasOwnProperty.call(englishPathBySourcePath, href);
-
-  return {
-    ...card,
-    href: canLocalize ? withLocale(href, "en") : href,
-  };
-}
-
 export function getEnglishContentPage(path: string): ContentPage | null {
   const source = getContentPage(path) ?? (isLegacyRoute(path) ? createLegacyContentPage(path) : null);
   const copy = pageCopy[path];
@@ -263,14 +249,8 @@ export function getEnglishContentPage(path: string): ContentPage | null {
     eyebrow: copy?.eyebrow ?? "Fresvik Produkt",
     intro: copy?.intro ?? base.intro,
     description: copy?.description ?? base.description,
-    cards: base.cards.map(localizeCardLinks),
-    sections: [
-      englishNotice(path),
-      ...base.sections.map((section) => ({
-        ...section,
-        items: section.items.map(localizeCardLinks),
-      })),
-    ],
+    cards: [],
+    sections: [englishNotice(path)],
     showMigrationDetails: false,
     suppressExtractCards: true,
   };

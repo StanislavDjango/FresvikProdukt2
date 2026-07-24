@@ -441,7 +441,6 @@ export function Header() {
   const locale = localeFromPathname(pathname);
   const navigation = getMainNavigation(locale);
   const norwegianHref = withLocale(pathname, "nn");
-  const englishHref = withLocale(pathname, "en");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileOpenSection, setMobileOpenSection] = useState<string | null>(
     null,
@@ -645,13 +644,15 @@ export function Header() {
             <Phone aria-hidden="true" size={17} />
             {t("call")}
           </a>
-          <Link
-            href={locale === "en" ? norwegianHref : englishHref}
-            aria-label={locale === "en" ? "Switch to Norwegian" : "Switch to English"}
-            className="inline-flex h-[3.25rem] items-center justify-center rounded-[10px] border border-slate-300 px-3 text-sm font-black uppercase tracking-[0.12em] text-slate-800 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
-          >
-            {locale === "en" ? "NO" : "EN"}
-          </Link>
+          {locale === "en" ? (
+            <Link
+              href={norwegianHref}
+              aria-label="Switch to Norwegian"
+              className="inline-flex h-[3.25rem] items-center justify-center rounded-[10px] border border-slate-300 px-3 text-sm font-black uppercase tracking-[0.12em] text-slate-800 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
+            >
+              NO
+            </Link>
+          ) : null}
           <span
             aria-label="Norsk produsent"
             className="inline-flex h-[3.25rem] w-20 shrink-0 items-center justify-center"
@@ -718,13 +719,15 @@ export function Header() {
                   <Phone aria-hidden="true" size={17} />
                   {t("call")}
                 </a>
-                <Link
-                  href={locale === "en" ? norwegianHref : englishHref}
-                  onClick={closeMobileMenu}
-                  className="inline-flex min-h-12 items-center justify-center rounded-[8px] border border-slate-300 px-4 text-sm font-black uppercase tracking-[0.12em] text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 sm:col-span-2"
-                >
-                  {t("switchLanguage")}
-                </Link>
+                {locale === "en" ? (
+                  <Link
+                    href={norwegianHref}
+                    onClick={closeMobileMenu}
+                    className="inline-flex min-h-12 items-center justify-center rounded-[8px] border border-slate-300 px-4 text-sm font-black uppercase tracking-[0.12em] text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 sm:col-span-2"
+                  >
+                    {t("switchLanguage")}
+                  </Link>
+                ) : null}
               </div>
             </nav>
           </div>

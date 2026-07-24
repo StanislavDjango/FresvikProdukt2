@@ -15,9 +15,10 @@ Current implementation:
 - English pages first look for an English Sanity document and fall back to a clear temporary English page when translation is missing.
 - Temporary English fallback pages do not render Norwegian body sections or Norwegian product cards; they show English status copy and link to the Norwegian source page until an approved English Sanity document exists.
 - `npm run seed:sanity:en` writes `sanity/seed/migratedContent.en.ndjson` as draft English documents without overwriting the Norwegian baseline; the current seed covers all 26 entries in `src/i18n/routeMap.json`.
-- The Priority 1 translation batch now contains structured English draft body/sections for `/`, `/produkt`, `/produkt/fresvik-pir-panel`, `/produkt/fresvik-pur-panel`, `/produkt/kjole-frysedorer`, `/produkt/kjole-fryseportar`, `/tenester`, `/tenester/montasje`, `/dokumentasjon` and `/kontakt`; these are still drafts and need human/technical review before import/publishing.
-- The Priority 2 translation batch now contains structured English draft body/sections for `/produkt/fasadepanel`, `/produkt/frysetunnel`, `/tilleggsutstyr`, `/tenester/leveranse`, `/tenester/service-reservedeler`, `/monteringsanvisning`, `/monteringsanvisningar-fresvik-skyveport` and `/kundeservice/faq`; these are also drafts and need human/technical review before import/publishing.
-- The Priority 3 translation batch now contains structured English draft body/sections for `/referansar`, `/om-oss`, `/firmainfo`, `/tilsette`, `/aktuelt`, `/stillingledig`, `/personvernerklering` and `/openheitslova`; legal/compliance pages are explicitly marked for manual review before approval.
+- The Priority 1 translation batch now contains structured English draft body/sections for `/`, `/produkt`, `/produkt/fresvik-pir-panel`, `/produkt/fresvik-pur-panel`, `/produkt/kjole-frysedorer`, `/produkt/kjole-fryseportar`, `/tenester`, `/tenester/montasje`, `/dokumentasjon` and `/kontakt`; these drafts are imported to Sanity and can be published with `npm run seed:sanity:en:publish:p1` after review.
+- The Priority 2 translation batch now contains structured English draft body/sections for `/produkt/fasadepanel`, `/produkt/frysetunnel`, `/tilleggsutstyr`, `/tenester/leveranse`, `/tenester/service-reservedeler`, `/monteringsanvisning`, `/monteringsanvisningar-fresvik-skyveport` and `/kundeservice/faq`; these drafts are imported to Sanity and can be published together with Priority 1 through the safe publish batch.
+- The safe Priority 3 batch contains `/referansar`, `/om-oss`, `/firmainfo`, `/tilsette` and `/aktuelt`; `/stillingledig`, `/personvernerklering` and `/openheitslova` stay review-only because careers, legal and compliance content should not be published automatically.
+- `npm run seed:sanity:en:publish` dry-runs the default Priority 1 publish batch; `npm run seed:sanity:en:publish:p1` applies Priority 1; `npm run seed:sanity:en:publish:safe` applies Priority 1, Priority 2 and safe Priority 3.
 - `npm run check:i18n:sanity` verifies that all English seed draft IDs exist in Sanity and reports how many matching English documents are published. Use `npm run check:i18n:sanity:published` only after approved English documents are expected to be public.
 - Sanity document schemas include language metadata for document-level translations.
 - `npm run check:i18n` validates route mapping, bidirectional language switch paths, message key parity, required content UI labels, English seed slug/sourceUrl coverage, Priority 1 draft completeness and the `/studio` proxy exclusion.
@@ -79,11 +80,11 @@ The temporary fallback/seed layer also covers secondary menu pages such as `/en/
 
 ## Remaining Work
 
-1. Review/import the Priority 1, Priority 2 and Priority 3 English Sanity draft batches. Current `/en` fallback pages remain intentionally temporary until approved translations are imported, without mixing in Norwegian page body content.
-2. Translate document titles/descriptions, while Norwegian PDFs may remain marked as Norwegian PDF.
-3. Replace temporary fallback notices once each English Sanity document is approved.
-4. Add any missing English route mappings before linking to those pages.
-5. Re-enable the public English language switch only after the first approved English content batch is imported and visually checked.
+1. Review and publish Priority 1 English Sanity drafts first.
+2. Review and publish Priority 2 plus safe Priority 3 drafts as one larger safe batch.
+3. Keep `/stillingledig`, `/personvernerklering` and `/openheitslova` unpublished until careers/legal/compliance wording is manually approved.
+4. Translate document titles/descriptions further where needed, while Norwegian PDFs may remain marked as Norwegian PDF.
+5. Re-enable the public English language switch only after the first approved English content batch is published and visually checked.
 6. Continue auditing page-specific hard-coded public UI strings before publishing English navigation broadly; the reusable `ContentPageView` labels are now message-backed.
 7. Run full checks after each approved translation batch and before exposing English navigation more prominently.
 
@@ -99,6 +100,7 @@ npm run build
 npm run check:migration
 npm run check:assets
 npm run check:i18n
+npm run check:i18n:sanity
 I18N_CHECK_BASE_URL=http://127.0.0.1:3061 npm run check:i18n
 LINK_CHECK_BASE_URL=http://127.0.0.1:3061 npm run check:links
 ```

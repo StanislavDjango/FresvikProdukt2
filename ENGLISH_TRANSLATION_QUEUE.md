@@ -2,13 +2,16 @@
 
 Status date: 2026-07-24
 
-This file tracks the remaining content work for the English version. The `/en` routing, UI messages, SEO alternates, Sanity language metadata and validation scripts are in place. These rows are not approved English content yet unless explicitly marked otherwise.
+This file tracks the remaining content work for the English version. The `/en` routing, UI messages, SEO alternates, Sanity language metadata and validation scripts are in place. These rows are imported as English Sanity drafts unless explicitly marked otherwise.
 
 ## Rules
 
 - Norwegian pages without a prefix remain the source of truth.
 - English pages use `/en/...` URLs from `src/i18n/routeMap.json`.
 - `sanity/seed/migratedContent.en.ndjson` contains draft English documents only.
+- `npm run seed:sanity:en:publish` dry-runs the default Priority 1 publish batch.
+- `npm run seed:sanity:en:publish:p1` publishes Priority 1 only.
+- `npm run seed:sanity:en:publish:safe` publishes Priority 1, Priority 2 and safe Priority 3 pages, but not careers/legal/compliance pages.
 - Public `/en` fallback pages must stay English-only: show translation status and a Norwegian source link, but do not render Norwegian body sections as English content.
 - Do not auto-translate technical claims without review.
 - Keep product names, Fresvik, PIR, PUR, SINTEF and CE unchanged.
@@ -62,6 +65,7 @@ This file tracks the remaining content work for the English version. The `/en` r
 source ~/.nvm/nvm.sh
 nvm use
 npm run check:i18n
+npm run check:i18n:sanity
 npm run lint
 npm run build
 LINK_CHECK_BASE_URL=http://127.0.0.1:3060 npm run check:links

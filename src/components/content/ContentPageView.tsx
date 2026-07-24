@@ -247,7 +247,7 @@ function CompanyOverviewSection({
               <p className="mt-3 grow text-sm leading-6 text-slate-600">
                 {cleanCardText(
                   item.text,
-                  "Finn meir informasjon om Fresvik Produkt.",
+                  labels.companyCardFallback,
                 )}
               </p>
               <span className="mt-5 inline-flex items-center gap-2 self-end text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
@@ -263,22 +263,24 @@ function CompanyOverviewSection({
 
 function CompanyInfoSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const imageItem = section.items.find((item) => item.imageUrl);
   const textItems = section.items.filter((item) => item !== imageItem);
   const intro =
     cleanMigrationIntro(section.intro) ||
-    "Nøkkelopplysningar om Fresvik Produkt og produksjonen i Fresvik.";
+    labels.companyInfoIntroFallback;
 
   return (
     <section className="border-b border-slate-200 bg-white">
       <Container className="grid gap-8 py-12 lg:grid-cols-[0.88fr_1.12fr] lg:items-start lg:py-16">
         <div>
           <SectionHeader
-            eyebrow="Selskapsinformasjon"
-            title="Norsk produsent i Fresvik"
+            eyebrow={labels.companyInfoEyebrow}
+            title={labels.companyInfoTitle}
             intro={intro}
           />
           {imageItem?.imageUrl ? (
@@ -305,7 +307,7 @@ function CompanyInfoSection({
               <p className="mt-3 text-sm leading-7 text-slate-700">
                 {cleanCardText(
                   item.text,
-                  "Nøkkelopplysning om Fresvik Produkt.",
+                  labels.companyInfoItemFallback,
                 )}
               </p>
             </article>
@@ -318,19 +320,21 @@ function CompanyInfoSection({
 
 function EmployeeGridSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const intro =
     cleanMigrationIntro(section.intro) ||
-    "Finn rett kontaktperson for sal, teknisk avklaring, logistikk og administrasjon.";
+    labels.employeesIntroFallback;
 
   return (
     <section className="border-b border-slate-200 bg-white">
       <Container className="py-12 lg:py-16">
         <SectionHeader
-          eyebrow="Kontaktpersonar"
-          title="Tilsette"
+          eyebrow={labels.employeesEyebrow}
+          title={labels.employeesTitle}
           intro={intro}
         />
         <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
@@ -420,7 +424,7 @@ function JobOpeningSection({
             ) : null}
             <div className="p-6 sm:p-8">
               <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
-                Karriere
+                {labels.careerEyebrow}
               </p>
               <h2 className="mt-3 text-3xl font-semibold tracking-normal">
                 {mainItem?.title || introItem?.title || section.title}
@@ -428,7 +432,7 @@ function JobOpeningSection({
               <p className="mt-4 text-base leading-8 text-slate-300">
                 {cleanCardText(
                   mainItem?.text || introItem?.text,
-                  "Sjå ledige stillingar og moglegheiter hos Fresvik Produkt.",
+                  labels.careerIntroFallback,
                 )}
               </p>
             </div>
@@ -445,7 +449,7 @@ function JobOpeningSection({
                 <p className="mt-3 text-sm leading-7 text-slate-700">
                   {cleanCardText(
                     item.text,
-                    "Informasjon om stilling og arbeid hos Fresvik Produkt.",
+                    labels.careerItemFallback,
                   )}
                 </p>
                 {item.href ? <CardLink href={item.href} label={labels.open} /> : null}
@@ -467,7 +471,7 @@ function LegalTextSection({
 }) {
   const title =
     section.title === "Personverntekst frå gammal side"
-      ? "Personverntekst"
+      ? labels.privacyTextTitle
       : section.title === "Tekst frå gammal Openheitslova-side"
         ? "Openheitslova"
         : section.title;
@@ -477,7 +481,7 @@ function LegalTextSection({
       <Container className="py-12 lg:py-16">
         <div className="mx-auto max-w-5xl">
           <SectionHeader
-            eyebrow="Juridisk informasjon"
+            eyebrow={labels.legalInfoEyebrow}
             title={title}
             intro={cleanMigrationIntro(section.intro)}
           />
@@ -505,14 +509,16 @@ function LegalTextSection({
 
 function LegalDocumentsSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   return (
     <section className="border-b border-slate-200 bg-slate-50">
       <Container className="py-12 lg:py-16">
         <SectionHeader
-          eyebrow="Dokument"
+          eyebrow={labels.legalDocumentEyebrow}
           title={section.title}
           intro={section.intro}
         />
@@ -531,7 +537,7 @@ function LegalDocumentsSection({
                   <span className="mt-1 block text-sm leading-6 text-slate-600">
                     {cleanCardText(
                       item.text,
-                      "Dokument eller ekstern kjelde.",
+                      labels.legalDocumentFallback,
                     )}
                   </span>
                 </span>
@@ -632,15 +638,16 @@ function CertificationBadgeLink({
 }
 
 function FAQAccordion({ page }: ContentPageViewProps) {
+  const labels = getContentLabels(page.slug);
   const questions = page.sections[0]?.items || [];
 
   return (
     <section className="border-b border-slate-200 bg-white">
       <Container className="py-12">
         <SectionHeader
-          eyebrow="Kundeservice"
-          title="Svar på vanlege spørsmål"
-          intro="Praktisk informasjon om produkt, materialval, dimensjonering og løysingar frå Fresvik Produkt."
+          eyebrow={labels.faqEyebrow}
+          title={labels.faqTitle}
+          intro={labels.faqIntro}
         />
         <div className="mt-8 divide-y divide-slate-200 rounded-[8px] border border-slate-200 bg-white">
           {questions.map((item, index) => (
@@ -654,7 +661,7 @@ function FAQAccordion({ page }: ContentPageViewProps) {
                 />
               </summary>
               <p className="px-5 pb-5 text-sm leading-7 text-slate-600">
-                {item.text || "Ta kontakt med Fresvik Produkt for meir informasjon."}
+                {item.text || labels.faqAnswerFallback}
               </p>
             </details>
           ))}
@@ -1454,8 +1461,10 @@ function AccessoryDetailSection({
 
 function AccessoryNavigationSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const previous = section.items.find((item) => item.title === "Førre");
   const overview = section.items.find((item) => item.title === "Alle tilleggsutstyr");
@@ -1465,7 +1474,7 @@ function AccessoryNavigationSection({
     <section className="border-b border-slate-200 bg-slate-50">
       <Container className="py-10">
         <nav
-          aria-label="Vidare i tilleggsutstyr"
+          aria-label={labels.accessoryNavigationLabel}
           className="grid gap-3 md:grid-cols-3"
         >
           {previous?.href ? (
@@ -1474,7 +1483,7 @@ function AccessoryNavigationSection({
               className="group flex min-h-24 flex-col justify-center rounded-[8px] border border-slate-200 bg-white p-5 shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lg hover:shadow-slate-950/[0.06]"
             >
               <span className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
-                Førre
+                {labels.accessoryPrevious}
               </span>
               <span className="mt-2 font-semibold text-slate-950">
                 {previous.text}
@@ -1490,10 +1499,10 @@ function AccessoryNavigationSection({
               className="group flex min-h-24 flex-col justify-center rounded-[8px] border border-slate-950 bg-slate-950 p-5 text-white shadow-lg shadow-slate-950/[0.12] transition hover:-translate-y-0.5 hover:bg-cyan-900"
             >
               <span className="text-xs font-black uppercase tracking-[0.14em] text-cyan-300">
-                Oversikt
+                {labels.accessoryOverview}
               </span>
               <span className="mt-2 font-semibold">
-                Alle tilleggsutstyr
+                {labels.allAccessories}
               </span>
             </Link>
           ) : null}
@@ -1504,7 +1513,7 @@ function AccessoryNavigationSection({
               className="group flex min-h-24 flex-col justify-center rounded-[8px] border border-slate-200 bg-white p-5 text-right shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lg hover:shadow-slate-950/[0.06]"
             >
               <span className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
-                Neste
+                {labels.accessoryNext}
               </span>
               <span className="mt-2 font-semibold text-slate-950">
                 {next.text}
@@ -1873,28 +1882,31 @@ function DocumentationDownloadsSection({
   );
 }
 
-function DocumentationContactSection() {
+function DocumentationContactSection({
+  labels = getContentLabels(),
+}: {
+  labels?: ContentLabels;
+}) {
   return (
     <section className="border-b border-slate-200 bg-slate-50">
       <Container className="py-12">
         <div className="grid gap-5 rounded-[8px] border border-slate-200 bg-white p-5 shadow-sm shadow-slate-950/[0.04] sm:p-6 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-              Manglar du noko?
+              {labels.missingDocumentsEyebrow}
             </p>
             <h2 className="mt-2 text-2xl font-semibold tracking-normal text-slate-950">
-              Ta kontakt for rett dokumentasjon
+              {labels.missingDocumentsTitle}
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">
-              Vi hjelper med produktblad, godkjenningar og tekniske avklaringar
-              for prosjektet ditt.
+              {labels.missingDocumentsIntro}
             </p>
           </div>
           <Link
             href="/kontakt"
             className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
           >
-            Kontakt oss
+            {labels.contactUs}
             <ArrowRight aria-hidden="true" size={17} />
           </Link>
         </div>
@@ -3785,6 +3797,7 @@ function ContentSections({
         <CompanyInfoSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -3798,6 +3811,7 @@ function ContentSections({
         <EmployeeGridSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -3837,6 +3851,7 @@ function ContentSections({
         <LegalDocumentsSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -3945,7 +3960,12 @@ function ContentSections({
     }
 
     if (isDocumentationPage && section.title === "Noko du savnar?") {
-      return <DocumentationContactSection key={`${section.title}-${sectionIndex}`} />;
+      return (
+        <DocumentationContactSection
+          key={`${section.title}-${sectionIndex}`}
+          labels={labels}
+        />
+      );
     }
 
     if (isAccessoryPage && section.title === "Produktinformasjon") {
@@ -3964,6 +3984,7 @@ function ContentSections({
         <AccessoryNavigationSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4358,10 +4379,10 @@ function ContentSections({
             <div className="grid gap-6 rounded-[8px] border border-cyan-100 bg-cyan-50 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
               <div>
                 <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-                  Samarbeid
+                  {labels.cooperationEyebrow}
                 </p>
                 <h2 className="mt-3 text-2xl font-semibold tracking-normal text-slate-950 sm:text-3xl">
-                  For samarbeidspartnarar
+                  {labels.partnersTitle}
                 </h2>
                 <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
                   {section.intro}
@@ -4372,7 +4393,7 @@ function ContentSections({
                   href={item.href}
                   className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
                 >
-                  Kontakt oss
+                  {labels.contactUs}
                   <ArrowRight aria-hidden="true" size={17} />
                 </Link>
               ) : null}

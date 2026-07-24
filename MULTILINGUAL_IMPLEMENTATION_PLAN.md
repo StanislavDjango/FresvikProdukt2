@@ -26,6 +26,7 @@ Production verification on 2026-07-24 15:39 CEST:
 - `https://fresvik-produkt2.vercel.app/kontakt` returns canonical `/kontakt`, `nn-NO` alternate `/kontakt` and `en` alternate `/en/contact`.
 - `LINK_CHECK_BASE_URL=https://fresvik-produkt2.vercel.app npm run check:links` passes for 182 pages and 220 internal URLs.
 - `I18N_CHECK_BASE_URL=http://127.0.0.1:3060 npm run check:i18n` validates rendered `lang`, canonical and `hrefLang` output against the configured production canonical host.
+- Reusable `ContentPageView` labels for company, legal, FAQ, documentation CTA, accessory navigation and partner CTAs are now covered by `src/i18n/messages/{nn,en}.json` and guarded by `npm run check:i18n`.
 
 ## Translation Model
 
@@ -76,7 +77,7 @@ The temporary fallback/seed layer also covers secondary menu pages such as `/en/
 2. Translate document titles/descriptions, while Norwegian PDFs may remain marked as Norwegian PDF.
 3. Replace temporary fallback notices once each English Sanity document is approved.
 4. Add any missing English route mappings before linking to those pages.
-5. Audit remaining hard-coded public UI strings in `ContentPageView` and move reusable labels to messages before publishing English navigation broadly.
+5. Continue auditing page-specific hard-coded public UI strings before publishing English navigation broadly; the reusable `ContentPageView` labels are now message-backed.
 6. Run full checks after each approved translation batch and before exposing English navigation more prominently.
 
 ## Checks

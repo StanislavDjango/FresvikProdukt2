@@ -23,6 +23,8 @@
     "seed:sanity:en": "node scripts/generate-english-sanity-seed.mjs",
     "seed:sanity:en:import": "node scripts/import-english-sanity-seed.mjs",
     "seed:sanity:en:import:apply": "node scripts/import-english-sanity-seed.mjs --apply",
+    "check:i18n:sanity": "node scripts/check-sanity-english-runtime.mjs",
+    "check:i18n:sanity:published": "node scripts/check-sanity-english-runtime.mjs --require-published",
     "assets:manifest": "node scripts/generate-asset-manifest.mjs",
     "assets:upload": "node scripts/upload-sanity-assets.mjs --dry-run",
     "assets:upload:apply": "node scripts/upload-sanity-assets.mjs --apply",

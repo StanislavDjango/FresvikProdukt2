@@ -90,3 +90,17 @@ real Sanity writes and requires:
 Priority batches in `ENGLISH_TRANSLATION_QUEUE.md` are draft translations. They
 still need human, technical and legal review before they are treated as approved
 public English content.
+
+Check the imported English draft coverage against Sanity without writing:
+
+```bash
+npm run check:i18n:sanity
+```
+
+This verifies that all English seed draft IDs exist in Sanity and reports how
+many matching English documents are published. Use the stricter published gate
+only when the approved English pages are expected to be public:
+
+```bash
+npm run check:i18n:sanity:published
+```

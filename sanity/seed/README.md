@@ -54,3 +54,39 @@ requires these environment variables:
 Local files under `public/assets/fresvik` remain a temporary migration cache
 until Sanity upload, seed generation, import, and production verification are
 complete.
+
+## English Draft Seed
+
+English content is generated separately and must not overwrite the Norwegian
+baseline seed:
+
+```bash
+npm run seed:sanity:en
+```
+
+This writes:
+
+```text
+sanity/seed/migratedContent.en.ndjson
+```
+
+The English seed uses `drafts.*` document IDs, `language: "en"` and the same
+`translationGroup` values as the Norwegian source pages. Import it as draft
+content only after reviewing the generated file:
+
+```bash
+npm run seed:sanity:en:import
+npm run seed:sanity:en:import:apply
+```
+
+`seed:sanity:en:import` is a dry run. `seed:sanity:en:import:apply` performs
+real Sanity writes and requires:
+
+- `NEXT_PUBLIC_SANITY_PROJECT_ID`
+- `NEXT_PUBLIC_SANITY_DATASET`
+- `NEXT_PUBLIC_SANITY_API_VERSION`
+- `SANITY_AUTH_TOKEN`
+
+Priority batches in `ENGLISH_TRANSLATION_QUEUE.md` are draft translations. They
+still need human, technical and legal review before they are treated as approved
+public English content.

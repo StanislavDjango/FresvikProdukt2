@@ -1481,9 +1481,9 @@ const priorityEnglishContent = {
   },
   "/stillingledig": {
     body: [
-      "Fresvik Produkt AS is looking for a proactive, relationship-building salesperson with technical insight and an interest in good solutions.",
+      "Fresvik Produkt AS is looking for a proactive salesperson who can build strong customer relationships and combine commercial work with technical understanding.",
       "Since 1980, Fresvik Produkt has worked with insulation elements, doors and gates for cold rooms and freezer rooms. The company presents itself as Norway's only producer in this market and as a supplier of tailored, durable solutions for everyday use.",
-      "The position can be based in Drammen or Fresvik. Applications should be sent to ts@personalhuset.no and marked \"Sales position\". Questions can be directed to Thomas Skogheim by phone at 95 76 12 19.",
+      "The position can be based in Drammen or Fresvik. Applications should be sent to ts@personalhuset.no and marked \"Sales position\". Questions can be directed to Thomas Skogheim on +47 95 76 12 19.",
     ],
     migrationSections: [
       {
@@ -1492,7 +1492,7 @@ const priorityEnglishContent = {
         items: [
           {
             title: "Role",
-            text: "Fresvik Produkt is looking for a salesperson who can build customer relationships and contribute technical understanding in dialogue with customers.",
+            text: "Fresvik Produkt is looking for a salesperson who can develop customer relationships and support technical dialogue with customers.",
           },
           {
             title: "Workplace",
@@ -1500,7 +1500,7 @@ const priorityEnglishContent = {
           },
           {
             title: "Tasks",
-            text: "The role includes proactive work with new and existing customers, trade fairs, new markets and advisory work in quotation and project phases.",
+            text: "The role includes proactive work with new and existing customers, trade fairs, new markets, quotations and project-phase advice.",
           },
           {
             title: "Application",
@@ -1518,11 +1518,11 @@ const priorityEnglishContent = {
           },
           {
             title: "Who they are looking for",
-            text: "Fresvik is looking for a structured relationship builder with technical understanding, good attitudes, willingness to learn and fluent Norwegian.",
+            text: "Fresvik is looking for a structured relationship builder with technical understanding, good attitude, willingness to learn and fluent Norwegian.",
           },
           {
             title: "Contact person",
-            text: "Questions can be directed to Thomas Skogheim by phone at 95 76 12 19.",
+            text: "Questions can be directed to Thomas Skogheim by phone at +47 95 76 12 19.",
           },
           {
             title: "Fresvik as a place",
@@ -1536,7 +1536,7 @@ const priorityEnglishContent = {
     body: [
       "This privacy policy explains how Fresvik Produkt handles personal data for website visitors, customers and contacts.",
       "Fresvik Produkt AS is identified as the owner of the website, with company address, email address and organisation number, and the policy describes how personal data is processed in customer relationships.",
-      "The policy also covers disclosure to third parties, customer records, cookies, newsletter signup, contact forms, social sharing, access, correction, deletion rights and responsibility for processing personal data.",
+      "The policy also covers disclosure to third parties, customer records, cookies, newsletter signup, contact forms, social sharing, access, correction, deletion and responsibility for processing personal data.",
     ],
     migrationSections: [
       {
@@ -1581,7 +1581,7 @@ const priorityEnglishContent = {
           {
             title: "8. Social sharing",
             text:
-              "Articles can be shared on social media. Further handling of data shared on social media is regulated by the user's agreement with the relevant social platform.",
+              "Articles can be shared on social media. Further handling of data shared through social platforms is regulated by the user's agreement with the relevant platform.",
           },
           {
             title: "9. Access, correction and deletion",
@@ -1591,7 +1591,7 @@ const priorityEnglishContent = {
           {
             title: "10. Data controller",
             text:
-              "The general manager of Fresvik Produkt AS is responsible for processing personal data and for internal controls connected to personal data processing.",
+              "The general manager of Fresvik Produkt AS is responsible for personal data processing and related internal controls.",
           },
         ],
       },
@@ -1601,7 +1601,7 @@ const priorityEnglishContent = {
         items: [
           {
             title: "Cookies and analytics",
-            text: "Cookie, analytics, newsletter and contact-form information describes how visitor and contact data is handled on the website.",
+            text: "Cookie, analytics, newsletter and contact-form information explains how visitor and contact data is handled on the website.",
           },
           {
             title: "Rights",
@@ -1617,8 +1617,8 @@ const priorityEnglishContent = {
   },
   "/openheitslova": {
     body: [
-      "The Norwegian Transparency Act promotes enterprises' respect for fundamental human rights and decent working conditions, and secures access to information.",
-      "Fresvik Produkt states that it is aware of this responsibility and continuously carries out measures to satisfy the requirements of the Act.",
+      "The Norwegian Transparency Act promotes respect for fundamental human rights and decent working conditions, and gives the public access to information.",
+      "Fresvik Produkt states that it is aware of this responsibility and continuously works to meet the requirements of the Act.",
       "Under section 5 of the Transparency Act, Fresvik Produkt publishes a statement. The available due diligence, routine and statement documents can be downloaded from the links below.",
     ],
     migrationSections: [
@@ -1629,7 +1629,7 @@ const priorityEnglishContent = {
           {
             title: "Company commitment",
             text:
-              "Fresvik Produkt states that it continuously carries out measures to satisfy the requirements of the Transparency Act.",
+              "Fresvik Produkt states that it continuously works to satisfy the requirements of the Transparency Act.",
           },
           {
             title: "Privacy policy",
@@ -1639,7 +1639,7 @@ const priorityEnglishContent = {
           {
             title: "Read the Act",
             text:
-              "The full Norwegian Act is available on Lovdata as 'Lov om virksomheters åpenhet og arbeid med grunnleggende menneskerettigheter og anstendige arbeidsforhold'.",
+              "The full Act is available on Lovdata under the Norwegian title 'Lov om virksomheters åpenhet og arbeid med grunnleggende menneskerettigheter og anstendige arbeidsforhold'.",
             href: "https://lovdata.no/dokument/NL/lov/2021-06-18-99",
           },
         ],
@@ -1680,11 +1680,11 @@ const priorityEnglishContent = {
           },
           {
             title: "Latest statement",
-            text: "Transparency Act statements should be updated when new signed files are available.",
+            text: "Transparency Act statements should be updated when new signed files are approved and available.",
           },
           {
             title: "Legal terminology",
-            text: "The wording explains the Norwegian Transparency Act in practical English.",
+            text: "The wording presents the Norwegian Transparency Act in practical English for website visitors.",
           },
         ],
       },
@@ -1731,7 +1731,7 @@ const docs = Object.entries(englishCopy).map(([sourcePath, copy]) => {
   const body = priorityContent
     ? portableTextBlocks(priorityContent.body, `english-${idSafe(sourcePath)}`)
     : bodyBlock(
-        "English content for this page is not ready yet. Contact Fresvik Produkt if you need information about this topic.",
+        "Contact Fresvik Produkt if you need information about this topic in English.",
       );
 
   return {

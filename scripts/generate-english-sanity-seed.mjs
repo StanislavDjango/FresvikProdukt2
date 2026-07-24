@@ -1481,48 +1481,52 @@ const priorityEnglishContent = {
   },
   "/stillingledig": {
     body: [
-      "The careers page presents Fresvik Produkt as a workplace and is used for available positions and application information.",
-      "Fresvik Produkt offers a professional environment for insulated panels, a good working environment, pension and insurance arrangements, and offices in Fresvik and Drammen.",
-      "Current vacancies and application details are presented when positions are available.",
+      "Fresvik Produkt AS is looking for a proactive, relationship-building salesperson with technical insight and an interest in good solutions.",
+      "Since 1980, Fresvik Produkt has worked with insulation elements, doors and gates for cold rooms and freezer rooms. The company presents itself as Norway's only producer in this market and as a supplier of tailored, durable solutions for everyday use.",
+      "The position can be based in Drammen or Fresvik. Applications should be sent to ts@personalhuset.no and marked \"Sales position\". Questions can be directed to Thomas Skogheim by phone at 95 76 12 19.",
     ],
     migrationSections: [
       {
-        title: "Working at Fresvik Produkt",
-        intro: "Workplace points.",
+        title: "Available position",
+        intro: "Current vacancy information.",
         items: [
           {
-            title: "Large specialist environment",
-            text: "Fresvik Produkt is a specialist environment for insulated panels.",
+            title: "Role",
+            text: "Fresvik Produkt is looking for a salesperson who can build customer relationships and contribute technical understanding in dialogue with customers.",
           },
           {
-            title: "Good working environment",
-            text: "The workplace information highlights a good working environment with friendly colleagues.",
+            title: "Workplace",
+            text: "The position can be based in Drammen or Fresvik, depending on the candidate.",
           },
           {
-            title: "Pension and insurance",
-            text: "The careers information highlights pension and insurance arrangements.",
+            title: "Tasks",
+            text: "The role includes proactive work with new and existing customers, trade fairs, new markets and advisory work in quotation and project phases.",
           },
           {
-            title: "Fresvik and Drammen",
-            text: "The page mentions office locations in Fresvik and Drammen.",
+            title: "Application",
+            text: "Send the application to ts@personalhuset.no and mark it \"Sales position\".",
           },
         ],
       },
       {
-        title: "Vacancy information",
-        intro: "Career information.",
+        title: "Workplace and contact",
+        intro: "Workplace and application information.",
         items: [
           {
-            title: "Current position status",
-            text: "Open positions are updated when new vacancies are available.",
+            title: "What Fresvik offers",
+            text: "The page highlights a stable workplace, an informal and inclusive working environment, and good insurance and pension arrangements.",
           },
           {
-            title: "Application details",
-            text: "Application information includes deadline, contact person and instructions when a vacancy is active.",
+            title: "Who they are looking for",
+            text: "Fresvik is looking for a structured relationship builder with technical understanding, good attitudes, willingness to learn and fluent Norwegian.",
           },
           {
-            title: "External links",
-            text: "Useful links can help applicants learn more about Fresvik as a place to live and work.",
+            title: "Contact person",
+            text: "Questions can be directed to Thomas Skogheim by phone at 95 76 12 19.",
+          },
+          {
+            title: "Fresvik as a place",
+            text: "Fresvik is described as an active agricultural village by the fjord, with a safe upbringing environment, organisations, music festival, industry and outdoor life.",
           },
         ],
       },
@@ -1557,29 +1561,54 @@ const priorityEnglishContent = {
           {
             title: "4. Cookies and analytics",
             text:
-              "The page describes use of cookies, including statistics and embedded services.",
+              "Fresvik.no uses cookies. Cookies are standard internet technology and can be disabled in the browser, but that may affect how websites work.",
           },
           {
-            title: "5. Access, correction and deletion",
+            title: "5. Customer register",
             text:
-              "Users may request access to registered information and ask for correction or deletion by contacting Fresvik Produkt AS.",
+              "The customer register can contain customer name, address, telephone number, company name, contact persons and information about purchased services and products.",
+          },
+          {
+            title: "6. Newsletter",
+            text:
+              "Newsletter signup stores name and email address so Fresvik Produkt AS can send relevant information. Mailchimp is used for email distribution.",
+          },
+          {
+            title: "7. Contact forms",
+            text:
+              "Information submitted through contact forms is stored in the CRM system so Fresvik Produkt can provide better customer service.",
+          },
+          {
+            title: "8. Social sharing",
+            text:
+              "Articles can be shared on social media. Further handling of data shared on social media is regulated by the user's agreement with the relevant social platform.",
+          },
+          {
+            title: "9. Access, correction and deletion",
+            text:
+              "Users may request access to registered information and ask for correction or deletion by contacting Fresvik Produkt AS at post@fresvik.no.",
+          },
+          {
+            title: "10. Data controller",
+            text:
+              "The general manager of Fresvik Produkt AS is responsible for processing personal data and for internal controls connected to personal data processing.",
           },
         ],
       },
       {
-        title: "Privacy details",
+        title: "Website privacy details",
         intro: "Practical privacy details.",
         items: [
           {
-            title: "Check new site cookies",
-            text: "Cookie and analytics information explains how the website uses technical services.",
+            title: "Cookies and analytics",
+            text: "Cookie, analytics, newsletter and contact-form information describes how visitor and contact data is handled on the website.",
           },
           {
-            title: "Check legal terminology",
-            text: "Legal terminology is kept clear and practical.",
+            title: "Rights",
+            text: "Visitors and contacts can request access, correction or deletion of registered personal information.",
           },
           {
-            title: "Preserve company details",
+            title: "Company details",
             text: "Address, email and organisation number are listed with the company details.",
           },
         ],
@@ -1588,9 +1617,9 @@ const priorityEnglishContent = {
   },
   "/openheitslova": {
     body: [
-      "This page explains Fresvik Produkt's work connected to the Norwegian Transparency Act.",
-      "The Transparency Act promotes respect for fundamental human rights and decent working conditions, and gives the public access to information.",
-      "Fresvik Produkt states that it works continuously to satisfy the requirements of the Act and publishes documents connected to due diligence and reporting obligations.",
+      "The Norwegian Transparency Act promotes enterprises' respect for fundamental human rights and decent working conditions, and secures access to information.",
+      "Fresvik Produkt states that it is aware of this responsibility and continuously carries out measures to satisfy the requirements of the Act.",
+      "Under section 5 of the Transparency Act, Fresvik Produkt publishes a statement. The available due diligence, routine and statement documents can be downloaded from the links below.",
     ],
     migrationSections: [
       {
@@ -1600,7 +1629,7 @@ const priorityEnglishContent = {
           {
             title: "Company commitment",
             text:
-              "Fresvik Produkt states that it works continuously with measures to satisfy the requirements of the Transparency Act.",
+              "Fresvik Produkt states that it continuously carries out measures to satisfy the requirements of the Transparency Act.",
           },
           {
             title: "Privacy policy",
@@ -1620,18 +1649,18 @@ const priorityEnglishContent = {
         intro: "Transparency Act document links.",
         items: [
           {
-            title: "Due diligence assessment",
-            text: "PDF document.",
+            title: "Download due diligence assessment",
+            text: "Due diligence assessment PDF for 2025.",
             href: "/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf",
           },
           {
-            title: "Routine for fulfilling obligations",
-            text: "PDF document.",
+            title: "Download routine for fulfilling obligations",
+            text: "Routine document connected to Transparency Act obligations.",
             href: "/assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf",
           },
           {
-            title: "Statement 2025",
-            text: "PDF document.",
+            title: "Download statement 2025",
+            text: "Signed Transparency Act statement for 2025.",
             href: "/assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf",
           },
           {
@@ -1646,16 +1675,16 @@ const priorityEnglishContent = {
         intro: "Transparency Act information and documents.",
         items: [
           {
-            title: "Verify document URLs",
-            text: "Open the available Transparency Act documents.",
+            title: "Document set",
+            text: "The available PDF files include due diligence, routines and the signed statement for 2025.",
           },
           {
-            title: "Check latest statement",
-            text: "Transparency Act statements are updated when new signed files are available.",
+            title: "Latest statement",
+            text: "Transparency Act statements should be updated when new signed files are available.",
           },
           {
             title: "Legal terminology",
-            text: "The wording is intended to make compliance information easier to understand.",
+            text: "The wording explains the Norwegian Transparency Act in practical English.",
           },
         ],
       },

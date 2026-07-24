@@ -4,6 +4,10 @@ Status date: 2026-07-25
 
 These English Sanity documents exist as drafts and are imported to Sanity, but they are intentionally not published by the safe batch. They require manual approval because the content can affect hiring, privacy/legal wording or compliance communication.
 
+2026-07-25 update: draft wording was strengthened to follow the Norwegian source
+pages more closely. The pages remain unpublished until the checks below are
+completed.
+
 ## Summary
 
 | Source page | English route | Sanity draft | Public status | Reason |
@@ -68,4 +72,3 @@ Only publish all English documents after these review-only pages are approved:
 npm run seed:sanity:en:publish -- --batch=all
 npm run seed:sanity:en:publish -- --batch=all --apply
 ```
-

@@ -19,16 +19,16 @@ This file tracks the remaining content work for the English version. The `/en` r
 
 | Norwegian source | English URL | Sanity type | Current status | Required action |
 | --- | --- | --- | --- | --- |
-| `/` | `/en` | `page` | draft summary | Translate and approve homepage sections, CTA text, document/certificate labels and main links. |
-| `/produkt` | `/en/products` | `page` | draft summary | Translate product overview text and product card descriptions. |
-| `/produkt/fresvik-pir-panel` | `/en/products/fresvik-pir-panel` | `product` | draft summary | Translate full product body, technical data, benefits, document labels and related accessory links. |
-| `/produkt/fresvik-pur-panel` | `/en/products/fresvik-pur-panel` | `product` | draft summary | Translate full product body, technical data, image captions and PDF labels. |
-| `/produkt/kjole-frysedorer` | `/en/products/cold-freezer-doors` | `product` | draft summary | Translate door descriptions, construction/specification text and related documents. |
-| `/produkt/kjole-fryseportar` | `/en/products/cold-freezer-ports` | `product` | draft summary | Translate gate descriptions, model text, PDF labels and related links. |
-| `/tenester` | `/en/services` | `page` | draft summary | Translate service overview and cards. |
-| `/tenester/montasje` | `/en/services/installation` | `service` | draft summary | Translate installation process, responsibilities and CTA text. |
-| `/dokumentasjon` | `/en/documentation` | `page` | draft summary | Translate document categories and label Norwegian PDFs clearly. |
-| `/kontakt` | `/en/contact` | `page` | draft summary | Translate contact page text and preserve all contact details exactly. |
+| `/` | `/en` | `page` | priority-1 draft | Review homepage sections, CTA text, document/certificate labels and main links before approval. |
+| `/produkt` | `/en/products` | `page` | priority-1 draft | Review product overview text and product card descriptions before approval. |
+| `/produkt/fresvik-pir-panel` | `/en/products/fresvik-pir-panel` | `product` | priority-1 draft | Review full product body, technical data, benefits, document labels and related accessory links before approval. |
+| `/produkt/fresvik-pur-panel` | `/en/products/fresvik-pur-panel` | `product` | priority-1 draft | Review full product body, technical data, image captions and PDF labels before approval. |
+| `/produkt/kjole-frysedorer` | `/en/products/cold-freezer-doors` | `product` | priority-1 draft | Review door descriptions, construction/specification text and related documents before approval. |
+| `/produkt/kjole-fryseportar` | `/en/products/cold-freezer-ports` | `product` | priority-1 draft | Review gate descriptions, model text, PDF labels and related links before approval. |
+| `/tenester` | `/en/services` | `page` | priority-1 draft | Review service overview and cards before approval. |
+| `/tenester/montasje` | `/en/services/installation` | `service` | priority-1 draft | Review installation process, responsibilities and CTA text before approval. |
+| `/dokumentasjon` | `/en/documentation` | `page` | priority-1 draft | Review document categories and label Norwegian PDFs clearly before approval. |
+| `/kontakt` | `/en/contact` | `page` | priority-1 draft | Review contact page text and preserve all contact details exactly before approval. |
 
 ## Priority 2
 

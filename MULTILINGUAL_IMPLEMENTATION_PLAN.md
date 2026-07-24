@@ -15,8 +15,9 @@ Current implementation:
 - English pages first look for an English Sanity document and fall back to a clear temporary English page when translation is missing.
 - Temporary English fallback pages do not render Norwegian body sections or Norwegian product cards; they show English status copy and link to the Norwegian source page until an approved English Sanity document exists.
 - `npm run seed:sanity:en` writes `sanity/seed/migratedContent.en.ndjson` as draft English documents without overwriting the Norwegian baseline; the current seed covers all 26 entries in `src/i18n/routeMap.json`.
+- The Priority 1 translation batch now contains structured English draft body/sections for `/`, `/produkt`, `/produkt/fresvik-pir-panel`, `/produkt/fresvik-pur-panel`, `/produkt/kjole-frysedorer`, `/produkt/kjole-fryseportar`, `/tenester`, `/tenester/montasje`, `/dokumentasjon` and `/kontakt`; these are still drafts and need human/technical review before import/publishing.
 - Sanity document schemas include language metadata for document-level translations.
-- `npm run check:i18n` validates route mapping, bidirectional language switch paths, message key parity, required content UI labels, English seed slug/sourceUrl coverage and the `/studio` proxy exclusion.
+- `npm run check:i18n` validates route mapping, bidirectional language switch paths, message key parity, required content UI labels, English seed slug/sourceUrl coverage, Priority 1 draft completeness and the `/studio` proxy exclusion.
 - Production `/en` routes are live on `https://fresvik-produkt2.vercel.app`.
 - Production canonical and `hreflang` alternates are verified for Norwegian and English public pages, including the separate `/kontakt` route.
 - The public header does not offer an English switch from Norwegian pages until approved English Sanity content is ready; direct `/en` pages still show a return link back to Norwegian.
@@ -75,7 +76,7 @@ The temporary fallback/seed layer also covers secondary menu pages such as `/en/
 
 ## Remaining Work
 
-1. Translate approved English content in Sanity, page by page. Current `/en` pages are intentionally temporary English summaries with a Norwegian source link until approved translations are imported, without mixing in Norwegian page body content.
+1. Review/import the Priority 1 English Sanity draft batch, then continue translating Priority 2 and Priority 3 pages. Current `/en` fallback pages remain intentionally temporary until approved translations are imported, without mixing in Norwegian page body content.
 2. Translate document titles/descriptions, while Norwegian PDFs may remain marked as Norwegian PDF.
 3. Replace temporary fallback notices once each English Sanity document is approved.
 4. Add any missing English route mappings before linking to those pages.

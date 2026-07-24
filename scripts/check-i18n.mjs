@@ -70,6 +70,19 @@ const requiredEnglishRoutes = [
   "/about",
 ];
 
+const priorityOneSourceRoutes = [
+  "/",
+  "/produkt",
+  "/produkt/fresvik-pir-panel",
+  "/produkt/fresvik-pur-panel",
+  "/produkt/kjole-frysedorer",
+  "/produkt/kjole-fryseportar",
+  "/tenester",
+  "/tenester/montasje",
+  "/dokumentasjon",
+  "/kontakt",
+];
+
 const requiredContentMessageKeys = [
   "Content.readMore",
   "Content.open",
@@ -147,6 +160,15 @@ function stripLocalePrefix(pathname) {
     return sourcePathForEnglishPath(pathname.slice(3) || "/");
   }
   return normalizePath(pathname);
+}
+
+function portableTextText(blocks) {
+  return (blocks || [])
+    .flatMap((block) => block.children || [])
+    .map((child) => child.text || "")
+    .join(" ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function withLocale(pathname, locale) {
@@ -343,6 +365,30 @@ for (const [sourcePath, englishPath] of entries) {
     errors.push(
       `English seed sourceUrl mismatch for ${sourcePath}: expected "${expectedSourceUrl(sourcePath)}", got "${matchingDoc.sourceUrl || "missing"}"`,
     );
+  }
+}
+
+for (const sourcePath of priorityOneSourceRoutes) {
+  const expectedGroup = `fresvik:${idSafe(sourcePath)}`;
+  const matchingDoc = englishSeedByGroup.get(expectedGroup);
+  const bodyText = portableTextText(matchingDoc?.body);
+  const sectionCount = matchingDoc?.migrationSections?.length || 0;
+  const itemCount = (matchingDoc?.migrationSections || []).reduce(
+    (count, section) => count + (section.items?.length || 0),
+    0,
+  );
+
+  if (!matchingDoc) {
+    errors.push(`Missing Priority 1 English seed document: ${sourcePath}`);
+    continue;
+  }
+
+  if (bodyText.includes("English translation draft.") || bodyText.length < 220) {
+    errors.push(`Priority 1 English seed body is still only a placeholder: ${sourcePath}`);
+  }
+
+  if (sectionCount < 2 || itemCount < 3) {
+    errors.push(`Priority 1 English seed needs structured translated sections: ${sourcePath}`);
   }
 }
 

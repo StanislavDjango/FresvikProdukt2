@@ -268,8 +268,7 @@ const priorityEnglishContent = {
     migrationSections: [
       {
         title: "Products and solutions",
-        intro:
-          "Selected products and solutions from the original front page, translated for the English draft.",
+        intro: "Selected products and solutions from Fresvik Produkt.",
         items: [
           {
             title: "Fresvik PIR Panel",
@@ -430,7 +429,7 @@ const priorityEnglishContent = {
     migrationSections: [
       {
         title: "Technical data",
-        intro: "Key technical information from the migrated PIR page.",
+        intro: "Key technical information for Fresvik PIR Panel.",
         items: [
           {
             title: "PIR foam core",
@@ -512,7 +511,7 @@ const priorityEnglishContent = {
     migrationSections: [
       {
         title: "Technical data",
-        intro: "Key technical information from the migrated PUR panel content.",
+        intro: "Key technical information for Fresvik PUR Panel.",
         items: [
           {
             title: "Core and thickness",
@@ -803,7 +802,7 @@ const priorityEnglishContent = {
     body: [
       "Contact Fresvik Produkt if you want to discuss a project, product selection, documentation, technical clarification or delivery planning.",
       "The company can be contacted at post@fresvik.no or by phone at +47 57 69 83 00.",
-      "For sales and project follow-up, the migrated contact information includes the Fresvik sales department and the Drammen sales contacts, so customers can reach the right person directly.",
+      "For sales and project follow-up, the contact information includes the Fresvik sales department and the Drammen sales contacts, so customers can reach the right person directly.",
     ],
     migrationSections: [
       {
@@ -842,12 +841,12 @@ const priorityEnglishContent = {
     body: [
       "Fresvik Produkt has long experience with buildings for the food industry and can supply exterior facade panels for warehouses and industrial buildings.",
       "The panels can be supplied with polyurethane foam or mineral wool as the core. Polyurethane foam panels are preferred where a low price and strong insulation properties are important.",
-      "The migrated Norwegian source highlights good energy economy, short construction time and good total project economy as key benefits of the facade panel solution.",
+      "The facade panel solution highlights good energy economy, short construction time and good total project economy as key benefits.",
     ],
     migrationSections: [
       {
         title: "Facade panel benefits",
-        intro: "Product benefits preserved from the migrated source page.",
+        intro: "Important facade panel benefits.",
         items: [
           {
             title: "Good energy economy",
@@ -884,12 +883,12 @@ const priorityEnglishContent = {
         items: [
           {
             title: "Celsa Steel Service, Sotra",
-            text: "Reference project linked from the facade panel source page.",
+            text: "Reference project for facade panel deliveries.",
             href: "/referansar/celsa-steel-sotra",
           },
           {
             title: "Interfrukt",
-            text: "Reference project linked from the facade panel source page.",
+            text: "Reference project for facade panel deliveries.",
             href: "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
           },
         ],
@@ -920,7 +919,7 @@ const priorityEnglishContent = {
       },
       {
         title: "Construction and use",
-        intro: "Key construction points from the migrated Norwegian source.",
+        intro: "Key construction points for the freezing tunnel solution.",
         items: [
           {
             title: "Custom PIR panels",
@@ -963,13 +962,13 @@ const priorityEnglishContent = {
   "/tilleggsutstyr": {
     body: [
       "Fresvik Produkt supplies accessories, components and spare parts for cold rooms and freezer rooms.",
-      "The page keeps practical product names and item numbers from the Norwegian source, so customers can identify the correct part when ordering or asking for advice.",
+      "The page keeps practical product names and item numbers, so customers can identify the correct part when ordering or asking for advice.",
       "If you are unsure which accessory fits your room, contact Fresvik Produkt with the product name, item number or a photo of the part.",
     ],
     migrationSections: [
       {
         title: "Accessory item numbers",
-        intro: "Examples of accessories preserved from the migrated Norwegian page.",
+        intro: "Examples of accessories for cold and freezer room deliveries.",
         items: [
           {
             title: "Door closer / Diktator 23001",
@@ -1019,7 +1018,7 @@ const priorityEnglishContent = {
     migrationSections: [
       {
         title: "Delivery follow-up",
-        intro: "Practical delivery points from the migrated service page.",
+        intro: "Practical delivery points for Fresvik projects.",
         items: [
           {
             title: "Delivery reliability",
@@ -1051,7 +1050,7 @@ const priorityEnglishContent = {
     migrationSections: [
       {
         title: "Service and spare parts",
-        intro: "Support points from the migrated Norwegian service page.",
+        intro: "Support points for service and spare parts.",
         items: [
           {
             title: "Spare parts in stock",
@@ -1073,27 +1072,27 @@ const priorityEnglishContent = {
   "/monteringsanvisning": {
     body: [
       "This page gathers installation guides for Fresvik Produkt products.",
-      "The documents are preserved as migrated PDF links. Some files may be Norwegian-only and should be reviewed before being presented as final English documentation.",
+      "The document links collect installation guides and product documentation in one place. Some PDFs may be available only in Norwegian.",
       "Use the guide that matches the product: freezer room, cold room, door, gate or electrical gate control.",
     ],
     migrationSections: [
       {
         title: "Installation guides",
-        intro: "Document links preserved from the source page.",
+        intro: "Installation and product document links.",
         items: [
           {
             title: "Freezer room installation guide",
-            text: "Norwegian PDF from the migrated source page.",
+            text: "PDF document.",
             href: "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
           },
           {
             title: "Gate installation guide",
-            text: "Norwegian PDF from the migrated source page.",
+            text: "PDF document.",
             href: "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
           },
           {
             title: "Cold room installation guide",
-            text: "Norwegian PDF from the migrated source page.",
+            text: "PDF document.",
             href: "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
           },
           {
@@ -1103,7 +1102,7 @@ const priorityEnglishContent = {
           },
           {
             title: "Door installation guide",
-            text: "Norwegian PDF from the migrated source page.",
+            text: "PDF document.",
             href: "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
           },
         ],
@@ -1113,42 +1112,42 @@ const priorityEnglishContent = {
   "/monteringsanvisningar-fresvik-skyveport": {
     body: [
       "This page gathers documentation for electrical control of the Fresvik sliding gate.",
-      "The source page includes wiring diagrams, Fermod 5010 installation guides, a quick start document, direction-change instructions and options or kit documentation.",
-      "The files are preserved as migrated PDF links and should be reviewed for language and technical accuracy before final English publication.",
+      "This page includes wiring diagrams, Fermod 5010 installation guides, a quick start document, direction-change instructions and options or kit documentation.",
+      "The document links gather practical files for installation and configuration.",
     ],
     migrationSections: [
       {
         title: "Electric sliding gate files",
-        intro: "Document links preserved from the migrated source page.",
+        intro: "Sliding gate document links.",
         items: [
           {
             title: "Fermod 5010 wiring diagram",
-            text: "PDF document from the source page.",
+            text: "PDF document.",
             href: "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
           },
           {
             title: "Installation guide 5010 for 2150",
-            text: "PDF document from the source page.",
+            text: "PDF document.",
             href: "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
           },
           {
             title: "Installation guide 5010 for 3530/7530",
-            text: "PDF document from the source page.",
+            text: "PDF document.",
             href: "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
           },
           {
             title: "Quick Start 5010 EXP",
-            text: "PDF document from the source page.",
+            text: "PDF document.",
             href: "/assets/fresvik/documents/quick-start-5010exp.pdf",
           },
           {
             title: "Change sliding direction",
-            text: "PDF document from the source page.",
+            text: "PDF document.",
             href: "/assets/fresvik/documents/endre-skyveretning.pdf",
           },
           {
             title: "Accessories and option kits",
-            text: "PDF document from the source page.",
+            text: "PDF document.",
             href: "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
           },
         ],
@@ -1158,13 +1157,13 @@ const priorityEnglishContent = {
   "/kundeservice/faq": {
     body: [
       "The FAQ page answers practical questions about PIR and PUR panels, doors, gates, PVC curtains, dimensions, temperature ranges and custom production.",
-      "The English draft preserves the meaning of the migrated Norwegian FAQ, but technical answers should be reviewed before they are treated as approved English documentation.",
+      "The FAQ gives practical answers about panel types, insulation values, dimensions, accessories and installation.",
       "Contact Fresvik Produkt if a project requires exact technical clarification, certification references or product-specific advice.",
     ],
     migrationSections: [
       {
         title: "Frequently asked questions",
-        intro: "Draft English answers translated from the migrated Norwegian FAQ.",
+        intro: "Practical FAQ answers.",
         items: [
           {
             title: "What is the main difference between PIR and PUR panels?",
@@ -1184,7 +1183,7 @@ const priorityEnglishContent = {
           {
             title: "Do PIR and PUR panels use the same locking mechanism?",
             text:
-              "The migrated source states that PIR and PUR panels use the same design and locking principle in joints and corners.",
+              "PIR and PUR panels use the same design and locking principle in joints and corners.",
           },
           {
             title: "What is a PVC curtain used for?",
@@ -1199,12 +1198,12 @@ const priorityEnglishContent = {
           {
             title: "How do PIR and PUR compare in weight and density?",
             text:
-              "The source gives PUR as about 40 kg/m3 and PIR as about 42 kg/m3, with PIR panels slightly heavier per square metre.",
+              "PUR is about 40 kg/m3 and PIR about 42 kg/m3, with PIR panels slightly heavier per square metre.",
           },
           {
             title: "Can PIR be used at the same temperatures as PUR?",
             text:
-              "The migrated FAQ lists PIR from -40°C to +70°C and PUR from -40°C to +120°C.",
+              "PIR panels are specified for -40°C to +70°C, while PUR panels are specified for -40°C to +120°C.",
           },
           {
             title: "Can Fresvik deliver custom dimensions?",
@@ -1219,12 +1218,12 @@ const priorityEnglishContent = {
     body: [
       "Fresvik Produkt delivers cold rooms, freezer rooms, doors, gates and facade panel solutions for food production, retail, institutions, commercial kitchens, laboratories, ships and offshore installations.",
       "The reference overview shows selected projects where Fresvik Produkt has delivered tailored solutions with an emphasis on delivery reliability, quality and practical installation.",
-      "This English draft keeps the migrated project summaries as a review-ready overview. Individual reference pages may still need separate English routes before they are promoted in English navigation.",
+      "The references overview presents selected projects and delivery areas from Fresvik Produkt.",
     ],
     migrationSections: [
       {
         title: "Reference overview",
-        intro: "Selected migrated reference projects.",
+        intro: "Selected reference projects.",
         items: [
           {
             title: "Coop Extra Sogndal",
@@ -1287,7 +1286,7 @@ const priorityEnglishContent = {
     migrationSections: [
       {
         title: "About Fresvik Produkt",
-        intro: "Company context from the migrated Norwegian about section.",
+        intro: "Company context and practical links.",
         items: [
           {
             title: "Norwegian production",
@@ -1337,12 +1336,12 @@ const priorityEnglishContent = {
     body: [
       "Fresvik Produkt is a Norwegian producer of insulated panels, doors and gates for cold rooms and freezer rooms, with production in Fresvik in Sogn.",
       "The company presents itself as the only Norwegian producer of insulated panels, doors and gates for cold and freezer rooms, with a strong position in grocery stores, energy stations and convenience retail.",
-      "Company facts, contact details and legal identifiers should be preserved exactly when the English page is reviewed and approved.",
+      "Company facts, contact details and legal identifiers are presented clearly for customers and partners.",
     ],
     migrationSections: [
       {
         title: "Company facts",
-        intro: "Key company information from the migrated Norwegian source.",
+        intro: "Key company information.",
         items: [
           {
             title: "Norwegian producer",
@@ -1358,13 +1357,13 @@ const priorityEnglishContent = {
           },
           {
             title: "Organisation number",
-            text: "NO 922 582 270. This detail must be checked against the official company record before final approval.",
+            text: "NO 922 582 270.",
           },
         ],
       },
       {
         title: "Expertise and cooperation",
-        intro: "Business positioning from the source page.",
+        intro: "Business positioning.",
         items: [
           {
             title: "Partner for refrigeration contractors",
@@ -1386,8 +1385,8 @@ const priorityEnglishContent = {
   "/tilsette": {
     body: [
       "The employees page gives customers and partners an overview of contact persons and departments at Fresvik Produkt.",
-      "Names, phone numbers and email addresses must be preserved exactly from the Norwegian source. English translation should only adjust surrounding labels and role descriptions.",
-      "This draft is intended as an English contact overview and should be reviewed against the live Sanity employee data before public English launch.",
+      "Names, phone numbers and email addresses are kept clear so visitors can contact the right person directly.",
+      "The page helps customers and partners find the right contact person or department.",
     ],
     migrationSections: [
       {
@@ -1412,20 +1411,20 @@ const priorityEnglishContent = {
         ],
       },
       {
-        title: "Review requirements",
-        intro: "Employee data must be checked before approval.",
+        title: "Contact detail guidance",
+        intro: "Contact details and department labels.",
         items: [
           {
-            title: "Preserve names",
-            text: "Do not translate names.",
+            title: "Names",
+            text: "Employee names are shown as contact details.",
           },
           {
-            title: "Preserve contact details",
-            text: "Phone numbers and email addresses must match the current Norwegian source.",
+            title: "Contact details",
+            text: "Phone numbers and email addresses make it easy to reach the right department.",
           },
           {
-            title: "Translate labels only",
-            text: "Only department labels and short role descriptions should be translated.",
+            title: "Department labels",
+            text: "Department labels help visitors choose the correct contact point.",
           },
         ],
       },
@@ -1434,13 +1433,13 @@ const priorityEnglishContent = {
   "/aktuelt": {
     body: [
       "The news page gathers updates from Fresvik Produkt, including employee news, company updates, project stories and trade-fair participation.",
-      "The English overview keeps the migrated news structure, but individual news articles still need a decision on whether they should receive full English article routes.",
-      "Until that decision is made, the English page should be treated as a draft overview rather than a fully approved English news archive.",
+      "The news overview presents selected company updates, project news and employee stories.",
+      "Detailed articles can be opened from the Norwegian news archive where English versions are not available.",
     ],
     migrationSections: [
       {
         title: "News overview",
-        intro: "Selected migrated news items from the Norwegian news page.",
+        intro: "Selected news items.",
         items: [
           {
             title: "Meet our new technical manager",
@@ -1456,25 +1455,25 @@ const priorityEnglishContent = {
           },
           {
             title: "Fresvik Produkt at Nor-Fishing",
-            text: "Trade-fair news item from the migrated archive.",
+            text: "Trade-fair news item.",
           },
         ],
       },
       {
-        title: "Publishing decision",
-        intro: "The English news archive needs one final editorial decision.",
+        title: "Article details",
+        intro: "Detailed article options.",
         items: [
           {
             title: "Overview only",
-            text: "Keep the English page as an overview and link to Norwegian articles for details.",
+            text: "Use the English page as an overview and open Norwegian articles for details where needed.",
           },
           {
             title: "Full article translation",
-            text: "Translate selected article pages and add English article route mappings.",
+            text: "Selected article pages can receive full English versions over time.",
           },
           {
             title: "Review dates and images",
-            text: "Before approval, each promoted article needs checked dates, image captions and links.",
+            text: "Article dates, image captions and links are shown with each promoted story.",
           },
         ],
       },
@@ -1483,25 +1482,25 @@ const priorityEnglishContent = {
   "/stillingledig": {
     body: [
       "The careers page presents Fresvik Produkt as a workplace and is used for available positions and application information.",
-      "The migrated source describes a professional environment for insulated panels, a good working environment, pension and insurance arrangements, and offices in Fresvik and Drammen.",
-      "Any active vacancy text must be reviewed before publishing in English, because job advertisements can change quickly and should not be treated as permanent translated content.",
+      "Fresvik Produkt offers a professional environment for insulated panels, a good working environment, pension and insurance arrangements, and offices in Fresvik and Drammen.",
+      "Current vacancies and application details are presented when positions are available.",
     ],
     migrationSections: [
       {
         title: "Working at Fresvik Produkt",
-        intro: "Workplace points from the migrated Norwegian source.",
+        intro: "Workplace points.",
         items: [
           {
             title: "Large specialist environment",
-            text: "The source describes Fresvik Produkt as a specialist environment for insulated panels.",
+            text: "Fresvik Produkt is a specialist environment for insulated panels.",
           },
           {
             title: "Good working environment",
-            text: "The source highlights a good working environment with friendly colleagues.",
+            text: "The workplace information highlights a good working environment with friendly colleagues.",
           },
           {
             title: "Pension and insurance",
-            text: "Good pension and insurance arrangements are mentioned in the migrated job page.",
+            text: "The careers information highlights pension and insurance arrangements.",
           },
           {
             title: "Fresvik and Drammen",
@@ -1510,20 +1509,20 @@ const priorityEnglishContent = {
         ],
       },
       {
-        title: "Vacancy review",
-        intro: "Career content must be checked before publishing.",
+        title: "Vacancy information",
+        intro: "Career information.",
         items: [
           {
             title: "Current position status",
-            text: "Confirm whether the vacancy is still active before public English launch.",
+            text: "Open positions are updated when new vacancies are available.",
           },
           {
             title: "Application details",
-            text: "Check deadline, contact person and application instructions before approval.",
+            text: "Application information includes deadline, contact person and instructions when a vacancy is active.",
           },
           {
             title: "External links",
-            text: "Links about Fresvik as a place to live and work should be reviewed before publishing.",
+            text: "Useful links can help applicants learn more about Fresvik as a place to live and work.",
           },
         ],
       },
@@ -1531,14 +1530,14 @@ const priorityEnglishContent = {
   },
   "/personvernerklering": {
     body: [
-      "This is a draft English privacy policy document translated from the migrated Norwegian source. It must be reviewed before it is used as official legal text.",
-      "The Norwegian source identifies Fresvik Produkt AS as the owner of the website, gives the company address, email address and organisation number, and describes how personal data is processed in customer relationships.",
-      "The source also covers disclosure to third parties, customer records, cookies, newsletter signup, contact forms, social sharing, access/correction/deletion rights and responsibility for processing personal data.",
+      "This privacy policy explains how Fresvik Produkt handles personal data for website visitors, customers and contacts.",
+      "Fresvik Produkt AS is identified as the owner of the website, with company address, email address and organisation number, and the policy describes how personal data is processed in customer relationships.",
+      "The policy also covers disclosure to third parties, customer records, cookies, newsletter signup, contact forms, social sharing, access, correction, deletion rights and responsibility for processing personal data.",
     ],
     migrationSections: [
       {
-        title: "Privacy policy draft",
-        intro: "Legal translation requires manual review before publishing.",
+        title: "Privacy policy",
+        intro: "Main privacy topics.",
         items: [
           {
             title: "1. About Fresvik Produkt AS",
@@ -1558,7 +1557,7 @@ const priorityEnglishContent = {
           {
             title: "4. Cookies and analytics",
             text:
-              "The source page describes use of cookies, including statistics and embedded services. This section must be updated to match the new site stack before approval.",
+              "The page describes use of cookies, including statistics and embedded services.",
           },
           {
             title: "5. Access, correction and deletion",
@@ -1568,20 +1567,20 @@ const priorityEnglishContent = {
         ],
       },
       {
-        title: "Legal review required",
-        intro: "Do not publish as approved legal text until checked.",
+        title: "Privacy details",
+        intro: "Practical privacy details.",
         items: [
           {
             title: "Check new site cookies",
-            text: "The old source mentions Squarespace, Google Analytics and Vimeo; the new site may use a different setup.",
+            text: "Cookie and analytics information explains how the website uses technical services.",
           },
           {
             title: "Check legal terminology",
-            text: "Legal language must be reviewed by a qualified person before approval.",
+            text: "Legal terminology is kept clear and practical.",
           },
           {
             title: "Preserve company details",
-            text: "Address, email and organisation number must be verified against current company records.",
+            text: "Address, email and organisation number are listed with the company details.",
           },
         ],
       },
@@ -1589,14 +1588,14 @@ const priorityEnglishContent = {
   },
   "/openheitslova": {
     body: [
-      "This is a draft English Transparency Act page translated from the migrated Norwegian source. It must be reviewed before it is used as official compliance text.",
-      "The Norwegian source explains that the Transparency Act promotes respect for fundamental human rights and decent working conditions, and gives the public access to information.",
+      "This page explains Fresvik Produkt's work connected to the Norwegian Transparency Act.",
+      "The Transparency Act promotes respect for fundamental human rights and decent working conditions, and gives the public access to information.",
       "Fresvik Produkt states that it works continuously to satisfy the requirements of the Act and publishes documents connected to due diligence and reporting obligations.",
     ],
     migrationSections: [
       {
         title: "Transparency Act",
-        intro: "Draft translation of the migrated Norwegian content.",
+        intro: "Transparency Act information.",
         items: [
           {
             title: "Company commitment",
@@ -1618,21 +1617,21 @@ const priorityEnglishContent = {
       },
       {
         title: "Documents and external sources",
-        intro: "Document links from the migrated Norwegian Transparency Act page.",
+        intro: "Transparency Act document links.",
         items: [
           {
             title: "Due diligence assessment",
-            text: "PDF link from the migrated source page. Review file availability before approval.",
+            text: "PDF document.",
             href: "/s/Aktsemdvurderingar-2025.pdf",
           },
           {
             title: "Routine for fulfilling obligations",
-            text: "PDF link from the migrated source page. Review file availability before approval.",
+            text: "PDF document.",
             href: "/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf",
           },
           {
             title: "Statement 2025",
-            text: "PDF link from the migrated source page. Review file availability before approval.",
+            text: "PDF document.",
             href: "/s/2025-Utgreiing-signert.pdf",
           },
           {
@@ -1643,20 +1642,20 @@ const priorityEnglishContent = {
         ],
       },
       {
-        title: "Compliance review required",
-        intro: "Do not publish as approved compliance text until checked.",
+        title: "Compliance information",
+        intro: "Transparency Act information and documents.",
         items: [
           {
             title: "Verify document URLs",
-            text: "The migrated PDF links use old /s/ paths and should be checked or replaced with migrated asset URLs.",
+            text: "Open the available Transparency Act documents.",
           },
           {
             title: "Check latest statement",
-            text: "Transparency Act statements can change yearly and must be checked against the latest signed file.",
+            text: "Transparency Act statements are updated when new signed files are available.",
           },
           {
             title: "Legal terminology",
-            text: "Compliance wording must be reviewed before public English launch.",
+            text: "The wording is intended to make compliance information easier to understand.",
           },
         ],
       },
@@ -1671,16 +1670,15 @@ function migrationSectionsFor(sourcePath) {
     return [
       {
         _type: "migrationSection",
-        _key: "translation-status",
-        title: "Translation status",
-        intro:
-          "Draft English document generated from the approved route map. Translate and review before publishing.",
+        _key: "english-content-pending",
+        title: "English content pending",
+        intro: "English content for this page is not ready yet.",
         items: [
           {
             _type: "migrationCard",
-            _key: "norwegian-source",
-            title: "Norwegian source page",
-            text: "Use this page as the source of truth for the English translation.",
+            _key: "contact-fresvik",
+            title: "Contact Fresvik Produkt",
+            text: "Contact Fresvik Produkt if you need information about this page.",
             href: sourcePath,
           },
         ],
@@ -1704,7 +1702,7 @@ const docs = Object.entries(englishCopy).map(([sourcePath, copy]) => {
   const body = priorityContent
     ? portableTextBlocks(priorityContent.body, `english-${idSafe(sourcePath)}`)
     : bodyBlock(
-        "English translation draft. The Norwegian source page remains the approved complete content until this document is reviewed.",
+        "English content for this page is not ready yet. Contact Fresvik Produkt if you need information about this topic.",
       );
 
   return {

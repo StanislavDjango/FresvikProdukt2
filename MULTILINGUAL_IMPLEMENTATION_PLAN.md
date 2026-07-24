@@ -11,11 +11,11 @@ Current implementation:
 - English routes use readable translated paths from `src/i18n/routeMap.json`, for example `/en/products/fresvik-pir-panel`.
 - Temporary old English paths such as `/en/produkt/fresvik-pir-panel` are redirected to the canonical English path.
 - `/studio` is excluded from locale canonical redirects.
-- Header, footer and the development notice use `next-intl` UI messages from `src/i18n/messages`.
+- Header, footer, mega-menu descriptions and the development notice use localized UI messages from `src/i18n/messages`.
 - English pages first look for an English Sanity document and fall back to a clear temporary English page when translation is missing.
 - `npm run seed:sanity:en` writes `sanity/seed/migratedContent.en.ndjson` as draft English documents without overwriting the Norwegian baseline; the current seed covers all 26 entries in `src/i18n/routeMap.json`.
 - Sanity document schemas include language metadata for document-level translations.
-- `npm run check:i18n` validates route mapping, message key parity, required content UI labels, English seed coverage and the `/studio` proxy exclusion.
+- `npm run check:i18n` validates route mapping, bidirectional language switch paths, message key parity, required content UI labels, English seed slug/sourceUrl coverage and the `/studio` proxy exclusion.
 
 ## Translation Model
 
@@ -66,7 +66,8 @@ The temporary fallback/seed layer also covers secondary menu pages such as `/en/
 2. Translate document titles/descriptions, while Norwegian PDFs may remain marked as Norwegian PDF.
 3. Replace temporary fallback notices once each English Sanity document is approved.
 4. Add any missing English route mappings before linking to those pages.
-5. Run full checks before exposing English navigation more prominently.
+5. Audit remaining hard-coded public UI strings in `ContentPageView` and move reusable labels to messages before publishing English navigation broadly.
+6. Run full checks before exposing English navigation more prominently.
 
 ## Checks
 

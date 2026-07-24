@@ -15,9 +15,9 @@ Current implementation:
 - English pages first look for an English Sanity document and fall back to a clear temporary English page when translation is missing.
 - Temporary English fallback pages do not render Norwegian body sections or Norwegian product cards; they show English status copy and link to the Norwegian source page until an approved English Sanity document exists.
 - `npm run seed:sanity:en` writes `sanity/seed/migratedContent.en.ndjson` as draft English documents without overwriting the Norwegian baseline; the current seed covers all 26 entries in `src/i18n/routeMap.json`.
-- The Priority 1 translation batch now contains structured English draft body/sections for `/`, `/produkt`, `/produkt/fresvik-pir-panel`, `/produkt/fresvik-pur-panel`, `/produkt/kjole-frysedorer`, `/produkt/kjole-fryseportar`, `/tenester`, `/tenester/montasje`, `/dokumentasjon` and `/kontakt`; these drafts are imported to Sanity and can be published with `npm run seed:sanity:en:publish:p1` after review.
-- The Priority 2 translation batch now contains structured English draft body/sections for `/produkt/fasadepanel`, `/produkt/frysetunnel`, `/tilleggsutstyr`, `/tenester/leveranse`, `/tenester/service-reservedeler`, `/monteringsanvisning`, `/monteringsanvisningar-fresvik-skyveport` and `/kundeservice/faq`; these drafts are imported to Sanity and can be published together with Priority 1 through the safe publish batch.
-- The safe Priority 3 batch contains `/referansar`, `/om-oss`, `/firmainfo`, `/tilsette` and `/aktuelt`; `/stillingledig`, `/personvernerklering` and `/openheitslova` stay review-only because careers, legal and compliance content should not be published automatically.
+- The Priority 1 translation batch for `/`, `/produkt`, `/produkt/fresvik-pir-panel`, `/produkt/fresvik-pur-panel`, `/produkt/kjole-frysedorer`, `/produkt/kjole-fryseportar`, `/tenester`, `/tenester/montasje`, `/dokumentasjon` and `/kontakt` was published to Sanity on 2026-07-25.
+- The Priority 2 translation batch for `/produkt/fasadepanel`, `/produkt/frysetunnel`, `/tilleggsutstyr`, `/tenester/leveranse`, `/tenester/service-reservedeler`, `/monteringsanvisning`, `/monteringsanvisningar-fresvik-skyveport` and `/kundeservice/faq` was published to Sanity on 2026-07-25.
+- The safe Priority 3 batch for `/referansar`, `/om-oss`, `/firmainfo`, `/tilsette` and `/aktuelt` was published to Sanity on 2026-07-25; `/stillingledig`, `/personvernerklering` and `/openheitslova` stay review-only because careers, legal and compliance content should not be published automatically.
 - `npm run seed:sanity:en:publish` dry-runs the default Priority 1 publish batch; `npm run seed:sanity:en:publish:p1` applies Priority 1; `npm run seed:sanity:en:publish:safe` applies Priority 1, Priority 2 and safe Priority 3.
 - `npm run check:i18n:sanity` verifies that all English seed draft IDs exist in Sanity and reports how many matching English documents are published. Use `npm run check:i18n:sanity:published` only after approved English documents are expected to be public.
 - Sanity document schemas include language metadata for document-level translations.
@@ -34,6 +34,13 @@ Production verification on 2026-07-24 15:39 CEST:
 - `LINK_CHECK_BASE_URL=https://fresvik-produkt2.vercel.app npm run check:links` passes for 182 pages and 220 internal URLs.
 - `I18N_CHECK_BASE_URL=http://127.0.0.1:3060 npm run check:i18n` validates rendered `lang`, canonical and `hrefLang` output against the configured production canonical host.
 - Reusable `ContentPageView` labels for company, legal, FAQ, documentation CTA, accessory navigation and partner CTAs are now covered by `src/i18n/messages/{nn,en}.json` and guarded by `npm run check:i18n`.
+
+Sanity publication status on 2026-07-25:
+
+- English seed drafts: `26/26`.
+- Published English documents: `23/26`.
+- Published batch: Priority 1, Priority 2 and safe Priority 3.
+- Remaining unpublished English documents: `3/26`: `/stillingledig`, `/personvernerklering` and `/openheitslova`.
 
 ## Translation Model
 
@@ -80,9 +87,9 @@ The temporary fallback/seed layer also covers secondary menu pages such as `/en/
 
 ## Remaining Work
 
-1. Review and publish Priority 1 English Sanity drafts first.
-2. Review and publish Priority 2 plus safe Priority 3 drafts as one larger safe batch.
-3. Keep `/stillingledig`, `/personvernerklering` and `/openheitslova` unpublished until careers/legal/compliance wording is manually approved.
+1. Keep `/stillingledig`, `/personvernerklering` and `/openheitslova` unpublished until careers/legal/compliance wording is manually approved.
+2. Verify the published English runtime on production after Vercel deploy.
+3. Decide whether individual news/reference detail pages need English routes or should remain Norwegian-only from the English overview pages.
 4. Translate document titles/descriptions further where needed, while Norwegian PDFs may remain marked as Norwegian PDF.
 5. Re-enable the public English language switch only after the first approved English content batch is published and visually checked.
 6. Continue auditing page-specific hard-coded public UI strings before publishing English navigation broadly; the reusable `ContentPageView` labels are now message-backed.

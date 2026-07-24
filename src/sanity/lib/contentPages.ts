@@ -524,12 +524,14 @@ function mergeContentPage(
   doc: SanityContentDoc,
   fallback: ContentPage | undefined,
   indexSections: ContentPage["sections"],
+  language: "nn" | "en" = "nn",
 ): ContentPage {
   const path = pathForSlug(doc.slug);
+  const canUseFallbackContent = language === "nn";
   const ownSections = sanitySections(doc);
   const structuredMigrationSections = migrationSections(doc);
   const keepLocalMigrationStructure =
-    Boolean(fallback) && localMigrationStructurePaths.has(path);
+    canUseFallbackContent && Boolean(fallback) && localMigrationStructurePaths.has(path);
   const sanityCards = migrationCards(doc);
   const imageCards = imageCard(doc);
   let sections: ContentPage["sections"];
@@ -546,14 +548,18 @@ function mergeContentPage(
         ? indexSections
         : ownSections.length > 0
           ? ownSections
-          : fallback?.sections || [];
+          : canUseFallbackContent
+            ? fallback?.sections || []
+            : [];
     cards =
       sanityCards.length > 0
         ? sanityCards
         : indexSections[0]?.items.slice(0, 9) ||
           (imageCards.length > 0
             ? imageCards
-            : withoutLocalAssetRefs(fallback?.cards || []));
+            : canUseFallbackContent
+              ? withoutLocalAssetRefs(fallback?.cards || [])
+              : []);
   }
 
   const useFallbackHero = path === "/aktuelt" && Boolean(fallback);
@@ -631,7 +637,7 @@ export async function getSanityContentPage(path: string, language: "nn" | "en" =
 
     const normalizedPath = pathForSlug(doc.slug);
     const indexSections = await getIndexSections(normalizedPath, language);
-    return mergeContentPage(doc, fallback, indexSections);
+    return mergeContentPage(doc, fallback, indexSections, language);
   } catch (error) {
     console.error(`Failed to load ${path} from Sanity`, error);
     return language === "nn" ? fallback : null;

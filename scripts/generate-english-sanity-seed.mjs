@@ -1434,7 +1434,7 @@ const priorityEnglishContent = {
     body: [
       "The news page gathers updates from Fresvik Produkt, including employee news, company updates, project stories and trade-fair participation.",
       "The news overview presents selected company updates, project news and employee stories.",
-      "Detailed articles can be opened from the Norwegian news archive where English versions are not available.",
+      "Visitors can follow selected updates from Fresvik Produkt and continue to the relevant articles for more detail.",
     ],
     migrationSections: [
       {
@@ -1443,7 +1443,7 @@ const priorityEnglishContent = {
         items: [
           {
             title: "Meet our new technical manager",
-            text: "News item preserved from the old front page and news archive.",
+            text: "Company update about a new technical manager joining Fresvik Produkt.",
           },
           {
             title: "New technical drafter in place",
@@ -1460,20 +1460,20 @@ const priorityEnglishContent = {
         ],
       },
       {
-        title: "Article details",
-        intro: "Detailed article options.",
+        title: "What you will find",
+        intro: "News content and company updates.",
         items: [
           {
-            title: "Overview only",
-            text: "Use the English page as an overview and open Norwegian articles for details where needed.",
+            title: "Company updates",
+            text: "Updates about people, production, certification and daily work at Fresvik Produkt.",
           },
           {
-            title: "Full article translation",
-            text: "Selected article pages can receive full English versions over time.",
+            title: "Projects and deliveries",
+            text: "Stories connected to cold rooms, freezer rooms, products and customer deliveries.",
           },
           {
-            title: "Review dates and images",
-            text: "Article dates, image captions and links are shown with each promoted story.",
+            title: "Trade fairs and events",
+            text: "News from industry events, exhibitions and other places where Fresvik Produkt meets customers and partners.",
           },
         ],
       },
@@ -1699,9 +1699,9 @@ function migrationSectionsFor(sourcePath) {
     return [
       {
         _type: "migrationSection",
-        _key: "english-content-pending",
-        title: "English content pending",
-        intro: "English content for this page is not ready yet.",
+        _key: "english-page-support",
+        title: "English page support",
+        intro: "Contact Fresvik Produkt for more information about this topic.",
         items: [
           {
             _type: "migrationCard",

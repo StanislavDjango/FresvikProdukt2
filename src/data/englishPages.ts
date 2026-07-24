@@ -210,11 +210,11 @@ function englishNotice(path: string) {
   return {
     title: "English content status",
     intro:
-      "The English version is being prepared. The Norwegian source content is kept available until the approved English translation is complete.",
+      "The English version is being prepared. The complete Norwegian page remains available while the approved English translation is completed.",
     items: [
       {
-        title: "Norwegian source page",
-        text: "Open the complete Norwegian page with migrated text, images, documents and links.",
+        title: "Open Norwegian page",
+        text: "Open the complete Norwegian page with text, images, documents and links.",
         href: path,
       },
     ],

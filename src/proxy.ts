@@ -4,9 +4,15 @@ import { localeFromPathname, stripLocalePrefix, withLocale } from "@/i18n/config
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-fresvik-locale", localeFromPathname(pathname));
 
   if (pathname.startsWith("/studio")) {
-    return NextResponse.next();
+    return NextResponse.next({
+      request: {
+        headers: requestHeaders,
+      },
+    });
   }
 
   if (localeFromPathname(pathname) === "en") {
@@ -20,7 +26,11 @@ export function proxy(request: NextRequest) {
     }
   }
 
-  return NextResponse.next();
+  return NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
 }
 
 export const config = {

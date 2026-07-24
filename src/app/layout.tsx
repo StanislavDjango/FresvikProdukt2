@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { headers } from "next/headers";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { siteName, siteUrl } from "@/config/site";
+import { isLocale, type Locale } from "@/i18n/config";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -61,14 +63,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const requestHeaders = await headers();
+  const requestLocale = requestHeaders.get("x-fresvik-locale");
+  const locale: Locale = requestLocale && isLocale(requestLocale)
+    ? requestLocale
+    : "nn";
+
   return (
     <html
-      lang="nn"
+      lang={locale === "en" ? "en" : "nn"}
       className={`${geistSans.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full">

@@ -101,7 +101,7 @@ export function Footer() {
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="/kontakt"
+                href={withLocale("/kontakt", locale)}
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] bg-cyan-700 px-5 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
               >
                 {t("sendRequest")}
@@ -143,7 +143,7 @@ export function Footer() {
             <div className="grid content-between gap-8">
               <div>
                 <Link
-                  href="/"
+                  href={withLocale("/", locale)}
                   aria-label={t("homeLabel")}
                   className="inline-flex items-center gap-3 rounded-[8px] py-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-4 focus-visible:ring-offset-slate-950"
                 >

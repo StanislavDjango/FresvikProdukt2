@@ -3,12 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import type { ContentPage } from "@/data/pages";
+import { localeFromPathname, withLocale } from "@/i18n/config";
+import { messages } from "@/i18n/messages";
 
 type HomeHeroProps = {
   page: ContentPage;
 };
 
 export function HomeHero({ page }: HomeHeroProps) {
+  const locale = localeFromPathname(page.slug);
+  const labels = messages[locale].Content;
+
   return (
     <section className="relative isolate flex min-h-[32rem] overflow-hidden bg-slate-100 text-slate-950 sm:min-h-[34rem] lg:min-h-[36rem]">
       <Image
@@ -35,16 +40,16 @@ export function HomeHero({ page }: HomeHeroProps) {
           </p>
           <div className="mt-6 grid grid-cols-2 gap-3 sm:flex">
             <Link
-              href="/kontakt"
+              href={withLocale("/kontakt", locale)}
               className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] bg-cyan-800 px-5 text-sm font-semibold text-white shadow-lg transition hover:bg-cyan-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-800"
             >
-              Kontakt oss <ArrowRight aria-hidden="true" size={18} />
+              {labels.contactUs} <ArrowRight aria-hidden="true" size={18} />
             </Link>
             <Link
-              href="/produkt"
+              href={withLocale("/produkt", locale)}
               className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] border border-slate-400 bg-white/65 px-5 text-sm font-semibold text-slate-950 backdrop-blur-sm transition hover:border-cyan-800 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-800"
             >
-              Sjå produkta <ArrowRight aria-hidden="true" size={18} />
+              {labels.seeProducts} <ArrowRight aria-hidden="true" size={18} />
             </Link>
           </div>
         </div>

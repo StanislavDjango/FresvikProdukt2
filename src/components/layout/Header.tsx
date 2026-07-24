@@ -284,7 +284,7 @@ function DesktopMenuItem({
                   </p>
                   <div className="flex flex-col gap-2 sm:flex-row">
                     <Link
-                      href={meta.ctaHref}
+                      href={withLocale(meta.ctaHref, locale)}
                       className="inline-flex h-10 items-center justify-center rounded-[8px] border border-cyan-800 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
                       onClick={closeMenu}
                     >

@@ -18,7 +18,7 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import type { ContentPage } from "@/data/pages";
-import { localeFromPathname } from "@/i18n/config";
+import { localeFromPathname, withLocale } from "@/i18n/config";
 import { messages } from "@/i18n/messages";
 import { cn } from "@/lib/utils";
 
@@ -222,9 +222,11 @@ function CardLink({ href, label }: { href: string; label: string }) {
 function CompanyOverviewSection({
   section,
   sectionIndex,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
   sectionIndex: number;
+  labels?: ContentLabels;
 }) {
   return (
     <section className="border-b border-slate-200 bg-white">
@@ -249,7 +251,7 @@ function CompanyOverviewSection({
                 )}
               </p>
               <span className="mt-5 inline-flex items-center gap-2 self-end text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                Opne <ArrowRight aria-hidden="true" size={17} />
+                {labels.open} <ArrowRight aria-hidden="true" size={17} />
               </span>
             </Link>
           ))}
@@ -571,10 +573,12 @@ function CertificationBadgeLink({
   item,
   itemIndex,
   scope,
+  labels = getContentLabels(),
 }: {
   item: ContentPage["sections"][number]["items"][number];
   itemIndex: number;
   scope: string;
+  labels?: ContentLabels;
 }) {
   const href = item.href || certificationFallbackHref(item.title) || "/dokumentasjon";
   const isExternal = isExternalHref(href);
@@ -597,7 +601,7 @@ function CertificationBadgeLink({
         </span>
       )}
       <span className="sr-only">
-        Opne {item.title}
+        {labels.open} {item.title}
       </span>
     </>
   );
@@ -770,9 +774,11 @@ const tilleggsutstyrOverviewItems: ContentPage["cards"] = [
 function ProductIntroSection({
   section,
   highlight,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
   highlight?: string;
+  labels?: ContentLabels;
 }) {
   const item = section.items[0];
   const paragraphs = item?.text.split(/\n{2,}/).filter(Boolean) || [];
@@ -796,7 +802,7 @@ function ProductIntroSection({
           ) : null}
           <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-              Produktinformasjon
+              {labels.productInformation}
             </p>
             <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
               {item.title}
@@ -822,8 +828,10 @@ function ProductIntroSection({
 
 function FrysetunnelFeatureRow({
   sections,
+  labels = getContentLabels(),
 }: {
   sections: ContentPage["sections"];
+  labels?: ContentLabels;
 }) {
   const features = sections
     .filter((section) => frysetunnelFeatureSectionTitles.has(section.title))
@@ -840,15 +848,15 @@ function FrysetunnelFeatureRow({
       <Container className="py-12 lg:py-14">
         <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeader
-            eyebrow="Frysetunnel"
-            title="Konstruksjon og løysing"
-            intro="Dei viktigaste delane i frysetunnelen samla i ein ryddig oversikt."
+            eyebrow={labels.freezingTunnel}
+            title={labels.constructionSolution}
+            intro={labels.constructionSolutionIntro}
           />
           <Link
             href="/kontakt"
             className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
           >
-            Avklar løysing
+            {labels.clarifySolution}
             <ArrowRight aria-hidden="true" size={17} />
           </Link>
         </div>
@@ -897,7 +905,7 @@ function FrysetunnelFeatureRow({
                       href={item.href}
                       className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
                     >
-                      Les meir
+                      {labels.readMore}
                       <ArrowRight aria-hidden="true" size={17} />
                     </Link>
                   ) : null}
@@ -1222,14 +1230,14 @@ function ReferenceLinksSection({
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-                Relaterte lenker
+                {labels.relatedLinks}
               </p>
               <h2 className="mt-2 text-2xl font-semibold tracking-normal text-slate-950">
-                Relaterte referansar
+                {labels.relatedReferences}
               </h2>
             </div>
             <p className="max-w-xl text-sm leading-6 text-slate-600">
-              Vidare lenker knytt til prosjektet.
+              {labels.referenceLinksIntro}
             </p>
           </div>
           <div className="mt-5 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
@@ -1245,7 +1253,7 @@ function ReferenceLinksSection({
                   </span>
                   <span className="mt-2 block text-sm leading-6 text-slate-600">
                     {cleanMigrationIntro(item.text) ||
-                      "Relatert referanse eller ekstern lenke."}
+                      labels.relatedReferenceFallback}
                   </span>
                 </span>
                 <span className="mt-4 inline-flex items-center gap-2 self-end text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
@@ -1338,7 +1346,7 @@ function AccessoryDetailSection({
         <article className="grid overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-xl shadow-slate-950/[0.06] lg:grid-cols-[0.92fr_1.08fr]">
           <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-              Produktinformasjon
+              {labels.productInformation}
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
               {item.title}
@@ -1640,8 +1648,10 @@ function ProductImageGallerySection({
 
 function ProductDocumentSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const linkedItems = section.items.filter(
     (item): item is typeof item & { href: string } =>
@@ -1656,14 +1666,13 @@ function ProductDocumentSection({
         <div className="grid gap-8 lg:grid-cols-[0.34fr_0.66fr]">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-              Nedlasting
+              {labels.downloads}
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
               {section.title}
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-600">
-              Produktblad, monteringsinformasjon og dokumentasjon samla som
-              raske dokumentlenker.
+              {labels.documentsIntro}
             </p>
           </div>
 
@@ -1691,13 +1700,13 @@ function ProductDocumentSection({
                       {cleanCardText(
                         item.text,
                         isPdf
-                          ? "PDF-dokumentasjon for produktet."
-                          : "Dokumentasjon og teknisk informasjon.",
+                          ? labels.productPdfFallback
+                          : labels.technicalInfoFallback,
                       )}
                     </span>
                   </span>
                   <span className="inline-flex h-10 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition group-hover:border-cyan-800 group-hover:text-cyan-800">
-                    Opne
+                    {labels.open}
                     {isExternal || isPdf ? (
                       <ExternalLink aria-hidden="true" size={16} />
                     ) : (
@@ -1740,8 +1749,10 @@ function ProductDocumentSection({
 
 function DocumentationDownloadsSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const descriptions: Record<string, string> = {
     Miljødokument: "Miljødokumentasjon for Fresvik Produkt.",
@@ -1763,15 +1774,15 @@ function DocumentationDownloadsSection({
       <Container className="py-14 lg:py-16">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeader
-            eyebrow="Nedlasting"
-            title="Dokument og godkjenningar"
+            eyebrow={labels.downloads}
+            title={labels.documentsAndApprovals}
             intro="Produktdokumentasjon, godkjenningar og praktiske skjema samla på ein stad."
           />
           <Link
             href="/monteringsanvisning"
             className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
           >
-            Monteringsanvisningar
+            {labels.installationGuides}
             <ArrowRight aria-hidden="true" size={17} />
           </Link>
         </div>
@@ -1803,14 +1814,14 @@ function DocumentationDownloadsSection({
                       {descriptions[item.title] ||
                         cleanCardText(
                           item.text,
-                          "Dokumentasjon frå Fresvik Produkt.",
+                          labels.fresvikDocsFallback,
                         )}
                     </p>
                   </div>
                 </div>
                 {href ? (
                   <span className="mt-6 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                    Opne
+                    {labels.open}
                     {isExternal || isPdf ? (
                       <ExternalLink aria-hidden="true" size={16} />
                     ) : (
@@ -1894,23 +1905,25 @@ function DocumentationContactSection() {
 
 function MountingDownloadsSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   return (
     <section className="border-b border-slate-200 bg-white">
       <Container className="py-14 lg:py-16">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeader
-            eyebrow="Nedlasting"
-            title="Monteringsanvisningar"
-            intro="Monteringsrettleiingar for rom, dører og portar samla som raske dokumentlenker."
+            eyebrow={labels.downloads}
+            title={labels.installationGuides}
+            intro={labels.mountingGuidesIntro}
           />
           <Link
             href="/dokumentasjon"
             className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
           >
-            All dokumentasjon
+            {labels.allDocumentation}
             <ArrowRight aria-hidden="true" size={17} />
           </Link>
         </div>
@@ -1955,14 +1968,14 @@ function MountingDownloadsSection({
                       <p className="mt-2 text-sm leading-6 text-slate-600">
                         {cleanCardText(
                           item.text,
-                          "Monteringsrettleiing og praktisk dokumentasjon.",
+                          labels.mountingGuideFallback,
                         )}
                       </p>
                     </div>
                   </div>
                   {href ? (
                     <span className="mt-6 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                      Opne
+                      {labels.open}
                       {isPdf || isExternal ? (
                         <ExternalLink aria-hidden="true" size={16} />
                       ) : (
@@ -2047,8 +2060,10 @@ function MountingDocumentationCta() {
 
 function ElectricSkyveportDownloadsSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const descriptions: Record<string, string> = {
     "Koblingskjema Fermod 5010":
@@ -2067,15 +2082,15 @@ function ElectricSkyveportDownloadsSection({
       <Container className="py-14 lg:py-16">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeader
-            eyebrow="Elektrisk skyveport"
-            title="Filer for Fermod 5010"
-            intro="Koblingsskjema, montasjeanvisningar og praktiske PDF-filer for elektrisk styring av Fresvik Skyveport."
+            eyebrow={labels.electricSlidingGate}
+            title={labels.filesForFermod}
+            intro={labels.electricFilesIntro}
           />
           <Link
             href="/monteringsanvisning"
             className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
           >
-            Alle monteringsanvisningar
+            {labels.allInstallationGuides}
             <ArrowRight aria-hidden="true" size={17} />
           </Link>
         </div>
@@ -2102,14 +2117,14 @@ function ElectricSkyveportDownloadsSection({
                       {descriptions[item.title] ||
                         cleanCardText(
                           item.text,
-                          "Dokumentasjon for elektrisk skyveport.",
+                          labels.electricGateDocsFallback,
                         )}
                     </p>
                   </div>
                 </div>
                 {href ? (
                   <span className="mt-6 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                    Opne
+                    {labels.open}
                     {isPdf || isExternal ? (
                       <ExternalLink aria-hidden="true" size={16} />
                     ) : (
@@ -2170,7 +2185,7 @@ function ProductRelatedSection({
 }) {
   const title = section.title.includes("Tilleggsprodukt")
     ? "Tilleggsprodukt"
-    : "Tilleggsutstyr";
+    : labels.accessories;
   const ctaLabel = labels.allAccessories;
 
   return (
@@ -2218,7 +2233,7 @@ function ProductRelatedSection({
                 <p className="mt-3 grow text-sm leading-6 text-slate-600">
                   {cleanCardText(
                     item.text,
-                    "Tilleggsutstyr for kjøle- og fryserom.",
+                    labels.accessoryFallback,
                   )}
                 </p>
                 <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
@@ -2235,8 +2250,10 @@ function ProductRelatedSection({
 
 function DoorModelsSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   return (
     <section className="border-b border-slate-200 bg-white">
@@ -2283,7 +2300,7 @@ function DoorModelsSection({
                   {item.text.replace(/\.$/, "")}
                 </p>
                 <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                  {labels.readMore} <ArrowRight aria-hidden="true" size={17} />
                 </span>
               </div>
             </Link>
@@ -2316,8 +2333,10 @@ function DoorAccessorySection({
 
 function ServiceMontasjeSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const visualItem = section.items.find((item) => item.imageUrl);
   const visualImage =
@@ -2358,7 +2377,7 @@ function ServiceMontasjeSection({
                       </h3>
                       {item.href ? (
                         <span className="mt-1 inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-800">
-                          Les meir
+                          {labels.readMore}
                           <ArrowRight aria-hidden="true" size={14} />
                         </span>
                       ) : null}
@@ -2839,8 +2858,10 @@ function ServiceContactCtaSection({
 
 function AccessoryOverviewSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const items = section.items.some((item) => item.href?.startsWith("/andre-produkter/"))
     ? section.items
@@ -2894,7 +2915,7 @@ function AccessoryOverviewSection({
                   )}
                 </p>
                 <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                  {labels.readMore} <ArrowRight aria-hidden="true" size={17} />
                 </span>
               </div>
             </Link>
@@ -3074,11 +3095,13 @@ function ProductReferenceSection({
   eyebrow = "Referansar",
   title = "Utvalde fasadeprosjekt",
   badge = "Fasadepanel",
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
   eyebrow?: string;
   title?: string;
   badge?: string;
+  labels?: ContentLabels;
 }) {
   const items = section.items.filter((item) => item.href !== "/referansar");
 
@@ -3095,7 +3118,7 @@ function ProductReferenceSection({
             href="/referansar"
             className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
           >
-            Alle referansar
+            {labels.allReferences}
             <ArrowRight aria-hidden="true" size={17} />
           </Link>
         </div>
@@ -3116,14 +3139,14 @@ function ProductReferenceSection({
                 </h3>
                 <p className="mt-4 text-sm leading-6 text-slate-600">
                   {item.text === "Featured."
-                    ? "Sjå prosjekt og løysingar frå Fresvik Produkt."
+                    ? labels.projectFallback
                     : cleanCardText(
                         item.text,
-                        "Sjå prosjekt og løysingar frå Fresvik Produkt.",
+                        labels.projectFallback,
                       )}
                 </p>
                 <span className="mt-6 inline-flex self-start items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                  {labels.readMore} <ArrowRight aria-hidden="true" size={17} />
                 </span>
               </div>
               {item.imageUrl ? (
@@ -3173,8 +3196,10 @@ function ReferenceIndexIntroSection({
 
 function ReferenceIndexGridSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   return (
     <section className="border-b border-slate-200 bg-slate-50">
@@ -3210,11 +3235,11 @@ function ReferenceIndexGridSection({
                 <p className="mt-3 grow text-sm leading-6 text-slate-600">
                   {cleanCardText(
                     item.text,
-                    "Sjå prosjektet frå Fresvik Produkt.",
+                    labels.projectFallback,
                   )}
                 </p>
                 <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                  {labels.readMore} <ArrowRight aria-hidden="true" size={17} />
                 </span>
               </div>
             </Link>
@@ -3265,8 +3290,10 @@ function ReferenceCategorySection({
 
 function NewsIndexSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const items = section.items.filter(
     (item) => item.href && item.title !== "Aktuelt",
@@ -3312,7 +3339,7 @@ function NewsIndexSection({
                   {item.text}
                 </p>
                 <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                  {labels.readMore} <ArrowRight aria-hidden="true" size={17} />
                 </span>
               </div>
             </Link>
@@ -3464,22 +3491,22 @@ function ProductCertificateLinksSection({
   );
   const displayIntro =
     cleanMigrationIntro(section.intro) ||
-    "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker.";
+    labels.certificatesIntro;
 
   return (
     <section className="border-b border-slate-200 bg-slate-50 py-12">
       <Container>
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeader
-            eyebrow="Dokumentert"
-            title="Sertifikat og godkjenningar"
+            eyebrow={labels.certified}
+            title={labels.certificatesAndApprovals}
             intro={displayIntro}
           />
           <Link
             href="/dokumentasjon"
             className="inline-flex h-10 w-fit items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
           >
-            Dokumentasjon
+            {labels.documentation}
             <ArrowRight aria-hidden="true" size={16} />
           </Link>
         </div>
@@ -3748,6 +3775,7 @@ function ContentSections({
           key={`${section.title}-${sectionIndex}`}
           section={section}
           sectionIndex={sectionIndex}
+          labels={labels}
         />
       );
     }
@@ -3821,6 +3849,7 @@ function ContentSections({
         <NewsIndexSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -3864,6 +3893,7 @@ function ContentSections({
         <ReferenceIndexGridSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -3885,6 +3915,7 @@ function ContentSections({
         <ElectricSkyveportDownloadsSection
           key={`electric-skyveport-downloads-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -3894,6 +3925,7 @@ function ContentSections({
         <MountingDownloadsSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -3907,6 +3939,7 @@ function ContentSections({
         <DocumentationDownloadsSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -3944,6 +3977,7 @@ function ContentSections({
         <AccessoryOverviewSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4039,6 +4073,7 @@ function ContentSections({
         <ServiceMontasjeSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4129,10 +4164,12 @@ function ContentSections({
           <ProductIntroSection
             key={`${section.title}-${sectionIndex}`}
             section={section}
+            labels={labels}
           />,
           <FrysetunnelFeatureRow
             key="frysetunnel-feature-row"
             sections={sections}
+            labels={labels}
           />,
         ];
       }
@@ -4142,6 +4179,7 @@ function ContentSections({
           key={`${section.title}-${sectionIndex}`}
           section={section}
           highlight={isPirIntro ? pirProducerHighlight : undefined}
+          labels={labels}
         />
       );
     }
@@ -4204,6 +4242,7 @@ function ContentSections({
         <DoorModelsSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4213,6 +4252,7 @@ function ContentSections({
         <ProductReferenceSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4228,6 +4268,7 @@ function ContentSections({
           eyebrow="Referansar"
           title="Fryseprosjekt og leveransar"
           badge="Frysetunnel"
+          labels={labels}
         />
       );
     }
@@ -4246,6 +4287,7 @@ function ContentSections({
         <ProductDocumentSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4475,14 +4517,13 @@ function HomeSection({
         <Container className="py-14 lg:py-16">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-cyan-300">
-              Dokumentert
+              {labels.certified}
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-normal text-white sm:text-4xl">
-              Godkjenningar og sertifikat
+              {labels.certificatesAndApprovals}
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-300">
-              Sertifikat, godkjenningar og dokumentasjon frå Fresvik Produkt
-              samla som raske dokumentlenker.
+              {labels.certificatesIntro}
             </p>
           </div>
           <div className="mt-8 rounded-[8px] border border-white/10 bg-white/[0.04] p-3 shadow-2xl shadow-slate-950/20">
@@ -4497,6 +4538,7 @@ function HomeSection({
                   item={item}
                   itemIndex={itemIndex}
                   scope={`${section.title}-${sectionIndex}`}
+                  labels={labels}
                 />
               ))}
             </div>
@@ -4601,7 +4643,7 @@ function HomeSection({
                       href={accentItem.href}
                       className="mt-6 inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
                     >
-                      Les meir
+                      {labels.readMore}
                       <ArrowRight aria-hidden="true" size={17} />
                     </Link>
                   ) : null}
@@ -4932,7 +4974,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
                   <Link
-                    href="/kontakt"
+                    href={withLocale("/kontakt", localeFromPathname(page.slug))}
                     className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
                   >
                     {labels.contactUs} <ArrowRight aria-hidden="true" size={17} />
@@ -5025,7 +5067,14 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
         </section>
       ) : null}
 
-      {isHomePage ? null : <CTASection />}
+      {isHomePage ? null : (
+        <CTASection
+          title={labels.ctaTitle}
+          text={labels.ctaText}
+          contactLabel={labels.contactUs}
+          contactHref={withLocale("/kontakt", localeFromPathname(page.slug))}
+        />
+      )}
     </main>
   );
 }

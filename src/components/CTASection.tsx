@@ -5,11 +5,15 @@ import { Container } from "@/components/ui/Container";
 type CTASectionProps = {
   title?: string;
   text?: string;
+  contactLabel?: string;
+  contactHref?: string;
 };
 
 export function CTASection({
   title = "Klar for å diskutere prosjektet?",
   text = "Ta kontakt med Fresvik Produkt for teknisk avklaring, produktval og vidare planlegging.",
+  contactLabel = "Kontakt oss",
+  contactHref = "/kontakt",
 }: CTASectionProps) {
   return (
     <section className="bg-slate-950 text-white">
@@ -21,8 +25,8 @@ export function CTASection({
           </p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row">
-          <Button href="/kontakt" variant="ghost">
-            Kontakt oss <ArrowRight aria-hidden="true" size={18} />
+          <Button href={contactHref} variant="ghost">
+            {contactLabel} <ArrowRight aria-hidden="true" size={18} />
           </Button>
           <Button href="tel:+4757698300" variant="ghost">
             <Phone aria-hidden="true" size={18} />

@@ -948,12 +948,12 @@ const priorityEnglishContent = {
           {
             title: "Spar Lund Torv",
             text: "Reference project connected to the freezing tunnel page.",
-            href: "/referansar/spar-lund-torv",
+            href: "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
           },
           {
             title: "Baza Fredrikstad",
             text: "Reference project connected to the freezing tunnel page.",
-            href: "/referansar/baza-fredrikstad",
+            href: "/referansar/fryserom-baza-fredrikstad",
           },
         ],
       },

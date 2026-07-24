@@ -46,6 +46,16 @@ export const redirectRules: RedirectRule[] = [
     permanent: true,
   },
   {
+    source: "/referansar/baza-fredrikstad",
+    destination: "/referansar/fryserom-baza-fredrikstad",
+    permanent: true,
+  },
+  {
+    source: "/referansar/spar-lund-torv",
+    destination: "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",
+    permanent: true,
+  },
+  {
     source: "/referansar-list/fryse-og-kjolerom-til-sogn-frukt-og-gront",
     destination: "/referansar/fryse-og-kjolerom-til-sogn-frukt-og-gront",
     permanent: true,

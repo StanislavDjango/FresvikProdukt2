@@ -17,6 +17,7 @@ This file tracks the remaining content work for the English version. The `/en` r
 - Keep product names, Fresvik, PIR, PUR, SINTEF and CE unchanged.
 - Norwegian-only PDFs may be linked from English pages, but label them as Norwegian PDFs.
 - A page is ready only after its English Sanity document has approved title, intro, body, documents and links.
+- Review-only pages are tracked in `ENGLISH_REVIEW_ONLY_PAGES.md`.
 
 ## Priority 1
 
@@ -55,9 +56,9 @@ This file tracks the remaining content work for the English version. The `/en` r
 | `/firmainfo` | `/en/about/company-info` | `page` | published 2026-07-25 | Monitor company facts after Vercel deploy. |
 | `/tilsette` | `/en/about/employees` | `page` | published 2026-07-25 | Monitor role labels and verify all names, phone numbers and emails from current source. |
 | `/aktuelt` | `/en/about/news` | `page` | published 2026-07-25 | Monitor news overview and decide whether individual news articles need English URLs. |
-| `/stillingledig` | `/en/about/careers` | `page` | priority-3 draft | Review whether vacancy text is current before publishing. |
-| `/personvernerklering` | `/en/privacy-policy` | `page` | priority-3 draft, legal review required | Legal translation requires manual review before approval. |
-| `/openheitslova` | `/en/transparency-act` | `page` | priority-3 draft, legal review required | Compliance translation and old `/s/` document links require manual review before approval. |
+| `/stillingledig` | `/en/about/careers` | `page` | review-only draft | Review whether vacancy text is current before publishing. See `ENGLISH_REVIEW_ONLY_PAGES.md`. |
+| `/personvernerklering` | `/en/privacy-policy` | `page` | review-only draft, legal review required | Legal translation requires manual review before approval. See `ENGLISH_REVIEW_ONLY_PAGES.md`. |
+| `/openheitslova` | `/en/transparency-act` | `page` | review-only draft, legal review required | Compliance translation and document links require manual review before approval. See `ENGLISH_REVIEW_ONLY_PAGES.md`. |
 
 ## Validation After Each Translation Batch
 

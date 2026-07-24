@@ -20,6 +20,7 @@ Current implementation:
 - The safe Priority 3 batch for `/referansar`, `/om-oss`, `/firmainfo`, `/tilsette` and `/aktuelt` was published to Sanity on 2026-07-25; `/stillingledig`, `/personvernerklering` and `/openheitslova` stay review-only because careers, legal and compliance content should not be published automatically.
 - `npm run seed:sanity:en:publish` dry-runs the default Priority 1 publish batch; `npm run seed:sanity:en:publish:p1` applies Priority 1; `npm run seed:sanity:en:publish:safe` applies Priority 1, Priority 2 and safe Priority 3.
 - `npm run check:i18n:sanity` verifies that all English seed draft IDs exist in Sanity and reports how many matching English documents are published. Use `npm run check:i18n:sanity:published` only after approved English documents are expected to be public.
+- `ENGLISH_REVIEW_ONLY_PAGES.md` tracks the three English drafts that require manual approval before public publication.
 - Sanity document schemas include language metadata for document-level translations.
 - `npm run check:i18n` validates route mapping, bidirectional language switch paths, message key parity, required content UI labels, English seed slug/sourceUrl coverage, Priority 1 draft completeness and the `/studio` proxy exclusion.
 - Production `/en` routes are live on `https://fresvik-produkt2.vercel.app`.
@@ -87,7 +88,7 @@ The temporary fallback/seed layer also covers secondary menu pages such as `/en/
 
 ## Remaining Work
 
-1. Keep `/stillingledig`, `/personvernerklering` and `/openheitslova` unpublished until careers/legal/compliance wording is manually approved.
+1. Keep `/stillingledig`, `/personvernerklering` and `/openheitslova` unpublished until the checklist in `ENGLISH_REVIEW_ONLY_PAGES.md` is approved.
 2. Verify the published English runtime on production after Vercel deploy.
 3. Decide whether individual news/reference detail pages need English routes or should remain Norwegian-only from the English overview pages.
 4. Translate document titles/descriptions further where needed, while Norwegian PDFs may remain marked as Norwegian PDF.

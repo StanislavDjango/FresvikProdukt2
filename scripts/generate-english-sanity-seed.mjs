@@ -1622,17 +1622,17 @@ const priorityEnglishContent = {
           {
             title: "Due diligence assessment",
             text: "PDF document.",
-            href: "/s/Aktsemdvurderingar-2025.pdf",
+            href: "/assets/fresvik/documents/openheitslova-aktsemdvurderingar-2025.pdf",
           },
           {
             title: "Routine for fulfilling obligations",
             text: "PDF document.",
-            href: "/s/Fresvik-Produkt-rutine-for-oppfylling-av-plikter-etter-Openheitslova-5e5n.pdf",
+            href: "/assets/fresvik/documents/openheitslova-rutine-plikter-2025.pdf",
           },
           {
             title: "Statement 2025",
             text: "PDF document.",
-            href: "/s/2025-Utgreiing-signert.pdf",
+            href: "/assets/fresvik/documents/openheitslova-utgreiing-2025-signert.pdf",
           },
           {
             title: "Transparency Act on Lovdata",

@@ -86,6 +86,15 @@ function idSafe(value) {
     .toLowerCase() || "home";
 }
 
+function slugForEnglishPath(englishPath) {
+  if (englishPath === "/") return "home";
+  return englishPath.replace(/^\/+|\/+$/g, "");
+}
+
+function expectedSourceUrl(sourcePath) {
+  return `https://www.fresvik.no${sourcePath === "/" ? "" : sourcePath}`;
+}
+
 const entries = Object.entries(routeMap);
 const englishPaths = entries.map(([, englishPath]) => englishPath);
 const duplicateEnglishPaths = englishPaths.filter(
@@ -162,12 +171,32 @@ if (englishSeedDocs.length !== entries.length) {
 const englishSeedGroups = new Set(
   englishSeedDocs.map((doc) => doc.translationGroup).filter(Boolean),
 );
+const englishSeedByGroup = new Map(
+  englishSeedDocs
+    .filter((doc) => doc.translationGroup)
+    .map((doc) => [doc.translationGroup, doc]),
+);
 
-for (const [sourcePath] of entries) {
+for (const [sourcePath, englishPath] of entries) {
   const expectedGroup = `fresvik:${idSafe(sourcePath)}`;
+  const expectedSlug = slugForEnglishPath(englishPath);
+  const matchingDoc = englishSeedByGroup.get(expectedGroup);
 
   if (!englishSeedGroups.has(expectedGroup)) {
     errors.push(`Missing English seed document for routeMap source: ${sourcePath}`);
+    continue;
+  }
+
+  if (matchingDoc.slug?.current !== expectedSlug) {
+    errors.push(
+      `English seed slug mismatch for ${sourcePath}: expected "${expectedSlug}", got "${matchingDoc.slug?.current || "missing"}"`,
+    );
+  }
+
+  if (matchingDoc.sourceUrl !== expectedSourceUrl(sourcePath)) {
+    errors.push(
+      `English seed sourceUrl mismatch for ${sourcePath}: expected "${expectedSourceUrl(sourcePath)}", got "${matchingDoc.sourceUrl || "missing"}"`,
+    );
   }
 }
 

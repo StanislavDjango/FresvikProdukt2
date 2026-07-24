@@ -16,6 +16,15 @@ Current implementation:
 - `npm run seed:sanity:en` writes `sanity/seed/migratedContent.en.ndjson` as draft English documents without overwriting the Norwegian baseline; the current seed covers all 26 entries in `src/i18n/routeMap.json`.
 - Sanity document schemas include language metadata for document-level translations.
 - `npm run check:i18n` validates route mapping, bidirectional language switch paths, message key parity, required content UI labels, English seed slug/sourceUrl coverage and the `/studio` proxy exclusion.
+- Production `/en` routes are live on `https://fresvik-produkt2.vercel.app`.
+- Production canonical and `hreflang` alternates are verified for Norwegian and English public pages, including the separate `/kontakt` route.
+
+Production verification on 2026-07-24 15:39 CEST:
+
+- `https://fresvik-produkt2.vercel.app/en` returns `lang="en"` and canonical `/en`.
+- `https://fresvik-produkt2.vercel.app/en/products/fresvik-pir-panel` returns `lang="en"`, canonical `/en/products/fresvik-pir-panel`, `nn-NO` alternate `/produkt/fresvik-pir-panel` and `en` alternate `/en/products/fresvik-pir-panel`.
+- `https://fresvik-produkt2.vercel.app/kontakt` returns canonical `/kontakt`, `nn-NO` alternate `/kontakt` and `en` alternate `/en/contact`.
+- `LINK_CHECK_BASE_URL=https://fresvik-produkt2.vercel.app npm run check:links` passes for 182 pages and 220 internal URLs.
 
 ## Translation Model
 
@@ -62,12 +71,12 @@ The temporary fallback/seed layer also covers secondary menu pages such as `/en/
 
 ## Remaining Work
 
-1. Translate approved English content in Sanity, page by page.
+1. Translate approved English content in Sanity, page by page. Current `/en` pages are intentionally temporary English summaries with a Norwegian source link until approved translations are imported.
 2. Translate document titles/descriptions, while Norwegian PDFs may remain marked as Norwegian PDF.
 3. Replace temporary fallback notices once each English Sanity document is approved.
 4. Add any missing English route mappings before linking to those pages.
 5. Audit remaining hard-coded public UI strings in `ContentPageView` and move reusable labels to messages before publishing English navigation broadly.
-6. Run full checks before exposing English navigation more prominently.
+6. Run full checks after each approved translation batch and before exposing English navigation more prominently.
 
 ## Checks
 

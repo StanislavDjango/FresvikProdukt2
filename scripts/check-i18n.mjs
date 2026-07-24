@@ -187,6 +187,17 @@ function portableTextText(blocks) {
     .trim();
 }
 
+function migrationSectionTexts(doc) {
+  return (doc.migrationSections || []).flatMap((section) => [
+    section.title || "",
+    section.intro || "",
+    ...(section.items || []).flatMap((item) => [
+      item.title || "",
+      item.text || "",
+    ]),
+  ]);
+}
+
 function withLocale(pathname, locale) {
   const cleanPath = stripLocalePrefix(pathname);
   if (locale === "nn") return cleanPath;
@@ -423,6 +434,37 @@ for (const doc of englishSeedDocs) {
 
   if (!doc.translationGroup) {
     errors.push(`English seed document is missing translationGroup: ${doc._id || doc.title}`);
+  }
+
+  for (const section of doc.migrationSections || []) {
+    if (["Translation review", "Translation status"].includes(section.title)) {
+      errors.push(`English seed contains public review section "${section.title}": ${doc._id || doc.title}`);
+    }
+
+    for (const item of section.items || []) {
+      if (item.title === "Norwegian source page") {
+        errors.push(`English seed contains public review card "${item.title}": ${doc._id || doc.title}`);
+      }
+    }
+  }
+
+  const publicReviewPhrases = [
+    "Use the Norwegian page as the source of truth",
+    "Use this page as the source of truth for the English translation",
+  ];
+  const publicText = [
+    doc.title || "",
+    doc.intro || "",
+    doc.seoTitle || "",
+    doc.seoDescription || "",
+    portableTextText(doc.body),
+    ...migrationSectionTexts(doc),
+  ].join(" ");
+
+  for (const phrase of publicReviewPhrases) {
+    if (publicText.includes(phrase)) {
+      errors.push(`English seed contains public review phrase "${phrase}": ${doc._id || doc.title}`);
+    }
   }
 }
 

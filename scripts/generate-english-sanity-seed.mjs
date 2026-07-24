@@ -258,25 +258,6 @@ function sectionBlock(section, sectionIndex) {
   };
 }
 
-function sourceReviewSection(sourcePath) {
-  return {
-    _type: "migrationSection",
-    _key: "translation-review",
-    title: "Translation review",
-    intro:
-      "Priority English draft prepared from migrated Norwegian content. Technical terms, certificates and legal wording must be reviewed before publishing.",
-    items: [
-      {
-        _type: "migrationCard",
-        _key: "norwegian-source",
-        title: "Norwegian source page",
-        text: "Use the Norwegian page as the source of truth while reviewing this English draft.",
-        href: sourcePath,
-      },
-    ],
-  };
-}
-
 const priorityEnglishContent = {
   "/": {
     body: [
@@ -776,7 +757,7 @@ const priorityEnglishContent = {
   "/dokumentasjon": {
     body: [
       "Here you can find technical approvals, environmental documents, delivery terms, central approval documents and installation guides.",
-      "The documentation page keeps the same practical purpose as the Norwegian source page: it gathers the most important product documents in one place, so customers and partners can quickly find the correct PDF or external approval link.",
+      "The documentation page gathers the most important product documents in one place, so customers and partners can quickly find the correct PDF or external approval link.",
       "Contact Fresvik Produkt if you cannot find the documentation you need, or if you need help choosing the right product sheet, approval document or installation guide for a specific project.",
     ],
     migrationSections: [
@@ -1301,7 +1282,7 @@ const priorityEnglishContent = {
     body: [
       "Fresvik Produkt combines Norwegian production, experienced specialists and documented solutions for cold rooms and freezer rooms.",
       "The about page points visitors onward to company information, employees, news and available positions, while keeping Fresvik Produkt's production and expertise as the main context.",
-      "This English draft keeps the same navigation purpose as the Norwegian source page and should be reviewed before the English about section is published broadly.",
+      "The about section guides visitors to company information, employees, news and available positions while keeping production and expertise in focus.",
     ],
     migrationSections: [
       {
@@ -1326,7 +1307,7 @@ const priorityEnglishContent = {
       },
       {
         title: "Further information",
-        intro: "About-section links preserved from the Norwegian source page.",
+        intro: "Useful company links gathered in one place.",
         items: [
           {
             title: "Company information",
@@ -1707,10 +1688,7 @@ function migrationSectionsFor(sourcePath) {
     ];
   }
 
-  return [
-    ...priorityContent.migrationSections.map(sectionBlock),
-    sourceReviewSection(sourcePath),
-  ];
+  return priorityContent.migrationSections.map(sectionBlock);
 }
 
 const docs = Object.entries(englishCopy).map(([sourcePath, copy]) => {

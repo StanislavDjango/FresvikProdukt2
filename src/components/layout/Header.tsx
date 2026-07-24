@@ -24,7 +24,19 @@ import {
 } from "@/components/ui/navigation-menu";
 import { NorwayFlag } from "@/components/ui/NorwayFlag";
 import { localeFromPathname, stripLocalePrefix, withLocale } from "@/i18n/config";
+import { messages } from "@/i18n/messages";
 import { cn } from "@/lib/utils";
+
+type HeaderMenuMessages = (typeof messages)["nn"]["Header"]["menu"];
+type MenuMeta = {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  actionLabel: string;
+  ctaText?: string;
+  ctaHref?: string;
+  ctaLabel?: string;
+};
 
 function isActivePath(pathname: string, item: NavigationItem) {
   const basePathname = stripLocalePrefix(pathname);
@@ -43,72 +55,81 @@ function linkClass(active: boolean) {
   ].join(" ");
 }
 
-const menuMeta: Record<
-  string,
-  {
-    eyebrow: string;
-    title: string;
-    intro: string;
-    actionLabel: string;
-    ctaText?: string;
-    ctaHref?: string;
-    ctaLabel?: string;
-  }
-> = {
-  "/produkt": {
-    eyebrow: "Produkt",
-    title: "Våre produkt",
-    intro: "Isolerte panel, dører, portar og utstyr for kjøle- og fryserom.",
-    actionLabel: "Sjå alle produkt",
-    ctaText: "Treng du hjelp til å finne riktig produkt?",
-    ctaHref: "/kontakt",
-    ctaLabel: "Send førespørsel",
-  },
-  "/tenester": {
-    eyebrow: "Tenester",
-    title: "Våre tenester",
-    intro: "Frå levering og montering til service, oppfølging og reservedeler.",
-    actionLabel: "Les meir om tenester",
-    ctaText: "Har du spørsmål om våre tenester?",
-    ctaHref: "/kontakt",
-    ctaLabel: "Kontakt oss",
-  },
-  "/dokumentasjon": {
-    eyebrow: "Dokumentasjon",
-    title: "Dokumentasjon",
-    intro: "Finn produktunderlag, monteringsanvisningar og praktisk rettleiing.",
-    actionLabel: "Til dokumentasjon",
-    ctaText: "Finn du ikkje det du leitar etter?",
-    ctaHref: "/kontakt",
-    ctaLabel: "Kontakt oss",
-  },
-  "/om-oss": {
-    eyebrow: "Om oss",
-    title: "Fresvik Produkt",
-    intro: "Firmainfo, tilsette, nyheiter og ledige stillingar.",
-    actionLabel: "Om Fresvik",
-  },
-};
+function getMenuMeta(
+  baseHref: string,
+  itemLabel: string,
+  menu: HeaderMenuMessages,
+  contactUsLabel: string,
+) {
+  const metaByPath: Record<string, MenuMeta> = {
+    "/produkt": {
+      eyebrow: menu.productEyebrow,
+      title: menu.productTitle,
+      intro: menu.productIntro,
+      actionLabel: menu.productAction,
+      ctaText: menu.productCta,
+      ctaHref: "/kontakt",
+      ctaLabel: contactUsLabel,
+    },
+    "/tenester": {
+      eyebrow: menu.serviceEyebrow,
+      title: menu.serviceTitle,
+      intro: menu.serviceIntro,
+      actionLabel: menu.serviceAction,
+      ctaText: menu.serviceCta,
+      ctaHref: "/kontakt",
+      ctaLabel: contactUsLabel,
+    },
+    "/dokumentasjon": {
+      eyebrow: menu.documentationEyebrow,
+      title: menu.documentationTitle,
+      intro: menu.documentationIntro,
+      actionLabel: menu.documentationAction,
+      ctaText: menu.documentationCta,
+      ctaHref: "/kontakt",
+      ctaLabel: contactUsLabel,
+    },
+    "/om-oss": {
+      eyebrow: menu.aboutEyebrow,
+      title: menu.aboutTitle,
+      intro: menu.aboutIntro,
+      actionLabel: menu.aboutAction,
+    },
+  };
 
-const menuItemDescriptions: Record<string, string> = {
-  "/produkt/fresvik-pir-panel": "Høgeffektive isolerte PIR-panel for vegg og tak.",
-  "/produkt/fresvik-pur-panel": "PUR-panel med framragande isolasjonsevne.",
-  "/produkt/kjole-fryseportar": "Robuste skyve- og hengsleportar for kjøle- og fryserom.",
-  "/produkt/kjole-frysedorer": "Dører med høg isolasjon og driftstryggleik.",
-  "/produkt/fasadepanel": "Estetiske og slitesterke panel for fasadeløysingar.",
-  "/produkt/frysetunnel": "Effektive frysetunnelar for rask og skånsam frysing.",
-  "/tilleggsutstyr": "Komponentar og tilbehør som kompletterer løysinga.",
-  "/tenester/montasje": "Profesjonell montering utført av erfarne fagfolk.",
-  "/tenester/leveranse": "Sikker og effektiv levering til avtalt tid og stad.",
-  "/tenester/service-reservedeler": "Service, vedlikehald og reservedeler for optimal drift.",
-  "/monteringsanvisning": "Steg-for-steg rettleiing for montering og installasjon.",
-  "/monteringsanvisningar-fresvik-skyveport": "Rettleiing for elektrisk skyveport.",
-  "/kundeservice/faq": "Svar på vanlege spørsmål om produkt og dokumentasjon.",
-  "/firmainfo": "Selskapsinformasjon og praktiske opplysningar.",
-  "/tilsette": "Kontaktpersonar og fagfolk i Fresvik Produkt.",
-  "/aktuelt": "Nyheiter, artiklar og oppdateringar frå Fresvik.",
-  "/stillingledig": "Ledige stillingar og karrieremoglegheiter.",
-};
+  return (
+    metaByPath[baseHref] ?? {
+      eyebrow: itemLabel,
+      title: itemLabel,
+      intro: menu.defaultIntro,
+      actionLabel: `${menu.defaultAction} ${itemLabel.toLowerCase()}`,
+    }
+  );
+}
+
+function getMenuItemDescription(baseHref: string, menu: HeaderMenuMessages) {
+  const descriptions: Record<string, string> = {
+    "/produkt/fresvik-pir-panel": menu.descriptionPir,
+    "/produkt/fresvik-pur-panel": menu.descriptionPur,
+    "/produkt/kjole-fryseportar": menu.descriptionGates,
+    "/produkt/kjole-frysedorer": menu.descriptionDoors,
+    "/produkt/fasadepanel": menu.descriptionFacade,
+    "/produkt/frysetunnel": menu.descriptionTunnel,
+    "/tilleggsutstyr": menu.descriptionAccessories,
+    "/tenester/montasje": menu.descriptionInstallation,
+    "/tenester/leveranse": menu.descriptionDelivery,
+    "/tenester/service-reservedeler": menu.descriptionService,
+    "/monteringsanvisning": menu.descriptionInstallGuide,
+    "/monteringsanvisningar-fresvik-skyveport": menu.descriptionSlidingDoor,
+    "/kundeservice/faq": menu.descriptionFaq,
+    "/firmainfo": menu.descriptionCompany,
+    "/tilsette": menu.descriptionEmployees,
+    "/aktuelt": menu.descriptionNews,
+    "/stillingledig": menu.descriptionCareers,
+  };
+
+  return descriptions[baseHref];
+}
 
 function DesktopMenuItem({
   item,
@@ -127,12 +148,10 @@ function DesktopMenuItem({
   const isOpen = openMenu === item.href;
   const hasChildren = Boolean(item.children?.length);
   const baseHref = stripLocalePrefix(item.href);
-  const meta = menuMeta[baseHref] ?? {
-    eyebrow: item.label,
-    title: item.label,
-    intro: "Gå vidare til relevante sider i denne delen av nettstaden.",
-    actionLabel: `Alle ${item.label.toLowerCase()}`,
-  };
+  const locale = localeFromPathname(pathname);
+  const menu = messages[locale].Header.menu;
+  const contentLabels = messages[locale].Content;
+  const meta = getMenuMeta(baseHref, item.label, menu, contentLabels.contactUs);
   const isCompactMenu = baseHref === "/om-oss";
 
   return (
@@ -218,7 +237,7 @@ function DesktopMenuItem({
               >
                 {item.children?.map((child) => {
                   const childActive = stripLocalePrefix(pathname) === stripLocalePrefix(child.href);
-                  const description = menuItemDescriptions[stripLocalePrefix(child.href)];
+                  const description = getMenuItemDescription(stripLocalePrefix(child.href), menu);
 
                   return (
                     <Link
@@ -260,7 +279,7 @@ function DesktopMenuItem({
                   <p className="text-sm font-semibold text-slate-950">
                     {meta.ctaText}
                     <span className="block font-normal text-slate-600">
-                      Send oss ein førespørsel, så hjelper vi deg.
+                      {menu.helperText}
                     </span>
                   </p>
                   <div className="flex flex-col gap-2 sm:flex-row">
@@ -269,7 +288,7 @@ function DesktopMenuItem({
                       className="inline-flex h-10 items-center justify-center rounded-[8px] border border-cyan-800 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
                       onClick={closeMenu}
                     >
-                      {meta.ctaLabel}
+                      {meta.ctaLabel ?? contentLabels.contactUs}
                       <span aria-hidden="true" className="ml-2">
                         →
                       </span>
@@ -307,7 +326,15 @@ function MobileLink({
   const active = isActivePath(pathname, item);
   const hasChildren = Boolean(item.children?.length);
   const isOpen = openSection === item.href;
-  const meta = menuMeta[stripLocalePrefix(item.href)];
+  const locale = localeFromPathname(pathname);
+  const menu = messages[locale].Header.menu;
+  const contentLabels = messages[locale].Content;
+  const meta = getMenuMeta(
+    stripLocalePrefix(item.href),
+    item.label,
+    menu,
+    contentLabels.contactUs,
+  );
 
   if (hasChildren) {
     const panelId = `mobile-menu-${item.href.replace(/[^a-z0-9]+/gi, "-")}`;
@@ -354,13 +381,13 @@ function MobileLink({
             onClick={onNavigate}
             className="mb-1 flex min-h-11 items-center justify-between rounded-[8px] bg-slate-950 px-3.5 py-2 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
           >
-            {meta?.actionLabel ?? `Alle ${item.label.toLowerCase()}`}
+            {meta.actionLabel}
             <ArrowRight aria-hidden="true" size={17} />
           </Link>
 
           <div className="grid gap-1">
             {item.children?.map((child) => {
-              const description = menuItemDescriptions[stripLocalePrefix(child.href)];
+              const description = getMenuItemDescription(stripLocalePrefix(child.href), menu);
 
               return (
                 <Link

@@ -31,5 +31,17 @@
     "officialSite": "Offisiell eksisterande nettside:",
     "openOldSite": "Opne gammal nettside",
     "continue": "Hald fram her"
+  },
+  "Content": {
+    "readMore": "Les meir",
+    "open": "Opne",
+    "openApproval": "Opne godkjenning",
+    "contact": "Kontakt",
+    "contactUs": "Kontakt oss",
+    "allProducts": "Alle produkt",
+    "allAccessories": "Alt tilleggsutstyr",
+    "allCases": "Alle saker",
+    "oldSource": "Gammal kjelde",
+    "relatedSolutions": "Relaterte løysingar"
   }
 }

@@ -63,7 +63,28 @@ const requiredEnglishRoutes = [
   "/about",
 ];
 
+const requiredContentMessageKeys = [
+  "Content.readMore",
+  "Content.open",
+  "Content.openApproval",
+  "Content.contact",
+  "Content.contactUs",
+  "Content.allProducts",
+  "Content.allAccessories",
+  "Content.allCases",
+  "Content.oldSource",
+  "Content.relatedSolutions",
+];
+
 const errors = [];
+
+function idSafe(value) {
+  return value
+    .replace(/^\/+|\/+$/g, "")
+    .replace(/[^a-zA-Z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .toLowerCase() || "home";
+}
 
 const entries = Object.entries(routeMap);
 const englishPaths = entries.map(([, englishPath]) => englishPath);
@@ -110,6 +131,16 @@ for (const key of enKeys) {
   }
 }
 
+for (const key of requiredContentMessageKeys) {
+  if (!nnKeys.includes(key)) {
+    errors.push(`Missing required Norwegian content message key: ${key}`);
+  }
+
+  if (!enKeys.includes(key)) {
+    errors.push(`Missing required English content message key: ${key}`);
+  }
+}
+
 if (!proxySource.includes('pathname.startsWith("/studio")')) {
   errors.push("/studio exclusion is missing from src/proxy.ts");
 }
@@ -120,6 +151,24 @@ if (!proxySource.includes("withLocale(sourcePath, \"en\")")) {
 
 if (englishSeedDocs.length === 0) {
   errors.push("sanity/seed/migratedContent.en.ndjson is missing or empty");
+}
+
+if (englishSeedDocs.length !== entries.length) {
+  errors.push(
+    `English seed document count (${englishSeedDocs.length}) must match routeMap entries (${entries.length})`,
+  );
+}
+
+const englishSeedGroups = new Set(
+  englishSeedDocs.map((doc) => doc.translationGroup).filter(Boolean),
+);
+
+for (const [sourcePath] of entries) {
+  const expectedGroup = `fresvik:${idSafe(sourcePath)}`;
+
+  if (!englishSeedGroups.has(expectedGroup)) {
+    errors.push(`Missing English seed document for routeMap source: ${sourcePath}`);
+  }
 }
 
 for (const doc of englishSeedDocs) {

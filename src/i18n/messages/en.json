@@ -31,5 +31,17 @@
     "officialSite": "Official existing website:",
     "openOldSite": "Open old website",
     "continue": "Continue here"
+  },
+  "Content": {
+    "readMore": "Read more",
+    "open": "Open",
+    "openApproval": "Open approval",
+    "contact": "Contact",
+    "contactUs": "Contact us",
+    "allProducts": "All products",
+    "allAccessories": "All accessories",
+    "allCases": "All articles",
+    "oldSource": "Old source",
+    "relatedSolutions": "Related solutions"
   }
 }

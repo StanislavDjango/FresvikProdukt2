@@ -18,12 +18,20 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import type { ContentPage } from "@/data/pages";
+import { localeFromPathname } from "@/i18n/config";
+import { messages } from "@/i18n/messages";
 import { cn } from "@/lib/utils";
 
 type ContentPageViewProps = {
   page: ContentPage;
   hero?: ReactNode;
 };
+
+type ContentLabels = (typeof messages)["nn"]["Content"];
+
+function getContentLabels(pathname = "/"): ContentLabels {
+  return messages[localeFromPathname(pathname)].Content;
+}
 
 function isExternalHref(href: string) {
   return /^(https?:\/\/|mailto:|tel:)/.test(href);
@@ -387,8 +395,10 @@ function EmployeeGridSection({
 
 function JobOpeningSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const [introItem, mainItem, ...details] = section.items;
 
@@ -436,7 +446,7 @@ function JobOpeningSection({
                     "Informasjon om stilling og arbeid hos Fresvik Produkt.",
                   )}
                 </p>
-                {item.href ? <CardLink href={item.href} label="Opne" /> : null}
+                {item.href ? <CardLink href={item.href} label={labels.open} /> : null}
               </article>
             ))}
           </div>
@@ -448,8 +458,10 @@ function JobOpeningSection({
 
 function LegalTextSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const title =
     section.title === "Personverntekst frå gammal side"
@@ -479,7 +491,7 @@ function LegalTextSection({
                 <p className="mt-3 whitespace-pre-line text-sm leading-7 text-slate-700">
                   {item.text}
                 </p>
-                {item.href ? <CardLink href={item.href} label="Opne" /> : null}
+                {item.href ? <CardLink href={item.href} label={labels.open} /> : null}
               </article>
             ))}
           </div>
@@ -1194,8 +1206,10 @@ function ReferenceImageGallerySection({
 
 function ReferenceLinksSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const items = section.items.filter((item) => item.href);
 
@@ -1235,7 +1249,7 @@ function ReferenceLinksSection({
                   </span>
                 </span>
                 <span className="mt-4 inline-flex items-center gap-2 self-end text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                  Opne
+                  {labels.open}
                   <ArrowRight aria-hidden="true" size={17} />
                 </span>
               </Link>
@@ -1291,9 +1305,11 @@ function AccessoryImageGallerySection({
 function AccessoryDetailSection({
   section,
   imageSection,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
   imageSection?: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const item = section.items[0];
   const paragraphs = item?.text.split(/\n{2,}/).filter(Boolean) || [];
@@ -1358,13 +1374,13 @@ function AccessoryDetailSection({
                 href="/kontakt"
                 className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
               >
-                Kontakt oss <ArrowRight aria-hidden="true" size={17} />
+                {labels.contactUs} <ArrowRight aria-hidden="true" size={17} />
               </Link>
               <Link
                 href="/tilleggsutstyr"
                 className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
               >
-                Alt tilleggsutstyr <ArrowRight aria-hidden="true" size={17} />
+                {labels.allAccessories} <ArrowRight aria-hidden="true" size={17} />
               </Link>
             </div>
           </div>
@@ -2147,22 +2163,22 @@ function ElectricSkyveportDownloadsSection({
 
 function ProductRelatedSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const title = section.title.includes("Tilleggsprodukt")
     ? "Tilleggsprodukt"
     : "Tilleggsutstyr";
-  const ctaLabel = section.title.includes("Tilleggsprodukt")
-    ? "Alt tilleggsutstyr"
-    : "Alt tilleggsutstyr";
+  const ctaLabel = labels.allAccessories;
 
   return (
     <section className="border-b border-slate-200 bg-slate-50">
       <Container className="py-14 lg:py-16">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeader
-            eyebrow="Relaterte løysingar"
+            eyebrow={labels.relatedSolutions}
             title={title}
             intro={cleanMigrationIntro(section.intro)}
           />
@@ -2206,7 +2222,7 @@ function ProductRelatedSection({
                   )}
                 </p>
                 <span className="mt-5 inline-flex self-end items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                  Les meir <ArrowRight aria-hidden="true" size={17} />
+                  {labels.readMore} <ArrowRight aria-hidden="true" size={17} />
                 </span>
               </div>
             </Link>
@@ -2280,11 +2296,14 @@ function DoorModelsSection({
 
 function DoorAccessorySection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   return (
     <ProductRelatedSection
+      labels={labels}
       section={{
         ...section,
         title: "Tilleggsutstyr",
@@ -2395,8 +2414,10 @@ function ServiceMontasjeSection({
 
 function ServiceDeliverySection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const [featuredItem, ...secondaryItems] = section.items;
   const ctaItem = secondaryItems.find((item) => item.href);
@@ -2487,7 +2508,7 @@ function ServiceDeliverySection({
                   href={ctaItem.href}
                   className="mt-4 inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 sm:mt-0"
                 >
-                  Kontakt oss
+                  {labels.contactUs}
                   <ArrowRight aria-hidden="true" size={17} />
                 </Link>
               </div>
@@ -2601,8 +2622,10 @@ function ServicePartsSection({
 
 function ServiceIndexSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const serviceDescriptions: Record<string, string> = {
     Montasje:
@@ -2627,7 +2650,7 @@ function ServiceIndexSection({
               href="/kontakt"
               className="mt-6 inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
             >
-              Kontakt oss
+              {labels.contactUs}
               <ArrowRight aria-hidden="true" size={17} />
             </Link>
           </div>
@@ -2665,7 +2688,7 @@ function ServiceIndexSection({
                     </span>
                   </span>
                   <span className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                    Les meir
+                    {labels.readMore}
                     <ArrowRight aria-hidden="true" size={17} />
                   </span>
                 </Link>
@@ -2680,8 +2703,10 @@ function ServiceIndexSection({
 
 function ServiceApprovalSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const introItem = section.items[0];
   const documentItem = section.items.find((item) => item.href);
@@ -2721,7 +2746,7 @@ function ServiceApprovalSection({
                 rel="noreferrer"
                 className="inline-flex h-11 w-fit items-center justify-center gap-2 rounded-[8px] bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
               >
-                Opne godkjenning
+                {labels.openApproval}
                 <ExternalLink aria-hidden="true" size={16} />
               </a>
             ) : null}
@@ -2768,8 +2793,10 @@ function ServiceApprovalSection({
 
 function ServiceContactCtaSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const text = section.items[0]?.text || "Ta kontakt for meir informasjon.";
 
@@ -2793,7 +2820,7 @@ function ServiceContactCtaSection({
               href="/kontakt"
               className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
             >
-              Kontakt oss
+              {labels.contactUs}
               <ArrowRight aria-hidden="true" size={17} />
             </Link>
             <a
@@ -3425,8 +3452,10 @@ function NewsSourceLinksSection({
 
 function ProductCertificateLinksSection({
   section,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  labels?: ContentLabels;
 }) {
   const items = section.items.filter(
     (item) =>
@@ -3494,7 +3523,7 @@ function ProductCertificateLinksSection({
                     {displayText}
                   </p>
                   <span className="mt-3 inline-flex self-end items-center gap-1.5 text-sm font-semibold text-cyan-800 transition group-hover:text-slate-950">
-                    Opne
+                    {labels.open}
                     <ExternalLink aria-hidden="true" size={15} />
                   </span>
                 </div>
@@ -3516,6 +3545,7 @@ function ContentSections({
   pageSlug?: string;
   page?: ContentPage;
 }) {
+  const labels = getContentLabels(pageSlug ?? page?.slug);
   const isPirPage = pageSlug === "/produkt/fresvik-pir-panel";
   const isPurPage = pageSlug === "/produkt/fresvik-pur-panel";
   const isPortPage = pageSlug === "/produkt/kjole-fryseportar";
@@ -3753,6 +3783,7 @@ function ContentSections({
         <JobOpeningSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -3768,6 +3799,7 @@ function ContentSections({
         <LegalTextSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -3889,6 +3921,7 @@ function ContentSections({
           key={`${section.title}-${sectionIndex}`}
           section={section}
           imageSection={accessoryImagesSection}
+          labels={labels}
         />
       );
     }
@@ -3944,6 +3977,7 @@ function ContentSections({
             intro:
               "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker.",
           }}
+          labels={labels}
         />
       );
     }
@@ -3960,6 +3994,7 @@ function ContentSections({
             intro:
               "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker.",
           }}
+          labels={labels}
         />
       );
     }
@@ -3969,6 +4004,7 @@ function ContentSections({
         <ServiceIndexSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -3978,6 +4014,7 @@ function ContentSections({
         <ServiceDeliverySection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4011,6 +4048,7 @@ function ContentSections({
         <ServiceApprovalSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4023,6 +4061,7 @@ function ContentSections({
         <ServiceContactCtaSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4051,6 +4090,7 @@ function ContentSections({
             intro:
               "Sertifikat, godkjenningar og dokumentasjon samla som raske lenker.",
           }}
+          labels={labels}
         />
       );
     }
@@ -4220,6 +4260,7 @@ function ContentSections({
           <DoorAccessorySection
             key={`${section.title}-${sectionIndex}`}
             section={section}
+            labels={labels}
           />
         );
       }
@@ -4228,6 +4269,7 @@ function ContentSections({
         <ProductRelatedSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4237,6 +4279,7 @@ function ContentSections({
         <ReferenceLinksSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4249,6 +4292,7 @@ function ContentSections({
         <ProductCertificateLinksSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          labels={labels}
         />
       );
     }
@@ -4372,7 +4416,7 @@ function ContentSections({
                       {displayText}
                     </p>
                   ) : null}
-                  {item.href ? <CardLink href={item.href} label="Opne" /> : null}
+                  {item.href ? <CardLink href={item.href} label={labels.open} /> : null}
                 </Card>
               );
             })}
@@ -4386,9 +4430,11 @@ function ContentSections({
 function HomeSection({
   section,
   sectionIndex,
+  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
   sectionIndex: number;
+  labels?: ContentLabels;
 }) {
   const isProducts = section.title.includes("Produktteaserar");
   const isCustomers = section.title === "Våre kundar";
@@ -4579,7 +4625,7 @@ function HomeSection({
                         "Løysingar frå Fresvik Produkt for profesjonelle kjøle- og fryserom.",
                       )}
                     </p>
-                    {item.href ? <CardLink href={item.href} label="Les meir" /> : null}
+                    {item.href ? <CardLink href={item.href} label={labels.readMore} /> : null}
                   </div>
                   {item.imageUrl ? (
                     <div className="relative min-h-44 overflow-hidden bg-slate-100 sm:min-h-full">
@@ -4616,7 +4662,7 @@ function HomeSection({
               href="/aktuelt"
               className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
             >
-              Alle saker
+              {labels.allCases}
               <ArrowRight aria-hidden="true" size={17} />
             </Link>
           </div>
@@ -4653,7 +4699,7 @@ function HomeSection({
                       "Les siste nytt frå Fresvik Produkt.",
                     )}
                   </p>
-                  {item.href ? <CardLink href={item.href} label="Les meir" /> : null}
+                  {item.href ? <CardLink href={item.href} label={labels.readMore} /> : null}
                 </div>
               </article>
             ))}
@@ -4687,7 +4733,7 @@ function HomeSection({
               href="/produkt"
               className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
             >
-              Alle produkt
+              {labels.allProducts}
               <ArrowRight aria-hidden="true" size={17} />
             </Link>
           ) : isNews ? (
@@ -4695,7 +4741,7 @@ function HomeSection({
               href="/aktuelt"
               className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
             >
-              Alle saker
+              {labels.allCases}
               <ArrowRight aria-hidden="true" size={17} />
             </Link>
           ) : null}
@@ -4778,7 +4824,7 @@ function HomeSection({
                   {item.href ? (
                     <CardLink
                       href={item.href}
-                      label={isContact ? "Kontakt" : "Les meir"}
+                      label={isContact ? labels.contact : labels.readMore}
                     />
                   ) : null}
                 </div>
@@ -4792,6 +4838,8 @@ function HomeSection({
 }
 
 function HomeContent({ page }: { page: ContentPage }) {
+  const labels = getContentLabels(page.slug);
+
   return (
     <>
       {page.sections.map((section, sectionIndex) => (
@@ -4799,6 +4847,7 @@ function HomeContent({ page }: { page: ContentPage }) {
           key={`${section.title}-${sectionIndex}`}
           section={section}
           sectionIndex={sectionIndex}
+          labels={labels}
         />
       ))}
     </>
@@ -4806,6 +4855,7 @@ function HomeContent({ page }: { page: ContentPage }) {
 }
 
 export function ContentPageView({ page, hero }: ContentPageViewProps) {
+  const labels = getContentLabels(page.slug);
   const showMigrationDetails = page.showMigrationDetails === true;
   const isFaqPage = page.slug === "/kundeservice/faq";
   const isHomePage = page.pageType === "home";
@@ -4885,7 +4935,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
                     href="/kontakt"
                     className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
                   >
-                    Kontakt oss <ArrowRight aria-hidden="true" size={17} />
+                    {labels.contactUs} <ArrowRight aria-hidden="true" size={17} />
                   </Link>
                   {showMigrationDetails && page.sourceUrl ? (
                     <a
@@ -4894,7 +4944,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Gammal kjelde <ExternalLink aria-hidden="true" size={17} />
+                      {labels.oldSource} <ExternalLink aria-hidden="true" size={17} />
                     </a>
                   ) : null}
                 </div>
@@ -4935,7 +4985,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
                   <p className="mt-3 grow text-sm leading-6 text-slate-600">
                     {card.text}
                   </p>
-                  {card.href ? <CardLink href={card.href} label="Les meir" /> : null}
+                  {card.href ? <CardLink href={card.href} label={labels.readMore} /> : null}
                 </Card>
               ))}
             </div>

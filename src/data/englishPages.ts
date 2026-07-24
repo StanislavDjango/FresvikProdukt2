@@ -121,12 +121,40 @@ const pageCopy: Record<
       "Product sheets, installation guides, certificates and practical documentation.",
     description: "Documentation from Fresvik Produkt.",
   },
+  "/monteringsanvisning": {
+    title: "Installation guides",
+    eyebrow: "Documentation",
+    intro:
+      "Installation guidance and practical documentation for Fresvik products.",
+    description: "Installation guides from Fresvik Produkt.",
+  },
+  "/monteringsanvisningar-fresvik-skyveport": {
+    title: "Electric sliding gate documentation",
+    eyebrow: "Documentation",
+    intro:
+      "Documentation for electric control of Fresvik sliding gates.",
+    description: "Electric sliding gate documentation from Fresvik Produkt.",
+  },
+  "/kundeservice/faq": {
+    title: "Frequently asked questions",
+    eyebrow: "Customer service",
+    intro:
+      "Answers to common questions about Fresvik products, documentation and deliveries.",
+    description: "Frequently asked questions from Fresvik Produkt.",
+  },
   "/referansar": {
     title: "References",
     eyebrow: "References",
     intro:
       "Selected projects and deliveries from Fresvik Produkt.",
     description: "Reference projects from Fresvik Produkt.",
+  },
+  "/aktuelt": {
+    title: "News",
+    eyebrow: "News",
+    intro:
+      "News, articles and updates from Fresvik Produkt.",
+    description: "News and updates from Fresvik Produkt.",
   },
   "/om-oss": {
     title: "About Fresvik Produkt",
@@ -135,12 +163,47 @@ const pageCopy: Record<
       "Company information, employees, news and available positions.",
     description: "About Fresvik Produkt AS.",
   },
+  "/firmainfo": {
+    title: "Company information",
+    eyebrow: "Company",
+    intro:
+      "Key company details for Fresvik Produkt AS.",
+    description: "Company information for Fresvik Produkt AS.",
+  },
+  "/tilsette": {
+    title: "Employees",
+    eyebrow: "Company",
+    intro:
+      "Contact people and employees at Fresvik Produkt.",
+    description: "Employees at Fresvik Produkt.",
+  },
+  "/stillingledig": {
+    title: "Available positions",
+    eyebrow: "Careers",
+    intro:
+      "Available positions and career information from Fresvik Produkt.",
+    description: "Career information from Fresvik Produkt.",
+  },
   "/kontakt": {
     title: "Contact Fresvik Produkt",
     eyebrow: "Contact",
     intro:
       "Contact Fresvik Produkt for sales, projects, service and technical clarification.",
     description: "Contact Fresvik Produkt.",
+  },
+  "/personvernerklering": {
+    title: "Privacy policy",
+    eyebrow: "Legal",
+    intro:
+      "Privacy information for visitors and contacts.",
+    description: "Privacy policy for Fresvik Produkt.",
+  },
+  "/openheitslova": {
+    title: "Transparency Act",
+    eyebrow: "Legal",
+    intro:
+      "Information related to the Norwegian Transparency Act.",
+    description: "Transparency Act information from Fresvik Produkt.",
   },
 };
 

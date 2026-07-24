@@ -13,9 +13,9 @@ Current implementation:
 - `/studio` is excluded from locale canonical redirects.
 - Header, footer and the development notice use `next-intl` UI messages from `src/i18n/messages`.
 - English pages first look for an English Sanity document and fall back to a clear temporary English page when translation is missing.
-- `npm run seed:sanity:en` writes `sanity/seed/migratedContent.en.ndjson` as draft English documents without overwriting the Norwegian baseline.
+- `npm run seed:sanity:en` writes `sanity/seed/migratedContent.en.ndjson` as draft English documents without overwriting the Norwegian baseline; the current seed covers all 26 entries in `src/i18n/routeMap.json`.
 - Sanity document schemas include language metadata for document-level translations.
-- `npm run check:i18n` validates route mapping, message key parity and the `/studio` proxy exclusion.
+- `npm run check:i18n` validates route mapping, message key parity, required content UI labels, English seed coverage and the `/studio` proxy exclusion.
 
 ## Translation Model
 
@@ -57,6 +57,8 @@ Priority routes:
 - `/en/references`
 - `/en/about`
 - `/en/contact`
+
+The temporary fallback/seed layer also covers secondary menu pages such as `/en/documentation/installation-guide`, `/en/documentation/faq`, `/en/about/company-info`, `/en/about/employees`, `/en/about/news`, `/en/privacy-policy` and `/en/transparency-act`.
 
 ## Remaining Work
 

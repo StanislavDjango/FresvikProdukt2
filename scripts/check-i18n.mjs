@@ -45,6 +45,11 @@ const enMessages = readJson("src/i18n/messages/en.json");
 const proxySource = readText("src/proxy.ts");
 const contactPageSource = readText("src/app/kontakt/page.tsx");
 const englishSeedDocs = readNdjson("sanity/seed/migratedContent.en.ndjson");
+const liveBaseUrl = process.env.I18N_CHECK_BASE_URL;
+const canonicalBaseUrl =
+  process.env.I18N_CANONICAL_BASE_URL ||
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://fresvik-produkt2.vercel.app";
 
 const requiredEnglishRoutes = [
   "/",
@@ -122,6 +127,60 @@ function withLocale(pathname, locale) {
   const englishPath = routeMap[cleanPath] ?? cleanPath;
   if (englishPath === "/") return "/en";
   return `/en${englishPath}`;
+}
+
+function absoluteUrl(baseUrl, pathname) {
+  const url = new URL(pathname === "/" ? "/" : pathname, baseUrl).toString();
+  return pathname === "/" ? url.replace(/\/$/, "") : url.replace(/\/$/, "");
+}
+
+function linkTagValue(html, rel, attributeName, attributeValue) {
+  const links = html.match(/<link[^>]+>/g) ?? [];
+  return links.find(
+    (link) =>
+      link.includes(`rel="${rel}"`) &&
+      (!attributeName || link.includes(`${attributeName}="${attributeValue}"`)),
+  );
+}
+
+function hasHtmlLang(html, expectedLang) {
+  return new RegExp(`<html[^>]*\\slang=["']${expectedLang}["']`).test(html);
+}
+
+async function validateLiveRoute(fetchBaseUrl, expectedBaseUrl, pathname, expectedLang, canonicalPath, sourcePath) {
+  const url = absoluteUrl(fetchBaseUrl, pathname);
+  const response = await fetch(url, { redirect: "manual" });
+
+  if (response.status !== 200) {
+    errors.push(`Live i18n route must return 200: ${url} returned ${response.status}`);
+    return;
+  }
+
+  const html = await response.text();
+
+  if (!hasHtmlLang(html, expectedLang)) {
+    errors.push(`Live i18n route has wrong html lang: ${url}`);
+  }
+
+  const expectedCanonical = absoluteUrl(expectedBaseUrl, canonicalPath);
+  const canonicalTag = linkTagValue(html, "canonical");
+
+  if (!canonicalTag?.includes(`href="${expectedCanonical}"`)) {
+    errors.push(`Live i18n route has wrong canonical: ${url}`);
+  }
+
+  const expectedNn = absoluteUrl(expectedBaseUrl, sourcePath);
+  const expectedEn = absoluteUrl(expectedBaseUrl, withLocale(sourcePath, "en"));
+  const nnAlternate = linkTagValue(html, "alternate", "hrefLang", "nn-NO");
+  const enAlternate = linkTagValue(html, "alternate", "hrefLang", "en");
+
+  if (!nnAlternate?.includes(`href="${expectedNn}"`)) {
+    errors.push(`Live i18n route is missing nn-NO alternate: ${url}`);
+  }
+
+  if (!enAlternate?.includes(`href="${expectedEn}"`)) {
+    errors.push(`Live i18n route is missing en alternate: ${url}`);
+  }
 }
 
 const entries = Object.entries(routeMap);
@@ -268,6 +327,30 @@ for (const doc of englishSeedDocs) {
   }
 }
 
+if (liveBaseUrl) {
+  const normalizedBaseUrl = liveBaseUrl.replace(/\/+$/, "");
+  const normalizedCanonicalBaseUrl = canonicalBaseUrl.replace(/\/+$/, "");
+
+  for (const [sourcePath] of entries) {
+    await validateLiveRoute(
+      normalizedBaseUrl,
+      normalizedCanonicalBaseUrl,
+      sourcePath,
+      "nn",
+      sourcePath,
+      sourcePath,
+    );
+    await validateLiveRoute(
+      normalizedBaseUrl,
+      normalizedCanonicalBaseUrl,
+      withLocale(sourcePath, "en"),
+      "en",
+      withLocale(sourcePath, "en"),
+      sourcePath,
+    );
+  }
+}
+
 if (errors.length) {
   console.error("i18n validation failed:");
   for (const error of errors) {
@@ -277,5 +360,5 @@ if (errors.length) {
 }
 
 console.log(
-  `i18n validation passed for ${entries.length} route mappings, ${nnKeys.length} message keys and ${englishSeedDocs.length} English seed docs.`,
+  `i18n validation passed for ${entries.length} route mappings, ${nnKeys.length} message keys and ${englishSeedDocs.length} English seed docs${liveBaseUrl ? ` with live checks at ${liveBaseUrl}` : ""}.`,
 );

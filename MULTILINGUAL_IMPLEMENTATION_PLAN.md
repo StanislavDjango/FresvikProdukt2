@@ -25,6 +25,7 @@ Production verification on 2026-07-24 15:39 CEST:
 - `https://fresvik-produkt2.vercel.app/en/products/fresvik-pir-panel` returns `lang="en"`, canonical `/en/products/fresvik-pir-panel`, `nn-NO` alternate `/produkt/fresvik-pir-panel` and `en` alternate `/en/products/fresvik-pir-panel`.
 - `https://fresvik-produkt2.vercel.app/kontakt` returns canonical `/kontakt`, `nn-NO` alternate `/kontakt` and `en` alternate `/en/contact`.
 - `LINK_CHECK_BASE_URL=https://fresvik-produkt2.vercel.app npm run check:links` passes for 182 pages and 220 internal URLs.
+- `I18N_CHECK_BASE_URL=http://127.0.0.1:3060 npm run check:i18n` validates rendered `lang`, canonical and `hrefLang` output against the configured production canonical host.
 
 ## Translation Model
 
@@ -90,5 +91,6 @@ npm run build
 npm run check:migration
 npm run check:assets
 npm run check:i18n
+I18N_CHECK_BASE_URL=http://127.0.0.1:3061 npm run check:i18n
 LINK_CHECK_BASE_URL=http://127.0.0.1:3061 npm run check:links
 ```

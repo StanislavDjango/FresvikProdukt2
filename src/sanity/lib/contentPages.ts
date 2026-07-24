@@ -572,7 +572,7 @@ function mergeContentPage(
         : keepLocalMigrationStructure && fallback
         ? fallback.title
         : doc.title || fallback?.title || "Fresvik Produkt",
-    eyebrow: eyebrowFor(doc, fallback),
+    eyebrow: eyebrowFor(doc, canUseFallbackContent ? fallback : undefined),
     intro:
       useFallbackHero && fallback
         ? fallback.intro

@@ -95,6 +95,34 @@ function expectedSourceUrl(sourcePath) {
   return `https://www.fresvik.no${sourcePath === "/" ? "" : sourcePath}`;
 }
 
+function normalizePath(pathname) {
+  if (!pathname || pathname === "/") return "/";
+  return `/${pathname.replace(/^\/+|\/+$/g, "")}`;
+}
+
+function sourcePathForEnglishPath(englishPath) {
+  const normalized = normalizePath(englishPath);
+  const match = entries.find(([, mappedEnglishPath]) => mappedEnglishPath === normalized);
+  return match?.[0] ?? normalized;
+}
+
+function stripLocalePrefix(pathname) {
+  if (pathname === "/en") return "/";
+  if (pathname.startsWith("/en/")) {
+    return sourcePathForEnglishPath(pathname.slice(3) || "/");
+  }
+  return normalizePath(pathname);
+}
+
+function withLocale(pathname, locale) {
+  const cleanPath = stripLocalePrefix(pathname);
+  if (locale === "nn") return cleanPath;
+
+  const englishPath = routeMap[cleanPath] ?? cleanPath;
+  if (englishPath === "/") return "/en";
+  return `/en${englishPath}`;
+}
+
 const entries = Object.entries(routeMap);
 const englishPaths = entries.map(([, englishPath]) => englishPath);
 const duplicateEnglishPaths = englishPaths.filter(
@@ -116,6 +144,23 @@ for (const [sourcePath, englishPath] of entries) {
 
   if (englishPath.startsWith("/en")) {
     errors.push(`English path must not include /en prefix in routeMap: ${englishPath}`);
+  }
+
+  const expectedEnglishHref = englishPath === "/" ? "/en" : `/en${englishPath}`;
+  const actualEnglishHref = withLocale(sourcePath, "en");
+
+  if (actualEnglishHref !== expectedEnglishHref) {
+    errors.push(
+      `Language switch EN mismatch for ${sourcePath}: expected "${expectedEnglishHref}", got "${actualEnglishHref}"`,
+    );
+  }
+
+  const actualNorwegianHref = withLocale(expectedEnglishHref, "nn");
+
+  if (actualNorwegianHref !== sourcePath) {
+    errors.push(
+      `Language switch NN mismatch for ${expectedEnglishHref}: expected "${sourcePath}", got "${actualNorwegianHref}"`,
+    );
   }
 }
 

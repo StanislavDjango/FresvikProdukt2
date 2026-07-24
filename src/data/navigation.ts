@@ -65,7 +65,7 @@ const mainNavigationByLocale: Record<Locale, NavigationItem[]> = {
       children: [
         { label: "Fresvik PIR Panel", href: "/produkt/fresvik-pir-panel" },
         { label: "Fresvik PUR Panel", href: "/produkt/fresvik-pur-panel" },
-        { label: "Cold and freezer doors", href: "/produkt/kjole-fryseportar" },
+        { label: "Cold and freezer gates", href: "/produkt/kjole-fryseportar" },
         { label: "Cold and freezer room doors", href: "/produkt/kjole-frysedorer" },
         { label: "Facade panels", href: "/produkt/fasadepanel" },
         { label: "Freezing tunnel", href: "/produkt/frysetunnel" },
@@ -90,7 +90,7 @@ const mainNavigationByLocale: Record<Locale, NavigationItem[]> = {
       children: [
         { label: "Installation guide", href: "/monteringsanvisning" },
         {
-          label: "Electric sliding door",
+          label: "Electric sliding gate",
           href: "/monteringsanvisningar-fresvik-skyveport",
         },
         { label: "FAQ", href: "/kundeservice/faq" },

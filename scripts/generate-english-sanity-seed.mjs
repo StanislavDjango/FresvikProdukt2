@@ -857,6 +857,383 @@ const priorityEnglishContent = {
       },
     ],
   },
+  "/produkt/fasadepanel": {
+    body: [
+      "Fresvik Produkt has long experience with buildings for the food industry and can supply exterior facade panels for warehouses and industrial buildings.",
+      "The panels can be supplied with polyurethane foam or mineral wool as the core. Polyurethane foam panels are preferred where a low price and strong insulation properties are important.",
+      "The migrated Norwegian source highlights good energy economy, short construction time and good total project economy as key benefits of the facade panel solution.",
+    ],
+    migrationSections: [
+      {
+        title: "Facade panel benefits",
+        intro: "Product benefits preserved from the migrated source page.",
+        items: [
+          {
+            title: "Good energy economy",
+            text: "Insulated panel solutions help reduce heat loss and support efficient building operation.",
+          },
+          {
+            title: "Short construction time",
+            text: "Panel-based construction can shorten the building process and simplify installation on site.",
+          },
+          {
+            title: "Good total economy",
+            text: "The combination of insulation performance, construction speed and price gives a strong overall project economy.",
+          },
+        ],
+      },
+      {
+        title: "Panel core",
+        intro: "Facade panels can be supplied with different cores depending on the project.",
+        items: [
+          {
+            title: "Polyurethane core",
+            text:
+              "Polyurethane foam can be preferred because of price and strong insulation properties.",
+          },
+          {
+            title: "Mineral wool core",
+            text: "Mineral wool can also be supplied where that core is required for the building.",
+          },
+        ],
+      },
+      {
+        title: "References",
+        intro: "Reference links connected to the facade panel page.",
+        items: [
+          {
+            title: "Celsa Steel Service, Sotra",
+            text: "Reference project linked from the facade panel source page.",
+            href: "/referansar/celsa-steel-sotra",
+          },
+          {
+            title: "Interfrukt",
+            text: "Reference project linked from the facade panel source page.",
+            href: "/referansar/2014/7/8/interfrukt-vrt-strste-prosjekt",
+          },
+        ],
+      },
+    ],
+  },
+  "/produkt/frysetunnel": {
+    body: [
+      "Fresvik freezing tunnels are tailored to each production environment and are used where controlled freezing is important for product quality and capacity.",
+      "The tunnel is built with custom PIR panels produced by Fresvik Produkt in Sogn. The panels are SINTEF approved, FoodSafe and available in several thicknesses.",
+      "Doors, panel dimensions and technical details are adapted to the production line, hygiene requirements and the product flow in each project.",
+    ],
+    migrationSections: [
+      {
+        title: "Controlled freezing",
+        intro: "The freezing tunnel is designed around the production process.",
+        items: [
+          {
+            title: "Custom production flow",
+            text:
+              "The tunnel is adapted to the customer's production environment and freezing requirements.",
+          },
+          {
+            title: "Product quality",
+            text: "Controlled freezing supports stable product quality and predictable capacity.",
+          },
+        ],
+      },
+      {
+        title: "Construction and use",
+        intro: "Key construction points from the migrated Norwegian source.",
+        items: [
+          {
+            title: "Custom PIR panels",
+            text:
+              "Fresvik PIR panels are produced in Sogn and can be supplied in thicknesses from 75 to 175 mm.",
+          },
+          {
+            title: "Specially adapted doors",
+            text: "Doors and openings can be adapted to the production equipment and room layout.",
+          },
+          {
+            title: "Industrial use",
+            text: "The solution is relevant for food production and other environments where rapid freezing is required.",
+          },
+        ],
+      },
+      {
+        title: "References",
+        intro: "Reference links connected to freezing tunnel projects.",
+        items: [
+          {
+            title: "All references",
+            text: "Open the references overview.",
+            href: "/en/references",
+          },
+          {
+            title: "Spar Lund Torv",
+            text: "Reference project connected to the freezing tunnel page.",
+            href: "/referansar/spar-lund-torv",
+          },
+          {
+            title: "Baza Fredrikstad",
+            text: "Reference project connected to the freezing tunnel page.",
+            href: "/referansar/baza-fredrikstad",
+          },
+        ],
+      },
+    ],
+  },
+  "/tilleggsutstyr": {
+    body: [
+      "Fresvik Produkt supplies accessories, components and spare parts for cold rooms and freezer rooms.",
+      "The page keeps practical product names and item numbers from the Norwegian source, so customers can identify the correct part when ordering or asking for advice.",
+      "If you are unsure which accessory fits your room, contact Fresvik Produkt with the product name, item number or a photo of the part.",
+    ],
+    migrationSections: [
+      {
+        title: "Accessory item numbers",
+        intro: "Examples of accessories preserved from the migrated Norwegian page.",
+        items: [
+          {
+            title: "Door closer / Diktator 23001",
+            text: "Accessory item number from the original page.",
+          },
+          {
+            title: "Entrapment alarm 3069",
+            text: "Alarm accessory for cold and freezer room safety.",
+          },
+          {
+            title: "Self-closing hinge 24600",
+            text: "Door hinge accessory preserved with its item number.",
+          },
+          {
+            title: "Elbar pressure relief valve 30651",
+            text: "Pressure relief valve for smaller freezer rooms.",
+          },
+          {
+            title: "MaxiElbar pressure relief valve 30652",
+            text: "Pressure relief valve for larger freezer rooms.",
+          },
+          {
+            title: "Composite stainless automatic lock 24083",
+            text: "Lock accessory listed on the original accessories page.",
+          },
+        ],
+      },
+      {
+        title: "Contact for ordering",
+        intro: "Use the contact details when you need help choosing parts.",
+        items: [
+          {
+            title: "Fresvik Produkt",
+            text: "Email post@fresvik.no or call +47 57 69 83 00.",
+            href: "mailto:post@fresvik.no",
+          },
+        ],
+      },
+    ],
+  },
+  "/tenester/leveranse": {
+    body: [
+      "Fresvik Produkt focuses on delivery reliability for facade elements, standard cold and freezer rooms and custom cold and freezer room solutions.",
+      "The customer should be able to know that the delivery arrives at the agreed time. The company delivers packages with the necessary parts, visibly labelled so installation can be handled efficiently.",
+      "Installation guides are available from the website, so installers and customers can find practical guidance during the project.",
+    ],
+    migrationSections: [
+      {
+        title: "Delivery follow-up",
+        intro: "Practical delivery points from the migrated service page.",
+        items: [
+          {
+            title: "Delivery reliability",
+            text: "Fresvik Produkt emphasises predictable delivery at the right time.",
+          },
+          {
+            title: "Complete packages",
+            text: "Deliveries include the necessary parts for the agreed solution.",
+          },
+          {
+            title: "Visible marking",
+            text: "Packages are visibly labelled to make installation work easier.",
+          },
+          {
+            title: "Installation guides online",
+            text: "Mounting instructions can be downloaded from the website.",
+            href: "/en/documentation/installation-guide",
+          },
+        ],
+      },
+    ],
+  },
+  "/tenester/service-reservedeler": {
+    body: [
+      "If something goes wrong, Fresvik Produkt can help with service and spare parts.",
+      "The company keeps spare parts for doors and gates in stock and can deliver specific parts when customers need quick replacement.",
+      "Together with partners and its own spare-part stock, Fresvik Produkt can keep delivery times short when urgent service needs arise.",
+    ],
+    migrationSections: [
+      {
+        title: "Service and spare parts",
+        intro: "Support points from the migrated Norwegian service page.",
+        items: [
+          {
+            title: "Spare parts in stock",
+            text: "Fresvik Produkt stocks spare parts for doors and gates.",
+          },
+          {
+            title: "Fast delivery",
+            text: "Spare-part stock and partners help reduce delivery time when parts are needed quickly.",
+          },
+          {
+            title: "Service request",
+            text: "Contact Fresvik Produkt with details about the product and the part you need.",
+            href: "/en/contact",
+          },
+        ],
+      },
+    ],
+  },
+  "/monteringsanvisning": {
+    body: [
+      "This page gathers installation guides for Fresvik Produkt products.",
+      "The documents are preserved as migrated PDF links. Some files may be Norwegian-only and should be reviewed before being presented as final English documentation.",
+      "Use the guide that matches the product: freezer room, cold room, door, gate or electrical gate control.",
+    ],
+    migrationSections: [
+      {
+        title: "Installation guides",
+        intro: "Document links preserved from the source page.",
+        items: [
+          {
+            title: "Freezer room installation guide",
+            text: "Norwegian PDF from the migrated source page.",
+            href: "/assets/fresvik/documents/fresvik-fryserom-montasjeanvisning.pdf",
+          },
+          {
+            title: "Gate installation guide",
+            text: "Norwegian PDF from the migrated source page.",
+            href: "/assets/fresvik/documents/fresvik-port-montasjeanvisning.pdf",
+          },
+          {
+            title: "Cold room installation guide",
+            text: "Norwegian PDF from the migrated source page.",
+            href: "/assets/fresvik/documents/fresvik-kjolerom-montasjeanvisning.pdf",
+          },
+          {
+            title: "Electric gate guide",
+            text: "Open the electric sliding gate documentation page.",
+            href: "/en/documentation/electric-sliding-door",
+          },
+          {
+            title: "Door installation guide",
+            text: "Norwegian PDF from the migrated source page.",
+            href: "/assets/fresvik/documents/fresvik-dor-montasjeanvisning.pdf",
+          },
+        ],
+      },
+    ],
+  },
+  "/monteringsanvisningar-fresvik-skyveport": {
+    body: [
+      "This page gathers documentation for electrical control of the Fresvik sliding gate.",
+      "The source page includes wiring diagrams, Fermod 5010 installation guides, a quick start document, direction-change instructions and options or kit documentation.",
+      "The files are preserved as migrated PDF links and should be reviewed for language and technical accuracy before final English publication.",
+    ],
+    migrationSections: [
+      {
+        title: "Electric sliding gate files",
+        intro: "Document links preserved from the migrated source page.",
+        items: [
+          {
+            title: "Fermod 5010 wiring diagram",
+            text: "PDF document from the source page.",
+            href: "/assets/fresvik/documents/koblingsskjema-fermod-5010.pdf",
+          },
+          {
+            title: "Installation guide 5010 for 2150",
+            text: "PDF document from the source page.",
+            href: "/assets/fresvik/documents/montasjeanvisning-5010-for-2150.pdf",
+          },
+          {
+            title: "Installation guide 5010 for 3530/7530",
+            text: "PDF document from the source page.",
+            href: "/assets/fresvik/documents/montasjeanvisning-5010-for-3530-og-7530.pdf",
+          },
+          {
+            title: "Quick Start 5010 EXP",
+            text: "PDF document from the source page.",
+            href: "/assets/fresvik/documents/quick-start-5010exp.pdf",
+          },
+          {
+            title: "Change sliding direction",
+            text: "PDF document from the source page.",
+            href: "/assets/fresvik/documents/endre-skyveretning.pdf",
+          },
+          {
+            title: "Accessories and option kits",
+            text: "PDF document from the source page.",
+            href: "/assets/fresvik/documents/tilleggsutstyr-nmoptions-kits5010exp.pdf",
+          },
+        ],
+      },
+    ],
+  },
+  "/kundeservice/faq": {
+    body: [
+      "The FAQ page answers practical questions about PIR and PUR panels, doors, gates, PVC curtains, dimensions, temperature ranges and custom production.",
+      "The English draft preserves the meaning of the migrated Norwegian FAQ, but technical answers should be reviewed before they are treated as approved English documentation.",
+      "Contact Fresvik Produkt if a project requires exact technical clarification, certification references or product-specific advice.",
+    ],
+    migrationSections: [
+      {
+        title: "Frequently asked questions",
+        intro: "Draft English answers translated from the migrated Norwegian FAQ.",
+        items: [
+          {
+            title: "What is the main difference between PIR and PUR panels?",
+            text:
+              "The main difference is fire performance. PIR has better fire resistance and lower smoke development, while both materials provide good insulation.",
+          },
+          {
+            title: "When should PIR panels be preferred?",
+            text:
+              "PIR is often preferred where fire requirements, insurance requirements, large cold or freezer warehouses, industrial buildings or high-value stored goods make fire performance especially important.",
+          },
+          {
+            title: "Why can the U-value be similar while fire performance differs?",
+            text:
+              "PIR has higher thermal stability and protects the surface better during fire, even when the insulation value is close to PUR.",
+          },
+          {
+            title: "Do PIR and PUR panels use the same locking mechanism?",
+            text:
+              "The migrated source states that PIR and PUR panels use the same design and locking principle in joints and corners.",
+          },
+          {
+            title: "What is a PVC curtain used for?",
+            text:
+              "Flexible PVC strips can be mounted in openings to reduce heat loss and draught, stabilise temperature and improve comfort.",
+          },
+          {
+            title: "What is the difference between cold room and freezer room doors?",
+            text:
+              "Freezer room doors normally include heating cable in the frame and are adapted for lower temperatures.",
+          },
+          {
+            title: "How do PIR and PUR compare in weight and density?",
+            text:
+              "The source gives PUR as about 40 kg/m3 and PIR as about 42 kg/m3, with PIR panels slightly heavier per square metre.",
+          },
+          {
+            title: "Can PIR be used at the same temperatures as PUR?",
+            text:
+              "The migrated FAQ lists PIR from -40°C to +70°C and PUR from -40°C to +120°C.",
+          },
+          {
+            title: "Can Fresvik deliver custom dimensions?",
+            text:
+              "Yes. Fresvik Produkt supplies standard and customised solutions, with dimensions adapted to the customer's project.",
+          },
+        ],
+      },
+    ],
+  },
 };
 
 function migrationSectionsFor(sourcePath) {

@@ -34,14 +34,14 @@ This file tracks the remaining content work for the English version. The `/en` r
 
 | Norwegian source | English URL | Sanity type | Current status | Required action |
 | --- | --- | --- | --- | --- |
-| `/produkt/fasadepanel` | `/en/products/facade-panels` | `product` | draft summary | Translate product information and reference links. |
-| `/produkt/frysetunnel` | `/en/products/freezing-tunnel` | `product` | draft summary | Translate construction/use cases and related solution text. |
-| `/tilleggsutstyr` | `/en/products/accessories` | `page` | draft summary | Translate accessory overview and item descriptions. |
-| `/tenester/leveranse` | `/en/services/delivery` | `service` | draft summary | Translate delivery page text. |
-| `/tenester/service-reservedeler` | `/en/services/service-spare-parts` | `service` | draft summary | Translate service/spare parts page text. |
-| `/monteringsanvisning` | `/en/documentation/installation-guide` | `page` | draft summary | Translate guide labels and mark PDFs as Norwegian/English where applicable. |
-| `/monteringsanvisningar-fresvik-skyveport` | `/en/documentation/electric-sliding-door` | `page` | draft summary | Translate electrical sliding gate document labels. |
-| `/kundeservice/faq` | `/en/documentation/faq` | `page` | draft summary | Translate FAQ questions and answers. |
+| `/produkt/fasadepanel` | `/en/products/facade-panels` | `product` | priority-2 draft | Review facade panel benefits, reference links and technical wording before approval. |
+| `/produkt/frysetunnel` | `/en/products/freezing-tunnel` | `product` | priority-2 draft | Review construction/use cases, panel details and reference links before approval. |
+| `/tilleggsutstyr` | `/en/products/accessories` | `page` | priority-2 draft | Review accessory names, item numbers and ordering text before approval. |
+| `/tenester/leveranse` | `/en/services/delivery` | `service` | priority-2 draft | Review delivery reliability, package marking and installation guide wording before approval. |
+| `/tenester/service-reservedeler` | `/en/services/service-spare-parts` | `service` | priority-2 draft | Review spare-part/service wording before approval. |
+| `/monteringsanvisning` | `/en/documentation/installation-guide` | `page` | priority-2 draft | Review guide labels and mark PDFs as Norwegian/English where applicable. |
+| `/monteringsanvisningar-fresvik-skyveport` | `/en/documentation/electric-sliding-door` | `page` | priority-2 draft | Review electrical sliding gate document labels before approval. |
+| `/kundeservice/faq` | `/en/documentation/faq` | `page` | priority-2 draft | Review FAQ technical answers before approval. |
 
 ## Priority 3
 

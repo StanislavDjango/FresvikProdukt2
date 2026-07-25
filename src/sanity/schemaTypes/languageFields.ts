@@ -32,6 +32,9 @@ export const languageFields = [
       { type: "service" },
       { type: "newsArticle" },
       { type: "referenceProject" },
+      { type: "documentFile" },
+      { type: "employee" },
+      { type: "faqItem" },
     ],
   }),
   defineField({

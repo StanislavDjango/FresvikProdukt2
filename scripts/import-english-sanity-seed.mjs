@@ -3,9 +3,12 @@ import path from "node:path";
 import { createClient } from "next-sanity";
 
 const root = path.resolve(import.meta.dirname, "..");
-const seedPath = path.join(root, "sanity", "seed", "migratedContent.en.ndjson");
 const apply = process.argv.includes("--apply");
 const dryRun = !apply;
+const seedArg = process.argv.find((arg) => arg.startsWith("--seed="));
+const seedPath = seedArg
+  ? path.resolve(root, seedArg.slice("--seed=".length))
+  : path.join(root, "sanity", "seed", "migratedContent.en.ndjson");
 
 function loadEnvFile(filePath) {
   if (!existsSync(filePath)) return;

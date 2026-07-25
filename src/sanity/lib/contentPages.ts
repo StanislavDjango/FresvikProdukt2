@@ -6,7 +6,7 @@ import {
 } from "@/data/pages";
 import { isSanityConfigured } from "../env";
 import { client } from "./client";
-import { englishPathForSourcePath } from "@/i18n/config";
+import { englishPathForSourcePath, sourcePathForEnglishPath } from "@/i18n/config";
 
 type PortableTextBlock = {
   _type?: string;
@@ -175,6 +175,17 @@ const CONTENT_SLUGS_QUERY = defineQuery(`*[
 
 const localMigrationStructurePaths = new Set<string>([]);
 
+const indexContentPaths = new Set([
+  "/aktuelt",
+  "/referansar",
+  "/produkt",
+  "/tenester",
+  "/dokumentasjon",
+  "/monteringsanvisning",
+  "/tilsette",
+  "/kundeservice/faq",
+]);
+
 const NEWS_INDEX_QUERY = defineQuery(`*[
   _type == "newsArticle" &&
   ((!defined(language) && $language == "nn") || language == $language)
@@ -263,6 +274,10 @@ function pathForSlug(slug?: string) {
   return `/${slug.replace(/^\/+|\/+$/g, "")}`;
 }
 
+function sourcePathForDoc(doc: SanityContentDoc) {
+  return sourcePathForEnglishPath(pathForSlug(doc.slug));
+}
+
 function compactText(values: Array<string | number | null | undefined>) {
   return values
     .map((value) => (value === undefined || value === null ? "" : String(value).trim()))
@@ -294,7 +309,7 @@ function pageTypeFor(doc: SanityContentDoc): ContentPage["pageType"] {
   if (doc._type === "product") return "product";
   if (doc._type === "service") return "service";
   if (doc._type === "page") {
-    const path = pathForSlug(doc.slug);
+    const path = sourcePathForDoc(doc);
     if (path === "/personvernerklering" || path === "/openheitslova") return "legal";
     if (
       path === "/dokumentasjon" ||
@@ -530,6 +545,8 @@ function mergeContentPage(
   const canUseFallbackContent = language === "nn";
   const ownSections = sanitySections(doc);
   const structuredMigrationSections = migrationSections(doc);
+  const preferIndexSections =
+    indexSections.length > 0 && indexContentPaths.has(sourcePathForDoc(doc));
   const keepLocalMigrationStructure =
     canUseFallbackContent && Boolean(fallback) && localMigrationStructurePaths.has(path);
   const sanityCards = migrationCards(doc);
@@ -542,7 +559,9 @@ function mergeContentPage(
     cards = fallback?.cards || [];
   } else {
     sections =
-      structuredMigrationSections.length > 0
+      preferIndexSections
+        ? indexSections
+        : structuredMigrationSections.length > 0
         ? structuredMigrationSections
         : indexSections.length > 0
         ? indexSections
@@ -635,7 +654,7 @@ export async function getSanityContentPage(path: string, language: "nn" | "en" =
 
     if (!doc) return language === "nn" ? fallback : null;
 
-    const normalizedPath = pathForSlug(doc.slug);
+    const normalizedPath = sourcePathForDoc(doc);
     const indexSections = await getIndexSections(normalizedPath, language);
     return mergeContentPage(doc, fallback, indexSections, language);
   } catch (error) {

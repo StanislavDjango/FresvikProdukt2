@@ -3181,7 +3181,11 @@ function ProductReferenceSection({
   badge?: string;
   labels?: ContentLabels;
 }) {
-  const items = section.items.filter((item) => item.href !== "/referansar");
+  const items = section.items.filter((item) => {
+    if (!item.href) return true;
+    const path = stripLocalePrefix(item.href);
+    return path !== "/referansar" && path !== "/references";
+  });
 
   return (
     <section className="border-b border-slate-200 bg-white">

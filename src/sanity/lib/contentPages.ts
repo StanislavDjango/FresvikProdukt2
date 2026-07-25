@@ -601,10 +601,71 @@ function mergeEnglishVisualCard(
 function publicContentSections(
   sections: ContentPage["sections"],
   sourcePath: string,
+  language: "nn" | "en" = "nn",
 ) {
-  return stableContentSections(sections, sourcePath).filter(
-    (section) => !isMigrationArchiveKind(section.kind),
-  );
+  const publicTitleByKind: Record<string, { nn: string; en: string }> = {
+    "product-intro-pir": {
+      nn: "Produktinformasjon",
+      en: "Product information",
+    },
+    "product-intro-pur": {
+      nn: "Produktinformasjon",
+      en: "Product information",
+    },
+    "product-intro-gates": {
+      nn: "Produktinformasjon",
+      en: "Product information",
+    },
+    "product-intro-doors": {
+      nn: "Produktinformasjon",
+      en: "Product information",
+    },
+    "product-intro-facade": {
+      nn: "Produktinformasjon",
+      en: "Product information",
+    },
+    "product-intro-freezing-tunnel": {
+      nn: "Produktinformasjon",
+      en: "Product information",
+    },
+    "article-body": { nn: "Innhald", en: "Article" },
+    "project-body": { nn: "Prosjekt", en: "Project" },
+    "accessory-info": {
+      nn: "Produktinformasjon",
+      en: "Product information",
+    },
+    "service-details": {
+      nn: "Tenesteinformasjon",
+      en: "Service information",
+    },
+    documents: { nn: "Dokumentasjon", en: "Documentation" },
+    "article-images": { nn: "Bilete", en: "Images" },
+    "project-images": { nn: "Prosjektbilete", en: "Project images" },
+    "accessory-images": { nn: "Produktbilete", en: "Product images" },
+    "article-links": { nn: "Relaterte lenker", en: "Related links" },
+    "reference-navigation": {
+      nn: "Relaterte referansar",
+      en: "Related references",
+    },
+    "accessory-navigation": {
+      nn: "Meir tilleggsutstyr",
+      en: "More accessories",
+    },
+  };
+  const migrationHeading =
+    /(?:full tekst|full text|dokumentlenker|document links|bilde frå|bilde fra|image from|lenker frå|lenker fra|links from|frå gammal side|fra gammal side|from the old site|from the old page|migration)/i;
+
+  return stableContentSections(sections, sourcePath)
+    .filter((section) => !isMigrationArchiveKind(section.kind))
+    .map((section) => {
+      const replacement = section.kind
+        ? publicTitleByKind[section.kind]?.[language]
+        : undefined;
+
+      return replacement && migrationHeading.test(section.title)
+        ? { ...section, title: replacement }
+        : section;
+    });
 }
 
 function canonicalCardHref(card: ContentCard | undefined) {
@@ -1026,7 +1087,7 @@ function mergeContentPage(
     publishedAt: doc.date,
     showMigrationDetails: false,
     cards,
-    sections: publicContentSections(sections, sourcePath),
+    sections: publicContentSections(sections, sourcePath, language),
     todo: undefined,
   };
 }
@@ -1097,7 +1158,7 @@ function overlayEnglishPage(
       ...card,
       href: localizeEnglishHref(card.href),
     })),
-    sections: publicContentSections(sections, sourcePath).map((section) => ({
+    sections: publicContentSections(sections, sourcePath, "en").map((section) => ({
       ...section,
       items: section.items.map((item) => ({
         ...item,
@@ -1141,7 +1202,7 @@ export async function getSanityContentPage(path: string, language: "nn" | "en" =
   const publicFallback = fallback
     ? {
         ...fallback,
-        sections: publicContentSections(fallback.sections, path),
+        sections: publicContentSections(fallback.sections, path, language),
       }
     : undefined;
   if (!isSanityConfigured) return language === "nn" ? publicFallback : null;

@@ -54,6 +54,7 @@ batches.safe = [
   ...batches["priority-3-safe"],
 ];
 batches.all = [...batches.safe, ...batches["review-only"]];
+batches.complete = null;
 
 function loadEnvFile(filePath) {
   if (!existsSync(filePath)) return;
@@ -183,11 +184,18 @@ if (!Object.hasOwn(batches, batchArg)) {
   );
 }
 
-const requestedSourcePaths = new Set(batches[batchArg]);
 const seedDocs = readSeedDocs();
-const docs = seedDocs.filter((doc) => requestedSourcePaths.has(sourcePathForDoc(doc)));
+const requestedSourcePaths = batches[batchArg]
+  ? new Set(batches[batchArg])
+  : new Set(seedDocs.map(sourcePathForDoc));
+const docs =
+  batchArg === "complete"
+    ? seedDocs
+    : seedDocs.filter((doc) => requestedSourcePaths.has(sourcePathForDoc(doc)));
 const matchedSourcePaths = new Set(docs.map(sourcePathForDoc));
-const missingSourcePaths = [...requestedSourcePaths].filter((path) => !matchedSourcePaths.has(path));
+const missingSourcePaths = [...requestedSourcePaths].filter(
+  (path) => !matchedSourcePaths.has(path),
+);
 
 if (missingSourcePaths.length > 0) {
   throw new Error(`Seed is missing requested source paths: ${missingSourcePaths.join(", ")}`);

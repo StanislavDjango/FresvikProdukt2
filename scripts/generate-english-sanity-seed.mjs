@@ -948,11 +948,6 @@ const priorityEnglishContent = {
         intro: "Reference links connected to freezing tunnel projects.",
         items: [
           {
-            title: "All references",
-            text: "Open the references overview.",
-            href: "/en/references",
-          },
-          {
             title: "Spar Lund Torv",
             text: "Reference project connected to the freezing tunnel page.",
             href: "/referansar/historisk-leveranse-pir-panel-spar-lund-torv",

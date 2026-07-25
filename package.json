@@ -21,6 +21,7 @@
     "content:sync-old": "node scripts/sync-old-site-content.mjs",
     "seed:sanity": "node scripts/generate-sanity-seed.mjs",
     "seed:sanity:en": "node scripts/generate-english-sanity-seed.mjs",
+    "seed:sanity:en:complete": "npm run seed:sanity:en && node scripts/generate-complete-english-sanity-seed.mjs",
     "seed:sanity:en:support": "node scripts/generate-english-support-seed.mjs",
     "seed:sanity:en:import": "node scripts/import-english-sanity-seed.mjs",
     "seed:sanity:en:import:apply": "node scripts/import-english-sanity-seed.mjs --apply",
@@ -31,6 +32,7 @@
     "seed:sanity:en:publish": "node scripts/publish-english-sanity-batch.mjs",
     "seed:sanity:en:publish:p1": "node scripts/publish-english-sanity-batch.mjs --batch=priority-1 --apply",
     "seed:sanity:en:publish:safe": "node scripts/publish-english-sanity-batch.mjs --batch=safe --apply",
+    "seed:sanity:en:publish:complete": "node scripts/publish-english-sanity-batch.mjs --batch=complete --apply",
     "check:i18n:sanity": "node scripts/check-sanity-english-runtime.mjs",
     "check:i18n:sanity:published": "node scripts/check-sanity-english-runtime.mjs --require-published",
     "check:i18n:support": "node scripts/check-english-support-seed.mjs",
@@ -40,7 +42,9 @@
     "assets:seed": "node scripts/generate-sanity-seed-with-assets.mjs",
     "check:assets": "node scripts/generate-asset-manifest.mjs --check",
     "check:i18n": "node scripts/check-i18n.mjs",
-    "check:i18n:structure": "node scripts/check-i18n-structure.mjs"
+    "check:i18n:structure": "node scripts/check-i18n-structure.mjs",
+    "i18n:sections": "node scripts/backfill-sanity-section-identities.mjs",
+    "i18n:sections:apply": "node scripts/backfill-sanity-section-identities.mjs --apply"
   },
   "engines": {
     "node": "22.x",

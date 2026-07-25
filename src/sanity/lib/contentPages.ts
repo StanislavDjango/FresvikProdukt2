@@ -6,7 +6,11 @@ import {
 } from "@/data/pages";
 import { isSanityConfigured } from "../env";
 import { client } from "./client";
-import { englishPathForSourcePath, sourcePathForEnglishPath } from "@/i18n/config";
+import {
+  englishPathForSourcePath,
+  sourcePathForEnglishPath,
+  withLocale,
+} from "@/i18n/config";
 
 type PortableTextBlock = {
   _type?: string;
@@ -468,7 +472,12 @@ function itemHref(item: SanityIndexItem) {
   return item.fileUrl || item.externalUrl || item.localPath;
 }
 
-function indexCards(items: SanityIndexItem[]) {
+function localizedIndexHref(href: string | undefined, language: "nn" | "en") {
+  if (!href || !href.startsWith("/") || href.startsWith("/assets/")) return href;
+  return withLocale(href, language);
+}
+
+function indexCards(items: SanityIndexItem[], language: "nn" | "en" = "nn") {
   return items
     .map((item) => ({
       title: item.title || item.name || "Innhald",
@@ -479,7 +488,7 @@ function indexCards(items: SanityIndexItem[]) {
         item.intro ||
         compactText([item.role, item.location, item.phone, item.email]) ||
         "Informasjon frå Fresvik Produkt.",
-      href: itemHref(item),
+      href: localizedIndexHref(itemHref(item), language),
       meta: compactText([item.date, item.year, item.category]) || undefined,
       imageUrl: item.imageUrl,
       imageAlt: item.title || item.name,
@@ -500,19 +509,19 @@ function withoutLocalAssetRefs(cards: ContentCard[]) {
 async function getIndexSections(path: string, language: "nn" | "en" = "nn") {
   if (path === "/aktuelt") {
     const items = await client.fetch<SanityIndexItem[]>(NEWS_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Nyheiter frå Sanity", items: indexCards(items) }];
+    return [{ title: "Nyheiter frå Sanity", items: indexCards(items, language) }];
   }
   if (path === "/referansar") {
     const items = await client.fetch<SanityIndexItem[]>(REFERENCES_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Referansar frå Sanity", items: indexCards(items) }];
+    return [{ title: "Referansar frå Sanity", items: indexCards(items, language) }];
   }
   if (path === "/produkt") {
     const items = await client.fetch<SanityIndexItem[]>(PRODUCTS_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Produkt frå Sanity", items: indexCards(items) }];
+    return [{ title: "Produkt frå Sanity", items: indexCards(items, language) }];
   }
   if (path === "/tenester") {
     const items = await client.fetch<SanityIndexItem[]>(SERVICES_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Tenester frå Sanity", items: indexCards(items) }];
+    return [{ title: "Tenester frå Sanity", items: indexCards(items, language) }];
   }
   if (path === "/dokumentasjon" || path === "/monteringsanvisning") {
     const allItems = await client.fetch<SanityIndexItem[]>(DOCUMENTS_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
@@ -522,15 +531,15 @@ async function getIndexSections(path: string, language: "nn" | "en" = "nn") {
             `${item.category || ""} ${item.title || ""}`.toLowerCase().includes("mont"),
           )
         : allItems;
-    return [{ title: "Dokument frå Sanity", items: indexCards(filtered) }];
+    return [{ title: "Dokument frå Sanity", items: indexCards(filtered, language) }];
   }
   if (path === "/tilsette") {
     const items = await client.fetch<SanityIndexItem[]>(EMPLOYEES_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Tilsette frå Sanity", items: indexCards(items) }];
+    return [{ title: "Tilsette frå Sanity", items: indexCards(items, language) }];
   }
   if (path === "/kundeservice/faq") {
     const items = await client.fetch<SanityIndexItem[]>(FAQ_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Spørsmål frå Sanity", items: indexCards(items) }];
+    return [{ title: "Spørsmål frå Sanity", items: indexCards(items, language) }];
   }
   return [];
 }

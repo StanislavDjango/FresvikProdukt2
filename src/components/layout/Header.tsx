@@ -441,6 +441,11 @@ export function Header() {
   const locale = localeFromPathname(pathname);
   const navigation = getMainNavigation(locale);
   const norwegianHref = withLocale(pathname, "nn");
+  const englishHref = withLocale(pathname, "en");
+  const languageSwitchHref = locale === "en" ? norwegianHref : englishHref;
+  const languageSwitchLabel = locale === "en" ? "NO" : "EN";
+  const languageSwitchAriaLabel =
+    locale === "en" ? "Switch to Norwegian" : "Switch to English";
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileOpenSection, setMobileOpenSection] = useState<string | null>(
     null,
@@ -644,21 +649,19 @@ export function Header() {
             <Phone aria-hidden="true" size={17} />
             {t("call")}
           </a>
-          {locale === "en" ? (
-            <Link
-              href={norwegianHref}
-              aria-label="Switch to Norwegian"
-              className="inline-flex h-[3.25rem] items-center justify-center rounded-[10px] border border-slate-300 px-3 text-sm font-black uppercase tracking-[0.12em] text-slate-800 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
-            >
-              NO
-            </Link>
-          ) : null}
           <span
             aria-label="Norsk produsent"
             className="inline-flex h-[3.25rem] w-20 shrink-0 items-center justify-center"
           >
             <NorwayFlag className="h-[2.8125rem] w-[4.5rem] rounded-[2px] shadow-none ring-0" />
           </span>
+          <Link
+            href={languageSwitchHref}
+            aria-label={languageSwitchAriaLabel}
+            className="inline-flex h-[3.25rem] min-w-14 items-center justify-center rounded-[10px] border border-slate-300 bg-white px-3 text-sm font-black uppercase tracking-[0.12em] text-slate-900 transition hover:border-cyan-800 hover:bg-cyan-50 hover:text-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
+          >
+            {languageSwitchLabel}
+          </Link>
         </div>
 
         <button
@@ -719,15 +722,13 @@ export function Header() {
                   <Phone aria-hidden="true" size={17} />
                   {t("call")}
                 </a>
-                {locale === "en" ? (
-                  <Link
-                    href={norwegianHref}
-                    onClick={closeMobileMenu}
-                    className="inline-flex min-h-12 items-center justify-center rounded-[8px] border border-slate-300 px-4 text-sm font-black uppercase tracking-[0.12em] text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 sm:col-span-2"
-                  >
-                    {t("switchLanguage")}
-                  </Link>
-                ) : null}
+                <Link
+                  href={languageSwitchHref}
+                  onClick={closeMobileMenu}
+                  className="inline-flex min-h-12 items-center justify-center rounded-[8px] border border-slate-300 px-4 text-sm font-black uppercase tracking-[0.12em] text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 sm:col-span-2"
+                >
+                  {t("switchLanguage")}
+                </Link>
               </div>
             </nav>
           </div>

@@ -59,6 +59,7 @@ const technicalMigrationSectionTitles = new Set([
   "Bilde frå gammal side",
   "Dokumentlenker frå gammal side",
   "Lenker frå gammal side",
+  "Lenker frå gammal aktuelt-side",
 ]);
 
 const publicArchiveOnlySectionTitles = new Set([
@@ -98,6 +99,27 @@ function cleanMigrationIntro(text?: string) {
 
 function cleanCardText(text: string | undefined, fallback: string) {
   return cleanMigrationIntro(text) || fallback;
+}
+
+function hasPublicMigrationMarker(value?: string) {
+  const text = value?.toLowerCase() || "";
+
+  return (
+    text.includes("frå gammal") ||
+    text.includes("fra gammal") ||
+    text.includes("gammal side") ||
+    text.includes("gammal sitemap") ||
+    text.includes("gamle framside") ||
+    text.includes("utan omskriving") ||
+    text.includes("kjeldetekst") ||
+    text.includes("tekst henta") ||
+    text.includes("full tekst") ||
+    text.includes("bilde frå") ||
+    text.includes("dokumentlenker") ||
+    text.includes("lenker frå") ||
+    text.includes("migrert innhald") ||
+    text.includes("migration extract")
+  );
 }
 
 function certificationDisplayText(
@@ -148,7 +170,8 @@ function productCardFallback(title: string) {
 function isPublicArchiveOnlySection(section: ContentPage["sections"][number]) {
   return (
     publicArchiveOnlySectionTitles.has(section.title) ||
-    section.title.includes("frå gammal side")
+    hasPublicMigrationMarker(section.title) ||
+    hasPublicMigrationMarker(section.intro)
   );
 }
 
@@ -159,7 +182,8 @@ function isPublicArchiveOnlyItem(
   const text = item.text?.toLowerCase() || "";
 
   return (
-    title.includes("frå gammal side") ||
+    hasPublicMigrationMarker(item.title) ||
+    hasPublicMigrationMarker(item.text) ||
     title.includes("produktblad-ikon") ||
     text.includes("bildeelement frå gammal")
   );

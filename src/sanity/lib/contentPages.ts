@@ -376,7 +376,7 @@ function documentsSection(documents?: SanityDocumentRef[]) {
   const items = (documents || [])
     .map((document) => ({
       title: document.title || "Dokument",
-      text: document.description || document.category || "Dokument importert i Sanity.",
+      text: document.description || document.category || "Dokumentasjon frå Fresvik Produkt.",
       href: document.fileUrl || document.externalUrl || document.localPath,
       meta: document.category,
     }))
@@ -389,7 +389,7 @@ function documentsSection(documents?: SanityDocumentRef[]) {
 function migrationContentCard(card: SanityMigrationCard): ContentCard {
   return {
     title: card.title || "Innhald",
-    text: card.text || card.meta || "Migrert innhald frå Sanity.",
+    text: card.text || card.meta || "Informasjon frå Fresvik Produkt.",
     href: card.fileUrl || card.href,
     meta: card.meta,
     imageUrl: card.imageUrl,
@@ -463,7 +463,7 @@ function indexCards(items: SanityIndexItem[]) {
         item.description ||
         item.intro ||
         compactText([item.role, item.location, item.phone, item.email]) ||
-        "Migrert innhald frå Sanity.",
+        "Informasjon frå Fresvik Produkt.",
       href: itemHref(item),
       meta: compactText([item.date, item.year, item.category]) || undefined,
       imageUrl: item.imageUrl,

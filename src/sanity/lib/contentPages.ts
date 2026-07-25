@@ -473,7 +473,14 @@ function itemHref(item: SanityIndexItem) {
 }
 
 function localizedIndexHref(href: string | undefined, language: "nn" | "en") {
-  if (!href || !href.startsWith("/") || href.startsWith("/assets/")) return href;
+  if (
+    !href ||
+    !href.startsWith("/") ||
+    href.startsWith("/assets/") ||
+    href.startsWith("/s/")
+  ) {
+    return href;
+  }
   return withLocale(href, language);
 }
 
@@ -515,6 +522,115 @@ function localizedVisualFields(card: ContentCard | undefined, language: "nn" | "
     imageAlt: card.imageAlt || card.title,
     meta: card.meta,
   };
+}
+
+function localizeCardHref(card: ContentCard, language: "nn" | "en"): ContentCard {
+  return {
+    ...card,
+    href: localizedIndexHref(card.href, language),
+  };
+}
+
+function mergeEnglishVisualCard(
+  visualCard: ContentCard | undefined,
+  copyCard: ContentCard | undefined,
+): ContentCard | undefined {
+  if (!visualCard && !copyCard) return undefined;
+
+  const base = visualCard ?? copyCard;
+  if (!base) return undefined;
+
+  return {
+    ...base,
+    title: copyCard?.title || base.title,
+    text: copyCard?.text || base.text,
+    href: localizedIndexHref(copyCard?.href || base.href, "en"),
+    meta: copyCard?.meta || base.meta,
+    imageUrl: base.imageUrl || copyCard?.imageUrl,
+    imageAlt: copyCard?.imageAlt || base.imageAlt || copyCard?.title || base.title,
+  };
+}
+
+function isMigrationArchiveSectionTitle(title: string) {
+  return (
+    title === "Full tekst frå gammal side" ||
+    title === "Bilde frå gammal side" ||
+    title === "Dokumentlenker frå gammal side" ||
+    title === "Lenker frå gammal side" ||
+    title === "Lenker frå gammal aktuelt-side" ||
+    title === "Nyheitsbrev og footerlenker frå gammal side"
+  );
+}
+
+function mergeEnglishVisualSections(
+  visualSections: ContentPage["sections"],
+  copySections: ContentPage["sections"],
+): ContentPage["sections"] {
+  const copyQueue = copySections.filter(
+    (section) => !isMigrationArchiveSectionTitle(section.title),
+  );
+  let copyIndex = 0;
+
+  return visualSections.map((visualSection) => {
+    const copySection = isMigrationArchiveSectionTitle(visualSection.title)
+      ? undefined
+      : copyQueue[copyIndex++];
+
+    return {
+      ...visualSection,
+      intro: copySection?.intro || visualSection.intro,
+      items: visualSection.items.map((visualItem, itemIndex) => {
+        const copyItem = copySection?.items[itemIndex];
+        return (
+          mergeEnglishVisualCard(visualItem, copyItem) ||
+          localizeCardHref(visualItem, "en")
+        );
+      }),
+    };
+  });
+}
+
+function enrichEnglishIndexSections(
+  path: string,
+  sections: ContentPage["sections"],
+  fallbackSections: ContentPage["sections"] | undefined,
+): ContentPage["sections"] {
+  if (!fallbackSections?.length) return sections;
+
+  const visualItems =
+    path === "/produkt"
+      ? fallbackSections.flatMap((section) =>
+          ["Fresvik-panel", "Våre produkt", "Tilbehør"].includes(section.title)
+            ? section.items
+            : [],
+        )
+      : path === "/tenester"
+        ? fallbackSections.find((section) => section.title === "Tenesteområde")
+            ?.items || []
+        : path === "/referansar"
+          ? fallbackSections.find((section) => section.title === "Referansar")
+              ?.items || []
+          : path === "/aktuelt"
+            ? fallbackSections.find((section) => section.title === "Aktuelt")
+                ?.items || []
+            : path === "/tilsette"
+              ? fallbackSections.find((section) => section.title === "Kontaktpersonar")
+                  ?.items || []
+              : [];
+
+  if (!visualItems.length) return sections;
+
+  return sections.map((section) => ({
+    ...section,
+    items: section.items.map((item, index) => ({
+      ...item,
+      ...localizedVisualFields(visualItems[index], "en"),
+      title: item.title,
+      text: item.text,
+      meta: item.meta || visualItems[index]?.meta,
+      imageAlt: item.imageAlt || visualItems[index]?.imageAlt || item.title,
+    })),
+  }));
 }
 
 function enrichEnglishHomeSections(
@@ -605,8 +721,16 @@ function mergeContentPage(
     language === "en" && sourcePath === "/"
       ? enrichEnglishHomeSections(structuredMigrationSections, fallback?.sections)
       : structuredMigrationSections;
+  const hybridEnglishSections =
+    language === "en" && fallback && sourcePath !== "/"
+      ? mergeEnglishVisualSections(fallback.sections, localizedStructuredSections)
+      : localizedStructuredSections;
+  const localizedIndexSections =
+    language === "en"
+      ? enrichEnglishIndexSections(sourcePath, indexSections, fallback?.sections)
+      : indexSections;
   const preferIndexSections =
-    indexSections.length > 0 && indexContentPaths.has(sourcePath);
+    localizedIndexSections.length > 0 && indexContentPaths.has(sourcePath);
   const keepLocalMigrationStructure =
     canUseFallbackContent && Boolean(fallback) && localMigrationStructurePaths.has(path);
   const sanityCards = migrationCards(doc);
@@ -620,11 +744,11 @@ function mergeContentPage(
   } else {
     sections =
       preferIndexSections
-        ? indexSections
-        : localizedStructuredSections.length > 0
-        ? localizedStructuredSections
-        : indexSections.length > 0
-        ? indexSections
+        ? localizedIndexSections
+        : hybridEnglishSections.length > 0
+        ? hybridEnglishSections
+        : localizedIndexSections.length > 0
+        ? localizedIndexSections
         : ownSections.length > 0
           ? ownSections
           : canUseFallbackContent
@@ -633,7 +757,7 @@ function mergeContentPage(
     cards =
       sanityCards.length > 0
         ? sanityCards
-        : indexSections[0]?.items.slice(0, 9) ||
+        : localizedIndexSections[0]?.items.slice(0, 9) ||
           (imageCards.length > 0
             ? imageCards
             : canUseFallbackContent

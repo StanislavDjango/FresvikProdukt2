@@ -4519,14 +4519,21 @@ function HomeSection({
   section,
   sectionIndex,
   labels = getContentLabels(),
+  pageSlug = "/",
 }: {
   section: ContentPage["sections"][number];
   sectionIndex: number;
   labels?: ContentLabels;
+  pageSlug?: string;
 }) {
-  const isProducts = section.title.includes("Produktteaserar");
-  const isCustomers = section.title === "Våre kundar";
-  const isNews = section.title === "Aktuelt";
+  const locale = localeFromPathname(pageSlug);
+  const isEnglish = locale === "en";
+  const isProducts =
+    section.title.includes("Produktteaserar") ||
+    section.title === "Products and solutions";
+  const isCustomers =
+    section.title === "Våre kundar" || section.title === "Customer areas";
+  const isNews = section.title === "Aktuelt" || section.title === "News";
   const isJob = section.title === "Vil du jobbe hjå oss?";
   const isContact = section.title === "Kontakt";
   const isNewsletter = section.title === "Motta nyheitsbrev";
@@ -4540,9 +4547,15 @@ function HomeSection({
     section.title === "Lenker frå gammal side" ||
     section.items.every((item) => item.title === "Ekstern lenke");
   const background = isProducts || isNews || isBadges ? "bg-slate-50" : "bg-white";
-  const displayTitle = isProducts ? "Produkt og løysingar" : section.title;
+  const displayTitle = isProducts
+    ? isEnglish
+      ? "Products and solutions"
+      : "Produkt og løysingar"
+    : section.title;
   const displayIntro = isProducts
-    ? "Utvalde produkt og løysingar frå Fresvik Produkt samla for rask oversikt."
+    ? isEnglish
+      ? "Selected products and solutions from Fresvik Produkt."
+      : "Utvalde produkt og løysingar frå Fresvik Produkt samla for rask oversikt."
     : cleanMigrationIntro(section.intro);
 
   if (
@@ -4651,7 +4664,7 @@ function HomeSection({
         <Container className="py-14 lg:py-16">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeader
-              eyebrow="Bruksområde"
+              eyebrow={isEnglish ? "Application areas" : "Bruksområde"}
               title={section.title}
               intro={cleanMigrationIntro(section.intro)}
             />
@@ -4673,7 +4686,7 @@ function HomeSection({
                 <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-950 to-transparent" />
                 <div className="relative flex min-h-[360px] max-w-md flex-col justify-end p-6 sm:p-8">
                   <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-200">
-                    Bruksområde
+                    {isEnglish ? "Application area" : "Bruksområde"}
                   </p>
                   <h3 className="mt-4 text-3xl font-semibold tracking-normal">
                     {accentItem.title}
@@ -4681,7 +4694,9 @@ function HomeSection({
                   <p className="mt-4 text-sm leading-7 text-slate-200">
                     {cleanCardText(
                       accentItem.text,
-                      "Løysingar frå Fresvik Produkt for profesjonelle kjøle- og fryserom.",
+                      isEnglish
+                        ? "Solutions from Fresvik Produkt for professional cold and freezer rooms."
+                        : "Løysingar frå Fresvik Produkt for profesjonelle kjøle- og fryserom.",
                     )}
                   </p>
                   {accentItem.href ? (
@@ -4709,8 +4724,10 @@ function HomeSection({
                     </h3>
                     <p className="mt-3 text-sm leading-6 text-slate-600">
                       {cleanCardText(
-                        item.text,
-                        "Løysingar frå Fresvik Produkt for profesjonelle kjøle- og fryserom.",
+                      item.text,
+                        isEnglish
+                          ? "Solutions from Fresvik Produkt for professional cold and freezer rooms."
+                          : "Løysingar frå Fresvik Produkt for profesjonelle kjøle- og fryserom.",
                       )}
                     </p>
                     {item.href ? <CardLink href={item.href} label={labels.readMore} /> : null}
@@ -4742,12 +4759,12 @@ function HomeSection({
         <Container className="py-14 lg:py-16">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeader
-              eyebrow="Nyheiter"
+              eyebrow={isEnglish ? "News" : "Nyheiter"}
               title={section.title}
               intro={cleanMigrationIntro(section.intro)}
             />
             <Link
-              href="/aktuelt"
+              href={withLocale("/aktuelt", locale)}
               className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
             >
               {labels.allCases}
@@ -4806,11 +4823,17 @@ function HomeSection({
               isProducts
                 ? "Produkt"
                 : isCustomers
-                ? "Bruksområde"
+                ? isEnglish
+                  ? "Application areas"
+                  : "Bruksområde"
                 : isNews
-                ? "Aktuelt"
+                ? isEnglish
+                  ? "News"
+                  : "Aktuelt"
                 : isContact
-                ? "Ta kontakt"
+                ? isEnglish
+                  ? "Contact"
+                  : "Ta kontakt"
                 : undefined
             }
             title={displayTitle}
@@ -4818,7 +4841,7 @@ function HomeSection({
           />
           {isProducts ? (
             <Link
-              href="/produkt"
+              href={withLocale("/produkt", locale)}
               className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
             >
               {labels.allProducts}
@@ -4826,7 +4849,7 @@ function HomeSection({
             </Link>
           ) : isNews ? (
             <Link
-              href="/aktuelt"
+              href={withLocale("/aktuelt", locale)}
               className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
             >
               {labels.allCases}
@@ -4903,10 +4926,16 @@ function HomeSection({
                       isProducts
                         ? productCardFallback(item.title)
                         : isCustomers
-                        ? "Løysingar frå Fresvik Produkt for profesjonelle kjøle- og fryserom."
+                        ? isEnglish
+                          ? "Solutions from Fresvik Produkt for professional cold and freezer rooms."
+                          : "Løysingar frå Fresvik Produkt for profesjonelle kjøle- og fryserom."
                         : isContact
-                        ? "Kontaktpunkt hos Fresvik Produkt."
-                        : "Informasjon frå Fresvik Produkt.",
+                        ? isEnglish
+                          ? "Contact point at Fresvik Produkt."
+                          : "Kontaktpunkt hos Fresvik Produkt."
+                        : isEnglish
+                          ? "Information from Fresvik Produkt."
+                          : "Informasjon frå Fresvik Produkt.",
                     )}
                   </p>
                   {item.href ? (
@@ -4936,6 +4965,7 @@ function HomeContent({ page }: { page: ContentPage }) {
           section={section}
           sectionIndex={sectionIndex}
           labels={labels}
+          pageSlug={page.slug}
         />
       ))}
     </>

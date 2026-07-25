@@ -506,6 +506,52 @@ function withoutLocalAssetRefs(cards: ContentCard[]) {
   }));
 }
 
+function localizedVisualFields(card: ContentCard | undefined, language: "nn" | "en") {
+  if (!card) return {};
+
+  return {
+    href: localizedIndexHref(card.href, language),
+    imageUrl: card.imageUrl,
+    imageAlt: card.imageAlt || card.title,
+    meta: card.meta,
+  };
+}
+
+function enrichEnglishHomeSections(
+  sections: ContentPage["sections"],
+  fallbackSections: ContentPage["sections"] | undefined,
+): ContentPage["sections"] {
+  if (!fallbackSections?.length) return sections;
+
+  const productVisuals =
+    fallbackSections.find((section) => section.title.includes("Produktteaserar"))
+      ?.items || [];
+  const customerVisuals =
+    fallbackSections
+      .find((section) => section.title === "Våre kundar")
+      ?.items.filter((item) => !item.title.toLowerCase().includes("dekor")) ||
+    [];
+
+  return sections.map((section) => {
+    const visualSource = section.title === "Products and solutions"
+      ? productVisuals
+      : section.title === "Customer areas"
+        ? customerVisuals
+        : [];
+
+    if (!visualSource.length) return section;
+
+    return {
+      ...section,
+      items: section.items.map((item, index) => ({
+        ...item,
+        ...localizedVisualFields(visualSource[index], "en"),
+        imageAlt: item.imageAlt || visualSource[index]?.imageAlt || item.title,
+      })),
+    };
+  });
+}
+
 async function getIndexSections(path: string, language: "nn" | "en" = "nn") {
   if (path === "/aktuelt") {
     const items = await client.fetch<SanityIndexItem[]>(NEWS_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
@@ -554,8 +600,13 @@ function mergeContentPage(
   const canUseFallbackContent = language === "nn";
   const ownSections = sanitySections(doc);
   const structuredMigrationSections = migrationSections(doc);
+  const sourcePath = sourcePathForDoc(doc);
+  const localizedStructuredSections =
+    language === "en" && sourcePath === "/"
+      ? enrichEnglishHomeSections(structuredMigrationSections, fallback?.sections)
+      : structuredMigrationSections;
   const preferIndexSections =
-    indexSections.length > 0 && indexContentPaths.has(sourcePathForDoc(doc));
+    indexSections.length > 0 && indexContentPaths.has(sourcePath);
   const keepLocalMigrationStructure =
     canUseFallbackContent && Boolean(fallback) && localMigrationStructurePaths.has(path);
   const sanityCards = migrationCards(doc);
@@ -570,8 +621,8 @@ function mergeContentPage(
     sections =
       preferIndexSections
         ? indexSections
-        : structuredMigrationSections.length > 0
-        ? structuredMigrationSections
+        : localizedStructuredSections.length > 0
+        ? localizedStructuredSections
         : indexSections.length > 0
         ? indexSections
         : ownSections.length > 0

@@ -18,7 +18,7 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import type { ContentPage } from "@/data/pages";
-import { localeFromPathname, withLocale } from "@/i18n/config";
+import { localeFromPathname, stripLocalePrefix, withLocale } from "@/i18n/config";
 import { messages } from "@/i18n/messages";
 import { cn } from "@/lib/utils";
 
@@ -3609,32 +3609,33 @@ function ContentSections({
   page?: ContentPage;
 }) {
   const labels = getContentLabels(pageSlug ?? page?.slug);
-  const isPirPage = pageSlug === "/produkt/fresvik-pir-panel";
-  const isPurPage = pageSlug === "/produkt/fresvik-pur-panel";
-  const isPortPage = pageSlug === "/produkt/kjole-fryseportar";
-  const isDoorPage = pageSlug === "/produkt/kjole-frysedorer";
-  const isFacadePage = pageSlug === "/produkt/fasadepanel";
-  const isFrysetunnelPage = pageSlug === "/produkt/frysetunnel";
-  const isDocumentationPage = pageSlug === "/dokumentasjon";
-  const isMountingPage = pageSlug === "/monteringsanvisning";
+  const sourceSlug = stripLocalePrefix(pageSlug || page?.slug || "/");
+  const isPirPage = sourceSlug === "/produkt/fresvik-pir-panel";
+  const isPurPage = sourceSlug === "/produkt/fresvik-pur-panel";
+  const isPortPage = sourceSlug === "/produkt/kjole-fryseportar";
+  const isDoorPage = sourceSlug === "/produkt/kjole-frysedorer";
+  const isFacadePage = sourceSlug === "/produkt/fasadepanel";
+  const isFrysetunnelPage = sourceSlug === "/produkt/frysetunnel";
+  const isDocumentationPage = sourceSlug === "/dokumentasjon";
+  const isMountingPage = sourceSlug === "/monteringsanvisning";
   const isElectricSkyveportPage =
-    pageSlug === "/monteringsanvisningar-fresvik-skyveport";
-  const isServiceIndexPage = pageSlug === "/tenester";
-  const isMontasjeServicePage = pageSlug === "/tenester/montasje";
-  const isLeveranseServicePage = pageSlug === "/tenester/leveranse";
-  const isServicePartsPage = pageSlug === "/tenester/service-reservedeler";
-  const isReferenceIndexPage = pageSlug === "/referansar";
-  const isNewsIndexPage = pageSlug === "/aktuelt";
+    sourceSlug === "/monteringsanvisningar-fresvik-skyveport";
+  const isServiceIndexPage = sourceSlug === "/tenester";
+  const isMontasjeServicePage = sourceSlug === "/tenester/montasje";
+  const isLeveranseServicePage = sourceSlug === "/tenester/leveranse";
+  const isServicePartsPage = sourceSlug === "/tenester/service-reservedeler";
+  const isReferenceIndexPage = sourceSlug === "/referansar";
+  const isNewsIndexPage = sourceSlug === "/aktuelt";
   const isNewsDetailPage =
-    (pageSlug?.startsWith("/aktuelt/") ?? false) && pageSlug !== "/aktuelt";
-  const isProductIndexPage = pageSlug === "/produkt";
-  const isTransportDamagePage = pageSlug === "/transportskade";
-  const isCompanyOverviewPage = pageSlug === "/om-oss";
-  const isFirmainfoPage = pageSlug === "/firmainfo";
-  const isEmployeesPage = pageSlug === "/tilsette";
-  const isJobPage = pageSlug === "/stillingledig";
-  const isPrivacyPage = pageSlug === "/personvernerklering";
-  const isTransparencyPage = pageSlug === "/openheitslova";
+    sourceSlug.startsWith("/aktuelt/") && sourceSlug !== "/aktuelt";
+  const isProductIndexPage = sourceSlug === "/produkt";
+  const isTransportDamagePage = sourceSlug === "/transportskade";
+  const isCompanyOverviewPage = sourceSlug === "/om-oss";
+  const isFirmainfoPage = sourceSlug === "/firmainfo";
+  const isEmployeesPage = sourceSlug === "/tilsette";
+  const isJobPage = sourceSlug === "/stillingledig";
+  const isPrivacyPage = sourceSlug === "/personvernerklering";
+  const isTransparencyPage = sourceSlug === "/openheitslova";
   const isLegalPage = isPrivacyPage || isTransparencyPage;
   const isCompanyUtilityPage =
     isCompanyOverviewPage || isFirmainfoPage || isEmployeesPage || isJobPage;
@@ -3643,7 +3644,7 @@ function ContentSections({
     isMontasjeServicePage ||
     isLeveranseServicePage ||
     isServicePartsPage;
-  const isAccessoryIndexPage = pageSlug === "/tilleggsutstyr";
+  const isAccessoryIndexPage = sourceSlug === "/tilleggsutstyr";
   const isDesignedProductPage =
     isPirPage ||
     isPurPage ||
@@ -3651,9 +3652,9 @@ function ContentSections({
     isDoorPage ||
     isFacadePage ||
     isFrysetunnelPage;
-  const isAccessoryPage = pageSlug?.startsWith("/andre-produkter/") ?? false;
+  const isAccessoryPage = sourceSlug.startsWith("/andre-produkter/");
   const isReferenceDetailPage =
-    (pageSlug?.startsWith("/referansar/") ?? false) && pageSlug !== "/referansar";
+    sourceSlug.startsWith("/referansar/") && sourceSlug !== "/referansar";
   const accessoryImagesSection = isAccessoryPage
     ? sections.find((section) => section.title === "Bilde frå gammal side")
     : undefined;
@@ -4944,32 +4945,33 @@ function HomeContent({ page }: { page: ContentPage }) {
 export function ContentPageView({ page, hero }: ContentPageViewProps) {
   const labels = getContentLabels(page.slug);
   const showMigrationDetails = page.showMigrationDetails === true;
-  const isFaqPage = page.slug === "/kundeservice/faq";
+  const sourceSlug = stripLocalePrefix(page.slug);
+  const isFaqPage = sourceSlug === "/kundeservice/faq";
   const isHomePage = page.pageType === "home";
-  const isAccessoryPage = page.slug.startsWith("/andre-produkter/");
+  const isAccessoryPage = sourceSlug.startsWith("/andre-produkter/");
   const isReferenceDetailPage =
-    page.slug.startsWith("/referansar/") && page.slug !== "/referansar";
+    sourceSlug.startsWith("/referansar/") && sourceSlug !== "/referansar";
   const isCompanyOrLegalPage =
     page.pageType === "company" || page.pageType === "legal";
   const suppressTopCards =
     isCompanyOrLegalPage ||
-    page.slug === "/produkt" ||
-    page.slug === "/produkt/fresvik-pir-panel" ||
-    page.slug === "/produkt/fresvik-pur-panel" ||
-    page.slug === "/produkt/kjole-fryseportar" ||
-    page.slug === "/produkt/kjole-frysedorer" ||
-    page.slug === "/produkt/fasadepanel" ||
-    page.slug === "/produkt/frysetunnel" ||
-    page.slug === "/tenester" ||
-    page.slug === "/tenester/montasje" ||
-    page.slug === "/tenester/leveranse" ||
-    page.slug === "/tenester/service-reservedeler" ||
-    page.slug === "/dokumentasjon" ||
-    page.slug === "/monteringsanvisning" ||
-    page.slug === "/monteringsanvisningar-fresvik-skyveport" ||
-    page.slug === "/tilleggsutstyr" ||
-    page.slug === "/referansar" ||
-    page.slug === "/aktuelt" ||
+    sourceSlug === "/produkt" ||
+    sourceSlug === "/produkt/fresvik-pir-panel" ||
+    sourceSlug === "/produkt/fresvik-pur-panel" ||
+    sourceSlug === "/produkt/kjole-fryseportar" ||
+    sourceSlug === "/produkt/kjole-frysedorer" ||
+    sourceSlug === "/produkt/fasadepanel" ||
+    sourceSlug === "/produkt/frysetunnel" ||
+    sourceSlug === "/tenester" ||
+    sourceSlug === "/tenester/montasje" ||
+    sourceSlug === "/tenester/leveranse" ||
+    sourceSlug === "/tenester/service-reservedeler" ||
+    sourceSlug === "/dokumentasjon" ||
+    sourceSlug === "/monteringsanvisning" ||
+    sourceSlug === "/monteringsanvisningar-fresvik-skyveport" ||
+    sourceSlug === "/tilleggsutstyr" ||
+    sourceSlug === "/referansar" ||
+    sourceSlug === "/aktuelt" ||
     isReferenceDetailPage ||
     isAccessoryPage;
   const showTopCards =

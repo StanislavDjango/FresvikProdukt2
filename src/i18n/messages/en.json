@@ -73,6 +73,21 @@
     "openOldSite": "Open old website",
     "continue": "Continue here"
   },
+  "ContactForm": {
+    "name": "Name",
+    "company": "Company",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "How can we help?",
+    "submit": "Send enquiry",
+    "confirmation": "The email draft has opened in your email application.",
+    "validationName": "Enter your name",
+    "validationEmail": "Enter a valid email address",
+    "validationPhone": "Enter your phone number",
+    "validationMessage": "Briefly describe your project",
+    "emailSubject": "Enquiry from",
+    "mapTitle": "map"
+  },
   "Content": {
     "readMore": "Read more",
     "open": "Open",
@@ -122,6 +137,7 @@
     "careerItemFallback": "Information about positions and work at Fresvik Produkt.",
     "legalInfoEyebrow": "Legal information",
     "privacyTextTitle": "Privacy text",
+    "transparencyTextTitle": "Transparency Act",
     "legalDocumentEyebrow": "Document",
     "legalDocumentFallback": "Document or external source.",
     "faqEyebrow": "Customer service",

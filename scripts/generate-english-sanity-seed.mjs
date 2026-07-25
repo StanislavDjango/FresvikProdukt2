@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { withStableSectionIdentities } from "../src/i18n/contentStructure.shared.mjs";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const routeMapPath = path.join(root, "src", "i18n", "routeMap.json");
@@ -9,6 +10,12 @@ const outputPath = path.join(
   "sanity",
   "seed",
   "migratedContent.en.ndjson",
+);
+const sourceSeedPath = path.join(
+  root,
+  "sanity",
+  "seed",
+  "migratedContent.ndjson",
 );
 
 const routeMap = JSON.parse(fs.readFileSync(routeMapPath, "utf8"));
@@ -1696,7 +1703,7 @@ function migrationSectionsFor(sourcePath) {
   const priorityContent = priorityEnglishContent[sourcePath];
 
   if (!priorityContent) {
-    return [
+    return withStableSectionIdentities([
       {
         _type: "migrationSection",
         _key: "english-page-support",
@@ -1712,10 +1719,13 @@ function migrationSectionsFor(sourcePath) {
           },
         ],
       },
-    ];
+    ], sourcePath);
   }
 
-  return priorityContent.migrationSections.map(sectionBlock);
+  return withStableSectionIdentities(
+    priorityContent.migrationSections.map(sectionBlock),
+    sourcePath,
+  );
 }
 
 const docs = Object.entries(englishCopy).map(([sourcePath, copy]) => {
@@ -1750,6 +1760,57 @@ const docs = Object.entries(englishCopy).map(([sourcePath, copy]) => {
     migrationSections: migrationSectionsFor(sourcePath),
   };
 });
+
+const sourceDocs = fs
+  .readFileSync(sourceSeedPath, "utf8")
+  .split(/\n+/)
+  .map((line) => line.trim())
+  .filter(Boolean)
+  .map((line) => JSON.parse(line));
+const sourceByUrl = new Map(
+  sourceDocs
+    .filter((doc) => doc.sourceUrl)
+    .map((doc) => [doc.sourceUrl.replace(/\/$/, ""), doc]),
+);
+
+for (const doc of docs) {
+  const sourceDoc = sourceByUrl.get(doc.sourceUrl.replace(/\/$/, ""));
+  if (!sourceDoc?.migrationSections?.length) continue;
+
+  const sourcePath = new URL(doc.sourceUrl).pathname || "/";
+  const sourceSections = withStableSectionIdentities(
+    sourceDoc.migrationSections,
+    sourcePath,
+  );
+  const englishSections = withStableSectionIdentities(
+    doc.migrationSections,
+    sourcePath,
+  );
+
+  doc.migrationSections = englishSections.map((section) => {
+    const sourceKindMatches = sourceSections.filter(
+      (candidate) => candidate.kind === section.kind,
+    );
+    const englishKindMatches = englishSections.filter(
+      (candidate) => candidate.kind === section.kind,
+    );
+    const sourceSection =
+      sourceSections.find(
+        (candidate) => candidate.translationKey === section.translationKey,
+      ) ??
+      (sourceKindMatches.length === 1 && englishKindMatches.length === 1
+        ? sourceKindMatches[0]
+        : undefined);
+
+    return sourceSection
+      ? {
+          ...section,
+          kind: sourceSection.kind,
+          translationKey: sourceSection.translationKey,
+        }
+      : section;
+  });
+}
 
 fs.writeFileSync(outputPath, `${docs.map((doc) => JSON.stringify(doc)).join("\n")}\n`);
 

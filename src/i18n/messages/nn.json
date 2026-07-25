@@ -73,6 +73,21 @@
     "openOldSite": "Opne gammal nettside",
     "continue": "Hald fram her"
   },
+  "ContactForm": {
+    "name": "Namn",
+    "company": "Firma",
+    "phone": "Telefon",
+    "email": "E-post",
+    "message": "Kva kan vi hjelpe med?",
+    "submit": "Send førespørsel",
+    "confirmation": "E-postkladden er opna i e-postprogrammet ditt.",
+    "validationName": "Skriv inn namn",
+    "validationEmail": "Skriv inn ei gyldig e-postadresse",
+    "validationPhone": "Skriv inn telefonnummer",
+    "validationMessage": "Fortel kort kva prosjektet gjeld",
+    "emailSubject": "Førespørsel frå",
+    "mapTitle": "kart"
+  },
   "Content": {
     "readMore": "Les meir",
     "open": "Opne",
@@ -122,6 +137,7 @@
     "careerItemFallback": "Informasjon om stilling og arbeid hos Fresvik Produkt.",
     "legalInfoEyebrow": "Juridisk informasjon",
     "privacyTextTitle": "Personverntekst",
+    "transparencyTextTitle": "Openheitslova",
     "legalDocumentEyebrow": "Dokument",
     "legalDocumentFallback": "Dokument eller ekstern kjelde.",
     "faqEyebrow": "Kundeservice",

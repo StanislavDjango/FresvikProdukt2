@@ -2,6 +2,7 @@ import { createRequire } from "node:module";
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import ts from "typescript";
+import { withStableSectionIdentities } from "../src/i18n/contentStructure.shared.mjs";
 
 const require = createRequire(import.meta.url);
 const root = path.resolve(import.meta.dirname, "..");
@@ -3351,6 +3352,24 @@ for (const page of pages) {
       language: /english/i.test(card.title) ? "Norsk/English" : "Norsk",
     });
   }
+}
+
+for (const doc of docs) {
+  if (!Array.isArray(doc.migrationSections)) continue;
+
+  let sourcePath = "/";
+  if (doc.sourceUrl) {
+    try {
+      sourcePath = new URL(doc.sourceUrl).pathname || "/";
+    } catch {
+      sourcePath = "/";
+    }
+  }
+
+  doc.migrationSections = withStableSectionIdentities(
+    doc.migrationSections,
+    sourcePath,
+  );
 }
 
 docs.sort((a, b) => a._id.localeCompare(b._id));

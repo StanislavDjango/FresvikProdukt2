@@ -11,6 +11,8 @@ import {
 import { ContactForm } from "@/components/ContactForm";
 import { Container } from "@/components/ui/Container";
 import type { Locale } from "@/i18n/config";
+import enMessages from "@/i18n/messages/en.json";
+import nnMessages from "@/i18n/messages/nn.json";
 import { getContactPage } from "@/sanity/lib/contactPage";
 
 export const metadata: Metadata = {
@@ -61,6 +63,10 @@ const englishContactCopy = {
     "Or find the right sales contact below. We normally reply within one working day.",
   officeHours: "Mon-Fri 08-16",
   locationsLabel: "Fresvik and Drammen",
+  sendRequest: "Send enquiry",
+  directContact: "Direct contact",
+  officeHoursLabel: "Office hours",
+  locationsHeading: "Locations",
   salesEyebrow: "Sales department",
   salesTitle: "Contact one of us directly",
   salesIntro:
@@ -97,6 +103,17 @@ export async function ContactPageContent({
         }
       : sourcePage;
   const primaryOffice = page.offices[0];
+  const contactFormLabels =
+    locale === "en" ? enMessages.ContactForm : nnMessages.ContactForm;
+  const pageLabels =
+    locale === "en"
+      ? englishContactCopy
+      : {
+          sendRequest: "Send førespørsel",
+          directContact: "Direkte kontakt",
+          officeHoursLabel: "Kontortid",
+          locationsHeading: "Lokasjonar",
+        };
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -142,7 +159,8 @@ export async function ContactPageContent({
                 href="#foresporsel"
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] bg-white px-5 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50"
               >
-                Send førespørsel <ArrowRight aria-hidden="true" size={18} />
+                {pageLabels.sendRequest}{" "}
+                <ArrowRight aria-hidden="true" size={18} />
               </a>
               <a
                 href={telHref(page.primaryPhone)}
@@ -157,7 +175,7 @@ export async function ContactPageContent({
           <aside className="grid content-end gap-4">
             <div className="rounded-[8px] border border-white/15 bg-white/10 p-5 backdrop-blur">
               <p className="text-sm font-medium text-cyan-100">
-                Direkte kontakt
+                {pageLabels.directContact}
               </p>
               <a
                 href={`mailto:${page.mainEmail}`}
@@ -172,7 +190,9 @@ export async function ContactPageContent({
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="rounded-[8px] border border-white/15 bg-white/10 p-4 backdrop-blur">
                 <Clock3 aria-hidden="true" className="text-cyan-200" size={20} />
-                <p className="mt-3 text-sm text-slate-200">Kontortid</p>
+                <p className="mt-3 text-sm text-slate-200">
+                  {pageLabels.officeHoursLabel}
+                </p>
                 <p className="mt-1 font-semibold text-white">
                   {page.officeHours}
                 </p>
@@ -183,7 +203,9 @@ export async function ContactPageContent({
                   className="text-cyan-200"
                   size={20}
                 />
-                <p className="mt-3 text-sm text-slate-200">Lokasjonar</p>
+                <p className="mt-3 text-sm text-slate-200">
+                  {pageLabels.locationsHeading}
+                </p>
                 <p className="mt-1 font-semibold text-white">
                   {page.locationsLabel}
                 </p>
@@ -246,7 +268,7 @@ export async function ContactPageContent({
               </div>
             </div>
             <iframe
-              title={`${office.name} kart`}
+              title={`${office.name} ${contactFormLabels.mapTitle}`}
               src={office.mapUrl}
               className="h-64 w-full border-0"
               loading="lazy"
@@ -318,7 +340,7 @@ export async function ContactPageContent({
             {page.formIntro}
           </p>
         </div>
-        <ContactForm recipientEmail={page.mainEmail} />
+        <ContactForm recipientEmail={page.mainEmail} locale={locale} />
       </Container>
 
     </main>

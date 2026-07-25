@@ -5,6 +5,18 @@ export const migrationSection = defineType({
   title: "Migrated section",
   type: "object",
   fields: [
+    defineField({
+      name: "kind",
+      title: "Stable section kind",
+      type: "string",
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: "translationKey",
+      title: "Translation key",
+      type: "string",
+      validation: (Rule) => Rule.required(),
+    }),
     defineField({ name: "title", title: "Title", type: "string" }),
     defineField({ name: "intro", title: "Intro", type: "text", rows: 3 }),
     defineField({
@@ -17,7 +29,14 @@ export const migrationSection = defineType({
   preview: {
     select: {
       title: "title",
-      subtitle: "intro",
+      kind: "kind",
+      translationKey: "translationKey",
+    },
+    prepare({ title, kind, translationKey }) {
+      return {
+        title,
+        subtitle: [kind, translationKey].filter(Boolean).join(" · "),
+      };
     },
   },
 });

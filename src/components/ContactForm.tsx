@@ -5,23 +5,38 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import type { Locale } from "@/i18n/config";
+import enMessages from "@/i18n/messages/en.json";
+import nnMessages from "@/i18n/messages/nn.json";
 
-const contactSchema = z.object({
-  name: z.string().min(2, "Skriv inn namn"),
-  company: z.string().optional(),
-  email: z.string().email("Skriv inn ei gyldig e-postadresse"),
-  phone: z.string().min(6, "Skriv inn telefonnummer"),
-  message: z.string().min(12, "Fortel kort kva prosjektet gjeld"),
-});
+const messages = {
+  nn: nnMessages.ContactForm,
+  en: enMessages.ContactForm,
+};
 
-type ContactFormValues = z.infer<typeof contactSchema>;
+type ContactFormValues = {
+  name: string;
+  company?: string;
+  email: string;
+  phone: string;
+  message: string;
+};
 
 type ContactFormProps = {
   recipientEmail: string;
+  locale: Locale;
 };
 
-export function ContactForm({ recipientEmail }: ContactFormProps) {
+export function ContactForm({ recipientEmail, locale }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const labels = messages[locale];
+  const contactSchema = z.object({
+    name: z.string().min(2, labels.validationName),
+    company: z.string().optional(),
+    email: z.string().email(labels.validationEmail),
+    phone: z.string().min(6, labels.validationPhone),
+    message: z.string().min(12, labels.validationMessage),
+  });
   const {
     register,
     handleSubmit,
@@ -32,13 +47,13 @@ export function ContactForm({ recipientEmail }: ContactFormProps) {
   });
 
   function onSubmit(values: ContactFormValues) {
-    const subject = encodeURIComponent(`Førespørsel frå ${values.name}`);
+    const subject = encodeURIComponent(`${labels.emailSubject} ${values.name}`);
     const body = encodeURIComponent(
       [
-        `Namn: ${values.name}`,
-        values.company ? `Firma: ${values.company}` : "",
-        `E-post: ${values.email}`,
-        `Telefon: ${values.phone}`,
+        `${labels.name}: ${values.name}`,
+        values.company ? `${labels.company}: ${values.company}` : "",
+        `${labels.email}: ${values.email}`,
+        `${labels.phone}: ${values.phone}`,
         "",
         values.message,
       ]
@@ -60,7 +75,7 @@ export function ContactForm({ recipientEmail }: ContactFormProps) {
     >
       <div className="grid gap-1">
         <label htmlFor="name" className="text-sm font-medium text-slate-900">
-          Namn
+          {labels.name}
         </label>
         <input
           id="name"
@@ -74,7 +89,7 @@ export function ContactForm({ recipientEmail }: ContactFormProps) {
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="grid gap-1">
           <label htmlFor="company" className="text-sm font-medium text-slate-900">
-            Firma
+            {labels.company}
           </label>
           <input
             id="company"
@@ -85,7 +100,7 @@ export function ContactForm({ recipientEmail }: ContactFormProps) {
         </div>
         <div className="grid gap-1">
           <label htmlFor="phone" className="text-sm font-medium text-slate-900">
-            Telefon
+            {labels.phone}
           </label>
           <input
             id="phone"
@@ -99,7 +114,7 @@ export function ContactForm({ recipientEmail }: ContactFormProps) {
 
       <div className="grid gap-1">
         <label htmlFor="email" className="text-sm font-medium text-slate-900">
-          E-post
+          {labels.email}
         </label>
         <input
           id="email"
@@ -113,7 +128,7 @@ export function ContactForm({ recipientEmail }: ContactFormProps) {
 
       <div className="grid gap-1">
         <label htmlFor="message" className="text-sm font-medium text-slate-900">
-          Kva kan vi hjelpe med?
+          {labels.message}
         </label>
         <textarea
           id="message"
@@ -130,13 +145,13 @@ export function ContactForm({ recipientEmail }: ContactFormProps) {
         type="submit"
         className="inline-flex h-12 items-center justify-center gap-2 rounded-[6px] bg-slate-950 px-5 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
       >
-        Send førespørsel <ArrowRight aria-hidden="true" size={18} />
+        {labels.submit} <ArrowRight aria-hidden="true" size={18} />
       </button>
 
       {submitted ? (
         <p className="inline-flex items-center gap-2 text-sm font-medium text-cyan-800">
           <CheckCircle2 aria-hidden="true" size={18} />
-          E-postkladden er opna i e-postprogrammet ditt.
+          {labels.confirmation}
         </p>
       ) : null}
     </form>

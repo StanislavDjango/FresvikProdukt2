@@ -19,24 +19,34 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import type { ContentPage } from "@/data/pages";
 import { sectionIs } from "@/i18n/contentStructure";
-import { localeFromPathname, stripLocalePrefix, withLocale } from "@/i18n/config";
+import {
+  localeFromPathname,
+  stripLocalePrefix,
+  withLocale,
+  type Locale,
+} from "@/i18n/config";
 import { messages } from "@/i18n/messages";
 import { cn } from "@/lib/utils";
 
 type ContentPageViewProps = {
   page: ContentPage;
   hero?: ReactNode;
+  locale: Locale;
 };
 
-type ContentLabels = (typeof messages)["nn"]["Content"];
+type ContentLabels = (typeof messages)[Locale]["Content"] & {
+  locale: Locale;
+};
 
-function getContentLabels(pathname = "/"): ContentLabels {
-  return messages[localeFromPathname(pathname)].Content;
+function getContentLabels(locale: Locale = "nn"): ContentLabels {
+  return {
+    ...messages[locale].Content,
+    locale,
+  };
 }
 
 function localizedContentHref(href: string, labels: ContentLabels) {
-  const locale = labels.readMore === messages.en.Content.readMore ? "en" : "nn";
-  return withLocale(href, locale);
+  return withLocale(href, labels.locale);
 }
 
 function isExternalHref(href: string) {
@@ -59,20 +69,6 @@ function formatNorwegianDate(value?: string) {
     year: "numeric",
   }).format(date);
 }
-
-const technicalMigrationSectionTitles = new Set([
-  "Full tekst frå gammal side",
-  "Bilde frå gammal side",
-  "Dokumentlenker frå gammal side",
-  "Lenker frå gammal side",
-  "Lenker frå gammal aktuelt-side",
-]);
-
-const publicArchiveOnlySectionTitles = new Set([
-  ...technicalMigrationSectionTitles,
-  "Nyheitsbrev og footerlenker frå gammal side",
-  "Teneste-URL-ar frå gammal sitemap",
-]);
 
 function cleanMigrationIntro(text?: string) {
   if (!text) return undefined;
@@ -174,10 +170,7 @@ function isPublicArchiveOnlySection(section: ContentPage["sections"][number]) {
     sectionIs(section, "archive-documents") ||
     sectionIs(section, "archive-links") ||
     sectionIs(section, "archive-newsletter") ||
-    sectionIs(section, "archive-service-urls") ||
-    publicArchiveOnlySectionTitles.has(section.title) ||
-    hasPublicMigrationMarker(section.title) ||
-    hasPublicMigrationMarker(section.intro)
+    sectionIs(section, "archive-service-urls")
   );
 }
 
@@ -499,12 +492,11 @@ function LegalTextSection({
   section: ContentPage["sections"][number];
   labels?: ContentLabels;
 }) {
-  const title =
-    section.title === "Personverntekst frå gammal side"
-      ? labels.privacyTextTitle
-      : section.title === "Tekst frå gammal Openheitslova-side"
-        ? "Openheitslova"
-        : section.title;
+  const title = sectionIs(section, "privacy-text")
+    ? labels.privacyTextTitle
+    : sectionIs(section, "transparency-text")
+      ? labels.transparencyTextTitle
+      : section.title;
 
   return (
     <section className="border-b border-slate-200 bg-white">
@@ -671,8 +663,13 @@ function CertificationBadgeLink({
   );
 }
 
-function FAQAccordion({ page }: ContentPageViewProps) {
-  const labels = getContentLabels(page.slug);
+function FAQAccordion({
+  page,
+  labels,
+}: {
+  page: ContentPage;
+  labels: ContentLabels;
+}) {
   const questions = page.sections[0]?.items || [];
 
   return (
@@ -1799,7 +1796,7 @@ function DocumentationDownloadsSection({
   section: ContentPage["sections"][number];
   labels?: ContentLabels;
 }) {
-  const isEnglish = labels.readMore === "Read more";
+  const isEnglish = labels.locale === "en";
   const descriptions: Record<string, string> = {
     Miljødokument: "Miljødokumentasjon for Fresvik Produkt.",
     Samsvarssertifikat: "Samsvarssertifikat og CPR-dokumentasjon.",
@@ -2240,9 +2237,7 @@ function ProductRelatedSection({
   section: ContentPage["sections"][number];
   labels?: ContentLabels;
 }) {
-  const title = section.title.includes("Tilleggsprodukt")
-    ? "Tilleggsprodukt"
-    : labels.accessories;
+  const title = labels.accessories;
   const ctaLabel = labels.allAccessories;
 
   return (
@@ -2707,7 +2702,7 @@ function ServiceIndexSection({
   section: ContentPage["sections"][number];
   labels?: ContentLabels;
 }) {
-  const isEnglish = labels.readMore === "Read more";
+  const isEnglish = labels.locale === "en";
   const serviceDescriptions: Record<string, string> = isEnglish
     ? {
         Montasje:
@@ -3261,7 +3256,7 @@ function ReferenceIndexIntroSection({
   section: ContentPage["sections"][number];
   labels?: ContentLabels;
 }) {
-  const isEnglish = labels.readMore === "Read more";
+  const isEnglish = labels.locale === "en";
 
   return (
     <section className="border-b border-slate-200 bg-white">
@@ -3296,7 +3291,7 @@ function ReferenceIndexGridSection({
   section: ContentPage["sections"][number];
   labels?: ContentLabels;
 }) {
-  const isEnglish = labels.readMore === "Read more";
+  const isEnglish = labels.locale === "en";
 
   return (
     <section className="border-b border-slate-200 bg-slate-50">
@@ -3360,7 +3355,7 @@ function ReferenceCategorySection({
   section: ContentPage["sections"][number];
   labels?: ContentLabels;
 }) {
-  const isEnglish = labels.readMore === "Read more";
+  const isEnglish = labels.locale === "en";
 
   return (
     <section className="border-b border-slate-200 bg-white">
@@ -3412,7 +3407,7 @@ function NewsIndexSection({
   section: ContentPage["sections"][number];
   labels?: ContentLabels;
 }) {
-  const isEnglish = labels.readMore === "Read more";
+  const isEnglish = labels.locale === "en";
   const items = section.items.filter(
     (item) => item.href && item.title !== "Aktuelt",
   );
@@ -3694,12 +3689,13 @@ function ContentSections({
   sections,
   pageSlug,
   page,
+  labels,
 }: {
   sections: ContentPage["sections"];
   pageSlug?: string;
   page?: ContentPage;
+  labels: ContentLabels;
 }) {
-  const labels = getContentLabels(pageSlug ?? page?.slug);
   const sourceSlug = stripLocalePrefix(pageSlug || page?.slug || "/");
   const isPirPage = sourceSlug === "/produkt/fresvik-pir-panel";
   const isPurPage = sourceSlug === "/produkt/fresvik-pur-panel";
@@ -3747,7 +3743,7 @@ function ContentSections({
   const isReferenceDetailPage =
     sourceSlug.startsWith("/referansar/") && sourceSlug !== "/referansar";
   const accessoryImagesSection = isAccessoryPage
-    ? sections.find((section) => sectionIs(section, "archive-images"))
+    ? sections.find((section) => sectionIs(section, "accessory-images"))
     : undefined;
   const pirProducerSection = isPirPage
     ? sections.find((section) => sectionIs(section, "pir-producer"))
@@ -3777,10 +3773,10 @@ function ContentSections({
           (section) =>
             !(
               (isCompanyUtilityPage || isLegalPage) &&
-              (section.title === "Kontakt" ||
-                section.title === "Dokumentasjon og sertifikat" ||
-                section.title === "Motta nyheitsbrev" ||
-                technicalMigrationSectionTitles.has(section.title))
+              (sectionIs(section, "contact") ||
+                sectionIs(section, "certificates") ||
+                sectionIs(section, "newsletter") ||
+                isPublicArchiveOnlySection(section))
             ) &&
             !(
               isProductIndexPage &&
@@ -3816,75 +3812,55 @@ function ContentSections({
             ) &&
             !(
               isDocumentationPage &&
-              (section.title === "Dokumentasjon og sertifikat" ||
-                section.title === "Kontakt" ||
-                section.title === "Full tekst frå gammal side" ||
-                section.title === "Bilde frå gammal side" ||
-                section.title === "Dokumentlenker frå gammal side" ||
-                section.title === "Lenker frå gammal side")
+              (sectionIs(section, "certificates") ||
+                sectionIs(section, "contact") ||
+                isPublicArchiveOnlySection(section))
             ) &&
             !(
               isElectricSkyveportPage &&
-              (section.title ===
-                "Monteringsanvisningar for elektrisk styring av Fresvik Skyveport" ||
-                section.title === "Dokumentasjon og sertifikat" ||
-                section.title === "Kontakt" ||
-                section.title === "Full tekst frå gammal side" ||
-                section.title === "Bilde frå gammal side" ||
-                section.title === "Dokumentlenker frå gammal side" ||
-                section.title === "Lenker frå gammal side")
+              (sectionIs(section, "electric-downloads") ||
+                sectionIs(section, "certificates") ||
+                sectionIs(section, "contact") ||
+                isPublicArchiveOnlySection(section))
             ) &&
             !(
               isMountingPage &&
-              (section.title === "Dokumentasjon og sertifikat" ||
-                section.title === "Kontakt" ||
-                section.title === "Full tekst frå gammal side" ||
-                section.title === "Bilde frå gammal side" ||
-                section.title === "Dokumentlenker frå gammal side" ||
-                section.title === "Lenker frå gammal side")
+              (sectionIs(section, "certificates") ||
+                sectionIs(section, "contact") ||
+                isPublicArchiveOnlySection(section))
             ) &&
             !(
               isAccessoryIndexPage &&
-              (section.title === "Full tekst frå gammal side" ||
-                section.title === "Bilde frå gammal side" ||
-                section.title === "Dokumentlenker frå gammal side" ||
-                section.title === "Lenker frå gammal side" ||
-                section.title === "Tilleggsutstyr og reservedelar" ||
-                section.title === "Tilleggsutstyr til kjøle- og fryserom")
+              (isPublicArchiveOnlySection(section) ||
+                sectionIs(section, "accessory-overview"))
             ) &&
             !(
               isAccessoryPage &&
-              section.title === "Bilde frå gammal side"
+              sectionIs(section, "accessory-images")
             ) &&
             !(
               isStyledServicePage &&
-              (section.title === "Full tekst frå gammal side" ||
-                section.title === "Bilde frå gammal side" ||
-                section.title === "Dokumentlenker frå gammal side" ||
-                section.title === "Lenker frå gammal side")
+              isPublicArchiveOnlySection(section)
             ) &&
             !(
               isTransportDamagePage &&
-              (section.title === "Full tekst frå gammal side" ||
-                section.title === "Bilde frå gammal side" ||
-                section.title === "Dokumentlenker frå gammal side" ||
-                section.title === "Lenker frå gammal side")
+              isPublicArchiveOnlySection(section)
             ) &&
             !(
               isReferenceIndexPage &&
-              (section.title === "Kontakt" ||
-                section.title === "Dokumentasjon og sertifikat")
+              (sectionIs(section, "contact") ||
+                sectionIs(section, "certificates"))
             ) &&
             !(
               isNewsIndexPage &&
-              (section.title === "Kontakt" ||
-                section.title === "Dokumentasjon og sertifikat")
+              (sectionIs(section, "contact") ||
+                sectionIs(section, "certificates"))
             ) &&
             !(
               isNewsDetailPage &&
-              (section.title === "Kontakt" ||
-                section.title === "Dokumentasjon og sertifikat" ||
-                technicalMigrationSectionTitles.has(section.title))
+              (sectionIs(section, "contact") ||
+                sectionIs(section, "certificates") ||
+                isPublicArchiveOnlySection(section))
             ) &&
             !(
               isServiceIndexPage &&
@@ -3978,10 +3954,7 @@ function ContentSections({
       );
     }
 
-    if (
-      isNewsIndexPage &&
-      section.title === "Lenker frå gammal aktuelt-side"
-    ) {
+    if (isNewsIndexPage && sectionIs(section, "article-links")) {
       return (
         <NewsSourceLinksSection
           key={`${section.title}-${sectionIndex}`}
@@ -4155,7 +4128,6 @@ function ContentSections({
           section={section}
           sectionIndex={sectionIndex}
           labels={labels}
-          pageSlug={pageSlug ?? page?.slug ?? "/produkt"}
         />
       );
     }
@@ -4636,38 +4608,23 @@ function HomeSection({
   section,
   sectionIndex,
   labels = getContentLabels(),
-  pageSlug = "/",
 }: {
   section: ContentPage["sections"][number];
   sectionIndex: number;
   labels?: ContentLabels;
-  pageSlug?: string;
 }) {
-  const locale = localeFromPathname(pageSlug);
-  const isEnglish = locale === "en";
-  const isProducts =
-    sectionIs(section, "products") ||
-    section.title.includes("Produktteaserar") ||
-    section.title === "Produkt" ||
-    section.title === "Products" ||
-    section.title === "Products and solutions" ||
-    section.title === "Produkt frå Sanity" ||
-    section.title === "Products from Sanity";
-  const isCustomers =
-    section.title === "Våre kundar" || section.title === "Customer areas";
+  const isEnglish = labels.locale === "en";
+  const isProducts = sectionIs(section, "products");
+  const isCustomers = sectionIs(section, "customer-areas");
   const isNews = sectionIs(section, "news");
-  const isJob = section.title === "Vil du jobbe hjå oss?";
+  const isJob = sectionIs(section, "job-opening");
   const isContact = sectionIs(section, "contact");
-  const isNewsletter = section.title === "Motta nyheitsbrev";
-  const isBadges = section.title === "Footer sertifikat og merker";
-  const isFullTextArchive = section.title === "Full tekst frå gammal side";
-  const isImageArchive = section.title === "Bilde frå gammal side";
-  const isDocumentArchive =
-    section.title === "Dokumentlenker frå gammal side" ||
-    section.items.every((item) => item.title === "Dokument");
-  const isLinkArchive =
-    section.title === "Lenker frå gammal side" ||
-    section.items.every((item) => item.title === "Ekstern lenke");
+  const isNewsletter = sectionIs(section, "newsletter");
+  const isBadges = sectionIs(section, "trust-badges");
+  const isFullTextArchive = sectionIs(section, "archive-full-text");
+  const isImageArchive = sectionIs(section, "archive-images");
+  const isDocumentArchive = sectionIs(section, "archive-documents");
+  const isLinkArchive = sectionIs(section, "archive-links");
   const background = isProducts || isNews || isBadges ? "bg-slate-50" : "bg-white";
   const displayTitle = isProducts
     ? isEnglish
@@ -4890,7 +4847,7 @@ function HomeSection({
               intro={cleanMigrationIntro(section.intro)}
             />
             <Link
-              href={withLocale("/aktuelt", locale)}
+              href={withLocale("/aktuelt", labels.locale)}
               className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
             >
               {labels.allCases}
@@ -4969,7 +4926,7 @@ function HomeSection({
           />
           {isProducts ? (
             <Link
-              href={withLocale("/produkt", locale)}
+              href={withLocale("/produkt", labels.locale)}
               className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
             >
               {labels.allProducts}
@@ -4977,7 +4934,7 @@ function HomeSection({
             </Link>
           ) : isNews ? (
             <Link
-              href={withLocale("/aktuelt", locale)}
+              href={withLocale("/aktuelt", labels.locale)}
               className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
             >
               {labels.allCases}
@@ -5082,9 +5039,13 @@ function HomeSection({
   );
 }
 
-function HomeContent({ page }: { page: ContentPage }) {
-  const labels = getContentLabels(page.slug);
-
+function HomeContent({
+  page,
+  labels,
+}: {
+  page: ContentPage;
+  labels: ContentLabels;
+}) {
   return (
     <>
       {page.sections.map((section, sectionIndex) => (
@@ -5093,15 +5054,14 @@ function HomeContent({ page }: { page: ContentPage }) {
           section={section}
           sectionIndex={sectionIndex}
           labels={labels}
-          pageSlug={page.slug}
         />
       ))}
     </>
   );
 }
 
-export function ContentPageView({ page, hero }: ContentPageViewProps) {
-  const labels = getContentLabels(page.slug);
+export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
+  const labels = getContentLabels(locale);
   const showMigrationDetails = page.showMigrationDetails === true;
   const sourceSlug = stripLocalePrefix(page.slug);
   const isFaqPage = sourceSlug === "/kundeservice/faq";
@@ -5202,7 +5162,7 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
       )}
 
       {isHomePage ? (
-        <HomeContent page={page} />
+        <HomeContent page={page} labels={labels} />
       ) : showTopCards ? (
         <section className="border-b border-slate-200 bg-white">
           <Container className="py-12">
@@ -5241,12 +5201,13 @@ export function ContentPageView({ page, hero }: ContentPageViewProps) {
       ) : null}
 
       {isHomePage ? null : isFaqPage ? (
-        <FAQAccordion page={page} />
+        <FAQAccordion page={page} labels={labels} />
       ) : (
         <ContentSections
           sections={page.sections}
           pageSlug={page.slug}
           page={page}
+          labels={labels}
         />
       )}
 

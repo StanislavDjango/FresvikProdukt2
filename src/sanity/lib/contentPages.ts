@@ -9,8 +9,10 @@ import {
   type ContentSection,
 } from "@/data/pages";
 import {
+  isMigrationArchiveKind,
+  sectionIs,
   sectionKind,
-  sectionKindFromTitle,
+  stableContentSections,
 } from "@/i18n/contentStructure";
 import { isSanityConfigured } from "../env";
 import { client } from "./client";
@@ -50,6 +52,8 @@ type SanityMigrationCard = {
 
 type SanityMigrationSection = {
   _key?: string;
+  kind?: string;
+  translationKey?: string;
   title?: string;
   intro?: string;
   items?: SanityMigrationCard[];
@@ -167,6 +171,8 @@ const CONTENT_DOC_QUERY = defineQuery(`*[
   },
   "migrationSections": migrationSections[]{
     _key,
+    kind,
+    translationKey,
     title,
     intro,
     "items": items[]{
@@ -445,12 +451,14 @@ function migrationCards(doc: SanityContentDoc) {
 }
 
 function migrationSections(doc: SanityContentDoc) {
-  return (doc.migrationSections || [])
+  const sourcePath = sourcePathForDoc(doc);
+  const sections = (doc.migrationSections || [])
     .map((section) => {
       const title = section.title || "Innhald";
       return {
         key: section._key,
-        kind: sectionKindFromTitle(title),
+        kind: section.kind,
+        translationKey: section.translationKey,
         title,
         intro: section.intro,
         items: (section.items || [])
@@ -459,6 +467,8 @@ function migrationSections(doc: SanityContentDoc) {
       };
     })
     .filter((section) => section.title && section.items.length > 0);
+
+  return stableContentSections(sections, sourcePath);
 }
 
 function sanitySections(doc: SanityContentDoc) {
@@ -558,21 +568,11 @@ function localizeCardHref(card: ContentCard, language: "nn" | "en"): ContentCard
   };
 }
 
-function completeTranslatedText(
-  baseText: string,
-  translatedText: string | undefined,
-) {
-  if (!translatedText) return baseText;
-
-  const segmentCount = (text: string) =>
-    text
-      .split(/\n{2,}/)
-      .map((segment) => segment.trim())
-      .filter(Boolean).length;
-
-  return segmentCount(translatedText) >= segmentCount(baseText)
-    ? translatedText
-    : baseText;
+function translatedField<T>(translated: T | undefined, fallback: T) {
+  if (typeof translated === "string") {
+    return translated.trim() ? translated : fallback;
+  }
+  return translated ?? fallback;
 }
 
 function mergeEnglishVisualCard(
@@ -586,23 +586,24 @@ function mergeEnglishVisualCard(
 
   return {
     ...base,
-    title: copyCard?.title || base.title,
-    text: completeTranslatedText(base.text, copyCard?.text),
-    href: localizedIndexHref(copyCard?.href || base.href, "en"),
-    meta: copyCard?.meta || base.meta,
+    title: translatedField(copyCard?.title, base.title),
+    text: translatedField(copyCard?.text, base.text),
+    href: localizedIndexHref(translatedField(copyCard?.href, base.href), "en"),
+    meta: translatedField(copyCard?.meta, base.meta),
     imageUrl: base.imageUrl || copyCard?.imageUrl,
-    imageAlt: copyCard?.imageAlt || base.imageAlt || copyCard?.title || base.title,
+    imageAlt: translatedField(
+      copyCard?.imageAlt,
+      base.imageAlt || copyCard?.title || base.title,
+    ),
   };
 }
 
-function isMigrationArchiveSectionTitle(title: string) {
-  return (
-    title === "Full tekst frå gammal side" ||
-    title === "Bilde frå gammal side" ||
-    title === "Dokumentlenker frå gammal side" ||
-    title === "Lenker frå gammal side" ||
-    title === "Lenker frå gammal aktuelt-side" ||
-    title === "Nyheitsbrev og footerlenker frå gammal side"
+function publicContentSections(
+  sections: ContentPage["sections"],
+  sourcePath: string,
+) {
+  return stableContentSections(sections, sourcePath).filter(
+    (section) => !isMigrationArchiveKind(section.kind),
   );
 }
 
@@ -615,31 +616,38 @@ function canonicalCardHref(card: ContentCard | undefined) {
 
 function findCopySection(
   visualSection: ContentSection,
+  visualSections: ContentPage["sections"],
   copySections: ContentPage["sections"],
-  sectionIndex: number,
-  visualSectionCount: number,
 ) {
-  const visualKind = sectionKind(visualSection);
-  const byKind = visualKind
-    ? copySections.find((section) => sectionKind(section) === visualKind)
+  const byTranslationKey = visualSection.translationKey
+    ? copySections.find(
+        (section) => section.translationKey === visualSection.translationKey,
+      )
     : undefined;
-  if (byKind) return byKind;
+  if (byTranslationKey) return byTranslationKey;
 
   const byKey = visualSection.key
     ? copySections.find((section) => section.key === visualSection.key)
     : undefined;
   if (byKey) return byKey;
 
-  return copySections.length === visualSectionCount
-    ? copySections[sectionIndex]
+  const visualKind = sectionKind(visualSection);
+  if (!visualKind) return undefined;
+
+  const visualKindMatches = visualSections.filter(
+    (section) => sectionKind(section) === visualKind,
+  );
+  const copyKindMatches = copySections.filter(
+    (section) => sectionKind(section) === visualKind,
+  );
+  return visualKindMatches.length === 1 && copyKindMatches.length === 1
+    ? copyKindMatches[0]
     : undefined;
 }
 
 function findCopyCard(
   visualCard: ContentCard,
   copyCards: ContentCard[],
-  itemIndex: number,
-  visualCardCount: number,
 ) {
   const byKey = visualCard.key
     ? copyCards.find((card) => card.key === visualCard.key)
@@ -651,43 +659,32 @@ function findCopyCard(
     ? copyCards.find((card) => canonicalCardHref(card) === href)
     : undefined;
   if (byHref) return byHref;
-
-  return copyCards.length === visualCardCount
-    ? copyCards[itemIndex]
-    : undefined;
+  return undefined;
 }
 
 function mergeEnglishVisualSections(
   visualSections: ContentPage["sections"],
   copySections: ContentPage["sections"],
+  sourcePath: string,
 ): ContentPage["sections"] {
-  const usableCopySections = copySections.filter(
-    (section) => !isMigrationArchiveSectionTitle(section.title),
-  );
+  const stableVisualSections = stableContentSections(visualSections, sourcePath);
+  const stableCopySections = stableContentSections(copySections, sourcePath);
 
-  return visualSections.map((visualSection, sectionIndex) => {
-    const copySection = isMigrationArchiveSectionTitle(visualSection.title)
-      ? undefined
-      : findCopySection(
-          visualSection,
-          usableCopySections,
-          sectionIndex,
-          visualSections.length,
-        );
+  return stableVisualSections.map((visualSection) => {
+    const copySection = findCopySection(
+      visualSection,
+      stableVisualSections,
+      stableCopySections,
+    );
 
     return {
       ...visualSection,
       kind: sectionKind(visualSection),
-      title: copySection?.title || visualSection.title,
-      intro: copySection?.intro || visualSection.intro,
-      items: visualSection.items.map((visualItem, itemIndex) => {
+      title: translatedField(copySection?.title, visualSection.title),
+      intro: translatedField(copySection?.intro, visualSection.intro),
+      items: visualSection.items.map((visualItem) => {
         const copyItem = copySection
-          ? findCopyCard(
-              visualItem,
-              copySection.items,
-              itemIndex,
-              visualSection.items.length,
-            )
+          ? findCopyCard(visualItem, copySection.items)
           : undefined;
         return (
           mergeEnglishVisualCard(visualItem, copyItem) ||
@@ -705,24 +702,23 @@ function enrichEnglishIndexSections(
 ): ContentPage["sections"] {
   if (!fallbackSections?.length) return sections;
 
+  const stableFallbackSections = stableContentSections(fallbackSections, path);
   const visualItems =
     path === "/produkt"
-      ? fallbackSections.flatMap((section) =>
-          ["Fresvik-panel", "Våre produkt", "Tilbehør"].includes(section.title)
-            ? section.items
-            : [],
+      ? stableFallbackSections.flatMap((section) =>
+          sectionIs(section, "products") ? section.items : [],
         )
       : path === "/tenester"
-        ? fallbackSections.find((section) => section.title === "Tenesteområde")
+        ? stableFallbackSections.find((section) => sectionIs(section, "services"))
             ?.items || []
         : path === "/referansar"
-          ? fallbackSections.find((section) => section.title === "Referansar")
+          ? stableFallbackSections.find((section) => sectionIs(section, "references"))
               ?.items || []
           : path === "/aktuelt"
-            ? fallbackSections.find((section) => section.title === "Aktuelt")
+            ? stableFallbackSections.find((section) => sectionIs(section, "news"))
                 ?.items || []
             : path === "/tilsette"
-              ? fallbackSections.find((section) => section.title === "Kontaktpersonar")
+              ? stableFallbackSections.find((section) => sectionIs(section, "employees"))
                   ?.items || []
               : [];
 
@@ -730,14 +726,17 @@ function enrichEnglishIndexSections(
 
   return sections.map((section) => ({
     ...section,
-    items: section.items.map((item, index) => ({
-      ...item,
-      ...localizedVisualFields(visualItems[index], "en"),
-      title: item.title,
-      text: item.text,
-      meta: item.meta || visualItems[index]?.meta,
-      imageAlt: item.imageAlt || visualItems[index]?.imageAlt || item.title,
-    })),
+    items: section.items.map((item) => {
+      const visualItem = findCopyCard(item, visualItems);
+      return {
+        ...item,
+        ...localizedVisualFields(visualItem, "en"),
+        title: item.title,
+        text: item.text,
+        meta: item.meta || visualItem?.meta,
+        imageAlt: item.imageAlt || visualItem?.imageAlt || item.title,
+      };
+    }),
   }));
 }
 
@@ -747,19 +746,20 @@ function enrichEnglishHomeSections(
 ): ContentPage["sections"] {
   if (!fallbackSections?.length) return sections;
 
+  const stableFallbackSections = stableContentSections(fallbackSections, "/");
   const productVisuals =
-    fallbackSections.find((section) => section.title.includes("Produktteaserar"))
+    stableFallbackSections.find((section) => sectionIs(section, "products"))
       ?.items || [];
   const customerVisuals =
-    fallbackSections
-      .find((section) => section.title === "Våre kundar")
+    stableFallbackSections
+      .find((section) => sectionIs(section, "customer-areas"))
       ?.items.filter((item) => !item.title.toLowerCase().includes("dekor")) ||
     [];
 
   return sections.map((section) => {
-    const visualSource = section.title === "Products and solutions"
+    const visualSource = sectionIs(section, "products")
       ? productVisuals
-      : section.title === "Customer areas"
+      : sectionIs(section, "customer-areas")
         ? customerVisuals
         : [];
 
@@ -767,11 +767,14 @@ function enrichEnglishHomeSections(
 
     return {
       ...section,
-      items: section.items.map((item, index) => ({
-        ...item,
-        ...localizedVisualFields(visualSource[index], "en"),
-        imageAlt: item.imageAlt || visualSource[index]?.imageAlt || item.title,
-      })),
+      items: section.items.map((item) => {
+        const visualItem = findCopyCard(item, visualSource);
+        return {
+          ...item,
+          ...localizedVisualFields(visualItem, "en"),
+          imageAlt: item.imageAlt || visualItem?.imageAlt || item.title,
+        };
+      }),
     };
   });
 }
@@ -806,7 +809,7 @@ async function fetchIndexItemsWithFallback(
 
   const usedEnglishItems = new Set<SanityIndexItem>();
 
-  return sourceItems.map((sourceItem, index) => {
+  return sourceItems.map((sourceItem) => {
     const sourcePath = sourceItem.slug ? pathForSlug(sourceItem.slug) : undefined;
     const translation = englishItems.find((englishItem) => {
       if (usedEnglishItems.has(englishItem)) return false;
@@ -820,20 +823,42 @@ async function fetchIndexItemsWithFallback(
       return (
         sourcePathForEnglishPath(pathForSlug(englishItem.slug)) === sourcePath
       );
-    }) ?? (
-      englishItems.length === sourceItems.length ? englishItems[index] : undefined
-    );
+    });
 
     if (!translation) return sourceItem;
     usedEnglishItems.add(translation);
 
     return {
       ...sourceItem,
-      ...translation,
-      imageUrl: translation.imageUrl || sourceItem.imageUrl,
-      fileUrl: translation.fileUrl || sourceItem.fileUrl,
-      externalUrl: translation.externalUrl || sourceItem.externalUrl,
-      localPath: translation.localPath || sourceItem.localPath,
+      _type: translatedField(translation._type, sourceItem._type),
+      title: translatedField(translation.title, sourceItem.title),
+      name: translatedField(translation.name, sourceItem.name),
+      slug: translatedField(translation.slug, sourceItem.slug),
+      text: translatedField(translation.text, sourceItem.text),
+      excerpt: translatedField(translation.excerpt, sourceItem.excerpt),
+      description: translatedField(
+        translation.description,
+        sourceItem.description,
+      ),
+      intro: translatedField(translation.intro, sourceItem.intro),
+      role: translatedField(translation.role, sourceItem.role),
+      location: translatedField(translation.location, sourceItem.location),
+      phone: translatedField(translation.phone, sourceItem.phone),
+      email: translatedField(translation.email, sourceItem.email),
+      date: translatedField(translation.date, sourceItem.date),
+      year: translatedField(translation.year, sourceItem.year),
+      category: translatedField(translation.category, sourceItem.category),
+      imageUrl: translatedField(translation.imageUrl, sourceItem.imageUrl),
+      fileUrl: translatedField(translation.fileUrl, sourceItem.fileUrl),
+      externalUrl: translatedField(
+        translation.externalUrl,
+        sourceItem.externalUrl,
+      ),
+      localPath: translatedField(translation.localPath, sourceItem.localPath),
+      translationGroup: translatedField(
+        translation.translationGroup,
+        sourceItem.translationGroup,
+      ),
     };
   });
 }
@@ -921,7 +946,11 @@ function mergeContentPage(
       : structuredMigrationSections;
   const hybridEnglishSections =
     language === "en" && fallback && sourcePath !== "/"
-      ? mergeEnglishVisualSections(fallback.sections, localizedStructuredSections)
+      ? mergeEnglishVisualSections(
+          fallback.sections,
+          localizedStructuredSections,
+          sourcePath,
+        )
       : localizedStructuredSections;
   const localizedIndexSections =
     language === "en"
@@ -997,7 +1026,7 @@ function mergeContentPage(
     publishedAt: doc.date,
     showMigrationDetails: false,
     cards,
-    sections,
+    sections: publicContentSections(sections, sourcePath),
     todo: undefined,
   };
 }
@@ -1008,13 +1037,6 @@ function localizeEnglishHref(href?: string) {
     !href.startsWith("/s/")
     ? withLocale(href, "en")
     : href;
-}
-
-function withStableSectionKinds(sections: ContentPage["sections"]) {
-  return sections.map((section) => ({
-    ...section,
-    kind: sectionKind(section),
-  }));
 }
 
 function englishCopySections(
@@ -1038,23 +1060,18 @@ function overlayEnglishPage(
   sourcePath: string,
 ): ContentPage {
   const copy = getEnglishPageCopy(sourcePath);
-  const baseSections = withStableSectionKinds(basePage.sections);
+  const baseSections = stableContentSections(basePage.sections, sourcePath);
   const translatedSections = englishCopySections(doc, indexSections, sourcePath);
   const translatedCards = doc ? migrationCards(doc) : [];
   const sections =
     translatedSections.length > 0
-      ? mergeEnglishVisualSections(baseSections, translatedSections)
+      ? mergeEnglishVisualSections(baseSections, translatedSections, sourcePath)
       : baseSections.map((section) => ({
           ...section,
           items: section.items.map((item) => localizeCardHref(item, "en")),
         }));
-  const cards = basePage.cards.map((card, index) => {
-    const translatedCard = findCopyCard(
-      card,
-      translatedCards,
-      index,
-      basePage.cards.length,
-    );
+  const cards = basePage.cards.map((card) => {
+    const translatedCard = findCopyCard(card, translatedCards);
     return (
       mergeEnglishVisualCard(card, translatedCard) ||
       localizeCardHref(card, "en")
@@ -1080,7 +1097,7 @@ function overlayEnglishPage(
       ...card,
       href: localizeEnglishHref(card.href),
     })),
-    sections: sections.map((section) => ({
+    sections: publicContentSections(sections, sourcePath).map((section) => ({
       ...section,
       items: section.items.map((item) => ({
         ...item,
@@ -1121,17 +1138,23 @@ async function fetchContentDoc(
 
 export async function getSanityContentPage(path: string, language: "nn" | "en" = "nn") {
   const fallback = getFallbackContentPage(path);
-  if (!isSanityConfigured) return language === "nn" ? fallback : null;
+  const publicFallback = fallback
+    ? {
+        ...fallback,
+        sections: publicContentSections(fallback.sections, path),
+      }
+    : undefined;
+  if (!isSanityConfigured) return language === "nn" ? publicFallback : null;
 
   const sourceSlug = slugForPath(path);
 
   try {
     if (language === "nn") {
       const doc = await fetchContentDoc([sourceSlug], "nn");
-      if (!doc) return fallback;
+      if (!doc) return publicFallback;
       const normalizedPath = sourcePathForDoc(doc);
       const indexSections = await getIndexSections(normalizedPath, "nn");
-      return mergeContentPage(doc, fallback, indexSections, "nn");
+      return mergeContentPage(doc, publicFallback, indexSections, "nn");
     }
 
     const englishSlug = slugForPath(englishPathForSourcePath(path));
@@ -1147,8 +1170,8 @@ export async function getSanityContentPage(path: string, language: "nn" | "en" =
       ]);
 
     const basePage = sourceDoc
-      ? mergeContentPage(sourceDoc, fallback, sourceIndexSections, "nn")
-      : fallback;
+      ? mergeContentPage(sourceDoc, publicFallback, sourceIndexSections, "nn")
+      : publicFallback;
 
     if (basePage) {
       return overlayEnglishPage(basePage, englishDoc, englishIndexSections, path);
@@ -1158,6 +1181,6 @@ export async function getSanityContentPage(path: string, language: "nn" | "en" =
     return mergeContentPage(englishDoc, undefined, englishIndexSections, "en");
   } catch (error) {
     console.error(`Failed to load ${path} from Sanity`, error);
-    return language === "nn" ? fallback : null;
+    return language === "nn" ? publicFallback : null;
   }
 }

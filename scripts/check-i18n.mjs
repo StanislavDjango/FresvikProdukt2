@@ -46,58 +46,15 @@ const proxySource = readText("src/proxy.ts");
 const contactPageSource = readText("src/app/kontakt/page.tsx");
 const englishPagesSource = readText("src/data/englishPages.ts");
 const englishSeedDocs = readNdjson("sanity/seed/migratedContent.en.ndjson");
+const sourceSeedDocs = readNdjson("sanity/seed/migratedContent.ndjson");
 const liveBaseUrl = process.env.I18N_CHECK_BASE_URL;
 const canonicalBaseUrl =
   process.env.I18N_CANONICAL_BASE_URL ||
   process.env.NEXT_PUBLIC_SITE_URL ||
   "https://fresvik-produkt2.vercel.app";
 
-const requiredEnglishRoutes = [
-  "/",
-  "/products",
-  "/products/fresvik-pir-panel",
-  "/products/fresvik-pur-panel",
-  "/products/cold-freezer-doors",
-  "/products/cold-freezer-room-gates",
-  "/products/facade-panels",
-  "/products/freezing-tunnel",
-  "/services",
-  "/services/installation",
-  "/services/delivery",
-  "/services/service-spare-parts",
-  "/documentation",
-  "/contact",
-  "/about",
-];
-
-const structuredEnglishDraftSourceRoutes = [
-  "/",
-  "/produkt",
-  "/produkt/fresvik-pir-panel",
-  "/produkt/fresvik-pur-panel",
-  "/produkt/kjole-frysedorer",
-  "/produkt/kjole-fryseportar",
-  "/tenester",
-  "/tenester/montasje",
-  "/dokumentasjon",
-  "/kontakt",
-  "/produkt/fasadepanel",
-  "/produkt/frysetunnel",
-  "/tilleggsutstyr",
-  "/tenester/leveranse",
-  "/tenester/service-reservedeler",
-  "/monteringsanvisning",
-  "/monteringsanvisningar-fresvik-skyveport",
-  "/kundeservice/faq",
-  "/referansar",
-  "/om-oss",
-  "/firmainfo",
-  "/tilsette",
-  "/aktuelt",
-  "/stillingledig",
-  "/personvernerklering",
-  "/openheitslova",
-];
+const requiredEnglishRoutes = Object.values(routeMap);
+const structuredEnglishDraftSourceRoutes = Object.keys(routeMap);
 
 const requiredContentMessageKeys = [
   "Content.readMore",
@@ -138,6 +95,19 @@ const requiredContentMessageKeys = [
   "Content.missingDocumentsIntro",
   "Content.cooperationEyebrow",
   "Content.partnersTitle",
+  "ContactForm.name",
+  "ContactForm.company",
+  "ContactForm.phone",
+  "ContactForm.email",
+  "ContactForm.message",
+  "ContactForm.submit",
+  "ContactForm.confirmation",
+  "ContactForm.validationName",
+  "ContactForm.validationEmail",
+  "ContactForm.validationPhone",
+  "ContactForm.validationMessage",
+  "ContactForm.emailSubject",
+  "ContactForm.mapTitle",
 ];
 
 const errors = [];
@@ -196,6 +166,32 @@ function migrationSectionTexts(doc) {
       item.text || "",
     ]),
   ]);
+}
+
+function normalizedSourceUrl(value) {
+  return typeof value === "string" ? value.replace(/\/$/, "") : "";
+}
+
+function validateSectionIdentities(doc, label) {
+  const translationKeys = new Set();
+
+  for (const section of doc.migrationSections || []) {
+    if (!section.kind?.trim()) {
+      errors.push(`${label} section is missing kind: ${doc._id || doc.title}`);
+    }
+    if (!section.translationKey?.trim()) {
+      errors.push(
+        `${label} section is missing translationKey: ${doc._id || doc.title}`,
+      );
+      continue;
+    }
+    if (translationKeys.has(section.translationKey)) {
+      errors.push(
+        `${label} has duplicate translationKey "${section.translationKey}": ${doc._id || doc.title}`,
+      );
+    }
+    translationKeys.add(section.translationKey);
+  }
 }
 
 function withLocale(pathname, locale) {
@@ -363,6 +359,14 @@ if (englishSeedDocs.length !== entries.length) {
   );
 }
 
+for (const doc of sourceSeedDocs) {
+  validateSectionIdentities(doc, "Norwegian seed");
+}
+
+for (const doc of englishSeedDocs) {
+  validateSectionIdentities(doc, "English seed");
+}
+
 const englishSeedGroups = new Set(
   englishSeedDocs.map((doc) => doc.translationGroup).filter(Boolean),
 );
@@ -486,6 +490,41 @@ for (const doc of englishSeedDocs) {
   for (const phrase of publicReviewPhrases) {
     if (publicText.includes(phrase)) {
       errors.push(`English seed contains public review phrase "${phrase}": ${doc._id || doc.title}`);
+    }
+  }
+}
+
+const sourceSeedByUrl = new Map(
+  sourceSeedDocs
+    .filter((doc) => normalizedSourceUrl(doc.sourceUrl))
+    .map((doc) => [normalizedSourceUrl(doc.sourceUrl), doc]),
+);
+
+for (const englishDoc of englishSeedDocs) {
+  const sourceDoc = sourceSeedByUrl.get(
+    normalizedSourceUrl(englishDoc.sourceUrl),
+  );
+  if (!sourceDoc?.migrationSections?.length) continue;
+
+  const sourceSections = sourceDoc.migrationSections;
+  const englishSections = englishDoc.migrationSections || [];
+
+  for (const englishSection of englishSections) {
+    const sourceKindMatches = sourceSections.filter(
+      (section) => section.kind === englishSection.kind,
+    );
+    const englishKindMatches = englishSections.filter(
+      (section) => section.kind === englishSection.kind,
+    );
+
+    if (
+      sourceKindMatches.length === 1 &&
+      englishKindMatches.length === 1 &&
+      sourceKindMatches[0].translationKey !== englishSection.translationKey
+    ) {
+      errors.push(
+        `Section translationKey mismatch for ${englishDoc.sourceUrl} kind "${englishSection.kind}": expected "${sourceKindMatches[0].translationKey}", got "${englishSection.translationKey}"`,
+      );
     }
   }
 }

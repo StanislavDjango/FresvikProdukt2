@@ -32,6 +32,7 @@ export default async function Home() {
   return (
     <ContentPageView
       page={contentPage}
+      locale="nn"
       hero={<HomeHero page={contentPage} />}
     />
   );

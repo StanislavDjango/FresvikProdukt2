@@ -25,6 +25,7 @@ export type ContentCard = {
 export type ContentSection = {
   key?: string;
   kind?: string;
+  translationKey?: string;
   title: string;
   intro?: string;
   items: ContentCard[];

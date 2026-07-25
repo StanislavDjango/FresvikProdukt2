@@ -39,7 +39,8 @@
     "assets:upload:apply": "node scripts/upload-sanity-assets.mjs --apply",
     "assets:seed": "node scripts/generate-sanity-seed-with-assets.mjs",
     "check:assets": "node scripts/generate-asset-manifest.mjs --check",
-    "check:i18n": "node scripts/check-i18n.mjs"
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "check:i18n:structure": "node scripts/check-i18n-structure.mjs"
   },
   "engines": {
     "node": "22.x",

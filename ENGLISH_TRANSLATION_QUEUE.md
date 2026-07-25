@@ -28,7 +28,7 @@ This file tracks the remaining content work for the English version. The `/en` r
 | `/produkt/fresvik-pir-panel` | `/en/products/fresvik-pir-panel` | `product` | published 2026-07-25 | Monitor product body, technical data, documents and related accessory links after Vercel deploy. |
 | `/produkt/fresvik-pur-panel` | `/en/products/fresvik-pur-panel` | `product` | published 2026-07-25 | Monitor product body, technical data, image captions and PDF labels after Vercel deploy. |
 | `/produkt/kjole-frysedorer` | `/en/products/cold-freezer-doors` | `product` | published 2026-07-25 | Monitor door descriptions, construction/specification text and related documents after Vercel deploy. |
-| `/produkt/kjole-fryseportar` | `/en/products/cold-freezer-ports` | `product` | published 2026-07-25 | Monitor gate descriptions, model text, PDF labels and related links after Vercel deploy. |
+| `/produkt/kjole-fryseportar` | `/en/products/cold-freezer-room-gates` | `product` | published 2026-07-25 | Monitor gate descriptions, model text, PDF labels and related links after Vercel deploy. |
 | `/tenester` | `/en/services` | `page` | published 2026-07-25 | Monitor service overview and cards after Vercel deploy. |
 | `/tenester/montasje` | `/en/services/installation` | `service` | published 2026-07-25 | Monitor installation process, responsibilities and CTA text after Vercel deploy. |
 | `/dokumentasjon` | `/en/documentation` | `page` | published 2026-07-25 | Monitor document categories and Norwegian PDF labels after Vercel deploy. |

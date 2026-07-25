@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { ContentPageView } from "@/components/content/ContentPageView";
 import { HomeHero } from "@/components/home/HomeHero";
+import { ContactPageContent } from "@/app/kontakt/page";
 import { legacyRoutes } from "@/data/legacyRoutes";
 import { publicRoutes } from "@/data/navigation";
 import { getEnglishContentPage } from "@/data/englishPages";
@@ -72,6 +73,10 @@ export default async function EnglishContentPage({ params }: RouteProps) {
     : getEnglishContentPage(sourcePath);
 
   if (!page) notFound();
+
+  if (sourcePath === "/kontakt") {
+    return <ContactPageContent locale="en" />;
+  }
 
   return (
     <ContentPageView

@@ -12,7 +12,7 @@ const outputDir =
   process.env.VISUAL_CHECK_OUTPUT_DIR || ".generated/visual-smoke";
 const cdpPort = Number(process.env.VISUAL_CHECK_CDP_PORT || 9237);
 
-const pages = [
+const defaultPages = [
   "/",
   "/produkt",
   "/produkt/fresvik-pir-panel",
@@ -23,6 +23,11 @@ const pages = [
   "/tilsette",
   "/kontakt",
 ];
+const pages = process.env.VISUAL_CHECK_PATHS
+  ? process.env.VISUAL_CHECK_PATHS.split(",")
+      .map((path) => path.trim())
+      .filter(Boolean)
+  : defaultPages;
 
 const viewports = [
   { name: "desktop", width: 1440, height: 1000 },
@@ -139,8 +144,8 @@ function windowsHostIp() {
   }
 }
 
-async function fetchJson(url) {
-  const response = await fetch(url);
+async function fetchJson(url, init) {
+  const response = await fetch(url, init);
   if (!response.ok) {
     throw new Error(`${url} returned ${response.status}`);
   }
@@ -249,7 +254,9 @@ class CdpClient {
 }
 
 async function createPageClient(endpoint) {
-  const target = await fetchJson(`${endpoint}/json/new?about:blank`);
+  const target = await fetchJson(`${endpoint}/json/new?about:blank`, {
+    method: "PUT",
+  });
   const client = new CdpClient(target.webSocketDebuggerUrl);
   await client.open();
   await client.send("Page.enable");
@@ -275,6 +282,15 @@ async function assertBrowserPage(client, path, viewport) {
   await client.send("Page.navigate", { url });
   await loadEvent;
   await wait(500);
+
+  await client.send("Runtime.evaluate", {
+    expression: `(() => {
+      const dialog = document.querySelector('[role="dialog"]');
+      const closeButton = dialog?.querySelector("button");
+      closeButton?.click();
+    })()`,
+  });
+  await wait(200);
 
   const evaluation = await client.send("Runtime.evaluate", {
     returnByValue: true,
@@ -417,7 +433,12 @@ async function runCliSmoke() {
 
 async function runCdpSmoke() {
   const profileDir = `${outputDir}/browser-profile`;
-  await rm(profileDir, { recursive: true, force: true });
+  await rm(profileDir, {
+    recursive: true,
+    force: true,
+    maxRetries: 5,
+    retryDelay: 200,
+  });
   await mkdir(profileDir, { recursive: true });
 
   const browserProcess = spawn(
@@ -459,7 +480,21 @@ async function runCdpSmoke() {
     }
   } finally {
     browserProcess.kill();
-    await rm(profileDir, { recursive: true, force: true });
+    if (browserProcess.exitCode === null) {
+      await new Promise((resolveExit) => {
+        const timeout = setTimeout(resolveExit, 3_000);
+        browserProcess.once("exit", () => {
+          clearTimeout(timeout);
+          resolveExit();
+        });
+      });
+    }
+    await rm(profileDir, {
+      recursive: true,
+      force: true,
+      maxRetries: 5,
+      retryDelay: 200,
+    });
   }
 
   return cdpScreenshots;

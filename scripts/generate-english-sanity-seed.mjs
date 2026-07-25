@@ -286,7 +286,7 @@ const priorityEnglishContent = {
             title: "Cold and freezer room gates",
             text:
               "Gates for professional cold and freezer room projects, adapted to demanding commercial and industrial use.",
-            href: "/en/products/cold-freezer-ports",
+            href: "/en/products/cold-freezer-room-gates",
           },
           {
             title: "Cold and freezer room doors",
@@ -396,7 +396,7 @@ const priorityEnglishContent = {
             title: "Cold and freezer room gates",
             text:
               "Sliding and hinged gates for cold and freezer rooms, warehouses and industrial buildings.",
-            href: "/en/products/cold-freezer-ports",
+            href: "/en/products/cold-freezer-room-gates",
           },
           {
             title: "Cold and freezer room doors",
@@ -710,7 +710,7 @@ const priorityEnglishContent = {
           {
             title: "Cold and freezer room gates",
             text: "Installation of gate solutions for cold and freezer rooms.",
-            href: "/en/products/cold-freezer-ports",
+            href: "/en/products/cold-freezer-room-gates",
           },
           {
             title: "Cold and freezer room doors",

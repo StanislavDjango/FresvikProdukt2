@@ -1,9 +1,17 @@
 import { defineQuery } from "next-sanity";
 import {
+  getEnglishPageCopy,
+} from "@/data/englishPages";
+import {
   getContentPage as getFallbackContentPage,
   type ContentCard,
   type ContentPage,
+  type ContentSection,
 } from "@/data/pages";
+import {
+  sectionKind,
+  sectionKindFromTitle,
+} from "@/i18n/contentStructure";
 import { isSanityConfigured } from "../env";
 import { client } from "./client";
 import {
@@ -27,6 +35,7 @@ type SanityDocumentRef = {
 };
 
 type SanityMigrationCard = {
+  _key?: string;
   title?: string;
   text?: string;
   href?: string;
@@ -40,6 +49,7 @@ type SanityMigrationCard = {
 };
 
 type SanityMigrationSection = {
+  _key?: string;
   title?: string;
   intro?: string;
   items?: SanityMigrationCard[];
@@ -101,6 +111,7 @@ type SanityIndexItem = {
   fileUrl?: string;
   externalUrl?: string;
   localPath?: string;
+  translationGroup?: string;
 };
 
 const CONTENT_DOC_QUERY = defineQuery(`*[
@@ -142,6 +153,7 @@ const CONTENT_DOC_QUERY = defineQuery(`*[
     "fileUrl": file.asset->url
   },
   "migrationCards": migrationCards[]{
+    _key,
     title,
     text,
     href,
@@ -154,9 +166,11 @@ const CONTENT_DOC_QUERY = defineQuery(`*[
     "fileUrl": file.asset->url
   },
   "migrationSections": migrationSections[]{
+    _key,
     title,
     intro,
     "items": items[]{
+      _key,
       title,
       text,
       href,
@@ -195,6 +209,7 @@ const NEWS_INDEX_QUERY = defineQuery(`*[
   ((!defined(language) && $language == "nn") || language == $language)
 ] | order(date desc, title asc) {
   title,
+  translationGroup,
   "slug": slug.current,
   excerpt,
   date,
@@ -206,6 +221,7 @@ const REFERENCES_INDEX_QUERY = defineQuery(`*[
   ((!defined(language) && $language == "nn") || language == $language)
 ] | order(year desc, title asc) {
   title,
+  translationGroup,
   "slug": slug.current,
   description,
   year,
@@ -219,6 +235,7 @@ const PRODUCTS_INDEX_QUERY = defineQuery(`*[
   ((!defined(language) && $language == "nn") || language == $language)
 ] | order(title asc) {
   title,
+  translationGroup,
   "slug": slug.current,
   intro,
   shortDescription,
@@ -230,6 +247,7 @@ const SERVICES_INDEX_QUERY = defineQuery(`*[
   ((!defined(language) && $language == "nn") || language == $language)
 ] | order(title asc) {
   title,
+  translationGroup,
   "slug": slug.current,
   intro,
   "imageUrl": image.asset->url
@@ -240,6 +258,7 @@ const DOCUMENTS_INDEX_QUERY = defineQuery(`*[
   ((!defined(language) && $language == "nn") || language == $language)
 ] | order(category asc, title asc) {
   title,
+  translationGroup,
   category,
   description,
   externalUrl,
@@ -252,6 +271,7 @@ const EMPLOYEES_INDEX_QUERY = defineQuery(`*[
   ((!defined(language) && $language == "nn") || language == $language)
 ] | order(order asc, name asc) {
   "title": name,
+  translationGroup,
   role,
   location,
   phone,
@@ -264,6 +284,7 @@ const FAQ_INDEX_QUERY = defineQuery(`*[
   ((!defined(language) && $language == "nn") || language == $language)
 ] | order(order asc, question asc) {
   "title": question,
+  translationGroup,
   "text": pt::text(answer),
   category
 }`);
@@ -407,6 +428,7 @@ function documentsSection(documents?: SanityDocumentRef[]) {
 
 function migrationContentCard(card: SanityMigrationCard): ContentCard {
   return {
+    key: card._key,
     title: card.title || "Innhald",
     text: card.text || card.meta || "Informasjon frå Fresvik Produkt.",
     href: card.fileUrl || card.href,
@@ -424,13 +446,18 @@ function migrationCards(doc: SanityContentDoc) {
 
 function migrationSections(doc: SanityContentDoc) {
   return (doc.migrationSections || [])
-    .map((section) => ({
-      title: section.title || "Innhald",
-      intro: section.intro,
-      items: (section.items || [])
-        .map(migrationContentCard)
-        .filter((item) => item.title && item.text),
-    }))
+    .map((section) => {
+      const title = section.title || "Innhald";
+      return {
+        key: section._key,
+        kind: sectionKindFromTitle(title),
+        title,
+        intro: section.intro,
+        items: (section.items || [])
+          .map(migrationContentCard)
+          .filter((item) => item.title && item.text),
+      };
+    })
     .filter((section) => section.title && section.items.length > 0);
 }
 
@@ -531,6 +558,23 @@ function localizeCardHref(card: ContentCard, language: "nn" | "en"): ContentCard
   };
 }
 
+function completeTranslatedText(
+  baseText: string,
+  translatedText: string | undefined,
+) {
+  if (!translatedText) return baseText;
+
+  const segmentCount = (text: string) =>
+    text
+      .split(/\n{2,}/)
+      .map((segment) => segment.trim())
+      .filter(Boolean).length;
+
+  return segmentCount(translatedText) >= segmentCount(baseText)
+    ? translatedText
+    : baseText;
+}
+
 function mergeEnglishVisualCard(
   visualCard: ContentCard | undefined,
   copyCard: ContentCard | undefined,
@@ -543,7 +587,7 @@ function mergeEnglishVisualCard(
   return {
     ...base,
     title: copyCard?.title || base.title,
-    text: copyCard?.text || base.text,
+    text: completeTranslatedText(base.text, copyCard?.text),
     href: localizedIndexHref(copyCard?.href || base.href, "en"),
     meta: copyCard?.meta || base.meta,
     imageUrl: base.imageUrl || copyCard?.imageUrl,
@@ -562,25 +606,89 @@ function isMigrationArchiveSectionTitle(title: string) {
   );
 }
 
+function canonicalCardHref(card: ContentCard | undefined) {
+  if (!card?.href?.startsWith("/")) return undefined;
+  return sourcePathForEnglishPath(
+    card.href.startsWith("/en/") ? card.href.slice(3) : card.href,
+  );
+}
+
+function findCopySection(
+  visualSection: ContentSection,
+  copySections: ContentPage["sections"],
+  sectionIndex: number,
+  visualSectionCount: number,
+) {
+  const visualKind = sectionKind(visualSection);
+  const byKind = visualKind
+    ? copySections.find((section) => sectionKind(section) === visualKind)
+    : undefined;
+  if (byKind) return byKind;
+
+  const byKey = visualSection.key
+    ? copySections.find((section) => section.key === visualSection.key)
+    : undefined;
+  if (byKey) return byKey;
+
+  return copySections.length === visualSectionCount
+    ? copySections[sectionIndex]
+    : undefined;
+}
+
+function findCopyCard(
+  visualCard: ContentCard,
+  copyCards: ContentCard[],
+  itemIndex: number,
+  visualCardCount: number,
+) {
+  const byKey = visualCard.key
+    ? copyCards.find((card) => card.key === visualCard.key)
+    : undefined;
+  if (byKey) return byKey;
+
+  const href = canonicalCardHref(visualCard);
+  const byHref = href
+    ? copyCards.find((card) => canonicalCardHref(card) === href)
+    : undefined;
+  if (byHref) return byHref;
+
+  return copyCards.length === visualCardCount
+    ? copyCards[itemIndex]
+    : undefined;
+}
+
 function mergeEnglishVisualSections(
   visualSections: ContentPage["sections"],
   copySections: ContentPage["sections"],
 ): ContentPage["sections"] {
-  const copyQueue = copySections.filter(
+  const usableCopySections = copySections.filter(
     (section) => !isMigrationArchiveSectionTitle(section.title),
   );
-  let copyIndex = 0;
 
-  return visualSections.map((visualSection) => {
+  return visualSections.map((visualSection, sectionIndex) => {
     const copySection = isMigrationArchiveSectionTitle(visualSection.title)
       ? undefined
-      : copyQueue[copyIndex++];
+      : findCopySection(
+          visualSection,
+          usableCopySections,
+          sectionIndex,
+          visualSections.length,
+        );
 
     return {
       ...visualSection,
+      kind: sectionKind(visualSection),
+      title: copySection?.title || visualSection.title,
       intro: copySection?.intro || visualSection.intro,
       items: visualSection.items.map((visualItem, itemIndex) => {
-        const copyItem = copySection?.items[itemIndex];
+        const copyItem = copySection
+          ? findCopyCard(
+              visualItem,
+              copySection.items,
+              itemIndex,
+              visualSection.items.length,
+            )
+          : undefined;
         return (
           mergeEnglishVisualCard(visualItem, copyItem) ||
           localizeCardHref(visualItem, "en")
@@ -668,40 +776,130 @@ function enrichEnglishHomeSections(
   });
 }
 
+async function fetchIndexItemsWithFallback(
+  query: string,
+  language: "nn" | "en",
+) {
+  if (language === "nn") {
+    return client.fetch<SanityIndexItem[]>(
+      query,
+      { language },
+      { next: { revalidate: 60 } },
+    );
+  }
+
+  const [sourceItems, englishItems] = await Promise.all([
+    client.fetch<SanityIndexItem[]>(
+      query,
+      { language: "nn" },
+      { next: { revalidate: 60 } },
+    ),
+    client.fetch<SanityIndexItem[]>(
+      query,
+      { language: "en" },
+      { next: { revalidate: 60 } },
+    ),
+  ]);
+
+  if (sourceItems.length === 0) return englishItems;
+  if (englishItems.length === 0) return sourceItems;
+
+  const usedEnglishItems = new Set<SanityIndexItem>();
+
+  return sourceItems.map((sourceItem, index) => {
+    const sourcePath = sourceItem.slug ? pathForSlug(sourceItem.slug) : undefined;
+    const translation = englishItems.find((englishItem) => {
+      if (usedEnglishItems.has(englishItem)) return false;
+      if (
+        sourceItem.translationGroup &&
+        sourceItem.translationGroup === englishItem.translationGroup
+      ) {
+        return true;
+      }
+      if (!sourcePath || !englishItem.slug) return false;
+      return (
+        sourcePathForEnglishPath(pathForSlug(englishItem.slug)) === sourcePath
+      );
+    }) ?? (
+      englishItems.length === sourceItems.length ? englishItems[index] : undefined
+    );
+
+    if (!translation) return sourceItem;
+    usedEnglishItems.add(translation);
+
+    return {
+      ...sourceItem,
+      ...translation,
+      imageUrl: translation.imageUrl || sourceItem.imageUrl,
+      fileUrl: translation.fileUrl || sourceItem.fileUrl,
+      externalUrl: translation.externalUrl || sourceItem.externalUrl,
+      localPath: translation.localPath || sourceItem.localPath,
+    };
+  });
+}
+
 async function getIndexSections(path: string, language: "nn" | "en" = "nn") {
   if (path === "/aktuelt") {
-    const items = await client.fetch<SanityIndexItem[]>(NEWS_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Nyheiter frå Sanity", items: indexCards(items, language) }];
+    const items = await fetchIndexItemsWithFallback(NEWS_INDEX_QUERY, language);
+    return [{
+      kind: "news",
+      title: language === "en" ? "News" : "Nyheiter frå Sanity",
+      items: indexCards(items, language),
+    }];
   }
   if (path === "/referansar") {
-    const items = await client.fetch<SanityIndexItem[]>(REFERENCES_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Referansar frå Sanity", items: indexCards(items, language) }];
+    const items = await fetchIndexItemsWithFallback(REFERENCES_INDEX_QUERY, language);
+    return [{
+      kind: "references",
+      title: language === "en" ? "References" : "Referansar frå Sanity",
+      items: indexCards(items, language),
+    }];
   }
   if (path === "/produkt") {
-    const items = await client.fetch<SanityIndexItem[]>(PRODUCTS_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Produkt frå Sanity", items: indexCards(items, language) }];
+    const items = await fetchIndexItemsWithFallback(PRODUCTS_INDEX_QUERY, language);
+    return [{
+      kind: "products",
+      title: language === "en" ? "Products and solutions" : "Produkt frå Sanity",
+      items: indexCards(items, language),
+    }];
   }
   if (path === "/tenester") {
-    const items = await client.fetch<SanityIndexItem[]>(SERVICES_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Tenester frå Sanity", items: indexCards(items, language) }];
+    const items = await fetchIndexItemsWithFallback(SERVICES_INDEX_QUERY, language);
+    return [{
+      kind: "services",
+      title: language === "en" ? "Services" : "Tenester frå Sanity",
+      items: indexCards(items, language),
+    }];
   }
   if (path === "/dokumentasjon" || path === "/monteringsanvisning") {
-    const allItems = await client.fetch<SanityIndexItem[]>(DOCUMENTS_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
+    const allItems = await fetchIndexItemsWithFallback(DOCUMENTS_INDEX_QUERY, language);
     const filtered =
       path === "/monteringsanvisning"
         ? allItems.filter((item) =>
             `${item.category || ""} ${item.title || ""}`.toLowerCase().includes("mont"),
           )
         : allItems;
-    return [{ title: "Dokument frå Sanity", items: indexCards(filtered, language) }];
+    return [{
+      kind: path === "/monteringsanvisning" ? "mounting-downloads" : "documents",
+      title: language === "en" ? "Documentation" : "Dokument frå Sanity",
+      items: indexCards(filtered, language),
+    }];
   }
   if (path === "/tilsette") {
-    const items = await client.fetch<SanityIndexItem[]>(EMPLOYEES_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Tilsette frå Sanity", items: indexCards(items, language) }];
+    const items = await fetchIndexItemsWithFallback(EMPLOYEES_INDEX_QUERY, language);
+    return [{
+      kind: "employees",
+      title: language === "en" ? "Employees" : "Tilsette frå Sanity",
+      items: indexCards(items, language),
+    }];
   }
   if (path === "/kundeservice/faq") {
-    const items = await client.fetch<SanityIndexItem[]>(FAQ_INDEX_QUERY, { language }, { next: { revalidate: 60 } });
-    return [{ title: "Spørsmål frå Sanity", items: indexCards(items, language) }];
+    const items = await fetchIndexItemsWithFallback(FAQ_INDEX_QUERY, language);
+    return [{
+      kind: "faq",
+      title: language === "en" ? "Questions" : "Spørsmål frå Sanity",
+      items: indexCards(items, language),
+    }];
   }
   return [];
 }
@@ -729,8 +927,10 @@ function mergeContentPage(
     language === "en"
       ? enrichEnglishIndexSections(sourcePath, indexSections, fallback?.sections)
       : indexSections;
-  const preferIndexSections =
-    localizedIndexSections.length > 0 && indexContentPaths.has(sourcePath);
+  const hasIndexItems = localizedIndexSections.some(
+    (section) => section.items.length > 0,
+  );
+  const preferIndexSections = hasIndexItems && indexContentPaths.has(sourcePath);
   const keepLocalMigrationStructure =
     canUseFallbackContent && Boolean(fallback) && localMigrationStructurePaths.has(path);
   const sanityCards = migrationCards(doc);
@@ -802,6 +1002,96 @@ function mergeContentPage(
   };
 }
 
+function localizeEnglishHref(href?: string) {
+  return href?.startsWith("/") &&
+    !href.startsWith("/assets/") &&
+    !href.startsWith("/s/")
+    ? withLocale(href, "en")
+    : href;
+}
+
+function withStableSectionKinds(sections: ContentPage["sections"]) {
+  return sections.map((section) => ({
+    ...section,
+    kind: sectionKind(section),
+  }));
+}
+
+function englishCopySections(
+  doc: SanityContentDoc | null,
+  indexSections: ContentPage["sections"],
+  sourcePath: string,
+) {
+  if (indexContentPaths.has(sourcePath) && indexSections.length > 0) {
+    return indexSections;
+  }
+  if (!doc) return [];
+
+  const migrated = migrationSections(doc);
+  return migrated.length > 0 ? migrated : sanitySections(doc);
+}
+
+function overlayEnglishPage(
+  basePage: ContentPage,
+  doc: SanityContentDoc | null,
+  indexSections: ContentPage["sections"],
+  sourcePath: string,
+): ContentPage {
+  const copy = getEnglishPageCopy(sourcePath);
+  const baseSections = withStableSectionKinds(basePage.sections);
+  const translatedSections = englishCopySections(doc, indexSections, sourcePath);
+  const translatedCards = doc ? migrationCards(doc) : [];
+  const sections =
+    translatedSections.length > 0
+      ? mergeEnglishVisualSections(baseSections, translatedSections)
+      : baseSections.map((section) => ({
+          ...section,
+          items: section.items.map((item) => localizeCardHref(item, "en")),
+        }));
+  const cards = basePage.cards.map((card, index) => {
+    const translatedCard = findCopyCard(
+      card,
+      translatedCards,
+      index,
+      basePage.cards.length,
+    );
+    return (
+      mergeEnglishVisualCard(card, translatedCard) ||
+      localizeCardHref(card, "en")
+    );
+  });
+
+  return {
+    ...basePage,
+    slug: withLocale(sourcePath, "en"),
+    title: doc?.title || copy?.title || basePage.title,
+    eyebrow: copy?.eyebrow || basePage.eyebrow,
+    intro: (doc ? firstUsefulText(doc) : undefined) || copy?.intro || basePage.intro,
+    description:
+      doc?.seoDescription ||
+      doc?.excerpt ||
+      doc?.shortDescription ||
+      doc?.description ||
+      copy?.description ||
+      basePage.description,
+    sourceUrl: basePage.sourceUrl || doc?.sourceUrl,
+    publishedAt: doc?.date || basePage.publishedAt,
+    cards: cards.map((card) => ({
+      ...card,
+      href: localizeEnglishHref(card.href),
+    })),
+    sections: sections.map((section) => ({
+      ...section,
+      items: section.items.map((item) => ({
+        ...item,
+        href: localizeEnglishHref(item.href),
+      })),
+    })),
+    showMigrationDetails: false,
+    todo: undefined,
+  };
+}
+
 export async function getSanityContentSlugs() {
   if (!isSanityConfigured) return [];
 
@@ -818,29 +1108,54 @@ export async function getSanityContentSlugs() {
   }
 }
 
+async function fetchContentDoc(
+  slugs: string[],
+  language: "nn" | "en",
+) {
+  return client.fetch<SanityContentDoc | null>(
+    CONTENT_DOC_QUERY,
+    { slugs, language },
+    { next: { revalidate: 60 } },
+  );
+}
+
 export async function getSanityContentPage(path: string, language: "nn" | "en" = "nn") {
   const fallback = getFallbackContentPage(path);
   if (!isSanityConfigured) return language === "nn" ? fallback : null;
 
-  const slugs = [slugForPath(path)];
-  if (language === "en") {
-    const englishPath = englishPathForSourcePath(path);
-    const englishSlug = slugForPath(englishPath);
-    if (!slugs.includes(englishSlug)) slugs.push(englishSlug);
-  }
+  const sourceSlug = slugForPath(path);
 
   try {
-    const doc = await client.fetch<SanityContentDoc | null>(
-      CONTENT_DOC_QUERY,
-      { slugs, language },
-      { next: { revalidate: 60 } },
-    );
+    if (language === "nn") {
+      const doc = await fetchContentDoc([sourceSlug], "nn");
+      if (!doc) return fallback;
+      const normalizedPath = sourcePathForDoc(doc);
+      const indexSections = await getIndexSections(normalizedPath, "nn");
+      return mergeContentPage(doc, fallback, indexSections, "nn");
+    }
 
-    if (!doc) return language === "nn" ? fallback : null;
+    const englishSlug = slugForPath(englishPathForSourcePath(path));
+    const [sourceDoc, englishDoc, sourceIndexSections, englishIndexSections] =
+      await Promise.all([
+        fetchContentDoc([sourceSlug], "nn"),
+        fetchContentDoc(
+          sourceSlug === englishSlug ? [sourceSlug] : [sourceSlug, englishSlug],
+          "en",
+        ),
+        getIndexSections(path, "nn"),
+        getIndexSections(path, "en"),
+      ]);
 
-    const normalizedPath = sourcePathForDoc(doc);
-    const indexSections = await getIndexSections(normalizedPath, language);
-    return mergeContentPage(doc, fallback, indexSections, language);
+    const basePage = sourceDoc
+      ? mergeContentPage(sourceDoc, fallback, sourceIndexSections, "nn")
+      : fallback;
+
+    if (basePage) {
+      return overlayEnglishPage(basePage, englishDoc, englishIndexSections, path);
+    }
+    if (!englishDoc) return null;
+
+    return mergeContentPage(englishDoc, undefined, englishIndexSections, "en");
   } catch (error) {
     console.error(`Failed to load ${path} from Sanity`, error);
     return language === "nn" ? fallback : null;

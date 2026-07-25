@@ -206,18 +206,29 @@ const pageCopy: Record<
   },
 };
 
-function englishNotice(path: string) {
+export function getEnglishPageCopy(path: string) {
+  return pageCopy[path];
+}
+
+function localizeContentPage(page: ContentPage): ContentPage {
+  const localizeHref = (href?: string) =>
+    href?.startsWith("/") && !href.startsWith("/assets/")
+      ? withLocale(href, "en")
+      : href;
+
   return {
-    title: "English content status",
-    intro:
-      "The English version is being prepared. The complete Norwegian page remains available while the approved English translation is completed.",
-    items: [
-      {
-        title: "Open Norwegian page",
-        text: "Open the complete Norwegian page with text, images, documents and links.",
-        href: path,
-      },
-    ],
+    ...page,
+    cards: page.cards.map((card) => ({
+      ...card,
+      href: localizeHref(card.href),
+    })),
+    sections: page.sections.map((section) => ({
+      ...section,
+      items: section.items.map((item) => ({
+        ...item,
+        href: localizeHref(item.href),
+      })),
+    })),
   };
 }
 
@@ -242,16 +253,16 @@ export function getEnglishContentPage(path: string): ContentPage | null {
       sections: [],
     } satisfies ContentPage);
 
+  const localized = localizeContentPage(base);
+
   return {
-    ...base,
+    ...localized,
     slug: withLocale(path, "en"),
-    title: copy?.title ?? base.title,
+    title: copy?.title ?? localized.title,
     eyebrow: copy?.eyebrow ?? "Fresvik Produkt",
-    intro: copy?.intro ?? base.intro,
-    description: copy?.description ?? base.description,
-    cards: [],
-    sections: [englishNotice(path)],
+    intro: copy?.intro ?? localized.intro,
+    description: copy?.description ?? localized.description,
     showMigrationDetails: false,
-    suppressExtractCards: true,
+    suppressExtractCards: localized.suppressExtractCards,
   };
 }

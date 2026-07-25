@@ -70,7 +70,7 @@ Priority routes:
 - `/en/products`
 - `/en/products/fresvik-pir-panel`
 - `/en/products/fresvik-pur-panel`
-- `/en/products/cold-freezer-ports`
+- `/en/products/cold-freezer-room-gates`
 - `/en/products/cold-freezer-doors`
 - `/en/products/facade-panels`
 - `/en/products/freezing-tunnel`

@@ -13,6 +13,7 @@ import {
 import { getOldSiteContentExtract } from "@/data/oldSiteContentExtract";
 
 export type ContentCard = {
+  key?: string;
   title: string;
   text: string;
   href?: string;
@@ -21,7 +22,9 @@ export type ContentCard = {
   imageAlt?: string;
 };
 
-type Section = {
+export type ContentSection = {
+  key?: string;
+  kind?: string;
   title: string;
   intro?: string;
   items: ContentCard[];
@@ -40,7 +43,7 @@ export type ContentPage = {
   showMigrationDetails?: boolean;
   suppressExtractCards?: boolean;
   cards: ContentCard[];
-  sections: Section[];
+  sections: ContentSection[];
   todo?: string[];
 };
 
@@ -1113,7 +1116,7 @@ const transportDamageCards: ContentCard[] = [
   },
 ];
 
-const butikkSections: Section[] = [
+const butikkSections: ContentSection[] = [
   {
     title: "Daglegvare, drivstoffstasjon og storkiosk",
     intro:
@@ -1138,7 +1141,7 @@ const butikkSections: Section[] = [
   },
 ];
 
-const offshoreSections: Section[] = [
+const offshoreSections: ContentSection[] = [
   {
     title: "Skip og offshore",
     intro:
@@ -1163,7 +1166,7 @@ const offshoreSections: Section[] = [
   },
 ];
 
-const storkjokkenSections: Section[] = [
+const storkjokkenSections: ContentSection[] = [
   {
     title: "Storkjøkken, restaurant og institusjon",
     intro:
@@ -1188,7 +1191,7 @@ const storkjokkenSections: Section[] = [
   },
 ];
 
-const transportDamageSections: Section[] = [
+const transportDamageSections: ContentSection[] = [
   {
     title: "Slik gjer du ved transportskade",
     intro:
@@ -4225,7 +4228,7 @@ function withOldSiteExtract(page: ContentPage): ContentPage {
   const extract = getOldSiteContentExtract(page.slug);
   if (!extract || extract.extractionStatus !== "extracted") return page;
 
-  const extractSections: Section[] = [
+  const extractSections: ContentSection[] = [
     {
       title: "Full tekst frå gammal side",
       intro: `Kjeldetekst henta frå ${extract.sourceUrl}.`,

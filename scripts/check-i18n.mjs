@@ -58,7 +58,7 @@ const requiredEnglishRoutes = [
   "/products/fresvik-pir-panel",
   "/products/fresvik-pur-panel",
   "/products/cold-freezer-doors",
-  "/products/cold-freezer-ports",
+  "/products/cold-freezer-room-gates",
   "/products/facade-panels",
   "/products/freezing-tunnel",
   "/services",

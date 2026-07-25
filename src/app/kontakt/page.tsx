@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { Container } from "@/components/ui/Container";
+import type { Locale } from "@/i18n/config";
 import { getContactPage } from "@/sanity/lib/contactPage";
 
 export const metadata: Metadata = {
@@ -51,8 +52,50 @@ function telHref(phone: string) {
   return `tel:${phone.replace(/\s/g, "")}`;
 }
 
-export default async function ContactPage() {
-  const page = await getContactPage();
+const englishContactCopy = {
+  heroEyebrow: "Projects, sales and technical clarification",
+  title: "Contact Fresvik Produkt",
+  intro:
+    "Do you have a project to discuss? We help with insulated panels, cold and freezer room solutions, delivery, installation and service.",
+  responseNote:
+    "Or find the right sales contact below. We normally reply within one working day.",
+  officeHours: "Mon-Fri 08-16",
+  locationsLabel: "Fresvik and Drammen",
+  salesEyebrow: "Sales department",
+  salesTitle: "Contact one of us directly",
+  salesIntro:
+    "Choose the person who best matches your project, or send your enquiry to our shared inbox.",
+  formEyebrow: "Send an enquiry",
+  formTitle: "Tell us briefly what you need and we will contact you",
+  formIntro:
+    "The form prepares an email to Fresvik Produkt so our team can follow up your enquiry.",
+};
+
+export async function ContactPageContent({
+  locale = "nn",
+}: {
+  locale?: Locale;
+}) {
+  const sourcePage = await getContactPage();
+  const page =
+    locale === "en"
+      ? {
+          ...sourcePage,
+          ...englishContactCopy,
+          offices: sourcePage.offices.map((office) => ({
+            ...office,
+            label:
+              office.label === "Hovudkontor" ? "Head office" : "Sales office",
+          })),
+          salesContacts: sourcePage.salesContacts.map((person) => ({
+            ...person,
+            role:
+              person.role === "Salsavdeling"
+                ? "Sales department"
+                : "Projects and sales",
+          })),
+        }
+      : sourcePage;
   const primaryOffice = page.offices[0];
   const jsonLd = {
     "@context": "https://schema.org",
@@ -280,4 +323,8 @@ export default async function ContactPage() {
 
     </main>
   );
+}
+
+export default function ContactPage() {
+  return <ContactPageContent />;
 }

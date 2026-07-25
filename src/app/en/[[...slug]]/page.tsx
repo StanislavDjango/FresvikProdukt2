@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { ContentPageView } from "@/components/content/ContentPageView";
+import { HomeHero } from "@/components/home/HomeHero";
 import { legacyRoutes } from "@/data/legacyRoutes";
 import { publicRoutes } from "@/data/navigation";
 import { getEnglishContentPage } from "@/data/englishPages";
@@ -72,5 +73,10 @@ export default async function EnglishContentPage({ params }: RouteProps) {
 
   if (!page) notFound();
 
-  return <ContentPageView page={page} />;
+  return (
+    <ContentPageView
+      page={page}
+      hero={sourcePath === "/" ? <HomeHero page={page} /> : undefined}
+    />
+  );
 }

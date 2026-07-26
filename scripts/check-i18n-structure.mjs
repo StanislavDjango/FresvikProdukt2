@@ -149,6 +149,14 @@ const forbiddenMigrationHeadings = [
   "Migrerte bilde",
   "Migrerte bilete",
   "Kjeldetekst",
+  "Full text from the old site",
+  "Full text from the old page",
+  "Image from the old site",
+  "Image from the old page",
+  "Images from the old site",
+  "Document links from the old site",
+  "Links from the old site",
+  "Source text",
 ];
 
 function normalizedText(value) {

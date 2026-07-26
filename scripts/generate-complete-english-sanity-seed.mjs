@@ -6,7 +6,15 @@ import { withStableSectionIdentities } from "../src/i18n/contentStructure.shared
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const sourceSeedPath = path.join(root, "sanity", "seed", "migratedContent.ndjson");
 const englishSeedPath = path.join(root, "sanity", "seed", "migratedContent.en.ndjson");
-const cachePath = path.join(root, "sanity", "seed", "englishTranslationCache.json");
+const translationCatalogPath = path.join(
+  root,
+  "sanity",
+  "seed",
+  "englishTranslations.chatgpt.json",
+);
+const translationWorkPath = path.join(root, ".tmp", "english-translations");
+const translationSourcePath = path.join(translationWorkPath, "source");
+const translationResultPath = path.join(translationWorkPath, "translated");
 const routeMap = JSON.parse(
   fs.readFileSync(path.join(root, "src", "i18n", "routeMap.json"), "utf8"),
 );
@@ -24,6 +32,7 @@ const translatedStringFields = new Set([
   "applications",
   "caption",
   "category",
+  "customerType",
   "ctaText",
   "description",
   "excerpt",
@@ -139,6 +148,31 @@ function englishSlugForSourcePath(sourcePath) {
   return englishPath === "/" ? "home" : englishPath.replace(/^\/+|\/+$/g, "");
 }
 
+function sourcePathForManualDoc(doc) {
+  if (doc.sourceUrl) return sourcePathForDoc(doc);
+
+  const routeEntry = Object.entries(routeMap).find(
+    ([sourcePath, englishPath]) =>
+      doc.translationGroup === `fresvik:${idSafe(sourcePath)}` ||
+      doc.slug?.current === englishSlugForSourcePath(sourcePath) ||
+      doc.slug?.current === englishPath.replace(/^\/+|\/+$/g, ""),
+  );
+
+  return routeEntry?.[0];
+}
+
+function withRecoveredSourceUrl(doc) {
+  if (doc.sourceUrl) return doc;
+
+  const sourcePath = sourcePathForManualDoc(doc);
+  if (!sourcePath) return doc;
+
+  return {
+    ...doc,
+    sourceUrl: `https://www.fresvik.no${sourcePath === "/" ? "/" : sourcePath}`,
+  };
+}
+
 function localizeHref(value) {
   if (
     typeof value !== "string" ||
@@ -206,113 +240,80 @@ function protectGlossary(text) {
   return { protectedText, replacements };
 }
 
-function restoreGlossary(text, replacements) {
-  let restored = text;
-  for (const [token, target] of replacements) {
-    restored = restored.replaceAll(token, target);
+function readChatGptTranslations() {
+  const cache = {};
+  const catalogs = [];
+
+  if (fs.existsSync(translationCatalogPath)) {
+    catalogs.push([
+      path.basename(translationCatalogPath),
+      JSON.parse(fs.readFileSync(translationCatalogPath, "utf8")),
+    ]);
   }
-  return restored;
-}
-
-async function translateRequest(text) {
-  const body = new URLSearchParams({
-    client: "gtx",
-    sl: "no",
-    tl: "en",
-    dt: "t",
-    q: text,
-  });
-  const response = await fetch(
-    "https://translate.googleapis.com/translate_a/single",
-    {
-      method: "POST",
-      headers: {
-        "content-type": "application/x-www-form-urlencoded;charset=UTF-8",
-      },
-      body,
-    },
-  );
-
-  if (!response.ok) {
-    throw new Error(`Translation request failed with HTTP ${response.status}`);
-  }
-
-  const result = await response.json();
-  return (result[0] || []).map((part) => part[0] || "").join("");
-}
-
-async function translateWithRetry(text, attempts = 3) {
-  let error;
-
-  for (let attempt = 1; attempt <= attempts; attempt += 1) {
-    try {
-      return await translateRequest(text);
-    } catch (currentError) {
-      error = currentError;
-      await new Promise((resolve) => setTimeout(resolve, attempt * 700));
+  if (fs.existsSync(translationResultPath)) {
+    for (const file of fs
+      .readdirSync(translationResultPath)
+      .filter((entry) => entry.endsWith(".json"))
+      .sort()) {
+      catalogs.push([
+        file,
+        JSON.parse(
+          fs.readFileSync(path.join(translationResultPath, file), "utf8"),
+        ),
+      ]);
     }
   }
 
-  throw error;
-}
-
-function translationBatches(entries) {
-  const batches = [];
-  let current = [];
-  let currentLength = 0;
-
-  for (const entry of entries) {
-    const extraLength = entry.protectedText.length + 32;
-    if (current.length >= 12 || (current.length > 0 && currentLength + extraLength > 2800)) {
-      batches.push(current);
-      current = [];
-      currentLength = 0;
+  for (const [file, entries] of catalogs) {
+    for (const entry of entries) {
+      if (
+        typeof entry.source !== "string" ||
+        typeof entry.translation !== "string" ||
+        !entry.translation.trim()
+      ) {
+        throw new Error(`Invalid ChatGPT translation entry in ${file}.`);
+      }
+      if (
+        Object.hasOwn(cache, entry.source) &&
+        cache[entry.source] !== entry.translation
+      ) {
+        if (file !== path.basename(translationCatalogPath)) {
+          continue;
+        }
+        throw new Error(`Conflicting ChatGPT translation for: ${entry.source}`);
+      }
+      cache[entry.source] = entry.translation.trim();
     }
-    current.push(entry);
-    currentLength += extraLength;
   }
 
-  if (current.length > 0) batches.push(current);
-  return batches;
+  return cache;
 }
 
-async function translateMissing(strings, cache) {
-  const missing = [...strings]
-    .filter((text) => !cache[text])
-    .map((source) => {
+function writeTranslationSourceBatches(strings, cache) {
+  const missing = [...strings].filter((text) => !cache[text]);
+  const batchSize = 250;
+
+  fs.rmSync(translationSourcePath, { recursive: true, force: true });
+  fs.mkdirSync(translationSourcePath, { recursive: true });
+
+  for (let index = 0; index < missing.length; index += batchSize) {
+    const batchNumber = Math.floor(index / batchSize) + 1;
+    const entries = missing.slice(index, index + batchSize).map((source) => {
       const { protectedText, replacements } = protectGlossary(source);
       return { source, protectedText, replacements };
     });
-  const batches = translationBatches(missing);
-
-  console.log(`Translation cache: ${strings.size - missing.length}/${strings.size}`);
-  console.log(`Translation requests planned: ${batches.length} batches`);
-
-  for (let batchIndex = 0; batchIndex < batches.length; batchIndex += 1) {
-    const batch = batches[batchIndex];
-    const separator = `\nZXQSEP${String(batchIndex).padStart(4, "0")}ZXQ\n`;
-    const translated = await translateWithRetry(
-      batch.map((entry) => entry.protectedText).join(separator),
+    fs.writeFileSync(
+      path.join(
+        translationSourcePath,
+        `batch-${String(batchNumber).padStart(2, "0")}.json`,
+      ),
+      `${JSON.stringify(entries, null, 2)}\n`,
     );
-    const parts = translated.split(separator.trim());
-
-    if (parts.length !== batch.length) {
-      for (const entry of batch) {
-        const value = await translateWithRetry(entry.protectedText);
-        cache[entry.source] = restoreGlossary(value.trim(), entry.replacements);
-      }
-    } else {
-      batch.forEach((entry, index) => {
-        cache[entry.source] = restoreGlossary(
-          parts[index].trim(),
-          entry.replacements,
-        );
-      });
-    }
-
-    fs.writeFileSync(cachePath, `${JSON.stringify(cache, null, 2)}\n`);
-    console.log(`Translated ${batchIndex + 1}/${batches.length} batches`);
   }
+
+  console.log(`ChatGPT translations: ${strings.size - missing.length}/${strings.size}`);
+  console.log(`Missing ChatGPT translations: ${missing.length}`);
+  return missing.length;
 }
 
 function translatedClone(value, parentKey, cache) {
@@ -457,13 +458,18 @@ const sourcePaths = new Set(sourceDocs.map(sourcePathForDoc));
 const manualOnlyDocs = manualDocs.filter(
   (doc) => !sourcePaths.has(sourcePathForDoc(doc)),
 );
-const cache = fs.existsSync(cachePath)
-  ? JSON.parse(fs.readFileSync(cachePath, "utf8"))
-  : {};
+const cache = readChatGptTranslations();
 const strings = new Set();
 
 for (const doc of sourceDocs) collectStrings(doc, "", strings);
-await translateMissing(strings, cache);
+const missingTranslationCount = writeTranslationSourceBatches(strings, cache);
+
+if (missingTranslationCount > 0) {
+  throw new Error(
+    `Complete English seed requires ${missingTranslationCount} ChatGPT translations. ` +
+      `Translate the batches in ${path.relative(root, translationSourcePath)} first.`,
+  );
+}
 
 const translatedDocs = sourceDocs.map((sourceDoc) => {
   const sourcePath = sourcePathForDoc(sourceDoc);
@@ -473,9 +479,12 @@ const translatedDocs = sourceDocs.map((sourceDoc) => {
     manualBySourcePath.get(sourcePath),
   );
 });
-const docs = [...translatedDocs, ...manualOnlyDocs].sort((left, right) =>
-  left._id.localeCompare(right._id),
-);
+const docs = [
+  ...translatedDocs,
+  ...manualOnlyDocs,
+]
+  .map(withRecoveredSourceUrl)
+  .sort((left, right) => left._id.localeCompare(right._id));
 const ids = new Set(docs.map((doc) => doc._id));
 const groups = new Set(docs.map((doc) => doc.translationGroup));
 

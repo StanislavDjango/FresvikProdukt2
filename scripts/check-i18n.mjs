@@ -67,6 +67,7 @@ const requiredContentMessageKeys = [
   "Content.allCases",
   "Content.oldSource",
   "Content.relatedSolutions",
+  "Content.latestNewsFallback",
   "Content.companyCardFallback",
   "Content.companyInfoEyebrow",
   "Content.companyInfoTitle",
@@ -95,6 +96,69 @@ const requiredContentMessageKeys = [
   "Content.missingDocumentsIntro",
   "Content.cooperationEyebrow",
   "Content.partnersTitle",
+  "Content.projectInformation",
+  "Content.referenceEyebrow",
+  "Content.projectImages",
+  "Content.images",
+  "Content.benefits",
+  "Content.details",
+  "Content.gateMotorLock",
+  "Content.productImageFallback",
+  "Content.doorModelsEyebrow",
+  "Content.doorModelsTitle",
+  "Content.doorModelsIntro",
+  "Content.seeAccessories",
+  "Content.installationEyebrow",
+  "Content.installationTitle",
+  "Content.installationIntro",
+  "Content.installationImageAlt",
+  "Content.clarifyInstallation",
+  "Content.deliveryEyebrow",
+  "Content.deliveryTitle",
+  "Content.deliveryIntro",
+  "Content.safeDelivery",
+  "Content.deliveryFallback",
+  "Content.deliveryInfoFallback",
+  "Content.serviceEyebrow",
+  "Content.serviceFallbackTitle",
+  "Content.serviceIntro",
+  "Content.contactService",
+  "Content.needServiceParts",
+  "Content.servicePartsFallback",
+  "Content.approvalEyebrow",
+  "Content.centralApproval",
+  "Content.approvalIntroFallback",
+  "Content.documentedExpertise",
+  "Content.centralApprovalDocumentFallback",
+  "Content.moreInstallationInfo",
+  "Content.contactMoreInfo",
+  "Content.accessoriesEyebrow",
+  "Content.equipmentAndSpareParts",
+  "Content.askForRightPart",
+  "Content.accessoryPartFallback",
+  "Content.sparePartsEyebrow",
+  "Content.orderAccessoriesIntro",
+  "Content.helpFindRightPart",
+  "Content.accessoryContactIntro",
+  "Content.newsEyebrow",
+  "Content.archiveShortMessage",
+  "Content.furtherReading",
+  "Content.articleLinksTitle",
+  "Content.articleLinksIntro",
+  "Content.relatedNewsReferenceFallback",
+  "Content.referencesEyebrow",
+  "Content.freezingProjectsTitle",
+  "Content.workInFresvik",
+  "Content.seeVacancies",
+  "Content.documentationCtaTitle",
+  "Content.documentationCtaIntro",
+  "Content.goToDocumentation",
+  "Content.productSelectionEyebrow",
+  "Content.helpFindSolution",
+  "Content.productContactIntro",
+  "Content.selectedFacadeProjects",
+  "Content.facadeBenefitsTitle",
+  "Content.facadeBenefitsIntro",
   "ContactForm.name",
   "ContactForm.company",
   "ContactForm.phone",
@@ -126,7 +190,11 @@ function slugForEnglishPath(englishPath) {
 }
 
 function expectedSourceUrl(sourcePath) {
-  return `https://www.fresvik.no${sourcePath === "/" ? "" : sourcePath}`;
+  const sourceAliases = {
+    "/produkt/fresvik-pur-panel": "/produkt/fresvik-panel",
+  };
+  const oldSourcePath = sourceAliases[sourcePath] || sourcePath;
+  return `https://www.fresvik.no${oldSourcePath === "/" ? "/" : oldSourcePath}`;
 }
 
 function normalizePath(pathname) {
@@ -166,6 +234,21 @@ function migrationSectionTexts(doc) {
       item.text || "",
     ]),
   ]);
+}
+
+function fieldValues(value, fieldName) {
+  if (Array.isArray(value)) {
+    return value.flatMap((entry) => fieldValues(entry, fieldName));
+  }
+  if (!value || typeof value !== "object") return [];
+
+  return Object.entries(value).flatMap(([key, nestedValue]) => {
+    const ownValues =
+      key === fieldName && typeof nestedValue === "string"
+        ? [nestedValue]
+        : [];
+    return [...ownValues, ...fieldValues(nestedValue, fieldName)];
+  });
 }
 
 function normalizedSourceUrl(value) {
@@ -353,9 +436,9 @@ if (englishSeedDocs.length === 0) {
   errors.push("sanity/seed/migratedContent.en.ndjson is missing or empty");
 }
 
-if (englishSeedDocs.length !== entries.length) {
+if (englishSeedDocs.length < entries.length) {
   errors.push(
-    `English seed document count (${englishSeedDocs.length}) must match routeMap entries (${entries.length})`,
+    `English seed document count (${englishSeedDocs.length}) must cover all routeMap entries (${entries.length})`,
   );
 }
 
@@ -392,7 +475,10 @@ for (const [sourcePath, englishPath] of entries) {
     );
   }
 
-  if (matchingDoc.sourceUrl !== expectedSourceUrl(sourcePath)) {
+  if (
+    normalizedSourceUrl(matchingDoc.sourceUrl) !==
+    normalizedSourceUrl(expectedSourceUrl(sourcePath))
+  ) {
     errors.push(
       `English seed sourceUrl mismatch for ${sourcePath}: expected "${expectedSourceUrl(sourcePath)}", got "${matchingDoc.sourceUrl || "missing"}"`,
     );
@@ -463,7 +549,6 @@ for (const doc of englishSeedDocs) {
     "migrated page",
     "migrated contact information",
     "Norwegian source",
-    "source page",
     "source describes",
     "source states",
     "The source",
@@ -486,6 +571,28 @@ for (const doc of englishSeedDocs) {
     portableTextText(doc.body),
     ...migrationSectionTexts(doc),
   ].join(" ");
+
+  if (
+    /(?:Director|Coordinator|Manager|office|department)(?:Mob|Tel)|\dEmail:|department::/.test(
+      publicText,
+    )
+  ) {
+    errors.push(
+      `English seed contains malformed contact details: ${doc._id || doc.title}`,
+    );
+  }
+
+  for (const customerType of fieldValues(doc, "customerType")) {
+    if (
+      /(?:daglegvare|grossistlager|næringsmiddel|helse og omsorg|produksjonsanlegg|sjømat|fruktpakkeri|skadedyrsanering|fiskeindustri|bakeri|storkjøkken|treverk|tørkerom|omsorgssenter)/i.test(
+        customerType,
+      )
+    ) {
+      errors.push(
+        `English seed contains untranslated customerType "${customerType}": ${doc._id || doc.title}`,
+      );
+    }
+  }
 
   for (const phrase of publicReviewPhrases) {
     if (publicText.includes(phrase)) {

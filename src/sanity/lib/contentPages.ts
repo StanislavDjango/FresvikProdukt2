@@ -357,20 +357,29 @@ function pageTypeFor(doc: SanityContentDoc): ContentPage["pageType"] {
   return "company";
 }
 
-function eyebrowFor(doc: SanityContentDoc, fallback?: ContentPage) {
+function eyebrowFor(
+  doc: SanityContentDoc,
+  fallback?: ContentPage,
+  language: "nn" | "en" = "nn",
+) {
   if (fallback?.eyebrow) return fallback.eyebrow;
-  if (doc._type === "product") return "Produkt";
-  if (doc._type === "service") return "Teneste";
-  if (doc._type === "newsArticle") return "Aktuelt";
-  if (doc._type === "referenceProject") return "Referanse";
+  if (doc._type === "product") return language === "en" ? "Product" : "Produkt";
+  if (doc._type === "service") return language === "en" ? "Service" : "Teneste";
+  if (doc._type === "newsArticle") return language === "en" ? "News" : "Aktuelt";
+  if (doc._type === "referenceProject") {
+    return language === "en" ? "Reference" : "Referanse";
+  }
   return "Fresvik Produkt";
 }
 
-function imageCard(doc: SanityContentDoc): ContentCard[] {
+function imageCard(
+  doc: SanityContentDoc,
+  language: "nn" | "en" = "nn",
+): ContentCard[] {
   if (!doc.imageUrl) return [];
   return [
     {
-      title: doc.title || "Bilde",
+      title: doc.title || (language === "en" ? "Image" : "Bilde"),
       text: firstUsefulText(doc),
       imageUrl: doc.imageUrl,
       imageAlt: doc.title || "Fresvik Produkt",
@@ -378,7 +387,10 @@ function imageCard(doc: SanityContentDoc): ContentCard[] {
   ];
 }
 
-function bodySection(doc: SanityContentDoc) {
+function bodySection(
+  doc: SanityContentDoc,
+  language: "nn" | "en" = "nn",
+) {
   const paragraphs =
     doc._type === "referenceProject" && doc.description
       ? doc.description.split(/\n+/).map((line) => line.trim()).filter(Boolean)
@@ -388,22 +400,27 @@ function bodySection(doc: SanityContentDoc) {
 
   if (doc._type === "referenceProject") {
     return {
-      title: "Prosjekttekst",
+      title: language === "en" ? "Project" : "Prosjekttekst",
       items: [
         {
-          title: doc.title || "Referanse",
+          title: doc.title || (language === "en" ? "Reference" : "Referanse"),
           text: paragraphs.join("\n\n"),
           imageUrl: doc.imageUrl,
-          imageAlt: doc.title || "Referanse",
+          imageAlt: doc.title || (language === "en" ? "Reference" : "Referanse"),
         },
       ],
     };
   }
 
   return {
-    title: "Innhald frå Sanity",
+    title: language === "en" ? "Content" : "Innhald frå Sanity",
     items: paragraphs.map((text, index) => ({
-      title: paragraphs.length === 1 ? doc.title || "Innhald" : `Avsnitt ${index + 1}`,
+      title:
+        paragraphs.length === 1
+          ? doc.title || (language === "en" ? "Content" : "Innhald")
+          : language === "en"
+            ? `Paragraph ${index + 1}`
+            : `Avsnitt ${index + 1}`,
       text,
     })),
   };
@@ -418,25 +435,41 @@ function listSection(title: string, values?: string[]) {
   };
 }
 
-function documentsSection(documents?: SanityDocumentRef[]) {
+function documentsSection(
+  documents?: SanityDocumentRef[],
+  language: "nn" | "en" = "nn",
+) {
   const items = (documents || [])
     .map((document) => ({
-      title: document.title || "Dokument",
-      text: document.description || document.category || "Dokumentasjon frå Fresvik Produkt.",
+      title: document.title || (language === "en" ? "Document" : "Dokument"),
+      text:
+        document.description ||
+        document.category ||
+        (language === "en"
+          ? "Documentation from Fresvik Produkt."
+          : "Dokumentasjon frå Fresvik Produkt."),
       href: document.fileUrl || document.externalUrl || document.localPath,
       meta: document.category,
     }))
     .filter((item) => item.href);
 
   if (items.length === 0) return null;
-  return { title: "Dokument", items };
+  return { title: language === "en" ? "Documentation" : "Dokument", items };
 }
 
-function migrationContentCard(card: SanityMigrationCard): ContentCard {
+function migrationContentCard(
+  card: SanityMigrationCard,
+  language: "nn" | "en" = "nn",
+): ContentCard {
   return {
     key: card._key,
-    title: card.title || "Innhald",
-    text: card.text || card.meta || "Informasjon frå Fresvik Produkt.",
+    title: card.title || (language === "en" ? "Content" : "Innhald"),
+    text:
+      card.text ||
+      card.meta ||
+      (language === "en"
+        ? "Information from Fresvik Produkt."
+        : "Informasjon frå Fresvik Produkt."),
     href: card.fileUrl || card.href,
     meta: card.meta,
     imageUrl: card.imageUrl,
@@ -444,17 +477,24 @@ function migrationContentCard(card: SanityMigrationCard): ContentCard {
   };
 }
 
-function migrationCards(doc: SanityContentDoc) {
+function migrationCards(
+  doc: SanityContentDoc,
+  language: "nn" | "en" = "nn",
+) {
   return (doc.migrationCards || [])
-    .map(migrationContentCard)
+    .map((card) => migrationContentCard(card, language))
     .filter((card) => card.title && card.text);
 }
 
-function migrationSections(doc: SanityContentDoc) {
+function migrationSections(
+  doc: SanityContentDoc,
+  language: "nn" | "en" = "nn",
+) {
   const sourcePath = sourcePathForDoc(doc);
   const sections = (doc.migrationSections || [])
     .map((section) => {
-      const title = section.title || "Innhald";
+      const title =
+        section.title || (language === "en" ? "Content" : "Innhald");
       return {
         key: section._key,
         kind: section.kind,
@@ -462,7 +502,7 @@ function migrationSections(doc: SanityContentDoc) {
         title,
         intro: section.intro,
         items: (section.items || [])
-          .map(migrationContentCard)
+          .map((card) => migrationContentCard(card, language))
           .filter((item) => item.title && item.text),
       };
     })
@@ -471,34 +511,42 @@ function migrationSections(doc: SanityContentDoc) {
   return stableContentSections(sections, sourcePath);
 }
 
-function sanitySections(doc: SanityContentDoc) {
+function sanitySections(
+  doc: SanityContentDoc,
+  language: "nn" | "en" = "nn",
+) {
   const sections = [
-    bodySection(doc),
-    listSection("Eigenskapar", doc.features),
+    bodySection(doc, language),
+    listSection(language === "en" ? "Features" : "Eigenskapar", doc.features),
     doc.technicalData && doc.technicalData.length > 0
       ? {
-          title: "Tekniske data",
+          title: language === "en" ? "Technical data" : "Tekniske data",
           items: doc.technicalData
             .filter((item) => item.label || item.value)
             .map((item) => ({
-              title: item.label || "Teknisk data",
+              title:
+                item.label ||
+                (language === "en" ? "Technical data" : "Teknisk data"),
               text: item.value || item.label || "",
             })),
         }
       : null,
-    listSection("Bruksområde", doc.applications),
+    listSection(
+      language === "en" ? "Applications" : "Bruksområde",
+      doc.applications,
+    ),
     doc.processSteps && doc.processSteps.length > 0
       ? {
-          title: "Prosess",
+          title: language === "en" ? "Process" : "Prosess",
           items: doc.processSteps
             .filter((item) => item.title || item.text)
             .map((item) => ({
-              title: item.title || "Steg",
+              title: item.title || (language === "en" ? "Step" : "Steg"),
               text: item.text || item.title || "",
             })),
         }
       : null,
-    documentsSection(doc.documents),
+    documentsSection(doc.documents, language),
   ].filter((section): section is NonNullable<typeof section> => Boolean(section));
 
   return sections;
@@ -524,14 +572,19 @@ function localizedIndexHref(href: string | undefined, language: "nn" | "en") {
 function indexCards(items: SanityIndexItem[], language: "nn" | "en" = "nn") {
   return items
     .map((item) => ({
-      title: item.title || item.name || "Innhald",
+      title:
+        item.title ||
+        item.name ||
+        (language === "en" ? "Content" : "Innhald"),
       text:
         item.text ||
         item.excerpt ||
         item.description ||
         item.intro ||
         compactText([item.role, item.location, item.phone, item.email]) ||
-        "Informasjon frå Fresvik Produkt.",
+        (language === "en"
+          ? "Information from Fresvik Produkt."
+          : "Informasjon frå Fresvik Produkt."),
       href: localizedIndexHref(itemHref(item), language),
       meta: compactText([item.date, item.year, item.category]) || undefined,
       imageUrl: item.imageUrl,
@@ -654,6 +707,8 @@ function publicContentSections(
   };
   const migrationHeading =
     /(?:full tekst|full text|dokumentlenker|document links|bilde frå|bilde fra|image from|lenker frå|lenker fra|links from|frå gammal side|fra gammal side|from the old site|from the old page|migration)/i;
+  const migrationCopy =
+    /(?:source text (?:obtained|retrieved)|from the old (?:site|page|front page)|frå gammal side|fra gammal side|gammal sitemap|gamle framside|utan omskriving|kjeldetekst|tekst henta|bevart frå|bevart med|migrert innhald|migration extract)/i;
 
   return stableContentSections(sections, sourcePath)
     .filter((section) => !isMigrationArchiveKind(section.kind))
@@ -661,10 +716,16 @@ function publicContentSections(
       const replacement = section.kind
         ? publicTitleByKind[section.kind]?.[language]
         : undefined;
+      const title =
+        replacement && migrationHeading.test(section.title)
+          ? replacement
+          : section.title;
+      const intro =
+        section.intro && migrationCopy.test(section.intro)
+          ? undefined
+          : section.intro;
 
-      return replacement && migrationHeading.test(section.title)
-        ? { ...section, title: replacement }
-        : section;
+      return { ...section, title, intro };
     });
 }
 
@@ -998,8 +1059,8 @@ function mergeContentPage(
 ): ContentPage {
   const path = pathForSlug(doc.slug);
   const canUseFallbackContent = language === "nn";
-  const ownSections = sanitySections(doc);
-  const structuredMigrationSections = migrationSections(doc);
+  const ownSections = sanitySections(doc, language);
+  const structuredMigrationSections = migrationSections(doc, language);
   const sourcePath = sourcePathForDoc(doc);
   const localizedStructuredSections =
     language === "en" && sourcePath === "/"
@@ -1023,8 +1084,8 @@ function mergeContentPage(
   const preferIndexSections = hasIndexItems && indexContentPaths.has(sourcePath);
   const keepLocalMigrationStructure =
     canUseFallbackContent && Boolean(fallback) && localMigrationStructurePaths.has(path);
-  const sanityCards = migrationCards(doc);
-  const imageCards = imageCard(doc);
+  const sanityCards = migrationCards(doc, language);
+  const imageCards = imageCard(doc, language);
   let sections: ContentPage["sections"];
   let cards: ContentPage["cards"];
 
@@ -1065,7 +1126,11 @@ function mergeContentPage(
         : keepLocalMigrationStructure && fallback
         ? fallback.title
         : doc.title || fallback?.title || "Fresvik Produkt",
-    eyebrow: eyebrowFor(doc, canUseFallbackContent ? fallback : undefined),
+    eyebrow: eyebrowFor(
+      doc,
+      canUseFallbackContent ? fallback : undefined,
+      language,
+    ),
     intro:
       useFallbackHero && fallback
         ? fallback.intro

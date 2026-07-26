@@ -3,6 +3,7 @@
 import {
   ArrowRight,
   ChevronDown,
+  LogOut,
   Mail,
   Menu,
   Phone,
@@ -584,6 +585,16 @@ export function Header() {
               <Phone aria-hidden="true" size={14} />
               57 69 83 00
             </a>
+            <form action="/api/prototype-access/logout" method="post">
+              <input type="hidden" name="returnTo" value={pathname} />
+              <button
+                type="submit"
+                className="inline-flex items-center gap-2 text-white/85 transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+              >
+                <LogOut aria-hidden="true" size={14} />
+                {t("signOut")}
+              </button>
+            </form>
           </div>
         </div>
       </div>

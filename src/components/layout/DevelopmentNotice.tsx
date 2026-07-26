@@ -1,12 +1,12 @@
 "use client";
 
-import { ArrowRight, ExternalLink, Info, X } from "lucide-react";
+import { ArrowRight, ExternalLink, Info } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCallback, useEffect, useState, useSyncExternalStore } from "react";
+import { useCallback, useState, useSyncExternalStore } from "react";
 
-const storageKey = "fresvik-development-notice-v1";
+const storageKey = "fresvik-unofficial-prototype-notice-v2";
 const oldSiteUrl = "https://www.fresvik.no/";
 
 function subscribeToStorage(callback: () => void) {
@@ -51,21 +51,6 @@ export function DevelopmentNotice() {
     !dismissedInSession &&
     !pathname?.startsWith("/studio");
 
-  useEffect(() => {
-    if (!isOpen) {
-      return;
-    }
-
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        dismiss();
-      }
-    }
-
-    window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
-  }, [dismiss, isOpen]);
-
   if (!isOpen || pathname?.startsWith("/studio")) {
     return null;
   }
@@ -74,11 +59,6 @@ export function DevelopmentNotice() {
     <div
       className="fixed inset-0 z-[80] flex items-end bg-slate-950/35 p-3 backdrop-blur-[2px] sm:items-center sm:justify-center sm:p-6"
       role="presentation"
-      onMouseDown={(event) => {
-        if (event.target === event.currentTarget) {
-          dismiss();
-        }
-      }}
     >
       <section
         aria-labelledby="development-notice-title"
@@ -87,15 +67,6 @@ export function DevelopmentNotice() {
         role="dialog"
         aria-modal="true"
       >
-        <button
-          type="button"
-          onClick={dismiss}
-          className="absolute right-3 top-3 inline-flex size-9 items-center justify-center rounded-full text-slate-500 transition hover:bg-slate-100 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
-          aria-label={t("close")}
-        >
-          <X className="size-4" aria-hidden="true" />
-        </button>
-
         <div className="h-1.5 bg-gradient-to-r from-cyan-700 via-sky-400 to-orange-500" />
 
         <div className="grid gap-5 p-6 sm:p-7">
@@ -134,7 +105,7 @@ export function DevelopmentNotice() {
             <Link
               href={oldSiteUrl}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               onClick={dismiss}
               className="inline-flex h-12 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-5 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
             >

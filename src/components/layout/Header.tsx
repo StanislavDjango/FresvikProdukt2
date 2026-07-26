@@ -3,6 +3,8 @@
 import {
   ArrowRight,
   ChevronDown,
+  ExternalLink,
+  Info,
   Mail,
   Menu,
   Phone,
@@ -438,6 +440,7 @@ function MobileLink({
 export function Header() {
   const pathname = usePathname();
   const t = useTranslations("Header");
+  const prototypeNotice = useTranslations("DevelopmentNotice");
   const locale = localeFromPathname(pathname);
   const navigation = getMainNavigation(locale);
   const norwegianHref = withLocale(pathname, "nn");
@@ -562,28 +565,25 @@ export function Header() {
       onMouseLeave={scheduleMouseLeaveClose}
       className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/96 shadow-sm shadow-slate-950/[0.03] backdrop-blur-xl"
     >
-      <div className="hidden border-b border-slate-200/70 bg-slate-950 text-white lg:block">
-        <div className="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-8 text-xs font-semibold">
-          <p className="inline-flex items-center gap-2 text-white/80">
-            <NorwayFlag className="h-3.5 w-5 ring-white/20" />
-            {t("topline")}
+      <div className="border-b border-slate-800 bg-slate-950 text-white">
+        <div className="mx-auto flex min-h-9 max-w-7xl items-center justify-between gap-4 px-4 py-2 text-[0.7rem] font-semibold leading-4 sm:px-5 lg:px-8 lg:text-xs">
+          <p className="flex items-start gap-2 text-white/90 sm:items-center">
+            <Info
+              aria-hidden="true"
+              size={14}
+              className="mt-px shrink-0 text-amber-300 sm:mt-0"
+            />
+            <span>{prototypeNotice("banner")}</span>
           </p>
-          <div className="flex items-center gap-5">
-            <a
-              href="mailto:post@fresvik.no"
-              className="inline-flex items-center gap-2 text-white/85 transition hover:text-white"
-            >
-              <Mail aria-hidden="true" size={14} />
-              post@fresvik.no
-            </a>
-            <a
-              href="tel:+4757698300"
-              className="inline-flex items-center gap-2 text-white/85 transition hover:text-white"
-            >
-              <Phone aria-hidden="true" size={14} />
-              57 69 83 00
-            </a>
-          </div>
+          <a
+            href="https://www.fresvik.no/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden shrink-0 items-center gap-1.5 text-white underline decoration-white/40 underline-offset-4 transition hover:decoration-white sm:inline-flex"
+          >
+            {prototypeNotice("officialLink")}
+            <ExternalLink aria-hidden="true" size={13} />
+          </a>
         </div>
       </div>
 

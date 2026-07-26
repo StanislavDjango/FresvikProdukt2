@@ -66,12 +66,14 @@
   },
   "DevelopmentNotice": {
     "close": "Lukk melding",
-    "eyebrow": "Utviklingsversjon",
-    "title": "Denne nettsida er under arbeid",
-    "description": "Du ser no ein modernisert utviklingsversjon av Fresvik Produkt si nettside. Innhald og funksjonar blir framleis kontrollert. For bestillingar, førespurnader og offisiell informasjon kan du framleis bruke den etablerte nettsida.",
-    "officialSite": "Offisiell eksisterande nettside:",
-    "openOldSite": "Opne gammal nettside",
-    "continue": "Hald fram her"
+    "eyebrow": "Uoffisiell designprototype",
+    "title": "Dette er ikkje den offisielle nettsida til Fresvik Produkt AS",
+    "description": "Dette er eit privat og uavhengig designforslag laga for å vise korleis ei modernisert nettside for Fresvik Produkt AS kan sjå ut. Prototypen er ikkje bestilt, godkjend eller publisert av Fresvik Produkt AS.",
+    "officialSite": "For førespurnader, bestillingar og offisiell informasjon, bruk den offisielle nettsida:",
+    "openOldSite": "Opne offisiell nettside",
+    "continue": "Sjå designprototypen",
+    "banner": "Uoffisiell designprototype – ikkje bestilt eller godkjend av Fresvik Produkt AS",
+    "officialLink": "Offisiell nettside"
   },
   "ContactForm": {
     "name": "Namn",

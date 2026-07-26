@@ -70,6 +70,7 @@ export default async function RootLayout({
 }>) {
   const requestHeaders = await headers();
   const requestLocale = requestHeaders.get("x-fresvik-locale");
+  const isAccessPage = requestHeaders.get("x-fresvik-access-page") === "true";
   const locale: Locale = requestLocale && isLocale(requestLocale)
     ? requestLocale
     : "nn";
@@ -80,7 +81,7 @@ export default async function RootLayout({
       className={`${geistSans.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full">
-        <SiteShell>{children}</SiteShell>
+        {isAccessPage ? children : <SiteShell>{children}</SiteShell>}
       </body>
     </html>
   );

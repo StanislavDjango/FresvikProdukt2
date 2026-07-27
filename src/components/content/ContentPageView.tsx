@@ -4955,7 +4955,11 @@ function ContentSections({
       );
     }
 
-    if (isReferenceDetailPage && sectionIs(section, "archive-links")) {
+    if (
+      isReferenceDetailPage &&
+      (sectionIs(section, "archive-links") ||
+        sectionIs(section, "reference-navigation"))
+    ) {
       return (
         <ReferenceLinksSection
           key={`${section.title}-${sectionIndex}`}
@@ -5035,7 +5039,11 @@ function ContentSections({
         );
       }
 
-      if (isReferenceDetailPage && sectionIs(section, "archive-images")) {
+      if (
+        isReferenceDetailPage &&
+        (sectionIs(section, "archive-images") ||
+          sectionIs(section, "project-images"))
+      ) {
         return (
           <ReferenceImageGallerySection
             key={`${section.title}-${sectionIndex}`}

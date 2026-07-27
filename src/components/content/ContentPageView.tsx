@@ -1279,7 +1279,7 @@ function ProductDetailTextSection({
   );
 }
 
-function GateProductInformationSection({
+function ProductInformationMatrixSection({
   section,
 }: {
   section: ContentPage["sections"][number];
@@ -1305,25 +1305,36 @@ function GateProductInformationSection({
           <div className="grid gap-px bg-slate-200 md:grid-cols-2 xl:grid-cols-3">
             {section.items.map((item, itemIndex) => {
               const paragraphs = item.text.split(/\n{2,}/).filter(Boolean);
-              const isLastItem = itemIndex === section.items.length - 1;
+              const shouldSpanLastItem =
+                (section.items.length === 1 ||
+                  (section.items.length > 3 &&
+                    section.items.length % 3 === 1)) &&
+                itemIndex === section.items.length - 1;
+              const showItemTitle =
+                section.items.length > 1 ||
+                item.title.trim().toLocaleLowerCase() !==
+                  title.trim().toLocaleLowerCase();
 
               return (
                 <article
                   key={contentCardKey(item, itemIndex, section.title)}
                   className={cn(
                     "group relative bg-white px-6 py-7 transition-colors hover:bg-cyan-50/40 sm:px-8",
-                    isLastItem &&
+                    shouldSpanLastItem &&
                       "md:col-span-2 xl:col-span-3 xl:grid xl:grid-cols-[0.28fr_0.72fr] xl:gap-10",
                   )}
                 >
                   <div className="absolute inset-y-0 left-0 w-1 bg-cyan-700 opacity-0 transition-opacity group-hover:opacity-100" />
-                  <h3 className="text-xl font-semibold tracking-normal text-slate-950">
-                    {item.title}
-                  </h3>
+                  {showItemTitle ? (
+                    <h3 className="text-xl font-semibold tracking-normal text-slate-950">
+                      {item.title}
+                    </h3>
+                  ) : null}
                   <div
                     className={cn(
-                      "mt-3 space-y-3 text-sm leading-7 text-slate-600 sm:text-base",
-                      isLastItem && "xl:mt-0 xl:max-w-4xl",
+                      "space-y-3 text-sm leading-7 text-slate-600 sm:text-base",
+                      showItemTitle && "mt-3",
+                      shouldSpanLastItem && "xl:mt-0 xl:max-w-4xl",
                     )}
                   >
                     {paragraphs.map((paragraph, paragraphIndex) => (
@@ -4806,9 +4817,15 @@ function ContentSections({
         );
       }
 
-      if (isPortPage && sectionIs(section, "accessory-info")) {
+      const usesInformationMatrix =
+        isDesignedProductPage &&
+        !sectionIs(section, "technical-data") &&
+        section.items.length > 0 &&
+        section.items.every((item) => !item.imageUrl);
+
+      if (usesInformationMatrix) {
         return (
-          <GateProductInformationSection
+          <ProductInformationMatrixSection
             key={`${section.title}-${sectionIndex}`}
             section={section}
           />

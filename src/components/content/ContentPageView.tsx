@@ -1200,6 +1200,11 @@ function FrysetunnelFeatureRow({
           {features.map(({ section, item }, featureIndex) => {
             if (!item) return null;
             const paragraphs = item.text.split(/\n{2,}/).filter(Boolean);
+            const sectionLabel =
+              section.title.trim().toLocaleLowerCase() ===
+              item.title.trim().toLocaleLowerCase()
+                ? labels.freezingTunnel
+                : section.title;
 
             return (
               <article
@@ -1223,7 +1228,7 @@ function FrysetunnelFeatureRow({
 
                 <div className="flex grow flex-col p-5 sm:p-6">
                   <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-800">
-                    {section.title}
+                    {sectionLabel}
                   </p>
                   <h3 className="mt-3 text-xl font-semibold leading-snug text-slate-950">
                     {item.title}

@@ -1279,6 +1279,69 @@ function ProductDetailTextSection({
   );
 }
 
+function GateProductInformationSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const title = cleanMigrationTitle(section.title) || section.title;
+  const intro = cleanMigrationIntro(section.intro);
+
+  return (
+    <section className="border-b border-slate-200 bg-slate-50">
+      <Container className="py-14 lg:py-16">
+        <div className="overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-xl shadow-slate-950/[0.05]">
+          <div className="bg-slate-950 px-6 py-7 text-white sm:px-8 lg:px-10">
+            <h2 className="text-3xl font-semibold tracking-normal sm:text-4xl">
+              {title}
+            </h2>
+            {intro ? (
+              <p className="mt-3 max-w-3xl text-base leading-7 text-slate-300">
+                {intro}
+              </p>
+            ) : null}
+          </div>
+
+          <div className="grid gap-px bg-slate-200 md:grid-cols-2 xl:grid-cols-3">
+            {section.items.map((item, itemIndex) => {
+              const paragraphs = item.text.split(/\n{2,}/).filter(Boolean);
+              const isLastItem = itemIndex === section.items.length - 1;
+
+              return (
+                <article
+                  key={contentCardKey(item, itemIndex, section.title)}
+                  className={cn(
+                    "group relative bg-white px-6 py-7 transition-colors hover:bg-cyan-50/40 sm:px-8",
+                    isLastItem &&
+                      "md:col-span-2 xl:col-span-3 xl:grid xl:grid-cols-[0.28fr_0.72fr] xl:gap-10",
+                  )}
+                >
+                  <div className="absolute inset-y-0 left-0 w-1 bg-cyan-700 opacity-0 transition-opacity group-hover:opacity-100" />
+                  <h3 className="text-xl font-semibold tracking-normal text-slate-950">
+                    {item.title}
+                  </h3>
+                  <div
+                    className={cn(
+                      "mt-3 space-y-3 text-sm leading-7 text-slate-600 sm:text-base",
+                      isLastItem && "xl:mt-0 xl:max-w-4xl",
+                    )}
+                  >
+                    {paragraphs.map((paragraph, paragraphIndex) => (
+                      <p key={`${item.title}-gate-info-${paragraphIndex}`}>
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function ReferenceIntroSection({
   section,
   labels = getContentLabels(),
@@ -4739,6 +4802,15 @@ function ContentSections({
             key={`${section.title}-${sectionIndex}`}
             section={section}
             labels={labels}
+          />
+        );
+      }
+
+      if (isPortPage && sectionIs(section, "accessory-info")) {
+        return (
+          <GateProductInformationSection
+            key={`${section.title}-${sectionIndex}`}
+            section={section}
           />
         );
       }

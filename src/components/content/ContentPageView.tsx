@@ -2618,7 +2618,7 @@ function ProductRelatedSection({
 
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {section.items
-            .filter((item) => !isPublicArchiveOnlyItem(item))
+            .filter((item) => Boolean(item.href))
             .map((item, itemIndex) => (
             <Link
               key={contentCardKey(item, itemIndex, section.title)}

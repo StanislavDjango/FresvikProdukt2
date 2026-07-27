@@ -220,9 +220,97 @@ function isProductBenefitsContentSection(
   const title = cleanMigrationTitle(section.title).trim().toLowerCase();
 
   return (
-    sectionIs(section, "product-benefits") ||
     title === "produktfordelar" ||
-    title === "product benefits"
+    title === "product benefits" ||
+    (sectionIs(section, "product-benefits") &&
+      title !== "tekniske data" &&
+      title !== "technical data")
+  );
+}
+
+function isTechnicalDataContentSection(
+  section: ContentPage["sections"][number],
+) {
+  const title = cleanMigrationTitle(section.title).trim().toLowerCase();
+
+  return (
+    title === "tekniske data" ||
+    title === "technical data" ||
+    (sectionIs(section, "technical-data") &&
+      title !== "produktfordelar" &&
+      title !== "product benefits")
+  );
+}
+
+function isProductDocumentsContentSection(
+  section: ContentPage["sections"][number],
+) {
+  const title = cleanMigrationTitle(section.title).trim().toLowerCase();
+
+  return (
+    title === "dokument" ||
+    title === "document" ||
+    title === "documents" ||
+    (sectionIs(section, "documents") &&
+      !title.startsWith("dokumentlenker") &&
+      !title.startsWith("document links"))
+  );
+}
+
+function isRelatedAccessoriesContentSection(
+  section: ContentPage["sections"][number],
+) {
+  const title = cleanMigrationTitle(section.title).trim().toLowerCase();
+
+  return (
+    title === "tilleggsutstyr" ||
+    title === "accessories" ||
+    (sectionIs(section, "related-accessories") &&
+      title !== "tekniske data" &&
+      title !== "technical data")
+  );
+}
+
+function isPartnersContentSection(
+  section: ContentPage["sections"][number],
+) {
+  const title = cleanMigrationTitle(section.title).trim().toLowerCase();
+
+  return (
+    title === "for samarbeidspartnarar" ||
+    title === "for partners" ||
+    (sectionIs(section, "partners") &&
+      title !== "dokument" &&
+      title !== "document" &&
+      title !== "documents")
+  );
+}
+
+function isContactInformationContentSection(
+  section: ContentPage["sections"][number],
+) {
+  const title = cleanMigrationTitle(section.title).trim().toLowerCase();
+
+  return (
+    title === "kontaktinformasjon" ||
+    title === "contact information" ||
+    (sectionIs(section, "contact-information") &&
+      title !== "tilleggsutstyr" &&
+      title !== "accessories")
+  );
+}
+
+function isCertificateLinksContentSection(
+  section: ContentPage["sections"][number],
+) {
+  const title = cleanMigrationTitle(section.title).trim().toLowerCase();
+
+  return (
+    title.startsWith("sertifikat- og botnlenker") ||
+    title.startsWith("certificates and bottom links") ||
+    (sectionIs(section, "certificate-links") &&
+      title !== "for samarbeidspartnarar" &&
+      title !== "for partners")
   );
 }
 
@@ -1147,7 +1235,7 @@ function ProductDetailTextSection({
   showIndex?: boolean;
   showIntro?: boolean;
 }) {
-  const isTechnicalData = sectionIs(section, "technical-data");
+  const isTechnicalData = isTechnicalDataContentSection(section);
 
   if (isTechnicalData) {
     const [primaryItem, ...detailItems] = section.items;
@@ -4045,7 +4133,7 @@ function ContentSections({
             ) &&
             !(
               isDesignedProductPage &&
-              sectionIs(section, "partners")
+              isPartnersContentSection(section)
             ) &&
             !(
               isFrysetunnelPage &&
@@ -4525,7 +4613,8 @@ function ContentSections({
     const isPirIntro =
       isPirPage &&
       (isLegacyFullText ||
-        sectionIs(section, "product-intro-pir"));
+        (sectionIs(section, "product-intro-pir") &&
+          !isContactInformationContentSection(section)));
     const isPurIntro =
       isPurPage &&
       (isLegacyFullText ||
@@ -4691,7 +4780,24 @@ function ContentSections({
       );
     }
 
-    if (isDesignedProductPage && sectionIs(section, "documents")) {
+    if (
+      isDesignedProductPage &&
+      isTechnicalDataContentSection(section)
+    ) {
+      return (
+        <ProductDetailTextSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+          productName={isPurPage ? "Fresvik PUR-Panel" : undefined}
+          showIndex={false}
+        />
+      );
+    }
+
+    if (
+      isDesignedProductPage &&
+      isProductDocumentsContentSection(section)
+    ) {
       return (
         <ProductDocumentSection
           key={`${section.title}-${sectionIndex}`}
@@ -4703,7 +4809,7 @@ function ContentSections({
 
     if (
       isDesignedProductPage &&
-      sectionIs(section, "related-accessories")
+      isRelatedAccessoriesContentSection(section)
     ) {
       if (isDoorPage) {
         return (
@@ -4736,7 +4842,7 @@ function ContentSections({
 
     if (
       isDesignedProductPage &&
-      sectionIs(section, "certificate-links")
+      isCertificateLinksContentSection(section)
     ) {
       return (
         <ProductCertificateLinksSection
@@ -4749,7 +4855,7 @@ function ContentSections({
 
     if (
       isDesignedProductPage &&
-      sectionIs(section, "contact-information")
+      isContactInformationContentSection(section)
     ) {
       return null;
     }
@@ -4816,7 +4922,7 @@ function ContentSections({
 
       const usesInformationMatrix =
         isDesignedProductPage &&
-        !sectionIs(section, "technical-data") &&
+        !isTechnicalDataContentSection(section) &&
         section.items.length > 0 &&
         section.items.every((item) => !item.imageUrl);
 

@@ -5526,7 +5526,7 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
         </section>
       ) : null}
 
-      {isHomePage ? null : (
+      {isHomePage || sourceSlug === "/tilleggsutstyr" ? null : (
         <CTASection
           title={labels.ctaTitle}
           text={labels.ctaText}

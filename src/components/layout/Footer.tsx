@@ -20,7 +20,11 @@ import {
   type NavigationItem,
 } from "@/data/navigation";
 import { NorwayFlag } from "@/components/ui/NorwayFlag";
-import { localeFromPathname, withLocale } from "@/i18n/config";
+import {
+  localeFromPathname,
+  stripLocalePrefix,
+  withLocale,
+} from "@/i18n/config";
 
 function buildFooterGroups(locale: "nn" | "en"): Array<{
   title: string;
@@ -68,6 +72,8 @@ export function Footer() {
   const pathname = usePathname();
   const t = useTranslations("Footer");
   const locale = localeFromPathname(pathname);
+  const isAccessoryIndexPage =
+    stripLocalePrefix(pathname) === "/tilleggsutstyr";
   const footerGroups = buildFooterGroups(locale);
   const footerNavigation = getFooterNavigation(locale);
   const trustItems = [
@@ -88,57 +94,61 @@ export function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-slate-50">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-5 lg:px-8">
-        <section className="grid gap-6 rounded-[8px] border border-slate-200 bg-white p-5 shadow-xl shadow-slate-950/[0.06] sm:p-6 lg:grid-cols-[1.25fr_0.75fr] lg:p-8">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-cyan-800">
-              Fresvik Produkt
-            </p>
-            <h2 className="mt-3 max-w-2xl text-3xl font-semibold leading-tight text-slate-950 sm:text-4xl">
-              {t("headline")}
-            </h2>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
-              {t("intro")}
-            </p>
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href={withLocale("/kontakt", locale)}
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] bg-cyan-700 px-5 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
-              >
-                {t("sendRequest")}
-                <ArrowRight aria-hidden="true" size={17} />
-              </Link>
-              <a
-                href="tel:+4757698300"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] border border-slate-300 px-5 text-sm font-semibold text-slate-950 transition hover:border-cyan-700 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
-              >
-                <Phone aria-hidden="true" size={17} />
-                57 69 83 00
-              </a>
-            </div>
-          </div>
-
-          <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
-            {trustItems.map((item) => {
-              const Icon = item.icon;
-
-              return (
-                <div
-                  key={item.label}
-                  className="flex min-h-16 items-center gap-3 rounded-[8px] border border-slate-200 bg-slate-50 px-4 py-3"
+        {!isAccessoryIndexPage ? (
+          <section className="grid gap-6 rounded-[8px] border border-slate-200 bg-white p-5 shadow-xl shadow-slate-950/[0.06] sm:p-6 lg:grid-cols-[1.25fr_0.75fr] lg:p-8">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.14em] text-cyan-800">
+                Fresvik Produkt
+              </p>
+              <h2 className="mt-3 max-w-2xl text-3xl font-semibold leading-tight text-slate-950 sm:text-4xl">
+                {t("headline")}
+              </h2>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
+                {t("intro")}
+              </p>
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href={withLocale("/kontakt", locale)}
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] bg-cyan-700 px-5 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
                 >
-                  <span className="grid size-10 shrink-0 place-items-center rounded-[6px] bg-cyan-50 text-cyan-800">
-                    <Icon aria-hidden="true" size={19} />
-                  </span>
-                  <span className="text-sm font-semibold text-slate-900">
-                    {item.label}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        </section>
+                  {t("sendRequest")}
+                  <ArrowRight aria-hidden="true" size={17} />
+                </Link>
+                <a
+                  href="tel:+4757698300"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] border border-slate-300 px-5 text-sm font-semibold text-slate-950 transition hover:border-cyan-700 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+                >
+                  <Phone aria-hidden="true" size={17} />
+                  57 69 83 00
+                </a>
+              </div>
+            </div>
 
-        <section className="mt-6 rounded-[8px] bg-slate-950 p-5 text-white shadow-2xl shadow-slate-950/15 sm:p-6 lg:p-8">
+            <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
+              {trustItems.map((item) => {
+                const Icon = item.icon;
+
+                return (
+                  <div
+                    key={item.label}
+                    className="flex min-h-16 items-center gap-3 rounded-[8px] border border-slate-200 bg-slate-50 px-4 py-3"
+                  >
+                    <span className="grid size-10 shrink-0 place-items-center rounded-[6px] bg-cyan-50 text-cyan-800">
+                      <Icon aria-hidden="true" size={19} />
+                    </span>
+                    <span className="text-sm font-semibold text-slate-900">
+                      {item.label}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+        ) : null}
+
+        <section
+          className={`${isAccessoryIndexPage ? "" : "mt-6 "}rounded-[8px] bg-slate-950 p-5 text-white shadow-2xl shadow-slate-950/15 sm:p-6 lg:p-8`}
+        >
           <div className="grid gap-10 lg:grid-cols-[0.95fr_1.8fr]">
             <div className="grid content-between gap-8">
               <div>

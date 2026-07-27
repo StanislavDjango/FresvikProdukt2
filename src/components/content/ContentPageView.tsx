@@ -3410,7 +3410,7 @@ function ServiceInformationSection({
                 {installationTypes.map((text, index) => (
                   <div
                     key={`${section.title}-installation-type-${index}`}
-                    className="flex gap-4 border-b border-slate-200 py-5 first:pt-0 last:border-b-0 sm:border-b-0 sm:px-6 sm:first:pl-0 sm:last:pr-0"
+                    className="flex gap-4 border-b border-slate-200 py-5 last:border-b-0 sm:border-b-0 sm:px-6 sm:first:pl-0 sm:last:pr-0"
                   >
                     <span className="flex size-10 shrink-0 items-center justify-center rounded-[8px] bg-cyan-50 text-cyan-800">
                       <Wrench aria-hidden="true" size={20} />

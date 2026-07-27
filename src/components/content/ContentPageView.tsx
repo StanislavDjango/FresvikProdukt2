@@ -343,6 +343,12 @@ function isPublicArchiveOnlyItem(
   const title = item.title.toLowerCase();
   const text = item.text?.toLowerCase() || "";
 
+  // Migration wording is cleaned before rendering. It must not hide a usable
+  // document or destination that was preserved from the old site.
+  if (item.href) {
+    return false;
+  }
+
   return (
     hasPublicMigrationMarker(item.title) ||
     hasPublicMigrationMarker(item.text) ||

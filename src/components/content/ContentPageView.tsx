@@ -202,6 +202,30 @@ function cleanMigrationTitle(title: string) {
     .replace(" from Sanity", "");
 }
 
+function isLegacyFullTextSection(
+  section: ContentPage["sections"][number],
+) {
+  const title = cleanMigrationTitle(section.title).trim().toLowerCase();
+
+  return (
+    sectionIs(section, "archive-full-text") ||
+    title === "full tekst" ||
+    title === "full text"
+  );
+}
+
+function isProductBenefitsContentSection(
+  section: ContentPage["sections"][number],
+) {
+  const title = cleanMigrationTitle(section.title).trim().toLowerCase();
+
+  return (
+    sectionIs(section, "product-benefits") ||
+    title === "produktfordelar" ||
+    title === "product benefits"
+  );
+}
+
 function productCardFallback(title: string, labels: ContentLabels) {
   if (title.toLowerCase().includes("fleksibelt")) {
     return labels.locale === "en"
@@ -1774,38 +1798,46 @@ function ProductBenefitsSection({
 
   return (
     <section className="border-b border-slate-200 bg-slate-50">
-      <Container className="py-12 lg:py-14">
-        <div className="grid gap-8 rounded-[8px] border border-slate-200 bg-white p-6 shadow-sm shadow-slate-950/[0.04] sm:p-8 lg:grid-cols-[0.35fr_0.65fr]">
-          <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-              {labels.benefits}
+      <Container className="py-14 lg:py-16">
+        <div className="max-w-3xl">
+          <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+            {labels.benefits}
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+            {cleanMigrationTitle(section.title)}
+          </h2>
+          {displayIntro ? (
+            <p className="mt-4 text-base leading-7 text-slate-600">
+              {displayIntro}
             </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950">
-              {cleanMigrationTitle(section.title)}
-            </h2>
-            {displayIntro ? (
-              <p className="mt-4 text-base leading-7 text-slate-600">
-                {displayIntro}
-              </p>
-            ) : null}
-          </div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {section.items.map((item, itemIndex) => (
-              <article
-                key={contentCardKey(item, itemIndex, section.title)}
-                className="rounded-[8px] border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:bg-white hover:shadow-lg hover:shadow-slate-950/[0.06]"
+          ) : null}
+        </div>
+
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {section.items.map((item, itemIndex) => (
+            <article
+              key={contentCardKey(item, itemIndex, section.title)}
+              className="group flex min-h-28 items-start gap-4 rounded-[8px] border border-slate-200 bg-white p-5 shadow-sm shadow-slate-950/[0.03] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lg hover:shadow-slate-950/[0.06]"
+            >
+              {showIndex ? (
+                <p className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
+                  {String(itemIndex + 1).padStart(2, "0")}
+                </p>
+              ) : (
+                <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-cyan-50 text-cyan-800 transition group-hover:bg-cyan-800 group-hover:text-white">
+                  <CheckCircle2 aria-hidden="true" size={18} />
+                </span>
+              )}
+              <h3
+                className={cn(
+                  "text-base font-semibold leading-snug text-slate-950",
+                  showIndex && "mt-2",
+                )}
               >
-                {showIndex ? (
-                  <p className="text-xs font-black uppercase tracking-[0.14em] text-cyan-800">
-                    {String(itemIndex + 1).padStart(2, "0")}
-                  </p>
-                ) : null}
-                <h3 className="mt-2 text-base font-semibold leading-snug text-slate-950">
-                  {item.title}
-                </h3>
-              </article>
-            ))}
-          </div>
+                {item.title}
+              </h3>
+            </article>
+          ))}
         </div>
       </Container>
     </section>
@@ -4489,26 +4521,27 @@ function ContentSections({
       );
     }
 
+    const isLegacyFullText = isLegacyFullTextSection(section);
     const isPirIntro =
       isPirPage &&
-      (sectionIs(section, "archive-full-text") ||
+      (isLegacyFullText ||
         sectionIs(section, "product-intro-pir"));
     const isPurIntro =
       isPurPage &&
-      (sectionIs(section, "archive-full-text") ||
+      (isLegacyFullText ||
         sectionIs(section, "product-intro-pur"));
     const isPortIntro =
       isPortPage &&
-      (sectionIs(section, "archive-full-text") ||
+      (isLegacyFullText ||
         sectionIs(section, "product-intro-gates"));
     const isDoorIntro =
       isDoorPage &&
-      (sectionIs(section, "archive-full-text") ||
+      (isLegacyFullText ||
         sectionIs(section, "product-intro-doors"));
     const isFacadeIntro =
-      isFacadePage && sectionIs(section, "archive-full-text");
+      isFacadePage && isLegacyFullText;
     const isFrysetunnelIntro =
-      isFrysetunnelPage && sectionIs(section, "archive-full-text");
+      isFrysetunnelPage && isLegacyFullText;
 
     if (
       isPirIntro ||
@@ -4538,6 +4571,20 @@ function ContentSections({
           key={`${section.title}-${sectionIndex}`}
           section={section}
           highlight={isPirIntro ? pirProducerHighlight : undefined}
+          labels={labels}
+        />
+      );
+    }
+
+    if (
+      isDesignedProductPage &&
+      isProductBenefitsContentSection(section)
+    ) {
+      return (
+        <ProductBenefitsSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+          showIndex={false}
           labels={labels}
         />
       );

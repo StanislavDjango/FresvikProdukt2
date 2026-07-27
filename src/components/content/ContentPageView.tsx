@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { CTASection } from "@/components/CTASection";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -3337,48 +3338,6 @@ function AccessoryOrderSection({
   );
 }
 
-function AccessoryContactSection({
-  labels = getContentLabels(),
-}: {
-  labels?: ContentLabels;
-}) {
-  return (
-    <section className="border-b border-slate-200 bg-white">
-      <Container className="py-12">
-        <div className="grid gap-6 rounded-[8px] border border-slate-200 bg-slate-950 p-6 text-white shadow-xl shadow-slate-950/[0.08] sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
-          <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
-              {labels.sparePartsEyebrow}
-            </p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-normal sm:text-3xl">
-              {labels.helpFindRightPart}
-            </h2>
-            <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-300 sm:text-base">
-              {labels.accessoryContactIntro}
-            </p>
-          </div>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <a
-              href="mailto:post@fresvik.no"
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-white px-4 text-sm font-semibold text-slate-950 transition hover:bg-cyan-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
-            >
-              post@fresvik.no
-              <ExternalLink aria-hidden="true" size={16} />
-            </a>
-            <a
-              href="tel:+4757698300"
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-white/20 px-4 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
-            >
-              57 69 83 00
-              <ArrowRight aria-hidden="true" size={16} />
-            </a>
-          </div>
-        </div>
-      </Container>
-    </section>
-  );
-}
-
 function ProductIndexContactSection({
   labels = getContentLabels(),
 }: {
@@ -4094,7 +4053,8 @@ function ContentSections({
             !(
               isAccessoryIndexPage &&
               (isPublicArchiveOnlySection(section) ||
-                sectionIs(section, "accessory-overview"))
+                sectionIs(section, "accessory-overview") ||
+                sectionIs(section, "contact"))
             ) &&
             !(
               isAccessoryPage &&
@@ -4369,15 +4329,6 @@ function ContentSections({
         <AccessoryOrderSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
-          labels={labels}
-        />
-      );
-    }
-
-    if (isAccessoryIndexPage && sectionIs(section, "contact")) {
-      return (
-        <AccessoryContactSection
-          key={`${section.title}-${sectionIndex}`}
           labels={labels}
         />
       );
@@ -5525,6 +5476,14 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
         </section>
       ) : null}
 
+      {isHomePage ? null : (
+        <CTASection
+          title={labels.ctaTitle}
+          text={labels.ctaText}
+          contactLabel={labels.contactUs}
+          contactHref={withLocale("/kontakt", localeFromPathname(page.slug))}
+        />
+      )}
     </main>
   );
 }

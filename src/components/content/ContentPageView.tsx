@@ -1261,8 +1261,10 @@ function FrysetunnelFeatureRow({
 
 function FacadeCoreSection({
   section,
+  eyebrow,
 }: {
   section: ContentPage["sections"][number];
+  eyebrow: string;
 }) {
   const item = section.items[0];
   const paragraphs = item?.text.split(/\n{2,}/).filter(Boolean) || [];
@@ -1286,10 +1288,10 @@ function FacadeCoreSection({
           ) : null}
           <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-              Kjerne og materiale
+              {eyebrow}
             </p>
             <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
-              {section.title}
+              {item.title}
             </h2>
             <div className="mt-5 space-y-4 text-base leading-8 text-slate-700">
               {paragraphs.map((paragraph, paragraphIndex) => (
@@ -4818,11 +4820,20 @@ function ContentSections({
       );
     }
 
-    if (isFacadePage && sectionIs(section, "facade-core")) {
+    if (
+      isFacadePage &&
+      (sectionIs(section, "product-intro-facade") ||
+        sectionIs(section, "facade-core"))
+    ) {
       return (
         <FacadeCoreSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
+          eyebrow={
+            sectionIs(section, "product-intro-facade")
+              ? labels.productInformation
+              : labels.facadeCoreEyebrow
+          }
         />
       );
     }

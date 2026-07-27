@@ -1103,6 +1103,64 @@ function ProductIntroSection({
   );
 }
 
+function isFrysetunnelFeatureSection(
+  section: ContentPage["sections"][number],
+) {
+  return (
+    sectionIs(section, "frysetunnel-feature") ||
+    sectionIs(section, "section-spesialtilpassa-d-rer")
+  );
+}
+
+function FrysetunnelControlledSection({
+  section,
+  labels = getContentLabels(),
+}: {
+  section: ContentPage["sections"][number];
+  labels?: ContentLabels;
+}) {
+  const item = section.items[0];
+  const paragraphs = item?.text.split(/\n{2,}/).filter(Boolean) || [];
+
+  if (!item) return null;
+
+  return (
+    <section className="border-b border-slate-800 bg-slate-950 text-white">
+      <Container className="py-12 lg:py-16">
+        <article className="grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
+          <div className="max-w-2xl">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">
+              {labels.freezingTunnel}
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-normal sm:text-4xl">
+              {item.title}
+            </h2>
+            <div className="mt-5 space-y-4 text-base leading-8 text-slate-300">
+              {paragraphs.map((paragraph, paragraphIndex) => (
+                <p key={`${item.title}-controlled-${paragraphIndex}`}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
+
+          {item.imageUrl ? (
+            <div className="relative aspect-[16/9] overflow-hidden rounded-[8px] border border-white/15 bg-slate-900">
+              <Image
+                src={item.imageUrl}
+                alt={item.imageAlt || item.title}
+                fill
+                sizes="(min-width: 1024px) 52vw, 100vw"
+                className="object-cover object-center"
+              />
+            </div>
+          ) : null}
+        </article>
+      </Container>
+    </section>
+  );
+}
+
 function FrysetunnelFeatureRow({
   sections,
   labels = getContentLabels(),
@@ -1111,7 +1169,7 @@ function FrysetunnelFeatureRow({
   labels?: ContentLabels;
 }) {
   const features = sections
-    .filter((section) => sectionIs(section, "frysetunnel-feature"))
+    .filter(isFrysetunnelFeatureSection)
     .map((section) => ({
       section,
       item: section.items[0],
@@ -4155,7 +4213,7 @@ function ContentSections({
             ) &&
             !(
               isFrysetunnelPage &&
-              sectionIs(section, "frysetunnel-feature")
+              isFrysetunnelFeatureSection(section)
             ) &&
             !(
               isFacadePage &&
@@ -4648,7 +4706,9 @@ function ContentSections({
     const isFacadeIntro =
       isFacadePage && isLegacyFullText;
     const isFrysetunnelIntro =
-      isFrysetunnelPage && isLegacyFullText;
+      isFrysetunnelPage &&
+      (isLegacyFullText ||
+        sectionIs(section, "product-intro-freezing-tunnel"));
 
     if (
       isPirIntro ||
@@ -4659,18 +4719,13 @@ function ContentSections({
       isFrysetunnelIntro
     ) {
       if (isFrysetunnelIntro) {
-        return [
+        return (
           <ProductIntroSection
             key={`${section.title}-${sectionIndex}`}
             section={section}
             labels={labels}
-          />,
-          <FrysetunnelFeatureRow
-            key="frysetunnel-feature-row"
-            sections={sections}
-            labels={labels}
-          />,
-        ];
+          />
+        );
       }
 
       return (
@@ -4681,6 +4736,24 @@ function ContentSections({
           labels={labels}
         />
       );
+    }
+
+    if (
+      isFrysetunnelPage &&
+      sectionIs(section, "section-kontrollert-innfrysing")
+    ) {
+      return [
+        <FrysetunnelControlledSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+          labels={labels}
+        />,
+        <FrysetunnelFeatureRow
+          key="frysetunnel-feature-row"
+          sections={sections}
+          labels={labels}
+        />,
+      ];
     }
 
     if (

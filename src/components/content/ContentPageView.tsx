@@ -290,8 +290,20 @@ function isContactInformationContentSection(
   section: ContentPage["sections"][number],
 ) {
   const title = cleanMigrationTitle(section.title).trim().toLowerCase();
+  const hasLegacyCompanyContact = section.items.some((item) => {
+    const itemTitle = item.title.trim().toLowerCase();
+    const itemText = item.text.trim().toLowerCase();
+
+    return (
+      itemTitle === "fresvik produkt as" &&
+      (itemText.includes("fresvikvegen 995") ||
+        itemText.includes("57 69 83 00") ||
+        itemText.includes("post@fresvik.no"))
+    );
+  });
 
   return (
+    hasLegacyCompanyContact ||
     title === "kontaktinformasjon" ||
     title === "contact information" ||
     (sectionIs(section, "contact-information") &&

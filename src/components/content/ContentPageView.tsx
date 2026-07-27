@@ -3462,6 +3462,93 @@ function ServiceInformationSection({
   );
 }
 
+function DeliveryInformationSection({
+  section,
+}: {
+  section: ContentPage["sections"][number];
+}) {
+  const item = section.items[0];
+
+  if (!item) return null;
+
+  const paragraphs = (item.text || "")
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean)
+    .filter((paragraph) => {
+      const normalized = paragraph.toLowerCase();
+
+      return ![
+        "har du eit prosjekt du vil diskutere med oss",
+        "do you have a project you would like to discuss with us",
+      ].some((marker) => normalized.includes(marker));
+    });
+  const [intro, ...content] = paragraphs;
+  const highlights = content.slice(0, 2);
+  const details = content.slice(2);
+  const title =
+    cleanMigrationTitle(item.title).split("|")[0]?.trim() ||
+    cleanMigrationTitle(section.title);
+
+  return (
+    <section className="border-b border-slate-200 bg-white">
+      <Container className="py-14 lg:py-16">
+        <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+              {cleanMigrationTitle(section.title)}
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+              {title}
+            </h2>
+            {intro ? (
+              <p className="mt-5 max-w-xl text-base leading-7 text-slate-700">
+                {intro}
+              </p>
+            ) : null}
+          </div>
+
+          <div className="border-y border-slate-200">
+            {highlights.length > 0 ? (
+              <div className="grid sm:grid-cols-2 sm:divide-x sm:divide-slate-200">
+                {highlights.map((text, index) => (
+                  <div
+                    key={`${section.title}-delivery-highlight-${index}`}
+                    className="flex gap-4 border-b border-slate-200 py-5 last:border-b-0 sm:border-b-0 sm:px-6 sm:first:pl-0 sm:last:pr-0"
+                  >
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-[8px] bg-cyan-50 text-cyan-800">
+                      <CheckCircle2 aria-hidden="true" size={20} />
+                    </span>
+                    <p className="pt-2 text-sm font-semibold leading-6 text-slate-950">
+                      {text.replace(
+                        "monteringsansvisningar",
+                        "monteringsanvisningar",
+                      )}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            ) : null}
+
+            {details.length > 0 ? (
+              <div className="space-y-4 border-t border-slate-200 py-6">
+                {details.map((text, index) => (
+                  <p
+                    key={`${section.title}-delivery-detail-${index}`}
+                    className="max-w-3xl text-base leading-7 text-slate-700"
+                  >
+                    {text}
+                  </p>
+                ))}
+              </div>
+            ) : null}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function AccessoryOverviewSection({
   section,
   labels = getContentLabels(),
@@ -4775,6 +4862,15 @@ function ContentSections({
 
     if (isLeveranseServicePage && sectionIs(section, "contact")) {
       return null;
+    }
+
+    if (isLeveranseServicePage && sectionIs(section, "service-details")) {
+      return (
+        <DeliveryInformationSection
+          key={`${section.title}-${sectionIndex}`}
+          section={section}
+        />
+      );
     }
 
     if (isServicePartsPage && sectionIs(section, "contact")) {

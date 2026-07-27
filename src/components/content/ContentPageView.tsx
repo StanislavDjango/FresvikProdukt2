@@ -3355,45 +3355,106 @@ function ServiceApprovalSection({
   );
 }
 
-function ServiceContactCtaSection({
+function ServiceInformationSection({
   section,
-  labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
-  labels?: ContentLabels;
 }) {
-  const text = section.items[0]?.text || labels.contactMoreInfo;
+  const item = section.items[0];
+
+  if (!item) return null;
+
+  const paragraphs = (item.text || "")
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean)
+    .filter((paragraph) => {
+      const normalized = paragraph.toLowerCase();
+
+      return ![
+        "more information about installation",
+        "contact our sales department",
+        "meir informasjon om montasje",
+        "ta kontakt med vår salsavdeling",
+      ].some((marker) => normalized.includes(marker));
+    });
+  const [intro, ...content] = paragraphs;
+  const installationTypes = content.slice(0, 2);
+  const serviceDetails = content.slice(2, 4);
+  const qualifications = content.slice(4);
+  const title =
+    cleanMigrationTitle(item.title).split("|")[0]?.trim() ||
+    cleanMigrationTitle(section.title);
 
   return (
     <section className="border-b border-slate-200 bg-white">
-      <Container className="py-12">
-        <div className="grid gap-5 rounded-[8px] border border-cyan-100 bg-cyan-50 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+      <Container className="py-14 lg:py-16">
+        <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-              {labels.installationEyebrow}
+              {cleanMigrationTitle(section.title)}
             </p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-normal text-slate-950 sm:text-3xl">
-              {labels.moreInstallationInfo}
+            <h2 className="mt-3 text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+              {title}
             </h2>
-            <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
-              {text}
-            </p>
+            {intro ? (
+              <p className="mt-5 max-w-xl text-base leading-7 text-slate-700">
+                {intro}
+              </p>
+            ) : null}
           </div>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <Link
-              href={localizedContentHref("/kontakt", labels)}
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
-            >
-              {labels.contactUs}
-              <ArrowRight aria-hidden="true" size={17} />
-            </Link>
-            <a
-              href="tel:+4757698300"
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition hover:border-cyan-800 hover:text-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
-            >
-              <PhoneCall aria-hidden="true" size={17} />
-              57 69 83 00
-            </a>
+
+          <div className="border-y border-slate-200">
+            {installationTypes.length > 0 ? (
+              <div className="grid sm:grid-cols-2 sm:divide-x sm:divide-slate-200">
+                {installationTypes.map((text, index) => (
+                  <div
+                    key={`${section.title}-installation-type-${index}`}
+                    className="flex gap-4 border-b border-slate-200 py-5 first:pt-0 last:border-b-0 sm:border-b-0 sm:px-6 sm:first:pl-0 sm:last:pr-0"
+                  >
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-[8px] bg-cyan-50 text-cyan-800">
+                      <Wrench aria-hidden="true" size={20} />
+                    </span>
+                    <p className="pt-2 text-sm font-semibold leading-6 text-slate-950">
+                      {text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            ) : null}
+
+            {serviceDetails.length > 0 ? (
+              <div className="space-y-4 border-t border-slate-200 py-6">
+                {serviceDetails.map((text, index) => (
+                  <p
+                    key={`${section.title}-service-detail-${index}`}
+                    className="max-w-3xl text-base leading-7 text-slate-700"
+                  >
+                    {text}
+                  </p>
+                ))}
+              </div>
+            ) : null}
+
+            {qualifications.length > 0 ? (
+              <div className="grid border-t border-slate-200 sm:grid-cols-3 sm:divide-x sm:divide-slate-200">
+                {qualifications.map((text, index) => (
+                  <div
+                    key={`${section.title}-qualification-${index}`}
+                    className="flex gap-3 border-b border-slate-200 py-5 last:border-b-0 sm:border-b-0 sm:px-5 sm:first:pl-0 sm:last:pr-0"
+                  >
+                    <CheckCircle2
+                      aria-hidden="true"
+                      className="mt-0.5 shrink-0 text-cyan-800"
+                      size={19}
+                    />
+                    <p className="text-sm font-semibold leading-6 text-slate-950">
+                      {text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            ) : null}
           </div>
         </div>
       </Container>
@@ -4324,6 +4385,13 @@ function ContentSections({
         )
       : sections.filter((section) => !isPublicArchiveOnlySection(section));
 
+  const montasjeServiceDetailsSection = isMontasjeServicePage
+    ? visibleSections.find((section) => sectionIs(section, "service-details"))
+    : undefined;
+  const montasjeServiceCtaSection = isMontasjeServicePage
+    ? visibleSections.find((section) => sectionIs(section, "installation-cta"))
+    : undefined;
+
   return visibleSections.map((section, sectionIndex) => {
     if (isCompanyOverviewPage && sectionIs(section, "company-overview")) {
       return (
@@ -4684,11 +4752,19 @@ function ContentSections({
       isMontasjeServicePage &&
       sectionIs(section, "installation-cta")
     ) {
-      return (
-        <ServiceContactCtaSection
+      return montasjeServiceDetailsSection ? (
+        <ServiceInformationSection
+          key={`${section.title}-${sectionIndex}`}
+          section={montasjeServiceDetailsSection}
+        />
+      ) : null;
+    }
+
+    if (isMontasjeServicePage && sectionIs(section, "service-details")) {
+      return montasjeServiceCtaSection ? null : (
+        <ServiceInformationSection
           key={`${section.title}-${sectionIndex}`}
           section={section}
-          labels={labels}
         />
       );
     }

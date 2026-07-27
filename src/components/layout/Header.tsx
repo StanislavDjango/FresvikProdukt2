@@ -660,13 +660,6 @@ export function Header() {
             <Mail aria-hidden="true" size={17} />
             post@fresvik.no
           </a>
-          <a
-            href="tel:+4757698300"
-            className="inline-flex h-[3.25rem] items-center gap-2 whitespace-nowrap rounded-[10px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus:ring-2 focus:ring-cyan-700 focus:ring-offset-2"
-          >
-            <Phone aria-hidden="true" size={17} />
-            {t("call")}
-          </a>
           <span
             aria-label="Norsk produsent"
             className="inline-flex h-[3.25rem] w-20 shrink-0 items-center justify-center"

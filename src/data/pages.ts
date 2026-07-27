@@ -1542,7 +1542,7 @@ const pirSections = [
         title: "Beslag",
         text: "Lenke frå gammal PIR-side.",
         href: "/andre-produkter/beslag",
-        imageUrl: "/assets/fresvik/images/old-site/file-f5f844b125.png",
+        imageUrl: "/assets/fresvik/images/old-site/profil3+copy.jpg",
         imageAlt: "Beslag",
       },
     ],

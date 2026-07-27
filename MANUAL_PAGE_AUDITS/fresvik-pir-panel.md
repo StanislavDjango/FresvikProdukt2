@@ -50,7 +50,7 @@ Runtime note: для этой страницы локальная migration stru
 | Product/room image | `/assets/fresvik/images/old-site/notfjaer1-65fa348e3a.jpg` | migrated | Извлечено из старой PIR-страницы. |
 | PIR/B-s1,d0 banner | `/assets/fresvik/images/old-site/logo-orginal-ce990b3ca3.png` | migrated | Старый верхний графический баннер PIR-Panel / B-s1,d0. |
 | PIR/product block image | `/assets/fresvik/images/old-site/image-asset-4-8d1e9d773c.jpeg` | migrated | Извлечено из старой PIR-страницы. |
-| Beslag teaser image | `/assets/fresvik/images/old-site/file-f5f844b125.png` | migrated | Извлечено из старой PIR-страницы. |
+| Beslag teaser image | `/assets/fresvik/images/old-site/profil3+copy.jpg` | migrated | Фото профиля Beslag со старой страницы продукта. |
 | Elebar teaser | `/assets/fresvik/images/migrated/elebar-ventil-inne-web.jpg` | migrated | Используется для старой teaser-ссылки. |
 | MaxiElebar teaser | `/assets/fresvik/images/migrated/maxielebar-ventil-inne-web.jpg` | migrated | Используется для старой teaser-ссылки. |
 | PEGO teaser | `/assets/fresvik/images/migrated/pego-innestengningsalarm-web.jpg` | migrated | Используется для старой teaser-ссылки. |

@@ -1561,26 +1561,33 @@ function ReferenceIntroSection({
   return (
     <section className="border-b border-slate-200 bg-white">
       <Container className="py-14 lg:py-16">
-        <article className="grid overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-xl shadow-slate-950/[0.06] lg:grid-cols-[0.95fr_1.05fr]">
+        <article className="overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-xl shadow-slate-950/[0.06]">
           {item.imageUrl ? (
-            <div className="relative min-h-72 bg-slate-100 lg:min-h-full">
+            <div className="relative aspect-[16/7] overflow-hidden bg-slate-100">
               <Image
                 src={item.imageUrl}
                 alt={item.imageAlt || item.title}
                 fill
-                sizes="(min-width: 1024px) 42vw, 100vw"
+                sizes="(min-width: 1280px) 1152px, 100vw"
                 className="object-cover object-center"
               />
             </div>
           ) : null}
-          <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
-              {labels.projectInformation}
-            </p>
-            <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
-              {item.title}
-            </h2>
-            <div className="mt-5 space-y-4 text-base leading-8 text-slate-700">
+          <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-[0.32fr_0.68fr] lg:gap-12 lg:p-10">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                {labels.projectInformation}
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+                {item.title}
+              </h2>
+              {item.meta ? (
+                <p className="mt-4 inline-flex rounded-[6px] bg-cyan-50 px-3 py-2 text-sm font-semibold text-cyan-900">
+                  {item.meta}
+                </p>
+              ) : null}
+            </div>
+            <div className="space-y-4 text-base leading-8 text-slate-700">
               {paragraphs.map((paragraph, paragraphIndex) => (
                 <p key={`${item.title}-reference-${paragraphIndex}`}>
                   {paragraph}
@@ -1596,11 +1603,19 @@ function ReferenceIntroSection({
 
 function ReferenceImageGallerySection({
   section,
+  primaryImageUrl,
   labels = getContentLabels(),
 }: {
   section: ContentPage["sections"][number];
+  primaryImageUrl?: string;
   labels?: ContentLabels;
 }) {
+  const items = section.items.filter(
+    (item) => item.imageUrl && item.imageUrl !== primaryImageUrl,
+  );
+
+  if (items.length === 0) return null;
+
   return (
     <section className="border-b border-slate-200 bg-slate-50">
       <Container className="py-14 lg:py-16">
@@ -1608,8 +1623,8 @@ function ReferenceImageGallerySection({
           eyebrow={labels.referenceEyebrow}
           title={labels.projectImages}
         />
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
-          {section.items.map((item, itemIndex) => (
+        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {items.map((item, itemIndex) => (
             <article
               key={contentCardKey(item, itemIndex, section.title)}
               className="group overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04] transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-xl hover:shadow-slate-950/[0.08]"
@@ -1640,7 +1655,12 @@ function ReferenceLinksSection({
   section: ContentPage["sections"][number];
   labels?: ContentLabels;
 }) {
-  const items = section.items.filter((item) => item.href);
+  const items = section.items.filter(
+    (item) =>
+      item.href &&
+      item.href !== "/kontakt" &&
+      item.href !== "/en/contact",
+  );
 
   if (items.length === 0) return null;
 
@@ -4164,6 +4184,15 @@ function ContentSections({
   const isAccessoryPage = sourceSlug.startsWith("/andre-produkter/");
   const isReferenceDetailPage =
     sourceSlug.startsWith("/referansar/") && sourceSlug !== "/referansar";
+  const referencePrimaryImageUrl = isReferenceDetailPage
+    ? sections
+        .find(
+          (section) =>
+            sectionIs(section, "archive-full-text") ||
+            sectionIs(section, "project-body"),
+        )
+        ?.items.find((item) => item.imageUrl)?.imageUrl
+    : undefined;
   const accessoryImagesSection = isAccessoryPage
     ? sections.find((section) => sectionIs(section, "accessory-images"))
     : undefined;
@@ -5011,6 +5040,7 @@ function ContentSections({
           <ReferenceImageGallerySection
             key={`${section.title}-${sectionIndex}`}
             section={section}
+            primaryImageUrl={referencePrimaryImageUrl}
             labels={labels}
           />
         );
@@ -5589,6 +5619,13 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
     page.cards.length > 0 &&
     !suppressTopCards;
   const customHero = hero ?? null;
+  const heroIntro =
+    isReferenceDetailPage && page.intro.includes("\n")
+      ? page.intro
+          .split(/\n+/)
+          .map((paragraph) => paragraph.trim())
+          .find(Boolean) || page.intro
+      : page.intro;
   const jsonLd =
     page.pageType === "product"
       ? {
@@ -5626,7 +5663,7 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
                     {page.title}
                   </h1>
                   <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg">
-                    {page.intro}
+                    {heroIntro}
                   </p>
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">

@@ -13,7 +13,6 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { CTASection } from "@/components/CTASection";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -5526,14 +5525,6 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
         </section>
       ) : null}
 
-      {isHomePage || sourceSlug === "/tilleggsutstyr" ? null : (
-        <CTASection
-          title={labels.ctaTitle}
-          text={labels.ctaText}
-          contactLabel={labels.contactUs}
-          contactHref={withLocale("/kontakt", localeFromPathname(page.slug))}
-        />
-      )}
     </main>
   );
 }

@@ -38,6 +38,23 @@ type ContentLabels = (typeof messages)[Locale]["Content"] & {
   locale: Locale;
 };
 
+const editorialNewsSlugs = new Set([
+  "arne-olav-ny-salskonsulent",
+  "samaneh-shakeri-ny-teknisk-sjef",
+  "ny-teknisk-teiknar-havard-berdal",
+  "john-bothun-blir-pensjonist",
+  "agnar-er-snart-pensjonistnbsp",
+  "fresvik-kjolerom-til-fruktbonde",
+  "tomas-kruvellis-vaar-nye-mann",
+]);
+
+function isEditorialNewsPath(pathname: string) {
+  const pathParts = pathname.replace(/\/+$/, "").split("/").filter(Boolean);
+  const slug = pathParts[pathParts.length - 1];
+
+  return Boolean(slug && editorialNewsSlugs.has(slug));
+}
+
 function getContentLabels(locale: Locale = "nn"): ContentLabels {
   return {
     ...messages[locale].Content,
@@ -4373,9 +4390,7 @@ function ContentSections({
   const isNewsIndexPage = sourceSlug === "/aktuelt";
   const isNewsDetailPage =
     sourceSlug.startsWith("/aktuelt/") && sourceSlug !== "/aktuelt";
-  const isArneOlavNewsPage = sourceSlug.endsWith(
-    "/arne-olav-ny-salskonsulent",
-  );
+  const isEditorialNewsPage = isEditorialNewsPath(sourceSlug);
   const isProductIndexPage = sourceSlug === "/produkt";
   const isTransportDamagePage = sourceSlug === "/transportskade";
   const isCompanyOverviewPage = sourceSlug === "/om-oss";
@@ -4649,7 +4664,7 @@ function ContentSections({
           page={page}
           section={section}
           labels={labels}
-          editorial={isArneOlavNewsPage}
+          editorial={isEditorialNewsPage}
         />
       );
     }
@@ -5852,9 +5867,7 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
   const isAccessoryPage = sourceSlug.startsWith("/andre-produkter/");
   const isReferenceDetailPage =
     sourceSlug.startsWith("/referansar/") && sourceSlug !== "/referansar";
-  const isArneOlavNewsPage = sourceSlug.endsWith(
-    "/arne-olav-ny-salskonsulent",
-  );
+  const isEditorialNewsPage = isEditorialNewsPath(sourceSlug);
   const isCompanyOrLegalPage =
     page.pageType === "company" || page.pageType === "legal";
   const suppressTopCards =
@@ -5913,7 +5926,7 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
         />
       ) : null}
 
-      {customHero ?? (isArneOlavNewsPage ? null : (
+      {customHero ?? (isEditorialNewsPage ? null : (
         <section className="border-b border-slate-200 bg-slate-50">
           <Container className="py-8 lg:py-10">
             <div className="overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04]">

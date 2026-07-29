@@ -4081,14 +4081,18 @@ function NewsArticleBodySection({
         <Container className="py-10 sm:py-12 lg:py-16">
           <article className="grid gap-8 lg:grid-cols-[minmax(0,0.46fr)_minmax(0,0.54fr)] lg:items-start lg:gap-14">
             {heroImage?.imageUrl ? (
-              <figure className="relative aspect-[25/26] overflow-hidden rounded-[8px] border border-slate-200 bg-slate-100 shadow-lg shadow-slate-950/[0.08]">
+              <figure className="group relative aspect-[25/26] overflow-hidden rounded-[8px] border border-slate-200 bg-slate-100 shadow-lg shadow-slate-950/[0.08] transition duration-500 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-950/[0.12] motion-reduce:transform-none motion-reduce:transition-none">
                 <Image
                   src={heroImage.imageUrl}
                   alt={heroImage.imageAlt || heroImage.title}
                   fill
                   priority
                   sizes="(min-width: 1024px) 42vw, 100vw"
-                  className="object-cover object-center"
+                  className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.025] motion-reduce:transition-none"
+                />
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-y-0 -left-1/3 w-1/4 -skew-x-12 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 blur-sm transition-all duration-700 ease-out group-hover:left-[115%] group-hover:opacity-100 motion-reduce:hidden"
                 />
               </figure>
             ) : null}

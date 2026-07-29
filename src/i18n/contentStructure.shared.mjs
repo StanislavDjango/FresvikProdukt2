@@ -139,10 +139,17 @@ export function semanticSectionKind(sourcePath, section) {
     generatedKind ||
     persistedKind;
   const normalizedTitle = normalize(section.title || "");
+  const isNewsDetailPath =
+    sourcePath.startsWith("/aktuelt/") ||
+    sourcePath.startsWith("/about/news/");
+  const isNewsArticleMain =
+    section._key === "news-article-main" ||
+    section.key === "news-article-main" ||
+    section.translationKey === "news-article-main";
 
   if (
-    sourcePath.startsWith("/aktuelt/") &&
-    (section._key === "news-article-main" ||
+    isNewsDetailPath &&
+    (isNewsArticleMain ||
       inferredKind === "news" ||
       persistedKind === "section-nyheit" ||
       persistedKind === "section-news" ||

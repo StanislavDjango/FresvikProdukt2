@@ -4393,11 +4393,19 @@ function ContentSections({
   const isServicePartsPage = sourceSlug === "/tenester/service-reservedeler";
   const isReferenceIndexPage = sourceSlug === "/referansar";
   const isNewsIndexPage = sourceSlug === "/aktuelt";
-  const isNewsDetailPage =
-    sourceSlug.startsWith("/aktuelt/") && sourceSlug !== "/aktuelt";
   const isEditorialNewsPage = isEditorialNewsPath(sourceSlug);
+  const isNewsDetailPage =
+    isEditorialNewsPage ||
+    (sourceSlug.startsWith("/aktuelt/") && sourceSlug !== "/aktuelt") ||
+    sourceSlug.startsWith("/about/news/");
   const newsSectionKind = (section: ContentPage["sections"][number]) =>
     semanticContentSectionKind(sourceSlug, section);
+  const isNewsArticleBodySection = (
+    section: ContentPage["sections"][number],
+  ) =>
+    section.key === "news-article-main" ||
+    section.translationKey === "news-article-main" ||
+    newsSectionKind(section) === "article-body";
   const isProductIndexPage = sourceSlug === "/produkt";
   const isTransportDamagePage = sourceSlug === "/transportskade";
   const isCompanyOverviewPage = sourceSlug === "/om-oss";
@@ -4668,7 +4676,7 @@ function ContentSections({
     if (
       isNewsDetailPage &&
       page &&
-      newsSectionKind(section) === "article-body"
+      isNewsArticleBodySection(section)
     ) {
       return (
         <NewsArticleBodySection

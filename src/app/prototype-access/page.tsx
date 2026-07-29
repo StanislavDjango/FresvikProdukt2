@@ -1,4 +1,4 @@
-import { ArrowRight, LockKeyhole } from "lucide-react";
+import { ArrowRight, ExternalLink, LockKeyhole } from "lucide-react";
 import Image from "next/image";
 
 type AccessPageProps = {
@@ -25,6 +25,9 @@ export default async function PrototypeAccessPage({
         title: "Enter the site",
         description:
           "This unofficial design prototype is available to invited viewers.",
+        officialSite:
+          "The official Fresvik Produkt website is active and remains the source for official information and enquiries.",
+        officialSiteLink: "Open www.fresvik.no",
         password: "Password",
         submit: "Unlock site",
         error: "The password is incorrect. Please try again.",
@@ -34,6 +37,9 @@ export default async function PrototypeAccessPage({
         title: "Opne nettsida",
         description:
           "Denne uoffisielle designprototypen er tilgjengeleg for inviterte personar.",
+        officialSite:
+          "Den offisielle nettsida til Fresvik Produkt er aktiv og er framleis kjelda for offisiell informasjon og førespurnader.",
+        officialSiteLink: "Opne www.fresvik.no",
         password: "Passord",
         submit: "Lås opp nettsida",
         error: "Passordet er feil. Prøv på nytt.",
@@ -81,6 +87,21 @@ export default async function PrototypeAccessPage({
           <p className="mt-3 text-sm leading-6 text-slate-600">
             {copy.description}
           </p>
+
+          <div className="mt-5 border-l-2 border-cyan-700 bg-cyan-50 px-4 py-3">
+            <p className="text-sm leading-5 text-slate-700">
+              {copy.officialSite}
+            </p>
+            <a
+              href="https://www.fresvik.no/"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-cyan-800 underline decoration-cyan-300 underline-offset-4 transition hover:text-cyan-950"
+            >
+              {copy.officialSiteLink}
+              <ExternalLink aria-hidden="true" size={15} />
+            </a>
+          </div>
 
           <form
             action="/api/prototype-access"
@@ -136,4 +157,3 @@ export default async function PrototypeAccessPage({
     </main>
   );
 }
-

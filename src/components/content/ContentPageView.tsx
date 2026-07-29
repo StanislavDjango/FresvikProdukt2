@@ -14,6 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { CTASection } from "@/components/CTASection";
+import { HomeVideoSection } from "@/components/home/HomeVideoSection";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -5993,6 +5994,8 @@ export function ContentPageView({
           </Container>
         </section>
       ))}
+
+      {isHomePage ? <HomeVideoSection locale={locale} /> : null}
 
       {isHomePage ? (
         <HomeContent page={page} labels={labels} />

@@ -142,7 +142,8 @@ export function semanticSectionKind(sourcePath, section) {
 
   if (
     sourcePath.startsWith("/aktuelt/") &&
-    (inferredKind === "news" ||
+    (section._key === "news-article-main" ||
+      inferredKind === "news" ||
       persistedKind === "section-nyheit" ||
       persistedKind === "section-news" ||
       normalizedTitle === "nyheit" ||

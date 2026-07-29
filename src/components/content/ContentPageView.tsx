@@ -18,7 +18,11 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import type { ContentPage } from "@/data/pages";
-import { sectionIs } from "@/i18n/contentStructure";
+import {
+  isMigrationArchiveKind,
+  sectionIs,
+  semanticContentSectionKind,
+} from "@/i18n/contentStructure";
 import {
   localeFromPathname,
   stripLocalePrefix,
@@ -32,6 +36,7 @@ type ContentPageViewProps = {
   page: ContentPage;
   hero?: ReactNode;
   locale: Locale;
+  pathname?: string;
 };
 
 type ContentLabels = (typeof messages)[Locale]["Content"] & {
@@ -4391,6 +4396,8 @@ function ContentSections({
   const isNewsDetailPage =
     sourceSlug.startsWith("/aktuelt/") && sourceSlug !== "/aktuelt";
   const isEditorialNewsPage = isEditorialNewsPath(sourceSlug);
+  const newsSectionKind = (section: ContentPage["sections"][number]) =>
+    semanticContentSectionKind(sourceSlug, section);
   const isProductIndexPage = sourceSlug === "/produkt";
   const isTransportDamagePage = sourceSlug === "/transportskade";
   const isCompanyOverviewPage = sourceSlug === "/om-oss";
@@ -4546,7 +4553,8 @@ function ContentSections({
               isNewsDetailPage &&
               (sectionIs(section, "contact") ||
                 sectionIs(section, "certificates") ||
-                isPublicArchiveOnlySection(section))
+                isPublicArchiveOnlySection(section) ||
+                isMigrationArchiveKind(newsSectionKind(section)))
             ) &&
             !(
               isServiceIndexPage &&
@@ -4657,7 +4665,11 @@ function ContentSections({
       );
     }
 
-    if (isNewsDetailPage && page && sectionIs(section, "article-body")) {
+    if (
+      isNewsDetailPage &&
+      page &&
+      newsSectionKind(section) === "article-body"
+    ) {
       return (
         <NewsArticleBodySection
           key={`${section.title}-${sectionIndex}`}
@@ -5858,10 +5870,16 @@ function HomeContent({
   );
 }
 
-export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
+export function ContentPageView({
+  page,
+  hero,
+  locale,
+  pathname,
+}: ContentPageViewProps) {
   const labels = getContentLabels(locale);
   const showMigrationDetails = page.showMigrationDetails === true;
-  const sourceSlug = stripLocalePrefix(page.slug);
+  const requestedPath = pathname || page.slug;
+  const sourceSlug = stripLocalePrefix(requestedPath);
   const isFaqPage = sourceSlug === "/kundeservice/faq";
   const isHomePage = page.pageType === "home";
   const isAccessoryPage = sourceSlug.startsWith("/andre-produkter/");
@@ -5945,7 +5963,7 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
                   <Link
-                    href={withLocale("/kontakt", localeFromPathname(page.slug))}
+                    href={withLocale("/kontakt", localeFromPathname(requestedPath))}
                     className="inline-flex h-11 items-center justify-center gap-2 rounded-[8px] bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-cyan-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2"
                   >
                     {labels.contactUs} <ArrowRight aria-hidden="true" size={17} />
@@ -6011,7 +6029,7 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
       ) : (
         <ContentSections
           sections={page.sections}
-          pageSlug={page.slug}
+          pageSlug={sourceSlug}
           page={page}
           labels={labels}
         />

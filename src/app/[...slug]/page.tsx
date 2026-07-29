@@ -69,15 +69,21 @@ export default async function DynamicContentPage({ params }: RouteProps) {
   const sanityPage = await getSanityContentPage(path);
 
   if (sanityPage) {
-    return <ContentPageView page={sanityPage} locale="nn" />;
+    return <ContentPageView page={sanityPage} locale="nn" pathname={path} />;
   }
 
   if (page) {
-    return <ContentPageView page={page} locale="nn" />;
+    return <ContentPageView page={page} locale="nn" pathname={path} />;
   }
 
   if (isLegacyRoute(path)) {
-    return <ContentPageView page={createLegacyContentPage(path)} locale="nn" />;
+    return (
+      <ContentPageView
+        page={createLegacyContentPage(path)}
+        locale="nn"
+        pathname={path}
+      />
+    );
   }
 
   if (!page) notFound();

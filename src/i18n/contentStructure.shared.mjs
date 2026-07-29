@@ -80,6 +80,8 @@ export const migrationArchiveKinds = new Set([
   "archive-documents",
   "archive-links",
   "archive-reference",
+  "archive-author",
+  "archive-navigation",
   "archive-newsletter",
   "archive-service-urls",
 ]);
@@ -100,12 +102,54 @@ export function sectionKindFromTitleValue(title = "") {
   if (normalized.includes("dokumentlenker fra gammal side")) return "archive-documents";
   if (normalized.includes("lenker fra gammal")) return "archive-links";
   if (normalized.includes("referanse fra gammal side")) return "archive-reference";
+  if (
+    normalized === "forfattar" ||
+    normalized === "author" ||
+    normalized.includes("forfattar fra gammal side") ||
+    normalized.includes("author from the old")
+  ) {
+    return "archive-author";
+  }
+  if (
+    normalized === "navigasjon" ||
+    normalized === "navigation" ||
+    normalized.includes("navigasjon fra gammal side") ||
+    normalized.includes("navigation from the old")
+  ) {
+    return "archive-navigation";
+  }
 
   return undefined;
 }
 
 export function semanticSectionKind(sourcePath, section) {
-  const inferredKind = section.kind || sectionKindFromTitleValue(section.title);
+  const persistedKind = section.kind;
+  const titleKind = sectionKindFromTitleValue(section.title);
+  const generatedKind =
+    persistedKind?.startsWith("section-")
+      ? sectionKindFromTitleValue(
+          persistedKind.slice("section-".length).replace(/-/g, " "),
+        )
+      : undefined;
+  const inferredKind =
+    (persistedKind && !persistedKind.startsWith("section-")
+      ? persistedKind
+      : undefined) ||
+    titleKind ||
+    generatedKind ||
+    persistedKind;
+  const normalizedTitle = normalize(section.title || "");
+
+  if (
+    sourcePath.startsWith("/aktuelt/") &&
+    (inferredKind === "news" ||
+      persistedKind === "section-nyheit" ||
+      persistedKind === "section-news" ||
+      normalizedTitle === "nyheit" ||
+      normalizedTitle === "news")
+  ) {
+    return "article-body";
+  }
 
   if (inferredKind === "legal-text") {
     if (sourcePath === "/personvernerklering") return "privacy-text";

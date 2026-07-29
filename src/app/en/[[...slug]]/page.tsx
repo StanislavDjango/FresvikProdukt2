@@ -82,6 +82,7 @@ export default async function EnglishContentPage({ params }: RouteProps) {
     <ContentPageView
       page={page}
       locale="en"
+      pathname={canonicalPath}
       hero={sourcePath === "/" ? <HomeHero page={page} /> : undefined}
     />
   );

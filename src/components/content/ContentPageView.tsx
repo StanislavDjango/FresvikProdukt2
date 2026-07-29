@@ -4061,10 +4061,12 @@ function NewsArticleBodySection({
   page,
   section,
   labels = getContentLabels(),
+  editorial = false,
 }: {
   page: ContentPage;
   section: ContentPage["sections"][number];
   labels?: ContentLabels;
+  editorial?: boolean;
 }) {
   const paragraphs = section.items
     .flatMap((item) => item.text.split(/\n{2,}/))
@@ -4072,6 +4074,66 @@ function NewsArticleBodySection({
     .filter(Boolean);
   const heroImage = page.cards.find((card) => card.imageUrl);
   const formattedDate = formatContentDate(page.publishedAt, labels.locale);
+
+  if (editorial) {
+    return (
+      <section className="border-b border-slate-200 bg-white">
+        <Container className="py-10 sm:py-12 lg:py-16">
+          <article className="grid gap-8 lg:grid-cols-[minmax(0,0.46fr)_minmax(0,0.54fr)] lg:items-start lg:gap-14">
+            {heroImage?.imageUrl ? (
+              <figure className="relative aspect-[25/26] overflow-hidden rounded-[8px] border border-slate-200 bg-slate-100 shadow-lg shadow-slate-950/[0.08]">
+                <Image
+                  src={heroImage.imageUrl}
+                  alt={heroImage.imageAlt || heroImage.title}
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 42vw, 100vw"
+                  className="object-cover object-center"
+                />
+              </figure>
+            ) : null}
+
+            <div className="lg:py-2">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-slate-200 pb-5">
+                <span className="text-xs font-black uppercase tracking-[0.18em] text-cyan-800">
+                  {labels.newsEyebrow}
+                </span>
+                {formattedDate ? (
+                  <span className="text-sm font-semibold text-slate-500">
+                    {formattedDate}
+                  </span>
+                ) : null}
+              </div>
+
+              <h1 className="mt-6 text-3xl font-semibold leading-tight text-slate-950 sm:text-4xl lg:text-5xl">
+                {page.title}
+              </h1>
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+                {page.intro}
+              </p>
+
+              <div className="mt-8 max-w-2xl space-y-5 border-l-2 border-cyan-700 pl-5 text-base leading-8 text-slate-700 sm:pl-7">
+                {(paragraphs.length > 0 ? paragraphs : [page.intro]).map(
+                  (paragraph, paragraphIndex) => (
+                    <p
+                      key={paragraph}
+                      className={
+                        paragraphIndex === 0
+                          ? "text-lg font-medium leading-8 text-slate-900"
+                          : undefined
+                      }
+                    >
+                      {paragraph}
+                    </p>
+                  ),
+                )}
+              </div>
+            </div>
+          </article>
+        </Container>
+      </section>
+    );
+  }
 
   return (
     <section className="border-b border-slate-200 bg-white">
@@ -4307,6 +4369,9 @@ function ContentSections({
   const isNewsIndexPage = sourceSlug === "/aktuelt";
   const isNewsDetailPage =
     sourceSlug.startsWith("/aktuelt/") && sourceSlug !== "/aktuelt";
+  const isArneOlavNewsPage = sourceSlug.endsWith(
+    "/arne-olav-ny-salskonsulent",
+  );
   const isProductIndexPage = sourceSlug === "/produkt";
   const isTransportDamagePage = sourceSlug === "/transportskade";
   const isCompanyOverviewPage = sourceSlug === "/om-oss";
@@ -4580,6 +4645,7 @@ function ContentSections({
           page={page}
           section={section}
           labels={labels}
+          editorial={isArneOlavNewsPage}
         />
       );
     }
@@ -5782,6 +5848,9 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
   const isAccessoryPage = sourceSlug.startsWith("/andre-produkter/");
   const isReferenceDetailPage =
     sourceSlug.startsWith("/referansar/") && sourceSlug !== "/referansar";
+  const isArneOlavNewsPage = sourceSlug.endsWith(
+    "/arne-olav-ny-salskonsulent",
+  );
   const isCompanyOrLegalPage =
     page.pageType === "company" || page.pageType === "legal";
   const suppressTopCards =
@@ -5840,7 +5909,7 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
         />
       ) : null}
 
-      {customHero ?? (
+      {customHero ?? (isArneOlavNewsPage ? null : (
         <section className="border-b border-slate-200 bg-slate-50">
           <Container className="py-8 lg:py-10">
             <div className="overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-sm shadow-slate-950/[0.04]">
@@ -5879,7 +5948,7 @@ export function ContentPageView({ page, hero, locale }: ContentPageViewProps) {
             </div>
           </Container>
         </section>
-      )}
+      ))}
 
       {isHomePage ? (
         <HomeContent page={page} labels={labels} />

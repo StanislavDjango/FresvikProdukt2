@@ -5889,6 +5889,7 @@ export function ContentPageView({
   const isCompanyOrLegalPage =
     page.pageType === "company" || page.pageType === "legal";
   const suppressTopCards =
+    isEditorialNewsPage ||
     isCompanyOrLegalPage ||
     sourceSlug === "/produkt" ||
     sourceSlug === "/produkt/fresvik-pir-panel" ||

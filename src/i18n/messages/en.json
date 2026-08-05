@@ -8,6 +8,9 @@
     "closeMenu": "Close menu",
     "call": "Call us",
     "signOut": "Sign out",
+    "adminLogin": "Administrator",
+    "adminActive": "Admin active",
+    "adminSignOut": "Exit admin",
     "mobileIntro": "Find products, services and documentation for cold and freezer solutions.",
     "switchLanguage": "Norsk",
     "menu": {

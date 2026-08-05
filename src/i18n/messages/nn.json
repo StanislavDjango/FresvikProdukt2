@@ -8,6 +8,9 @@
     "closeMenu": "Lukk meny",
     "call": "Ring oss",
     "signOut": "Logg ut",
+    "adminLogin": "Administrator",
+    "adminActive": "Admin aktiv",
+    "adminSignOut": "Avslutt admin",
     "mobileIntro": "Finn produkt, tenester og dokumentasjon for kjøle- og fryseløysingar.",
     "switchLanguage": "English",
     "menu": {

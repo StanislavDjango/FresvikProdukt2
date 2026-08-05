@@ -7,6 +7,8 @@ import {
   Mail,
   Menu,
   Phone,
+  ShieldCheck,
+  UserRound,
   X,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -436,7 +438,11 @@ function MobileLink({
   );
 }
 
-export function Header() {
+type HeaderProps = {
+  isAdmin?: boolean;
+};
+
+export function Header({ isAdmin = false }: HeaderProps) {
   const pathname = usePathname();
   const t = useTranslations("Header");
   const prototypeNotice = useTranslations("DevelopmentNotice");
@@ -448,6 +454,10 @@ export function Header() {
   const languageSwitchLabel = locale === "en" ? "NO" : "EN";
   const languageSwitchAriaLabel =
     locale === "en" ? "Switch to Norwegian" : "Switch to English";
+  const adminHref = `/admin?${new URLSearchParams({
+    returnTo: pathname,
+    locale,
+  }).toString()}`;
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileOpenSection, setMobileOpenSection] = useState<string | null>(
     null,
@@ -585,6 +595,35 @@ export function Header() {
               <Phone aria-hidden="true" size={14} />
               57 69 83 00
             </a>
+            {isAdmin ? (
+              <>
+                <Link
+                  href={`/admin?locale=${locale}`}
+                  className="inline-flex items-center gap-2 text-cyan-200 transition hover:text-white"
+                >
+                  <ShieldCheck aria-hidden="true" size={14} />
+                  {t("adminActive")}
+                </Link>
+                <form action="/api/admin/logout" method="post">
+                  <input type="hidden" name="returnTo" value={pathname} />
+                  <button
+                    type="submit"
+                    className="inline-flex items-center gap-2 text-white/85 transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+                  >
+                    <LogOut aria-hidden="true" size={14} />
+                    {t("adminSignOut")}
+                  </button>
+                </form>
+              </>
+            ) : (
+              <Link
+                href={adminHref}
+                className="inline-flex items-center gap-2 text-white/85 transition hover:text-white"
+              >
+                <UserRound aria-hidden="true" size={14} />
+                {t("adminLogin")}
+              </Link>
+            )}
             <form action="/api/prototype-access/logout" method="post">
               <input type="hidden" name="returnTo" value={pathname} />
               <button

@@ -14,6 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { AdminArticleEditor } from "@/components/admin/AdminArticleEditor";
+import { AdminContentPageEditor } from "@/components/admin/AdminContentPageEditor";
 import { CTASection } from "@/components/CTASection";
 import { HomeVideoSection } from "@/components/home/HomeVideoSection";
 import { Card } from "@/components/ui/Card";
@@ -5998,6 +5999,12 @@ export function ContentPageView({
         </section>
       ))}
 
+      {isNewsDetailPage ? (
+        <AdminArticleEditor pathname={requestedPath} locale={locale} />
+      ) : (
+        <AdminContentPageEditor pathname={requestedPath} locale={locale} />
+      )}
+
       {isHomePage ? <HomeVideoSection locale={locale} /> : null}
 
       {isHomePage ? (
@@ -6049,10 +6056,6 @@ export function ContentPageView({
           labels={labels}
         />
       )}
-
-      {isNewsDetailPage ? (
-        <AdminArticleEditor pathname={requestedPath} locale={locale} />
-      ) : null}
 
       {showMigrationDetails && page.todo && page.todo.length > 0 ? (
         <section className="border-y border-slate-200 bg-white">

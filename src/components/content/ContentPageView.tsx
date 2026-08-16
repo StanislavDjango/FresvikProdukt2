@@ -4097,7 +4097,9 @@ function NewsArticleBodySection({
     .flatMap((item) => item.text.split(/\n{2,}/))
     .map((text) => text.trim())
     .filter(Boolean);
-  const heroImage = page.cards.find((card) => card.imageUrl);
+  const articleImages = page.cards.filter((card) => card.imageUrl);
+  const heroImage = articleImages[0];
+  const galleryImages = articleImages.slice(1);
   const formattedDate = formatContentDate(page.publishedAt, labels.locale);
 
   if (editorial) {
@@ -4219,6 +4221,25 @@ function NewsArticleBodySection({
             )}
           </div>
         </article>
+
+        {galleryImages.length > 0 ? (
+          <div className="mt-5 grid gap-5 sm:grid-cols-2">
+      {galleryImages.map((image, imageIndex) => (
+        <figure
+          key={`${image.imageUrl}-${imageIndex}`}
+                className="group relative aspect-[4/3] overflow-hidden rounded-[8px] border border-slate-200 bg-slate-100 shadow-sm"
+              >
+                <Image
+                  src={image.imageUrl!}
+                  alt={image.imageAlt || image.title}
+                  fill
+                  sizes="(min-width: 640px) 50vw, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.02] motion-reduce:transition-none"
+                />
+              </figure>
+            ))}
+          </div>
+        ) : null}
       </Container>
     </section>
   );
